@@ -4,7 +4,13 @@ import shutil
 import pandas as pd
 import pytest
 
-from evaluation.metrics import mae, rmse, spearman_rank_correlation
+from evaluation.metrics import (
+    average_actual_points_in_predicted_top_k,
+    mae,
+    rmse,
+    spearman_rank_correlation,
+    top_k_precision,
+)
 from models.baseline import (
     BaselinePredictionError,
     PositionAverageBaseline,
@@ -82,3 +88,11 @@ def test_metrics() -> None:
     assert mae(actual, predicted) == 1.0
     assert rmse(actual, predicted) == pytest.approx((5 / 3) ** 0.5)
     assert spearman_rank_correlation(actual, predicted) == pytest.approx(0.5)
+
+
+def test_ranking_metrics() -> None:
+    actual = pd.Series([10.0, 8.0, 2.0, 1.0], index=[1, 2, 3, 4])
+    predicted = pd.Series([0.4, 0.1, 0.3, 0.2], index=[1, 2, 3, 4])
+
+    assert top_k_precision(actual, predicted, 2) == 0.5
+    assert average_actual_points_in_predicted_top_k(actual, predicted, 2) == 6.0

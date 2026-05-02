@@ -9,7 +9,11 @@ from sklearn.dummy import DummyRegressor
 
 from evaluation.backtest import (
     SklearnModelSpec,
+    add_baseline_prediction_features,
     add_position_interactions,
+    add_residual_target,
+    final_residual_prediction,
+    minutes_adjusted_baseline_predictions,
     run_position_model_backtest,
     run_backtest,
     write_position_markdown_summary,
@@ -59,6 +63,7 @@ def test_run_backtest_uses_prior_seasons_for_validation() -> None:
     results = run_backtest(
         modeling_frame(),
         model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+        residual_specs=[],
     )
 
     assert set(results["validation_season"]) == {"2023-24"}
@@ -67,6 +72,10 @@ def test_run_backtest_uses_prior_seasons_for_validation() -> None:
     dummy_row = results.loc[results["model"] == "DummyMean"].iloc[0]
     assert dummy_row["n_train"] == 6
     assert dummy_row["n_validation"] == 6
+    assert "top_10_precision" in results.columns
+    assert "top_10_avg_actual_points" in results.columns
+    assert "GK_top_10_precision" in results.columns
+    assert "DEF_top_50_avg_actual_points" in results.columns
 
 
 def test_write_backtest_reports() -> None:
@@ -76,6 +85,7 @@ def test_write_backtest_reports() -> None:
         results = run_backtest(
             modeling_frame(),
             model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+            residual_specs=[],
         )
         results_path = scratch / "model_results.csv"
         summary_path = scratch / "model_comparison.md"
@@ -101,6 +111,74 @@ def test_backtest_module_has_command_line_help() -> None:
     )
 
     assert "--input" in completed.stdout
+
+
+def test_residual_target_is_actual_minus_minutes_adjusted_baseline() -> None:
+    frame = pd.DataFrame(
+        {
+            "next_gw_points": [8.0, 2.0],
+            "points_mean_last_5": [6.0, 9.0],
+            "minutes_mean_last_5": [45.0, 90.0],
+        }
+    )
+    baseline = minutes_adjusted_baseline_predictions(frame)
+
+    with_residual = add_residual_target(frame, baseline)
+
+    assert list(baseline) == [3.0, 9.0]
+    assert list(with_residual["__residual_target"]) == [5.0, -7.0]
+
+
+def test_validation_baseline_predictions_do_not_use_other_validation_rows() -> None:
+    validation = pd.DataFrame(
+        {
+            "next_gw_points": [8.0, 999.0],
+            "points_mean_last_5": [6.0, 1000.0],
+            "minutes_mean_last_5": [45.0, 90.0],
+        }
+    )
+
+    first_row_prediction = minutes_adjusted_baseline_predictions(validation.iloc[[0]]).iloc[0]
+    full_frame_prediction = minutes_adjusted_baseline_predictions(validation).iloc[0]
+
+    assert first_row_prediction == full_frame_prediction == 3.0
+
+
+def test_residual_final_prediction_adds_baseline_and_predicted_residual() -> None:
+    baseline = pd.Series([3.0, 9.0], index=[10, 11])
+    predicted_residual = pd.Series([5.0, -7.0], index=[10, 11])
+
+    prediction = final_residual_prediction(baseline, predicted_residual)
+
+    assert list(prediction) == [8.0, 2.0]
+
+
+def test_baseline_prediction_features_are_row_local() -> None:
+    frame = pd.DataFrame(
+        {
+            "next_gw_points": [8.0, 999.0],
+            "points_last_1": [4.0, 1000.0],
+            "points_mean_last_3": [5.0, 1000.0],
+            "points_mean_last_5": [6.0, 1000.0],
+            "minutes_mean_last_5": [45.0, 90.0],
+        }
+    )
+
+    first_row_features = add_baseline_prediction_features(frame.iloc[[0]])
+    full_frame_features = add_baseline_prediction_features(frame)
+
+    feature_columns = [
+        "pred_previous_gameweek_points",
+        "pred_rolling_3_gameweek_mean",
+        "pred_rolling_5_gameweek_mean",
+        "pred_minutes_adjusted_rolling_mean",
+    ]
+    pd.testing.assert_series_equal(
+        first_row_features.iloc[0][feature_columns],
+        full_frame_features.iloc[0][feature_columns],
+        check_names=False,
+    )
+    assert list(full_frame_features.loc[0, feature_columns]) == [4.0, 5.0, 6.0, 3.0]
 
 
 def test_position_model_backtest_does_not_fit_on_validation_targets() -> None:

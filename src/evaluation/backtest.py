@@ -24,8 +24,14 @@ from sklearn.linear_model import ElasticNet, LogisticRegression, Ridge
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from evaluation.metrics import mae, rmse, spearman_rank_correlation
-from models.baseline import BASELINES, BaselineModel
+from evaluation.metrics import (
+    average_actual_points_in_predicted_top_k,
+    mae,
+    rmse,
+    spearman_rank_correlation,
+    top_k_precision,
+)
+from models.baseline import BASELINES, BaselineModel, MinutesAdjustedRollingMeanBaseline
 
 
 LOGGER = logging.getLogger(__name__)
@@ -39,11 +45,22 @@ TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
 TWO_STAGE_MODEL_NAME = "two_stage_minutes_points"
+MINUTES_ADJUSTED_BASELINE_NAME = "minutes_adjusted_rolling_mean"
+RESIDUAL_TARGET_COLUMN = "__residual_target"
+BASELINE_PREDICTION_COLUMN = "__minutes_adjusted_baseline_prediction"
 REQUIRED_COLUMNS = ("season", "gw", TARGET_COLUMN)
 POSITION_COLUMN = "position"
 POSITION_STRATEGY_MODEL_NAME = "Ridge"
 MIN_POSITION_TRAIN_ROWS = 50
 TOP_K_VALUES = (10, 20, 50)
+RANKING_POSITIONS = ("GK", "DEF", "MID", "FWD")
+RESIDUAL_MODEL_NAMES = ("Ridge", "ElasticNet", "XGBoost", "LightGBM", "CatBoost")
+BASELINE_FEATURE_MODELS = {
+    "pred_previous_gameweek_points": "previous_gameweek_points",
+    "pred_rolling_3_gameweek_mean": "rolling_3_gameweek_mean",
+    "pred_rolling_5_gameweek_mean": "rolling_5_gameweek_mean",
+    "pred_minutes_adjusted_rolling_mean": MINUTES_ADJUSTED_BASELINE_NAME,
+}
 
 EXCLUDED_FEATURE_COLUMNS = {
     "next_gw_points",
@@ -53,6 +70,10 @@ EXCLUDED_FEATURE_COLUMNS = {
 }
 STABLE_FEATURE_COLUMNS = (
     "position",
+    "pred_previous_gameweek_points",
+    "pred_rolling_3_gameweek_mean",
+    "pred_rolling_5_gameweek_mean",
+    "pred_minutes_adjusted_rolling_mean",
     "points_last_1",
     "points_mean_last_3",
     "points_mean_last_5",
@@ -122,6 +143,11 @@ def split_train_validation(frame: pd.DataFrame, validation_season: str) -> tuple
     train = frame.loc[seasons < validation_season].copy()
     validation = frame.loc[seasons == validation_season].copy()
     return train, validation
+
+
+def normalized_position_labels(positions: pd.Series) -> pd.Series:
+    """Normalize historical FPL position labels for metric grouping."""
+    return positions.astype(str).replace({"GKP": "GK"})
 
 
 def feature_columns(frame: pd.DataFrame) -> list[str]:
@@ -255,12 +281,18 @@ def sklearn_model_specs(random_state: int = 42) -> list[SklearnModelSpec]:
     return specs
 
 
+def residual_model_specs(random_state: int = 42) -> list[SklearnModelSpec]:
+    """Return the model specs used for residual correction experiments."""
+    return [spec for spec in sklearn_model_specs(random_state) if spec.name in RESIDUAL_MODEL_NAMES]
+
+
 def evaluate_predictions(
     *,
     model_name: str,
     validation_season: str,
     y_true: pd.Series,
     y_pred: pd.Series,
+    positions: pd.Series | None = None,
 ) -> dict[str, Any]:
     valid = pd.concat([y_true, y_pred], axis=1).dropna()
     if valid.empty:
@@ -268,7 +300,7 @@ def evaluate_predictions(
             f"No valid predictions for {model_name} in validation season {validation_season}."
         )
 
-    return {
+    row = {
         "validation_season": validation_season,
         "model": model_name,
         "n_train": np.nan,
@@ -277,19 +309,32 @@ def evaluate_predictions(
         "rmse": rmse(y_true, y_pred),
         "spearman": spearman_rank_correlation(y_true, y_pred),
     }
+    for k in TOP_K_VALUES:
+        row[f"top_{k}_precision"] = top_k_precision(y_true, y_pred, k)
+        row[f"top_{k}_avg_actual_points"] = average_actual_points_in_predicted_top_k(
+            y_true,
+            y_pred,
+            k,
+        )
 
-
-def precision_at_k(y_true: pd.Series, y_pred: pd.Series, k: int) -> float:
-    valid = pd.concat([y_true.rename("actual"), y_pred.rename("predicted")], axis=1).dropna()
-    valid["actual"] = pd.to_numeric(valid["actual"], errors="coerce")
-    valid["predicted"] = pd.to_numeric(valid["predicted"], errors="coerce")
-    valid = valid.dropna()
-    if valid.empty:
-        return float("nan")
-    cutoff = min(k, len(valid))
-    predicted_top = set(valid.nlargest(cutoff, "predicted").index)
-    actual_top = set(valid.nlargest(cutoff, "actual").index)
-    return len(predicted_top & actual_top) / cutoff
+    if positions is not None:
+        aligned_positions = normalized_position_labels(positions.reindex(y_true.index))
+        for position in RANKING_POSITIONS:
+            mask = aligned_positions == position
+            for k in TOP_K_VALUES:
+                row[f"{position}_top_{k}_precision"] = top_k_precision(
+                    y_true.loc[mask],
+                    y_pred.loc[mask],
+                    k,
+                )
+                row[f"{position}_top_{k}_avg_actual_points"] = (
+                    average_actual_points_in_predicted_top_k(
+                        y_true.loc[mask],
+                        y_pred.loc[mask],
+                        k,
+                    )
+                )
+    return row
 
 
 def metric_row(
@@ -311,7 +356,12 @@ def metric_row(
     row["position"] = position
     row["n_train"] = n_train
     for k in TOP_K_VALUES:
-        row[f"top_{k}_precision"] = precision_at_k(y_true, y_pred, k)
+        row[f"top_{k}_precision"] = top_k_precision(y_true, y_pred, k)
+        row[f"top_{k}_avg_actual_points"] = average_actual_points_in_predicted_top_k(
+            y_true,
+            y_pred,
+            k,
+        )
     return row
 
 
@@ -332,6 +382,7 @@ def evaluate_baselines(
                     validation_season=validation_season,
                     y_true=y_true,
                     y_pred=y_pred,
+                    positions=validation[POSITION_COLUMN] if POSITION_COLUMN in validation.columns else None,
                 )
             )
         except (ValueError, KeyError) as exc:
@@ -376,11 +427,116 @@ def evaluate_sklearn_models(
                 validation_season=validation_season,
                 y_true=y_validation,
                 y_pred=y_pred,
+                positions=(
+                    validation_model[POSITION_COLUMN]
+                    if POSITION_COLUMN in validation_model.columns
+                    else None
+                ),
             )
             row["n_train"] = len(train_model)
             rows.append(row)
         except Exception as exc:  # noqa: BLE001 - model libraries raise varied exception types.
             LOGGER.warning("Skipping model %s for %s: %s", spec.name, validation_season, exc)
+    return rows
+
+
+def add_baseline_prediction_features(frame: pd.DataFrame) -> pd.DataFrame:
+    """Add leakage-safe baseline predictions as model features."""
+    data = frame.copy()
+    baseline_by_name = {model.name: model for model in BASELINES}
+    for feature_name, model_name in BASELINE_FEATURE_MODELS.items():
+        model = baseline_by_name[model_name]
+        data[feature_name] = model.predict(data)
+    return data
+
+
+def minutes_adjusted_baseline_predictions(frame: pd.DataFrame) -> pd.Series:
+    """Compute the strongest baseline through the existing baseline implementation."""
+    return MinutesAdjustedRollingMeanBaseline().predict(frame).rename(BASELINE_PREDICTION_COLUMN)
+
+
+def add_residual_target(frame: pd.DataFrame, baseline_predictions: pd.Series) -> pd.DataFrame:
+    """Add residual_target = actual - minutes-adjusted baseline prediction."""
+    data = frame.copy()
+    data[BASELINE_PREDICTION_COLUMN] = baseline_predictions.reindex(data.index)
+    data[RESIDUAL_TARGET_COLUMN] = data[TARGET_COLUMN] - data[BASELINE_PREDICTION_COLUMN]
+    return data
+
+
+def final_residual_prediction(
+    baseline_predictions: pd.Series,
+    predicted_residuals: pd.Series,
+) -> pd.Series:
+    """Compose final residual model predictions."""
+    return baseline_predictions.add(predicted_residuals, fill_value=np.nan)
+
+
+def evaluate_residual_models(
+    train: pd.DataFrame,
+    validation: pd.DataFrame,
+    *,
+    validation_season: str,
+    models: list[SklearnModelSpec],
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    train_with_residual = add_residual_target(train, minutes_adjusted_baseline_predictions(train))
+    validation_with_baseline = validation.copy()
+    validation_with_baseline[BASELINE_PREDICTION_COLUMN] = minutes_adjusted_baseline_predictions(
+        validation
+    )
+
+    train_model = train_with_residual.dropna(
+        subset=[TARGET_COLUMN, BASELINE_PREDICTION_COLUMN, RESIDUAL_TARGET_COLUMN]
+    ).copy()
+    validation_model = validation_with_baseline.dropna(
+        subset=[TARGET_COLUMN, BASELINE_PREDICTION_COLUMN]
+    ).copy()
+    if train_model.empty or validation_model.empty:
+        raise BacktestError(f"No residual train/validation rows for season {validation_season}.")
+
+    columns = feature_columns(train_model)
+    x_train = train_model[columns].replace({pd.NA: np.nan})
+    y_train = train_model[RESIDUAL_TARGET_COLUMN]
+    x_validation = validation_model[columns].replace({pd.NA: np.nan})
+    y_validation = validation_model[TARGET_COLUMN]
+
+    for spec in models:
+        pipeline = Pipeline(
+            [
+                (
+                    "preprocess",
+                    build_preprocessor(train_model, columns, scale_numeric=spec.scale_numeric),
+                ),
+                ("model", clone(spec.estimator)),
+            ]
+        )
+        try:
+            pipeline.fit(x_train, y_train)
+            predicted_residual = pd.Series(pipeline.predict(x_validation), index=y_validation.index)
+            y_pred = final_residual_prediction(
+                validation_model[BASELINE_PREDICTION_COLUMN],
+                predicted_residual,
+            )
+            row = evaluate_predictions(
+                model_name=f"residual_{spec.name}",
+                validation_season=validation_season,
+                y_true=y_validation,
+                y_pred=y_pred,
+                positions=(
+                    validation_model[POSITION_COLUMN]
+                    if POSITION_COLUMN in validation_model.columns
+                    else None
+                ),
+            )
+            row["n_train"] = len(train_model)
+            rows.append(row)
+        except Exception as exc:  # noqa: BLE001 - model libraries raise varied exception types.
+            LOGGER.warning(
+                "Skipping residual model %s for %s: %s",
+                spec.name,
+                validation_season,
+                exc,
+            )
     return rows
 
 
@@ -492,6 +648,7 @@ def evaluate_two_stage_model(
         validation_season=validation_season,
         y_true=y_validation,
         y_pred=y_pred,
+        positions=validation_model[POSITION_COLUMN] if POSITION_COLUMN in validation_model.columns else None,
     )
     row["n_train"] = len(train_model)
     return row
@@ -664,6 +821,7 @@ def run_position_model_backtest(
     validate_dataset(frame)
     data = frame.copy()
     data["season"] = data["season"].astype(str)
+    data = add_baseline_prediction_features(data)
     data = data.sort_values(["season", "gw"]).reset_index(drop=True)
 
     rows: list[dict[str, Any]] = []
@@ -692,6 +850,7 @@ def run_backtest(
     frame: pd.DataFrame,
     *,
     model_specs: list[SklearnModelSpec] | None = None,
+    residual_specs: list[SklearnModelSpec] | None = None,
 ) -> pd.DataFrame:
     """Run rolling-origin validation by season."""
     validate_dataset(frame)
@@ -701,8 +860,10 @@ def run_backtest(
         data = add_next_minutes_60_target(data)
     else:
         LOGGER.warning("Skipping two-stage model: minutes column is missing.")
+    data = add_baseline_prediction_features(data)
     data = data.sort_values(["season", "gw"]).reset_index(drop=True)
     specs = sklearn_model_specs() if model_specs is None else model_specs
+    residual_specs = residual_model_specs() if residual_specs is None else residual_specs
 
     rows: list[dict[str, Any]] = []
     for season in validation_seasons(data):
@@ -724,6 +885,15 @@ def run_backtest(
                 models=specs,
             )
         )
+        if residual_specs:
+            rows.extend(
+                evaluate_residual_models(
+                    train,
+                    validation,
+                    validation_season=season,
+                    models=residual_specs,
+                )
+            )
         if NEXT_60_COLUMN in data.columns:
             try:
                 rows.append(
@@ -748,16 +918,59 @@ def write_results(results: pd.DataFrame, path: Path = DEFAULT_RESULTS_PATH) -> N
 
 def write_markdown_summary(results: pd.DataFrame, path: Path = DEFAULT_SUMMARY_PATH) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    overall_ranking_columns = [
+        column
+        for column in results.columns
+        if column.startswith("top_")
+        and (column.endswith("_precision") or column.endswith("_avg_actual_points"))
+    ]
+    aggregate_spec = {
+        "seasons": ("validation_season", "nunique"),
+        "mean_mae": ("mae", "mean"),
+        "mean_rmse": ("rmse", "mean"),
+        "mean_spearman": ("spearman", "mean"),
+    }
+    aggregate_spec.update(
+        {
+            f"mean_{column}": (column, "mean")
+            for column in overall_ranking_columns
+            if column in results.columns
+        }
+    )
     aggregate = (
         results.groupby("model", as_index=False)
-        .agg(
-            seasons=("validation_season", "nunique"),
-            mean_mae=("mae", "mean"),
-            mean_rmse=("rmse", "mean"),
-            mean_spearman=("spearman", "mean"),
-        )
+        .agg(**aggregate_spec)
         .sort_values(["mean_mae", "model"])
     )
+    position_rows = []
+    for position in RANKING_POSITIONS:
+        position_columns = [
+            column
+            for column in results.columns
+            if column.startswith(f"{position}_top_")
+            and (column.endswith("_precision") or column.endswith("_avg_actual_points"))
+        ]
+        if not position_columns:
+            continue
+        position_aggregate = (
+            results.groupby("model", as_index=False)[position_columns]
+            .mean()
+            .assign(position=position)
+        )
+        position_aggregate = position_aggregate.rename(
+            columns={column: column.removeprefix(f"{position}_") for column in position_columns}
+        )
+        position_rows.append(position_aggregate)
+    ranking_by_position = (
+        pd.concat(position_rows, ignore_index=True)
+        if position_rows
+        else pd.DataFrame(columns=["model", "position"])
+    )
+    if not ranking_by_position.empty:
+        ranking_by_position = ranking_by_position[
+            ["model", "position"]
+            + [column for column in ranking_by_position.columns if column not in {"model", "position"}]
+        ].sort_values(["position", "top_10_avg_actual_points", "model"], ascending=[True, False, True])
     direct_results = results.loc[results["model"] != TWO_STAGE_MODEL_NAME]
     two_stage_results = results.loc[results["model"] == TWO_STAGE_MODEL_NAME]
     comparison_lines = ["Two-stage model was not evaluated."]
@@ -806,6 +1019,10 @@ def write_markdown_summary(results: pd.DataFrame, path: Path = DEFAULT_SUMMARY_P
         "## Two-Stage Versus Best Direct Model",
         "",
         *comparison_lines,
+        "",
+        "## Ranking Metrics By Position",
+        "",
+        markdown_table(ranking_by_position),
         "",
         "## Results By Validation Season",
         "",
@@ -857,8 +1074,11 @@ def write_position_markdown_summary(
             mean_rmse=("rmse", "mean"),
             mean_spearman=("spearman", "mean"),
             mean_top_10_precision=("top_10_precision", "mean"),
+            mean_top_10_avg_actual_points=("top_10_avg_actual_points", "mean"),
             mean_top_20_precision=("top_20_precision", "mean"),
+            mean_top_20_avg_actual_points=("top_20_avg_actual_points", "mean"),
             mean_top_50_precision=("top_50_precision", "mean"),
+            mean_top_50_avg_actual_points=("top_50_avg_actual_points", "mean"),
         )
         .sort_values(["mean_mae", "strategy"])
     )
@@ -870,8 +1090,11 @@ def write_position_markdown_summary(
             mean_rmse=("rmse", "mean"),
             mean_spearman=("spearman", "mean"),
             mean_top_10_precision=("top_10_precision", "mean"),
+            mean_top_10_avg_actual_points=("top_10_avg_actual_points", "mean"),
             mean_top_20_precision=("top_20_precision", "mean"),
+            mean_top_20_avg_actual_points=("top_20_avg_actual_points", "mean"),
             mean_top_50_precision=("top_50_precision", "mean"),
+            mean_top_50_avg_actual_points=("top_50_avg_actual_points", "mean"),
         )
         .sort_values(["position", "mean_mae", "strategy"])
     )
