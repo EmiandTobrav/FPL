@@ -1,0 +1,23 @@
+.pytest_cache/
+.ruff_cache/
+pytest-cache-files-*/
+tests/.tmp_download_vaastav/
+tests/.tmp_backtest/
+tests/.tmp_build_dataset/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Generated data and model outputs
+data/raw/
+data/interim/
+data/processed/
+data/predictions/
+catboost_info/
+
+# Generated report assets; keep lightweight report tables/summaries trackable.
+reports/figures/
