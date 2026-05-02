@@ -54,6 +54,13 @@ POSITION_STRATEGY_MODEL_NAME = "Ridge"
 MIN_POSITION_TRAIN_ROWS = 50
 TOP_K_VALUES = (10, 20, 50)
 RANKING_POSITIONS = ("GK", "DEF", "MID", "FWD")
+POSITION_LABEL_MAP = {
+    "GKP": "GK",
+    "GK": "GK",
+    "DEF": "DEF",
+    "MID": "MID",
+    "FWD": "FWD",
+}
 RESIDUAL_MODEL_NAMES = ("Ridge", "ElasticNet", "XGBoost", "LightGBM", "CatBoost")
 BASELINE_FEATURE_MODELS = {
     "pred_previous_gameweek_points": "previous_gameweek_points",
@@ -146,8 +153,61 @@ def split_train_validation(frame: pd.DataFrame, validation_season: str) -> tuple
 
 
 def normalized_position_labels(positions: pd.Series) -> pd.Series:
-    """Normalize historical FPL position labels for metric grouping."""
-    return positions.astype(str).replace({"GKP": "GK"})
+    """Normalize historical FPL position labels and mark unknown labels missing."""
+    normalized = positions.astype("string").str.upper().map(POSITION_LABEL_MAP)
+    return normalized.astype("object").where(normalized.notna(), pd.NA)
+
+
+def position_diagnostics(frame: pd.DataFrame) -> dict[str, Any]:
+    """Summarize raw position data quality before normalization."""
+    if POSITION_COLUMN not in frame.columns:
+        return {
+            "position_column_present": False,
+            "unknown_positions": {},
+            "seasons_without_position_data": [],
+            "missing_position_rows_by_season": {},
+        }
+
+    positions = frame[POSITION_COLUMN].astype("string").str.upper()
+    missing_mask = positions.isna()
+    unknown_mask = positions.notna() & ~positions.isin(POSITION_LABEL_MAP)
+    normalized = normalized_position_labels(frame[POSITION_COLUMN])
+    seasons = frame["season"].astype(str) if "season" in frame.columns else pd.Series("all", index=frame.index)
+    seasons_without_position_data = sorted(
+        seasons.loc[normalized.notna()].unique()
+    )
+    all_seasons = sorted(seasons.dropna().astype(str).unique())
+    missing_by_season = (
+        frame.loc[missing_mask | unknown_mask]
+        .assign(__season=seasons.loc[missing_mask | unknown_mask].astype(str))
+        .groupby("__season")
+        .size()
+        .to_dict()
+    )
+    return {
+        "position_column_present": True,
+        "unknown_positions": positions.loc[unknown_mask].value_counts().to_dict(),
+        "seasons_without_position_data": [
+            season for season in all_seasons if season not in seasons_without_position_data
+        ],
+        "missing_position_rows_by_season": missing_by_season,
+    }
+
+
+def normalize_position_column(frame: pd.DataFrame) -> pd.DataFrame:
+    """Normalize position labels consistently before modeling and reporting."""
+    if POSITION_COLUMN not in frame.columns:
+        return frame
+    data = frame.copy()
+    raw_positions = data[POSITION_COLUMN].astype("string").str.upper()
+    unknown_positions = sorted(raw_positions.loc[raw_positions.notna() & ~raw_positions.isin(POSITION_LABEL_MAP)].unique())
+    if unknown_positions:
+        LOGGER.warning(
+            "Excluding unknown position labels from position-aware outputs: %s",
+            ", ".join(unknown_positions),
+        )
+    data[POSITION_COLUMN] = normalized_position_labels(data[POSITION_COLUMN])
+    return data
 
 
 def feature_columns(frame: pd.DataFrame) -> list[str]:
@@ -740,14 +800,18 @@ def evaluate_position_strategies(
         return []
 
     base_estimator = Ridge(alpha=1.0) if estimator is None else estimator
-    train_model = train.dropna(subset=[TARGET_COLUMN]).copy()
-    validation_model = validation.dropna(subset=[TARGET_COLUMN]).copy()
+    train_model = train.dropna(subset=[TARGET_COLUMN, POSITION_COLUMN]).copy()
+    validation_model = validation.dropna(subset=[TARGET_COLUMN, POSITION_COLUMN]).copy()
     if train_model.empty or validation_model.empty:
-        raise BacktestError(f"No train/validation rows with targets for season {validation_season}.")
+        LOGGER.warning(
+            "Skipping position strategies for %s because normalized position data is unavailable.",
+            validation_season,
+        )
+        return []
 
     predictions = pd.DataFrame(index=validation_model.index)
     predictions["actual"] = validation_model[TARGET_COLUMN]
-    predictions[POSITION_COLUMN] = validation_model[POSITION_COLUMN].astype(str)
+    predictions[POSITION_COLUMN] = validation_model[POSITION_COLUMN]
 
     predictions["global_model"] = fit_predict_direct_model(
         train_model,
@@ -821,6 +885,8 @@ def run_position_model_backtest(
     validate_dataset(frame)
     data = frame.copy()
     data["season"] = data["season"].astype(str)
+    diagnostics = {"position": position_diagnostics(data)}
+    data = normalize_position_column(data)
     data = add_baseline_prediction_features(data)
     data = data.sort_values(["season", "gw"]).reset_index(drop=True)
 
@@ -841,9 +907,11 @@ def run_position_model_backtest(
 
     if not rows:
         raise BacktestError("No position model comparison results were produced.")
-    return pd.DataFrame(rows).sort_values(
+    results = pd.DataFrame(rows).sort_values(
         ["validation_season", "strategy", "position"]
     ).reset_index(drop=True)
+    results.attrs["diagnostics"] = diagnostics
+    return results
 
 
 def run_backtest(
@@ -856,6 +924,8 @@ def run_backtest(
     validate_dataset(frame)
     data = frame.copy()
     data["season"] = data["season"].astype(str)
+    diagnostics: dict[str, Any] = {"position": position_diagnostics(data)}
+    data = normalize_position_column(data)
     if MINUTES_COLUMN in data.columns:
         data = add_next_minutes_60_target(data)
     else:
@@ -908,12 +978,63 @@ def run_backtest(
 
     if not rows:
         raise BacktestError("No backtest results were produced.")
-    return pd.DataFrame(rows).sort_values(["validation_season", "mae", "model"]).reset_index(drop=True)
+    results = pd.DataFrame(rows).sort_values(["validation_season", "mae", "model"]).reset_index(drop=True)
+    diagnostics["model_row_counts"] = results["model"].value_counts().sort_index().to_dict()
+    diagnostics["expected_direct_models"] = [spec.name for spec in specs]
+    diagnostics["expected_residual_models"] = [f"residual_{spec.name}" for spec in residual_specs]
+    results.attrs["diagnostics"] = diagnostics
+    return results
 
 
 def write_results(results: pd.DataFrame, path: Path = DEFAULT_RESULTS_PATH) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     results.to_csv(path, index=False)
+
+
+def diagnostics_markdown_lines(diagnostics: dict[str, Any]) -> list[str]:
+    if not diagnostics:
+        return ["## Diagnostics", "", "No diagnostics were attached to these results."]
+
+    lines = ["## Diagnostics", ""]
+    position = diagnostics.get("position", {})
+    if position:
+        if not position.get("position_column_present", False):
+            lines.append("- Position column was not present, so position-aware metrics were unavailable.")
+        else:
+            unknown_positions = position.get("unknown_positions", {})
+            if unknown_positions:
+                unknown_summary = ", ".join(
+                    f"{label} ({count})" for label, count in sorted(unknown_positions.items())
+                )
+                lines.append(f"- Unknown position labels were excluded from position-aware outputs: {unknown_summary}.")
+            else:
+                lines.append("- No unknown position labels were found after applying position normalization.")
+
+            missing_seasons = position.get("seasons_without_position_data", [])
+            if missing_seasons:
+                lines.append(
+                    "- These seasons have no normalized position data, so their position-specific ranking "
+                    f"metrics are blank or absent: {', '.join(missing_seasons)}."
+                )
+            missing_counts = position.get("missing_position_rows_by_season", {})
+            if missing_counts:
+                count_summary = ", ".join(
+                    f"{season}: {count}" for season, count in sorted(missing_counts.items())
+                )
+                lines.append(f"- Missing or excluded position rows by season: {count_summary}.")
+
+    model_row_counts = diagnostics.get("model_row_counts", {})
+    if model_row_counts:
+        lines.append(
+            "- Report CSV files are written with overwrite semantics, not append semantics; model rows "
+            "shown below were produced by the current backtest result frame."
+        )
+        count_summary = ", ".join(
+            f"{model}: {count}" for model, count in sorted(model_row_counts.items())
+        )
+        lines.append(f"- Model row counts in this result: {count_summary}.")
+    lines.append("")
+    return lines
 
 
 def write_markdown_summary(results: pd.DataFrame, path: Path = DEFAULT_SUMMARY_PATH) -> None:
@@ -1024,6 +1145,8 @@ def write_markdown_summary(results: pd.DataFrame, path: Path = DEFAULT_SUMMARY_P
         "",
         markdown_table(ranking_by_position),
         "",
+        *diagnostics_markdown_lines(results.attrs.get("diagnostics", {})),
+        "",
         "## Results By Validation Season",
         "",
         markdown_table(results),
@@ -1110,6 +1233,8 @@ def write_position_markdown_summary(
         "## By Position",
         "",
         markdown_table(by_position),
+        "",
+        *diagnostics_markdown_lines(results.attrs.get("diagnostics", {})),
         "",
         "## By Validation Season And Position",
         "",

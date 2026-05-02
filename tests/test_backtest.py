@@ -14,6 +14,8 @@ from evaluation.backtest import (
     add_residual_target,
     final_residual_prediction,
     minutes_adjusted_baseline_predictions,
+    normalize_position_column,
+    position_diagnostics,
     run_position_model_backtest,
     run_backtest,
     write_position_markdown_summary,
@@ -179,6 +181,53 @@ def test_baseline_prediction_features_are_row_local() -> None:
         check_names=False,
     )
     assert list(full_frame_features.loc[0, feature_columns]) == [4.0, 5.0, 6.0, 3.0]
+
+
+def test_position_normalization_maps_known_labels_and_excludes_unknowns() -> None:
+    frame = pd.DataFrame(
+        {
+            "season": ["2023-24", "2023-24", "2023-24", "2023-24", "2023-24"],
+            "gw": [1, 1, 1, 1, 1],
+            "position": ["GKP", "GK", "DEF", "MID", "AM"],
+            "next_gw_points": [1, 2, 3, 4, 5],
+        }
+    )
+
+    normalized = normalize_position_column(frame)
+    diagnostics = position_diagnostics(frame)
+
+    assert list(normalized["position"][:4]) == ["GK", "GK", "DEF", "MID"]
+    assert pd.isna(normalized.loc[4, "position"])
+    assert diagnostics["unknown_positions"] == {"AM": 1}
+
+
+def test_write_results_overwrites_stale_model_rows() -> None:
+    scratch = Path("tests/.tmp_backtest")
+    shutil.rmtree(scratch, ignore_errors=True)
+    try:
+        results_path = scratch / "model_results.csv"
+        stale = pd.DataFrame(
+            {
+                "validation_season": ["2023-24"],
+                "model": ["stale_model"],
+                "mae": [99.0],
+            }
+        )
+        fresh = pd.DataFrame(
+            {
+                "validation_season": ["2023-24"],
+                "model": ["fresh_model"],
+                "mae": [1.0],
+            }
+        )
+
+        write_results(stale, results_path)
+        write_results(fresh, results_path)
+
+        saved = pd.read_csv(results_path)
+        assert list(saved["model"]) == ["fresh_model"]
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
 
 
 def test_position_model_backtest_does_not_fit_on_validation_targets() -> None:
