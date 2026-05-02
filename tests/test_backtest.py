@@ -9,6 +9,7 @@ from sklearn.dummy import DummyRegressor
 
 from evaluation.backtest import (
     SklearnModelSpec,
+    add_position_interactions,
     run_position_model_backtest,
     run_backtest,
     write_position_markdown_summary,
@@ -118,6 +119,60 @@ def test_position_model_backtest_does_not_fit_on_validation_targets() -> None:
     )
     assert RecordingRegressor.fit_targets
     assert all(max(targets) < 999 for targets in RecordingRegressor.fit_targets if targets)
+
+
+def test_position_interactions_are_based_on_training_positions_only() -> None:
+    train = modeling_frame().loc[lambda frame: frame["season"] == "2022-23"].copy()
+    validation = pd.DataFrame(
+        {
+            "position": ["GK"],
+            "points_last_1": [10],
+            "points_mean_last_3": [10],
+            "points_mean_last_5": [10],
+            "minutes_mean_last_5": [90],
+        }
+    )
+    columns = ["position", "points_last_1", "points_mean_last_3"]
+    train_positions = sorted(train["position"].dropna().astype(str).unique())
+
+    _, train_columns = add_position_interactions(train, columns, positions=train_positions)
+    validation_with_interactions, validation_columns = add_position_interactions(
+        validation,
+        columns,
+        positions=train_positions,
+    )
+
+    assert train_columns == validation_columns
+    assert "points_last_1__position_GK" not in validation_columns
+    assert validation_with_interactions.filter(like="__position_").eq(0).all().all()
+
+
+def test_position_wise_models_fall_back_to_global_model_when_training_rows_are_low() -> None:
+    results = run_position_model_backtest(
+        modeling_frame(),
+        estimator=DummyRegressor(strategy="mean"),
+        min_position_train_rows=999,
+    )
+
+    metric_columns = [
+        "mae",
+        "rmse",
+        "spearman",
+        "top_10_precision",
+        "top_20_precision",
+        "top_50_precision",
+    ]
+    global_rows = results.loc[results["strategy"] == "global_model"].set_index(
+        ["validation_season", "position"]
+    )
+    fallback_rows = results.loc[results["strategy"] == "position_wise_models"].set_index(
+        ["validation_season", "position"]
+    )
+
+    pd.testing.assert_frame_equal(
+        global_rows[metric_columns].sort_index(),
+        fallback_rows[metric_columns].sort_index(),
+    )
 
 
 def test_write_position_model_reports() -> None:

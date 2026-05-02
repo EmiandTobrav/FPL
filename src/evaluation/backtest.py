@@ -497,24 +497,34 @@ def evaluate_two_stage_model(
     return row
 
 
-def add_position_interactions(frame: pd.DataFrame, columns: list[str]) -> tuple[pd.DataFrame, list[str]]:
+def add_position_interactions(
+    frame: pd.DataFrame,
+    columns: list[str],
+    *,
+    positions: list[str] | None = None,
+) -> tuple[pd.DataFrame, list[str]]:
     if POSITION_COLUMN not in frame.columns:
         raise BacktestError("Position interactions require a position column.")
 
     data = frame.copy()
-    numeric_columns = [
-        column
-        for column in columns
-        if column != POSITION_COLUMN
-        and (pd.api.types.is_numeric_dtype(data[column]) or pd.api.types.is_bool_dtype(data[column]))
-    ]
-    positions = sorted(data[POSITION_COLUMN].dropna().astype(str).unique())
+    numeric_columns = []
+    for column in columns:
+        if column == POSITION_COLUMN or column not in data.columns:
+            continue
+        if pd.api.types.is_numeric_dtype(data[column]) or pd.api.types.is_bool_dtype(data[column]):
+            numeric_columns.append(column)
+            continue
+        if pd.to_numeric(data[column], errors="coerce").notna().any():
+            numeric_columns.append(column)
+    if positions is None:
+        positions = sorted(data[POSITION_COLUMN].dropna().astype(str).unique())
     interaction_columns: list[str] = []
     for position in positions:
         mask = data[POSITION_COLUMN].astype(str) == position
         for column in numeric_columns:
             interaction_column = f"{column}__position_{position}"
-            data[interaction_column] = data[column].where(mask, 0)
+            numeric_values = pd.to_numeric(data[column], errors="coerce")
+            data[interaction_column] = numeric_values.where(mask, 0)
             interaction_columns.append(interaction_column)
     return data, columns + interaction_columns
 
@@ -533,10 +543,19 @@ def fit_predict_direct_model(
     train_features = train.copy()
     validation_features = validation.copy()
     if add_interactions:
-        combined = pd.concat([train_features, validation_features], axis=0)
-        combined, columns = add_position_interactions(combined, columns)
-        train_features = combined.loc[train_features.index]
-        validation_features = combined.loc[validation_features.index]
+        base_columns = columns.copy()
+        train_positions = sorted(train_features[POSITION_COLUMN].dropna().astype(str).unique())
+        train_features, columns = add_position_interactions(
+            train_features,
+            base_columns,
+            positions=train_positions,
+        )
+        validation_features, validation_columns = add_position_interactions(
+            validation_features,
+            base_columns,
+            positions=train_positions,
+        )
+        columns = validation_columns
 
     pipeline = Pipeline(
         [
