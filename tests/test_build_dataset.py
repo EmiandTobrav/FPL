@@ -4,6 +4,7 @@ import shutil
 import pandas as pd
 
 from data.build_dataset import build_modeling_dataset, dataset_summary, read_dataset, write_dataset
+from evaluation.backtest import STABLE_FEATURE_COLUMNS
 
 
 def source_frame() -> pd.DataFrame:
@@ -22,6 +23,40 @@ def source_frame() -> pd.DataFrame:
                     "bps": gw * 5,
                 }
             )
+    return pd.DataFrame(rows)
+
+
+def team_source_frame() -> pd.DataFrame:
+    rows = []
+    fixtures = [
+        ("2022-23", 1, "A", "B", True, 2, 0),
+        ("2022-23", 1, "B", "A", False, 2, 0),
+        ("2022-23", 2, "A", "B", False, 1, 1),
+        ("2022-23", 2, "B", "A", True, 1, 1),
+        ("2022-23", 3, "A", "B", True, 0, 1),
+        ("2022-23", 3, "B", "A", False, 0, 1),
+    ]
+    element = 1
+    for season, gw, team, opponent, was_home, home_score, away_score in fixtures:
+        for _ in range(2):
+            rows.append(
+                {
+                    "element": element,
+                    "season": season,
+                    "gw": gw,
+                    "team": team,
+                    "opponent_team": opponent,
+                    "was_home": was_home,
+                    "team_h_score": home_score,
+                    "team_a_score": away_score,
+                    "total_points": gw + element,
+                    "minutes": 90,
+                    "starts": 1,
+                    "bonus": 0,
+                    "bps": 10,
+                }
+            )
+            element += 1
     return pd.DataFrame(rows)
 
 
@@ -49,6 +84,24 @@ def test_build_dataset_contains_features_and_targets() -> None:
     assert "minutes_mean_last_5" in result.columns
     assert "next_gw_points" in result.columns
     assert "next_3_gw_points" in result.columns
+
+
+def test_build_dataset_contains_team_strength_features_when_source_columns_exist() -> None:
+    result = build_modeling_dataset(team_source_frame())
+
+    expected = {
+        "team_elo_pre_gw",
+        "opponent_elo_pre_gw",
+        "elo_difference",
+        "home_adjusted_elo_difference",
+    }
+    assert expected.issubset(result.columns)
+    assert result.loc[result["gw"] == 1, "team_elo_pre_gw"].eq(1500.0).all()
+
+
+def test_raw_team_columns_are_not_model_feature_columns() -> None:
+    assert "team" not in STABLE_FEATURE_COLUMNS
+    assert "opponent_team" not in STABLE_FEATURE_COLUMNS
 
 
 def test_final_gw_each_season_has_missing_next_gw_points() -> None:

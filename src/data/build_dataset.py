@@ -13,10 +13,12 @@ from features.rolling_features import (
     player_key_column,
 )
 from features.target_builder import build_targets
+from features.team_strength import TeamStrengthError, build_team_strength_features
 
 
 DEFAULT_INPUT_PATH = Path("data/interim/all_merged_gw.parquet")
 DEFAULT_OUTPUT_PATH = Path("data/processed/modeling_dataset.parquet")
+DEFAULT_TEAM_PRIORS_PATH = Path("data/manual/team_season_priors.csv")
 REQUIRED_COLUMNS = ("season", "gw", "total_points", "minutes")
 
 
@@ -55,6 +57,7 @@ def build_modeling_dataset(
     *,
     target_horizon: int = 3,
     fail_on_missing_required_columns: bool = True,
+    team_priors_path: Path = DEFAULT_TEAM_PRIORS_PATH,
 ) -> pd.DataFrame:
     """Apply leakage-safe rolling features and future point targets."""
     missing = validate_required_columns(
@@ -65,6 +68,15 @@ def build_modeling_dataset(
         raise DatasetBuildError(f"Cannot build dataset with missing required columns: {missing}")
 
     features = build_rolling_features(frame)
+    try:
+        team_priors = pd.read_csv(team_priors_path) if team_priors_path.exists() else None
+        team_strength = build_team_strength_features(frame, team_season_priors=team_priors)
+        features = pd.concat([features.reset_index(drop=True), team_strength.reset_index(drop=True)], axis=1)
+    except TeamStrengthError:
+        # Team-strength features require reliable team/opponent/home/score source
+        # columns. Minimal test fixtures and older raw extracts may not include
+        # them, so dataset building falls back to player-only features.
+        pass
     return build_targets(features, target_horizon=target_horizon)
 
 
@@ -96,6 +108,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT_PATH)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_PATH)
+    parser.add_argument("--team-priors", type=Path, default=DEFAULT_TEAM_PRIORS_PATH)
     parser.add_argument("--target-horizon", type=int, default=3)
     parser.add_argument(
         "--fail-on-missing-required-columns",
@@ -113,6 +126,7 @@ def main() -> None:
         source,
         target_horizon=args.target_horizon,
         fail_on_missing_required_columns=args.fail_on_missing_required_columns,
+        team_priors_path=args.team_priors,
     )
     write_dataset(modeling_dataset, args.output)
     print(dataset_summary(modeling_dataset, target_horizon=args.target_horizon))
