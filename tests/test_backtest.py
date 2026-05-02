@@ -8,6 +8,8 @@ from sklearn.base import BaseEstimator, RegressorMixin
 from sklearn.dummy import DummyRegressor
 
 from evaluation.backtest import (
+    DEFAULT_SUPPORTED_RESULTS_PATH,
+    DEFAULT_SUPPORTED_SUMMARY_PATH,
     SklearnModelSpec,
     add_baseline_prediction_features,
     add_position_interactions,
@@ -18,8 +20,10 @@ from evaluation.backtest import (
     position_diagnostics,
     run_position_model_backtest,
     run_backtest,
+    season_filtered_frame,
     write_position_markdown_summary,
     write_position_results,
+    write_supported_season_filter_report,
     write_markdown_summary,
     write_results,
 )
@@ -55,6 +59,34 @@ def modeling_frame() -> pd.DataFrame:
                         "points_mean_last_3": points - 1 if gw > 1 else pd.NA,
                         "points_mean_last_5": points - 1 if gw > 1 else pd.NA,
                         "minutes_mean_last_5": 90,
+                        "next_gw_points": points + 1 if gw < 4 else pd.NA,
+                    }
+                )
+    return pd.DataFrame(rows)
+
+
+def three_season_modeling_frame() -> pd.DataFrame:
+    rows = []
+    for season, offset in [("2020-21", 0), ("2021-22", 100), ("2022-23", 200)]:
+        for element, position in [(1, "MID"), (2, "FWD")]:
+            for gw in [1, 2, 3, 4]:
+                points = offset + element + gw
+                rows.append(
+                    {
+                        "element": element,
+                        "season": season,
+                        "gw": gw,
+                        "position": position,
+                        "total_points": points,
+                        "minutes": 90,
+                        "points_last_1": points - 1 if gw > 1 else pd.NA,
+                        "points_mean_last_3": points - 1 if gw > 1 else pd.NA,
+                        "points_mean_last_5": points - 1 if gw > 1 else pd.NA,
+                        "minutes_mean_last_5": 90,
+                        "team_elo_pre_gw": 1500.0,
+                        "opponent_elo_pre_gw": 1500.0,
+                        "elo_difference": 0.0,
+                        "home_adjusted_elo_difference": 50.0,
                         "next_gw_points": points + 1 if gw < 4 else pd.NA,
                     }
                 )
@@ -113,6 +145,99 @@ def test_backtest_module_has_command_line_help() -> None:
     )
 
     assert "--input" in completed.stdout
+    assert "--min-season" in completed.stdout
+
+
+def test_min_season_filters_train_and_validation_data() -> None:
+    results = run_backtest(
+        three_season_modeling_frame(),
+        model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+        residual_specs=[],
+        min_season="2021-22",
+    )
+
+    assert set(results["validation_season"]) == {"2022-23"}
+    dummy_row = results.loc[results["model"] == "DummyMean"].iloc[0]
+    assert dummy_row["n_train"] == 6
+    assert dummy_row["n_validation"] == 6
+    assert results.attrs["diagnostics"]["season_filter"]["included_seasons"] == [
+        "2021-22",
+        "2022-23",
+    ]
+    assert results.attrs["diagnostics"]["season_filter"]["excluded_seasons"] == ["2020-21"]
+
+
+def test_default_backtest_still_uses_full_available_dataset() -> None:
+    results = run_backtest(
+        three_season_modeling_frame(),
+        model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+        residual_specs=[],
+    )
+
+    assert set(results["validation_season"]) == {"2021-22", "2022-23"}
+    assert "season_filter" not in results.attrs["diagnostics"]
+
+
+def test_min_season_does_not_leak_future_validation_seasons_into_training() -> None:
+    data = three_season_modeling_frame()
+    data.loc[data["season"] == "2022-23", "next_gw_points"] = 999
+    RecordingRegressor.fit_targets = []
+
+    run_backtest(
+        data,
+        model_specs=[SklearnModelSpec("RecordingRegressor", RecordingRegressor())],
+        residual_specs=[],
+        min_season="2021-22",
+    )
+
+    assert RecordingRegressor.fit_targets
+    assert all(max(targets) < 999 for targets in RecordingRegressor.fit_targets if targets)
+
+
+def test_filtered_reports_are_written_to_separate_files() -> None:
+    scratch = Path("tests/.tmp_backtest")
+    shutil.rmtree(scratch, ignore_errors=True)
+    try:
+        data = three_season_modeling_frame()
+        full_results = run_backtest(
+            data,
+            model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+            residual_specs=[],
+        )
+        filtered_results = run_backtest(
+            data,
+            model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+            residual_specs=[],
+            min_season="2021-22",
+        )
+        filtered_path = scratch / DEFAULT_SUPPORTED_RESULTS_PATH.name
+        filtered_summary_path = scratch / DEFAULT_SUPPORTED_SUMMARY_PATH.name
+        report_path = scratch / "supported_season_filter_report.md"
+
+        write_results(filtered_results, filtered_path)
+        write_markdown_summary(filtered_results, filtered_summary_path)
+        write_supported_season_filter_report(
+            source=data,
+            full_results=full_results,
+            filtered_results=filtered_results,
+            full_position_results=None,
+            filtered_position_results=None,
+            min_season="2021-22",
+            path=report_path,
+        )
+
+        assert filtered_path.exists()
+        assert filtered_summary_path.exists()
+        assert report_path.exists()
+        assert "Supported-Season Filter Report" in report_path.read_text(encoding="utf-8")
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_season_filtered_frame_keeps_only_supported_seasons() -> None:
+    filtered = season_filtered_frame(three_season_modeling_frame(), "2021-22")
+
+    assert sorted(filtered["season"].unique()) == ["2021-22", "2022-23"]
 
 
 def test_residual_target_is_actual_minus_minutes_adjusted_baseline() -> None:

@@ -3,12 +3,17 @@ import pytest
 
 from evaluation.backtest import STABLE_FEATURE_COLUMNS
 from features.team_strength import (
+    OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
+    OPPONENT_TEAM_NAME_NORMALIZED_COLUMN,
+    TEAM_ID_NORMALIZED_COLUMN,
+    TEAM_NAME_NORMALIZED_COLUMN,
     TeamIdentifierColumns,
     TeamStrengthError,
     add_elo_features,
     create_team_gameweek_table,
     detect_team_identifier_columns,
     initial_team_elos,
+    normalize_team_identifiers,
     normalize_position_label,
     normalize_team_identifier,
 )
@@ -52,14 +57,14 @@ def test_team_gameweek_table_has_expected_columns_when_source_columns_exist() ->
     assert list(table.columns) == [
         "season",
         "gw",
-        "team",
-        "opponent_team",
+        "team_id_normalized",
+        "opponent_team_id_normalized",
         "was_home",
         "goals_scored",
         "goals_conceded",
     ]
-    home = table.loc[table["team"] == "1"].iloc[0]
-    away = table.loc[table["team"] == "2"].iloc[0]
+    home = table.loc[table["team_id_normalized"] == "1"].iloc[0]
+    away = table.loc[table["team_id_normalized"] == "2"].iloc[0]
     assert home["goals_scored"] == 3
     assert home["goals_conceded"] == 1
     assert away["goals_scored"] == 1
@@ -70,7 +75,7 @@ def test_duplicate_player_rows_do_not_create_duplicate_team_gameweek_rows() -> N
     table = create_team_gameweek_table(player_gameweek_frame())
 
     assert len(table) == 2
-    assert table[["season", "gw", "team"]].drop_duplicates().shape[0] == 2
+    assert table[["season", "gw", "team_id_normalized"]].drop_duplicates().shape[0] == 2
 
 
 def test_season_and_gameweek_are_preserved() -> None:
@@ -98,6 +103,77 @@ def test_missing_team_identifier_fails_clearly() -> None:
         create_team_gameweek_table(pd.DataFrame({"season": ["2023-24"], "gw": [1]}))
 
 
+def mixed_name_code_frame() -> pd.DataFrame:
+    rows = []
+    fixtures = [
+        ("2023-24", 1, 1, "Arsenal", 2, True, 2, 1),
+        ("2023-24", 1, 1, "Chelsea", 1, False, 2, 1),
+        ("2023-24", 2, 2, "Arsenal", 2, False, 0, 0),
+        ("2023-24", 2, 2, "Chelsea", 1, True, 0, 0),
+    ]
+    element = 1
+    for season, gw, fixture, team, opponent, was_home, home_score, away_score in fixtures:
+        for _ in range(2):
+            rows.append(
+                {
+                    "season": season,
+                    "gw": gw,
+                    "fixture": fixture,
+                    "element": element,
+                    "team": team,
+                    "opponent_team": opponent,
+                    "was_home": was_home,
+                    "team_h_score": home_score,
+                    "team_a_score": away_score,
+                }
+            )
+            element += 1
+    return pd.DataFrame(rows)
+
+
+def test_team_and_opponent_identifiers_share_same_normalized_id_space() -> None:
+    normalized, diagnostics = normalize_team_identifiers(mixed_name_code_frame())
+
+    arsenal = normalized.loc[normalized["team"] == "Arsenal"].iloc[0]
+    chelsea = normalized.loc[normalized["team"] == "Chelsea"].iloc[0]
+
+    assert diagnostics.supported_seasons == ("2023-24",)
+    assert arsenal[TEAM_ID_NORMALIZED_COLUMN] == "1"
+    assert arsenal[OPPONENT_TEAM_ID_NORMALIZED_COLUMN] == "2"
+    assert arsenal[OPPONENT_TEAM_NAME_NORMALIZED_COLUMN] == "CHELSEA"
+    assert chelsea[TEAM_ID_NORMALIZED_COLUMN] == "2"
+    assert chelsea[OPPONENT_TEAM_ID_NORMALIZED_COLUMN] == "1"
+    assert chelsea[TEAM_NAME_NORMALIZED_COLUMN] == "CHELSEA"
+
+
+def test_mixed_identifier_player_rows_collapse_to_team_gameweek_rows() -> None:
+    table = create_team_gameweek_table(mixed_name_code_frame())
+
+    assert len(table) == 4
+    assert table[[TEAM_ID_NORMALIZED_COLUMN, OPPONENT_TEAM_ID_NORMALIZED_COLUMN]].drop_duplicates().shape[0] == 2
+
+
+def test_unsupported_seasons_are_handled_safely() -> None:
+    source = pd.DataFrame(
+        {
+            "season": ["2019-20", "2019-20"],
+            "gw": [1, 1],
+            "fixture": [1, 1],
+            "team": [pd.NA, pd.NA],
+            "opponent_team": [1, 2],
+            "was_home": [True, False],
+        }
+    )
+
+    normalized, diagnostics = normalize_team_identifiers(source)
+    table = create_team_gameweek_table(source)
+
+    assert diagnostics.supported_seasons == ()
+    assert "2019-20" in diagnostics.unsupported_season_reasons
+    assert normalized[TEAM_ID_NORMALIZED_COLUMN].isna().all()
+    assert table.empty
+
+
 def test_raw_team_columns_are_not_model_features() -> None:
     assert "team" not in STABLE_FEATURE_COLUMNS
     assert "opponent_team" not in STABLE_FEATURE_COLUMNS
@@ -108,8 +184,8 @@ def elo_source_frame() -> pd.DataFrame:
         {
             "season": ["2023-24", "2023-24", "2023-24", "2023-24", "2023-24"],
             "gw": [1, 1, 2, 2, 1],
-            "team": ["A", "B", "A", "B", "C"],
-            "opponent_team": ["B", "A", "B", "A", "D"],
+            "team_id_normalized": ["A", "B", "A", "B", "C"],
+            "opponent_team_id_normalized": ["B", "A", "B", "A", "D"],
             "was_home": [True, False, False, True, True],
             "goals_scored": [3, 1, 0, 0, 2],
             "goals_conceded": [1, 3, 0, 0, 2],
@@ -127,8 +203,12 @@ def test_elo_for_gameweek_does_not_include_same_gameweek_result() -> None:
 
 def test_elo_update_affects_next_gameweek_only() -> None:
     features = add_elo_features(elo_source_frame())
-    team_a_gw1 = features.loc[(features["team"] == "A") & (features["gw"] == 1)].iloc[0]
-    team_a_gw2 = features.loc[(features["team"] == "A") & (features["gw"] == 2)].iloc[0]
+    team_a_gw1 = features.loc[
+        (features[TEAM_ID_NORMALIZED_COLUMN] == "A") & (features["gw"] == 1)
+    ].iloc[0]
+    team_a_gw2 = features.loc[
+        (features[TEAM_ID_NORMALIZED_COLUMN] == "A") & (features["gw"] == 2)
+    ].iloc[0]
 
     assert team_a_gw1["pre_gw_team_elo"] == 1500.0
     assert team_a_gw2["pre_gw_team_elo"] == 1510.0
@@ -137,16 +217,23 @@ def test_elo_update_affects_next_gameweek_only() -> None:
 
 def test_home_adjusted_elo_difference_is_temporary() -> None:
     features = add_elo_features(elo_source_frame(), home_advantage=50)
-    home = features.loc[(features["team"] == "A") & (features["gw"] == 1)].iloc[0]
-    away = features.loc[(features["team"] == "B") & (features["gw"] == 1)].iloc[0]
+    home = features.loc[
+        (features[TEAM_ID_NORMALIZED_COLUMN] == "A") & (features["gw"] == 1)
+    ].iloc[0]
+    away = features.loc[
+        (features[TEAM_ID_NORMALIZED_COLUMN] == "B") & (features["gw"] == 1)
+    ].iloc[0]
 
     assert home["elo_difference"] == 0.0
     assert home["home_adjusted_elo_difference"] == 50.0
     assert away["elo_difference"] == 0.0
     assert away["home_adjusted_elo_difference"] == -50.0
-    assert features.loc[(features["team"] == "A") & (features["gw"] == 2)].iloc[0][
-        "pre_gw_team_elo"
-    ] == 1510.0
+    assert (
+        features.loc[
+            (features[TEAM_ID_NORMALIZED_COLUMN] == "A") & (features["gw"] == 2)
+        ].iloc[0]["pre_gw_team_elo"]
+        == 1510.0
+    )
 
 
 def test_elo_resets_at_season_boundaries() -> None:
@@ -157,8 +244,8 @@ def test_elo_resets_at_season_boundaries() -> None:
                 {
                     "season": ["2024-25"],
                     "gw": [1],
-                    "team": ["A"],
-                    "opponent_team": ["B"],
+                    "team_id_normalized": ["A"],
+                    "opponent_team_id_normalized": ["B"],
                     "was_home": [True],
                     "goals_scored": [0],
                     "goals_conceded": [1],
@@ -169,7 +256,9 @@ def test_elo_resets_at_season_boundaries() -> None:
     )
 
     features = add_elo_features(source)
-    new_season = features.loc[(features["season"] == "2024-25") & (features["team"] == "A")].iloc[0]
+    new_season = features.loc[
+        (features["season"] == "2024-25") & (features[TEAM_ID_NORMALIZED_COLUMN] == "A")
+    ].iloc[0]
 
     assert new_season["pre_gw_team_elo"] == 1500.0
     assert new_season["pre_gw_opponent_elo"] == 1500.0
@@ -181,8 +270,8 @@ def test_unknown_teams_fall_back_to_base_elo() -> None:
             {
                 "season": ["2023-24"],
                 "gw": [1],
-                "team": ["UNKNOWN"],
-                "opponent_team": ["ALSO_UNKNOWN"],
+                "team_id_normalized": ["UNKNOWN"],
+                "opponent_team_id_normalized": ["ALSO_UNKNOWN"],
                 "was_home": [True],
                 "goals_scored": [1],
                 "goals_conceded": [1],

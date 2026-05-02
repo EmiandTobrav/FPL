@@ -7,7 +7,7 @@ an intermediate table for rolling, pre-match team-strength features.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 import pandas as pd
@@ -18,10 +18,15 @@ GAMEWEEK_COLUMN = "gw"
 TEAM_COLUMN_CANDIDATES = ("team", "team_id", "squad", "club")
 OPPONENT_TEAM_COLUMN_CANDIDATES = ("opponent_team", "opp_team", "opponent_team_id")
 HOME_COLUMN_CANDIDATES = ("was_home", "is_home")
+FIXTURE_COLUMN = "fixture"
 HOME_SCORE_COLUMN = "team_h_score"
 AWAY_SCORE_COLUMN = "team_a_score"
 GOALS_SCORED_COLUMN = "goals_scored"
 GOALS_CONCEDED_COLUMN = "goals_conceded"
+TEAM_ID_NORMALIZED_COLUMN = "team_id_normalized"
+OPPONENT_TEAM_ID_NORMALIZED_COLUMN = "opponent_team_id_normalized"
+TEAM_NAME_NORMALIZED_COLUMN = "team_name_normalized"
+OPPONENT_TEAM_NAME_NORMALIZED_COLUMN = "opponent_team_name_normalized"
 DEFAULT_BASE_ELO = 1500.0
 DEFAULT_PROMOTED_ELO = 1450.0
 DEFAULT_K_FACTOR = 20.0
@@ -51,6 +56,23 @@ class TeamIdentifierColumns:
     was_home: str | None
 
 
+@dataclass(frozen=True)
+class TeamIdentifierDiagnostics:
+    total_rows: int
+    valid_team_id_rows: int
+    valid_opponent_id_rows: int
+    supported_seasons: tuple[str, ...]
+    unsupported_season_reasons: dict[str, str] = field(default_factory=dict)
+
+    @property
+    def valid_team_id_rate(self) -> float:
+        return self.valid_team_id_rows / self.total_rows if self.total_rows else 0.0
+
+    @property
+    def valid_opponent_id_rate(self) -> float:
+        return self.valid_opponent_id_rows / self.total_rows if self.total_rows else 0.0
+
+
 def normalize_position_label(value: Any) -> str | None:
     """Normalize known FPL position labels."""
     if pd.isna(value):
@@ -66,6 +88,20 @@ def normalize_team_identifier(value: Any) -> str | None:
         cleaned = value.strip()
         return cleaned.upper() if cleaned else None
     return str(value)
+
+
+def _looks_numeric_identifier(series: pd.Series) -> bool:
+    non_null = series.dropna()
+    if non_null.empty:
+        return False
+    return pd.to_numeric(non_null, errors="coerce").notna().all()
+
+
+def _looks_named_identifier(series: pd.Series) -> bool:
+    non_null = series.dropna()
+    if non_null.empty:
+        return False
+    return not _looks_numeric_identifier(non_null)
 
 
 def _first_existing_column(frame: pd.DataFrame, candidates: tuple[str, ...]) -> str | None:
@@ -84,6 +120,164 @@ def detect_team_identifier_columns(frame: pd.DataFrame) -> TeamIdentifierColumns
         opponent_team=_first_existing_column(frame, OPPONENT_TEAM_COLUMN_CANDIDATES),
         was_home=_first_existing_column(frame, HOME_COLUMN_CANDIDATES),
     )
+
+
+def _infer_team_code_mapping_from_fixtures(
+    season_frame: pd.DataFrame,
+    *,
+    team_column: str,
+    opponent_column: str,
+) -> tuple[dict[str, str], dict[str, str], str | None]:
+    if FIXTURE_COLUMN not in season_frame.columns:
+        return {}, {}, "fixture column is unavailable"
+
+    team_to_codes: dict[str, set[str]] = {}
+    invalid_fixture_count = 0
+    for _, fixture in season_frame.dropna(
+        subset=[team_column, opponent_column, FIXTURE_COLUMN],
+    ).groupby([GAMEWEEK_COLUMN, FIXTURE_COLUMN], sort=False):
+        team_to_opponents = {
+            normalize_team_identifier(team): {
+                normalize_team_identifier(opponent)
+                for opponent in team_rows[opponent_column].dropna()
+            }
+            for team, team_rows in fixture.groupby(team_column, sort=False)
+        }
+        team_to_opponents = {
+            team: opponents
+            for team, opponents in team_to_opponents.items()
+            if team is not None and len(opponents) == 1
+        }
+        if len(team_to_opponents) != 2:
+            invalid_fixture_count += 1
+            continue
+
+        teams = list(team_to_opponents)
+        first_team, second_team = teams[0], teams[1]
+        first_opponent_code = next(iter(team_to_opponents[first_team]))
+        second_opponent_code = next(iter(team_to_opponents[second_team]))
+        team_to_codes.setdefault(first_team, set()).add(second_opponent_code)
+        team_to_codes.setdefault(second_team, set()).add(first_opponent_code)
+
+    ambiguous = {team: codes for team, codes in team_to_codes.items() if len(codes) != 1}
+    if ambiguous:
+        return {}, {}, "team-name to numeric-code mapping is ambiguous within season"
+    name_to_id = {team: next(iter(codes)) for team, codes in team_to_codes.items()}
+    id_to_name = {team_id: team for team, team_id in name_to_id.items()}
+    if not name_to_id:
+        reason = "no paired fixture rows with two named teams and two opponent codes"
+        if invalid_fixture_count:
+            reason = f"{reason}; {invalid_fixture_count} fixtures were not inferable"
+        return {}, {}, reason
+    return name_to_id, id_to_name, None
+
+
+def normalize_team_identifiers(
+    frame: pd.DataFrame,
+) -> tuple[pd.DataFrame, TeamIdentifierDiagnostics]:
+    """Create consistent normalized team and opponent identifiers.
+
+    Modern Vaastav rows use team names in ``team`` and numeric FPL team IDs in
+    ``opponent_team``. For those seasons, each fixture contains rows for both
+    clubs, so the team's own numeric ID can be inferred from the opposing rows.
+    Seasons without team names remain unsupported for team-strength joins.
+    """
+    required = [SEASON_COLUMN, GAMEWEEK_COLUMN]
+    missing = [column for column in required if column not in frame.columns]
+    if missing:
+        raise TeamStrengthError(f"Missing required columns: {missing}")
+
+    identifiers = detect_team_identifier_columns(frame)
+    data = frame.copy()
+    data[TEAM_ID_NORMALIZED_COLUMN] = pd.NA
+    data[OPPONENT_TEAM_ID_NORMALIZED_COLUMN] = pd.NA
+    data[TEAM_NAME_NORMALIZED_COLUMN] = pd.NA
+    data[OPPONENT_TEAM_NAME_NORMALIZED_COLUMN] = pd.NA
+
+    unsupported: dict[str, str] = {}
+    supported: list[str] = []
+    if identifiers.opponent_team is None:
+        unsupported = {
+            str(season): "opponent team column is unavailable"
+            for season in sorted(data[SEASON_COLUMN].dropna().astype(str).unique())
+        }
+    else:
+        for season, season_frame in data.groupby(SEASON_COLUMN, sort=True):
+            season_key = str(season)
+            index = season_frame.index
+            team_values = season_frame[identifiers.team]
+            opponent_values = season_frame[identifiers.opponent_team]
+            team_is_numeric = _looks_numeric_identifier(team_values)
+            opponent_is_numeric = _looks_numeric_identifier(opponent_values)
+            team_is_named = _looks_named_identifier(team_values)
+            opponent_is_named = _looks_named_identifier(opponent_values)
+
+            if team_is_numeric and opponent_is_numeric:
+                data.loc[index, TEAM_ID_NORMALIZED_COLUMN] = team_values.map(
+                    normalize_team_identifier
+                )
+                data.loc[index, OPPONENT_TEAM_ID_NORMALIZED_COLUMN] = opponent_values.map(
+                    normalize_team_identifier
+                )
+                supported.append(season_key)
+                continue
+
+            if team_is_named and opponent_is_named:
+                data.loc[index, TEAM_ID_NORMALIZED_COLUMN] = team_values.map(
+                    normalize_team_identifier
+                )
+                data.loc[index, OPPONENT_TEAM_ID_NORMALIZED_COLUMN] = opponent_values.map(
+                    normalize_team_identifier
+                )
+                data.loc[index, TEAM_NAME_NORMALIZED_COLUMN] = team_values.map(
+                    normalize_team_identifier
+                )
+                data.loc[index, OPPONENT_TEAM_NAME_NORMALIZED_COLUMN] = opponent_values.map(
+                    normalize_team_identifier
+                )
+                supported.append(season_key)
+                continue
+
+            if team_is_named and opponent_is_numeric:
+                name_to_id, id_to_name, reason = _infer_team_code_mapping_from_fixtures(
+                    season_frame,
+                    team_column=identifiers.team,
+                    opponent_column=identifiers.opponent_team,
+                )
+                if reason is not None:
+                    unsupported[season_key] = reason
+                    continue
+                normalized_team_names = team_values.map(normalize_team_identifier)
+                normalized_opponents = opponent_values.map(normalize_team_identifier)
+                data.loc[index, TEAM_ID_NORMALIZED_COLUMN] = normalized_team_names.map(name_to_id)
+                data.loc[index, OPPONENT_TEAM_ID_NORMALIZED_COLUMN] = normalized_opponents
+                data.loc[index, TEAM_NAME_NORMALIZED_COLUMN] = normalized_team_names
+                data.loc[index, OPPONENT_TEAM_NAME_NORMALIZED_COLUMN] = normalized_opponents.map(
+                    id_to_name
+                )
+                if (
+                    data.loc[index, TEAM_ID_NORMALIZED_COLUMN].notna().all()
+                    and data.loc[index, OPPONENT_TEAM_ID_NORMALIZED_COLUMN].notna().all()
+                ):
+                    supported.append(season_key)
+                else:
+                    unsupported[season_key] = (
+                        "some rows could not be mapped from team names to numeric IDs"
+                    )
+                continue
+
+            unsupported[season_key] = (
+                "team/opponent identifier types are unsupported or team names are missing"
+            )
+
+    diagnostics = TeamIdentifierDiagnostics(
+        total_rows=len(data),
+        valid_team_id_rows=int(data[TEAM_ID_NORMALIZED_COLUMN].notna().sum()),
+        valid_opponent_id_rows=int(data[OPPONENT_TEAM_ID_NORMALIZED_COLUMN].notna().sum()),
+        supported_seasons=tuple(sorted(set(supported))),
+        unsupported_season_reasons=unsupported,
+    )
+    return data, diagnostics
 
 
 def _derive_goals(frame: pd.DataFrame, was_home_column: str | None) -> pd.DataFrame:
@@ -119,32 +313,39 @@ def create_team_gameweek_table(frame: pd.DataFrame) -> pd.DataFrame:
         raise TeamStrengthError(f"Missing required columns: {missing}")
 
     identifiers = detect_team_identifier_columns(frame)
-    data = _derive_goals(frame, identifiers.was_home)
+    normalized, _ = normalize_team_identifiers(frame)
+    data = _derive_goals(normalized, identifiers.was_home)
     output = pd.DataFrame(
         {
             SEASON_COLUMN: data[SEASON_COLUMN],
             GAMEWEEK_COLUMN: data[GAMEWEEK_COLUMN],
-            "team": data[identifiers.team].map(normalize_team_identifier),
+            TEAM_ID_NORMALIZED_COLUMN: data[TEAM_ID_NORMALIZED_COLUMN],
+            OPPONENT_TEAM_ID_NORMALIZED_COLUMN: data[OPPONENT_TEAM_ID_NORMALIZED_COLUMN],
         }
     )
-    if identifiers.opponent_team is not None:
-        output["opponent_team"] = data[identifiers.opponent_team].map(normalize_team_identifier)
+    if data[TEAM_NAME_NORMALIZED_COLUMN].notna().any():
+        output[TEAM_NAME_NORMALIZED_COLUMN] = data[TEAM_NAME_NORMALIZED_COLUMN]
+    if data[OPPONENT_TEAM_NAME_NORMALIZED_COLUMN].notna().any():
+        output[OPPONENT_TEAM_NAME_NORMALIZED_COLUMN] = data[OPPONENT_TEAM_NAME_NORMALIZED_COLUMN]
     if identifiers.was_home is not None:
         output["was_home"] = data[identifiers.was_home].astype(bool)
     for column in (GOALS_SCORED_COLUMN, GOALS_CONCEDED_COLUMN):
         if column in data.columns:
             output[column] = data[column]
 
-    dedupe_columns = [SEASON_COLUMN, GAMEWEEK_COLUMN, "team"]
-    if "opponent_team" in output.columns:
-        dedupe_columns.append("opponent_team")
+    dedupe_columns = [
+        SEASON_COLUMN,
+        GAMEWEEK_COLUMN,
+        TEAM_ID_NORMALIZED_COLUMN,
+        OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
+    ]
     if "was_home" in output.columns:
         dedupe_columns.append("was_home")
 
     return (
-        output.dropna(subset=["team"])
+        output.dropna(subset=[TEAM_ID_NORMALIZED_COLUMN, OPPONENT_TEAM_ID_NORMALIZED_COLUMN])
         .drop_duplicates(subset=dedupe_columns)
-        .sort_values([SEASON_COLUMN, GAMEWEEK_COLUMN, "team"])
+        .sort_values([SEASON_COLUMN, GAMEWEEK_COLUMN, TEAM_ID_NORMALIZED_COLUMN])
         .reset_index(drop=True)
     )
 
@@ -292,8 +493,8 @@ def add_elo_features(
     required = [
         SEASON_COLUMN,
         GAMEWEEK_COLUMN,
-        "team",
-        "opponent_team",
+        TEAM_ID_NORMALIZED_COLUMN,
+        OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
         "was_home",
         GOALS_SCORED_COLUMN,
         GOALS_CONCEDED_COLUMN,
@@ -304,16 +505,26 @@ def add_elo_features(
 
     promoted_by_season = promoted_teams_by_season or {}
     data = team_gameweeks.copy()
-    data["team"] = data["team"].map(normalize_team_identifier)
-    data["opponent_team"] = data["opponent_team"].map(normalize_team_identifier)
-    data = data.dropna(subset=["team", "opponent_team"]).sort_values(
-        [SEASON_COLUMN, GAMEWEEK_COLUMN, "team"]
+    data[TEAM_ID_NORMALIZED_COLUMN] = data[TEAM_ID_NORMALIZED_COLUMN].map(normalize_team_identifier)
+    data[OPPONENT_TEAM_ID_NORMALIZED_COLUMN] = data[OPPONENT_TEAM_ID_NORMALIZED_COLUMN].map(
+        normalize_team_identifier
+    )
+    data = data.dropna(
+        subset=[TEAM_ID_NORMALIZED_COLUMN, OPPONENT_TEAM_ID_NORMALIZED_COLUMN]
+    ).sort_values(
+        [SEASON_COLUMN, GAMEWEEK_COLUMN, TEAM_ID_NORMALIZED_COLUMN]
     )
 
     season_outputs: list[pd.DataFrame] = []
     previous_final_elos: dict[str, float] = {}
     for season, season_data in data.groupby(SEASON_COLUMN, sort=True):
-        teams = pd.concat([season_data["team"], season_data["opponent_team"]], ignore_index=True)
+        teams = pd.concat(
+            [
+                season_data[TEAM_ID_NORMALIZED_COLUMN],
+                season_data[OPPONENT_TEAM_ID_NORMALIZED_COLUMN],
+            ],
+            ignore_index=True,
+        )
         elos = initial_team_elos(
             teams,
             season=str(season),
@@ -325,8 +536,10 @@ def add_elo_features(
         gameweek_outputs: list[pd.DataFrame] = []
         for _, gameweek_data in season_data.groupby(GAMEWEEK_COLUMN, sort=True):
             gameweek = gameweek_data.copy()
-            gameweek["pre_gw_team_elo"] = gameweek["team"].map(lambda team: elos.get(team, base_elo))
-            gameweek["pre_gw_opponent_elo"] = gameweek["opponent_team"].map(
+            gameweek["pre_gw_team_elo"] = gameweek[TEAM_ID_NORMALIZED_COLUMN].map(
+                lambda team: elos.get(team, base_elo)
+            )
+            gameweek["pre_gw_opponent_elo"] = gameweek[OPPONENT_TEAM_ID_NORMALIZED_COLUMN].map(
                 lambda team: elos.get(team, base_elo)
             )
             gameweek["elo_difference"] = (
@@ -340,8 +553,8 @@ def add_elo_features(
 
             next_elos = elos.copy()
             for row in gameweek.itertuples(index=False):
-                team = getattr(row, "team")
-                opponent = getattr(row, "opponent_team")
+                team = getattr(row, TEAM_ID_NORMALIZED_COLUMN)
+                opponent = getattr(row, OPPONENT_TEAM_ID_NORMALIZED_COLUMN)
                 team_elo = elos.get(team, base_elo)
                 opponent_elo = elos.get(opponent, base_elo)
                 result = actual_score(
@@ -362,7 +575,7 @@ def add_elo_features(
             home_adjusted_elo_difference=pd.Series(dtype="float64"),
         )
     return pd.concat(season_outputs, ignore_index=True).sort_values(
-        [SEASON_COLUMN, GAMEWEEK_COLUMN, "team"]
+        [SEASON_COLUMN, GAMEWEEK_COLUMN, TEAM_ID_NORMALIZED_COLUMN]
     ).reset_index(drop=True)
 
 
@@ -372,8 +585,12 @@ def _previous_team_rolling_mean(
     source_column: str,
     window: int,
 ) -> pd.Series:
-    shifted = frame.groupby(["team", SEASON_COLUMN], sort=False)[source_column].shift(1)
-    rolling = shifted.groupby([frame["team"], frame[SEASON_COLUMN]], sort=False).rolling(
+    shifted = frame.groupby([TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN], sort=False)[
+        source_column
+    ].shift(1)
+    rolling = shifted.groupby(
+        [frame[TEAM_ID_NORMALIZED_COLUMN], frame[SEASON_COLUMN]], sort=False
+    ).rolling(
         window=window,
         min_periods=1,
     )
@@ -390,8 +607,8 @@ def add_rolling_team_goal_features(team_gameweeks: pd.DataFrame, *, window: int 
     required = [
         SEASON_COLUMN,
         GAMEWEEK_COLUMN,
-        "team",
-        "opponent_team",
+        TEAM_ID_NORMALIZED_COLUMN,
+        OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
         GOALS_SCORED_COLUMN,
         GOALS_CONCEDED_COLUMN,
     ]
@@ -399,7 +616,9 @@ def add_rolling_team_goal_features(team_gameweeks: pd.DataFrame, *, window: int 
     if missing:
         raise TeamStrengthError(f"Missing required rolling team-goal columns: {missing}")
 
-    data = team_gameweeks.sort_values(["team", SEASON_COLUMN, GAMEWEEK_COLUMN]).copy()
+    data = team_gameweeks.sort_values(
+        [TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN, GAMEWEEK_COLUMN]
+    ).copy()
     data["team_clean_sheet"] = (pd.to_numeric(data[GOALS_CONCEDED_COLUMN], errors="coerce") == 0).astype(
         float
     )
@@ -423,14 +642,14 @@ def add_rolling_team_goal_features(team_gameweeks: pd.DataFrame, *, window: int 
         [
             SEASON_COLUMN,
             GAMEWEEK_COLUMN,
-            "team",
+            TEAM_ID_NORMALIZED_COLUMN,
             "team_goals_scored_mean_last_5",
             "team_goals_conceded_mean_last_5",
             "team_clean_sheet_rate_last_5",
         ]
     ].rename(
         columns={
-            "team": "opponent_team",
+            TEAM_ID_NORMALIZED_COLUMN: OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
             "team_goals_scored_mean_last_5": "opponent_goals_scored_mean_last_5",
             "team_goals_conceded_mean_last_5": "opponent_goals_conceded_mean_last_5",
             "team_clean_sheet_rate_last_5": "opponent_clean_sheet_rate_last_5",
@@ -438,11 +657,11 @@ def add_rolling_team_goal_features(team_gameweeks: pd.DataFrame, *, window: int 
     )
     data = data.merge(
         opponent_form,
-        on=[SEASON_COLUMN, GAMEWEEK_COLUMN, "opponent_team"],
+        on=[SEASON_COLUMN, GAMEWEEK_COLUMN, OPPONENT_TEAM_ID_NORMALIZED_COLUMN],
         how="left",
     )
     return data.drop(columns=["team_clean_sheet"]).sort_values(
-        [SEASON_COLUMN, GAMEWEEK_COLUMN, "team"]
+        [SEASON_COLUMN, GAMEWEEK_COLUMN, TEAM_ID_NORMALIZED_COLUMN]
     ).reset_index(drop=True)
 
 
@@ -458,8 +677,8 @@ def build_team_strength_features(
     feature_columns = [
         SEASON_COLUMN,
         GAMEWEEK_COLUMN,
-        "team",
-        "opponent_team",
+        TEAM_ID_NORMALIZED_COLUMN,
+        OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
         "pre_gw_team_elo",
         "pre_gw_opponent_elo",
         "elo_difference",
@@ -472,25 +691,38 @@ def build_team_strength_features(
         }
     )
 
-    identifiers = detect_team_identifier_columns(player_gameweeks)
+    player_keys, _ = normalize_team_identifiers(player_gameweeks)
     player_keys = pd.DataFrame(
         {
-            SEASON_COLUMN: player_gameweeks[SEASON_COLUMN],
-            GAMEWEEK_COLUMN: player_gameweeks[GAMEWEEK_COLUMN],
-            "team": player_gameweeks[identifiers.team].map(normalize_team_identifier),
+            SEASON_COLUMN: player_keys[SEASON_COLUMN],
+            GAMEWEEK_COLUMN: player_keys[GAMEWEEK_COLUMN],
+            TEAM_ID_NORMALIZED_COLUMN: player_keys[TEAM_ID_NORMALIZED_COLUMN],
+            OPPONENT_TEAM_ID_NORMALIZED_COLUMN: player_keys[OPPONENT_TEAM_ID_NORMALIZED_COLUMN],
         },
         index=player_gameweeks.index,
     )
-    if identifiers.opponent_team is not None:
-        player_keys["opponent_team"] = player_gameweeks[identifiers.opponent_team].map(
-            normalize_team_identifier
-        )
-    else:
-        player_keys["opponent_team"] = pd.NA
 
     merged = player_keys.merge(
         features,
-        on=[SEASON_COLUMN, GAMEWEEK_COLUMN, "team", "opponent_team"],
+        on=[
+            SEASON_COLUMN,
+            GAMEWEEK_COLUMN,
+            TEAM_ID_NORMALIZED_COLUMN,
+            OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
+        ],
         how="left",
     )
-    return merged.drop(columns=[SEASON_COLUMN, GAMEWEEK_COLUMN, "team", "opponent_team"])
+    return merged.drop(
+        columns=[
+            SEASON_COLUMN,
+            GAMEWEEK_COLUMN,
+            TEAM_ID_NORMALIZED_COLUMN,
+            OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
+        ]
+    )
+
+
+def team_identifier_diagnostics(frame: pd.DataFrame) -> TeamIdentifierDiagnostics:
+    """Return diagnostics for normalized team/opponent identifiers."""
+    _, diagnostics = normalize_team_identifiers(frame)
+    return diagnostics

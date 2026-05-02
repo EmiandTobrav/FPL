@@ -41,6 +41,9 @@ DEFAULT_RESULTS_PATH = Path("reports/model_results.csv")
 DEFAULT_SUMMARY_PATH = Path("reports/model_comparison.md")
 DEFAULT_POSITION_RESULTS_PATH = Path("reports/position_model_comparison.csv")
 DEFAULT_POSITION_SUMMARY_PATH = Path("reports/position_model_comparison.md")
+DEFAULT_SUPPORTED_RESULTS_PATH = Path("reports/model_results_supported_seasons.csv")
+DEFAULT_SUPPORTED_SUMMARY_PATH = Path("reports/model_comparison_supported_seasons.md")
+DEFAULT_SUPPORTED_FILTER_REPORT_PATH = Path("reports/supported_season_filter_report.md")
 TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
@@ -147,6 +150,38 @@ def add_next_minutes_60_target(frame: pd.DataFrame) -> pd.DataFrame:
 def validation_seasons(frame: pd.DataFrame) -> list[str]:
     seasons = sorted(frame["season"].dropna().astype(str).unique())
     return seasons[1:]
+
+
+def season_filtered_frame(frame: pd.DataFrame, min_season: str | None) -> pd.DataFrame:
+    """Return a copy limited to seasons at or after min_season."""
+    if min_season is None:
+        return frame.copy()
+    data = frame.copy()
+    seasons = data["season"].astype(str)
+    return data.loc[seasons >= str(min_season)].copy()
+
+
+def season_filter_diagnostics(
+    original: pd.DataFrame,
+    filtered: pd.DataFrame,
+    *,
+    min_season: str | None,
+) -> dict[str, Any]:
+    all_seasons = sorted(original["season"].dropna().astype(str).unique())
+    included = sorted(filtered["season"].dropna().astype(str).unique())
+    excluded = [season for season in all_seasons if season not in included]
+    reasons = {
+        season: f"season is earlier than min-season {min_season}"
+        for season in excluded
+    }
+    return {
+        "min_season": min_season,
+        "included_seasons": included,
+        "excluded_seasons": excluded,
+        "excluded_season_reasons": reasons,
+        "original_rows": len(original),
+        "filtered_rows": len(filtered),
+    }
 
 
 def split_train_validation(frame: pd.DataFrame, validation_season: str) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -885,11 +920,20 @@ def run_position_model_backtest(
     *,
     estimator: Any | None = None,
     min_position_train_rows: int = MIN_POSITION_TRAIN_ROWS,
+    min_season: str | None = None,
 ) -> pd.DataFrame:
     validate_dataset(frame)
-    data = frame.copy()
+    original = frame.copy()
+    data = season_filtered_frame(original, min_season)
+    validate_dataset(data)
     data["season"] = data["season"].astype(str)
     diagnostics = {"position": position_diagnostics(data)}
+    if min_season is not None:
+        diagnostics["season_filter"] = season_filter_diagnostics(
+            original,
+            data,
+            min_season=min_season,
+        )
     data = normalize_position_column(data)
     data = add_baseline_prediction_features(data)
     data = data.sort_values(["season", "gw"]).reset_index(drop=True)
@@ -923,12 +967,21 @@ def run_backtest(
     *,
     model_specs: list[SklearnModelSpec] | None = None,
     residual_specs: list[SklearnModelSpec] | None = None,
+    min_season: str | None = None,
 ) -> pd.DataFrame:
     """Run rolling-origin validation by season."""
     validate_dataset(frame)
-    data = frame.copy()
+    original = frame.copy()
+    data = season_filtered_frame(original, min_season)
+    validate_dataset(data)
     data["season"] = data["season"].astype(str)
     diagnostics: dict[str, Any] = {"position": position_diagnostics(data)}
+    if min_season is not None:
+        diagnostics["season_filter"] = season_filter_diagnostics(
+            original,
+            data,
+            min_season=min_season,
+        )
     data = normalize_position_column(data)
     if MINUTES_COLUMN in data.columns:
         data = add_next_minutes_60_target(data)
@@ -1037,6 +1090,15 @@ def diagnostics_markdown_lines(diagnostics: dict[str, Any]) -> list[str]:
             f"{model}: {count}" for model, count in sorted(model_row_counts.items())
         )
         lines.append(f"- Model row counts in this result: {count_summary}.")
+    season_filter = diagnostics.get("season_filter", {})
+    if season_filter:
+        included = season_filter.get("included_seasons", [])
+        excluded = season_filter.get("excluded_seasons", [])
+        lines.append(
+            f"- Season filter enabled with min-season `{season_filter.get('min_season')}`."
+        )
+        lines.append(f"- Included seasons: {', '.join(included) if included else 'none'}.")
+        lines.append(f"- Excluded seasons: {', '.join(excluded) if excluded else 'none'}.")
     lines.append("")
     return lines
 
@@ -1248,6 +1310,229 @@ def write_position_markdown_summary(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def aggregate_model_metrics(results: pd.DataFrame) -> pd.DataFrame:
+    metric_columns = [
+        "mae",
+        "rmse",
+        "spearman",
+        "top_10_precision",
+        "top_20_precision",
+        "top_50_precision",
+    ]
+    available = [column for column in metric_columns if column in results.columns]
+    return results.groupby("model", as_index=False)[available].mean()
+
+
+def aggregate_position_strategy_metrics(results: pd.DataFrame) -> pd.DataFrame:
+    metric_columns = [
+        "mae",
+        "rmse",
+        "spearman",
+        "top_10_precision",
+        "top_20_precision",
+        "top_50_precision",
+    ]
+    available = [column for column in metric_columns if column in results.columns]
+    return (
+        results.loc[results["position"] == "ALL"]
+        .groupby("strategy", as_index=False)[available]
+        .mean()
+    )
+
+
+def comparison_table(
+    full: pd.DataFrame,
+    filtered: pd.DataFrame,
+    *,
+    key_column: str,
+    names: tuple[str, ...] | None = None,
+) -> pd.DataFrame:
+    metrics = [
+        "mae",
+        "rmse",
+        "spearman",
+        "top_10_precision",
+        "top_20_precision",
+        "top_50_precision",
+    ]
+    full_indexed = full.set_index(key_column)
+    filtered_indexed = filtered.set_index(key_column)
+    keys = list(names) if names is not None else sorted(set(full_indexed.index) & set(filtered_indexed.index))
+    rows: list[dict[str, Any]] = []
+    for key in keys:
+        if key not in full_indexed.index or key not in filtered_indexed.index:
+            continue
+        row: dict[str, Any] = {key_column: key}
+        for metric in metrics:
+            if metric not in full_indexed.columns or metric not in filtered_indexed.columns:
+                continue
+            before = float(full_indexed.loc[key, metric])
+            after = float(filtered_indexed.loc[key, metric])
+            row[f"full_{metric}"] = before
+            row[f"filtered_{metric}"] = after
+            row[f"delta_{metric}"] = after - before
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def best_metric_summary(results: pd.DataFrame) -> pd.DataFrame:
+    aggregate = aggregate_model_metrics(results)
+    metric_specs = {
+        "mae": True,
+        "rmse": True,
+        "spearman": False,
+        "top_10_precision": False,
+        "top_20_precision": False,
+        "top_50_precision": False,
+    }
+    rows = []
+    for metric, lower_is_better in metric_specs.items():
+        if metric not in aggregate.columns:
+            continue
+        sorted_metric = aggregate.sort_values([metric, "model"], ascending=[lower_is_better, True])
+        best = sorted_metric.iloc[0]
+        rows.append({"metric": metric, "best_model": best["model"], "score": best[metric]})
+    return pd.DataFrame(rows)
+
+
+def best_metric_comparison(full_results: pd.DataFrame, filtered_results: pd.DataFrame) -> pd.DataFrame:
+    full_best = best_metric_summary(full_results).set_index("metric")
+    filtered_best = best_metric_summary(filtered_results).set_index("metric")
+    lower_is_better = {"mae", "rmse"}
+    rows = []
+    for metric in full_best.index.intersection(filtered_best.index):
+        full_score = float(full_best.loc[metric, "score"])
+        filtered_score = float(filtered_best.loc[metric, "score"])
+        delta = filtered_score - full_score
+        improved = delta < 0 if metric in lower_is_better else delta > 0
+        rows.append(
+            {
+                "metric": metric,
+                "full_best_model": full_best.loc[metric, "best_model"],
+                "full_score": full_score,
+                "filtered_best_model": filtered_best.loc[metric, "best_model"],
+                "filtered_score": filtered_score,
+                "delta": delta,
+                "improved": "yes" if improved else "no",
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def write_supported_season_filter_report(
+    *,
+    source: pd.DataFrame,
+    full_results: pd.DataFrame,
+    filtered_results: pd.DataFrame,
+    full_position_results: pd.DataFrame | None,
+    filtered_position_results: pd.DataFrame | None,
+    min_season: str,
+    path: Path = DEFAULT_SUPPORTED_FILTER_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    filtered_source = season_filtered_frame(source, min_season)
+    diagnostics = season_filter_diagnostics(source, filtered_source, min_season=min_season)
+    full_aggregate = aggregate_model_metrics(full_results)
+    filtered_aggregate = aggregate_model_metrics(filtered_results)
+    focus_models = (
+        "residual_CatBoost",
+        "residual_LightGBM",
+        "residual_XGBoost",
+        MINUTES_ADJUSTED_BASELINE_NAME,
+    )
+    focus_comparison = comparison_table(
+        full_aggregate,
+        filtered_aggregate,
+        key_column="model",
+        names=focus_models,
+    )
+    best_comparison = best_metric_summary(filtered_results)
+    metric_comparison = best_metric_comparison(full_results, filtered_results)
+
+    position_lines = ["Position strategy comparison was unavailable."]
+    if full_position_results is not None and filtered_position_results is not None:
+        full_position = aggregate_position_strategy_metrics(full_position_results)
+        filtered_position = aggregate_position_strategy_metrics(filtered_position_results)
+        position_comparison = comparison_table(
+            full_position,
+            filtered_position,
+            key_column="strategy",
+            names=("global_plus_position_interactions",),
+        )
+        position_lines = [
+            markdown_table(position_comparison)
+            if not position_comparison.empty
+            else "No comparable position-strategy rows were available."
+        ]
+
+    team_strength_columns = [
+        "team_elo_pre_gw",
+        "opponent_elo_pre_gw",
+        "elo_difference",
+        "home_adjusted_elo_difference",
+    ]
+    coverage_rows = []
+    for column in team_strength_columns:
+        if column in source.columns:
+            coverage_rows.append(
+                {
+                    "feature": column,
+                    "full_non_null_rate": source[column].notna().mean(),
+                    "filtered_non_null_rate": filtered_source[column].notna().mean(),
+                }
+            )
+    coverage = pd.DataFrame(coverage_rows)
+    excluded_lines = [
+        f"- `{season}`: {reason}"
+        for season, reason in diagnostics["excluded_season_reasons"].items()
+    ] or ["- None"]
+
+    lines = [
+        "# Supported-Season Filter Report",
+        "",
+        f"Minimum season: `{min_season}`.",
+        "",
+        "## Seasons",
+        "",
+        f"Included: {', '.join(diagnostics['included_seasons']) or 'none'}",
+        "",
+        "Excluded:",
+        "",
+        *excluded_lines,
+        "",
+        "## Team-Strength Feature Coverage",
+        "",
+        markdown_table(coverage) if not coverage.empty else "No team-strength feature columns were present.",
+        "",
+        "## Best Filtered Models",
+        "",
+        markdown_table(best_comparison),
+        "",
+        "## Metric-Level Filtering Impact",
+        "",
+        markdown_table(metric_comparison),
+        "",
+        "## Full-History Versus Supported-Season Models",
+        "",
+        "Positive deltas mean the metric increased after filtering; for MAE/RMSE that is worse, "
+        "for Spearman and precision that is better.",
+        "",
+        markdown_table(focus_comparison) if not focus_comparison.empty else "No comparable model rows were available.",
+        "",
+        "## Global Plus Position Interactions",
+        "",
+        *position_lines,
+        "",
+        "## Interpretation",
+        "",
+        "- Filtering removes early seasons where team and position identifiers are unsupported.",
+        "- The supported-season run uses fewer training rows, so worse MAE/RMSE can indicate that reduced history hurts more than cleaner team-strength coverage helps.",
+        "- Team-strength features are more consistently available after filtering because the retained seasons have reliable normalized team/opponent IDs.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT_PATH)
@@ -1255,6 +1540,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--summary", type=Path, default=DEFAULT_SUMMARY_PATH)
     parser.add_argument("--position-results", type=Path, default=DEFAULT_POSITION_RESULTS_PATH)
     parser.add_argument("--position-summary", type=Path, default=DEFAULT_POSITION_SUMMARY_PATH)
+    parser.add_argument(
+        "--min-season",
+        help=(
+            "Optional supported-season experiment filter. When set, trains and validates only on "
+            "seasons greater than or equal to this value and writes supported-season reports."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -1262,18 +1554,49 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
     args = parse_args()
     data = read_dataset(args.input)
-    results = run_backtest(data)
-    write_results(results, args.results)
-    write_markdown_summary(results, args.summary)
-    position_results = run_position_model_backtest(data)
-    write_position_results(position_results, args.position_results)
-    write_position_markdown_summary(position_results, args.position_summary)
+    if args.min_season is None:
+        results = run_backtest(data)
+        write_results(results, args.results)
+        write_markdown_summary(results, args.summary)
+        position_results = run_position_model_backtest(data)
+        write_position_results(position_results, args.position_results)
+        write_position_markdown_summary(position_results, args.position_summary)
+        LOGGER.info(
+            "Wrote backtest results to %s, %s, %s, and %s",
+            args.results,
+            args.summary,
+            args.position_results,
+            args.position_summary,
+        )
+        return
+
+    filtered_results = run_backtest(data, min_season=args.min_season)
+    write_results(filtered_results, DEFAULT_SUPPORTED_RESULTS_PATH)
+    write_markdown_summary(filtered_results, DEFAULT_SUPPORTED_SUMMARY_PATH)
+    filtered_position_results = run_position_model_backtest(data, min_season=args.min_season)
+
+    if DEFAULT_RESULTS_PATH.exists():
+        full_results = pd.read_csv(DEFAULT_RESULTS_PATH)
+    else:
+        full_results = run_backtest(data)
+    if DEFAULT_POSITION_RESULTS_PATH.exists():
+        full_position_results: pd.DataFrame | None = pd.read_csv(DEFAULT_POSITION_RESULTS_PATH)
+    else:
+        full_position_results = run_position_model_backtest(data)
+
+    write_supported_season_filter_report(
+        source=data,
+        full_results=full_results,
+        filtered_results=filtered_results,
+        full_position_results=full_position_results,
+        filtered_position_results=filtered_position_results,
+        min_season=args.min_season,
+    )
     LOGGER.info(
-        "Wrote backtest results to %s, %s, %s, and %s",
-        args.results,
-        args.summary,
-        args.position_results,
-        args.position_summary,
+        "Wrote supported-season results to %s, %s, and %s",
+        DEFAULT_SUPPORTED_RESULTS_PATH,
+        DEFAULT_SUPPORTED_SUMMARY_PATH,
+        DEFAULT_SUPPORTED_FILTER_REPORT_PATH,
     )
 
 

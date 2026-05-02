@@ -13,12 +13,17 @@ from features.rolling_features import (
     player_key_column,
 )
 from features.target_builder import build_targets
-from features.team_strength import TeamStrengthError, build_team_strength_features
+from features.team_strength import (
+    TeamStrengthError,
+    build_team_strength_features,
+    team_identifier_diagnostics,
+)
 
 
 DEFAULT_INPUT_PATH = Path("data/interim/all_merged_gw.parquet")
 DEFAULT_OUTPUT_PATH = Path("data/processed/modeling_dataset.parquet")
 DEFAULT_TEAM_PRIORS_PATH = Path("data/manual/team_season_priors.csv")
+DEFAULT_TEAM_STRENGTH_REPORT_PATH = Path("reports/team_strength_feature_report.md")
 REQUIRED_COLUMNS = ("season", "gw", "total_points", "minutes")
 
 
@@ -70,7 +75,7 @@ def build_modeling_dataset(
     features = build_rolling_features(frame)
     try:
         team_priors = pd.read_csv(team_priors_path) if team_priors_path.exists() else None
-        team_strength = build_team_strength_features(frame, team_season_priors=team_priors)
+        team_strength = build_team_strength_features(features, team_season_priors=team_priors)
         features = pd.concat([features.reset_index(drop=True), team_strength.reset_index(drop=True)], axis=1)
     except TeamStrengthError:
         # Team-strength features require reliable team/opponent/home/score source
@@ -83,6 +88,70 @@ def build_modeling_dataset(
 def write_dataset(frame: pd.DataFrame, output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
     frame.to_parquet(output_path, index=False)
+
+
+def write_team_strength_report(source: pd.DataFrame, output_path: Path) -> None:
+    diagnostics = team_identifier_diagnostics(source)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    supported = ", ".join(diagnostics.supported_seasons) or "None"
+    unsupported_lines = [
+        f"- `{season}`: {reason}"
+        for season, reason in sorted(diagnostics.unsupported_season_reasons.items())
+    ]
+    if not unsupported_lines:
+        unsupported_lines = ["- None"]
+    output_path.write_text(
+        "\n".join(
+            [
+                "# Team-Strength Feature Report",
+                "",
+                "## Identifier Mapping Diagnostics",
+                "",
+                "| diagnostic | value |",
+                "| --- | ---: |",
+                (
+                    "| rows with valid normalized team IDs | "
+                    f"{diagnostics.valid_team_id_rate:.1%} |"
+                ),
+                (
+                    "| rows with valid normalized opponent IDs | "
+                    f"{diagnostics.valid_opponent_id_rate:.1%} |"
+                ),
+                "",
+                f"Seasons where mapping works: {supported}",
+                "",
+                "Seasons where mapping fails:",
+                "",
+                *unsupported_lines,
+                "",
+                "## Features Added",
+                "",
+                "- `team_elo_pre_gw`",
+                "- `opponent_elo_pre_gw`",
+                "- `elo_difference`",
+                "- `home_adjusted_elo_difference`",
+                "",
+                "Raw `team` and `opponent_team` are used only as source columns for "
+                "normalized identifiers and are not model features.",
+                "",
+                "## Features Skipped",
+                "",
+                "Rolling team goal-form features are still not integrated. The identifier "
+                "mapping now supports reliable joins for seasons listed above, but rolling "
+                "form features are intentionally left for a separate modelling change.",
+                "",
+                "## Elo Initialization",
+                "",
+                "- `base_elo = 1500`",
+                "- `k_factor = 20`",
+                "- `home_advantage = 50`",
+                "- Optional manual priors are read from `data/manual/team_season_priors.csv` "
+                "when present.",
+                "",
+            ]
+        ),
+        encoding="utf-8",
+    )
 
 
 def dataset_summary(frame: pd.DataFrame, *, target_horizon: int) -> str:
@@ -129,6 +198,7 @@ def main() -> None:
         team_priors_path=args.team_priors,
     )
     write_dataset(modeling_dataset, args.output)
+    write_team_strength_report(source, DEFAULT_TEAM_STRENGTH_REPORT_PATH)
     print(dataset_summary(modeling_dataset, target_horizon=args.target_horizon))
     print(f"Wrote: {args.output}")
 
