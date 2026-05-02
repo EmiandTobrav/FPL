@@ -22,12 +22,18 @@ Seasons where mapping fails:
 - `opponent_elo_pre_gw`
 - `elo_difference`
 - `home_adjusted_elo_difference`
+- `team_goals_scored_mean_last_5`
+- `team_goals_conceded_mean_last_5`
+- `opponent_goals_scored_mean_last_5`
+- `opponent_goals_conceded_mean_last_5`
+- `team_clean_sheet_rate_last_5`
+- `opponent_clean_sheet_rate_last_5`
 
 Raw `team` and `opponent_team` are used only as source columns for normalized identifiers and are not model features.
 
-## Features Skipped
+## Rolling Team Form
 
-Rolling team goal-form features are still not integrated. The identifier mapping now supports reliable joins for seasons listed above, but rolling form features are intentionally left for a separate modelling change.
+Rolling team attack and defence features are shifted by team-season gameweek, so GW t uses only gameweeks before GW t. Seasons without reliable normalized team/opponent IDs are left missing.
 
 ## Elo Initialization
 

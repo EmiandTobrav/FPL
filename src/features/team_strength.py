@@ -579,22 +579,46 @@ def add_elo_features(
     ).reset_index(drop=True)
 
 
-def _previous_team_rolling_mean(
+def _previous_team_gameweek_rolling_mean(
     frame: pd.DataFrame,
     *,
     source_column: str,
     window: int,
 ) -> pd.Series:
-    shifted = frame.groupby([TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN], sort=False)[
-        source_column
-    ].shift(1)
-    rolling = shifted.groupby(
-        [frame[TEAM_ID_NORMALIZED_COLUMN], frame[SEASON_COLUMN]], sort=False
-    ).rolling(
-        window=window,
-        min_periods=1,
+    gameweek_values = (
+        frame.groupby([TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN, GAMEWEEK_COLUMN], as_index=False)[
+            source_column
+        ]
+        .mean()
+        .sort_values([TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN, GAMEWEEK_COLUMN])
     )
-    return rolling.mean().reset_index(level=[0, 1], drop=True).sort_index()
+    shifted = gameweek_values.groupby(
+        [TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN],
+        sort=False,
+    )[source_column].shift(1)
+    rolling = shifted.groupby(
+        [
+            gameweek_values[TEAM_ID_NORMALIZED_COLUMN],
+            gameweek_values[SEASON_COLUMN],
+        ],
+        sort=False,
+    ).rolling(window=window, min_periods=1)
+    gameweek_values[f"__previous_{source_column}"] = rolling.mean().reset_index(
+        level=[0, 1],
+        drop=True,
+    )
+    return frame.merge(
+        gameweek_values[
+            [
+                TEAM_ID_NORMALIZED_COLUMN,
+                SEASON_COLUMN,
+                GAMEWEEK_COLUMN,
+                f"__previous_{source_column}",
+            ]
+        ],
+        on=[TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN, GAMEWEEK_COLUMN],
+        how="left",
+    )[f"__previous_{source_column}"]
 
 
 def add_rolling_team_goal_features(team_gameweeks: pd.DataFrame, *, window: int = 5) -> pd.DataFrame:
@@ -618,21 +642,21 @@ def add_rolling_team_goal_features(team_gameweeks: pd.DataFrame, *, window: int 
 
     data = team_gameweeks.sort_values(
         [TEAM_ID_NORMALIZED_COLUMN, SEASON_COLUMN, GAMEWEEK_COLUMN]
-    ).copy()
+    ).reset_index(drop=True)
     data["team_clean_sheet"] = (pd.to_numeric(data[GOALS_CONCEDED_COLUMN], errors="coerce") == 0).astype(
         float
     )
-    data["team_goals_scored_mean_last_5"] = _previous_team_rolling_mean(
+    data["team_goals_scored_mean_last_5"] = _previous_team_gameweek_rolling_mean(
         data,
         source_column=GOALS_SCORED_COLUMN,
         window=window,
     )
-    data["team_goals_conceded_mean_last_5"] = _previous_team_rolling_mean(
+    data["team_goals_conceded_mean_last_5"] = _previous_team_gameweek_rolling_mean(
         data,
         source_column=GOALS_CONCEDED_COLUMN,
         window=window,
     )
-    data["team_clean_sheet_rate_last_5"] = _previous_team_rolling_mean(
+    data["team_clean_sheet_rate_last_5"] = _previous_team_gameweek_rolling_mean(
         data,
         source_column="team_clean_sheet",
         window=window,
@@ -655,6 +679,9 @@ def add_rolling_team_goal_features(team_gameweeks: pd.DataFrame, *, window: int 
             "team_clean_sheet_rate_last_5": "opponent_clean_sheet_rate_last_5",
         }
     )
+    opponent_form = opponent_form.drop_duplicates(
+        subset=[SEASON_COLUMN, GAMEWEEK_COLUMN, OPPONENT_TEAM_ID_NORMALIZED_COLUMN]
+    )
     data = data.merge(
         opponent_form,
         on=[SEASON_COLUMN, GAMEWEEK_COLUMN, OPPONENT_TEAM_ID_NORMALIZED_COLUMN],
@@ -673,6 +700,34 @@ def build_team_strength_features(
     """Build leakage-safe numeric team-strength features for player rows."""
     team_gameweeks = create_team_gameweek_table(player_gameweeks)
     with_elo = add_elo_features(team_gameweeks, team_season_priors=team_season_priors)
+    rolling_columns = [
+        "team_goals_scored_mean_last_5",
+        "team_goals_conceded_mean_last_5",
+        "opponent_goals_scored_mean_last_5",
+        "opponent_goals_conceded_mean_last_5",
+        "team_clean_sheet_rate_last_5",
+        "opponent_clean_sheet_rate_last_5",
+    ]
+    if {GOALS_SCORED_COLUMN, GOALS_CONCEDED_COLUMN}.issubset(team_gameweeks.columns):
+        with_rolling = add_rolling_team_goal_features(team_gameweeks)
+        with_elo = with_elo.merge(
+            with_rolling[
+                [
+                    SEASON_COLUMN,
+                    GAMEWEEK_COLUMN,
+                    TEAM_ID_NORMALIZED_COLUMN,
+                    OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
+                    *rolling_columns,
+                ]
+            ],
+            on=[
+                SEASON_COLUMN,
+                GAMEWEEK_COLUMN,
+                TEAM_ID_NORMALIZED_COLUMN,
+                OPPONENT_TEAM_ID_NORMALIZED_COLUMN,
+            ],
+            how="left",
+        )
 
     feature_columns = [
         SEASON_COLUMN,
@@ -683,6 +738,7 @@ def build_team_strength_features(
         "pre_gw_opponent_elo",
         "elo_difference",
         "home_adjusted_elo_difference",
+        *[column for column in rolling_columns if column in with_elo.columns],
     ]
     features = with_elo[feature_columns].rename(
         columns={

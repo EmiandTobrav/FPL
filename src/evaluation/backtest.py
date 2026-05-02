@@ -44,6 +44,7 @@ DEFAULT_POSITION_SUMMARY_PATH = Path("reports/position_model_comparison.md")
 DEFAULT_SUPPORTED_RESULTS_PATH = Path("reports/model_results_supported_seasons.csv")
 DEFAULT_SUPPORTED_SUMMARY_PATH = Path("reports/model_comparison_supported_seasons.md")
 DEFAULT_SUPPORTED_FILTER_REPORT_PATH = Path("reports/supported_season_filter_report.md")
+DEFAULT_TEAM_FORM_FEATURE_REPORT_PATH = Path("reports/team_form_feature_report.md")
 TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
@@ -88,6 +89,12 @@ STABLE_FEATURE_COLUMNS = (
     "opponent_elo_pre_gw",
     "elo_difference",
     "home_adjusted_elo_difference",
+    "team_goals_scored_mean_last_5",
+    "team_goals_conceded_mean_last_5",
+    "opponent_goals_scored_mean_last_5",
+    "opponent_goals_conceded_mean_last_5",
+    "team_clean_sheet_rate_last_5",
+    "opponent_clean_sheet_rate_last_5",
     "points_last_1",
     "points_mean_last_3",
     "points_mean_last_5",
@@ -1470,6 +1477,12 @@ def write_supported_season_filter_report(
         "opponent_elo_pre_gw",
         "elo_difference",
         "home_adjusted_elo_difference",
+        "team_goals_scored_mean_last_5",
+        "team_goals_conceded_mean_last_5",
+        "opponent_goals_scored_mean_last_5",
+        "opponent_goals_conceded_mean_last_5",
+        "team_clean_sheet_rate_last_5",
+        "opponent_clean_sheet_rate_last_5",
     ]
     coverage_rows = []
     for column in team_strength_columns:
@@ -1533,6 +1546,113 @@ def write_supported_season_filter_report(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def write_team_form_feature_report(
+    *,
+    before_results: pd.DataFrame | None,
+    after_results: pd.DataFrame,
+    before_position_results: pd.DataFrame | None,
+    after_position_results: pd.DataFrame | None,
+    source: pd.DataFrame,
+    min_season: str,
+    path: Path = DEFAULT_TEAM_FORM_FEATURE_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    filtered_source = season_filtered_frame(source, min_season)
+    form_columns = [
+        "team_goals_scored_mean_last_5",
+        "team_goals_conceded_mean_last_5",
+        "opponent_goals_scored_mean_last_5",
+        "opponent_goals_conceded_mean_last_5",
+        "team_clean_sheet_rate_last_5",
+        "opponent_clean_sheet_rate_last_5",
+    ]
+    coverage = pd.DataFrame(
+        [
+            {
+                "feature": column,
+                "full_non_null_rate": source[column].notna().mean(),
+                "supported_non_null_rate": filtered_source[column].notna().mean(),
+            }
+            for column in form_columns
+            if column in source.columns
+        ]
+    )
+
+    focus_models = (
+        "residual_CatBoost",
+        "residual_LightGBM",
+        "residual_XGBoost",
+        MINUTES_ADJUSTED_BASELINE_NAME,
+    )
+    if before_results is not None:
+        model_comparison = comparison_table(
+            aggregate_model_metrics(before_results),
+            aggregate_model_metrics(after_results),
+            key_column="model",
+            names=focus_models,
+        )
+        model_comparison = model_comparison.rename(
+            columns=lambda column: column.replace("full_", "before_").replace(
+                "filtered_",
+                "after_",
+            )
+        )
+    else:
+        model_comparison = pd.DataFrame()
+
+    position_comparison = pd.DataFrame()
+    if before_position_results is not None and after_position_results is not None:
+        position_comparison = comparison_table(
+            aggregate_position_strategy_metrics(before_position_results),
+            aggregate_position_strategy_metrics(after_position_results),
+            key_column="strategy",
+            names=("global_plus_position_interactions",),
+        )
+        position_comparison = position_comparison.rename(
+            columns=lambda column: column.replace("full_", "before_").replace(
+                "filtered_",
+                "after_",
+            )
+        )
+
+    lines = [
+        "# Team Form Feature Report",
+        "",
+        f"Supported-season comparison uses min-season `{min_season}`.",
+        "",
+        "## Features Added",
+        "",
+        *[f"- `{column}`" for column in form_columns],
+        "",
+        "## Feature Coverage",
+        "",
+        markdown_table(coverage) if not coverage.empty else "No rolling team form columns were present.",
+        "",
+        "## Model Comparison",
+        "",
+        "Positive deltas mean the metric increased after adding team form; for MAE/RMSE that is worse, "
+        "for Spearman and precision that is better.",
+        "",
+        markdown_table(model_comparison)
+        if not model_comparison.empty
+        else "No previous supported-season result was available for comparison.",
+        "",
+        "## Global Plus Position Interactions",
+        "",
+        markdown_table(position_comparison)
+        if not position_comparison.empty
+        else "No comparable position-strategy result was available.",
+        "",
+        "## Notes",
+        "",
+        "- Rolling form is shifted by team-season gameweek, so GW t never uses GW t goals or clean-sheet outcomes.",
+        "- Opponent form is joined from the opponent's normalized team ID in the same season and gameweek.",
+        "- Unsupported seasons remain missing rather than being imputed from unreliable team identifiers.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT_PATH)
@@ -1570,6 +1690,17 @@ def main() -> None:
         )
         return
 
+    before_supported_results = (
+        pd.read_csv(DEFAULT_SUPPORTED_RESULTS_PATH)
+        if DEFAULT_SUPPORTED_RESULTS_PATH.exists()
+        else None
+    )
+    before_position_results = (
+        pd.read_csv(DEFAULT_POSITION_RESULTS_PATH)
+        if DEFAULT_POSITION_RESULTS_PATH.exists()
+        else None
+    )
+
     filtered_results = run_backtest(data, min_season=args.min_season)
     write_results(filtered_results, DEFAULT_SUPPORTED_RESULTS_PATH)
     write_markdown_summary(filtered_results, DEFAULT_SUPPORTED_SUMMARY_PATH)
@@ -1592,11 +1723,20 @@ def main() -> None:
         filtered_position_results=filtered_position_results,
         min_season=args.min_season,
     )
+    write_team_form_feature_report(
+        before_results=before_supported_results,
+        after_results=filtered_results,
+        before_position_results=before_position_results,
+        after_position_results=filtered_position_results,
+        source=data,
+        min_season=args.min_season,
+    )
     LOGGER.info(
-        "Wrote supported-season results to %s, %s, and %s",
+        "Wrote supported-season results to %s, %s, %s, and %s",
         DEFAULT_SUPPORTED_RESULTS_PATH,
         DEFAULT_SUPPORTED_SUMMARY_PATH,
         DEFAULT_SUPPORTED_FILTER_REPORT_PATH,
+        DEFAULT_TEAM_FORM_FEATURE_REPORT_PATH,
     )
 
 

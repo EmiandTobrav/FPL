@@ -10,6 +10,7 @@ from features.team_strength import (
     TeamIdentifierColumns,
     TeamStrengthError,
     add_elo_features,
+    add_rolling_team_goal_features,
     create_team_gameweek_table,
     detect_team_identifier_columns,
     initial_team_elos,
@@ -177,6 +178,8 @@ def test_unsupported_seasons_are_handled_safely() -> None:
 def test_raw_team_columns_are_not_model_features() -> None:
     assert "team" not in STABLE_FEATURE_COLUMNS
     assert "opponent_team" not in STABLE_FEATURE_COLUMNS
+    assert "team_id_normalized" not in STABLE_FEATURE_COLUMNS
+    assert "opponent_team_id_normalized" not in STABLE_FEATURE_COLUMNS
 
 
 def elo_source_frame() -> pd.DataFrame:
@@ -191,6 +194,64 @@ def elo_source_frame() -> pd.DataFrame:
             "goals_conceded": [1, 3, 0, 0, 2],
         }
     )
+
+
+def rolling_team_form_frame() -> pd.DataFrame:
+    return pd.DataFrame(
+        {
+            "season": ["2023-24"] * 8 + ["2019-20"],
+            "gw": [1, 1, 2, 2, 3, 3, 3, 3, 1],
+            "team_id_normalized": ["A", "B", "A", "B", "A", "B", "A", "C", pd.NA],
+            "opponent_team_id_normalized": ["B", "A", "B", "A", "B", "A", "C", "A", pd.NA],
+            "was_home": [True, False, False, True, True, False, True, False, True],
+            "goals_scored": [2, 0, 1, 1, 5, 0, 4, 2, 1],
+            "goals_conceded": [0, 2, 1, 1, 0, 5, 2, 4, 0],
+        }
+    )
+
+
+def test_rolling_team_features_do_not_use_current_gameweek_results() -> None:
+    features = add_rolling_team_goal_features(rolling_team_form_frame())
+    team_a_gw3 = features.loc[
+        (features[TEAM_ID_NORMALIZED_COLUMN] == "A")
+        & (features[OPPONENT_TEAM_ID_NORMALIZED_COLUMN] == "B")
+        & (features["gw"] == 3)
+    ].iloc[0]
+
+    assert team_a_gw3["team_goals_scored_mean_last_5"] == 1.5
+    assert team_a_gw3["team_goals_conceded_mean_last_5"] == 0.5
+
+
+def test_opponent_rolling_features_use_opponent_previous_matches() -> None:
+    features = add_rolling_team_goal_features(rolling_team_form_frame())
+    team_a_gw3 = features.loc[
+        (features[TEAM_ID_NORMALIZED_COLUMN] == "A")
+        & (features[OPPONENT_TEAM_ID_NORMALIZED_COLUMN] == "B")
+        & (features["gw"] == 3)
+    ].iloc[0]
+
+    assert team_a_gw3["opponent_goals_scored_mean_last_5"] == 0.5
+    assert team_a_gw3["opponent_goals_conceded_mean_last_5"] == 1.5
+
+
+def test_clean_sheet_rate_uses_previous_gameweeks_only() -> None:
+    features = add_rolling_team_goal_features(rolling_team_form_frame())
+    team_a_gw3 = features.loc[
+        (features[TEAM_ID_NORMALIZED_COLUMN] == "A")
+        & (features[OPPONENT_TEAM_ID_NORMALIZED_COLUMN] == "B")
+        & (features["gw"] == 3)
+    ].iloc[0]
+
+    assert team_a_gw3["team_clean_sheet_rate_last_5"] == 0.5
+    assert team_a_gw3["opponent_clean_sheet_rate_last_5"] == 0.0
+
+
+def test_rolling_team_features_do_not_cross_season_boundaries() -> None:
+    features = add_rolling_team_goal_features(rolling_team_form_frame().dropna())
+    first_rows = features.loc[features["gw"] == 1]
+
+    assert first_rows["team_goals_scored_mean_last_5"].isna().all()
+    assert first_rows["team_clean_sheet_rate_last_5"].isna().all()
 
 
 def test_elo_for_gameweek_does_not_include_same_gameweek_result() -> None:
