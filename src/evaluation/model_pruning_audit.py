@@ -475,8 +475,6 @@ def _summary_lines(
         )
     ]
     position_wise = _model_classification(classifications, "position_wise_models")
-    lightgbm = _model_classification(classifications, "LightGBM")
-    residual_lightgbm = _model_classification(classifications, "residual_LightGBM")
     validation_seasons = sorted(
         audit.loc[audit["segment_type"].eq("season"), "segment"].astype(str).unique()
     )
@@ -508,7 +506,6 @@ def _summary_lines(
             )
             + "."
         ),
-        f"- LightGBM status: `LightGBM`={lightgbm}; `residual_LightGBM`={residual_lightgbm}.",
         f"- Position-wise model status: `position_wise_models`={position_wise}.",
         "",
     ]
@@ -521,7 +518,7 @@ def write_audit_report(audit: pd.DataFrame, classifications: pd.DataFrame, path:
         audit["segment_type"].eq("gameweek_bucket") & audit["segment"].eq("GW1-5")
     ].sort_values("mae")
     residual_models = sorted(model for model in audit["model"].unique() if model.startswith("residual_"))
-    tree_models = ["XGBoost", "LightGBM", "CatBoost", "residual_XGBoost", "residual_LightGBM", "residual_CatBoost"]
+    tree_models = ["XGBoost", "CatBoost", "residual_XGBoost", "residual_CatBoost"]
     position_models = ["position_wise_models", "global_plus_position_interactions"]
     baseline_early = gw_1_5.loc[gw_1_5["model"].eq(BASELINE_REFERENCE)]
     early_beaters = gw_1_5.loc[

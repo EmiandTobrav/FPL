@@ -1,4 +1,4 @@
-# Current Model Findings
+﻿# Current Model Findings
 
 Source files:
 
@@ -18,7 +18,6 @@ The current result files contain successful rows for these models:
   - `Ridge`
   - `ElasticNet`
   - `XGBoost`
-  - `LightGBM`
   - `CatBoost`
 - Trained two-stage model:
   - `two_stage_minutes_points`

@@ -1,4 +1,4 @@
-# Baseline Feature Report
+﻿# Baseline Feature Report
 
 This report compares the backtest immediately before and after adding leakage-safe baseline prediction features to the trained model feature set.
 
@@ -21,12 +21,10 @@ Lower MAE/RMSE is better. Higher Spearman is better.
 | ElasticNet | 1.2403 | 1.2276 | -0.0127 | 2.1539 | 2.1483 | -0.0056 | 0.6467 | 0.6462 | -0.0005 |
 | CatBoost | 1.1958 | 1.1963 | 0.0005 | 2.1419 | 2.1422 | 0.0003 | 0.6515 | 0.6516 | 0.0001 |
 | XGBoost | 1.1978 | 1.1981 | 0.0003 | 2.1410 | 2.1427 | 0.0017 | 0.6517 | 0.6514 | -0.0003 |
-| LightGBM | 1.2014 | 1.2017 | 0.0003 | 2.1554 | 2.1564 | 0.0010 | 0.6477 | 0.6467 | -0.0010 |
 | residual_Ridge | 1.3057 | 1.2058 | -0.0999 | 2.2156 | 2.1335 | -0.0821 | 0.5434 | 0.6558 | 0.1124 |
 | residual_ElasticNet | 1.3051 | 1.2158 | -0.0893 | 2.2151 | 2.1356 | -0.0795 | 0.5489 | 0.6564 | 0.1075 |
 | residual_CatBoost | 1.1837 | 1.1834 | -0.0003 | 2.1298 | 2.1296 | -0.0002 | 0.6611 | 0.6612 | 0.0001 |
 | residual_XGBoost | 1.1853 | 1.1847 | -0.0006 | 2.1322 | 2.1311 | -0.0011 | 0.6602 | 0.6607 | 0.0005 |
-| residual_LightGBM | 1.1890 | 1.1891 | 0.0001 | 2.1436 | 2.1437 | 0.0001 | 0.6565 | 0.6564 | -0.0001 |
 
 ## Best Overall Models After Adding Features
 

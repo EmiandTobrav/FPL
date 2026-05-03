@@ -1,4 +1,4 @@
-# Season Window Comparison
+﻿# Season Window Comparison
 
 Rolling-origin comparison of season windows. Broad ablation and feature selection remain opt-in and are not run by this experiment.
 
@@ -37,9 +37,6 @@ Rolling-origin comparison of season windows. Broad ablation and feature selectio
 | ElasticNet | full_history | 3 | 1.1037 | 2.0254 | 0.6256 | 0.0667 | 0.0667 | 0.0600 |
 | ElasticNet | rich_feature_seasons | 3 | 1.1037 | 2.0254 | 0.6256 | 0.0667 | 0.0667 | 0.0600 |
 | ElasticNet | supported_seasons | 3 | 1.1037 | 2.0254 | 0.6256 | 0.0667 | 0.0667 | 0.0600 |
-| LightGBM | full_history | 3 | 1.0673 | 2.0351 | 0.6442 | 0.0000 | 0.0167 | 0.0400 |
-| LightGBM | rich_feature_seasons | 3 | 1.0673 | 2.0351 | 0.6442 | 0.0000 | 0.0167 | 0.0400 |
-| LightGBM | supported_seasons | 3 | 1.0673 | 2.0351 | 0.6442 | 0.0000 | 0.0167 | 0.0400 |
 | Ridge | full_history | 3 | 1.1003 | 2.0250 | 0.6262 | 0.0667 | 0.0500 | 0.0600 |
 | Ridge | rich_feature_seasons | 3 | 1.1003 | 2.0250 | 0.6262 | 0.0667 | 0.0500 | 0.0600 |
 | Ridge | supported_seasons | 3 | 1.1003 | 2.0250 | 0.6262 | 0.0667 | 0.0500 | 0.0600 |
@@ -61,9 +58,6 @@ Rolling-origin comparison of season windows. Broad ablation and feature selectio
 | residual_ElasticNet | full_history | 3 | 1.0885 | 2.0112 | 0.6366 | 0.0667 | 0.0667 | 0.0667 |
 | residual_ElasticNet | rich_feature_seasons | 3 | 1.0885 | 2.0112 | 0.6366 | 0.0667 | 0.0667 | 0.0667 |
 | residual_ElasticNet | supported_seasons | 3 | 1.0885 | 2.0112 | 0.6366 | 0.0667 | 0.0667 | 0.0667 |
-| residual_LightGBM | full_history | 3 | 1.0569 | 2.0287 | 0.6496 | 0.0000 | 0.0000 | 0.0333 |
-| residual_LightGBM | rich_feature_seasons | 3 | 1.0569 | 2.0287 | 0.6496 | 0.0000 | 0.0000 | 0.0333 |
-| residual_LightGBM | supported_seasons | 3 | 1.0569 | 2.0287 | 0.6496 | 0.0000 | 0.0000 | 0.0333 |
 | residual_Ridge | full_history | 3 | 1.0809 | 2.0093 | 0.6385 | 0.0667 | 0.0500 | 0.0600 |
 | residual_Ridge | rich_feature_seasons | 3 | 1.0809 | 2.0093 | 0.6385 | 0.0667 | 0.0500 | 0.0600 |
 | residual_Ridge | supported_seasons | 3 | 1.0809 | 2.0093 | 0.6385 | 0.0667 | 0.0500 | 0.0600 |
@@ -87,8 +81,6 @@ Positive MAE/RMSE deltas mean the older window is worse; negative deltas mean it
 | CatBoost | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | XGBoost | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | XGBoost | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
-| LightGBM | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
-| LightGBM | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | residual_Ridge | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | residual_Ridge | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | residual_ElasticNet | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
@@ -97,8 +89,6 @@ Positive MAE/RMSE deltas mean the older window is worse; negative deltas mean it
 | residual_CatBoost | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | residual_XGBoost | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | residual_XGBoost | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
-| residual_LightGBM | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
-| residual_LightGBM | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | global_plus_position_interactions | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | global_plus_position_interactions | supported_vs_rich | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |
 | position_wise_models | full_vs_supported | 0.0000 | 0.0000 | 0.0000 | older window hurts MAE |

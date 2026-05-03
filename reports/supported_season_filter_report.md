@@ -1,4 +1,4 @@
-# Supported-Season Filter Report
+﻿# Supported-Season Filter Report
 
 Minimum season: `2022-23`.
 
@@ -54,7 +54,6 @@ Positive deltas mean the metric increased after filtering; for MAE/RMSE that is 
 | model | full_mae | filtered_mae | delta_mae | full_rmse | filtered_rmse | delta_rmse | full_spearman | filtered_spearman | delta_spearman | full_top_10_precision | filtered_top_10_precision | delta_top_10_precision | full_top_20_precision | filtered_top_20_precision | delta_top_20_precision | full_top_50_precision | filtered_top_50_precision | delta_top_50_precision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | residual_CatBoost | 1.0487 | 1.0487 | 0.0000 | 2.0062 | 2.0062 | 0.0000 | 0.6549 | 0.6549 | 0.0000 | 0.0667 | 0.0667 | 0.0000 | 0.0333 | 0.0333 | 0.0000 | 0.0667 | 0.0667 | 0.0000 |
-| residual_LightGBM | 1.0569 | 1.0569 | -0.0000 | 2.0287 | 2.0287 | 0.0000 | 0.6496 | 0.6496 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0333 | 0.0333 | 0.0000 |
 | residual_XGBoost | 1.0484 | 1.0484 | 0.0000 | 2.0076 | 2.0076 | 0.0000 | 0.6538 | 0.6538 | 0.0000 | 0.0667 | 0.0667 | 0.0000 | 0.0333 | 0.0333 | 0.0000 | 0.0400 | 0.0400 | 0.0000 |
 | minutes_adjusted_rolling_mean | 1.0098 | 1.0098 | 0.0000 | 2.1574 | 2.1574 | 0.0000 | 0.6715 | 0.6715 | 0.0000 | 0.0333 | 0.0333 | 0.0000 | 0.0667 | 0.0667 | 0.0000 | 0.0533 | 0.0533 | 0.0000 |
 

@@ -68,7 +68,7 @@ POSITION_LABEL_MAP = {
     "MID": "MID",
     "FWD": "FWD",
 }
-RESIDUAL_MODEL_NAMES = ("Ridge", "ElasticNet", "XGBoost", "LightGBM", "CatBoost")
+RESIDUAL_MODEL_NAMES = ("Ridge", "ElasticNet", "XGBoost", "CatBoost")
 BASELINE_FEATURE_MODELS = {
     "pred_rolling_3_gameweek_mean": "rolling_3_gameweek_mean",
     "pred_rolling_5_gameweek_mean": "rolling_5_gameweek_mean",
@@ -175,20 +175,18 @@ RAW_CURRENT_GW_OUTCOME_COLUMNS = (
     "team_a_score",
 )
 RAW_TEAM_COLUMNS = ("team", "opponent_team")
-FOCUS_DIRECT_MODEL_NAMES = ("Ridge", "CatBoost", "LightGBM", "XGBoost")
-FOCUS_RESIDUAL_MODEL_NAMES = ("Ridge", "CatBoost", "LightGBM", "XGBoost")
+FOCUS_DIRECT_MODEL_NAMES = ("Ridge", "CatBoost", "XGBoost")
+FOCUS_RESIDUAL_MODEL_NAMES = ("Ridge", "CatBoost", "XGBoost")
 SEASON_WINDOW_FOCUS_MODELS = (
     MINUTES_ADJUSTED_BASELINE_NAME,
     "Ridge",
     "ElasticNet",
     "CatBoost",
     "XGBoost",
-    "LightGBM",
     "residual_Ridge",
     "residual_ElasticNet",
     "residual_CatBoost",
     "residual_XGBoost",
-    "residual_LightGBM",
     "global_plus_position_interactions",
     "position_wise_models",
 )
@@ -701,25 +699,6 @@ def sklearn_model_specs(random_state: int = 42) -> list[SklearnModelSpec]:
         )
     else:
         LOGGER.warning("Skipping XGBoost: package is not installed.")
-
-    if importlib.util.find_spec("lightgbm") is not None:
-        from lightgbm import LGBMRegressor
-
-        specs.append(
-            SklearnModelSpec(
-                "LightGBM",
-                LGBMRegressor(
-                    n_estimators=300,
-                    learning_rate=0.05,
-                    num_leaves=31,
-                    random_state=random_state,
-                    n_jobs=1,
-                    verbose=-1,
-                ),
-            )
-        )
-    else:
-        LOGGER.warning("Skipping LightGBM: package is not installed.")
 
     if importlib.util.find_spec("catboost") is not None:
         from catboost import CatBoostRegressor
@@ -1812,7 +1791,6 @@ def write_supported_season_filter_report(
     filtered_aggregate = aggregate_model_metrics(filtered_results)
     focus_models = (
         "residual_CatBoost",
-        "residual_LightGBM",
         "residual_XGBoost",
         MINUTES_ADJUSTED_BASELINE_NAME,
     )
@@ -1949,7 +1927,6 @@ def write_team_form_feature_report(
 
     focus_models = (
         "residual_CatBoost",
-        "residual_LightGBM",
         "residual_XGBoost",
         MINUTES_ADJUSTED_BASELINE_NAME,
     )
@@ -2058,11 +2035,9 @@ def run_broad_feature_ablation(
         focus_models = {
             "Ridge",
             "CatBoost",
-            "LightGBM",
             "XGBoost",
             "residual_Ridge",
             "residual_CatBoost",
-            "residual_LightGBM",
             "residual_XGBoost",
             MINUTES_ADJUSTED_BASELINE_NAME,
         }
