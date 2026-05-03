@@ -3,7 +3,13 @@ import shutil
 
 import pandas as pd
 
-from data.build_dataset import build_modeling_dataset, dataset_summary, read_dataset, write_dataset
+from data.build_dataset import (
+    POSITION_FILTER_DIAGNOSTICS_ATTR,
+    build_modeling_dataset,
+    dataset_summary,
+    read_dataset,
+    write_dataset,
+)
 from evaluation.backtest import STABLE_FEATURE_COLUMNS
 
 
@@ -60,6 +66,28 @@ def team_source_frame() -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def positioned_source_frame() -> pd.DataFrame:
+    rows = []
+    positions = [(1, "GKP"), (2, "DEF"), (3, "MID"), (4, "FWD"), (5, "AM")]
+    for season in ["2022-23", "2023-24"]:
+        for element, position in positions:
+            for gw in [1, 2, 3]:
+                rows.append(
+                    {
+                        "element": element,
+                        "season": season,
+                        "gw": gw,
+                        "position": position,
+                        "total_points": element + gw,
+                        "minutes": 90,
+                        "starts": 1,
+                        "bonus": 0,
+                        "bps": 10,
+                    }
+                )
+    return pd.DataFrame(rows)
+
+
 def test_build_dataset_creates_output_parquet() -> None:
     scratch = Path("tests/.tmp_build_dataset")
     shutil.rmtree(scratch, ignore_errors=True)
@@ -84,6 +112,39 @@ def test_build_dataset_contains_features_and_targets() -> None:
     assert "minutes_mean_last_5" in result.columns
     assert "next_gw_points" in result.columns
     assert "next_3_gw_points" in result.columns
+
+
+def test_build_dataset_removes_unsupported_positions_and_preserves_valid_positions() -> None:
+    result = build_modeling_dataset(positioned_source_frame())
+
+    assert "AM" not in set(result["position"].dropna())
+    assert set(result["position"].dropna()) == {"GK", "DEF", "MID", "FWD"}
+    assert len(result) == 24
+
+
+def test_build_dataset_normalizes_gkp_to_gk() -> None:
+    result = build_modeling_dataset(positioned_source_frame())
+
+    gk_rows = result.loc[result["element"] == 1]
+    assert not gk_rows.empty
+    assert set(gk_rows["position"]) == {"GK"}
+
+
+def test_build_dataset_records_unsupported_position_diagnostics() -> None:
+    result = build_modeling_dataset(positioned_source_frame())
+    summary = dataset_summary(result, target_horizon=3)
+    diagnostics = result.attrs[POSITION_FILTER_DIAGNOSTICS_ATTR]
+
+    assert diagnostics["rows_removed"] == 6
+    assert diagnostics["labels_removed"] == {"AM": 6}
+    assert diagnostics["seasons_affected"] == ["2022-23", "2023-24"]
+    assert "Rows removed for unsupported positions: 6" in summary
+
+
+def test_processed_modeling_data_contains_only_supported_positions() -> None:
+    result = build_modeling_dataset(positioned_source_frame())
+
+    assert set(result["position"].dropna()).issubset({"GK", "DEF", "MID", "FWD"})
 
 
 def test_build_dataset_contains_team_strength_features_when_source_columns_exist() -> None:

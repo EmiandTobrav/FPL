@@ -7,6 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from evaluation.backtest import POSITION_COLUMN, POSITION_LABEL_MAP, normalized_position_labels
 from features.rolling_features import (
     FeatureBuildError,
     build_rolling_features,
@@ -28,10 +29,44 @@ DEFAULT_TEAM_PRIORS_PATH = Path("data/manual/team_season_priors.csv")
 DEFAULT_TEAM_STRENGTH_REPORT_PATH = Path("reports/team_strength_feature_report.md")
 DEFAULT_CANDIDATE_FEATURE_REPORT_PATH = Path("reports/candidate_feature_report.md")
 REQUIRED_COLUMNS = ("season", "gw", "total_points", "minutes")
+POSITION_FILTER_DIAGNOSTICS_ATTR = "position_filter_diagnostics"
 
 
 class DatasetBuildError(ValueError):
     """Raised when the processed modeling dataset cannot be built."""
+
+
+def normalize_and_filter_positions(frame: pd.DataFrame) -> pd.DataFrame:
+    """Normalize FPL positions and remove rows outside the supported position set."""
+    data = frame.copy()
+    if POSITION_COLUMN not in data.columns:
+        data.attrs[POSITION_FILTER_DIAGNOSTICS_ATTR] = {
+            "position_column_present": False,
+            "rows_removed": 0,
+            "labels_removed": {},
+            "seasons_affected": [],
+        }
+        return data
+
+    raw_positions = data[POSITION_COLUMN].astype("string").str.upper()
+    normalized_positions = normalized_position_labels(data[POSITION_COLUMN])
+    valid_positions = set(POSITION_LABEL_MAP.values())
+    unsupported_mask = raw_positions.notna() & ~normalized_positions.isin(valid_positions)
+    removed = data.loc[unsupported_mask].copy()
+    diagnostics = {
+        "position_column_present": True,
+        "rows_removed": int(unsupported_mask.sum()),
+        "labels_removed": raw_positions.loc[unsupported_mask].value_counts().sort_index().to_dict(),
+        "seasons_affected": (
+            sorted(removed["season"].dropna().astype(str).unique())
+            if "season" in removed.columns
+            else []
+        ),
+    }
+    data[POSITION_COLUMN] = normalized_positions
+    data = data.loc[~unsupported_mask].copy()
+    data.attrs[POSITION_FILTER_DIAGNOSTICS_ATTR] = diagnostics
+    return data
 
 
 def read_dataset(path: Path) -> pd.DataFrame:
@@ -75,7 +110,8 @@ def build_modeling_dataset(
     if missing:
         raise DatasetBuildError(f"Cannot build dataset with missing required columns: {missing}")
 
-    features = build_rolling_features(frame)
+    source = normalize_and_filter_positions(frame)
+    features = build_rolling_features(source)
     try:
         team_priors = pd.read_csv(team_priors_path) if team_priors_path.exists() else None
         team_strength = build_team_strength_features(features, team_season_priors=team_priors)
@@ -85,7 +121,12 @@ def build_modeling_dataset(
         # columns. Minimal test fixtures and older raw extracts may not include
         # them, so dataset building falls back to player-only features.
         pass
-    return build_targets(features, target_horizon=target_horizon)
+    dataset = build_targets(features, target_horizon=target_horizon)
+    dataset.attrs[POSITION_FILTER_DIAGNOSTICS_ATTR] = source.attrs.get(
+        POSITION_FILTER_DIAGNOSTICS_ATTR,
+        {},
+    )
+    return dataset
 
 
 def write_dataset(frame: pd.DataFrame, output_path: Path) -> None:
@@ -304,12 +345,23 @@ def dataset_summary(frame: pd.DataFrame, *, target_horizon: int) -> str:
         for column in target_columns
         if column in frame.columns
     }
+    position_filter = frame.attrs.get(POSITION_FILTER_DIAGNOSTICS_ATTR, {})
+    position_lines = []
+    if position_filter:
+        labels_removed = position_filter.get("labels_removed", {})
+        seasons_affected = position_filter.get("seasons_affected", [])
+        position_lines = [
+            f"Rows removed for unsupported positions: {position_filter.get('rows_removed', 0)}",
+            f"Unsupported position labels removed: {labels_removed}",
+            f"Position-filter seasons affected: {seasons_affected}",
+        ]
     return "\n".join(
         [
             f"Rows: {len(frame)}",
             f"Columns: {len(frame.columns)}",
             f"Seasons: {len(seasons)} ({', '.join(seasons)})",
             f"Missing targets: {missing_targets}",
+            *position_lines,
         ]
     )
 
