@@ -23,9 +23,11 @@ from evaluation.backtest import (
     collect_feature_selection_counts,
     feature_selection_candidate_columns,
     final_residual_prediction,
+    load_position_feature_masks,
     minutes_adjusted_baseline_predictions,
     normalize_position_column,
     position_diagnostics,
+    run_position_feature_mask_experiment,
     run_position_model_backtest,
     run_backtest,
     run_broad_feature_ablation,
@@ -37,6 +39,8 @@ from evaluation.backtest import (
     season_window_frame,
     sklearn_model_specs,
     write_position_markdown_summary,
+    write_position_feature_mask_report,
+    write_position_feature_mask_results,
     write_position_results,
     write_supported_season_filter_report,
     write_markdown_summary,
@@ -168,12 +172,46 @@ def minimal_results_frame() -> pd.DataFrame:
     )
 
 
+def write_relevance_fixture(path: Path) -> None:
+    rows = []
+    for position in ["GK", "DEF", "MID", "FWD"]:
+        for feature, score in [
+            ("points_mean_last_3", 1.0),
+            ("minutes_mean_last_5", 0.9),
+            ("team", 0.8),
+            ("total_points", 0.7),
+        ]:
+            rows.append(
+                {
+                    "position": position,
+                    "feature": feature,
+                    "non_missing_pct": 1.0,
+                    "spearman": 0.2,
+                    "pearson": 0.2,
+                    "mutual_information": 0.1,
+                    "single_feature_mae": 1.0,
+                    "baseline_mae": 2.0,
+                    "mae_delta_vs_baseline": -1.0,
+                    "validation_seasons": 2,
+                    "useful_seasons": 2,
+                    "useful_in_at_least_2_of_3": True,
+                    "mean_abs_spearman_rank": 1.0,
+                    "stable_sign": True,
+                    "unstable_sign": False,
+                    "high_missingness": False,
+                    "relevance_score": score,
+                }
+            )
+    pd.DataFrame(rows).to_csv(path, index=False)
+
+
 def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) -> dict[str, list[object]]:
     calls: dict[str, list[object]] = {
         "write_results": [],
         "broad_ablation": [],
         "feature_selection": [],
         "model_pruning_audit": [],
+        "position_feature_mask": [],
     }
 
     monkeypatch.setattr(sys, "argv", argv)
@@ -231,6 +269,8 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
     monkeypatch.setattr(backtest_module, "write_broad_feature_ablation_report", lambda *args, **kwargs: None)
     monkeypatch.setattr(backtest_module, "write_feature_selection_results", lambda *args, **kwargs: None)
     monkeypatch.setattr(backtest_module, "write_feature_selection_report", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_position_feature_mask_results", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_position_feature_mask_report", lambda *args, **kwargs: None)
 
     def record_broad_ablation(*args, **kwargs) -> pd.DataFrame:
         calls["broad_ablation"].append(kwargs.get("min_season"))
@@ -246,6 +286,12 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
         backtest_module,
         "run_model_pruning_audit_report",
         lambda *args, **kwargs: calls["model_pruning_audit"].append(kwargs.get("min_season")),
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "run_position_feature_mask_experiment",
+        lambda *args, **kwargs: calls["position_feature_mask"].append("run")
+        or minimal_results_frame().assign(feature_setup="current"),
     )
     return calls
 
@@ -307,6 +353,7 @@ def test_backtest_module_has_command_line_help() -> None:
     assert "--run-feature-selection" in completed.stdout
     assert "--run-season-window-comparison" in completed.stdout
     assert "--run-model-pruning-audit" in completed.stdout
+    assert "--run-position-feature-mask-experiment" in completed.stdout
 
 
 def test_preprocessor_outputs_named_feature_dataframe() -> None:
@@ -340,6 +387,7 @@ def test_main_full_history_does_not_run_optional_experiments(monkeypatch) -> Non
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == []
+    assert calls["position_feature_mask"] == []
     assert calls["write_results"] == [scratch / "model_results.csv"]
 
 
@@ -358,6 +406,7 @@ def test_main_supported_default_does_not_run_optional_experiments(
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == []
+    assert calls["position_feature_mask"] == []
     assert calls["write_results"] == [scratch / "model_results_supported_seasons.csv"]
 
 
@@ -381,6 +430,7 @@ def test_main_broad_ablation_flag_runs_broad_ablation(monkeypatch) -> None:
     assert calls["broad_ablation"] == ["2020-21"]
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == []
+    assert calls["position_feature_mask"] == []
 
 
 def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None:
@@ -403,6 +453,7 @@ def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == ["2020-21"]
     assert calls["model_pruning_audit"] == []
+    assert calls["position_feature_mask"] == []
 
 
 def test_main_model_pruning_audit_flag_runs_audit(monkeypatch) -> None:
@@ -423,6 +474,27 @@ def test_main_model_pruning_audit_flag_runs_audit(monkeypatch) -> None:
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == ["2022-23"]
+    assert calls["position_feature_mask"] == []
+
+
+def test_main_position_feature_mask_flag_runs_only_mask_experiment(monkeypatch) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/position_mask_flag")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        [
+            "evaluation.backtest",
+            "--input",
+            "dummy.parquet",
+            "--run-position-feature-mask-experiment",
+        ],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == []
+    assert calls["feature_selection"] == []
+    assert calls["position_feature_mask"] == ["run"]
 
 
 def test_min_season_filters_train_and_validation_data() -> None:
@@ -638,6 +710,87 @@ def test_broad_ablation_outputs_are_written_separately() -> None:
 
         assert results_path.exists()
         assert report_path.exists()
+        assert not (scratch / DEFAULT_SUPPORTED_RESULTS_PATH.name).exists()
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_position_feature_masks_use_relevance_and_exclude_unsafe_columns() -> None:
+    scratch = Path("tests/.tmp_position_mask")
+    shutil.rmtree(scratch, ignore_errors=True)
+    try:
+        scratch.mkdir(parents=True)
+        relevance_path = scratch / "position_feature_relevance.csv"
+        write_relevance_fixture(relevance_path)
+
+        masks = load_position_feature_masks(relevance_path)
+
+        for features in masks.values():
+            assert "points_mean_last_3" in features
+            assert "team" not in features
+            assert "total_points" not in features
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_position_feature_mask_experiment_outputs_separate_reports() -> None:
+    scratch = Path("tests/.tmp_position_mask")
+    shutil.rmtree(scratch, ignore_errors=True)
+    try:
+        scratch.mkdir(parents=True)
+        relevance_path = scratch / "position_feature_relevance.csv"
+        write_relevance_fixture(relevance_path)
+        results = run_position_feature_mask_experiment(
+            three_season_modeling_frame(),
+            relevance_path=relevance_path,
+            model_specs=[
+                SklearnModelSpec("Ridge", DummyRegressor(strategy="mean")),
+                SklearnModelSpec("CatBoost", DummyRegressor(strategy="mean")),
+            ],
+            residual_specs=[
+                SklearnModelSpec("Ridge", DummyRegressor(strategy="mean")),
+                SklearnModelSpec("CatBoost", DummyRegressor(strategy="mean")),
+            ],
+        )
+        results_path = scratch / "position_feature_mask_results.csv"
+        report_path = scratch / "position_feature_mask_report.md"
+
+        write_position_feature_mask_results(results, results_path)
+        write_position_feature_mask_report(results, report_path)
+
+        assert {"current", "model_specific_position_masks"}.issubset(
+            set(results["feature_setup"])
+        )
+        policy_rows = results.loc[
+            results["feature_setup"] == "model_specific_position_masks"
+        ]
+        assert {"Ridge", "residual_Ridge", "global_plus_position_interactions", "position_wise_models"}.issubset(
+            set(policy_rows["model"])
+        )
+        assert {"CatBoost", "residual_CatBoost"}.issubset(set(policy_rows["model"]))
+        comparable = [
+            "validation_season",
+            "mae",
+            "rmse",
+            "spearman",
+            "top_10_precision",
+            "top_20_precision",
+            "top_50_precision",
+        ]
+        for model in ("CatBoost", "residual_CatBoost"):
+            current_model = results.loc[
+                (results["feature_setup"] == "current") & (results["model"] == model),
+                comparable,
+            ].reset_index(drop=True)
+            policy_model = results.loc[
+                (results["feature_setup"] == "model_specific_position_masks")
+                & (results["model"] == model),
+                comparable,
+            ].reset_index(drop=True)
+            pd.testing.assert_frame_equal(current_model, policy_model)
+        assert results_path.exists()
+        assert report_path.exists()
+        assert "model-specific" in report_path.read_text(encoding="utf-8")
         assert not (scratch / DEFAULT_SUPPORTED_RESULTS_PATH.name).exists()
     finally:
         shutil.rmtree(scratch, ignore_errors=True)

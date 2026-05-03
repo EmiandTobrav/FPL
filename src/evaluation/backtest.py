@@ -48,6 +48,9 @@ DEFAULT_FEATURE_SELECTION_RESULTS_PATH = Path("reports/feature_selection_results
 DEFAULT_FEATURE_SELECTION_REPORT_PATH = Path("reports/feature_selection_report.md")
 DEFAULT_SEASON_WINDOW_RESULTS_PATH = Path("reports/season_window_results.csv")
 DEFAULT_SEASON_WINDOW_REPORT_PATH = Path("reports/season_window_comparison.md")
+DEFAULT_POSITION_FEATURE_MASK_RESULTS_PATH = Path("reports/position_feature_mask_results.csv")
+DEFAULT_POSITION_FEATURE_MASK_REPORT_PATH = Path("reports/position_feature_mask_report.md")
+DEFAULT_POSITION_FEATURE_RELEVANCE_PATH = Path("reports/position_feature_relevance.csv")
 TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
@@ -177,6 +180,38 @@ RAW_CURRENT_GW_OUTCOME_COLUMNS = (
 RAW_TEAM_COLUMNS = ("team", "opponent_team")
 FOCUS_DIRECT_MODEL_NAMES = ("Ridge", "CatBoost", "XGBoost")
 FOCUS_RESIDUAL_MODEL_NAMES = ("Ridge", "CatBoost", "XGBoost")
+POSITION_FEATURE_MASK_DIRECT_MODEL_NAMES = ("Ridge", "ElasticNet")
+POSITION_FEATURE_MASK_RESIDUAL_MODEL_NAMES = ("Ridge", "ElasticNet")
+POSITION_FEATURE_MASK_UNMASKED_DIRECT_MODEL_NAMES = ("CatBoost", "XGBoost")
+POSITION_FEATURE_MASK_UNMASKED_RESIDUAL_MODEL_NAMES = ("CatBoost", "XGBoost")
+POSITION_FEATURE_MASK_MASKED_MODELS = (
+    "Ridge",
+    "ElasticNet",
+    "residual_Ridge",
+    "residual_ElasticNet",
+    "global_plus_position_interactions",
+    "position_wise_models",
+)
+POSITION_FEATURE_MASK_UNMASKED_MODELS = (
+    "CatBoost",
+    "XGBoost",
+    "residual_CatBoost",
+    "residual_XGBoost",
+    MINUTES_ADJUSTED_BASELINE_NAME,
+)
+POSITION_FEATURE_MASK_FOCUS_MODELS = (
+    "Ridge",
+    "ElasticNet",
+    "CatBoost",
+    "XGBoost",
+    "residual_Ridge",
+    "residual_ElasticNet",
+    "residual_CatBoost",
+    "residual_XGBoost",
+    "global_plus_position_interactions",
+    "position_wise_models",
+    MINUTES_ADJUSTED_BASELINE_NAME,
+)
 SEASON_WINDOW_FOCUS_MODELS = (
     MINUTES_ADJUSTED_BASELINE_NAME,
     "Ridge",
@@ -2004,6 +2039,451 @@ def focus_model_specs(specs: list[SklearnModelSpec], names: tuple[str, ...]) -> 
     return [spec for spec in specs if spec.name in wanted]
 
 
+def _as_bool_series(series: pd.Series) -> pd.Series:
+    if pd.api.types.is_bool_dtype(series):
+        return series.fillna(False)
+    return series.astype(str).str.lower().isin({"true", "1", "yes"})
+
+
+def load_position_feature_masks(
+    path: Path = DEFAULT_POSITION_FEATURE_RELEVANCE_PATH,
+    *,
+    max_features_per_position: int = 20,
+) -> dict[str, tuple[str, ...]]:
+    if not path.exists():
+        raise BacktestError(
+            f"Position feature relevance file not found: {path}. "
+            "Run evaluation.position_feature_relevance first."
+        )
+    relevance = pd.read_csv(path)
+    required_columns = {
+        "position",
+        "feature",
+        "non_missing_pct",
+        "spearman",
+        "mutual_information",
+        "useful_in_at_least_2_of_3",
+        "high_missingness",
+        "relevance_score",
+    }
+    missing = required_columns.difference(relevance.columns)
+    if missing:
+        raise BacktestError(f"Position feature relevance file is missing columns: {sorted(missing)}")
+
+    relevance = relevance.copy()
+    relevance["useful_in_at_least_2_of_3"] = _as_bool_series(
+        relevance["useful_in_at_least_2_of_3"]
+    )
+    relevance["high_missingness"] = _as_bool_series(relevance["high_missingness"])
+    masks: dict[str, tuple[str, ...]] = {}
+    forbidden = {*RAW_CURRENT_GW_OUTCOME_COLUMNS, *RAW_TEAM_COLUMNS, TARGET_COLUMN, "next_3_gw_points"}
+    for position in RANKING_POSITIONS:
+        rows = relevance.loc[
+            relevance["position"].astype(str).eq(position)
+            & relevance["high_missingness"].eq(False)
+            & ~relevance["feature"].isin(forbidden)
+            & (
+                relevance["useful_in_at_least_2_of_3"].eq(True)
+                | relevance["spearman"].abs().ge(0.05)
+                | relevance["mutual_information"].ge(0.01)
+            )
+        ].sort_values(["relevance_score", "non_missing_pct"], ascending=[False, False])
+        masks[position] = tuple(rows["feature"].head(max_features_per_position))
+    return masks
+
+
+def _position_mask_predictions(
+    train: pd.DataFrame,
+    validation: pd.DataFrame,
+    spec: SklearnModelSpec,
+    masks: dict[str, tuple[str, ...]],
+    *,
+    target_column: str,
+    baseline_column: str | None = None,
+) -> tuple[pd.Series, int]:
+    predictions = pd.Series(index=validation.index, dtype="float64")
+    n_train = 0
+    for position, validation_position in validation.groupby(POSITION_COLUMN, dropna=False):
+        position_key = str(position)
+        mask_columns = masks.get(position_key, ())
+        if not mask_columns:
+            continue
+        train_position = train.loc[train[POSITION_COLUMN].astype(str) == position_key].copy()
+        validation_position = validation_position.copy()
+        train_position = train_position.dropna(subset=[target_column])
+        validation_position = validation_position.dropna(subset=[TARGET_COLUMN])
+        if train_position.empty or validation_position.empty:
+            continue
+        columns = feature_columns(train_position, mask_columns)
+        pipeline = Pipeline(
+            [
+                (
+                    "preprocess",
+                    build_preprocessor(train_position, columns, scale_numeric=spec.scale_numeric),
+                ),
+                ("model", clone(spec.estimator)),
+            ]
+        )
+        pipeline.fit(train_position[columns].replace({pd.NA: np.nan}), train_position[target_column])
+        raw_prediction = pd.Series(
+            pipeline.predict(validation_position[columns].replace({pd.NA: np.nan})),
+            index=validation_position.index,
+        )
+        if baseline_column is not None:
+            raw_prediction = final_residual_prediction(
+                validation_position[baseline_column].astype(float),
+                raw_prediction.astype(float),
+            )
+            raw_prediction = pd.Series(
+                raw_prediction.to_numpy(dtype=float),
+                index=validation_position.index,
+            )
+        predictions.loc[validation_position.index] = raw_prediction
+        n_train += len(train_position)
+    return predictions, n_train
+
+
+def _evaluate_position_masked_models(
+    train: pd.DataFrame,
+    validation: pd.DataFrame,
+    *,
+    validation_season: str,
+    masks: dict[str, tuple[str, ...]],
+    direct_specs: list[SklearnModelSpec],
+    residual_specs: list[SklearnModelSpec],
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    validation_model = validation.dropna(subset=[TARGET_COLUMN, POSITION_COLUMN]).copy()
+    train_model = train.dropna(subset=[TARGET_COLUMN, POSITION_COLUMN]).copy()
+    if train_model.empty or validation_model.empty:
+        return rows
+
+    for spec in direct_specs:
+        try:
+            y_pred, n_train = _position_mask_predictions(
+                train_model,
+                validation_model,
+                spec,
+                masks,
+                target_column=TARGET_COLUMN,
+            )
+            row = evaluate_predictions(
+                model_name=spec.name,
+                validation_season=validation_season,
+                y_true=validation_model[TARGET_COLUMN],
+                y_pred=y_pred,
+                positions=validation_model[POSITION_COLUMN],
+            )
+            row["n_train"] = n_train
+            rows.append(row)
+        except Exception as exc:  # noqa: BLE001 - model libraries raise varied exception types.
+            LOGGER.warning("Skipping masked model %s for %s: %s", spec.name, validation_season, exc)
+
+    train_residual = add_residual_target(train_model, minutes_adjusted_baseline_predictions(train_model))
+    validation_residual = validation_model.copy()
+    validation_residual[BASELINE_PREDICTION_COLUMN] = minutes_adjusted_baseline_predictions(
+        validation_residual
+    )
+    train_residual = train_residual.dropna(
+        subset=[TARGET_COLUMN, BASELINE_PREDICTION_COLUMN, RESIDUAL_TARGET_COLUMN]
+    )
+    validation_residual = validation_residual.dropna(subset=[TARGET_COLUMN, BASELINE_PREDICTION_COLUMN])
+    for spec in residual_specs:
+        try:
+            y_pred, n_train = _position_mask_predictions(
+                train_residual,
+                validation_residual,
+                spec,
+                masks,
+                target_column=RESIDUAL_TARGET_COLUMN,
+                baseline_column=BASELINE_PREDICTION_COLUMN,
+            )
+            row = evaluate_predictions(
+                model_name=f"residual_{spec.name}",
+                validation_season=validation_season,
+                y_true=validation_residual[TARGET_COLUMN],
+                y_pred=y_pred,
+                positions=validation_residual[POSITION_COLUMN],
+            )
+            row["n_train"] = n_train
+            rows.append(row)
+        except Exception as exc:  # noqa: BLE001 - model libraries raise varied exception types.
+            LOGGER.warning(
+                "Skipping masked residual model %s for %s: %s",
+                spec.name,
+                validation_season,
+                exc,
+            )
+    return rows
+
+
+def _evaluate_position_masked_strategies(
+    train: pd.DataFrame,
+    validation: pd.DataFrame,
+    *,
+    validation_season: str,
+    masks: dict[str, tuple[str, ...]],
+    estimator: Any,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    train_model = train.dropna(subset=[TARGET_COLUMN, POSITION_COLUMN]).copy()
+    validation_model = validation.dropna(subset=[TARGET_COLUMN, POSITION_COLUMN]).copy()
+    if train_model.empty or validation_model.empty:
+        return rows
+
+    predictions = pd.DataFrame(index=validation_model.index)
+    for position, validation_position in validation_model.groupby(POSITION_COLUMN, dropna=False):
+        position_key = str(position)
+        mask_columns = masks.get(position_key, ())
+        if not mask_columns:
+            continue
+        configured = dedupe_columns([POSITION_COLUMN, *mask_columns])
+        predictions.loc[validation_position.index, "global_plus_position_interactions"] = (
+            fit_predict_direct_model(
+                train_model,
+                validation_position,
+                estimator=estimator,
+                include_position=True,
+                add_interactions=True,
+                configured_columns=configured,
+            )
+        )
+        train_position = train_model.loc[train_model[POSITION_COLUMN].astype(str) == position_key]
+        if len(train_position) < MIN_POSITION_TRAIN_ROWS:
+            predictions.loc[validation_position.index, "position_wise_models"] = (
+                fit_predict_direct_model(
+                    train_model,
+                    validation_position,
+                    estimator=estimator,
+                    include_position=True,
+                    add_interactions=False,
+                    configured_columns=configured,
+                )
+            )
+        else:
+            predictions.loc[validation_position.index, "position_wise_models"] = (
+                fit_predict_direct_model(
+                    train_position,
+                    validation_position,
+                    estimator=estimator,
+                    include_position=False,
+                    add_interactions=False,
+                    configured_columns=mask_columns,
+                )
+            )
+
+    for strategy in ("global_plus_position_interactions", "position_wise_models"):
+        row = evaluate_predictions(
+            model_name=strategy,
+            validation_season=validation_season,
+            y_true=validation_model[TARGET_COLUMN],
+            y_pred=predictions[strategy],
+            positions=validation_model[POSITION_COLUMN],
+        )
+        row["n_train"] = len(train_model)
+        rows.append(row)
+    return rows
+
+
+def _current_position_mask_control_rows(
+    frame: pd.DataFrame,
+    *,
+    direct_specs: list[SklearnModelSpec],
+    residual_specs: list[SklearnModelSpec],
+) -> pd.DataFrame:
+    standard = run_backtest(
+        frame,
+        model_specs=direct_specs,
+        residual_specs=residual_specs,
+        include_two_stage=False,
+    )
+    standard = standard.loc[standard["model"].isin(POSITION_FEATURE_MASK_FOCUS_MODELS)].copy()
+    position_results = run_position_model_backtest(
+        frame,
+        estimator=clone(direct_specs[0].estimator),
+    )
+    position_rows = _position_strategy_window_rows(position_results)
+    current = pd.concat([standard, position_rows], ignore_index=True, sort=False)
+    current = current.loc[current["model"].isin(POSITION_FEATURE_MASK_FOCUS_MODELS)].copy()
+    current.insert(0, "feature_setup", "current")
+    return current
+
+
+def run_position_feature_mask_experiment(
+    frame: pd.DataFrame,
+    *,
+    relevance_path: Path = DEFAULT_POSITION_FEATURE_RELEVANCE_PATH,
+    model_specs: list[SklearnModelSpec] | None = None,
+    residual_specs: list[SklearnModelSpec] | None = None,
+) -> pd.DataFrame:
+    masks = load_position_feature_masks(relevance_path)
+    direct_specs = focus_model_specs(
+        sklearn_model_specs() if model_specs is None else model_specs,
+        POSITION_FEATURE_MASK_DIRECT_MODEL_NAMES,
+    )
+    unmasked_direct_specs = focus_model_specs(
+        sklearn_model_specs() if model_specs is None else model_specs,
+        POSITION_FEATURE_MASK_UNMASKED_DIRECT_MODEL_NAMES,
+    )
+    residual_focus_specs = focus_model_specs(
+        residual_model_specs() if residual_specs is None else residual_specs,
+        POSITION_FEATURE_MASK_RESIDUAL_MODEL_NAMES,
+    )
+    unmasked_residual_specs = focus_model_specs(
+        residual_model_specs() if residual_specs is None else residual_specs,
+        POSITION_FEATURE_MASK_UNMASKED_RESIDUAL_MODEL_NAMES,
+    )
+    current = _current_position_mask_control_rows(
+        frame,
+        direct_specs=[*direct_specs, *unmasked_direct_specs],
+        residual_specs=[*residual_focus_specs, *unmasked_residual_specs],
+    )
+
+    data = add_baseline_prediction_features(normalize_position_column(frame))
+    data["season"] = data["season"].astype(str)
+    data = data.sort_values(["season", "gw"]).reset_index(drop=True)
+    rows: list[dict[str, Any]] = []
+    for season in validation_seasons(data):
+        train, validation = split_train_validation(data, season)
+        if train.empty or validation.empty:
+            continue
+        baseline_rows = evaluate_baselines(
+            validation,
+            validation_season=season,
+            models=tuple(model for model in BASELINES if model.name == MINUTES_ADJUSTED_BASELINE_NAME),
+        )
+        rows.extend(baseline_rows)
+        rows.extend(
+            _evaluate_position_masked_models(
+                train,
+                validation,
+                validation_season=season,
+                masks=masks,
+                direct_specs=direct_specs,
+                residual_specs=residual_focus_specs,
+            )
+        )
+        rows.extend(
+            _evaluate_position_masked_strategies(
+                train,
+                validation,
+                validation_season=season,
+                masks=masks,
+                estimator=clone(direct_specs[0].estimator),
+            )
+        )
+    masked = pd.DataFrame(rows)
+    masked = masked.loc[masked["model"].isin(POSITION_FEATURE_MASK_MASKED_MODELS)].copy()
+    masked.insert(0, "feature_setup", "model_specific_position_masks")
+    unmasked = current.loc[
+        current["model"].isin(POSITION_FEATURE_MASK_UNMASKED_MODELS)
+    ].copy()
+    unmasked["feature_setup"] = "model_specific_position_masks"
+    results = pd.concat([current, masked, unmasked], ignore_index=True, sort=False)
+    results.attrs["position_feature_masks"] = masks
+    results.attrs["masked_model_policy"] = {
+        "masked_models": POSITION_FEATURE_MASK_MASKED_MODELS,
+        "unmasked_models": POSITION_FEATURE_MASK_UNMASKED_MODELS,
+    }
+    return results.sort_values(["feature_setup", "validation_season", "model"]).reset_index(drop=True)
+
+
+def write_position_feature_mask_results(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_POSITION_FEATURE_MASK_RESULTS_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    results.to_csv(path, index=False)
+
+
+def _aggregate_feature_mask_results(results: pd.DataFrame) -> pd.DataFrame:
+    metrics = ["mae", "rmse", "spearman", "top_10_precision", "top_20_precision", "top_50_precision"]
+    available = [metric for metric in metrics if metric in results.columns]
+    return results.groupby(["feature_setup", "model"], as_index=False)[available].mean()
+
+
+def write_position_feature_mask_report(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_POSITION_FEATURE_MASK_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    aggregate = _aggregate_feature_mask_results(results)
+    metrics = ["mae", "rmse", "spearman", "top_10_precision", "top_20_precision", "top_50_precision"]
+    current = aggregate.loc[aggregate["feature_setup"] == "current"].rename(
+        columns={metric: f"current_{metric}" for metric in metrics}
+    )
+    policy = aggregate.loc[
+        aggregate["feature_setup"] == "model_specific_position_masks"
+    ].rename(
+        columns={metric: f"policy_{metric}" for metric in metrics}
+    )
+    comparison = current.merge(policy, on="model", how="inner")
+    comparison = comparison.drop(columns=["feature_setup_x", "feature_setup_y"], errors="ignore")
+    for metric in metrics:
+        if f"current_{metric}" in comparison.columns and f"policy_{metric}" in comparison.columns:
+            comparison[f"delta_{metric}"] = comparison[f"policy_{metric}"] - comparison[f"current_{metric}"]
+    masks = results.attrs.get("position_feature_masks", {})
+    policy_attrs = results.attrs.get("masked_model_policy", {})
+    policy_rows = pd.DataFrame(
+        [
+            {
+                "policy": "masked",
+                "models": ", ".join(policy_attrs.get("masked_models", ())),
+            },
+            {
+                "policy": "unmasked_current_features",
+                "models": ", ".join(policy_attrs.get("unmasked_models", ())),
+            },
+        ]
+    )
+    mask_rows = pd.DataFrame(
+        [
+            {
+                "position": position,
+                "feature_count": len(features),
+                "features": ", ".join(features),
+            }
+            for position, features in masks.items()
+        ]
+    )
+    lines = [
+        "# Position Feature Mask Experiment",
+        "",
+        "Opt-in comparison of the current feature setup against a model-specific "
+        "position mask policy derived from `reports/position_feature_relevance.csv` "
+        "and the relevance report. No wrapper search, broad ablation, or default "
+        "model logic changes are performed.",
+        "",
+        "Masks are applied only to linear and position-strategy models because the "
+        "previous mask experiment showed gains for Ridge, ElasticNet, residual "
+        "linear models, `global_plus_position_interactions`, and "
+        "`position_wise_models`, while CatBoost/XGBoost results were mixed or "
+        "harmful. Boosted models and the minutes-adjusted rolling-mean baseline "
+        "therefore keep the current feature setup in this experiment.",
+        "",
+        "## Model-Specific Policy",
+        "",
+        markdown_table(policy_rows),
+        "",
+        "## Position Masks",
+        "",
+        markdown_table(mask_rows),
+        "",
+        "## Aggregate Comparison",
+        "",
+        "Negative MAE/RMSE deltas are better. Positive Spearman and top-k deltas are better.",
+        "",
+        markdown_table(comparison.sort_values(["delta_mae", "model"]) if "delta_mae" in comparison.columns else comparison),
+        "",
+        "## Recommendation",
+        "",
+        "Use this as a screening experiment only. Promote a mask only if it improves the target "
+        "metric across rolling validation seasons and does not degrade the baseline comparison.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def run_broad_feature_ablation(
     frame: pd.DataFrame,
     *,
@@ -2794,6 +3274,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Also run the model pruning audit and write separate audit reports.",
     )
+    parser.add_argument(
+        "--run-position-feature-mask-experiment",
+        action="store_true",
+        help="Run the opt-in statistical position feature mask experiment.",
+    )
     return parser.parse_args()
 
 
@@ -2808,6 +3293,18 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
     args = parse_args()
     data = read_dataset(args.input)
+    if args.run_position_feature_mask_experiment:
+        LOGGER.info("Running position feature mask experiment.")
+        mask_results = run_position_feature_mask_experiment(data)
+        write_position_feature_mask_results(mask_results)
+        write_position_feature_mask_report(mask_results)
+        LOGGER.info(
+            "Wrote position feature mask experiment to %s and %s",
+            DEFAULT_POSITION_FEATURE_MASK_RESULTS_PATH,
+            DEFAULT_POSITION_FEATURE_MASK_REPORT_PATH,
+        )
+        return
+
     if args.run_season_window_comparison:
         LOGGER.info("Running season-window comparison experiment.")
         window_results = run_season_window_comparison(data)
