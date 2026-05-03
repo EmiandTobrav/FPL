@@ -46,6 +46,8 @@ DEFAULT_BROAD_ABLATION_RESULTS_PATH = Path("reports/broad_feature_ablation_resul
 DEFAULT_BROAD_ABLATION_REPORT_PATH = Path("reports/broad_feature_ablation_report.md")
 DEFAULT_FEATURE_SELECTION_RESULTS_PATH = Path("reports/feature_selection_results.csv")
 DEFAULT_FEATURE_SELECTION_REPORT_PATH = Path("reports/feature_selection_report.md")
+DEFAULT_SEASON_WINDOW_RESULTS_PATH = Path("reports/season_window_results.csv")
+DEFAULT_SEASON_WINDOW_REPORT_PATH = Path("reports/season_window_comparison.md")
 TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
@@ -177,6 +179,21 @@ RAW_CURRENT_GW_OUTCOME_COLUMNS = (
 RAW_TEAM_COLUMNS = ("team", "opponent_team")
 FOCUS_DIRECT_MODEL_NAMES = ("Ridge", "CatBoost", "LightGBM", "XGBoost")
 FOCUS_RESIDUAL_MODEL_NAMES = ("Ridge", "CatBoost", "LightGBM", "XGBoost")
+SEASON_WINDOW_FOCUS_MODELS = (
+    MINUTES_ADJUSTED_BASELINE_NAME,
+    "Ridge",
+    "ElasticNet",
+    "CatBoost",
+    "XGBoost",
+    "LightGBM",
+    "residual_Ridge",
+    "residual_ElasticNet",
+    "residual_CatBoost",
+    "residual_XGBoost",
+    "residual_LightGBM",
+    "global_plus_position_interactions",
+    "position_wise_models",
+)
 MIN_POSITION_SELECTION_ROWS = 50
 MAX_SELECTED_FEATURES = 30
 
@@ -2487,6 +2504,275 @@ def write_feature_selection_report(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def season_window_definitions() -> dict[str, str | None]:
+    return {
+        "full_history": None,
+        "supported_seasons": "2020-21",
+        "rich_feature_seasons": "2022-23",
+    }
+
+
+def season_window_frame(frame: pd.DataFrame, window_name: str) -> pd.DataFrame:
+    windows = season_window_definitions()
+    if window_name not in windows:
+        raise BacktestError(f"Unknown season window: {window_name}")
+    return season_filtered_frame(frame, windows[window_name])
+
+
+def season_window_fold_summary(frame: pd.DataFrame, window_name: str) -> pd.DataFrame:
+    data = season_window_frame(frame, window_name)
+    validate_dataset(data)
+    data["season"] = data["season"].astype(str)
+    rows = []
+    for season in validation_seasons(data):
+        train, validation = split_train_validation(data, season)
+        if train.empty or validation.empty:
+            rows.append(
+                {
+                    "window": window_name,
+                    "validation_season": season,
+                    "included_seasons": ", ".join(sorted(data["season"].unique())),
+                    "train_seasons": "",
+                    "n_train": 0,
+                    "n_validation": len(validation),
+                    "note": "skipped: no earlier training season within window",
+                }
+            )
+            continue
+        rows.append(
+            {
+                "window": window_name,
+                "validation_season": season,
+                "included_seasons": ", ".join(sorted(data["season"].unique())),
+                "train_seasons": ", ".join(sorted(train["season"].astype(str).unique())),
+                "n_train": len(train),
+                "n_validation": len(validation),
+                "note": "",
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def _position_strategy_window_rows(position_results: pd.DataFrame) -> pd.DataFrame:
+    if position_results.empty:
+        return pd.DataFrame()
+    all_rows = position_results.loc[position_results["position"].astype(str) == "ALL"].copy()
+    if all_rows.empty:
+        return pd.DataFrame()
+    all_rows = all_rows.rename(columns={"strategy": "model"})
+    all_rows = all_rows.drop(columns=["position"], errors="ignore")
+    return all_rows
+
+
+def _window_results(
+    frame: pd.DataFrame,
+    window_name: str,
+    *,
+    model_specs: list[SklearnModelSpec] | None = None,
+    residual_specs: list[SklearnModelSpec] | None = None,
+) -> pd.DataFrame:
+    min_season = season_window_definitions()[window_name]
+    data = season_window_frame(frame, window_name)
+    validate_dataset(data)
+    standard = run_backtest(
+        frame,
+        min_season=min_season,
+        model_specs=model_specs,
+        residual_specs=residual_specs,
+    )
+    position = run_position_model_backtest(
+        frame,
+        min_season=min_season,
+        estimator=clone((model_specs or sklearn_model_specs())[0].estimator),
+    )
+    combined = pd.concat(
+        [standard, _position_strategy_window_rows(position)],
+        ignore_index=True,
+        sort=False,
+    )
+    combined.insert(0, "window", window_name)
+    combined["source"] = np.where(
+        combined["model"].isin(
+            {"global_model", "position_wise_models", "global_plus_position_interactions"}
+        ),
+        "position_strategy",
+        "standard_backtest",
+    )
+    return combined
+
+
+def run_season_window_comparison(
+    frame: pd.DataFrame,
+    *,
+    model_specs: list[SklearnModelSpec] | None = None,
+    residual_specs: list[SklearnModelSpec] | None = None,
+) -> pd.DataFrame:
+    rows = []
+    diagnostics: dict[str, Any] = {"folds": {}}
+    for window_name in season_window_definitions():
+        try:
+            fold_summary = season_window_fold_summary(frame, window_name)
+            diagnostics["folds"][window_name] = fold_summary
+            if fold_summary.empty or fold_summary["n_train"].eq(0).all():
+                LOGGER.warning("Skipping season window %s: too little training data.", window_name)
+                continue
+            rows.append(
+                _window_results(
+                    frame,
+                    window_name,
+                    model_specs=model_specs,
+                    residual_specs=residual_specs,
+                )
+            )
+        except BacktestError as exc:
+            LOGGER.warning("Skipping season window %s: %s", window_name, exc)
+            diagnostics["folds"][window_name] = pd.DataFrame(
+                [{"window": window_name, "note": f"skipped: {exc}"}]
+            )
+    if not rows:
+        raise BacktestError("No season-window comparison results were produced.")
+    results = pd.concat(rows, ignore_index=True, sort=False)
+    results.attrs["diagnostics"] = diagnostics
+    return results
+
+
+def write_season_window_results(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_SEASON_WINDOW_RESULTS_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    results.to_csv(path, index=False)
+
+
+def _season_window_aggregate(results: pd.DataFrame) -> pd.DataFrame:
+    metrics = ["mae", "rmse", "spearman", "top_10_precision", "top_20_precision", "top_50_precision"]
+    return (
+        results.groupby(["window", "model"], as_index=False)
+        .agg(
+            seasons=("validation_season", "nunique"),
+            mean_train_rows=("n_train", "mean"),
+            mean_validation_rows=("n_validation", "mean"),
+            **{metric: (metric, "mean") for metric in metrics},
+        )
+        .sort_values(["window", "mae", "model"])
+    )
+
+
+def _best_windows_by_metric(aggregate: pd.DataFrame) -> pd.DataFrame:
+    rows = []
+    for metric in ["mae", "rmse"]:
+        by_window = aggregate.groupby("window", as_index=False)[metric].min()
+        best = by_window.loc[by_window[metric].idxmin()]
+        rows.append({"metric": metric, "best_window": best["window"], "value": best[metric]})
+    for metric in ["spearman", "top_10_precision", "top_20_precision", "top_50_precision"]:
+        by_window = aggregate.groupby("window", as_index=False)[metric].max()
+        best = by_window.loc[by_window[metric].idxmax()]
+        rows.append({"metric": metric, "best_window": best["window"], "value": best[metric]})
+    return pd.DataFrame(rows)
+
+
+def _season_window_model_comparison(aggregate: pd.DataFrame) -> pd.DataFrame:
+    focus = aggregate.loc[aggregate["model"].isin(SEASON_WINDOW_FOCUS_MODELS)].copy()
+    if focus.empty:
+        return pd.DataFrame()
+    return focus.sort_values(["model", "window"])[
+        ["model", "window", "seasons", "mae", "rmse", "spearman", *TOP_K_RESULT_COLUMNS]
+    ]
+
+
+TOP_K_RESULT_COLUMNS = ("top_10_precision", "top_20_precision", "top_50_precision")
+
+
+def _older_season_effects(aggregate: pd.DataFrame) -> pd.DataFrame:
+    rows = []
+    indexed = aggregate.set_index(["model", "window"])
+    for model in SEASON_WINDOW_FOCUS_MODELS:
+        available = set(aggregate.loc[aggregate["model"] == model, "window"])
+        for old_window, new_window, label in [
+            ("full_history", "supported_seasons", "full_vs_supported"),
+            ("supported_seasons", "rich_feature_seasons", "supported_vs_rich"),
+        ]:
+            if {old_window, new_window}.issubset(available):
+                old = indexed.loc[(model, old_window)]
+                new = indexed.loc[(model, new_window)]
+                rows.append(
+                    {
+                        "model": model,
+                        "comparison": label,
+                        "mae_delta_old_minus_new": old["mae"] - new["mae"],
+                        "rmse_delta_old_minus_new": old["rmse"] - new["rmse"],
+                        "spearman_delta_old_minus_new": old["spearman"] - new["spearman"],
+                        "interpretation": (
+                            "older window helps MAE"
+                            if old["mae"] < new["mae"]
+                            else "older window hurts MAE"
+                        ),
+                    }
+                )
+    return pd.DataFrame(rows)
+
+
+def write_season_window_report(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_SEASON_WINDOW_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    aggregate = _season_window_aggregate(results)
+    best = _best_windows_by_metric(aggregate)
+    model_comparison = _season_window_model_comparison(aggregate)
+    older_effects = _older_season_effects(aggregate)
+    fold_tables = results.attrs.get("diagnostics", {}).get("folds", {})
+    fold_summary = (
+        pd.concat(fold_tables.values(), ignore_index=True, sort=False)
+        if fold_tables
+        else pd.DataFrame()
+    )
+    rich_folds = fold_summary.loc[fold_summary["window"].eq("rich_feature_seasons")]
+    rich_reliability = (
+        "Rich-feature seasons have at least one prior training season for each produced fold, "
+        f"with mean train rows {rich_folds['n_train'].mean():.0f}."
+        if not rich_folds.empty and rich_folds["n_train"].gt(0).all()
+        else "Rich-feature seasons have too little data for at least one fold."
+    )
+    best_mae_window = best.loc[best["metric"].eq("mae"), "best_window"].iloc[0]
+    lines = [
+        "# Season Window Comparison",
+        "",
+        "Rolling-origin comparison of season windows. Broad ablation and feature selection "
+        "remain opt-in and are not run by this experiment.",
+        "",
+        "## Seasons And Folds",
+        "",
+        markdown_table(fold_summary),
+        "",
+        "## Best Window By Metric",
+        "",
+        markdown_table(best),
+        "",
+        "## Model-By-Model Window Comparison",
+        "",
+        markdown_table(model_comparison),
+        "",
+        "## Older Season Effects",
+        "",
+        "Positive MAE/RMSE deltas mean the older window is worse; negative deltas mean it is better. "
+        "Positive Spearman deltas mean the older window is better.",
+        "",
+        markdown_table(older_effects),
+        "",
+        "## Rich-Feature Season Reliability",
+        "",
+        rich_reliability,
+        "",
+        "## Recommendation",
+        "",
+        f"Use `{best_mae_window}` as the default candidate window for the next modelling pass "
+        "unless a specific ranking metric in the best-window table justifies a different target.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT_PATH)
@@ -2511,6 +2797,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Also run the slower mathematical feature-selection experiment in supported-season mode.",
     )
+    parser.add_argument(
+        "--run-season-window-comparison",
+        action="store_true",
+        help="Run the opt-in season-window comparison experiment and write separate reports.",
+    )
     return parser.parse_args()
 
 
@@ -2518,6 +2809,18 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
     args = parse_args()
     data = read_dataset(args.input)
+    if args.run_season_window_comparison:
+        LOGGER.info("Running season-window comparison experiment.")
+        window_results = run_season_window_comparison(data)
+        write_season_window_results(window_results)
+        write_season_window_report(window_results)
+        LOGGER.info(
+            "Wrote season-window comparison to %s and %s",
+            DEFAULT_SEASON_WINDOW_RESULTS_PATH,
+            DEFAULT_SEASON_WINDOW_REPORT_PATH,
+        )
+        return
+
     if args.min_season is None:
         LOGGER.info("Optional experiments disabled: broad ablation, feature selection")
         results = run_backtest(data)

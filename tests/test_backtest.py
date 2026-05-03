@@ -30,13 +30,19 @@ from evaluation.backtest import (
     run_backtest,
     run_broad_feature_ablation,
     run_feature_selection_experiment,
+    run_season_window_comparison,
     season_filtered_frame,
+    season_window_definitions,
+    season_window_fold_summary,
+    season_window_frame,
     sklearn_model_specs,
     write_position_markdown_summary,
     write_position_results,
     write_supported_season_filter_report,
     write_markdown_summary,
     write_results,
+    write_season_window_report,
+    write_season_window_results,
     write_broad_feature_ablation_report,
     write_broad_feature_ablation_results,
     select_features_elasticnet,
@@ -293,6 +299,7 @@ def test_backtest_module_has_command_line_help() -> None:
     assert "--min-season" in completed.stdout
     assert "--run-broad-ablation" in completed.stdout
     assert "--run-feature-selection" in completed.stdout
+    assert "--run-season-window-comparison" in completed.stdout
 
 
 def test_preprocessor_outputs_named_feature_dataframe() -> None:
@@ -477,6 +484,69 @@ def test_season_filtered_frame_keeps_only_supported_seasons() -> None:
     filtered = season_filtered_frame(three_season_modeling_frame(), "2021-22")
 
     assert sorted(filtered["season"].unique()) == ["2021-22", "2022-23"]
+
+
+def test_season_window_definitions_include_intended_seasons() -> None:
+    data = three_season_modeling_frame()
+
+    assert sorted(season_window_frame(data, "full_history")["season"].unique()) == [
+        "2020-21",
+        "2021-22",
+        "2022-23",
+    ]
+    assert sorted(season_window_frame(data, "supported_seasons")["season"].unique()) == [
+        "2020-21",
+        "2021-22",
+        "2022-23",
+    ]
+    assert sorted(season_window_frame(data, "rich_feature_seasons")["season"].unique()) == [
+        "2022-23"
+    ]
+    assert season_window_definitions()["rich_feature_seasons"] == "2022-23"
+
+
+def test_season_window_training_seasons_are_earlier_than_validation() -> None:
+    folds = season_window_fold_summary(three_season_modeling_frame(), "full_history")
+
+    for _, row in folds.iterrows():
+        train_seasons = [season for season in str(row["train_seasons"]).split(", ") if season]
+        assert train_seasons
+        assert all(train_season < row["validation_season"] for train_season in train_seasons)
+
+
+def test_season_window_comparison_skips_windows_with_too_little_data() -> None:
+    results = run_season_window_comparison(
+        three_season_modeling_frame(),
+        model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+        residual_specs=[],
+    )
+
+    assert "rich_feature_seasons" not in set(results["window"])
+    assert {"full_history", "supported_seasons"}.issubset(set(results["window"]))
+    fold_tables = results.attrs["diagnostics"]["folds"]
+    assert fold_tables["rich_feature_seasons"].iloc[0]["note"].startswith("skipped:")
+
+
+def test_season_window_outputs_are_written_separately() -> None:
+    scratch = Path("tests/.tmp_season_window")
+    shutil.rmtree(scratch, ignore_errors=True)
+    try:
+        results = run_season_window_comparison(
+            three_season_modeling_frame(),
+            model_specs=[SklearnModelSpec("DummyMean", DummyRegressor(strategy="mean"))],
+            residual_specs=[],
+        )
+        results_path = scratch / "season_window_results.csv"
+        report_path = scratch / "season_window_comparison.md"
+
+        write_season_window_results(results, results_path)
+        write_season_window_report(results, report_path)
+
+        assert results_path.exists()
+        assert report_path.exists()
+        assert not (scratch / "model_results.csv").exists()
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
 
 
 def test_ablation_feature_configurations_include_and_exclude_expected_features() -> None:
