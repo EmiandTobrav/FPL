@@ -1,4 +1,4 @@
-"""Audit supported-season models for possible pruning."""
+"""Audit current default models for possible pruning."""
 
 from __future__ import annotations
 
@@ -447,6 +447,75 @@ def _model_rows(audit: pd.DataFrame, models: list[str], segment_type: str, segme
     ].sort_values("model")
 
 
+def _classification_list(classifications: pd.DataFrame, label: str) -> str:
+    models = classifications.loc[
+        classifications["classification"].eq(label),
+        "model",
+    ].sort_values()
+    return ", ".join(f"`{model}`" for model in models) if not models.empty else "None"
+
+
+def _model_classification(classifications: pd.DataFrame, model: str) -> str:
+    rows = classifications.loc[classifications["model"].eq(model), "classification"]
+    return str(rows.iloc[0]) if not rows.empty else "not present"
+
+
+def _summary_lines(
+    audit: pd.DataFrame,
+    classifications: pd.DataFrame,
+    early_beaters: pd.DataFrame,
+) -> list[str]:
+    residual_classifications = classifications.loc[
+        classifications["model"].astype(str).str.startswith("residual_")
+    ]
+    residual_useful = residual_classifications["classification"].isin(
+        ["keep_core", "keep_specialist"]
+    ).any()
+    ridge_elasticnet = classifications.loc[
+        classifications["model"].isin(
+            ["Ridge", "ElasticNet", "residual_Ridge", "residual_ElasticNet"]
+        )
+    ]
+    position_wise = _model_classification(classifications, "position_wise_models")
+    lightgbm = _model_classification(classifications, "LightGBM")
+    residual_lightgbm = _model_classification(classifications, "residual_LightGBM")
+    validation_seasons = sorted(
+        audit.loc[audit["segment_type"].eq("season"), "segment"].astype(str).unique()
+    )
+    return [
+        "## Pruning Summary",
+        "",
+        f"- Validation seasons audited: {', '.join(validation_seasons)}.",
+        f"- Definitely keep: {_classification_list(classifications, 'keep_core')}.",
+        f"- Specialist only: {_classification_list(classifications, 'keep_specialist')}.",
+        f"- Remove candidates: {_classification_list(classifications, 'remove_candidate')}.",
+        f"- Investigate: {_classification_list(classifications, 'investigate')}.",
+        (
+            "- No model beats `minutes_adjusted_rolling_mean` in GW1-5 by MAE."
+            if early_beaters.empty
+            else "- Models beating `minutes_adjusted_rolling_mean` in GW1-5 by MAE: "
+            + ", ".join(f"`{model}`" for model in early_beaters["model"])
+            + "."
+        ),
+        (
+            "- Residual models remain useful under the trimmed dataset."
+            if residual_useful
+            else "- Residual models are not competitive under the trimmed dataset."
+        ),
+        (
+            "- Ridge and ElasticNet are still worth keeping in this audit: "
+            + ", ".join(
+                f"`{row.model}`={row.classification}"
+                for row in ridge_elasticnet.itertuples(index=False)
+            )
+            + "."
+        ),
+        f"- LightGBM status: `LightGBM`={lightgbm}; `residual_LightGBM`={residual_lightgbm}.",
+        f"- Position-wise model status: `position_wise_models`={position_wise}.",
+        "",
+    ]
+
+
 def write_audit_report(audit: pd.DataFrame, classifications: pd.DataFrame, path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     overall = audit.loc[audit["segment_type"].eq("overall")].sort_values("mae")
@@ -464,9 +533,10 @@ def write_audit_report(audit: pd.DataFrame, classifications: pd.DataFrame, path:
     lines = [
         "# Model Pruning Audit",
         "",
-        "Supported-season rolling-origin audit for model pruning. The audit replays predictions "
-        "for seasons included by the configured minimum season; it does not change model code.",
+        "Rich-feature-season rolling-origin audit for model pruning. The audit replays predictions "
+        "from the current default trimmed modelling dataset; it does not change model code.",
         "",
+        *_summary_lines(audit, classifications, early_beaters),
         "## Classification",
         "",
         markdown_table(classifications),

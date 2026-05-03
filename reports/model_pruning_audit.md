@@ -1,6 +1,19 @@
 # Model Pruning Audit
 
-Supported-season rolling-origin audit for model pruning. The audit replays predictions for seasons included by the configured minimum season; it does not change model code.
+Rich-feature-season rolling-origin audit for model pruning. The audit replays predictions from the current default trimmed modelling dataset; it does not change model code.
+
+## Pruning Summary
+
+- Validation seasons audited: 2023-24, 2024-25, 2025-26.
+- Definitely keep: `CatBoost`, `ElasticNet`, `Ridge`, `XGBoost`, `global_model`, `global_plus_position_interactions`, `minutes_adjusted_rolling_mean`, `position_wise_models`, `residual_CatBoost`, `residual_ElasticNet`, `residual_Ridge`, `residual_XGBoost`, `rolling_3_gameweek_mean`, `rolling_5_gameweek_mean`.
+- Specialist only: `LightGBM`, `previous_gameweek_points`, `residual_LightGBM`.
+- Remove candidates: None.
+- Investigate: None.
+- No model beats `minutes_adjusted_rolling_mean` in GW1-5 by MAE.
+- Residual models remain useful under the trimmed dataset.
+- Ridge and ElasticNet are still worth keeping in this audit: `ElasticNet`=keep_core, `Ridge`=keep_core, `residual_ElasticNet`=keep_core, `residual_Ridge`=keep_core.
+- LightGBM status: `LightGBM`=keep_specialist; `residual_LightGBM`=keep_specialist.
+- Position-wise model status: `position_wise_models`=keep_core.
 
 ## Classification
 
