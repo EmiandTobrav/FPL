@@ -1221,7 +1221,7 @@ def evaluate_position_strategies(
     predictions["actual"] = validation_model[TARGET_COLUMN]
     predictions[POSITION_COLUMN] = validation_model[POSITION_COLUMN]
 
-    predictions["global_model"] = fit_predict_direct_model(
+    global_fallback = fit_predict_direct_model(
         train_model,
         validation_model,
         estimator=base_estimator,
@@ -1243,9 +1243,7 @@ def evaluate_position_strategies(
         position_key = str(position)
         train_position = train_model.loc[train_model[POSITION_COLUMN].astype(str) == position_key]
         if len(train_position) < min_position_train_rows:
-            position_wise.loc[validation_position.index] = predictions.loc[
-                validation_position.index, "global_model"
-            ]
+            position_wise.loc[validation_position.index] = global_fallback.loc[validation_position.index]
             continue
         position_wise.loc[validation_position.index] = fit_predict_direct_model(
             train_position,
@@ -1259,7 +1257,6 @@ def evaluate_position_strategies(
 
     rows: list[dict[str, Any]] = []
     for strategy in (
-        "global_model",
         "position_wise_models",
         "global_plus_position_interactions",
     ):
@@ -2599,7 +2596,7 @@ def _window_results(
     combined.insert(0, "window", window_name)
     combined["source"] = np.where(
         combined["model"].isin(
-            {"global_model", "position_wise_models", "global_plus_position_interactions"}
+            {"position_wise_models", "global_plus_position_interactions"}
         ),
         "position_strategy",
         "standard_backtest",

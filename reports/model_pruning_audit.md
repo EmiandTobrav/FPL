@@ -5,7 +5,7 @@ Rich-feature-season rolling-origin audit for model pruning. The audit replays pr
 ## Pruning Summary
 
 - Validation seasons audited: 2023-24, 2024-25, 2025-26.
-- Definitely keep: `CatBoost`, `ElasticNet`, `Ridge`, `XGBoost`, `global_model`, `global_plus_position_interactions`, `minutes_adjusted_rolling_mean`, `position_wise_models`, `residual_CatBoost`, `residual_ElasticNet`, `residual_Ridge`, `residual_XGBoost`, `rolling_3_gameweek_mean`, `rolling_5_gameweek_mean`.
+- Definitely keep: `CatBoost`, `ElasticNet`, `Ridge`, `XGBoost`, `global_plus_position_interactions`, `minutes_adjusted_rolling_mean`, `position_wise_models`, `residual_CatBoost`, `residual_ElasticNet`, `residual_Ridge`, `residual_XGBoost`, `rolling_3_gameweek_mean`, `rolling_5_gameweek_mean`.
 - Specialist only: `LightGBM`, `residual_LightGBM`.
 - Remove candidates: None.
 - Investigate: None.
@@ -23,7 +23,6 @@ Rich-feature-season rolling-origin audit for model pruning. The audit replays pr
 | ElasticNet | keep_core | True | True | True | True | True | True | True | True |
 | Ridge | keep_core | True | True | True | True | True | True | True | True |
 | XGBoost | keep_core | True | True | True | True | True | True | True | True |
-| global_model | keep_core | True | True | True | True | True | True | True | True |
 | global_plus_position_interactions | keep_core | True | True | True | True | True | True | True | True |
 | minutes_adjusted_rolling_mean | keep_core | True | True | True | True | True | True | True | True |
 | position_wise_models | keep_core | True | True | True | True | True | True | True | True |
@@ -65,7 +64,6 @@ Rich-feature-season rolling-origin audit for model pruning. The audit replays pr
 | rolling_3_gameweek_mean | 1.0876 | 2.2135 | 0.6638 | 0.1000 | 0.1000 | 0.0400 | True | True |
 | residual_ElasticNet | 1.0888 | 2.0095 | 0.6353 | 0.0000 | 0.0500 | 0.0600 | True | True |
 | Ridge | 1.1002 | 2.0226 | 0.6247 | 0.0000 | 0.0500 | 0.0600 | True | True |
-| global_model | 1.1002 | 2.0226 | 0.6247 | 0.0000 | 0.0500 | 0.0600 | True | True |
 | ElasticNet | 1.1036 | 2.0231 | 0.6240 | 0.0000 | 0.0500 | 0.0600 | True | True |
 
 ## Early-Season Metrics: GW1-5
@@ -82,7 +80,6 @@ Rich-feature-season rolling-origin audit for model pruning. The audit replays pr
 | rolling_5_gameweek_mean | 1.1706 | 2.3141 | 0.6477 | 0.1000 | 0.0500 | 0.1000 | True | True |
 | position_wise_models | 1.1738 | 2.1685 | 0.5670 | 0.0000 | 0.0500 | 0.0600 | False | False |
 | Ridge | 1.1883 | 2.1750 | 0.5482 | 0.0000 | 0.0500 | 0.0600 | False | False |
-| global_model | 1.1883 | 2.1750 | 0.5482 | 0.0000 | 0.0500 | 0.0600 | False | False |
 | ElasticNet | 1.1887 | 2.1745 | 0.5462 | 0.0000 | 0.0500 | 0.0800 | False | False |
 | CatBoost | 1.2007 | 2.1493 | 0.5787 | 0.1000 | 0.0500 | 0.0600 | True | True |
 | XGBoost | 1.2043 | 2.1529 | 0.5810 | 0.1000 | 0.1000 | 0.0800 | True | True |
@@ -127,7 +124,6 @@ None.
 
 | model | mae | rmse | spearman | top_10_precision | top_20_precision | top_50_precision | is_near_best_any_metric | is_best_any_metric |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| global_model | 1.1002 | 2.0226 | 0.6247 | 0.0000 | 0.0500 | 0.0600 | True | True |
 | global_plus_position_interactions | 1.0812 | 2.0185 | 0.6343 | 0.0000 | 0.0500 | 0.0200 | True | False |
 | position_wise_models | 1.0875 | 2.0224 | 0.6322 | 0.0000 | 0.0500 | 0.0200 | True | False |
 
@@ -149,7 +145,6 @@ None.
 | residual_Ridge | 2023-24 | 1.0838 | 2.0037 | 0.6182 | 0.1000 | 0.0500 | 0.0400 |
 | residual_ElasticNet | 2023-24 | 1.0930 | 2.0057 | 0.6153 | 0.1000 | 0.0500 | 0.0600 |
 | Ridge | 2023-24 | 1.0994 | 2.0089 | 0.6096 | 0.1000 | 0.0500 | 0.0400 |
-| global_model | 2023-24 | 1.0994 | 2.0089 | 0.6096 | 0.1000 | 0.0500 | 0.0400 |
 | ElasticNet | 2023-24 | 1.1040 | 2.0095 | 0.6089 | 0.1000 | 0.0500 | 0.0400 |
 | minutes_adjusted_rolling_mean | 2024-25 | 1.0168 | 2.1315 | 0.6680 | 0.1000 | 0.1500 | 0.1000 |
 | residual_CatBoost | 2024-25 | 1.0551 | 1.9832 | 0.6593 | 0.1000 | 0.0500 | 0.0800 |
@@ -164,7 +159,6 @@ None.
 | position_wise_models | 2024-25 | 1.0849 | 2.0089 | 0.6382 | 0.1000 | 0.1000 | 0.1200 |
 | residual_ElasticNet | 2024-25 | 1.0862 | 1.9932 | 0.6425 | 0.1000 | 0.1500 | 0.1000 |
 | Ridge | 2024-25 | 1.1006 | 2.0104 | 0.6308 | 0.1000 | 0.1000 | 0.1000 |
-| global_model | 2024-25 | 1.1006 | 2.0104 | 0.6308 | 0.1000 | 0.1000 | 0.1000 |
 | ElasticNet | 2024-25 | 1.1022 | 2.0104 | 0.6302 | 0.1000 | 0.1500 | 0.1000 |
 | rolling_3_gameweek_mean | 2024-25 | 1.1068 | 2.2010 | 0.6596 | 0.1000 | 0.1000 | 0.1000 |
 | residual_CatBoost | 2025-26 | 1.0454 | 2.0231 | 0.6703 | 0.0000 | 0.0000 | 0.0400 |
@@ -179,7 +173,6 @@ None.
 | global_plus_position_interactions | 2025-26 | 1.0900 | 2.0541 | 0.6507 | 0.0000 | 0.0000 | 0.0400 |
 | position_wise_models | 2025-26 | 1.0959 | 2.0596 | 0.6496 | 0.0000 | 0.0000 | 0.0400 |
 | Ridge | 2025-26 | 1.1009 | 2.0556 | 0.6382 | 0.0000 | 0.0000 | 0.0400 |
-| global_model | 2025-26 | 1.1009 | 2.0556 | 0.6382 | 0.0000 | 0.0000 | 0.0400 |
 | ElasticNet | 2025-26 | 1.1049 | 2.0564 | 0.6378 | 0.0000 | 0.0000 | 0.0400 |
 | rolling_5_gameweek_mean | 2025-26 | 1.1098 | 2.1956 | 0.6812 | 0.0000 | 0.0000 | 0.0400 |
 | rolling_3_gameweek_mean | 2025-26 | 1.1143 | 2.2519 | 0.6845 | 0.0000 | 0.0000 | 0.0000 |
@@ -196,7 +189,6 @@ None.
 | XGBoost | DEF | 1.1351 | 2.0405 | 0.5660 | 0.0000 | 0.0000 | 0.0000 |
 | residual_LightGBM | DEF | 1.1359 | 2.0625 | 0.5611 | 0.0000 | 0.0000 | 0.0000 |
 | Ridge | DEF | 1.1378 | 2.0484 | 0.5506 | 0.0000 | 0.0000 | 0.0200 |
-| global_model | DEF | 1.1378 | 2.0484 | 0.5506 | 0.0000 | 0.0000 | 0.0200 |
 | CatBoost | DEF | 1.1380 | 2.0404 | 0.5650 | 0.0000 | 0.0000 | 0.0000 |
 | global_plus_position_interactions | DEF | 1.1414 | 2.0477 | 0.5435 | 0.0000 | 0.0000 | 0.0400 |
 | LightGBM | DEF | 1.1420 | 2.0618 | 0.5581 | 0.0000 | 0.0000 | 0.0000 |
@@ -219,7 +211,6 @@ None.
 | residual_Ridge | FWD | 1.2519 | 2.2170 | 0.6797 | 0.0000 | 0.0000 | 0.0600 |
 | ElasticNet | FWD | 1.2573 | 2.2247 | 0.6676 | 0.0000 | 0.0000 | 0.0800 |
 | Ridge | FWD | 1.2674 | 2.2236 | 0.6686 | 0.0000 | 0.0000 | 0.0400 |
-| global_model | FWD | 1.2674 | 2.2236 | 0.6686 | 0.0000 | 0.0000 | 0.0400 |
 | minutes_adjusted_rolling_mean | GK | 0.6723 | 1.6569 | 0.7683 | 0.0000 | 0.0000 | 0.0000 |
 | rolling_5_gameweek_mean | GK | 0.6941 | 1.6516 | 0.7630 | 0.0000 | 0.0000 | 0.0000 |
 | rolling_3_gameweek_mean | GK | 0.6984 | 1.7025 | 0.7747 | 0.0000 | 0.0000 | 0.0400 |
@@ -234,7 +225,6 @@ None.
 | LightGBM | GK | 0.7531 | 1.5663 | 0.6198 | 0.0000 | 0.0000 | 0.0000 |
 | residual_ElasticNet | GK | 0.7689 | 1.5324 | 0.6251 | 0.0000 | 0.0000 | 0.0000 |
 | Ridge | GK | 0.7788 | 1.5549 | 0.6169 | 0.0000 | 0.0000 | 0.0000 |
-| global_model | GK | 0.7788 | 1.5549 | 0.6169 | 0.0000 | 0.0000 | 0.0000 |
 | ElasticNet | GK | 0.7953 | 1.5562 | 0.6166 | 0.0000 | 0.0000 | 0.0000 |
 | minutes_adjusted_rolling_mean | MID | 1.0159 | 2.1760 | 0.7016 | 0.1000 | 0.0500 | 0.0800 |
 | residual_CatBoost | MID | 1.0335 | 2.0259 | 0.6873 | 0.1000 | 0.1000 | 0.0400 |
@@ -250,7 +240,6 @@ None.
 | residual_ElasticNet | MID | 1.0958 | 2.0348 | 0.6732 | 0.1000 | 0.1000 | 0.0800 |
 | rolling_3_gameweek_mean | MID | 1.0994 | 2.2246 | 0.6934 | 0.2000 | 0.1000 | 0.0800 |
 | Ridge | MID | 1.1089 | 2.0513 | 0.6625 | 0.1000 | 0.1000 | 0.0800 |
-| global_model | MID | 1.1089 | 2.0513 | 0.6625 | 0.1000 | 0.1000 | 0.0800 |
 | ElasticNet | MID | 1.1109 | 2.0517 | 0.6621 | 0.1000 | 0.1000 | 0.0800 |
 
 ## Classification Rules

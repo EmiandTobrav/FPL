@@ -828,9 +828,10 @@ def test_position_model_backtest_does_not_fit_on_validation_targets() -> None:
         min_position_train_rows=1,
     )
 
-    assert {"global_model", "position_wise_models", "global_plus_position_interactions"}.issubset(
+    assert {"position_wise_models", "global_plus_position_interactions"}.issubset(
         set(results["strategy"])
     )
+    assert "global_model" not in set(results["strategy"])
     assert RecordingRegressor.fit_targets
     assert all(max(targets) < 999 for targets in RecordingRegressor.fit_targets if targets)
 
@@ -861,7 +862,7 @@ def test_position_interactions_are_based_on_training_positions_only() -> None:
     assert validation_with_interactions.filter(like="__position_").eq(0).all().all()
 
 
-def test_position_wise_models_fall_back_to_global_model_when_training_rows_are_low() -> None:
+def test_position_wise_models_fall_back_to_internal_global_fit_when_training_rows_are_low() -> None:
     results = run_position_model_backtest(
         modeling_frame(),
         estimator=DummyRegressor(strategy="mean"),
@@ -876,16 +877,17 @@ def test_position_wise_models_fall_back_to_global_model_when_training_rows_are_l
         "top_20_precision",
         "top_50_precision",
     ]
-    global_rows = results.loc[results["strategy"] == "global_model"].set_index(
-        ["validation_season", "position"]
-    )
     fallback_rows = results.loc[results["strategy"] == "position_wise_models"].set_index(
         ["validation_season", "position"]
     )
+    interaction_rows = results.loc[
+        results["strategy"] == "global_plus_position_interactions"
+    ].set_index(["validation_season", "position"])
 
+    assert "global_model" not in set(results["strategy"])
     pd.testing.assert_frame_equal(
-        global_rows[metric_columns].sort_index(),
         fallback_rows[metric_columns].sort_index(),
+        interaction_rows[metric_columns].sort_index(),
     )
 
 

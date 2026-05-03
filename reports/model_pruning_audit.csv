@@ -142,17 +142,6 @@ residual_CatBoost,position,GK,8302,0.7202940915426468,1.5330520015985836,0.62687
 residual_CatBoost,position,DEF,24479,1.1334494500235963,2.0396523540545672,0.5696053133409589,0.0,0.0,0.0,False,False,False,True,False,True,False,False,False,False,False,False,True,False,keep_core
 residual_CatBoost,position,MID,32901,1.0334543643977878,2.025925303978178,0.6873417911622829,0.1,0.1,0.04,False,False,True,True,False,False,False,False,True,True,False,False,True,True,keep_core
 residual_CatBoost,position,FWD,8749,1.161322718015486,2.2135618002778146,0.6918048857618265,0.0,0.05,0.06,False,False,False,True,False,False,False,False,True,True,False,False,True,True,keep_core
-global_model,overall,all,76892,1.1002273279525006,2.0225879139748977,0.6246536493854303,0.0,0.05,0.06,False,False,False,True,False,False,False,False,False,False,True,True,True,True,keep_core
-global_model,season,2023-24,28860,1.0994235506140495,2.008903871846991,0.6095647291281663,0.1,0.05,0.04,False,False,False,True,False,False,True,True,True,True,False,False,True,True,keep_core
-global_model,season,2024-25,26499,1.1005575072117493,2.0103815209131137,0.6307618575838609,0.1,0.1,0.1,False,False,False,False,False,False,True,True,False,False,False,False,True,True,keep_core
-global_model,season,2025-26,21533,1.1008982792271422,2.0555733279415342,0.6382196146919055,0.0,0.0,0.04,False,False,False,False,False,False,False,False,False,False,True,True,True,True,keep_core
-global_model,gameweek_bucket,GW1-5,10163,1.1883131244591705,2.1749671191202276,0.5481884972044482,0.0,0.05,0.06,False,False,False,False,False,False,False,False,False,False,False,False,False,False,keep_core
-global_model,gameweek_bucket,GW6-10,10776,1.1030784209158204,2.006862465976141,0.6659695081934741,0.0,0.0,0.08,False,False,False,True,False,False,False,False,False,False,False,False,True,False,keep_core
-global_model,gameweek_bucket,GW11+,55953,1.083678808165,1.9967193592101065,0.6313271595712561,0.2,0.1,0.08,False,False,False,True,False,False,True,True,True,True,True,True,True,True,keep_core
-global_model,position,GK,8576,0.7787648017741078,1.554895159238834,0.6169348611675202,0.0,0.0,0.0,False,False,False,False,False,False,False,False,False,False,False,False,False,False,keep_core
-global_model,position,DEF,25289,1.13782319088751,2.0484017013191607,0.5506419661614557,0.0,0.0,0.02,False,False,False,True,False,False,False,False,False,False,False,False,True,False,keep_core
-global_model,position,MID,33986,1.108910640639374,2.051284873478899,0.6625410962311039,0.1,0.1,0.08,False,False,False,False,False,False,False,False,True,True,True,True,True,True,keep_core
-global_model,position,FWD,9041,1.2673537278824145,2.22363594714485,0.6685834545387975,0.0,0.0,0.04,False,False,False,True,False,False,False,False,False,False,False,False,True,False,keep_core
 global_plus_position_interactions,overall,all,76892,1.0812232820737029,2.0184703405668407,0.6342739853047921,0.0,0.05,0.02,False,False,False,True,False,False,False,False,False,False,False,False,True,False,keep_core
 global_plus_position_interactions,season,2023-24,28860,1.0785831977976945,2.0048325047926907,0.6157853400880805,0.0,0.0,0.02,False,False,False,True,False,False,False,False,False,False,False,False,True,False,keep_core
 global_plus_position_interactions,season,2024-25,26499,1.0769440429872712,2.0039854795447467,0.6405786434469096,0.1,0.1,0.12,False,False,False,False,False,False,True,True,False,False,True,True,True,True,keep_core

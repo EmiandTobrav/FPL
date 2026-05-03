@@ -218,7 +218,7 @@ def _position_strategy_predictions(train: pd.DataFrame, validation: pd.DataFrame
         return []
     estimator = clone(sklearn_model_specs()[0].estimator)
     predictions = pd.DataFrame(index=validation_model.index)
-    predictions["global_model"] = fit_predict_direct_model(
+    global_fallback = fit_predict_direct_model(
         train_model,
         validation_model,
         estimator=estimator,
@@ -237,9 +237,7 @@ def _position_strategy_predictions(train: pd.DataFrame, validation: pd.DataFrame
         position_key = str(position)
         train_position = train_model.loc[train_model[POSITION_COLUMN].astype(str) == position_key]
         if len(train_position) < MIN_POSITION_TRAIN_ROWS:
-            position_wise.loc[validation_position.index] = predictions.loc[
-                validation_position.index, "global_model"
-            ]
+            position_wise.loc[validation_position.index] = global_fallback.loc[validation_position.index]
             continue
         position_wise.loc[validation_position.index] = fit_predict_direct_model(
             train_position,
@@ -524,7 +522,7 @@ def write_audit_report(audit: pd.DataFrame, classifications: pd.DataFrame, path:
     ].sort_values("mae")
     residual_models = sorted(model for model in audit["model"].unique() if model.startswith("residual_"))
     tree_models = ["XGBoost", "LightGBM", "CatBoost", "residual_XGBoost", "residual_LightGBM", "residual_CatBoost"]
-    position_models = ["global_model", "position_wise_models", "global_plus_position_interactions"]
+    position_models = ["position_wise_models", "global_plus_position_interactions"]
     baseline_early = gw_1_5.loc[gw_1_5["model"].eq(BASELINE_REFERENCE)]
     early_beaters = gw_1_5.loc[
         gw_1_5["mae"].lt(float(baseline_early["mae"].iloc[0]))
