@@ -70,7 +70,6 @@ POSITION_LABEL_MAP = {
 }
 RESIDUAL_MODEL_NAMES = ("Ridge", "ElasticNet", "XGBoost", "LightGBM", "CatBoost")
 BASELINE_FEATURE_MODELS = {
-    "pred_previous_gameweek_points": "previous_gameweek_points",
     "pred_rolling_3_gameweek_mean": "rolling_3_gameweek_mean",
     "pred_rolling_5_gameweek_mean": "rolling_5_gameweek_mean",
     "pred_minutes_adjusted_rolling_mean": MINUTES_ADJUSTED_BASELINE_NAME,
@@ -84,7 +83,6 @@ EXCLUDED_FEATURE_COLUMNS = {
 }
 STABLE_FEATURE_COLUMNS = (
     "position",
-    "pred_previous_gameweek_points",
     "pred_rolling_3_gameweek_mean",
     "pred_rolling_5_gameweek_mean",
     "pred_minutes_adjusted_rolling_mean",
@@ -2819,7 +2817,19 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Run the opt-in season-window comparison experiment and write separate reports.",
     )
+    parser.add_argument(
+        "--run-model-pruning-audit",
+        action="store_true",
+        help="Also run the model pruning audit and write separate audit reports.",
+    )
     return parser.parse_args()
+
+
+def run_model_pruning_audit_report(data: pd.DataFrame, *, min_season: str = "2022-23") -> None:
+    from evaluation.model_pruning_audit import run_audit, write_audit_outputs
+
+    audit, classifications = run_audit(data, min_season=min_season)
+    write_audit_outputs(audit, classifications)
 
 
 def main() -> None:
@@ -2839,13 +2849,19 @@ def main() -> None:
         return
 
     if args.min_season is None:
-        LOGGER.info("Optional experiments disabled: broad ablation, feature selection")
+        LOGGER.info(
+            "Optional experiments: broad ablation disabled, feature selection disabled, "
+            "model pruning audit %s",
+            "enabled" if args.run_model_pruning_audit else "disabled",
+        )
         results = run_backtest(data)
         write_results(results, args.results)
         write_markdown_summary(results, args.summary)
         position_results = run_position_model_backtest(data)
         write_position_results(position_results, args.position_results)
         write_position_markdown_summary(position_results, args.position_summary)
+        if args.run_model_pruning_audit:
+            run_model_pruning_audit_report(data, min_season="2022-23")
         LOGGER.info(
             "Wrote backtest results to %s, %s, %s, and %s",
             args.results,
@@ -2856,9 +2872,10 @@ def main() -> None:
         return
 
     LOGGER.info(
-        "Optional experiments: broad ablation %s, feature selection %s",
+        "Optional experiments: broad ablation %s, feature selection %s, model pruning audit %s",
         "enabled" if args.run_broad_ablation else "disabled",
         "enabled" if args.run_feature_selection else "disabled",
+        "enabled" if args.run_model_pruning_audit else "disabled",
     )
     before_supported_results = (
         pd.read_csv(DEFAULT_SUPPORTED_RESULTS_PATH)
@@ -2912,6 +2929,8 @@ def main() -> None:
         )
         write_feature_selection_results(feature_selection_results)
         write_feature_selection_report(feature_selection_results)
+    if args.run_model_pruning_audit:
+        run_model_pruning_audit_report(data, min_season=args.min_season)
     LOGGER.info(
         "Wrote supported-season results to %s, %s, %s, and %s",
         DEFAULT_SUPPORTED_RESULTS_PATH,

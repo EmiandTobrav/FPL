@@ -67,7 +67,6 @@ class MinutesAdjustedRollingMeanBaseline:
 
 
 BASELINES: tuple[BaselineModel, ...] = (
-    ColumnBaseline("previous_gameweek_points", "points_last_1"),
     ColumnBaseline("rolling_3_gameweek_mean", "points_mean_last_3"),
     ColumnBaseline("rolling_5_gameweek_mean", "points_mean_last_5"),
     MinutesAdjustedRollingMeanBaseline(),

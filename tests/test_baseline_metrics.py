@@ -39,14 +39,12 @@ def test_predict_baselines_common_interface() -> None:
     predictions = predict_baselines(baseline_frame())
 
     expected_columns = {
-        "previous_gameweek_points",
         "rolling_3_gameweek_mean",
         "rolling_5_gameweek_mean",
         "minutes_adjusted_rolling_mean",
     }
     assert expected_columns.issubset(predictions.columns)
     assert "position" + "_average" not in predictions.columns
-    assert predictions.loc[1, "previous_gameweek_points"] == 10
     assert predictions.loc[2, "rolling_3_gameweek_mean"] == 15
     assert predictions.loc[2, "minutes_adjusted_rolling_mean"] == 7.5
 
@@ -68,7 +66,7 @@ def test_save_baseline_predictions_writes_csv() -> None:
 
 def test_baseline_requires_needed_columns() -> None:
     with pytest.raises(BaselinePredictionError, match="Missing required columns"):
-        predict_baselines(pd.DataFrame({"points_last_1": [1]}))
+        predict_baselines(pd.DataFrame({"points_mean_last_3": [1]}))
 
 
 def test_metrics() -> None:

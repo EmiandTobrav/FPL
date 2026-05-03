@@ -173,6 +173,7 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
         "write_results": [],
         "broad_ablation": [],
         "feature_selection": [],
+        "model_pruning_audit": [],
     }
 
     monkeypatch.setattr(sys, "argv", argv)
@@ -241,6 +242,11 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
 
     monkeypatch.setattr(backtest_module, "run_broad_feature_ablation", record_broad_ablation)
     monkeypatch.setattr(backtest_module, "run_feature_selection_experiment", record_feature_selection)
+    monkeypatch.setattr(
+        backtest_module,
+        "run_model_pruning_audit_report",
+        lambda *args, **kwargs: calls["model_pruning_audit"].append(kwargs.get("min_season")),
+    )
     return calls
 
 
@@ -300,6 +306,7 @@ def test_backtest_module_has_command_line_help() -> None:
     assert "--run-broad-ablation" in completed.stdout
     assert "--run-feature-selection" in completed.stdout
     assert "--run-season-window-comparison" in completed.stdout
+    assert "--run-model-pruning-audit" in completed.stdout
 
 
 def test_preprocessor_outputs_named_feature_dataframe() -> None:
@@ -332,6 +339,7 @@ def test_main_full_history_does_not_run_optional_experiments(monkeypatch) -> Non
 
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == []
+    assert calls["model_pruning_audit"] == []
     assert calls["write_results"] == [scratch / "model_results.csv"]
 
 
@@ -349,6 +357,7 @@ def test_main_supported_default_does_not_run_optional_experiments(
 
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == []
+    assert calls["model_pruning_audit"] == []
     assert calls["write_results"] == [scratch / "model_results_supported_seasons.csv"]
 
 
@@ -371,6 +380,7 @@ def test_main_broad_ablation_flag_runs_broad_ablation(monkeypatch) -> None:
 
     assert calls["broad_ablation"] == ["2020-21"]
     assert calls["feature_selection"] == []
+    assert calls["model_pruning_audit"] == []
 
 
 def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None:
@@ -392,6 +402,27 @@ def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None
 
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == ["2020-21"]
+    assert calls["model_pruning_audit"] == []
+
+
+def test_main_model_pruning_audit_flag_runs_audit(monkeypatch) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/model_pruning_flag")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        [
+            "evaluation.backtest",
+            "--input",
+            "dummy.parquet",
+            "--run-model-pruning-audit",
+        ],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == []
+    assert calls["feature_selection"] == []
+    assert calls["model_pruning_audit"] == ["2022-23"]
 
 
 def test_min_season_filters_train_and_validation_data() -> None:
@@ -727,7 +758,6 @@ def test_baseline_prediction_features_are_row_local() -> None:
     full_frame_features = add_baseline_prediction_features(frame)
 
     feature_columns = [
-        "pred_previous_gameweek_points",
         "pred_rolling_3_gameweek_mean",
         "pred_rolling_5_gameweek_mean",
         "pred_minutes_adjusted_rolling_mean",
@@ -737,7 +767,7 @@ def test_baseline_prediction_features_are_row_local() -> None:
         full_frame_features.iloc[0][feature_columns],
         check_names=False,
     )
-    assert list(full_frame_features.loc[0, feature_columns]) == [4.0, 5.0, 6.0, 3.0]
+    assert list(full_frame_features.loc[0, feature_columns]) == [5.0, 6.0, 3.0]
 
 
 def test_position_normalization_maps_known_labels_and_excludes_unknowns() -> None:

@@ -39,7 +39,6 @@ FIXTURE_COLUMNS = {"was_home"}
 PRICE_VALUE_COLUMNS = {"value"}
 OWNERSHIP_TRANSFER_COLUMNS = {"selected", "transfers_balance", "transfers_in", "transfers_out"}
 BASELINE_PREDICTION_COLUMNS = {
-    "pred_previous_gameweek_points",
     "pred_rolling_3_gameweek_mean",
     "pred_rolling_5_gameweek_mean",
     "pred_minutes_adjusted_rolling_mean",
