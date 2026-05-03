@@ -14,7 +14,6 @@ The current result files contain successful rows for these models:
   - `rolling_3_gameweek_mean`
   - `rolling_5_gameweek_mean`
   - `minutes_adjusted_rolling_mean`
-  - `position_average` for 6 validation seasons
 - Trained direct ML models:
   - `Ridge`
   - `ElasticNet`
@@ -26,13 +25,9 @@ The current result files contain successful rows for these models:
 
 ## 2. Models Skipped
 
-The result files do not include explicit skip diagnostics. Based on the rows present:
-
-- `position_average` only appears for 6 seasons, while the other baseline and model families appear for 9 seasons.
-- `position_average` is missing for the first three validation seasons: `2017-18`, `2018-19`, and `2019-20`.
-- No trained ML model is missing from the result table; each trained ML model has results for all 9 validation seasons.
-
-The likely reason for the missing `position_average` rows is insufficient usable historical position data in the earliest validation windows.
+The result files do not include explicit skip diagnostics. Based on the rows present,
+no trained ML model is missing from the result table; each trained ML model has results
+for all 9 validation seasons.
 
 ## 3. Best Model By Average MAE
 

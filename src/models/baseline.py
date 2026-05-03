@@ -53,25 +53,6 @@ class ColumnBaseline:
 
 
 @dataclass(frozen=True)
-class PositionAverageBaseline:
-    """Predict the expanding historical average by position and season."""
-
-    name: str = "position_average"
-
-    def predict(self, frame: pd.DataFrame) -> pd.Series:
-        require_columns(frame, ["season", "gw", "position", POINTS_COLUMN])
-        player_col = player_key_column(frame)
-        data = frame.sort_values(["season", "position", "gw", player_col]).copy()
-        shifted_points = data.groupby(["season", "position"], sort=False)[POINTS_COLUMN].shift(1)
-        prediction = shifted_points.groupby(
-            [data["season"], data["position"]],
-            sort=False,
-        ).expanding(min_periods=1).mean()
-        prediction = prediction.reset_index(level=[0, 1], drop=True).reindex(frame.index)
-        return prediction.rename(self.name)
-
-
-@dataclass(frozen=True)
 class MinutesAdjustedRollingMeanBaseline:
     """Scale recent points by recent minutes relative to a full-match baseline."""
 
@@ -89,7 +70,6 @@ BASELINES: tuple[BaselineModel, ...] = (
     ColumnBaseline("previous_gameweek_points", "points_last_1"),
     ColumnBaseline("rolling_3_gameweek_mean", "points_mean_last_3"),
     ColumnBaseline("rolling_5_gameweek_mean", "points_mean_last_5"),
-    PositionAverageBaseline(),
     MinutesAdjustedRollingMeanBaseline(),
 )
 
