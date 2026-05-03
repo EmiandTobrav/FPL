@@ -4,17 +4,14 @@
 
 | diagnostic | value |
 | --- | ---: |
-| rows with valid normalized team IDs | 63.3% |
-| rows with valid normalized opponent IDs | 63.3% |
+| rows with valid normalized team IDs | 100.0% |
+| rows with valid normalized opponent IDs | 100.0% |
 
-Seasons where mapping works: 2020-21, 2021-22, 2022-23, 2023-24, 2024-25, 2025-26
+Seasons where mapping works: 2022-23, 2023-24, 2024-25, 2025-26
 
 Seasons where mapping fails:
 
-- `2016-17`: team/opponent identifier types are unsupported or team names are missing
-- `2017-18`: team/opponent identifier types are unsupported or team names are missing
-- `2018-19`: team/opponent identifier types are unsupported or team names are missing
-- `2019-20`: team/opponent identifier types are unsupported or team names are missing
+- None
 
 ## Features Added
 

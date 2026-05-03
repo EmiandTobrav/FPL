@@ -255,7 +255,7 @@ def _position_strategy_predictions(train: pd.DataFrame, validation: pd.DataFrame
     ]
 
 
-def collect_supported_predictions(frame: pd.DataFrame, *, min_season: str = "2020-21") -> pd.DataFrame:
+def collect_supported_predictions(frame: pd.DataFrame, *, min_season: str = "2022-23") -> pd.DataFrame:
     validate_dataset(frame)
     data = season_filtered_frame(frame, min_season)
     validate_dataset(data)
@@ -465,7 +465,7 @@ def write_audit_report(audit: pd.DataFrame, classifications: pd.DataFrame, path:
         "# Model Pruning Audit",
         "",
         "Supported-season rolling-origin audit for model pruning. The audit replays predictions "
-        "for seasons included by `--min-season 2020-21`; it does not change model code.",
+        "for seasons included by the configured minimum season; it does not change model code.",
         "",
         "## Classification",
         "",
@@ -534,7 +534,7 @@ def write_audit_report(audit: pd.DataFrame, classifications: pd.DataFrame, path:
 def run_audit(
     frame: pd.DataFrame,
     *,
-    min_season: str = "2020-21",
+    min_season: str = "2022-23",
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     predictions = collect_supported_predictions(frame, min_season=min_season)
     audit = add_competitiveness_flags(summarize_predictions(predictions))
@@ -551,7 +551,7 @@ def write_audit_outputs(audit: pd.DataFrame, classifications: pd.DataFrame) -> N
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT_PATH)
-    parser.add_argument("--min-season", default="2020-21")
+    parser.add_argument("--min-season", default="2022-23")
     return parser.parse_args()
 
 

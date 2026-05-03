@@ -1,6 +1,6 @@
 # Team Form Feature Report
 
-Supported-season comparison uses min-season `2020-21`.
+Supported-season comparison uses min-season `2022-23`.
 
 ## Features Added
 
@@ -15,12 +15,12 @@ Supported-season comparison uses min-season `2020-21`.
 
 | feature | full_non_null_rate | supported_non_null_rate |
 | --- | --- | --- |
-| team_goals_scored_mean_last_5 | 0.6177 | 0.9767 |
-| team_goals_conceded_mean_last_5 | 0.6177 | 0.9767 |
-| opponent_goals_scored_mean_last_5 | 0.6177 | 0.9767 |
-| opponent_goals_conceded_mean_last_5 | 0.6177 | 0.9767 |
-| team_clean_sheet_rate_last_5 | 0.6177 | 0.9767 |
-| opponent_clean_sheet_rate_last_5 | 0.6177 | 0.9767 |
+| team_goals_scored_mean_last_5 | 0.9760 | 0.9760 |
+| team_goals_conceded_mean_last_5 | 0.9760 | 0.9760 |
+| opponent_goals_scored_mean_last_5 | 0.9760 | 0.9760 |
+| opponent_goals_conceded_mean_last_5 | 0.9760 | 0.9760 |
+| team_clean_sheet_rate_last_5 | 0.9760 | 0.9760 |
+| opponent_clean_sheet_rate_last_5 | 0.9760 | 0.9760 |
 
 ## Model Comparison
 
@@ -28,16 +28,16 @@ Positive deltas mean the metric increased after adding team form; for MAE/RMSE t
 
 | model | before_mae | after_mae | delta_mae | before_rmse | after_rmse | delta_rmse | before_spearman | after_spearman | delta_spearman | before_top_10_precision | after_top_10_precision | delta_top_10_precision | before_top_20_precision | after_top_20_precision | delta_top_20_precision | before_top_50_precision | after_top_50_precision | delta_top_50_precision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| residual_CatBoost | 1.0941 | 1.0941 | 0.0000 | 2.0364 | 2.0364 | 0.0000 | 0.6509 | 0.6509 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0100 | 0.0100 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
-| residual_LightGBM | 1.1018 | 1.1018 | 0.0000 | 2.0551 | 2.0551 | 0.0000 | 0.6443 | 0.6443 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
-| residual_XGBoost | 1.0946 | 1.0946 | 0.0000 | 2.0391 | 2.0391 | 0.0000 | 0.6483 | 0.6483 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
-| minutes_adjusted_rolling_mean | 1.0469 | 1.0469 | 0.0000 | 2.1975 | 2.1975 | 0.0000 | 0.6616 | 0.6616 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0400 | 0.0400 | 0.0000 | 0.0440 | 0.0440 | 0.0000 |
+| residual_CatBoost | 1.0941 | 1.0487 | -0.0454 | 2.0364 | 2.0062 | -0.0303 | 0.6509 | 0.6549 | 0.0040 | 0.0000 | 0.0667 | 0.0667 | 0.0100 | 0.0333 | 0.0233 | 0.0240 | 0.0667 | 0.0427 |
+| residual_LightGBM | 1.1018 | 1.0569 | -0.0450 | 2.0551 | 2.0287 | -0.0264 | 0.6443 | 0.6496 | 0.0052 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0240 | 0.0333 | 0.0093 |
+| residual_XGBoost | 1.0946 | 1.0484 | -0.0462 | 2.0391 | 2.0076 | -0.0315 | 0.6483 | 0.6538 | 0.0055 | 0.0000 | 0.0667 | 0.0667 | 0.0200 | 0.0333 | 0.0133 | 0.0240 | 0.0400 | 0.0160 |
+| minutes_adjusted_rolling_mean | 1.0469 | 1.0098 | -0.0371 | 2.1975 | 2.1574 | -0.0401 | 0.6616 | 0.6715 | 0.0099 | 0.0200 | 0.0333 | 0.0133 | 0.0400 | 0.0667 | 0.0267 | 0.0440 | 0.0533 | 0.0093 |
 
 ## Global Plus Position Interactions
 
 | strategy | before_mae | after_mae | delta_mae | before_rmse | after_rmse | delta_rmse | before_spearman | after_spearman | delta_spearman | before_top_10_precision | after_top_10_precision | delta_top_10_precision | before_top_20_precision | after_top_20_precision | delta_top_20_precision | before_top_50_precision | after_top_50_precision | delta_top_50_precision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| global_plus_position_interactions | 1.1279 | 1.1279 | -0.0000 | 2.0564 | 2.0564 | 0.0000 | 0.6316 | 0.6316 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0360 | 0.0360 | 0.0000 |
+| global_plus_position_interactions | 1.0819 | 1.0819 | 0.0000 | 2.0210 | 2.0210 | 0.0000 | 0.6357 | 0.6357 | 0.0000 | 0.0333 | 0.0333 | 0.0000 | 0.0333 | 0.0333 | 0.0000 | 0.0600 | 0.0600 | 0.0000 |
 
 ## Notes
 

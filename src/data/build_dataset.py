@@ -30,6 +30,8 @@ DEFAULT_TEAM_STRENGTH_REPORT_PATH = Path("reports/team_strength_feature_report.m
 DEFAULT_CANDIDATE_FEATURE_REPORT_PATH = Path("reports/candidate_feature_report.md")
 REQUIRED_COLUMNS = ("season", "gw", "total_points", "minutes")
 POSITION_FILTER_DIAGNOSTICS_ATTR = "position_filter_diagnostics"
+SEASON_FILTER_DIAGNOSTICS_ATTR = "season_filter_diagnostics"
+DEFAULT_MIN_MODELING_SEASON = "2022-23"
 
 
 class DatasetBuildError(ValueError):
@@ -69,6 +71,39 @@ def normalize_and_filter_positions(frame: pd.DataFrame) -> pd.DataFrame:
     return data
 
 
+def filter_modeling_seasons(
+    frame: pd.DataFrame,
+    *,
+    min_season: str | None = DEFAULT_MIN_MODELING_SEASON,
+) -> pd.DataFrame:
+    """Keep rich-feature modelling seasons by default without editing source data."""
+    data = frame.copy()
+    if min_season is None:
+        diagnostics = {
+            "min_season": None,
+            "seasons_kept": sorted(data["season"].dropna().astype(str).unique())
+            if "season" in data.columns
+            else [],
+            "seasons_removed": [],
+            "rows_kept": len(data),
+            "rows_removed": 0,
+        }
+        data.attrs[SEASON_FILTER_DIAGNOSTICS_ATTR] = diagnostics
+        return data
+    seasons = data["season"].astype(str)
+    keep_mask = seasons >= str(min_season)
+    filtered = data.loc[keep_mask].copy()
+    diagnostics = {
+        "min_season": str(min_season),
+        "seasons_kept": sorted(filtered["season"].dropna().astype(str).unique()),
+        "seasons_removed": sorted(data.loc[~keep_mask, "season"].dropna().astype(str).unique()),
+        "rows_kept": len(filtered),
+        "rows_removed": int((~keep_mask).sum()),
+    }
+    filtered.attrs[SEASON_FILTER_DIAGNOSTICS_ATTR] = diagnostics
+    return filtered
+
+
 def read_dataset(path: Path) -> pd.DataFrame:
     if not path.exists():
         raise DatasetBuildError(f"Input dataset does not exist: {path}")
@@ -101,6 +136,7 @@ def build_modeling_dataset(
     target_horizon: int = 3,
     fail_on_missing_required_columns: bool = True,
     team_priors_path: Path = DEFAULT_TEAM_PRIORS_PATH,
+    include_legacy_seasons: bool = False,
 ) -> pd.DataFrame:
     """Apply leakage-safe rolling features and future point targets."""
     missing = validate_required_columns(
@@ -110,7 +146,12 @@ def build_modeling_dataset(
     if missing:
         raise DatasetBuildError(f"Cannot build dataset with missing required columns: {missing}")
 
-    source = normalize_and_filter_positions(frame)
+    source = filter_modeling_seasons(
+        frame,
+        min_season=None if include_legacy_seasons else DEFAULT_MIN_MODELING_SEASON,
+    )
+    season_filter_diagnostics = source.attrs.get(SEASON_FILTER_DIAGNOSTICS_ATTR, {})
+    source = normalize_and_filter_positions(source)
     features = build_rolling_features(source)
     try:
         team_priors = pd.read_csv(team_priors_path) if team_priors_path.exists() else None
@@ -126,6 +167,7 @@ def build_modeling_dataset(
         POSITION_FILTER_DIAGNOSTICS_ATTR,
         {},
     )
+    dataset.attrs[SEASON_FILTER_DIAGNOSTICS_ATTR] = season_filter_diagnostics
     return dataset
 
 
@@ -346,6 +388,16 @@ def dataset_summary(frame: pd.DataFrame, *, target_horizon: int) -> str:
         if column in frame.columns
     }
     position_filter = frame.attrs.get(POSITION_FILTER_DIAGNOSTICS_ATTR, {})
+    season_filter = frame.attrs.get(SEASON_FILTER_DIAGNOSTICS_ATTR, {})
+    season_filter_lines = []
+    if season_filter:
+        season_filter_lines = [
+            f"Season trim min season: {season_filter.get('min_season')}",
+            f"Seasons kept: {season_filter.get('seasons_kept', [])}",
+            f"Seasons removed: {season_filter.get('seasons_removed', [])}",
+            f"Rows kept after season trim: {season_filter.get('rows_kept', len(frame))}",
+            f"Rows removed by season trim: {season_filter.get('rows_removed', 0)}",
+        ]
     position_lines = []
     if position_filter:
         labels_removed = position_filter.get("labels_removed", {})
@@ -361,6 +413,7 @@ def dataset_summary(frame: pd.DataFrame, *, target_horizon: int) -> str:
             f"Columns: {len(frame.columns)}",
             f"Seasons: {len(seasons)} ({', '.join(seasons)})",
             f"Missing targets: {missing_targets}",
+            *season_filter_lines,
             *position_lines,
         ]
     )
@@ -378,6 +431,11 @@ def parse_args() -> argparse.Namespace:
         default=True,
         help="Fail before building if required columns are missing. Enabled by default.",
     )
+    parser.add_argument(
+        "--include-legacy-seasons",
+        action="store_true",
+        help="Include seasons before 2022-23 when rebuilding the processed dataset.",
+    )
     return parser.parse_args()
 
 
@@ -389,9 +447,10 @@ def main() -> None:
         target_horizon=args.target_horizon,
         fail_on_missing_required_columns=args.fail_on_missing_required_columns,
         team_priors_path=args.team_priors,
+        include_legacy_seasons=args.include_legacy_seasons,
     )
     write_dataset(modeling_dataset, args.output)
-    write_team_strength_report(source, DEFAULT_TEAM_STRENGTH_REPORT_PATH)
+    write_team_strength_report(modeling_dataset, DEFAULT_TEAM_STRENGTH_REPORT_PATH)
     write_candidate_feature_report(source, modeling_dataset)
     print(dataset_summary(modeling_dataset, target_horizon=args.target_horizon))
     print(f"Wrote: {args.output}")

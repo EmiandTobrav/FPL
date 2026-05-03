@@ -5,8 +5,10 @@ import pandas as pd
 
 from data.build_dataset import (
     POSITION_FILTER_DIAGNOSTICS_ATTR,
+    SEASON_FILTER_DIAGNOSTICS_ATTR,
     build_modeling_dataset,
     dataset_summary,
+    filter_modeling_seasons,
     read_dataset,
     write_dataset,
 )
@@ -27,6 +29,25 @@ def source_frame() -> pd.DataFrame:
                     "starts": 1,
                     "bonus": gw,
                     "bps": gw * 5,
+                }
+            )
+    return pd.DataFrame(rows)
+
+
+def legacy_source_frame() -> pd.DataFrame:
+    rows = []
+    for season, offset in [("2020-21", 0), ("2021-22", 50), ("2022-23", 100), ("2023-24", 150)]:
+        for gw in [1, 2, 3]:
+            rows.append(
+                {
+                    "element": 1,
+                    "season": season,
+                    "gw": gw,
+                    "total_points": offset + gw,
+                    "minutes": 90,
+                    "starts": 1,
+                    "bonus": 0,
+                    "bps": 10,
                 }
             )
     return pd.DataFrame(rows)
@@ -112,6 +133,40 @@ def test_build_dataset_contains_features_and_targets() -> None:
     assert "minutes_mean_last_5" in result.columns
     assert "next_gw_points" in result.columns
     assert "next_3_gw_points" in result.columns
+
+
+def test_default_build_excludes_seasons_before_rich_feature_window() -> None:
+    result = build_modeling_dataset(legacy_source_frame())
+    diagnostics = result.attrs[SEASON_FILTER_DIAGNOSTICS_ATTR]
+
+    assert sorted(result["season"].unique()) == ["2022-23", "2023-24"]
+    assert diagnostics["seasons_kept"] == ["2022-23", "2023-24"]
+    assert diagnostics["seasons_removed"] == ["2020-21", "2021-22"]
+    assert diagnostics["rows_removed"] == 6
+
+
+def test_include_legacy_seasons_keeps_older_seasons() -> None:
+    result = build_modeling_dataset(legacy_source_frame(), include_legacy_seasons=True)
+    diagnostics = result.attrs[SEASON_FILTER_DIAGNOSTICS_ATTR]
+
+    assert sorted(result["season"].unique()) == ["2020-21", "2021-22", "2022-23", "2023-24"]
+    assert diagnostics["seasons_removed"] == []
+    assert diagnostics["rows_removed"] == 0
+
+
+def test_dataset_summary_includes_season_trim_diagnostics() -> None:
+    result = build_modeling_dataset(legacy_source_frame())
+    summary = dataset_summary(result, target_horizon=3)
+
+    assert "Seasons kept: ['2022-23', '2023-24']" in summary
+    assert "Seasons removed: ['2020-21', '2021-22']" in summary
+    assert "Rows removed by season trim: 6" in summary
+
+
+def test_filter_modeling_seasons_keeps_legacy_when_requested() -> None:
+    filtered = filter_modeling_seasons(legacy_source_frame(), min_season=None)
+
+    assert sorted(filtered["season"].unique()) == ["2020-21", "2021-22", "2022-23", "2023-24"]
 
 
 def test_build_dataset_removes_unsupported_positions_and_preserves_valid_positions() -> None:

@@ -2519,6 +2519,14 @@ def season_window_frame(frame: pd.DataFrame, window_name: str) -> pd.DataFrame:
     return season_filtered_frame(frame, windows[window_name])
 
 
+def season_window_available(frame: pd.DataFrame, window_name: str) -> bool:
+    min_season = season_window_definitions()[window_name]
+    if min_season is None:
+        return True
+    seasons = set(frame["season"].dropna().astype(str))
+    return any(season < min_season for season in seasons) or min(seasons, default=min_season) <= min_season
+
+
 def season_window_fold_summary(frame: pd.DataFrame, window_name: str) -> pd.DataFrame:
     data = season_window_frame(frame, window_name)
     validate_dataset(data)
@@ -2611,6 +2619,15 @@ def run_season_window_comparison(
     diagnostics: dict[str, Any] = {"folds": {}}
     for window_name in season_window_definitions():
         try:
+            if not season_window_available(frame, window_name):
+                LOGGER.warning(
+                    "Skipping season window %s: source data does not contain seasons needed for this comparison.",
+                    window_name,
+                )
+                diagnostics["folds"][window_name] = pd.DataFrame(
+                    [{"window": window_name, "note": "skipped: source lacks required earlier seasons"}]
+                )
+                continue
             fold_summary = season_window_fold_summary(frame, window_name)
             diagnostics["folds"][window_name] = fold_summary
             if fold_summary.empty or fold_summary["n_train"].eq(0).all():
