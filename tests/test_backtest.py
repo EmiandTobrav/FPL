@@ -7,25 +7,37 @@ import pandas as pd
 from sklearn.base import BaseEstimator, RegressorMixin
 from sklearn.dummy import DummyRegressor
 
+import evaluation.backtest as backtest_module
 from evaluation.backtest import (
     DEFAULT_SUPPORTED_RESULTS_PATH,
     DEFAULT_SUPPORTED_SUMMARY_PATH,
+    RAW_CURRENT_GW_OUTCOME_COLUMNS,
+    RAW_TEAM_COLUMNS,
     SklearnModelSpec,
     add_baseline_prediction_features,
     add_position_interactions,
+    ablation_feature_configurations,
+    assert_feature_configuration_safe,
     add_residual_target,
+    collect_feature_selection_counts,
+    feature_selection_candidate_columns,
     final_residual_prediction,
     minutes_adjusted_baseline_predictions,
     normalize_position_column,
     position_diagnostics,
     run_position_model_backtest,
     run_backtest,
+    run_broad_feature_ablation,
+    run_feature_selection_experiment,
     season_filtered_frame,
     write_position_markdown_summary,
     write_position_results,
     write_supported_season_filter_report,
     write_markdown_summary,
     write_results,
+    write_broad_feature_ablation_report,
+    write_broad_feature_ablation_results,
+    select_features_elasticnet,
 )
 
 
@@ -87,10 +99,141 @@ def three_season_modeling_frame() -> pd.DataFrame:
                         "opponent_elo_pre_gw": 1500.0,
                         "elo_difference": 0.0,
                         "home_adjusted_elo_difference": 50.0,
+                        "team_goals_scored_mean_last_5": 1.0,
+                        "team_goals_conceded_mean_last_5": 1.0,
+                        "opponent_goals_scored_mean_last_5": 1.0,
+                        "opponent_goals_conceded_mean_last_5": 1.0,
+                        "team_clean_sheet_rate_last_5": 0.5,
+                        "opponent_clean_sheet_rate_last_5": 0.5,
+                        "goals_scored_mean_last_3": 0.1,
+                        "goals_scored_mean_last_5": 0.1,
+                        "assists_mean_last_3": 0.1,
+                        "assists_mean_last_5": 0.1,
+                        "clean_sheets_mean_last_3": 0.1,
+                        "clean_sheets_mean_last_5": 0.1,
+                        "goals_conceded_mean_last_3": 0.1,
+                        "goals_conceded_mean_last_5": 0.1,
+                        "influence_mean_last_3": 1.0,
+                        "influence_mean_last_5": 1.0,
+                        "creativity_mean_last_3": 1.0,
+                        "creativity_mean_last_5": 1.0,
+                        "threat_mean_last_3": 1.0,
+                        "threat_mean_last_5": 1.0,
+                        "ict_index_mean_last_3": 1.0,
+                        "ict_index_mean_last_5": 1.0,
+                        "expected_goals_mean_last_3": 0.1,
+                        "expected_goals_mean_last_5": 0.1,
+                        "expected_assists_mean_last_3": 0.1,
+                        "expected_assists_mean_last_5": 0.1,
+                        "expected_goal_involvements_mean_last_3": 0.1,
+                        "expected_goal_involvements_mean_last_5": 0.1,
+                        "expected_goals_conceded_mean_last_3": 0.1,
+                        "expected_goals_conceded_mean_last_5": 0.1,
+                        "selected_lag_1": 100.0,
+                        "transfers_in_lag_1": 1.0,
+                        "transfers_out_lag_1": 1.0,
+                        "transfers_balance_lag_1": 0.0,
+                        "was_home": gw % 2 == 0,
                         "next_gw_points": points + 1 if gw < 4 else pd.NA,
                     }
                 )
     return pd.DataFrame(rows)
+
+
+def minimal_results_frame() -> pd.DataFrame:
+    return pd.DataFrame(
+        {
+            "validation_season": ["2022-23"],
+            "model": ["minutes_adjusted_rolling_mean"],
+            "n_train": [6],
+            "n_validation": [6],
+            "mae": [1.0],
+            "rmse": [1.0],
+            "spearman": [0.0],
+            "top_10_precision": [0.5],
+            "top_10_avg_actual_points": [2.0],
+            "top_20_precision": [0.5],
+            "top_20_avg_actual_points": [2.0],
+            "top_50_precision": [0.5],
+            "top_50_avg_actual_points": [2.0],
+        }
+    )
+
+
+def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) -> dict[str, list[object]]:
+    calls: dict[str, list[object]] = {
+        "write_results": [],
+        "broad_ablation": [],
+        "feature_selection": [],
+    }
+
+    monkeypatch.setattr(sys, "argv", argv)
+    monkeypatch.setattr(backtest_module, "DEFAULT_RESULTS_PATH", scratch / "model_results.csv")
+    monkeypatch.setattr(backtest_module, "DEFAULT_SUMMARY_PATH", scratch / "model_comparison.md")
+    monkeypatch.setattr(
+        backtest_module,
+        "DEFAULT_POSITION_RESULTS_PATH",
+        scratch / "position_model_comparison.csv",
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "DEFAULT_POSITION_SUMMARY_PATH",
+        scratch / "position_model_comparison.md",
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "DEFAULT_SUPPORTED_RESULTS_PATH",
+        scratch / "model_results_supported_seasons.csv",
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "DEFAULT_SUPPORTED_SUMMARY_PATH",
+        scratch / "model_comparison_supported_seasons.md",
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "DEFAULT_SUPPORTED_FILTER_REPORT_PATH",
+        scratch / "supported_season_filter_report.md",
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "DEFAULT_TEAM_FORM_FEATURE_REPORT_PATH",
+        scratch / "team_form_feature_report.md",
+    )
+
+    monkeypatch.setattr(backtest_module, "read_dataset", lambda path: three_season_modeling_frame())
+    monkeypatch.setattr(backtest_module, "run_backtest", lambda *args, **kwargs: minimal_results_frame())
+    monkeypatch.setattr(
+        backtest_module,
+        "run_position_model_backtest",
+        lambda *args, **kwargs: minimal_results_frame().assign(position="ALL"),
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "write_results",
+        lambda results, path: calls["write_results"].append(path),
+    )
+    monkeypatch.setattr(backtest_module, "write_markdown_summary", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_position_results", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_position_markdown_summary", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_supported_season_filter_report", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_team_form_feature_report", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_broad_feature_ablation_results", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_broad_feature_ablation_report", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_feature_selection_results", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_feature_selection_report", lambda *args, **kwargs: None)
+
+    def record_broad_ablation(*args, **kwargs) -> pd.DataFrame:
+        calls["broad_ablation"].append(kwargs.get("min_season"))
+        return minimal_results_frame().assign(feature_config="current_stable")
+
+    def record_feature_selection(*args, **kwargs) -> pd.DataFrame:
+        calls["feature_selection"].append(kwargs.get("min_season"))
+        return minimal_results_frame().assign(selection_strategy="global_selected_features")
+
+    monkeypatch.setattr(backtest_module, "run_broad_feature_ablation", record_broad_ablation)
+    monkeypatch.setattr(backtest_module, "run_feature_selection_experiment", record_feature_selection)
+    return calls
 
 
 def test_run_backtest_uses_prior_seasons_for_validation() -> None:
@@ -146,6 +289,82 @@ def test_backtest_module_has_command_line_help() -> None:
 
     assert "--input" in completed.stdout
     assert "--min-season" in completed.stdout
+    assert "--run-broad-ablation" in completed.stdout
+    assert "--run-feature-selection" in completed.stdout
+
+
+def test_main_full_history_does_not_run_optional_experiments(monkeypatch) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/full_history")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        ["evaluation.backtest", "--input", "dummy.parquet"],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == []
+    assert calls["feature_selection"] == []
+    assert calls["write_results"] == [scratch / "model_results.csv"]
+
+
+def test_main_supported_default_does_not_run_optional_experiments(
+    monkeypatch,
+) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/supported_default")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        ["evaluation.backtest", "--input", "dummy.parquet", "--min-season", "2020-21"],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == []
+    assert calls["feature_selection"] == []
+    assert calls["write_results"] == [scratch / "model_results_supported_seasons.csv"]
+
+
+def test_main_broad_ablation_flag_runs_broad_ablation(monkeypatch) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/broad_flag")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        [
+            "evaluation.backtest",
+            "--input",
+            "dummy.parquet",
+            "--min-season",
+            "2020-21",
+            "--run-broad-ablation",
+        ],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == ["2020-21"]
+    assert calls["feature_selection"] == []
+
+
+def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/feature_selection_flag")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        [
+            "evaluation.backtest",
+            "--input",
+            "dummy.parquet",
+            "--min-season",
+            "2020-21",
+            "--run-feature-selection",
+        ],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == []
+    assert calls["feature_selection"] == ["2020-21"]
 
 
 def test_min_season_filters_train_and_validation_data() -> None:
@@ -238,6 +457,129 @@ def test_season_filtered_frame_keeps_only_supported_seasons() -> None:
     filtered = season_filtered_frame(three_season_modeling_frame(), "2021-22")
 
     assert sorted(filtered["season"].unique()) == ["2021-22", "2022-23"]
+
+
+def test_ablation_feature_configurations_include_and_exclude_expected_features() -> None:
+    configs = ablation_feature_configurations()
+
+    assert "team_elo_pre_gw" in configs["current_stable"]
+    assert "team_goals_scored_mean_last_5" in configs["current_stable"]
+    assert "team_elo_pre_gw" not in configs["no_team_strength"]
+    assert "team_goals_scored_mean_last_5" not in configs["no_team_strength"]
+    assert "team_elo_pre_gw" in configs["elo_only"]
+    assert "team_goals_scored_mean_last_5" not in configs["elo_only"]
+    assert "team_elo_pre_gw" not in configs["team_form_only"]
+    assert "team_goals_scored_mean_last_5" in configs["team_form_only"]
+    assert "goals_scored_mean_last_3" in configs["player_returns_rolling"]
+    assert "influence_mean_last_3" in configs["ict_rolling"]
+    assert "expected_goals_mean_last_3" in configs["expected_stats_rolling"]
+    assert "selected_lag_1" in configs["ownership_transfers_lagged"]
+    assert "was_home" in configs["fixture_home"]
+    assert "selected_lag_1" in configs["all_safe_candidates"]
+
+
+def test_ablation_feature_configurations_exclude_raw_leakage_and_team_columns() -> None:
+    forbidden = {*RAW_CURRENT_GW_OUTCOME_COLUMNS, *RAW_TEAM_COLUMNS}
+
+    for columns in ablation_feature_configurations().values():
+        assert not forbidden.intersection(columns)
+        assert_feature_configuration_safe(columns)
+
+
+def test_broad_ablation_respects_supported_season_filter() -> None:
+    results = run_broad_feature_ablation(
+        three_season_modeling_frame(),
+        min_season="2021-22",
+        model_specs=[SklearnModelSpec("Ridge", DummyRegressor(strategy="mean"))],
+        residual_specs=[],
+    )
+
+    assert set(results["validation_season"]) == {"2022-23"}
+    assert set(results["feature_group"]) == set(ablation_feature_configurations())
+    assert "global_plus_position_interactions" in set(results["model"])
+
+
+def test_broad_ablation_outputs_are_written_separately() -> None:
+    scratch = Path("tests/.tmp_backtest")
+    shutil.rmtree(scratch, ignore_errors=True)
+    try:
+        results = run_broad_feature_ablation(
+            three_season_modeling_frame(),
+            min_season="2021-22",
+            model_specs=[SklearnModelSpec("Ridge", DummyRegressor(strategy="mean"))],
+            residual_specs=[],
+        )
+        results_path = scratch / "broad_feature_ablation_results.csv"
+        report_path = scratch / "broad_feature_ablation_report.md"
+
+        write_broad_feature_ablation_results(results, results_path)
+        write_broad_feature_ablation_report(results, report_path)
+
+        assert results_path.exists()
+        assert report_path.exists()
+        assert not (scratch / DEFAULT_SUPPORTED_RESULTS_PATH.name).exists()
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_feature_selection_uses_training_seasons_only() -> None:
+    data = three_season_modeling_frame()
+    data.loc[data["season"] == "2022-23", "goals_scored_mean_last_3"] = 999999
+    train = data.loc[data["season"].isin(["2020-21", "2021-22"])].copy()
+
+    selected_with_future_changed = select_features_elasticnet(
+        train,
+        feature_selection_candidate_columns(train),
+        random_state=7,
+    )
+    selected_without_future = select_features_elasticnet(
+        train,
+        feature_selection_candidate_columns(train),
+        random_state=7,
+    )
+
+    assert selected_with_future_changed == selected_without_future
+
+
+def test_feature_selection_does_not_select_raw_leakage_or_team_columns() -> None:
+    results = run_feature_selection_experiment(
+        three_season_modeling_frame(),
+        min_season="2021-22",
+        random_state=7,
+    )
+    counts = collect_feature_selection_counts(results)
+    forbidden = {*RAW_CURRENT_GW_OUTCOME_COLUMNS, *RAW_TEAM_COLUMNS}
+
+    assert not forbidden.intersection(counts)
+
+
+def test_position_feature_selection_falls_back_when_position_rows_are_low() -> None:
+    results = run_feature_selection_experiment(
+        three_season_modeling_frame(),
+        min_season="2021-22",
+        random_state=7,
+        min_position_rows=999,
+    )
+    position_row = results.loc[results["model"] == "position_selected_features"].iloc[0]
+    global_row = results.loc[results["model"] == "global_selected_features"].iloc[0]
+
+    assert "MID" in position_row["selected_features"]
+    assert global_row["selected_features"].split(",")[0] in position_row["selected_features"]
+
+
+def test_feature_selection_is_reproducible_with_fixed_seed() -> None:
+    first = run_feature_selection_experiment(
+        three_season_modeling_frame(),
+        min_season="2021-22",
+        random_state=123,
+    )
+    second = run_feature_selection_experiment(
+        three_season_modeling_frame(),
+        min_season="2021-22",
+        random_state=123,
+    )
+
+    assert list(first["selected_features"]) == list(second["selected_features"])
 
 
 def test_residual_target_is_actual_minus_minutes_adjusted_baseline() -> None:

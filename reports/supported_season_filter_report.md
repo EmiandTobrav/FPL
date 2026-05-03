@@ -36,7 +36,7 @@ Excluded:
 | rmse | residual_Ridge | 2.0612 |
 | spearman | minutes_adjusted_rolling_mean | 0.6568 |
 | top_10_precision | rolling_3_gameweek_mean | 0.0600 |
-| top_20_precision | Ridge | 0.0300 |
+| top_20_precision | RandomForestRegressor | 0.0300 |
 | top_50_precision | rolling_5_gameweek_mean | 0.0520 |
 
 ## Metric-Level Filtering Impact
@@ -47,7 +47,7 @@ Excluded:
 | rmse | residual_CatBoost | 2.1269 | residual_Ridge | 2.0612 | -0.0657 | yes |
 | spearman | residual_CatBoost | 0.6459 | minutes_adjusted_rolling_mean | 0.6568 | 0.0108 | yes |
 | top_10_precision | rolling_3_gameweek_mean | 0.0333 | rolling_3_gameweek_mean | 0.0600 | 0.0267 | yes |
-| top_20_precision | residual_CatBoost | 0.0278 | Ridge | 0.0300 | 0.0022 | yes |
+| top_20_precision | residual_CatBoost | 0.0278 | RandomForestRegressor | 0.0300 | 0.0022 | yes |
 | top_50_precision | rolling_5_gameweek_mean | 0.0467 | rolling_5_gameweek_mean | 0.0520 | 0.0053 | yes |
 
 ## Full-History Versus Supported-Season Models

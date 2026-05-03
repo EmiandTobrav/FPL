@@ -19,6 +19,7 @@ from sklearn.ensemble import (
     HistGradientBoostingRegressor,
     RandomForestRegressor,
 )
+from sklearn.inspection import permutation_importance
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import ElasticNet, LogisticRegression, Ridge
 from sklearn.pipeline import Pipeline
@@ -45,6 +46,10 @@ DEFAULT_SUPPORTED_RESULTS_PATH = Path("reports/model_results_supported_seasons.c
 DEFAULT_SUPPORTED_SUMMARY_PATH = Path("reports/model_comparison_supported_seasons.md")
 DEFAULT_SUPPORTED_FILTER_REPORT_PATH = Path("reports/supported_season_filter_report.md")
 DEFAULT_TEAM_FORM_FEATURE_REPORT_PATH = Path("reports/team_form_feature_report.md")
+DEFAULT_BROAD_ABLATION_RESULTS_PATH = Path("reports/broad_feature_ablation_results.csv")
+DEFAULT_BROAD_ABLATION_REPORT_PATH = Path("reports/broad_feature_ablation_report.md")
+DEFAULT_FEATURE_SELECTION_RESULTS_PATH = Path("reports/feature_selection_results.csv")
+DEFAULT_FEATURE_SELECTION_REPORT_PATH = Path("reports/feature_selection_report.md")
 TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
@@ -106,6 +111,78 @@ STABLE_FEATURE_COLUMNS = (
     "bonus_last_5",
     "bps_last_5",
 )
+TEAM_ELO_FEATURES = (
+    "team_elo_pre_gw",
+    "opponent_elo_pre_gw",
+    "elo_difference",
+    "home_adjusted_elo_difference",
+)
+TEAM_FORM_FEATURES = (
+    "team_goals_scored_mean_last_5",
+    "team_goals_conceded_mean_last_5",
+    "opponent_goals_scored_mean_last_5",
+    "opponent_goals_conceded_mean_last_5",
+    "team_clean_sheet_rate_last_5",
+    "opponent_clean_sheet_rate_last_5",
+)
+PLAYER_RETURNS_ROLLING_FEATURES = (
+    "goals_scored_mean_last_3",
+    "goals_scored_mean_last_5",
+    "assists_mean_last_3",
+    "assists_mean_last_5",
+    "clean_sheets_mean_last_3",
+    "clean_sheets_mean_last_5",
+    "goals_conceded_mean_last_3",
+    "goals_conceded_mean_last_5",
+)
+ICT_ROLLING_FEATURES = (
+    "influence_mean_last_3",
+    "influence_mean_last_5",
+    "creativity_mean_last_3",
+    "creativity_mean_last_5",
+    "threat_mean_last_3",
+    "threat_mean_last_5",
+    "ict_index_mean_last_3",
+    "ict_index_mean_last_5",
+)
+EXPECTED_STATS_ROLLING_FEATURES = (
+    "expected_goals_mean_last_3",
+    "expected_goals_mean_last_5",
+    "expected_assists_mean_last_3",
+    "expected_assists_mean_last_5",
+    "expected_goal_involvements_mean_last_3",
+    "expected_goal_involvements_mean_last_5",
+    "expected_goals_conceded_mean_last_3",
+    "expected_goals_conceded_mean_last_5",
+)
+OWNERSHIP_TRANSFERS_LAGGED_FEATURES = (
+    "selected_lag_1",
+    "transfers_in_lag_1",
+    "transfers_out_lag_1",
+    "transfers_balance_lag_1",
+)
+FIXTURE_HOME_FEATURES = ("was_home",)
+RAW_CURRENT_GW_OUTCOME_COLUMNS = (
+    "total_points",
+    "minutes",
+    "goals_scored",
+    "assists",
+    "clean_sheets",
+    "goals_conceded",
+    "bonus",
+    "bps",
+    "influence",
+    "creativity",
+    "threat",
+    "ict_index",
+    "team_h_score",
+    "team_a_score",
+)
+RAW_TEAM_COLUMNS = ("team", "opponent_team")
+FOCUS_DIRECT_MODEL_NAMES = ("Ridge", "CatBoost", "LightGBM", "XGBoost")
+FOCUS_RESIDUAL_MODEL_NAMES = ("Ridge", "CatBoost", "LightGBM", "XGBoost")
+MIN_POSITION_SELECTION_ROWS = 50
+MAX_SELECTED_FEATURES = 30
 
 
 class BacktestError(ValueError):
@@ -256,8 +333,105 @@ def normalize_position_column(frame: pd.DataFrame) -> pd.DataFrame:
     return data
 
 
-def feature_columns(frame: pd.DataFrame) -> list[str]:
-    candidates = [column for column in STABLE_FEATURE_COLUMNS if column in frame.columns]
+def dedupe_columns(columns: tuple[str, ...] | list[str]) -> tuple[str, ...]:
+    seen: set[str] = set()
+    result = []
+    for column in columns:
+        if column in seen:
+            continue
+        seen.add(column)
+        result.append(column)
+    return tuple(result)
+
+
+def ablation_feature_configurations() -> dict[str, tuple[str, ...]]:
+    stable = tuple(STABLE_FEATURE_COLUMNS)
+    no_team_strength = tuple(
+        column for column in stable if column not in {*TEAM_ELO_FEATURES, *TEAM_FORM_FEATURES}
+    )
+    elo_only = dedupe_columns([*no_team_strength, *TEAM_ELO_FEATURES])
+    team_form_only = dedupe_columns([*no_team_strength, *TEAM_FORM_FEATURES])
+    all_candidates = (
+        *PLAYER_RETURNS_ROLLING_FEATURES,
+        *ICT_ROLLING_FEATURES,
+        *EXPECTED_STATS_ROLLING_FEATURES,
+        *OWNERSHIP_TRANSFERS_LAGGED_FEATURES,
+        *FIXTURE_HOME_FEATURES,
+    )
+    return {
+        "current_stable": stable,
+        "no_team_strength": no_team_strength,
+        "elo_only": elo_only,
+        "team_form_only": team_form_only,
+        "player_returns_rolling": dedupe_columns([*stable, *PLAYER_RETURNS_ROLLING_FEATURES]),
+        "ict_rolling": dedupe_columns([*stable, *ICT_ROLLING_FEATURES]),
+        "expected_stats_rolling": dedupe_columns([*stable, *EXPECTED_STATS_ROLLING_FEATURES]),
+        "ownership_transfers_lagged": dedupe_columns(
+            [*stable, *OWNERSHIP_TRANSFERS_LAGGED_FEATURES]
+        ),
+        "fixture_home": dedupe_columns([*stable, *FIXTURE_HOME_FEATURES]),
+        "all_safe_candidates": dedupe_columns([*stable, *all_candidates]),
+    }
+
+
+def feature_selection_candidate_groups() -> dict[str, tuple[str, ...]]:
+    return {
+        "baseline_prediction_features": tuple(BASELINE_FEATURE_MODELS),
+        "rolling_player_form_features": (
+            "points_last_1",
+            "points_mean_last_3",
+            "points_mean_last_5",
+            "minutes_mean_last_3",
+            "minutes_mean_last_5",
+            "starts_last_5",
+            "bonus_last_5",
+            "bps_last_5",
+        ),
+        "rolling_attacking_returns": (
+            "goals_scored_mean_last_3",
+            "goals_scored_mean_last_5",
+            "assists_mean_last_3",
+            "assists_mean_last_5",
+        ),
+        "rolling_defensive_returns": (
+            "clean_sheets_mean_last_3",
+            "clean_sheets_mean_last_5",
+            "goals_conceded_mean_last_3",
+            "goals_conceded_mean_last_5",
+        ),
+        "ict_rolling_features": ICT_ROLLING_FEATURES,
+        "expected_stats_rolling_features": EXPECTED_STATS_ROLLING_FEATURES,
+        "ownership_transfers_lagged": OWNERSHIP_TRANSFERS_LAGGED_FEATURES,
+        "elo_features": TEAM_ELO_FEATURES,
+        "rolling_team_form_features": TEAM_FORM_FEATURES,
+        "fixture_home_feature": FIXTURE_HOME_FEATURES,
+    }
+
+
+def feature_selection_candidate_columns(frame: pd.DataFrame) -> tuple[str, ...]:
+    grouped_columns = [
+        column
+        for columns in feature_selection_candidate_groups().values()
+        for column in columns
+    ]
+    candidates = [POSITION_COLUMN, *grouped_columns]
+    return tuple(column for column in dedupe_columns(candidates) if column in frame.columns)
+
+
+def assert_feature_configuration_safe(columns: tuple[str, ...]) -> None:
+    forbidden = {*RAW_CURRENT_GW_OUTCOME_COLUMNS, *RAW_TEAM_COLUMNS}
+    included_forbidden = sorted(forbidden.intersection(columns))
+    if included_forbidden:
+        raise BacktestError(f"Unsafe raw columns in feature configuration: {included_forbidden}")
+
+
+def feature_columns(
+    frame: pd.DataFrame,
+    configured_columns: tuple[str, ...] | list[str] | None = None,
+) -> list[str]:
+    configured = tuple(STABLE_FEATURE_COLUMNS if configured_columns is None else configured_columns)
+    assert_feature_configuration_safe(configured)
+    candidates = [column for column in configured if column in frame.columns]
     usable = [
         column
         for column in candidates
@@ -301,6 +475,188 @@ def build_preprocessor(train: pd.DataFrame, columns: list[str], *, scale_numeric
             )
         )
     return ColumnTransformer(transformers=transformers, remainder="drop")
+
+
+def numeric_feature_candidates(frame: pd.DataFrame, columns: tuple[str, ...]) -> list[str]:
+    assert_feature_configuration_safe(columns)
+    return [
+        column
+        for column in columns
+        if column in frame.columns
+        and frame[column].notna().any()
+        and (
+            pd.api.types.is_numeric_dtype(frame[column])
+            or pd.api.types.is_bool_dtype(frame[column])
+        )
+    ]
+
+
+def add_numeric_position_interactions(
+    frame: pd.DataFrame,
+    columns: list[str],
+    *,
+    positions: list[str] | None = None,
+) -> tuple[pd.DataFrame, list[str]]:
+    if POSITION_COLUMN not in frame.columns:
+        return frame.copy(), columns
+    data = frame.copy()
+    if positions is None:
+        positions = sorted(data[POSITION_COLUMN].dropna().astype(str).unique())
+    interaction_data = {}
+    for position in positions:
+        mask = data[POSITION_COLUMN].astype(str) == position
+        for column in columns:
+            interaction_column = f"{column}__position_{position}"
+            interaction_data[interaction_column] = pd.to_numeric(
+                data[column],
+                errors="coerce",
+            ).where(mask, 0)
+    if not interaction_data:
+        return data, columns
+    interactions = pd.DataFrame(interaction_data, index=data.index)
+    return pd.concat([data, interactions], axis=1), [*columns, *interactions.columns]
+
+
+def internal_train_validation_split(train: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    seasons = sorted(train["season"].dropna().astype(str).unique())
+    if len(seasons) < 2:
+        return train, train
+    internal_validation_season = seasons[-1]
+    season_values = train["season"].astype(str)
+    internal_train = train.loc[season_values < internal_validation_season].copy()
+    internal_validation = train.loc[season_values == internal_validation_season].copy()
+    if internal_train.empty or internal_validation.empty:
+        return train, train
+    return internal_train, internal_validation
+
+
+def metric_value(y_true: pd.Series, y_pred: pd.Series, metric: str) -> float:
+    if metric == "mae":
+        return mae(y_true, y_pred)
+    if metric == "rmse":
+        return rmse(y_true, y_pred)
+    if metric == "spearman":
+        return -spearman_rank_correlation(y_true, y_pred)
+    if metric == "combined":
+        return mae(y_true, y_pred) + rmse(y_true, y_pred) - spearman_rank_correlation(
+            y_true,
+            y_pred,
+        )
+    raise BacktestError(f"Unsupported feature selection metric: {metric}")
+
+
+def select_features_elasticnet(
+    train: pd.DataFrame,
+    candidate_columns: tuple[str, ...],
+    *,
+    target_column: str = TARGET_COLUMN,
+    random_state: int = 42,
+    max_features: int = MAX_SELECTED_FEATURES,
+) -> list[str]:
+    train_model = train.dropna(subset=[target_column]).copy()
+    columns = numeric_feature_candidates(train_model, candidate_columns)
+    if not columns:
+        return []
+    x_train = train_model[columns].replace({pd.NA: np.nan})
+    y_train = train_model[target_column]
+    pipeline = Pipeline(
+        [
+            ("imputer", SimpleImputer(strategy="median")),
+            ("scaler", StandardScaler()),
+            (
+                "model",
+                ElasticNet(alpha=0.001, l1_ratio=0.5, max_iter=10_000, random_state=random_state),
+            ),
+        ]
+    )
+    pipeline.fit(x_train, y_train)
+    coefficients = pd.Series(pipeline.named_steps["model"].coef_, index=columns)
+    selected = coefficients.loc[coefficients.abs() > 1e-8].abs().sort_values(ascending=False)
+    if selected.empty:
+        selected = coefficients.abs().sort_values(ascending=False).head(min(5, len(coefficients)))
+    return list(selected.head(max_features).index)
+
+
+def select_features_permutation_importance(
+    train: pd.DataFrame,
+    candidate_columns: tuple[str, ...],
+    *,
+    random_state: int = 42,
+    max_features: int = MAX_SELECTED_FEATURES,
+) -> list[str]:
+    internal_train, internal_validation = internal_train_validation_split(train)
+    train_model = internal_train.dropna(subset=[TARGET_COLUMN]).copy()
+    validation_model = internal_validation.dropna(subset=[TARGET_COLUMN]).copy()
+    columns = numeric_feature_candidates(train_model, candidate_columns)
+    if not columns or validation_model.empty:
+        return columns[:max_features]
+    pipeline = Pipeline(
+        [
+            ("preprocess", build_preprocessor(train_model, columns, scale_numeric=True)),
+            ("model", Ridge(alpha=1.0)),
+        ]
+    )
+    pipeline.fit(train_model[columns].replace({pd.NA: np.nan}), train_model[TARGET_COLUMN])
+    importance = permutation_importance(
+        pipeline,
+        validation_model[columns].replace({pd.NA: np.nan}),
+        validation_model[TARGET_COLUMN],
+        scoring="neg_mean_absolute_error",
+        n_repeats=3,
+        random_state=random_state,
+    )
+    scores = pd.Series(importance.importances_mean, index=columns)
+    selected = scores.loc[scores > 0].sort_values(ascending=False)
+    return list(selected.head(max_features).index)
+
+
+def select_features_group_forward(
+    train: pd.DataFrame,
+    *,
+    selection_metric: str = "combined",
+) -> list[str]:
+    groups = feature_selection_candidate_groups()
+    internal_train, internal_validation = internal_train_validation_split(train)
+    train_model = internal_train.dropna(subset=[TARGET_COLUMN]).copy()
+    validation_model = internal_validation.dropna(subset=[TARGET_COLUMN]).copy()
+    selected = list(
+        column
+        for column in [
+            *groups["baseline_prediction_features"],
+            *groups["rolling_player_form_features"],
+        ]
+        if column in train_model.columns
+    )
+    if train_model.empty or validation_model.empty:
+        return selected
+
+    def score(columns: list[str]) -> float:
+        usable = numeric_feature_candidates(train_model, tuple(columns))
+        if not usable:
+            return float("inf")
+        pipeline = Pipeline(
+            [
+                ("preprocess", build_preprocessor(train_model, usable, scale_numeric=True)),
+                ("model", Ridge(alpha=1.0)),
+            ]
+        )
+        pipeline.fit(train_model[usable].replace({pd.NA: np.nan}), train_model[TARGET_COLUMN])
+        predictions = pd.Series(
+            pipeline.predict(validation_model[usable].replace({pd.NA: np.nan})),
+            index=validation_model.index,
+        )
+        return metric_value(validation_model[TARGET_COLUMN], predictions, selection_metric)
+
+    best_score = score(selected)
+    for group_name, group_columns in groups.items():
+        if group_name in {"baseline_prediction_features", "rolling_player_form_features"}:
+            continue
+        trial = dedupe_columns([*selected, *group_columns])
+        trial_score = score(list(trial))
+        if trial_score < best_score:
+            selected = list(trial)
+            best_score = trial_score
+    return selected
 
 
 def sklearn_model_specs(random_state: int = 42) -> list[SklearnModelSpec]:
@@ -502,6 +858,7 @@ def evaluate_sklearn_models(
     *,
     validation_season: str,
     models: list[SklearnModelSpec],
+    configured_columns: tuple[str, ...] | None = None,
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     train_model = train.dropna(subset=[TARGET_COLUMN]).copy()
@@ -509,7 +866,7 @@ def evaluate_sklearn_models(
     if train_model.empty or validation_model.empty:
         raise BacktestError(f"No train/validation rows with targets for season {validation_season}.")
 
-    columns = feature_columns(train_model)
+    columns = feature_columns(train_model, configured_columns)
     x_train = train_model[columns].replace({pd.NA: np.nan})
     y_train = train_model[TARGET_COLUMN]
     x_validation = validation_model[columns].replace({pd.NA: np.nan})
@@ -583,6 +940,7 @@ def evaluate_residual_models(
     *,
     validation_season: str,
     models: list[SklearnModelSpec],
+    configured_columns: tuple[str, ...] | None = None,
 ) -> list[dict[str, Any]]:
     rows: list[dict[str, Any]] = []
     train_with_residual = add_residual_target(train, minutes_adjusted_baseline_predictions(train))
@@ -600,7 +958,7 @@ def evaluate_residual_models(
     if train_model.empty or validation_model.empty:
         raise BacktestError(f"No residual train/validation rows for season {validation_season}.")
 
-    columns = feature_columns(train_model)
+    columns = feature_columns(train_model, configured_columns)
     x_train = train_model[columns].replace({pd.NA: np.nan})
     y_train = train_model[RESIDUAL_TARGET_COLUMN]
     x_validation = validation_model[columns].replace({pd.NA: np.nan})
@@ -713,13 +1071,14 @@ def evaluate_two_stage_model(
     validation: pd.DataFrame,
     *,
     validation_season: str,
+    configured_columns: tuple[str, ...] | None = None,
 ) -> dict[str, Any]:
     train_model = train.dropna(subset=[TARGET_COLUMN, NEXT_60_COLUMN]).copy()
     validation_model = validation.dropna(subset=[TARGET_COLUMN]).copy()
     if train_model.empty or validation_model.empty:
         raise BacktestError(f"No rows available for two-stage model in season {validation_season}.")
 
-    columns = feature_columns(train_model)
+    columns = feature_columns(train_model, configured_columns)
     x_train = train_model[columns].replace({pd.NA: np.nan})
     x_validation = validation_model[columns].replace({pd.NA: np.nan})
     y_validation = validation_model[TARGET_COLUMN]
@@ -799,8 +1158,9 @@ def fit_predict_direct_model(
     estimator: Any,
     include_position: bool,
     add_interactions: bool,
+    configured_columns: tuple[str, ...] | None = None,
 ) -> pd.Series:
-    columns = feature_columns(train)
+    columns = feature_columns(train, configured_columns)
     if not include_position:
         columns = [column for column in columns if column != POSITION_COLUMN]
     train_features = train.copy()
@@ -840,6 +1200,7 @@ def evaluate_position_strategies(
     validation_season: str,
     estimator: Any | None = None,
     min_position_train_rows: int = MIN_POSITION_TRAIN_ROWS,
+    configured_columns: tuple[str, ...] | None = None,
 ) -> list[dict[str, Any]]:
     if POSITION_COLUMN not in train.columns or POSITION_COLUMN not in validation.columns:
         LOGGER.warning("Skipping position strategies for %s: position column is missing.", validation_season)
@@ -865,6 +1226,7 @@ def evaluate_position_strategies(
         estimator=base_estimator,
         include_position=True,
         add_interactions=False,
+        configured_columns=configured_columns,
     )
     predictions["global_plus_position_interactions"] = fit_predict_direct_model(
         train_model,
@@ -872,6 +1234,7 @@ def evaluate_position_strategies(
         estimator=base_estimator,
         include_position=True,
         add_interactions=True,
+        configured_columns=configured_columns,
     )
 
     position_wise = pd.Series(index=validation_model.index, dtype="float64")
@@ -889,6 +1252,7 @@ def evaluate_position_strategies(
             estimator=base_estimator,
             include_position=False,
             add_interactions=False,
+            configured_columns=configured_columns,
         )
     predictions["position_wise_models"] = position_wise
 
@@ -928,6 +1292,7 @@ def run_position_model_backtest(
     estimator: Any | None = None,
     min_position_train_rows: int = MIN_POSITION_TRAIN_ROWS,
     min_season: str | None = None,
+    configured_columns: tuple[str, ...] | None = None,
 ) -> pd.DataFrame:
     validate_dataset(frame)
     original = frame.copy()
@@ -957,6 +1322,7 @@ def run_position_model_backtest(
                 validation_season=season,
                 estimator=estimator,
                 min_position_train_rows=min_position_train_rows,
+                configured_columns=configured_columns,
             )
         )
 
@@ -975,6 +1341,8 @@ def run_backtest(
     model_specs: list[SklearnModelSpec] | None = None,
     residual_specs: list[SklearnModelSpec] | None = None,
     min_season: str | None = None,
+    configured_columns: tuple[str, ...] | None = None,
+    include_two_stage: bool = True,
 ) -> pd.DataFrame:
     """Run rolling-origin validation by season."""
     validate_dataset(frame)
@@ -1017,6 +1385,7 @@ def run_backtest(
                 validation,
                 validation_season=season,
                 models=specs,
+                configured_columns=configured_columns,
             )
         )
         if residual_specs:
@@ -1026,15 +1395,17 @@ def run_backtest(
                     validation,
                     validation_season=season,
                     models=residual_specs,
+                    configured_columns=configured_columns,
                 )
             )
-        if NEXT_60_COLUMN in data.columns:
+        if include_two_stage and NEXT_60_COLUMN in data.columns:
             try:
                 rows.append(
                     evaluate_two_stage_model(
                         train,
                         validation,
                         validation_season=season,
+                        configured_columns=configured_columns,
                     )
                 )
             except (ValueError, KeyError) as exc:
@@ -1653,6 +2024,483 @@ def write_team_form_feature_report(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def focus_model_specs(specs: list[SklearnModelSpec], names: tuple[str, ...]) -> list[SklearnModelSpec]:
+    wanted = set(names)
+    return [spec for spec in specs if spec.name in wanted]
+
+
+def run_broad_feature_ablation(
+    frame: pd.DataFrame,
+    *,
+    min_season: str,
+    model_specs: list[SklearnModelSpec] | None = None,
+    residual_specs: list[SklearnModelSpec] | None = None,
+) -> pd.DataFrame:
+    configs = ablation_feature_configurations()
+    direct_specs = focus_model_specs(
+        sklearn_model_specs() if model_specs is None else model_specs,
+        FOCUS_DIRECT_MODEL_NAMES,
+    )
+    residual_focus_specs = focus_model_specs(
+        residual_model_specs() if residual_specs is None else residual_specs,
+        FOCUS_RESIDUAL_MODEL_NAMES,
+    )
+
+    rows: list[pd.DataFrame] = []
+    for feature_group, configured_columns in configs.items():
+        LOGGER.info("Running broad feature ablation group %s.", feature_group)
+        results = run_backtest(
+            frame,
+            model_specs=direct_specs,
+            residual_specs=residual_focus_specs,
+            min_season=min_season,
+            configured_columns=configured_columns,
+            include_two_stage=False,
+        )
+        focus_models = {
+            "Ridge",
+            "CatBoost",
+            "LightGBM",
+            "XGBoost",
+            "residual_Ridge",
+            "residual_CatBoost",
+            "residual_LightGBM",
+            "residual_XGBoost",
+            MINUTES_ADJUSTED_BASELINE_NAME,
+        }
+        model_rows = results.loc[results["model"].isin(focus_models)].copy()
+        model_rows["feature_group"] = feature_group
+        model_rows["result_type"] = "model"
+        rows.append(model_rows)
+
+        position_results = run_position_model_backtest(
+            frame,
+            min_season=min_season,
+            configured_columns=configured_columns,
+        )
+        position_rows = position_results.loc[
+            (position_results["strategy"] == "global_plus_position_interactions")
+            & (position_results["position"] == "ALL")
+        ].copy()
+        position_rows = position_rows.rename(columns={"strategy": "model"})
+        position_rows["feature_group"] = feature_group
+        position_rows["result_type"] = "position_strategy"
+        rows.append(position_rows)
+
+    if not rows:
+        raise BacktestError("No broad feature ablation rows were produced.")
+    return pd.concat(rows, ignore_index=True, sort=False)
+
+
+def write_broad_feature_ablation_results(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_BROAD_ABLATION_RESULTS_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    results.to_csv(path, index=False)
+
+
+def _ablation_aggregate(results: pd.DataFrame) -> pd.DataFrame:
+    metric_columns = [
+        "mae",
+        "rmse",
+        "spearman",
+        "top_10_precision",
+        "top_20_precision",
+        "top_50_precision",
+    ]
+    return (
+        results.groupby(["feature_group", "model"], as_index=False)[metric_columns]
+        .mean()
+        .sort_values(["mae", "feature_group", "model"])
+    )
+
+
+def _best_feature_groups_by_metric(results: pd.DataFrame) -> pd.DataFrame:
+    group_metrics = (
+        results.groupby("feature_group", as_index=False)
+        .agg(
+            mae=("mae", "mean"),
+            rmse=("rmse", "mean"),
+            spearman=("spearman", "mean"),
+            top_10_precision=("top_10_precision", "mean"),
+            top_20_precision=("top_20_precision", "mean"),
+            top_50_precision=("top_50_precision", "mean"),
+        )
+    )
+    metric_specs = {
+        "mae": True,
+        "rmse": True,
+        "spearman": False,
+        "top_10_precision": False,
+        "top_20_precision": False,
+        "top_50_precision": False,
+    }
+    rows = []
+    for metric, lower_is_better in metric_specs.items():
+        best = group_metrics.sort_values(
+            [metric, "feature_group"],
+            ascending=[lower_is_better, True],
+        ).iloc[0]
+        rows.append(
+            {
+                "metric": metric,
+                "best_feature_group": best["feature_group"],
+                "score": best[metric],
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def _feature_group_delta_summary(results: pd.DataFrame) -> pd.DataFrame:
+    aggregate = _ablation_aggregate(results)
+    current = aggregate.loc[aggregate["feature_group"] == "current_stable"].set_index("model")
+    rows = []
+    for _, row in aggregate.loc[aggregate["feature_group"] != "current_stable"].iterrows():
+        model = row["model"]
+        if model not in current.index:
+            continue
+        rows.append(
+            {
+                "feature_group": row["feature_group"],
+                "model": model,
+                "delta_mae": row["mae"] - current.loc[model, "mae"],
+                "delta_rmse": row["rmse"] - current.loc[model, "rmse"],
+                "delta_spearman": row["spearman"] - current.loc[model, "spearman"],
+                "delta_top_10_precision": (
+                    row["top_10_precision"] - current.loc[model, "top_10_precision"]
+                ),
+                "delta_top_20_precision": (
+                    row["top_20_precision"] - current.loc[model, "top_20_precision"]
+                ),
+                "delta_top_50_precision": (
+                    row["top_50_precision"] - current.loc[model, "top_50_precision"]
+                ),
+            }
+        )
+    return pd.DataFrame(rows)
+
+
+def write_broad_feature_ablation_report(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_BROAD_ABLATION_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    aggregate = _ablation_aggregate(results)
+    best_groups = _best_feature_groups_by_metric(results)
+    deltas = _feature_group_delta_summary(results)
+    group_help = pd.DataFrame()
+    if not deltas.empty:
+        group_help = (
+            deltas.groupby("feature_group", as_index=False)
+            .agg(
+                mean_delta_mae=("delta_mae", "mean"),
+                mean_delta_rmse=("delta_rmse", "mean"),
+                mean_delta_spearman=("delta_spearman", "mean"),
+                mean_delta_top_10_precision=("delta_top_10_precision", "mean"),
+                mean_delta_top_20_precision=("delta_top_20_precision", "mean"),
+                mean_delta_top_50_precision=("delta_top_50_precision", "mean"),
+            )
+            .sort_values(["mean_delta_mae", "feature_group"])
+        )
+    lines = [
+        "# Broad Feature Ablation Report",
+        "",
+        "Supported-season feature ablation using rolling-origin validation.",
+        "",
+        "## Best Feature Group By Metric",
+        "",
+        markdown_table(best_groups),
+        "",
+        "## Aggregate By Feature Group And Model",
+        "",
+        markdown_table(aggregate),
+        "",
+        "## Delta Versus Current Stable",
+        "",
+        "Negative MAE/RMSE deltas help. Positive Spearman and precision deltas help.",
+        "",
+        markdown_table(deltas),
+        "",
+        "## Feature Groups That Consistently Help Or Hurt",
+        "",
+        markdown_table(group_help),
+        "",
+        "## All Safe Candidates",
+        "",
+        "Compare `all_safe_candidates` against `current_stable` in the delta table. "
+        "A lower MAE/RMSE with stable or higher ranking metrics suggests improvement; "
+        "worse error with mixed ranking suggests overfitting or redundant features.",
+        "",
+        "## Recommended Default Feature Set",
+        "",
+        "Use the lowest-error feature group that does not materially reduce Spearman or top-k "
+        "precision. Keep `minutes_adjusted_rolling_mean` as the baseline reference.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def fit_predict_selected_ridge(
+    train: pd.DataFrame,
+    validation: pd.DataFrame,
+    selected_columns: list[str],
+) -> pd.Series:
+    usable = feature_columns(train, tuple(selected_columns))
+    train_model = train.dropna(subset=[TARGET_COLUMN]).copy()
+    validation_model = validation.dropna(subset=[TARGET_COLUMN]).copy()
+    pipeline = Pipeline(
+        [
+            ("preprocess", build_preprocessor(train_model, usable, scale_numeric=True)),
+            ("model", Ridge(alpha=1.0)),
+        ]
+    )
+    pipeline.fit(train_model[usable].replace({pd.NA: np.nan}), train_model[TARGET_COLUMN])
+    return pd.Series(
+        pipeline.predict(validation_model[usable].replace({pd.NA: np.nan})),
+        index=validation_model.index,
+    )
+
+
+def run_feature_selection_experiment(
+    frame: pd.DataFrame,
+    *,
+    min_season: str,
+    random_state: int = 42,
+    min_position_rows: int = MIN_POSITION_SELECTION_ROWS,
+) -> pd.DataFrame:
+    validate_dataset(frame)
+    data = season_filtered_frame(frame, min_season)
+    validate_dataset(data)
+    data["season"] = data["season"].astype(str)
+    data = normalize_position_column(data)
+    data = add_baseline_prediction_features(data)
+    data = data.sort_values(["season", "gw"]).reset_index(drop=True)
+
+    rows: list[dict[str, Any]] = []
+    for season in validation_seasons(data):
+        train, validation = split_train_validation(data, season)
+        if train.empty or validation.empty:
+            continue
+        train = train.dropna(subset=[TARGET_COLUMN]).copy()
+        validation = validation.dropna(subset=[TARGET_COLUMN]).copy()
+        if train.empty or validation.empty:
+            continue
+
+        base_candidates = feature_selection_candidate_columns(train)
+        base_numeric = numeric_feature_candidates(train, base_candidates)
+        train_positions = sorted(train[POSITION_COLUMN].dropna().astype(str).unique())
+        train_interactions, interaction_candidates = add_numeric_position_interactions(
+            train,
+            base_numeric,
+            positions=train_positions,
+        )
+        validation_interactions, _ = add_numeric_position_interactions(
+            validation,
+            base_numeric,
+            positions=train_positions,
+        )
+
+        global_selected = select_features_elasticnet(
+            train_interactions,
+            tuple(interaction_candidates),
+            random_state=random_state,
+        )
+        if not global_selected:
+            global_selected = base_numeric[:5]
+        global_pred = fit_predict_selected_ridge(
+            train_interactions,
+            validation_interactions,
+            global_selected,
+        )
+        row = evaluate_predictions(
+            model_name="global_selected_features",
+            validation_season=season,
+            y_true=validation_interactions[TARGET_COLUMN],
+            y_pred=global_pred,
+            positions=validation_interactions.get(POSITION_COLUMN),
+        )
+        row["n_train"] = len(train)
+        row["selection_method"] = "elasticnet"
+        row["selected_features"] = ",".join(global_selected)
+        row["position"] = "ALL"
+        rows.append(row)
+
+        position_predictions = pd.Series(index=validation.index, dtype="float64")
+        hybrid_predictions = pd.Series(index=validation.index, dtype="float64")
+        selected_by_position: dict[str, list[str]] = {}
+        hybrid_by_position: dict[str, list[str]] = {}
+        global_core = global_selected[: min(15, len(global_selected))]
+        for position, validation_position in validation.groupby(POSITION_COLUMN, dropna=False):
+            position_key = str(position)
+            validation_index = validation_position.index
+            train_position = train.loc[train[POSITION_COLUMN].astype(str) == position_key]
+            if len(train_position) < min_position_rows:
+                position_predictions.loc[validation_index] = global_pred.loc[validation_index]
+                hybrid_predictions.loc[validation_index] = global_pred.loc[validation_index]
+                selected_by_position[position_key] = global_selected
+                hybrid_by_position[position_key] = global_selected
+                continue
+
+            position_candidates = numeric_feature_candidates(train_position, base_candidates)
+            position_selected = select_features_elasticnet(
+                train_position,
+                tuple(position_candidates),
+                random_state=random_state,
+            )
+            if not position_selected:
+                position_selected = global_selected
+            selected_by_position[position_key] = position_selected
+            position_predictions.loc[validation_index] = fit_predict_selected_ridge(
+                train_position,
+                validation_position,
+                position_selected,
+            )
+
+            position_extras = [
+                feature
+                for feature in position_selected
+                if feature not in global_core
+            ][:10]
+            hybrid_features = list(dedupe_columns([*global_core, *position_extras]))
+            hybrid_by_position[position_key] = hybrid_features
+            hybrid_predictions.loc[validation_index] = fit_predict_selected_ridge(
+                train_position,
+                validation_position,
+                hybrid_features,
+            )
+
+        for strategy, predictions, selected in (
+            ("position_selected_features", position_predictions, selected_by_position),
+            ("hybrid_global_plus_position_features", hybrid_predictions, hybrid_by_position),
+        ):
+            metric = evaluate_predictions(
+                model_name=strategy,
+                validation_season=season,
+                y_true=validation[TARGET_COLUMN],
+                y_pred=predictions,
+                positions=validation.get(POSITION_COLUMN),
+            )
+            metric["n_train"] = len(train)
+            metric["selection_method"] = "elasticnet"
+            metric["selected_features"] = json_dumps_selected_features(selected)
+            metric["position"] = "BY_POSITION"
+            rows.append(metric)
+
+    if not rows:
+        raise BacktestError("No feature selection experiment rows were produced.")
+    results = pd.DataFrame(rows).sort_values(
+        ["validation_season", "model"],
+    ).reset_index(drop=True)
+    results.attrs["feature_selections"] = collect_feature_selection_counts(results)
+    return results
+
+
+def json_dumps_selected_features(selected: dict[str, list[str]]) -> str:
+    import json
+
+    return json.dumps(selected, sort_keys=True)
+
+
+def collect_feature_selection_counts(results: pd.DataFrame) -> dict[str, int]:
+    import json
+
+    counts: dict[str, int] = {}
+    for value in results["selected_features"].dropna():
+        if not isinstance(value, str):
+            continue
+        if value.startswith("{"):
+            parsed = json.loads(value)
+            features = [feature for values in parsed.values() for feature in values]
+        else:
+            features = [feature for feature in value.split(",") if feature]
+        for feature in features:
+            counts[feature] = counts.get(feature, 0) + 1
+    return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
+
+
+def write_feature_selection_results(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_FEATURE_SELECTION_RESULTS_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    results.to_csv(path, index=False)
+
+
+def write_feature_selection_report(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_FEATURE_SELECTION_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    aggregate = aggregate_model_metrics(results)
+    best = best_metric_summary(results)
+    counts = collect_feature_selection_counts(results)
+    count_frame = pd.DataFrame(
+        [{"feature": feature, "selected_count": count} for feature, count in counts.items()]
+    )
+    all_candidates = set(feature for columns in feature_selection_candidate_groups().values() for feature in columns)
+    selected_features = set(counts)
+    rejected = pd.DataFrame(
+        [{"feature": feature} for feature in sorted(all_candidates - selected_features)]
+    )
+    global_rows = results.loc[results["model"] == "global_selected_features"]
+    position_rows = results.loc[results["model"] == "position_selected_features"]
+    hybrid_rows = results.loc[results["model"] == "hybrid_global_plus_position_features"]
+
+    lines = [
+        "# Feature Selection Report",
+        "",
+        "Feature selection is fitted inside each rolling-origin training window only.",
+        "",
+        "## Method Used",
+        "",
+        "- Primary reported method: ElasticNet coefficient selection with standardized numeric features.",
+        "- Additional implemented methods: permutation importance and group forward selection.",
+        "- Combined score for group forward selection: `MAE + RMSE - Spearman` on an internal training-season validation split.",
+        "",
+        "## Selected Global Features",
+        "",
+        markdown_table(global_rows[["validation_season", "selected_features"]]),
+        "",
+        "## Selected Features By Position",
+        "",
+        markdown_table(position_rows[["validation_season", "selected_features"]]),
+        "",
+        "## Hybrid Global Plus Position-Specific Features",
+        "",
+        markdown_table(hybrid_rows[["validation_season", "selected_features"]]),
+        "",
+        "## Features Selected Most Often",
+        "",
+        markdown_table(count_frame.head(50)),
+        "",
+        "## Features Consistently Rejected",
+        "",
+        markdown_table(rejected),
+        "",
+        "## Aggregate Strategy Results",
+        "",
+        markdown_table(aggregate),
+        "",
+        "## Best Strategy By Metric",
+        "",
+        markdown_table(best),
+        "",
+        "## Position-Specific Versus Global",
+        "",
+        "Compare `position_selected_features` and `hybrid_global_plus_position_features` "
+        "against `global_selected_features` in the aggregate table. Lower MAE/RMSE and "
+        "higher Spearman/top-k precision indicate improvement.",
+        "",
+        "## Recommended Default Feature Set",
+        "",
+        "Do not replace the default model yet. Use the most stable selected features across "
+        "folds as the next candidate set for a focused supported-season ablation.",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", type=Path, default=DEFAULT_INPUT_PATH)
@@ -1667,6 +2515,16 @@ def parse_args() -> argparse.Namespace:
             "seasons greater than or equal to this value and writes supported-season reports."
         ),
     )
+    parser.add_argument(
+        "--run-broad-ablation",
+        action="store_true",
+        help="Also run the slower broad feature ablation matrix in supported-season mode.",
+    )
+    parser.add_argument(
+        "--run-feature-selection",
+        action="store_true",
+        help="Also run the slower mathematical feature-selection experiment in supported-season mode.",
+    )
     return parser.parse_args()
 
 
@@ -1675,6 +2533,7 @@ def main() -> None:
     args = parse_args()
     data = read_dataset(args.input)
     if args.min_season is None:
+        LOGGER.info("Optional experiments disabled: broad ablation, feature selection")
         results = run_backtest(data)
         write_results(results, args.results)
         write_markdown_summary(results, args.summary)
@@ -1690,6 +2549,11 @@ def main() -> None:
         )
         return
 
+    LOGGER.info(
+        "Optional experiments: broad ablation %s, feature selection %s",
+        "enabled" if args.run_broad_ablation else "disabled",
+        "enabled" if args.run_feature_selection else "disabled",
+    )
     before_supported_results = (
         pd.read_csv(DEFAULT_SUPPORTED_RESULTS_PATH)
         if DEFAULT_SUPPORTED_RESULTS_PATH.exists()
@@ -1731,6 +2595,17 @@ def main() -> None:
         source=data,
         min_season=args.min_season,
     )
+    if args.run_broad_ablation:
+        ablation_results = run_broad_feature_ablation(data, min_season=args.min_season)
+        write_broad_feature_ablation_results(ablation_results)
+        write_broad_feature_ablation_report(ablation_results)
+    if args.run_feature_selection:
+        feature_selection_results = run_feature_selection_experiment(
+            data,
+            min_season=args.min_season,
+        )
+        write_feature_selection_results(feature_selection_results)
+        write_feature_selection_report(feature_selection_results)
     LOGGER.info(
         "Wrote supported-season results to %s, %s, %s, and %s",
         DEFAULT_SUPPORTED_RESULTS_PATH,

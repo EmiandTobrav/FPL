@@ -28,9 +28,9 @@ Positive deltas mean the metric increased after adding team form; for MAE/RMSE t
 
 | model | before_mae | after_mae | delta_mae | before_rmse | after_rmse | delta_rmse | before_spearman | after_spearman | delta_spearman | before_top_10_precision | after_top_10_precision | delta_top_10_precision | before_top_20_precision | after_top_20_precision | delta_top_20_precision | before_top_50_precision | after_top_50_precision | delta_top_50_precision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| residual_CatBoost | 1.0997 | 1.1035 | 0.0037 | 2.0615 | 2.0615 | 0.0000 | 0.6489 | 0.6485 | -0.0003 | 0.0000 | 0.0000 | 0.0000 | 0.0200 | 0.0100 | -0.0100 | 0.0440 | 0.0240 | -0.0200 |
-| residual_LightGBM | 1.1095 | 1.1116 | 0.0021 | 2.0855 | 2.0820 | -0.0035 | 0.6406 | 0.6409 | 0.0003 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
-| residual_XGBoost | 1.1027 | 1.1042 | 0.0015 | 2.0635 | 2.0626 | -0.0009 | 0.6461 | 0.6461 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0200 | 0.0200 | 0.0200 | 0.0240 | 0.0040 |
+| residual_CatBoost | 1.1035 | 1.1035 | 0.0000 | 2.0615 | 2.0615 | 0.0000 | 0.6485 | 0.6485 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0100 | 0.0100 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
+| residual_LightGBM | 1.1116 | 1.1116 | 0.0000 | 2.0820 | 2.0820 | 0.0000 | 0.6409 | 0.6409 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
+| residual_XGBoost | 1.1042 | 1.1042 | 0.0000 | 2.0626 | 2.0626 | 0.0000 | 0.6461 | 0.6461 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
 | minutes_adjusted_rolling_mean | 1.0572 | 1.0572 | 0.0000 | 2.2244 | 2.2244 | 0.0000 | 0.6568 | 0.6568 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0440 | 0.0440 | 0.0000 |
 
 ## Global Plus Position Interactions

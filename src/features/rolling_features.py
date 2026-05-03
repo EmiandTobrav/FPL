@@ -10,6 +10,27 @@ import pandas as pd
 PLAYER_ID_COLUMNS = ("element", "id", "name")
 POINTS_COLUMN = "total_points"
 REQUIRED_COLUMNS = ("season", "gw", POINTS_COLUMN, "minutes", "bonus", "bps")
+CANDIDATE_ROLLING_SOURCES = (
+    "goals_scored",
+    "assists",
+    "clean_sheets",
+    "goals_conceded",
+    "influence",
+    "creativity",
+    "threat",
+    "ict_index",
+    "expected_goals",
+    "expected_assists",
+    "expected_goal_involvements",
+    "expected_goals_conceded",
+)
+CANDIDATE_ROLLING_WINDOWS = (3, 5)
+CANDIDATE_LAG_SOURCES = (
+    "selected",
+    "transfers_in",
+    "transfers_out",
+    "transfers_balance",
+)
 
 
 class FeatureBuildError(ValueError):
@@ -136,4 +157,48 @@ def build_rolling_features(frame: pd.DataFrame) -> pd.DataFrame:
         aggregation="sum",
     )
 
+    for source_column in CANDIDATE_ROLLING_SOURCES:
+        if source_column not in data.columns:
+            continue
+        for window in CANDIDATE_ROLLING_WINDOWS:
+            data[f"{source_column}_mean_last_{window}"] = _previous_rolling(
+                data,
+                group_columns=group_columns,
+                source_column=source_column,
+                window=window,
+                aggregation="mean",
+            )
+
+    for source_column in CANDIDATE_LAG_SOURCES:
+        if source_column not in data.columns:
+            continue
+        data[f"{source_column}_lag_1"] = data.groupby(group_columns, sort=False)[
+            source_column
+        ].shift(1)
+
     return data
+
+
+def expected_candidate_feature_columns() -> list[str]:
+    """Return candidate feature names that may be produced from optional sources."""
+    rolling = [
+        f"{source_column}_mean_last_{window}"
+        for source_column in CANDIDATE_ROLLING_SOURCES
+        for window in CANDIDATE_ROLLING_WINDOWS
+    ]
+    lags = [f"{source_column}_lag_1" for source_column in CANDIDATE_LAG_SOURCES]
+    return [*rolling, *lags, "was_home"]
+
+
+def skipped_candidate_sources(frame: pd.DataFrame) -> dict[str, str]:
+    """Return optional candidate sources unavailable in this dataset."""
+    skipped: dict[str, str] = {}
+    for source_column in CANDIDATE_ROLLING_SOURCES:
+        if source_column not in frame.columns:
+            skipped[source_column] = "source column missing"
+    for source_column in CANDIDATE_LAG_SOURCES:
+        if source_column not in frame.columns:
+            skipped[source_column] = "source column missing"
+    if "was_home" not in frame.columns:
+        skipped["was_home"] = "source column missing"
+    return skipped
