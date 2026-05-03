@@ -65,7 +65,7 @@ Positive deltas mean the metric increased after filtering; for MAE/RMSE that is 
 
 | strategy | full_mae | filtered_mae | delta_mae | full_rmse | filtered_rmse | delta_rmse | full_spearman | filtered_spearman | delta_spearman | full_top_10_precision | filtered_top_10_precision | delta_top_10_precision | full_top_20_precision | filtered_top_20_precision | delta_top_20_precision | full_top_50_precision | filtered_top_50_precision | delta_top_50_precision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| global_plus_position_interactions | 1.1279 | 1.1279 | 0.0000 | 2.0564 | 2.0564 | 0.0000 | 0.6316 | 0.6316 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0360 | 0.0360 | 0.0000 |
+| global_plus_position_interactions | 1.1279 | 1.1279 | -0.0000 | 2.0564 | 2.0564 | 0.0000 | 0.6316 | 0.6316 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0360 | 0.0360 | 0.0000 |
 
 ## Interpretation
 

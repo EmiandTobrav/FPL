@@ -18,8 +18,6 @@ The current result files contain successful rows for these models:
 - Trained direct ML models:
   - `Ridge`
   - `ElasticNet`
-  - `RandomForestRegressor`
-  - `HistGradientBoostingRegressor`
   - `XGBoost`
   - `LightGBM`
   - `CatBoost`
@@ -98,7 +96,7 @@ By RMSE, trained ML models are best in every validation season:
 | 2020-21 | `CatBoost` | 2.1688 |
 | 2021-22 | `CatBoost` | 2.1608 |
 | 2022-23 | `CatBoost` | 2.0479 |
-| 2023-24 | `HistGradientBoostingRegressor` | 1.9991 |
+| 2023-24 | `residual_XGBoost` | 1.9912 |
 | 2024-25 | `XGBoost` | 2.1114 |
 | 2025-26 | `CatBoost` | 2.0388 |
 

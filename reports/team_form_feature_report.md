@@ -28,16 +28,16 @@ Positive deltas mean the metric increased after adding team form; for MAE/RMSE t
 
 | model | before_mae | after_mae | delta_mae | before_rmse | after_rmse | delta_rmse | before_spearman | after_spearman | delta_spearman | before_top_10_precision | after_top_10_precision | delta_top_10_precision | before_top_20_precision | after_top_20_precision | delta_top_20_precision | before_top_50_precision | after_top_50_precision | delta_top_50_precision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| residual_CatBoost | 1.1035 | 1.0941 | -0.0093 | 2.0615 | 2.0364 | -0.0250 | 0.6485 | 0.6509 | 0.0024 | 0.0000 | 0.0000 | 0.0000 | 0.0100 | 0.0100 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
-| residual_LightGBM | 1.1116 | 1.1018 | -0.0097 | 2.0820 | 2.0551 | -0.0269 | 0.6409 | 0.6443 | 0.0034 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
-| residual_XGBoost | 1.1042 | 1.0946 | -0.0096 | 2.0626 | 2.0391 | -0.0235 | 0.6461 | 0.6483 | 0.0022 | 0.0000 | 0.0000 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
-| minutes_adjusted_rolling_mean | 1.0572 | 1.0469 | -0.0103 | 2.2244 | 2.1975 | -0.0269 | 0.6568 | 0.6616 | 0.0048 | 0.0200 | 0.0200 | 0.0000 | 0.0200 | 0.0400 | 0.0200 | 0.0440 | 0.0440 | 0.0000 |
+| residual_CatBoost | 1.0941 | 1.0941 | 0.0000 | 2.0364 | 2.0364 | 0.0000 | 0.6509 | 0.6509 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0100 | 0.0100 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
+| residual_LightGBM | 1.1018 | 1.1018 | 0.0000 | 2.0551 | 2.0551 | 0.0000 | 0.6443 | 0.6443 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
+| residual_XGBoost | 1.0946 | 1.0946 | 0.0000 | 2.0391 | 2.0391 | 0.0000 | 0.6483 | 0.6483 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0240 | 0.0240 | 0.0000 |
+| minutes_adjusted_rolling_mean | 1.0469 | 1.0469 | 0.0000 | 2.1975 | 2.1975 | 0.0000 | 0.6616 | 0.6616 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0400 | 0.0400 | 0.0000 | 0.0440 | 0.0440 | 0.0000 |
 
 ## Global Plus Position Interactions
 
 | strategy | before_mae | after_mae | delta_mae | before_rmse | after_rmse | delta_rmse | before_spearman | after_spearman | delta_spearman | before_top_10_precision | after_top_10_precision | delta_top_10_precision | before_top_20_precision | after_top_20_precision | delta_top_20_precision | before_top_50_precision | after_top_50_precision | delta_top_50_precision |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| global_plus_position_interactions | 1.1279 | 1.1279 | 0.0000 | 2.0564 | 2.0564 | 0.0000 | 0.6316 | 0.6316 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0360 | 0.0360 | 0.0000 |
+| global_plus_position_interactions | 1.1279 | 1.1279 | -0.0000 | 2.0564 | 2.0564 | 0.0000 | 0.6316 | 0.6316 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0200 | 0.0200 | 0.0000 | 0.0360 | 0.0360 | 0.0000 |
 
 ## Notes
 

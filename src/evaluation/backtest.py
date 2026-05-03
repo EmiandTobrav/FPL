@@ -15,10 +15,6 @@ from pandas import CategoricalDtype
 from sklearn.compose import ColumnTransformer
 from sklearn.base import clone
 from sklearn.dummy import DummyClassifier, DummyRegressor
-from sklearn.ensemble import (
-    HistGradientBoostingRegressor,
-    RandomForestRegressor,
-)
 from sklearn.inspection import permutation_importance
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import ElasticNet, LogisticRegression, Ridge
@@ -468,13 +464,14 @@ def build_preprocessor(train: pd.DataFrame, columns: list[str], *, scale_numeric
                 Pipeline(
                     [
                         ("imputer", SimpleImputer(strategy="most_frequent")),
-                        ("onehot", OneHotEncoder(handle_unknown="ignore")),
+                        ("onehot", OneHotEncoder(handle_unknown="ignore", sparse_output=False)),
                     ]
                 ),
                 categorical_columns,
             )
         )
-    return ColumnTransformer(transformers=transformers, remainder="drop")
+    preprocessor = ColumnTransformer(transformers=transformers, remainder="drop")
+    return preprocessor.set_output(transform="pandas")
 
 
 def numeric_feature_candidates(frame: pd.DataFrame, columns: tuple[str, ...]) -> list[str]:
@@ -667,19 +664,6 @@ def sklearn_model_specs(random_state: int = 42) -> list[SklearnModelSpec]:
             ElasticNet(alpha=0.01, l1_ratio=0.2, max_iter=10_000, random_state=random_state),
             scale_numeric=True,
         ),
-        SklearnModelSpec(
-            "RandomForestRegressor",
-            RandomForestRegressor(
-                n_estimators=200,
-                min_samples_leaf=5,
-                n_jobs=-1,
-                random_state=random_state,
-            ),
-        ),
-        SklearnModelSpec(
-            "HistGradientBoostingRegressor",
-            HistGradientBoostingRegressor(max_iter=200, random_state=random_state),
-        ),
     ]
 
     if importlib.util.find_spec("xgboost") is not None:
@@ -714,6 +698,7 @@ def sklearn_model_specs(random_state: int = 42) -> list[SklearnModelSpec]:
                     learning_rate=0.05,
                     num_leaves=31,
                     random_state=random_state,
+                    n_jobs=1,
                     verbose=-1,
                 ),
             )
@@ -733,6 +718,7 @@ def sklearn_model_specs(random_state: int = 42) -> list[SklearnModelSpec]:
                     learning_rate=0.05,
                     loss_function="RMSE",
                     random_seed=random_state,
+                    thread_count=1,
                     verbose=False,
                 ),
             )

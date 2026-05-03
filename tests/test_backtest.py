@@ -19,6 +19,7 @@ from evaluation.backtest import (
     ablation_feature_configurations,
     assert_feature_configuration_safe,
     add_residual_target,
+    build_preprocessor,
     collect_feature_selection_counts,
     feature_selection_candidate_columns,
     final_residual_prediction,
@@ -30,6 +31,7 @@ from evaluation.backtest import (
     run_broad_feature_ablation,
     run_feature_selection_experiment,
     season_filtered_frame,
+    sklearn_model_specs,
     write_position_markdown_summary,
     write_position_results,
     write_supported_season_filter_report,
@@ -291,6 +293,24 @@ def test_backtest_module_has_command_line_help() -> None:
     assert "--min-season" in completed.stdout
     assert "--run-broad-ablation" in completed.stdout
     assert "--run-feature-selection" in completed.stdout
+
+
+def test_preprocessor_outputs_named_feature_dataframe() -> None:
+    frame = modeling_frame().dropna(subset=["points_last_1"]).copy()
+    columns = ["position", "points_last_1", "points_mean_last_3"]
+
+    preprocessor = build_preprocessor(frame, columns, scale_numeric=True)
+    transformed = preprocessor.fit_transform(frame[columns])
+
+    assert isinstance(transformed, pd.DataFrame)
+    assert all(isinstance(column, str) for column in transformed.columns)
+
+
+def test_removed_non_working_models_are_not_in_active_specs() -> None:
+    model_names = {spec.name for spec in sklearn_model_specs()}
+    removed_model_names = {"Random" + "ForestRegressor", "Hist" + "GradientBoostingRegressor"}
+
+    assert not removed_model_names.intersection(model_names)
 
 
 def test_main_full_history_does_not_run_optional_experiments(monkeypatch) -> None:
