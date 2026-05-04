@@ -24,11 +24,14 @@ from evaluation.backtest import (
     collect_feature_selection_counts,
     feature_selection_candidate_columns,
     final_residual_prediction,
+    fit_fixture_multipliers,
+    apply_fixture_multiplier,
     learn_ensemble_weights,
     load_position_feature_masks,
     minutes_adjusted_baseline_predictions,
     normalize_position_column,
     position_diagnostics,
+    run_fixture_adjusted_baseline_experiment,
     run_ensemble_experiment,
     run_position_feature_mask_experiment,
     run_position_model_backtest,
@@ -218,6 +221,7 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
         "model_pruning_audit": [],
         "position_feature_mask": [],
         "ensemble": [],
+        "fixture_baseline": [],
     }
 
     monkeypatch.setattr(sys, "argv", argv)
@@ -279,6 +283,8 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
     monkeypatch.setattr(backtest_module, "write_position_feature_mask_report", lambda *args, **kwargs: None)
     monkeypatch.setattr(backtest_module, "write_ensemble_results", lambda *args, **kwargs: None)
     monkeypatch.setattr(backtest_module, "write_ensemble_report", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_fixture_adjusted_baseline_results", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_fixture_adjusted_baseline_report", lambda *args, **kwargs: None)
 
     def record_broad_ablation(*args, **kwargs) -> pd.DataFrame:
         calls["broad_ablation"].append(kwargs.get("min_season"))
@@ -306,6 +312,12 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
         "run_ensemble_experiment",
         lambda *args, **kwargs: calls["ensemble"].append("run")
         or minimal_results_frame().assign(blend_type="ensemble"),
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "run_fixture_adjusted_baseline_experiment",
+        lambda *args, **kwargs: calls["fixture_baseline"].append("run")
+        or minimal_results_frame().assign(segment_type="overall", segment="ALL"),
     )
     return calls
 
@@ -369,6 +381,7 @@ def test_backtest_module_has_command_line_help() -> None:
     assert "--run-model-pruning-audit" in completed.stdout
     assert "--run-position-feature-mask-experiment" in completed.stdout
     assert "--run-ensemble-experiment" in completed.stdout
+    assert "--run-fixture-adjusted-baseline-experiment" in completed.stdout
 
 
 def test_preprocessor_outputs_named_feature_dataframe() -> None:
@@ -404,6 +417,7 @@ def test_main_full_history_does_not_run_optional_experiments(monkeypatch) -> Non
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
     assert calls["ensemble"] == []
+    assert calls["fixture_baseline"] == []
     assert calls["write_results"] == [scratch / "model_results.csv"]
 
 
@@ -424,6 +438,7 @@ def test_main_supported_default_does_not_run_optional_experiments(
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
     assert calls["ensemble"] == []
+    assert calls["fixture_baseline"] == []
     assert calls["write_results"] == [scratch / "model_results_supported_seasons.csv"]
 
 
@@ -449,6 +464,7 @@ def test_main_broad_ablation_flag_runs_broad_ablation(monkeypatch) -> None:
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
     assert calls["ensemble"] == []
+    assert calls["fixture_baseline"] == []
 
 
 def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None:
@@ -473,6 +489,7 @@ def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
     assert calls["ensemble"] == []
+    assert calls["fixture_baseline"] == []
 
 
 def test_main_model_pruning_audit_flag_runs_audit(monkeypatch) -> None:
@@ -495,6 +512,7 @@ def test_main_model_pruning_audit_flag_runs_audit(monkeypatch) -> None:
     assert calls["model_pruning_audit"] == ["2022-23"]
     assert calls["position_feature_mask"] == []
     assert calls["ensemble"] == []
+    assert calls["fixture_baseline"] == []
 
 
 def test_main_position_feature_mask_flag_runs_only_mask_experiment(monkeypatch) -> None:
@@ -516,6 +534,7 @@ def test_main_position_feature_mask_flag_runs_only_mask_experiment(monkeypatch) 
     assert calls["feature_selection"] == []
     assert calls["position_feature_mask"] == ["run"]
     assert calls["ensemble"] == []
+    assert calls["fixture_baseline"] == []
 
 
 def test_main_ensemble_flag_runs_only_ensemble_experiment(monkeypatch) -> None:
@@ -537,6 +556,140 @@ def test_main_ensemble_flag_runs_only_ensemble_experiment(monkeypatch) -> None:
     assert calls["feature_selection"] == []
     assert calls["position_feature_mask"] == []
     assert calls["ensemble"] == ["run"]
+    assert calls["fixture_baseline"] == []
+
+
+def test_main_fixture_adjusted_baseline_flag_runs_only_fixture_experiment(monkeypatch) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/fixture_baseline_flag")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        [
+            "evaluation.backtest",
+            "--input",
+            "dummy.parquet",
+            "--run-fixture-adjusted-baseline-experiment",
+        ],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == []
+    assert calls["feature_selection"] == []
+    assert calls["position_feature_mask"] == []
+    assert calls["ensemble"] == []
+    assert calls["fixture_baseline"] == ["run"]
+
+
+def fixture_multiplier_frame() -> pd.DataFrame:
+    return pd.DataFrame(
+        {
+            "season": ["2022-23"] * 4,
+            "gw": [2, 3, 4, 5],
+            "position": ["MID", "MID", "MID", "MID"],
+            "next_gw_points": [20.0, 12.0, 1.0, 2.0],
+            "points_mean_last_5": [10.0, 10.0, 10.0, 10.0],
+            "minutes_mean_last_5": [90.0, 90.0, 90.0, 90.0],
+            "was_home": [True, True, False, False],
+            "home_adjusted_elo_difference": [100.0, 80.0, -100.0, -80.0],
+            "team_goals_scored_mean_last_5": [2.0, 2.0, 0.5, 0.5],
+            "team_goals_conceded_mean_last_5": [0.5, 0.5, 2.0, 2.0],
+            "opponent_goals_scored_mean_last_5": [0.5, 0.5, 2.0, 2.0],
+            "opponent_goals_conceded_mean_last_5": [2.0, 2.0, 0.5, 0.5],
+            "team_clean_sheet_rate_last_5": [0.8, 0.8, 0.1, 0.1],
+            "opponent_clean_sheet_rate_last_5": [0.1, 0.1, 0.8, 0.8],
+        }
+    )
+
+
+def test_fixture_multipliers_are_fit_on_training_rows_only() -> None:
+    train = fixture_multiplier_frame()
+    validation = train.copy()
+    validation["next_gw_points"] = 9999.0
+
+    first = fit_fixture_multipliers(train, "minutes_adjusted_home_away")
+    second = fit_fixture_multipliers(train, "minutes_adjusted_home_away")
+    prediction = apply_fixture_multiplier(
+        validation,
+        "minutes_adjusted_home_away",
+        first,
+    )
+
+    assert first == second
+    assert prediction.iloc[0] == pytest.approx(12.5)
+
+
+def test_fixture_adjusted_validation_targets_do_not_calibrate_multipliers() -> None:
+    data = pd.concat(
+        [
+            fixture_multiplier_frame().assign(season="2022-23"),
+            fixture_multiplier_frame().assign(season="2023-24"),
+        ],
+        ignore_index=True,
+    )
+    changed = data.copy()
+    changed.loc[changed["season"].eq("2023-24"), "next_gw_points"] = 9999.0
+
+    first = run_fixture_adjusted_baseline_experiment(data)
+    second = run_fixture_adjusted_baseline_experiment(changed)
+
+    first_multiplier = first.loc[
+        first["validation_season"].eq("2023-24")
+        & first["model"].eq("minutes_adjusted_home_away")
+        & first["segment_type"].eq("overall"),
+        "multipliers_json",
+    ].iloc[0]
+    second_multiplier = second.loc[
+        second["validation_season"].eq("2023-24")
+        & second["model"].eq("minutes_adjusted_home_away")
+        & second["segment_type"].eq("overall"),
+        "multipliers_json",
+    ].iloc[0]
+
+    assert first_multiplier == second_multiplier
+
+
+def test_fixture_adjusted_missing_features_fall_back_to_original_baseline() -> None:
+    frame = pd.DataFrame(
+        {
+            "next_gw_points": [5.0],
+            "points_mean_last_5": [8.0],
+            "minutes_mean_last_5": [45.0],
+        }
+    )
+
+    adjusted = apply_fixture_multiplier(frame, "minutes_adjusted_elo", {"favourite": 1.2})
+    original = minutes_adjusted_baseline_predictions(frame)
+
+    pd.testing.assert_series_equal(adjusted, original.rename("minutes_adjusted_elo"))
+
+
+def test_fixture_multiplier_clipping_works() -> None:
+    train = fixture_multiplier_frame()
+    train.loc[train["was_home"].eq(True), "next_gw_points"] = 1000.0
+    train.loc[train["was_home"].eq(False), "next_gw_points"] = 0.1
+
+    multipliers = fit_fixture_multipliers(train, "minutes_adjusted_home_away")
+
+    assert multipliers["home"] == 1.25
+    assert multipliers["away"] == 0.75
+
+
+def test_original_minutes_adjusted_baseline_remains_unchanged() -> None:
+    frame = pd.DataFrame(
+        {
+            "next_gw_points": [8.0],
+            "points_mean_last_5": [6.0],
+            "minutes_mean_last_5": [45.0],
+            "was_home": [True],
+        }
+    )
+
+    original = minutes_adjusted_baseline_predictions(frame)
+    adjusted_original = apply_fixture_multiplier(frame, "minutes_adjusted_rolling_mean", {})
+
+    assert original.iloc[0] == 3.0
+    pd.testing.assert_series_equal(original.rename("minutes_adjusted_rolling_mean"), adjusted_original)
 
 
 def test_ensemble_weights_are_non_negative_and_sum_to_one() -> None:

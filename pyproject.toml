@@ -13,7 +13,6 @@ dependencies = [
     "scikit-learn",
     "matplotlib",
     "xgboost",
-    "lightgbm",
     "catboost",
     "pytest",
     "ruff",

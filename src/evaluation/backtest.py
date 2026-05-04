@@ -54,6 +54,8 @@ DEFAULT_POSITION_FEATURE_MASK_REPORT_PATH = Path("reports/position_feature_mask_
 DEFAULT_POSITION_FEATURE_RELEVANCE_PATH = Path("reports/position_feature_relevance.csv")
 DEFAULT_ENSEMBLE_RESULTS_PATH = Path("reports/ensemble_results.csv")
 DEFAULT_ENSEMBLE_REPORT_PATH = Path("reports/ensemble_report.md")
+DEFAULT_FIXTURE_BASELINE_RESULTS_PATH = Path("reports/fixture_adjusted_baseline_results.csv")
+DEFAULT_FIXTURE_BASELINE_REPORT_PATH = Path("reports/fixture_adjusted_baseline_report.md")
 TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
@@ -244,6 +246,15 @@ ENSEMBLE_BASELINE_RESIDUAL_MEMBERS = (
     "residual_CatBoost",
     "residual_XGBoost",
 )
+FIXTURE_ADJUSTED_BASELINES = (
+    MINUTES_ADJUSTED_BASELINE_NAME,
+    "minutes_adjusted_home_away",
+    "minutes_adjusted_elo",
+    "minutes_adjusted_team_form",
+    "minutes_adjusted_fixture_adjusted",
+)
+FIXTURE_MULTIPLIER_MIN = 0.75
+FIXTURE_MULTIPLIER_MAX = 1.25
 SEASON_WINDOW_FOCUS_MODELS = (
     MINUTES_ADJUSTED_BASELINE_NAME,
     "Ridge",
@@ -2504,6 +2515,373 @@ def write_ensemble_report(
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def _clip_multiplier(value: float) -> float:
+    if pd.isna(value):
+        return 1.0
+    return float(np.clip(value, FIXTURE_MULTIPLIER_MIN, FIXTURE_MULTIPLIER_MAX))
+
+
+def _home_away_bucket(frame: pd.DataFrame) -> pd.Series | None:
+    if "was_home" not in frame.columns:
+        return None
+    return frame["was_home"].map({True: "home", False: "away"}).fillna("unknown")
+
+
+def _elo_bucket(frame: pd.DataFrame) -> pd.Series | None:
+    if "home_adjusted_elo_difference" in frame.columns:
+        values = pd.to_numeric(frame["home_adjusted_elo_difference"], errors="coerce")
+    elif "elo_difference" in frame.columns:
+        values = pd.to_numeric(frame["elo_difference"], errors="coerce")
+    else:
+        return None
+    return pd.Series(
+        np.select(
+            [values <= -50, values >= 50],
+            ["underdog", "favourite"],
+            default="neutral",
+        ),
+        index=frame.index,
+    ).where(values.notna(), "unknown")
+
+
+def _team_form_score(frame: pd.DataFrame) -> pd.Series | None:
+    required = [
+        "team_goals_scored_mean_last_5",
+        "opponent_goals_conceded_mean_last_5",
+        "opponent_goals_scored_mean_last_5",
+        "team_goals_conceded_mean_last_5",
+    ]
+    if not set(required).issubset(frame.columns):
+        return None
+    score = (
+        pd.to_numeric(frame["team_goals_scored_mean_last_5"], errors="coerce")
+        + pd.to_numeric(frame["opponent_goals_conceded_mean_last_5"], errors="coerce")
+        - pd.to_numeric(frame["opponent_goals_scored_mean_last_5"], errors="coerce")
+        - pd.to_numeric(frame["team_goals_conceded_mean_last_5"], errors="coerce")
+    )
+    if {"team_clean_sheet_rate_last_5", "opponent_clean_sheet_rate_last_5"}.issubset(frame.columns):
+        score = score + (
+            pd.to_numeric(frame["team_clean_sheet_rate_last_5"], errors="coerce")
+            - pd.to_numeric(frame["opponent_clean_sheet_rate_last_5"], errors="coerce")
+        )
+    return score
+
+
+def _team_form_bucket(frame: pd.DataFrame) -> pd.Series | None:
+    score = _team_form_score(frame)
+    if score is None:
+        return None
+    return pd.Series(
+        np.select(
+            [score <= -0.5, score >= 0.5],
+            ["poor", "strong"],
+            default="neutral",
+        ),
+        index=frame.index,
+    ).where(score.notna(), "unknown")
+
+
+def _combined_fixture_bucket(frame: pd.DataFrame) -> pd.Series | None:
+    components = []
+    home = _home_away_bucket(frame)
+    if home is not None:
+        components.append(home.map({"home": 0.25, "away": -0.25}).fillna(0.0))
+    elo = _elo_bucket(frame)
+    if elo is not None:
+        components.append(elo.map({"favourite": 1.0, "neutral": 0.0, "underdog": -1.0}).fillna(0.0))
+    form = _team_form_score(frame)
+    if form is not None:
+        components.append(form.clip(lower=-1.0, upper=1.0).fillna(0.0))
+    if not components:
+        return None
+    score = sum(components)
+    return pd.Series(
+        np.select(
+            [score <= -0.75, score >= 0.75],
+            ["difficult", "favourable"],
+            default="neutral",
+        ),
+        index=frame.index,
+    )
+
+
+def _fixture_bucket(frame: pd.DataFrame, baseline_name: str) -> pd.Series | None:
+    if baseline_name == "minutes_adjusted_home_away":
+        return _home_away_bucket(frame)
+    if baseline_name == "minutes_adjusted_elo":
+        return _elo_bucket(frame)
+    if baseline_name == "minutes_adjusted_team_form":
+        return _team_form_bucket(frame)
+    if baseline_name == "minutes_adjusted_fixture_adjusted":
+        return _combined_fixture_bucket(frame)
+    return None
+
+
+def fit_fixture_multipliers(
+    train: pd.DataFrame,
+    baseline_name: str,
+    *,
+    clip_min: float = FIXTURE_MULTIPLIER_MIN,
+    clip_max: float = FIXTURE_MULTIPLIER_MAX,
+) -> dict[str, float]:
+    base = minutes_adjusted_baseline_predictions(train)
+    bucket = _fixture_bucket(train, baseline_name)
+    if bucket is None:
+        return {}
+    valid = pd.DataFrame(
+        {
+            "bucket": bucket,
+            "actual": train[TARGET_COLUMN],
+            "baseline": base,
+        }
+    )
+    valid["actual"] = pd.to_numeric(valid["actual"], errors="coerce")
+    valid["baseline"] = pd.to_numeric(valid["baseline"], errors="coerce")
+    valid = valid.loc[valid["baseline"].gt(0)].dropna(subset=["bucket", "actual", "baseline"])
+    if valid.empty:
+        return {}
+    global_factor = _clip_multiplier(valid["actual"].mean() / valid["baseline"].mean())
+    multipliers: dict[str, float] = {}
+    for bucket_value, group in valid.groupby("bucket"):
+        if group.empty:
+            continue
+        factor = group["actual"].mean() / group["baseline"].mean()
+        multipliers[str(bucket_value)] = float(np.clip(factor, clip_min, clip_max))
+    multipliers["__default__"] = global_factor
+    return multipliers
+
+
+def apply_fixture_multiplier(
+    frame: pd.DataFrame,
+    baseline_name: str,
+    multipliers: dict[str, float],
+) -> pd.Series:
+    base = minutes_adjusted_baseline_predictions(frame)
+    if baseline_name == MINUTES_ADJUSTED_BASELINE_NAME:
+        return base.rename(baseline_name)
+    bucket = _fixture_bucket(frame, baseline_name)
+    if bucket is None or not multipliers:
+        return base.rename(baseline_name)
+    default = multipliers.get("__default__", 1.0)
+    factors = bucket.astype(str).map(multipliers).fillna(default).astype(float)
+    return (base * factors).rename(baseline_name)
+
+
+def _fixture_metric_rows(
+    *,
+    validation_season: str,
+    model_name: str,
+    n_train: int,
+    validation: pd.DataFrame,
+    prediction: pd.Series,
+    multipliers: dict[str, float],
+    multiplier_source: str,
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    y_true = validation[TARGET_COLUMN]
+    positions = validation[POSITION_COLUMN] if POSITION_COLUMN in validation.columns else None
+    overall = evaluate_predictions(
+        model_name=model_name,
+        validation_season=validation_season,
+        y_true=y_true,
+        y_pred=prediction,
+        positions=positions,
+    )
+    overall["n_train"] = n_train
+    overall["segment_type"] = "overall"
+    overall["segment"] = "ALL"
+    overall["multipliers_json"] = _json_weights(multipliers)
+    overall["multiplier_source"] = multiplier_source
+    rows.append(overall)
+
+    if "gw" in validation.columns:
+        gw = pd.to_numeric(validation["gw"], errors="coerce")
+        gw_bins = {
+            "GW1-5": gw.between(1, 5, inclusive="both"),
+            "GW6-10": gw.between(6, 10, inclusive="both"),
+            "GW11+": gw.ge(11),
+        }
+        for label, mask in gw_bins.items():
+            if not mask.any():
+                continue
+            row = evaluate_predictions(
+                model_name=model_name,
+                validation_season=validation_season,
+                y_true=y_true.loc[mask],
+                y_pred=prediction.loc[mask],
+                positions=positions.loc[mask] if positions is not None else None,
+            )
+            row["n_train"] = n_train
+            row["segment_type"] = "gw_bin"
+            row["segment"] = label
+            row["multipliers_json"] = _json_weights(multipliers)
+            row["multiplier_source"] = multiplier_source
+            rows.append(row)
+
+    if positions is not None:
+        normalized_positions = normalized_position_labels(positions)
+        for position in RANKING_POSITIONS:
+            mask = normalized_positions.eq(position)
+            if not mask.any():
+                continue
+            row = evaluate_predictions(
+                model_name=model_name,
+                validation_season=validation_season,
+                y_true=y_true.loc[mask],
+                y_pred=prediction.loc[mask],
+            )
+            row["n_train"] = n_train
+            row["segment_type"] = "position"
+            row["segment"] = position
+            row["multipliers_json"] = _json_weights(multipliers)
+            row["multiplier_source"] = multiplier_source
+            rows.append(row)
+    return rows
+
+
+def run_fixture_adjusted_baseline_experiment(frame: pd.DataFrame) -> pd.DataFrame:
+    validate_dataset(frame)
+    data = normalize_position_column(frame.copy())
+    data["season"] = data["season"].astype(str)
+    data = data.sort_values(["season", "gw"]).reset_index(drop=True)
+    rows: list[dict[str, Any]] = []
+    for validation_season in validation_seasons(data):
+        train, validation = split_train_validation(data, validation_season)
+        if train.empty or validation.empty:
+            continue
+        LOGGER.info("Running fixture-adjusted baseline validation season %s.", validation_season)
+        for model_name in FIXTURE_ADJUSTED_BASELINES:
+            if model_name == MINUTES_ADJUSTED_BASELINE_NAME:
+                multipliers: dict[str, float] = {MINUTES_ADJUSTED_BASELINE_NAME: 1.0}
+                source = "original"
+            else:
+                multipliers = fit_fixture_multipliers(train, model_name)
+                source = "training_seasons" if multipliers else "fallback_original"
+            prediction = apply_fixture_multiplier(validation, model_name, multipliers)
+            rows.extend(
+                _fixture_metric_rows(
+                    validation_season=validation_season,
+                    model_name=model_name,
+                    n_train=len(train),
+                    validation=validation,
+                    prediction=prediction,
+                    multipliers=multipliers,
+                    multiplier_source=source,
+                )
+            )
+    if not rows:
+        raise BacktestError("No fixture-adjusted baseline results were produced.")
+    return pd.DataFrame(rows).sort_values(
+        ["segment_type", "segment", "validation_season", "mae", "model"]
+    ).reset_index(drop=True)
+
+
+def write_fixture_adjusted_baseline_results(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_FIXTURE_BASELINE_RESULTS_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    results.to_csv(path, index=False)
+
+
+def write_fixture_adjusted_baseline_report(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_FIXTURE_BASELINE_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    metrics = ["mae", "rmse", "spearman", "top_10_precision", "top_20_precision", "top_50_precision"]
+    overall = results.loc[results["segment_type"].eq("overall")].copy()
+    aggregate = overall.groupby("model", as_index=False)[metrics].mean().sort_values(["mae", "model"])
+    gw = (
+        results.loc[results["segment_type"].eq("gw_bin")]
+        .groupby(["segment", "model"], as_index=False)[metrics]
+        .mean()
+        .sort_values(["segment", "mae", "model"])
+    )
+    position = (
+        results.loc[results["segment_type"].eq("position")]
+        .groupby(["segment", "model"], as_index=False)[metrics]
+        .mean()
+        .sort_values(["segment", "mae", "model"])
+    )
+    multipliers = overall[
+        ["validation_season", "model", "multipliers_json", "multiplier_source"]
+    ].sort_values(["validation_season", "model"])
+    baseline_mae = aggregate.loc[
+        aggregate["model"].eq(MINUTES_ADJUSTED_BASELINE_NAME),
+        "mae",
+    ]
+    baseline_spearman = aggregate.loc[
+        aggregate["model"].eq(MINUTES_ADJUSTED_BASELINE_NAME),
+        "spearman",
+    ]
+    best = aggregate.iloc[0]
+    improves_mae = (
+        not baseline_mae.empty
+        and aggregate.loc[~aggregate["model"].eq(MINUTES_ADJUSTED_BASELINE_NAME), "mae"].min()
+        < float(baseline_mae.iloc[0])
+    )
+    improves_spearman = (
+        not baseline_spearman.empty
+        and aggregate.loc[
+            ~aggregate["model"].eq(MINUTES_ADJUSTED_BASELINE_NAME),
+            "spearman",
+        ].max()
+        > float(baseline_spearman.iloc[0])
+    )
+    gw_early = gw.loc[gw["segment"].eq("GW1-5")]
+    early_winner = (
+        gw_early.sort_values(["mae", "model"]).iloc[0]["model"]
+        if not gw_early.empty
+        else "not available"
+    )
+    recommendation = "Keep the original minutes-adjusted baseline."
+    if best["model"] != MINUTES_ADJUSTED_BASELINE_NAME and improves_mae and improves_spearman:
+        recommendation = "Promote the best fixture-adjusted baseline to a default-candidate follow-up."
+    elif best["model"] != MINUTES_ADJUSTED_BASELINE_NAME and improves_mae:
+        recommendation = "Keep the best fixture-adjusted baseline as an experiment-only MAE candidate."
+
+    lines = [
+        "# Fixture-Adjusted Minutes Baseline Experiment",
+        "",
+        "Opt-in experiment. The existing `minutes_adjusted_rolling_mean` baseline is unchanged. "
+        "Fixture multipliers are learned from training seasons only within each rolling-origin fold, "
+        f"then clipped to [{FIXTURE_MULTIPLIER_MIN:.2f}, {FIXTURE_MULTIPLIER_MAX:.2f}].",
+        "",
+        "## Overall Results",
+        "",
+        markdown_table(aggregate),
+        "",
+        "## GW-Bin Results",
+        "",
+        markdown_table(gw),
+        "",
+        "## Position Results",
+        "",
+        markdown_table(position),
+        "",
+        "## Learned Multipliers By Validation Season",
+        "",
+        markdown_table(multipliers),
+        "",
+        "## Answers",
+        "",
+        f"- Best fixture-adjusted baseline by MAE: `{best['model']}` ({float(best['mae']):.4f}).",
+        f"- Any fixture-adjusted version beats `{MINUTES_ADJUSTED_BASELINE_NAME}` on MAE: {'yes' if improves_mae else 'no'}.",
+        f"- Any fixture-adjusted version improves Spearman: {'yes' if improves_spearman else 'no'}.",
+        f"- Best GW1-5 model by MAE: `{early_winner}`.",
+        "- Position effects should be judged from the position table above; improvements are not assumed uniform.",
+        "- Multiplier stability should be judged from the learned multiplier table; unstable season-to-season "
+        "movement is a warning against promotion.",
+        "",
+        "## Recommendation",
+        "",
+        recommendation,
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def _as_bool_series(series: pd.Series) -> pd.Series:
     if pd.api.types.is_bool_dtype(series):
         return series.fillna(False)
@@ -3749,6 +4127,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Run the opt-in lightweight weighted ensemble experiment.",
     )
+    parser.add_argument(
+        "--run-fixture-adjusted-baseline-experiment",
+        action="store_true",
+        help="Run the opt-in fixture-adjusted minutes baseline experiment.",
+    )
     return parser.parse_args()
 
 
@@ -3763,6 +4146,18 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
     args = parse_args()
     data = read_dataset(args.input)
+    if args.run_fixture_adjusted_baseline_experiment:
+        LOGGER.info("Running fixture-adjusted baseline experiment.")
+        fixture_results = run_fixture_adjusted_baseline_experiment(data)
+        write_fixture_adjusted_baseline_results(fixture_results)
+        write_fixture_adjusted_baseline_report(fixture_results)
+        LOGGER.info(
+            "Wrote fixture-adjusted baseline experiment to %s and %s",
+            DEFAULT_FIXTURE_BASELINE_RESULTS_PATH,
+            DEFAULT_FIXTURE_BASELINE_REPORT_PATH,
+        )
+        return
+
     if args.run_ensemble_experiment:
         LOGGER.info("Running ensemble experiment.")
         ensemble_results = run_ensemble_experiment(data)
