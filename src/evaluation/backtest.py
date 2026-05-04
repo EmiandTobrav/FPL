@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import importlib.util
+import json
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -51,6 +52,8 @@ DEFAULT_SEASON_WINDOW_REPORT_PATH = Path("reports/season_window_comparison.md")
 DEFAULT_POSITION_FEATURE_MASK_RESULTS_PATH = Path("reports/position_feature_mask_results.csv")
 DEFAULT_POSITION_FEATURE_MASK_REPORT_PATH = Path("reports/position_feature_mask_report.md")
 DEFAULT_POSITION_FEATURE_RELEVANCE_PATH = Path("reports/position_feature_relevance.csv")
+DEFAULT_ENSEMBLE_RESULTS_PATH = Path("reports/ensemble_results.csv")
+DEFAULT_ENSEMBLE_REPORT_PATH = Path("reports/ensemble_report.md")
 TARGET_COLUMN = "next_gw_points"
 MINUTES_COLUMN = "minutes"
 NEXT_60_COLUMN = "__next_gw_60_plus"
@@ -211,6 +214,35 @@ POSITION_FEATURE_MASK_FOCUS_MODELS = (
     "global_plus_position_interactions",
     "position_wise_models",
     MINUTES_ADJUSTED_BASELINE_NAME,
+)
+ENSEMBLE_BASELINE_MODEL_NAMES = (
+    MINUTES_ADJUSTED_BASELINE_NAME,
+    "rolling_3_gameweek_mean",
+    "rolling_5_gameweek_mean",
+)
+ENSEMBLE_DIRECT_MODEL_NAMES = ("CatBoost", "XGBoost")
+ENSEMBLE_RESIDUAL_MODEL_NAMES = ("CatBoost", "XGBoost", "Ridge", "ElasticNet")
+ENSEMBLE_CANDIDATE_MODELS = (
+    MINUTES_ADJUSTED_BASELINE_NAME,
+    "rolling_3_gameweek_mean",
+    "rolling_5_gameweek_mean",
+    "residual_CatBoost",
+    "residual_XGBoost",
+    "residual_Ridge",
+    "residual_ElasticNet",
+    "CatBoost",
+    "XGBoost",
+)
+ENSEMBLE_TOP_MODEL_MEMBERS = (
+    MINUTES_ADJUSTED_BASELINE_NAME,
+    "rolling_5_gameweek_mean",
+    "residual_CatBoost",
+    "residual_XGBoost",
+)
+ENSEMBLE_BASELINE_RESIDUAL_MEMBERS = (
+    MINUTES_ADJUSTED_BASELINE_NAME,
+    "residual_CatBoost",
+    "residual_XGBoost",
 )
 SEASON_WINDOW_FOCUS_MODELS = (
     MINUTES_ADJUSTED_BASELINE_NAME,
@@ -2039,6 +2071,439 @@ def focus_model_specs(specs: list[SklearnModelSpec], names: tuple[str, ...]) -> 
     return [spec for spec in specs if spec.name in wanted]
 
 
+def _ensemble_candidate_predictions(
+    train: pd.DataFrame,
+    validation: pd.DataFrame,
+    *,
+    direct_specs: list[SklearnModelSpec],
+    residual_specs: list[SklearnModelSpec],
+) -> pd.DataFrame:
+    train_model = train.dropna(subset=[TARGET_COLUMN]).copy()
+    validation_model = validation.dropna(subset=[TARGET_COLUMN]).copy()
+    predictions = pd.DataFrame(index=validation_model.index)
+    predictions["actual"] = validation_model[TARGET_COLUMN]
+    if POSITION_COLUMN in validation_model.columns:
+        predictions[POSITION_COLUMN] = validation_model[POSITION_COLUMN]
+
+    baseline_by_name = {model.name: model for model in BASELINES}
+    for model_name in ENSEMBLE_BASELINE_MODEL_NAMES:
+        model = baseline_by_name.get(model_name)
+        if model is None:
+            continue
+        try:
+            predictions[model_name] = model.predict(validation_model)
+        except (ValueError, KeyError) as exc:
+            LOGGER.warning("Skipping ensemble baseline candidate %s: %s", model_name, exc)
+
+    if not train_model.empty and not validation_model.empty:
+        columns = feature_columns(train_model)
+        x_train = train_model[columns].replace({pd.NA: np.nan})
+        y_train = train_model[TARGET_COLUMN]
+        x_validation = validation_model[columns].replace({pd.NA: np.nan})
+        for spec in direct_specs:
+            try:
+                pipeline = Pipeline(
+                    [
+                        (
+                            "preprocess",
+                            build_preprocessor(train_model, columns, scale_numeric=spec.scale_numeric),
+                        ),
+                        ("model", clone(spec.estimator)),
+                    ]
+                )
+                pipeline.fit(x_train, y_train)
+                predictions[spec.name] = pipeline.predict(x_validation)
+            except Exception as exc:  # noqa: BLE001 - optional model libraries raise varied exceptions.
+                LOGGER.warning("Skipping ensemble direct candidate %s: %s", spec.name, exc)
+
+    train_with_residual = add_residual_target(train_model, minutes_adjusted_baseline_predictions(train_model))
+    validation_with_baseline = validation_model.copy()
+    validation_with_baseline[BASELINE_PREDICTION_COLUMN] = minutes_adjusted_baseline_predictions(
+        validation_model
+    )
+    train_residual = train_with_residual.dropna(
+        subset=[TARGET_COLUMN, BASELINE_PREDICTION_COLUMN, RESIDUAL_TARGET_COLUMN]
+    ).copy()
+    validation_residual = validation_with_baseline.dropna(
+        subset=[TARGET_COLUMN, BASELINE_PREDICTION_COLUMN]
+    ).copy()
+    if not train_residual.empty and not validation_residual.empty:
+        columns = feature_columns(train_residual)
+        x_train = train_residual[columns].replace({pd.NA: np.nan})
+        y_train = train_residual[RESIDUAL_TARGET_COLUMN]
+        x_validation = validation_residual[columns].replace({pd.NA: np.nan})
+        for spec in residual_specs:
+            try:
+                pipeline = Pipeline(
+                    [
+                        (
+                            "preprocess",
+                            build_preprocessor(
+                                train_residual,
+                                columns,
+                                scale_numeric=spec.scale_numeric,
+                            ),
+                        ),
+                        ("model", clone(spec.estimator)),
+                    ]
+                )
+                pipeline.fit(x_train, y_train)
+                predicted_residual = pd.Series(
+                    pipeline.predict(x_validation),
+                    index=validation_residual.index,
+                )
+                predictions[f"residual_{spec.name}"] = final_residual_prediction(
+                    validation_residual[BASELINE_PREDICTION_COLUMN],
+                    predicted_residual,
+                )
+            except Exception as exc:  # noqa: BLE001 - optional model libraries raise varied exceptions.
+                LOGGER.warning("Skipping ensemble residual candidate %s: %s", spec.name, exc)
+
+    candidate_columns = [column for column in ENSEMBLE_CANDIDATE_MODELS if column in predictions.columns]
+    return predictions[["actual", *([POSITION_COLUMN] if POSITION_COLUMN in predictions.columns else []), *candidate_columns]]
+
+
+def _rolling_inner_ensemble_predictions(
+    data: pd.DataFrame,
+    outer_validation_season: str,
+    *,
+    direct_specs: list[SklearnModelSpec],
+    residual_specs: list[SklearnModelSpec],
+) -> pd.DataFrame:
+    train_history = data.loc[data["season"].astype(str) < str(outer_validation_season)].copy()
+    rows: list[pd.DataFrame] = []
+    for inner_validation_season in validation_seasons(train_history):
+        inner_train, inner_validation = split_train_validation(
+            train_history,
+            inner_validation_season,
+        )
+        if inner_train.empty or inner_validation.empty:
+            continue
+        inner_predictions = _ensemble_candidate_predictions(
+            inner_train,
+            inner_validation,
+            direct_specs=direct_specs,
+            residual_specs=residual_specs,
+        )
+        if inner_predictions.empty:
+            continue
+        inner_predictions["inner_validation_season"] = inner_validation_season
+        rows.append(inner_predictions)
+    if not rows:
+        return pd.DataFrame()
+    return pd.concat(rows, axis=0, ignore_index=False)
+
+
+def _score_ensemble_weights(
+    predictions: pd.DataFrame,
+    target: pd.Series,
+    weights: np.ndarray,
+    metric: str,
+) -> float:
+    blended = pd.Series(predictions.to_numpy(dtype=float) @ weights, index=predictions.index)
+    if metric == "mae":
+        return mae(target, blended)
+    if metric == "rmse":
+        return rmse(target, blended)
+    if metric == "spearman":
+        corr = spearman_rank_correlation(target, blended)
+        return float("inf") if pd.isna(corr) else -float(corr)
+    raise BacktestError(f"Unsupported ensemble optimization metric: {metric}")
+
+
+def learn_ensemble_weights(
+    predictions: pd.DataFrame,
+    target: pd.Series,
+    *,
+    metric: str,
+    random_state: int = 42,
+    n_random_candidates: int = 120,
+) -> dict[str, float]:
+    columns = list(predictions.columns)
+    if not columns:
+        return {}
+    valid = pd.concat([target.rename("actual"), predictions], axis=1).dropna()
+    if valid.empty:
+        equal = 1.0 / len(columns)
+        return dict.fromkeys(columns, equal)
+
+    x = valid[columns].apply(pd.to_numeric, errors="coerce")
+    y = valid["actual"]
+    candidates: list[np.ndarray] = []
+    n_columns = len(columns)
+    candidates.append(np.full(n_columns, 1.0 / n_columns))
+    candidates.extend(np.eye(n_columns))
+    rng = np.random.default_rng(random_state)
+    if n_columns > 1 and n_random_candidates > 0:
+        candidates.extend(rng.dirichlet(np.ones(n_columns), size=n_random_candidates))
+
+    best = min(candidates, key=lambda weights: _score_ensemble_weights(x, y, weights, metric))
+    best = np.clip(np.asarray(best, dtype=float), 0.0, None)
+    total = best.sum()
+    if total <= 0:
+        best = np.full(n_columns, 1.0 / n_columns)
+    else:
+        best = best / total
+    return {column: float(weight) for column, weight in zip(columns, best, strict=True)}
+
+
+def _equal_weights(columns: list[str]) -> dict[str, float]:
+    if not columns:
+        return {}
+    return dict.fromkeys(columns, 1.0 / len(columns))
+
+
+def _available_members(predictions: pd.DataFrame, members: tuple[str, ...]) -> list[str]:
+    return [member for member in members if member in predictions.columns]
+
+
+def _optimized_or_fallback_weights(
+    inner_predictions: pd.DataFrame,
+    outer_predictions: pd.DataFrame,
+    *,
+    members: tuple[str, ...],
+    metric: str,
+    random_state: int,
+) -> tuple[dict[str, float], str]:
+    available = _available_members(outer_predictions, members)
+    if not available:
+        return {}, "unavailable"
+    inner_available = [member for member in available if member in inner_predictions.columns]
+    if inner_predictions.empty or not inner_available:
+        return _equal_weights(available), "fallback_preset"
+    weights = learn_ensemble_weights(
+        inner_predictions[inner_available],
+        inner_predictions["actual"],
+        metric=metric,
+        random_state=random_state,
+    )
+    missing = [member for member in available if member not in weights]
+    if missing:
+        weights = {**weights, **dict.fromkeys(missing, 0.0)}
+    total = sum(weights.values())
+    if total <= 0:
+        return _equal_weights(available), "fallback_preset"
+    return {member: weights[member] / total for member in available}, "inner_validation"
+
+
+def _blend_prediction_columns(predictions: pd.DataFrame, weights: dict[str, float]) -> pd.Series:
+    columns = list(weights)
+    if not columns:
+        return pd.Series(np.nan, index=predictions.index, dtype="float64")
+    weight_vector = np.asarray([weights[column] for column in columns], dtype=float)
+    values = predictions[columns].apply(pd.to_numeric, errors="coerce")
+    return pd.Series(
+        values.to_numpy(dtype=float) @ weight_vector,
+        index=predictions.index,
+    )
+
+
+def _json_weights(weights: dict[str, float]) -> str:
+    return json.dumps({key: round(value, 6) for key, value in weights.items()}, sort_keys=True)
+
+
+def run_ensemble_experiment(
+    frame: pd.DataFrame,
+    *,
+    model_specs: list[SklearnModelSpec] | None = None,
+    residual_specs: list[SklearnModelSpec] | None = None,
+    random_state: int = 42,
+) -> pd.DataFrame:
+    validate_dataset(frame)
+    data = normalize_position_column(frame.copy())
+    data = add_baseline_prediction_features(data)
+    data["season"] = data["season"].astype(str)
+    data = data.sort_values(["season", "gw"]).reset_index(drop=True)
+    direct_specs = focus_model_specs(
+        sklearn_model_specs() if model_specs is None else model_specs,
+        ENSEMBLE_DIRECT_MODEL_NAMES,
+    )
+    residual_focus_specs = focus_model_specs(
+        residual_model_specs() if residual_specs is None else residual_specs,
+        ENSEMBLE_RESIDUAL_MODEL_NAMES,
+    )
+
+    rows: list[dict[str, Any]] = []
+    for validation_season in validation_seasons(data):
+        train, validation = split_train_validation(data, validation_season)
+        if train.empty or validation.empty:
+            continue
+        LOGGER.info("Running ensemble validation season %s.", validation_season)
+        outer_predictions = _ensemble_candidate_predictions(
+            train,
+            validation,
+            direct_specs=direct_specs,
+            residual_specs=residual_focus_specs,
+        )
+        inner_predictions = _rolling_inner_ensemble_predictions(
+            data,
+            validation_season,
+            direct_specs=direct_specs,
+            residual_specs=residual_focus_specs,
+        )
+
+        blend_definitions: dict[str, tuple[dict[str, float], str]] = {}
+        if MINUTES_ADJUSTED_BASELINE_NAME in outer_predictions.columns:
+            blend_definitions["minutes_adjusted_only"] = (
+                {MINUTES_ADJUSTED_BASELINE_NAME: 1.0},
+                "fixed",
+            )
+        top_members = _available_members(outer_predictions, ENSEMBLE_TOP_MODEL_MEMBERS)
+        blend_definitions["equal_weight_top_models"] = (
+            _equal_weights(top_members),
+            "fixed",
+        )
+        for metric in ("mae", "rmse", "spearman"):
+            weights, source = _optimized_or_fallback_weights(
+                inner_predictions,
+                outer_predictions,
+                members=ENSEMBLE_CANDIDATE_MODELS,
+                metric=metric,
+                random_state=random_state,
+            )
+            blend_definitions[f"optimized_{metric}_blend"] = (weights, source)
+        weights, source = _optimized_or_fallback_weights(
+            inner_predictions,
+            outer_predictions,
+            members=ENSEMBLE_BASELINE_RESIDUAL_MEMBERS,
+            metric="mae",
+            random_state=random_state,
+        )
+        blend_definitions["baseline_plus_residual_boost_blend"] = (weights, source)
+
+        y_true = outer_predictions["actual"]
+        positions = outer_predictions[POSITION_COLUMN] if POSITION_COLUMN in outer_predictions.columns else None
+        for model_name in [model for model in ENSEMBLE_CANDIDATE_MODELS if model in outer_predictions.columns]:
+            row = evaluate_predictions(
+                model_name=model_name,
+                validation_season=validation_season,
+                y_true=y_true,
+                y_pred=outer_predictions[model_name],
+                positions=positions,
+            )
+            row["n_train"] = len(train)
+            row["blend_type"] = "base_model_reference"
+            row["blend_members"] = model_name
+            row["weights_json"] = _json_weights({model_name: 1.0})
+            row["weight_source"] = "reference"
+            rows.append(row)
+
+        for blend_name, (weights, source) in blend_definitions.items():
+            if not weights:
+                continue
+            y_pred = _blend_prediction_columns(outer_predictions, weights)
+            row = evaluate_predictions(
+                model_name=blend_name,
+                validation_season=validation_season,
+                y_true=y_true,
+                y_pred=y_pred,
+                positions=positions,
+            )
+            row["n_train"] = len(train)
+            row["blend_type"] = "ensemble"
+            row["blend_members"] = ", ".join(weights)
+            row["weights_json"] = _json_weights(weights)
+            row["weight_source"] = source
+            rows.append(row)
+
+    if not rows:
+        raise BacktestError("No ensemble experiment results were produced.")
+    return pd.DataFrame(rows).sort_values(["validation_season", "blend_type", "model"]).reset_index(drop=True)
+
+
+def write_ensemble_results(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_ENSEMBLE_RESULTS_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    results.to_csv(path, index=False)
+
+
+def write_ensemble_report(
+    results: pd.DataFrame,
+    path: Path = DEFAULT_ENSEMBLE_REPORT_PATH,
+) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    metrics = ["mae", "rmse", "spearman", "top_10_precision", "top_20_precision", "top_50_precision"]
+    aggregate = results.groupby(["blend_type", "model"], as_index=False)[metrics].mean()
+    ensembles = aggregate.loc[aggregate["blend_type"] == "ensemble"].copy()
+    weights = results.loc[
+        results["blend_type"].eq("ensemble"),
+        ["validation_season", "model", "blend_members", "weights_json", "weight_source"],
+    ].sort_values(["validation_season", "model"])
+
+    best_lines = []
+    for metric in metrics:
+        ascending = metric in {"mae", "rmse"}
+        best = ensembles.sort_values(metric, ascending=ascending).iloc[0]
+        best_lines.append(
+            {
+                "metric": metric,
+                "best_ensemble": best["model"],
+                "value": best[metric],
+            }
+        )
+    best_table = pd.DataFrame(best_lines)
+    reference = aggregate.loc[aggregate["blend_type"] == "base_model_reference"]
+    minutes_mae = reference.loc[
+        reference["model"].eq(MINUTES_ADJUSTED_BASELINE_NAME),
+        "mae",
+    ]
+    residual_catboost_rmse = reference.loc[reference["model"].eq("residual_CatBoost"), "rmse"]
+    best_ensemble_mae = ensembles["mae"].min()
+    best_ensemble_rmse = ensembles["rmse"].min()
+    best_top_k = {
+        metric: ensembles[metric].max()
+        for metric in ("top_10_precision", "top_20_precision", "top_50_precision")
+    }
+    reference_top_k = {
+        metric: reference[metric].max()
+        for metric in ("top_10_precision", "top_20_precision", "top_50_precision")
+    }
+
+    recommendation = "Keep the strongest single models as default."
+    if not minutes_mae.empty and best_ensemble_mae < float(minutes_mae.iloc[0]):
+        recommendation = "Consider the best MAE ensemble for a follow-up default-model test."
+    elif any(best_top_k[metric] > reference_top_k[metric] for metric in best_top_k):
+        recommendation = "Keep the ensemble as a ranking specialist candidate only."
+
+    lines = [
+        "# Ensemble Experiment",
+        "",
+        "Opt-in rolling-origin experiment for convex weighted blends. Weights are "
+        "non-negative, sum to 1, and are chosen from prior training-season "
+        "inner-validation predictions only. The held-out validation season is never "
+        "used to choose weights.",
+        "",
+        "## Blend Members And Weights",
+        "",
+        markdown_table(weights),
+        "",
+        "## Aggregate Results",
+        "",
+        markdown_table(aggregate.sort_values(["blend_type", "mae", "model"])),
+        "",
+        "## Best Ensembles",
+        "",
+        markdown_table(best_table),
+        "",
+        "## Checks",
+        "",
+        f"- Any ensemble beats `{MINUTES_ADJUSTED_BASELINE_NAME}` on MAE: "
+        f"{'yes' if not minutes_mae.empty and best_ensemble_mae < float(minutes_mae.iloc[0]) else 'no'}.",
+        "- Any ensemble beats `residual_CatBoost` on RMSE: "
+        f"{'yes' if not residual_catboost_rmse.empty and best_ensemble_rmse < float(residual_catboost_rmse.iloc[0]) else 'no'}.",
+        "- Any ensemble improves top-k precision over the best base candidate: "
+        f"{'yes' if any(best_top_k[metric] > reference_top_k[metric] for metric in best_top_k) else 'no'}.",
+        "",
+        "## Recommendation",
+        "",
+        recommendation,
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
 def _as_bool_series(series: pd.Series) -> pd.Series:
     if pd.api.types.is_bool_dtype(series):
         return series.fillna(False)
@@ -3279,6 +3744,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Run the opt-in statistical position feature mask experiment.",
     )
+    parser.add_argument(
+        "--run-ensemble-experiment",
+        action="store_true",
+        help="Run the opt-in lightweight weighted ensemble experiment.",
+    )
     return parser.parse_args()
 
 
@@ -3293,6 +3763,18 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
     args = parse_args()
     data = read_dataset(args.input)
+    if args.run_ensemble_experiment:
+        LOGGER.info("Running ensemble experiment.")
+        ensemble_results = run_ensemble_experiment(data)
+        write_ensemble_results(ensemble_results)
+        write_ensemble_report(ensemble_results)
+        LOGGER.info(
+            "Wrote ensemble experiment to %s and %s",
+            DEFAULT_ENSEMBLE_RESULTS_PATH,
+            DEFAULT_ENSEMBLE_REPORT_PATH,
+        )
+        return
+
     if args.run_position_feature_mask_experiment:
         LOGGER.info("Running position feature mask experiment.")
         mask_results = run_position_feature_mask_experiment(data)

@@ -4,6 +4,7 @@ import subprocess
 import sys
 
 import pandas as pd
+import pytest
 from sklearn.base import BaseEstimator, RegressorMixin
 from sklearn.dummy import DummyRegressor
 
@@ -23,10 +24,12 @@ from evaluation.backtest import (
     collect_feature_selection_counts,
     feature_selection_candidate_columns,
     final_residual_prediction,
+    learn_ensemble_weights,
     load_position_feature_masks,
     minutes_adjusted_baseline_predictions,
     normalize_position_column,
     position_diagnostics,
+    run_ensemble_experiment,
     run_position_feature_mask_experiment,
     run_position_model_backtest,
     run_backtest,
@@ -44,6 +47,8 @@ from evaluation.backtest import (
     write_position_results,
     write_supported_season_filter_report,
     write_markdown_summary,
+    write_ensemble_report,
+    write_ensemble_results,
     write_results,
     write_season_window_report,
     write_season_window_results,
@@ -212,6 +217,7 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
         "feature_selection": [],
         "model_pruning_audit": [],
         "position_feature_mask": [],
+        "ensemble": [],
     }
 
     monkeypatch.setattr(sys, "argv", argv)
@@ -271,6 +277,8 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
     monkeypatch.setattr(backtest_module, "write_feature_selection_report", lambda *args, **kwargs: None)
     monkeypatch.setattr(backtest_module, "write_position_feature_mask_results", lambda *args, **kwargs: None)
     monkeypatch.setattr(backtest_module, "write_position_feature_mask_report", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_ensemble_results", lambda *args, **kwargs: None)
+    monkeypatch.setattr(backtest_module, "write_ensemble_report", lambda *args, **kwargs: None)
 
     def record_broad_ablation(*args, **kwargs) -> pd.DataFrame:
         calls["broad_ablation"].append(kwargs.get("min_season"))
@@ -292,6 +300,12 @@ def patch_fast_main_dependencies(monkeypatch, scratch: Path, argv: list[str]) ->
         "run_position_feature_mask_experiment",
         lambda *args, **kwargs: calls["position_feature_mask"].append("run")
         or minimal_results_frame().assign(feature_setup="current"),
+    )
+    monkeypatch.setattr(
+        backtest_module,
+        "run_ensemble_experiment",
+        lambda *args, **kwargs: calls["ensemble"].append("run")
+        or minimal_results_frame().assign(blend_type="ensemble"),
     )
     return calls
 
@@ -354,6 +368,7 @@ def test_backtest_module_has_command_line_help() -> None:
     assert "--run-season-window-comparison" in completed.stdout
     assert "--run-model-pruning-audit" in completed.stdout
     assert "--run-position-feature-mask-experiment" in completed.stdout
+    assert "--run-ensemble-experiment" in completed.stdout
 
 
 def test_preprocessor_outputs_named_feature_dataframe() -> None:
@@ -388,6 +403,7 @@ def test_main_full_history_does_not_run_optional_experiments(monkeypatch) -> Non
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
+    assert calls["ensemble"] == []
     assert calls["write_results"] == [scratch / "model_results.csv"]
 
 
@@ -407,6 +423,7 @@ def test_main_supported_default_does_not_run_optional_experiments(
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
+    assert calls["ensemble"] == []
     assert calls["write_results"] == [scratch / "model_results_supported_seasons.csv"]
 
 
@@ -431,6 +448,7 @@ def test_main_broad_ablation_flag_runs_broad_ablation(monkeypatch) -> None:
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
+    assert calls["ensemble"] == []
 
 
 def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None:
@@ -454,6 +472,7 @@ def test_main_feature_selection_flag_runs_feature_selection(monkeypatch) -> None
     assert calls["feature_selection"] == ["2020-21"]
     assert calls["model_pruning_audit"] == []
     assert calls["position_feature_mask"] == []
+    assert calls["ensemble"] == []
 
 
 def test_main_model_pruning_audit_flag_runs_audit(monkeypatch) -> None:
@@ -475,6 +494,7 @@ def test_main_model_pruning_audit_flag_runs_audit(monkeypatch) -> None:
     assert calls["feature_selection"] == []
     assert calls["model_pruning_audit"] == ["2022-23"]
     assert calls["position_feature_mask"] == []
+    assert calls["ensemble"] == []
 
 
 def test_main_position_feature_mask_flag_runs_only_mask_experiment(monkeypatch) -> None:
@@ -495,6 +515,115 @@ def test_main_position_feature_mask_flag_runs_only_mask_experiment(monkeypatch) 
     assert calls["broad_ablation"] == []
     assert calls["feature_selection"] == []
     assert calls["position_feature_mask"] == ["run"]
+    assert calls["ensemble"] == []
+
+
+def test_main_ensemble_flag_runs_only_ensemble_experiment(monkeypatch) -> None:
+    scratch = Path("tests/.tmp_cli_backtest/ensemble_flag")
+    calls = patch_fast_main_dependencies(
+        monkeypatch,
+        scratch,
+        [
+            "evaluation.backtest",
+            "--input",
+            "dummy.parquet",
+            "--run-ensemble-experiment",
+        ],
+    )
+
+    backtest_module.main()
+
+    assert calls["broad_ablation"] == []
+    assert calls["feature_selection"] == []
+    assert calls["position_feature_mask"] == []
+    assert calls["ensemble"] == ["run"]
+
+
+def test_ensemble_weights_are_non_negative_and_sum_to_one() -> None:
+    predictions = pd.DataFrame(
+        {
+            "model_a": [1.0, 2.0, 3.0, 4.0],
+            "model_b": [1.5, 2.5, 2.5, 3.5],
+            "model_c": [4.0, 3.0, 2.0, 1.0],
+        }
+    )
+    target = pd.Series([1.0, 2.0, 3.0, 4.0])
+
+    weights = learn_ensemble_weights(predictions, target, metric="mae", random_state=7)
+
+    assert set(weights) == set(predictions.columns)
+    assert all(weight >= 0 for weight in weights.values())
+    assert sum(weights.values()) == pytest.approx(1.0)
+
+
+def test_ensemble_weights_do_not_use_outer_validation_targets() -> None:
+    data = three_season_modeling_frame()
+    changed_validation = data.copy()
+    changed_validation.loc[changed_validation["season"].eq("2022-23"), "next_gw_points"] = 9999
+    model_specs = [
+        SklearnModelSpec("CatBoost", DummyRegressor(strategy="mean")),
+        SklearnModelSpec("XGBoost", DummyRegressor(strategy="mean")),
+    ]
+    residual_specs = [
+        SklearnModelSpec("CatBoost", DummyRegressor(strategy="mean")),
+        SklearnModelSpec("XGBoost", DummyRegressor(strategy="mean")),
+        SklearnModelSpec("Ridge", DummyRegressor(strategy="mean")),
+        SklearnModelSpec("ElasticNet", DummyRegressor(strategy="mean")),
+    ]
+
+    original_results = run_ensemble_experiment(
+        data,
+        model_specs=model_specs,
+        residual_specs=residual_specs,
+        random_state=7,
+    )
+    changed_results = run_ensemble_experiment(
+        changed_validation,
+        model_specs=model_specs,
+        residual_specs=residual_specs,
+        random_state=7,
+    )
+
+    original_weights = original_results.loc[
+        original_results["validation_season"].eq("2022-23")
+        & original_results["model"].eq("optimized_mae_blend"),
+        "weights_json",
+    ].iloc[0]
+    changed_weights = changed_results.loc[
+        changed_results["validation_season"].eq("2022-23")
+        & changed_results["model"].eq("optimized_mae_blend"),
+        "weights_json",
+    ].iloc[0]
+    assert original_weights == changed_weights
+
+
+def test_ensemble_outputs_are_written_separately() -> None:
+    scratch = Path("tests/.tmp_ensemble")
+    shutil.rmtree(scratch, ignore_errors=True)
+    try:
+        scratch.mkdir(parents=True)
+        results = run_ensemble_experiment(
+            three_season_modeling_frame(),
+            model_specs=[
+                SklearnModelSpec("CatBoost", DummyRegressor(strategy="mean")),
+                SklearnModelSpec("XGBoost", DummyRegressor(strategy="mean")),
+            ],
+            residual_specs=[],
+            random_state=7,
+        )
+        results_path = scratch / "ensemble_results.csv"
+        report_path = scratch / "ensemble_report.md"
+
+        write_ensemble_results(results, results_path)
+        write_ensemble_report(results, report_path)
+
+        assert {"ensemble", "base_model_reference"}.issubset(set(results["blend_type"]))
+        assert "optimized_mae_blend" in set(results["model"])
+        assert results_path.exists()
+        assert report_path.exists()
+        assert not (scratch / DEFAULT_SUPPORTED_RESULTS_PATH.name).exists()
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
 
 
 def test_min_season_filters_train_and_validation_data() -> None:
