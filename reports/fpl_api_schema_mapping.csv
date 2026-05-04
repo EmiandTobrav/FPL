@@ -1,0 +1,77 @@
+vaastav_column,current_pipeline_importance,current_pipeline_role,fpl_api_availability,endpoint,api_field_or_derivation,mapping_notes
+name,essential,identity/time key,derivable from FPL API,bootstrap-static elements,web_name or first_name + second_name,Join on element/player id.
+assists,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.assists / live.stats.assists,Used for raw outcomes or optional rolling features depending on column.
+attempted_passes,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+big_chances_created,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+big_chances_missed,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+bonus,essential,required rolling/target source,directly available from FPL API,element-summary history / event live,history.bonus / live.stats.bonus,Required by rolling_features.
+bps,essential,required rolling/target source,directly available from FPL API,element-summary history / event live,history.bps / live.stats.bps,Required by rolling_features.
+clean_sheets,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.clean_sheets / live.stats.clean_sheets,Used for raw outcomes or optional rolling features depending on column.
+clearances_blocks_interceptions,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.clearances_blocks_interceptions / live.stats.clearances_blocks_interceptions,Used for raw outcomes or optional rolling features depending on column.
+completed_passes,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+creativity,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.creativity / live.stats.creativity,Used for raw outcomes or optional rolling features depending on column.
+dribbles,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+ea_index,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+element,essential,identity/time key,directly available from FPL API,element-summary history / bootstrap-static elements,history.element / elements.id,Stable player id used by current pipeline.
+errors_leading_to_goal,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+errors_leading_to_goal_attempt,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+fixture,essential,team-strength source,directly available from FPL API,element-summary history / fixtures,history.fixture / fixtures.id,Needed to infer team-code mapping and DGW fixture rows.
+fouls,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+goals_conceded,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.goals_conceded / live.stats.goals_conceded,Used for raw outcomes or optional rolling features depending on column.
+goals_scored,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.goals_scored / live.stats.goals_scored,Used for raw outcomes or optional rolling features depending on column.
+ict_index,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.ict_index / live.stats.ict_index,Used for raw outcomes or optional rolling features depending on column.
+id,essential,identity/time key,derivable from FPL API,element-summary history / event live,history fixture-row id not present; live elements.id is player id,Current code can use element. Vaastav id is not essential.
+influence,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.influence / live.stats.influence,Used for raw outcomes or optional rolling features depending on column.
+key_passes,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+kickoff_time,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / fixtures,history.kickoff_time / fixtures.kickoff_time,Metadata; excluded as model feature.
+kickoff_time_formatted,unused,pass-through/unused by current code,derivable from FPL API,element-summary history / fixtures,kickoff_time formatted locally,Not needed by current pipeline.
+loaned_in,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+loaned_out,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+minutes,essential,required rolling/target source,directly available from FPL API,element-summary history / event live,history.minutes / live.stats.minutes,Required for rolling minutes and baseline.
+offside,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+open_play_crosses,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+opponent_team,essential,team-strength source,directly available from FPL API,element-summary history,history.opponent_team,Numeric FPL team id.
+own_goals,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.own_goals / live.stats.own_goals,Used for raw outcomes or optional rolling features depending on column.
+penalties_conceded,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+penalties_missed,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.penalties_missed / live.stats.penalties_missed,Used for raw outcomes or optional rolling features depending on column.
+penalties_saved,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.penalties_saved / live.stats.penalties_saved,Used for raw outcomes or optional rolling features depending on column.
+recoveries,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.recoveries / live.stats.recoveries,Used for raw outcomes or optional rolling features depending on column.
+red_cards,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.red_cards / live.stats.red_cards,Used for raw outcomes or optional rolling features depending on column.
+round,optional,pass-through/unused by current code,directly available from FPL API,element-summary history,history.round,Same semantic as gw.
+saves,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.saves / live.stats.saves,Used for raw outcomes or optional rolling features depending on column.
+selected,optional,lagged candidate source,directly available from FPL API,element-summary history,history.selected,Used only as lag-1 candidate.
+tackled,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+tackles,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.tackles / live.stats.tackles,Used for raw outcomes or optional rolling features depending on column.
+target_missed,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+team_a_score,essential,team-strength source,directly available from FPL API,element-summary history / fixtures,history.team_a_score / fixtures.team_a_score,Needed for team-strength goal derivation.
+team_h_score,essential,team-strength source,directly available from FPL API,element-summary history / fixtures,history.team_h_score / fixtures.team_h_score,Needed for team-strength goal derivation.
+threat,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.threat / live.stats.threat,Used for raw outcomes or optional rolling features depending on column.
+total_points,essential,required rolling/target source,directly available from FPL API,element-summary history / event live,history.total_points / live.stats.total_points,Required target/source outcome.
+transfers_balance,optional,lagged candidate source,directly available from FPL API,element-summary history,history.transfers_balance,Used only as lag-1 candidate.
+transfers_in,optional,lagged candidate source,directly available from FPL API,element-summary history,history.transfers_in,Used only as lag-1 candidate.
+transfers_out,optional,lagged candidate source,directly available from FPL API,element-summary history,history.transfers_out,Used only as lag-1 candidate.
+value,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / bootstrap-static elements,history.value / elements.now_cost,Historical row value should use history.value; now_cost is current snapshot.
+was_home,essential,team-strength source,directly available from FPL API,element-summary history / element-summary fixtures,history.was_home / fixtures.is_home,Known pre-match for future fixtures.
+winning_goals,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+yellow_cards,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.yellow_cards / live.stats.yellow_cards,Used for raw outcomes or optional rolling features depending on column.
+GW,essential,identity/time key,directly available from FPL API,element-summary history / fixtures,history.round / fixtures.event,Duplicate gw alias.
+season,essential,identity/time key,derivable from FPL API,caller/configuration,season label,Official API is current-season oriented; assign season from run config.
+gw,essential,identity/time key,directly available from FPL API,element-summary history / fixtures,history.round / fixtures.event,Vaastav also has GW.
+position,essential,position normalization/model feature,derivable from FPL API,bootstrap-static elements + element_types,elements.element_type -> element_types.singular_name_short,Map GKP to GK during build as today.
+team,essential,team-strength source,derivable from FPL API,bootstrap-static elements + teams,elements.team -> teams.name/short_name/id,Use numeric team id internally or team name to mimic Vaastav.
+xP,unused,pass-through/unused by current code,derivable from FPL API,bootstrap-static elements,elements.ep_this or elements.ep_next,"Snapshot expected points, not historical fixture-row field; not used by current pipeline."
+expected_assists,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.expected_assists / live.stats.expected_assists,Optional candidate rolling feature.
+expected_goal_involvements,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.expected_goal_involvements / live.stats.expected_goal_involvements,Optional candidate rolling feature.
+expected_goals,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.expected_goals / live.stats.expected_goals,Optional candidate rolling feature.
+expected_goals_conceded,optional,candidate rolling source,directly available from FPL API,element-summary history / event live,history.expected_goals_conceded / live.stats.expected_goals_conceded,Optional candidate rolling feature.
+starts,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.starts / live.stats.starts,Optional; current code falls back to minutes > 0 if missing.
+mng_clean_sheets,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+mng_draw,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+mng_goals_scored,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+mng_loss,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+mng_underdog_draw,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+mng_underdog_win,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+mng_win,unused,pass-through/unused by current code,unavailable,not present in sampled official endpoints,,Not used by current modelling pipeline; safe to omit or fill missing.
+modified,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.modified / live.elements.modified,Not needed by current model features.
+defensive_contribution,optional,pass-through/unused by current code,directly available from FPL API,element-summary history / event live,history.defensive_contribution / live.stats.defensive_contribution,Used for raw outcomes or optional rolling features depending on column.
+now_cost,optional,API alias for current price; Vaastav-style row uses value,directly available from FPL API,bootstrap-static elements,elements.now_cost,Use element-summary history.value for historical rows; now_cost for current snapshot/future rows.
