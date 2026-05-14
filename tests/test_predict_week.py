@@ -7,6 +7,7 @@ from evaluation.predict_week import (
     build_prediction_features,
     generate_weekly_predictions,
     predict_from_files,
+    with_prediction_hygiene,
 )
 
 
@@ -136,9 +137,54 @@ def test_weekly_prediction_output_columns_exist() -> None:
             "expected_points_primary",
             "rolling_3_gameweek_mean_prediction",
             "rolling_5_gameweek_mean_prediction",
+            "minutes_mean_last_3",
+            "minutes_mean_last_5",
+            "starts_last_5",
+            "selected",
+            "likely_active",
+            "prediction_is_zero",
         }.issubset(output.columns)
     finally:
         Path("tests/.tmp_unused_predictions.csv").unlink(missing_ok=True)
+
+
+def test_negative_predictions_are_clipped_and_zero_flagged() -> None:
+    frame = pd.DataFrame(
+        {
+            "expected_points_primary": [-1.5, 2.0],
+            "rolling_3_gameweek_mean_prediction": [-0.5, 1.0],
+            "rolling_5_gameweek_mean_prediction": [0.0, -2.0],
+            "minutes_mean_last_3": [0, 90],
+            "minutes_mean_last_5": [0, 90],
+            "starts_last_5": [0, 5],
+        }
+    )
+
+    cleaned, negative_count = with_prediction_hygiene(frame)
+
+    assert negative_count == 3
+    assert cleaned["expected_points_primary"].min() == 0
+    assert cleaned["rolling_3_gameweek_mean_prediction"].min() == 0
+    assert cleaned["rolling_5_gameweek_mean_prediction"].min() == 0
+    assert cleaned.loc[0, "prediction_is_zero"]
+
+
+def test_inactive_players_are_flagged() -> None:
+    frame = pd.DataFrame(
+        {
+            "expected_points_primary": [0.0, 1.0],
+            "rolling_3_gameweek_mean_prediction": [0.0, 1.0],
+            "rolling_5_gameweek_mean_prediction": [0.0, 1.0],
+            "minutes_mean_last_3": [0, 0],
+            "minutes_mean_last_5": [0, 10],
+            "starts_last_5": [0, 0],
+        }
+    )
+
+    cleaned, _ = with_prediction_hygiene(frame)
+
+    assert not bool(cleaned.loc[0, "likely_active"])
+    assert bool(cleaned.loc[1, "likely_active"])
 
 
 def test_no_target_leakage_from_prediction_rows() -> None:
@@ -174,8 +220,13 @@ def test_predict_from_files_auto_detects_prediction_rows_and_writes_report() -> 
         assert summary.season == "2025-26"
         assert summary.gw == 4
         assert output_path.exists()
+        assert (scratch / "latest_predictions_top_overall.csv").exists()
+        assert (scratch / "latest_predictions_by_position.csv").exists()
         assert report_path.exists()
         assert len(pd.read_csv(output_path)) == len(output)
+        by_position = pd.read_csv(scratch / "latest_predictions_by_position.csv")
+        assert set(by_position["position"]).issubset({"GK", "DEF", "MID", "FWD"})
+        assert not by_position.empty
         assert "minutes_adjusted_rolling_mean" in report_path.read_text(encoding="utf-8")
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
