@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from datetime import date
+import json
+from datetime import UTC, date, datetime
 from pathlib import Path
 import shutil
 
@@ -10,6 +11,7 @@ from data.download_fpl_api import (
     completed_gameweeks,
     detect_current_fpl_season,
     download_fpl_api_data,
+    find_suspicious_fixtures,
     normalize_element_summaries,
     write_download_report,
 )
@@ -23,9 +25,15 @@ def clean_scratch(name: str) -> Path:
 
 
 class FakeResponse:
-    def __init__(self, payload: object, status_code: int = 200) -> None:
+    def __init__(
+        self,
+        payload: object,
+        status_code: int = 200,
+        headers: dict[str, str] | None = None,
+    ) -> None:
         self.payload = payload
         self.status_code = status_code
+        self.headers = headers or {}
 
     def raise_for_status(self) -> None:
         if self.status_code >= 400:
@@ -36,8 +44,10 @@ class FakeResponse:
 
 
 class FakeSession:
-    def __init__(self) -> None:
+    def __init__(self, *, fixture_id: int = 100, fixture_finished: bool = True) -> None:
         self.urls: list[str] = []
+        self.fixture_id = fixture_id
+        self.fixture_finished = fixture_finished
 
     def get(self, url: str, timeout: int) -> FakeResponse:
         self.urls.append(url)
@@ -65,20 +75,25 @@ class FakeSession:
                     "game_settings": {},
                     "game_config": {},
                     "total_players": 1,
-                }
+                },
+                headers={"Last-Modified": "Thu, 14 May 2026 10:00:00 GMT"},
             )
         if url.endswith("/fixtures/"):
             return FakeResponse(
                 [
                     {
-                        "id": 100,
+                        "id": self.fixture_id,
                         "event": 1,
                         "team_h": 1,
                         "team_a": 2,
                         "team_h_score": 2,
                         "team_a_score": 1,
+                        "kickoff_time": "2026-05-01T14:00:00Z",
+                        "started": False,
+                        "finished": self.fixture_finished,
                     }
-                ]
+                ],
+                headers={"Last-Modified": "Thu, 14 May 2026 10:05:00 GMT"},
             )
         if url.endswith("/event/1/live/"):
             return FakeResponse(
@@ -185,8 +200,11 @@ def test_download_fpl_api_data_writes_raw_and_normalized_tables() -> None:
         assert summary.fixture_count == 1
         assert summary.completed_gameweeks == [1]
         assert not summary.failed_requests
+        assert {record.status for record in summary.endpoint_records} == {"downloaded fresh"}
+        assert any(record.last_modified for record in summary.endpoint_records)
         assert (raw_root / "bootstrap_static.json").exists()
         assert (raw_root / "fixtures.json").exists()
+        assert (raw_root / "fixtures.json.metadata.json").exists()
         assert (raw_root / "event_live" / "1.json").exists()
         assert (raw_root / "element_summary" / "11.json").exists()
         assert (interim_root / "bootstrap_static.parquet").exists()
@@ -251,5 +269,101 @@ def test_write_download_report_includes_summary() -> None:
         assert "FPL API Download Report" in text
         assert "2025-26" in text
         assert "Completed gameweeks downloaded: 1" in text
+        assert "Endpoint Cache Status" in text
+        assert "Normalized Table Status" in text
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_download_reuses_cached_raw_files_without_network_calls() -> None:
+    scratch = clean_scratch("download_fpl_api_cache")
+    try:
+        download_fpl_api_data(
+            season="2025-26",
+            output_dir=scratch,
+            session=FakeSession(),
+            max_workers=1,
+            force=True,
+        )
+
+        cached_session = FakeSession(fixture_id=999)
+        summary = download_fpl_api_data(
+            season="2025-26",
+            output_dir=scratch,
+            session=cached_session,
+            max_workers=1,
+            force=False,
+        )
+
+        assert not cached_session.urls
+        assert {record.status for record in summary.endpoint_records} == {"loaded from cache"}
+        fixtures = pd.read_parquet(scratch / "interim" / "fpl_api" / "2025-26" / "fixtures.parquet")
+        assert fixtures.loc[0, "id"] == 100
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_force_overwrites_raw_and_normalized_fixture_files() -> None:
+    scratch = clean_scratch("download_fpl_api_force")
+    try:
+        download_fpl_api_data(
+            season="2025-26",
+            output_dir=scratch,
+            session=FakeSession(fixture_id=100),
+            max_workers=1,
+            force=True,
+        )
+        summary = download_fpl_api_data(
+            season="2025-26",
+            output_dir=scratch,
+            session=FakeSession(fixture_id=200),
+            max_workers=1,
+            force=True,
+        )
+
+        raw_fixture = json.loads(
+            (scratch / "raw" / "fpl_api" / "2025-26" / "fixtures.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        fixtures = pd.read_parquet(scratch / "interim" / "fpl_api" / "2025-26" / "fixtures.parquet")
+        fixture_record = next(
+            record for record in summary.endpoint_records if record.raw_path.name == "fixtures.json"
+        )
+        table_record = next(record for record in summary.normalized_table_records if record.name == "fixtures")
+
+        assert raw_fixture[0]["id"] == 200
+        assert fixtures.loc[0, "id"] == 200
+        assert fixture_record.status == "overwritten because --force was used"
+        assert table_record.status == "overwritten because --force was used"
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_suspicious_past_unstarted_fixtures_are_reported() -> None:
+    fixtures = pd.DataFrame(
+        [
+            {
+                "id": 100,
+                "event": 1,
+                "kickoff_time": "2026-05-01T14:00:00Z",
+                "started": False,
+                "finished": False,
+                "team_h": 1,
+                "team_a": 2,
+            },
+            {
+                "id": 101,
+                "event": 1,
+                "kickoff_time": "2026-05-20T14:00:00Z",
+                "started": False,
+                "finished": False,
+                "team_h": 3,
+                "team_a": 4,
+            },
+        ]
+    )
+
+    suspicious = find_suspicious_fixtures(fixtures, now=datetime(2026, 5, 14, tzinfo=UTC))
+
+    assert [fixture["id"] for fixture in suspicious] == [100]

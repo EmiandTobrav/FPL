@@ -8,7 +8,7 @@ import logging
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import UTC, date, datetime
 from pathlib import Path
 from typing import Any
 
@@ -36,6 +36,25 @@ class FplApiPaths:
     interim_dir: Path
 
 
+@dataclass(frozen=True)
+class EndpointCacheRecord:
+    name: str
+    url: str
+    raw_path: Path
+    status: str
+    downloaded_at: str | None = None
+    last_modified: str | None = None
+
+
+@dataclass(frozen=True)
+class NormalizedTableRecord:
+    name: str
+    path: Path
+    status: str
+    rows: int
+    written_at: str
+
+
 @dataclass
 class FplApiDownloadSummary:
     season: str
@@ -47,6 +66,9 @@ class FplApiDownloadSummary:
     raw_files_written: list[Path] = field(default_factory=list)
     normalized_tables_written: list[Path] = field(default_factory=list)
     failed_requests: list[str] = field(default_factory=list)
+    endpoint_records: list[EndpointCacheRecord] = field(default_factory=list)
+    normalized_table_records: list[NormalizedTableRecord] = field(default_factory=list)
+    suspicious_fixtures: list[dict[str, Any]] = field(default_factory=list)
 
 
 def detect_current_fpl_season(today: date | None = None) -> str:
@@ -78,18 +100,65 @@ def fetch_json(
     retries: int = DEFAULT_RETRIES,
 ) -> Any:
     """Fetch one JSON response with simple retry handling."""
+    return _fetch_json_with_headers(url, session=session, timeout=timeout, retries=retries)[0]
+
+
+def _fetch_json_with_headers(
+    url: str,
+    *,
+    session: requests.Session | None = None,
+    timeout: int = DEFAULT_TIMEOUT_SECONDS,
+    retries: int = DEFAULT_RETRIES,
+) -> tuple[Any, dict[str, str]]:
+    """Fetch one JSON response and return selected response headers."""
     client = session or requests.Session()
     last_error: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
             response = client.get(url, timeout=timeout)
             response.raise_for_status()
-            return response.json()
+            return response.json(), dict(getattr(response, "headers", {}))
         except (requests.RequestException, ValueError) as exc:
             last_error = exc
             if attempt < retries:
                 time.sleep(min(2 ** (attempt - 1), 5))
     raise FplApiDownloadError(f"Failed to fetch {url} after {retries} attempts: {last_error}")
+
+
+def _metadata_path(raw_path: Path) -> Path:
+    return raw_path.with_suffix(f"{raw_path.suffix}.metadata.json")
+
+
+def _load_cached_metadata(raw_path: Path) -> dict[str, Any]:
+    metadata_path = _metadata_path(raw_path)
+    if not metadata_path.exists():
+        return {}
+    try:
+        return json.loads(metadata_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        LOGGER.warning("Ignoring invalid FPL API metadata file: %s", metadata_path)
+        return {}
+
+
+def _write_cached_metadata(
+    raw_path: Path,
+    *,
+    url: str,
+    downloaded_at: str,
+    last_modified: str | None,
+) -> None:
+    _metadata_path(raw_path).write_text(
+        json.dumps(
+            {
+                "url": url,
+                "downloaded_at": downloaded_at,
+                "last_modified": last_modified,
+            },
+            indent=2,
+            sort_keys=True,
+        ),
+        encoding="utf-8",
+    )
 
 
 def load_or_fetch_json(
@@ -100,15 +169,40 @@ def load_or_fetch_json(
     force: bool = False,
     timeout: int = DEFAULT_TIMEOUT_SECONDS,
     retries: int = DEFAULT_RETRIES,
-) -> tuple[Any, bool]:
+) -> tuple[Any, EndpointCacheRecord]:
     """Load cached raw JSON unless force is enabled; otherwise download it."""
     if raw_path.exists() and not force:
-        return json.loads(raw_path.read_text(encoding="utf-8")), False
+        metadata = _load_cached_metadata(raw_path)
+        return json.loads(raw_path.read_text(encoding="utf-8")), EndpointCacheRecord(
+            name=raw_path.stem,
+            url=url,
+            raw_path=raw_path,
+            status="loaded from cache",
+            downloaded_at=metadata.get("downloaded_at"),
+            last_modified=metadata.get("last_modified"),
+        )
 
-    data = fetch_json(url, session=session, timeout=timeout, retries=retries)
+    existed = raw_path.exists()
+    data, headers = _fetch_json_with_headers(url, session=session, timeout=timeout, retries=retries)
+    downloaded_at = datetime.now(UTC).isoformat()
+    last_modified = headers.get("Last-Modified")
     raw_path.parent.mkdir(parents=True, exist_ok=True)
     raw_path.write_text(json.dumps(data, indent=2, sort_keys=True), encoding="utf-8")
-    return data, True
+    _write_cached_metadata(
+        raw_path,
+        url=url,
+        downloaded_at=downloaded_at,
+        last_modified=last_modified,
+    )
+    status = "overwritten because --force was used" if existed and force else "downloaded fresh"
+    return data, EndpointCacheRecord(
+        name=raw_path.stem,
+        url=url,
+        raw_path=raw_path,
+        status=status,
+        downloaded_at=downloaded_at,
+        last_modified=last_modified,
+    )
 
 
 def completed_gameweeks(bootstrap: dict[str, Any]) -> list[int]:
@@ -191,14 +285,58 @@ def normalize_element_summaries(
 def write_normalized_tables(
     tables: dict[str, pd.DataFrame],
     interim_dir: Path,
-) -> list[Path]:
+    *,
+    force: bool = False,
+) -> tuple[list[Path], list[NormalizedTableRecord]]:
     interim_dir.mkdir(parents=True, exist_ok=True)
     written: list[Path] = []
+    records: list[NormalizedTableRecord] = []
     for name, table in tables.items():
         path = interim_dir / f"{name}.parquet"
+        existed = path.exists()
         table.to_parquet(path, index=False)
         written.append(path)
-    return written
+        if existed and force:
+            status = "overwritten because --force was used"
+        elif existed:
+            status = "rewritten from cached/source data"
+        else:
+            status = "written fresh"
+        records.append(
+            NormalizedTableRecord(
+                name=name,
+                path=path,
+                status=status,
+                rows=len(table),
+                written_at=datetime.now(UTC).isoformat(),
+            )
+        )
+    return written, records
+
+
+def find_suspicious_fixtures(
+    fixtures_table: pd.DataFrame,
+    *,
+    now: datetime | None = None,
+) -> list[dict[str, Any]]:
+    """Return fixtures in the past that still look unstarted and unfinished."""
+    required = {"kickoff_time", "started", "finished"}
+    if fixtures_table.empty or not required.issubset(fixtures_table.columns):
+        return []
+
+    current_time = now or datetime.now(UTC)
+    kickoff = pd.to_datetime(fixtures_table["kickoff_time"], utc=True, errors="coerce")
+    started = fixtures_table["started"].fillna(False).astype(bool)
+    finished = fixtures_table["finished"].fillna(False).astype(bool)
+    suspicious = fixtures_table[kickoff.lt(current_time) & ~started & ~finished].copy()
+    if suspicious.empty:
+        return []
+    columns = [
+        column
+        for column in ["id", "event", "kickoff_time", "started", "finished", "team_h", "team_a"]
+        if column in suspicious.columns
+    ]
+    return suspicious[columns].to_dict(orient="records")
 
 
 def _fetch_live_payload(
@@ -209,9 +347,9 @@ def _fetch_live_payload(
     force: bool,
     timeout: int,
     retries: int,
-) -> tuple[int, dict[str, Any], Path | None]:
+) -> tuple[int, dict[str, Any], EndpointCacheRecord]:
     path = _json_path_for_endpoint(paths.raw_dir, "event_live", gameweek)
-    payload, wrote = load_or_fetch_json(
+    payload, record = load_or_fetch_json(
         f"{BASE_URL}/event/{gameweek}/live/",
         path,
         session=session,
@@ -219,7 +357,7 @@ def _fetch_live_payload(
         timeout=timeout,
         retries=retries,
     )
-    return gameweek, payload, path if wrote else None
+    return gameweek, payload, record
 
 
 def _fetch_element_summary_payload(
@@ -230,9 +368,9 @@ def _fetch_element_summary_payload(
     force: bool,
     timeout: int,
     retries: int,
-) -> tuple[int, dict[str, Any], Path | None]:
+) -> tuple[int, dict[str, Any], EndpointCacheRecord]:
     path = _json_path_for_endpoint(paths.raw_dir, "element_summary", player_id)
-    payload, wrote = load_or_fetch_json(
+    payload, record = load_or_fetch_json(
         f"{BASE_URL}/element-summary/{player_id}/",
         path,
         session=session,
@@ -240,7 +378,7 @@ def _fetch_element_summary_payload(
         timeout=timeout,
         retries=retries,
     )
-    return player_id, payload, path if wrote else None
+    return player_id, payload, record
 
 
 def fetch_many(
@@ -248,23 +386,22 @@ def fetch_many(
     worker,
     *,
     max_workers: int,
-) -> tuple[dict[int, dict[str, Any]], list[Path], list[str]]:
+) -> tuple[dict[int, dict[str, Any]], list[EndpointCacheRecord], list[str]]:
     """Fetch many integer-keyed payloads with isolated failures."""
     payloads: dict[int, dict[str, Any]] = {}
-    raw_written: list[Path] = []
+    records: list[EndpointCacheRecord] = []
     failures: list[str] = []
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {executor.submit(worker, item): item for item in items}
         for future in as_completed(futures):
             item = futures[future]
             try:
-                key, payload, raw_path = future.result()
+                key, payload, record = future.result()
                 payloads[key] = payload
-                if raw_path is not None:
-                    raw_written.append(raw_path)
+                records.append(record)
             except Exception as exc:  # noqa: BLE001 - report all per-request failures
                 failures.append(f"{item}: {exc}")
-    return payloads, raw_written, failures
+    return payloads, records, failures
 
 
 def download_fpl_api_data(
@@ -283,8 +420,9 @@ def download_fpl_api_data(
     season_label = season or detected_season
     paths = api_paths(output_dir, season_label)
     raw_written: list[Path] = []
+    endpoint_records: list[EndpointCacheRecord] = []
 
-    bootstrap, wrote = load_or_fetch_json(
+    bootstrap, bootstrap_record = load_or_fetch_json(
         f"{BASE_URL}/bootstrap-static/",
         _json_path_for_endpoint(paths.raw_dir, "bootstrap_static"),
         session=session,
@@ -292,10 +430,11 @@ def download_fpl_api_data(
         timeout=timeout,
         retries=retries,
     )
-    if wrote:
-        raw_written.append(_json_path_for_endpoint(paths.raw_dir, "bootstrap_static"))
+    endpoint_records.append(bootstrap_record)
+    if bootstrap_record.status != "loaded from cache":
+        raw_written.append(bootstrap_record.raw_path)
 
-    fixtures, wrote = load_or_fetch_json(
+    fixtures, fixtures_record = load_or_fetch_json(
         f"{BASE_URL}/fixtures/",
         _json_path_for_endpoint(paths.raw_dir, "fixtures"),
         session=session,
@@ -303,11 +442,12 @@ def download_fpl_api_data(
         timeout=timeout,
         retries=retries,
     )
-    if wrote:
-        raw_written.append(_json_path_for_endpoint(paths.raw_dir, "fixtures"))
+    endpoint_records.append(fixtures_record)
+    if fixtures_record.status != "loaded from cache":
+        raw_written.append(fixtures_record.raw_path)
 
     gameweeks = completed_gameweeks(bootstrap)
-    live_payloads, live_written, live_failures = fetch_many(
+    live_payloads, live_records, live_failures = fetch_many(
         gameweeks,
         lambda gameweek: _fetch_live_payload(
             gameweek,
@@ -319,14 +459,15 @@ def download_fpl_api_data(
         ),
         max_workers=max_workers,
     )
-    raw_written.extend(live_written)
+    endpoint_records.extend(live_records)
+    raw_written.extend(record.raw_path for record in live_records if record.status != "loaded from cache")
 
     elements = bootstrap.get("elements", [])
     player_ids = sorted(int(element["id"]) for element in elements if element.get("id") is not None)
     summaries: dict[int, dict[str, Any]] = {}
     summary_failures: list[str] = []
     if not skip_element_summary:
-        summaries, summary_written, summary_failures = fetch_many(
+        summaries, summary_records, summary_failures = fetch_many(
             player_ids,
             lambda player_id: _fetch_element_summary_payload(
                 player_id,
@@ -338,18 +479,24 @@ def download_fpl_api_data(
             ),
             max_workers=max_workers,
         )
-        raw_written.extend(summary_written)
+        endpoint_records.extend(summary_records)
+        raw_written.extend(record.raw_path for record in summary_records if record.status != "loaded from cache")
 
     bootstrap_tables = normalize_bootstrap_static(bootstrap)
     history, upcoming = normalize_element_summaries(summaries, season=season_label)
+    fixtures_table = normalize_fixtures(fixtures)
     normalized_tables = {
         **bootstrap_tables,
-        "fixtures": normalize_fixtures(fixtures),
+        "fixtures": fixtures_table,
         "live_gameweek_stats": normalize_live_gameweek_stats(live_payloads),
         "player_gameweek_history": history,
         "upcoming_player_fixtures": upcoming,
     }
-    normalized_written = write_normalized_tables(normalized_tables, paths.interim_dir)
+    normalized_written, table_records = write_normalized_tables(
+        normalized_tables,
+        paths.interim_dir,
+        force=force,
+    )
 
     summary = FplApiDownloadSummary(
         season=season_label,
@@ -361,6 +508,9 @@ def download_fpl_api_data(
         raw_files_written=sorted(raw_written),
         normalized_tables_written=sorted(normalized_written),
         failed_requests=[*live_failures, *summary_failures],
+        endpoint_records=sorted(endpoint_records, key=lambda record: record.raw_path.as_posix()),
+        normalized_table_records=sorted(table_records, key=lambda record: record.path.as_posix()),
+        suspicious_fixtures=find_suspicious_fixtures(fixtures_table),
     )
     return summary
 
@@ -375,6 +525,48 @@ def write_download_report(
     raw_files = [f"- `{path.as_posix()}`" for path in summary.raw_files_written] or ["- None"]
     tables = [f"- `{path.as_posix()}`" for path in summary.normalized_tables_written] or ["- None"]
     failures = [f"- {failure}" for failure in summary.failed_requests] or ["- None"]
+    endpoint_rows = [
+        "| endpoint | status | downloaded_at | last_modified | raw_path |",
+        "| --- | --- | --- | --- | --- |",
+        *[
+            (
+                f"| {record.name} | {record.status} | "
+                f"{record.downloaded_at or ''} | {record.last_modified or ''} | "
+                f"`{record.raw_path.as_posix()}` |"
+            )
+            for record in summary.endpoint_records
+        ],
+    ]
+    if not summary.endpoint_records:
+        endpoint_rows.append("| None |  |  |  |  |")
+    table_rows = [
+        "| table | status | rows | written_at | path |",
+        "| --- | --- | ---: | --- | --- |",
+        *[
+            (
+                f"| {record.name} | {record.status} | {record.rows} | "
+                f"{record.written_at} | `{record.path.as_posix()}` |"
+            )
+            for record in summary.normalized_table_records
+        ],
+    ]
+    if not summary.normalized_table_records:
+        table_rows.append("| None |  |  |  |  |")
+    suspicious_rows = [
+        "| fixture | event | kickoff_time | started | finished | team_h | team_a |",
+        "| ---: | ---: | --- | --- | --- | ---: | ---: |",
+        *[
+            (
+                f"| {fixture.get('id', '')} | {fixture.get('event', '')} | "
+                f"{fixture.get('kickoff_time', '')} | {fixture.get('started', '')} | "
+                f"{fixture.get('finished', '')} | {fixture.get('team_h', '')} | "
+                f"{fixture.get('team_a', '')} |"
+            )
+            for fixture in summary.suspicious_fixtures
+        ],
+    ]
+    if not summary.suspicious_fixtures:
+        suspicious_rows = ["- None"]
     output_path.write_text(
         "\n".join(
             [
@@ -390,8 +582,17 @@ def write_download_report(
                 f"| fixtures | {summary.fixture_count} |",
                 f"| completed gameweeks | {len(summary.completed_gameweeks)} |",
                 f"| failed requests | {len(summary.failed_requests)} |",
+                f"| suspicious stale fixtures | {len(summary.suspicious_fixtures)} |",
                 "",
                 f"Completed gameweeks downloaded: {completed}",
+                "",
+                "## Endpoint Cache Status",
+                "",
+                *endpoint_rows,
+                "",
+                "## Normalized Table Status",
+                "",
+                *table_rows,
                 "",
                 "## Raw Files Written",
                 "",
@@ -404,6 +605,12 @@ def write_download_report(
                 "## Failed Requests",
                 "",
                 *failures,
+                "",
+                "## Fixture Freshness Warnings",
+                "",
+                "Fixtures listed here have kickoff times in the past but are still marked started=False and finished=False.",
+                "",
+                *suspicious_rows,
                 "",
             ]
         ),
