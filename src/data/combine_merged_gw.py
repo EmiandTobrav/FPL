@@ -28,6 +28,48 @@ REQUIRED_COLUMNS = (
     "bonus",
     "bps",
 )
+NUMERIC_COLUMNS = (
+    "gw",
+    "GW",
+    "element",
+    "fixture",
+    "opponent_team",
+    "round",
+    "creativity",
+    "influence",
+    "threat",
+    "ict_index",
+    "expected_goals",
+    "expected_assists",
+    "expected_goal_involvements",
+    "expected_goals_conceded",
+    "total_points",
+    "minutes",
+    "starts",
+    "bonus",
+    "bps",
+    "selected",
+    "transfers_in",
+    "transfers_out",
+    "transfers_balance",
+    "value",
+    "now_cost",
+    "assists",
+    "clean_sheets",
+    "goals_conceded",
+    "goals_scored",
+    "own_goals",
+    "penalties_missed",
+    "penalties_saved",
+    "red_cards",
+    "saves",
+    "team_a_score",
+    "team_h_score",
+    "yellow_cards",
+)
+BOOLEAN_COLUMNS = ("was_home",)
+STRING_COLUMNS = ("season", "name", "team", "position")
+KEY_DTYPE_COLUMNS = (*STRING_COLUMNS, *BOOLEAN_COLUMNS, *NUMERIC_COLUMNS)
 
 
 class SeasonCombinerError(ValueError):
@@ -42,6 +84,8 @@ class CombineDiagnostics:
     dropped_vaastav_rows: int
     dropped_vaastav_seasons: tuple[str, ...]
     skipped_fpl_api_seasons: tuple[str, ...]
+    numeric_coercions: pd.DataFrame
+    final_key_dtypes: pd.DataFrame
 
 
 def read_parquet(path: Path) -> pd.DataFrame:
@@ -98,6 +142,64 @@ def align_columns(frames: list[pd.DataFrame]) -> list[pd.DataFrame]:
     return [frame.reindex(columns=columns) for frame in frames]
 
 
+def _coerce_nullable_boolean(series: pd.Series) -> pd.Series:
+    if pd.api.types.is_bool_dtype(series):
+        return series.astype("boolean")
+    normalized = series.astype("string").str.strip().str.lower()
+    mapped = normalized.map(
+        {
+            "true": True,
+            "false": False,
+            "1": True,
+            "0": False,
+            "1.0": True,
+            "0.0": False,
+            "yes": True,
+            "no": False,
+            "y": True,
+            "n": False,
+        }
+    )
+    mapped = mapped.where(series.notna(), pd.NA)
+    return mapped.astype("boolean")
+
+
+def normalize_combined_schema(frame: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Normalize mixed Vaastav/FPL API dtypes before parquet writing."""
+    normalized = frame.copy()
+    coercion_rows: list[dict[str, object]] = []
+    for column in NUMERIC_COLUMNS:
+        if column not in normalized.columns:
+            continue
+        before = normalized[column]
+        before_non_missing = int(before.notna().sum())
+        coerced = pd.to_numeric(before, errors="coerce")
+        invalid_count = int(before.notna().sum() - coerced.notna().sum())
+        normalized[column] = coerced
+        coercion_rows.append(
+            {
+                "column": column,
+                "non_missing_before": before_non_missing,
+                "values_coerced_to_na": invalid_count,
+            }
+        )
+
+    for column in BOOLEAN_COLUMNS:
+        if column in normalized.columns:
+            normalized[column] = _coerce_nullable_boolean(normalized[column])
+
+    for column in STRING_COLUMNS:
+        if column in normalized.columns:
+            normalized[column] = normalized[column].astype("string")
+
+    dtype_rows = [
+        {"column": column, "dtype": str(normalized[column].dtype)}
+        for column in KEY_DTYPE_COLUMNS
+        if column in normalized.columns
+    ]
+    return normalized, pd.DataFrame(coercion_rows), pd.DataFrame(dtype_rows)
+
+
 def combine_merged_gw_sources(
     vaastav: pd.DataFrame,
     fpl_api_frames: dict[str, pd.DataFrame],
@@ -129,6 +231,7 @@ def combine_merged_gw_sources(
         raise SeasonCombinerError("No rows available after applying season boundary.")
 
     combined = pd.concat(align_columns(non_empty_frames), ignore_index=True, sort=False)
+    combined, numeric_coercions, final_key_dtypes = normalize_combined_schema(combined)
     sort_columns = [column for column in ("season", "gw", "element", "fixture") if column in combined.columns]
     if sort_columns:
         combined = combined.sort_values(sort_columns, na_position="last").reset_index(drop=True)
@@ -153,6 +256,8 @@ def combine_merged_gw_sources(
         dropped_vaastav_rows=len(vaastav_dropped),
         dropped_vaastav_seasons=tuple(sorted(vaastav_dropped["season"].dropna().astype(str).unique())),
         skipped_fpl_api_seasons=tuple(sorted(skipped_fpl_api_seasons)),
+        numeric_coercions=numeric_coercions,
+        final_key_dtypes=final_key_dtypes,
     )
     return combined, diagnostics
 
@@ -204,6 +309,18 @@ def write_diagnostics_report(
                 "## Required Column Coverage",
                 "",
                 _markdown_table(diagnostics.required_column_coverage),
+                "",
+                "## Schema Normalization",
+                "",
+                "Numeric columns are coerced with `pd.to_numeric(errors=\"coerce\")` before parquet writing.",
+                "",
+                "### Numeric Coercions",
+                "",
+                _markdown_table(diagnostics.numeric_coercions),
+                "",
+                "### Final Key Dtypes",
+                "",
+                _markdown_table(diagnostics.final_key_dtypes),
                 "",
             ]
         ),

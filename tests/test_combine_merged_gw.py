@@ -7,6 +7,7 @@ from data.combine_merged_gw import (
     combine_from_paths,
     combine_merged_gw_sources,
     required_column_coverage,
+    write_combined_dataset,
 )
 
 
@@ -52,6 +53,38 @@ def fpl_api_frame(season: str = "2025-26") -> pd.DataFrame:
             "bonus": [2],
             "bps": [25],
             "expected_goals": [0.5],
+        }
+    )
+
+
+def fpl_api_frame_with_numeric_strings(season: str = "2025-26") -> pd.DataFrame:
+    return pd.DataFrame(
+        {
+            "season": [season, season],
+            "gw": ["1", "2"],
+            "element": [1, 2],
+            "name": ["API", "API Invalid"],
+            "team": ["A", "B"],
+            "opponent_team": [3, 4],
+            "was_home": ["false", "true"],
+            "position": ["MID", "FWD"],
+            "total_points": ["7", "bad-points"],
+            "minutes": ["90", "45"],
+            "starts": ["1", "0"],
+            "bonus": ["2", "0"],
+            "bps": ["25", "bad-bps"],
+            "selected": ["1000", "2000"],
+            "transfers_in": ["10", "20"],
+            "transfers_out": ["5", "6"],
+            "value": ["75", "81"],
+            "creativity": ["0.0", "not-a-number"],
+            "influence": ["1.2", "2.3"],
+            "threat": ["3.4", "4.5"],
+            "ict_index": ["4.6", "5.7"],
+            "expected_goals": ["0.5", "0.1"],
+            "expected_assists": ["0.2", "0.3"],
+            "expected_goal_involvements": ["0.7", "0.4"],
+            "expected_goals_conceded": ["1.1", "0.9"],
         }
     )
 
@@ -132,3 +165,45 @@ def test_combine_from_paths_writes_output_and_report() -> None:
         assert "Required Column Coverage" in report_path.read_text(encoding="utf-8")
     finally:
         shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_combiner_normalizes_fpl_api_numeric_strings_and_writes_parquet() -> None:
+    scratch = clean_scratch("combine_merged_gw_numeric_strings")
+    try:
+        output_path = scratch / "combined.parquet"
+        combined, diagnostics = combine_merged_gw_sources(
+            vaastav_frame().assign(creativity=[1.0, 99.0]),
+            {"2025-26": fpl_api_frame_with_numeric_strings()},
+        )
+
+        write_combined_dataset(combined, output_path)
+        reread = pd.read_parquet(output_path)
+        api_rows = reread.loc[reread["season"].eq("2025-26")].sort_values("element")
+        creativity_coercion = diagnostics.numeric_coercions.loc[
+            diagnostics.numeric_coercions["column"].eq("creativity")
+        ].iloc[0]
+
+        assert len(api_rows) == 2
+        assert api_rows.iloc[0]["creativity"] == 0.0
+        assert pd.isna(api_rows.iloc[1]["creativity"])
+        assert int(creativity_coercion["values_coerced_to_na"]) == 1
+        assert str(reread["creativity"].dtype).startswith("float")
+        assert str(reread["was_home"].dtype) == "boolean"
+    finally:
+        shutil.rmtree(scratch, ignore_errors=True)
+
+
+def test_combiner_diagnostics_include_final_key_dtypes() -> None:
+    _, diagnostics = combine_merged_gw_sources(
+        vaastav_frame(),
+        {"2025-26": fpl_api_frame_with_numeric_strings()},
+    )
+
+    dtype_lookup = diagnostics.final_key_dtypes.set_index("column")["dtype"].to_dict()
+
+    assert dtype_lookup["season"] == "string"
+    assert dtype_lookup["name"] == "string"
+    assert dtype_lookup["team"] == "string"
+    assert dtype_lookup["position"] == "string"
+    assert dtype_lookup["was_home"] == "boolean"
+    assert "float" in dtype_lookup["creativity"]
