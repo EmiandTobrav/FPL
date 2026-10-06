@@ -1,0 +1,6 @@
+{
+  "python": "3.12.14",
+  "zlib": "1.3.2",
+  "tests": "Two calendar tests and three existing decision-specialist regressions passed by direct execution; pytest unavailable; no full-suite or CI claim.",
+  "artifact_storage": "Auto-review rejected opaque compressed uploads. Public calendar-only CSV and generated simulation JSON stored readably; restore.py verifies all98 byte-exact reconstructions. Forecasts regenerated using build.py."
+}

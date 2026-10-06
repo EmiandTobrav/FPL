@@ -42,14 +42,22 @@ Fullført 6. oktober 2026: **32 nye forløp** mot `constant_h3` på 2022/23–20
 
 Alle åtte benchmarkforløp gjenskaper nøyaktig beslutninger og poeng. 1088 beslutninger er kontrollert; syv målrettede tester består ved direkte kjøring. [Rapport og kontroller](../research/current/position_specialist/README.md), [sesongresultater](../research/current/position_specialist/results/all_seasons.csv). Ingen urørt holdout eller ny produksjonsmodell.
 
+## Siste forsøk: historisk kampkalender
+
+Fullført 6. oktober 2026: 82 historiske kalenderuttrekk er rekonstruert ved 136 beslutningstidspunkter. Med grense på 14 dagers alder er dekningen 31/34, 33/34, 33/34 og 8/34 runder i 2022/23–2025/26. Sluttkalender brukes bare til datakontroll, ikke fremtidsprognoser.
+
+En isolert test av fremtidig **antall kamper** gir `calendar_count_h3` **2343,75 poeng med chips (+35,50 mot constant_h3)** og 2218,25 uten chips (+45,50). Sesonggevinst med chips: −29, +143, +28, 0. Primært 95 %-intervall [−14,75; +107,25]; ingen urørt holdout. Alle 8 kontrollforløp gjenskapes nøyaktig. Benchmarken beholdes, kalenderkandidaten registreres som lovende forskning.
+
+[Kalenderrevisjon](../research/current/calendar_audit/README.md), [forsøksrapport](../research/current/calendar_counts/README.md). Nåværende rundeprognoser og frister beholder gamle proxybegrensninger. Neste steg: bedre arkivdekning og motstander/hjemme-borte i egen ablasjon. Lesbare CSV-/JSON-arkiver gjenopprettes automatisk av `scripts/prepare_data.py`; nye prognoser regenereres av forsøksbyggeren.
+
 ## Prioritert neste arbeid
 
-Oppdatert etter posisjonstesten:
+Oppdatert etter første kalenderforsøk:
 
 1. Bruk `constant_h3` som ny arbeidsbenchmark for alle kommende forsøk, i tråd med brukerens beslutning. Behold `re_refresh_h3`, `constant` og den gamle frosne referansen som kontroller. Rapporter gevinst mot ny benchmark på samme evalueringssesonger; ingen omskriving av historiske resultater.
 2. Prioriter før-frist-kalender/tilgjengelighetsdata og en låst prospektiv evaluering. Flere historiske vekt-/horisontsøk gir ikke en urørt bekreftelse.
 3. Gjør håndtering av likeverdige valg mer deterministisk før praktisk bruk. Global H1 gjenskaper arkivet i kombinasjonstesten, men tidligere motoravvik viser at dette fortsatt er relevant.
-4. Undersøk bedre faktisk kjent fremtidig kampprogram i en separat kontrollert dataablasjon når arkivet finnes. Ikke les fremtidige `games`-rader som kjent informasjon.
+4. Første kalenderablasjon er fullført med positiv, men ujevn gevinst. Forbedre særlig 2025/26-dekningen og test deretter motstander/hjemme-borte i en separat ablasjon. Faktiske frister og aktuell kalender trenger en ny felles baseline.
 5. Gate og nye spilleres roller/tilgjengelighet er fortsatt forskning. Ingen nye terskler eller blandingsvekter er valgt etter siste resultater.
 
 Rapporter nettosesongpoeng med chips som forhåndsbestemt primærmål, treffkostnad, usikkerhet og sesongvise forskjeller. Uten chips er diagnostikk. Samme starttilstand og samme beslutningsmotor skal brukes for å isolere modellendringer.

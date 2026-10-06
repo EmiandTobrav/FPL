@@ -19,5 +19,9 @@ def main():
     (ROOT/'research/current/project/results').mkdir(exist_ok=True)
     for d in ['data/raw','data/interim','data/processed','data/predictions','notebooks']:
         (ROOT/d).mkdir(parents=True,exist_ok=True)
+    calendar_restore=ROOT/'research/current/calendar_audit/restore.py'
+    if calendar_restore.exists():
+        import runpy
+        runpy.run_path(str(calendar_restore),run_name='__main__')
     print(f'Verified {len(manifest)} frozen input files. No network or ZIP extraction required.')
 if __name__=='__main__': main()

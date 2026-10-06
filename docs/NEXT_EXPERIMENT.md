@@ -1,3 +1,5 @@
+> **Nyeste oppdatering 6. oktober 2026:** Første kalendertest er fullført: +35,5 med chips / +45,5 uten chips mot `constant_h3`, men ujevn gevinst og svak 2025/26-dekning. Benchmarken beholdes. [Resultater](../research/current/calendar_counts/README.md). Neste: bedre dekning og separat motstander-/hjemme-borte-test. Eldre oppdateringer og protokoll følger nedenfor.
+
 > **Seneste oppdatering 6. oktober 2026:** Etter brukerens valg av `constant_h3` som benchmark er posisjonsspesialisering nå testet og fullført. Ingen kandidat slår den på primærmålet. [Posisjonsrapport](../research/current/position_specialist/README.md). Neste prioritet er tidsriktig kalender/tilgjengelighet og prospektiv evaluering. Dokumentet nedenfor er den historiske protokollen og beslutningen ved avslutningen av kombinasjonsforsøket; benchmarkvalget kom etterpå.
 
 # Kombinasjonsforsøket: global HGB-vekt med tre-rundersplanlegging

@@ -1,0 +1,760 @@
+{
+  "2022-23": [
+    {
+      "sha": "7009d351b6077cc3f3ae5bdc3a7e23f58f6817e6",
+      "author_time": "2023-05-29T06:53:24Z",
+      "committer_time": "2023-05-29T06:53:24Z",
+      "message": "Add GW38 data"
+    },
+    {
+      "sha": "e34b0a593b78873e22891784b641f25c9ee12501",
+      "author_time": "2023-05-28T07:31:56Z",
+      "committer_time": "2023-05-28T07:31:56Z",
+      "message": "Add DGW37 data"
+    },
+    {
+      "sha": "2e8ddfdb7ef963e16992f747eac31d374bf30e36",
+      "author_time": "2023-05-09T06:32:27Z",
+      "committer_time": "2023-05-09T06:32:27Z",
+      "message": "Add GW35 data"
+    },
+    {
+      "sha": "df7134ef9c05339cf2fc98e20ef9ad48796888b6",
+      "author_time": "2023-05-05T11:53:53Z",
+      "committer_time": "2023-05-05T11:53:53Z",
+      "message": "Add DGW34 data"
+    },
+    {
+      "sha": "9f3c8b124eec9a64ed2466092430c65dcc747659",
+      "author_time": "2023-04-28T13:56:30Z",
+      "committer_time": "2023-04-28T13:56:30Z",
+      "message": "Add GW33 data"
+    },
+    {
+      "sha": "ef6ff5b77e25fd0a5e7bae400b9e649fa0304954",
+      "author_time": "2023-04-24T10:56:31Z",
+      "committer_time": "2023-04-24T10:56:31Z",
+      "message": "Add BGW32 data"
+    },
+    {
+      "sha": "831eda88132385f23b6fb5cdc3ef281ba394fbbb",
+      "author_time": "2023-04-20T18:20:31Z",
+      "committer_time": "2023-04-20T18:20:31Z",
+      "message": "Add GW31 data"
+    },
+    {
+      "sha": "89bbf41521ea689f7e4544cafdb5537d931a643f",
+      "author_time": "2023-04-12T09:20:16Z",
+      "committer_time": "2023-04-12T09:20:16Z",
+      "message": "Add GW30 data"
+    },
+    {
+      "sha": "9900f03ec09be9f8f647911889d72e3bd90de21a",
+      "author_time": "2023-04-06T20:42:08Z",
+      "committer_time": "2023-04-06T20:42:08Z",
+      "message": "Add DGW29 data"
+    },
+    {
+      "sha": "be279f791fd0bfbcbeddf2006cab5b60fd69067f",
+      "author_time": "2023-03-27T11:00:02Z",
+      "committer_time": "2023-03-27T11:00:02Z",
+      "message": "Add BGW28 data"
+    },
+    {
+      "sha": "a5735bcf43e5da558936e4467126d01bb9123272",
+      "author_time": "2023-03-17T09:52:17Z",
+      "committer_time": "2023-03-17T09:52:17Z",
+      "message": "Add DGW27 data"
+    },
+    {
+      "sha": "a5b40704eea0be9b3148e267c64ec547413f0c87",
+      "author_time": "2023-03-07T10:40:19Z",
+      "committer_time": "2023-03-07T10:40:19Z",
+      "message": "Add GW26 data"
+    },
+    {
+      "sha": "359e5f05bd3ea8a2684b0e9d7fe5e20335510fd4",
+      "author_time": "2023-03-02T12:40:22Z",
+      "committer_time": "2023-03-02T12:40:22Z",
+      "message": "Add DGW25 data"
+    },
+    {
+      "sha": "4216d334f6d9cc4950910b2e7f3c1e8b0fb4d97d",
+      "author_time": "2023-02-24T18:09:41Z",
+      "committer_time": "2023-02-24T18:09:41Z",
+      "message": "Add GW24 data"
+    },
+    {
+      "sha": "611f2f64be2d3d3907350066893f263221b98a9e",
+      "author_time": "2023-02-17T11:47:30Z",
+      "committer_time": "2023-02-17T11:47:30Z",
+      "message": "Add DGW23 data"
+    },
+    {
+      "sha": "4e199d6bb3ace61fd390a9d63e6a5f81d96094c7",
+      "author_time": "2023-02-09T17:08:48Z",
+      "committer_time": "2023-02-09T17:08:48Z",
+      "message": "Add DGW22 data"
+    },
+    {
+      "sha": "6179a68da099454cd16981b0454a869243dd1095",
+      "author_time": "2023-01-24T10:13:05Z",
+      "committer_time": "2023-01-24T10:13:05Z",
+      "message": "Add GW21 data"
+    },
+    {
+      "sha": "b7b12bec63d9d0a99f6c1d292107c826fe68934d",
+      "author_time": "2023-01-20T06:24:11Z",
+      "committer_time": "2023-01-20T06:24:11Z",
+      "message": "Add DGW20 data"
+    },
+    {
+      "sha": "b2543a40b7df4692ea61dd0169b07c07c77a5bda",
+      "author_time": "2023-01-13T04:59:17Z",
+      "committer_time": "2023-01-13T04:59:17Z",
+      "message": "Add DGW19 data"
+    },
+    {
+      "sha": "da266ffa5eacf9f3f9d70aedc2a2ee85c7309d46",
+      "author_time": "2023-01-02T05:42:18Z",
+      "committer_time": "2023-01-02T05:42:18Z",
+      "message": "Add GW18 data"
+    },
+    {
+      "sha": "6809bd41a7cf3054841731b326a6561fb9416d85",
+      "author_time": "2022-12-29T12:50:55Z",
+      "committer_time": "2022-12-29T12:50:55Z",
+      "message": "Add GW17 data"
+    },
+    {
+      "sha": "92f81c3063ae2ae361daecc81fa51f909dd109a9",
+      "author_time": "2022-11-23T04:10:18Z",
+      "committer_time": "2022-11-23T04:10:18Z",
+      "message": "Add GW16 data"
+    },
+    {
+      "sha": "c523018c7df2cc2a2f9bd59e8b570ea9431a73a1",
+      "author_time": "2022-11-10T19:44:37Z",
+      "committer_time": "2022-11-10T19:44:37Z",
+      "message": "Add GW15 data"
+    },
+    {
+      "sha": "d6c561b1b1a38b0426ce978346c44d66c54eb4e1",
+      "author_time": "2022-10-31T11:37:08Z",
+      "committer_time": "2022-10-31T11:37:08Z",
+      "message": "Add gw14 data"
+    },
+    {
+      "sha": "8617b6de1f311eb850dac19628a22a5a3f52edf7",
+      "author_time": "2022-10-25T08:59:52Z",
+      "committer_time": "2022-10-25T08:59:52Z",
+      "message": "Add GW12 and GW13 data"
+    },
+    {
+      "sha": "2953bc6043839abf70f3d28dc14d4f3f616ee6a9",
+      "author_time": "2022-10-17T08:25:18Z",
+      "committer_time": "2022-10-17T08:25:18Z",
+      "message": "ADd GW11 data"
+    },
+    {
+      "sha": "a92325991775e9af3dbe359823a1ecfcccac6444",
+      "author_time": "2022-10-12T06:21:21Z",
+      "committer_time": "2022-10-12T06:21:21Z",
+      "message": "Add GW10 data"
+    },
+    {
+      "sha": "abc41d469cc4cfc38649fcbee667ccd71e76a669",
+      "author_time": "2022-10-04T09:27:20Z",
+      "committer_time": "2022-10-04T09:27:20Z",
+      "message": "Add GW9 data"
+    },
+    {
+      "sha": "3b85ad4365ce1b50c213dd40a55b17c8651217bf",
+      "author_time": "2022-09-21T15:47:07Z",
+      "committer_time": "2022-09-21T15:47:07Z",
+      "message": "Add GW8 data"
+    },
+    {
+      "sha": "f61864c5114d6b1cb58ee6c4a28342d760be452a",
+      "author_time": "2022-09-14T22:25:49Z",
+      "committer_time": "2022-09-14T22:25:49Z",
+      "message": "Add GW7 data"
+    },
+    {
+      "sha": "44f7022ac12c6d6d72dcd26939f3757a9ee8c6d6",
+      "author_time": "2022-09-07T07:35:27Z",
+      "committer_time": "2022-09-07T07:35:27Z",
+      "message": "Add GW6 data"
+    },
+    {
+      "sha": "e2514a2d7be55f05e9f1a4d3bf08c6cc0f0809fb",
+      "author_time": "2022-09-02T09:11:34Z",
+      "committer_time": "2022-09-02T09:11:34Z",
+      "message": "Add GW5 data"
+    },
+    {
+      "sha": "eb2cccb95b2262e12a050d4eaa66139e2a2bbad1",
+      "author_time": "2022-08-29T09:40:52Z",
+      "committer_time": "2022-08-29T09:40:52Z",
+      "message": "Add GW4 data"
+    },
+    {
+      "sha": "47060398d6ca01a7105dedbad3f167e7df3199d0",
+      "author_time": "2022-08-23T10:29:19Z",
+      "committer_time": "2022-08-23T10:29:19Z",
+      "message": "Add GW3 data"
+    },
+    {
+      "sha": "7e394550df3892063c0983d636675a339090ba44",
+      "author_time": "2022-08-16T08:40:21Z",
+      "committer_time": "2022-08-16T08:40:21Z",
+      "message": "Add GW2 data"
+    },
+    {
+      "sha": "5f2aa325ee811cb8f5dae07dba436f7323b35922",
+      "author_time": "2022-08-08T08:28:41Z",
+      "committer_time": "2022-08-08T08:28:48Z",
+      "message": "Add GW1 data"
+    },
+    {
+      "sha": "1b8399b713c6cbd76ce7d312422f8cc13451bbea",
+      "author_time": "2022-08-01T16:11:16Z",
+      "committer_time": "2022-08-01T16:11:16Z",
+      "message": "Update some data before the start of the season"
+    },
+    {
+      "sha": "f6a056f7c0a6481a08dfce8876c863c194bd7a3e",
+      "author_time": "2022-07-16T16:13:47Z",
+      "committer_time": "2022-07-16T16:13:47Z",
+      "message": "Add initial 2022-23 data"
+    }
+  ],
+  "2023-24": [
+    {
+      "sha": "204c134d8e90e2b6e69ec252aa3ef6f10f21e73c",
+      "author_time": "2024-05-27T18:05:02Z",
+      "committer_time": "2024-05-27T18:05:02Z",
+      "message": "Add GW38 data"
+    },
+    {
+      "sha": "5218c9f360c0415d7272775239f88ab0eb15e91d",
+      "author_time": "2024-05-19T02:36:03Z",
+      "committer_time": "2024-05-19T02:36:03Z",
+      "message": "Add DGW37 data"
+    },
+    {
+      "sha": "2981ebc1630d6e0211c5847731c8fb79cecba785",
+      "author_time": "2024-05-09T13:15:25Z",
+      "committer_time": "2024-05-09T13:15:25Z",
+      "message": "Add DGW36 data"
+    },
+    {
+      "sha": "8f5194d666f608200916f2b62f8976e8c8beff87",
+      "author_time": "2024-05-03T08:34:20Z",
+      "committer_time": "2024-05-03T08:34:20Z",
+      "message": "Add DGW35data"
+    },
+    {
+      "sha": "6f1e864e5a5bb58a0ad92a257e86df7a7d4816db",
+      "author_time": "2024-04-27T08:17:47Z",
+      "committer_time": "2024-04-27T08:18:04Z",
+      "message": "Add DGW34 data"
+    },
+    {
+      "sha": "d7e0beda3436c5051116e1aeef652e96119ebf92",
+      "author_time": "2024-04-16T08:22:40Z",
+      "committer_time": "2024-04-16T08:22:40Z",
+      "message": "Add GW33 data"
+    },
+    {
+      "sha": "436f1ff2d306783d3e3892dc3d3ce21712cbc08e",
+      "author_time": "2024-04-08T10:31:08Z",
+      "committer_time": "2024-04-08T10:31:08Z",
+      "message": "Add GW32 data"
+    },
+    {
+      "sha": "7d6f6aafa94a937116f308a2393fb12e86c5771f",
+      "author_time": "2024-04-05T12:24:10Z",
+      "committer_time": "2024-04-05T12:24:10Z",
+      "message": "Add GW31 data"
+    },
+    {
+      "sha": "4e6447daccfb053a496e4aebd37d264dfa949676",
+      "author_time": "2024-04-01T08:08:41Z",
+      "committer_time": "2024-04-01T08:08:41Z",
+      "message": "Add GW30 data"
+    },
+    {
+      "sha": "cbf39345fdfa826870e37b1b2c777b543fed56d2",
+      "author_time": "2024-03-20T16:55:33Z",
+      "committer_time": "2024-03-20T16:55:33Z",
+      "message": "Add BGW29 data"
+    },
+    {
+      "sha": "8a90a7cbf8dd336676a5d599605fe4fd5f9bcc40",
+      "author_time": "2024-03-15T13:56:21Z",
+      "committer_time": "2024-03-15T13:56:21Z",
+      "message": "Add DGW28 data"
+    },
+    {
+      "sha": "446af195d2ee324a1217f34a5a2b591189efc983",
+      "author_time": "2024-03-07T16:57:57Z",
+      "committer_time": "2024-03-07T16:57:57Z",
+      "message": "Add GW27 data"
+    },
+    {
+      "sha": "f061aafa88a921dd70fd2b0f72b8020889d8e589",
+      "author_time": "2024-02-22T10:23:39Z",
+      "committer_time": "2024-02-22T10:23:39Z",
+      "message": "ADd DGW25 data"
+    },
+    {
+      "sha": "73cf14c852c5bbafde20ba11ebc5acd6eff965aa",
+      "author_time": "2024-02-14T10:42:14Z",
+      "committer_time": "2024-02-14T10:42:14Z",
+      "message": "Add GW24 data"
+    },
+    {
+      "sha": "5f49140e78b2052634abae57ce15e40f41dc32f7",
+      "author_time": "2024-02-06T13:02:04Z",
+      "committer_time": "2024-02-06T13:02:04Z",
+      "message": "Add GW23 data"
+    },
+    {
+      "sha": "8a0d23451ea7c07699ba903feb364e8fe0085c0e",
+      "author_time": "2024-02-02T20:53:13Z",
+      "committer_time": "2024-02-02T20:53:13Z",
+      "message": "Add GW22 data"
+    },
+    {
+      "sha": "546143eb5d0ae6d250e074374152e8be4b15719b",
+      "author_time": "2024-01-23T13:01:20Z",
+      "committer_time": "2024-01-23T13:01:20Z",
+      "message": "Add GW21 data"
+    },
+    {
+      "sha": "15783a5630abadb309ff4c3edbb3dc32e6a2b426",
+      "author_time": "2024-01-03T08:57:32Z",
+      "committer_time": "2024-01-03T08:57:32Z",
+      "message": "Add GW20 data"
+    },
+    {
+      "sha": "2f06c2ae70511a7075d02913784ec77a5fb21aa1",
+      "author_time": "2023-12-29T05:12:14Z",
+      "committer_time": "2023-12-29T05:12:14Z",
+      "message": "Add GW19 data"
+    },
+    {
+      "sha": "d8a6fc58722beaa625195de9d51a0333dcb46439",
+      "author_time": "2023-12-25T11:59:17Z",
+      "committer_time": "2023-12-25T11:59:17Z",
+      "message": "Add GW18 data"
+    },
+    {
+      "sha": "62f7b7c0b2d897834613475b15d6dc3301f13e70",
+      "author_time": "2023-12-21T04:22:57Z",
+      "committer_time": "2023-12-21T04:22:57Z",
+      "message": "Add GW17 data"
+    },
+    {
+      "sha": "392588ec1664432358f9481b81c3a8c1d53a60a3",
+      "author_time": "2023-12-11T13:35:55Z",
+      "committer_time": "2023-12-11T13:35:55Z",
+      "message": "Add GW16 data"
+    },
+    {
+      "sha": "d54ac4c7b35ccca5fcf2d46ee62362a67efa45e8",
+      "author_time": "2023-12-08T08:31:20Z",
+      "committer_time": "2023-12-08T08:31:20Z",
+      "message": "Add GW15 data"
+    },
+    {
+      "sha": "c4f66ee30ef026bb7e8b7184b2427f9708c77d74",
+      "author_time": "2023-12-04T13:04:03Z",
+      "committer_time": "2023-12-04T13:04:03Z",
+      "message": "Add GW14 data"
+    },
+    {
+      "sha": "acee0e28f8b201062270d709a7d72e4787680872",
+      "author_time": "2023-11-30T15:40:47Z",
+      "committer_time": "2023-11-30T15:40:47Z",
+      "message": "Add GW13 data"
+    },
+    {
+      "sha": "caf799bb68f58fb26ac80d8cb762c353891232f5",
+      "author_time": "2023-11-24T13:22:14Z",
+      "committer_time": "2023-11-24T13:22:14Z",
+      "message": "Add GW12 data"
+    },
+    {
+      "sha": "028f925c32fabb34798e416c569070d0cae329a2",
+      "author_time": "2023-11-09T20:03:21Z",
+      "committer_time": "2023-11-09T20:03:21Z",
+      "message": "ADd GW11 data"
+    },
+    {
+      "sha": "e92d9881f2ef025a7a1093e47fdf02d9aa2f8655",
+      "author_time": "2023-11-02T14:43:56Z",
+      "committer_time": "2023-11-02T14:43:56Z",
+      "message": "Add GW10 data"
+    },
+    {
+      "sha": "615da45c450fb13993b7e8da4c8388d7e2f57703",
+      "author_time": "2023-10-27T08:27:07Z",
+      "committer_time": "2023-10-27T08:27:07Z",
+      "message": "Add GW9 data"
+    },
+    {
+      "sha": "32184fc221871431d8215c5dc8385af0eda7bdde",
+      "author_time": "2023-10-19T20:26:02Z",
+      "committer_time": "2023-10-19T20:26:02Z",
+      "message": "ADd GW8 data"
+    },
+    {
+      "sha": "96fbc38ee6e36e3a7250081a787b65a1a27c944d",
+      "author_time": "2023-10-05T14:38:47Z",
+      "committer_time": "2023-10-05T14:38:47Z",
+      "message": "Add DGW7 data"
+    },
+    {
+      "sha": "8b05861fb33ee89bae34c2b6d06564449a5885db",
+      "author_time": "2023-09-25T15:34:01Z",
+      "committer_time": "2023-09-25T15:34:01Z",
+      "message": "Add GW6 data"
+    },
+    {
+      "sha": "b9122f8c98f10a8217e5fb67bc4de447f6c685d5",
+      "author_time": "2023-09-20T09:22:25Z",
+      "committer_time": "2023-09-20T09:22:37Z",
+      "message": "Add GW5 data"
+    },
+    {
+      "sha": "b0ec80fec6916117225a6fbee11c35d8773c6f94",
+      "author_time": "2023-09-06T11:00:38Z",
+      "committer_time": "2023-09-06T11:00:38Z",
+      "message": "Add GW4 data"
+    },
+    {
+      "sha": "2abff9370632b3b36bbdfa0870805b60fb392ef0",
+      "author_time": "2023-08-28T10:02:21Z",
+      "committer_time": "2023-08-28T10:02:21Z",
+      "message": "Add GW3 data"
+    },
+    {
+      "sha": "2749a5964950b3b34992cebde0351ac9e09fb54f",
+      "author_time": "2023-08-23T13:08:45Z",
+      "committer_time": "2023-08-23T13:08:45Z",
+      "message": "Add BGW2 data"
+    },
+    {
+      "sha": "be15e285f106d1becc6f24c0c470ec9ada8c935a",
+      "author_time": "2023-08-16T02:35:27Z",
+      "committer_time": "2023-08-16T02:35:27Z",
+      "message": "Add GW1 data"
+    },
+    {
+      "sha": "9ba09ce183b51e13c26f44295ac10803426ab24f",
+      "author_time": "2023-07-31T13:29:10Z",
+      "committer_time": "2023-07-31T13:29:10Z",
+      "message": "Add initial 2023-24 data"
+    }
+  ],
+  "2024-25": [
+    {
+      "sha": "59c767596750f554ba464de94cf4fce8664a6cbe",
+      "author_time": "2025-06-04T15:20:23Z",
+      "committer_time": "2025-06-04T15:20:23Z",
+      "message": "Add GW38 data"
+    },
+    {
+      "sha": "a7089bab28e2a6012cde62b4fbd692f975792a55",
+      "author_time": "2025-05-24T12:26:14Z",
+      "committer_time": "2025-05-24T12:26:14Z",
+      "message": "Add GW37 data"
+    },
+    {
+      "sha": "e3a961c6b47342884268f59d6cb1730b3be194b2",
+      "author_time": "2025-05-16T09:44:44Z",
+      "committer_time": "2025-05-16T09:44:44Z",
+      "message": "Add gw36 data"
+    },
+    {
+      "sha": "3558a3310103f24e17f02d684479067a2de099c5",
+      "author_time": "2025-05-10T00:37:19Z",
+      "committer_time": "2025-05-10T00:37:19Z",
+      "message": "Add DGW34, GW35 data"
+    },
+    {
+      "sha": "761d80463ce8b7a74e1e67f7763910b4c4e14a10",
+      "author_time": "2025-04-26T00:07:50Z",
+      "committer_time": "2025-04-26T00:07:50Z",
+      "message": "add dgw 33 data"
+    },
+    {
+      "sha": "29e6c2f4590b1a03f218552ca676b9495539cfdc",
+      "author_time": "2025-04-11T12:32:01Z",
+      "committer_time": "2025-04-11T12:32:01Z",
+      "message": "Add GW31 data"
+    },
+    {
+      "sha": "c6f14b56fd810fcde3e9faec1c858c659142b99e",
+      "author_time": "2025-04-05T08:21:22Z",
+      "committer_time": "2025-04-05T08:21:22Z",
+      "message": "Add gw30 data"
+    },
+    {
+      "sha": "f89612e6799fb3f8c91939aed87a998078dfb4b6",
+      "author_time": "2025-03-24T14:05:08Z",
+      "committer_time": "2025-03-24T14:05:08Z",
+      "message": "Add GW29 data"
+    },
+    {
+      "sha": "58de8250c856e3476d45557422b257a3659b2b26",
+      "author_time": "2025-03-11T11:53:12Z",
+      "committer_time": "2025-03-11T11:53:12Z",
+      "message": "Add GW28 data"
+    },
+    {
+      "sha": "a8fce2b6ef72a5f44639e2c0f9333e86c827db58",
+      "author_time": "2025-03-05T08:47:03Z",
+      "committer_time": "2025-03-05T08:47:03Z",
+      "message": "Add GW27 data"
+    },
+    {
+      "sha": "814519241dbac0cf82eafa6ce227821e705f652b",
+      "author_time": "2025-02-24T11:50:55Z",
+      "committer_time": "2025-02-24T11:50:55Z",
+      "message": "Add gw26 data"
+    },
+    {
+      "sha": "a0b8a68297efcf2a9b13b9e132a70913d590b246",
+      "author_time": "2025-02-20T21:00:55Z",
+      "committer_time": "2025-02-20T21:00:55Z",
+      "message": "Add DGW25 data"
+    },
+    {
+      "sha": "58e46cd9b9fe439d875ed56bd1a398c69b08b570",
+      "author_time": "2025-02-13T12:56:35Z",
+      "committer_time": "2025-02-13T12:56:35Z",
+      "message": "Add DGW24 data"
+    },
+    {
+      "sha": "0f5da695398c293dca037c36c703fce88a161195",
+      "author_time": "2025-01-30T09:22:46Z",
+      "committer_time": "2025-01-30T09:22:46Z",
+      "message": "Add GW23 data"
+    },
+    {
+      "sha": "b9618a5d9eebce9bc5ab0e6683bfb8fc420ac848",
+      "author_time": "2025-01-18T05:15:44Z",
+      "committer_time": "2025-01-18T05:15:44Z",
+      "message": "Add GW21 data"
+    },
+    {
+      "sha": "c56971db31bd27acbc0ec3a96bc00da7870d68a7",
+      "author_time": "2025-01-07T11:11:38Z",
+      "committer_time": "2025-01-07T11:11:38Z",
+      "message": "Add GW20 data"
+    },
+    {
+      "sha": "e369a3a0943eb6c7cb240053c0e2827f91b57eaa",
+      "author_time": "2025-01-02T18:47:50Z",
+      "committer_time": "2025-01-02T18:49:42Z",
+      "message": "Add gw19 data"
+    },
+    {
+      "sha": "36f07bb50c876ac49255650fd4478c856f086735",
+      "author_time": "2024-12-28T15:07:20Z",
+      "committer_time": "2024-12-28T15:07:20Z",
+      "message": "Add GW18 data"
+    },
+    {
+      "sha": "c9a593826e077670fa300e825022b2979282d069",
+      "author_time": "2024-12-23T09:00:23Z",
+      "committer_time": "2024-12-23T09:00:23Z",
+      "message": "Add GW17 data"
+    },
+    {
+      "sha": "74d804715f821380314efc128bc3e1037750f23f",
+      "author_time": "2024-12-20T09:04:53Z",
+      "committer_time": "2024-12-20T09:04:53Z",
+      "message": "Add GW16 data"
+    },
+    {
+      "sha": "dfdae0e489f8520228a4ffeae11fc70d6aef7804",
+      "author_time": "2024-12-13T03:23:48Z",
+      "committer_time": "2024-12-13T03:23:48Z",
+      "message": "Add GW15 data"
+    },
+    {
+      "sha": "651e9adea9e420416fdde96faf920de232383036",
+      "author_time": "2024-12-07T01:35:27Z",
+      "committer_time": "2024-12-07T01:35:27Z",
+      "message": "Add GW14 data"
+    },
+    {
+      "sha": "bc76591d36196c0ef59b34db42d0167867686298",
+      "author_time": "2024-12-02T03:53:51Z",
+      "committer_time": "2024-12-02T03:53:51Z",
+      "message": "Add gw 13 data"
+    },
+    {
+      "sha": "27c87bd13ef72dd8ed2ad6584a0d8d20f070f559",
+      "author_time": "2024-11-29T03:47:49Z",
+      "committer_time": "2024-11-29T03:47:49Z",
+      "message": "Add Gw12 data"
+    },
+    {
+      "sha": "e3135daf0fcb706cc41f237e5c691517bd3432c1",
+      "author_time": "2024-11-20T00:44:27Z",
+      "committer_time": "2024-11-20T00:44:27Z",
+      "message": "Add GW11 data"
+    },
+    {
+      "sha": "d7a9ea76d98e7453bdca8893224da894b9b55e28",
+      "author_time": "2024-11-08T17:52:02Z",
+      "committer_time": "2024-11-08T17:52:02Z",
+      "message": "Add GW10 data"
+    },
+    {
+      "sha": "2840028eaea97d5255e96620ad2e06942cc8fe90",
+      "author_time": "2024-10-28T14:54:39Z",
+      "committer_time": "2024-10-28T14:54:39Z",
+      "message": "Add GW9 data"
+    },
+    {
+      "sha": "80b1a9fd9efc30dab63fb4aba8afe3f1c6273e75",
+      "author_time": "2024-10-24T08:59:52Z",
+      "committer_time": "2024-10-24T08:59:52Z",
+      "message": "Add GW8 data"
+    },
+    {
+      "sha": "d0f7342e2f5f7176d507badb10ee2db76f564409",
+      "author_time": "2024-10-07T09:02:25Z",
+      "committer_time": "2024-10-07T09:02:25Z",
+      "message": "Add GW7 data"
+    },
+    {
+      "sha": "57caf7e165ba47b48de9f307785aac79cb03b8af",
+      "author_time": "2024-10-01T08:56:28Z",
+      "committer_time": "2024-10-01T08:56:28Z",
+      "message": "Add GW6 data"
+    },
+    {
+      "sha": "f42ed38d279afc705448ebc2b89e48838a0fdfba",
+      "author_time": "2024-09-23T21:15:31Z",
+      "committer_time": "2024-09-23T21:15:45Z",
+      "message": "Add GW5 data"
+    },
+    {
+      "sha": "3c76203d2997a89f0735d2591e76e7c849a2f491",
+      "author_time": "2024-09-16T13:52:04Z",
+      "committer_time": "2024-09-16T13:52:04Z",
+      "message": "Add GW4 data"
+    },
+    {
+      "sha": "9d4b5d89af45f85be8c9215f713000072bdbe3dd",
+      "author_time": "2024-09-06T13:50:27Z",
+      "committer_time": "2024-09-06T13:50:27Z",
+      "message": "Add GW3 data"
+    },
+    {
+      "sha": "ec2a907dae6e97f76406c742a15e56653f3d170e",
+      "author_time": "2024-08-26T08:10:06Z",
+      "committer_time": "2024-08-26T08:10:14Z",
+      "message": "Add GW2 data"
+    },
+    {
+      "sha": "403e10b7b661252698745d1101d1086cec31e0f1",
+      "author_time": "2024-08-20T08:45:55Z",
+      "committer_time": "2024-08-20T08:46:13Z",
+      "message": "Add GW1 data"
+    },
+    {
+      "sha": "c43f0d83d2b9d769c8dadb64959c16b01713cfaa",
+      "author_time": "2024-08-15T17:16:49Z",
+      "committer_time": "2024-08-15T17:16:49Z",
+      "message": "Update before season start"
+    },
+    {
+      "sha": "754b30c54394651bf6722fe47b4896d44c355ddd",
+      "author_time": "2024-08-02T08:16:31Z",
+      "committer_time": "2024-08-02T08:16:31Z",
+      "message": "Add initial 2024-25 data"
+    }
+  ],
+  "2025-26": [
+    {
+      "sha": "a8337d50698de908f92e8d1905142d968384a2ca",
+      "author_time": "2026-06-17T12:07:17Z",
+      "committer_time": "2026-06-17T12:07:17Z",
+      "message": "Add gw38 data"
+    },
+    {
+      "sha": "77ab48216404b0f49f55fa724c520af25b32ddae",
+      "author_time": "2026-03-13T01:04:19Z",
+      "committer_time": "2026-03-13T01:04:19Z",
+      "message": "update data till gw29"
+    },
+    {
+      "sha": "2c43a95002e0a3ec0700b725da76fdd5fefcd1a6",
+      "author_time": "2026-02-05T08:00:25Z",
+      "committer_time": "2026-02-05T08:00:25Z",
+      "message": "Mid-season output"
+    },
+    {
+      "sha": "d8f2ea3f56d1e6c25cfc1ed2773fbd945241fb93",
+      "author_time": "2025-11-01T00:11:46Z",
+      "committer_time": "2025-11-01T00:11:46Z",
+      "message": "Add gw9 data"
+    },
+    {
+      "sha": "c0b610997ff299a1077f88ed09dc453ac5c00ebe",
+      "author_time": "2025-10-24T09:01:31Z",
+      "committer_time": "2025-10-24T09:01:31Z",
+      "message": "Add gw8 data"
+    },
+    {
+      "sha": "cd74fdea7d792f816e96e9ada4551f443d0e82c9",
+      "author_time": "2025-09-30T20:29:48Z",
+      "committer_time": "2025-09-30T20:29:48Z",
+      "message": "Add gw6 data (#217)"
+    },
+    {
+      "sha": "8db66f4fe0b8afc1a4bcf6aaee2255f56bfd29a4",
+      "author_time": "2025-09-24T22:45:24Z",
+      "committer_time": "2025-09-24T22:45:24Z",
+      "message": "Add gw5 data (#216)"
+    },
+    {
+      "sha": "45cb8d6210b4009c25980fb22426787902c5dac8",
+      "author_time": "2025-09-18T12:07:27Z",
+      "committer_time": "2025-09-18T12:07:27Z",
+      "message": "Add gw4 data (#213)"
+    },
+    {
+      "sha": "19b31c9cbf7f7a329123ead3720b24594ac46abe",
+      "author_time": "2025-09-08T09:23:37Z",
+      "committer_time": "2025-09-08T09:23:37Z",
+      "message": "Add gw3 data"
+    },
+    {
+      "sha": "20f6d05bc6ca02aa02fa241291a088e90bb3b46e",
+      "author_time": "2025-08-28T16:42:42Z",
+      "committer_time": "2025-08-28T16:42:42Z",
+      "message": "Add gw2 data"
+    },
+    {
+      "sha": "e930bb766ff82d6dff6a47f40eefd4e65bba29ef",
+      "author_time": "2025-08-20T07:59:03Z",
+      "committer_time": "2025-08-20T07:59:03Z",
+      "message": "update gw1 data (#208)"
+    },
+    {
+      "sha": "46277afda009b340e738336dabc4b0822dd80c57",
+      "author_time": "2025-08-01T08:49:42Z",
+      "committer_time": "2025-08-01T08:49:42Z",
+      "message": "Add 1st update for 2025-26"
+    }
+  ]
+}

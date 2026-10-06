@@ -1,0 +1,1150 @@
+[
+  {
+    "path": "snapshots/2022-23_2953bc6043839abf70f3d28dc14d4f3f616ee6a9.csv.gz",
+    "source_sha256": "0123bb4e188f3b8f40e9f76f06e8492ced23864a5108b1460e3388d4cbd4a941",
+    "stored_sha256": "ba7798f05f5a4af9aa3600e5f83e168b63edcbdb086386f2c7e556908db8e358",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_2e8ddfdb7ef963e16992f747eac31d374bf30e36.csv.gz",
+    "source_sha256": "7332e5bf0ad926038da6b75e35e4b5f8536f300506ce6454b33ab1787f931a54",
+    "stored_sha256": "f271c9b52228038b231272d0d37957191ece639c7a2c8fcef1ed7fc37c6b38f9",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_359e5f05bd3ea8a2684b0e9d7fe5e20335510fd4.csv.gz",
+    "source_sha256": "5577ec00c5e10e432720fd3bc82d28193b2645ab7972e1ecf9f294a79b4de08f",
+    "stored_sha256": "3c0858567d0140fac76d40ef01a338fd8bd65546d33d82c7142bd8c51237093a",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_3b85ad4365ce1b50c213dd40a55b17c8651217bf.csv.gz",
+    "source_sha256": "e3ba21862c00c494a7c313bd46687ce0d3aef16e2de9e6e072a0283be7b5e6a3",
+    "stored_sha256": "d42854f9d74f0ebd9fcfcf1dd73d3fbc555600ea255a18e98a5ba5a2938cf339",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_44f7022ac12c6d6d72dcd26939f3757a9ee8c6d6.csv.gz",
+    "source_sha256": "31db883f6beccb6420169bb7eb5b3470af6ee65b6b9ba05b1a2105315f6d05cb",
+    "stored_sha256": "a8ce30cca286106d6dea62a63af9cd99ef294d5707740b7db51d99e094638816",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_47060398d6ca01a7105dedbad3f167e7df3199d0.csv.gz",
+    "source_sha256": "cee8914065a847ff3f05f2152be0b2d22bdcc87707a500951314ce4f003e88cd",
+    "stored_sha256": "fb13f94dd25667e71151ba6a89aaf0a1814dab562601e1f3745979fa618fd704",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_4e199d6bb3ace61fd390a9d63e6a5f81d96094c7.csv.gz",
+    "source_sha256": "3303384219e5ee612bdd85ac5b13a8610def3ec21395d6fdfed3da7ad22f7014",
+    "stored_sha256": "f20a266e27899155fc8ceac2ef079b268777ce429f25dc2ce42d11096769e10e",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_611f2f64be2d3d3907350066893f263221b98a9e.csv.gz",
+    "source_sha256": "2b2c79e8d82ab4efe5b4875664710c80188564a819bc71a55cb55043afdb108f",
+    "stored_sha256": "4ba79edb7d241b2e846fc0b05fb938d63c99f4fbc59a80825a94fff91baa6c96",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_6179a68da099454cd16981b0454a869243dd1095.csv.gz",
+    "source_sha256": "ce44f5c5b39ee3cb6aa6937462a7fa5f95fb12eebc20f9fa4ea721bf45441553",
+    "stored_sha256": "b6e1b04cf6eaca6e8ffc01fb4b7580db4fdae8d07ddec56035fa4085703e56e8",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_6809bd41a7cf3054841731b326a6561fb9416d85.csv.gz",
+    "source_sha256": "d1cf8ed30eda7bb31e3843abd1d6efb0835f59403a60a5886a9a08a2c3c82a3f",
+    "stored_sha256": "71b909225006031caca89ea9204fa68f203bae74b6c6f2a197bd8f52b54e254b",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_831eda88132385f23b6fb5cdc3ef281ba394fbbb.csv.gz",
+    "source_sha256": "54448108a5ccad2f2e8a986ee3feb93be8f3c0b1b89b04ef5f64eb0f67ed4d8e",
+    "stored_sha256": "6c529a3baf9701b3fc65d198fc687724dfeba54c1085373020b33909a19addd9",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_8617b6de1f311eb850dac19628a22a5a3f52edf7.csv.gz",
+    "source_sha256": "a296fd7d985bcf5e3f34770b50b4dfa16b556f334a2a08f6b4bbf032a1890b9c",
+    "stored_sha256": "94c3d0409a4d1400db6f5083d89db0e122f9b473fc7a1c2bb2c88dec688841e7",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_89bbf41521ea689f7e4544cafdb5537d931a643f.csv.gz",
+    "source_sha256": "448c380b96744bdfe39428b6cddb26f6bf6d607563d5e39e4c46fa1b6e69d2f5",
+    "stored_sha256": "68ccf2fdd1e729de3de0999f317228f2b65e48d403ae9ad3a925591c2b9f0743",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_92f81c3063ae2ae361daecc81fa51f909dd109a9.csv.gz",
+    "source_sha256": "c9cefdbff30d6cfeb529948f0edbfc4a3c7ed9c1f156f42aa624503e3947c818",
+    "stored_sha256": "2a21128b9c003ccad3003b027934a7a36578e2f60ddf790feac991b6da0a9489",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_9900f03ec09be9f8f647911889d72e3bd90de21a.csv.gz",
+    "source_sha256": "d99fc2bca330190138b062d1984e1ee25695cf06f6176ba0d1faf7653d5e4934",
+    "stored_sha256": "78025af36ff7955242519a195526987c7a4479222eb093e1cdf6616f58686773",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_9f3c8b124eec9a64ed2466092430c65dcc747659.csv.gz",
+    "source_sha256": "33df691039dd18727f6b1e0d74324fa37957ee792c271bd00e4b6864328f41ba",
+    "stored_sha256": "f271c9b52228038b231272d0d37957191ece639c7a2c8fcef1ed7fc37c6b38f9",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_a5b40704eea0be9b3148e267c64ec547413f0c87.csv.gz",
+    "source_sha256": "716412f401c31bde552a8f18361041742f850d94674c3688115b68d56deb6b21",
+    "stored_sha256": "3c0858567d0140fac76d40ef01a338fd8bd65546d33d82c7142bd8c51237093a",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_a92325991775e9af3dbe359823a1ecfcccac6444.csv.gz",
+    "source_sha256": "1133d689bfe552976aa1002d4bb12176c0b1a2e2bd63b0d6a484d594be5150f7",
+    "stored_sha256": "ba7798f05f5a4af9aa3600e5f83e168b63edcbdb086386f2c7e556908db8e358",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_abc41d469cc4cfc38649fcbee667ccd71e76a669.csv.gz",
+    "source_sha256": "55d273a1b70cf45736bb694a4d01b3bc3ccf5df3e204ed5b62b76726bf24e634",
+    "stored_sha256": "21ac697d342708cffa4bd46b6398ea1b65f1e0f3abfa58110147831fc1c05468",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_b2543a40b7df4692ea61dd0169b07c07c77a5bda.csv.gz",
+    "source_sha256": "02a5ba15956172bc448b766fa89a7486573e278ec347b1babbc99838a88e5489",
+    "stored_sha256": "0e858d2b3495d19a64b2662e8a1cb33a3d5eed8a1badd42773eb3789d3af6a34",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_be279f791fd0bfbcbeddf2006cab5b60fd69067f.csv.gz",
+    "source_sha256": "72910438f0589ac07c8b0e992859615a51bcc2626aa977db2fc6d3706a044fa6",
+    "stored_sha256": "1d62fbbfa1f9a545b3634c604b5ba84b80d3b59ddde0d6db754e66c3ce3c616f",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_c523018c7df2cc2a2f9bd59e8b570ea9431a73a1.csv.gz",
+    "source_sha256": "b93eb2699dbe54c6a4df473482439b7e043741869af08fa7ec6ce6897de2cbc3",
+    "stored_sha256": "94c3d0409a4d1400db6f5083d89db0e122f9b473fc7a1c2bb2c88dec688841e7",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_d6c561b1b1a38b0426ce978346c44d66c54eb4e1.csv.gz",
+    "source_sha256": "68684ef1848c81eaabe401842a808b5c1ccebc1e09a28ed1ce75be6ca508549e",
+    "stored_sha256": "94c3d0409a4d1400db6f5083d89db0e122f9b473fc7a1c2bb2c88dec688841e7",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_da266ffa5eacf9f3f9d70aedc2a2ee85c7309d46.csv.gz",
+    "source_sha256": "6fe918220be52cf0abc90d172b0a75a97e6ece45529585b904a579735483ee5d",
+    "stored_sha256": "71b909225006031caca89ea9204fa68f203bae74b6c6f2a197bd8f52b54e254b",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_eb2cccb95b2262e12a050d4eaa66139e2a2bbad1.csv.gz",
+    "source_sha256": "3804df52624410e100e92efd5858f59906338c6a14d2379c67dc2e1451140c3b",
+    "stored_sha256": "78eadb1d0991a00c8c2159454266adcb4367329d38d26917ec553e239d326070",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_ef6ff5b77e25fd0a5e7bae400b9e649fa0304954.csv.gz",
+    "source_sha256": "0e7a852116e75f0795d2911fbce9042073cc09de3d4031ca2467d2f48f29d587",
+    "stored_sha256": "f271c9b52228038b231272d0d37957191ece639c7a2c8fcef1ed7fc37c6b38f9",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2022-23_f61864c5114d6b1cb58ee6c4a28342d760be452a.csv.gz",
+    "source_sha256": "6569d75606a75c286f7fe566d72ec6e2ae6e62689a2f480c317aa48cc5233cd0",
+    "stored_sha256": "d42854f9d74f0ebd9fcfcf1dd73d3fbc555600ea255a18e98a5ba5a2938cf339",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_028f925c32fabb34798e416c569070d0cae329a2.csv.gz",
+    "source_sha256": "c3126aa8a52413170b3d0629235d3bc84cb394f8cff7c516da56c36c61785c3b",
+    "stored_sha256": "b3fe7d608fe9e7aa119739121f5966dc3112eb6051a6555e0e681db81ede86ed",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_15783a5630abadb309ff4c3edbb3dc32e6a2b426.csv.gz",
+    "source_sha256": "12234149191fde12d8aa0bc45b5ff19ef4028ade7b31ebcfbbbd6deeb8b41758",
+    "stored_sha256": "f63d4bebf7a2d5548367c9dd09389ee6e6b58da7b8e28baf714d8c70ff966250",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_2981ebc1630d6e0211c5847731c8fb79cecba785.csv.gz",
+    "source_sha256": "997ae360a5cdf6ae03b6acc628bbe6576b978dfa663a77f1451b8f8f51f3592b",
+    "stored_sha256": "aa936b1142beea767adec89e01725725ec602cffac26713c3ac0417360ab3e56",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_32184fc221871431d8215c5dc8385af0eda7bdde.csv.gz",
+    "source_sha256": "9c6d9430f378aa78cac4032dbe6714355431b51dd59a6c2418bf04095b7f713a",
+    "stored_sha256": "b0a3d321f8c70de6ffbd94b372668d59411cc7e3cc5c0fc810aa1ac3633e2c7e",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_392588ec1664432358f9481b81c3a8c1d53a60a3.csv.gz",
+    "source_sha256": "d4e0453cb9467e3cdbdbb8317ca6704766e62dff5b1e82e00a56fc04c9ae7185",
+    "stored_sha256": "b3fe7d608fe9e7aa119739121f5966dc3112eb6051a6555e0e681db81ede86ed",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_436f1ff2d306783d3e3892dc3d3ce21712cbc08e.csv.gz",
+    "source_sha256": "0f0f380b8ac935c9a3c2f97235172759fcd4d4c60d5488ea85bd206aaf730da3",
+    "stored_sha256": "f535238465aceb40882702f66531363a0a4d055917dd2c2ca48e44b3d2c6cab0",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_446af195d2ee324a1217f34a5a2b591189efc983.csv.gz",
+    "source_sha256": "e1c58b7ca6f5fcdf5def49c844838b9a33e76ca5998e96c1ebade9a55f599d8e",
+    "stored_sha256": "674c0910d759122c7adf75c2b9ad1fc4a443e7c6a9cb5bbb5bd7759b1c09691a",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_4e6447daccfb053a496e4aebd37d264dfa949676.csv.gz",
+    "source_sha256": "843c6d5d5743eb683808b971d23c80212ba45ed99277b258a10cce813e455f13",
+    "stored_sha256": "4f36d2dd6c68c5975efe628970b8e591a35acbcf3e8d4be18888a60b4ab84b76",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_546143eb5d0ae6d250e074374152e8be4b15719b.csv.gz",
+    "source_sha256": "fbfd0780fd97b29fee22e35a3e826270200ab7f051654ea0f52bcea831c7025b",
+    "stored_sha256": "d10bb951aa20a76597448c72f238a1dcf7af33b7aacff80b55ef7f8aa20f5b5e",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_5f49140e78b2052634abae57ce15e40f41dc32f7.csv.gz",
+    "source_sha256": "95c991173deaf166379c1bc05a26d11835967f2d8fdb40ec44f22001776af32b",
+    "stored_sha256": "0b5917e9922dd99e9f702b0cd9477ece4b6a6dfcc96b3d2f8261a22a2da966b5",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_62f7b7c0b2d897834613475b15d6dc3301f13e70.csv.gz",
+    "source_sha256": "c28c7c2435dbb2fb724a264c4855da92151cb86de4b2dffaa9c03e4ee89adc88",
+    "stored_sha256": "6d33e296ff55f85ebc7da301076279ce964c170b568a6849ce117168bc1a63a9",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_6f1e864e5a5bb58a0ad92a257e86df7a7d4816db.csv.gz",
+    "source_sha256": "44bf7e9db3ecf89809aa748cb411090f2efa1829b7192bd98a476431f0f64c1c",
+    "stored_sha256": "aa936b1142beea767adec89e01725725ec602cffac26713c3ac0417360ab3e56",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_73cf14c852c5bbafde20ba11ebc5acd6eff965aa.csv.gz",
+    "source_sha256": "741afeb2ee33113ea3aaa0f22fb04c664a997f986b4d57e3b5cf730f1b1e0278",
+    "stored_sha256": "47977f9395e58b6620416f84d95c6e68726f92e89c04edf4e749a3a658eb9455",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_8b05861fb33ee89bae34c2b6d06564449a5885db.csv.gz",
+    "source_sha256": "1dcc0fd05aaa43b93cb3136e8907d4a6aec653ed1214abd90da370e283aa3dac",
+    "stored_sha256": "9b5711a4da8adc9773c510d53f517f6bf0fce3f8e7d0b1a4c1c6b98dcec9993d",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_96fbc38ee6e36e3a7250081a787b65a1a27c944d.csv.gz",
+    "source_sha256": "07b88250be0903a76b6334a7db56b9d9c148fc4a301c5e2338ce2c27dd01f367",
+    "stored_sha256": "9b5711a4da8adc9773c510d53f517f6bf0fce3f8e7d0b1a4c1c6b98dcec9993d",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_acee0e28f8b201062270d709a7d72e4787680872.csv.gz",
+    "source_sha256": "bd1d618c7a7436d4d4222189d7a66f93dd292e98f36ec5cff4c1d0ca45e6eed7",
+    "stored_sha256": "b3fe7d608fe9e7aa119739121f5966dc3112eb6051a6555e0e681db81ede86ed",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_b0ec80fec6916117225a6fbee11c35d8773c6f94.csv.gz",
+    "source_sha256": "aa54dff9b9bf48d3db40376c39e84fe9b96d356bd2ed930811203b4df7fac508",
+    "stored_sha256": "6c28c80a74b9e83ba2d7693586c8798f56999680ef53842d907a3a38f8e8134b",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_b9122f8c98f10a8217e5fb67bc4de447f6c685d5.csv.gz",
+    "source_sha256": "d3903d8296c17e4706442eefac97c8993e9e1a6f46f9f03ce42575375f3833bc",
+    "stored_sha256": "9b5711a4da8adc9773c510d53f517f6bf0fce3f8e7d0b1a4c1c6b98dcec9993d",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_c4f66ee30ef026bb7e8b7184b2427f9708c77d74.csv.gz",
+    "source_sha256": "c9f99615ca61bba4a8306f88131119b5539bb0862fee3178e54501111498f8f1",
+    "stored_sha256": "b3fe7d608fe9e7aa119739121f5966dc3112eb6051a6555e0e681db81ede86ed",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_cbf39345fdfa826870e37b1b2c777b543fed56d2.csv.gz",
+    "source_sha256": "245c43105abdfc7096d7e89f5eda603d281eab54fc92563cd02bbdc0cb45998e",
+    "stored_sha256": "15abf5fea11016b0d28267aafca20201ea7de023f9cffc12af3c65232513ba46",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_d7e0beda3436c5051116e1aeef652e96119ebf92.csv.gz",
+    "source_sha256": "0d503de5d4188f5da43eb2df3085bd9eb3c4e00ec9cca60884fa3fcbd2ef5eed",
+    "stored_sha256": "36783753a55c35e61fe824988638581024610a006b06ecd0bcd5507314706bfa",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_d8a6fc58722beaa625195de9d51a0333dcb46439.csv.gz",
+    "source_sha256": "c13feab86ca123d646a7ea287e727e184d81d0da71ed6087dbd2bf2717fce3d4",
+    "stored_sha256": "f63d4bebf7a2d5548367c9dd09389ee6e6b58da7b8e28baf714d8c70ff966250",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_e92d9881f2ef025a7a1093e47fdf02d9aa2f8655.csv.gz",
+    "source_sha256": "08d3c03c92c160765d1ff2b71cb8bc86fc45a1a72dfca06a08ed6988ec5764fa",
+    "stored_sha256": "b3fe7d608fe9e7aa119739121f5966dc3112eb6051a6555e0e681db81ede86ed",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2023-24_f061aafa88a921dd70fd2b0f72b8020889d8e589.csv.gz",
+    "source_sha256": "8b3849fcba1d4bc09dc259269c7ae35a74e9f3546e67833fe2635ffdc2c4be95",
+    "stored_sha256": "47977f9395e58b6620416f84d95c6e68726f92e89c04edf4e749a3a658eb9455",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_0f5da695398c293dca037c36c703fce88a161195.csv.gz",
+    "source_sha256": "50fe8bfc27a5951a6747b27518f7bb4c2e83a1132e6f24f2715c568a6d78f537",
+    "stored_sha256": "07420d258e70e819b01135e8c0d8b8db4363982911867d4c4be14976cc56b6bd",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_2840028eaea97d5255e96620ad2e06942cc8fe90.csv.gz",
+    "source_sha256": "be8fab2171fa14a65cd9aa51c3173e31a2cdb83b90d6a984f9e808e181889976",
+    "stored_sha256": "f650a5e63d98bf10177f873aeb24397e88df11312e0149873e7ce76268864794",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_29e6c2f4590b1a03f218552ca676b9495539cfdc.csv.gz",
+    "source_sha256": "b832431b1ce6ea8566a2793a4046960102a3e90f56c5ad2adb98b67ea70ba8d1",
+    "stored_sha256": "e8595174ca6af388f477e8ace1782da8728e7fd94f5fd6e4a0e038b7400e704a",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_3558a3310103f24e17f02d684479067a2de099c5.csv.gz",
+    "source_sha256": "8737b65fd424862d4997cf25a4228f65f274872134bbff47f0129f580abe6b9f",
+    "stored_sha256": "4de06a75c827b97665ee441b4075e47b46e7923f43e97f6ebb7fe002fd52e215",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_3c76203d2997a89f0735d2591e76e7c849a2f491.csv.gz",
+    "source_sha256": "fe2e470622abc671dd53aba48a9f8018447b30a3007f74fc3d846824d258bbe4",
+    "stored_sha256": "17e6ab12a05bab13584f54129d0d3df1b1dd0b8c8610cc1153923fbdba2e4063",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_57caf7e165ba47b48de9f307785aac79cb03b8af.csv.gz",
+    "source_sha256": "a403444f3e58545319b0abeaeccd32617a7ca33799c015353264eb0c9d1141b5",
+    "stored_sha256": "17e6ab12a05bab13584f54129d0d3df1b1dd0b8c8610cc1153923fbdba2e4063",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_58de8250c856e3476d45557422b257a3659b2b26.csv.gz",
+    "source_sha256": "14d42571651825343df33cb197efc371090c562c8ff2d90699b7a93380d813c0",
+    "stored_sha256": "830cfe477edbe92f8559857ffd66b4377b2b3650655e63e1607bd8d7fd818b74",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_58e46cd9b9fe439d875ed56bd1a398c69b08b570.csv.gz",
+    "source_sha256": "8145dafb94f501220915cf4513973b5e0c56a02ebee75eeb5364dc3abe415fa7",
+    "stored_sha256": "873e1977682d2332033f87048b275c31e790d142510ccc80158a815117f658b8",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_651e9adea9e420416fdde96faf920de232383036.csv.gz",
+    "source_sha256": "b1bbb61d097cab69db6ab5282c29b77c3efe120e34b8f20fe955bb37a8940a42",
+    "stored_sha256": "df355e8e9ddd27289a04980fa8a859d1379812cfb405c0d1937cc6f22290471d",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_761d80463ce8b7a74e1e67f7763910b4c4e14a10.csv.gz",
+    "source_sha256": "153f8a1bc1e1a919fe3cda3847d4bcfc37935b1cc72b171a28590e066872b74a",
+    "stored_sha256": "2fdac86631c5ace68460d08d433dc0a57481b63a72b55b5283e1004bb9be7735",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_a0b8a68297efcf2a9b13b9e132a70913d590b246.csv.gz",
+    "source_sha256": "6919577fb9efa53608c1752834fa65b02c3a0046a0a1d318caf26f6a6d3d291e",
+    "stored_sha256": "63854e1e3de5a378763be0cbf5aa0078aed266be296b3e0022b4f8b01ee3ca05",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_a8fce2b6ef72a5f44639e2c0f9333e86c827db58.csv.gz",
+    "source_sha256": "4248fe90548ec0b00c2896cbd940a4c9a8e7035863bcd27847cd66a87346c708",
+    "stored_sha256": "2e714bfffe1b3bf45d24a781b822fc55348df03564dc143170f0cfd55ef05d89",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_b9618a5d9eebce9bc5ab0e6683bfb8fc420ac848.csv.gz",
+    "source_sha256": "241173b42629e232e7e783e8413049d6fba82f427577d74e95d325fd3b20b27b",
+    "stored_sha256": "4f9f332581d344f49588deac9ec62dc0167e695c619256d17098c71c7c027abb",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_bc76591d36196c0ef59b34db42d0167867686298.csv.gz",
+    "source_sha256": "d6e2e02a6fa0cf03427abd8d54ace2e4ca90ad4a337e1835e53a15c574a7d15e",
+    "stored_sha256": "df355e8e9ddd27289a04980fa8a859d1379812cfb405c0d1937cc6f22290471d",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_c56971db31bd27acbc0ec3a96bc00da7870d68a7.csv.gz",
+    "source_sha256": "5d0f8b6ca9d1ac9d266986a91ca738c28bed2ae37c33f987c5a49b24f701deb9",
+    "stored_sha256": "4e642afac044d360277e35b57dc8356582853ecab28c4b586cf2624a81eaff8c",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_c6f14b56fd810fcde3e9faec1c858c659142b99e.csv.gz",
+    "source_sha256": "b6658791a0fd92f16c3a7a51cc7a43057cae135ce01d31e22c3f8b1af84cb633",
+    "stored_sha256": "e8595174ca6af388f477e8ace1782da8728e7fd94f5fd6e4a0e038b7400e704a",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_c9a593826e077670fa300e825022b2979282d069.csv.gz",
+    "source_sha256": "57afd46cc82b1fca7bc4871d1a630c44b01bca8f6533839778d005ecee7e7669",
+    "stored_sha256": "4e642afac044d360277e35b57dc8356582853ecab28c4b586cf2624a81eaff8c",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_d0f7342e2f5f7176d507badb10ee2db76f564409.csv.gz",
+    "source_sha256": "41c5641890d15f164308ca40d37a0646d7fcf919f8fdf65458447fd61017f862",
+    "stored_sha256": "17e6ab12a05bab13584f54129d0d3df1b1dd0b8c8610cc1153923fbdba2e4063",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_dfdae0e489f8520228a4ffeae11fc70d6aef7804.csv.gz",
+    "source_sha256": "0b39c1cb195d161a0e22ec79836cb556f13cede3f8e2a63f14dd541665de591d",
+    "stored_sha256": "2345f269e258ab203ae5902fb0c9142ef9fe640d8090fed8661b3ea62e47984f",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_e3135daf0fcb706cc41f237e5c691517bd3432c1.csv.gz",
+    "source_sha256": "2dfa2617130c428d647ddf9549b071a9777dba20b1b2bfe94123652847a6eaf3",
+    "stored_sha256": "df355e8e9ddd27289a04980fa8a859d1379812cfb405c0d1937cc6f22290471d",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_e369a3a0943eb6c7cb240053c0e2827f91b57eaa.csv.gz",
+    "source_sha256": "3c4f9b9975504738fa370936e2cc1a728dc6d2a2cd6e3809d6e871ac3867fb1d",
+    "stored_sha256": "4e642afac044d360277e35b57dc8356582853ecab28c4b586cf2624a81eaff8c",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_e3a961c6b47342884268f59d6cb1730b3be194b2.csv.gz",
+    "source_sha256": "c8c15992d13f97cfd6f440a10ec94faaf314c9e6d2a820ac1026d76a431ad647",
+    "stored_sha256": "4de06a75c827b97665ee441b4075e47b46e7923f43e97f6ebb7fe002fd52e215",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_f42ed38d279afc705448ebc2b89e48838a0fdfba.csv.gz",
+    "source_sha256": "ecc0e4ca6acd938e8dd359039f934fe1378bd23776cdd84b09e2e1f99ebe0a23",
+    "stored_sha256": "17e6ab12a05bab13584f54129d0d3df1b1dd0b8c8610cc1153923fbdba2e4063",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2024-25_f89612e6799fb3f8c91939aed87a998078dfb4b6.csv.gz",
+    "source_sha256": "2f3fb93b0c0d6992006438833b2f5b9e5c79907bec6cb02b5b11ae7374e08024",
+    "stored_sha256": "0ecd302c168c028bfb6fb35b4d4f8a61dcfca3e3e9ed2a9d7c3ed1b2cdec1594",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2025-26_2c43a95002e0a3ec0700b725da76fdd5fefcd1a6.csv.gz",
+    "source_sha256": "6312c629796f176868d13f481e61b5578cb9491953e541fc8cdc47403facc170",
+    "stored_sha256": "4a8675a34ff639953c98064af41baf937af16487e46eea479af84e1862d9cf9b",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2025-26_45cb8d6210b4009c25980fb22426787902c5dac8.csv.gz",
+    "source_sha256": "62653dac52e44ec8c38614cbd594e9789c376edcb4d563e60d1b2e66e7ab5219",
+    "stored_sha256": "4dfb82a464c95ad1eeec91668a9b053b834f8f8db949f3322156d3b8861bc885",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2025-26_77ab48216404b0f49f55fa724c520af25b32ddae.csv.gz",
+    "source_sha256": "0e594a9423cfb3e001e0f3f4172629c42d44fed59463cef1de0bf7b635077298",
+    "stored_sha256": "bc3efa02afc8aa50541f353d365e1fac0878c5d8b669e642ddff2be023c1ced6",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2025-26_8db66f4fe0b8afc1a4bcf6aaee2255f56bfd29a4.csv.gz",
+    "source_sha256": "b079d82b1e6ef6b34a972fc5b27eeb3e07cae3004451423aa61789b4f115a714",
+    "stored_sha256": "c59c3ba15e04f0b04f2d4fe31bea7434b97898d6229362f8352bbec5827c9737",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2025-26_c0b610997ff299a1077f88ed09dc453ac5c00ebe.csv.gz",
+    "source_sha256": "13678540d8e49ee56d892389736035df25a9c9e189d97f2065fc783e076debe8",
+    "stored_sha256": "9a85b6f41676606a13385c6fd15de423a1066157f96b7085d00eb61a62aeef4c",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2025-26_cd74fdea7d792f816e96e9ada4551f443d0e82c9.csv.gz",
+    "source_sha256": "483dab3a3a73169bfa8e73664c4e670379b46d2176af01b64aa01e759dea30cc",
+    "stored_sha256": "c59c3ba15e04f0b04f2d4fe31bea7434b97898d6229362f8352bbec5827c9737",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  },
+  {
+    "path": "snapshots/2025-26_d8f2ea3f56d1e6c25cfc1ed2773fbd945241fb93.csv.gz",
+    "source_sha256": "ef5d395d07b61712dc45f32d79e38f9afa8b42be7b91b1739951004afa0d405d",
+    "stored_sha256": "aab7ac56dbf9b45abffd3feb5d9c744bc64b3cccce44e22109385dccf8f8f0e3",
+    "rows": 380,
+    "columns": [
+      "id",
+      "event",
+      "kickoff_time",
+      "team_h",
+      "team_a",
+      "provisional_start_time"
+    ]
+  }
+]

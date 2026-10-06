@@ -1,0 +1,13 @@
+{
+  "simulations": 16,
+  "decisions": 544,
+  "identical_benchmark_decisions": true,
+  "identical_current_forecasts": true,
+  "identical_opening": true,
+  "archived_hashes_verified": true,
+  "squad_and_accounting_checks": true,
+  "snapshots_strictly_before_cutoff": true,
+  "stale_snapshot_fallback_verified": true,
+  "nonoptimal": 0,
+  "max_solver_gap": 9.552708392397997e-06
+}

@@ -1,0 +1,5 @@
+mode,model,mean_points,gain,wins,low95,high95,mean_hits,mean_transfers,nonoptimal,max_gap
+fixed_chips,calendar_count_h3,2343.75,35.5,2,-14.75,107.25,18.0,75.5,0,8.350624532637141e-06
+fixed_chips,constant_h3,2308.25,0.0,0,0.0,0.0,25.0,77.5,0,8.350624532637141e-06
+no_chips,calendar_count_h3,2218.25,45.5,3,7.0,94.25,22.0,39.5,0,9.552708392397997e-06
+no_chips,constant_h3,2172.75,0.0,0,0.0,0.0,26.0,40.5,0,9.552708392397997e-06
