@@ -1,3 +1,11 @@
+# Aktivt neste spor: stabile poeng etter 2025/26-regler
+
+Brukeren har valgt `fixture_full_h3_adaptive_tc` som arbeidsbenchmark (2351,50). Se [manifest](../research/current/benchmark.json). Gjennomført nå: reproduserbar dekning-/poengkontroll og kildevurdering. Neste datapilot: verifiser hendelsesdekning i et kontrollert 2024/25-utvalg før full historisk omregning. [Protokoll, begrensninger og resultater](../research/current/rescoring_2025/README.md).
+
+Resten av dokumentet er historisk forsøkslogg; utsagn om daværende benchmark gjelder tidspunktet de ble skrevet.
+
+---
+
 > **Fullført 6. oktober 2026:** Kamp-/horisont-/chipforsøket er kjørt. 84 forløp, 2856 beslutninger. Beste observerte primærscore er 2351,50 for full H3 + adaptiv TC, men bare +7,75 mot kalenderkontrollen. Benchmarken beholdes. [Rapport](../research/current/fixture_strategy/README.md). Neste: kalender/frister og solverstabilitet, deretter tidligere-sesong-kalibrert chip-spareverdi. Planen nedenfor bevares som historisk protokoll.
 
 # Neste forsøk: kampvise prognoser og chipstrategi

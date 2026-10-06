@@ -1,8 +1,8 @@
 {
   "updated": "2026-10-06",
-  "status": "User selected constant_h3 as active benchmark; previous challengers retained as comparators; no production deployment",
-  "evidence_commit": "c9e3e6f30d36b1417f93ab1ab38ec0e424c71674",
-  "reference": "constant_h3: global learned HGB weight with three-round planning",
+  "status": "User selected fixture_full_h3_adaptive_tc as active research benchmark; no production deployment",
+  "evidence_commit": "9463d4f978c16041a2168a8e875ab26f941496f7",
+  "reference": "fixture_full_h3_adaptive_tc",
   "primary_challengers": [
     {
       "id": "re_refresh_h3",
@@ -30,17 +30,18 @@
   "retained_comparators": [
     "extra_refresh",
     "three_refresh",
-    "rich_refresh"
+    "rich_refresh",
+    "constant_h3",
+    "calendar_count_h3"
   ],
   "research_only": [
     "gate",
     "hybrid_hgb_h3",
     "calendar_count_h3",
     "fixture_full_h3",
-    "fixture_full_h3_adaptive_tc",
     "fixture_count_h8_no_chips"
   ],
-  "next_proposed_test": "Improve actual-deadline calendar coverage and long-horizon solver reliability; calibrate chip option values on earlier seasons before a locked prospective test.",
+  "next_proposed_test": "Versioned 2025/26 scoring: source coverage and verified 2024/25 event pilot; rerun benchmark on any new target.",
   "limitations": [
     "No untouched holdout",
     "Future neutral-fixture proxy",
@@ -116,6 +117,7 @@
       "Unchanged calendar gaps",
       "Solver time limits; two failed runs recovered",
       "Heuristic chip option values; no global-optimality claim"
-    ]
+    ],
+    "subsequent_decision": "User promoted full_h3/adaptive_triple_captain as fixture_full_h3_adaptive_tc on 2026-10-06"
   }
 }

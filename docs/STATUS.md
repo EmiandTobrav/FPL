@@ -12,7 +12,7 @@ Fullført 6. oktober 2026: **84 sesongforløp / 2856 beslutninger**, med åtte n
 - Ingen H5/H8-variant vinner med chips. H8 med ren kamptelling gir +13,75 uten chips mot H3, men har tidsbegrensede løsninger i 91 av 136 beslutninger.
 - To H8-forløp feilet først uten gjennomførbar solverløsning og ble gjenkjørt. Alle endelige løsningskall brukte 10 sekundersgrensen; betinget 60-sekundersfallback var ikke nødvendig. Ikke hevde at alle løsninger er optimale eller nøyaktig maskinreproduserbare.
 
-**Benchmarken beholdes.** Full H3/TC registreres kun som forskning. Kalenderdekningen er uendret; kommende arbeid bør prioritere tidsriktig kalender/frister, solverstabilitet ved lange planer og spareverdien til chips lært fra eldre sesonger. Fire tidligere brukte sesonger gir ingen urørt validering.
+**Etterfølgende brukerbeslutning:** Full H3 med adaptiv TC er nå arbeidsbenchmark (`fixture_full_h3_adaptive_tc`). Kalenderdekningen er uendret; kommende arbeid bør prioritere tidsriktig kalender/frister, solverstabilitet ved lange planer og spareverdien til chips lært fra eldre sesonger. Fire tidligere brukte sesonger gir ingen urørt validering.
 
 ## Mål og avklaringer
 
@@ -22,9 +22,11 @@ Kvantifisering av elite-managere var et tidligere spor. Brukeren gikk videre til
 
 ## Gjeldende arbeidsreferanse
 
-Brukeren har 6. oktober 2026 valgt **global, lært HGB-vekt med tre-rundersplanlegging (`constant_h3`)** som ny referanse/benchmark for videre forsøk. [Maskinlesbart benchmarkmanifest](../research/current/benchmark.json) låser modellregelen, evidens, kildehash og de åtte sesongsporene.
+Brukeren har valgt **full kampjustering H3 + adaptiv Triple Captain** (`fixture_full_h3_adaptive_tc`). [Benchmarkmanifest](../research/current/benchmark.json) låser kilder, prognoser og beslutningsspor. Primærscore er **2351,50**: 2343 / 2324 / 2487 / 2252 i 2022/23–2025/26. WC/FH/BB følger faste datoer. Samme prognose uten chips gir 2182,25 som separat diagnostikk.
 
-Primærmål: nettosesongpoeng med fast chipkalender. Benchmarken har **2308,25 poeng** i gjennomsnitt på 2022/23–2025/26; uten chips 2172,75. Nye kandidater skal vurderes mot denne på samme sesonger og ressurser. Den gamle `mix_ridge_extra_50` beholdes som historisk sekundærkontroll. Gamle protokoller, tabeller og differanser skal ikke skrives om; deres «referanse» betyr fortsatt den opprinnelige modellen. Dette er en arbeidsreferanse valgt etter observert primærscore, ikke en påstand om uavhengig bekreftet overlegenhet eller produksjonssetting.
+`constant_h3` (2308,25) er arkivert i `benchmarks/constant_h3_20261006.json`; den og `calendar_count_h3` (2343,75) beholdes som kontroller. Historiske rapporters referanser og konklusjoner står uendret. Dette er en brukerbestemt forskningsbenchmark, ikke uavhengig bekreftet overlegenhet eller produksjonssetting.
+
+Neste spor er [versjonerte 2025/26-poeng](../research/current/rescoring_2025/README.md). Datakontrollen gjenskaper 29 747 unike 2025/26-rader uten avvik, men bruker offisielle assists/BPS. Eldre sesonger mangler defensive tellinger og verifiserte nye assist-/BPS-etiketter. Full historisk omregning er derfor ikke ferdig. Nytt poenggrunnlag krever at benchmarken kjøres på nytt; 2351,50 er ikke direkte sammenlignbart.
 
 ## Historisk referanse og opprinnelig forsøk
 

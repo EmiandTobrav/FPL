@@ -1,0 +1,13 @@
+{
+  "target_season": "2025-26",
+  "unique_player_fixture_rows": 29747,
+  "fixtures": 380,
+  "active_player_fixture_rows": 11492,
+  "conflicting_duplicate_scoring_keys": 0,
+  "total_points_mismatches": 0,
+  "bonus_allocation_mismatches": 0,
+  "validated": "Same-season arithmetic using official stored assists and BPS; defensive points from recorded counts.",
+  "not_validated": "Historical new-rule assists or BPS reconstruction; provider equivalence; every rare rule branch.",
+  "historical_exact_rescoring_ready": false,
+  "blocker": "Pre-2025/26 archives lack defensive counts and verified target-rule assists/BPS."
+}

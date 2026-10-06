@@ -1,88 +1,111 @@
 {
-  "id": "constant_h3",
+  "id": "fixture_full_h3_adaptive_tc",
   "status": "Active research benchmark by user instruction; not a production deployment",
   "selected_on": "2026-10-06",
-  "evidence_commit": "60e8f613c16d069db5de2002aac3fb4c9d2eada7",
-  "forecast": "Chronologically learned global HGB weight between refreshed Ridge/Extra50 and refreshed rich HGB",
-  "decision": "Three-round rolling planner; same neutral-fixture proxy and inherited chip calendar",
-  "primary_metric": "Net full-season points with fixed chip calendar",
-  "secondary_metric": "No-chips diagnostic",
+  "evidence_commit": "9463d4f978c16041a2168a8e875ab26f941496f7",
+  "forecast": "Existing chronological global HGB/Ridge/Extra ensemble plus prior-season positional Ridge opponent attack/defence and venue adjustments for future fixtures",
+  "decision": "H3 rolling planner; adaptive Triple Captain, other chips on inherited fixed dates",
+  "primary_metric": "Net full-season points with adaptive Triple Captain and fixed WC/FH/BB",
+  "secondary_metric": "Same full_h3 forecast without any chips; diagnostic only",
   "evaluation_seasons": [
     "2022-23",
     "2023-24",
     "2024-25",
     "2025-26"
   ],
-  "mean_points_fixed_chips": 2308.25,
-  "mean_points_no_chips": 2172.75,
+  "mean_points_no_chips": 2182.25,
   "historical_reference_id": "mix_ridge_extra_50",
-  "historical_gain_fixed_chips": 70.0,
-  "historical_gain_no_chips": 23.75,
-  "results": "global_horizon/results/all_seasons.csv",
-  "report": "global_horizon/README.md",
-  "comparison_rule": "Future experiments report candidate minus constant_h3 on identical seasons, information and resources; retain frozen mix_ridge_extra_50 as secondary historical control. Preserve old experiment reference definitions. Benchmark algorithm, fitting rule and inputs are frozen; learned weights for new seasons use only earlier available labels. No tuning on evaluation outcomes.",
-  "uncertainty": "Working benchmark chosen by observed primary score; no untouched holdout and no claim of proven superiority",
+  "results": "fixture_strategy/results/all_seasons.csv",
+  "report": "fixture_strategy/README.md",
+  "comparison_rule": "Compare future candidates against fixture_full_h3_adaptive_tc on identical seasons, targets, opening, information and resources. Keep constant_h3 and calendar_count_h3 as frozen secondary controls. A changed scoring target requires rerunning this algorithm on the new target; 2351.5 is not transferable to a rescored dataset.",
+  "uncertainty": "User-selected research benchmark on reused seasons; small uncertain gain versus calendar control, no untouched holdout, incomplete historical calendar and solver time limits.",
   "season_scores": [
     {
       "season": "2022-23",
-      "mode": "fixed_chips",
-      "points38": 2334
+      "mode": "adaptive_triple_captain",
+      "points38": 2343
     },
     {
       "season": "2022-23",
       "mode": "no_chips",
-      "points38": 2285
+      "points38": 2235
     },
     {
       "season": "2023-24",
-      "mode": "fixed_chips",
-      "points38": 2171
+      "mode": "adaptive_triple_captain",
+      "points38": 2324
     },
     {
       "season": "2023-24",
       "mode": "no_chips",
-      "points38": 2172
+      "points38": 2223
     },
     {
       "season": "2024-25",
-      "mode": "fixed_chips",
-      "points38": 2490
+      "mode": "adaptive_triple_captain",
+      "points38": 2487
     },
     {
       "season": "2024-25",
       "mode": "no_chips",
-      "points38": 2253
+      "points38": 2266
     },
     {
       "season": "2025-26",
-      "mode": "fixed_chips",
-      "points38": 2238
+      "mode": "adaptive_triple_captain",
+      "points38": 2252
     },
     {
       "season": "2025-26",
       "mode": "no_chips",
-      "points38": 1981
+      "points38": 2005
     }
   ],
   "source_sha256": {
-    "global_horizon/run.py": "cf3a58949c25ced0e8b39d8f9df62a9d4e47925d6d38d2d480de30d52a78fa90",
+    "fixture_strategy/features.py": "bbf1fedf8650325ed61007e5d146232670568cdceeb554283b35f27c1763b731",
+    "fixture_strategy/build.py": "bb8504e8d9f6dc8ebe9b01d3db606c91d0263bec7fa5d3bf9bb29d053da6b33e",
+    "fixture_strategy/chips.py": "ea61ef384ff69f823b4acde6d4460b7000cc5c212ba005fc8d92f7e9a4033de4",
+    "fixture_strategy/protocol.json": "85e2fef53fb02640044092ceff0f83b78c15436440dad3aa90ac1f9429fcdc7e",
     "decision_specialist/planner.py": "120b3c4881a784cdb55753f21884e046282616684a2e189c670bccc15d2ca476",
     "decision_specialist/models.py": "50eb3be8e6f69dac04c76cdf266d23293422285f48bcb9cdfc06b030cf0044e2",
-    "decision_specialist/build.py": "d09847cdf0a56dadb07fd9529d510f93d1074ad9dcc3103e109f8db0b4e2cedb",
     "experiment.py": "1ac0213af9c5e60ca104ba0b81d7f0065a9292ab4215fcf3d16d26db80440c07",
     "project/season_simulator.py": "b8766aea9fa9194ba0affb451d07bb2532d2ed2067576d0fdc3ff5e869910843",
     "project/tuning_v3/decision.py": "af99688c48967449da4aad8bcf3480a261c2bb9c7c81cf5f62ac01e67f6ccb4a",
-    "decision_specialist/results/gate_coefficients.json": "df9f7fb61e900acf59b78f41f05f20c1bafff8c3aa63fa50a47ee6d5c04ee576",
-    "global_horizon/protocol.json": "dc6987f83a6263d0e641c065ec9c179fb631ab6ae85ecee93b1679b91d49dd50"
+    "project/tuning_v3/engine.py": "fd34da3cb3c6b9a6336df6d51871c380ff7852d98c977b3b2a0c5c75d8c91939",
+    "calendar_audit/selector.py": "431c1cd2746ce3df504f3b504bd292e0cb9499f4b6dfcb0500fd9327fa88c4d3",
+    "calendar_audit/selection.csv": "fdb856e36b38903075a9eb8a4bd2d07229509dbd8791849a0a659e6b54b4b935",
+    "fixture_strategy/results/coefficients.json": "c5d5ea0489f80566906692b4232202ea6ab172e595d8ed287c1486df0c876cde"
   },
   "trace_sha256": {
-    "global_horizon/results/trace_2022-23_constant_h3_fixed_chips.json.gz": "2b5f0221ec46311d199efe62da7bf414b3715519410460235d1b683205f0e553",
-    "global_horizon/results/trace_2022-23_constant_h3_no_chips.json.gz": "606ef4ad376671d0596fd197dbe55014605956ac7cfbb9bda0b2fc7d9a07b133",
-    "global_horizon/results/trace_2023-24_constant_h3_fixed_chips.json.gz": "d64c2ffb90c8dd8076fa1091494f14e34327aa56e21316a7516b05fdc59f85dd",
-    "global_horizon/results/trace_2023-24_constant_h3_no_chips.json.gz": "0010e4c97c44f34968a423dd3ba0fe8adeba31e6c305d068b412e1edc377bd5b",
-    "global_horizon/results/trace_2024-25_constant_h3_fixed_chips.json.gz": "9f3444741e86eec103163fec907401d722904a2e19d787d89676dabd0d999835",
-    "global_horizon/results/trace_2024-25_constant_h3_no_chips.json.gz": "6325585a12d8778bea1eef429c975b8a7a0b9d5d64196fa30dccc4bb345055b2",
-    "global_horizon/results/trace_2025-26_constant_h3_fixed_chips.json.gz": "2a3938d97036dfde2e2df7ead0efc20fce860826fc8392de82aa215c2d5a266f",
-    "global_horizon/results/trace_2025-26_constant_h3_no_chips.json.gz": "bf99bfab5848f78af749c6a9f95d8caa6c65d43f6481e674cd85c9f35542c053"
+    "fixture_strategy/results/trace_2022-23_full_h3_adaptive_triple_captain.json.gz": "b26a1c6b07ea3db36d54869784400fd798f3937545925aa25c6c4a5c3c43006c",
+    "fixture_strategy/results/trace_2023-24_full_h3_adaptive_triple_captain.json.gz": "ff765494cb623731968f8817b4553b727baba91d4609521e0c15679196743cbe",
+    "fixture_strategy/results/trace_2024-25_full_h3_adaptive_triple_captain.json.gz": "8b48a319b2d3130a44e573d469d2adb2ab0ad1dfa5bf8544e7c01750a8dea219",
+    "fixture_strategy/results/trace_2025-26_full_h3_adaptive_triple_captain.json.gz": "06d7923b478efc8fbae66c77cfa5c83fb2556ef36d83f12ca531737715eeb8bb"
+  },
+  "previous_benchmark_id": "constant_h3",
+  "previous_benchmark_manifest": "benchmarks/constant_h3_20261006.json",
+  "mean_points_primary": 2351.5,
+  "execution": {
+    "module": "fixture_strategy.chips",
+    "function": "run",
+    "task": [
+      "<season>",
+      "adaptive_triple_captain"
+    ],
+    "model_in_results": "full_h3",
+    "mode_in_results": "adaptive_triple_captain"
+  },
+  "scoring_basis": "Historical per-player points with newer squad/chip/transfer rules; NOT a complete 2025/26 rescoring",
+  "forecast_sha256": {
+    "fixture_strategy/results/forecast_2022-23.csv.gz": "c44a643e26b17843b6b1c92566b060e895ec886cb6190aefccfdfa5c61f7bc0b",
+    "fixture_strategy/results/forecast_2023-24.csv.gz": "d3ffcfc04e16ca310c6f2a4773a1dca9e766ed74ea32b763b796babf6fdc98a3",
+    "fixture_strategy/results/forecast_2024-25.csv.gz": "dcc334cc9c252a38fa94e9b902dcf82a7c626271bc27ce1ec65a3223513a94b7",
+    "fixture_strategy/results/forecast_2025-26.csv.gz": "f0bf1b5161198c28e6c387b6a265923c26e9313f6da32df11ba13c91b8a8f95b"
+  },
+  "portable_trace_sha256": {
+    "fixture_strategy/portable/trace_2022-23_full_h3_adaptive_triple_captain.json": "c439a4a8dabbecc6a53f4a2237bd0e51d4861f0613d47fabc8cf9e21a4c3f48a",
+    "fixture_strategy/portable/trace_2023-24_full_h3_adaptive_triple_captain.json": "1b0d15b1e05fd88d2d3d9f824f20f4af5b07c03bdcf63df9f25675a3431a8b94",
+    "fixture_strategy/portable/trace_2024-25_full_h3_adaptive_triple_captain.json": "eebddba313fed14720db60df5b660d5664b359006f8cc925e9b151594115505e",
+    "fixture_strategy/portable/trace_2025-26_full_h3_adaptive_triple_captain.json": "4e448f88e66afdd87156adc675ef579d4201513ad83f0ef7ad8d420d1870e3d1"
   }
 }

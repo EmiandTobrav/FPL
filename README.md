@@ -2,9 +2,11 @@
 
 Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid på tvers av enheter. Det samler mai-prosjektet og den nye start-/hovedmodelltesten. Ingen ZIP-utpakking er nødvendig.
 
-**Gjeldende arbeidsbenchmark:** global, lært HGB-vekt med tre-rundersplanlegging (`constant_h3`), valgt av brukeren 6. oktober 2026. Gjennomsnitt 2308,25 poeng med chips på 2022/23–2025/26. Nye forsøk måles mot denne; historiske tabeller beholder sine opprinnelige referanser. Se [benchmarkmanifestet](research/current/benchmark.json).
+**Gjeldende arbeidsbenchmark:** full kampjustering med H3 og adaptiv Triple Captain (`fixture_full_h3_adaptive_tc`), valgt av brukeren 6. oktober 2026. Gjennomsnitt **2351,50 poeng** på 2022/23–2025/26. Øvrige chips følger faste datoer. Dette er historiske spillerpoeng, ikke full 2025/26-omregning. Se [benchmarkmanifestet](research/current/benchmark.json).
 
 ## Start her
+
+- [Historisk omregning til 2025/26: datakontroll og kildevurdering](research/current/rescoring_2025/README.md)
 
 - [Status og neste steg](docs/STATUS.md)
 - [Kampjustering, H3/H5/H8 og adaptive chips: 84 nye forløp](research/current/fixture_strategy/README.md)
