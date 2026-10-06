@@ -1,0 +1,3 @@
+variant,rows,errors,agreement_pct,false_positive,false_negative
+shotblocks,1129,10,99.11426040744021,10,0
+allblocks,1129,44,96.10274579273693,44,0

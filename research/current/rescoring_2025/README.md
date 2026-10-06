@@ -2,6 +2,10 @@
 
 Datakontroll utført 6. oktober 2026. **Full historisk omregning er ikke ferdig.** Målet er eksplisitt 2025/26, uavhengig av hvilken sesong som er «inneværende» ved kjøring.
 
+## Fem eldre sesonger
+
+[2019/20–2023/24 er nå utvidet med foreløpige FBref-baserte defcon-etiketter](historical_fbref/README.md). Dekningen varierer, særlig 2021/22 har hull. Kilden er separat validert; manglende etiketter fylles ikke med null.
+
 ## Rekonstruksjon videreført
 
 [2024/25 med kvalitetsmerket defcon](defcon_2024/README.md) er ferdig: 1 253 utslag, 2 506 tilleggspoeng blant alle spillere. Historiske assists og bonus er foreløpig beholdt.

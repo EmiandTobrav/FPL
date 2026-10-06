@@ -2,6 +2,10 @@
 
 Oppdatert 6. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Historikken utvidet
+
+[FBref-arkivet](../research/current/rescoring_2025/historical_fbref/README.md) er hentet og foreløpige etiketter er bygget for 2019/20–2023/24. Aktiv utespillerdekning: 99,98 / 100 / 87,19 / 98,53 / 99,46 %. Ny kilde er kontrollert på 1129 rader fra 40 kamper i 2025/26: 99,11 % poengenighet når bare skuddblokkeringer brukes. Hull er manglende, ikke null; 32 motstridende FPL-nøkler fra 2019/20 er sperret. Kan brukes som kvalitetsmerket, delvis treningsgrunnlag; full sesongevaluering krever en eksplisitt plan for hullene. Ingen benchmarkendring eller kostnad.
+
 ## Nyeste datasett
 
 Brukeren godkjente videreføring av gratisdataene. [2024/25 med rekonstruert defcon](../research/current/rescoring_2025/defcon_2024/README.md) er nå bygget og lagret: 27 283 spiller-/kamprader, 380 kamper, null manglende aktive defcon-etiketter. 1 253 utslag / 2 506 tilleggspoeng i spillerpopulasjonen. Historiske assists og bonus er beholdt; ikke full 2025/26-omregning. Benchmark og modellresultater er uendret. Neste: separat forsøk med felles nytt poenggrunnlag og tidsriktig retrening.
