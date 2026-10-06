@@ -1,0 +1,13 @@
+{
+  "new_simulations": 32,
+  "candidate_simulations": 24,
+  "benchmark_reruns": 8,
+  "decisions": 1088,
+  "identical_benchmark_decisions": true,
+  "archived_benchmark_hashes_verified": true,
+  "identical_opening": true,
+  "accounting_and_squad_checks": true,
+  "nonoptimal": 0,
+  "max_solver_gap": 9.945853382536527e-06,
+  "max_rich_control_error": 1.7763568394002505e-15
+}

@@ -1,6 +1,51 @@
 # Posisjonsspesialisering mot constant_h3
 
-Forsøksrunde 6. oktober 2026. Sesongsimuleringene pågår. Protokoll og kode ble lagt i GitHub før simuleringene: `2bf91eff3581a487f998d64c42d5f0f5277fcf70`.
+Forsøksrunde 6. oktober 2026. **Fullført: ingen kandidat slår aktiv benchmark på primærmålet med chips.** Protokoll og kode ble lagt i GitHub før simuleringene: `2bf91eff3581a487f998d64c42d5f0f5277fcf70`.
+
+## Resultater
+
+Gjennomsnitt over de samme fire sesongene; gevinst er kandidat minus `constant_h3`.
+
+| Modell | Poeng med chips | Gevinst med chips | Seire med chips | Poeng uten chips | Gevinst uten chips |
+|---|---:|---:|---:|---:|---:|
+| Benchmark `constant_h3` | 2308,25 | 0 | — | 2172,75 | 0 |
+| Posisjonsvekter | 2265,75 | −42,50 | 0/4 | 2162,25 | −10,50 |
+| Posisjons-HGB | 2224,75 | −83,50 | 0/4 | 2134,50 | −38,25 |
+| Global/posisjons-HGB 50/50 | 2305,25 | −3,00 | 2/4 | 2226,00 | +53,25 |
+
+Sesongvise gevinster med chips:
+
+| Sesong | Posisjonsvekter | Posisjons-HGB | Hybrid |
+|---|---:|---:|---:|
+| 2022/23 | −7 | −102 | +28 |
+| 2023/24 | −66 | −11 | +90 |
+| 2024/25 | −92 | −65 | −19 |
+| 2025/26 | −5 | −156 | −111 |
+
+Hybridens beskrivende 95 % bootstrapintervall er **[−76,25; +62,75]** med chips. Uten chips er sesonggevinstene **−11, +172, +32, +20**, med intervall **[−0,25; +134,00]**. Den store gevinsten i 2023/24 trekker opp gjennomsnittet. Dette er ikke dokumentasjon på stabil overlegenhet uten chips.
+
+Posisjonsvekter har intervall [−79,00; −6,00] med chips; posisjons-HGB [−133,25; −33,75]. Begge taper i alle fire sesonger. Fullstendige sekundærtall finnes i [modellsammendraget](results/model_summary.csv).
+
+## Hva lærte vi?
+
+Dagens globale modell bruker allerede posisjonsindikatorer, pris × posisjon og posisjonsavhengige interaksjoner med hjemmebane, Elo, motstanderforsvar og eget angrep. Separate modeller tilfører derfor ikke en helt ny posisjonsinformasjon. De endrer hvordan informasjon deles og reduserer datagrunnlaget per modell. Vi har ikke isolert hvor mye av tapet som skyldes dette kontra modellkapasitet eller regulering.
+
+Posisjonsvektene gir litt bedre MSE for keepere, forsvarere og midtbanespillere, men taper likevel sesongpoeng. Hybridens topp-10-utbytte per posisjon endres med henholdsvis −0,0145, −0,0168, −0,0684 og +0,0084 poeng for GK/DEF/MID/FWD. Disse små, blandede forskjellene understreker at feil på hele spillerutvalget og sesonggevinst må vurderes separat. Diagnostikken er likt vektet over runder innen sesong og deretter over sesonger; den måler ikke faktisk kjøpte spillere alene.
+
+Hybridens gjennomsnittlige treffkostnad faller fra 25 til 22 med chips, men bruttopoengene faller 6: netto −3. Uten chips øker treffkostnaden fra 26 til 27, mens bruttopoengene øker 54,25: netto +53,25. Dette er regnskapsdekomponering, ikke en kontrollert forklaring på chipmekanismen.
+
+**Beslutning:** `constant_h3` beholdes som arbeidsbenchmark. Posisjonsvekter og ren posisjons-HGB videreføres ikke som primære utfordrere. Hybriden beholdes som forskningskandidat for regimet uten chips; ingen modell byttes ut fra sekundærmålet, og ingen posisjons-/sesongregel velges etter disse resultatene.
+
+Neste prioritet er fortsatt bedre tidsriktig kampkalender og tilgjengelighetsinformasjon, eller en låst prospektiv evaluering. Denne runden begrunner ikke et nytt historisk søk etter posisjonsvekter.
+
+## Kontroller
+
+- **32 nye forløp / 1088 beslutninger**, med samme åpning, beslutningsmotor og ressurser.
+- Alle **8 benchmarkforløp gjenskaper nøyaktig lag, startellever, benk, kaptein, visekaptein og poeng** fra arkivet. Arkivhashene er kontrollert mot benchmarkmanifestet.
+- Nytrent global HGB gjenskaper alle tidligere rundeprognoser; største forskjell **1,78 × 10⁻¹⁵**.
+- Alle solverkjøringer har optimal status innen toleransen; største gap **9,95 × 10⁻⁶**. Troppsposisjoner, maks tre per klubb, bank, FT og poengregnskap består kontrollene.
+- Fire posisjoner × ni retreninger × fire sesonger gir **144 posisjonsvise treninger**. Alle treningsutfall er tilgjengelige før aktuell frist. De 61 registrerte treningsinputfilene er uendret etter kjøring.
+- To nye tester og fem relevante eksisterende regresjonstester er utført direkte og består. `pytest` er ikke installert i dette kjøremiljøet; dette er ikke en full testkjøring eller verifisert GitHub CI.
 
 ## Avgrensning
 

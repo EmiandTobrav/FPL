@@ -7,6 +7,7 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)
+- [Posisjonsspesialisering: 32 nye forløp, benchmarken beholdes](research/current/position_specialist/README.md)
 - [Global HGB-vekt med H3: kombinasjonstest, 16 nye forløp](research/current/global_horizon/README.md)
 - [Aktive utfordrere](research/current/challengers.json) og [utført kombinasjonsforsøk](docs/NEXT_EXPERIMENT.md)
 - [Tre-rundersplanlegging og lært HGB-blanding: 88 nye forløp](research/current/decision_specialist/README.md)

@@ -33,9 +33,10 @@
     "rich_refresh"
   ],
   "research_only": [
-    "gate"
+    "gate",
+    "hybrid_hgb_h3"
   ],
-  "next_proposed_test": "Combination test completed in global_horizon; prioritize point-in-time data, deterministic ties and prospective evaluation",
+  "next_proposed_test": "Position-specialist test completed; prioritize point-in-time fixture/availability data and locked prospective evaluation; no post-hoc position-weight search",
   "limitations": [
     "No untouched holdout",
     "Future neutral-fixture proxy",
@@ -54,5 +55,20 @@
     "subsequent_decision": "constant_h3 selected by user as working benchmark on 2026-10-06 despite uncertain incremental benefit"
   },
   "legacy_reference": "Original frozen mix_ridge_extra_50 with original single-round engine",
-  "benchmark_manifest": "benchmark.json"
+  "benchmark_manifest": "benchmark.json",
+  "last_position_test": {
+    "report": "position_specialist/README.md",
+    "protocol_commit": "2bf91eff3581a487f998d64c42d5f0f5277fcf70",
+    "comparison_reference_id": "constant_h3",
+    "seasons": 4,
+    "status": "Completed; no primary winner; benchmark unchanged",
+    "gains_fixed_chips": {
+      "pos_weight_h3": -42.5,
+      "pos_hgb_h3": -83.5,
+      "hybrid_hgb_h3": -3.0
+    },
+    "hybrid_gain_no_chips": 53.25,
+    "hybrid_no_chips_low95": -0.25,
+    "hybrid_no_chips_high95": 134.0
+  }
 }

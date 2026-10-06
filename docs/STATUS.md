@@ -36,9 +36,15 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 Brukeren bekreftet 6. oktober 2026 at `re_refresh_h3` og `constant` skal videreføres som aktive utfordrere. Reglene og evidensen er registrert i [challengers.json](../research/current/challengers.json). Den opprinnelige referansen beholdes som historisk kontroll. [Kombinasjonsforsøket](NEXT_EXPERIMENT.md) er nå fullført med 16 nye forløp. Kombinasjonen har +70,0 med chips mot referansen, men ustabil tilleggsverdi over global H1; brukeren har deretter valgt den som ny arbeidsbenchmark.
 
+## Siste forsøk: posisjonsspesialisering
+
+Fullført 6. oktober 2026: **32 nye forløp** mot `constant_h3` på 2022/23–2025/26. Posisjonsbestemte blandingsvekter gir −42,50 poeng med chips; egne posisjons-HGB gir −83,50; global/posisjons-HGB 50/50 gir −3,00. De to første taper alle fire sesonger. Hybriden har +53,25 uten chips, men bredt intervall [−0,25; +134,00] og en stor gevinst i 2023/24. Benchmarken beholdes. Hybriden lagres som forskningskandidat for uten-chips-regimet, ikke ny primær utfordrer.
+
+Alle åtte benchmarkforløp gjenskaper nøyaktig beslutninger og poeng. 1088 beslutninger er kontrollert; syv målrettede tester består ved direkte kjøring. [Rapport og kontroller](../research/current/position_specialist/README.md), [sesongresultater](../research/current/position_specialist/results/all_seasons.csv). Ingen urørt holdout eller ny produksjonsmodell.
+
 ## Prioritert neste arbeid
 
-Oppdatert etter kombinasjonstesten:
+Oppdatert etter posisjonstesten:
 
 1. Bruk `constant_h3` som ny arbeidsbenchmark for alle kommende forsøk, i tråd med brukerens beslutning. Behold `re_refresh_h3`, `constant` og den gamle frosne referansen som kontroller. Rapporter gevinst mot ny benchmark på samme evalueringssesonger; ingen omskriving av historiske resultater.
 2. Prioriter før-frist-kalender/tilgjengelighetsdata og en låst prospektiv evaluering. Flere historiske vekt-/horisontsøk gir ikke en urørt bekreftelse.
