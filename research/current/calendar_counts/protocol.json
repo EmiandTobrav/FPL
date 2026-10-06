@@ -1,0 +1,13 @@
+{
+  "locked": "2026-10-06, after calendar coverage audit and before candidate season outcomes",
+  "benchmark": "constant_h3",
+  "candidate": "calendar_count_h3",
+  "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"],
+  "change": "Keep current-round forecast identical. Multiply each existing future per-round proxy by number of team fixtures assigned to that future GW in the latest archived calendar strictly before current cutoff. No opponent, venue, model, horizon, chip calendar or optimizer change.",
+  "snapshot_selection": "Latest max(author_time, committer_time) strictly before inherited benchmark cutoff. Maximum age14days; otherwise preserve benchmark proxy. Commit timestamp is a practical archive-availability proxy, not independently attested first publication time.",
+  "validation": "380 unique fixture IDs, 20 teams, 38 appearances per team. Read calendar-only stored columns; never outcome/score fields. Unknown event assignments remain unassigned. Zero assigned fixtures means zero scheduled now, not certainty against later rearrangement.",
+  "control": "Rerun all8 constant_h3 controls; exact forecast, decision and score parity required.",
+  "scope": "8 candidate plus8 control runs; fixed chips primary, no chips secondary. Same four evaluation seasons, opening and resources. No threshold or chip-date tuning.",
+  "limits": "Weekly/irregular archive may miss recent announcements even under14days. Poor2025-26 coverage. Existing current-round fixture and cutoff proxies remain shared with benchmark; this is not a fully reconstructed historical FPL environment. End-season schedules used only in separate data audit, not candidate forecasts.",
+  "report": "Full-season paired gains, per-season differences, hits, 50000 bootstrap resamples seed173; coverage and archive mismatch diagnostics. No automatic benchmark promotion."
+}
