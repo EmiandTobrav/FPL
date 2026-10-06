@@ -2,6 +2,10 @@
 
 Oppdatert 6. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Nyeste kildefunn
+
+FPL-Core-Insights 2024/25 er hentet: 38 CSV-er, 380 kamper, 562 spillere og 11 567 spiller-/kamprader med defensive tellinger. Alle 11 566 FPL-rader med spilletid kan kobles diagnostisk; minutt-/mål-/assistavvik og manglende BPS-detaljer er dokumentert. [Rapport og reproduserbar kontroll](../research/current/rescoring_2025/core_2024/README.md). Neste: valider defensive definisjoner mot offisiell 2025/26, før ny poengfasit. Benchmark uendret.
+
 ## Nyeste forsøksrunde: kampjustering, horisonter og chips
 
 Fullført 6. oktober 2026: **84 sesongforløp / 2856 beslutninger**, med åtte nøyaktig gjenskapte kalenderkontroller. [Full rapport](../research/current/fixture_strategy/README.md).

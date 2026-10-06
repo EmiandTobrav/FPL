@@ -1,0 +1,39 @@
+{
+  "source": "https://github.com/olbauday/FPL-Core-Insights",
+  "source_tree": "1c9191ab6b0c191378ea27f257fdab2bae63caba",
+  "season": "2024-25",
+  "files": 38,
+  "rows": 11567,
+  "matches": 380,
+  "players": 562,
+  "duplicate_player_match_keys": 0,
+  "null_cells": 0,
+  "defensive_fields": [
+    "tackles",
+    "tackles_won",
+    "interceptions",
+    "recoveries",
+    "blocks",
+    "clearances",
+    "penalties_scored"
+  ],
+  "rows_per_match_min": 26,
+  "rows_per_match_max": 34,
+  "official_active_rows": 11566,
+  "diagnostic_join": {
+    "both": 11566,
+    "left_only": 1,
+    "right_only": 0
+  },
+  "matched_minutes_disagreements": 2942,
+  "matched_goal_disagreements": 1,
+  "matched_assist_disagreements": 169,
+  "exact_defcon_verified": false,
+  "exact_target_bps_ready": false,
+  "missing_explicit_fields": [
+    "saved_shot_location",
+    "goalline_clearances",
+    "target_rule_assists"
+  ],
+  "note": "Non-null columns do not establish semantic completeness. Tackles and blocks require FPL-equivalence validation; assists definitions differ. Do not use as exact historical test labels yet."
+}

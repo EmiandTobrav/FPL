@@ -2,6 +2,10 @@
 
 Datakontroll utført 6. oktober 2026. **Full historisk omregning er ikke ferdig.** Målet er eksplisitt 2025/26, uavhengig av hvilken sesong som er «inneværende» ved kjøring.
 
+## Nytt kildefunn
+
+[Kampvise 2024/25-data er nå hentet og kontrollert](core_2024/README.md): 380 kamper og 11 567 rader med defensive tellinger. Dette avhjelper manglene i vårt opprinnelige FPL-arkiv, men definisjonene og ny-regel-BPS er ennå ikke verifisert.
+
 ## Verifisert nå
 
 Kjør `python research/current/rescoring_2025/audit.py` fra repositoryets rot etter `scripts/prepare_data.py`.
