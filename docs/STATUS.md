@@ -45,3 +45,8 @@ Historiske poeng, moderne chips/FT-regler; priser er laggede proxyer; skader og 
 ## Siste verifikasjon
 
 156 tester bestått etter klargjøring (152 eksisterende funksjonstester, reparert mappestrukturtest og tre nye forskningstester). 367 deprecation/future-advarsler fra eldre pandas-kode; ingen testfeil. De 47 pakkede inngangene er kontrollert mot både lagret og gjenopprettet SHA-256. Residualpiloten er gjennomført for alle seks sesonger. GitHub Actions er konfigurert for samme testkommando; lokal teststatus er ikke det samme som bekreftet CI-status.
+
+
+## Litteraturgjennomgang
+
+Se [LITERATURE_REVIEW.md](LITERATURE_REVIEW.md) for primærkilder, kildekritikk og prioriterte forsøk. Flerukers planlegging, prognosediversitet og separat angrep/forsvar er prioritert. Crowd-signaler og beslutningsrettet læring er videre kandidater. ORiON-artikkelens topp-4 %-resultat har et dokumentert chipavvik; det brukes ikke som regelkorrekt benchmark. Ingen nye modeller er trent eller ny sluttscore produsert i litteraturgjennomgangen.
