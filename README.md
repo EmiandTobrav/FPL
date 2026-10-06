@@ -5,6 +5,7 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)
+- [Retrening av Ridge/Extra Trees og faste blandinger: 60 nye forløp](research/current/retrained_ensemble/README.md)
 - [Løpende retrening og hendelsesmodell: 108 nye forløp](research/current/adaptive_events/README.md)
 - [Fire-runders planlegging og dekomponert oppsidemodell: 72 forløp](research/current/horizon_upside/README.md)
 - [Oppsidemodeller: 48 nye forløp og resultater](research/current/upside/README.md)
@@ -48,5 +49,7 @@ Eksisterende beslutningsspor brukes som cache. For en full ny avspilling slettes
 | `scripts/prepare_data.py` | Automatisk klargjøring og kontroll av innganger |
 
 Den beskrivende kandidaten er 50/50 Ridge + Extra Trees: +37,17 poeng uten chips og +55,67 med fast chipkalender mot Ridge i gjennomsnitt over seks sesonger. Dette er retrospektive resultater, ikke en urørt sluttprøve. Fritt tidsordnet modellvalg ga bare +3,75/+2,25 poeng over fire evalueringssesonger. Ingen produksjonsmodell er byttet automatisk.
+
+Siste forsøksrunde: retrent Extra Trees gir +37,2 poeng mot referansen med fast chipkalender, men −39,0 uten chips. Oppdatert treveisblanding gir +26,3/+10,3 med/uten chips. Tidsordnet modellvalg gir −4,25 på primærmålet; ingen automatisk produksjonsendring. Se forsøksrapporten for sesongvariasjon og begrensninger.
 
 Historiske poeng spilles av med moderne bytte-/chipregler. Pris, spillerstatus og kampkalender har dokumenterte proxybegrensninger. Resultatene er ikke faktiske historiske rangeringer eller en full omregning til årets poengregler.

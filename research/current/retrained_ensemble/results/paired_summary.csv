@@ -1,0 +1,21 @@
+mode,comparison,mean_gain,wins,min_gain,max_gain,low95,high95
+fixed_chips,extra_refresh - extra,68.83333333333333,5,-5,109,33.5,97.16666666666667
+fixed_chips,extra_refresh - mix_ridge_extra_50,37.166666666666664,4,-20,100,1.5,73.33333333333333
+fixed_chips,re_refresh - mix_ridge_extra_50,30.5,4,-40,83,-4.333333333333333,62.333333333333336
+fixed_chips,rich_refresh - mix_ridge_extra_50,8.333333333333334,3,-141,129,-62.666666666666664,79.66666666666667
+fixed_chips,ridge_refresh - mix_ridge_extra_50,-7.0,3,-136,161,-88.0,77.16666666666667
+fixed_chips,ridge_refresh - ridge,48.666666666666664,5,-39,98,9.5,80.66666666666667
+fixed_chips,three_refresh - mix_ridge_extra_50,26.333333333333332,4,-57,123,-21.0,72.33333333333333
+fixed_chips,three_refresh - re_refresh,-4.166666666666667,2,-48,40,-26.0,17.833333333333332
+fixed_chips,three_refresh - rich_refresh,18.0,4,-173,179,-77.33333333333333,105.16666666666667
+fixed_chips,three_refresh - three_frozen,37.166666666666664,4,-59,100,-9.5,77.33333333333333
+no_chips,extra_refresh - extra,-28.166666666666668,1,-142,126,-88.5,42.333333333333336
+no_chips,extra_refresh - mix_ridge_extra_50,-39.0,1,-106,35,-74.0,-1.0
+no_chips,re_refresh - mix_ridge_extra_50,-30.0,2,-89,16,-62.666666666666664,0.3333333333333333
+no_chips,rich_refresh - mix_ridge_extra_50,-7.833333333333333,3,-87,71,-57.666666666666664,42.666666666666664
+no_chips,ridge_refresh - mix_ridge_extra_50,-51.833333333333336,2,-133,43,-104.83333333333333,1.3333333333333333
+no_chips,ridge_refresh - ridge,-14.666666666666666,3,-56,19,-37.5,7.0
+no_chips,three_refresh - mix_ridge_extra_50,10.333333333333334,4,-62,55,-23.833333333333332,40.0
+no_chips,three_refresh - re_refresh,40.333333333333336,5,-60,140,-8.5,89.83333333333333
+no_chips,three_refresh - rich_refresh,18.166666666666668,3,-129,138,-63.166666666666664,90.83333333333333
+no_chips,three_refresh - three_frozen,-1.5,4,-195,111,-86.33333333333333,61.6833333333343

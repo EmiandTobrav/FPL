@@ -1,0 +1,17 @@
+{
+ "created":"2026-10-06", "status":"Specified before this experiment; retrospective, no untouched holdout",
+ "primary":"Net GW38 points with original fixed chip calendar, paired versus frozen Ridge/Extra50 reference",
+ "secondary":"No-chips diagnostic; matched retraining effects; chronological model selection; seasonal uncertainty",
+ "seasons":["2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],
+ "new_candidates":["ridge_refresh","extra_refresh","re_refresh","three_refresh"],
+ "reused_challenger":"rich_refresh from adaptive_events; same forecasts/traces unchanged",
+ "new_control":"three_frozen: equal frozen Ridge, Extra Trees and rich_frozen HGB (same features as rich_refresh)",
+ "retraining":"GW5,9,13,17,21,25,29,33,37; all earlier available observations incl current season, available<cutoff; no time weighting",
+ "ridge":"alpha100, BASE+FX, same imputer/scaler as frozen model",
+ "extra":"48 trees, max_depth12, min_samples_leaf40, max_features0.8, random_state173, n_jobs1, BASE+FX",
+ "blends":{"re_refresh":".5 ridge_refresh + .5 extra_refresh","three_refresh":"equal ridge_refresh/extra_refresh/rich_refresh","three_frozen":"equal frozen ridge/extra/rich_frozen"},
+ "optimizer":"Unchanged original single-round experiment.run; same actual GW4 handoff, prices, eligibility, chips and resources",
+ "selection":"For 2022 onward, choose among strong frozen reference, 4 new candidates and rich_refresh using prior seasons only: mean gain minus .25 SD, keep reference within2 of best. Evaluate fixed chips primary; no-chips diagnostic independently.",
+ "no_tuning":"No new features, time weights, fitted ensemble weights, model search or position specialization",
+ "limitations":["Historical price/registration/injury/calendar proxies inherited","All seasons already examined","Frozen HGB used for triple control is rich_frozen, not old hgb_extended","Refitted frozen Ridge/Extra control tolerance1e-5 for float32 storage"]
+}

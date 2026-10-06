@@ -1,0 +1,13 @@
+{
+  "new_simulations": 60,
+  "compared_simulations": 108,
+  "new_decisions": 2040,
+  "training_windows": 60,
+  "temporal_training": true,
+  "same_training_windows_as_hgb": true,
+  "control_max_difference": 4.636919808120865e-07,
+  "identical_opening": true,
+  "accounting": true,
+  "nonoptimal": 0,
+  "max_solver_gap": 1.680493169685562e-09
+}

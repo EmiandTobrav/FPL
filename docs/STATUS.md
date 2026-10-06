@@ -28,13 +28,13 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 ## Prioritert neste arbeid
 
-Oppdatert etter forsøket med retrening og hendelser:
+Oppdatert etter retrening av Ridge/Extra Trees og faste blandinger:
 
-1. Test løpende retrening av Ridge/Extra Trees mot samme sesongfrosne referanse, og behold `rich_refresh` som en selvstendig utfordrer. Ikke velg nye blandingsvekter på de samme evalueringsresultatene.
-2. Skaff historiske før-frist-kalendere og lagre nye snapshots for priser, tilgjengelighet og roller. Nøytral flerukerspilot er fullført; ikke les fremtidige `games_*.pkl`-rader som kjent ved dagens frist.
-3. Diagnostiser minuttsannsynligheter og hendelseskomponenter før flere komplekse hendelsesmodeller. Den første selvstendige hendelsesmodellen ga ingen primærgevinst.
-4. Isoler xG, kort historikk, angrep/forsvar og tilgjengelighet som egne ablasjoner med uendret optimizer. Den utvidede pakken ga ujevne resultater og identifiserer ikke én kausal featuregevinst.
-5. Opprett en prospektiv holdout med fryste kandidatregler. Etter mange undersøkelser av de samme seks sesongene er nye data viktigere enn stadig finere vektsøk.
+1. Behold retrent Extra Trees som primær utfordrer med chips (+37,2 mot referansen) og oppdatert treveisblanding som utfordrer på tvers av regimer (+26,3/+10,3). Lås modellregler før prospektiv evaluering; ingen ny vekttuning på samme sesongfasit.
+2. Diagnostiser hvorfor retrening av Ridge/Extra hjelper med chips, men svekker uten. Dekomponer eksisterende spor og bruk deretter matchede beslutninger fra identiske troppstilstander; ikke tolk poeng på chiprunder alene som kausal chipgevinst.
+3. Skaff historiske før-frist-kalendere og lagre nye snapshots for priser, tilgjengelighet og roller. Nøytral flerukerspilot er fullført; ikke les fremtidige `games_*.pkl`-rader som kjent ved dagens frist.
+4. Diagnostiser minuttsannsynligheter og hendelseskomponenter før nye komplekse hendelsesmodeller. Isoler deretter xG, kort historikk og angrep/forsvar med uendret optimizer hvis dataene støtter det.
+5. Opprett en prospektiv holdout med fryste kandidatregler. Tidsordnet modellvalg ga −4,25 i siste primære evaluering; den beskrivende vinneren er ikke en uavhengig bekreftet produksjonsvinner.
 
 Rapporter nettosesongpoeng med chips som forhåndsbestemt primærmål, treffkostnad, usikkerhet og sesongvise forskjeller. Uten chips er diagnostikk. Samme starttilstand og samme beslutningsmotor skal brukes for å isolere modellendringer.
 
@@ -94,3 +94,16 @@ Det tydeligste funnet er retrening av vanlig HGB: +54,7 med chips / +85,8 uten m
 Neste kontrollforsøk kan teste retrening også av den sterke referansefamilien, samtidig som utvidet oppdatert HGB beholdes som selvstendig utfordrer. Hendelsesmodellen trenger komponentdiagnostikk og bedre rolle-/tilgjengelighetsdata. Ingen blending av nye undergrupper etter fasit. Data for xG starter i 2022/23; manglende verdier ble ikke fylt med framtidig informasjon.
 
 172 tester bestått; 60 tidsriktige treningsvinduer kontrollert; alle 3672 nye beslutninger har optimal solverstatus innen toleransen. Kode, prognoser, treningsauditer, 108 spor og resultater ligger i `research/current/adaptive_events`. Ingen urørt holdout.
+
+
+## Retrening av Ridge/Extra Trees og faste blandinger fullført
+
+[Rapport](../research/current/retrained_ensemble/README.md). Fire nye kandidater og én matchet frossen treveiskontroll ga 60 nye sesongforløp. Utvidet HGB gjenbrukes uendret fra forrige runde. Samme før-frist-treningsvinduer, variabler, optimizer og åpning. 108 forløp sammenlignes totalt.
+
+Retrenet Extra Trees er beskrivende primærvinner: 2253,5 poeng, +37,2 mot referansen, 4/6 seire og beskrivende 95 %-intervall [1,5; 73,3]. Den vinner i de tre siste sesongene. Retrenet 50/50 gir +30,5 og treveis +26,3. Retrenet Ridge alene gir −7,0. Extra Trees og Ridge forbedrer sine egne frosne kontroller med +68,8/+48,7, begge 5/6 seire.
+
+Uten chips snur retreningseffekten for Extra og Ridge: −28,2/−14,7 mot egne kontroller. Mot sterk referanse gir Extra −39,0 og 50/50 −30,0. Treveisblandingen gir +10,3 uten chips, men −1,5 mot sin matchede frosne treveiskontroll. Ingen universell blandings- eller retreningsgevinst er dokumentert. Tidsordnet modellvalg gir −4,25 med chips og −10,25 uten. Ingen automatisk produksjonsendring.
+
+Retrenet treveisblanding øker topp-20-treff på 8+ fra 23,97 % til 25,18 %, men dette forklarer ikke alene sesongscore. Behold Extra Trees som primær utfordrer og treveis som utfordrer på tvers av regimer. Neste spor er samspillet med chips/troppsendringer og prospektiv evaluering med låste regler.
+
+173 tester bestått lokalt; 60 tidsriktige treningsvinduer, 2040 nye beslutninger og identisk åpning kontrollert. Alle nye solveravgjørelser er optimale innen toleransen. Kode, prognoser, auditer, 60 spor og resultater er lagret under `research/current/retrained_ensemble`. Ingen urørt holdout eller bekreftet GitHub CI-status.
