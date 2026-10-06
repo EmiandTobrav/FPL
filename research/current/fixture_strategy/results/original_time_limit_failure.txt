@@ -1,0 +1,31 @@
+CALL 1 status 0 feasible True
+CALL 2 status 1 feasible True
+CALL 3 status 1 feasible False
+Traceback (most recent call last):
+  File "/workspace/scratch/89b2d515d1c8/fixture_diagnostic/check.py", line 19, in <module>
+    try:print(run.run(('2022-23','full',8,'fixed_chips')),flush=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/89b2d515d1c8/repo/research/current/fixture_strategy/run.py", line 31, in run
+    c=choose(p,xp[:,:len(chips)],state['owned'],state['bank'],state['ft'],chips)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/89b2d515d1c8/repo/research/current/decision_specialist/planner.py", line 92, in choose
+    result=solve(p,f,owned,bank,ft,chips)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/89b2d515d1c8/repo/research/current/decision_specialist/planner.py", line 71, in solve
+    if r.x is None:raise RuntimeError(f'No feasible plan: {r.message}')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: No feasible plan: Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)
+Traceback (most recent call last):
+  File "/workspace/scratch/89b2d515d1c8/fixture_diagnostic/check.py", line 19, in <module>
+    try:print(run.run(('2022-23','full',8,'fixed_chips')),flush=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/89b2d515d1c8/repo/research/current/fixture_strategy/run.py", line 31, in run
+    c=choose(p,xp[:,:len(chips)],state['owned'],state['bank'],state['ft'],chips)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/89b2d515d1c8/repo/research/current/decision_specialist/planner.py", line 92, in choose
+    result=solve(p,f,owned,bank,ft,chips)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/89b2d515d1c8/repo/research/current/decision_specialist/planner.py", line 71, in solve
+    if r.x is None:raise RuntimeError(f'No feasible plan: {r.message}')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: No feasible plan: Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)
