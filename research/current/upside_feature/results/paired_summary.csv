@@ -1,0 +1,15 @@
+mode,candidate,control,mean_gain,wins,min_gain,max_gain,low95,high95
+fixed_chips,blend_base_50,mix_ridge_extra_50,-3.6,2,-90,115,-57.2,61.6
+fixed_chips,blend_tail_50,blend_base_50,-34.0,1,-145,201,-113.8,89.8
+fixed_chips,blend_tail_50,mix_ridge_extra_50,-37.6,1,-125,111,-100.6,41.0
+fixed_chips,captain_gate,mix_ridge_extra_50,5.8,3,-23,27,-12.8,24.4
+fixed_chips,matched_base,mix_ridge_extra_50,-81.2,0,-124,-15,-111.4,-45.4
+fixed_chips,with_tail,matched_base,13.6,3,-107,189,-74.2,110.0
+fixed_chips,with_tail,mix_ridge_extra_50,-67.6,1,-231,98,-165.2,27.0
+no_chips,blend_base_50,mix_ridge_extra_50,-38.2,0,-141,-5,-90.2,-8.6
+no_chips,blend_tail_50,blend_base_50,27.2,4,-33,66,-5.0,57.0
+no_chips,blend_tail_50,mix_ridge_extra_50,-11.0,3,-79,61,-55.0,31.8
+no_chips,captain_gate,mix_ridge_extra_50,-5.0,2,-24,18,-17.4,8.4
+no_chips,matched_base,mix_ridge_extra_50,-43.0,1,-179,91,-123.0,35.0
+no_chips,with_tail,matched_base,-12.0,1,-60,54,-42.0,25.2
+no_chips,with_tail,mix_ridge_extra_50,-55.0,1,-239,73,-153.8,26.8

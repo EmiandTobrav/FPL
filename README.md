@@ -6,6 +6,7 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 
 - [Status og neste steg](docs/STATUS.md)
 - [Oppsidemodeller: 48 nye forløp og resultater](research/current/upside/README.md)
+- [Oppside som variabel og kapteinssignal: oppfølgingstest](research/current/upside_feature/README.md)
 - [Faglitteratur og prioriterte forsøk](docs/LITERATURE_REVIEW.md)
 - [Gjennomgang av det eldre repositoryet](docs/REPOSITORY_REVIEW.md)
 - [Aktuell forsøksprotokoll](research/current/protocol.json)

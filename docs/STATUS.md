@@ -59,3 +59,12 @@ Se [forsøksrapporten](../research/current/upside/README.md). Fire kandidater er
 Topp-20-treff på 8+ forbedres opptil 0,67 prosentpoeng, men billige spillere og kort historikk får ikke bedre treffandel. Tidsordnet modellvalg beholder referansen i alle fire evalueringssesonger. Ren oppside er ikke kalibrert forventet totalpoeng; endret scoreskala påvirker også byttevilje. Ingen urørt holdout.
 
 Kode, protokoll, prognoser, 48 spor, usikkerhet og kontroller er lagret under `research/current/upside`. 156 eksisterende tester og tre nye tester bestått lokalt. Kontroll-HGB gjenskaper alle tidligere prognoser nøyaktig. Neste arbeid bør prioritere eksisterende plan for flerukers optimizer og bedre minutter/rolle-signaler fremfor å lete videre etter blandingsvekter på samme fasit.
+
+
+## Oppside som variabel og kapteinssignal fullført
+
+[Oppfølgingstesten](../research/current/upside_feature/README.md) bruker tidsriktige historiske oppsideprognoser: indre modeller trener bare på eldre sesonger. Matchede hovedmodeller med/uten ekstra variabel får identiske treningsrader. 2019/20 og 2020/21 bygger treningsgrunnlaget, og fem sesonger 2021/22–2025/26 evalueres med 40 nye hovedmodellforløp og 10 isolerte kapteinsreplay.
+
+Variabelen gir −12,0/+13,6 poeng mot matchet HGB-kontroll uten/med chips. I 50/50-blanding med sterk referanse gir den +27,2/−34,0 mot kontrollblandingen, men oppsideblandingen taper fortsatt −11,0/−37,6 mot sterk referanse. Kapteinsfilter innen 0,5 forventede poeng gir −5,0/+5,8, med brede intervaller over null. Ingen robust vinner og ingen produksjonsendring. Ingen egen hard kjøpspoolavgrensning ble testet.
+
+Alle fem sesonger var allerede undersøkt; ingen urørt holdout. Kode, protokoll, historiske oppsidevariabler, prognoser, spor, kapteinsvalg og parete resultater er lagret under `research/current/upside_feature`. 162 tester bestått lokalt. Videre arbeid bør prioritere bedre informasjon og flerukers optimizer fremfor å tune oppsidesignalet på samme sesongfasit.

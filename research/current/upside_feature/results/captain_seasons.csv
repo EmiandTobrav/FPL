@@ -1,0 +1,11 @@
+season,mode,model,points38,reference_points,gain,changed
+2021-22,no_chips,captain_gate,2267,2263,4,2
+2021-22,fixed_chips,captain_gate,2195,2218,-23,5
+2022-23,no_chips,captain_gate,2149,2156,-7,3
+2022-23,fixed_chips,captain_gate,2277,2259,18,7
+2023-24,no_chips,captain_gate,2260,2242,18,3
+2023-24,fixed_chips,captain_gate,2151,2169,-18,4
+2024-25,no_chips,captain_gate,2204,2228,-24,7
+2024-25,fixed_chips,captain_gate,2431,2404,27,3
+2025-26,no_chips,captain_gate,1954,1970,-16,7
+2025-26,fixed_chips,captain_gate,2146,2121,25,10

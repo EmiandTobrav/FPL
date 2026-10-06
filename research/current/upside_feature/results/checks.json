@@ -1,0 +1,13 @@
+{
+  "outer_seasons": 5,
+  "main_simulations": 40,
+  "captain_replays": 10,
+  "main_decisions": 1360,
+  "captain_decisions": 340,
+  "temporal_checks": true,
+  "identical_handoff": true,
+  "accounting": true,
+  "tail_control_max": 8.881784197001252e-16,
+  "nonoptimal": 0,
+  "max_solver_gap": 2.049225571927449e-08
+}

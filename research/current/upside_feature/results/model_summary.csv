@@ -1,0 +1,11 @@
+mode,model,mean_points,mean_gain,wins,mean_hits
+fixed_chips,blend_base_50,2230.6,-3.6,2,21.6
+fixed_chips,blend_tail_50,2196.6,-37.6,1,23.2
+fixed_chips,matched_base,2153.0,-81.2,0,26.4
+fixed_chips,mix_ridge_extra_50,2234.2,0.0,0,20.8
+fixed_chips,with_tail,2166.6,-67.6,1,29.6
+no_chips,blend_base_50,2133.6,-38.2,0,22.4
+no_chips,blend_tail_50,2160.8,-11.0,3,24.8
+no_chips,matched_base,2128.8,-43.0,1,32.0
+no_chips,mix_ridge_extra_50,2171.8,0.0,0,16.0
+no_chips,with_tail,2116.8,-55.0,1,27.2
