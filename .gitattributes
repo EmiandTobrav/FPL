@@ -2,3 +2,7 @@
 *.pkl filter=lfs diff=lfs merge=lfs -text
 *.joblib filter=lfs diff=lfs merge=lfs -text
 *.cbm filter=lfs diff=lfs merge=lfs -text
+
+
+# Frozen research inputs are ordinary small gzip blobs, never LFS pointers.
+research/current/**/*.gz -filter -diff -merge

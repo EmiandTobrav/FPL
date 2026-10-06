@@ -1,0 +1,7 @@
+mode,metric,mean,low95,high95,seasons
+fixed_chips,gain_vs_ridge,2.25,-33.75,40.5,4
+fixed_chips,ensemble_vs_single,88.0,28.0,138.0,4
+fixed_chips,all_vs_single,22.5,0.0,67.5,4
+no_chips,gain_vs_ridge,3.75,-3.75,18.0,4
+no_chips,ensemble_vs_single,54.5,4.0,105.0,4
+no_chips,all_vs_single,0.0,0.0,0.0,4

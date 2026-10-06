@@ -1,0 +1,9 @@
+season,mode,selected,points,gain_vs_ridge,selected_single,single_points,selected_ensemble,ensemble_points,ensemble_vs_single,all_vs_single
+2022-23,no_chips,bayes,2158,25,bayes,2158,mix_ridge_extra_50,2156,-2,0
+2023-24,no_chips,bayes,2133,-3,bayes,2133,mix_ridge_extra_50,2242,109,0
+2024-25,no_chips,bayes,2218,-3,bayes,2218,mix_ridge_extra_50,2228,10,0
+2025-26,no_chips,bayes,1869,-4,bayes,1869,mix_ridge_extra_50,1970,101,0
+2022-23,fixed_chips,bayes,2153,-45,bayes,2153,mix_ridge_extra_50,2259,106,0
+2023-24,fixed_chips,ridge,2183,0,ridge,2183,mix_three,2185,2,0
+2024-25,fixed_chips,ridge,2174,0,ridge,2174,mix_three,2328,154,0
+2025-26,fixed_chips,mix_three,2078,54,bayes,1988,mix_three,2078,90,90

@@ -1,0 +1,50 @@
+{
+  "purpose": "Residual idea feasibility; no transfer/lineup simulation",
+  "train": "Previous seasons only, available strictly before opening cutoff",
+  "target": "Same fixture historic points; features before same GW cutoff",
+  "rows": "Observed player-fixture rows GW5-38; not full eligible player pool",
+  "limitations": [
+    "All seasons previously examined",
+    "No new final FPL score claim",
+    "Six-observation shrinkage adapts old five-GW idea; not exact reproduction",
+    "Direct and residual HGB identical features and hyperparameters"
+  ],
+  "audits": [
+    {
+      "season": "2020-21",
+      "train_rows": 22501,
+      "train_max": "2020-07-26 18:00:00+00:00",
+      "cutoff": "2020-09-10 23:30:00+00:00"
+    },
+    {
+      "season": "2021-22",
+      "train_rows": 46866,
+      "train_max": "2021-05-23 18:00:00+00:00",
+      "cutoff": "2021-08-12 07:00:00+00:00"
+    },
+    {
+      "season": "2022-23",
+      "train_rows": 72313,
+      "train_max": "2022-05-22 18:00:00+00:00",
+      "cutoff": "2022-08-04 07:00:00+00:00"
+    },
+    {
+      "season": "2023-24",
+      "train_rows": 98818,
+      "train_max": "2023-05-28 18:30:00+00:00",
+      "cutoff": "2023-08-10 07:00:00+00:00"
+    },
+    {
+      "season": "2024-25",
+      "train_rows": 128543,
+      "train_max": "2024-05-19 18:00:00+00:00",
+      "cutoff": "2024-08-15 07:00:00+00:00"
+    },
+    {
+      "season": "2025-26",
+      "train_rows": 155826,
+      "train_max": "2025-05-25 18:00:00+00:00",
+      "cutoff": "2025-08-14 07:00:00+00:00"
+    }
+  ]
+}

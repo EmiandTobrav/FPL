@@ -21,3 +21,12 @@ catboost_info/
 
 # Generated report assets; keep lightweight report tables/summaries trackable.
 reports/figures/
+
+
+# Restored frozen inputs and regenerable feature matrix
+research/current/project/data/*.csv
+research/current/project/data/*.json
+research/current/project/tuning_v3/inputs_*.pkl
+research/current/results/games_*.pkl
+research/current/project/results/
+*.log

@@ -1,0 +1,61 @@
+FPL HOVEDMODELL – KOMBINASJONSTEST 1, 5. OKTOBER 2026
+
+120 nye forløp: 6 sesonger x 10 modeller x 2 chipregimer. 4080 beslutninger fra GW5 til GW38.
+Startmodellen er den vedlagte tuning_v3-standardkonfigurasjonen; overlevering etter GW4.
+Ingen produksjonskonfigurasjon er endret. Dette er retrospektiv forskning, ikke urørt holdout.
+
+LES FØRST
+FPL_hovedmodell_test.html – tabeller, metode, funn, begrensninger.
+protocol.json – kandidater, felles beslutningsregler og tidsordnet modellvalg.
+results/season_results.csv – 120 forløp.
+results/model_summary.csv – beskrivende oversikt.
+results/chronological_selection.csv – modellvalg kun fra eldre sesonger.
+results/selection_intervals.csv – sesongbootstrap, bare 4 evalueringssesonger.
+results/prediction_metrics.csv – prediksjonsfeil på felles tilgjengelige spillerpooler.
+results/checks.json – kontrollstatus.
+results/trace_*.json.gz – alle lagvalg, kjøpspriser, inn/ut, bank, gratisbytter, kaptein og poeng.
+results/games_*.pkl – fryste innganger til de nye simuleringene.
+project/tuning_v3/inputs_*.pkl – de tidligere fryste inngangene til startmodellen.
+
+INSTALLER
+Python 3.12, NumPy, pandas, SciPy, scikit-learn. Se requirements_versions.txt for brukte versjoner.
+
+KJØR FRA DENNE MAPPEN
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python experiment.py
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python summarize.py
+Eksisterende traces brukes som cache. For ny avspilling: flytt/slett kun results/trace_*.json.gz først.
+Ikke bruk gammel trace-cache etter endringer i modell, kode, parametere eller input.
+
+GJENOPPBYGG PROGNOSER FRA RÅDATA
+Flytt/slett results/games_*.pkl først og eventuelle gamle project/results/features.pkl.
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python build.py
+Deretter spill av experiment.py uten gamle trace-filer og kjør summarize.py.
+Build krever ingen nedlasting: rådata fra brukerens tidligere modellpakke er med.
+Cache-filer er pickle og må bare lastes fra en kilde du stoler på.
+
+DATA OG PROVENIENS
+project/data er kopiert fra brukerens vedlagte FPL_modellpakke.
+project/research.py og scoring.py er bevart fra denne pakken.
+project/tuning_v3/{engine,decision,build_inputs}.py og season_simulator.py samt inputs_*.pkl
+kommer fra vedlagte FPL_parametertuning_v3. Ny kode er build.py, experiment.py, summarize.py.
+MANIFEST.json har SHA-256 for hver annen fil i denne pakken. Ingen ferdigtrente nye modeller
+kreves for avspilling: prognosene er fryst; build.py gjenskaper dem.
+
+VIKTIGE BEGRENSNINGER
+- Historiske poeng, moderne overførings-/chipregler. Ikke en full regelomregning til 2026/27.
+- Lagget pris er proxy, ikke autentisk kjøpspris ved frist. GW1-roster og registreringer har samme
+  dokumenterte begrensninger som det tidligere arbeidet. Ufullstendige skader og avganger.
+- Aktuell rundes endelige historiske kamptildeling brukes; kunngjøringstidspunkter mangler.
+  Ingen fremtidig kampkalender eller senere prognoser inngår i mottakerens én-rundes valg.
+- All trening skjer på eldre sesonger; løpende statistikk krever kamp slutt + 3 timer < beslutningsproxy.
+- Gamle prognoser og spillerpooler er kontrollert mot tidligere GW1–19; starttilstanden er identisk.
+- xG finnes ikke gjennom hele perioden. Utvidede variabler er testet samlet, ikke en isolert xG-test.
+- Ingen ny minuttmodell, Dixon–Coles, oddsmodell, stacking eller flerukersoptimering er kjørt.
+- Alle sesongene var tidligere undersøkt. Modell- og familieutvalg har retrospektiv forskningsrisiko.
+- Kandidatfiltrering avgrenser optimizerens optimalitet. Alle kjørte løsninger fikk optimal status
+  innen sitt kandidatutvalg og toleranse.
+
+FØRSTE FUNN
+50/50 Ridge + Extra Trees: +37.17 mot Ridge uten chips, +55.67 med fast chipkalender, seks sesonger.
+Tidsordnet fritt modellvalg blant ti: +3.75 uten chips / +2.25 med fast chipkalender, fire evalueringssesonger.
+Disse er ulike estimander. Den beskrivende vinneren er ikke automatisk valgt eller uavhengig bekreftet.

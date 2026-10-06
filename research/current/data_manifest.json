@@ -1,0 +1,331 @@
+[
+  {
+    "path": "research/current/project/data/2019-20_fixtures.csv",
+    "stored": "research/current/project/data/2019-20_fixtures.csv.gz",
+    "sha256": "81851c3c55373c443aa6b7062be85d5710d61ab784239e9810655b343728e0ed",
+    "stored_sha256": "6afa41dd231e013362646459124f6fe4cc1cbd327c74e6dcb098e1d2e3561e33",
+    "bytes": 668794
+  },
+  {
+    "path": "research/current/project/data/2019-20_gw.csv",
+    "stored": "research/current/project/data/2019-20_gw.csv.gz",
+    "sha256": "750dbc03cab3f894152173f6e0a42d1cfa86efd6d8dab7e9b5c6c608c93b72cc",
+    "stored_sha256": "1d8e3e5b6b65461170e3c4e18cc47ace51db113f82aee7a108e8ef6445f7fd68",
+    "bytes": 3018585
+  },
+  {
+    "path": "research/current/project/data/2019-20_players.csv",
+    "stored": "research/current/project/data/2019-20_players.csv.gz",
+    "sha256": "6ebf73e7f4fe0d697869a12cbf39ccb1df444c6b9b1be6c02e61677ebbfc243f",
+    "stored_sha256": "9b442062e5fbf7e4a0acfad8255d2a68912fd0917db97ffbe2b7fa72f081cbb4",
+    "bytes": 174695
+  },
+  {
+    "path": "research/current/project/data/2019-20_teams.csv",
+    "stored": "research/current/project/data/2019-20_teams.csv.gz",
+    "sha256": "fbe8ae4036e5cb9e05aba4eb029da73036c76e66ee276b007e8296072af11b22",
+    "stored_sha256": "9d887054b5f02a862c2b3bfd2923b4a45d657bd88bedbc970f9dec8668b3f8f0",
+    "bytes": 1704
+  },
+  {
+    "path": "research/current/project/data/2020-21_fixtures.csv",
+    "stored": "research/current/project/data/2020-21_fixtures.csv.gz",
+    "sha256": "75ca4859c7898bff9c73055337651893c041e596462d08935f2a6964c437f65d",
+    "stored_sha256": "2bb74650819e4c4a5515232c1594d004410931c4c10db5e5fb5f283f78b2fee2",
+    "bytes": 660303
+  },
+  {
+    "path": "research/current/project/data/2020-21_gw.csv",
+    "stored": "research/current/project/data/2020-21_gw.csv.gz",
+    "sha256": "fb2a2bc54b6cfbe835a39183b096b382f7961e3828e7845e9288671cccca3ad8",
+    "stored_sha256": "6688aededc051b39f9cf0ecd01f6326a65c03a7c85443d84c6518b6b08411f2e",
+    "bytes": 3578432
+  },
+  {
+    "path": "research/current/project/data/2020-21_players.csv",
+    "stored": "research/current/project/data/2020-21_players.csv.gz",
+    "sha256": "e3aff899fc2486bd96fe5d11d8c8e8c066dea36cc71de2bf8a85e8aa7245ed32",
+    "stored_sha256": "38e357475bb83f943650ebbb118ae9b341e5db2132766a1e6c30d1d2a74b0020",
+    "bytes": 195696
+  },
+  {
+    "path": "research/current/project/data/2020-21_teams.csv",
+    "stored": "research/current/project/data/2020-21_teams.csv.gz",
+    "sha256": "0e3b9fdad72feefb88db3b848e4d579020327f4bf9975fa82fb2085dbe7f0fae",
+    "stored_sha256": "1252099269233c663783fbcdf49338e46c7a466b82974774ae2ab3eccadbf51d",
+    "bytes": 1705
+  },
+  {
+    "path": "research/current/project/data/2021-22_fixtures.csv",
+    "stored": "research/current/project/data/2021-22_fixtures.csv.gz",
+    "sha256": "9fc11cc675ff49dd5b8858211aa5cbe08375e064810536931e0ac38c060dee64",
+    "stored_sha256": "b0c7ef09abd1ba345f50a9eeaa27ee096d5d21b43d1c85168f64461aa32a7ad0",
+    "bytes": 668973
+  },
+  {
+    "path": "research/current/project/data/2021-22_gw.csv",
+    "stored": "research/current/project/data/2021-22_gw.csv.gz",
+    "sha256": "29770bbe305feee681f7122c0bd08451783366e0a3a9604194f528a0880f23de",
+    "stored_sha256": "2cfe866be9a54ad92fb111662c4b537452a37fc0342cf2f8d40191bfc7fd4e5a",
+    "bytes": 3733462
+  },
+  {
+    "path": "research/current/project/data/2021-22_players.csv",
+    "stored": "research/current/project/data/2021-22_players.csv.gz",
+    "sha256": "78e185fb0b5c81f58c2b89f232358b1097bededc9852d4171edaea2e9d3bd887",
+    "stored_sha256": "67ceb6414733fd27294673da417d6287fb5795326c580659af056ba573ee8177",
+    "bytes": 205493
+  },
+  {
+    "path": "research/current/project/data/2021-22_teams.csv",
+    "stored": "research/current/project/data/2021-22_teams.csv.gz",
+    "sha256": "c1dd02ed25fe832ba7bf6ce846ac506a00a0f0babdacb6bf2a011dc9eaa8cfad",
+    "stored_sha256": "07e1b234b69b977aa680a377d4ec949c1e11b8df4c7cc545a3865a0d2fb2cc8f",
+    "bytes": 1701
+  },
+  {
+    "path": "research/current/project/data/2022-23_fixtures.csv",
+    "stored": "research/current/project/data/2022-23_fixtures.csv.gz",
+    "sha256": "e783060da73700d4ec6fd12acec4568524eac8bb3ba3ccd8ce68a374dadba8f8",
+    "stored_sha256": "1ee9426018d6a7d03a4caaa3acf1106e184706f740c4439ee6108e515972e8a6",
+    "bytes": 696260
+  },
+  {
+    "path": "research/current/project/data/2022-23_gw.csv",
+    "stored": "research/current/project/data/2022-23_gw.csv.gz",
+    "sha256": "b78a6d0456141f9033c32fc4122931baae780ac4a4938683451b1fce7a4fdd15",
+    "stored_sha256": "6d6418ea9a3f88fd872a340a2f0764b196239f3fcb0a5b4afa4a06c7eb7e2331",
+    "bytes": 4638801
+  },
+  {
+    "path": "research/current/project/data/2022-23_players.csv",
+    "stored": "research/current/project/data/2022-23_players.csv.gz",
+    "sha256": "a874c12817bbf4d454e60a5765629742b528d4ad0c2f39f56e4fc89640605f7f",
+    "stored_sha256": "0f3460ed47032a5099ebaff1bb5cec28a487f8193ca68d614e820aa366016468",
+    "bytes": 280362
+  },
+  {
+    "path": "research/current/project/data/2022-23_teams.csv",
+    "stored": "research/current/project/data/2022-23_teams.csv.gz",
+    "sha256": "be6a1fe120a61f9c441a0751ca177c933bcbf234c1d28d49b3cd8827ca18066b",
+    "stored_sha256": "e774de2558a8d1326ca6909551aaef04189c3a6e1dfaec21a413dbad8c11b436",
+    "bytes": 1711
+  },
+  {
+    "path": "research/current/project/data/2023-24_fixtures.csv",
+    "stored": "research/current/project/data/2023-24_fixtures.csv.gz",
+    "sha256": "d8521bdbb80edb5141bc17df71bf6026275f2e56fd6a6dc6041b3ae23a39ce6a",
+    "stored_sha256": "c20fba7cc5dbe98ef08fc16d1e8e7648d151b8070c8fadbef2cb6d0cc2001d30",
+    "bytes": 712532
+  },
+  {
+    "path": "research/current/project/data/2023-24_gw.csv",
+    "stored": "research/current/project/data/2023-24_gw.csv.gz",
+    "sha256": "e9c09c8856f1c86b4f920f46ddd5033af83409439dfda53be925df2a3e7c8a9e",
+    "stored_sha256": "ff0a23bea4fbdfab3309b3d7353d4f8f9ad239c498d001876ba6c9d912019c77",
+    "bytes": 4997188
+  },
+  {
+    "path": "research/current/project/data/2023-24_players.csv",
+    "stored": "research/current/project/data/2023-24_players.csv.gz",
+    "sha256": "43d8cf5efb3d901f2499558c40b392b7f0ee22afe28030f36266ad29024c63d9",
+    "stored_sha256": "e7b9641f732b6e8c09c40019506298dbd04f321be221b1396fe69b54e113ab02",
+    "bytes": 310197
+  },
+  {
+    "path": "research/current/project/data/2023-24_teams.csv",
+    "stored": "research/current/project/data/2023-24_teams.csv.gz",
+    "sha256": "7795f091ccea17fda0752cb07b935e1515b09a9d3f924147997cbf28139edd49",
+    "stored_sha256": "63ea4147a4a4feddd1400c651c45f5ae1134b48071ab314abccecc2548520a2a",
+    "bytes": 1715
+  },
+  {
+    "path": "research/current/project/data/2024-25_fixtures.csv",
+    "stored": "research/current/project/data/2024-25_fixtures.csv.gz",
+    "sha256": "ce696e187569ca7c45da2562811d3c38f525b58e65575531be37bebd0769ee28",
+    "stored_sha256": "9649822e2581422840b1d46d7e57ea4d3673bb8089faae3c8b5a6d4b802354d3",
+    "bytes": 751413
+  },
+  {
+    "path": "research/current/project/data/2024-25_gw.csv",
+    "stored": "research/current/project/data/2024-25_gw.csv.gz",
+    "sha256": "5bbbcba6353b4c72ad273adcc8e3aa451946a826564679788f45b1cb3325b84e",
+    "stored_sha256": "642377cbfc91a08cb2fab627eea8a0b926041cc735a3a0080229feb7c4a8a451",
+    "bytes": 5125595
+  },
+  {
+    "path": "research/current/project/data/2024-25_players.csv",
+    "stored": "research/current/project/data/2024-25_players.csv.gz",
+    "sha256": "75686051b265cbe7755ac71213ecaad21b26ee1cc46a8bafbba19c39ce894b05",
+    "stored_sha256": "4f0d412168228b736714cb4b1bcbaa196c83dab939c43433bdb0cadca95618ed",
+    "bytes": 342122
+  },
+  {
+    "path": "research/current/project/data/2024-25_teams.csv",
+    "stored": "research/current/project/data/2024-25_teams.csv.gz",
+    "sha256": "d10a6db8feca6db9e44a3ba50b15168396667ea387fee9235d6b211c7f598c3b",
+    "stored_sha256": "38c71f8f78009fa2ebe25ce6054e7a12ad1c8dad35aedfbce08f1773ab627187",
+    "bytes": 1717
+  },
+  {
+    "path": "research/current/project/data/2025-26_fixtures.csv",
+    "stored": "research/current/project/data/2025-26_fixtures.csv.gz",
+    "sha256": "2d7e3950d346df14ca486cb09e9b9ba406d37d943775244eed06cdc021ffb3a9",
+    "stored_sha256": "ba7cf7a5f915b18fb77d1024f32ab90b04e462ff00de110198dd6699730fc042",
+    "bytes": 1014129
+  },
+  {
+    "path": "research/current/project/data/2025-26_gw.csv",
+    "stored": "research/current/project/data/2025-26_gw.csv.gz",
+    "sha256": "0d09f1f1cb1b5520ec8e2f25238aa652efe2a263d8ca7cb2b6538b27bf86727d",
+    "stored_sha256": "bb0c483d2afeea052dbef957120e935c22917db526c0946a05980c74ad74c8e6",
+    "bytes": 5445456
+  },
+  {
+    "path": "research/current/project/data/2025-26_players.csv",
+    "stored": "research/current/project/data/2025-26_players.csv.gz",
+    "sha256": "412ce0172016f8f98f25177dc6de9f3cd2a8ec7a6135f9aa638d7fdee784d67b",
+    "stored_sha256": "698c5bc12787f5be80f9fba697817094d61f80312421b592f1cd73595292df89",
+    "bytes": 380363
+  },
+  {
+    "path": "research/current/project/data/2025-26_teams.csv",
+    "stored": "research/current/project/data/2025-26_teams.csv.gz",
+    "sha256": "b29df099cb0ad25413e284e53116099b0e0496874f99743dbc0870d8241b46c5",
+    "stored_sha256": "70127c1fb27579b294a0d6047305bfbf861c81e9732c5a13ed5b0808236bc008",
+    "bytes": 1744
+  },
+  {
+    "path": "research/current/project/data/2026-27_fixtures.csv",
+    "stored": "research/current/project/data/2026-27_fixtures.csv.gz",
+    "sha256": "e4a111287465dac04ef4d5bd6e5e10125c606a37b711c48735dc863ee8a261e8",
+    "stored_sha256": "37884e862ed1cb5f62d1e82c27d9a387c13ecfe4ffe46f5b30a5ab4e4b03dced",
+    "bytes": 56276
+  },
+  {
+    "path": "research/current/project/data/2026-27_gw.csv",
+    "stored": "research/current/project/data/2026-27_gw.csv.gz",
+    "sha256": "8a82823f87672ccfc648af978e08b51a3717f0616e2658322d4e432d70c0ac84",
+    "stored_sha256": "e630db65d9733336e220d6b61e8b5f8b1802443f8d151dc00b724ced48d1ed19",
+    "bytes": 106217
+  },
+  {
+    "path": "research/current/project/data/2026-27_players.csv",
+    "stored": "research/current/project/data/2026-27_players.csv.gz",
+    "sha256": "d8f3f3ceafa3ec45fd58efef035e98a22efc7a2b73ee93e2090d4a04b136fe5d",
+    "stored_sha256": "e916af7dc83162646bc1931f9b8e883ca940f6b61fc7328429e3a1536f704e9a",
+    "bytes": 386559
+  },
+  {
+    "path": "research/current/project/data/2026-27_teams.csv",
+    "stored": "research/current/project/data/2026-27_teams.csv.gz",
+    "sha256": "c03107167d85b6115132b8e369a0b6ac0e37b8b2ddc5da40a6e4f4b151bf5133",
+    "stored_sha256": "4c177de74a6b85cd35c52505e5cd3d27a44dca8a62a98cb7723e81fec68b056b",
+    "bytes": 1378
+  },
+  {
+    "path": "research/current/project/data/current_bootstrap.json",
+    "stored": "research/current/project/data/current_bootstrap.json.gz",
+    "sha256": "7bbf0fcbacf7c389d40f8317f2941cf8316419fc189dc584b91e73a65e699c7b",
+    "stored_sha256": "1e9461bd28fd131331519a32684ef0ad92aead69954150a584f6e3a2345073c7",
+    "bytes": 1779460
+  },
+  {
+    "path": "research/current/project/data/manifest.json",
+    "stored": "research/current/project/data/manifest.json.gz",
+    "sha256": "b71ec287ee68c3f3952fcf0aef2b19deb991a7b6d50010e5dd774c192c856a53",
+    "stored_sha256": "857659e132cf4d9e3589ccbbe1e2f7366823c06874d9dc70b45928adcac7ba18",
+    "bytes": 8657
+  },
+  {
+    "path": "research/current/project/data/rule_audit.json",
+    "stored": "research/current/project/data/rule_audit.json.gz",
+    "sha256": "b7b5aada44beafba12a52eb7d4478d6f2b926e9d44d3c6277ea06759b05ea0fc",
+    "stored_sha256": "9da758f120f59bf8ec6cb334a44efe93bf31a91fcd46765f4fb4b44240eb02f8",
+    "bytes": 4160
+  },
+  {
+    "path": "research/current/project/tuning_v3/inputs_2020-21.pkl",
+    "stored": "research/current/project/tuning_v3/inputs_2020-21.pkl.gz",
+    "sha256": "3628a379ed77029ae7eaa260dd82f5e0d669a52a0393fe5f6ce02347534711cb",
+    "stored_sha256": "36f232a485b7f668a89dad2355414a082f2fcd08a5881719c45095877343dda2",
+    "bytes": 3023198
+  },
+  {
+    "path": "research/current/project/tuning_v3/inputs_2021-22.pkl",
+    "stored": "research/current/project/tuning_v3/inputs_2021-22.pkl.gz",
+    "sha256": "0bef63be63e0c712a0b1699966a219705e7a76502db0d31339e3806f16f7f3c2",
+    "stored_sha256": "8eaec925ccc9a3ddb6f3c0e9ecb2187e5f327a783836ffd4651771be1edb1673",
+    "bytes": 3143613
+  },
+  {
+    "path": "research/current/project/tuning_v3/inputs_2022-23.pkl",
+    "stored": "research/current/project/tuning_v3/inputs_2022-23.pkl.gz",
+    "sha256": "06508e36284dabc273220eda5edbbd50b220669ff5802d4cd99b323ec09f0796",
+    "stored_sha256": "797a19eebc4d4d940b8915c209bccfea51a1c428a47e52bc78096729cad52374",
+    "bytes": 3223040
+  },
+  {
+    "path": "research/current/project/tuning_v3/inputs_2023-24.pkl",
+    "stored": "research/current/project/tuning_v3/inputs_2023-24.pkl.gz",
+    "sha256": "4d7a11464bcca8ded9f3318b97bcb64965ba8a58fcbc34e33e63d17cbb4711a0",
+    "stored_sha256": "8fbdb378acc1225c704124bfb89ff2c1034d005119309a7a0f895a884576f1df",
+    "bytes": 3721634
+  },
+  {
+    "path": "research/current/project/tuning_v3/inputs_2024-25.pkl",
+    "stored": "research/current/project/tuning_v3/inputs_2024-25.pkl.gz",
+    "sha256": "9329a1fd017a37a5c168d5b758d07269c509e2f8a3cce8fcf6e46c7a85d2a84f",
+    "stored_sha256": "fdb179c54f23d94e116bdba6cf0e5dd051ecd753def7029a4163db557da6f07b",
+    "bytes": 3457317
+  },
+  {
+    "path": "research/current/project/tuning_v3/inputs_2025-26.pkl",
+    "stored": "research/current/project/tuning_v3/inputs_2025-26.pkl.gz",
+    "sha256": "ded928fefc1710d3bd5c51ea3c216f6706ca82ef688ed6149dfb623c18fcda5d",
+    "stored_sha256": "587e9dccdae19f4630b5ca1348c9a7c429678a5f49efcabdfe6132fdccae6f59",
+    "bytes": 3843741
+  },
+  {
+    "path": "research/current/results/games_2020-21.pkl",
+    "stored": "research/current/results/games_2020-21.pkl.gz",
+    "sha256": "24f3194d3bee80cbee1d92fc0af31d828241f0f0645477dbdf1560c11afc9748",
+    "stored_sha256": "69662a17e0a474952653d52ff661054c8f6d9606718b42fb4be2f7f7ea29641f",
+    "bytes": 2233202
+  },
+  {
+    "path": "research/current/results/games_2021-22.pkl",
+    "stored": "research/current/results/games_2021-22.pkl.gz",
+    "sha256": "b05bae3befb7f2f438dfa5cb1f41dc9d28e8bd25077267f1f001082890dd537a",
+    "stored_sha256": "ab69b82f33aec722fb13d4c3b8b7ee69252d855290c7926a4d1eb503c582a964",
+    "bytes": 2325424
+  },
+  {
+    "path": "research/current/results/games_2022-23.pkl",
+    "stored": "research/current/results/games_2022-23.pkl.gz",
+    "sha256": "96ab4ffef69bed24a5a153756f3a30a0baf5d603e1f34550c3b5a9473050ba75",
+    "stored_sha256": "4ac7a44324093d51bbec93e5b5ee138c6b333fe9f0b644831df702e0afd9c1e0",
+    "bytes": 2435128
+  },
+  {
+    "path": "research/current/results/games_2023-24.pkl",
+    "stored": "research/current/results/games_2023-24.pkl.gz",
+    "sha256": "c4083d5e21163ec00bf95d72fc730fb2e4bb636879da6f0a8991e93de5f19ac8",
+    "stored_sha256": "fd6ada81cb3a3a057a6cd0410d07163c48d43c1191a28f8ff61118139b963358",
+    "bytes": 2752669
+  },
+  {
+    "path": "research/current/results/games_2024-25.pkl",
+    "stored": "research/current/results/games_2024-25.pkl.gz",
+    "sha256": "874849cec09627bbb88d6c6339e52597eb898b54210ce74e410f4199e3b9523a",
+    "stored_sha256": "90b167e02bd9c5f941a3409725401361b9a503116fedf67747d16ad6a06210b0",
+    "bytes": 2541148
+  },
+  {
+    "path": "research/current/results/games_2025-26.pkl",
+    "stored": "research/current/results/games_2025-26.pkl.gz",
+    "sha256": "1726ef8cb7db2e048b776a7eb01cf08f2cb854219c67a2cb127ce8cd511d91cf",
+    "stored_sha256": "c9d3711e62a788a934997f7a7b2e74adbb27dd7520c6982917635cde5ed39531",
+    "bytes": 2771072
+  }
+]

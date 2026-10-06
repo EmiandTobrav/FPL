@@ -1,0 +1,59 @@
+{
+  "created": "2026-10-05",
+  "models": [
+    "ridge",
+    "bayes",
+    "extra",
+    "hgb",
+    "hgb_extended",
+    "mix_ridge_extra_50",
+    "mix_ridge_hgb_25",
+    "mix_ridge_hgb_50",
+    "mix_ridge_hgb_75",
+    "mix_three"
+  ],
+  "seasons": [
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "opening": {
+    "handoff": 4,
+    "look": 3,
+    "carry": 1,
+    "friction": 0.5,
+    "prior_mix": 0,
+    "chip_reserve": 1000,
+    "scenario": "neutral"
+  },
+  "regimes": [
+    "no_chips",
+    "fixed_chips"
+  ],
+  "chip_calendar": {
+    "6": "wildcard",
+    "15": "triple_captain",
+    "18": "free_hit",
+    "19": "bench_boost",
+    "24": "wildcard",
+    "33": "free_hit",
+    "36": "bench_boost",
+    "37": "triple_captain"
+  },
+  "objective": "GW38 net points; same original opening policy GW1-4",
+  "selection": "For 2022-23 onward, select model from earlier seasons only: mean difference versus ridge minus .25 SD; prefer ridge if within 2 points of best, otherwise best. Select independently per chip regime.",
+  "forecast_fitting": "Only previous seasons; frozen within a season, input features update before each decision.",
+  "test_status": "Retrospective; all seasons previously examined.",
+  "limitations": [
+    "Lagged market-price proxy, not deadline prices",
+    "No complete timestamped injury/availability archive",
+    "Current-round final event assignment assumed known 36h before first kickoff; no future fixture calendar is used",
+    "Five-bank-transfer and two-chip-set rules replayed across historical points; not historical rank and not full current scoring rescore",
+    "Fixed chip calendar controls resources, does not optimize chip timing",
+    "Extended features bundle multiple changes; cannot isolate an xG effect",
+    "Same initial start-model state, not an independently rebuilt GW1 squad"
+  ]
+}

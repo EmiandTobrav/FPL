@@ -1,0 +1,12 @@
+{
+  "simulations": 120,
+  "seasons": 6,
+  "decision_rounds": 4080,
+  "identical_handoff_per_season": true,
+  "point_accounting": true,
+  "nonoptimal_decisions": 0,
+  "largest_solver_gap": 6.365908352968606e-08,
+  "outcome_blind_decisions": true,
+  "original_forecast_max_difference": 4.636919808120865e-07,
+  "temporal_training": true
+}
