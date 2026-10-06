@@ -1,0 +1,43 @@
+{
+  "updated": "2026-10-06",
+  "status": "User confirmed continuation as challengers; no production promotion",
+  "evidence_commit": "c9e3e6f30d36b1417f93ab1ab38ec0e424c71674",
+  "reference": "Original frozen mix_ridge_extra_50 with original single-round engine",
+  "primary_challengers": [
+    {
+      "id": "re_refresh_h3",
+      "forecast": "Ridge/Extra Trees 50/50, retrained every fourth GW",
+      "decision": "decision_specialist planner, horizon3",
+      "evidence": "decision_specialist/results/horizon_all_seasons.csv",
+      "seasons": "2020-21 through 2025-26",
+      "mean_gain_fixed_chips": 51.0,
+      "mean_gain_no_chips": 31.166666666666668,
+      "locked": "Existing forecasts, parameters, future proxy and decision settings; changes require a new experiment"
+    },
+    {
+      "id": "constant",
+      "forecast": "Global sigmoid weight between refreshed Ridge/Extra50 and refreshed rich HGB; weight learned once before season from older forecast/label rows",
+      "decision": "Original single-round experiment.run",
+      "evidence": "decision_specialist/results/gate_all_seasons.csv",
+      "seasons": "2022-23 through 2025-26",
+      "mean_gain_fixed_chips": 54.25,
+      "mean_gain_no_chips": 40.5,
+      "locked": "Existing temporal fitting rule and regularization, not a fixed weight chosen after evaluation"
+    }
+  ],
+  "retained_comparators": [
+    "extra_refresh",
+    "three_refresh",
+    "rich_refresh"
+  ],
+  "research_only": [
+    "gate"
+  ],
+  "next_proposed_test": "Global learned HGB weight with matched H1/H3 planning; see docs/NEXT_EXPERIMENT.md",
+  "limitations": [
+    "No untouched holdout",
+    "Future neutral-fixture proxy",
+    "Historical price/status/calendar limitations",
+    "Different evidence periods for the two challengers"
+  ]
+}

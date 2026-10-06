@@ -26,6 +26,10 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 - Residualideen implementert som opt-in HGB-kandidat og kjørt som separat prediksjonstest. RMSE bedret seg bare i 1/6 sesonger mot direkte HGB; ingen ny sluttscore påstås.
 - Eldre API-/feature-/ensemblekode beholdt. Metodeproblemene er dokumentert i REPOSITORY_REVIEW, ikke skjult ved å overskrive gamle resultater.
 
+## Bekreftede aktive utfordrere
+
+Brukeren bekreftet 6. oktober 2026 at `re_refresh_h3` og `constant` skal videreføres som aktive utfordrere. Reglene og evidensen er registrert i [challengers.json](../research/current/challengers.json). Den opprinnelige referansen beholdes. [Neste foreslåtte forsøk](NEXT_EXPERIMENT.md) er en matchet 2 × 2-test av global HGB-vekt og H3 på de samme fire sesongene, med 16 nye forløp. Denne kombinasjonen er ikke kjørt.
+
 ## Prioritert neste arbeid
 
 Oppdatert etter tre-rundersplanlegging og lært HGB-blanding:
