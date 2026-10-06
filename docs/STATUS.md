@@ -2,6 +2,10 @@
 
 Oppdatert 6. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Nyeste validering
+
+[Sammenligning mot offisiell 2025/26](../research/current/rescoring_2025/core_2025_validation/README.md) fullført: alle 11 492 aktive FPL-rader koblet. Defcon er riktig i 10 423 av 10 457 komplette utespillerrader; 268 utespillerrader mangler nødvendig statistikk. 18 falske positive og 16 falske negative. Totale taklinger fungerer klart bedre enn vunne. Gratisdata kan videreføres med kvalitetsflagg; ingen eksakt eldre testfasit eller ny modellsimulering er hevdet. Ingen kostnad; brukerens totale tak for eventuell datatilgang er 500 NOK.
+
 ## Nyeste kildefunn
 
 FPL-Core-Insights 2024/25 er hentet: 38 CSV-er, 380 kamper, 562 spillere og 11 567 spiller-/kamprader med defensive tellinger. Alle 11 566 FPL-rader med spilletid kan kobles diagnostisk; minutt-/mål-/assistavvik og manglende BPS-detaljer er dokumentert. [Rapport og reproduserbar kontroll](../research/current/rescoring_2025/core_2024/README.md). Neste: valider defensive definisjoner mot offisiell 2025/26, før ny poengfasit. Benchmark uendret.

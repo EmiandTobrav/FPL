@@ -1,0 +1,15 @@
+{
+  "source_rows": 12754,
+  "source_matches": 380,
+  "official_active_rows": 11492,
+  "matched_active_rows": 11492,
+  "unmatched_active_rows": 0,
+  "outfield_rows": 10725,
+  "outfield_missing_points": 268,
+  "false_positive_points": 18,
+  "false_negative_points": 16,
+  "official_defcon_awards": 1417,
+  "source_tree": "1c9191ab6b0c191378ea27f257fdab2bae63caba",
+  "fixture_join": "Exact season plus home and away club; explicit club aliases; player FPL ID",
+  "scope": "Defensive count and threshold equivalence. Not full BPS/assist rescoring."
+}
