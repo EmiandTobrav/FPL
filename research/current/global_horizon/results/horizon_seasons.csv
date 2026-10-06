@@ -1,0 +1,17 @@
+season,model,forecast_model,horizon,mode,points38,opening_points,hits,transfers,nonoptimal,max_solver_gap
+2022-23,constant_h1,constant,1,no_chips,2239,218,20,39,0,0.0
+2022-23,constant_h1,constant,1,fixed_chips,2335,218,32,78,0,0.0
+2023-24,constant_h1,constant,1,fixed_chips,2184,195,12,80,0,0.0
+2023-24,constant_h1,constant,1,no_chips,2293,195,4,35,0,0.0
+2023-24,constant_h3,constant,3,fixed_chips,2171,195,28,85,0,0.0
+2024-25,constant_h1,constant,1,no_chips,2219,230,20,38,0,0.0
+2023-24,constant_h3,constant,3,no_chips,2172,195,20,39,0,5.487047045318794e-06
+2024-25,constant_h1,constant,1,fixed_chips,2412,230,4,75,0,0.0
+2022-23,constant_h3,constant,3,fixed_chips,2334,218,48,83,0,9.399565159832806e-06
+2025-26,constant_h1,constant,1,no_chips,2007,181,0,34,0,0.0
+2025-26,constant_h1,constant,1,fixed_chips,2239,181,12,76,0,4.155959128841177e-06
+2022-23,constant_h3,constant,3,no_chips,2285,218,40,44,0,9.311920780072509e-06
+2024-25,constant_h3,constant,3,fixed_chips,2490,230,16,69,0,8.350624532637141e-06
+2024-25,constant_h3,constant,3,no_chips,2253,230,36,43,0,8.53660661873114e-06
+2025-26,constant_h3,constant,3,fixed_chips,2238,181,8,73,0,2.826353604106528e-10
+2025-26,constant_h3,constant,3,no_chips,1981,181,8,36,0,9.552708392397997e-06

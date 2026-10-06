@@ -1,0 +1,65 @@
+season,mode,comparison,gain
+2022-23,fixed_chips,constant_h3 - constant_h1,-1
+2022-23,no_chips,constant_h3 - constant_h1,46
+2023-24,fixed_chips,constant_h3 - constant_h1,-13
+2023-24,no_chips,constant_h3 - constant_h1,-121
+2024-25,fixed_chips,constant_h3 - constant_h1,78
+2024-25,no_chips,constant_h3 - constant_h1,34
+2025-26,fixed_chips,constant_h3 - constant_h1,-1
+2025-26,no_chips,constant_h3 - constant_h1,-26
+2022-23,fixed_chips,constant_h3 - re_refresh_h3,40
+2022-23,no_chips,constant_h3 - re_refresh_h3,34
+2023-24,fixed_chips,constant_h3 - re_refresh_h3,-45
+2023-24,no_chips,constant_h3 - re_refresh_h3,20
+2024-25,fixed_chips,constant_h3 - re_refresh_h3,-11
+2024-25,no_chips,constant_h3 - re_refresh_h3,59
+2025-26,fixed_chips,constant_h3 - re_refresh_h3,154
+2025-26,no_chips,constant_h3 - re_refresh_h3,-118
+2022-23,fixed_chips,constant_h3 - mix_ridge_extra_50,75
+2022-23,no_chips,constant_h3 - mix_ridge_extra_50,129
+2023-24,fixed_chips,constant_h3 - mix_ridge_extra_50,2
+2023-24,no_chips,constant_h3 - mix_ridge_extra_50,-70
+2024-25,fixed_chips,constant_h3 - mix_ridge_extra_50,86
+2024-25,no_chips,constant_h3 - mix_ridge_extra_50,25
+2025-26,fixed_chips,constant_h3 - mix_ridge_extra_50,117
+2025-26,no_chips,constant_h3 - mix_ridge_extra_50,11
+2022-23,fixed_chips,constant_h3 - extra_refresh,86
+2022-23,no_chips,constant_h3 - extra_refresh,235
+2023-24,fixed_chips,constant_h3 - extra_refresh,-98
+2023-24,no_chips,constant_h3 - extra_refresh,-105
+2024-25,fixed_chips,constant_h3 - extra_refresh,43
+2024-25,no_chips,constant_h3 - extra_refresh,62
+2025-26,fixed_chips,constant_h3 - extra_refresh,31
+2025-26,no_chips,constant_h3 - extra_refresh,11
+2022-23,fixed_chips,constant_h3 - constant_original_engine,-1
+2022-23,no_chips,constant_h3 - constant_original_engine,46
+2023-24,fixed_chips,constant_h3 - constant_original_engine,-13
+2023-24,no_chips,constant_h3 - constant_original_engine,-121
+2024-25,fixed_chips,constant_h3 - constant_original_engine,78
+2024-25,no_chips,constant_h3 - constant_original_engine,34
+2025-26,fixed_chips,constant_h3 - constant_original_engine,-1
+2025-26,no_chips,constant_h3 - constant_original_engine,-26
+2022-23,fixed_chips,constant_h1 - re_refresh_h1,-7
+2022-23,no_chips,constant_h1 - re_refresh_h1,67
+2023-24,fixed_chips,constant_h1 - re_refresh_h1,24
+2023-24,no_chips,constant_h1 - re_refresh_h1,140
+2024-25,fixed_chips,constant_h1 - re_refresh_h1,-28
+2024-25,no_chips,constant_h1 - re_refresh_h1,66
+2025-26,fixed_chips,constant_h1 - re_refresh_h1,64
+2025-26,no_chips,constant_h1 - re_refresh_h1,35
+2022-23,fixed_chips,re_refresh_h3 - re_refresh_h1,-48
+2022-23,no_chips,re_refresh_h3 - re_refresh_h1,79
+2023-24,fixed_chips,re_refresh_h3 - re_refresh_h1,56
+2023-24,no_chips,re_refresh_h3 - re_refresh_h1,-1
+2024-25,fixed_chips,re_refresh_h3 - re_refresh_h1,61
+2024-25,no_chips,re_refresh_h3 - re_refresh_h1,41
+2025-26,fixed_chips,re_refresh_h3 - re_refresh_h1,-91
+2025-26,no_chips,re_refresh_h3 - re_refresh_h1,127
+2022-23,fixed_chips,interaction,47
+2022-23,no_chips,interaction,-33
+2023-24,fixed_chips,interaction,-69
+2023-24,no_chips,interaction,-120
+2024-25,fixed_chips,interaction,17
+2024-25,no_chips,interaction,-7
+2025-26,fixed_chips,interaction,90
+2025-26,no_chips,interaction,-153

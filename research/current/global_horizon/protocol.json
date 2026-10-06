@@ -1,0 +1,42 @@
+{
+  "created": "2026-10-06",
+  "status": "Locked before this run; follows docs/NEXT_EXPERIMENT.md; no untouched holdout",
+  "seasons": [
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "new_models": [
+    "constant_h1",
+    "constant_h3"
+  ],
+  "matched_controls": [
+    "re_refresh_h1",
+    "re_refresh_h3"
+  ],
+  "external_controls": [
+    "mix_ridge_extra_50",
+    "constant_original_engine",
+    "extra_refresh"
+  ],
+  "new_simulations": 16,
+  "matched_matrix_simulations": 32,
+  "primary": "Net season points with inherited fixed chips; no chips diagnostic",
+  "forecast": "Reuse learned chronological global weights and forecasts unchanged; same decision_specialist.models.future_proxy for future rounds",
+  "decision": "Same decision_specialist.planner and run_horizon.run body; horizons1/3, solver10s gap1e-5, same handoff and chip dates",
+  "comparisons": [
+    "constant_h3 - constant_h1",
+    "constant_h3 - re_refresh_h3",
+    "constant_h3 - mix_ridge_extra_50",
+    "constant_h3 - extra_refresh"
+  ],
+  "interaction": "(constant_h3-constant_h1)-(re_refresh_h3-re_refresh_h1)",
+  "no_tuning": "No new weights, features, model fits, dates or solver changes",
+  "limitations": [
+    "Future neutral fixture proxy",
+    "Historical price/status/calendar and modern chip/FT rules",
+    "Four previously examined seasons",
+    "Solver tie sensitivity"
+  ]
+}

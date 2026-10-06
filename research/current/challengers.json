@@ -31,13 +31,23 @@
     "rich_refresh"
   ],
   "research_only": [
-    "gate"
+    "gate",
+    "constant_h3"
   ],
-  "next_proposed_test": "Global learned HGB weight with matched H1/H3 planning; see docs/NEXT_EXPERIMENT.md",
+  "next_proposed_test": "Combination test completed in global_horizon; prioritize point-in-time data, deterministic ties and prospective evaluation",
   "limitations": [
     "No untouched holdout",
     "Future neutral-fixture proxy",
     "Historical price/status/calendar limitations",
     "Different evidence periods for the two challengers"
-  ]
+  ],
+  "last_combination_test": {
+    "report": "global_horizon/README.md",
+    "status": "Completed; incremental benefit not established",
+    "mean_gain_fixed_chips_vs_reference": 70.0,
+    "mean_gain_no_chips_vs_reference": 23.75,
+    "mean_gain_fixed_chips_vs_global_h1": 15.75,
+    "wins_fixed_chips_vs_global_h1": 1,
+    "seasons": 4
+  }
 }

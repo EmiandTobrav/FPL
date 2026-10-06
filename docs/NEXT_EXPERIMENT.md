@@ -1,6 +1,6 @@
-# Neste foreslåtte forsøk: global HGB-vekt med tre-rundersplanlegging
+# Kombinasjonsforsøket: global HGB-vekt med tre-rundersplanlegging
 
-Status 6. oktober 2026: **foreslått, ikke kjørt**. Brukeren har bekreftet at oppdatert Ridge/Extra med H3 og global, tidsordnet lært HGB-vekt skal videreføres som utfordrere. [Kandidatregister](../research/current/challengers.json). Ingen produksjonsmodell er byttet.
+Status 6. oktober 2026: **fullført**. [Resultatrapport](../research/current/global_horizon/README.md): +70,0/+23,75 mot referansen med/uten chips, men bare +15,75/−16,75 mot globalvekt med H1. Primær tilleggsgevinst kommer fra én av fire sesonger. De aktive utfordrerne beholdes; kombinasjonen registreres som forskning. Resten av dokumentet bevarer testopplegget som ble avtalt før kjøring. Brukeren har bekreftet at oppdatert Ridge/Extra med H3 og global, tidsordnet lært HGB-vekt skal videreføres som utfordrere. [Kandidatregister](../research/current/challengers.json). Ingen produksjonsmodell er byttet.
 
 ## Spørsmålet
 

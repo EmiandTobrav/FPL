@@ -28,17 +28,17 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 ## Bekreftede aktive utfordrere
 
-Brukeren bekreftet 6. oktober 2026 at `re_refresh_h3` og `constant` skal videreføres som aktive utfordrere. Reglene og evidensen er registrert i [challengers.json](../research/current/challengers.json). Den opprinnelige referansen beholdes. [Neste foreslåtte forsøk](NEXT_EXPERIMENT.md) er en matchet 2 × 2-test av global HGB-vekt og H3 på de samme fire sesongene, med 16 nye forløp. Denne kombinasjonen er ikke kjørt.
+Brukeren bekreftet 6. oktober 2026 at `re_refresh_h3` og `constant` skal videreføres som aktive utfordrere. Reglene og evidensen er registrert i [challengers.json](../research/current/challengers.json). Den opprinnelige referansen beholdes. [Kombinasjonsforsøket](NEXT_EXPERIMENT.md) er nå fullført med 16 nye forløp. Kombinasjonen har +70,0 med chips mot referansen, men ustabil tilleggsverdi over global H1; den beholdes som forskningskandidat.
 
 ## Prioritert neste arbeid
 
-Oppdatert etter tre-rundersplanlegging og lært HGB-blanding:
+Oppdatert etter kombinasjonstesten:
 
-1. Behold oppdatert Ridge/Extra med H3 og lært global HGB-vekt som låste utfordrere. H3 gir +51,0/+31,2 mot referansen over seks sesonger; global HGB-vekt +54,3/+40,5 over fire. Ingen automatisk produksjonsendring.
-2. Neste kombinasjonsforsøk kan teste global, tidsordnet lært HGB-vekt sammen med flerukersplanlegging. Dette er ikke testet i siste runde. Krev matchede H1-kontroller og samme tidsriktige input. Gate/H3-kombinasjonen er heller ikke testet.
-3. Prioriter historiske før-frist-kalendere, rolle-/tilgjengelighetsdata og prospektiv evaluering. H3 bruker fortsatt én nøytral fremtidig kamp og en felles motstanderjustering; ikke les fremtidige `games`-rader som kjent informasjon.
-4. Gjør likeverdige valg mer deterministiske før praktisk bruk. Motorbytte ved H1 kan gi ulike senere poeng til tross for lik første prognoseverdi; 50/50-kontrollen gjenskaper derimot alle tidligere troppsvalg og scorer i siste test.
-5. Situasjonsstyrt HGB-vekt er fortsatt et forskningsspor: +7,75 mot global vekt med chips, men −28,5 uten. Unngå flere terskel-/vektsøk på samme fasit. Kort historikk og den selvstendige hendelsesmodellens kalibrering er fortsatt uløst.
+1. Behold de bekreftede utfordrerne `re_refresh_h3` og `constant`. Ny global H3 er forskning: +70,0/+23,75 mot referansen på fire sesonger, men +15,75/−16,75 mot global H1, og bare én primær sesongseier mot H1.
+2. Prioriter før-frist-kalender/tilgjengelighetsdata og en låst prospektiv evaluering. Flere historiske vekt-/horisontsøk gir ikke en urørt bekreftelse.
+3. Gjør håndtering av likeverdige valg mer deterministisk før praktisk bruk. Global H1 gjenskaper arkivet i kombinasjonstesten, men tidligere motoravvik viser at dette fortsatt er relevant.
+4. Undersøk bedre faktisk kjent fremtidig kampprogram i en separat kontrollert dataablasjon når arkivet finnes. Ikke les fremtidige `games`-rader som kjent informasjon.
+5. Gate og nye spilleres roller/tilgjengelighet er fortsatt forskning. Ingen nye terskler eller blandingsvekter er valgt etter siste resultater.
 
 Rapporter nettosesongpoeng med chips som forhåndsbestemt primærmål, treffkostnad, usikkerhet og sesongvise forskjeller. Uten chips er diagnostikk. Samme starttilstand og samme beslutningsmotor skal brukes for å isolere modellendringer.
 
@@ -139,3 +139,14 @@ Gate gir +62,0/+12,0 mot referansen med/uten chips; global vekt +54,25/+40,5. Be
 Fremtidsprognosen er en nøytral proxy: gammel frossen referansenøytral rate pluss aktuell oppdatert per-kamp-forskjell; aktuell kampeffekt halveres fremover, én kamp per runde. Blank aktuell runde bruker referansens nøytrale fallback. Ingen faktisk arkivert fremtidig før-frist-kalender. H3 kan ikke selge og gjenkjøpe en opprinnelig spiller innen samme plan. Samme historiske pris-/tilgjengelighets-/chipregelbegrensninger som før.
 
 H1-motorparitet er eksplisitt målt. 50/50 gjenskaper alle gamle troppsvalg og sesongscorer; Extra/ref kan avvike gjennom likeverdige valg og små solvertoleranser. Dette er ikke horisontgevinst. Alle 2992 nye beslutninger er optimale innen sine toleranser, største H3-gap omtrent 1e-5. 179 tester bestått lokalt. Prognoser, koeffisienter, eldre-sesong-auditer, 88 spor, usikkerhet, valg og fingeravtrykk ligger i `research/current/decision_specialist`. Ingen urørt holdout eller bekreftet CI-status. Globalvekt+H3 er et forslag, ikke et utført forsøk.
+
+
+## Global HGB-vekt med H3 fullført
+
+[Rapport](../research/current/global_horizon/README.md). 16 nye forløp, 544 beslutninger, 32 forløp i matchet 2 × 2-design og 56 inkludert eksterne kontroller. Samme fire sesonger 2022/23–2025/26, samme lærte globale vekter, samme planlegger og fremtidsproxy. Ingen ny modelltrening.
+
+Global H3 gir 2308,25 med chips, +70,0 mot referansen (4/4, beskrivende intervall [23;106,5]), og 2172,75 uten, +23,75 (3/4). Mot global H1 er det +15,75 med chips (bare 1/4, intervall [−10;58,25]) og −16,75 uten. Sesongvise primære horisonteffekter er −1,−13,+78,−1. Mot Ridge/Extra H3 er det +34,5 med chips (2/4) og −1,25 uten. Mot retrent Extra er det +15,5/+50,75, med brede intervaller over null.
+
+Samspill mellom globalvekt og H3 er +21,25 med chips, usikkert, men −78,25 uten og negativt i alle fire sesonger. Tidligere forbedringer kan ikke summeres. Global H1 gjenskaper alle åtte gamle globalvektspor med samme tropper og poeng. Alle 544 nye beslutninger er optimale innen toleransen, maks gap 9,55e-6. Poengregnskap, starttilstand, spillerkobling og matchede før-frist-prognoser er kontrollert. Tre relevante eksisterende regresjonstester er kjørt på nytt og består; ingen ny full testkjøring påstås.
+
+De to bekreftede utfordrerne beholdes; `constant_h3` legges til som forskningskandidat. Kode, protokoll, prognoser, spor, parete resultater og hashkontroller er lagret under `research/current/global_horizon`. Ingen produksjonsendring, urørt holdout eller verifisert GitHub CI-status.

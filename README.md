@@ -5,7 +5,8 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)
-- [Aktive utfordrere](research/current/challengers.json) og [neste foreslåtte kombinasjonsforsøk](docs/NEXT_EXPERIMENT.md)
+- [Global HGB-vekt med H3: kombinasjonstest, 16 nye forløp](research/current/global_horizon/README.md)
+- [Aktive utfordrere](research/current/challengers.json) og [utført kombinasjonsforsøk](docs/NEXT_EXPERIMENT.md)
 - [Tre-rundersplanlegging og lært HGB-blanding: 88 nye forløp](research/current/decision_specialist/README.md)
 - [Chipmekanismer og modellstyrker per situasjon: diagnostikk og 144 ablasjoner](research/current/behavior_diagnostics/README.md)
 - [Retrening av Ridge/Extra Trees og faste blandinger: 60 nye forløp](research/current/retrained_ensemble/README.md)

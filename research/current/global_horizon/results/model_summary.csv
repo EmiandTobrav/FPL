@@ -1,0 +1,15 @@
+mode,model,mean_points,gain,wins,mean_hits,mean_transfers,nonoptimal,max_gap
+fixed_chips,constant_h1,2292.5,54.25,4,15.0,77.25,0,4.155959128841177e-06
+fixed_chips,constant_h3,2308.25,70.0,4,25.0,77.5,0,9.399565159832806e-06
+fixed_chips,constant_original_engine,2292.5,54.25,4,15.0,77.25,0,1.2144618823893397e-16
+fixed_chips,extra_refresh,2292.75,54.5,3,12.0,75.5,0,1.4680739209621517e-16
+fixed_chips,mix_ridge_extra_50,2238.25,0.0,0,13.0,74.5,0,0.0
+fixed_chips,re_refresh_h1,2279.25,41.0,3,13.0,75.0,0,3.990836476450864e-09
+fixed_chips,re_refresh_h3,2273.75,35.5,3,17.0,75.5,0,9.839664451529573e-06
+no_chips,constant_h1,2189.5,40.5,3,11.0,36.5,0,0.0
+no_chips,constant_h3,2172.75,23.75,3,26.0,40.5,0,9.552708392397997e-06
+no_chips,constant_original_engine,2189.5,40.5,3,11.0,36.5,0,0.0
+no_chips,extra_refresh,2122.0,-27.0,1,12.0,36.75,0,0.0
+no_chips,mix_ridge_extra_50,2149.0,0.0,0,13.0,37.25,0,1.3695134188280824e-16
+no_chips,re_refresh_h1,2112.5,-36.5,2,9.0,36.25,0,1.3150036996686595e-15
+no_chips,re_refresh_h3,2174.0,25.0,2,14.0,37.25,0,4.528606044100519e-06

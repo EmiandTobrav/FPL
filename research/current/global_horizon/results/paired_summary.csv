@@ -1,0 +1,17 @@
+mode,comparison,mean_gain,wins,min_gain,max_gain,low95,high95
+fixed_chips,constant_h1 - re_refresh_h1,13.25,2,-28,64,-17.5,46.25
+fixed_chips,constant_h3 - constant_h1,15.75,1,-13,78,-10.0,58.25
+fixed_chips,constant_h3 - constant_original_engine,15.75,1,-13,78,-10.0,58.25
+fixed_chips,constant_h3 - extra_refresh,15.5,3,-98,86,-62.75,72.25
+fixed_chips,constant_h3 - mix_ridge_extra_50,70.0,4,2,117,23.0,106.5
+fixed_chips,constant_h3 - re_refresh_h3,34.5,2,-45,154,-28.0,112.75
+fixed_chips,interaction,21.25,3,-69,90,-40.0,71.75
+fixed_chips,re_refresh_h3 - re_refresh_h1,-5.5,2,-91,61,-69.5,58.5
+no_chips,constant_h1 - re_refresh_h1,77.0,4,35,140,43.0,121.5
+no_chips,constant_h3 - constant_h1,-16.75,2,-121,46,-82.25,40.0
+no_chips,constant_h3 - constant_original_engine,-16.75,2,-121,46,-82.25,40.0
+no_chips,constant_h3 - extra_refresh,50.75,3,-105,235,-63.25,179.0
+no_chips,constant_h3 - mix_ridge_extra_50,23.75,3,-70,129,-46.25,99.5
+no_chips,constant_h3 - re_refresh_h3,-1.25,3,-118,59,-80.0,49.25
+no_chips,interaction,-78.25,0,-153,-7,-136.5,-20.0
+no_chips,re_refresh_h3 - re_refresh_h1,61.5,3,-1,127,19.0,105.5

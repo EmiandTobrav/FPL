@@ -1,0 +1,14 @@
+{
+  "new_simulations": 16,
+  "new_decisions": 544,
+  "compared_simulations": 56,
+  "matched_matrix_simulations": 32,
+  "identical_run_function": true,
+  "identical_horizon_chip_function": true,
+  "control_traces_sha256_verified": true,
+  "identical_opening": true,
+  "point_accounting": true,
+  "forecast_control_max_difference": 2.220446049250313e-15,
+  "nonoptimal": 0,
+  "max_solver_gap": 9.552708392397997e-06
+}
