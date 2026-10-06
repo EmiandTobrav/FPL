@@ -50,3 +50,12 @@ Historiske poeng, moderne chips/FT-regler; priser er laggede proxyer; skader og 
 ## Litteraturgjennomgang
 
 Se [LITERATURE_REVIEW.md](LITERATURE_REVIEW.md) for primærkilder, kildekritikk og prioriterte forsøk. Flerukers planlegging, prognosediversitet og separat angrep/forsvar er prioritert. Crowd-signaler og beslutningsrettet læring er videre kandidater. ORiON-artikkelens topp-4 %-resultat har et dokumentert chipavvik; det brukes ikke som regelkorrekt benchmark. Ingen nye modeller er trent eller ny sluttscore produsert i litteraturgjennomgangen.
+
+
+## Oppsidetest fullført
+
+Se [forsøksrapporten](../research/current/upside/README.md). Fire kandidater er trent og kjørt gjennom 48 nye sesongforløp: ren oppside, 25 % oppsideblanding, relevansvektet HGB og 50 % relevansvektet blanding. Alle taper i gjennomsnitt mot Ridge/Extra Trees 50/50: henholdsvis −163,7/−134,2, −56,5/−35,0, −72,5/−100,2 og −46,7/−53,5 poeng uten/med fast chipkalender. Ingen produksjonsendring.
+
+Topp-20-treff på 8+ forbedres opptil 0,67 prosentpoeng, men billige spillere og kort historikk får ikke bedre treffandel. Tidsordnet modellvalg beholder referansen i alle fire evalueringssesonger. Ren oppside er ikke kalibrert forventet totalpoeng; endret scoreskala påvirker også byttevilje. Ingen urørt holdout.
+
+Kode, protokoll, prognoser, 48 spor, usikkerhet og kontroller er lagret under `research/current/upside`. 156 eksisterende tester og tre nye tester bestått lokalt. Kontroll-HGB gjenskaper alle tidligere prognoser nøyaktig. Neste arbeid bør prioritere eksisterende plan for flerukers optimizer og bedre minutter/rolle-signaler fremfor å lete videre etter blandingsvekter på samme fasit.

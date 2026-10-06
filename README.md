@@ -5,6 +5,7 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)
+- [Oppsidemodeller: 48 nye forløp og resultater](research/current/upside/README.md)
 - [Faglitteratur og prioriterte forsøk](docs/LITERATURE_REVIEW.md)
 - [Gjennomgang av det eldre repositoryet](docs/REPOSITORY_REVIEW.md)
 - [Aktuell forsøksprotokoll](research/current/protocol.json)

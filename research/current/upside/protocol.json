@@ -1,0 +1,54 @@
+{
+  "created": "2026-10-06",
+  "status": "Predeclared before new training/results; retrospective research, no untouched holdout",
+  "threshold": 8,
+  "target": "E[Y * 1(Y >= 8)] per fixture; fixture contributions summed for DGW, NOT a GW quantile/probability",
+  "features": "Unchanged current HGB BASE+FX; no new xG package to confound objectives",
+  "training": "Only earlier seasons, outcomes available before first cutoff, frozen models during season",
+  "relevance_weights": "1 + 3*clip(historic_m6,0,4)/4*clip(minutes_m6,0,60)/60 + 1(n_history<12); feature-only, all rows weight >= 1",
+  "candidates": [
+    "upside_only",
+    "mix_upside_25",
+    "weighted_mean",
+    "mix_weighted_50"
+  ],
+  "mixes": {
+    "mix_upside_25": ".75*(.5*ridge+.5*extra)+.25*tail",
+    "mix_weighted_50": ".5*(.5*ridge+.5*extra)+.5*weighted"
+  },
+  "reference": "Frozen 50/50 Ridge+Extra Trees; also compare HGB and Ridge",
+  "seasons": [
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "regimes": [
+    "no_chips",
+    "fixed_chips"
+  ],
+  "primary": "GW38 net season points; same original GW1-4 opening and inherited actual state",
+  "secondary": [
+    "weekly top20 haul precision/recall and NDCG",
+    "top10 within predeadline cheap and short-history strata",
+    "captain actual points and haul rate",
+    "hits/turnover/solver status"
+  ],
+  "cheap_caps_tenths": {
+    "1": 45,
+    "2": 50,
+    "3": 60,
+    "4": 60
+  },
+  "short_history": "fewer than 12 observed past fixture rows; not a true debut-season indicator",
+  "selection": "For 2022 onward, select among reference and 4 new candidates on earlier seasons only: mean gain minus .25 SD; keep reference within 2 points of best",
+  "limitations": [
+    "Tail scores and blends are decision scores, not calibrated total expected points",
+    "Same incomplete historical registration/injury/price/calendar proxies as current experiment",
+    "Summed fixture-tail expectations are not expected weekly tail nor probability of weekly haul",
+    "Old frozen baseline/model family already studied; all comparisons exploratory"
+  ],
+  "production_change": false
+}

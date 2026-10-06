@@ -37,10 +37,11 @@ def make_choice(game,m,state,chip):
   if val(keep)>val(c)+1e-8:c=keep
  return p,c
 
-def run(task):
- s,m,mode=task;fn=ROOT/f'results/trace_{s}_{m}_{mode}.json.gz'
+def run(task, *, games=None, trace_dir=None):
+ s,m,mode=task;fn=(Path(trace_dir) if trace_dir is not None else ROOT/'results')/f'trace_{s}_{m}_{mode}.json.gz'
  if fn.exists():return json.loads(gzip.decompress(fn.read_bytes()))['summary']
- with open(ROOT/f'results/games_{s}.pkl','rb') as f:games=pickle.load(f)
+ if games is None:
+  with open(ROOT/f'results/games_{s}.pkl','rb') as f:games=pickle.load(f)
  state,hist=opening(s);start=copy.deepcopy(state);opening_points=sum(x['net'] for x in hist)
  rows=[]
  for gw in range(5,39):

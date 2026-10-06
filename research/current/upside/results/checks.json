@@ -1,0 +1,12 @@
+{
+  "new_simulations": 48,
+  "new_decisions": 1632,
+  "compared_simulations": 84,
+  "identical_handoff": true,
+  "accounting": true,
+  "temporal_training": true,
+  "outcome_blind_decisions": true,
+  "control_max_difference": 0.0,
+  "new_nonoptimal_decisions": 0,
+  "new_max_solver_gap": 3.350796399073156e-16
+}
