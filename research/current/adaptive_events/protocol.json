@@ -1,0 +1,15 @@
+{
+ "created":"2026-10-06", "status":"Locked before training/results; all six seasons already examined",
+ "primary":"Mean net season points with original fixed chip calendar versus frozen Ridge/Extra Trees 50/50",
+ "secondary":"No-chips diagnostic; paired season gains; temporal selection; same GW4 handoff and original one-round optimizer",
+ "seasons":["2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"],
+ "models":["hgb_refresh","hgb_recent","rich_frozen","rich_refresh","events_frozen","events_refresh","blend_events_direct","blend_three","blend_reference_mixture"],
+ "retraining":"GW5,9,13,17,21,25,29,33,37. Use only season<=current and available<that cutoff. Fit frozen models on older seasons available before GW1. No future rows in weights or fitting.",
+ "recent_weights":"2^(-age_days/365), all older observations retained",
+ "features":"BASE+FX plus minutes/played/60+ means3, minutes3-minus12, rest_days from last available observation, xG/xA means6, saves/bonus means6, team_ga and opp_gf; missing xG remains missing",
+ "events":"Three-class minutes classifier 0/1-59/60+. Four conditional regressors on played observations with short/long category: goals, assists, clean-sheet points and residual historic points. Predict both categories then average with their probabilities, adding appearance points1/2. No actual minute category at inference. Conditional regressors HGB squared loss, negative goals/assists/CS clipped. Other-point residual preserves exact historic target accounting, including scoring changes.",
+ "goal_weights":"Fixed bookkeeping weights GK6 DEF6 MID5 FWD4; residual absorbs any historical-rule differences. Not a current-rule rescore.",
+ "blends":{"blend_events_direct":".5 rich_refresh + .5 events_refresh","blend_three":"equal rich_refresh/events_refresh/frozen decomposed total expectation from horizon_upside","blend_reference_mixture":".5 strong reference + .5 frozen decomposed total expectation"},
+ "selection":"For 2022 onward pick using earlier seasons only: mean gain minus .25 SD; keep strong reference if within2 points of best. Fixed-chip primary; no-chips diagnostic chosen independently.",
+ "limits":["No timestamped injury/lineup-role archive","Conditional event regressions are not a full score distribution or independent causal effects","Original historical price/calendar/eligibility proxies retained","Do not claim generalization from descriptive winner; no untouched holdout","No parameter search after outcomes"]
+}

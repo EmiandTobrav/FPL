@@ -1,0 +1,11 @@
+{
+  "new_simulations": 108,
+  "compared_simulations": 132,
+  "new_decisions": 3672,
+  "training_windows": 60,
+  "temporal_training": true,
+  "identical_opening": true,
+  "accounting": true,
+  "nonoptimal": 0,
+  "max_solver_gap": 2.7473312739298143e-08
+}

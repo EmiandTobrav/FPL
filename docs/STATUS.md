@@ -28,13 +28,15 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 ## Prioritert neste arbeid
 
-1. Nøytral flerukerspilot er fullført (se siste seksjon). Skaff historiske før-frist-kalendere og bedre minutt-/tilgjengelighetsprognoser før videre kampkalenderbasert testing. Ikke les fremtidige `games_*.pkl`-rader som om de var kjent.
-2. Isoler angrep, forsvar og xG som egne ablasjoner, med uendret spillerpool og optimizer.
-3. Test residual-CatBoost/XGBoost og faste/innlærte blandinger på dagens felles spillerpool dersom begrenset modellbudsjett tillater det. Nåværende residual-HGB-pilot gir ingen klar gevinst.
-4. Bygg og kalibrer en reell minuttmodell; skill fra shrinkage av allerede minuttavhengige poeng.
-5. Bruk bevart FPL API-kode til prospektive før-frist-snapshots for pris, tilgjengelighet, tropp og kalender. Da kan en ny holdout opprettes.
+Oppdatert etter forsøket med retrening og hendelser:
 
-Ikke velg vekter på evalueringssesongens fasit. Endre én gruppe parametere om gangen og foretrekk stabile områder. Rapporter nettosesongpoeng, treffkostnad, usikkerhet og sesongvise forskjeller, i tillegg til MAE/RMSE.
+1. Test løpende retrening av Ridge/Extra Trees mot samme sesongfrosne referanse, og behold `rich_refresh` som en selvstendig utfordrer. Ikke velg nye blandingsvekter på de samme evalueringsresultatene.
+2. Skaff historiske før-frist-kalendere og lagre nye snapshots for priser, tilgjengelighet og roller. Nøytral flerukerspilot er fullført; ikke les fremtidige `games_*.pkl`-rader som kjent ved dagens frist.
+3. Diagnostiser minuttsannsynligheter og hendelseskomponenter før flere komplekse hendelsesmodeller. Den første selvstendige hendelsesmodellen ga ingen primærgevinst.
+4. Isoler xG, kort historikk, angrep/forsvar og tilgjengelighet som egne ablasjoner med uendret optimizer. Den utvidede pakken ga ujevne resultater og identifiserer ikke én kausal featuregevinst.
+5. Opprett en prospektiv holdout med fryste kandidatregler. Etter mange undersøkelser av de samme seks sesongene er nye data viktigere enn stadig finere vektsøk.
+
+Rapporter nettosesongpoeng med chips som forhåndsbestemt primærmål, treffkostnad, usikkerhet og sesongvise forskjeller. Uten chips er diagnostikk. Samme starttilstand og samme beslutningsmotor skal brukes for å isolere modellendringer.
 
 ## Reproduksjon og begrensninger
 
@@ -79,3 +81,16 @@ Dekomponert forventning `p*E[Y|Y>=8]+(1-p)*E[Y|Y<8]` gir +30,0/+72,5 mot vanlig 
 H4 mot matchet H1: Ridge/Extra −22,0/+25,3; HGB +37,3/+35,3; dekomponert −32,7/−52,3 (uten/med chips). Sterk H4 er best med chips, men ikke robust på tvers av regimer. Ingen produksjonsendring. De 287 tidsbegrensede H4-beslutningene (maks gap 1,552 %) gjør at små gevinster må kontrolleres med strammere solver før eventuell bruk.
 
 168 tester bestått på ferdig kode. Alle 2448 beslutninger har gjennomførbart oppgjør og identisk åpning. Prognoser, kilde-/inputfingeravtrykk, 72 spor med fremtidige planer, sesongvise effekter, solverdiagnostikk og usikkerhet er lagret under `research/current/horizon_upside`. Ingen urørt holdout. Dekomponert modell blandet med sterk referanse er ikke testet her.
+
+
+## Løpende retrening og hendelsesmodell fullført
+
+[Rapport](../research/current/adaptive_events/README.md). Ni forhåndsbestemte kandidater, seks sesonger og to chipregimer ga 108 nye forløp. Primærmålet ble fast chipkalender; uten chips diagnostikk. Modeller trenes hver fjerde GW med kun før-frist-utfall, mot frosne kontroller. Selvstendig modell for 0/1–59/60+ minutter og betingede mål/assists/CS-/øvrige poeng. Tre faste blandinger inkludert.
+
+Utvidet HGB med retrening er beskrivende primærvinner: 2224,7 poeng, +8,3 mot sterk referanse. Bare 3/6 seire, intervall [−62,7; 79,7], tap i de to siste sesongene. Ingen robust ny totalvinner; behold som utfordrer uten produksjonsendring. Tidsordnet modellvalg beholder referansen i alle fire primære evalueringssesonger (0 gevinst).
+
+Det tydeligste funnet er retrening av vanlig HGB: +54,7 med chips / +85,8 uten mot samme sesongfrosne HGB, med 5/6 seire i begge regimer. 365-dagers tidsvekter svekket modellen. Oppdatert hendelsesmodell tapte −89,2/−51,0 mot sterk referanse; direkte/hendelsesblanding ga −21,5/+22,2. Blandingens treff blant billige spillere bedret seg, men primær sesongscore falt.
+
+Neste kontrollforsøk kan teste retrening også av den sterke referansefamilien, samtidig som utvidet oppdatert HGB beholdes som selvstendig utfordrer. Hendelsesmodellen trenger komponentdiagnostikk og bedre rolle-/tilgjengelighetsdata. Ingen blending av nye undergrupper etter fasit. Data for xG starter i 2022/23; manglende verdier ble ikke fylt med framtidig informasjon.
+
+172 tester bestått; 60 tidsriktige treningsvinduer kontrollert; alle 3672 nye beslutninger har optimal solverstatus innen toleransen. Kode, prognoser, treningsauditer, 108 spor og resultater ligger i `research/current/adaptive_events`. Ingen urørt holdout.
