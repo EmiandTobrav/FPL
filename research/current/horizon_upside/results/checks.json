@@ -1,0 +1,12 @@
+{
+  "simulations": 72,
+  "decisions": 2448,
+  "temporal_training": true,
+  "identical_opening": true,
+  "accounting": true,
+  "max_training_control_error": 4.636919808120865e-07,
+  "nonoptimal": 287,
+  "max_solver_gap": 0.015519723464267762,
+  "mean_h4_length": 3.426470588235294,
+  "h4_decisions_with_future_transfers": 1004
+}

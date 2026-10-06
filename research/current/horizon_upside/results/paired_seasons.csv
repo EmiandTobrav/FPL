@@ -1,0 +1,145 @@
+season,mode,comparison,gain
+2020-21,fixed_chips,mixture_h4 - reference_h4,-164
+2020-21,no_chips,mixture_h4 - reference_h4,-148
+2021-22,fixed_chips,mixture_h4 - reference_h4,23
+2021-22,no_chips,mixture_h4 - reference_h4,-115
+2022-23,fixed_chips,mixture_h4 - reference_h4,-259
+2022-23,no_chips,mixture_h4 - reference_h4,-74
+2023-24,fixed_chips,mixture_h4 - reference_h4,-113
+2023-24,no_chips,mixture_h4 - reference_h4,-102
+2024-25,fixed_chips,mixture_h4 - reference_h4,-126
+2024-25,no_chips,mixture_h4 - reference_h4,129
+2025-26,fixed_chips,mixture_h4 - reference_h4,62
+2025-26,no_chips,mixture_h4 - reference_h4,-29
+2020-21,fixed_chips,hgb_h4 - reference_h4,-226
+2020-21,no_chips,hgb_h4 - reference_h4,-106
+2021-22,fixed_chips,hgb_h4 - reference_h4,88
+2021-22,no_chips,hgb_h4 - reference_h4,36
+2022-23,fixed_chips,hgb_h4 - reference_h4,-106
+2022-23,no_chips,hgb_h4 - reference_h4,-8
+2023-24,fixed_chips,hgb_h4 - reference_h4,-105
+2023-24,no_chips,hgb_h4 - reference_h4,-20
+2024-25,fixed_chips,hgb_h4 - reference_h4,-147
+2024-25,no_chips,hgb_h4 - reference_h4,-24
+2025-26,fixed_chips,hgb_h4 - reference_h4,10
+2025-26,no_chips,hgb_h4 - reference_h4,23
+2020-21,fixed_chips,reference_h4 - reference_h1,85
+2020-21,no_chips,reference_h4 - reference_h1,45
+2021-22,fixed_chips,reference_h4 - reference_h1,-48
+2021-22,no_chips,reference_h4 - reference_h1,-123
+2022-23,fixed_chips,reference_h4 - reference_h1,34
+2022-23,no_chips,reference_h4 - reference_h1,49
+2023-24,fixed_chips,reference_h4 - reference_h1,-7
+2023-24,no_chips,reference_h4 - reference_h1,-16
+2024-25,fixed_chips,reference_h4 - reference_h1,61
+2024-25,no_chips,reference_h4 - reference_h1,-94
+2025-26,fixed_chips,reference_h4 - reference_h1,27
+2025-26,no_chips,reference_h4 - reference_h1,7
+2020-21,fixed_chips,hgb_h4 - hgb_h1,92
+2020-21,no_chips,hgb_h4 - hgb_h1,111
+2021-22,fixed_chips,hgb_h4 - hgb_h1,150
+2021-22,no_chips,hgb_h4 - hgb_h1,48
+2022-23,fixed_chips,hgb_h4 - hgb_h1,-58
+2022-23,no_chips,hgb_h4 - hgb_h1,-51
+2023-24,fixed_chips,hgb_h4 - hgb_h1,-54
+2023-24,no_chips,hgb_h4 - hgb_h1,61
+2024-25,fixed_chips,hgb_h4 - hgb_h1,69
+2024-25,no_chips,hgb_h4 - hgb_h1,19
+2025-26,fixed_chips,hgb_h4 - hgb_h1,13
+2025-26,no_chips,hgb_h4 - hgb_h1,36
+2020-21,fixed_chips,mixture_h4 - mixture_h1,-71
+2020-21,no_chips,mixture_h4 - mixture_h1,-87
+2021-22,fixed_chips,mixture_h4 - mixture_h1,54
+2021-22,no_chips,mixture_h4 - mixture_h1,-241
+2022-23,fixed_chips,mixture_h4 - mixture_h1,-176
+2022-23,no_chips,mixture_h4 - mixture_h1,-7
+2023-24,fixed_chips,mixture_h4 - mixture_h1,-85
+2023-24,no_chips,mixture_h4 - mixture_h1,104
+2024-25,fixed_chips,mixture_h4 - mixture_h1,-53
+2024-25,no_chips,mixture_h4 - mixture_h1,22
+2025-26,fixed_chips,mixture_h4 - mixture_h1,17
+2025-26,no_chips,mixture_h4 - mixture_h1,13
+2020-21,fixed_chips,mixture_h1 - hgb_h1,225
+2020-21,no_chips,mixture_h1 - hgb_h1,156
+2021-22,fixed_chips,mixture_h1 - hgb_h1,31
+2021-22,no_chips,mixture_h1 - hgb_h1,138
+2022-23,fixed_chips,mixture_h1 - hgb_h1,-35
+2022-23,no_chips,mixture_h1 - hgb_h1,-110
+2023-24,fixed_chips,mixture_h1 - hgb_h1,23
+2023-24,no_chips,mixture_h1 - hgb_h1,-125
+2024-25,fixed_chips,mixture_h1 - hgb_h1,143
+2024-25,no_chips,mixture_h1 - hgb_h1,150
+2025-26,fixed_chips,mixture_h1 - hgb_h1,48
+2025-26,no_chips,mixture_h1 - hgb_h1,-29
+2020-21,fixed_chips,mixture_h4 - hgb_h4,62
+2020-21,no_chips,mixture_h4 - hgb_h4,-42
+2021-22,fixed_chips,mixture_h4 - hgb_h4,-65
+2021-22,no_chips,mixture_h4 - hgb_h4,-151
+2022-23,fixed_chips,mixture_h4 - hgb_h4,-153
+2022-23,no_chips,mixture_h4 - hgb_h4,-66
+2023-24,fixed_chips,mixture_h4 - hgb_h4,-8
+2023-24,no_chips,mixture_h4 - hgb_h4,-82
+2024-25,fixed_chips,mixture_h4 - hgb_h4,21
+2024-25,no_chips,mixture_h4 - hgb_h4,153
+2025-26,fixed_chips,mixture_h4 - hgb_h4,52
+2025-26,no_chips,mixture_h4 - hgb_h4,-52
+2020-21,fixed_chips,hgb_h1 - reference_h1,-233
+2020-21,no_chips,hgb_h1 - reference_h1,-172
+2021-22,fixed_chips,hgb_h1 - reference_h1,-110
+2021-22,no_chips,hgb_h1 - reference_h1,-135
+2022-23,fixed_chips,hgb_h1 - reference_h1,-14
+2022-23,no_chips,hgb_h1 - reference_h1,92
+2023-24,fixed_chips,hgb_h1 - reference_h1,-58
+2023-24,no_chips,hgb_h1 - reference_h1,-97
+2024-25,fixed_chips,hgb_h1 - reference_h1,-155
+2024-25,no_chips,hgb_h1 - reference_h1,-137
+2025-26,fixed_chips,hgb_h1 - reference_h1,24
+2025-26,no_chips,hgb_h1 - reference_h1,-6
+2020-21,fixed_chips,hgb_h4 - reference_h1,-141
+2020-21,no_chips,hgb_h4 - reference_h1,-61
+2021-22,fixed_chips,hgb_h4 - reference_h1,40
+2021-22,no_chips,hgb_h4 - reference_h1,-87
+2022-23,fixed_chips,hgb_h4 - reference_h1,-72
+2022-23,no_chips,hgb_h4 - reference_h1,41
+2023-24,fixed_chips,hgb_h4 - reference_h1,-112
+2023-24,no_chips,hgb_h4 - reference_h1,-36
+2024-25,fixed_chips,hgb_h4 - reference_h1,-86
+2024-25,no_chips,hgb_h4 - reference_h1,-118
+2025-26,fixed_chips,hgb_h4 - reference_h1,37
+2025-26,no_chips,hgb_h4 - reference_h1,30
+2020-21,fixed_chips,mixture_h1 - reference_h1,-8
+2020-21,no_chips,mixture_h1 - reference_h1,-16
+2021-22,fixed_chips,mixture_h1 - reference_h1,-79
+2021-22,no_chips,mixture_h1 - reference_h1,3
+2022-23,fixed_chips,mixture_h1 - reference_h1,-49
+2022-23,no_chips,mixture_h1 - reference_h1,-18
+2023-24,fixed_chips,mixture_h1 - reference_h1,-35
+2023-24,no_chips,mixture_h1 - reference_h1,-222
+2024-25,fixed_chips,mixture_h1 - reference_h1,-12
+2024-25,no_chips,mixture_h1 - reference_h1,13
+2025-26,fixed_chips,mixture_h1 - reference_h1,72
+2025-26,no_chips,mixture_h1 - reference_h1,-35
+2020-21,fixed_chips,mixture_h4 - reference_h1,-79
+2020-21,no_chips,mixture_h4 - reference_h1,-103
+2021-22,fixed_chips,mixture_h4 - reference_h1,-25
+2021-22,no_chips,mixture_h4 - reference_h1,-238
+2022-23,fixed_chips,mixture_h4 - reference_h1,-225
+2022-23,no_chips,mixture_h4 - reference_h1,-25
+2023-24,fixed_chips,mixture_h4 - reference_h1,-120
+2023-24,no_chips,mixture_h4 - reference_h1,-118
+2024-25,fixed_chips,mixture_h4 - reference_h1,-65
+2024-25,no_chips,mixture_h4 - reference_h1,35
+2025-26,fixed_chips,mixture_h4 - reference_h1,89
+2025-26,no_chips,mixture_h4 - reference_h1,-22
+2020-21,fixed_chips,interaction: mixture horizon gain - HGB horizon gain,-163
+2020-21,no_chips,interaction: mixture horizon gain - HGB horizon gain,-198
+2021-22,fixed_chips,interaction: mixture horizon gain - HGB horizon gain,-96
+2021-22,no_chips,interaction: mixture horizon gain - HGB horizon gain,-289
+2022-23,fixed_chips,interaction: mixture horizon gain - HGB horizon gain,-118
+2022-23,no_chips,interaction: mixture horizon gain - HGB horizon gain,44
+2023-24,fixed_chips,interaction: mixture horizon gain - HGB horizon gain,-31
+2023-24,no_chips,interaction: mixture horizon gain - HGB horizon gain,43
+2024-25,fixed_chips,interaction: mixture horizon gain - HGB horizon gain,-122
+2024-25,no_chips,interaction: mixture horizon gain - HGB horizon gain,3
+2025-26,fixed_chips,interaction: mixture horizon gain - HGB horizon gain,4
+2025-26,no_chips,interaction: mixture horizon gain - HGB horizon gain,-23

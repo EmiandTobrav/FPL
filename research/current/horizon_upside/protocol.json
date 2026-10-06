@@ -1,0 +1,43 @@
+{
+  "created": "2026-10-06",
+  "status": "Locked before training and season runs; retrospective with no untouched holdout",
+  "seasons": [
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "models": [
+    "reference",
+    "hgb",
+    "mixture"
+  ],
+  "horizons": [
+    1,
+    4
+  ],
+  "regimes": [
+    "no_chips",
+    "fixed_chips"
+  ],
+  "mixture": "P(Y>=8)*E[Y|Y>=8] + (1-P(Y>=8))*E[Y|Y<8]; HGB classifier and two conditional HGB regressors, same BASE+FX, previous seasons only",
+  "future_forecasts": "No future game rows or final future schedule. One neutral fixture per future round. Current per-fixture forecast decays toward neutral forecast with 0.5^k. Blank current round uses neutral level. Neutral home=.5, opponent mean predeadline league rating/GA from currently eligible clubs. Frozen current player features and prices.",
+  "optimizer": "Rolling horizon integer program: separate squads, XI, captain, buys, sells, cash and exact capped FT transitions per planned round. Reoptimize each actual deadline; execute first action only. Same candidate pool union based on current/mean forecast, cheap/value players and all owned for BOTH horizons. No player can be bought more than once or sold more than once within a plan; initially owned players cannot be rebought. Current purchase/selling price accounting exact under frozen prices.",
+  "chips": "Original fixed calendar or none. Truncate horizon before a future wildcard/free hit. Current free hit uses one round; current wildcard preserves FT. Future BB/TC known from policy calendar. End at GW38.",
+  "solver": {
+    "time_limit_seconds": 5,
+    "mip_rel_gap": 0.001,
+    "workers": 4
+  },
+  "objective": "Sum planned expected XI + captain + 0.1 bench points, minus 4 per paid transfer and 0.5 per ordinary transfer. No discount or terminal value. Actual net season points primary.",
+  "comparisons": "H4-H1 within each forecast model; mixture-HGB at each horizon; difference-in-differences; all against strong reference H1. Legacy baseline reported separately if candidate pool changes decisions.",
+  "limits": [
+    "Neutral future scenarios, not archived fixture-aware forecasts",
+    "No new minute model; existing lagged minute features retained",
+    "Final current-GW assignment remains inherited proxy",
+    "No post-result parameter search; no automatic production promotion"
+  ],
+  "numeric_control": "Refitted ridge/extra may differ at float32 rounding scale: require <1e-5, then reuse existing current-round forecasts exactly. Neutral predictions use refitted models."
+}

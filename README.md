@@ -5,6 +5,7 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)
+- [Fire-runders planlegging og dekomponert oppsidemodell: 72 forløp](research/current/horizon_upside/README.md)
 - [Oppsidemodeller: 48 nye forløp og resultater](research/current/upside/README.md)
 - [Oppside som variabel og kapteinssignal: oppfølgingstest](research/current/upside_feature/README.md)
 - [Faglitteratur og prioriterte forsøk](docs/LITERATURE_REVIEW.md)

@@ -28,7 +28,7 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 ## Prioritert neste arbeid
 
-1. Hold prognosene fast og test hovedmodellens flerukers byttehorisont mot samme én-rundes referanse. Bruk bare kalender/prognoser som var tilgjengelige ved beslutningen; ikke les fremtidige `games_*.pkl`-rader som om de var kjent.
+1. Nøytral flerukerspilot er fullført (se siste seksjon). Skaff historiske før-frist-kalendere og bedre minutt-/tilgjengelighetsprognoser før videre kampkalenderbasert testing. Ikke les fremtidige `games_*.pkl`-rader som om de var kjent.
 2. Isoler angrep, forsvar og xG som egne ablasjoner, med uendret spillerpool og optimizer.
 3. Test residual-CatBoost/XGBoost og faste/innlærte blandinger på dagens felles spillerpool dersom begrenset modellbudsjett tillater det. Nåværende residual-HGB-pilot gir ingen klar gevinst.
 4. Bygg og kalibrer en reell minuttmodell; skill fra shrinkage av allerede minuttavhengige poeng.
@@ -68,3 +68,14 @@ Kode, protokoll, prognoser, 48 spor, usikkerhet og kontroller er lagret under `r
 Variabelen gir −12,0/+13,6 poeng mot matchet HGB-kontroll uten/med chips. I 50/50-blanding med sterk referanse gir den +27,2/−34,0 mot kontrollblandingen, men oppsideblandingen taper fortsatt −11,0/−37,6 mot sterk referanse. Kapteinsfilter innen 0,5 forventede poeng gir −5,0/+5,8, med brede intervaller over null. Ingen robust vinner og ingen produksjonsendring. Ingen egen hard kjøpspoolavgrensning ble testet.
 
 Alle fem sesonger var allerede undersøkt; ingen urørt holdout. Kode, protokoll, historiske oppsidevariabler, prognoser, spor, kapteinsvalg og parete resultater er lagret under `research/current/upside_feature`. 162 tester bestått lokalt. Videre arbeid bør prioritere bedre informasjon og flerukers optimizer fremfor å tune oppsidesignalet på samme sesongfasit.
+
+
+## Fire-runders planlegging og dekomponert oppside fullført
+
+[Rapport](../research/current/horizon_upside/README.md): seks sesonger × tre modeller × to horisonter × to chipregimer = 72 nye forløp. Full flertrinns bytteplan med bank og eksakte FT-overganger; bare første handling utføres. Fremtidig kamparkiv mangler før-frist-snapshots, så prognosene bruker én nøytral kamp per fremtidig runde og gradvis tilbakevending mot nøytral motstander, uten fremtidige utfall eller prognoser.
+
+Dekomponert forventning `p*E[Y|Y>=8]+(1-p)*E[Y|Y<8]` gir +30,0/+72,5 mot vanlig HGB ved én-rundesplanlegging, med seier i 3/6 og 5/6 sesonger. Den taper fortsatt −45,8/−18,5 mot matchet sterk H1-referanse. Ved H4 taper dekomponert modell −40,0/−15,2 mot vanlig HGB. Ingen ny totalvinner.
+
+H4 mot matchet H1: Ridge/Extra −22,0/+25,3; HGB +37,3/+35,3; dekomponert −32,7/−52,3 (uten/med chips). Sterk H4 er best med chips, men ikke robust på tvers av regimer. Ingen produksjonsendring. De 287 tidsbegrensede H4-beslutningene (maks gap 1,552 %) gjør at små gevinster må kontrolleres med strammere solver før eventuell bruk.
+
+168 tester bestått på ferdig kode. Alle 2448 beslutninger har gjennomførbart oppgjør og identisk åpning. Prognoser, kilde-/inputfingeravtrykk, 72 spor med fremtidige planer, sesongvise effekter, solverdiagnostikk og usikkerhet er lagret under `research/current/horizon_upside`. Ingen urørt holdout. Dekomponert modell blandet med sterk referanse er ikke testet her.
