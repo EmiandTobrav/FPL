@@ -1,0 +1,17 @@
+{
+  "status": "Locked before fitting or reading new candidate outcomes, 2026-10-06",
+  "benchmark": "constant_h3",
+  "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"],
+  "primary": "Net full-season points with inherited fixed chip calendar",
+  "secondary": "No-chips diagnostic",
+  "candidates": {
+    "pos_weight": "Same refreshed R/E and rich HGB experts. Four logit weights fit on earlier-season honest forecasts; squared deviations from the archived global logit penalized by 0.01, bounds [-4,4]. Same relevance-weighted squared loss as original global weight.",
+    "pos_hgb": "Replace rich HGB with four position-specific HGB estimators; retain original season global HGB mixture weight with refreshed R/E.",
+    "hybrid_hgb": "Replace rich HGB with a prespecified 50:50 blend of global and position HGB; retain original season global mixture weight."
+  },
+  "training": "Same RICH features, HGB hyperparameters and expanding history; refresh GW5,9,13,17,21,25,29,33,37; labels available strictly before current cutoff. Position weights fitted once before each season using only earlier season outcomes available before GW1.",
+  "controls": "Rerun constant_h3 with identical cached forecasts, solver, horizon=3, opening, prices, chip calendar and future_proxy. Verify archived benchmark traces and reproduce rich_refresh forecasts. No tuning or new input data.",
+  "scope": "24 candidate and 8 benchmark season simulations. Position models retain original small-tree regularization; no hyperparameter search. Test whole constructions, not an isolated equal-capacity effect.",
+  "report": "Paired seasonal gains, hits, transfers, bootstrap 95% intervals with 50000 resamples and seed173, per-position forecast errors, honest uncertainty from four reused evaluation seasons. No automatic promotion.",
+  "limitations": "Inherited historical fixture/status/price proxies and fixed chip schedule. No untouched holdout. Positional split may reduce sample size. Existing global mixture weights are held fixed for position/HGB replacements."
+}
