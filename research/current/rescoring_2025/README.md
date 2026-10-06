@@ -2,6 +2,10 @@
 
 Datakontroll utført 6. oktober 2026. **Full historisk omregning er ikke ferdig.** Målet er eksplisitt 2025/26, uavhengig av hvilken sesong som er «inneværende» ved kjøring.
 
+## Rekonstruksjon videreført
+
+[2024/25 med kvalitetsmerket defcon](defcon_2024/README.md) er ferdig: 1 253 utslag, 2 506 tilleggspoeng blant alle spillere. Historiske assists og bonus er foreløpig beholdt.
+
 ## Fullført sammenligning
 
 [2025/26-validering](core_2025_validation/README.md): 99,67 % enighet i defcon-poeng på 10 457 komplette utespillerrader; 268 mangler nødvendige felt. Gratisdata videreføres som kvalitetsmerket treningsgrunnlag, ikke eksakt testfasit. Ingen penger brukt; eventuell datatilgang har totalramme 500 NOK.

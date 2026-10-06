@@ -1,0 +1,23 @@
+{
+  "dataset_id": "historical_plus_defcon_2025_v1",
+  "season": "2024-25",
+  "rows": 27283,
+  "fixtures": 380,
+  "active_rows": 11566,
+  "excluded_manager_rows": 322,
+  "missing_active_defcon": 0,
+  "awards": 1253,
+  "added_player_points": 2506.0,
+  "full_2025_26_rescore": false,
+  "unchanged_components": [
+    "historical assists",
+    "historical bonus/BPS",
+    "all other historical player points"
+  ],
+  "quality": "Provider-derived defcon; approved for research by user. Not exact official target labels.",
+  "validation_reference": "../../core_2025_validation/README.md",
+  "temporal_note": "No learned correction from 2025/26. Final events used for labels only; predictive features must be lagged. Source choice was checked on 2025/26, so no untouched holdout is claimed.",
+  "sensitivity": "minus1/plus1 perturb defensive count by one per player/match; not statistical confidence bounds",
+  "benchmark_changed": false,
+  "cost_nok": 0
+}

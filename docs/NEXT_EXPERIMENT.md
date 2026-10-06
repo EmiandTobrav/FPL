@@ -1,3 +1,5 @@
+> Oppdatering 6. oktober 2026: Gratisdata godkjent av brukeren og [2024/25-defcon bygget](../research/current/rescoring_2025/defcon_2024/README.md). Neste modellforsøk må skille nytt poengoppgjør fra tilpasset trening, og bruke samme oppgjørsgrunnlag for benchmark og utfordrer. Historisk assist/bonus beholdes foreløpig; ikke full ny-regel-fasit. Ingen ny sesongsimulering er kjørt. Eldre plan nedenfor bevares som historikk.
+
 # Aktivt neste spor: stabile poeng etter 2025/26-regler
 
 Brukeren har valgt `fixture_full_h3_adaptive_tc` som arbeidsbenchmark (2351,50). Se [manifest](../research/current/benchmark.json). Gjennomført nå: reproduserbar dekning-/poengkontroll og kildevurdering. Neste datapilot: verifiser hendelsesdekning i et kontrollert 2024/25-utvalg før full historisk omregning. [Protokoll, begrensninger og resultater](../research/current/rescoring_2025/README.md).

@@ -2,6 +2,10 @@
 
 Oppdatert 6. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Nyeste datasett
+
+Brukeren godkjente videreføring av gratisdataene. [2024/25 med rekonstruert defcon](../research/current/rescoring_2025/defcon_2024/README.md) er nå bygget og lagret: 27 283 spiller-/kamprader, 380 kamper, null manglende aktive defcon-etiketter. 1 253 utslag / 2 506 tilleggspoeng i spillerpopulasjonen. Historiske assists og bonus er beholdt; ikke full 2025/26-omregning. Benchmark og modellresultater er uendret. Neste: separat forsøk med felles nytt poenggrunnlag og tidsriktig retrening.
+
 ## Nyeste validering
 
 [Sammenligning mot offisiell 2025/26](../research/current/rescoring_2025/core_2025_validation/README.md) fullført: alle 11 492 aktive FPL-rader koblet. Defcon er riktig i 10 423 av 10 457 komplette utespillerrader; 268 utespillerrader mangler nødvendig statistikk. 18 falske positive og 16 falske negative. Totale taklinger fungerer klart bedre enn vunne. Gratisdata kan videreføres med kvalitetsflagg; ingen eksakt eldre testfasit eller ny modellsimulering er hevdet. Ingen kostnad; brukerens totale tak for eventuell datatilgang er 500 NOK.
