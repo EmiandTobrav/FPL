@@ -8,7 +8,13 @@ Maksimer robust FPL-sluttscore etter at hovedmodellen tar over fra startmodellen
 
 Kvantifisering av elite-managere var et tidligere spor. Brukeren gikk videre til hovedmodellen; dette er nå hovedprioriteten. Rå elite-eierskapsarkiv er ikke nødvendig for gjeldende eksperiment og er ikke flyttet inn som aktivt datasett.
 
-## Gjeldende referanse
+## Gjeldende arbeidsreferanse
+
+Brukeren har 6. oktober 2026 valgt **global, lært HGB-vekt med tre-rundersplanlegging (`constant_h3`)** som ny referanse/benchmark for videre forsøk. [Maskinlesbart benchmarkmanifest](../research/current/benchmark.json) låser modellregelen, evidens, kildehash og de åtte sesongsporene.
+
+Primærmål: nettosesongpoeng med fast chipkalender. Benchmarken har **2308,25 poeng** i gjennomsnitt på 2022/23–2025/26; uten chips 2172,75. Nye kandidater skal vurderes mot denne på samme sesonger og ressurser. Den gamle `mix_ridge_extra_50` beholdes som historisk sekundærkontroll. Gamle protokoller, tabeller og differanser skal ikke skrives om; deres «referanse» betyr fortsatt den opprinnelige modellen. Dette er en arbeidsreferanse valgt etter observert primærscore, ikke en påstand om uavhengig bekreftet overlegenhet eller produksjonssetting.
+
+## Historisk referanse og opprinnelig forsøk
 
 Startmodell: `handoff=4`, `look=3`, `carry=1`, `friction=0.5`, `prior_mix=0`, `chip_reserve=1000`, `scenario=neutral`. Modeller trenes på eldre sesonger; hovedmottakerens optimizer har én-rundes horisont. Alle ti kandidater får samme starttilstand. Friksjon 0,5, benkvekt 0,10. Fast chipkalender: WC6, TC15, FH18, BB19, WC24, FH33, BB36, TC37. Det kjøres også uten chips.
 
@@ -28,13 +34,13 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 ## Bekreftede aktive utfordrere
 
-Brukeren bekreftet 6. oktober 2026 at `re_refresh_h3` og `constant` skal videreføres som aktive utfordrere. Reglene og evidensen er registrert i [challengers.json](../research/current/challengers.json). Den opprinnelige referansen beholdes. [Kombinasjonsforsøket](NEXT_EXPERIMENT.md) er nå fullført med 16 nye forløp. Kombinasjonen har +70,0 med chips mot referansen, men ustabil tilleggsverdi over global H1; den beholdes som forskningskandidat.
+Brukeren bekreftet 6. oktober 2026 at `re_refresh_h3` og `constant` skal videreføres som aktive utfordrere. Reglene og evidensen er registrert i [challengers.json](../research/current/challengers.json). Den opprinnelige referansen beholdes som historisk kontroll. [Kombinasjonsforsøket](NEXT_EXPERIMENT.md) er nå fullført med 16 nye forløp. Kombinasjonen har +70,0 med chips mot referansen, men ustabil tilleggsverdi over global H1; brukeren har deretter valgt den som ny arbeidsbenchmark.
 
 ## Prioritert neste arbeid
 
 Oppdatert etter kombinasjonstesten:
 
-1. Behold de bekreftede utfordrerne `re_refresh_h3` og `constant`. Ny global H3 er forskning: +70,0/+23,75 mot referansen på fire sesonger, men +15,75/−16,75 mot global H1, og bare én primær sesongseier mot H1.
+1. Bruk `constant_h3` som ny arbeidsbenchmark for alle kommende forsøk, i tråd med brukerens beslutning. Behold `re_refresh_h3`, `constant` og den gamle frosne referansen som kontroller. Rapporter gevinst mot ny benchmark på samme evalueringssesonger; ingen omskriving av historiske resultater.
 2. Prioriter før-frist-kalender/tilgjengelighetsdata og en låst prospektiv evaluering. Flere historiske vekt-/horisontsøk gir ikke en urørt bekreftelse.
 3. Gjør håndtering av likeverdige valg mer deterministisk før praktisk bruk. Global H1 gjenskaper arkivet i kombinasjonstesten, men tidligere motoravvik viser at dette fortsatt er relevant.
 4. Undersøk bedre faktisk kjent fremtidig kampprogram i en separat kontrollert dataablasjon når arkivet finnes. Ikke les fremtidige `games`-rader som kjent informasjon.

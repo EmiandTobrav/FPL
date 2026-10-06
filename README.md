@@ -2,6 +2,8 @@
 
 Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid på tvers av enheter. Det samler mai-prosjektet og den nye start-/hovedmodelltesten. Ingen ZIP-utpakking er nødvendig.
 
+**Gjeldende arbeidsbenchmark:** global, lært HGB-vekt med tre-rundersplanlegging (`constant_h3`), valgt av brukeren 6. oktober 2026. Gjennomsnitt 2308,25 poeng med chips på 2022/23–2025/26. Nye forsøk måles mot denne; historiske tabeller beholder sine opprinnelige referanser. Se [benchmarkmanifestet](research/current/benchmark.json).
+
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)

@@ -1,8 +1,8 @@
 {
   "updated": "2026-10-06",
-  "status": "User confirmed continuation as challengers; no production promotion",
+  "status": "User selected constant_h3 as active benchmark; previous challengers retained as comparators; no production deployment",
   "evidence_commit": "c9e3e6f30d36b1417f93ab1ab38ec0e424c71674",
-  "reference": "Original frozen mix_ridge_extra_50 with original single-round engine",
+  "reference": "constant_h3: global learned HGB weight with three-round planning",
   "primary_challengers": [
     {
       "id": "re_refresh_h3",
@@ -12,7 +12,8 @@
       "seasons": "2020-21 through 2025-26",
       "mean_gain_fixed_chips": 51.0,
       "mean_gain_no_chips": 31.166666666666668,
-      "locked": "Existing forecasts, parameters, future proxy and decision settings; changes require a new experiment"
+      "locked": "Existing forecasts, parameters, future proxy and decision settings; changes require a new experiment",
+      "reported_gain_reference_id": "mix_ridge_extra_50"
     },
     {
       "id": "constant",
@@ -22,7 +23,8 @@
       "seasons": "2022-23 through 2025-26",
       "mean_gain_fixed_chips": 54.25,
       "mean_gain_no_chips": 40.5,
-      "locked": "Existing temporal fitting rule and regularization, not a fixed weight chosen after evaluation"
+      "locked": "Existing temporal fitting rule and regularization, not a fixed weight chosen after evaluation",
+      "reported_gain_reference_id": "mix_ridge_extra_50"
     }
   ],
   "retained_comparators": [
@@ -31,8 +33,7 @@
     "rich_refresh"
   ],
   "research_only": [
-    "gate",
-    "constant_h3"
+    "gate"
   ],
   "next_proposed_test": "Combination test completed in global_horizon; prioritize point-in-time data, deterministic ties and prospective evaluation",
   "limitations": [
@@ -48,6 +49,10 @@
     "mean_gain_no_chips_vs_reference": 23.75,
     "mean_gain_fixed_chips_vs_global_h1": 15.75,
     "wins_fixed_chips_vs_global_h1": 1,
-    "seasons": 4
-  }
+    "seasons": 4,
+    "comparison_reference_id": "mix_ridge_extra_50",
+    "subsequent_decision": "constant_h3 selected by user as working benchmark on 2026-10-06 despite uncertain incremental benefit"
+  },
+  "legacy_reference": "Original frozen mix_ridge_extra_50 with original single-round engine",
+  "benchmark_manifest": "benchmark.json"
 }

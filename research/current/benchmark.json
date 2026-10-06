@@ -1,0 +1,88 @@
+{
+  "id": "constant_h3",
+  "status": "Active research benchmark by user instruction; not a production deployment",
+  "selected_on": "2026-10-06",
+  "evidence_commit": "60e8f613c16d069db5de2002aac3fb4c9d2eada7",
+  "forecast": "Chronologically learned global HGB weight between refreshed Ridge/Extra50 and refreshed rich HGB",
+  "decision": "Three-round rolling planner; same neutral-fixture proxy and inherited chip calendar",
+  "primary_metric": "Net full-season points with fixed chip calendar",
+  "secondary_metric": "No-chips diagnostic",
+  "evaluation_seasons": [
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "mean_points_fixed_chips": 2308.25,
+  "mean_points_no_chips": 2172.75,
+  "historical_reference_id": "mix_ridge_extra_50",
+  "historical_gain_fixed_chips": 70.0,
+  "historical_gain_no_chips": 23.75,
+  "results": "global_horizon/results/all_seasons.csv",
+  "report": "global_horizon/README.md",
+  "comparison_rule": "Future experiments report candidate minus constant_h3 on identical seasons, information and resources; retain frozen mix_ridge_extra_50 as secondary historical control. Preserve old experiment reference definitions. Benchmark algorithm, fitting rule and inputs are frozen; learned weights for new seasons use only earlier available labels. No tuning on evaluation outcomes.",
+  "uncertainty": "Working benchmark chosen by observed primary score; no untouched holdout and no claim of proven superiority",
+  "season_scores": [
+    {
+      "season": "2022-23",
+      "mode": "fixed_chips",
+      "points38": 2334
+    },
+    {
+      "season": "2022-23",
+      "mode": "no_chips",
+      "points38": 2285
+    },
+    {
+      "season": "2023-24",
+      "mode": "fixed_chips",
+      "points38": 2171
+    },
+    {
+      "season": "2023-24",
+      "mode": "no_chips",
+      "points38": 2172
+    },
+    {
+      "season": "2024-25",
+      "mode": "fixed_chips",
+      "points38": 2490
+    },
+    {
+      "season": "2024-25",
+      "mode": "no_chips",
+      "points38": 2253
+    },
+    {
+      "season": "2025-26",
+      "mode": "fixed_chips",
+      "points38": 2238
+    },
+    {
+      "season": "2025-26",
+      "mode": "no_chips",
+      "points38": 1981
+    }
+  ],
+  "source_sha256": {
+    "global_horizon/run.py": "cf3a58949c25ced0e8b39d8f9df62a9d4e47925d6d38d2d480de30d52a78fa90",
+    "decision_specialist/planner.py": "120b3c4881a784cdb55753f21884e046282616684a2e189c670bccc15d2ca476",
+    "decision_specialist/models.py": "50eb3be8e6f69dac04c76cdf266d23293422285f48bcb9cdfc06b030cf0044e2",
+    "decision_specialist/build.py": "d09847cdf0a56dadb07fd9529d510f93d1074ad9dcc3103e109f8db0b4e2cedb",
+    "experiment.py": "1ac0213af9c5e60ca104ba0b81d7f0065a9292ab4215fcf3d16d26db80440c07",
+    "project/season_simulator.py": "b8766aea9fa9194ba0affb451d07bb2532d2ed2067576d0fdc3ff5e869910843",
+    "project/tuning_v3/decision.py": "af99688c48967449da4aad8bcf3480a261c2bb9c7c81cf5f62ac01e67f6ccb4a",
+    "decision_specialist/results/gate_coefficients.json": "df9f7fb61e900acf59b78f41f05f20c1bafff8c3aa63fa50a47ee6d5c04ee576",
+    "global_horizon/protocol.json": "dc6987f83a6263d0e641c065ec9c179fb631ab6ae85ecee93b1679b91d49dd50"
+  },
+  "trace_sha256": {
+    "global_horizon/results/trace_2022-23_constant_h3_fixed_chips.json.gz": "2b5f0221ec46311d199efe62da7bf414b3715519410460235d1b683205f0e553",
+    "global_horizon/results/trace_2022-23_constant_h3_no_chips.json.gz": "606ef4ad376671d0596fd197dbe55014605956ac7cfbb9bda0b2fc7d9a07b133",
+    "global_horizon/results/trace_2023-24_constant_h3_fixed_chips.json.gz": "d64c2ffb90c8dd8076fa1091494f14e34327aa56e21316a7516b05fdc59f85dd",
+    "global_horizon/results/trace_2023-24_constant_h3_no_chips.json.gz": "0010e4c97c44f34968a423dd3ba0fe8adeba31e6c305d068b412e1edc377bd5b",
+    "global_horizon/results/trace_2024-25_constant_h3_fixed_chips.json.gz": "9f3444741e86eec103163fec907401d722904a2e19d787d89676dabd0d999835",
+    "global_horizon/results/trace_2024-25_constant_h3_no_chips.json.gz": "6325585a12d8778bea1eef429c975b8a7a0b9d5d64196fa30dccc4bb345055b2",
+    "global_horizon/results/trace_2025-26_constant_h3_fixed_chips.json.gz": "2a3938d97036dfde2e2df7ead0efc20fce860826fc8392de82aa215c2d5a266f",
+    "global_horizon/results/trace_2025-26_constant_h3_no_chips.json.gz": "bf99bfab5848f78af749c6a9f95d8caa6c65d43f6481e674cd85c9f35542c053"
+  }
+}
