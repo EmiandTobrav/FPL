@@ -5,6 +5,7 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)
+- [Tre-rundersplanlegging og lært HGB-blanding: 88 nye forløp](research/current/decision_specialist/README.md)
 - [Chipmekanismer og modellstyrker per situasjon: diagnostikk og 144 ablasjoner](research/current/behavior_diagnostics/README.md)
 - [Retrening av Ridge/Extra Trees og faste blandinger: 60 nye forløp](research/current/retrained_ensemble/README.md)
 - [Løpende retrening og hendelsesmodell: 108 nye forløp](research/current/adaptive_events/README.md)
@@ -54,5 +55,7 @@ Den beskrivende kandidaten er 50/50 Ridge + Extra Trees: +37,17 poeng uten chips
 Retreningsrunden: retrent Extra Trees gir +37,2 poeng mot referansen med fast chipkalender, men −39,0 uten chips. Oppdatert treveisblanding gir +26,3/+10,3 med/uten chips. Tidsordnet modellvalg gir −4,25 på primærmålet; ingen automatisk produksjonsendring. Se forsøksrapporten for sesongvariasjon og begrensninger.
 
 Ny diagnostikk: WC/FH gir en viktig del av retreningsgevinsten gjennom troppsendringer; direkte TC/BB-bonuser forklarer lite av omslaget. Utvidet HGB rangerer fallende/ustabil spilletid bedre i alle seks sesonger, mens kort historikk fortsatt er uløst. 4536 matchede beslutninger, 144 chipablasjoner og 176 lokale tester er gjennomført. Se diagnoseoversikten over.
+
+Siste forsøk: oppdatert Ridge/Extra med tre-rundersplanlegging gir +51,0/+31,2 med/uten chips over seks sesonger. Lært global HGB-vekt gir +54,3/+40,5 over fire; situasjonsstyrt vekt +62,0/+12,0, men uten stabil tilleggsverdi over global vekt. Ulike evalueringsperioder må ikke blandes. 88 nye forløp og 179 lokale tester er ferdige; se rapporten over.
 
 Historiske poeng spilles av med moderne bytte-/chipregler. Pris, spillerstatus og kampkalender har dokumenterte proxybegrensninger. Resultatene er ikke faktiske historiske rangeringer eller en full omregning til årets poengregler.

@@ -1,0 +1,23 @@
+mode,comparison,mean_gain,wins,seasons,minimum,maximum,low95,high95
+fixed_chips,extra_refresh_h1 - mix_ridge_extra_50,33.833333333333336,4,6,-40,100,-5.666666666666667,73.33333333333333
+fixed_chips,extra_refresh_h3 - extra_refresh_h1,-5.833333333333333,2,6,-65,110,-51.333333333333336,49.5
+fixed_chips,extra_refresh_h3 - mix_ridge_extra_50,28.0,3,6,-76,151,-27.333333333333332,87.33333333333333
+fixed_chips,extra_refresh_h3 - reference_h3,24.5,4,6,-75,153,-27.833333333333332,83.0
+fixed_chips,re_refresh_h1 - mix_ridge_extra_50,30.5,4,6,-40,83,-4.333333333333333,62.333333333333336
+fixed_chips,re_refresh_h3 - mix_ridge_extra_50,51.0,5,6,-37,114,11.833333333333334,87.0
+fixed_chips,re_refresh_h3 - re_refresh_h1,20.5,3,6,-91,154,-42.166666666666664,87.66666666666667
+fixed_chips,re_refresh_h3 - reference_h3,47.5,4,6,-31,115,1.6666666666666667,91.66666666666667
+fixed_chips,reference_h1 - mix_ridge_extra_50,0.3333333333333333,1,6,0,2,0.0,1.0
+fixed_chips,reference_h3 - mix_ridge_extra_50,3.5,1,6,-63,145,-38.0,64.33333333333333
+fixed_chips,reference_h3 - reference_h1,3.1666666666666665,1,6,-63,145,-38.5,64.16666666666667
+no_chips,extra_refresh_h1 - mix_ridge_extra_50,-15.5,1,6,-61,35,-38.833333333333336,8.333333333333334
+no_chips,extra_refresh_h3 - extra_refresh_h1,5.0,4,6,-142,87,-60.333333333333336,52.5
+no_chips,extra_refresh_h3 - mix_ridge_extra_50,-10.5,3,6,-107,87,-56.666666666666664,35.833333333333336
+no_chips,extra_refresh_h3 - reference_h3,-13.5,2,6,-151,109,-87.16666666666667,59.333333333333336
+no_chips,re_refresh_h1 - mix_ridge_extra_50,-30.0,2,6,-89,16,-62.666666666666664,0.3333333333333333
+no_chips,re_refresh_h3 - mix_ridge_extra_50,31.166666666666668,4,6,-90,129,-32.166666666666664,89.16666666666667
+no_chips,re_refresh_h3 - re_refresh_h1,61.166666666666664,5,6,-1,127,30.0,92.5
+no_chips,re_refresh_h3 - reference_h3,28.166666666666668,3,6,-88,154,-42.5,103.33333333333333
+no_chips,reference_h1 - mix_ridge_extra_50,2.1666666666666665,1,6,0,13,0.0,6.5
+no_chips,reference_h3 - mix_ridge_extra_50,3.0,4,6,-139,127,-65.33333333333333,65.66666666666667
+no_chips,reference_h3 - reference_h1,0.8333333333333334,4,6,-139,114,-65.33333333333333,60.333333333333336

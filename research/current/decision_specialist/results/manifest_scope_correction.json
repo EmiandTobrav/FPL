@@ -1,0 +1,16 @@
+[
+  {
+    "manifest": "gate_manifest.json",
+    "changed_file": "decision_specialist/run_gate.py",
+    "old_sha256": "34c34c0f4553a9047e2b2da7eaeaa5fb33550c9d9eb9f28f020d0ea6c76aa396",
+    "new_sha256": "789b844cc2eafc1f63d0f3e138cd395bcbd87513545a9bf201cf38670f7ed5d2",
+    "reason": "Restrict forecast dependency glob to input files; exclude generated gate_seasons/summary outputs. AST outside fingerprint function verified unchanged; no predictions, decisions or computational inputs changed."
+  },
+  {
+    "manifest": "horizon_manifest.json",
+    "changed_file": "decision_specialist/run_gate.py",
+    "old_sha256": "34c34c0f4553a9047e2b2da7eaeaa5fb33550c9d9eb9f28f020d0ea6c76aa396",
+    "new_sha256": "789b844cc2eafc1f63d0f3e138cd395bcbd87513545a9bf201cf38670f7ed5d2",
+    "reason": "Restrict forecast dependency glob to input files; exclude generated gate_seasons/summary outputs. AST outside fingerprint function verified unchanged; no predictions, decisions or computational inputs changed."
+  }
+]

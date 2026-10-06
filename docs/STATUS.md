@@ -28,13 +28,13 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 ## Prioritert neste arbeid
 
-Oppdatert etter chip- og scenariodiagnostikken:
+Oppdatert etter tre-rundersplanlegging og lært HGB-blanding:
 
-1. Test hvordan oppdaterte prognoser omsettes i lønnsomme troppsendringer over flere runder. WC/FH-ablasjonene viser at dette er sentralt: 50/50-retrening gir −30,0 uten chips og +44,8 med bare WC/FH. Ikke tune chipdatoer på samme sesonger; flerukers forsøk trenger før-frist-kalenderdata.
-2. En tidsordnet trent ekspertblanding med utvidet HGB ved fallende/ustabil spilletid er en konkret hypotese. Lær eventuell vekting på eldre treningsprognoser og sammenlign mot låst treveisblanding. Diagnostiske undergrupper er ikke i seg selv en validert kjøps-/kapteinsregel.
-3. Skaff før-frist-data om roller, tilgjengelighet, registrering og kampkalender. Kort historikk er ikke løst av vanlig retrening eller de nye blandingene.
-4. Behold retrent Extra Trees og treveisblandingen som låste utfordrere. Prospektiv evaluering er nødvendig etter mange undersøkelser av de samme seks sesongene; ingen automatisk produksjonsendring.
-5. Hendelsesmodellen trenger fortsatt kalibrerings-/komponentdiagnostikk før mer kompleksitet. Ikke gjør nye brede parameter- eller blandingsvektssøk på samme fasit.
+1. Behold oppdatert Ridge/Extra med H3 og lært global HGB-vekt som låste utfordrere. H3 gir +51,0/+31,2 mot referansen over seks sesonger; global HGB-vekt +54,3/+40,5 over fire. Ingen automatisk produksjonsendring.
+2. Neste kombinasjonsforsøk kan teste global, tidsordnet lært HGB-vekt sammen med flerukersplanlegging. Dette er ikke testet i siste runde. Krev matchede H1-kontroller og samme tidsriktige input. Gate/H3-kombinasjonen er heller ikke testet.
+3. Prioriter historiske før-frist-kalendere, rolle-/tilgjengelighetsdata og prospektiv evaluering. H3 bruker fortsatt én nøytral fremtidig kamp og en felles motstanderjustering; ikke les fremtidige `games`-rader som kjent informasjon.
+4. Gjør likeverdige valg mer deterministiske før praktisk bruk. Motorbytte ved H1 kan gi ulike senere poeng til tross for lik første prognoseverdi; 50/50-kontrollen gjenskaper derimot alle tidligere troppsvalg og scorer i siste test.
+5. Situasjonsstyrt HGB-vekt er fortsatt et forskningsspor: +7,75 mot global vekt med chips, men −28,5 uten. Unngå flere terskel-/vektsøk på samme fasit. Kort historikk og den selvstendige hendelsesmodellens kalibrering er fortsatt uløst.
 
 Rapporter nettosesongpoeng med chips som forhåndsbestemt primærmål, treffkostnad, usikkerhet og sesongvise forskjeller. Uten chips er diagnostikk. Samme starttilstand og samme beslutningsmotor skal brukes for å isolere modellendringer.
 
@@ -120,3 +120,18 @@ Kontrollerte hele-sesongablasjoner (retrent minus egen frossen): WC alene gir Ri
 RMSE blant samme referanse-topp60 bedres litt av retrening av både Ridge og Extra i 6/6 sesonger, selv om deres chipfrie sesonggevinst faller. Utvidet HGB slår sterk referanse i topp10-rangering ved fallende minutter (+0,369 faktisk poeng per valgt spiller) og rotasjon (+0,270), begge 6/6 sesonger. Treveisblandingen gir +0,116 i samlet topp20 (5/6) og lavere relevant RMSE (6/6). Retrenet Ridge/Extra sliter relativt ved kort historikk; ingen gjennombruddsmodell er dokumentert. Dobbeltrunder er lovende for treveis, men har få kvalifiserende runder.
 
 Ingen situasjonsstyrt ekspertregel er trent eller tatt i bruk. Scenarioer er overlappende og utforsket på kjente sesonger; konsistens er ikke en korrigert signifikanstest. 176 tester bestått lokalt. Alle nye 4536 matchede og 4896 ablasjonsbeslutninger har optimal status innen toleransen; 408 kontrollvalg gjenskaper arkivet. Kode, protokoller, scenariodata, beslutningsspor, auditer og fingeravtrykk er lagret under `research/current/behavior_diagnostics`. GitHub CI-status er ikke verifisert.
+
+
+## Tre-rundersplanlegging og lært HGB-spesialist fullført
+
+[Rapport](../research/current/decision_specialist/README.md). 72 nye H1/H3-forløp for frossen referanse, oppdatert Extra Trees og oppdatert Ridge/Extra 50/50 over seks sesonger. 16 nye gate-/globalvektforløp over fire sesonger, med to innledende metatreningssesonger. Primærmål er fortsatt nettosesongpoeng med fast chipkalender.
+
+H3 med oppdatert 50/50 gir 2267,3 med chips, +51,0 mot referansen, 5/6 seire, beskrivende intervall [11,8;87,0]. Uten chips +31,2, 4/6, intervall over null. Mot egen H1 er gevinsten +20,5/+61,2 med/uten chips; primærintervallet inkluderer null, uten chips er intervallet [30,0;92,5]. Frossen referanse og Extra Trees får ingen stabil H3-gevinst. Kandidaten taper −37 mot referansen siste sesong. Tidsordnet primærvalg gir +35,5 over fire sesonger; uten chips −7,25.
+
+Gate er en sigmoid-vekt mellom oppdatert 50/50 og utvidet HGB, med før-frist-spilletid og endring i spilletid. Globalvektkontrollen lærer bare konstantleddet. Begge bruker identiske eldre, tidsriktige komponentprognoser og labels tilgjengelige før GW1; ingen labels fra evalueringssesongen. Evalueringssesonger 2022/23–2025/26. Global HGB-vekt øker fra 42,5 % til 49,4 %; gate gir omtrent 55–59 % til HGB i rotasjonsgruppen.
+
+Gate gir +62,0/+12,0 mot referansen med/uten chips; global vekt +54,25/+40,5. Begge vinner 4/4 med chips. Gate mot global kontroll er bare +7,75 med chips, bredt intervall [−68,25;62,5], og −28,5 uten. Gate mot fast treveis er +21,0/−22,5. Supplerende, etterfølgende benchmark mot retrent Extra på samme fire sesonger gir gate +7,5 med chips, men bare 1/4 seire; global vekt −0,25 med chips og +67,5 uten. Ingen robust generell ekspertregel er dokumentert. Tidsordnet gate/global/treveis-valg gir +28,5 med chips over bare to sesonger, +8,5 uten.
+
+Fremtidsprognosen er en nøytral proxy: gammel frossen referansenøytral rate pluss aktuell oppdatert per-kamp-forskjell; aktuell kampeffekt halveres fremover, én kamp per runde. Blank aktuell runde bruker referansens nøytrale fallback. Ingen faktisk arkivert fremtidig før-frist-kalender. H3 kan ikke selge og gjenkjøpe en opprinnelig spiller innen samme plan. Samme historiske pris-/tilgjengelighets-/chipregelbegrensninger som før.
+
+H1-motorparitet er eksplisitt målt. 50/50 gjenskaper alle gamle troppsvalg og sesongscorer; Extra/ref kan avvike gjennom likeverdige valg og små solvertoleranser. Dette er ikke horisontgevinst. Alle 2992 nye beslutninger er optimale innen sine toleranser, største H3-gap omtrent 1e-5. 179 tester bestått lokalt. Prognoser, koeffisienter, eldre-sesong-auditer, 88 spor, usikkerhet, valg og fingeravtrykk ligger i `research/current/decision_specialist`. Ingen urørt holdout eller bekreftet CI-status. Globalvekt+H3 er et forslag, ikke et utført forsøk.

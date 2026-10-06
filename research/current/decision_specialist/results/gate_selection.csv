@@ -1,0 +1,5 @@
+season,mode,selected,gain
+2024-25,fixed_chips,gate,41
+2025-26,fixed_chips,gate,16
+2024-25,no_chips,constant,-9
+2025-26,no_chips,three_refresh,26

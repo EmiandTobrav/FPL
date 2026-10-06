@@ -1,0 +1,12 @@
+{
+  "horizon_new_simulations": 72,
+  "gate_new_simulations": 16,
+  "new_decisions": 2992,
+  "temporal_meta_training": true,
+  "matched_openings": true,
+  "point_accounting": true,
+  "horizon_nonoptimal": 0,
+  "horizon_max_gap": 9.999982896743039e-06,
+  "gate_nonoptimal": 0,
+  "gate_max_gap": 1.2144618823893397e-16
+}

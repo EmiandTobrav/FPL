@@ -1,0 +1,6 @@
+{
+ "status":"Added after initial gate results; supplementary descriptive benchmark only",
+ "reason":"Compare new candidates with the previous round's strongest fixed-chip candidate on the same four seasons, not only the frozen reference",
+ "comparisons":["gate minus extra_refresh","constant minus extra_refresh"],
+ "unchanged":"No model fit, hyperparameters, forecasts, selection rule, primary endpoint or simulation changed"
+}
