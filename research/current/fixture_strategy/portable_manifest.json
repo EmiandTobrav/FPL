@@ -1,0 +1,842 @@
+[
+  {
+    "path": "portable/trace_2022-23_count_h3_fixed_chips.json",
+    "sha256": "3b8bd3cd5e11f1df940d254e20947f6b0cb2d99715e3e38fa80761822e714305",
+    "bytes": 27639,
+    "source": "results/trace_2022-23_count_h3_fixed_chips.json.gz",
+    "source_sha256": "8841f4d661cc02da422fc24afaac3400dd32ecba30945d714f02a9c75db36b8a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_count_h3_no_chips.json",
+    "sha256": "d66ccc64eb2bf11eac3da43665075131f90d93fdce895849c5956dfefebcb326",
+    "bytes": 26955,
+    "source": "results/trace_2022-23_count_h3_no_chips.json.gz",
+    "source_sha256": "411ac1a3117ba98b71c9ed6614318f3ad271b4e9f2b89fd6159a46bc0eac1b60",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_count_h5_fixed_chips.json",
+    "sha256": "a7784e6da855d8980353932428f13d0b1a51c18bddfa20238cbb4fc825a9785e",
+    "bytes": 27874,
+    "source": "results/trace_2022-23_count_h5_fixed_chips.json.gz",
+    "source_sha256": "f25c0105a66e4964b26f2b13989ece9a9f71685dc380cfb99b4bd14b7361667b",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_count_h5_no_chips.json",
+    "sha256": "dfc86e73a64cd16470444f094f65ac75fc251989225a67d4986f768943b0698d",
+    "bytes": 27292,
+    "source": "results/trace_2022-23_count_h5_no_chips.json.gz",
+    "source_sha256": "7582bc3578f5662df74014be815c782f9e8f44f5f7656e1ee0f1fb712995a0a6",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_count_h8_fixed_chips.json",
+    "sha256": "1383989ba9e0cd6724eb5dd456f841927ecc7c63a9f764e112729120f67611ef",
+    "bytes": 28106,
+    "source": "results/trace_2022-23_count_h8_fixed_chips.json.gz",
+    "source_sha256": "9d0e109c880bc8d9fcfb2a29b80f13001841fce3c931ddf6d758b57287051cc2",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_count_h8_no_chips.json",
+    "sha256": "60a59cb09005de13bf1ef4e1f7fa6816605eaba47f23c59db180e7efd5f655c3",
+    "bytes": 27761,
+    "source": "results/trace_2022-23_count_h8_no_chips.json.gz",
+    "source_sha256": "7308941e4e95f391ae6d938e6f71d1ff540c02456a120376c67e24b355308e20",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h3_adaptive_all.json",
+    "sha256": "206f405b7fc1a8e09e560fd522ce43fe6ffc99b8d309097d782ceff860a10cca",
+    "bytes": 40817,
+    "source": "results/trace_2022-23_full_h3_adaptive_all.json.gz",
+    "source_sha256": "42c8efaaeb5dbbc0d0d14635d082a6301d45283659541edd0054b50431ef2c2f",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h3_adaptive_bench_boost.json",
+    "sha256": "0f3c3411cf058ddf53f65832d1fa2be1baa26297c3133abc9d9345088204f584",
+    "bytes": 34043,
+    "source": "results/trace_2022-23_full_h3_adaptive_bench_boost.json.gz",
+    "source_sha256": "18b655c7d2de5c7d9486ed77a17914c2bbea1791965f115d221cd57671091717",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h3_adaptive_free_hit.json",
+    "sha256": "ebec8b553bae19ea533817423155cb380b6cc1cb1fc12e0309f4621e4f9fac4a",
+    "bytes": 33739,
+    "source": "results/trace_2022-23_full_h3_adaptive_free_hit.json.gz",
+    "source_sha256": "ff268fcdeb6a5ecd2676e364dd7b11463c45981d9ca27f5ee1c490e52d216781",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h3_adaptive_triple_captain.json",
+    "sha256": "c439a4a8dabbecc6a53f4a2237bd0e51d4861f0613d47fabc8cf9e21a4c3f48a",
+    "bytes": 32676,
+    "source": "results/trace_2022-23_full_h3_adaptive_triple_captain.json.gz",
+    "source_sha256": "b26a1c6b07ea3db36d54869784400fd798f3937545925aa25c6c4a5c3c43006c",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h3_adaptive_wildcard.json",
+    "sha256": "67ec74286bb53f0fdda2af6326dd2fb50198cf510a0d7f069607415f3891f2d9",
+    "bytes": 31827,
+    "source": "results/trace_2022-23_full_h3_adaptive_wildcard.json.gz",
+    "source_sha256": "d6c4b00cb0a0141e269b42b17ae0d9fa9afa68cde618d61fd1c9d32dc29fd59a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h3_fixed_chips.json",
+    "sha256": "0ec3cd3c29c66b15fd98d42b661c54556c7c4bce48826baba4acb8e938fba1fb",
+    "bytes": 27741,
+    "source": "results/trace_2022-23_full_h3_fixed_chips.json.gz",
+    "source_sha256": "2d712289e383b7cea9e1508a9bd3a8e3f37195761795042720ca55c14e72018b",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h3_no_chips.json",
+    "sha256": "9e1a0376f06975ae2e67666963ce61fddd1a9c5da2000950ae94fe7fdd53d3f5",
+    "bytes": 26830,
+    "source": "results/trace_2022-23_full_h3_no_chips.json.gz",
+    "source_sha256": "8f0159d72f0b7c73cec0eed9eabaafac9eb7b9acdb537cae053b5251051b1302",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h5_fixed_chips.json",
+    "sha256": "5cbc1ad991115b6ac3769c98959c24a0660226c41b5608795a14274c7451ccfc",
+    "bytes": 27913,
+    "source": "results/trace_2022-23_full_h5_fixed_chips.json.gz",
+    "source_sha256": "68f1320334cc02ee9e7bbee2184bdfe534dde120c3e4443d1d5c5031cd52aa52",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h5_no_chips.json",
+    "sha256": "98c5d4292146cf03f9f614c9554b62336b7bc34e62ee50a05da6b052d055571c",
+    "bytes": 27381,
+    "source": "results/trace_2022-23_full_h5_no_chips.json.gz",
+    "source_sha256": "db5fdf17b14d0a9e7896aac173807fa3a1138873560d5a4850a73b489ca73283",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h8_fixed_chips.json",
+    "sha256": "86bfaf475e3984114d05a5959a5f989c6359dc84f6e00eb2e8927ca8fbbd3571",
+    "bytes": 28065,
+    "source": "results/trace_2022-23_full_h8_fixed_chips.json.gz",
+    "source_sha256": "df3555f6a0df24109a6f25db9566890ee1d94fcb2609991f258dcf7dc3886c42",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_full_h8_no_chips.json",
+    "sha256": "e272f10ad80a3a11b588c014ceb6e76df618644d13f0d85ae54dc9b03fa08bb4",
+    "bytes": 27651,
+    "source": "results/trace_2022-23_full_h8_no_chips.json.gz",
+    "source_sha256": "9b0b5f15421dcac6c692bae0037b43b0fad1e0e357488b4d3cf00aa9f38e530f",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_opponent_h3_fixed_chips.json",
+    "sha256": "90daf08b008d9443ef3d528dfbafeb8137904ad34fb240b27711a4abe9c6890c",
+    "bytes": 27593,
+    "source": "results/trace_2022-23_opponent_h3_fixed_chips.json.gz",
+    "source_sha256": "102e8f6c1381bdf184624e409d7497960094dacb10a263894c125c422bebc378",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_opponent_h3_no_chips.json",
+    "sha256": "fd97f8291485d6350b2061fb40df6cce8c8f68e56d557b25110b2bcffda6a617",
+    "bytes": 26771,
+    "source": "results/trace_2022-23_opponent_h3_no_chips.json.gz",
+    "source_sha256": "4235c50d31f2d88cb7bf320c8bccf51955cbfbedbd646f6ec9bc9241315adcfa",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_venue_h3_fixed_chips.json",
+    "sha256": "3495f589e527c814caf6c18ca0cbf1239caa8e010332ea1d079974ef1483baee",
+    "bytes": 27656,
+    "source": "results/trace_2022-23_venue_h3_fixed_chips.json.gz",
+    "source_sha256": "68236c4195a02d545641a12a89e64d25aeca41ffa816aa7ac7fd849ec97640bd",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2022-23_venue_h3_no_chips.json",
+    "sha256": "878d50e4d3f883fca94bfc22d52d0390e0d6134e17d9d9e7f00207e0ddfde3f7",
+    "bytes": 26991,
+    "source": "results/trace_2022-23_venue_h3_no_chips.json.gz",
+    "source_sha256": "b0d71e87cd01c474bce62a8a52349d1e1b3d8b6a6cd6aef476b67542ad49db82",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_count_h3_fixed_chips.json",
+    "sha256": "c49e5af59363a7384a432104572ca22ebb8d9d052c8480a34ab082b2db178d0e",
+    "bytes": 27786,
+    "source": "results/trace_2023-24_count_h3_fixed_chips.json.gz",
+    "source_sha256": "07c8f365de4e8fa7ff78104a3e6e57b9652f0d71ab4e4884cb60b13f54200b16",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_count_h3_no_chips.json",
+    "sha256": "93494dbb0e5cb69dedd9ac623a40e01c8b28b77b09494a0ee2fdab0be50561f5",
+    "bytes": 27063,
+    "source": "results/trace_2023-24_count_h3_no_chips.json.gz",
+    "source_sha256": "491f27dd213c5131fa548d9ac574c40b0decd5504bbb95a3bb41ae6a612db666",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_count_h5_fixed_chips.json",
+    "sha256": "2805470ef37846a116a393a8a6196491b434907bf3d0d20b0b6d27c65c36ac6f",
+    "bytes": 27780,
+    "source": "results/trace_2023-24_count_h5_fixed_chips.json.gz",
+    "source_sha256": "063c86aeb87e1882e190e631881f17e701d0b80ab799444db40687906c79057a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_count_h5_no_chips.json",
+    "sha256": "ce1741938288fc3c7b50188f3e52a4d63a5bc46eb1615e60020853aa26bb0be7",
+    "bytes": 27256,
+    "source": "results/trace_2023-24_count_h5_no_chips.json.gz",
+    "source_sha256": "fb5913a9b2d585cc32388b494969ca517a459e17e987b46f813ecc236b8a7e62",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_count_h8_fixed_chips.json",
+    "sha256": "da6d8705adc707dd152151cc449ecce5a941e915bd6e445f407fb25fb8f0b11d",
+    "bytes": 27819,
+    "source": "results/trace_2023-24_count_h8_fixed_chips.json.gz",
+    "source_sha256": "d31b694c8eb29dcdb95176769e072fceb406cecd7a70415b5c9cdd9758d26a7b",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_count_h8_no_chips.json",
+    "sha256": "3c67375cb81385b9be5c8cbafce9afb50c6750bbe865f197502d2e1245bad7b9",
+    "bytes": 27678,
+    "source": "results/trace_2023-24_count_h8_no_chips.json.gz",
+    "source_sha256": "f95a83d942e3c70e240bad7dce6535b3bc44d0d28760dc13a185cf28ed222e6a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h3_adaptive_all.json",
+    "sha256": "03da7ef0e06a4616a6af27edaace0999811d74c254e56ab8c5660df57c1b3af4",
+    "bytes": 41635,
+    "source": "results/trace_2023-24_full_h3_adaptive_all.json.gz",
+    "source_sha256": "5ceb383a651207545ae4fda6937ead7cd822e051bec508842989dcab1e5b64cb",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h3_adaptive_bench_boost.json",
+    "sha256": "0a7eb64ed66ade762e77d0db14441b8fdb27663669f54a1284ae37505c6947a4",
+    "bytes": 33225,
+    "source": "results/trace_2023-24_full_h3_adaptive_bench_boost.json.gz",
+    "source_sha256": "e28e68a8c452899cf42d6f1772e6e2090704ef844c823ce49e7f4d9cd2e76768",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h3_adaptive_free_hit.json",
+    "sha256": "e3939a118e1f8de56a807f757cf366c68b3cc8f540cd4d765873b17be460b682",
+    "bytes": 35149,
+    "source": "results/trace_2023-24_full_h3_adaptive_free_hit.json.gz",
+    "source_sha256": "33451a5d8db89df001cc70f97930f72268aace42ef0369781e589ba94db5c97f",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h3_adaptive_triple_captain.json",
+    "sha256": "1b0d15b1e05fd88d2d3d9f824f20f4af5b07c03bdcf63df9f25675a3431a8b94",
+    "bytes": 32870,
+    "source": "results/trace_2023-24_full_h3_adaptive_triple_captain.json.gz",
+    "source_sha256": "ff765494cb623731968f8817b4553b727baba91d4609521e0c15679196743cbe",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h3_adaptive_wildcard.json",
+    "sha256": "a54fc4eba9a5dcfc57014f60f45b48e54f484df88ed32401eb3b113b70689071",
+    "bytes": 33179,
+    "source": "results/trace_2023-24_full_h3_adaptive_wildcard.json.gz",
+    "source_sha256": "c5fd43bfce69413664dd4e5b8068d09692018e3bf7b1b0b72fa2a6bdaf78ab7b",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h3_fixed_chips.json",
+    "sha256": "4cca89b36a0e51b6e9c8b84f8cb2def21e6c58bbf2e1d085856d8a8ed6ac7446",
+    "bytes": 27741,
+    "source": "results/trace_2023-24_full_h3_fixed_chips.json.gz",
+    "source_sha256": "03346eee8a9d4b7ecb1f254cfed2ef1ddc241eb3a6a49484d44433034228b3f4",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h3_no_chips.json",
+    "sha256": "3fbc731ff62257c0bffbbc6432faaa22e4c7c06fe6f99c6616a9dd07a170e638",
+    "bytes": 27135,
+    "source": "results/trace_2023-24_full_h3_no_chips.json.gz",
+    "source_sha256": "eaecbc1c3696db7c9f1b8c5787c28487fa2a3b752a8438c8a82072706137b03c",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h5_fixed_chips.json",
+    "sha256": "8b33e5993dc8f9378cd7676244e94920e6cde5e3eab47115d50648335dd392e1",
+    "bytes": 27887,
+    "source": "results/trace_2023-24_full_h5_fixed_chips.json.gz",
+    "source_sha256": "5758de2e909a9153833582846b10ccb514a7be3c02562862e6cd129141c6eb22",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h5_no_chips.json",
+    "sha256": "150f6ba393cc8d9ba0969b10bb441fe6afbd7d280c27937c1d3d3358f82c4813",
+    "bytes": 27091,
+    "source": "results/trace_2023-24_full_h5_no_chips.json.gz",
+    "source_sha256": "6499cf0dd3c8caa305a22e91257515288d2d89edb94afa96c2090f6693162b9a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h8_fixed_chips.json",
+    "sha256": "2c240ac210fa49c693bede911a50578c5d30730d9cd7543117ca41a82019faf4",
+    "bytes": 27852,
+    "source": "results/trace_2023-24_full_h8_fixed_chips.json.gz",
+    "source_sha256": "00288ceacd5826fff96eb86cb65cc696777959657203be34d78dfd9c7861bcb6",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_full_h8_no_chips.json",
+    "sha256": "3ee19321e810a7cf8256d05e1138015ae7a56567df3ce6593c9453fe2fbb03e2",
+    "bytes": 27794,
+    "source": "results/trace_2023-24_full_h8_no_chips.json.gz",
+    "source_sha256": "84b8fac30c4570a3200e6e4945934ad34422b81d2d5c5283bc577688856f0d32",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_opponent_h3_fixed_chips.json",
+    "sha256": "7fb515e66ad1b117c4786ef7bea8f22b9bea7a7fa818cc1513e62649a588985b",
+    "bytes": 27906,
+    "source": "results/trace_2023-24_opponent_h3_fixed_chips.json.gz",
+    "source_sha256": "13d09e6f98f4b68d222ae36de93482f4de3eb20b55fa148f66a91b8eceed9d0b",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_opponent_h3_no_chips.json",
+    "sha256": "c1d5fe676c32fdadc4f7775bc59ee036cc65996fac6cf92eb3ef9f998d8624ba",
+    "bytes": 27071,
+    "source": "results/trace_2023-24_opponent_h3_no_chips.json.gz",
+    "source_sha256": "15c79202de02f4492c684c5a724d8229cc5f5b9f79ea00f01cfe7d3d2aba0327",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_venue_h3_fixed_chips.json",
+    "sha256": "b7fad2e008bd4317efd6eca0000ee9fc7f1a3ec4968e61c939dd24b840f2a19a",
+    "bytes": 27818,
+    "source": "results/trace_2023-24_venue_h3_fixed_chips.json.gz",
+    "source_sha256": "f72222017bcedb30b241b0576cb649fd7a9cf63b35484209a598fa5d39416bbb",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2023-24_venue_h3_no_chips.json",
+    "sha256": "86283ecf83c58514b14ae54d7451211754a8d04e7b80b2fdff07d2dd798705f1",
+    "bytes": 27142,
+    "source": "results/trace_2023-24_venue_h3_no_chips.json.gz",
+    "source_sha256": "690795325497aab5fd8e70f55e1cbbcdfd6207778e26e245b7513d6d9496d177",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_count_h3_fixed_chips.json",
+    "sha256": "b677d6f5424f20f0be077e96474cac0352b921c813052f19647943d3ea99fbe6",
+    "bytes": 27981,
+    "source": "results/trace_2024-25_count_h3_fixed_chips.json.gz",
+    "source_sha256": "521c6773cfea1827b3870858fa8d26986b9cf62538df5a5b2844c75691a4219c",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_count_h3_no_chips.json",
+    "sha256": "55ef563d6a53af7dd328ede69c33c1332a8d8286dfad87c8264394a87e2623dd",
+    "bytes": 27305,
+    "source": "results/trace_2024-25_count_h3_no_chips.json.gz",
+    "source_sha256": "9edf8204c3f22b448b3bbc64f6e4abcf77ed89dda1bb28b98d994c92a7247539",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_count_h5_fixed_chips.json",
+    "sha256": "e80ded57eb07a769b1f4c600b3ccad096d5d527456889ae978c550baffb1ad66",
+    "bytes": 27937,
+    "source": "results/trace_2024-25_count_h5_fixed_chips.json.gz",
+    "source_sha256": "b9f9f36a419195b07c083e4b41a53587cd300196506df20da77615bbb00ad37d",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_count_h5_no_chips.json",
+    "sha256": "3f346134a696f88bc94a2e1a246a2042d087ed00723f0c466d3488c0949fd044",
+    "bytes": 27630,
+    "source": "results/trace_2024-25_count_h5_no_chips.json.gz",
+    "source_sha256": "dde555cb2401e26c309fb82b156072348ff72559443474ce1808f60510b795f3",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_count_h8_fixed_chips.json",
+    "sha256": "1beb511ab073bfe5636c41bac305889ef7770b993f843fb1bd1c3ef8cedb1e4f",
+    "bytes": 28134,
+    "source": "results/trace_2024-25_count_h8_fixed_chips.json.gz",
+    "source_sha256": "c61b3f116191aead7b5030863c89b65ceb8646d94cd47f0f6096d0c9b4cb8931",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_count_h8_no_chips.json",
+    "sha256": "70247cbb49baca3576e36aed9f353951bd0576544ccdd90adc90a67fe580c7a1",
+    "bytes": 28024,
+    "source": "results/trace_2024-25_count_h8_no_chips.json.gz",
+    "source_sha256": "8d4d66eaf7f21c173d571f528b3fb671859017d36f47a2022e5a71477b7b850d",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h3_adaptive_all.json",
+    "sha256": "159fdb6dc0d43758e521772c58902d58b01f98c693abe51c279653573e8fb1c0",
+    "bytes": 41318,
+    "source": "results/trace_2024-25_full_h3_adaptive_all.json.gz",
+    "source_sha256": "ed884bf72fb11584c0730c49437349c44e58b2b4331c15dfc346349424c81516",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h3_adaptive_bench_boost.json",
+    "sha256": "cb2ad15ff826b847160ec662235f8372d11a9fd9ac02c80452935c8950e1c06a",
+    "bytes": 34925,
+    "source": "results/trace_2024-25_full_h3_adaptive_bench_boost.json.gz",
+    "source_sha256": "178c305c7f534f3d9f5d0df183476270a515d63d23bc9e1733a01c113b74d04a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h3_adaptive_free_hit.json",
+    "sha256": "5b31b4bb809637ffed0a94b1c51e1fffbd03a309f5713d7f48935e7a60f9d773",
+    "bytes": 36080,
+    "source": "results/trace_2024-25_full_h3_adaptive_free_hit.json.gz",
+    "source_sha256": "839ef708ced2fb23b8f7e699eb0a1e8fcef40601db00abc088e8f40d100bbe7a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h3_adaptive_triple_captain.json",
+    "sha256": "eebddba313fed14720db60df5b660d5664b359006f8cc925e9b151594115505e",
+    "bytes": 33171,
+    "source": "results/trace_2024-25_full_h3_adaptive_triple_captain.json.gz",
+    "source_sha256": "8b48a319b2d3130a44e573d469d2adb2ab0ad1dfa5bf8544e7c01750a8dea219",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h3_adaptive_wildcard.json",
+    "sha256": "9568b24151a6763adec5f6b6f77de476b6707a22d5fcd0f4eaf8175966a8c1c6",
+    "bytes": 33129,
+    "source": "results/trace_2024-25_full_h3_adaptive_wildcard.json.gz",
+    "source_sha256": "68b3c410a906aa0ebdb8ac289b702e94badc8482621e6c8b5ba5e48cfcf6e007",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h3_fixed_chips.json",
+    "sha256": "e13877eaf6cfdabf939a0292133655cd3ac6372041ac9b4735d8f0e8540e2d78",
+    "bytes": 27969,
+    "source": "results/trace_2024-25_full_h3_fixed_chips.json.gz",
+    "source_sha256": "c2c968ebdc64093bad893644060f73371f86409c3ef0c08a3342983c66520aa6",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h3_no_chips.json",
+    "sha256": "3ab89e005452a1f6731abea030da36cb4a8f46abe95d6177d26341a906a675e5",
+    "bytes": 27108,
+    "source": "results/trace_2024-25_full_h3_no_chips.json.gz",
+    "source_sha256": "1b6c4758937e7fa1974954adc670a44d5f8b79edd04587ef30673f9672b5a6b2",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h5_fixed_chips.json",
+    "sha256": "3c70af901ffc2ae79a934758a2d6072f30ce49347167e6c8d3b465ec58542b2e",
+    "bytes": 28037,
+    "source": "results/trace_2024-25_full_h5_fixed_chips.json.gz",
+    "source_sha256": "76eded89ff206298e13f7cb1e69646404e62e02ca811461905651edadc100120",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h5_no_chips.json",
+    "sha256": "e71320abf123b101fd1bec2c33919ac1cbe1a9e2a89a26a205eb170e451d1fb9",
+    "bytes": 27477,
+    "source": "results/trace_2024-25_full_h5_no_chips.json.gz",
+    "source_sha256": "c0aaaab1afc404bccebd0e3a98d83c42ff734b6e274fe78188141e5bc386a5df",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h8_fixed_chips.json",
+    "sha256": "07f83ca71af576be010b540f28e7919b9066aac505d1c686fd9d7d4dfde01694",
+    "bytes": 28193,
+    "source": "results/trace_2024-25_full_h8_fixed_chips.json.gz",
+    "source_sha256": "7f64f25d4f63a10fe8bc7487bd001fc804eac0552c24b71ae67034855148a727",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_full_h8_no_chips.json",
+    "sha256": "c4039cf24e8baff46471ab8b83faf09609a70122f711709554961182d2c0cf4b",
+    "bytes": 28002,
+    "source": "results/trace_2024-25_full_h8_no_chips.json.gz",
+    "source_sha256": "b464f774ab6abb35bcd69a3019541aef6c150d40d8a89a3c92b65d8c45680658",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_opponent_h3_fixed_chips.json",
+    "sha256": "58fced44c3547f2652065d0a4c27392717a990813be89a271a48cf0fe4ecf181",
+    "bytes": 27996,
+    "source": "results/trace_2024-25_opponent_h3_fixed_chips.json.gz",
+    "source_sha256": "38dfb3530a7e388cbcf967ff49c7e3f5bf5c4afde1ddc48e21d1f66878fc2a92",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_opponent_h3_no_chips.json",
+    "sha256": "b1bf54e042c657009d51ee91b3b84837c8859aee8c3bd23e82c5fd74f345861c",
+    "bytes": 27197,
+    "source": "results/trace_2024-25_opponent_h3_no_chips.json.gz",
+    "source_sha256": "85a15233c1e2c8fc73c2bd46dae85adcdd2fec8e2ed8bc87cd7478259a809b06",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_venue_h3_fixed_chips.json",
+    "sha256": "19ff81bced3918b64aca2081d517604b93b76095d1e4243a55921d8f15120bec",
+    "bytes": 27950,
+    "source": "results/trace_2024-25_venue_h3_fixed_chips.json.gz",
+    "source_sha256": "4ffd68d343839f25d50945bb5fa4d3b4645cbb315847629a1ffd3b7ebdaff468",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2024-25_venue_h3_no_chips.json",
+    "sha256": "74071886400772f651c12a9666ccd0189a3b7f14a52f46efda208a6f414b1824",
+    "bytes": 27157,
+    "source": "results/trace_2024-25_venue_h3_no_chips.json.gz",
+    "source_sha256": "36a1402a608efebdfd8c1dbee621ebecfa0852539b516af3169e030c654254fc",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_count_h3_fixed_chips.json",
+    "sha256": "a7ec169ef38fac1511728952288b6e7dbb84782626214a34af90b328467f66e4",
+    "bytes": 28080,
+    "source": "results/trace_2025-26_count_h3_fixed_chips.json.gz",
+    "source_sha256": "5947b504ba37406b0b2fc4c9932113868444d83ff18f50f4879f2772618d6e56",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_count_h3_no_chips.json",
+    "sha256": "7beee71dff95d8934e89bcd38f0744e532bac33067be5adadfd42292ce9628aa",
+    "bytes": 27390,
+    "source": "results/trace_2025-26_count_h3_no_chips.json.gz",
+    "source_sha256": "5451a0066b6b87f77fa4bf1597e9fd8a8a602d64588fb9d12ec877113869f55a",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_count_h5_fixed_chips.json",
+    "sha256": "583aece414d9ab8ba09aaf65349bd2396786d0175d46c32e2e9b4fdd80d48d15",
+    "bytes": 28076,
+    "source": "results/trace_2025-26_count_h5_fixed_chips.json.gz",
+    "source_sha256": "88c405698f5ded97ab368a2419297727ccd503679c5cd15d040e2ebace756237",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_count_h5_no_chips.json",
+    "sha256": "15848150330e3dedf915108a82990dfb5314ae3618cc496ba039767ccb324053",
+    "bytes": 27616,
+    "source": "results/trace_2025-26_count_h5_no_chips.json.gz",
+    "source_sha256": "0466562f3134d5d80e8a00220f2408f239ff7baa9f1038e70a9283422996e4b7",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_count_h8_fixed_chips.json",
+    "sha256": "41b3d07aad6c5d88fbc6919e39582ab3b45b9eca5a3c79ca1b944dbcbc8e0db2",
+    "bytes": 28266,
+    "source": "results/trace_2025-26_count_h8_fixed_chips.json.gz",
+    "source_sha256": "19c3fd3a305beeaa14413627c2330b6c3fc9c3e2833d28edfc6489a3c1b8ac50",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_count_h8_no_chips.json",
+    "sha256": "843f995cdfaad0ce217961d991f85f98e262bebe69a8f68e5937fe01f0adfb1b",
+    "bytes": 28058,
+    "source": "results/trace_2025-26_count_h8_no_chips.json.gz",
+    "source_sha256": "8696b166d29c0b3788921ef36a88798c1ae2686d374a4c875ff962e12522adae",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h3_adaptive_all.json",
+    "sha256": "64f84a6808e25dc9290c617f7f11218a9f617648beddf35c687af94aa61f5e1c",
+    "bytes": 44043,
+    "source": "results/trace_2025-26_full_h3_adaptive_all.json.gz",
+    "source_sha256": "414e0ea94fac9f71453f5f6cc97a055b085091cc9e1ffa85eb4bcf4a04d99f3b",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h3_adaptive_bench_boost.json",
+    "sha256": "caaa8824126ef1d4c01aad9d4269d0f0570d8337404d94fb7173df8e5a2e9e67",
+    "bytes": 32826,
+    "source": "results/trace_2025-26_full_h3_adaptive_bench_boost.json.gz",
+    "source_sha256": "5a3325f45ff39b62285209eb617ddfceba053d59c45c90f619fe551841732d84",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h3_adaptive_free_hit.json",
+    "sha256": "33ce51bfd594242f29b9e78a013fbad39481b8c44cb7753916c6029239c88bdf",
+    "bytes": 36184,
+    "source": "results/trace_2025-26_full_h3_adaptive_free_hit.json.gz",
+    "source_sha256": "0b35d8eb400f139df99577470ea1ca930d7ee63c0c5c5cb45e3f420bfad420c7",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h3_adaptive_triple_captain.json",
+    "sha256": "4e448f88e66afdd87156adc675ef579d4201513ad83f0ef7ad8d420d1870e3d1",
+    "bytes": 34015,
+    "source": "results/trace_2025-26_full_h3_adaptive_triple_captain.json.gz",
+    "source_sha256": "06d7923b478efc8fbae66c77cfa5c83fb2556ef36d83f12ca531737715eeb8bb",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h3_adaptive_wildcard.json",
+    "sha256": "b4670788555caca55173ef49bff611c89b96656ac0c9e6709bc253791881839e",
+    "bytes": 33929,
+    "source": "results/trace_2025-26_full_h3_adaptive_wildcard.json.gz",
+    "source_sha256": "4e241163a5c2b49c6ebf3352c1149c15b9564ac0ec55420580f1878189e0f00d",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h3_fixed_chips.json",
+    "sha256": "b4f88ddf1a4d7467a26f13db5e0f5fa5290eb600341a47c60d4643b7765f0924",
+    "bytes": 28021,
+    "source": "results/trace_2025-26_full_h3_fixed_chips.json.gz",
+    "source_sha256": "73a144ac04401c2b34acfa60727664a7a4cc650a65ed4150be724f96b9fca98c",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h3_no_chips.json",
+    "sha256": "27e7e57af4e99874969e8b070da68d53472abe2f8716be88bb71259a5696660d",
+    "bytes": 27369,
+    "source": "results/trace_2025-26_full_h3_no_chips.json.gz",
+    "source_sha256": "7f43f1b37d212e3f12b2a0556539ef0233fc3ba68bcc9256a9e126ef0c2860a1",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h5_fixed_chips.json",
+    "sha256": "18ddf02970d68d635e779a51285d6252f7032b5ab21fa619eaf96542a99635d7",
+    "bytes": 28136,
+    "source": "results/trace_2025-26_full_h5_fixed_chips.json.gz",
+    "source_sha256": "9c5db160cce44442bb1dcf9ae0bbadac47f8ee881b0bcb8d8d202eaf093bcc53",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h5_no_chips.json",
+    "sha256": "485fe409f565576a28a0d9e49dc72612c3e66b2af6b66917a445140e86bd228e",
+    "bytes": 27657,
+    "source": "results/trace_2025-26_full_h5_no_chips.json.gz",
+    "source_sha256": "8070c1e2fefa72a61228c9e0f3c41f105ae6ca2983db2a417edbc5c8793a908b",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h8_fixed_chips.json",
+    "sha256": "9bd0fb93f5ed1595a93f3fab09a4e0faa0adb44012cef95e8c78f9b00b6643fe",
+    "bytes": 28365,
+    "source": "results/trace_2025-26_full_h8_fixed_chips.json.gz",
+    "source_sha256": "23234aae4bc156c136ccfc1b03017bfdb5ef9827badbf65bb20ba4df0ceba15d",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_full_h8_no_chips.json",
+    "sha256": "c278cb0e30c022f384656ec1b4e94f1b2d91ea9e9a20f69646dfc589ab7a8dec",
+    "bytes": 28072,
+    "source": "results/trace_2025-26_full_h8_no_chips.json.gz",
+    "source_sha256": "97ff184cd01ac1e944e2ca8e41c818c2ce41d915bd272f944570b217e33c8b26",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_opponent_h3_fixed_chips.json",
+    "sha256": "ed1050bc02667c1d5cac01e6787cfee48ef28ff06cd918001d8d7d9c4586783f",
+    "bytes": 28180,
+    "source": "results/trace_2025-26_opponent_h3_fixed_chips.json.gz",
+    "source_sha256": "3b62db4fdb5b2aa85ccc66eb2eb0b5ef9c3f36061b7d6c72ef3d199987c54673",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_opponent_h3_no_chips.json",
+    "sha256": "f40d9a495cb7402d5729e011d9c1a7b3cb9409af3798f52aba945e61f1d5ab9b",
+    "bytes": 27382,
+    "source": "results/trace_2025-26_opponent_h3_no_chips.json.gz",
+    "source_sha256": "7a3ea12e88718d3b2429cb524a32f12fe710749e076a69fcf97e5fb000883cc3",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_venue_h3_fixed_chips.json",
+    "sha256": "92ebc8560245c30fc00778c5bbe9bea032fd41978fe1cfa55d4cab12bd4f57cc",
+    "bytes": 28104,
+    "source": "results/trace_2025-26_venue_h3_fixed_chips.json.gz",
+    "source_sha256": "7389fd8ec54144efa43efe1c8f2cc937fee79c096f0eec8ef8c0039967bbf3b5",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  },
+  {
+    "path": "portable/trace_2025-26_venue_h3_no_chips.json",
+    "sha256": "7fb31364d7dcb5f473d8e5b9794ba92584163c9a6099074b493c192d6f2f1f52",
+    "bytes": 27458,
+    "source": "results/trace_2025-26_venue_h3_no_chips.json.gz",
+    "source_sha256": "8f6103d91aa9bce5c37d9ded7721bfd37b017587d148b798001c516b2b50e975",
+    "omitted_fields": [
+      "trace[*].plan"
+    ]
+  }
+]

@@ -7,6 +7,7 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 ## Start her
 
 - [Status og neste steg](docs/STATUS.md)
+- [Kampjustering, H3/H5/H8 og adaptive chips: 84 nye forløp](research/current/fixture_strategy/README.md)
 - [Første kalenderforsøk: +35,5 poeng med chips mot benchmark](research/current/calendar_counts/README.md) og [datakvalitet](research/current/calendar_audit/README.md)
 - [Posisjonsspesialisering: 32 nye forløp, benchmarken beholdes](research/current/position_specialist/README.md)
 - [Global HGB-vekt med H3: kombinasjonstest, 16 nye forløp](research/current/global_horizon/README.md)

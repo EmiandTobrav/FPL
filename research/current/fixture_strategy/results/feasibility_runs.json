@@ -1,0 +1,770 @@
+[
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "count",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2271,
+      "opening_points": 218,
+      "hits": 64,
+      "transfers": 87,
+      "nonoptimal": 6,
+      "max_solver_gap": 0.005381473050269966
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "count",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2243,
+      "opening_points": 218,
+      "hits": 60,
+      "transfers": 49,
+      "nonoptimal": 12,
+      "max_solver_gap": 0.007343356339330736
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "full",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2324,
+      "opening_points": 218,
+      "hits": 40,
+      "transfers": 85,
+      "nonoptimal": 8,
+      "max_solver_gap": 0.005429920037734038
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "count",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2220,
+      "opening_points": 218,
+      "hits": 60,
+      "transfers": 89,
+      "nonoptimal": 12,
+      "max_solver_gap": 0.016417226860384923
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "count",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2242,
+      "opening_points": 218,
+      "hits": 72,
+      "transfers": 52,
+      "nonoptimal": 30,
+      "max_solver_gap": 0.01290037437699886
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "full",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2368,
+      "opening_points": 218,
+      "hits": 44,
+      "transfers": 86,
+      "nonoptimal": 11,
+      "max_solver_gap": 0.014128076549787243
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "count",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2399,
+      "opening_points": 195,
+      "hits": 12,
+      "transfers": 72,
+      "nonoptimal": 4,
+      "max_solver_gap": 0.005141800100824155
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "full",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2227,
+      "opening_points": 218,
+      "hits": 72,
+      "transfers": 52,
+      "nonoptimal": 13,
+      "max_solver_gap": 0.008189068155577175
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "count",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2203,
+      "opening_points": 195,
+      "hits": 24,
+      "transfers": 40,
+      "nonoptimal": 7,
+      "max_solver_gap": 0.008463020937587442
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "count",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2284,
+      "opening_points": 195,
+      "hits": 12,
+      "transfers": 71,
+      "nonoptimal": 6,
+      "max_solver_gap": 0.0075941753210544555
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "full",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2223,
+      "opening_points": 218,
+      "hits": 56,
+      "transfers": 48,
+      "nonoptimal": 28,
+      "max_solver_gap": 0.028206612639548326
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "full",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2246,
+      "opening_points": 195,
+      "hits": 20,
+      "transfers": 76,
+      "nonoptimal": 2,
+      "max_solver_gap": 0.0030183279990830284
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "full",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2314,
+      "opening_points": 195,
+      "hits": 12,
+      "transfers": 72,
+      "nonoptimal": 7,
+      "max_solver_gap": 0.015544752111508893
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "count",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2187,
+      "opening_points": 195,
+      "hits": 32,
+      "transfers": 42,
+      "nonoptimal": 16,
+      "max_solver_gap": 0.010090115635261519
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "full",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2182,
+      "opening_points": 195,
+      "hits": 16,
+      "transfers": 38,
+      "nonoptimal": 3,
+      "max_solver_gap": 0.008750340621443605
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "count",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2470,
+      "opening_points": 230,
+      "hits": 12,
+      "transfers": 70,
+      "nonoptimal": 10,
+      "max_solver_gap": 0.0064012110300272875
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "count",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2481,
+      "opening_points": 230,
+      "hits": 8,
+      "transfers": 69,
+      "nonoptimal": 3,
+      "max_solver_gap": 0.00919841039133728
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2023-24",
+      "full",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2023-24",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2151,
+      "opening_points": 195,
+      "hits": 44,
+      "transfers": 45,
+      "nonoptimal": 21,
+      "max_solver_gap": 0.00798572628843654
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "full",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2374,
+      "opening_points": 230,
+      "hits": 4,
+      "transfers": 69,
+      "nonoptimal": 5,
+      "max_solver_gap": 0.007007916067321146
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "count",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2284,
+      "opening_points": 230,
+      "hits": 32,
+      "transfers": 42,
+      "nonoptimal": 11,
+      "max_solver_gap": 0.01146565836656022
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "full",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2351,
+      "opening_points": 230,
+      "hits": 16,
+      "transfers": 38,
+      "nonoptimal": 10,
+      "max_solver_gap": 0.010756667425689787
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "count",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2419,
+      "opening_points": 230,
+      "hits": 32,
+      "transfers": 42,
+      "nonoptimal": 25,
+      "max_solver_gap": 0.029177222947945364
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "full",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2435,
+      "opening_points": 230,
+      "hits": 8,
+      "transfers": 70,
+      "nonoptimal": 8,
+      "max_solver_gap": 0.009404837026636186
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "count",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2144,
+      "opening_points": 181,
+      "hits": 4,
+      "transfers": 72,
+      "nonoptimal": 3,
+      "max_solver_gap": 0.009559401849122632
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "count",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "count_h5",
+      "forecast_model": "count",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2019,
+      "opening_points": 181,
+      "hits": 4,
+      "transfers": 35,
+      "nonoptimal": 7,
+      "max_solver_gap": 0.005891194779044463
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "count",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2139,
+      "opening_points": 181,
+      "hits": 4,
+      "transfers": 73,
+      "nonoptimal": 6,
+      "max_solver_gap": 0.005747615851373555
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "full",
+      5,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "fixed_chips",
+      "points38": 2216,
+      "opening_points": 181,
+      "hits": 12,
+      "transfers": 73,
+      "nonoptimal": 0,
+      "max_solver_gap": 9.563765420103455e-06
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "count",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "count_h8",
+      "forecast_model": "count",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2080,
+      "opening_points": 181,
+      "hits": 20,
+      "transfers": 39,
+      "nonoptimal": 20,
+      "max_solver_gap": 0.006555858297790959
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2024-25",
+      "full",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2024-25",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2308,
+      "opening_points": 230,
+      "hits": 28,
+      "transfers": 41,
+      "nonoptimal": 28,
+      "max_solver_gap": 0.016883943377566824
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "full",
+      5,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "full_h5",
+      "forecast_model": "full",
+      "horizon": 5,
+      "mode": "no_chips",
+      "points38": 2099,
+      "opening_points": 181,
+      "hits": 12,
+      "transfers": 37,
+      "nonoptimal": 7,
+      "max_solver_gap": 0.0048978104781210625
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "full",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2153,
+      "opening_points": 181,
+      "hits": 4,
+      "transfers": 75,
+      "nonoptimal": 9,
+      "max_solver_gap": 0.004602417611163291
+    },
+    "retries": [],
+    "calls": 0
+  },
+  {
+    "ok": true,
+    "task": [
+      "2025-26",
+      "full",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2025-26",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2088,
+      "opening_points": 181,
+      "hits": 8,
+      "transfers": 36,
+      "nonoptimal": 21,
+      "max_solver_gap": 0.012120961068274639
+    },
+    "retries": [],
+    "calls": 0
+  }
+]

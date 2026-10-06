@@ -1,0 +1,17 @@
+{
+  "model": "full_h3_adaptive_tc",
+  "mean_points": 2351.5,
+  "mean_gain_vs_calendar": 7.75,
+  "calendar_season_gains": [
+    38,
+    10,
+    -31,
+    14
+  ],
+  "wins_vs_calendar": 3,
+  "descriptive_bootstrap95_vs_calendar": [
+    -19.75,
+    31.0
+  ],
+  "mean_gain_vs_benchmark": 43.25
+}

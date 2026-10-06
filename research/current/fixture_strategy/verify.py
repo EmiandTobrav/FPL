@@ -4,6 +4,7 @@ import numpy as np,pandas as pd
 HERE=Path(__file__).resolve().parent;CURRENT=HERE.parent;sys.path.insert(0,str(CURRENT))
 import experiment
 from fixture_strategy.chips import TYPES
+from decision_specialist.planner import legal_positions
 OUT=HERE/'results'
 
 def read(path):return json.loads(gzip.decompress(path.read_bytes()))
@@ -20,6 +21,8 @@ def main():
             owned=state['owned'];squad=set(r['squad']);incoming=squad-set(owned);outgoing=set(owned)-squad
             assert incoming==set(r['incoming']) and outgoing==set(r['outgoing'])
             assert len(squad)==15 and len(r['starters'])==11 and set(r['bench'])==squad-set(r['starters'])
+            assert legal_positions(r['starters'],p.set_index('pid').pos.to_dict())
+            if p[p.pid.isin(squad)].groupby('club').size().max()>3:assert not incoming
             assert r['captain'] in r['starters'] and r['vice'] in r['starters'] and r['captain']!=r['vice']
             assert p.set_index('pid').loc[list(squad)].pos.value_counts().to_dict()=={1:2,2:5,3:5,4:3}
             assert p[p.pid.isin(incoming)].can_buy.all()

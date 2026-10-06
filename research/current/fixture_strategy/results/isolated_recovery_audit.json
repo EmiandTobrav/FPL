@@ -1,0 +1,50 @@
+[
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "full",
+      8,
+      "fixed_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "fixed_chips",
+      "points38": 2368,
+      "opening_points": 218,
+      "hits": 44,
+      "transfers": 86,
+      "nonoptimal": 11,
+      "max_solver_gap": 0.014128076549787243
+    },
+    "retries": [],
+    "calls": 34
+  },
+  {
+    "ok": true,
+    "task": [
+      "2022-23",
+      "full",
+      8,
+      "no_chips"
+    ],
+    "summary": {
+      "season": "2022-23",
+      "model": "full_h8",
+      "forecast_model": "full",
+      "horizon": 8,
+      "mode": "no_chips",
+      "points38": 2223,
+      "opening_points": 218,
+      "hits": 56,
+      "transfers": 48,
+      "nonoptimal": 28,
+      "max_solver_gap": 0.028206612639548326
+    },
+    "retries": [],
+    "calls": 34
+  }
+]

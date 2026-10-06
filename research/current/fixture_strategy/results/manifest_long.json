@@ -1,0 +1,14 @@
+{
+  "fixture_strategy/build.py": "bb8504e8d9f6dc8ebe9b01d3db606c91d0263bec7fa5d3bf9bb29d053da6b33e",
+  "fixture_strategy/features.py": "bbf1fedf8650325ed61007e5d146232670568cdceeb554283b35f27c1763b731",
+  "fixture_strategy/run.py": "07af4fa43e6bc71fc79fd25f552daaf7eaff3d9c0f99e8305a14e6544640d011",
+  "fixture_strategy/protocol.json": "85e2fef53fb02640044092ceff0f83b78c15436440dad3aa90ac1f9429fcdc7e",
+  "benchmark.json": "0ef23c93406d46f8459783a6a58cd69361190d5ea6920a9174b4ebecbb3add2f",
+  "decision_specialist/planner.py": "120b3c4881a784cdb55753f21884e046282616684a2e189c670bccc15d2ca476",
+  "experiment.py": "1ac0213af9c5e60ca104ba0b81d7f0065a9292ab4215fcf3d16d26db80440c07",
+  "project/season_simulator.py": "b8766aea9fa9194ba0affb451d07bb2532d2ed2067576d0fdc3ff5e869910843",
+  "fixture_strategy/results/forecast_2025-26.csv.gz": "f0bf1b5161198c28e6c387b6a265923c26e9313f6da32df11ba13c91b8a8f95b",
+  "fixture_strategy/results/forecast_2023-24.csv.gz": "d3ffcfc04e16ca310c6f2a4773a1dca9e766ed74ea32b763b796babf6fdc98a3",
+  "fixture_strategy/results/forecast_2022-23.csv.gz": "c44a643e26b17843b6b1c92566b060e895ec886cb6190aefccfdfa5c61f7bc0b",
+  "fixture_strategy/results/forecast_2024-25.csv.gz": "dcc334cc9c252a38fa94e9b902dcf82a7c626271bc27ce1ec65a3223513a94b7"
+}

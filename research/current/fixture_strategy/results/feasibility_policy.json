@@ -1,0 +1,14 @@
+{
+  "reason": "10-second solver returned no incumbent; confirmed in isolated diagnostic. Conditional retry chosen solely for feasibility.",
+  "policy": "Retain any feasible 10s result, retry at 60s only if status=1 and x=None; all models/horisons use same policy.",
+  "sources": {
+    "fixture_strategy/complete_long.py": "653eb5e3ed638b9effeb2ebc303ee4fc9019615b9f8dec27f972356af1aec5dd",
+    "fixture_strategy/run.py": "07af4fa43e6bc71fc79fd25f552daaf7eaff3d9c0f99e8305a14e6544640d011",
+    "fixture_strategy/protocol.json": "85e2fef53fb02640044092ceff0f83b78c15436440dad3aa90ac1f9429fcdc7e",
+    "decision_specialist/planner.py": "120b3c4881a784cdb55753f21884e046282616684a2e189c670bccc15d2ca476",
+    "fixture_strategy/results/forecast_2025-26.csv.gz": "f0bf1b5161198c28e6c387b6a265923c26e9313f6da32df11ba13c91b8a8f95b",
+    "fixture_strategy/results/forecast_2023-24.csv.gz": "d3ffcfc04e16ca310c6f2a4773a1dca9e766ed74ea32b763b796babf6fdc98a3",
+    "fixture_strategy/results/forecast_2022-23.csv.gz": "c44a643e26b17843b6b1c92566b060e895ec886cb6190aefccfdfa5c61f7bc0b",
+    "fixture_strategy/results/forecast_2024-25.csv.gz": "dcc334cc9c252a38fa94e9b902dcf82a7c626271bc27ce1ec65a3223513a94b7"
+  }
+}

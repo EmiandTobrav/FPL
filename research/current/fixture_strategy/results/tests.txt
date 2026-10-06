@@ -1,0 +1,2 @@
+2 feature tests passed
+Chip opportunity, expiry, reservation and restoration tests passed

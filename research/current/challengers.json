@@ -35,9 +35,12 @@
   "research_only": [
     "gate",
     "hybrid_hgb_h3",
-    "calendar_count_h3"
+    "calendar_count_h3",
+    "fixture_full_h3",
+    "fixture_full_h3_adaptive_tc",
+    "fixture_count_h8_no_chips"
   ],
-  "next_proposed_test": "Improve calendar archive coverage and separately test opponent/venue adjustments. Full actual-deadline reconstruction requires a new common baseline.",
+  "next_proposed_test": "Improve actual-deadline calendar coverage and long-horizon solver reliability; calibrate chip option values on earlier seasons before a locked prospective test.",
   "limitations": [
     "No untouched holdout",
     "Future neutral-fixture proxy",
@@ -94,5 +97,25 @@
       8
     ],
     "next": "Improve calendar archive coverage and separately test opponent/venue adjustments. Full actual-deadline reconstruction requires a new common baseline."
+  },
+  "last_fixture_chip_test": {
+    "report": "fixture_strategy/README.md",
+    "code_commit": "171990e5b779f76734cb5de000b65c34f59153e5",
+    "feasibility_recovery_commit": "5f1549d622697d05709d3d491c422d8ae5894d9d",
+    "status": "Completed; benchmark unchanged; no robust incremental winner",
+    "runs": 84,
+    "decisions": 2856,
+    "best_observed": "full_h3 with adaptive Triple Captain",
+    "best_mean_points": 2351.5,
+    "gain_vs_benchmark": 43.25,
+    "gain_vs_calendar_h3": 7.75,
+    "isolated_tc_gain": 3.5,
+    "adaptive_all_gain_vs_fixed_full_h3": -48.5,
+    "limitations": [
+      "Reused four evaluation seasons",
+      "Unchanged calendar gaps",
+      "Solver time limits; two failed runs recovered",
+      "Heuristic chip option values; no global-optimality claim"
+    ]
   }
 }

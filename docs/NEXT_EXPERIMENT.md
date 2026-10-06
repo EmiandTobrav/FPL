@@ -1,3 +1,5 @@
+> **Fullført 6. oktober 2026:** Kamp-/horisont-/chipforsøket er kjørt. 84 forløp, 2856 beslutninger. Beste observerte primærscore er 2351,50 for full H3 + adaptiv TC, men bare +7,75 mot kalenderkontrollen. Benchmarken beholdes. [Rapport](../research/current/fixture_strategy/README.md). Neste: kalender/frister og solverstabilitet, deretter tidligere-sesong-kalibrert chip-spareverdi. Planen nedenfor bevares som historisk protokoll.
+
 # Neste forsøk: kampvise prognoser og chipstrategi
 
 Oppdatert 6. oktober 2026 etter brukerens prioritering. **Planlagt, ikke implementert eller kjørt.** Aktiv benchmark er fortsatt `constant_h3`; `calendar_count_h3` er kontroll for kalenderens tilleggsverdi.

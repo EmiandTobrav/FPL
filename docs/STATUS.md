@@ -2,6 +2,18 @@
 
 Oppdatert 6. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Nyeste forsøksrunde: kampjustering, horisonter og chips
+
+Fullført 6. oktober 2026: **84 sesongforløp / 2856 beslutninger**, med åtte nøyaktig gjenskapte kalenderkontroller. [Full rapport](../research/current/fixture_strategy/README.md).
+
+- Full motstander-/hjemme-bortejustering ved H3: 2348,00 med chips (+4,25 mot kamptelling), men −36,00 uten chips mot samme kontroll.
+- Full H3 med adaptiv Triple Captain: **2351,50**; +43,25 mot benchmark og +7,75 mot kalenderutfordreren. TC alene gir +3,50 mot samme fulljusterte prognose; to av fire sesonger bedres.
+- Adaptive BB/FH/WC gir henholdsvis −13,75/−11,75/−44,75 mot samme prognose med faste chips. Alle adaptive chips samlet gir −48,50.
+- Ingen H5/H8-variant vinner med chips. H8 med ren kamptelling gir +13,75 uten chips mot H3, men har tidsbegrensede løsninger i 91 av 136 beslutninger.
+- To H8-forløp feilet først uten gjennomførbar solverløsning og ble gjenkjørt. Alle endelige løsningskall brukte 10 sekundersgrensen; betinget 60-sekundersfallback var ikke nødvendig. Ikke hevde at alle løsninger er optimale eller nøyaktig maskinreproduserbare.
+
+**Benchmarken beholdes.** Full H3/TC registreres kun som forskning. Kalenderdekningen er uendret; kommende arbeid bør prioritere tidsriktig kalender/frister, solverstabilitet ved lange planer og spareverdien til chips lært fra eldre sesonger. Fire tidligere brukte sesonger gir ingen urørt validering.
+
 ## Mål og avklaringer
 
 Maksimer robust FPL-sluttscore etter at hovedmodellen tar over fra startmodellen. Test enkeltmodeller, faste og lærte prognosekombinasjoner, og separate variabler for motstanderens angrep og forsvar. Startmodellens overlevering skal inneholde den faktiske troppen, bank, kjøpspriser og gratisbytter. Ikke tilpass startlaget til et kunstig idealmottakerlag. Startstrategiens delmål ved GW8,12,15,19 beholdes separat.

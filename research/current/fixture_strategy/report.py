@@ -3,8 +3,17 @@ import json,gzip
 import pandas as pd
 HERE=Path(__file__).resolve().parent;OUT=HERE/'results'
 
+def md(frame,index=False,floatfmt='.2f'):
+    if index:frame=frame.reset_index()
+    def fmt(x):
+        if isinstance(x,float):return format(x,floatfmt) if pd.notna(x) else '—'
+        return str(x).replace('|','/')
+    lines=['| '+' | '.join(map(str,frame.columns))+' |','| '+' | '.join(['---']*len(frame.columns))+' |']
+    lines += ['| '+' | '.join(fmt(x) for x in row)+' |' for row in frame.itertuples(index=False,name=None)]
+    return '\n'.join(lines)
+
 def main():
-    d=pd.read_csv(OUT/'all_seasons.csv');s=pd.read_csv(OUT/'summary.csv');v=json.loads((OUT/'verification.json').read_text())
+    d=pd.read_csv(OUT/'all_seasons.csv');s=pd.read_csv(OUT/'summary.csv');v=json.loads((OUT/'verification.json').read_text());best=pd.read_csv(OUT/'best_seasons.csv')
     fixed=s[s['mode']=='fixed_chips'][['model','points','gain','matched_gain','hits','nonoptimal','max_solver_gap']].sort_values('points',ascending=False)
     no=s[s['mode']=='no_chips'][['model','points','gain','matched_gain']].sort_values('points',ascending=False)
     chips=s[s['mode'].str.startswith('adaptive_')][['mode','points','gain','matched_gain','wins','ties','losses','matched_ci_low','matched_ci_high']].sort_values('points',ascending=False)
@@ -20,17 +29,31 @@ def main():
 
 Fullført 6. oktober 2026. {v['season_runs']} nye sesongforløp, {v['decisions']} hovedmodellbeslutninger på 2022/23–2025/26. **Arbeidsbenchmarken `constant_h3` beholdes.** Dette er utforskende tester på fire allerede gjenbrukte sesonger, ikke en urørt validering eller en historisk rangbevisføring.
 
+## Resultat og beslutning
+
+Høyest observert snitt med chips er **2351,50** for fulljustert H3 med adaptiv Triple Captain: +43,25 mot benchmark, men bare +7,75 mot den enklere kalenderkontrollen. Den isolerte TC-gevinsten er +3,50 mot samme fulljusterte prognose med faste chipdatoer, med gevinst i to av fire sesonger. Full kampjustering alene gir +4,25 med chips og −36,00 uten chips mot kamptelling ved H3. Dette er ikke en robust bekreftet forbedring.
+
+Ingen H5/H8-variant vinner med chips. Uten chips gir ren kamptelling ved H8 2232,00 poeng, +13,75 mot H3, men 91 av 136 handlinger er tidsbegrensede solverløsninger. Det beholdes kun som diagnostisk spor. Alle adaptive chips samlet taper 48,50 mot faste datoer på samme prognose; adaptiv Wildcard taper i alle fire sesonger.
+
+Behold kalenderutfordreren og fulljustert H3/TC som forskning, og behold arbeidsbenchmarken. Neste prioritet er bedre kalender-/fristdekning, en mer stabil solver for lange planer, og chip-spareverdi kalibrert på eldre sesonger før en ny låst/prospektiv evaluering. Resultatene avviser ikke muligheten for bedre chipoptimalisering; de viser at akkurat denne heuristikken stort sett ikke forbedrer den faste kalenderen.
+
+Sesongene for den beste observerte chipkandidaten:
+
+{md(best)}
+
+Gevinsten mot kalenderkontrollen er positiv i tre av fire sesonger, men et beskrivende 95 % paret bootstrapintervall for middelgevinsten er [−19,75; +31,00]. Dette inkluderer ikke korreksjon for alle forsøkene.
+
 ## Kampvise prognoser og horisonter
 
 `count` er antall-kamper-kontrollen. `venue` legger til hjemme/borte, `opponent` separate motstanderangrep/-forsvar, `full` begge. H3, H5 og H8 betyr maksimalt antall runder i planen; kjente kommende Wildcard/Free Hit forkorter den. GW38 avslutter alle planer. Aktuell prognose, overlevering, priser, ressursregler og fast chipkalender er beholdt.
 
 Tabellen viser netto poeng, gevinst mot benchmark (2308,25), og gevinst mot `count` ved **samme horisont**. `nonoptimal` er antall tidsbegrensede hovedbeslutninger, og gap er solverens relative objektivgap, ikke usikkerhet i sesongpoeng.
 
-{fixed.to_markdown(index=False,floatfmt='.3f')}
+{md(fixed,floatfmt='.3f')}
 
 Uten chips (benchmark 2172,75):
 
-{no.to_markdown(index=False,floatfmt='.2f')}
+{md(no)}
 
 ## Adaptive chips på låst `full_h3`
 
@@ -38,7 +61,7 @@ Prognose og H3 ble låst til fulljustert modell før chipresultatene, uansett hv
 
 `matched_gain` er mot fulljustert H3 med faste chips, **ikke** kalenderkontrollen eller benchmarken. Intervallene er beskrivende 95 % paret sesongbootstrap med 50 000 resamplinger, seed 173; de korrigerer ikke for modellutprøvingen.
 
-{chips.to_markdown(index=False,floatfmt='.2f')}
+{md(chips)}
 
 [Alle sesongvise resultater](results/all_seasons.csv) og [valgte chipdatoer](results/chip_dates.csv) viser variasjon og faktiske beslutninger. Chiprundens poeng alene er ikke en kausal chipgevinst, siden tropp og bytter endres gjennom sesongen.
 
@@ -55,7 +78,7 @@ Prognose og H3 ble låst til fulljustert modell før chipresultatene, uansett hv
 
 Samme arkiver og 14-dagersregel som forrige kalenderforsøk. Vi har **ikke forbedret arkivdekningen** i denne runden. Ved eldre snapshots beholdes den eksisterende nøytrale proxyen, og sluttsesongens kalender brukes ikke til å fylle hull i fremtiden. Tabellen teller beslutninger med et ferskt nok snapshot, ikke garantert komplett kalender.
 
-{coverage.to_markdown()}
+{md(coverage,index=True)}
 
 Aktuell runde og cutoff beholder benchmarkens historiske final-event/36-timersbegrensning. Gode resultater her dokumenterer derfor ikke en fullstendig tidsriktig live-backtest. H5/H8 gir mer beregningsarbeid og større eksponering mot usikker kalender og frosne spillerforutsetninger.
 
@@ -63,9 +86,9 @@ Aktuell runde og cutoff beholder benchmarkens historiske final-event/36-timersbe
 
 Alle åtte `count_h3`-kontroller gjenskaper arkiverte kalenderbeslutninger og poeng nøyaktig. Verifisering kontrollerer tropp/posisjoner, inn-/utbytter, kjøps-/salgspriser, bank, frie bytter, hits, chipbeholdning, Free Hit-retur og poengregnskap. Treningslabels, lag- og spillerhistorikk ligger før cutoff. Funksjonstestene dekker blank/dobbel, fallback, separate effekter, minuttandel, chipmuligheter, utløp og reserverte runder.
 
-Solveren bruker den arvede 10-sekundersgrensen og toleranse 1e-5. Tidsbegrensede løsninger beholdes når de er gjennomførbare. I H5/H8 utløste manglende gjennomførbar løsning en dokumentert teknisk feilretting: bare status=1 uten incumbent gjenkjøres med 60 sekunder, etter samme regel for kontroll og kandidat. Dette ble lagt til etter observert solverfeil, ikke valgt etter poengresultater. Se feasibility_policy.json og feasibility_runs.json. Beregningsbudsjettet er derfor betinget utvidet for disse tilfellene. Chipforsøkets `nonoptimal` i råtabellen omfatter også forkastede/prospektive kandidater; tabellen under viser kun handlingen som faktisk ble valgt. Små forbedringer er ikke robuste bevis når optimeringen ikke er fullført. Kontroller/regnskap er bestått; det hevdes ikke at alle løsninger er bevist optimale.
+Solveren bruker den arvede 10-sekundersgrensen og toleranse 1e-5. Tidsbegrensede løsninger beholdes når de er gjennomførbare. I H5/H8 utløste manglende gjennomførbar løsning en dokumentert teknisk feilretting: bare status=1 uten incumbent gjenkjøres med 60 sekunder, etter samme regel for kontroll og kandidat. Dette ble lagt til etter observert solverfeil, ikke valgt etter poengresultater. Se feasibility_policy.json og feasibility_runs.json. To forløp som feilet i første kjøring ble gjenkjørt separat og fullført. Ingen av gjenkjøringene trengte faktisk 60-sekundersforsøket; alle de arkiverte løsningene ble funnet med 10-sekunderskall. At gjenkjøring kunne lykkes uten økt grense understreker variasjon ved tidsbegrenset optimering. Chipforsøkets `nonoptimal` i råtabellen omfatter også forkastede/prospektive kandidater; tabellen under viser kun handlingen som faktisk ble valgt. Små forbedringer er ikke robuste bevis når optimeringen ikke er fullført. Kontroller/regnskap er bestått; det hevdes ikke at alle løsninger er bevist optimale.
 
-{diag.to_markdown(floatfmt='.4f')}
+{md(diag,index=True,floatfmt='.4f')}
 
 ## Reproduksjon og arkivering
 
