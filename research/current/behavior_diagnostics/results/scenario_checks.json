@@ -1,0 +1,9 @@
+{
+  "player_rounds": 140455,
+  "forecast_models": 12,
+  "scenario_weekly_rows": 81264,
+  "pre_deadline_membership": true,
+  "common_reference_top60": true,
+  "blank_round_players_excluded": true,
+  "no_new_fitted_models": true
+}

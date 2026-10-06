@@ -28,13 +28,13 @@ Utvidet HGB mot enkel HGB ga +15,17 poeng uten chips og −6,50 med chips. Det e
 
 ## Prioritert neste arbeid
 
-Oppdatert etter retrening av Ridge/Extra Trees og faste blandinger:
+Oppdatert etter chip- og scenariodiagnostikken:
 
-1. Behold retrent Extra Trees som primær utfordrer med chips (+37,2 mot referansen) og oppdatert treveisblanding som utfordrer på tvers av regimer (+26,3/+10,3). Lås modellregler før prospektiv evaluering; ingen ny vekttuning på samme sesongfasit.
-2. Diagnostiser hvorfor retrening av Ridge/Extra hjelper med chips, men svekker uten. Dekomponer eksisterende spor og bruk deretter matchede beslutninger fra identiske troppstilstander; ikke tolk poeng på chiprunder alene som kausal chipgevinst.
-3. Skaff historiske før-frist-kalendere og lagre nye snapshots for priser, tilgjengelighet og roller. Nøytral flerukerspilot er fullført; ikke les fremtidige `games_*.pkl`-rader som kjent ved dagens frist.
-4. Diagnostiser minuttsannsynligheter og hendelseskomponenter før nye komplekse hendelsesmodeller. Isoler deretter xG, kort historikk og angrep/forsvar med uendret optimizer hvis dataene støtter det.
-5. Opprett en prospektiv holdout med fryste kandidatregler. Tidsordnet modellvalg ga −4,25 i siste primære evaluering; den beskrivende vinneren er ikke en uavhengig bekreftet produksjonsvinner.
+1. Test hvordan oppdaterte prognoser omsettes i lønnsomme troppsendringer over flere runder. WC/FH-ablasjonene viser at dette er sentralt: 50/50-retrening gir −30,0 uten chips og +44,8 med bare WC/FH. Ikke tune chipdatoer på samme sesonger; flerukers forsøk trenger før-frist-kalenderdata.
+2. En tidsordnet trent ekspertblanding med utvidet HGB ved fallende/ustabil spilletid er en konkret hypotese. Lær eventuell vekting på eldre treningsprognoser og sammenlign mot låst treveisblanding. Diagnostiske undergrupper er ikke i seg selv en validert kjøps-/kapteinsregel.
+3. Skaff før-frist-data om roller, tilgjengelighet, registrering og kampkalender. Kort historikk er ikke løst av vanlig retrening eller de nye blandingene.
+4. Behold retrent Extra Trees og treveisblandingen som låste utfordrere. Prospektiv evaluering er nødvendig etter mange undersøkelser av de samme seks sesongene; ingen automatisk produksjonsendring.
+5. Hendelsesmodellen trenger fortsatt kalibrerings-/komponentdiagnostikk før mer kompleksitet. Ikke gjør nye brede parameter- eller blandingsvektssøk på samme fasit.
 
 Rapporter nettosesongpoeng med chips som forhåndsbestemt primærmål, treffkostnad, usikkerhet og sesongvise forskjeller. Uten chips er diagnostikk. Samme starttilstand og samme beslutningsmotor skal brukes for å isolere modellendringer.
 
@@ -107,3 +107,16 @@ Uten chips snur retreningseffekten for Extra og Ridge: −28,2/−14,7 mot egne 
 Retrenet treveisblanding øker topp-20-treff på 8+ fra 23,97 % til 25,18 %, men dette forklarer ikke alene sesongscore. Behold Extra Trees som primær utfordrer og treveis som utfordrer på tvers av regimer. Neste spor er samspillet med chips/troppsendringer og prospektiv evaluering med låste regler.
 
 173 tester bestått lokalt; 60 tidsriktige treningsvinduer, 2040 nye beslutninger og identisk åpning kontrollert. Alle nye solveravgjørelser er optimale innen toleransen. Kode, prognoser, auditer, 60 spor og resultater er lagret under `research/current/retrained_ensemble`. Ingen urørt holdout eller bekreftet GitHub CI-status.
+
+
+## Chipmekanismer og scenariodiagnostikk fullført
+
+[Rapport](../research/current/behavior_diagnostics/README.md). 12 prognosemodeller, 140 455 planlagte spiller–runder, 4536 nye beslutninger fra identisk referansetilstand og 144 nye chipablasjonsforløp. Ingen ny modelltrening. Opprinnelig diagnostikk låst før resultater; separat eksplorativ chipablasjon spesifisert etter de første regnskapsfunnene.
+
+Extra Trees-retrening gir −28,2 uten chips og +68,8 med chips mot egen frossen kontroll: omslag +97,0. Direkte ekstra TC/BB-poeng forklarer bare +1,5; +70,7 kommer fra vanlig ellever, +18,2 vanlig kaptein og +6,7 endret treffkostnad. Mot sterk referanse er omslaget +76,2 og direkte bonuser −2,0. Dette er bokføring, ikke kausal allokering til tidligere bytter.
+
+Kontrollerte hele-sesongablasjoner (retrent minus egen frossen): WC alene gir Ridge +20,0, Extra +39,0, 50/50 +31,2. WC+FH gir +37,8/+31,0/+44,8. TC+BB gir −9,2/+15,7/−6,5. Det finnes store samspillseffekter; mekaniske poengmultiplikatorer alene forklarer ikke resultatene. Fra identisk tropp gir retrent Extra bedre umiddelbare WC-valg, men dette gjelder ikke Ridge. Langsiktig troppshistorikk er viktig.
+
+RMSE blant samme referanse-topp60 bedres litt av retrening av både Ridge og Extra i 6/6 sesonger, selv om deres chipfrie sesonggevinst faller. Utvidet HGB slår sterk referanse i topp10-rangering ved fallende minutter (+0,369 faktisk poeng per valgt spiller) og rotasjon (+0,270), begge 6/6 sesonger. Treveisblandingen gir +0,116 i samlet topp20 (5/6) og lavere relevant RMSE (6/6). Retrenet Ridge/Extra sliter relativt ved kort historikk; ingen gjennombruddsmodell er dokumentert. Dobbeltrunder er lovende for treveis, men har få kvalifiserende runder.
+
+Ingen situasjonsstyrt ekspertregel er trent eller tatt i bruk. Scenarioer er overlappende og utforsket på kjente sesonger; konsistens er ikke en korrigert signifikanstest. 176 tester bestått lokalt. Alle nye 4536 matchede og 4896 ablasjonsbeslutninger har optimal status innen toleransen; 408 kontrollvalg gjenskaper arkivet. Kode, protokoller, scenariodata, beslutningsspor, auditer og fingeravtrykk er lagret under `research/current/behavior_diagnostics`. GitHub CI-status er ikke verifisert.

@@ -1,0 +1,9 @@
+{
+  "new_matched_decisions": 4536,
+  "archived_path_rows": 3672,
+  "identical_state": true,
+  "reference_actions_reproduced": true,
+  "exact_additive_accounting": true,
+  "nonoptimal": 0,
+  "max_solver_gap": 2.2295682867141226e-08
+}

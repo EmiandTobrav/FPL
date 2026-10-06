@@ -1,0 +1,10 @@
+{
+  "verified_ablation_seasons": 144,
+  "identical_handoff": true,
+  "exact_chip_schedules": true,
+  "point_accounting": true,
+  "temporal_features": true,
+  "additive_decompositions": true,
+  "source_input_files": 366,
+  "output_files": 189
+}

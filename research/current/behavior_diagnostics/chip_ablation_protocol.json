@@ -1,0 +1,10 @@
+{
+ "created":"2026-10-06", "status":"Exploratory follow-up specified after initial accounting and matched-state diagnostics; not an independent confirmation",
+ "reason":"Direct TC/BB increment explains little of regime reversal; test effect of squad reset/access separately from score multipliers",
+ "models":["ridge","ridge_refresh","extra","extra_refresh","mix_ridge_extra_50","re_refresh"],
+ "new_regimes":{"wc_only":[6,24],"fh_only":[18,33],"resets_only":[6,18,24,33],"bonuses_only":[15,19,36,37]},
+ "reused_regimes":["no_chips","fixed_chips"],
+ "unchanged":"Original chip type on each selected round, original GW4 handoff, forecasts, single-round optimizer and budget/FT rules",
+ "evaluation":"Net full-season points; retrained minus own frozen control for Ridge, Extra and 50/50. Four-cell interaction: full-resets-bonuses+none. WC/FH-only effects are exploratory and not additive with full.",
+ "no_tuning":"No changed forecasts, model weights, chip dates or rules fitted to new results"
+}

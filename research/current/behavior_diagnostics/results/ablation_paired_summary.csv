@@ -1,0 +1,19 @@
+regime,comparison,mean,min,max,positive_seasons
+bonuses_only,extra_refresh - extra,15.666666666666666,-106,183,4
+bonuses_only,re_refresh - mix_ridge_extra_50,-6.5,-64,58,2
+bonuses_only,ridge_refresh - ridge,-9.166666666666666,-58,67,3
+fh_only,extra_refresh - extra,12.166666666666666,-85,130,2
+fh_only,re_refresh - mix_ridge_extra_50,-11.666666666666666,-129,103,4
+fh_only,ridge_refresh - ridge,-1.0,-109,74,3
+fixed_chips,extra_refresh - extra,68.83333333333333,-5,109,5
+fixed_chips,re_refresh - mix_ridge_extra_50,30.5,-40,83,4
+fixed_chips,ridge_refresh - ridge,48.666666666666664,-39,98,5
+no_chips,extra_refresh - extra,-28.166666666666668,-142,126,1
+no_chips,re_refresh - mix_ridge_extra_50,-30.0,-89,16,2
+no_chips,ridge_refresh - ridge,-14.666666666666666,-56,19,3
+resets_only,extra_refresh - extra,31.0,-33,121,4
+resets_only,re_refresh - mix_ridge_extra_50,44.833333333333336,-1,137,5
+resets_only,ridge_refresh - ridge,37.833333333333336,-42,99,4
+wc_only,extra_refresh - extra,39.0,-105,122,5
+wc_only,re_refresh - mix_ridge_extra_50,31.166666666666668,-108,211,4
+wc_only,ridge_refresh - ridge,20.0,-83,155,3
