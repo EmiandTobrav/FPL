@@ -1,0 +1,8 @@
+{
+  "identity_tests_passed": 8,
+  "offline_audit_replay_byte_identical": true,
+  "replayed_output_files": 17,
+  "all_compressed_deliverables_integrity_checked": true,
+  "keeper_chain_rerun": false,
+  "locked_labels_modified": false
+}

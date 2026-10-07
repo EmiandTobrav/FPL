@@ -1,0 +1,21 @@
+{
+  "candidate_categories": [
+    "goalAssist",
+    "assistAttemptSaved",
+    "assistPost",
+    "assistBlockedShot",
+    "assistOwnGoal",
+    "assistPenaltyWon",
+    "assistFreeKickWon",
+    "assistHandballWon",
+    "assistPassLost"
+  ],
+  "all_six_official_examples_matched": false,
+  "official_positive_examples": 4,
+  "positive_examples_detected": 0,
+  "candidate_queue_rows": 1421,
+  "queue_is_exhaustive": false,
+  "reason": "Known modern additions can be absent from every archived assist category; counts cannot encode receiving location, defensive touch sequence or intended receiver.",
+  "new_verified_assist_labels": 0,
+  "existing_official_additions_preserved": 4
+}

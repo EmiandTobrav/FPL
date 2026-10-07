@@ -1,0 +1,17 @@
+season,hypothesis,rows,fpl_assists,candidate_assists,exact_rows,positive_union_rows,exact_positive_union_rows,overcount_rows,undercount_rows
+2019-20,ordinary_opta,10510,889,696,10319,823,632,1,190
+2019-20,all_candidate_categories,10510,889,889,10506,823,819,2,2
+2020-21,ordinary_opta,10202,882,665,9988,813,599,0,214
+2020-21,all_candidate_categories,10202,882,882,10202,813,813,0,0
+2021-22,ordinary_opta,10485,929,743,10302,852,669,0,183
+2021-22,all_candidate_categories,10485,929,929,10485,852,852,0,0
+2022-23,ordinary_opta,11047,899,706,10855,834,642,0,192
+2022-23,all_candidate_categories,11047,899,899,11047,834,834,0,0
+2023-24,ordinary_opta,11384,1071,862,11181,972,769,1,202
+2023-24,all_candidate_categories,11384,1071,1071,11380,973,969,2,2
+2024-25,ordinary_opta,11567,978,804,11398,907,738,1,168
+2024-25,all_candidate_categories,11567,978,978,11565,907,905,1,1
+2025-26,ordinary_opta,11492,942,689,11241,889,638,0,251
+2025-26,all_candidate_categories,11492,942,942,11492,889,889,0,0
+2026-27,ordinary_opta,622,58,42,606,53,37,0,16
+2026-27,all_candidate_categories,622,58,58,622,53,53,0,0

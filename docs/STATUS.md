@@ -2,6 +2,32 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## BPS-kildeaudit og assistgrunnlag – 7. oktober 2026
+
+Arbeidet er videreført på PR #1-grenen fra `dfa2ff30b36e33c4b16f5402d25af9337266af3f`,
+ikke innlemmet i main. [Ny rapport](../research/current/scoring_2026_27/bps_recovery/README.md):
+76 687 av 77 280 historiske spillerobservasjoner er koblet til det frosne arkivet.
+De 593 hullene er fra 21 manglende kamper; ingen navnekoblinger gjenstår.
+Alle 3 244 eksplisitte tellingpar i 327 historiske primærkontroller stemmer.
+Manglende felt forblir manglende. I de tidligere brukte 622 GW1/GW2-kontrollene
+har arkivvarianten riktig bonus for alle og riktig BPS for 615, mot 620 med
+primærtellingene. Dette er ikke en ny uavhengig validering.
+
+Assistsummen fra arkivets kategorier gjenskaper nesten alle gamle FPL-awards,
+men ingen av de fire kjente offisielle tilleggene etter nyere kriterier.
+Fullstendige hendelser fra de seks offisielle eksempelkampene, en målbasert
+vurderingskø og en eksplisitt ufullstendig assistkandidat-liste er lagret.
+Ingen nye assistetiketter er godkjent. Neste arbeid: hendelsesbaserte kriterier,
+med mottakssted og defensive berøringer, deretter nye kontrollkamper.
+
+**Gjeldende keeperstatus fra overleveringen er 5 343 / 5 381 (99,29 %), med
+38 uløste i 22 kamper.** Både 2024/25 og 2025/26 er dekket. Sánchez er avklart
+i `keeper_recovery/resumption/`; eldre statusavsnitt nedenfor er historikk.
+Full keepergjenkjøring er `recover.py`, `reconcile_followup.py`, deretter
+`reconcile_match_totals.py`. Ingen keeperverdier er endret i denne BPS-auditen.
+Åtte nye identitetstester består. Full historisk 2026/27-harmonisering er fortsatt
+uferdig; låste poeng/BPS/bonus, modeller og benchmark er uendret. Kostnad 0 NOK.
+
 ## Keeperrestlisten – 18 nye avklaringer, 7. oktober 2026
 
 [Oppfølgingsrapport](../research/current/scoring_2026_27/keeper_recovery/followup/README.md):
@@ -261,3 +287,4 @@ Global H3 gir 2308,25 med chips, +70,0 mot referansen (4/4, beskrivende interval
 Samspill mellom globalvekt og H3 er +21,25 med chips, usikkert, men −78,25 uten og negativt i alle fire sesonger. Tidligere forbedringer kan ikke summeres. Global H1 gjenskaper alle åtte gamle globalvektspor med samme tropper og poeng. Alle 544 nye beslutninger er optimale innen toleransen, maks gap 9,55e-6. Poengregnskap, starttilstand, spillerkobling og matchede før-frist-prognoser er kontrollert. Tre relevante eksisterende regresjonstester er kjørt på nytt og består; ingen ny full testkjøring påstås.
 
 De to bekreftede utfordrerne beholdes; `constant_h3` legges til som forskningskandidat. Kode, protokoll, prognoser, spor, parete resultater og hashkontroller er lagret under `research/current/global_horizon`. Ingen produksjonsendring, urørt holdout eller verifisert GitHub CI-status.
+

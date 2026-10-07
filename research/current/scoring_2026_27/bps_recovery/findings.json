@@ -1,0 +1,14 @@
+{
+  "branch_base": "dfa2ff30b36e33c4b16f5402d25af9337266af3f",
+  "historical_target_rows": 77280,
+  "historical_mapped_rows": 76687,
+  "historical_missing_matches": 21,
+  "historical_other_unmapped": 0,
+  "primary_controls": 949,
+  "historical_controls": 327,
+  "current_controls": 622,
+  "missing_policy": "Absent counters remain NA. Sparse-zero calculations are diagnostics only.",
+  "full_historical_rescoring_ready": false,
+  "locked_labels_modified": false,
+  "cost_nok": 0
+}

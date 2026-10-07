@@ -1,0 +1,14 @@
+[
+  {
+    "file": "inputs/current_bootstrap.json.gz",
+    "url": "https://fantasy.premierleague.com/api/bootstrap-static/",
+    "retrieved_date": "2026-10-07",
+    "uncompressed_sha256": "7b17ad935246b9b9cfdd4144fd0fc7170e373b86518eb9164757f72f69f98761"
+  },
+  {
+    "file": "inputs/current_fixtures.json.gz",
+    "url": "https://fantasy.premierleague.com/api/fixtures/",
+    "retrieved_date": "2026-10-07",
+    "uncompressed_sha256": "113c3c674e681542b8a7926a02036cab9d438f7f1c0bd5d4410afa367a31ad04"
+  }
+]

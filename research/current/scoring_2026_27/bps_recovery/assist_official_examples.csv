@@ -1,0 +1,7 @@
+season,fixture,code,name_decision,awarded_for_this_goal,expected_for_official_example,assist_category_sum_diagnostic,category_sum_matches_example,goalAssist,assistAttemptSaved,assistPost,assistBlockedShot,assistOwnGoal,assistPenaltyWon,assistFreeKickWon,assistHandballWon,assistPassLost
+2024-25,336,438234,Marmoush,True,1,0.0,False,,,,,,,,,
+2024-25,201,441164,Pedro Porro,True,1,0.0,False,,,,,,,,,
+2024-25,312,503139,Scott,True,1,0.0,False,,,,,,,,,
+2024-25,223,111234,Pickford,True,1,0.0,False,,,,,,,,,
+2024-25,254,141746,B.Fernandes,False,0,0.0,True,,,,,,,,,
+2024-25,213,430871,Cunha,False,0,0.0,True,,,,,,,,,

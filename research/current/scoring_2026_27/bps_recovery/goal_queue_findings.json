@@ -1,0 +1,9 @@
+{
+  "target_matches": 2660,
+  "mapped_matches": 2639,
+  "missing_matches": 21,
+  "goal_events": 7543,
+  "mapped_matches_with_goal_count_equal_score": 2636,
+  "count_check_proves_event_sequence_completeness": false,
+  "new_assist_labels": 0
+}
