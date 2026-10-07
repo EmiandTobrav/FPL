@@ -1,0 +1,30 @@
+[
+  {
+    "season": "2022-23",
+    "fixture": 54,
+    "code": 176413,
+    "name": "Christian Pulisic",
+    "mode": "one_second_pair"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 131,
+    "code": 513418,
+    "name": "Kevin Schade",
+    "mode": "one_second_pair"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 374,
+    "code": 200826,
+    "name": "Giovani Lo Celso",
+    "mode": "later_video_gap"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 248,
+    "code": 206325,
+    "name": "Oleksandr Zinchenko",
+    "mode": "second_yellow"
+  }
+]

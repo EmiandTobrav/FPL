@@ -1,0 +1,5 @@
+season,fixture,code,name,date,home,away,review_mode,previous_reason,event_id,partner_event_id,partner_seconds_delta,elapsed_regulation_seconds,base_minute_points,bps_minute_points
+2022-23,54,176413,Christian Pulisic,2022-09-03,Chelsea,West Ham,one_second_pair,unbalanced_substitution_timestamp,2455048431,2455048443.0,1.0,3593,1,3
+2025-26,131,513418,Kevin Schade,2025-12-03,Arsenal,Brentford,one_second_pair,unbalanced_substitution_timestamp,2879656939,2879656941.0,1.0,3594,1,3
+2019-20,374,200826,Giovani Lo Celso,2020-07-26,Crystal Palace,Spurs,later_video_gap,early_end_or_coverage_interruption,2202080215,2202080217.0,0.0,3581,1,3
+2019-20,248,206325,Oleksandr Zinchenko,2020-02-02,Spurs,Man City,second_yellow,dismissal_requires_separate_clock_review,2181011439,,,3599,1,3

@@ -1,0 +1,29 @@
+{
+  "accessed": "2026-10-07",
+  "sources": [
+    {
+      "url": "https://www.premierleague.com/en/news/4661030",
+      "result": "Explains completed regulation minutes for basic points; does not explicitly identify BPS rounding."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4661029",
+      "result": "BPS table separates 1-60 and over 60 minutes; no conclusive fractional-clock conversion found."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/3038445/fantasy-premier-league-fpl-lessons-kieran-trippier-newcastle-united-bonus-points",
+      "result": "Official BPS component example concerns full appearances; does not distinguish the 60-minute boundary conventions."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/1599703",
+      "result": "Official report confirms Zinchenko second-yellow dismissal in the 60th minute against Spurs on 2020-02-02. Exact 59:59 clock comes from the pinned event archive, corroborated by FPL 59 minutes."
+    }
+  ],
+  "qualification_decision": "abstain",
+  "reason": "Only one existing target-season development observation distinguishes the candidates; nonminute counters are incomplete, and two competing minute hypotheses fit equally.",
+  "next_control_requirements": [
+    "Published BPS minute component for a player with FPL 60 / primary 60 minutes, to distinguish inclusive FPL threshold from primary strict threshold.",
+    "Published component or independently complete remaining components for FPL 59 / primary 61, distinguishing primary strict from both FPL hypotheses.",
+    "An unused target-season control with FPL 60 / primary 61 and independently verified nonminute counts.",
+    "If using historical controls, use that season's exact BPS weights; never compare historical BPS to the target formula."
+  ]
+}

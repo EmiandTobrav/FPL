@@ -1,0 +1,23 @@
+{
+  "current_controls": 622,
+  "existing_development_not_holdout": true,
+  "candidate_exact_fits": {
+    "fpl_strict": 620,
+    "primary_strict": 621,
+    "fpl_inclusive": 621
+  },
+  "discriminating_current_cases": 1,
+  "strictly_isolated_discriminating_cases": 0,
+  "rule_qualified": false,
+  "rule_gated_cases_remaining": 364,
+  "new_clock_exception_components": 4,
+  "exceptional_clock_cases_remaining": 22,
+  "remaining_sensitive_minute_requirements": 386,
+  "remaining_scoring_requirement_cells": 880385,
+  "remaining_raw_stat_or_rule_cells": 881632,
+  "remaining_unique_player_matches": 77280,
+  "full_bps_or_bonus_labels_produced": 0,
+  "keeper_values_modified": false,
+  "locked_labels_modified": false,
+  "cost_nok": 0
+}

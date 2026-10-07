@@ -2,6 +2,35 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## BPS-hypoteser kontrollert; fire minuttunntak avklart – 7. oktober 2026
+
+[Nyeste restliste og BPS-minuttkontroll](../research/current/scoring_2026_27/bps_minute_qualification/README.md)
+viderefører `84da2fd`. BPS-regelen for de 364 grensefallene er **fortsatt åpen**.
+I eksisterende 622 utviklingskontroller gir både primærminutter > 60 og
+FPL-minutter ≥ 60 621 eksakte BPS-treff, mot 620 for dagens formel.
+Bare Anthony, 2026/27 kamp 17, skiller seg ut: FPL 60 / primær 61,
+offisiell BPS 4 mot diagnostisk 1. Alternativene gir begge 4. Øvrige
+BPS-tellere er ikke komplette, og dette er ikke en ny holdout eller et
+uavhengig isolert minuttbevis. Ingen generell regel er valgt eller endret.
+
+Pulisic og Schade har entydige inn-/utregistreringer ett sekund fra hverandre
+innenfor samme poengbånd. Lo Celsos videodekningsavbrudd ligger etter utbyttet.
+Zinchenkos andre gule ved 59:59 bekreftes av FPL og offisiell kamprapport.
+**Fire minuttbidrag er avklart**, hver med 1 grunnpoeng og 3 BPS.
+
+Nyeste kø har **880 385 åpne poengbehov**, **881 632 råstatistikk-/regelbehov**
+og **77 280 unike berørte spillerkamper**. 386 poengfølsomme minuttbehov
+gjenstår: 364 regelspørsmål og 22 særtilfeller. Bruk `bps_minute_qualification/`
+som nyeste kø; tidligere køer er historiske øyeblikksbilder.
+
+Neste BPS-kontroll må skille hypotesene, eksempelvis FPL/primær 60/60 eller
+59/61 med publisert minuttkomponent eller uavhengig komplette øvrige tellere.
+Flere 60/61-eksempler alene er ikke tilstrekkelig. Historiske totaler krever
+sesongriktige BPS-vekter. Keeperverdier og låste poeng/BPS/bonus/modeller/
+benchmark er uendret. Ingen nye komplette BPS-/bonusetiketter.
+16 nye og 64 eksisterende fokuserte tester består; tolv data-/evidensfiler
+er identiske ved ny kjøring. Kostnad 0 NOK.
+
 ## Minuttgrenser: 320 avklaringer og 364 regelspørsmål – 7. oktober 2026
 
 [Nyeste kø og minuttkontroll](../research/current/scoring_2026_27/minute_reconciliation/README.md)

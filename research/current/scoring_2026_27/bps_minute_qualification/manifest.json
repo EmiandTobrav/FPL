@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "scoring_2026_27/bps_minute_qualification/build.py": "d5688fa3d1a3c5ef1e798e7e100fbf8ae9d8fd3be244480d0a46265663e454a6",
+    "scoring_2026_27/bps_minute_qualification/evidence.json": "3f542e1c922c96e8bdc931769e37be69dee1778f34977bc53d71a47e94384aad",
+    "scoring_2026_27/bps_minute_qualification/reviewed_cases.json": "503cf799ea6d1bc1f71f203e1caf91b11fcaee1ad894da086b0cc1b093e37242",
+    "scoring_2026_27/bps_recovery/inputs/primary_controls.csv.gz": "bb0119fca4527c8aac0a9ee4e83fb6bb4ef523664b686436e7579cca1a38c3d1",
+    "scoring_2026_27/keeper_recovery/keeper_counts.csv.gz": "18e453a1087b0dc317ebabc3723e13f23f5af5ce728f712f17fcaeff2018732f",
+    "scoring_2026_27/minute_reconciliation/build.py": "cf0baa8dc7eb31cde0e7c0252da17565aefcc516ccb180be17a262329964bfca",
+    "scoring_2026_27/minute_reconciliation/decisions.csv": "a9c9d8c905649f590606cf009bffec9aed676a46c81582b4d8e7dbc70eb4a2b7",
+    "scoring_2026_27/minute_reconciliation/inputs/clock_events.csv.gz": "41655800035f439037154dc4066a3b806d2a8e9538c285aa36c2491e10662b7f",
+    "scoring_2026_27/minute_reconciliation/inputs/targets.csv": "20563ec41a58bf2e418659c68a741866dce91ec8239cddd0a0a54020301f0e35",
+    "scoring_2026_27/minute_reconciliation/resolution_queue.csv.gz": "101095b5a75f814cd0a896e4177688e03f1f1aba6217b749e0bd9c50a0434191",
+    "scoring_2026_27/remaining_ledger/field_ledger.csv.gz": "172cf8c0e680ee3d5ab7c7943e1046e732a64f328fd0d006d49910a81e7016b8",
+    "scoring_2026_27/rules_2026_27.json": "ff0927179422b0fea3c4ebf0a38b0206792c74a5a4dad5f22899ecb89aab87c9",
+    "scoring_2026_27/validate_bps.py": "60e48680c48139811292c1621932f460cc08d5961f59c8173c657af096c0f395"
+  }
+}

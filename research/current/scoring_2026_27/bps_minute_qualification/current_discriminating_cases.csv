@@ -1,0 +1,2 @@
+season,fixture,code,name,position,fpl_minutes,primary_minutes,official_bps,fpl_strict,primary_strict,fpl_inclusive,nonminute_omissions,missing_nonminute_fields,strict_component_isolated,scope
+2026-27,17,444180,Anthony,MID,60.0,61.0,4.0,1.0,4.0,4.0,17,goals|att_pen_goal|total_clearance|outfielder_block|interception|big_chance_created|won_tackle|won_contest|clearance_off_line|was_fouled|ontarget_scoring_att|penalty_conceded|big_chance_missed|error_lead_to_goal|error_lead_to_shot|total_offside|shot_off_target,False,existing_development_sparse_zero_diagnostic_not_labels
