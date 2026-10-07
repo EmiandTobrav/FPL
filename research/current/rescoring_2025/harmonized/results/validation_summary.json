@@ -1,0 +1,14 @@
+{
+  "active_outfield_rows": 10725,
+  "comparable": 10725,
+  "missing": 0,
+  "equal_awards": 10698,
+  "false_positives": 22,
+  "false_negatives": 5,
+  "equal_counts": 10388,
+  "award_agreement": 0.9974825174825175,
+  "count_agreement": 0.9685780885780886,
+  "award_precision": 0.9846582984658299,
+  "award_recall": 0.9964714184897672,
+  "population_point_error": 34
+}

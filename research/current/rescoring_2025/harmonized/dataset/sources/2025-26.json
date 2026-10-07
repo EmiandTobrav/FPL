@@ -1,0 +1,2662 @@
+[
+  {
+    "season": "2025-26",
+    "fixture": 1,
+    "match_id": 4813374,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813374",
+    "sha256": "4df83434b3afe907a8c1ccfa8c77897ba6c92298a215092f08adca349c847325"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 2,
+    "match_id": 4813375,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813375",
+    "sha256": "ee58cec4a9192f8c4247fdbeee18211df732436f04dc6e95a3340ee75f0504c5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 3,
+    "match_id": 4813376,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813376",
+    "sha256": "df67b38922292905cdded12b336381c8a3ad72ec96a29318f6957051c5df225d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 4,
+    "match_id": 4813377,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813377",
+    "sha256": "a222d18789dc23ed833cf33f98d16656207526b8c0c0646284c8745f49979a25"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 5,
+    "match_id": 4813378,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813378",
+    "sha256": "6230d7198590d225ebfa99aa9c55250adcc163ddc37be0e140da002ba7890e70"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 6,
+    "match_id": 4813379,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813379",
+    "sha256": "8c262be6f27f051d0d5b1cfd6c7d142cf721c7a925806fa4687f9ffadb9544da"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 7,
+    "match_id": 4813380,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813380",
+    "sha256": "bd19c152eb12619e9b8db05f5aa50726bbe4b61cd3c1e45bc9dbe78ac762e3ba"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 8,
+    "match_id": 4813381,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813381",
+    "sha256": "5c17728be9ecadaa8f8a0ef1d8a7f6e8a227d20c399aff79a6bb8839f798d4cc"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 9,
+    "match_id": 4813382,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813382",
+    "sha256": "29cc07bb72d6dab86a9c5b6c8fe1c32de88038e116ae6d4df658e45fc8cdd5af"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 10,
+    "match_id": 4813383,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813383",
+    "sha256": "0cedd2d790f61251b95034ea2f748f897c474cd552cb4b0a9ef50bf501bde2bf"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 11,
+    "match_id": 4813386,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813386",
+    "sha256": "f2daac62fd632edf5d6c4e58795f942cfce6ecbfb0fc1f35430f99c4ab6b5f51"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 12,
+    "match_id": 4813385,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813385",
+    "sha256": "3dd4efc7a948eabaaebf02d35af5b68e78bed479a281bbfe81a416f9221d2aa0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 13,
+    "match_id": 4813387,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813387",
+    "sha256": "011d38329f606456aa4d7bb9762195890c43be6c12f2353437d00873d9d0dee2"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 14,
+    "match_id": 4813388,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813388",
+    "sha256": "c0801ea07fd592871f79f9643b047d2eb90ba242bab096998d916a82c7235d97"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 15,
+    "match_id": 4813389,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813389",
+    "sha256": "25cd43bd21cd52a95922c9f476d9c5cdafd9c8ac330df2b7832e7542945d86ea"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 16,
+    "match_id": 4813390,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813390",
+    "sha256": "446c5505f71a9bbae6199520fbc37ccda16a0a93b55bd61846b1953290adee38"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 17,
+    "match_id": 4813391,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813391",
+    "sha256": "219c41f1bc96c1722ebbf315b4cc303e4ced40a6678e9e090d6288990e4839aa"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 18,
+    "match_id": 4813392,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813392",
+    "sha256": "5485c4db363dfe0561738351bde0f480fcf41f8df1b0ab44004f838cbf12f155"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 19,
+    "match_id": 4813393,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813393",
+    "sha256": "6dc3b29831880d75c682d5fe313edafb73f80dab454397699c3416d2eeb9df4d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 20,
+    "match_id": 4813394,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813394",
+    "sha256": "783f2735489edbf0669e0ba50f9d4f784cfba3f35899838ae25368f563841baf"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 21,
+    "match_id": 4813395,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813395",
+    "sha256": "572e53d33daac67e433a8ddf721608d93f2cee843ef86467a06dea9d6a73abd1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 22,
+    "match_id": 4813396,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813396",
+    "sha256": "2faf81d17e5447a14d130baab5b0bd6379ee3d453e3b0904538185764d21ab74"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 23,
+    "match_id": 4813397,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813397",
+    "sha256": "4ad923751cd1313507c5adae3c5f8b02cefcbd7dc6c7868538cc90c159b74c78"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 24,
+    "match_id": 4813398,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813398",
+    "sha256": "a794a8d025e4609525584f02a69eb36fc4ed5ad9a181b98347684a975930bc1d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 25,
+    "match_id": 4813399,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813399",
+    "sha256": "a5f569405e5f08325a3da0f62da85284173f811c8a01571192aff1d783bbcbea"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 26,
+    "match_id": 4813400,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813400",
+    "sha256": "1a2c709be04672f792ddb49fe84fdd40c5b7bf9ce6623ba5d7e81aa4fe7492de"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 27,
+    "match_id": 4813401,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813401",
+    "sha256": "62cbb4a1d518027e27ba253bbc534993cc5a8a1f57ee2e3dcef8551726552c07"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 28,
+    "match_id": 4813402,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813402",
+    "sha256": "b257f2e446e65b2dd326d36fd9f2f3f3f14552696ad287a31d185a69c5d5f100"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 29,
+    "match_id": 4813403,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813403",
+    "sha256": "383c1816b2961f294e7c32c1b004f3549d17f7f43d4fe9f7cb07c0c49cc4aabf"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 30,
+    "match_id": 4813404,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813404",
+    "sha256": "4a94e96c563ab08b4d375391a7d1108b6b7b1f34d95d1813c58839434a101f56"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 31,
+    "match_id": 4813406,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813406",
+    "sha256": "f7450c7249c2660512169a30bb0d4a205ffabd69ba4c2ec68e07afe73b302471"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 32,
+    "match_id": 4813405,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813405",
+    "sha256": "6ee3c228c835e7c0635435310a544ac39e7d525fc3a5a9d5bbbf41454aba4fc7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 33,
+    "match_id": 4813407,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813407",
+    "sha256": "02d302257c7ef6e65f848df1739c01cad3d974dc52d5a8b9797e1871f20511e6"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 34,
+    "match_id": 4813408,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813408",
+    "sha256": "16a3ad51b0d9e305e9341d072b696aae8941a84b48f37d49942999737f0662ec"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 35,
+    "match_id": 4813409,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813409",
+    "sha256": "8e18f4efd4525d96c2350a3cc23491a028697085a257eac7f4af7df07d251183"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 36,
+    "match_id": 4813410,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813410",
+    "sha256": "9b51a2bb45b282f46332dc3aee9e66360a4eac9defcb166a7cc3830608c36947"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 37,
+    "match_id": 4813411,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813411",
+    "sha256": "e5bc62333a3f2d7d5afe5d5f26252003964a409aa0e5ae609ac1a34968740894"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 38,
+    "match_id": 4813412,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813412",
+    "sha256": "8d84c5ff02b081f7e52d990b7537ebc1f0433bcab50ce45a582dee5aa3777a12"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 39,
+    "match_id": 4813413,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813413",
+    "sha256": "99eda3b6c64fb77d3a5ff0206c5c9913aeb5ae0e2ce4412394ca0228efa97e9b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 40,
+    "match_id": 4813414,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813414",
+    "sha256": "833ee25363396257eaa5b183ab8e2c66fc142a188e89f83aee543f5ea3df9563"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 41,
+    "match_id": 4813416,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813416",
+    "sha256": "ee7ef3b4e1f0e86cf5d9db45c9adafce4b7ec9125d61eba45321cf0124ea9e3d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 42,
+    "match_id": 4813415,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813415",
+    "sha256": "7505e20dcc6356884bee7a821ff443a4eb6241a76e4ede85a1c6b68cd78b4fb4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 43,
+    "match_id": 4813417,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813417",
+    "sha256": "b9f5cec35708fa342d3c382ac4a8803cc1c182c0b1a02830e564665e75d26711"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 44,
+    "match_id": 4813418,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813418",
+    "sha256": "84bb544b529cc0afeb3135fdc8ddcc930f3a6566813e4cb2307979c190bc28b2"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 45,
+    "match_id": 4813419,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813419",
+    "sha256": "851cb8477de139fa756b1179ba31e56004bfd83f5b8eb99f2d9780af43f848b3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 46,
+    "match_id": 4813420,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813420",
+    "sha256": "c0ca64bb2401cd0eff40777da25eaf7a8455fa7b8da16a30812f8a9c4ad0d1b2"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 47,
+    "match_id": 4813421,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813421",
+    "sha256": "897c52191aebc2e29977e0307280cf4471f101e788e11975fb15e5d2eb24e9b3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 48,
+    "match_id": 4813422,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813422",
+    "sha256": "3eb7061711d208d8c2d0945462d0e6da134130351108f56d0617673a4f197be8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 49,
+    "match_id": 4813423,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813423",
+    "sha256": "5ff6011935faf3e34f038565cf6c12e48b4a7730cfb83bf205abe384b140caec"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 50,
+    "match_id": 4813424,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813424",
+    "sha256": "9659d368e71ba98c7a2c3ac81d8a06c2c980050eb988f8807c165182ea3e409f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 51,
+    "match_id": 4813425,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813425",
+    "sha256": "6a454b4b4866f415a8cbc8141707ab1abc5f8b55b548c0cc559de9cf21c52760"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 52,
+    "match_id": 4813426,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813426",
+    "sha256": "d01c587e221a3eb2b3c07f464ad3ba4796bb05ab7025159aaaa7aeef9bd70fa5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 53,
+    "match_id": 4813427,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813427",
+    "sha256": "656cae017f4a11a05481b6c026c29379db343845ea2ebab2208a3e29ac1ec318"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 54,
+    "match_id": 4813428,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813428",
+    "sha256": "0af3ac398b883a689bb970ec383b470182c94fa2e87fb13340a24c0f8e0b4939"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 55,
+    "match_id": 4813429,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813429",
+    "sha256": "33189ab1547d6570dfd61bcabafebef391b2edbd1b3a36b38e19a7754a680928"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 56,
+    "match_id": 4813430,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813430",
+    "sha256": "9e716146df3adc6704b8438a71966d720a24c30361277e160b32fecb88661a73"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 57,
+    "match_id": 4813431,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813431",
+    "sha256": "654127d966e1ad11cf0d39fe8cc7023d753ac89ad6f53c0ac2fd2f35cad1fdf6"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 58,
+    "match_id": 4813432,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813432",
+    "sha256": "1b2de18de544d82c73b83d572e11e0da002fba2cfa43f53e6b6ab1cfce737c1a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 59,
+    "match_id": 4813433,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813433",
+    "sha256": "7dcc2e8953613d262fe0c7b115b837453c69c850702228ca409462e8cca0ba88"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 60,
+    "match_id": 4813434,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813434",
+    "sha256": "9ad4ecc9847576bac6e3854d1be925b159311a68ffe66075e2b8810011ac822f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 61,
+    "match_id": 4813436,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813436",
+    "sha256": "5907886ff6cbef62d96a34d295e65e01492b3471bd089907d1e4b48964bde791"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 62,
+    "match_id": 4813437,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813437",
+    "sha256": "8f0701103b043f111ac40e420345714c28972ac1c9b939aad038d2ab40edb78e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 63,
+    "match_id": 4813435,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813435",
+    "sha256": "596824e8dad8bb4fd468a0514ae3de5faa137be2724487899bbe32cf1c7cfff1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 64,
+    "match_id": 4813438,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813438",
+    "sha256": "a595f51b996d107c534fd5eeb007ed308bb12e43e165fa65dd1ddb2d099f1ed7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 65,
+    "match_id": 4813439,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813439",
+    "sha256": "faebd4bc444f9583ee05d2a723570d3d818ae404670b23a83bedf88ba040bc6a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 66,
+    "match_id": 4813440,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813440",
+    "sha256": "e5581c6494251983bee2a6c84ad3585704cbd1f51383d83472e0f0c7df1bc09b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 67,
+    "match_id": 4813441,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813441",
+    "sha256": "85a83066428a684972977a66bf04f351070784ee122e2e3036f7d2d9d7c5fbc5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 68,
+    "match_id": 4813442,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813442",
+    "sha256": "54353b8947894f89b9f7b5393eb5dabbef0975458254fbbb1d0c2da826f6ec7b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 69,
+    "match_id": 4813443,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813443",
+    "sha256": "eebed73b0bbf2091ab8bad9c00a717dfd67386a3fced0a11e93d963ea5535d85"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 70,
+    "match_id": 4813444,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813444",
+    "sha256": "19a6350deb1c94c4ceef6889e386f5dd1f04f005470914b31d08894e6cadc634"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 71,
+    "match_id": 4813445,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813445",
+    "sha256": "5c53767e605dbc8ac19538192121ce2c5e8a9a989682b941bfe71cb14869ee67"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 72,
+    "match_id": 4813446,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813446",
+    "sha256": "9ea6160a7f5f9be02589280889bac6ca12a331c1efe7aaa2499d13e5262e3d37"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 73,
+    "match_id": 4813447,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813447",
+    "sha256": "21efef0d106650eac5c9736f25d4baf75d826884530ae9f6455fe88b021edd54"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 74,
+    "match_id": 4813448,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813448",
+    "sha256": "e891ad34d4dbb4bf8528502a0242d9a0328963ce646729942bc9d30a9f380b50"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 75,
+    "match_id": 4813449,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813449",
+    "sha256": "176b6086c2752047efc664a9b959f75a197bf4e7ae2b4617ec65fd172fcadb09"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 76,
+    "match_id": 4813450,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813450",
+    "sha256": "7098a2a68a0085290e04a3460691e393ab1577b928ea1cb86ea8e591d5586941"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 77,
+    "match_id": 4813451,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813451",
+    "sha256": "004804b73d9efbecc09f69f8dec90d0256e3f02f6c9d756c1467f697704689b9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 78,
+    "match_id": 4813452,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813452",
+    "sha256": "3eaf6dd864bebeb6228aaf737c5eeae9eca48e82ac8dee4cdd98afc74c1fff4d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 79,
+    "match_id": 4813453,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813453",
+    "sha256": "70f7ff02c01acfba33bdbb2f993b003e6a0dcd591538b236a61c5e0b31ae76c6"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 80,
+    "match_id": 4813454,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813454",
+    "sha256": "d85701f87fef0f5a2019bb454a95ff760ae4b1f5955b72f2ffa6d0f2e159d099"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 81,
+    "match_id": 4813456,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813456",
+    "sha256": "d868304bc83266724b056ab2f2b5ea3b0ed5d48bc34078ac6acf67b649e44d37"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 82,
+    "match_id": 4813457,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813457",
+    "sha256": "79940c161c065c143f0c2cc37433e989dfa40004285a7911f87665660c188c11"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 83,
+    "match_id": 4813455,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813455",
+    "sha256": "d59c891ed244121637cb7044b810e325ad62c0ee0a1d1021bc9a9f41a750a087"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 84,
+    "match_id": 4813458,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813458",
+    "sha256": "896b9af3282424c2d6d76870040156e43f0df09de39eabef4312d2cd51e3003d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 85,
+    "match_id": 4813459,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813459",
+    "sha256": "c501965e60aefea6724d091aeda9b7493f48b64f1c163480133fe5664587a8e4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 86,
+    "match_id": 4813460,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813460",
+    "sha256": "3960f999d0daf71d617cabdf25aa6ac070d6c14f88d041e580dfcb88fec2abb3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 87,
+    "match_id": 4813461,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813461",
+    "sha256": "f6ee067e81903effaa1f070c9f8d668f877a0a3e62b0b0ec0701b9e7cdd111bc"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 88,
+    "match_id": 4813462,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813462",
+    "sha256": "51152cf54267b73e6fe828112b539d6c2916d49bb2ed42bf2282ea40cd01e261"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 89,
+    "match_id": 4813463,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813463",
+    "sha256": "9d23927b25eed245ef71f5248e2e111951ecc7cb78748fc70a9b663154047a03"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 90,
+    "match_id": 4813464,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813464",
+    "sha256": "4ab819bc3d219949154fad4cd55f28b55bc912cdb1ac9edfb63db23f69f531e4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 91,
+    "match_id": 4813465,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813465",
+    "sha256": "8957d1892bfdce4b08d6fde28a63824bd7ccd69102b343511fd4faf61b973ab6"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 92,
+    "match_id": 4813466,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813466",
+    "sha256": "80a9912b8224ccfbdb0e11f6d193a334fb7ccc91e5e1a8efdafe36a06c140ffa"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 93,
+    "match_id": 4813467,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813467",
+    "sha256": "29fb01e23e43ad95881fff7928010970c770ab85c2116b54d3b457653f22f26b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 94,
+    "match_id": 4813468,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813468",
+    "sha256": "d05e248085fe2a46818e72ce1060fdfd508784b6596b9f9025b2ffd3ac2f58e1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 95,
+    "match_id": 4813469,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813469",
+    "sha256": "2c1be553f87351531513c1337d264f89f7300eff5422c621c4470a109902ca13"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 96,
+    "match_id": 4813470,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813470",
+    "sha256": "804ab20293b33296c68b447f3f3f3acc39febc45ccf7822da5a34255eb4ee577"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 97,
+    "match_id": 4813471,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813471",
+    "sha256": "d587ac7dd4b53875b29561c46abbe41d4bc2b0744eef43c156095015fbd5bd9e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 98,
+    "match_id": 4813472,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813472",
+    "sha256": "ff33669e0a1886daf26052842e4f8ffb5f58ce1be916288a914149968d41e6f3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 99,
+    "match_id": 4813473,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813473",
+    "sha256": "df17b29a2c402d13a0f9a0dcdccbb6ebccf287c52fcd8c2513798741eebd37a9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 100,
+    "match_id": 4813474,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813474",
+    "sha256": "e9f5d146391fa91e4b6ec8a9540da659bf4372ab5391ca08ba78762d6de1d20e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 101,
+    "match_id": 4813475,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813475",
+    "sha256": "b40a0940446d87299cb0310d85d9fd1c202efb1425b9890850fdfe36055f6b14"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 102,
+    "match_id": 4813476,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813476",
+    "sha256": "2488ef37a19c12343988b88975a6a02a362541b4949299eb1e85fc54bcfce577"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 103,
+    "match_id": 4813477,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813477",
+    "sha256": "d02f4b54cc4b103641e69a601d4c3dfcb9b0fa7d5a63c7dbe2cb8a303618fc8b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 104,
+    "match_id": 4813478,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813478",
+    "sha256": "b1cdfbb2ae1ccc29d071718162fbb3a288a498d2d7476f9ac5f920a48ae839eb"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 105,
+    "match_id": 4813479,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813479",
+    "sha256": "c3e64fa40eec7b4fdda33dd306e64a90ef6cc03fecff86d2d9a15fd203627711"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 106,
+    "match_id": 4813480,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813480",
+    "sha256": "bb9318af8a43aec1e9f571a5e43bceed6b3dcb71a15de914bf0e0920c8beea44"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 107,
+    "match_id": 4813481,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813481",
+    "sha256": "7fc5c44f2a6a0a0ca9bdcfc77d14a68cb378c0c7c03b862ab3c3fed912572ff8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 108,
+    "match_id": 4813482,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813482",
+    "sha256": "f1d3fe1339a9e2950447b53c88588a5ba035d63c531096b0849c2d4a42496d1e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 109,
+    "match_id": 4813483,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813483",
+    "sha256": "db86ff20028f940913e320ad0f8ba9f704d1d0750dd26489ce9a66e513b2e8e5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 110,
+    "match_id": 4813484,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813484",
+    "sha256": "1ef3502b3ab18e8751b97d778fe815625b58c383bad5d46ec04c79fba55146ac"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 111,
+    "match_id": 4813486,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813486",
+    "sha256": "afe7054c52aec1a9db1e97c41f8778b4d41688075b85fb5f6064189f51f367ec"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 112,
+    "match_id": 4813485,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813485",
+    "sha256": "8111c0e75846dd94f2160741c672c1beccc80b998efa800934197211c3a52127"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 113,
+    "match_id": 4813487,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813487",
+    "sha256": "8bb9b7506f81ed5d390beca02cbc5c147a9ea445e722d0c74afc69ca82bf9670"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 114,
+    "match_id": 4813488,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813488",
+    "sha256": "f9b09806d1137fa279c1c8fde86a6fea6ac92890cc14cf0d40615ec700f7b8c1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 115,
+    "match_id": 4813489,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813489",
+    "sha256": "b5f6837bd136ac2d9c92d30811608ebeb006637634493a56d064d0d1cc6393cf"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 116,
+    "match_id": 4813490,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813490",
+    "sha256": "71ab547d116b7c417d2028f9ecb21f645be39dc5195f52ca0983035cec315a27"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 117,
+    "match_id": 4813491,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813491",
+    "sha256": "fb2e3f02c58d053e5ea608b1d8aaca03e3a649a057fa72f63733796417b22cf2"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 118,
+    "match_id": 4813492,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813492",
+    "sha256": "fd1418325e7bf62ba87c8af1ec679e3fba67d5af4e5e79dccee7299cc7dd2e9a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 119,
+    "match_id": 4813493,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813493",
+    "sha256": "6f83d88ad95d29c9a0db0cd32d5974fdd88286e5d7198425d093a2c12113baff"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 120,
+    "match_id": 4813494,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813494",
+    "sha256": "38f25763cb3161d756ff7617a3632ae3bc3f6350d1145d66c81ffea6292adf49"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 121,
+    "match_id": 4813495,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813495",
+    "sha256": "7ad0c685b226df546beb6c048ad6d45af976384673be56f7fb464ee1a553907c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 122,
+    "match_id": 4813496,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813496",
+    "sha256": "0f17150ff14fac068873aec4b65813fec6fd9927d1b71cc571a5cad91bf498fa"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 123,
+    "match_id": 4813497,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813497",
+    "sha256": "256dddf044163f2af24920316edaaf60b8acbe4cb89d9513cb0464f11e7adbe0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 124,
+    "match_id": 4813498,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813498",
+    "sha256": "46ffea638b6313607251ca777e8e6d15eec8cbe486f41cb2a6c019d8455c9e96"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 125,
+    "match_id": 4813499,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813499",
+    "sha256": "83212288717b9ebd2cedf18bc6da6078743d4904c8540d3ec81ef5153ca2da70"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 126,
+    "match_id": 4813500,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813500",
+    "sha256": "91d0810c793c7ac4a8eec6c3cbba8dd3e1e053f46aa02d3170606fbfd4d8e7b1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 127,
+    "match_id": 4813501,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813501",
+    "sha256": "21f5ac3a832bddead1d56c460648de3966d47e1911843c45c73608e5fbc1d54c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 128,
+    "match_id": 4813502,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813502",
+    "sha256": "0f9123be54c0231ec53dc465ac28dba895cebe7ec8b47c2d74a4f387855222ee"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 129,
+    "match_id": 4813503,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813503",
+    "sha256": "98c2c43aae70ab16d49f78a54f392fab8f5feaece523a449106239f4df6b4813"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 130,
+    "match_id": 4813504,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813504",
+    "sha256": "014c4228ea5916ac296038c0565f0bb00579b990ace70a19f5915e6d77147bf8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 131,
+    "match_id": 4813506,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813506",
+    "sha256": "d77e2ce830872a176515b3b2c02cc162a553b24cdeb75faea71d22ce06b5ffe5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 132,
+    "match_id": 4813505,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813505",
+    "sha256": "3e44b6318b61453aca494f74b9cee91fa7a33d38887bfa6bfdfd13a1745c834c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 133,
+    "match_id": 4813507,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813507",
+    "sha256": "028311fcc8529a63d5cad9ac7cabbdeb28d2282ce483f5edf34745d1678ed104"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 134,
+    "match_id": 4813508,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813508",
+    "sha256": "986ba32697b3aea7806e8ba2b939cdd848a85fad748bc14f42cf4d2c9a7cd363"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 135,
+    "match_id": 4813509,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813509",
+    "sha256": "abb899260fdea7daeecb64f0212e27abe98fa403fbb922a73ff06ae40f6d68eb"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 136,
+    "match_id": 4813510,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813510",
+    "sha256": "40b393a0b9e9d83b5bbc0b2a01c233e5dd1f5a80a951e5df6bf83bffc3199f32"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 137,
+    "match_id": 4813511,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813511",
+    "sha256": "dfb1fb92bf31da85b2af4dddbbe8c3a247ac695c9c5a2054a8751292ab76ebad"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 138,
+    "match_id": 4813512,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813512",
+    "sha256": "8b64366f436cd900f0408cc83d4cc0b45eed0fea680ccf3eef2a4e3acda74d69"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 139,
+    "match_id": 4813513,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813513",
+    "sha256": "caf004f6a4595195b7397266ccf12f0808ea0959116112d2457a06a428b67b8d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 140,
+    "match_id": 4813514,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813514",
+    "sha256": "0fb6ff9b0135ce2cc9255a2e658bf937793652c9ed51a83ae4ef63743096c689"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 141,
+    "match_id": 4813516,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813516",
+    "sha256": "20ae42714de9192ef84995ffecc9cf680596656b9763379700b6cda5861d9291"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 142,
+    "match_id": 4813515,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813515",
+    "sha256": "3aa3c585af4b4e589fc47c800540ee69c97a188201a6823795e68a8c504d6741"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 143,
+    "match_id": 4813517,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813517",
+    "sha256": "6055b606fcd54175fc68cc39fe0b6183eda6e0347b4e4c4135244281b049e422"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 144,
+    "match_id": 4813518,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813518",
+    "sha256": "266c627835588a18d531c761c9edf43c266fea416ed1b94583052729b889c1de"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 145,
+    "match_id": 4813519,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813519",
+    "sha256": "d692db75767f7c7f7e2296a1b3f7bf0428e7e5c2809555ba3581f3e5d88ea75e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 146,
+    "match_id": 4813520,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813520",
+    "sha256": "d6a48160e08a54a63de280ad30ea0c7ff425a142dac4b53fe28eacfa15ef0803"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 147,
+    "match_id": 4813521,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813521",
+    "sha256": "5e799aabd6f5aa15fce875ea3ce333bf7b74ce5f04c839a562cb4ec564f00eb1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 148,
+    "match_id": 4813522,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813522",
+    "sha256": "9b06b81ca434c281d3c8d657e48b9b49737566df739fcd9f48c9cfade946eacb"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 149,
+    "match_id": 4813523,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813523",
+    "sha256": "02373e39c30a9ced3a2881e8a46dfeb4dec9cced9efcd244a3146df0bf5dd6b7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 150,
+    "match_id": 4813524,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813524",
+    "sha256": "e6833e20be8ea9ec4d050132e6c180aab4719f908d8625795fe7b5c513262bad"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 151,
+    "match_id": 4813525,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813525",
+    "sha256": "61c2e22d7c3e98616324913c88f18283cdae11d40fff3bd479a8f34d51177877"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 152,
+    "match_id": 4813526,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813526",
+    "sha256": "99fa66f65fa022a71fade262108302a5349a13db2622b603e8373def00ffa9ec"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 153,
+    "match_id": 4813527,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813527",
+    "sha256": "297f4c0fb78724bdba3747d66d8d8ffa801a9fb14c706785bef6f266c4aea90b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 154,
+    "match_id": 4813528,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813528",
+    "sha256": "cbc4fcb7cda8d493c79a6fab95f5f8ef62112f9012bf16392d875dfa1efb9669"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 155,
+    "match_id": 4813529,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813529",
+    "sha256": "a6a56fd40bdb967069ab8596da04b159707f30d21e6ea456ad831023d2f52a0e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 156,
+    "match_id": 4813530,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813530",
+    "sha256": "513c3a145d1f44318b9e2adc77194dca7624ea03c1e610b8a9658384fd628eca"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 157,
+    "match_id": 4813531,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813531",
+    "sha256": "7dc92629d842db75282d9b33ff9b1ead24170085760393f9f8edf2a29cc9068d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 158,
+    "match_id": 4813532,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813532",
+    "sha256": "043818347a1405c36629e40d4b45058d8dd4a39bf1c26b3168f77ff020bb0cca"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 159,
+    "match_id": 4813533,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813533",
+    "sha256": "a0945f843dd6d214956c3cc39ca674c22d1353c2477266e3aa8722559ad07778"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 160,
+    "match_id": 4813534,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813534",
+    "sha256": "f906b5cbd7d6143d5dd03255ef030ef7b3c1439f70c6f3e056e719f9747570c5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 161,
+    "match_id": 4813536,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813536",
+    "sha256": "349d0e45af3eb35cc98179ddd2207da110a3162fe5ae209ce4b3cc6eef16603a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 162,
+    "match_id": 4813535,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813535",
+    "sha256": "6fc35402ac56f0ae9dea1151e7d9a84124e9a3ac5ef73eed9414f6605685bf1b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 163,
+    "match_id": 4813537,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813537",
+    "sha256": "296bbdfd0c4f75d57236ceb5bcf094764edad3312fe36d021b735f584a73c301"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 164,
+    "match_id": 4813538,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813538",
+    "sha256": "7b372ad3d0e859a200638267d79d9c6e84889ed90911b79f8e00d1130e8daa54"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 165,
+    "match_id": 4813539,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813539",
+    "sha256": "01722193847cada192aa85dae6de7505a10919b914d7604e7abc11605e8feee7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 166,
+    "match_id": 4813540,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813540",
+    "sha256": "5c5bf83c9e3b819e32872ea33a0975c3573a619912c033029e5c4315aa78453e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 167,
+    "match_id": 4813541,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813541",
+    "sha256": "3351686ab716195d395bd3c208891c5e348696774bf9895b2ea0f61bfc7a613e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 168,
+    "match_id": 4813542,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813542",
+    "sha256": "ad8bc6d8675bd6f327ddc93a8c2eb956980b48cba6188115ba6959aec4ea0193"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 169,
+    "match_id": 4813543,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813543",
+    "sha256": "7aaee6e149018b495418fab1703660785db94315b5d299070f872ba96a7d9343"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 170,
+    "match_id": 4813544,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813544",
+    "sha256": "711d2e4fc3873b2a9c7d76f584654c49bc330af767b409f24eb0074f99ee1d03"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 171,
+    "match_id": 4813545,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813545",
+    "sha256": "e1902d0bee94e7350faa61bde938dcc6032a011cb20f0da0afb83cdee4ac9ac0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 172,
+    "match_id": 4813546,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813546",
+    "sha256": "33e63bb9da859cb0bd07efa574671a204d839e291f4693107647f7bc6ca6dd45"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 173,
+    "match_id": 4813547,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813547",
+    "sha256": "4a31b545fdbb2a4e238b0a04366bc65bec3e0dafa57e234f3a55279869749745"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 174,
+    "match_id": 4813548,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813548",
+    "sha256": "a78d3fd3112e5592ccdb15abb436cc466d6e9b7faf4c5dca5e156140998fe349"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 175,
+    "match_id": 4813549,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813549",
+    "sha256": "4e94839af630735fd39880fe21680492d0799574e66c813865cf7e9610210e1c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 176,
+    "match_id": 4813550,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813550",
+    "sha256": "7f26cf1d258337ed3f972c6ad225e89e9df2ab03ed1ebc9444949c7c0416dccd"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 177,
+    "match_id": 4813551,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813551",
+    "sha256": "b5aabec9824204df72cfc6e5fa9e8ebf93ea3a0bf00ac2b9339993af7eda3f1d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 178,
+    "match_id": 4813552,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813552",
+    "sha256": "3144f299aa9680679db00fe95cfeed7e12e7d27164a382df1f7df8e9ea6079c1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 179,
+    "match_id": 4813553,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813553",
+    "sha256": "9ee0b5852d24a462807a6d4af0ace6b32853e95b69a03d92d65a48960df6a7a1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 180,
+    "match_id": 4813554,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813554",
+    "sha256": "eee34092de35c6001982f5b8c53e82737ddf385f0d1d30a25629569a392f7e5d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 181,
+    "match_id": 4813555,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813555",
+    "sha256": "221f8d3986d494c8a66eb9598da51fee9f17ace02872cee8efe45dc686a3e555"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 182,
+    "match_id": 4813556,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813556",
+    "sha256": "a68cb1b3872fdad61e94b07ec9eed923617b5d5b7f567b7aeafc92cfa03071cf"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 183,
+    "match_id": 4813557,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813557",
+    "sha256": "106544d739da76ca0b4393b4ca6644d4d18a0d99c4b97fe1c9f5a763f8c8bde4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 184,
+    "match_id": 4813558,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813558",
+    "sha256": "2c765eaeab44ac29ace674c9f45223a810a3da85bfacbff619bc8359bf19ff9d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 185,
+    "match_id": 4813559,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813559",
+    "sha256": "f0a3c581e06624f66292bb05bd60476b35b7725b862eefff8a7c3be4e08f541a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 186,
+    "match_id": 4813560,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813560",
+    "sha256": "f14f59ca6f34031259f75f3bf54ade71b8ee4dd1cfdee9af467609944cc05d07"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 187,
+    "match_id": 4813561,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813561",
+    "sha256": "859bf04616627d75cd92d63e01426f1f91178cf737af924460373a369839ad54"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 188,
+    "match_id": 4813562,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813562",
+    "sha256": "ff622eed43dddbf50c0018fa500ed167901147a911ff46db32448cdd0f47c744"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 189,
+    "match_id": 4813563,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813563",
+    "sha256": "feba7ca95c90bea2cab376adfefab6d652b01434206621e5e3e7bca193286419"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 190,
+    "match_id": 4813564,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813564",
+    "sha256": "d05103aaed052db4b8b819acaafb00a358bfa0c0a90cc3c944993d076ba4b986"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 191,
+    "match_id": 4813566,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813566",
+    "sha256": "e083500c69a2af3687a2d26e33c5ae3d69fcf0b1208c6fb2933c3e8125d5bfb9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 192,
+    "match_id": 4813565,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813565",
+    "sha256": "a8016dff67b111d8321df5f4d4537c4d95b2e71cb0965560b89f80015061ae89"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 193,
+    "match_id": 4813567,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813567",
+    "sha256": "4abac07c5df247d08bf713e701a44198962086a8a72513773f9f0a2c57342ad1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 194,
+    "match_id": 4813568,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813568",
+    "sha256": "29a993efab3c9de8234db9ac17dc7b25b31401d344f6da5a4e51e081281a4919"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 195,
+    "match_id": 4813569,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813569",
+    "sha256": "70b3ec3f622cae7e5841d3e6da7d51190b1670f98b7d851bed7df6d3bac5f6e5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 196,
+    "match_id": 4813570,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813570",
+    "sha256": "265a3724c7c60b378cbe8b6f4ed73bb0f5831d5a161e56301573ba6449dc09e4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 197,
+    "match_id": 4813571,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813571",
+    "sha256": "95b650633157d9cd460e743c4118d25cb1c7fffcf7705779028bb2dac2a42628"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 198,
+    "match_id": 4813572,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813572",
+    "sha256": "de13abf38101f6bf113ee88da223f0b1f007a9e8fb978bd30a662df8c715ff60"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 199,
+    "match_id": 4813573,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813573",
+    "sha256": "e99c293ecb66bad089023f893f8fd369157f2fc23807881744cd831693d3a859"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 200,
+    "match_id": 4813574,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813574",
+    "sha256": "921178b4775a4874073fe261b9d2797d8318050d6017cb1018efc0ba278257c0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 201,
+    "match_id": 4813576,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813576",
+    "sha256": "954b4356a6639baaefb029e819c7cd7d0664e3a6c28b3f5984b6cc775022f90d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 202,
+    "match_id": 4813575,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813575",
+    "sha256": "62fc7d319f7ca669cbb00c53989411391af794b08012bafeadfb9fd113d91b81"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 203,
+    "match_id": 4813577,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813577",
+    "sha256": "57bb72fed4bfd97aec430143a5e27abae8d8ba2e30abef959e7231fbf8ac8997"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 204,
+    "match_id": 4813578,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813578",
+    "sha256": "bc927696b788e27cf9a9e90dec15005e690e42761b62254cc79d1c7a59843794"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 205,
+    "match_id": 4813579,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813579",
+    "sha256": "903ec92e8d7d9524c3cfc7d5b9085ca6a44dfdb0c4b82ddf36db286d8ea6e40a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 206,
+    "match_id": 4813580,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813580",
+    "sha256": "3038c65e6fa997becab141f749bc19e72de9dc02edb36eba8ef1387e67ca114a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 207,
+    "match_id": 4813581,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813581",
+    "sha256": "c029ea11e740ae3ecda0949811bdf3bba1633a37fa576a4f56d9c99b3d9ba897"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 208,
+    "match_id": 4813582,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813582",
+    "sha256": "862a1444584a346b5698e667b1fbe6c4b88c3e63bd85555c4871a3390b626cf9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 209,
+    "match_id": 4813583,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813583",
+    "sha256": "7acf9da7b76324aa3daa432207dfd4617856e321d07229fa34fb0f3d50ea550a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 210,
+    "match_id": 4813584,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813584",
+    "sha256": "a9b100460d17820f15a53899cf1352b74810e6f07a2a1e4167f2801d4fe14ed1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 211,
+    "match_id": 4813585,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813585",
+    "sha256": "95cd2f2f573f8700894e1d1505f86787c644144e16539572a97993e5518fd42f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 212,
+    "match_id": 4813586,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813586",
+    "sha256": "92a8e9a339e527d8ba006158f104921b09cb1a73fdb406cfccf4df6e50c931af"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 213,
+    "match_id": 4813587,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813587",
+    "sha256": "d92c95dabc1fd24e05f5e8deb1e2bf5b694b456502497d923c030e317f9a62d7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 214,
+    "match_id": 4813588,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813588",
+    "sha256": "982eb40238d006caac8c3b13421e21f1aa2b564f8246716d60755d408eae7c61"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 215,
+    "match_id": 4813589,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813589",
+    "sha256": "7443850db8572ee054505351af80aa2b7ca5368891f7d826cd7e68df760bae9f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 216,
+    "match_id": 4813590,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813590",
+    "sha256": "fff4fcc6647bfff8990007eb8d82f4fe6f65d67eb4affd262b352c8b14d135d8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 217,
+    "match_id": 4813591,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813591",
+    "sha256": "491877cb457956a37f753a2c72d122557cbc2f213770e9af0e3cd6002abadec1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 218,
+    "match_id": 4813592,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813592",
+    "sha256": "f989f67ad04f387718f05db3bfd9a99a0b385c0d21974e80a4f0bb057cec2f65"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 219,
+    "match_id": 4813593,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813593",
+    "sha256": "f7c71046f872dfc6a4d5fbf308c1a52e7e26f0dc2c242f537075cdab3881eee5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 220,
+    "match_id": 4813594,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813594",
+    "sha256": "ac1ae3475828a0d89484b541976561f1bf206d9b5ab3b3213d1686e37c6bc198"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 221,
+    "match_id": 4813596,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813596",
+    "sha256": "fa7fc1c821d91eb52d11bd4c92445c481d229c799516f9bacc9039a079b78998"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 222,
+    "match_id": 4813595,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813595",
+    "sha256": "e7c6e2483da25af865b568201d6871fbef3dcb19b22cf65f746a49f9cfa32c0a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 223,
+    "match_id": 4813597,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813597",
+    "sha256": "64c23667498e1047457649750d1066891ff517566b113b73b67097503c1f419e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 224,
+    "match_id": 4813598,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813598",
+    "sha256": "cca663299a045531c81aec68e57a1076f8d2f285909d7eeff8a21e12cd71cd65"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 225,
+    "match_id": 4813599,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813599",
+    "sha256": "de824414faa94dccaa5d1b730a78b26d444134aad45289077ee4e994387dac32"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 226,
+    "match_id": 4813600,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813600",
+    "sha256": "d2653053944e00bdbdc26d828a8707079fdc51522dca4167296774b76675099e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 227,
+    "match_id": 4813601,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813601",
+    "sha256": "5d5a0a45360fffd0678c9c5e3735720af1a266c11a88f38213eb58d75a328d64"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 228,
+    "match_id": 4813602,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813602",
+    "sha256": "97fc46ee73d7ab95dce9434ea2953bca40085117c4ab384884ee348dfc48ea81"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 229,
+    "match_id": 4813603,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813603",
+    "sha256": "13b23faf0ef0fd288c9edbc8665f0d217cac6e951f0cf5ce25ee245a80d57c4d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 230,
+    "match_id": 4813604,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813604",
+    "sha256": "f4adca2e620759698c6eb7528af6cf7b04b13490dc13395534aff562baa99106"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 231,
+    "match_id": 4813605,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813605",
+    "sha256": "da4ffe779852e5554111c2081b70b0ffa032dc71e068a8457504b39abee632d4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 232,
+    "match_id": 4813606,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813606",
+    "sha256": "264600937b991766add56bb5e1f2f25776e57831effbc48a2e9f6b53c5056ea1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 233,
+    "match_id": 4813607,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813607",
+    "sha256": "99a825f5ec7a15e1a8229493c39e11cd5dec1f2df4fbbf886583be6b0b220df8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 234,
+    "match_id": 4813608,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813608",
+    "sha256": "5bc95aeeb76b30933adb2bb3a217e1c103602033e341d543ead2253da369a709"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 235,
+    "match_id": 4813609,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813609",
+    "sha256": "74836b0ac46198a42b3718316b4b259a9525a8fb718c0b1956d1f0b7d65a63d1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 236,
+    "match_id": 4813610,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813610",
+    "sha256": "f42e4ea4ad3dc246b781a0941834179d5e998a1de4851f0e2668c6314f8ad615"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 237,
+    "match_id": 4813611,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813611",
+    "sha256": "d2305f712902028b0ea5fe598e1e114012c46dd0e38e00ab1b63d58c7b638ea1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 238,
+    "match_id": 4813612,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813612",
+    "sha256": "ef0226c1ede183899a77bfd16414784a9108af8fe1bc88e007421067f1d86f82"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 239,
+    "match_id": 4813613,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813613",
+    "sha256": "a38e4781241843498b5e3819f8bc54359786151eb8bfd6ce829ed83559993573"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 240,
+    "match_id": 4813614,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813614",
+    "sha256": "080f899928489cf535d4041a920e1029fb9231533f902ca49425a5f871f72811"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 241,
+    "match_id": 4813616,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813616",
+    "sha256": "f906f3c07e3969a7d3c85d2bcf2f0fb25bbb1ff172e4fad25fa19640c0d8223c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 242,
+    "match_id": 4813615,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813615",
+    "sha256": "6d1646c876793d53684514c4bc5944fb04d1a45689c6bc43ae271aaf3ca4ccf9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 243,
+    "match_id": 4813617,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813617",
+    "sha256": "824c3647491d8e9049a7e44e684b69ece7b3c73fb168ad28b46fe0d2163bc19b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 244,
+    "match_id": 4813618,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813618",
+    "sha256": "c7deb524764f4d265ecd0a9ae21299ef7e2e39387bf8d6ddb258be7ac4bf5c55"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 245,
+    "match_id": 4813619,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813619",
+    "sha256": "eb618e245bd8e7b35e329211b25edf4069c8971966dfa8f9cda3bef15fdb447c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 246,
+    "match_id": 4813620,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813620",
+    "sha256": "29425a1ac359535634948fe0559b2c08c6b83cf6363656929f30fbd52fe721f3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 247,
+    "match_id": 4813621,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813621",
+    "sha256": "a5463e79f4f78497769e3c104fe83aa42e2676e8b4b3ec33e511d7b5c0057a7b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 248,
+    "match_id": 4813622,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813622",
+    "sha256": "017636086eb2b0430be2d2a9b1e38042440954b17db21c912c93baad11cf8fc5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 249,
+    "match_id": 4813623,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813623",
+    "sha256": "c7c59eaf239f456d2b98f648da4d666c63985fca7571334f1063d86db6339520"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 250,
+    "match_id": 4813624,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813624",
+    "sha256": "0bf375d29bff3acec86e447e2cc637ee77d8ab5f11c7c41109473bbc4eca0feb"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 251,
+    "match_id": 4813625,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813625",
+    "sha256": "c73614c68d3c2aaac48ab2b371e34e13638a676e7c68eb111df336fb608ea560"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 252,
+    "match_id": 4813626,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813626",
+    "sha256": "a2e2d361a987c11c0235298aa31b486ad87d39ece3ca01eb8e4fba7038016cc9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 253,
+    "match_id": 4813627,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813627",
+    "sha256": "c5491959e1b7c3a69b708d52944617a8c344c7e80d6119176ad2a861e1ffd694"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 254,
+    "match_id": 4813628,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813628",
+    "sha256": "59ee68bf212b9c33e51166ab430c9144823ffbe57487fd59d1da738c5c9e6c07"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 255,
+    "match_id": 4813629,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813629",
+    "sha256": "5e141b1c346a337922f5a23ccc2573a910c6d0dc0c02e8506b66539478e78354"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 256,
+    "match_id": 4813630,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813630",
+    "sha256": "1ec33bef9e634a80fd4855f2916c906e605ea672125bf34c9bac8164cdee196e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 257,
+    "match_id": 4813631,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813631",
+    "sha256": "c591dce3075f4f5f28f244fdeba0afc7fb655c02272fa1e399866f313ac0d569"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 258,
+    "match_id": 4813632,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813632",
+    "sha256": "1ecacbc53545dcc449d6863d86019058b556ccdcf63e20f1dd2d8750d36018e0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 259,
+    "match_id": 4813633,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813633",
+    "sha256": "dc1b978d36a5e11250f5fcd097c40bdc1fdde1c5a6e148017e57b0bd1e9b1b00"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 260,
+    "match_id": 4813634,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813634",
+    "sha256": "90285ed3b81cce68bbe834151541dd0b796ffa63aefb972ed11ebe52f75f455f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 261,
+    "match_id": 4813635,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813635",
+    "sha256": "76cfbb0d16e818e1a64a0ea92c1ba3706be7abf3e85ec0809a65024314460400"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 262,
+    "match_id": 4813636,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813636",
+    "sha256": "b6d6cc7cd680f53e7deabc8c4e5f78ee5d8c91cc17d9e45bd5276661ec829e67"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 263,
+    "match_id": 4813637,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813637",
+    "sha256": "af1a9cffbf1cc2feae51f603f1f0ea5f0cf4f205f4438c9c7153cc3e1c64d9e6"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 264,
+    "match_id": 4813638,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813638",
+    "sha256": "ce8a78ee5723985b43e7056edf953263cfdb904171d69fdd3a55da0afe1b44da"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 265,
+    "match_id": 4813639,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813639",
+    "sha256": "dfcfd7016422d84fdb67a9989bf07115144a9d8c3d9c8beb516675e9a1d12bab"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 266,
+    "match_id": 4813640,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813640",
+    "sha256": "c0c88464713d293639de7cd0359902047aa73ae5abdde690f1f5bc372d7363e4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 267,
+    "match_id": 4813641,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813641",
+    "sha256": "6671b18659e0e91f80fb1301151253d11127b9cfb0502d4183646bd81e7b8ff7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 268,
+    "match_id": 4813642,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813642",
+    "sha256": "f1eab7b2f618df4b3bff488cb3959a289184f4f5345587aa798a07ecc4df6e0a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 269,
+    "match_id": 4813643,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813643",
+    "sha256": "290c898291e33371adbbda02c7fa9e8abd0b1d4ca02c571d12ca4230bd03b6f5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 270,
+    "match_id": 4813644,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813644",
+    "sha256": "d376275f980e0c4debe4baef53b043ca141ecca4594e95d398e60c4daea67c44"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 271,
+    "match_id": 4813646,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813646",
+    "sha256": "c95f7cc669d8c501d3127a8002448a70f446c0b57252357bf967aec5aeee6a98"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 272,
+    "match_id": 4813645,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813645",
+    "sha256": "00b3775bdfa43defefbabcfe5f5121d5b7f731291a2a30249bffe671b8625ea1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 273,
+    "match_id": 4813647,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813647",
+    "sha256": "c7065a9f6da768dd9a87171208e779145bdf0da3c4eb1d08607d6350b00924fc"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 274,
+    "match_id": 4813648,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813648",
+    "sha256": "77d41f5c1db5f6b01f8edd8c5fe94f64d4d221321d9c7774c56c73d175f2dfec"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 275,
+    "match_id": 4813649,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813649",
+    "sha256": "d2d7bd71efe86ec545dae826f0c8bece119eba6b17a0ec7dc8369fb9d3420373"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 276,
+    "match_id": 4813650,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813650",
+    "sha256": "dfd95c5292c95be3754e4434c4f860630063220ceeba75db553173506a85486d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 277,
+    "match_id": 4813651,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813651",
+    "sha256": "8453af1384e90c0b24ec2beb51ae63fac297c91e2146ccb6fe05073ce24e60b3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 278,
+    "match_id": 4813652,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813652",
+    "sha256": "268f9239e01a3cdd3f7530eab6dd9966dcbaeb01d72066c9f84b3a03f64cecb3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 279,
+    "match_id": 4813653,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813653",
+    "sha256": "1d093450e43b9b91d00093a5808901e25ab54ef29e601746876bb149e62d96c7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 280,
+    "match_id": 4813654,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813654",
+    "sha256": "4587b48beeb0c2a45f5c14c57b7d2994f609c07b066ea482b365624808102e8d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 281,
+    "match_id": 4813656,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813656",
+    "sha256": "a5c93b8d89163fc9c1b97f341be70d3ea4dc069394bc10f8b725af2d4ee71375"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 282,
+    "match_id": 4813655,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813655",
+    "sha256": "159a983692e8c515590273ae113b6c14eb9113f0c48d83f1808dae7c1c9769b5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 283,
+    "match_id": 4813657,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813657",
+    "sha256": "752c0a478f7ee7d91ee078179859f673776029b4d5b842cc4783b909426d0fcb"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 284,
+    "match_id": 4813658,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813658",
+    "sha256": "45e1f80d2bb0477358b65758afb319218ab4a3e2bca36a96bba36d7a59b09be5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 285,
+    "match_id": 4813659,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813659",
+    "sha256": "076c3b332d81963c0bfa209789ab146636e649f6f221a9f2d62a003d398a780f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 286,
+    "match_id": 4813660,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813660",
+    "sha256": "0cd1d55224e69a6683deb428f02c75e5d72d8ae394b9071b6a2672fd5f9a84a1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 287,
+    "match_id": 4813661,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813661",
+    "sha256": "4d84ec8a6df315b60068a212f26d4cf0c702a7833142256b4412a6945b110e27"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 288,
+    "match_id": 4813662,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813662",
+    "sha256": "75a5ac9133cec162a55d34b7dba1e8c36ce903cf2179ab96b0231746dce17d61"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 289,
+    "match_id": 4813663,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813663",
+    "sha256": "4d65a2f4bdf8524697bd42a79134ac06f9daa2564257c3867b9044724bf77248"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 290,
+    "match_id": 4813664,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813664",
+    "sha256": "d31f964e267246414c8e3d1a68dad175b63afc38f37492bac1d9dbd6a9083637"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 291,
+    "match_id": 4813665,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813665",
+    "sha256": "ebca06463394168e749a7c3698fc8c1fdf3cf10c22c4e5d6ea56cb39f5ab7939"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 292,
+    "match_id": 4813666,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813666",
+    "sha256": "e6be0eeebc498fb04f51bbce9308081ad6a85a82ce371374232108e8d99f3a6b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 293,
+    "match_id": 4813667,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813667",
+    "sha256": "111548f1fed3002cc72cfb26cb93f63936486a9bdb47a4bd566bf5a81ef351e8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 294,
+    "match_id": 4813668,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813668",
+    "sha256": "55f571cebcc654c12fbf527d747abca4eea3b6766763bfdbc92c6a3d0eb4ce90"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 295,
+    "match_id": 4813669,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813669",
+    "sha256": "61e18f1a0f5fee257091d9a028467f5ae9169f58f76abb18487f41c105210c46"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 296,
+    "match_id": 4813670,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813670",
+    "sha256": "54728d43452c9da11114c2f97a41f35f6d13f9d726fd6ea0c406da29436d0bc9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 297,
+    "match_id": 4813671,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813671",
+    "sha256": "16e7debebe424528e621f833c4c3057961d5a531a7392e8bd5cb1321f7868eb3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 298,
+    "match_id": 4813672,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813672",
+    "sha256": "f945c56f4b24b97420d09d183716d9160a2635b315d1cd297bdc50ef6941134d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 299,
+    "match_id": 4813673,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813673",
+    "sha256": "7b3d62aa1896d52f9bc800c87f9ff53c7c8aaab6e289420813e83153f175b2d6"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 300,
+    "match_id": 4813674,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813674",
+    "sha256": "d6bc345ec18912f1ba35023510b8a0ffe35c3cdf2c9b5e58e291cbab298c997c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 301,
+    "match_id": 4813676,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813676",
+    "sha256": "bd7cf13576b85e7615acf57955b910a02baa230c013134af7c362cb95aefc69a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 302,
+    "match_id": 4813675,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813675",
+    "sha256": "b47e69de7ab2211322980b79dfc07e530254fb2ab28713898f2c0a45b11782b0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 303,
+    "match_id": 4813677,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813677",
+    "sha256": "c20513553595a8c0f99b02150d0261da2349d8ec1b3a863ab3b34b764a62f3cc"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 304,
+    "match_id": 4813678,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813678",
+    "sha256": "2f37207c536ffe0fb9f11f72fdd09186cb3b3556678b92005cc81d438a137aa9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 305,
+    "match_id": 4813679,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813679",
+    "sha256": "d5a97d2ce24ee09e692a74e3a62b6c301c55b12e5e78f75819622546364dafe9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 306,
+    "match_id": 4813680,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813680",
+    "sha256": "e1bd7226dedbc7167468eac183530514935bf9d8e159c2bd5d6b076a13e78bef"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 307,
+    "match_id": 4813681,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813681",
+    "sha256": "b2370b73d046c02a77d0e1013164379b50e918c81d4ddf98defb76aeafe4cd99"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 308,
+    "match_id": 4813682,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813682",
+    "sha256": "5e7aa685547fafef759161c3bea8404461a1f1377a20c4ca64055884a77519cb"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 309,
+    "match_id": 4813683,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813683",
+    "sha256": "9dd7777f5b25c082df817cd7633470064809ed10b339274ed33c81e3945b073c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 310,
+    "match_id": 4813684,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813684",
+    "sha256": "fa57a56477eef24bf4a9d00460ee07e2a36cac330e9e0ba467b091181e78b32a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 311,
+    "match_id": 4813685,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813685",
+    "sha256": "64b6e02915bc384fe9ffa216bb6521e8fd6d6032d91822bb7c12654f66b99440"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 312,
+    "match_id": 4813686,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813686",
+    "sha256": "098c348632b3b57ab6b1ac4c225de3159b99427803de56fbd90abca682c2944e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 313,
+    "match_id": 4813687,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813687",
+    "sha256": "ca6684485f1974abccee141aa950052961591e248931624d9f7c27863723ec77"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 314,
+    "match_id": 4813688,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813688",
+    "sha256": "988dcf4f9b4c42e6f25d758612f162a8a31a16ab2e3f18800756feafee0e2103"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 315,
+    "match_id": 4813689,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813689",
+    "sha256": "7e73892d921758b394d096c0beefb49f87020833f7cf3d91856242103ff461f4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 316,
+    "match_id": 4813690,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813690",
+    "sha256": "3b641990d46312415ce5512706ec37b8dac7c42c8d0d27f8927b095f940842be"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 317,
+    "match_id": 4813691,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813691",
+    "sha256": "2514e3244ddcde9400a78f03a392eca80b884fe1138a2646b3f57d1da5f3ebaf"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 318,
+    "match_id": 4813692,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813692",
+    "sha256": "30c171a04cbb5f7a758341a0d08c2d0c17cadf63c7e2f8ab7dcbcdfece345825"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 319,
+    "match_id": 4813693,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813693",
+    "sha256": "6b83a28b0950addc18a19e0d1ca515d52f0be85769fff9f3453c0c9c7a7d901d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 320,
+    "match_id": 4813694,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813694",
+    "sha256": "599bce6fc63d0fe7d4fcf42f75fe869cbb2eed6c2f1f2a080923b003251bad85"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 321,
+    "match_id": 4813695,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813695",
+    "sha256": "15838b24999e677a1c4c9b20f3a96739a31a02560166f27ad42305e4fb68c410"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 322,
+    "match_id": 4813696,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813696",
+    "sha256": "a10ab0f1fd421e195cf305c6f930f1b9abc5b61c6cf6f082ee648ecb8cd1823f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 323,
+    "match_id": 4813697,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813697",
+    "sha256": "20a77143fba0d021618b8567f464d09fb063dd90e882ddbcdcaca1c4f017d0f9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 324,
+    "match_id": 4813698,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813698",
+    "sha256": "605e0b3a9a4e544ded17b527bf204abadfd5c5b568c982484ae177d0d43832c7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 325,
+    "match_id": 4813699,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813699",
+    "sha256": "06f996453ddaed09ad907ff0e800825253c3729d559256d7eb120593462f2d47"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 326,
+    "match_id": 4813700,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813700",
+    "sha256": "bdd83c2c2b539b88f57019210ca0bb30002736dd5c84912c3f294166ec97525c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 327,
+    "match_id": 4813701,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813701",
+    "sha256": "3194e82f56fdf6ae2f7fb9bf68431bc6b490f2531997a8e71659895774b754f2"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 328,
+    "match_id": 4813702,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813702",
+    "sha256": "5a584eabd4d297c9a004c0e401806fb244631146ddba83e9a9e4d4ef0037511a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 329,
+    "match_id": 4813703,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813703",
+    "sha256": "46cc3117b5b42e00ba072e660963e8e40db59d9e28992cf0bee71eaf1848c676"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 330,
+    "match_id": 4813704,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813704",
+    "sha256": "963d43fad230f89e0e467dc88f60921e9fb0076f42a8b284adac55803281b011"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 331,
+    "match_id": 4813706,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813706",
+    "sha256": "75997ac4492b1d6a24711bf49d87165dc45341c2f3a7276df40c2afbb17d6eb0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 332,
+    "match_id": 4813705,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813705",
+    "sha256": "d00a26c6aad321aa75c72518db42764669e031b895f56027dc1cc5d1bf5e851d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 333,
+    "match_id": 4813707,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813707",
+    "sha256": "1e3a3f0c3495330d53aa6c384fbe8e2b523cb7992e90ee76bacf3d9d4d6206b8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 334,
+    "match_id": 4813708,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813708",
+    "sha256": "e75a0e1ea42d8cf45811a1a0e438ab642c68b4969ff054e0ff53bd89c8435eb1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 335,
+    "match_id": 4813709,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813709",
+    "sha256": "90da679717247bec9ac3b2f1fb3173cf307fc4804373db85ce747cc182ec88ba"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 336,
+    "match_id": 4813710,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813710",
+    "sha256": "98992a81bf738ead45cbb80368164924a9595e010835795bc3fd57988886ba89"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 337,
+    "match_id": 4813711,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813711",
+    "sha256": "94b405ea2c3b73e878f2ad5dc42a19c2034a81eab4b03d4ddda7634a50d749c0"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 338,
+    "match_id": 4813712,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813712",
+    "sha256": "1912fa9458daf5551d3d0e4b8185993cd2665341556bbe250e206aa8c06f5837"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 339,
+    "match_id": 4813713,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813713",
+    "sha256": "fe83c362172ae1241d8e2619ab567799e328312a8f225af4f367599573c48a86"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 340,
+    "match_id": 4813714,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813714",
+    "sha256": "4b145d03f1f573a366fb058ab7640d6f9fe7004c3e3bf45236c5588628fdb36f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 341,
+    "match_id": 4813716,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813716",
+    "sha256": "716b1a10378de952e1763ca605a28b92c6aa63be262cf6f903c330bb70e76b56"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 342,
+    "match_id": 4813717,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813717",
+    "sha256": "a94fae3a19e946785749c14dd04b5189c8bba684fd9619254dcc0cdb782bf47d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 343,
+    "match_id": 4813715,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813715",
+    "sha256": "3e171a7468c4cceae488994d18ea49721cffb6de0bb64a48465e9e85d5caf686"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 344,
+    "match_id": 4813718,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813718",
+    "sha256": "6bb5b41791257b83b2c7ba1120604b403e9f99746b1d15d3fb47468ccd1a7780"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 345,
+    "match_id": 4813719,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813719",
+    "sha256": "1db1fdf81b28c0342f48aed8f7a9880e0a42205de4c820bd572dccc183b787a7"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 346,
+    "match_id": 4813720,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813720",
+    "sha256": "8d0cf8eedd618c77ca8b3b93a97b1bc2dd2c05ce8121b7f7e3ffc487e4edc5bd"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 347,
+    "match_id": 4813721,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813721",
+    "sha256": "855c63c0d5a0d2551afe5f3cbcc1316e0d71e009dbc7495c1e5357e2e432cc24"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 348,
+    "match_id": 4813722,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813722",
+    "sha256": "7bbc27b4d623491b5955786b24615206094f11f774e9403f2d7501bb3fcea960"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 349,
+    "match_id": 4813723,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813723",
+    "sha256": "0468a5371d0a350ad340e6d2edb0af636e9473a88d9acf906b1a240f1536855f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 350,
+    "match_id": 4813724,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813724",
+    "sha256": "f9ac1b860b83ce5d643cc257167f7fc20ae6bc6968422fdd093ef6fbb837bafe"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 351,
+    "match_id": 4813725,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813725",
+    "sha256": "8908f8e503c623c594beed3e82aa86157aa03fe1cf8c2d81833e81920a45472e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 352,
+    "match_id": 4813726,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813726",
+    "sha256": "8b1d9c04caacfe55264ec596ef081aeb898b75aea7e1241c6808acbcc21c0118"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 353,
+    "match_id": 4813727,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813727",
+    "sha256": "e183f312941c165b5505a053374e4cca1b703f70a75b9ff57f9a00ec1bad4d97"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 354,
+    "match_id": 4813728,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813728",
+    "sha256": "8ad59b9788e94b3691bbc16cb1c999a84af31df414a0a428b88dedfbc74c884f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 355,
+    "match_id": 4813729,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813729",
+    "sha256": "ccff458d50932c2176e915de411feafab4ccd204c5108b8ff631b6720ac48b29"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 356,
+    "match_id": 4813730,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813730",
+    "sha256": "b91e77719dd716db70f3261f6a5e6cadb0a93120ac39b68fefcb837d8e6cecf3"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 357,
+    "match_id": 4813731,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813731",
+    "sha256": "e64ab8a4cd0f784b70a48d6328ccd8e2305f207cd4bfa0833e899af926d6b89c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 358,
+    "match_id": 4813732,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813732",
+    "sha256": "e2029e55a86a5a2df4869f4e0dd0274e02d10a1777d0ab4e8e923cee5cfac68a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 359,
+    "match_id": 4813733,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813733",
+    "sha256": "a760edb8ca152b87159edaf14a52744580e674a5f559f7358ab3d33d0b553fa4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 360,
+    "match_id": 4813734,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813734",
+    "sha256": "c9383116e4de373e12abee58e69d8cf74a2b863edb08eb6d61f94a3a8490e769"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 361,
+    "match_id": 4813736,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813736",
+    "sha256": "a661ebc6b2afb33af31ea47fde3343a1bfb693303a23029d7ea3dfa6b4b4f278"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 362,
+    "match_id": 4813737,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813737",
+    "sha256": "47b26faeb06a4b9c60a288317396f35718e9d867afd839c7f0e6ecdc61393701"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 363,
+    "match_id": 4813735,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813735",
+    "sha256": "a72211912428ad82be7c82c06698a881d91bb74a6a37ec2605333d6358520374"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 364,
+    "match_id": 4813738,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813738",
+    "sha256": "41642bf0384328d0f2378d12be83b31552f725ce866086b7ce1e8b6852a168c5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 365,
+    "match_id": 4813739,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813739",
+    "sha256": "ad1f5f26050ce73b6796588783737d0a1b504bef02d4968cf932486ab7856906"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 366,
+    "match_id": 4813740,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813740",
+    "sha256": "3bfc34fa857a49ed69d33da7d114141245ec8be8f5a67a4cbed6094a4087ad65"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 367,
+    "match_id": 4813741,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813741",
+    "sha256": "ac07c884c60bb0858ee9c49f677412e3844440b75175abcc2c24cb7e0443ae61"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 368,
+    "match_id": 4813742,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813742",
+    "sha256": "217e8f6a8b7aff2a400018628564e2b1db0ad12fe740d8ad3bb55e903961a3f6"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 369,
+    "match_id": 4813743,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813743",
+    "sha256": "b82e43ca880b8a8c8935fb4736bb33628abf82e36a01a40c37b8d08223c18d39"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 370,
+    "match_id": 4813744,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813744",
+    "sha256": "f6a7995c0d579fe6933c9cc14e2eb2b0b394a0a0245bb94f5136457d9f82c028"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 371,
+    "match_id": 4813745,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813745",
+    "sha256": "4c7bbb0b9fad982ae799f0c6817afce8aea25602e8e6cbf31bf5801a552dff87"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 372,
+    "match_id": 4813746,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813746",
+    "sha256": "c5b3cab09a8a5ae967a2f293b4a9dbd94edfa524b207bc9cf6efdca89c234c70"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 373,
+    "match_id": 4813747,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813747",
+    "sha256": "25aa29182fed37bbee98c00611499f515438f1b57fbd73d1d0d1a527725fa2ba"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 374,
+    "match_id": 4813748,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813748",
+    "sha256": "1f04f4c3a175464760c166cecb1f21397866fc5252bf13c4046fd485f573a8a4"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 375,
+    "match_id": 4813749,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813749",
+    "sha256": "235eb0067b1157aacd385a1562c2b6fffe388d89f843db0a1e10fe938d76e45c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 376,
+    "match_id": 4813750,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813750",
+    "sha256": "c75f98cc77479012b0625fa22e88ff7a66ee19d322e691e1a1bc008fc42ca62e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 377,
+    "match_id": 4813751,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813751",
+    "sha256": "6f6d6b0b4074266d746969ff1387028dc524ee86aa5b354bbd3b1965b6faebcf"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 378,
+    "match_id": 4813752,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813752",
+    "sha256": "d440f9c7ba7c338f688b887f40d269877179fa1c1b8535c525b561c9d4f3ed9b"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 379,
+    "match_id": 4813753,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813753",
+    "sha256": "4512fa9fab8ef41bb2f9bfbb284fa54b6ed498e5eb7e9dfe29483d546a862179"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 380,
+    "match_id": 4813754,
+    "url": "https://www.fotmob.com/api/data/matchDetails?matchId=4813754",
+    "sha256": "39c0b5b82e0c220949f79c4de6c07537155bb5342d48c7170cfb396b2513c93d"
+  }
+]

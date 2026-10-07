@@ -1,0 +1,28 @@
+element,fixture,round,code,name,position,minutes,source_minutes,clearances_blocks_interceptions,tackles,recoveries,defensive_contribution,source_tackles,blocks,interceptions,clearances,source_recoveries,defcon_count_reconstructed,defcon_reconstructed,defcon_award,source_identity_valid,comparable,mismatch,false_positive,false_negative,source_cbi,source_cbi_difference,source_tackles_difference,source_recoveries_difference
+488,19,2,208706,Bruno Guimarães Rodriguez Moura,MID,90,90.0,0,3,8,11,3.0,0.0,0.0,0.0,9.0,12.0,2.0,0.0,True,True,True,True,False,0.0,0.0,0.0,1.0
+257,21,3,437499,Maxence Lacroix,DEF,90,90.0,9,0,1,9,0.0,0.0,3.0,7.0,1.0,10.0,2.0,0.0,True,True,True,True,False,10.0,1.0,0.0,0.0
+436,38,4,209365,Matthijs de Ligt,DEF,90,90.0,4,5,4,9,5.0,0.0,3.0,3.0,4.0,11.0,2.0,0.0,True,True,True,True,False,6.0,2.0,0.0,0.0
+427,41,5,433036,Tijjani Reijnders,MID,90,90.0,5,0,7,12,0.0,0.0,0.0,4.0,7.0,11.0,0.0,2.0,True,True,True,False,True,4.0,-1.0,0.0,0.0
+85,42,5,200785,Tyler Adams,MID,90,90.0,4,3,4,11,3.0,0.0,5.0,0.0,4.0,12.0,2.0,0.0,True,True,True,True,False,5.0,1.0,0.0,0.0
+669,83,9,456512,Dan Ndoye,MID,82,83.0,2,1,8,11,2.0,0.0,2.0,0.0,8.0,12.0,2.0,0.0,True,True,True,True,False,2.0,0.0,1.0,0.0
+261,81,9,427623,Chris Richards,DEF,90,90.0,8,1,1,9,1.0,0.0,2.0,7.0,1.0,10.0,2.0,0.0,True,True,True,True,False,9.0,1.0,0.0,0.0
+342,87,9,226182,Jayden Bogle,DEF,90,90.0,4,5,3,9,5.0,0.0,2.0,3.0,3.0,10.0,2.0,0.0,True,True,True,True,False,5.0,1.0,0.0,0.0
+90,83,9,503139,Alex Scott,MID,79,80.0,5,2,4,11,2.0,0.0,2.0,3.0,5.0,12.0,2.0,0.0,True,True,True,True,False,5.0,0.0,0.0,1.0
+531,98,10,223827,Daniel Ballard,DEF,90,90.0,9,1,2,10,1.0,0.0,1.0,7.0,2.0,9.0,0.0,2.0,True,True,True,False,True,8.0,-1.0,0.0,0.0
+475,102,11,220237,Sven Botman,DEF,90,90.0,10,0,7,10,0.0,0.0,0.0,9.0,7.0,9.0,0.0,2.0,True,True,True,False,True,9.0,-1.0,0.0,0.0
+643,150,15,509291,André Trindade da Costa Neto,MID,90,90.0,2,1,8,11,1.0,1.0,2.0,0.0,8.0,12.0,2.0,0.0,True,True,True,True,False,3.0,1.0,0.0,0.0
+685,157,16,242882,Bafodé Diakité,DEF,90,90.0,6,2,1,8,2.0,2.0,2.0,4.0,1.0,10.0,2.0,0.0,True,True,True,True,False,8.0,2.0,0.0,0.0
+74,157,16,494521,Adrien Truffert,DEF,90,90.0,6,3,2,9,3.0,1.0,2.0,4.0,2.0,10.0,2.0,0.0,True,True,True,True,False,7.0,1.0,0.0,0.0
+699,165,17,230046,Douglas Luiz Soares de Paulo,MID,72,73.0,3,2,6,11,3.0,0.0,2.0,1.0,6.0,12.0,2.0,0.0,True,True,True,True,False,3.0,0.0,1.0,0.0
+316,165,17,169528,Antonee Robinson,DEF,90,90.0,6,4,6,10,4.0,1.0,0.0,4.0,6.0,9.0,0.0,2.0,True,True,True,False,True,5.0,-1.0,0.0,0.0
+575,182,19,491279,Micky van de Ven,DEF,90,90.0,8,0,4,8,0.0,0.0,1.0,9.0,4.0,10.0,2.0,0.0,True,True,True,True,False,10.0,2.0,0.0,0.0
+706,186,19,220627,James Justin,DEF,90,90.0,9,0,0,9,1.0,2.0,1.0,6.0,0.0,10.0,2.0,0.0,True,True,True,True,False,9.0,0.0,1.0,0.0
+417,189,19,466052,Rayan Cherki,MID,90,90.0,3,4,7,14,4.0,1.0,0.0,1.0,5.0,11.0,0.0,2.0,True,True,True,False,True,2.0,-1.0,0.0,-2.0
+77,212,22,463981,James Hill,DEF,90,90.0,6,3,2,9,3.0,1.0,2.0,4.0,2.0,10.0,2.0,0.0,True,True,True,True,False,7.0,1.0,0.0,0.0
+672,271,28,551210,Jorrel Hato,DEF,74,75.0,6,3,4,9,3.0,0.0,3.0,4.0,4.0,10.0,2.0,0.0,True,True,True,True,False,7.0,1.0,0.0,0.0
+634,292,30,501837,Yerson Mosquera Valdelamar,DEF,90,90.0,8,1,5,9,2.0,0.0,1.0,7.0,5.0,10.0,2.0,0.0,True,True,True,True,False,8.0,0.0,1.0,0.0
+683,308,31,201895,Omar Alderete,DEF,90,90.0,8,1,4,9,1.0,0.0,0.0,9.0,4.0,10.0,2.0,0.0,True,True,True,True,False,9.0,1.0,0.0,0.0
+438,317,32,230001,Noussair Mazraoui,DEF,69,70.0,5,4,2,9,4.0,0.0,3.0,3.0,2.0,10.0,2.0,0.0,True,True,True,True,False,6.0,1.0,0.0,0.0
+272,307,36,152551,Jefferson Lerma Solís,MID,90,90.0,3,5,3,11,6.0,0.0,1.0,2.0,3.0,12.0,2.0,0.0,True,True,True,True,False,3.0,0.0,1.0,0.0
+261,307,36,427623,Chris Richards,DEF,90,90.0,7,2,2,9,3.0,0.0,1.0,6.0,2.0,10.0,2.0,0.0,True,True,True,True,False,7.0,0.0,1.0,0.0
+230,365,37,444463,Wesley Fofana,DEF,80,81.0,9,0,5,9,0.0,0.0,6.0,4.0,5.0,10.0,2.0,0.0,True,True,True,True,False,10.0,1.0,0.0,0.0

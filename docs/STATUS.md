@@ -2,6 +2,14 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Felles defcon-grunnlag låst 7. oktober 2026
+
+[Harmonisert datasett og reproduksjon](../research/current/rescoring_2025/harmonized/README.md): `historical_points_plus_harmonized_defcon_v1` er låst som forskningsgrunnlag etter åtte beståtte kvalitetskrav. Alle 2660 kamper fra 2019/20–2025/26 og 71898 aktive utespillerobservasjoner er dekket, uten uløste etiketter. Ett sett FotMob-definisjoner brukes over hele perioden; offisiell FPL-fasit beholdes i 2025/26.
+
+Full 2025/26-kontroll: 10698/10725 like defcon-poengtildelinger (99,748 %), 22 falske positive og 5 falske negative. Positive utslag: presisjon 98,466 %, recall 99,647 %. Eksakt tellelikhet 96,858 %. 404 historiske tildelinger korrigeres (−808 poeng i hele spillerpopulasjonen, ikke managerscore). 2024/25 er uendret. Alle kildehash og normaliserte rådata er kontrollert; 14 sesongfiler gjenoppbygges byte-identisk; seks transformasjonstester består. Kode, plaintext-datapartisjoner, etiketter, kildehash og auditer er lagret.
+
+Historiske assists og bonus er fortsatt historiske: dette er ikke full omregning til alle 2025/26-regler. Ingen modelltrening eller benchmarkendring. `fixture_full_h3_adaptive_tc` og arkivert snitt 2351,50 står uendret på sin opprinnelige poengbasis. Neste steg: kjør referansen på det nye låste poenggrunnlaget med like ressurser/regler, deretter et separat defcon-komponentforsøk med tidsriktig retrening. Kostnad 0 NOK.
+
 ## Siste kartlagte defcon-hull lukket og klareringsavvik identifisert
 
 7. oktober 2026: [2022/23–2023/24 og kildekontroll](../research/current/rescoring_2025/final_gaps/README.md). Alle 119 + 14 gjenstående etiketter er fylt; dermed er alle kartlagte aktive utespillerhull i 2019/20–2023/24 lukket. 455/455 kontrollutfall stemmer med arkivet; alle 133 nye etiketter har samme poeng ved ren FotMob som ved bevaring av kjente arkivfelter.

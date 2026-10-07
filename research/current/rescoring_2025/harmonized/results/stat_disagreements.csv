@@ -1,0 +1,39 @@
+element,fixture,code,name,source_name,position,minutes,source_minutes,minutes_difference,goals_scored,source_goals,goals_difference,expected_team,source_team,season
+248,115,195851,Scott_McTominay_248,Scott McTominay,MID,90,89.0,-1.0,0,1.0,1.0,Man Utd,Man Utd,2019-20
+446,192,154131,Jack_Stacey_446,Jack Stacey,DEF,90,81.0,-9.0,0,0.0,0.0,Bournemouth,Bournemouth,2019-20
+252,206,119471,Fabian_Schär_252,Fabian Schär,DEF,90,51.0,-39.0,0,0.0,0.0,Newcastle,Newcastle,2019-20
+24,82,223340,Bukayo Saka,Bukayo Saka,MID,35,32.0,-3.0,0,0.0,0.0,Arsenal,Arsenal,2020-21
+334,225,119471,Fabian Schär,Fabian Schär,DEF,90,79.0,-11.0,0,0.0,0.0,Newcastle,Newcastle,2020-21
+53,136,39155,Adam Lallana,Adam Lallana,MID,90,85.0,-5.0,0,0.0,0.0,Brighton,Brighton,2021-22
+435,163,159533,Adama Traoré,Adama Traoré,MID,85,73.0,-12.0,0,0.0,0.0,Wolves,Wolves,2021-22
+518,289,440323,Armando Broja,Armando Broja,FWD,48,44.0,-4.0,0,0.0,0.0,Southampton,Southampton,2021-22
+483,372,191866,Kristoffer Ajer,Kristoffer Ajer,DEF,90,76.0,-14.0,0,0.0,0.0,Brentford,Brentford,2021-22
+482,150,200402,Nélson Cabral Semedo,Nélson Semedo,DEF,49,45.0,-4.0,0,0.0,0.0,Wolves,Wolves,2022-23
+107,265,109345,Solly March,Solly March,MID,90,90.0,0.0,0,1.0,1.0,Brighton,Brighton,2022-23
+195,292,232826,Anthony Gordon,Anthony Gordon,MID,49,44.0,-5.0,0,0.0,0.0,Newcastle,Newcastle,2022-23
+507,291,199170,Moussa Niakhaté,Moussa Niakhaté,DEF,90,86.0,-4.0,0,0.0,0.0,Nott'm Forest,Nott'm Forest,2022-23
+675,15,447715,Aaron Ramsey,Aaron Ramsey,MID,19,15.0,-4.0,0,0.0,0.0,Burnley,Burnley,2023-24
+493,77,227127,Yves Bissouma,Yves Bissouma,MID,48,45.0,-3.0,0,0.0,0.0,Spurs,Spurs,2023-24
+5,201,226597,Gabriel dos Santos Magalhães,Gabriel,DEF,80,81.0,1.0,1,2.0,1.0,Arsenal,Arsenal,2023-24
+643,202,232980,Max Aarons,Max Aarons,DEF,90,87.0,-3.0,0,0.0,0.0,Bournemouth,Bournemouth,2023-24
+594,283,492831,Zeki Amdouni,Zeki Amdouni,FWD,25,20.0,-5.0,0,0.0,0.0,Burnley,Burnley,2023-24
+691,334,486385,Norberto Bercique Gomes Betuncal,Beto,FWD,33,22.0,-11.0,0,0.0,0.0,Everton,Everton,2023-24
+244,363,120250,André Tavares Gomes,André Gomes,MID,24,20.0,-4.0,0,0.0,0.0,Everton,Everton,2023-24
+23,47,116216,Leandro Trossard,Leandro Trossard,MID,52,45.0,-7.0,0,0.0,0.0,Arsenal,Arsenal,2024-25
+110,83,216646,Yoane Wissa,Yoane Wissa,FWD,90,90.0,0.0,1,2.0,1.0,Brentford,Brentford,2024-25
+655,84,463212,Carlos Roberto Forbs Borges,Carlos Forbs,MID,49,44.0,-5.0,0,0.0,0.0,Wolves,Wolves,2024-25
+191,115,174874,Joachim Andersen,Joachim Andersen,DEF,90,79.0,-11.0,0,0.0,0.0,Fulham,Fulham,2024-25
+489,128,547701,Archie Gray,Archie Gray,MID,10,4.0,-6.0,0,0.0,0.0,Spurs,Spurs,2024-25
+105,162,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,28,22.0,-6.0,0,0.0,0.0,Brentford,Brentford,2024-25
+651,223,179519,Orel Mangala,Orel Mangala,MID,90,84.0,-6.0,0,0.0,0.0,Everton,Everton,2024-25
+7,311,85955,Jorge Luiz Frello Filho,Jorginho,MID,90,86.0,-4.0,0,0.0,0.0,Arsenal,Arsenal,2024-25
+97,322,628204,Yunus Emre Konak,Yunus Emre Konak,MID,19,2.0,-17.0,0,0.0,0.0,Brentford,Brentford,2024-25
+254,342,153366,Harrison Reed,Harrison Reed,MID,15,8.0,-7.0,0,0.0,0.0,Fulham,Fulham,2024-25
+730,374,606921,Romain Esse,Romain Esse,MID,14,10.0,-4.0,0,0.0,0.0,Crystal Palace,Crystal Palace,2024-25
+457,47,61256,Carlos Henrique Casimiro,Casemiro,MID,49,45.0,-4.0,1,1.0,0.0,Man Utd,Man Utd,2025-26
+50,62,195546,Emiliano Buendía Stati,Emiliano Buendía,MID,33,22.0,-11.0,0,0.0,0.0,Aston Villa,Aston Villa,2025-26
+606,80,233963,Konstantinos Mavropanos,Konstantinos Mavropanos,DEF,45,40.0,-5.0,0,0.0,0.0,West Ham,West Ham,2025-26
+20,310,116216,Leandro Trossard,Leandro Trossard,MID,20,16.0,-4.0,0,0.0,0.0,Arsenal,Arsenal,2025-26
+735,286,110504,Bertrand Traoré,Bertrand Traoré,MID,6,1.0,-5.0,0,0.0,0.0,Sunderland,Sunderland,2025-26
+347,295,243526,Gabriel Gudmundsson,Gabriel Gudmundsson,DEF,49,45.0,-4.0,0,0.0,0.0,Leeds,Leeds,2025-26
+317,354,174874,Joachim Andersen,Joachim Andersen,DEF,51,45.0,-6.0,0,0.0,0.0,Fulham,Fulham,2025-26
