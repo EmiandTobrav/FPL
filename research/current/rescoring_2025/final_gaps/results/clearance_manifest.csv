@@ -1,0 +1,51 @@
+season,fixture,element,code,name,position,minutes,goals_scored,purpose,fbref_clearances,fotmob_clearances,clearances_blocks_interceptions,defensive_contribution,tackles,recoveries,official_award,reference_defcon,fbref_defcon_count,pulse_id,pl_player_id
+2021-22,98,275,106760,Luke Shaw,DEF,90,0,historical_clearance_diagnostic,5.0,4.0,,,,,,,,66439,4608
+2021-22,112,108,60586,Johann Berg Gudmundsson,MID,90,0,historical_clearance_diagnostic,4.0,3.0,,,,,,,,66453,6210
+2021-22,161,7,84450,Granit Xhaka,MID,90,0,historical_clearance_diagnostic,2.0,1.0,,,,,,,,66502,12136
+2021-22,271,35,122806,John McGinn,MID,90,0,historical_clearance_diagnostic,3.0,2.0,,,,,,,,66612,51423
+2021-22,1,10,101184,Calum Chambers,DEF,80,0,historical_clearance_diagnostic,3.0,2.0,,,,,,,,66342,4620
+2021-22,1,84,204580,Vitaly Janelt,MID,90,0,historical_clearance_diagnostic,2.0,1.0,,,,,,,,66342,23194
+2021-22,32,83,194010,Rico Henry,DEF,90,0,historical_clearance_diagnostic,2.0,1.0,,,,,,,,66373,10947
+2021-22,65,354,45268,Moussa Sissoko,MID,90,0,historical_clearance_diagnostic,4.0,3.0,,,,,,,,66406,4549
+2021-22,71,23,226597,Gabriel Magalhães,DEF,90,0,historical_clearance_diagnostic,3.0,2.0,,,,,,,,66412,50234
+2021-22,98,288,214590,Aaron Wan-Bissaka,DEF,90,0,historical_clearance_diagnostic,1.0,0.0,,,,,,,,66439,14164
+2021-22,112,162,244723,Tyrick Mitchell,DEF,90,0,historical_clearance_diagnostic,4.0,3.0,,,,,,,,66453,24334
+2021-22,161,417,105717,Arthur Masuaku,DEF,90,0,historical_clearance_diagnostic,3.0,2.0,,,,,,,,66502,11284
+2021-22,179,290,232937,Brandon Williams,DEF,90,0,historical_clearance_diagnostic,3.0,1.0,,,,,,,,66520,23834
+2021-22,194,457,189627,Dimitris Giannoulis,DEF,45,0,historical_clearance_diagnostic,2.0,1.0,,,,,,,,66535,19591
+2021-22,229,255,103955,Raheem Sterling,MID,59,0,historical_clearance_diagnostic,1.0,0.0,,,,,,,,66570,4316
+2021-22,229,351,450527,Mohammed Salisu,DEF,90,0,historical_clearance_diagnostic,15.0,14.0,,,,,,,,66570,51775
+2021-22,259,308,179018,Miguel Almirón,MID,11,0,historical_clearance_diagnostic,1.0,0.0,,,,,,,,66600,54312
+2021-22,288,555,90152,Raphaël Varane,DEF,90,0,historical_clearance_diagnostic,4.0,3.0,,,,,,,,66629,5782
+2021-22,302,113,103914,Charlie Taylor,DEF,90,0,historical_clearance_diagnostic,4.0,2.0,,,,,,,,66643,8691
+2021-22,355,501,204727,Malang Sarr,DEF,3,0,historical_clearance_diagnostic,1.0,0.0,,,,,,,,66696,20499
+2021-22,1,76,61810,Pontus Jansson,DEF,90,0,historical_clearance_diagnostic,6.0,6.0,,,,,,,,66342,12847
+2021-22,32,76,61810,Pontus Jansson,DEF,90,0,historical_clearance_diagnostic,6.0,6.0,,,,,,,,66373,12847
+2021-22,65,187,80954,Rodrigo Moreno,FWD,90,0,historical_clearance_diagnostic,1.0,1.0,,,,,,,,66406,4095
+2021-22,98,364,115556,Ben Davies,DEF,90,0,historical_clearance_diagnostic,0.0,0.0,,,,,,,,66439,4408
+2021-22,129,263,205651,Gabriel Fernando de Jesus,FWD,90,0,historical_clearance_diagnostic,1.0,1.0,,,,,,,,66470,19680
+2021-22,161,466,437626,Nuno Varela Tavares,DEF,2,0,historical_clearance_diagnostic,0.0,0.0,,,,,,,,66502,66094
+2021-22,229,517,96787,Mohamed Elyounoussi,MID,45,0,historical_clearance_diagnostic,1.0,1.0,,,,,,,,66570,15967
+2021-22,259,39,169359,Matt Targett,DEF,90,0,historical_clearance_diagnostic,1.0,1.0,,,,,,,,66600,4815
+2021-22,288,702,202993,Rodrigo Bentancur,MID,87,0,historical_clearance_diagnostic,1.0,1.0,,,,,,,,66629,22802
+2021-22,355,689,510363,Francisco Jorge Tomás Oliveira,MID,19,0,historical_clearance_diagnostic,0.0,0.0,,,,,,,,66696,122388
+2025-26,5,605,214048,Maximilian Kilman,DEF,90,0,2025_official_award_disagreement,8.0,,6.0,9.0,3.0,2.0,0.0,2.0,11.0,124795,13522
+2025-26,12,632,87835,Matt Doherty,DEF,90,0,2025_official_award_disagreement,5.0,,6.0,9.0,3.0,2.0,0.0,2.0,10.0,124802,4229
+2025-26,19,488,208706,Bruno Guimarães Rodriguez Moura,MID,90,1,2025_official_award_disagreement,0.0,,0.0,11.0,3.0,8.0,0.0,2.0,12.0,124809,74761
+2025-26,21,258,244723,Tyrick Mitchell,DEF,90,0,2025_official_award_disagreement,4.0,,3.0,9.0,6.0,3.0,0.0,2.0,11.0,124811,24334
+2025-26,21,257,437499,Maxence Lacroix,DEF,90,0,2025_official_award_disagreement,8.0,,9.0,9.0,0.0,1.0,0.0,2.0,11.0,124811,76104
+2025-26,25,371,544877,Milos Kerkez,DEF,90,0,2025_official_award_disagreement,7.0,,6.0,9.0,3.0,2.0,0.0,2.0,11.0,124815,116665
+2025-26,27,517,215379,Elliot Anderson,MID,90,0,2025_official_award_disagreement,2.0,,1.0,11.0,7.0,3.0,0.0,2.0,12.0,124817,51593
+2025-26,28,541,434399,Reinildo Mandava,DEF,90,0,2025_official_award_disagreement,5.0,,6.0,9.0,3.0,3.0,0.0,2.0,10.0,124818,63733
+2025-26,29,74,494521,Adrien Truffert,DEF,90,0,2025_official_award_disagreement,5.0,,4.0,9.0,5.0,0.0,0.0,2.0,10.0,124819,74965
+2025-26,38,436,209365,Matthijs de Ligt,DEF,90,0,2025_official_award_disagreement,3.0,,4.0,9.0,5.0,4.0,0.0,2.0,11.0,124828,20226
+2025-26,1,73,54469,Adam Smith,DEF,89,0,2025_matched_control,7.0,,8.0,9.0,1.0,2.0,0.0,0.0,9.0,124791,3512
+2025-26,5,560,437505,Wilson Isidor,FWD,14,1,2025_matched_control,1.0,,1.0,2.0,0.0,1.0,0.0,0.0,2.0,124795,52989
+2025-26,9,441,596777,Patrick Dorgu,DEF,90,0,2025_matched_control,0.0,,1.0,5.0,4.0,2.0,0.0,0.0,5.0,124799,146567
+2025-26,14,199,208912,Joe Worrall,DEF,7,0,2025_matched_control,2.0,,2.0,3.0,1.0,0.0,0.0,0.0,3.0,124804,13622
+2025-26,18,568,441164,Pedro Porro Sauceda,DEF,90,0,2025_matched_control,7.0,,5.0,6.0,1.0,4.0,0.0,0.0,8.0,124808,32229
+2025-26,23,324,153133,Alex Iwobi,MID,83,0,2025_matched_control,0.0,,1.0,9.0,3.0,5.0,0.0,0.0,9.0,124813,4717
+2025-26,27,621,229384,Andy Irving,MID,15,0,2025_matched_control,1.0,,0.0,3.0,2.0,1.0,0.0,0.0,4.0,124817,136505
+2025-26,32,146,83299,Lewis Dunk,DEF,90,0,2025_matched_control,10.0,,11.0,11.0,0.0,2.0,2.0,2.0,12.0,124822,8163
+2025-26,36,53,204646,Donyell Malen,MID,7,0,2025_matched_control,1.0,,0.0,0.0,0.0,0.0,0.0,0.0,1.0,124826,14456
+2025-26,40,603,613804,El Hadji Malick Diouf,DEF,90,0,2025_matched_control,5.0,,5.0,8.0,3.0,4.0,0.0,0.0,8.0,124830,145347

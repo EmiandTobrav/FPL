@@ -1,0 +1,1115 @@
+season,fixture,element,code,name_fpl,name_source,position,minutes,source_minutes,minute_difference,goals_scored,source_goals,expected_team,source_team,identity_ok
+2022-23,8,403,83283,Nathan Redmond,Nathan Redmond,MID,1,1.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,2,58,56872,Junior Stanislas,Junior Stanislas,MID,1,1.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,3,150,440323,Armando Broja,Armando Broja,FWD,15,15.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,7,366,119471,Fabian Schär,Fabian Schär,DEF,90,90.0,0.0,1,1.0,Newcastle,Newcastle,True
+2022-23,6,249,37642,Jonny Evans,Jonny Evans,DEF,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,7,394,242898,Brennan Johnson,Brennan Johnson,FWD,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,1,514,438464,Cheick Doucouré,Cheick Oumar Doucouré,MID,74,75.0,1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,1,158,66975,Luka Milivojevic,Luka Milivojevic,MID,15,15.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,6,272,444463,Wesley Fofana,Wesley Fofana,DEF,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,4,281,116535,Alisson Ramses Becker,Alisson Becker,GK,90,90.0,0.0,0,,Liverpool,Liverpool,False
+2022-23,5,237,248937,Sam Greenwood,Sam Greenwood,FWD,17,17.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,4,209,109646,Tosin Adarabioyo,Tosin Adarabioyo,DEF,90,90.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,4,213,155529,Marek Rodák,Marek Rodak,GK,90,90.0,0.0,0,,Fulham,Fulham,False
+2022-23,7,359,90105,Ryan Fraser,Ryan Fraser,MID,9,9.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,7,354,60689,Chris Wood,Chris Wood,FWD,1,1.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,5,479,151589,Leander Dendoncker,Leander Dendoncker,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,4,210,128389,Aleksandar Mitrović,Aleksandar Mitrovic,FWD,90,90.0,0.0,2,2.0,Fulham,Fulham,True
+2022-23,7,373,200089,Joe Willock,Joseph Willock,MID,79,80.0,1.0,0,0.0,Newcastle,Newcastle,True
+2022-23,8,321,514356,Roméo Lavia,Romeo Lavia,MID,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,1,163,108413,Will Hughes,Will Hughes,MID,4,4.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,8,512,193204,Joe Ayodele-Aribo,Joe Aribo,MID,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,7,536,179519,Orel Mangala,Orel Mangala,MID,15,15.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,8,443,221632,Cristian Romero,Cristian Romero,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,5,233,221399,Jack Harrison,Jack Harrison,MID,90,90.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,1,157,57328,Nathaniel Clyne,Nathaniel Clyne,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,8,405,91047,Stuart Armstrong,Stuart Armstrong,MID,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,8,402,78056,Oriol Romeu Vidal,Oriol Romeu,MID,74,75.0,1.0,0,0.0,Southampton,Southampton,True
+2022-23,5,225,80954,Rodrigo Moreno,Rodrigo,MID,64,65.0,1.0,1,1.0,Leeds,Leeds,True
+2022-23,8,420,450527,Mohammed Salisu,Mohammed Salisu,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,1,168,231747,Jean-Philippe Mateta,Jean-Philippe Mateta,FWD,32,32.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,2,67,155408,Lewis Cook,Lewis Cook,MID,18,18.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,7,398,172649,Dean Henderson,Dean Henderson,GK,90,90.0,0.0,0,,Nott'm Forest,Nott'm Forest,False
+2022-23,3,192,194164,Mason Holgate,Mason Holgate,DEF,72,72.0,0.0,0,0.0,Everton,Everton,True
+2022-23,5,223,72222,Mateusz Klich,Mateusz Klich,MID,25,25.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,4,274,15157,James Milner,James Milner,MID,31,31.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,6,515,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,31,31.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,5,242,462635,Joe Gelhardt,Joe Gelhardt,FWD,6,6.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,2,50,165659,Diego Carlos Santos Silva,Diego Carlos,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,8,431,95715,Lucas Rodrigues Moura da Silva,Lucas Moura,MID,4,4.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,6,526,51927,Ben Mee,Ben Mee,DEF,58,59.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,5,506,200785,Tyler Adams,Tyler Adams,MID,90,90.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,2,72,229600,Mark Travers,Mark Travers,GK,90,90.0,0.0,0,,Bournemouth,Bournemouth,False
+2022-23,2,76,447932,Jordan Zemura,Jordan Zemura,DEF,90,90.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,6,80,144485,Ivan Toney,Ivan Toney,FWD,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2022-23,6,78,61810,Pontus Jansson,Pontus Jansson,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,7,397,210156,Taiwo Awoniyi,Taiwo Awoniyi,FWD,27,27.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,8,418,431131,Moussa Djenepo,Moussa Djenepo,MID,71,72.0,1.0,0,0.0,Southampton,Southampton,True
+2022-23,5,493,222531,Morgan Gibbs-White,Morgan Gibbs-White,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,2,69,158499,Ryan Christie,Ryan Christie,MID,4,4.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,2,43,199796,Matty Cash,Matty Cash,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,3,194,224967,Vitalii Mykolenko,Vitalii Mykolenko,DEF,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,2,66,154566,Dominic Solanke,Dominic Solanke,FWD,90,89.0,-1.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,6,86,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,3,147,228286,Edouard Mendy,Edouard Mendy,GK,90,90.0,0.0,0,,Chelsea,Chelsea,False
+2022-23,8,433,132015,Pierre-Emile Højbjerg,Pierre-Emile Højbjerg,MID,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,6,257,155569,Daniel Amartey,Daniel Amartey,DEF,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,3,195,232826,Anthony Gordon,Anthony Gordon,MID,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,6,81,154561,David Raya Martin,David Raya,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2022-23,6,510,472713,Aaron Hickey,Aaron Hickey,DEF,83,83.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,3,531,216054,Rúben Nascimento Vinagre,Ruben Vinagre,DEF,20,20.0,0.0,0,0.0,Everton,Everton,True
+2022-23,5,246,427637,Brenden Aaronson,Brenden Aaronson,MID,84,84.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,6,254,95463,Danny Ward,Danny Ward,GK,90,90.0,0.0,0,,Leicester,Leicester,False
+2022-23,1,165,174874,Joachim Andersen,Joachim Andersen,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,8,404,88900,Jack Stephens,Jack Stephens,DEF,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,6,265,203341,Wilfred Ndidi,Wilfred Ndidi,MID,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,8,410,171771,Jan Bednarek,Jan Bednarek,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,6,95,446008,Bryan Mbeumo,Bryan Mbeumo,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,2,33,101188,Lucas Digne,Lucas Digne,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,6,94,432160,Shandon Baptiste,Shandon Baptiste,MID,17,17.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,1,13,223340,Bukayo Saka,Bukayo Saka,MID,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,2,73,235530,Lloyd Kelly,Lloyd Kelly,DEF,90,90.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,4,285,169187,Trent Alexander-Arnold,Trent Alexander-Arnold,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,6,266,215413,Kiernan Dewsbury-Hall,Kiernan Dewsbury-Hall,MID,72,73.0,1.0,1,1.0,Leicester,Leicester,True
+2022-23,4,283,118748,Mohamed Salah,Mohamed Salah,MID,90,90.0,0.0,1,1.0,Liverpool,Liverpool,True
+2022-23,1,6,167199,Thomas Partey,Thomas Partey,MID,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,8,422,456350,Gavin Bazunu,Gavin Bazunu,GK,90,90.0,0.0,0,,Southampton,Southampton,False
+2022-23,2,54,433979,Cameron Archer,Cameron Archer,FWD,8,9.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,3,139,172850,Ben Chilwell,Ben Chilwell,DEF,64,65.0,1.0,0,0.0,Chelsea,Chelsea,True
+2022-23,1,26,462424,William Saliba,William Saliba,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,2,42,195546,Emiliano Buendía Stati,Emiliano Buendia,MID,45,45.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,8,428,85971,Son Heung-min,Heung-Min Son,MID,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,1,15,225321,Aaron Ramsdale,Aaron Ramsdale,GK,90,90.0,0.0,0,,Arsenal,Arsenal,False
+2022-23,1,170,244723,Tyrick Mitchell,Tyrick Mitchell,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,5,484,214048,Max Kilman,Max Kilman,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,3,534,433154,Dwight McNeil,Dwight McNeil,MID,60,61.0,1.0,0,0.0,Everton,Everton,True
+2022-23,3,134,116594,N'Golo Kanté,N'Golo Kanté,MID,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,7,523,114241,Harry Toffolo,Harry Toffolo,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,2,64,152551,Jefferson Lerma Solís,Jefferson Lerma,MID,90,90.0,0.0,1,1.0,Bournemouth,Bournemouth,True
+2022-23,2,44,199798,Ezri Konsa Ngoyo,Ezri Konsa,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,2,71,223911,Chris Mepham,Chris Mepham,DEF,90,90.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,7,395,244930,Alex Mighten,Alex Mighten,MID,7,7.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,6,83,183656,Josh Dasilva,Joshua Dasilva,MID,31,31.0,0.0,1,1.0,Brentford,Brentford,True
+2022-23,4,279,92217,Roberto Firmino,Roberto Firmino,FWD,50,51.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,4,277,61558,Thiago Alcántara do Nascimento,Thiago Alcántara,MID,50,51.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,4,220,154296,João Palhinha Gonçalves,Joao Palhinha,MID,90,90.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,7,357,77794,Kieran Trippier,Kieran Trippier,DEF,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,7,507,199170,Moussa Niakhaté,Moussa Niakhaté,DEF,82,83.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,8,409,158534,Kyle Walker-Peters,Kyle Walker-Peters,DEF,90,89.0,-1.0,0,0.0,Southampton,Southampton,True
+2022-23,7,371,180974,Joelinton Cássio Apolinário de Lira,Joelinton,MID,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,3,186,153133,Alex Iwobi,Alex Iwobi,MID,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,2,68,156687,Ben Pearson,Ben Pearson,MID,71,72.0,1.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,4,276,60914,Joel Matip,Joel Matip,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,7,377,220237,Sven Botman,Sven Botman,DEF,1,1.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,4,282,116643,Fabio Henrique Tavares,Fabinho,MID,58,59.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,1,160,82403,Wilfried Zaha,Wilfried Zaha,MID,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,7,370,180135,Sean Longstaff,Sean Longstaff,MID,10,10.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,6,91,228044,Mads Bech Sørensen,Mads Bech,DEF,6,7.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,1,3,84450,Granit Xhaka,Granit Xhaka,MID,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,8,440,202993,Rodrigo Bentancur,Rodrigo Bentancur,MID,85,86.0,1.0,0,0.0,Spurs,Spurs,True
+2022-23,3,142,184341,Mason Mount,Mason Mount,MID,64,65.0,1.0,0,0.0,Chelsea,Chelsea,True
+2022-23,4,562,235674,Manor Solomon,Manor Solomon,MID,24,24.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,3,145,219847,Kai Havertz,Kai Havertz,FWD,74,75.0,1.0,0,0.0,Chelsea,Chelsea,True
+2022-23,8,416,240143,Ibrahima Diallo,Ibrahima Diallo,MID,15,15.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,8,408,155511,Adam Armstrong,Adam Armstrong,FWD,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,7,388,208912,Joe Worrall,Joe Worrall,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,3,130,85955,Jorge Luiz Frello Filho,Jorginho,MID,90,89.0,-1.0,1,1.0,Chelsea,Chelsea,True
+2022-23,4,346,156689,Andreas Hoelgebaum Pereira,Andreas Pereira,MID,88,89.0,1.0,0,0.0,Fulham,Fulham,True
+2022-23,1,313,206325,Oleksandr Zinchenko,Oleksandr Zinchenko,DEF,82,83.0,1.0,0,0.0,Arsenal,Arsenal,True
+2022-23,8,445,241157,Emerson Leite de Souza Junior,Emerson Royal,DEF,86,87.0,1.0,0,0.0,Spurs,Spurs,True
+2022-23,5,483,200600,Daniel Castelo Podence,Daniel Podence,MID,90,90.0,0.0,1,1.0,Wolves,Wolves,True
+2022-23,3,112,179268,Marc Cucurella Saseta,Marc Cucurella,DEF,15,15.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,2,40,178301,Ollie Watkins,Ollie Watkins,FWD,24,24.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,2,57,54469,Adam Smith,Adam Smith,DEF,90,90.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,7,527,109322,Jesse Lingard,Jesse Lingard,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,3,197,243571,Nathan Patterson,Nathan Patterson,DEF,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,7,365,114243,Jacob Murphy,Jacob Murphy,MID,1,1.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,7,391,217331,Sam Surridge,Sam Surridge,FWD,62,63.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,6,255,101668,Jamie Vardy,Jamie Vardy,FWD,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,1,10,198869,Benjamin White,Ben White,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,2,47,232653,Jacob Ramsey,Jacob Ramsey,MID,45,45.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,7,368,170137,Allan Saint-Maximin,Allan Saint-Maximin,MID,89,89.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,2,62,128340,Kieffer Moore,Kieffer Moore,FWD,90,90.0,0.0,1,1.0,Bournemouth,Bournemouth,True
+2022-23,5,486,247632,Pedro Lomba Neto,Pedro Neto,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,6,85,194010,Rico Henry,Rico Henry,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,6,541,434662,Halil Dervişoğlu,Halil Dervisoglu,FWD,6,7.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,4,201,82514,Tim Ream,Tim Ream,DEF,90,90.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,5,481,184754,Hwang Hee-chan,Hee-Chan Hwang,MID,84,85.0,1.0,0,0.0,Wolves,Wolves,True
+2022-23,4,294,444884,Harvey Elliott,Harvey Elliott,MID,39,39.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,5,230,193645,Robin Koch,Robin Koch,DEF,90,90.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,8,414,213482,Yan Valery,Yan Valery,DEF,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,5,487,448514,Rayan Aït-Nouri,Rayan Ait Nouri,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,5,568,461026,Chem Campbell,Chem Campbell,MID,5,5.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,6,89,216646,Yoane Wissa,Yoane Wissa,MID,83,83.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,3,199,17761,James Tarkowski,James Tarkowski,DEF,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,8,429,87835,Matt Doherty,Matt Doherty,DEF,3,3.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,8,430,93264,Eric Dier,Eric Dier,DEF,90,90.0,0.0,1,1.0,Spurs,Spurs,True
+2022-23,3,136,126187,Ruben Loftus-Cheek,Ruben Loftus-Cheek,MID,25,25.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,7,524,243345,Lewis O'Brien,Lewis O'Brien,MID,74,75.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,1,19,444145,Gabriel Martinelli Silva,Gabriel Martinelli,MID,90,90.0,0.0,1,1.0,Arsenal,Arsenal,True
+2022-23,7,295,215136,Neco Williams,Neco Williams,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,2,37,122806,John McGinn,John McGinn,MID,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,6,271,245419,Patson Daka,Patson Daka,FWD,17,17.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,3,128,51090,Thiago Emiliano da Silva,Thiago Silva,DEF,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,3,185,121599,Abdoulaye Doucouré,Abdoulaye Doucouré,MID,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,5,238,437495,Illan Meslier,Illan Meslier,GK,90,90.0,0.0,0,,Leeds,Leeds,False
+2022-23,3,146,225796,Reece James,Reece James,DEF,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,6,258,166477,Timothy Castagne,Timothy Castagne,DEF,90,90.0,0.0,1,1.0,Leicester,Leicester,True
+2022-23,1,18,437742,Albert Sambi Lokonga,Albert Sambi Lokonga,MID,1,1.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,4,215,167074,Kenny Tete,Kenny Tete,DEF,90,90.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,7,356,75115,Callum Wilson,Callum Wilson,FWD,89,89.0,0.0,1,1.0,Newcastle,Newcastle,True
+2022-23,1,8,192895,Kieran Tierney,Kieran Tierney,DEF,7,7.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,5,227,106617,Patrick Bamford,Patrick Bamford,FWD,83,84.0,1.0,0,0.0,Leeds,Leeds,True
+2022-23,8,432,115556,Ben Davies,Ben Davies,DEF,85,86.0,1.0,0,0.0,Spurs,Spurs,True
+2022-23,5,478,149065,José Malheiro de Sá,José Sá,GK,90,90.0,0.0,0,,Wolves,Wolves,False
+2022-23,3,189,172632,Demarai Gray,Demarai Gray,MID,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,4,204,92259,Neeskens Kebano,Neeskens Kebano,MID,65,66.0,1.0,0,0.0,Fulham,Fulham,True
+2022-23,4,217,169528,Antonee Robinson,Antonee Robinson,DEF,90,90.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,3,182,111234,Jordan Pickford,Jordan Pickford,GK,90,90.0,0.0,0,,Everton,Everton,False
+2022-23,5,480,171317,Rúben da Silva Neves,Ruben Neves,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,2,31,98980,Emiliano Martínez Romero,Emiliano Martinez,GK,90,90.0,0.0,0,,Aston Villa,Aston Villa,False
+2022-23,6,79,128295,Christian Nørgaard,Christian Nørgaard,MID,72,73.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,7,385,168281,Scott McKenna,Scott McKenna,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,1,161,86417,Jeffrey Schlupp,Jeffrey Schlupp,MID,85,86.0,1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,2,46,230046,Douglas Luiz Soares de Paulo,Douglas Luiz,MID,8,8.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,1,159,80146,Jordan Ayew,Jordan Ayew,MID,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,4,284,122798,Andrew Robertson,Andrew Robertson,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,8,427,78830,Harry Kane,Harry Kane,FWD,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,1,28,205651,Gabriel Fernando de Jesus,Gabriel Jesus,FWD,82,83.0,1.0,0,0.0,Arsenal,Arsenal,True
+2022-23,3,193,198826,Ben Godfrey,Ben Godfrey,DEF,17,18.0,1.0,0,0.0,Everton,Everton,True
+2022-23,1,167,209036,Marc Guéhi,Marc Guehi,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,2,29,84583,Philippe Coutinho Correia,Philippe Coutinho,MID,81,81.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,7,358,78916,Dan Burn,Daniel Burn,DEF,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,3,181,108823,Dele Alli,Dele Alli,MID,29,29.0,0.0,0,0.0,Everton,Everton,True
+2022-23,5,228,149915,Diego Llorente,Diego Llorente,DEF,90,90.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,1,173,450535,Malcolm Ebiowei,Malcolm Ebiowei,MID,4,4.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,8,444,227127,Yves Bissouma,Yves Bissouma,MID,4,4.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,3,148,232787,Conor Gallagher,Conor Gallagher,MID,1,1.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,3,520,86129,Kalidou Koulibaly,Kalidou Koulibaly,DEF,74,75.0,1.0,0,0.0,Chelsea,Chelsea,True
+2022-23,2,53,226944,Boubacar Kamara,Boubacar Kamara,MID,81,82.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,8,407,101178,James Ward-Prowse,James Ward-Prowse,MID,90,90.0,0.0,1,1.0,Southampton,Southampton,True
+2022-23,5,240,450070,Crysencio Summerville,Crysencio Summerville,MID,5,6.0,1.0,0,0.0,Leeds,Leeds,True
+2022-23,3,127,41328,César Azpilicueta,César Azpilicueta,DEF,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,6,88,207283,Mathias Jensen,Mathias Jensen,MID,58,59.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,8,448,45034,Ivan Perišić,Ivan Perisic,DEF,24,24.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,1,11,205533,Eddie Nketiah,Edward Nketiah,FWD,7,7.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,4,280,97032,Virgil van Dijk,Virgil van Dijk,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,3,188,164511,Yerry Mina,Yerry Mina,DEF,69,70.0,1.0,0,0.0,Everton,Everton,True
+2022-23,8,446,445044,Dejan Kulusevski,Dejan Kulusevski,MID,85,86.0,1.0,1,1.0,Spurs,Spurs,True
+2022-23,2,45,215711,Leon Bailey,Leon Bailey,MID,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,6,261,172780,James Maddison,James Maddison,MID,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,3,304,103955,Raheem Sterling,Raheem Sterling,MID,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,4,275,56979,Jordan Henderson,Jordan Henderson,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,5,516,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,3,140,176413,Christian Pulisic,Christian Pulisic,MID,25,25.0,0.0,0,0.0,Chelsea,Chelsea,True
+2022-23,5,235,222694,Pascal Struijk,Pascal Struijk,DEF,90,90.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,7,367,169359,Matt Targett,Matt Targett,DEF,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,4,297,447203,Darwin Núñez Ribeiro,Darwin Nunez,FWD,39,39.0,0.0,1,1.0,Liverpool,Liverpool,True
+2022-23,5,245,234370,Marc Roca Junqué,Marc Roca,MID,72,73.0,1.0,0,0.0,Leeds,Leeds,True
+2022-23,4,105,61933,Shane Duffy,Shane Duffy,DEF,1,1.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,5,244,224209,Rasmus Kristensen,Rasmus Kristensen,DEF,90,90.0,0.0,0,0.0,Leeds,Leeds,True
+2022-23,2,30,84939,Danny Ings,Danny Ings,FWD,65,66.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,2,535,201658,Marcus Tavernier,Marcus Tavernier,MID,85,86.0,1.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,7,369,179018,Miguel Almirón Rejala,Miguel Almiron,MID,80,81.0,1.0,0,0.0,Newcastle,Newcastle,True
+2022-23,1,166,199670,Odsonne Edouard,Odsonne Edouard,FWD,57,58.0,1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,7,381,58771,Jack Colback,Jack Colback,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2022-23,4,200,76357,Tom Cairney,Tom Cairney,MID,1,1.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,5,477,114128,Jonathan Castro Otto,Jonny,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,6,259,166989,Youri Tielemans,Youri Tielemans,MID,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,8,417,244560,Romain Perraud,Romain Perraud,DEF,18,18.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,4,211,153366,Harrison Reed,Harrison Reed,MID,90,90.0,0.0,0,0.0,Fulham,Fulham,True
+2022-23,4,296,244858,Fábio Freitas Gouveia Carvalho,Fabio Carvalho,MID,12,12.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,8,513,171101,Clément Lenglet,Clément Lenglet,DEF,4,4.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,1,169,232413,Eberechi Eze,Eberechi Eze,MID,85,86.0,1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2022-23,4,293,244731,Luis Díaz,Luis Diaz,MID,77,78.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,4,205,96994,Bobby De Cordova-Reid,Bobby Reid,MID,90,89.0,-1.0,0,0.0,Fulham,Fulham,True
+2022-23,7,374,208706,Bruno Guimarães Rodriguez Moura,Bruno Guimaraes,MID,90,89.0,-1.0,0,0.0,Newcastle,Newcastle,True
+2022-23,1,16,226597,Gabriel dos Santos Magalhães,Gabriel,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2022-23,1,7,184029,Martin Ødegaard,Martin Ødegaard,MID,90,89.0,-1.0,0,0.0,Arsenal,Arsenal,True
+2022-23,1,152,40836,Vicente Guaita,Vicente Guaita,GK,90,90.0,0.0,0,,Crystal Palace,Crystal Palace,False
+2022-23,6,268,220627,James Justin,James Justin,DEF,90,90.0,0.0,0,0.0,Leicester,Leicester,True
+2022-23,8,425,37915,Hugo Lloris,Hugo Lloris,GK,90,90.0,0.0,0,,Spurs,Spurs,False
+2022-23,7,376,98747,Nick Pope,Nick Pope,GK,90,90.0,0.0,0,,Newcastle,Newcastle,False
+2022-23,8,436,184349,Ryan Sessegnon,Ryan Sessegnon,DEF,65,66.0,1.0,1,1.0,Spurs,Spurs,True
+2022-23,2,70,168991,Philip Billing,Philip Billing,MID,90,90.0,0.0,0,0.0,Bournemouth,Bournemouth,True
+2022-23,71,411,200439,Che Adams,Che Adams,FWD,70,71.0,1.0,0,0.0,Southampton,Southampton,True
+2022-23,71,479,151589,Leander Dendoncker,Leander Dendoncker,MID,23,23.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,512,193204,Joe Ayodele-Aribo,Joe Aribo,MID,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,405,91047,Stuart Armstrong,Stuart Armstrong,MID,19,19.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,420,450527,Mohammed Salisu,Mohammed Salisu,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,622,515571,Juan Larios López,Juan Larios,DEF,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,528,476888,Sékou Mara,Sékou Mara,FWD,19,19.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,423,477386,Armel Bella-Kotchap,Armel Bella-Kotchap,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,418,431131,Moussa Djenepo,Moussa Djenepo,MID,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,33,101188,Lucas Digne,Lucas Digne,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,422,456350,Gavin Bazunu,Gavin Bazunu,GK,90,90.0,0.0,0,,Southampton,Southampton,False
+2022-23,71,42,195546,Emiliano Buendía Stati,Emiliano Buendia,MID,23,23.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,44,199798,Ezri Konsa Ngoyo,Ezri Konsa,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,409,158534,Kyle Walker-Peters,Kyle Walker-Peters,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,406,96787,Mohamed Elyounoussi,Mohamed Elyounoussi,MID,78,79.0,1.0,0,0.0,Southampton,Southampton,True
+2022-23,71,416,240143,Ibrahima Diallo,Ibrahima Diallo,MID,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,408,155511,Adam Armstrong,Adam Armstrong,FWD,70,71.0,1.0,0,0.0,Southampton,Southampton,True
+2022-23,71,40,178301,Ollie Watkins,Ollie Watkins,FWD,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,47,232653,Jacob Ramsey,Jacob Ramsey,MID,66,67.0,1.0,1,1.0,Aston Villa,Aston Villa,True
+2022-23,71,37,122806,John McGinn,John McGinn,MID,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,39,149484,Tyrone Mings,Tyrone Mings,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,31,98980,Emiliano Martínez Romero,Emiliano Martinez,GK,90,90.0,0.0,0,,Aston Villa,Aston Villa,False
+2022-23,71,46,230046,Douglas Luiz Soares de Paulo,Douglas Luiz,MID,46,46.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,29,84583,Philippe Coutinho Correia,Philippe Coutinho,MID,83,84.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,53,226944,Boubacar Kamara,Boubacar Kamara,MID,43,44.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,407,101178,James Ward-Prowse,James Ward-Prowse,MID,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,45,215711,Leon Bailey,Leon Bailey,MID,66,67.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,624,490503,Samuel Edozie,Samuel Edozie,MID,11,11.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,30,84939,Danny Ings,Danny Ings,FWD,6,6.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,71,417,244560,Romain Perraud,Romain Perraud,DEF,45,45.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,71,538,18892,Ashley Young,Ashley Young,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2022-23,128,366,119471,Fabian Schär,Fabian Schär,DEF,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,354,60689,Chris Wood,Chris Wood,FWD,2,2.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,373,200089,Joe Willock,Joseph Willock,MID,74,75.0,1.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,431,95715,Lucas Rodrigues Moura da Silva,Lucas Moura,MID,24,24.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,428,85971,Son Heung-min,Heung-Min Son,MID,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,357,77794,Kieran Trippier,Kieran Trippier,DEF,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,371,180974,Joelinton Cássio Apolinário de Lira,Joelinton,MID,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,377,220237,Sven Botman,Sven Botman,DEF,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,370,180135,Sean Longstaff,Sean Longstaff,MID,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,440,202993,Rodrigo Bentancur,Rodrigo Bentancur,MID,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,445,241157,Emerson Leite de Souza Junior,Emerson Royal,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,365,114243,Jacob Murphy,Jacob Murphy,MID,15,15.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,429,87835,Matt Doherty,Matt Doherty,DEF,9,9.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,430,93264,Eric Dier,Eric Dier,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,356,75115,Callum Wilson,Callum Wilson,FWD,87,88.0,1.0,1,1.0,Newcastle,Newcastle,True
+2022-23,128,432,115556,Ben Davies,Ben Davies,DEF,9,9.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,427,78830,Harry Kane,Harry Kane,FWD,90,90.0,0.0,1,1.0,Spurs,Spurs,True
+2022-23,128,358,78916,Dan Burn,Daniel Burn,DEF,90,90.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,444,227127,Yves Bissouma,Yves Bissouma,MID,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,448,45034,Ivan Perišić,Ivan Perisic,DEF,29,29.0,0.0,0,0.0,Spurs,Spurs,True
+2022-23,128,435,173904,Davinson Sánchez,Davinson Sánchez,DEF,80,81.0,1.0,0,0.0,Spurs,Spurs,True
+2022-23,128,349,50232,Jonjo Shelvey,Jonjo Shelvey,MID,1,1.0,0.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,369,179018,Miguel Almirón Rejala,Miguel Almiron,MID,90,90.0,0.0,1,1.0,Newcastle,Newcastle,True
+2022-23,128,513,171101,Clément Lenglet,Clément Lenglet,DEF,80,81.0,1.0,0,0.0,Spurs,Spurs,True
+2022-23,128,374,208706,Bruno Guimarães Rodriguez Moura,Bruno Guimaraes,MID,88,89.0,1.0,0,0.0,Newcastle,Newcastle,True
+2022-23,128,425,37915,Hugo Lloris,Hugo Lloris,GK,90,90.0,0.0,0,,Spurs,Spurs,False
+2022-23,128,376,98747,Nick Pope,Nick Pope,GK,90,90.0,0.0,0,,Newcastle,Newcastle,False
+2022-23,128,441,209042,Oliver Skipp,Oliver Skipp,MID,65,66.0,1.0,0,0.0,Spurs,Spurs,True
+2022-23,128,436,184349,Ryan Sessegnon,Ryan Sessegnon,DEF,60,61.0,1.0,0,0.0,Spurs,Spurs,True
+2022-23,183,281,116535,Alisson Ramses Becker,Alisson Becker,GK,90,90.0,0.0,0,,Liverpool,Liverpool,False
+2022-23,183,278,81880,Alex Oxlade-Chamberlain,Alex Oxlade-Chamberlain,MID,82,83.0,1.0,1,1.0,Liverpool,Liverpool,True
+2022-23,183,290,204716,Ibrahima Konaté,Ibrahima Konaté,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,515,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,16,16.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,526,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,86,204580,Vitaly Janelt,Vitaly Janelt,MID,86,87.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,183,81,154561,David Raya Martin,David Raya,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2022-23,183,95,446008,Bryan Mbeumo,Bryan Mbeumo,FWD,87,88.0,1.0,1,1.0,Brentford,Brentford,True
+2022-23,183,287,175592,Naby Keita,Naby Keita,MID,45,45.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,285,169187,Trent Alexander-Arnold,Trent Alexander-Arnold,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,283,118748,Mohamed Salah,Mohamed Salah,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,595,48760,Mathias Jorgensen,Mathias Jørgensen,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,83,183656,Josh Dasilva,Joshua Dasilva,MID,16,16.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,277,61558,Thiago Alcántara do Nascimento,Thiago Alcántara,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,87,205836,Saman Ghoddos,Saman Ghoddos,MID,3,3.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,276,60914,Joel Matip,Joel Matip,DEF,45,45.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,282,116643,Fabio Henrique Tavares,Fabinho,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,90,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,91,228044,Mads Bech Sørensen,Mads Bech,DEF,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,292,214285,Konstantinos Tsimikas,Konstantinos Tsimikas,DEF,45,45.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,85,194010,Rico Henry,Rico Henry,DEF,90,89.0,-1.0,0,0.0,Brentford,Brentford,True
+2022-23,183,82,174932,Sergi Canós Tenés,Sergi Canos,DEF,2,2.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,294,444884,Harvey Elliott,Harvey Elliott,MID,45,45.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,89,216646,Yoane Wissa,Yoane Wissa,MID,73,74.0,1.0,1,1.0,Brentford,Brentford,True
+2022-23,183,291,206915,Curtis Jones,Curtis Jones,MID,7,7.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,79,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,183,284,122798,Andrew Robertson,Andrew Robertson,DEF,45,45.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,88,207283,Mathias Jensen,Mathias Jensen,MID,73,74.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,183,280,97032,Virgil van Dijk,Virgil van Dijk,DEF,45,45.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,297,447203,Darwin Núñez Ribeiro,Darwin Nunez,FWD,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,183,92,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,227,281,116535,Alisson Ramses Becker,Alisson Becker,GK,90,90.0,0.0,0,,Liverpool,Liverpool,False
+2022-23,227,686,218997,Ellis Simms,Ellis Simms,FWD,60,61.0,1.0,0,0.0,Everton,Everton,True
+2022-23,227,288,194634,Diogo Teixeira da Silva,Diogo Jota,FWD,20,20.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,274,15157,James Milner,James Milner,MID,10,10.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,194,224967,Vitalii Mykolenko,Vitaliy Mykolenko,DEF,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,287,175592,Naby Keita,Naby Keita,MID,1,1.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,577,449871,Amadou Onana,Amadou Onana,MID,77,78.0,1.0,0,0.0,Everton,Everton,True
+2022-23,227,285,169187,Trent Alexander-Arnold,Trent Alexander-Arnold,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,283,118748,Mohamed Salah,Mohamed Salah,MID,89,89.0,0.0,1,1.0,Liverpool,Liverpool,True
+2022-23,227,534,433154,Dwight McNeil,Dwight McNeil,MID,77,78.0,1.0,0,0.0,Everton,Everton,True
+2022-23,227,279,92217,Roberto Firmino,Roberto Firmino,FWD,10,10.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,186,153133,Alex Iwobi,Alex Iwobi,MID,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,276,60914,Joel Matip,Joel Matip,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,282,116643,Fabio Henrique Tavares,Fabinho,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,190,173807,Tom Davies,Tom Davies,MID,12,12.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,611,80801,Idrissa Gueye,Idrissa Gana Gueye,MID,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,294,444884,Harvey Elliott,Harvey Elliott,MID,1,1.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,199,17761,James Tarkowski,James Tarkowski,DEF,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,564,535928,Stefan Bajcetic,Stefan Bajcetic,MID,89,89.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,110,115382,Neal Maupay,Neal Maupay,FWD,12,12.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,185,121599,Abdoulaye Doucouré,Abdoulaye Doucouré,MID,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,475,94147,Conor Coady,Conor Coady,DEF,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,189,172632,Demarai Gray,Demarai Gray,MID,29,29.0,0.0,0,0.0,Everton,Everton,True
+2022-23,227,182,111234,Jordan Pickford,Jordan Pickford,GK,90,90.0,0.0,0,,Everton,Everton,False
+2022-23,227,284,122798,Andrew Robertson,Andrew Robertson,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,680,243298,Cody Gakpo,Cody Gakpo,MID,79,80.0,1.0,1,1.0,Liverpool,Liverpool,True
+2022-23,227,286,171287,Joseph Gomez,Joseph Gomez,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,275,56979,Jordan Henderson,Jordan Henderson,MID,79,80.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,297,447203,Darwin Núñez Ribeiro,Darwin Nunez,FWD,69,70.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,227,178,59949,Seamus Coleman,Seamus Coleman,DEF,90,90.0,0.0,0,0.0,Everton,Everton,True
+2022-23,283,102,49262,Jason Steele,Jason Steele,GK,90,90.0,0.0,0,,Brighton,Brighton,False
+2022-23,283,526,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,283,80,144485,Ivan Toney,Ivan Toney,FWD,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2022-23,283,78,61810,Pontus Jansson,Pontus Jansson,DEF,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2022-23,283,559,460028,Levi Colwill,Levi Colwill,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,586,204214,Pervis Estupiñán,Pervis Estupinán,DEF,82,83.0,1.0,0,0.0,Brighton,Brighton,True
+2022-23,283,81,154561,David Raya Martin,David Raya,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2022-23,283,510,472713,Aaron Hickey,Aaron Hickey,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,283,107,109345,Solly March,Solly March,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,95,446008,Bryan Mbeumo,Bryan Mbeumo,FWD,78,79.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,283,106,83299,Lewis Dunk,Lewis Dunk,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,83,183656,Josh Dasilva,Joshua Dasilva,MID,17,17.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,283,87,205836,Saman Ghoddos,Saman Ghoddos,MID,5,5.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,283,103,50175,Danny Welbeck,Danny Welbeck,FWD,82,83.0,1.0,1,1.0,Brighton,Brighton,True
+2022-23,283,124,451340,Kaoru Mitoma,Kaoru Mitoma,MID,90,90.0,0.0,1,1.0,Brighton,Brighton,True
+2022-23,283,85,194010,Rico Henry,Rico Henry,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,283,89,216646,Yoane Wissa,Yoane Wissa,MID,11,11.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,283,120,486672,Moisés Caicedo Corozo,Moisés Caicedo,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,104,60307,Pascal Groß,Pascal Gross,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,79,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2022-23,283,125,474120,Julio Enciso,Julio Enciso,FWD,18,18.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,580,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,72,73.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,283,679,536916,Facundo Buonanotte,Facundo Buonanotte,MID,7,7.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,109,111478,Joël Veltman,Joel Veltman,DEF,71,72.0,1.0,0,0.0,Brighton,Brighton,True
+2022-23,283,88,207283,Mathias Jensen,Mathias Jensen,MID,84,85.0,1.0,0,0.0,Brentford,Brentford,True
+2022-23,283,123,450434,Deniz Undav,Deniz Undav,FWD,7,7.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,283,116,243016,Alexis Mac Allister,Alexis Mac Allister,MID,90,90.0,0.0,1,1.0,Brighton,Brighton,True
+2022-23,283,92,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2022-23,334,102,49262,Jason Steele,Jason Steele,GK,90,90.0,0.0,0,,Brighton,Brighton,False
+2022-23,334,586,204214,Pervis Estupiñán,Pervis Estupinán,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,558,490721,Hugo Bueno López,Hugo Bueno,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,721,448089,João Victor Gomes da Silva,Joao Gomes,MID,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,107,109345,Solly March,Solly March,MID,55,56.0,1.0,0,0.0,Brighton,Brighton,True
+2022-23,334,149,243568,Billy Gilmour,Billy Gilmour,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,106,83299,Lewis Dunk,Lewis Dunk,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,698,151086,Mario Lemina,Mario Lemina,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,459,60232,Craig Dawson,Craig Dawson,DEF,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,484,214048,Max Kilman,Max Kilman,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,719,509416,Yasin Ayari,Yasin Ayari,MID,10,10.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,103,50175,Danny Welbeck,Danny Welbeck,FWD,55,56.0,1.0,2,2.0,Brighton,Brighton,True
+2022-23,334,483,200600,Daniel Castelo Podence,Daniel Podence,MID,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,124,451340,Kaoru Mitoma,Kaoru Mitoma,MID,34,34.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,486,247632,Pedro Lomba Neto,Pedro Neto,MID,82,83.0,1.0,0,0.0,Wolves,Wolves,True
+2022-23,334,481,184754,Hwang Hee-chan,Hee-Chan Hwang,MID,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,108,110735,Adam Webster,Adam Webster,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,489,510362,Toti António Gomes,Toti Gomes,DEF,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,491,159533,Adama Traoré Diarra,Adama Traoré,MID,7,7.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,120,486672,Moisés Caicedo Corozo,Moisés Caicedo,MID,25,25.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,625,18507,Diego Da Silva Costa,Diego Costa,FWD,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,478,149065,José Malheiro de Sá,José Sá,GK,90,90.0,0.0,0,,Wolves,Wolves,False
+2022-23,334,589,465351,Matheus Luiz Nunes,Matheus Nunes,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,104,60307,Pascal Groß,Pascal Gross,MID,90,90.0,0.0,2,2.0,Brighton,Brighton,True
+2022-23,334,480,171317,Rúben da Silva Neves,Ruben Neves,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,482,200402,Nélson Cabral Semedo,Nélson Semedo,DEF,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,125,474120,Julio Enciso,Julio Enciso,FWD,64,65.0,1.0,0,0.0,Brighton,Brighton,True
+2022-23,334,679,536916,Facundo Buonanotte,Facundo Buonanotte,MID,34,34.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,334,109,111478,Joël Veltman,Joel Veltman,DEF,64,65.0,1.0,0,0.0,Brighton,Brighton,True
+2022-23,334,516,432830,Nathan Collins,Nathan Collins,DEF,45,45.0,0.0,0,0.0,Wolves,Wolves,True
+2022-23,334,123,450434,Deniz Undav,Deniz Undav,FWD,79,80.0,1.0,2,2.0,Brighton,Brighton,True
+2022-23,334,116,243016,Alexis Mac Allister,Alexis Mac Allister,MID,25,25.0,0.0,0,0.0,Brighton,Brighton,True
+2022-23,380,770,494543,Dominic Ballard,Dominic Ballard,FWD,4,4.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,321,514356,Roméo Lavia,Romeo Lavia,MID,62,62.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,405,91047,Stuart Armstrong,Stuart Armstrong,MID,26,26.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,288,194634,Diogo Teixeira da Silva,Diogo Jota,FWD,90,90.0,0.0,2,2.0,Liverpool,Liverpool,True
+2022-23,380,274,15157,James Milner,James Milner,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,731,504783,Kamaldeen Sulemana,Kamaldeen Sulemana,MID,85,86.0,1.0,2,2.0,Southampton,Southampton,True
+2022-23,380,410,171771,Jan Bednarek,Jan Bednarek,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,285,169187,Trent Alexander-Arnold,Trent Alexander-Arnold,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,283,118748,Mohamed Salah,Mohamed Salah,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,693,502697,Carlos Alcaraz,Carlos Alcaraz,MID,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,413,212721,Lyanco Silveira Neves Vojnovic,Lyanco,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,279,92217,Roberto Firmino,Roberto Firmino,FWD,56,57.0,1.0,1,1.0,Liverpool,Liverpool,True
+2022-23,380,409,158534,Kyle Walker-Peters,Kyle Walker-Peters,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,276,60914,Joel Matip,Joel Matip,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,282,116643,Fabio Henrique Tavares,Fabinho,MID,56,57.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,406,96787,Mohamed Elyounoussi,Mohamed Elyounoussi,MID,63,64.0,1.0,0,0.0,Southampton,Southampton,True
+2022-23,380,408,155511,Adam Armstrong,Adam Armstrong,FWD,27,28.0,1.0,1,1.0,Southampton,Southampton,True
+2022-23,380,292,214285,Konstantinos Tsimikas,Konstantinos Tsimikas,DEF,56,57.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,294,444884,Harvey Elliott,Harvey Elliott,MID,33,33.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,716,184386,James Bree,James Bree,DEF,90,90.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,291,206915,Curtis Jones,Curtis Jones,MID,56,57.0,1.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,778,499724,Samuel Amo-Ameyaw,Samuel Amo-Ameyaw,MID,3,3.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,419,441191,Tino Livramento,Valentino Livramento,DEF,13,13.0,0.0,0,0.0,Southampton,Southampton,True
+2022-23,380,680,243298,Cody Gakpo,Cody Gakpo,MID,33,33.0,0.0,1,1.0,Liverpool,Liverpool,True
+2022-23,380,289,200720,Caoimhin Kelleher,Caoimhin Kelleher,GK,90,90.0,0.0,0,,Liverpool,Liverpool,False
+2022-23,380,407,101178,James Ward-Prowse,James Ward-Prowse,MID,86,87.0,1.0,1,1.0,Southampton,Southampton,True
+2022-23,380,286,171287,Joseph Gomez,Joseph Gomez,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,275,56979,Jordan Henderson,Jordan Henderson,MID,33,33.0,0.0,0,0.0,Liverpool,Liverpool,True
+2022-23,380,401,58376,Alex McCarthy,Alex McCarthy,GK,90,90.0,0.0,0,,Southampton,Southampton,False
+2022-23,380,400,20467,Theo Walcott,Theo Walcott,MID,76,77.0,1.0,0,0.0,Southampton,Southampton,True
+2022-23,380,293,244731,Luis Díaz,Luis Diaz,MID,33,33.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,1,344,165809,Bernardo Veiga de Carvalho e Silva,Bernardo Silva,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,341,211975,Manuel Akanji,Manuel Akanji,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,605,487702,Luca Koleosho,Luca Koleosho,MID,60,61.0,1.0,0,0.0,Burnley,Burnley,True
+2023-24,1,353,209244,Phil Foden,Phil Foden,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,182,441455,Victor da Silva,Vitinho,DEF,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,176,192290,Connor Roberts,Connor Roberts,DEF,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,159,183751,Manuel Benson Hedilazio,Manuel Benson,MID,16,16.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,184,511783,Anass Zaroury,Anass Zaroury,MID,30,28.0,-2.0,0,0.0,Burnley,Burnley,True
+2023-24,1,596,432720,James Trafford,James Trafford,GK,90,90.0,0.0,0,,Burnley,Burnley,False
+2023-24,1,357,146941,Aymeric Laporte,Aymeric Laporte,DEF,11,11.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,352,121160,Ederson Santana de Moraes,Ederson Moraes,GK,90,90.0,0.0,0,,Man City,Man City,False
+2023-24,1,358,477064,Rico Lewis,Rico Lewis,DEF,78,79.0,1.0,0,0.0,Man City,Man City,True
+2023-24,1,594,492831,Zeki Amdouni,Zeki Amdouni,FWD,60,61.0,1.0,0,0.0,Burnley,Burnley,True
+2023-24,1,173,216616,Dara O'Shea,Dara O'Shea,DEF,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,356,91651,Mateo Kovačić,Mateo Kovacic,MID,67,67.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,343,461358,Julián Álvarez,Julián Álvarez,FWD,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,165,172567,Josh Cullen,Josh Cullen,MID,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,360,432714,James McAtee,James McAtee,MID,1,1.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,355,223094,Erling Haaland,Erling Haaland,FWD,79,80.0,1.0,2,2.0,Man City,Man City,True
+2023-24,1,365,220566,Rodrigo Hernandez,Rodri,MID,90,90.0,0.0,1,1.0,Man City,Man City,True
+2023-24,1,349,61366,Kevin De Bruyne,Kevin De Bruyne,MID,22,23.0,1.0,0,0.0,Man City,Man City,True
+2023-24,1,475,207189,Sander Berge,Sander Berge,MID,90,89.0,-1.0,0,0.0,Burnley,Burnley,True
+2023-24,1,342,126184,Nathan Aké,Nathan Aké,DEF,78,79.0,1.0,0,0.0,Man City,Man City,True
+2023-24,1,157,487968,Ameen Al-Dakhil,Ameen Al Dakhil,DEF,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,608,179458,Jacob Bruun Larsen,Jacob Bruun Larsen,MID,29,29.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,616,477424,Joško Gvardiol,Josko Gvardiol,DEF,11,11.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,362,244851,Cole Palmer,Cole Palmer,MID,10,10.0,0.0,0,0.0,Man City,Man City,True
+2023-24,1,161,172782,Josh Brownhill,Josh Brownhill,MID,1,1.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,160,241231,Jordan Beyer,Jordan Beyer,DEF,73,74.0,1.0,0,0.0,Burnley,Burnley,True
+2023-24,1,168,435973,Lyle Foster,Lyle Foster,FWD,90,89.0,-1.0,0,0.0,Burnley,Burnley,True
+2023-24,1,600,83283,Nathan Redmond,Nathan Redmond,MID,1,1.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,1,369,58621,Kyle Walker,Kyle Walker,DEF,90,89.0,-1.0,0,0.0,Man City,Man City,True
+2023-24,59,714,152760,Divock Origi,Divock Origi,FWD,15,15.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,354,114283,Jack Grealish,Jack Grealish,MID,3,3.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,378,449434,Anthony Elanga,Anthony Elanga,MID,34,34.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,23,437626,Nuno Varela Tavares,Nuno Tavares,DEF,38,39.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,341,211975,Manuel Akanji,Manuel Akanji,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,205,209046,Callum Hudson-Odoi,Callum Hudson-Odoi,MID,34,34.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,353,209244,Phil Foden,Phil Foden,MID,86,87.0,1.0,1,1.0,Man City,Man City,True
+2023-24,59,713,210462,Ibrahim Sangaré,Ibrahim Sangaré,MID,55,56.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,457,199170,Moussa Niakhaté,Moussa Niakhaté,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,352,121160,Ederson Santana de Moraes,Ederson Moraes,GK,90,90.0,0.0,0,,Man City,Man City,False
+2023-24,59,439,90585,Willy Boly,Willy Boly,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,437,210156,Taiwo Awoniyi,Taiwo Awoniyi,FWD,74,75.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,447,222531,Morgan Gibbs-White,Morgan Gibbs-White,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,453,179519,Orel Mangala,Orel Mangala,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,343,461358,Julián Álvarez,Julián Álvarez,FWD,56,57.0,1.0,0,0.0,Man City,Man City,True
+2023-24,59,355,223094,Erling Haaland,Erling Haaland,FWD,90,90.0,0.0,1,1.0,Man City,Man City,True
+2023-24,59,604,159506,Olu Aina,Ola Aina,DEF,74,75.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,365,220566,Rodrigo Hernandez,Rodri,MID,45,46.0,1.0,0,0.0,Man City,Man City,True
+2023-24,59,342,126184,Nathan Aké,Nathan Aké,DEF,33,33.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,678,248875,Jérémy Doku,Jérémy Doku,MID,51,51.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,566,465351,Matheus Luiz Nunes,Matheus Nunes,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,350,171314,Rúben Gato Alves Dias,Ruben Dias,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,679,218430,Gonzalo Montiel,Gonzalo Montiel,DEF,51,51.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,616,477424,Joško Gvardiol,Josko Gvardiol,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,712,250199,Nicolás Domínguez,Nicolás Dominguez,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,436,80226,Serge Aurier,Serge Aurier,DEF,55,56.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,28,224068,Matt Turner,Matt Turner,GK,90,90.0,0.0,0,,Nott'm Forest,Nott'm Forest,False
+2023-24,59,468,60689,Chris Wood,Chris Wood,FWD,15,15.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,59,364,155405,Kalvin Phillips,Kalvin Phillips,MID,39,39.0,0.0,0,0.0,Man City,Man City,True
+2023-24,59,369,58621,Kyle Walker,Kyle Walker,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,83,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,83,178,103914,Charlie Taylor,Charlie Taylor,DEF,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,605,487702,Luca Koleosho,Luca Koleosho,MID,45,45.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,75,76.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,83,660,550839,Wilson Odobert,Wilson Odobert,MID,45,45.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,83,176,192290,Connor Roberts,Connor Roberts,DEF,77,78.0,1.0,0,0.0,Burnley,Burnley,True
+2023-24,83,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,83,258,115382,Neal Maupay,Neal Maupay,FWD,87,88.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,83,119,216646,Yoane Wissa,Yoane Wissa,FWD,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,83,108,446008,Bryan Mbeumo,Bryan Mbeumo,MID,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,83,596,432720,James Trafford,James Trafford,GK,90,90.0,0.0,0,,Burnley,Burnley,False
+2023-24,83,701,205836,Saman Ghoddos,Saman Ghoddos,MID,6,6.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,83,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,83,706,437748,Mike Trésor,Mike Tresor,MID,65,66.0,1.0,0,0.0,Burnley,Burnley,True
+2023-24,83,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,14,14.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,83,594,492831,Zeki Amdouni,Zeki Amdouni,FWD,75,76.0,1.0,0,0.0,Burnley,Burnley,True
+2023-24,83,674,247245,Hannes Delcroix,Hannes Delcroix,DEF,10,10.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,173,216616,Dara O'Shea,Dara O'Shea,DEF,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,165,172567,Josh Cullen,Josh Cullen,MID,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,83,111,428580,Frank Onyeka,Frank Onyeka,MID,83,84.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,83,475,207189,Sander Berge,Sander Berge,MID,65,66.0,1.0,0,0.0,Burnley,Burnley,True
+2023-24,83,106,207283,Mathias Jensen,Mathias Jensen,MID,75,76.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,83,157,487968,Ameen Al-Dakhil,Ameen Al Dakhil,DEF,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,620,501284,Michael Olakigbe,Michael Olakigbe,MID,2,2.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,83,608,179458,Jacob Bruun Larsen,Jacob Bruun Larsen,MID,14,14.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,120,508395,Yegor Yarmolyuk,Yehor Yarmoliuk,MID,14,14.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,83,161,172782,Josh Brownhill,Josh Brownhill,MID,24,24.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,168,435973,Lyle Foster,Lyle Foster,FWD,90,90.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,83,600,83283,Nathan Redmond,Nathan Redmond,MID,14,14.0,0.0,0,0.0,Burnley,Burnley,True
+2023-24,95,105,204580,Vitaly Janelt,Vitaly Janelt,MID,75,76.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,95,206,225796,Reece James,Reece James,DEF,23,23.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,613,503714,Lesley Ugochukwu,Lesley Ugochukwu,MID,9,9.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,95,198,179268,Marc Cucurella Saseta,Marc Cucurella,DEF,80,81.0,1.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,197,460028,Levi Colwill,Levi Colwill,DEF,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,258,115382,Neal Maupay,Neal Maupay,FWD,14,14.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,119,216646,Yoane Wissa,Yoane Wissa,FWD,75,76.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,95,108,446008,Bryan Mbeumo,Bryan Mbeumo,MID,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,95,701,205836,Saman Ghoddos,Saman Ghoddos,MID,6,6.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,211,517052,Nicolas Jackson,Nicolas Jackson,FWD,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,609,441302,Ian Maatsen,Ian Maatsen,MID,23,23.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,208,248857,Noni Madueke,Noni Madueke,MID,66,67.0,1.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,95,111,428580,Frank Onyeka,Frank Onyeka,MID,26,26.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,104,472713,Aaron Hickey,Aaron Hickey,DEF,83,84.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,95,106,207283,Mathias Jensen,Mathias Jensen,MID,63,64.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,95,677,617054,Deivid Washington de Souza Eugênio,Deivid Washington,FWD,9,9.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,202,232787,Conor Gallagher,Conor Gallagher,MID,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,362,244851,Cole Palmer,Cole Palmer,MID,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,120,508395,Yegor Yarmolyuk,Yehor Yarmoliuk,MID,14,14.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,95,611,220362,Axel Disasi,Axel Disasi,DEF,66,67.0,1.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,126,486672,Moisés Caicedo Corozo,Moisés Caicedo,MID,80,81.0,1.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,217,51090,Thiago Emiliano da Silva,Thiago Silva,DEF,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,216,103955,Raheem Sterling,Raheem Sterling,MID,90,90.0,0.0,0,0.0,Chelsea,Chelsea,True
+2023-24,95,145,215059,Robert Sánchez,Robert Sánchez,GK,90,90.0,0.0,0,,Chelsea,Chelsea,False
+2023-24,101,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,89.0,-1.0,0,0.0,Brentford,Brentford,True
+2023-24,108,378,449434,Anthony Elanga,Anthony Elanga,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,108,465,114241,Harry Toffolo,Harry Toffolo,DEF,70,71.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,101,532,109533,Emerson Palmieri dos Santos,Emerson,DEF,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,108,48,199798,Ezri Konsa Ngoyo,Ezri Konsa,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,108,34,215711,Leon Bailey,Leon Bailey,MID,45,45.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,78,79.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,108,60,178301,Ollie Watkins,Ollie Watkins,FWD,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,101,535,84939,Danny Ings,Danny Ings,FWD,26,26.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,108,696,575476,Murillo Santiago Costa dos Santos,Murillo,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,108,442,513046,Danilo dos Santos de Oliveira,Danilo,MID,8,8.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,108,43,230046,Douglas Luiz Soares de Paulo,Douglas Luiz,MID,85,86.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,101,118342,Mark Flekken,Mark Flekken,GK,45,45.0,0.0,0,,Brentford,Brentford,False
+2023-24,108,467,215136,Neco Williams,Neco Williams,DEF,4,4.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,101,534,217593,Pablo Fornals Malla,Pablo Fornals,MID,26,26.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,101,258,115382,Neal Maupay,Neal Maupay,FWD,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,108,50,122806,John McGinn,John McGinn,MID,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,119,216646,Yoane Wissa,Yoane Wissa,FWD,88,89.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,108,713,210462,Ibrahim Sangaré,Ibrahim Sangaré,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,108,457,199170,Moussa Niakhaté,Moussa Niakhaté,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,101,523,57531,Michail Antonio,Michail Antonio,FWD,63,64.0,1.0,0,0.0,West Ham,West Ham,True
+2023-24,101,108,446008,Bryan Mbeumo,Bryan Mbeumo,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,108,58,166989,Youri Tielemans,Youri Tielemans,MID,31,31.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,525,172841,Saïd Benrahma,Said Benrahma,MID,63,64.0,1.0,0,0.0,West Ham,West Ham,True
+2023-24,101,701,205836,Saman Ghoddos,Saman Ghoddos,MID,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,108,42,101188,Lucas Digne,Lucas Digne,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,101,528,164555,Vladimír Coufal,Vladimir Coufal,DEF,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,101,689,460842,Mohammed Kudus,Mohammed Kudus,MID,90,90.0,0.0,1,1.0,West Ham,West Ham,True
+2023-24,101,524,84182,Alphonse Areola,Alphonse Areola,GK,90,90.0,0.0,0,,West Ham,West Ham,False
+2023-24,108,437,210156,Taiwo Awoniyi,Taiwo Awoniyi,FWD,81,82.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,101,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,11,11.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,101,664,101178,James Ward-Prowse,James Ward-Prowse,MID,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,108,47,226944,Boubacar Kamara,Boubacar Kamara,MID,77,78.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,108,447,222531,Morgan Gibbs-White,Morgan Gibbs-White,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,108,453,179519,Orel Mangala,Orel Mangala,MID,90,90.0,0.0,1,1.0,Nott'm Forest,Nott'm Forest,True
+2023-24,101,116,140200,Thomas Strakosha,Thomas Strakosha,GK,45,45.0,0.0,0,,Brentford,Brentford,False
+2023-24,101,522,210494,Nayef Aguerd,Nayef Aguerd,DEF,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,101,109,51927,Ben Mee,Ben Mee,DEF,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,108,41,165659,Diego Carlos Santos Silva,Diego Carlos,DEF,12,12.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,108,470,204968,Ryan Yates,Ryan Yates,MID,3,3.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,108,672,245414,Nicolò Zaniolo,Nicolo Zaniolo,MID,45,45.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,111,428580,Frank Onyeka,Frank Onyeka,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,108,604,159506,Olu Aina,Ola Aina,DEF,85,86.0,1.0,1,1.0,Nott'm Forest,Nott'm Forest,True
+2023-24,101,106,207283,Mathias Jensen,Mathias Jensen,MID,77,78.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,108,599,243557,Moussa Diaby,Moussa Diaby,MID,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,108,584,244954,Pau Torres,Pau Torres,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,108,49,98980,Emiliano Martínez Romero,Emiliano Martinez,GK,90,90.0,0.0,0,,Aston Villa,Aston Villa,False
+2023-24,101,542,215439,Tomáš Souček,Tomas Soucek,MID,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,108,710,111452,Odysseas Vlachodimos,Odisseas Vlachodimos,GK,90,90.0,0.0,0,,Nott'm Forest,Nott'm Forest,False
+2023-24,101,120,508395,Yegor Yarmolyuk,Yehor Yarmoliuk,MID,12,12.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,108,712,250199,Nicolás Domínguez,Nicolás Dominguez,MID,86,87.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,108,436,80226,Serge Aurier,Serge Aurier,DEF,19,19.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,101,676,233963,Konstantinos Mavropanos,Konstantinos Mavropanos,DEF,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,108,40,151589,Leander Dendoncker,Leander Dendoncker,MID,4,4.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,101,526,178186,Jarrod Bowen,Jarrod Bowen,MID,90,90.0,0.0,1,1.0,West Ham,West Ham,True
+2023-24,108,36,199796,Matty Cash,Matty Cash,DEF,58,59.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,117,105,204580,Vitaly Janelt,Vitaly Janelt,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,626,441428,Jarell Quansah,Jarell Quansah,DEF,1,1.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,303,244731,Luis Díaz,Luis Diaz,MID,7,6.0,-1.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,668,158983,Wataru Endo,Wataru Endo,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,117,629,491501,James McConnell,James McConnell,MID,1,1.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,258,115382,Neal Maupay,Neal Maupay,FWD,18,18.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,309,424876,Dominik Szoboszlai,Dominik Szoboszlai,MID,90,89.0,-1.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,119,216646,Yoane Wissa,Yoane Wissa,FWD,71,72.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,117,290,169187,Trent Alexander-Arnold,Trent Alexander-Arnold,DEF,89,89.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,295,444884,Harvey Elliott,Harvey Elliott,MID,7,7.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,108,446008,Bryan Mbeumo,Bryan Mbeumo,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,701,205836,Saman Ghoddos,Saman Ghoddos,MID,18,18.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,313,97032,Virgil van Dijk,Virgil van Dijk,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,297,243298,Cody Gakpo,Cody Gakpo,FWD,82,83.0,1.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,291,116535,Alisson Ramses Becker,Alisson Becker,GK,90,90.0,0.0,0,,Liverpool,Liverpool,False
+2023-24,117,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,72,72.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,311,214285,Konstantinos Tsimikas,Konstantinos Tsimikas,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,305,60914,Joel Matip,Joel Matip,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,111,428580,Frank Onyeka,Frank Onyeka,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,117,294,194634,Diogo Teixeira da Silva,Diogo Jota,MID,83,84.0,1.0,1,1.0,Liverpool,Liverpool,True
+2023-24,117,106,207283,Mathias Jensen,Mathias Jensen,MID,71,72.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,117,308,118748,Mohamed Salah,Mohamed Salah,MID,90,90.0,0.0,2,2.0,Liverpool,Liverpool,True
+2023-24,117,293,447203,Darwin Núñez Ribeiro,Darwin Nunez,FWD,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,117,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,18,18.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,13,205533,Eddie Nketiah,Edward Nketiah,FWD,24,24.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,29,198869,Benjamin White,Ben White,DEF,1,1.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,5,226597,Gabriel dos Santos Magalhães,Gabriel,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,25,223723,Takehiro Tomiyasu,Takehiro Tomiyasu,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,20,462424,William Saliba,William Saliba,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,121,258,115382,Neal Maupay,Neal Maupay,FWD,18,18.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,119,216646,Yoane Wissa,Yoane Wissa,FWD,71,72.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,121,17,225321,Aaron Ramsdale,Aaron Ramsdale,GK,90,90.0,0.0,0,,Arsenal,Arsenal,False
+2023-24,121,12,444145,Gabriel Martinelli Silva,Gabriel Martinelli,MID,78,79.0,1.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,108,446008,Bryan Mbeumo,Bryan Mbeumo,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,701,205836,Saman Ghoddos,Saman Ghoddos,MID,89,89.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,26,116216,Leandro Trossard,Leandro Trossard,MID,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,6,219847,Kai Havertz,Kai Havertz,MID,11,11.0,0.0,1,1.0,Arsenal,Arsenal,True
+2023-24,121,31,206325,Oleksandr Zinchenko,Oleksandr Zinchenko,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,8,205651,Gabriel Fernando de Jesus,Gabriel Jesus,FWD,65,66.0,1.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,92,432160,Shandon Baptiste,Shandon Baptiste,MID,18,18.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,19,223340,Bukayo Saka,Bukayo Saka,MID,90,89.0,-1.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,111,428580,Frank Onyeka,Frank Onyeka,MID,90,89.0,-1.0,0,0.0,Brentford,Brentford,True
+2023-24,121,540,204480,Declan Rice,Declan Rice,MID,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,14,184029,Martin Ødegaard,Martin Ødegaard,MID,90,89.0,-1.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,9,85955,Jorge Luiz Frello Filho,Jorginho,MID,1,1.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,121,121,48760,Mathias Jorgensen,Mathias Jørgensen,DEF,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,121,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,71,72.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,133,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,393,244856,Teden Mengi,Teden Mengi,DEF,75,76.0,1.0,0,0.0,Luton,Luton,True
+2023-24,133,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,582,104047,Pelly Ruddock Mpanzu,Pelly-Ruddock Mpanzu,MID,59,60.0,1.0,0,0.0,Luton,Luton,True
+2023-24,133,614,54738,Thomas Kaminski,Thomas Kaminski,GK,90,90.0,0.0,0,,Luton,Luton,False
+2023-24,133,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,133,314,174310,Elijah Adebayo,Elijah Adebayo,FWD,29,29.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,330,199056,Gabriel Osho,Gabriel Osho,DEF,90,90.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,258,115382,Neal Maupay,Neal Maupay,FWD,90,89.0,-1.0,1,1.0,Brentford,Brentford,True
+2023-24,133,320,96784,Jordan Clark,Jordan Clark,MID,30,30.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,119,216646,Yoane Wissa,Yoane Wissa,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,328,229164,Chiedozie Ogbene,Chiedozie Ogbene,FWD,59,60.0,1.0,0,0.0,Luton,Luton,True
+2023-24,133,108,446008,Bryan Mbeumo,Bryan Mbeumo,MID,77,78.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,133,701,205836,Saman Ghoddos,Saman Ghoddos,MID,76,77.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,133,553,232351,Ryan Giles,Ryan Giles,DEF,14,14.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,13,13.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,586,222677,Tahith Chong,Tahith Chong,MID,90,90.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,602,476369,Issa Kaboré,Issa Kaboré,DEF,90,90.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,92,432160,Shandon Baptiste,Shandon Baptiste,MID,20,20.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,133,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,133,316,165183,Amari'i Bell,Amari'i Bell,DEF,90,90.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,111,428580,Frank Onyeka,Frank Onyeka,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,575,108796,Tom Lockyer,Tom Lockyer,DEF,45,45.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,630,88894,Ross Barkley,Ross Barkley,MID,90,90.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,326,156700,Carlton Morris,Carlton Morris,FWD,60,61.0,1.0,0,0.0,Luton,Luton,True
+2023-24,133,744,450539,Myles Peart-Harris,Myles Peart-Harris,MID,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,12,12.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,133,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,69,70.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,133,727,60252,Andros Townsend,Andros Townsend,MID,30,30.0,0.0,0,0.0,Luton,Luton,True
+2023-24,133,631,242453,Jacob Brown,Jacob Brown,FWD,45,45.0,0.0,1,1.0,Luton,Luton,True
+2023-24,142,621,532529,Jack Hinshelwood,Jack Hinshelwood,MID,72,73.0,1.0,1,1.0,Brighton,Brighton,True
+2023-24,142,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,690,535301,Carlos Baleba,Carlos Baleba,MID,83,84.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,142,144,243505,Jakub Moder,Jakub Moder,MID,6,6.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,742,475480,Benicio Baker-Boaitey,Benicio Baker-Boaitey,MID,6,6.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,143,451340,Kaoru Mitoma,Kaoru Mitoma,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,122,535818,Simon Adingra,Simon Adingra,MID,83,84.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,142,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,142,133,243568,Billy Gilmour,Billy Gilmour,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,21,21.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,135,475168,João Pedro Junqueira de Jesus,Joao Pedro,FWD,68,69.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,142,258,115382,Neal Maupay,Neal Maupay,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,134,60307,Pascal Groß,Pascal Gross,MID,90,90.0,0.0,1,1.0,Brighton,Brighton,True
+2023-24,142,119,216646,Yoane Wissa,Yoane Wissa,FWD,50,50.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,108,446008,Bryan Mbeumo,Bryan Mbeumo,MID,39,40.0,1.0,1,1.0,Brentford,Brentford,True
+2023-24,142,701,205836,Saman Ghoddos,Saman Ghoddos,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,148,49262,Jason Steele,Jason Steele,GK,90,90.0,0.0,0,,Brighton,Brighton,False
+2023-24,142,132,487117,Evan Ferguson,Evan Ferguson,FWD,21,21.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,151,111478,Joël Veltman,Joel Veltman,DEF,17,17.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,83,84.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,142,606,223434,Igor Julio dos Santos de Paulo,Igor Julio,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,92,432160,Shandon Baptiste,Shandon Baptiste,MID,68,69.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,142,125,536916,Facundo Buonanotte,Facundo Buonanotte,MID,68,69.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,142,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,111,428580,Frank Onyeka,Frank Onyeka,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,150,469142,Jan Paul van Hecke,Jan Paul van Hecke,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,744,450539,Myles Peart-Harris,Myles Peart-Harris,MID,6,6.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,142,142,15157,James Milner,James Milner,MID,21,21.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,142,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,655,538210,Andre Brooks,Andre Brooks,MID,72,73.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,490,538207,William Osula,William Osula,FWD,52,53.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,158,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,25,25.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,258,115382,Neal Maupay,Neal Maupay,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,119,216646,Yoane Wissa,Yoane Wissa,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,576,83427,Jack Robinson,Jack Robinson,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,759,552425,Sydie Peck,Sydie Peck,MID,9,9.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,663,196100,Gustavo Hamer,Gustavo Hamer,MID,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,701,205836,Saman Ghoddos,Saman Ghoddos,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,476,226182,Jayden Bogle,Jayden Bogle,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,27,201410,Auston Trusty,Auston Trusty,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,484,155197,Max Lowe,Max Lowe,DEF,17,17.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,92,432160,Shandon Baptiste,Shandon Baptiste,MID,64,65.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,158,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,111,428580,Frank Onyeka,Frank Onyeka,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,360,432714,James McAtee,James McAtee,MID,80,81.0,1.0,1,1.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,638,424001,Vini de Souza Costa,Vini Souza,MID,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,620,501284,Michael Olakigbe,Michael Olakigbe,MID,24,24.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,158,587,504198,Anis Slimane,Anis Ben Slimane,MID,37,37.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,33,433979,Cameron Archer,Cameron Archer,FWD,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,471,233821,Anel Ahmedhodžić,Anel Ahmedhodzic,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,158,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,65,66.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,158,482,82143,Wes Foderingham,Wesley Foderingham,GK,90,90.0,0.0,0,,Sheffield Utd,Sheffield Utd,False
+2023-24,158,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,161,621,532529,Jack Hinshelwood,Jack Hinshelwood,MID,63,63.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,163,105,204580,Vitaly Janelt,Vitaly Janelt,MID,87,88.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,161,13,205533,Eddie Nketiah,Edward Nketiah,FWD,9,9.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,161,22,209289,Emile Smith Rowe,Emile Smith Rowe,MID,1,1.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,161,29,198869,Benjamin White,Ben White,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,163,48,199798,Ezri Konsa Ngoyo,Ezri Konsa,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,34,215711,Leon Bailey,Leon Bailey,MID,25,25.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,60,178301,Ollie Watkins,Ollie Watkins,FWD,90,90.0,0.0,1,1.0,Aston Villa,Aston Villa,True
+2023-24,161,5,226597,Gabriel dos Santos Magalhães,Gabriel,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,163,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,161,143,451340,Kaoru Mitoma,Kaoru Mitoma,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,161,122,535818,Simon Adingra,Simon Adingra,MID,78,79.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,161,113,154561,David Raya Martin,David Raya,GK,90,90.0,0.0,0,,Arsenal,Arsenal,False
+2023-24,161,20,462424,William Saliba,William Saliba,DEF,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,163,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,161,133,243568,Billy Gilmour,Billy Gilmour,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,163,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,67,68.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,161,135,475168,João Pedro Junqueira de Jesus,Joao Pedro,FWD,30,30.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,163,258,115382,Neal Maupay,Neal Maupay,FWD,22,22.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,161,134,60307,Pascal Groß,Pascal Gross,MID,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,163,50,122806,John McGinn,John McGinn,MID,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,119,216646,Yoane Wissa,Yoane Wissa,FWD,75,76.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,161,578,200641,Reiss Nelson,Reiss Nelson,MID,1,1.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,161,12,444145,Gabriel Martinelli Silva,Gabriel Martinelli,MID,81,82.0,1.0,0,0.0,Arsenal,Arsenal,True
+2023-24,163,44,476344,Jhon Durán,Jhon Duran,FWD,25,25.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,701,205836,Saman Ghoddos,Saman Ghoddos,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,163,32,106468,Alexandre Moreno Lopera,Álex Moreno,DEF,90,90.0,0.0,1,1.0,Aston Villa,Aston Villa,True
+2023-24,163,96,432830,Nathan Collins,Nathan Collins,DEF,14,14.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,161,26,116216,Leandro Trossard,Leandro Trossard,MID,8,8.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,161,6,219847,Kai Havertz,Kai Havertz,MID,88,89.0,1.0,1,1.0,Arsenal,Arsenal,True
+2023-24,161,132,487117,Evan Ferguson,Evan Ferguson,FWD,59,60.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,161,10,440854,Jakub Kiwior,Jakub Kiwior,DEF,1,1.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,161,151,111478,Joël Veltman,Joel Veltman,DEF,26,27.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,161,138,39155,Adam Lallana,Adam Lallana,MID,59,60.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,163,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,88,89.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,163,47,226944,Boubacar Kamara,Boubacar Kamara,MID,90,89.0,-1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,161,152,489639,Bart Verbruggen,Bart Verbruggen,GK,90,90.0,0.0,0,,Brighton,Brighton,False
+2023-24,161,31,206325,Oleksandr Zinchenko,Oleksandr Zinchenko,DEF,90,89.0,-1.0,0,0.0,Arsenal,Arsenal,True
+2023-24,161,8,205651,Gabriel Fernando de Jesus,Gabriel Jesus,FWD,80,81.0,1.0,1,1.0,Arsenal,Arsenal,True
+2023-24,161,606,223434,Igor Julio dos Santos de Paulo,Igor Julio,DEF,30,30.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,161,125,536916,Facundo Buonanotte,Facundo Buonanotte,MID,30,30.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,161,19,223340,Bukayo Saka,Bukayo Saka,MID,88,89.0,1.0,0,0.0,Arsenal,Arsenal,True
+2023-24,163,109,51927,Ben Mee,Ben Mee,DEF,70,71.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,163,41,165659,Diego Carlos Santos Silva,Diego Carlos,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,163,672,245414,Nicolò Zaniolo,Nicolo Zaniolo,MID,9,9.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,111,428580,Frank Onyeka,Frank Onyeka,MID,22,22.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,161,154,50175,Danny Welbeck,Danny Welbeck,FWD,11,11.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,161,540,204480,Declan Rice,Declan Rice,MID,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,163,620,501284,Michael Olakigbe,Michael Olakigbe,MID,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,163,599,243557,Moussa Diaby,Moussa Diaby,MID,64,65.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,584,244954,Pau Torres,Pau Torres,DEF,80,81.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,161,14,184029,Martin Ødegaard,Martin Ødegaard,MID,90,90.0,0.0,0,0.0,Arsenal,Arsenal,True
+2023-24,163,49,98980,Emiliano Martínez Romero,Emiliano Martinez,GK,90,90.0,0.0,0,,Aston Villa,Aston Villa,False
+2023-24,161,150,469142,Jan Paul van Hecke,Jan Paul van Hecke,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,161,129,83299,Lewis Dunk,Lewis Dunk,DEF,90,90.0,0.0,0,0.0,Brighton,Brighton,True
+2023-24,163,55,232653,Jacob Ramsey,Jacob Ramsey,MID,89,89.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,67,68.0,1.0,1,1.0,Brentford,Brentford,True
+2023-24,161,142,15157,James Milner,James Milner,MID,59,60.0,1.0,0,0.0,Brighton,Brighton,True
+2023-24,163,121,48760,Mathias Jorgensen,Mathias Jørgensen,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,163,40,151589,Leander Dendoncker,Leander Dendoncker,MID,1,1.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,163,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,2,2.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,163,36,199796,Matty Cash,Matty Cash,DEF,64,65.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,183,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,570,88484,Pablo Sarabia,Pablo Sarabia,MID,64,65.0,1.0,0,0.0,Wolves,Wolves,True
+2023-24,183,545,448514,Rayan Aït-Nouri,Rayan Ait Nouri,DEF,79,80.0,1.0,0,0.0,Wolves,Wolves,True
+2023-24,183,565,151086,Mario Lemina,Mario Lemina,MID,90,90.0,0.0,1,1.0,Wolves,Wolves,True
+2023-24,183,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,183,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,351,220394,Tommy Doyle,Tommy Doyle,MID,25,25.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,258,115382,Neal Maupay,Neal Maupay,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,119,216646,Yoane Wissa,Yoane Wissa,FWD,85,86.0,1.0,1,1.0,Brentford,Brentford,True
+2023-24,183,701,205836,Saman Ghoddos,Saman Ghoddos,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,559,448089,João Victor Gomes da Silva,Joao Gomes,MID,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,715,231057,Jean-Ricner Bellegarde,Jean-Ricner Bellegarde,MID,45,45.0,0.0,1,1.0,Wolves,Wolves,True
+2023-24,183,548,490721,Hugo Bueno López,Hugo Bueno,DEF,10,10.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,598,87835,Matt Doherty,Matt Doherty,DEF,26,26.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,66,67.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,183,573,510362,Toti António Gomes,Toti Gomes,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,106,207283,Mathias Jensen,Mathias Jensen,MID,23,23.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,563,214048,Max Kilman,Max Kilman,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,557,184754,Hwang Hee-chan,Hee-Chan Hwang,MID,45,45.0,0.0,2,2.0,Wolves,Wolves,True
+2023-24,183,620,501284,Michael Olakigbe,Michael Olakigbe,MID,4,4.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,590,430871,Matheus Santos Carneiro Da Cunha,Matheus Cunha,FWD,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,697,231480,Santiago Bueno,Santiago Bueno,DEF,90,90.0,0.0,0,0.0,Wolves,Wolves,True
+2023-24,183,744,450539,Myles Peart-Harris,Myles Peart-Harris,MID,4,4.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,569,149065,José Malheiro de Sá,José Sá,GK,90,90.0,0.0,0,,Wolves,Wolves,False
+2023-24,183,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,85,86.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,183,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,45,45.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,183,572,200402,Nélson Cabral Semedo,Nélson Semedo,DEF,63,64.0,1.0,0,0.0,Wolves,Wolves,True
+2023-24,192,105,204580,Vitaly Janelt,Vitaly Janelt,MID,79,80.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,192,615,536694,Matheus França de Oliveira,Matheus Franca,MID,4,4.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,110,128295,Christian Nørgaard,Christian Nørgaard,MID,66,67.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,192,232,231747,Jean-Philippe Mateta,Jean-Philippe Mateta,FWD,85,86.0,1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,192,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,23,23.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,258,115382,Neal Maupay,Neal Maupay,FWD,27,27.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,221,80146,Jordan Ayew,Jordan Ayew,MID,90,89.0,-1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,119,216646,Yoane Wissa,Yoane Wissa,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,385,172649,Dean Henderson,Dean Henderson,GK,90,90.0,0.0,0,,Crystal Palace,Crystal Palace,False
+2023-24,192,701,205836,Saman Ghoddos,Saman Ghoddos,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,220,174874,Joachim Andersen,Joachim Andersen,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,222,57328,Nathaniel Clyne,Nathaniel Clyne,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,240,86417,Jeffrey Schlupp,Jeffrey Schlupp,MID,1,1.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,62,63.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,192,229,108413,Will Hughes,Will Hughes,MID,4,4.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,111,428580,Frank Onyeka,Frank Onyeka,MID,27,27.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,228,209036,Marc Guéhi,Marc Guehi,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,106,207283,Mathias Jensen,Mathias Jensen,MID,62,63.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,192,226,232413,Eberechi Eze,Eberechi Eze,MID,85,86.0,1.0,1,1.0,Crystal Palace,Crystal Palace,True
+2023-24,192,620,501284,Michael Olakigbe,Michael Olakigbe,MID,10,10.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,234,244723,Tyrick Mitchell,Tyrick Mitchell,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,231,152551,Jefferson Lerma Solís,Jefferson Lerma,MID,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,192,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,79,80.0,1.0,1,1.0,Brentford,Brentford,True
+2023-24,192,121,48760,Mathias Jorgensen,Mathias Jørgensen,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,236,443661,Michael Olise,Michael Olise,MID,90,90.0,0.0,2,2.0,Crystal Palace,Crystal Palace,True
+2023-24,192,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,10,10.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,192,238,427623,Chris Richards,Chris Richards,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,203,105,204580,Vitaly Janelt,Vitaly Janelt,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,117,144485,Ivan Toney,Ivan Toney,FWD,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,203,23,437626,Nuno Varela Tavares,Nuno Tavares,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,205,209046,Callum Hudson-Odoi,Callum Hudson-Odoi,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,696,575476,Murillo Santiago Costa dos Santos,Murillo,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,442,513046,Danilo dos Santos de Oliveira,Danilo,MID,90,90.0,0.0,1,1.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,203,467,215136,Neco Williams,Neco Williams,DEF,28,28.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,73,74.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,203,258,115382,Neal Maupay,Neal Maupay,FWD,73,74.0,1.0,1,1.0,Brentford,Brentford,True
+2023-24,203,434,461682,Brandon Aguilera Zamora,Brandon Aguilera,MID,4,4.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,711,466404,Andrew Omobamidele,Andrew Omobamidele,DEF,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,89,89.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,99,183656,Josh Dasilva,Joshua Dasilva,MID,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,508,199249,Sergio Reguilón,Sergio Reguilon,DEF,16,16.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,453,179519,Orel Mangala,Orel Mangala,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,92,432160,Shandon Baptiste,Shandon Baptiste,MID,16,16.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,203,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,470,204968,Ryan Yates,Ryan Yates,MID,61,62.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,106,207283,Mathias Jensen,Mathias Jensen,MID,90,89.0,-1.0,0,0.0,Brentford,Brentford,True
+2023-24,203,679,218430,Gonzalo Montiel,Gonzalo Montiel,DEF,85,86.0,1.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,712,250199,Nicolás Domínguez,Nicolás Dominguez,MID,90,90.0,0.0,0,0.0,Nott'm Forest,Nott'm Forest,True
+2023-24,203,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,89,89.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,28,224068,Matt Turner,Matt Turner,GK,90,90.0,0.0,0,,Nott'm Forest,Nott'm Forest,False
+2023-24,203,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,203,468,60689,Chris Wood,Chris Wood,FWD,90,90.0,0.0,1,1.0,Nott'm Forest,Nott'm Forest,True
+2023-24,216,105,204580,Vitaly Janelt,Vitaly Janelt,MID,87,88.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,216,117,144485,Ivan Toney,Ivan Toney,FWD,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,216,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,12,12.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,450,242898,Brennan Johnson,Brennan Johnson,MID,45,45.0,0.0,1,1.0,Spurs,Spurs,True
+2023-24,216,499,132015,Pierre-Emile Højbjerg,Pierre-Emile Højbjerg,MID,45,45.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,519,487053,Destiny Udogie,Destiny Udogie,DEF,90,90.0,0.0,1,1.0,Spurs,Spurs,True
+2023-24,216,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,216,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,2,2.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,506,441164,Pedro Porro,Pedro Porro,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,258,115382,Neal Maupay,Neal Maupay,FWD,90,90.0,0.0,1,1.0,Brentford,Brentford,True
+2023-24,216,722,513588,Jamie Donley,Jamie Donley,FWD,1,1.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,639,491279,Micky van de Ven,Micky van de Ven,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,96,432830,Nathan Collins,Nathan Collins,DEF,77,78.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,216,509,212319,Richarlison de Andrade,Richarlison,MID,90,90.0,0.0,1,1.0,Spurs,Spurs,True
+2023-24,216,776,165153,Timo Werner,Timo Werner,FWD,90,89.0,-1.0,0,0.0,Spurs,Spurs,True
+2023-24,216,520,184254,Guglielmo Vicario,Guglielmo Vicario,GK,90,90.0,0.0,0,,Spurs,Spurs,False
+2023-24,216,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,77,78.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,216,99,183656,Josh Dasilva,Joshua Dasilva,MID,12,12.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,92,432160,Shandon Baptiste,Shandon Baptiste,MID,2,2.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,106,207283,Mathias Jensen,Mathias Jensen,MID,56,57.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,216,777,493125,Radu Dragusin,Radu Dragusin,DEF,2,2.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,501,445044,Dejan Kulusevski,Dejan Kulusevski,MID,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,511,221632,Cristian Romero,Cristian Romero,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,504,172780,James Maddison,James Maddison,MID,87,88.0,1.0,0,0.0,Spurs,Spurs,True
+2023-24,216,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,87,88.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,216,515,209042,Oliver Skipp,Oliver Skipp,MID,45,45.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,216,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,33,33.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,216,492,202993,Rodrigo Bentancur,Rodrigo Bentancur,MID,45,45.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,230,487,443211,Rhys Norrington-Davies,Rhys Norrington-Davies,DEF,49,50.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,105,204580,Vitaly Janelt,Vitaly Janelt,MID,75,76.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,230,655,538210,Andre Brooks,Andre Brooks,MID,49,50.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,230,489,167878,Ben Osborn,Ben Osborn,MID,40,40.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,344,165809,Bernardo Veiga de Carvalho e Silva,Bernardo Silva,MID,70,71.0,1.0,0,0.0,Man City,Man City,True
+2023-24,223,117,144485,Ivan Toney,Ivan Toney,FWD,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,230,46,490094,Tim Iroegbunam,Tim Iroegbunam,MID,19,19.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,230,48,199798,Ezri Konsa Ngoyo,Ezri Konsa,DEF,58,59.0,1.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,230,34,215711,Leon Bailey,Leon Bailey,MID,59,60.0,1.0,1,1.0,Aston Villa,Aston Villa,True
+2023-24,223,90,191866,Kristoffer Ajer,Kristoffer Vassbakk Ajer,DEF,11,11.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,223,353,209244,Phil Foden,Phil Foden,MID,90,90.0,0.0,3,3.0,Man City,Man City,True
+2023-24,230,490,538207,William Osula,William Osula,FWD,45,45.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,230,60,178301,Ollie Watkins,Ollie Watkins,FWD,90,90.0,0.0,1,1.0,Aston Villa,Aston Villa,True
+2023-24,223,110,128295,Christian Nørgaard,Christian Nørgaard,MID,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,230,43,230046,Douglas Luiz Soares de Paulo,Douglas Luiz,MID,45,45.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,223,101,118342,Mark Flekken,Mark Flekken,GK,90,90.0,0.0,0,,Brentford,Brentford,False
+2023-24,223,98,440089,Mikkel Damsgaard,Mikkel Damsgaard,MID,13,13.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,223,258,115382,Neal Maupay,Neal Maupay,FWD,90,89.0,-1.0,1,1.0,Brentford,Brentford,True
+2023-24,230,50,122806,John McGinn,John McGinn,MID,70,71.0,1.0,1,1.0,Aston Villa,Aston Villa,True
+2023-24,230,576,83427,Jack Robinson,Jack Robinson,DEF,40,40.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,230,58,166989,Youri Tielemans,Youri Tielemans,MID,80,81.0,1.0,1,1.0,Aston Villa,Aston Villa,True
+2023-24,230,663,196100,Gustavo Hamer,Gustavo Hamer,MID,45,45.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,230,775,204814,Ben Brereton,Ben Brereton Diaz,MID,64,65.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,230,32,106468,Alexandre Moreno Lopera,Álex Moreno,DEF,90,90.0,0.0,1,1.0,Aston Villa,Aston Villa,True
+2023-24,223,96,432830,Nathan Collins,Nathan Collins,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,230,476,226182,Jayden Bogle,Jayden Bogle,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,352,121160,Ederson Santana de Moraes,Ederson,GK,90,90.0,0.0,0,,Man City,Man City,False
+2023-24,230,803,244850,Morgan Rogers,Morgan Rogers,MID,9,9.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,230,27,201410,Auston Trusty,Auston Trusty,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,114,226956,Mads Roerslev Rasmussen,Mads Roerslev,DEF,75,76.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,230,47,226944,Boubacar Kamara,Boubacar Kamara,MID,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,230,699,171101,Clément Lenglet,Clément Lenglet,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,223,356,91651,Mateo Kovačić,Mateo Kovacic,MID,4,4.0,0.0,0,0.0,Man City,Man City,True
+2023-24,223,508,199249,Sergio Reguilón,Sergio Reguilon,DEF,78,79.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,223,92,432160,Shandon Baptiste,Shandon Baptiste,MID,1,1.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,223,343,461358,Julián Álvarez,Julián Álvarez,FWD,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,223,109,51927,Ben Mee,Ben Mee,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,230,41,165659,Diego Carlos Santos Silva,Diego Carlos,DEF,90,90.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,230,666,173807,Tom Davies,Tom Davies,MID,18,18.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,112,231065,Ethan Pinnock,Ethan Pinnock,DEF,90,90.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,230,360,432714,James McAtee,James McAtee,MID,71,72.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,355,223094,Erling Haaland,Erling Haaland,FWD,85,86.0,1.0,0,0.0,Man City,Man City,True
+2023-24,223,365,220566,Rodrigo Hernandez,Rodri,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,223,349,61366,Kevin De Bruyne,Kevin De Bruyne,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,230,638,424001,Vini de Souza Costa,Vini Souza,MID,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,106,207283,Mathias Jensen,Mathias Jensen,MID,76,77.0,1.0,0,0.0,Brentford,Brentford,True
+2023-24,223,342,126184,Nathan Aké,Nathan Aké,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,223,678,248875,Jérémy Doku,Jérémy Doku,MID,19,19.0,0.0,0,0.0,Man City,Man City,True
+2023-24,230,599,243557,Moussa Diaby,Moussa Diaby,MID,30,30.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,223,350,171314,Rúben Gato Alves Dias,Ruben Dias,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,230,33,433979,Cameron Archer,Cameron Archer,FWD,25,25.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,230,49,98980,Emiliano Martínez Romero,Emiliano Martinez,GK,90,90.0,0.0,0,,Aston Villa,Aston Villa,False
+2023-24,223,616,477424,Joško Gvardiol,Josko Gvardiol,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,230,471,233821,Anel Ahmedhodžić,Anel Ahmedhodzic,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,230,55,232653,Jacob Ramsey,Jacob Ramsey,MID,45,45.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,223,107,249231,Keane Lewis-Potter,Keane Lewis-Potter,MID,14,14.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,230,482,82143,Wes Foderingham,Wesley Foderingham,GK,90,90.0,0.0,0,,Sheffield Utd,Sheffield Utd,False
+2023-24,223,120,508395,Yegor Yarmoliuk,Yehor Yarmoliuk,MID,14,14.0,0.0,0,0.0,Brentford,Brentford,True
+2023-24,230,36,199796,Matty Cash,Matty Cash,DEF,31,31.0,0.0,0,0.0,Aston Villa,Aston Villa,True
+2023-24,230,255,194164,Mason Holgate,Mason Holgate,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,223,369,58621,Kyle Walker,Kyle Walker,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,344,165809,Bernardo Veiga de Carvalho e Silva,Bernardo Silva,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,626,441428,Jarell Quansah,Jarell Quansah,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,341,211975,Manuel Akanji,Manuel Akanji,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,303,244731,Luis Díaz,Luis Diaz,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,368,97299,John Stones,John Stones,DEF,90,90.0,0.0,1,1.0,Man City,Man City,True
+2023-24,277,353,209244,Phil Foden,Phil Foden,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,668,158983,Wataru Endo,Wataru Endo,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,298,171287,Joe Gomez,Joseph Gomez,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,309,424876,Dominik Szoboszlai,Dominik Szoboszlai,MID,60,61.0,1.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,295,444884,Harvey Elliott,Harvey Elliott,MID,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,304,243016,Alexis Mac Allister,Alexis Mac Allister,MID,90,90.0,0.0,1,1.0,Liverpool,Liverpool,True
+2023-24,277,361,88248,Stefan Ortega Moreno,Stefan Ortega,GK,34,34.0,0.0,0,,Man City,Man City,False
+2023-24,277,352,121160,Ederson Santana de Moraes,Ederson,GK,55,56.0,1.0,0,,Man City,Man City,False
+2023-24,277,313,97032,Virgil van Dijk,Virgil van Dijk,DEF,90,90.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,307,122798,Andrew Robertson,Andrew Robertson,DEF,29,29.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,297,243298,Cody Gakpo,Cody Gakpo,FWD,14,14.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,356,91651,Mateo Kovačić,Mateo Kovacic,MID,21,21.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,343,461358,Julián Álvarez,Julián Álvarez,FWD,68,69.0,1.0,0,0.0,Man City,Man City,True
+2023-24,277,301,200720,Caoimhin Kelleher,Caoimhin Kelleher,GK,90,90.0,0.0,0,,Liverpool,Liverpool,False
+2023-24,277,355,223094,Erling Haaland,Erling Haaland,FWD,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,757,492777,Conor Bradley,Conor Bradley,DEF,60,61.0,1.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,365,220566,Rodrigo Hernandez,Rodri,MID,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,349,61366,Kevin De Bruyne,Kevin De Bruyne,MID,68,69.0,1.0,0,0.0,Man City,Man City,True
+2023-24,277,342,126184,Nathan Aké,Nathan Aké,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,678,248875,Jérémy Doku,Jérémy Doku,MID,21,21.0,0.0,0,0.0,Man City,Man City,True
+2023-24,277,308,118748,Mohamed Salah,Mohamed Salah,MID,29,29.0,0.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,293,447203,Darwin Núñez Ribeiro,Darwin Nunez,FWD,75,76.0,1.0,0,0.0,Liverpool,Liverpool,True
+2023-24,277,369,58621,Kyle Walker,Kyle Walker,DEF,90,90.0,0.0,0,0.0,Man City,Man City,True
+2023-24,333,807,496221,Adam Wharton,Adam Wharton,MID,60,61.0,1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,539,224024,Lucas Tolentino Coelho de Lima,Lucas Paquetá,MID,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,532,109533,Emerson Palmieri dos Santos,Emerson,DEF,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,535,84939,Danny Ings,Danny Ings,FWD,15,15.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,232,231747,Jean-Philippe Mateta,Jean-Philippe Mateta,FWD,67,68.0,1.0,2,2.0,Crystal Palace,Crystal Palace,True
+2023-24,333,577,40669,Angelo Ogbonna,Angelo Ogbonna,DEF,45,45.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,536,222018,Ben Johnson,Ben Johnson,DEF,45,45.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,544,103192,Kurt Zouma,Kurt Zouma,DEF,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,221,80146,Jordan Ayew,Jordan Ayew,MID,22,22.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,239,173954,Jairo Riedewald,Jairo Riedewald,MID,9,9.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,523,57531,Michail Antonio,Michail Antonio,FWD,74,75.0,1.0,1,1.0,West Ham,West Ham,True
+2023-24,333,385,172649,Dean Henderson,Dean Henderson,GK,90,90.0,0.0,0,,Crystal Palace,Crystal Palace,False
+2023-24,333,220,174874,Joachim Andersen,Joachim Andersen,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,533,37096,Lukasz Fabianski,Lukasz Fabianski,GK,90,90.0,0.0,0,,West Ham,West Ham,False
+2023-24,333,528,164555,Vladimír Coufal,Vladimir Coufal,DEF,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,689,460842,Mohammed Kudus,Mohammed Kudus,MID,84,85.0,1.0,0,0.0,West Ham,West Ham,True
+2023-24,333,222,57328,Nathaniel Clyne,Nathaniel Clyne,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,642,213999,Edson Álvarez Velázquez,Edson Álvarez,MID,74,75.0,1.0,0,0.0,West Ham,West Ham,True
+2023-24,333,240,86417,Jeffrey Schlupp,Jeffrey Schlupp,MID,9,9.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,664,101178,James Ward-Prowse,James Ward-Prowse,MID,90,90.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,530,55459,Aaron Cresswell,Aaron Cresswell,DEF,45,45.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,527,149519,Maxwel Cornet,Maxwel Cornet,MID,5,5.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,229,108413,Will Hughes,Will Hughes,MID,80,81.0,1.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,219,466117,Naouirou Ahamada,Naouirou Ahamada,MID,29,29.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,792,247348,Daniel Muñoz,Daniel Munoz,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,226,232413,Eberechi Eze,Eberechi Eze,MID,80,81.0,1.0,1,1.0,Crystal Palace,Crystal Palace,True
+2023-24,333,542,215439,Tomáš Souček,Tomas Soucek,MID,45,45.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,234,244723,Tyrick Mitchell,Tyrick Mitchell,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,225,199670,Odsonne Edouard,Odsonne Edouard,FWD,22,22.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,333,236,443661,Michael Olise,Michael Olise,MID,67,68.0,1.0,1,1.0,Crystal Palace,Crystal Palace,True
+2023-24,333,364,155405,Kalvin Phillips,Kalvin Phillips,MID,15,15.0,0.0,0,0.0,West Ham,West Ham,True
+2023-24,333,238,427623,Chris Richards,Chris Richards,DEF,90,90.0,0.0,0,0.0,Crystal Palace,Crystal Palace,True
+2023-24,380,655,538210,Andre Brooks,Andre Brooks,MID,28,28.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,489,167878,Ben Osborn,Ben Osborn,MID,4,5.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,450,242898,Brennan Johnson,Brennan Johnson,MID,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,499,132015,Pierre-Emile Højbjerg,Pierre-Emile Højbjerg,MID,24,24.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,483,523700,Daniel Jebbison,Daniel Jebbison,FWD,20,20.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,516,85971,Son Heung-min,Heung-Min Son,MID,87,88.0,1.0,0,0.0,Spurs,Spurs,True
+2023-24,380,506,441164,Pedro Porro,Pedro Porro,DEF,75,76.0,1.0,1,1.0,Spurs,Spurs,True
+2023-24,380,576,83427,Jack Robinson,Jack Robinson,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,639,491279,Micky van de Ven,Micky van de Ven,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,663,196100,Gustavo Hamer,Gustavo Hamer,MID,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,640,490145,Dane Scarlett,Dane Scarlett,FWD,2,2.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,775,204814,Ben Brereton,Ben Brereton Diaz,MID,69,70.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,860,499721,Mikey Moore,Mikey Moore,MID,2,2.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,476,226182,Jayden Bogle,Jayden Bogle,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,27,201410,Auston Trusty,Auston Trusty,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,823,532372,Oliver Arblaster,Ollie Arblaster,MID,61,62.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,497,241157,Emerson Leite de Souza Junior,Emerson Royal,DEF,14,14.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,520,184254,Guglielmo Vicario,Guglielmo Vicario,GK,90,90.0,0.0,0,,Spurs,Spurs,False
+2023-24,380,513,482442,Pape Matar Sarr,Pape Sarr,MID,65,66.0,1.0,0,0.0,Spurs,Spurs,True
+2023-24,380,484,155197,Max Lowe,Max Lowe,DEF,68,69.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,638,424001,Vini de Souza Costa,Vini Souza,MID,85,85.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,777,493125,Radu Dragusin,Radu Dragusin,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,501,445044,Dejan Kulusevski,Dejan Kulusevski,MID,90,90.0,0.0,2,2.0,Spurs,Spurs,True
+2023-24,380,477,195473,Rhian Brewster,Rhian Brewster,FWD,28,28.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,33,433979,Cameron Archer,Cameron Archer,FWD,61,62.0,1.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,471,233821,Anel Ahmedhodžić,Anel Ahmedhodzic,DEF,90,90.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True
+2023-24,380,511,221632,Cristian Romero,Cristian Romero,DEF,90,90.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,504,172780,James Maddison,James Maddison,MID,87,88.0,1.0,0,0.0,Spurs,Spurs,True
+2023-24,380,482,82143,Wes Foderingham,Wesley Foderingham,GK,90,90.0,0.0,0,,Sheffield Utd,Sheffield Utd,False
+2023-24,380,515,209042,Oliver Skipp,Oliver Skipp,MID,14,14.0,0.0,0,0.0,Spurs,Spurs,True
+2023-24,380,492,202993,Rodrigo Bentancur,Rodrigo Bentancur,MID,75,76.0,1.0,0,0.0,Spurs,Spurs,True
+2023-24,380,255,194164,Mason Holgate,Mason Holgate,DEF,21,21.0,0.0,0,0.0,Sheffield Utd,Sheffield Utd,True

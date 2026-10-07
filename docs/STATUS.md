@@ -2,6 +2,14 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Siste kartlagte defcon-hull lukket og klareringsavvik identifisert
+
+7. oktober 2026: [2022/23–2023/24 og kildekontroll](../research/current/rescoring_2025/final_gaps/README.md). Alle 119 + 14 gjenstående etiketter er fylt; dermed er alle kartlagte aktive utespillerhull i 2019/20–2023/24 lukket. 455/455 kontrollutfall stemmer med arkivet; alle 133 nye etiketter har samme poeng ved ren FotMob som ved bevaring av kjente arkivfelter.
+
+En målrettet kontroll av 50 offisielle PL spiller/kamp-responser viser i 50/50 tilfeller at arkivert FBref Clr = PL total_clearance + blocked_cross. FotMob følger PL-klareringer i 30/30 historiske kontroller. Korreksjonen fjerner 7/10 tidligere feilutslag i 2025/26; tre avvik i recoveries/interceptions står igjen og offisiell FPL-fasit beholdes. Dette er en utvalgt diagnose, ikke en generell presisjonsmåling.
+
+Dekningen er komplett, men hele korpuset er ennå ikke harmonisert etter den dokumenterte kildeprioriteten. Neste steg: hent konsistente defensive tellinger for hele historikken, valider mot full offisiell 2025/26 og lås deretter felles poenggrunnlag før nye modelltester. Historiske assists/bonus og benchmarken står uendret. Kostnad 0 NOK.
+
 ## 2021/22-gapet fylt 7. oktober 2026
 
 [FotMob-rekonstruksjonen](../research/current/rescoring_2025/missing_2021/README.md) fyller alle 1238 gjenværende aktive utespilleretiketter fra 76 kamper. 9722/9722 dekning; 1211 recovery-fyll og 27 fullstendige defensive tellinger. 20 kontrollkamper: recoveries/taklinger/skuddblokker/interceptions er like på 509/509 observasjoner; klareringer 447/509 og defcon 505/509. Nye tellinger er derfor fortsatt kvalitetsmerket som foreløpige. Alle ti lagtotaler for Brentford–Wolves samsvarer med offisiell PL-statistikk. 178 nye to-poengsutfall er spillerpopulasjonens tillegg, ikke en managers gevinst. Ingen modelltrening, benchmarkendring eller kostnad. Kode, normaliserte kildetellinger, patcher, auditer og kildehash er lagret. Neste: undersøk samme kilde for 2022/23 og 2023/24, og avklar klareringsavvik før et felles nytt poenggrunnlag låses.

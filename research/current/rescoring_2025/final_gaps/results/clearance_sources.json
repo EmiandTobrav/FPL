@@ -1,0 +1,402 @@
+[
+  {
+    "season": "2021-22",
+    "fixture": 1,
+    "code": 61810,
+    "url": "https://footballapi.pulselive.com/football/stats/player/12847?fixtures=66342",
+    "file": "pl_12847_66342.json",
+    "sha256": "d6c841c9d59e104b9f247eb89f86b4b0cae05084b7c8a048ab9efcf77ec82806"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 1,
+    "code": 101184,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4620?fixtures=66342",
+    "file": "pl_4620_66342.json",
+    "sha256": "be9420303b3d886a167a679371835ec16cf23b41157c4edcc4cc5f7c8db2f2b3"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 1,
+    "code": 204580,
+    "url": "https://footballapi.pulselive.com/football/stats/player/23194?fixtures=66342",
+    "file": "pl_23194_66342.json",
+    "sha256": "dd9d74ab04866a34963b0d4b960833b5bca484064b6468fcbed05bf4a5d9ebdd"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 32,
+    "code": 61810,
+    "url": "https://footballapi.pulselive.com/football/stats/player/12847?fixtures=66373",
+    "file": "pl_12847_66373.json",
+    "sha256": "f9bbc93f429ea4331cdea01e37b9f4697a5723035d084cb94b40683dc17f2f79"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 32,
+    "code": 194010,
+    "url": "https://footballapi.pulselive.com/football/stats/player/10947?fixtures=66373",
+    "file": "pl_10947_66373.json",
+    "sha256": "946cd8adb043e534b0595143859b2bb9936a0f657154155250ac8826c2c2aea2"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 65,
+    "code": 45268,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4549?fixtures=66406",
+    "file": "pl_4549_66406.json",
+    "sha256": "0150dd5b386508164ffeb02dde196da75dd12ff4ef9436e63d7b044a2a91e479"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 65,
+    "code": 80954,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4095?fixtures=66406",
+    "file": "pl_4095_66406.json",
+    "sha256": "f5ff77a1caf5ce32cdd8054a747a990a56a7e9d9d18b17039d3bdfaf3a96d2fe"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 71,
+    "code": 226597,
+    "url": "https://footballapi.pulselive.com/football/stats/player/50234?fixtures=66412",
+    "file": "pl_50234_66412.json",
+    "sha256": "e0c67ae9eb470abb3eaeafdda8b5da094202d841c9b29a043be4c2f820e1b0ac"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 98,
+    "code": 106760,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4608?fixtures=66439",
+    "file": "pl_4608_66439.json",
+    "sha256": "ba0e4724e600699e8a5ba361cbf9632f85e09a4c60e9bb1b55f17e0fe33481b8"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 98,
+    "code": 115556,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4408?fixtures=66439",
+    "file": "pl_4408_66439.json",
+    "sha256": "49b7b920d710e30903f92a6c119e1b069c4c883aed83decaa0becc2e69533662"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 98,
+    "code": 214590,
+    "url": "https://footballapi.pulselive.com/football/stats/player/14164?fixtures=66439",
+    "file": "pl_14164_66439.json",
+    "sha256": "31ef2fcaa63938c5377a002b30cf5916df923f3b973afcbbe225ec446640e7fb"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 112,
+    "code": 60586,
+    "url": "https://footballapi.pulselive.com/football/stats/player/6210?fixtures=66453",
+    "file": "pl_6210_66453.json",
+    "sha256": "f7c7acc96b625f1c2cced98057a7e8c5c88d840bb8a4eed0e21dbb42f4305330"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 112,
+    "code": 244723,
+    "url": "https://footballapi.pulselive.com/football/stats/player/24334?fixtures=66453",
+    "file": "pl_24334_66453.json",
+    "sha256": "d74837bc2e12307c65ab15c226a6313ae3089c2638067705aa4ee6a9e6db5889"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 129,
+    "code": 205651,
+    "url": "https://footballapi.pulselive.com/football/stats/player/19680?fixtures=66470",
+    "file": "pl_19680_66470.json",
+    "sha256": "fafb1481704e2abf543b90e32f750771ca0588addd256bbf95b742763502a8d3"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 161,
+    "code": 84450,
+    "url": "https://footballapi.pulselive.com/football/stats/player/12136?fixtures=66502",
+    "file": "pl_12136_66502.json",
+    "sha256": "a58d9c1dd1a030c31066902985465dd4a07c63d061846d89fc53c9ccb040c7f7"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 161,
+    "code": 105717,
+    "url": "https://footballapi.pulselive.com/football/stats/player/11284?fixtures=66502",
+    "file": "pl_11284_66502.json",
+    "sha256": "b91da5abb05e07c075d13d4ca4bb3e8cfea8d33d2df073c34a20a514331502de"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 161,
+    "code": 437626,
+    "url": "https://footballapi.pulselive.com/football/stats/player/66094?fixtures=66502",
+    "file": "pl_66094_66502.json",
+    "sha256": "6b3ed3d88af0ba6fe5fb0e42b053b89c85ee27cc83a9e15d987da33e293bd105"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 179,
+    "code": 232937,
+    "url": "https://footballapi.pulselive.com/football/stats/player/23834?fixtures=66520",
+    "file": "pl_23834_66520.json",
+    "sha256": "53e4ef5574349a5d8fc0c17e3346138254ace74deb99b5dbdbf5488c94201198"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 194,
+    "code": 189627,
+    "url": "https://footballapi.pulselive.com/football/stats/player/19591?fixtures=66535",
+    "file": "pl_19591_66535.json",
+    "sha256": "b755229d2da88713de4442082c147ea122aa7140dcb6ce7c9e346465c9e993d6"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 229,
+    "code": 96787,
+    "url": "https://footballapi.pulselive.com/football/stats/player/15967?fixtures=66570",
+    "file": "pl_15967_66570.json",
+    "sha256": "19b4eb76ec88767c9a37c542c2347eeb53fecbf14ef848a64492f748f4be6a3d"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 229,
+    "code": 103955,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4316?fixtures=66570",
+    "file": "pl_4316_66570.json",
+    "sha256": "2213263fa05c96e3e63fe332bb6378d66505f0858394370a8c146ee950b3fca4"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 229,
+    "code": 450527,
+    "url": "https://footballapi.pulselive.com/football/stats/player/51775?fixtures=66570",
+    "file": "pl_51775_66570.json",
+    "sha256": "ed4e0b300f1c58ba0c2a0189e9c9cfe0e53fabe8edd580ed3d1d3fbbafd9d706"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 259,
+    "code": 169359,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4815?fixtures=66600",
+    "file": "pl_4815_66600.json",
+    "sha256": "6895a5af2ea6ddc29464c72ece9893b1a83849cb4215e759be9813383e8e9c68"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 259,
+    "code": 179018,
+    "url": "https://footballapi.pulselive.com/football/stats/player/54312?fixtures=66600",
+    "file": "pl_54312_66600.json",
+    "sha256": "08e82aed73c3d55cb628b55b5bf6270882651216b0f22990ce363fc3de00662d"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 271,
+    "code": 122806,
+    "url": "https://footballapi.pulselive.com/football/stats/player/51423?fixtures=66612",
+    "file": "pl_51423_66612.json",
+    "sha256": "c64a81eb7b4bda55d9d3eab019327e3b973dec9cc1194e65651f387e1ae3adff"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 288,
+    "code": 90152,
+    "url": "https://footballapi.pulselive.com/football/stats/player/5782?fixtures=66629",
+    "file": "pl_5782_66629.json",
+    "sha256": "b77a304bf70437065371e737bdaf709e3fd859b3b93e6688b36a1713c4b4f45f"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 288,
+    "code": 202993,
+    "url": "https://footballapi.pulselive.com/football/stats/player/22802?fixtures=66629",
+    "file": "pl_22802_66629.json",
+    "sha256": "f6875ed6ab0877b3bc2888dd241a7dd4f4b583110ca65c36e65bb07b43f057c3"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 302,
+    "code": 103914,
+    "url": "https://footballapi.pulselive.com/football/stats/player/8691?fixtures=66643",
+    "file": "pl_8691_66643.json",
+    "sha256": "de4a78ec946b88eedc91510c5479b60591d02180301ad0d0dffa001f01000204"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 355,
+    "code": 204727,
+    "url": "https://footballapi.pulselive.com/football/stats/player/20499?fixtures=66696",
+    "file": "pl_20499_66696.json",
+    "sha256": "920b810b2e8ac6a8b26ea1588a5d83b526501f2b545fdba28a586c162e78e594"
+  },
+  {
+    "season": "2021-22",
+    "fixture": 355,
+    "code": 510363,
+    "url": "https://footballapi.pulselive.com/football/stats/player/122388?fixtures=66696",
+    "file": "pl_122388_66696.json",
+    "sha256": "e2dfa02907ae1170d5e97c6d009e0d9c9dd4798bed87caf03ab20a310c0a511a"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 1,
+    "code": 54469,
+    "url": "https://footballapi.pulselive.com/football/stats/player/3512?fixtures=124791",
+    "file": "pl_3512_124791.json",
+    "sha256": "f4bb8f2f61fdb0399fba964c9f6c7c82ec4bf0bcb279497c6240780e6194f9ee"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 5,
+    "code": 214048,
+    "url": "https://footballapi.pulselive.com/football/stats/player/13522?fixtures=124795",
+    "file": "pl_13522_124795.json",
+    "sha256": "8abfc50dfd0aa36d1b1cdd6aaf58b7bcc9a2cbd56e74e3263cfadb8e3f1b61f2"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 5,
+    "code": 437505,
+    "url": "https://footballapi.pulselive.com/football/stats/player/52989?fixtures=124795",
+    "file": "pl_52989_124795.json",
+    "sha256": "139b782195f12629b17ec142800d9bbe739e6f9f58e5e83018744f1bcddc04f9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 9,
+    "code": 596777,
+    "url": "https://footballapi.pulselive.com/football/stats/player/146567?fixtures=124799",
+    "file": "pl_146567_124799.json",
+    "sha256": "278c82616043ead05b4948b813e3cb38bf8b4a671281fe2e564e9201b82df6c8"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 12,
+    "code": 87835,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4229?fixtures=124802",
+    "file": "pl_4229_124802.json",
+    "sha256": "70abca4877370c0c7eeaad66802928520e178637e0078e63cf61ea770113d6f1"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 14,
+    "code": 208912,
+    "url": "https://footballapi.pulselive.com/football/stats/player/13622?fixtures=124804",
+    "file": "pl_13622_124804.json",
+    "sha256": "ab6de73603de728e048aaa03dc51123d5979a124dd26e61a8c98a185b9651ff9"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 18,
+    "code": 441164,
+    "url": "https://footballapi.pulselive.com/football/stats/player/32229?fixtures=124808",
+    "file": "pl_32229_124808.json",
+    "sha256": "db627a657e4aa3773ee331e48dcae9c96fd506577602002101e7c77a7600ca08"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 19,
+    "code": 208706,
+    "url": "https://footballapi.pulselive.com/football/stats/player/74761?fixtures=124809",
+    "file": "pl_74761_124809.json",
+    "sha256": "3aec09ba31adb9d284757d29af7821940e712bed83653d79c50c5a222dae53dd"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 21,
+    "code": 244723,
+    "url": "https://footballapi.pulselive.com/football/stats/player/24334?fixtures=124811",
+    "file": "pl_24334_124811.json",
+    "sha256": "413f56d1dd5efc99e871c337f012f5ebed2658d9fb64c5f1221c4adda35e086d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 21,
+    "code": 437499,
+    "url": "https://footballapi.pulselive.com/football/stats/player/76104?fixtures=124811",
+    "file": "pl_76104_124811.json",
+    "sha256": "5cbfa067483a8b3a27e56b4eb35e206ba8276009e15018014a7f35fd414e97b5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 23,
+    "code": 153133,
+    "url": "https://footballapi.pulselive.com/football/stats/player/4717?fixtures=124813",
+    "file": "pl_4717_124813.json",
+    "sha256": "f4aa5a446bafb0363b98b6fc8e4db2d791e89e934fa68cf523de8f9e670c912c"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 25,
+    "code": 544877,
+    "url": "https://footballapi.pulselive.com/football/stats/player/116665?fixtures=124815",
+    "file": "pl_116665_124815.json",
+    "sha256": "bae7ac1a5753c6fa668b494beac2c9a3b3b41040d4c46e3f60398769a226975d"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 27,
+    "code": 215379,
+    "url": "https://footballapi.pulselive.com/football/stats/player/51593?fixtures=124817",
+    "file": "pl_51593_124817.json",
+    "sha256": "789b250e3d8c405a55de710cebba8122f07d6cbe20083d36af2017d8df3e0311"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 27,
+    "code": 229384,
+    "url": "https://footballapi.pulselive.com/football/stats/player/136505?fixtures=124817",
+    "file": "pl_136505_124817.json",
+    "sha256": "672d9eae244448ffe6dd57cc976eacb7970aad20acd69685f05e969fb5f61f8e"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 28,
+    "code": 434399,
+    "url": "https://footballapi.pulselive.com/football/stats/player/63733?fixtures=124818",
+    "file": "pl_63733_124818.json",
+    "sha256": "098acc12f5fc26dfaed16829e2b5cabb131b6241739926534bca650f692d03eb"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 29,
+    "code": 494521,
+    "url": "https://footballapi.pulselive.com/football/stats/player/74965?fixtures=124819",
+    "file": "pl_74965_124819.json",
+    "sha256": "8ee70650cec265b81915a3907ee9fb457ca2c00bf527ba1d75b0bbf5568750d5"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 32,
+    "code": 83299,
+    "url": "https://footballapi.pulselive.com/football/stats/player/8163?fixtures=124822",
+    "file": "pl_8163_124822.json",
+    "sha256": "18f39a7dcb2d8be5ca89c7a5c80e39a23ce3c2608155e8ffa0eb9c2a48745b09"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 36,
+    "code": 204646,
+    "url": "https://footballapi.pulselive.com/football/stats/player/14456?fixtures=124826",
+    "file": "pl_14456_124826.json",
+    "sha256": "57f147db8b97c3e251baff2b785c6e3b10da7658ad019ad3d37158460e1dc077"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 38,
+    "code": 209365,
+    "url": "https://footballapi.pulselive.com/football/stats/player/20226?fixtures=124828",
+    "file": "pl_20226_124828.json",
+    "sha256": "8eaf053b572193c68e87007dd087d290c4f1e4a8dfe23ae501050da45d7a9f35"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 40,
+    "code": 613804,
+    "url": "https://footballapi.pulselive.com/football/stats/player/145347?fixtures=124830",
+    "file": "pl_145347_124830.json",
+    "sha256": "fb01b30fcc3f9418ed4eaeca3026c07daab4b1fc48139708d20c9486aa16b078"
+  }
+]

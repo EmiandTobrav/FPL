@@ -1,0 +1,22 @@
+{
+  "status": "documented_target_policy_not_yet_applied_corpus_wide",
+  "coverage_status": "all_previously_mapped_2019_20_to_2023_24_active_outfield_gaps_filled",
+  "official_fpl_available": "retain_official_counts_and_awards",
+  "historical_fallback": {
+    "clearances": "validated_pl_total_clearance_or_fotmob_clearances",
+    "blocks": "shot_blocks_not_all_pass_blocks",
+    "interceptions": "observed_interceptions",
+    "tackles": "total_tackles_not_only_won_tackles",
+    "recoveries": "observed_ball_recoveries_for_mid_and_fwd",
+    "defender_threshold": 10,
+    "midfielder_forward_threshold": 12,
+    "award": 2,
+    "goalkeeper_award": 0
+  },
+  "fbref_clearance_guard": "Do not use raw Clr without independently observed blocked-cross correction or validation of the source version.",
+  "unknown": "missing_with_bounds_never_imputed_as_observed_zero",
+  "provider_disagreements": "retain_provenance_and_sensitivity_do_not_overwrite_official_fpl",
+  "assist_bonus_status": "historical_components_retained_not_fully_modern_rescored",
+  "benchmark_changed": false,
+  "cost_nok": 0
+}

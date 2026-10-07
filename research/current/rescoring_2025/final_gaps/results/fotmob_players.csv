@@ -1,0 +1,1480 @@
+season,fixture,match_id,purpose,code,fotmob_id,name,source_team,source_minutes,source_goals,tackles,blocks,clearances,interceptions,recoveries
+2022-23,1,3900932,gap,40836,109222,Vicente Guaita,Crystal Palace,90.0,,0.0,,1.0,0.0,6.0
+2022-23,1,3900932,gap,55494,146830,Joel Ward,Crystal Palace,,,,,,,
+2022-23,1,3900932,gap,57328,157838,Nathaniel Clyne,Crystal Palace,90.0,0.0,0.0,0.0,2.0,1.0,1.0
+2022-23,1,3900932,gap,58822,160627,Cédric Soares,Arsenal,,,,,,,
+2022-23,1,3900932,gap,66975,163616,Luka Milivojevic,Crystal Palace,15.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,1,3900932,gap,80146,154280,Jordan Ayew,Crystal Palace,90.0,0.0,2.0,0.0,1.0,0.0,4.0
+2022-23,1,3900932,gap,82403,198510,Wilfried Zaha,Crystal Palace,90.0,0.0,3.0,0.0,0.0,0.0,9.0
+2022-23,1,3900932,gap,84450,207236,Granit Xhaka,Arsenal,90.0,0.0,1.0,1.0,3.0,2.0,5.0
+2022-23,1,3900932,gap,86417,214570,Jeffrey Schlupp,Crystal Palace,86.0,0.0,4.0,1.0,0.0,1.0,6.0
+2022-23,1,3900932,gap,101982,280287,Sam Johnstone,Crystal Palace,,,,,,,
+2022-23,1,3900932,gap,108413,295067,Will Hughes,Crystal Palace,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,1,3900932,gap,153256,339992,Mohamed Elneny,Arsenal,,,,,,,
+2022-23,1,3900932,gap,156074,626667,Rob Holding,Arsenal,,,,,,,
+2022-23,1,3900932,gap,167199,434325,Thomas Partey,Arsenal,90.0,0.0,6.0,1.0,1.0,1.0,8.0
+2022-23,1,3900932,gap,173954,496563,Jairo Riedewald,Crystal Palace,,,,,,,
+2022-23,1,3900932,gap,174874,503659,Joachim Andersen,Crystal Palace,90.0,0.0,6.0,0.0,9.0,2.0,5.0
+2022-23,1,3900932,gap,184029,534670,Martin Ødegaard,Arsenal,89.0,0.0,2.0,0.0,1.0,0.0,7.0
+2022-23,1,3900932,gap,192895,582499,Kieran Tierney,Arsenal,7.0,0.0,2.0,0.0,1.0,0.0,0.0
+2022-23,1,3900932,gap,195735,575735,Nicolas Pépé,Arsenal,,,,,,,
+2022-23,1,3900932,gap,198869,776151,Ben White,Arsenal,90.0,0.0,8.0,1.0,4.0,1.0,6.0
+2022-23,1,3900932,gap,199670,637746,Odsonne Edouard,Crystal Palace,58.0,0.0,0.0,0.0,1.0,0.0,2.0
+2022-23,1,3900932,gap,200641,748382,Reiss Nelson,Arsenal,,,,,,,
+2022-23,1,3900932,gap,205533,860920,Edward Nketiah,Arsenal,7.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,1,3900932,gap,205651,576165,Gabriel Jesus,Arsenal,83.0,0.0,1.0,0.0,0.0,1.0,4.0
+2022-23,1,3900932,gap,206325,623621,Oleksandr Zinchenko,Arsenal,83.0,0.0,5.0,0.0,1.0,3.0,6.0
+2022-23,1,3900932,gap,209036,844425,Marc Guehi,Crystal Palace,90.0,0.0,0.0,2.0,1.0,1.0,6.0
+2022-23,1,3900932,gap,223340,961995,Bukayo Saka,Arsenal,90.0,0.0,2.0,0.0,2.0,0.0,4.0
+2022-23,1,3900932,gap,224068,729988,Matt Turner,Arsenal,,,,,,,
+2022-23,1,3900932,gap,225321,746395,Aaron Ramsdale,Arsenal,90.0,,0.0,,0.0,0.0,10.0
+2022-23,1,3900932,gap,226597,795179,Gabriel,Arsenal,90.0,0.0,1.0,2.0,3.0,1.0,3.0
+2022-23,1,3900932,gap,231747,706297,Jean-Philippe Mateta,Crystal Palace,32.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,1,3900932,gap,232413,818975,Eberechi Eze,Crystal Palace,86.0,0.0,1.0,0.0,0.0,0.0,5.0
+2022-23,1,3900932,gap,244723,1120224,Tyrick Mitchell,Crystal Palace,90.0,0.0,1.0,1.0,3.0,2.0,8.0
+2022-23,1,3900932,gap,427623,950829,Chris Richards,Crystal Palace,,,,,,,
+2022-23,1,3900932,gap,437742,901495,Albert Sambi Lokonga,Arsenal,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,1,3900932,gap,438464,951954,Cheick Oumar Doucouré,Crystal Palace,75.0,0.0,1.0,0.0,1.0,1.0,5.0
+2022-23,1,3900932,gap,444145,1021586,Gabriel Martinelli,Arsenal,90.0,1.0,0.0,0.0,1.0,0.0,2.0
+2022-23,1,3900932,gap,450535,1308370,Malcolm Ebiowei,Crystal Palace,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,1,3900932,gap,450541,1113891,Luke Plange,Crystal Palace,,,,,,,
+2022-23,1,3900932,gap,462424,955406,William Saliba,Arsenal,90.0,0.0,1.0,1.0,7.0,0.0,7.0
+2022-23,2,3900934,gap,18892,23354,Ashley Young,Aston Villa,,,,,,,
+2022-23,2,3900934,gap,54469,160447,Adam Smith,Bournemouth,90.0,0.0,1.0,0.0,2.0,2.0,5.0
+2022-23,2,3900934,gap,56872,160496,Junior Stanislas,Bournemouth,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,2,3900934,gap,84583,184536,Philippe Coutinho,Aston Villa,81.0,0.0,0.0,0.0,0.0,1.0,5.0
+2022-23,2,3900934,gap,84939,214426,Danny Ings,Aston Villa,66.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,2,3900934,gap,98980,268375,Emiliano Martinez,Aston Villa,90.0,,0.0,,0.0,0.0,6.0
+2022-23,2,3900934,gap,101184,425255,Calum Chambers,Aston Villa,,,,,,,
+2022-23,2,3900934,gap,101188,210111,Lucas Digne,Aston Villa,90.0,0.0,0.0,0.0,2.0,3.0,5.0
+2022-23,2,3900934,gap,111782,120569,Robin Olsen,Aston Villa,,,,,,,
+2022-23,2,3900934,gap,122806,356406,John McGinn,Aston Villa,90.0,0.0,2.0,0.0,0.0,1.0,8.0
+2022-23,2,3900934,gap,128340,469202,Kieffer Moore,Bournemouth,90.0,1.0,1.0,0.0,0.0,0.0,2.0
+2022-23,2,3900934,gap,133845,343316,Emiliano Marcondes,Bournemouth,,,,,,,
+2022-23,2,3900934,gap,149484,419664,Tyrone Mings,Aston Villa,,,,,,,
+2022-23,2,3900934,gap,152551,466672,Jefferson Lerma,Bournemouth,90.0,1.0,1.0,0.0,3.0,1.0,1.0
+2022-23,2,3900934,gap,154131,564794,Jack Stacey,Bournemouth,,,,,,,
+2022-23,2,3900934,gap,154566,591734,Dominic Solanke,Bournemouth,89.0,0.0,1.0,0.0,1.0,0.0,3.0
+2022-23,2,3900934,gap,155408,562724,Lewis Cook,Bournemouth,18.0,0.0,0.0,1.0,0.0,2.0,2.0
+2022-23,2,3900934,gap,155561,281857,Ludwig Augustinsson,Aston Villa,,,,,,,
+2022-23,2,3900934,gap,156687,610267,Ben Pearson,Bournemouth,72.0,0.0,3.0,0.0,1.0,1.0,7.0
+2022-23,2,3900934,gap,158499,439369,Ryan Christie,Bournemouth,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,2,3900934,gap,165659,570434,Diego Carlos,Aston Villa,90.0,0.0,1.0,0.0,1.0,0.0,8.0
+2022-23,2,3900934,gap,168991,532743,Philip Billing,Bournemouth,90.0,0.0,5.0,1.0,3.0,5.0,8.0
+2022-23,2,3900934,gap,178301,540088,Ollie Watkins,Aston Villa,24.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,2,3900934,gap,195546,610184,Emiliano Buendia,Aston Villa,45.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,2,3900934,gap,199796,729731,Matty Cash,Aston Villa,90.0,0.0,1.0,0.0,1.0,1.0,5.0
+2022-23,2,3900934,gap,199798,710159,Ezri Konsa,Aston Villa,90.0,0.0,1.0,1.0,4.0,2.0,7.0
+2022-23,2,3900934,gap,201658,789630,Marcus Tavernier,Bournemouth,86.0,0.0,1.0,0.0,0.0,0.0,10.0
+2022-23,2,3900934,gap,215711,671331,Leon Bailey,Aston Villa,90.0,0.0,1.0,0.0,0.0,0.0,3.0
+2022-23,2,3900934,gap,223911,819762,Chris Mepham,Bournemouth,90.0,0.0,2.0,1.0,13.0,1.0,2.0
+2022-23,2,3900934,gap,226944,816325,Boubacar Kamara,Aston Villa,82.0,0.0,1.0,1.0,0.0,0.0,10.0
+2022-23,2,3900934,gap,229600,731855,Mark Travers,Bournemouth,90.0,,0.0,,0.0,0.0,8.0
+2022-23,2,3900934,gap,230046,787350,Douglas Luiz,Aston Villa,8.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,2,3900934,gap,232653,1021929,Jacob Ramsey,Aston Villa,45.0,0.0,3.0,0.0,0.0,0.0,7.0
+2022-23,2,3900934,gap,235530,819215,Lloyd Kelly,Bournemouth,90.0,0.0,2.0,1.0,11.0,1.0,2.0
+2022-23,2,3900934,gap,244085,865184,Siriki Dembele,Bournemouth,,,,,,,
+2022-23,2,3900934,gap,433979,1086647,Cameron Archer,Aston Villa,9.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,2,3900934,gap,444172,1096635,Will Dennis,Bournemouth,,,,,,,
+2022-23,2,3900934,gap,444180,1171140,Jaidon Anthony,Bournemouth,,,,,,,
+2022-23,2,3900934,gap,447932,982633,Jordan Zemura,Bournemouth,90.0,0.0,3.0,2.0,2.0,0.0,6.0
+2022-23,2,3900934,gap,463981,959407,James Hill,Bournemouth,,,,,,,
+2022-23,3,3900939,gap,17761,243138,James Tarkowski,Everton,90.0,0.0,0.0,3.0,3.0,2.0,9.0
+2022-23,3,3900939,gap,40349,46518,Asmir Begovic,Everton,,,,,,,
+2022-23,3,3900939,gap,41328,72541,César Azpilicueta,Chelsea,90.0,0.0,4.0,0.0,0.0,1.0,5.0
+2022-23,3,3900939,gap,51090,80562,Thiago Silva,Chelsea,90.0,0.0,1.0,1.0,4.0,3.0,4.0
+2022-23,3,3900939,gap,85955,282775,Jorginho,Chelsea,89.0,1.0,0.0,0.0,0.0,0.0,11.0
+2022-23,3,3900939,gap,86129,210428,Kalidou Koulibaly,Chelsea,75.0,0.0,2.0,0.0,3.0,1.0,4.0
+2022-23,3,3900939,gap,91651,239219,Mateo Kovacic,Chelsea,,,,,,,
+2022-23,3,3900939,gap,103955,246575,Raheem Sterling,Chelsea,90.0,0.0,1.0,0.0,0.0,0.0,3.0
+2022-23,3,3900939,gap,106611,290410,Michael Keane,Everton,,,,,,,
+2022-23,3,3900939,gap,108823,363333,Dele Alli,Everton,29.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,3,3900939,gap,109745,317564,Kepa Arrizabalaga,Chelsea,,,,,,,
+2022-23,3,3900939,gap,111234,303919,Jordan Pickford,Everton,90.0,,0.0,,1.0,0.0,12.0
+2022-23,3,3900939,gap,116594,319300,N'Golo Kanté,Chelsea,90.0,0.0,4.0,0.0,0.0,2.0,12.0
+2022-23,3,3900939,gap,119765,188652,Allan,Everton,,,,,,,
+2022-23,3,3900939,gap,121599,352887,Abdoulaye Doucouré,Everton,90.0,0.0,5.0,0.0,1.0,0.0,9.0
+2022-23,3,3900939,gap,124183,360559,Hakim Ziyech,Chelsea,,,,,,,
+2022-23,3,3900939,gap,126187,604982,Ruben Loftus-Cheek,Chelsea,25.0,0.0,2.0,0.0,1.0,0.0,1.0
+2022-23,3,3900939,gap,153133,604785,Alex Iwobi,Everton,90.0,0.0,0.0,0.0,3.0,2.0,7.0
+2022-23,3,3900939,gap,160987,445226,Jean-Philippe Gbamin,Everton,,,,,,,
+2022-23,3,3900939,gap,164511,496042,Yerry Mina,Everton,70.0,0.0,1.0,1.0,3.0,1.0,3.0
+2022-23,3,3900939,gap,172632,492586,Demarai Gray,Everton,90.0,0.0,1.0,0.0,0.0,0.0,6.0
+2022-23,3,3900939,gap,172850,672469,Ben Chilwell,Chelsea,65.0,0.0,0.0,0.0,1.0,0.0,1.0
+2022-23,3,3900939,gap,176413,688295,Christian Pulisic,Chelsea,25.0,0.0,1.0,0.0,1.0,1.0,3.0
+2022-23,3,3900939,gap,179268,873289,Marc Cucurella,Chelsea,15.0,0.0,1.0,0.0,0.0,0.0,3.0
+2022-23,3,3900939,gap,180736,793907,Trevoh Chalobah,Chelsea,,,,,,,
+2022-23,3,3900939,gap,184341,750032,Mason Mount,Chelsea,65.0,0.0,0.0,1.0,0.0,0.0,3.0
+2022-23,3,3900939,gap,194164,603329,Mason Holgate,Everton,72.0,0.0,3.0,1.0,9.0,1.0,3.0
+2022-23,3,3900939,gap,198826,662936,Ben Godfrey,Everton,18.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,3,3900939,gap,216054,862467,Ruben Vinagre,Everton,20.0,0.0,1.0,0.0,1.0,0.0,3.0
+2022-23,3,3900939,gap,219847,749736,Kai Havertz,Chelsea,75.0,0.0,2.0,0.0,0.0,0.0,3.0
+2022-23,3,3900939,gap,224967,874025,Vitalii Mykolenko,Everton,90.0,0.0,2.0,1.0,3.0,2.0,3.0
+2022-23,3,3900939,gap,225796,807729,Reece James,Chelsea,90.0,0.0,1.0,0.0,3.0,1.0,6.0
+2022-23,3,3900939,gap,228286,773229,Edouard Mendy,Chelsea,90.0,,0.0,,2.0,0.0,9.0
+2022-23,3,3900939,gap,232787,966027,Conor Gallagher,Chelsea,1.0,0.0,0.0,0.0,1.0,0.0,0.0
+2022-23,3,3900939,gap,232826,906937,Anthony Gordon,Everton,90.0,0.0,2.0,0.0,0.0,0.0,3.0
+2022-23,3,3900939,gap,243571,1112684,Nathan Patterson,Everton,90.0,0.0,4.0,0.0,3.0,0.0,4.0
+2022-23,3,3900939,gap,433154,939542,Dwight McNeil,Everton,61.0,0.0,4.0,0.0,0.0,0.0,5.0
+2022-23,3,3900939,gap,440323,1077975,Armando Broja,Chelsea,15.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,3,3900939,gap,461453,1113906,Lewis Warrington,Everton,,,,,,,
+2022-23,3,3900939,gap,510328,1254762,Stanley Mills,Everton,,,,,,,
+2022-23,4,3900933,gap,15157,38807,James Milner,Liverpool,31.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,4,3900933,gap,56979,156008,Jordan Henderson,Liverpool,90.0,0.0,0.0,0.0,1.0,1.0,8.0
+2022-23,4,3900933,gap,60706,169756,Adrian,Liverpool,,,,,,,
+2022-23,4,3900933,gap,60914,171698,Joel Matip,Liverpool,90.0,0.0,3.0,1.0,4.0,2.0,8.0
+2022-23,4,3900933,gap,61558,172949,Thiago Alcántara,Liverpool,51.0,0.0,0.0,0.0,0.0,1.0,8.0
+2022-23,4,3900933,gap,61933,174325,Shane Duffy,Fulham,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,4,3900933,gap,76357,182962,Tom Cairney,Fulham,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,4,3900933,gap,80201,215168,Bernd Leno,Fulham,,,,,,,
+2022-23,4,3900933,gap,82514,198444,Tim Ream,Fulham,90.0,0.0,1.0,1.0,5.0,1.0,8.0
+2022-23,4,3900933,gap,92217,242709,Roberto Firmino,Liverpool,51.0,0.0,1.0,1.0,0.0,0.0,3.0
+2022-23,4,3900933,gap,92259,240478,Neeskens Kebano,Fulham,66.0,0.0,1.0,0.0,0.0,0.0,5.0
+2022-23,4,3900933,gap,96994,262550,Bobby Reid,Fulham,89.0,0.0,2.0,0.0,1.0,0.0,7.0
+2022-23,4,3900933,gap,97032,209405,Virgil van Dijk,Liverpool,90.0,0.0,2.0,0.0,6.0,0.0,9.0
+2022-23,4,3900933,gap,109646,683402,Tosin Adarabioyo,Fulham,90.0,0.0,2.0,0.0,7.0,1.0,5.0
+2022-23,4,3900933,gap,116535,319784,Alisson Becker,Liverpool,90.0,,0.0,,0.0,0.0,10.0
+2022-23,4,3900933,gap,116643,359188,Fabinho,Liverpool,59.0,0.0,1.0,1.0,0.0,1.0,6.0
+2022-23,4,3900933,gap,118748,292462,Mohamed Salah,Liverpool,90.0,1.0,0.0,0.0,0.0,1.0,2.0
+2022-23,4,3900933,gap,120721,350472,Kevin Mbabu,Fulham,,,,,,,
+2022-23,4,3900933,gap,122798,357880,Andrew Robertson,Liverpool,90.0,0.0,2.0,1.0,1.0,0.0,2.0
+2022-23,4,3900933,gap,128389,351860,Aleksandar Mitrovic,Fulham,90.0,2.0,1.0,1.0,3.0,1.0,7.0
+2022-23,4,3900933,gap,153366,502420,Harrison Reed,Fulham,90.0,0.0,3.0,1.0,3.0,2.0,5.0
+2022-23,4,3900933,gap,154296,524434,Joao Palhinha,Fulham,90.0,0.0,6.0,0.0,1.0,1.0,4.0
+2022-23,4,3900933,gap,155529,605643,Marek Rodak,Fulham,90.0,,0.0,,0.0,0.0,11.0
+2022-23,4,3900933,gap,156689,575779,Andreas Pereira,Fulham,89.0,0.0,0.0,0.0,0.0,0.0,3.0
+2022-23,4,3900933,gap,167074,469804,Kenny Tete,Fulham,90.0,0.0,5.0,0.0,5.0,2.0,4.0
+2022-23,4,3900933,gap,169187,760712,Trent Alexander-Arnold,Liverpool,90.0,0.0,2.0,0.0,2.0,1.0,6.0
+2022-23,4,3900933,gap,169528,662428,Antonee Robinson,Fulham,90.0,0.0,1.0,0.0,5.0,2.0,10.0
+2022-23,4,3900933,gap,171287,568571,Joseph Gomez,Liverpool,,,,,,,
+2022-23,4,3900933,gap,235674,822237,Manor Solomon,Fulham,24.0,0.0,2.0,0.0,0.0,0.0,4.0
+2022-23,4,3900933,gap,244042,1128945,Rodrigo Muniz,Fulham,,,,,,,
+2022-23,4,3900933,gap,244731,860914,Luis Diaz,Liverpool,78.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,4,3900933,gap,244858,963965,Fabio Carvalho,Liverpool,12.0,0.0,0.0,0.0,0.0,2.0,0.0
+2022-23,4,3900933,gap,432931,894805,Tyrese Francois,Fulham,,,,,,,
+2022-23,4,3900933,gap,444765,919435,Sepp van den Berg,Liverpool,,,,,,,
+2022-23,4,3900933,gap,444884,963964,Harvey Elliott,Liverpool,39.0,0.0,0.0,0.0,0.0,1.0,4.0
+2022-23,4,3900933,gap,447203,950561,Darwin Nunez,Liverpool,39.0,1.0,0.0,0.0,0.0,0.0,0.0
+2022-23,4,3900933,gap,462491,1249634,Luke Chambers,Liverpool,,,,,,,
+2022-23,4,3900933,gap,490146,1113816,Jay Stansfield,Fulham,,,,,,,
+2022-23,4,3900933,gap,515024,1199712,Luke Harris,Fulham,,,,,,,
+2022-23,4,3900933,gap,535928,1310118,Stefan Bajcetic,Liverpool,,,,,,,
+2022-23,5,3900935,gap,72222,159342,Mateusz Klich,Leeds,25.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,5,3900935,gap,80954,193869,Rodrigo,Leeds,65.0,1.0,0.0,0.0,1.0,2.0,2.0
+2022-23,5,3900935,gap,90585,246331,Willy Boly,Wolves,,,,,,,
+2022-23,5,3900935,gap,94147,247761,Conor Coady,Wolves,,,,,,,
+2022-23,5,3900935,gap,106617,302241,Patrick Bamford,Leeds,84.0,0.0,0.0,0.0,2.0,0.0,5.0
+2022-23,5,3900935,gap,114128,360918,Jonny,Wolves,90.0,0.0,3.0,0.0,0.0,3.0,7.0
+2022-23,5,3900935,gap,149065,416175,José Sá,Wolves,90.0,,0.0,,0.0,0.0,10.0
+2022-23,5,3900935,gap,149915,420568,Diego Llorente,Leeds,90.0,0.0,2.0,1.0,4.0,2.0,7.0
+2022-23,5,3900935,gap,151589,424129,Leander Dendoncker,Wolves,90.0,0.0,2.0,0.0,2.0,5.0,9.0
+2022-23,5,3900935,gap,171317,534684,Ruben Neves,Wolves,90.0,0.0,4.0,2.0,5.0,1.0,9.0
+2022-23,5,3900935,gap,184754,620026,Hee-Chan Hwang,Wolves,85.0,0.0,0.0,0.0,1.0,0.0,3.0
+2022-23,5,3900935,gap,193645,628201,Robin Koch,Leeds,90.0,0.0,3.0,2.0,4.0,1.0,5.0
+2022-23,5,3900935,gap,198842,672484,Connor Ronan,Wolves,,,,,,,
+2022-23,5,3900935,gap,200600,524435,Daniel Podence,Wolves,90.0,1.0,1.0,0.0,0.0,0.0,7.0
+2022-23,5,3900935,gap,200785,729769,Tyler Adams,Leeds,90.0,0.0,4.0,0.0,2.0,1.0,8.0
+2022-23,5,3900935,gap,214048,865931,Max Kilman,Wolves,90.0,0.0,0.0,1.0,6.0,0.0,9.0
+2022-23,5,3900935,gap,216208,674115,Matija Sarkic,Wolves,,,,,,,
+2022-23,5,3900935,gap,221399,751649,Jack Harrison,Leeds,90.0,0.0,2.0,0.0,1.0,1.0,9.0
+2022-23,5,3900935,gap,222531,789502,Morgan Gibbs-White,Wolves,90.0,0.0,2.0,0.0,1.0,1.0,4.0
+2022-23,5,3900935,gap,222694,796974,Pascal Struijk,Leeds,90.0,0.0,5.0,0.0,3.0,3.0,7.0
+2022-23,5,3900935,gap,223081,837268,Kristoffer Klaesson,Leeds,,,,,,,
+2022-23,5,3900935,gap,224209,722207,Rasmus Kristensen,Leeds,90.0,0.0,1.0,0.0,4.0,2.0,5.0
+2022-23,5,3900935,gap,234370,640220,Marc Roca,Leeds,73.0,0.0,1.0,0.0,0.0,2.0,6.0
+2022-23,5,3900935,gap,240299,1070794,Joe Hodge,Wolves,,,,,,,
+2022-23,5,3900935,gap,245923,968944,Luke Cundle,Wolves,,,,,,,
+2022-23,5,3900935,gap,247632,843040,Pedro Neto,Wolves,90.0,0.0,1.0,0.0,0.0,2.0,5.0
+2022-23,5,3900935,gap,248937,1049805,Sam Greenwood,Leeds,17.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,5,3900935,gap,427637,952322,Brenden Aaronson,Leeds,84.0,0.0,2.0,0.0,0.0,0.0,3.0
+2022-23,5,3900935,gap,432830,961306,Nathan Collins,Wolves,90.0,0.0,0.0,0.0,1.0,2.0,5.0
+2022-23,5,3900935,gap,433590,962046,Cody Drameh,Leeds,,,,,,,
+2022-23,5,3900935,gap,437495,952029,Illan Meslier,Leeds,90.0,,0.0,,0.0,0.0,10.0
+2022-23,5,3900935,gap,448514,933845,Rayan Ait Nouri,Wolves,90.0,0.0,3.0,0.0,0.0,0.0,6.0
+2022-23,5,3900935,gap,450070,941213,Crysencio Summerville,Leeds,6.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,5,3900935,gap,461026,1107731,Chem Campbell,Wolves,5.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,5,3900935,gap,462635,956161,Joe Gelhardt,Leeds,6.0,0.0,0.0,0.0,1.0,0.0,0.0
+2022-23,5,3900935,gap,470294,1125874,Darko Gyabi,Leeds,,,,,,,
+2022-23,5,3900935,gap,477547,1222770,Leo Hjelde,Leeds,,,,,,,
+2022-23,5,3900935,gap,490721,1116391,Hugo Bueno,Wolves,,,,,,,
+2022-23,5,3900935,gap,501837,1200657,Yerson Mosquera,Wolves,,,,,,,
+2022-23,5,3900935,gap,547701,1323305,Archie Gray,Leeds,,,,,,,
+2022-23,6,3900936,control,37642,43248,Jonny Evans,Leicester,90.0,0.0,0.0,0.0,5.0,0.0,5.0
+2022-23,6,3900936,control,51927,240538,Ben Mee,Brentford,59.0,0.0,0.0,0.0,1.0,1.0,4.0
+2022-23,6,3900936,control,51938,139671,Marc Albrighton,Leicester,,,,,,,
+2022-23,6,3900936,control,61810,174031,Pontus Jansson,Brentford,90.0,0.0,1.0,0.0,8.0,0.0,1.0
+2022-23,6,3900936,control,86881,210128,Nampalys Mendy,Leicester,,,,,,,
+2022-23,6,3900936,control,95463,254472,Danny Ward,Leicester,90.0,,0.0,,0.0,0.0,9.0
+2022-23,6,3900936,control,101668,286119,Jamie Vardy,Leicester,90.0,0.0,2.0,0.0,3.0,0.0,3.0
+2022-23,6,3900936,control,106837,282012,Dennis Praet,Leicester,,,,,,,
+2022-23,6,3900936,control,128295,266520,Christian Nørgaard,Brentford,73.0,0.0,2.0,1.0,0.0,1.0,8.0
+2022-23,6,3900936,control,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2022-23,6,3900936,control,144485,408987,Ivan Toney,Brentford,90.0,1.0,0.0,0.0,1.0,1.0,6.0
+2022-23,6,3900936,control,154561,562727,David Raya,Brentford,90.0,,0.0,,0.0,0.0,11.0
+2022-23,6,3900936,control,155569,436036,Daniel Amartey,Leicester,90.0,0.0,1.0,0.0,0.0,0.0,8.0
+2022-23,6,3900936,control,166477,465750,Timothy Castagne,Leicester,90.0,1.0,0.0,1.0,0.0,1.0,5.0
+2022-23,6,3900936,control,166989,465960,Youri Tielemans,Leicester,90.0,0.0,2.0,0.0,0.0,0.0,8.0
+2022-23,6,3900936,control,168580,479020,Ayoze Pérez,Leicester,,,,,,,
+2022-23,6,3900936,control,172780,493165,James Maddison,Leicester,90.0,0.0,0.0,0.0,1.0,0.0,0.0
+2022-23,6,3900936,control,173515,643709,Kelechi Iheanacho,Leicester,,,,,,,
+2022-23,6,3900936,control,183656,759566,Joshua Dasilva,Brentford,31.0,1.0,0.0,1.0,0.0,0.0,0.0
+2022-23,6,3900936,control,194010,562892,Rico Henry,Brentford,90.0,0.0,0.0,0.0,1.0,0.0,5.0
+2022-23,6,3900936,control,203341,533228,Wilfred Ndidi,Leicester,90.0,0.0,2.0,0.0,0.0,1.0,10.0
+2022-23,6,3900936,control,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,3.0,0.0,1.0,0.0,7.0
+2022-23,6,3900936,control,207270,617763,Daniel Iversen,Leicester,,,,,,,
+2022-23,6,3900936,control,207283,650616,Mathias Jensen,Brentford,59.0,0.0,1.0,0.0,0.0,0.0,2.0
+2022-23,6,3900936,control,215413,886016,Kiernan Dewsbury-Hall,Leicester,73.0,1.0,1.0,0.0,0.0,2.0,2.0
+2022-23,6,3900936,control,216646,666857,Yoane Wissa,Brentford,83.0,0.0,1.0,0.0,1.0,1.0,2.0
+2022-23,6,3900936,control,218031,602261,Caglar Söyüncü,Leicester,,,,,,,
+2022-23,6,3900936,control,220627,710158,James Justin,Leicester,90.0,0.0,3.0,0.0,1.0,1.0,4.0
+2022-23,6,3900936,control,226956,803343,Mads Roerslev,Brentford,,,,,,,
+2022-23,6,3900936,control,228044,659018,Mads Bech,Brentford,7.0,0.0,0.0,0.0,1.0,1.0,0.0
+2022-23,6,3900936,control,244619,916332,Luke Thomas,Leicester,,,,,,,
+2022-23,6,3900936,control,245419,644459,Patson Daka,Leicester,17.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,6,3900936,control,249231,1010426,Keane Lewis-Potter,Brentford,31.0,0.0,0.0,1.0,0.0,0.0,1.0
+2022-23,6,3900936,control,428580,856685,Frank Onyeka,Brentford,,,,,,,
+2022-23,6,3900936,control,432160,865131,Shandon Baptiste,Brentford,17.0,0.0,1.0,0.0,1.0,0.0,0.0
+2022-23,6,3900936,control,434662,938521,Halil Dervisoglu,Brentford,7.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,6,3900936,control,444463,917802,Wesley Fofana,Leicester,90.0,0.0,2.0,0.0,2.0,5.0,6.0
+2022-23,6,3900936,control,446008,923312,Bryan Mbeumo,Brentford,90.0,0.0,1.0,0.0,1.0,2.0,6.0
+2022-23,6,3900936,control,450550,1130788,Fin Stevens,Brentford,,,,,,,
+2022-23,6,3900936,control,472713,1002039,Aaron Hickey,Brentford,83.0,0.0,0.0,0.0,0.0,1.0,2.0
+2022-23,7,3900937,gap,20066,36283,Wayne Hennessey,Nott'm Forest,,,,,,,
+2022-23,7,3900937,gap,56983,155913,Matt Ritchie,Newcastle,,,,,,,
+2022-23,7,3900937,gap,57647,156937,Lyle Taylor,Nott'm Forest,,,,,,,
+2022-23,7,3900937,gap,58771,160243,Jack Colback,Nott'm Forest,90.0,0.0,5.0,0.0,1.0,1.0,4.0
+2022-23,7,3900937,gap,60689,169719,Chris Wood,Newcastle,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+2022-23,7,3900937,gap,67089,72241,Martin Dubravka,Newcastle,,,,,,,
+2022-23,7,3900937,gap,75115,184321,Callum Wilson,Newcastle,89.0,1.0,0.0,0.0,0.0,0.0,1.0
+2022-23,7,3900937,gap,77794,191869,Kieran Trippier,Newcastle,90.0,0.0,1.0,0.0,1.0,4.0,15.0
+2022-23,7,3900937,gap,78916,188058,Daniel Burn,Newcastle,90.0,0.0,2.0,0.0,5.0,0.0,6.0
+2022-23,7,3900937,gap,90105,230916,Ryan Fraser,Newcastle,9.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,7,3900937,gap,98747,280484,Nick Pope,Newcastle,90.0,,0.0,,1.0,0.0,9.0
+2022-23,7,3900937,gap,106618,308932,Paul Dummett,Newcastle,,,,,,,
+2022-23,7,3900937,gap,109322,299215,Jesse Lingard,Nott'm Forest,90.0,0.0,0.0,0.0,0.0,2.0,5.0
+2022-23,7,3900937,gap,114241,575804,Harry Toffolo,Nott'm Forest,90.0,0.0,0.0,0.0,5.0,1.0,7.0
+2022-23,7,3900937,gap,114243,521148,Jacob Murphy,Newcastle,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,7,3900937,gap,119471,189982,Fabian Schär,Newcastle,90.0,1.0,2.0,2.0,4.0,3.0,8.0
+2022-23,7,3900937,gap,166325,361768,Cafu,Nott'm Forest,,,,,,,
+2022-23,7,3900937,gap,168281,551805,Scott McKenna,Nott'm Forest,90.0,0.0,0.0,3.0,4.0,1.0,5.0
+2022-23,7,3900937,gap,169359,538112,Matt Targett,Newcastle,90.0,0.0,3.0,0.0,1.0,0.0,10.0
+2022-23,7,3900937,gap,170137,466482,Allan Saint-Maximin,Newcastle,89.0,0.0,0.0,0.0,0.0,1.0,5.0
+2022-23,7,3900937,gap,172649,719330,Dean Henderson,Nott'm Forest,90.0,,0.0,,2.0,0.0,16.0
+2022-23,7,3900937,gap,179018,442277,Miguel Almiron,Newcastle,81.0,0.0,2.0,0.0,1.0,0.0,5.0
+2022-23,7,3900937,gap,179519,765693,Orel Mangala,Nott'm Forest,15.0,0.0,1.0,0.0,0.0,0.0,1.0
+2022-23,7,3900937,gap,180135,820024,Sean Longstaff,Newcastle,10.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,7,3900937,gap,180974,535936,Joelinton,Newcastle,90.0,0.0,1.0,0.0,0.0,2.0,5.0
+2022-23,7,3900937,gap,199170,592102,Moussa Niakhaté,Nott'm Forest,83.0,0.0,0.0,0.0,11.0,1.0,5.0
+2022-23,7,3900937,gap,200089,860975,Joseph Willock,Newcastle,80.0,0.0,4.0,0.0,0.0,0.0,7.0
+2022-23,7,3900937,gap,208706,850354,Bruno Guimaraes,Newcastle,89.0,0.0,3.0,0.0,0.0,1.0,10.0
+2022-23,7,3900937,gap,208912,716687,Joe Worrall,Nott'm Forest,90.0,0.0,3.0,1.0,3.0,0.0,2.0
+2022-23,7,3900937,gap,210156,643717,Taiwo Awoniyi,Nott'm Forest,27.0,0.0,2.0,0.0,0.0,0.0,1.0
+2022-23,7,3900937,gap,215136,1078788,Neco Williams,Nott'm Forest,90.0,0.0,1.0,1.0,3.0,3.0,6.0
+2022-23,7,3900937,gap,215379,1089691,Elliot Anderson,Newcastle,,,,,,,
+2022-23,7,3900937,gap,217331,796747,Sam Surridge,Nott'm Forest,63.0,0.0,0.0,1.0,3.0,0.0,1.0
+2022-23,7,3900937,gap,220237,956682,Sven Botman,Newcastle,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,7,3900937,gap,242885,949216,Loic Mbe Soh,Nott'm Forest,,,,,,,
+2022-23,7,3900937,gap,242898,1076756,Brennan Johnson,Nott'm Forest,90.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,7,3900937,gap,243345,914134,Lewis O'Brien,Nott'm Forest,75.0,0.0,3.0,0.0,4.0,1.0,13.0
+2022-23,7,3900937,gap,244930,1081174,Alex Mighten,Nott'm Forest,7.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,7,3900937,gap,437753,990989,Giulian Biancone,Nott'm Forest,,,,,,,
+2022-23,7,3900937,gap,475492,1287618,Oliver Hammond,Nott'm Forest,,,,,,,
+2022-23,8,3900938,gap,37915,26295,Hugo Lloris,Spurs,90.0,,0.0,,0.0,0.0,8.0
+2022-23,8,3900938,gap,40383,95336,Fraser Forster,Spurs,,,,,,,
+2022-23,8,3900938,gap,45034,163670,Ivan Perisic,Spurs,24.0,0.0,1.0,0.0,1.0,0.0,0.0
+2022-23,8,3900938,gap,58376,119079,Alex McCarthy,Southampton,,,,,,,
+2022-23,8,3900938,gap,78056,212470,Oriol Romeu,Southampton,75.0,0.0,1.0,0.0,1.0,1.0,8.0
+2022-23,8,3900938,gap,78830,194165,Harry Kane,Spurs,90.0,0.0,0.0,0.0,2.0,0.0,3.0
+2022-23,8,3900938,gap,83283,201664,Nathan Redmond,Southampton,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,8,3900938,gap,85971,212867,Heung-Min Son,Spurs,90.0,0.0,3.0,0.0,0.0,0.0,4.0
+2022-23,8,3900938,gap,87835,239920,Matt Doherty,Spurs,3.0,0.0,0.0,1.0,0.0,0.0,0.0
+2022-23,8,3900938,gap,88900,215387,Jack Stephens,Southampton,45.0,0.0,1.0,1.0,2.0,1.0,0.0
+2022-23,8,3900938,gap,91047,237563,Stuart Armstrong,Southampton,45.0,0.0,2.0,0.0,0.0,0.0,3.0
+2022-23,8,3900938,gap,93264,361315,Eric Dier,Spurs,90.0,1.0,0.0,0.0,1.0,1.0,4.0
+2022-23,8,3900938,gap,95715,215299,Lucas Moura,Spurs,4.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,8,3900938,gap,96787,261936,Mohamed Elyounoussi,Southampton,,,,,,,
+2022-23,8,3900938,gap,101178,279490,James Ward-Prowse,Southampton,90.0,1.0,2.0,0.0,0.0,1.0,1.0
+2022-23,8,3900938,gap,115556,276121,Ben Davies,Spurs,86.0,0.0,1.0,0.0,3.0,0.0,3.0
+2022-23,8,3900938,gap,132015,266523,Pierre-Emile Højbjerg,Spurs,90.0,0.0,3.0,0.0,2.0,0.0,6.0
+2022-23,8,3900938,gap,155511,519835,Adam Armstrong,Southampton,45.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,8,3900938,gap,158534,734042,Kyle Walker-Peters,Southampton,89.0,0.0,2.0,1.0,4.0,1.0,2.0
+2022-23,8,3900938,gap,171101,488412,Clément Lenglet,Spurs,4.0,0.0,0.0,0.0,1.0,0.0,0.0
+2022-23,8,3900938,gap,171771,490868,Jan Bednarek,Southampton,90.0,0.0,0.0,0.0,3.0,2.0,7.0
+2022-23,8,3900938,gap,173904,643533,Davinson Sánchez,Spurs,,,,,,,
+2022-23,8,3900938,gap,184349,773991,Ryan Sessegnon,Spurs,66.0,1.0,2.0,0.0,2.0,0.0,2.0
+2022-23,8,3900938,gap,193204,798659,Joe Aribo,Southampton,90.0,0.0,1.0,0.0,1.0,1.0,2.0
+2022-23,8,3900938,gap,200439,599353,Che Adams,Southampton,,,,,,,
+2022-23,8,3900938,gap,202993,620618,Rodrigo Bentancur,Spurs,86.0,0.0,5.0,0.0,2.0,1.0,10.0
+2022-23,8,3900938,gap,213482,789596,Yan Valery,Southampton,45.0,0.0,0.0,0.0,3.0,0.0,2.0
+2022-23,8,3900938,gap,221632,789066,Cristian Romero,Spurs,90.0,0.0,0.0,0.0,2.0,1.0,7.0
+2022-23,8,3900938,gap,227127,724306,Yves Bissouma,Spurs,4.0,0.0,1.0,1.0,0.0,0.0,0.0
+2022-23,8,3900938,gap,232859,894803,Djed Spence,Spurs,,,,,,,
+2022-23,8,3900938,gap,240143,938539,Ibrahima Diallo,Southampton,15.0,0.0,0.0,0.0,0.0,1.0,1.0
+2022-23,8,3900938,gap,241157,797908,Emerson Royal,Spurs,87.0,0.0,3.0,1.0,2.0,0.0,6.0
+2022-23,8,3900938,gap,244560,815465,Romain Perraud,Southampton,18.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,8,3900938,gap,431131,862645,Moussa Djenepo,Southampton,72.0,0.0,0.0,1.0,1.0,1.0,8.0
+2022-23,8,3900938,gap,436234,970692,Bryan Gil,Spurs,,,,,,,
+2022-23,8,3900938,gap,445044,935379,Dejan Kulusevski,Spurs,86.0,1.0,4.0,0.0,0.0,0.0,8.0
+2022-23,8,3900938,gap,450527,938247,Mohammed Salisu,Southampton,90.0,0.0,2.0,0.0,3.0,3.0,7.0
+2022-23,8,3900938,gap,456350,939390,Gavin Bazunu,Southampton,90.0,,0.0,,0.0,0.0,12.0
+2022-23,8,3900938,gap,477386,951765,Armel Bella-Kotchap,Southampton,,,,,,,
+2022-23,8,3900938,gap,514356,1190867,Romeo Lavia,Southampton,90.0,0.0,2.0,0.0,1.0,1.0,13.0
+2022-23,71,3901002,control,18892,23354,Ashley Young,Aston Villa,90.0,0.0,3.0,0.0,1.0,0.0,7.0
+2022-23,71,3901002,control,20467,31013,Theo Walcott,Southampton,,,,,,,
+2022-23,71,3901002,control,58376,119079,Alex McCarthy,Southampton,,,,,,,
+2022-23,71,3901002,control,84583,184536,Philippe Coutinho,Aston Villa,84.0,0.0,1.0,0.0,0.0,1.0,6.0
+2022-23,71,3901002,control,84939,214426,Danny Ings,Aston Villa,6.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,71,3901002,control,91047,237563,Stuart Armstrong,Southampton,19.0,0.0,2.0,0.0,0.0,0.0,2.0
+2022-23,71,3901002,control,96787,261936,Mohamed Elyounoussi,Southampton,79.0,0.0,0.0,1.0,1.0,0.0,7.0
+2022-23,71,3901002,control,98980,268375,Emiliano Martinez,Aston Villa,90.0,,0.0,,0.0,0.0,6.0
+2022-23,71,3901002,control,101178,279490,James Ward-Prowse,Southampton,90.0,0.0,3.0,0.0,1.0,2.0,4.0
+2022-23,71,3901002,control,101184,425255,Calum Chambers,Aston Villa,,,,,,,
+2022-23,71,3901002,control,101188,210111,Lucas Digne,Aston Villa,90.0,0.0,7.0,0.0,3.0,0.0,4.0
+2022-23,71,3901002,control,111782,120569,Robin Olsen,Aston Villa,,,,,,,
+2022-23,71,3901002,control,122775,355901,Morgan Sanson,Aston Villa,,,,,,,
+2022-23,71,3901002,control,122806,356406,John McGinn,Aston Villa,90.0,0.0,5.0,1.0,0.0,2.0,11.0
+2022-23,71,3901002,control,149484,419664,Tyrone Mings,Aston Villa,90.0,0.0,2.0,0.0,6.0,0.0,9.0
+2022-23,71,3901002,control,151589,424129,Leander Dendoncker,Aston Villa,23.0,0.0,0.0,0.0,0.0,1.0,0.0
+2022-23,71,3901002,control,155511,519835,Adam Armstrong,Southampton,71.0,0.0,3.0,1.0,1.0,0.0,10.0
+2022-23,71,3901002,control,155561,281857,Ludwig Augustinsson,Aston Villa,,,,,,,
+2022-23,71,3901002,control,158534,734042,Kyle Walker-Peters,Southampton,90.0,0.0,5.0,0.0,0.0,0.0,7.0
+2022-23,71,3901002,control,173271,557799,Duje Caleta-Car,Southampton,,,,,,,
+2022-23,71,3901002,control,178301,540088,Ollie Watkins,Aston Villa,90.0,0.0,3.0,0.0,4.0,1.0,2.0
+2022-23,71,3901002,control,184704,541330,Marvelous Nakamba,Aston Villa,,,,,,,
+2022-23,71,3901002,control,193204,798659,Joe Aribo,Southampton,45.0,0.0,1.0,0.0,1.0,0.0,4.0
+2022-23,71,3901002,control,195546,610184,Emiliano Buendia,Aston Villa,23.0,0.0,1.0,0.0,0.0,0.0,6.0
+2022-23,71,3901002,control,199798,710159,Ezri Konsa,Aston Villa,90.0,0.0,0.0,0.0,5.0,0.0,4.0
+2022-23,71,3901002,control,200439,599353,Che Adams,Southampton,71.0,0.0,0.0,0.0,2.0,0.0,3.0
+2022-23,71,3901002,control,212721,654045,Lyanco,Southampton,,,,,,,
+2022-23,71,3901002,control,215711,671331,Leon Bailey,Aston Villa,67.0,0.0,1.0,0.0,0.0,0.0,3.0
+2022-23,71,3901002,control,226944,816325,Boubacar Kamara,Aston Villa,44.0,0.0,4.0,0.0,2.0,0.0,0.0
+2022-23,71,3901002,control,230046,787350,Douglas Luiz,Aston Villa,46.0,0.0,3.0,1.0,0.0,0.0,5.0
+2022-23,71,3901002,control,232653,1021929,Jacob Ramsey,Aston Villa,67.0,1.0,5.0,1.0,0.0,1.0,8.0
+2022-23,71,3901002,control,240143,938539,Ibrahima Diallo,Southampton,45.0,0.0,0.0,0.0,2.0,0.0,5.0
+2022-23,71,3901002,control,244560,815465,Romain Perraud,Southampton,45.0,0.0,4.0,1.0,2.0,2.0,2.0
+2022-23,71,3901002,control,431131,862645,Moussa Djenepo,Southampton,90.0,0.0,3.0,0.0,2.0,1.0,6.0
+2022-23,71,3901002,control,450527,938247,Mohammed Salisu,Southampton,90.0,0.0,2.0,2.0,7.0,0.0,8.0
+2022-23,71,3901002,control,456350,939390,Gavin Bazunu,Southampton,90.0,,0.0,,1.0,0.0,7.0
+2022-23,71,3901002,control,476888,1177312,Sékou Mara,Southampton,19.0,0.0,1.0,0.0,0.0,0.0,1.0
+2022-23,71,3901002,control,477386,951765,Armel Bella-Kotchap,Southampton,90.0,0.0,3.0,0.0,6.0,5.0,12.0
+2022-23,71,3901002,control,490503,1130774,Samuel Edozie,Southampton,11.0,0.0,0.0,0.0,0.0,1.0,0.0
+2022-23,71,3901002,control,515571,1195885,Juan Larios,Southampton,45.0,0.0,1.0,0.0,0.0,1.0,1.0
+2022-23,128,3901059,control,37915,26295,Hugo Lloris,Spurs,90.0,,0.0,,0.0,0.0,9.0
+2022-23,128,3901059,control,40383,95336,Fraser Forster,Spurs,,,,,,,
+2022-23,128,3901059,control,45034,163670,Ivan Perisic,Spurs,29.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,128,3901059,control,50232,127130,Jonjo Shelvey,Newcastle,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,128,3901059,control,60689,169719,Chris Wood,Newcastle,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,128,3901059,control,75115,184321,Callum Wilson,Newcastle,88.0,1.0,1.0,0.0,1.0,0.0,0.0
+2022-23,128,3901059,control,77794,191869,Kieran Trippier,Newcastle,90.0,0.0,3.0,3.0,2.0,0.0,6.0
+2022-23,128,3901059,control,78830,194165,Harry Kane,Spurs,90.0,1.0,0.0,0.0,1.0,0.0,2.0
+2022-23,128,3901059,control,78916,188058,Daniel Burn,Newcastle,90.0,0.0,0.0,1.0,1.0,0.0,4.0
+2022-23,128,3901059,control,85971,212867,Heung-Min Son,Spurs,90.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,128,3901059,control,87835,239920,Matt Doherty,Spurs,9.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,128,3901059,control,90105,230916,Ryan Fraser,Newcastle,,,,,,,
+2022-23,128,3901059,control,93264,361315,Eric Dier,Spurs,90.0,0.0,0.0,1.0,9.0,2.0,4.0
+2022-23,128,3901059,control,95715,215299,Lucas Moura,Spurs,24.0,0.0,3.0,0.0,0.0,0.0,4.0
+2022-23,128,3901059,control,98747,280484,Nick Pope,Newcastle,90.0,,0.0,,2.0,0.0,14.0
+2022-23,128,3901059,control,101148,279489,Jamaal Lascelles,Newcastle,,,,,,,
+2022-23,128,3901059,control,104542,287894,Loris Karius,Newcastle,,,,,,,
+2022-23,128,3901059,control,109528,299984,Javier Manquillo,Newcastle,,,,,,,
+2022-23,128,3901059,control,114243,521148,Jacob Murphy,Newcastle,15.0,0.0,1.0,0.0,0.0,0.0,2.0
+2022-23,128,3901059,control,115556,276121,Ben Davies,Spurs,9.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,128,3901059,control,119471,189982,Fabian Schär,Newcastle,90.0,0.0,1.0,3.0,5.0,0.0,5.0
+2022-23,128,3901059,control,169359,538112,Matt Targett,Newcastle,,,,,,,
+2022-23,128,3901059,control,171101,488412,Clément Lenglet,Spurs,81.0,0.0,0.0,2.0,0.0,0.0,6.0
+2022-23,128,3901059,control,173904,643533,Davinson Sánchez,Spurs,81.0,0.0,2.0,0.0,3.0,0.0,5.0
+2022-23,128,3901059,control,179018,442277,Miguel Almiron,Newcastle,90.0,1.0,2.0,0.0,0.0,1.0,6.0
+2022-23,128,3901059,control,180135,820024,Sean Longstaff,Newcastle,90.0,0.0,0.0,0.0,0.0,1.0,5.0
+2022-23,128,3901059,control,180974,535936,Joelinton,Newcastle,90.0,0.0,4.0,0.0,1.0,1.0,4.0
+2022-23,128,3901059,control,184349,773991,Ryan Sessegnon,Spurs,61.0,0.0,2.0,1.0,1.0,0.0,4.0
+2022-23,128,3901059,control,194799,864983,Jamal Lewis,Newcastle,,,,,,,
+2022-23,128,3901059,control,199584,873018,Japhet Tanganga,Spurs,,,,,,,
+2022-23,128,3901059,control,200089,860975,Joseph Willock,Newcastle,75.0,0.0,1.0,0.0,0.0,0.0,4.0
+2022-23,128,3901059,control,202993,620618,Rodrigo Bentancur,Spurs,90.0,0.0,6.0,0.0,0.0,4.0,7.0
+2022-23,128,3901059,control,208706,850354,Bruno Guimaraes,Newcastle,89.0,0.0,1.0,0.0,1.0,3.0,9.0
+2022-23,128,3901059,control,209042,873014,Oliver Skipp,Spurs,66.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,128,3901059,control,220237,956682,Sven Botman,Newcastle,90.0,0.0,1.0,1.0,3.0,1.0,5.0
+2022-23,128,3901059,control,227127,724306,Yves Bissouma,Spurs,90.0,0.0,2.0,0.0,0.0,1.0,6.0
+2022-23,128,3901059,control,232859,894803,Djed Spence,Spurs,,,,,,,
+2022-23,128,3901059,control,241157,797908,Emerson Royal,Spurs,90.0,0.0,1.0,0.0,3.0,0.0,9.0
+2022-23,128,3901059,control,436234,970692,Bryan Gil,Spurs,,,,,,,
+2022-23,128,3901059,control,448791,962026,Harvey White,Spurs,,,,,,,
+2022-23,183,3901114,control,48760,71908,Mathias Jørgensen,Brentford,90.0,0.0,1.0,0.0,4.0,1.0,6.0
+2022-23,183,3901114,control,51927,240538,Ben Mee,Brentford,90.0,0.0,2.0,2.0,4.0,0.0,6.0
+2022-23,183,3901114,control,60914,171698,Joel Matip,Liverpool,45.0,0.0,0.0,0.0,2.0,0.0,5.0
+2022-23,183,3901114,control,61558,172949,Thiago Alcántara,Liverpool,90.0,0.0,1.0,0.0,1.0,0.0,5.0
+2022-23,183,3901114,control,81880,196386,Alex Oxlade-Chamberlain,Liverpool,83.0,1.0,2.0,0.0,0.0,0.0,7.0
+2022-23,183,3901114,control,97032,209405,Virgil van Dijk,Liverpool,45.0,0.0,0.0,0.0,0.0,0.0,4.0
+2022-23,183,3901114,control,116535,319784,Alisson Becker,Liverpool,90.0,,0.0,,3.0,0.0,7.0
+2022-23,183,3901114,control,116643,359188,Fabinho,Liverpool,90.0,0.0,2.0,1.0,1.0,1.0,9.0
+2022-23,183,3901114,control,118748,292462,Mohamed Salah,Liverpool,90.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,183,3901114,control,122798,357880,Andrew Robertson,Liverpool,45.0,0.0,2.0,0.0,1.0,1.0,3.0
+2022-23,183,3901114,control,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,1.0,2.0,6.0,3.0,11.0
+2022-23,183,3901114,control,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2022-23,183,3901114,control,154561,562727,David Raya,Brentford,90.0,,0.0,,0.0,0.0,15.0
+2022-23,183,3901114,control,169187,760712,Trent Alexander-Arnold,Liverpool,90.0,0.0,1.0,0.0,1.0,1.0,5.0
+2022-23,183,3901114,control,171287,568571,Joseph Gomez,Liverpool,,,,,,,
+2022-23,183,3901114,control,174932,673937,Sergi Canos,Brentford,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,183,3901114,control,175592,508889,Naby Keita,Liverpool,45.0,0.0,0.0,0.0,0.0,0.0,8.0
+2022-23,183,3901114,control,183656,759566,Joshua Dasilva,Brentford,16.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,183,3901114,control,194010,562892,Rico Henry,Brentford,89.0,0.0,3.0,0.0,5.0,2.0,9.0
+2022-23,183,3901114,control,197464,948567,Nathaniel Phillips,Liverpool,,,,,,,
+2022-23,183,3901114,control,200720,776689,Caoimhin Kelleher,Liverpool,,,,,,,
+2022-23,183,3901114,control,204580,688273,Vitaly Janelt,Brentford,87.0,0.0,5.0,0.0,2.0,1.0,5.0
+2022-23,183,3901114,control,204716,820140,Ibrahima Konaté,Liverpool,90.0,0.0,1.0,0.0,1.0,1.0,11.0
+2022-23,183,3901114,control,205836,532220,Saman Ghoddos,Brentford,3.0,0.0,0.0,0.0,0.0,1.0,7.0
+2022-23,183,3901114,control,206915,933768,Curtis Jones,Liverpool,7.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,183,3901114,control,207283,650616,Mathias Jensen,Brentford,74.0,0.0,1.0,0.0,0.0,2.0,4.0
+2022-23,183,3901114,control,214285,671529,Konstantinos Tsimikas,Liverpool,45.0,0.0,0.0,0.0,3.0,0.0,2.0
+2022-23,183,3901114,control,216646,666857,Yoane Wissa,Brentford,74.0,1.0,0.0,0.0,0.0,0.0,2.0
+2022-23,183,3901114,control,226956,803343,Mads Roerslev,Brentford,90.0,0.0,2.0,0.0,5.0,0.0,8.0
+2022-23,183,3901114,control,228044,659018,Mads Bech,Brentford,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,183,3901114,control,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,4.0,11.0,2.0,3.0
+2022-23,183,3901114,control,244858,963965,Fabio Carvalho,Liverpool,,,,,,,
+2022-23,183,3901114,control,249231,1010426,Keane Lewis-Potter,Brentford,16.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,183,3901114,control,440089,888912,Mikkel Damsgaard,Brentford,,,,,,,
+2022-23,183,3901114,control,444884,963964,Harvey Elliott,Liverpool,45.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,183,3901114,control,446008,923312,Bryan Mbeumo,Brentford,88.0,1.0,0.0,0.0,0.0,1.0,5.0
+2022-23,183,3901114,control,447203,950561,Darwin Nunez,Liverpool,90.0,0.0,0.0,0.0,2.0,0.0,1.0
+2022-23,183,3901114,control,535928,1310118,Stefan Bajcetic,Liverpool,,,,,,,
+2022-23,183,3901114,control,591357,1410396,Ryan Trevitt,Brentford,,,,,,,
+2022-23,183,3901114,control,592661,1130766,Tristan Crama,Brentford,,,,,,,
+2022-23,227,3901158,control,15157,38807,James Milner,Liverpool,10.0,0.0,3.0,0.0,0.0,0.0,2.0
+2022-23,227,3901158,control,17761,243138,James Tarkowski,Everton,90.0,0.0,1.0,2.0,8.0,0.0,6.0
+2022-23,227,3901158,control,40349,46518,Asmir Begovic,Everton,,,,,,,
+2022-23,227,3901158,control,56979,156008,Jordan Henderson,Liverpool,80.0,0.0,1.0,0.0,0.0,0.0,5.0
+2022-23,227,3901158,control,59949,77690,Seamus Coleman,Everton,90.0,0.0,3.0,1.0,3.0,2.0,5.0
+2022-23,227,3901158,control,60914,171698,Joel Matip,Liverpool,90.0,0.0,1.0,0.0,4.0,1.0,7.0
+2022-23,227,3901158,control,80801,179410,Idrissa Gana Gueye,Everton,90.0,0.0,5.0,0.0,0.0,4.0,13.0
+2022-23,227,3901158,control,92217,242709,Roberto Firmino,Liverpool,10.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,227,3901158,control,94147,247761,Conor Coady,Everton,90.0,0.0,0.0,1.0,2.0,1.0,1.0
+2022-23,227,3901158,control,97032,209405,Virgil van Dijk,Liverpool,,,,,,,
+2022-23,227,3901158,control,106611,290410,Michael Keane,Everton,,,,,,,
+2022-23,227,3901158,control,111234,303919,Jordan Pickford,Everton,90.0,,0.0,,1.0,0.0,13.0
+2022-23,227,3901158,control,115382,391064,Neal Maupay,Everton,12.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,227,3901158,control,116535,319784,Alisson Becker,Liverpool,90.0,,0.0,,0.0,0.0,7.0
+2022-23,227,3901158,control,116643,359188,Fabinho,Liverpool,90.0,0.0,1.0,0.0,1.0,0.0,3.0
+2022-23,227,3901158,control,118748,292462,Mohamed Salah,Liverpool,89.0,1.0,1.0,0.0,0.0,0.0,3.0
+2022-23,227,3901158,control,121599,352887,Abdoulaye Doucouré,Everton,90.0,0.0,0.0,0.0,0.0,1.0,7.0
+2022-23,227,3901158,control,122798,357880,Andrew Robertson,Liverpool,90.0,0.0,0.0,0.0,1.0,1.0,10.0
+2022-23,227,3901158,control,153133,604785,Alex Iwobi,Everton,90.0,0.0,1.0,0.0,1.0,0.0,5.0
+2022-23,227,3901158,control,164511,496042,Yerry Mina,Everton,,,,,,,
+2022-23,227,3901158,control,169187,760712,Trent Alexander-Arnold,Liverpool,90.0,0.0,5.0,0.0,0.0,1.0,5.0
+2022-23,227,3901158,control,171287,568571,Joseph Gomez,Liverpool,90.0,0.0,2.0,1.0,3.0,1.0,5.0
+2022-23,227,3901158,control,172632,492586,Demarai Gray,Everton,29.0,0.0,1.0,0.0,0.0,0.0,2.0
+2022-23,227,3901158,control,173807,742405,Tom Davies,Everton,12.0,0.0,0.0,0.0,0.0,1.0,0.0
+2022-23,227,3901158,control,175592,508889,Naby Keita,Liverpool,1.0,0.0,2.0,0.0,1.0,0.0,0.0
+2022-23,227,3901158,control,194164,603329,Mason Holgate,Everton,,,,,,,
+2022-23,227,3901158,control,194634,570461,Diogo Jota,Liverpool,20.0,0.0,0.0,0.0,0.0,0.0,3.0
+2022-23,227,3901158,control,197464,948567,Nathaniel Phillips,Liverpool,,,,,,,
+2022-23,227,3901158,control,198826,662936,Ben Godfrey,Everton,,,,,,,
+2022-23,227,3901158,control,200720,776689,Caoimhin Kelleher,Liverpool,,,,,,,
+2022-23,227,3901158,control,214285,671529,Konstantinos Tsimikas,Liverpool,,,,,,,
+2022-23,227,3901158,control,216054,862467,Ruben Vinagre,Everton,,,,,,,
+2022-23,227,3901158,control,218997,982284,Ellis Simms,Everton,61.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,227,3901158,control,224967,874025,Vitaliy Mykolenko,Everton,90.0,0.0,3.0,0.0,5.0,4.0,1.0
+2022-23,227,3901158,control,243298,806552,Cody Gakpo,Liverpool,80.0,1.0,2.0,0.0,0.0,0.0,5.0
+2022-23,227,3901158,control,433154,939542,Dwight McNeil,Everton,78.0,0.0,3.0,0.0,1.0,0.0,3.0
+2022-23,227,3901158,control,444884,963964,Harvey Elliott,Liverpool,1.0,0.0,1.0,0.0,0.0,1.0,2.0
+2022-23,227,3901158,control,447203,950561,Darwin Nunez,Liverpool,70.0,0.0,0.0,0.0,0.0,0.0,3.0
+2022-23,227,3901158,control,449871,1185748,Amadou Onana,Everton,78.0,0.0,1.0,0.0,0.0,1.0,4.0
+2022-23,227,3901158,control,535928,1310118,Stefan Bajcetic,Liverpool,89.0,0.0,2.0,0.0,1.0,2.0,5.0
+2022-23,283,3901214,control,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2022-23,283,3901214,control,49262,107917,Jason Steele,Brighton,90.0,,0.0,,0.0,0.0,8.0
+2022-23,283,3901214,control,50175,113836,Danny Welbeck,Brighton,83.0,1.0,0.0,0.0,0.0,0.0,1.0
+2022-23,283,3901214,control,51927,240538,Ben Mee,Brentford,90.0,0.0,0.0,2.0,1.0,1.0,5.0
+2022-23,283,3901214,control,60307,167008,Pascal Gross,Brighton,90.0,0.0,2.0,0.0,0.0,0.0,5.0
+2022-23,283,3901214,control,61810,174031,Pontus Jansson,Brentford,90.0,1.0,1.0,1.0,8.0,1.0,2.0
+2022-23,283,3901214,control,83299,201690,Lewis Dunk,Brighton,90.0,0.0,0.0,0.0,1.0,0.0,5.0
+2022-23,283,3901214,control,109345,416850,Solly March,Brighton,90.0,0.0,2.0,0.0,1.0,0.0,2.0
+2022-23,283,3901214,control,110735,303346,Adam Webster,Brighton,,,,,,,
+2022-23,283,3901214,control,111478,304455,Joel Veltman,Brighton,72.0,0.0,4.0,0.0,1.0,0.0,4.0
+2022-23,283,3901214,control,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,4.0,0.0,2.0,2.0,3.0
+2022-23,283,3901214,control,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2022-23,283,3901214,control,144485,408987,Ivan Toney,Brentford,90.0,1.0,0.0,0.0,3.0,3.0,3.0
+2022-23,283,3901214,control,154561,562727,David Raya,Brentford,90.0,,0.0,,3.0,0.0,17.0
+2022-23,283,3901214,control,183656,759566,Joshua Dasilva,Brentford,17.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,283,3901214,control,194010,562892,Rico Henry,Brentford,90.0,0.0,1.0,0.0,4.0,0.0,2.0
+2022-23,283,3901214,control,204214,688278,Pervis Estupinán,Brighton,83.0,0.0,0.0,0.0,0.0,2.0,8.0
+2022-23,283,3901214,control,205836,532220,Saman Ghoddos,Brentford,5.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,283,3901214,control,207283,650616,Mathias Jensen,Brentford,85.0,0.0,5.0,2.0,1.0,0.0,4.0
+2022-23,283,3901214,control,215059,789571,Robert Sánchez,Brighton,,,,,,,
+2022-23,283,3901214,control,216646,666857,Yoane Wissa,Brentford,11.0,0.0,0.0,0.0,2.0,0.0,1.0
+2022-23,283,3901214,control,226956,803343,Mads Roerslev,Brentford,,,,,,,
+2022-23,283,3901214,control,231065,711357,Ethan Pinnock,Brentford,90.0,1.0,1.0,4.0,11.0,1.0,0.0
+2022-23,283,3901214,control,243016,831489,Alexis Mac Allister,Brighton,90.0,1.0,0.0,1.0,0.0,0.0,4.0
+2022-23,283,3901214,control,243568,942549,Billy Gilmour,Brighton,,,,,,,
+2022-23,283,3901214,control,440089,888912,Mikkel Damsgaard,Brentford,73.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,283,3901214,control,446008,923312,Bryan Mbeumo,Brentford,79.0,0.0,0.0,0.0,1.0,0.0,5.0
+2022-23,283,3901214,control,450434,661519,Deniz Undav,Brighton,7.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,283,3901214,control,450550,1130788,Fin Stevens,Brentford,,,,,,,
+2022-23,283,3901214,control,451340,862608,Kaoru Mitoma,Brighton,90.0,1.0,1.0,0.0,0.0,0.0,0.0
+2022-23,283,3901214,control,460028,1096400,Levi Colwill,Brighton,90.0,0.0,0.0,0.0,2.0,0.0,2.0
+2022-23,283,3901214,control,469142,974618,Jan Paul van Hecke,Brighton,,,,,,,
+2022-23,283,3901214,control,472713,1002039,Aaron Hickey,Brentford,90.0,0.0,1.0,0.0,2.0,1.0,4.0
+2022-23,283,3901214,control,474120,1073742,Julio Enciso,Brighton,18.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,283,3901214,control,486672,1137668,Moisés Caicedo,Brighton,90.0,0.0,0.0,0.0,0.0,0.0,7.0
+2022-23,283,3901214,control,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2022-23,283,3901214,control,509416,1168311,Yasin Ayari,Brighton,,,,,,,
+2022-23,283,3901214,control,513418,1083796,Kevin Schade,Brentford,,,,,,,
+2022-23,283,3901214,control,513834,1137404,Andrew Moran,Brighton,,,,,,,
+2022-23,283,3901214,control,536916,1336566,Facundo Buonanotte,Brighton,7.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,334,3901265,control,18507,19243,Diego Costa,Wolves,45.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,334,3901265,control,19624,37549,Joao Moutinho,Wolves,,,,,,,
+2022-23,334,3901265,control,49262,107917,Jason Steele,Brighton,90.0,,0.0,,3.0,0.0,4.0
+2022-23,334,3901265,control,50175,113836,Danny Welbeck,Brighton,56.0,2.0,0.0,0.0,1.0,0.0,5.0
+2022-23,334,3901265,control,60232,169162,Craig Dawson,Wolves,45.0,0.0,1.0,0.0,2.0,1.0,1.0
+2022-23,334,3901265,control,60307,167008,Pascal Gross,Brighton,90.0,2.0,1.0,0.0,1.0,1.0,7.0
+2022-23,334,3901265,control,79602,189103,Daniel Bentley,Wolves,,,,,,,
+2022-23,334,3901265,control,83299,201690,Lewis Dunk,Brighton,90.0,0.0,3.0,0.0,2.0,2.0,7.0
+2022-23,334,3901265,control,88484,240054,Pablo Sarabia,Wolves,,,,,,,
+2022-23,334,3901265,control,109345,416850,Solly March,Brighton,56.0,0.0,2.0,0.0,3.0,2.0,4.0
+2022-23,334,3901265,control,110735,303346,Adam Webster,Brighton,90.0,0.0,1.0,1.0,4.0,1.0,6.0
+2022-23,334,3901265,control,111478,304455,Joel Veltman,Brighton,65.0,0.0,0.0,0.0,1.0,0.0,2.0
+2022-23,334,3901265,control,149065,416175,José Sá,Wolves,90.0,,0.0,,0.0,0.0,4.0
+2022-23,334,3901265,control,151086,421786,Mario Lemina,Wolves,90.0,0.0,2.0,0.0,0.0,0.0,6.0
+2022-23,334,3901265,control,159533,493647,Adama Traoré,Wolves,7.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,334,3901265,control,171317,534684,Ruben Neves,Wolves,90.0,0.0,0.0,1.0,1.0,1.0,6.0
+2022-23,334,3901265,control,184754,620026,Hee-Chan Hwang,Wolves,45.0,0.0,2.0,1.0,0.0,1.0,1.0
+2022-23,334,3901265,control,200402,470834,Nélson Semedo,Wolves,45.0,0.0,2.0,0.0,0.0,1.0,2.0
+2022-23,334,3901265,control,200600,524435,Daniel Podence,Wolves,45.0,0.0,0.0,0.0,0.0,1.0,1.0
+2022-23,334,3901265,control,204214,688278,Pervis Estupinán,Brighton,90.0,0.0,1.0,1.0,0.0,1.0,8.0
+2022-23,334,3901265,control,214048,865931,Max Kilman,Wolves,90.0,0.0,2.0,1.0,3.0,2.0,8.0
+2022-23,334,3901265,control,215059,789571,Robert Sánchez,Brighton,,,,,,,
+2022-23,334,3901265,control,243016,831489,Alexis Mac Allister,Brighton,25.0,0.0,1.0,0.0,0.0,0.0,0.0
+2022-23,334,3901265,control,243568,942549,Billy Gilmour,Brighton,90.0,0.0,1.0,0.0,0.0,0.0,9.0
+2022-23,334,3901265,control,247632,843040,Pedro Neto,Wolves,83.0,0.0,0.0,1.0,0.0,0.0,4.0
+2022-23,334,3901265,control,430871,863098,Matheus Cunha,Wolves,,,,,,,
+2022-23,334,3901265,control,432830,961306,Nathan Collins,Wolves,45.0,0.0,1.0,3.0,3.0,0.0,2.0
+2022-23,334,3901265,control,445548,1190030,Odel Offiah,Brighton,,,,,,,
+2022-23,334,3901265,control,448089,1174672,Joao Gomes,Wolves,45.0,0.0,0.0,0.0,0.0,1.0,4.0
+2022-23,334,3901265,control,450434,661519,Deniz Undav,Brighton,80.0,2.0,1.0,0.0,0.0,0.0,5.0
+2022-23,334,3901265,control,451340,862608,Kaoru Mitoma,Brighton,34.0,0.0,2.0,0.0,0.0,0.0,1.0
+2022-23,334,3901265,control,460028,1096400,Levi Colwill,Brighton,,,,,,,
+2022-23,334,3901265,control,465351,955529,Matheus Nunes,Wolves,90.0,0.0,3.0,0.0,2.0,1.0,7.0
+2022-23,334,3901265,control,469142,974618,Jan Paul van Hecke,Brighton,,,,,,,
+2022-23,334,3901265,control,474120,1073742,Julio Enciso,Brighton,65.0,0.0,2.0,0.0,0.0,0.0,2.0
+2022-23,334,3901265,control,486672,1137668,Moisés Caicedo,Brighton,25.0,0.0,0.0,0.0,0.0,0.0,2.0
+2022-23,334,3901265,control,490721,1116391,Hugo Bueno,Wolves,90.0,0.0,2.0,0.0,1.0,1.0,4.0
+2022-23,334,3901265,control,509416,1168311,Yasin Ayari,Brighton,10.0,0.0,0.0,0.0,0.0,0.0,0.0
+2022-23,334,3901265,control,510362,1013277,Toti Gomes,Wolves,45.0,0.0,1.0,0.0,1.0,0.0,4.0
+2022-23,334,3901265,control,536916,1336566,Facundo Buonanotte,Brighton,34.0,0.0,0.0,0.0,0.0,2.0,1.0
+2022-23,380,3901311,control,15157,38807,James Milner,Liverpool,90.0,0.0,2.0,0.0,0.0,0.0,7.0
+2022-23,380,3901311,control,20467,31013,Theo Walcott,Southampton,77.0,0.0,1.0,0.0,0.0,0.0,4.0
+2022-23,380,3901311,control,56979,156008,Jordan Henderson,Liverpool,33.0,0.0,1.0,0.0,0.0,1.0,4.0
+2022-23,380,3901311,control,58376,119079,Alex McCarthy,Southampton,90.0,,0.0,,2.0,1.0,12.0
+2022-23,380,3901311,control,60706,169756,Adrian,Liverpool,,,,,,,
+2022-23,380,3901311,control,60914,171698,Joel Matip,Liverpool,90.0,0.0,0.0,0.0,0.0,4.0,2.0
+2022-23,380,3901311,control,91047,237563,Stuart Armstrong,Southampton,26.0,0.0,1.0,0.0,0.0,0.0,3.0
+2022-23,380,3901311,control,92217,242709,Roberto Firmino,Liverpool,57.0,1.0,1.0,0.0,0.0,1.0,5.0
+2022-23,380,3901311,control,96787,261936,Mohamed Elyounoussi,Southampton,64.0,0.0,2.0,0.0,0.0,0.0,2.0
+2022-23,380,3901311,control,101178,279490,James Ward-Prowse,Southampton,87.0,1.0,2.0,3.0,2.0,2.0,6.0
+2022-23,380,3901311,control,116643,359188,Fabinho,Liverpool,57.0,0.0,0.0,0.0,1.0,1.0,2.0
+2022-23,380,3901311,control,118748,292462,Mohamed Salah,Liverpool,90.0,0.0,2.0,0.0,0.0,0.0,2.0
+2022-23,380,3901311,control,155511,519835,Adam Armstrong,Southampton,28.0,1.0,0.0,0.0,0.0,1.0,2.0
+2022-23,380,3901311,control,158534,734042,Kyle Walker-Peters,Southampton,90.0,0.0,2.0,0.0,2.0,4.0,7.0
+2022-23,380,3901311,control,169187,760712,Trent Alexander-Arnold,Liverpool,90.0,0.0,3.0,0.0,0.0,0.0,4.0
+2022-23,380,3901311,control,171287,568571,Joseph Gomez,Liverpool,90.0,0.0,0.0,0.0,1.0,2.0,5.0
+2022-23,380,3901311,control,171771,490868,Jan Bednarek,Southampton,90.0,0.0,3.0,1.0,10.0,2.0,5.0
+2022-23,380,3901311,control,173271,557799,Duje Caleta-Car,Southampton,,,,,,,
+2022-23,380,3901311,control,184386,539939,James Bree,Southampton,90.0,0.0,1.0,0.0,4.0,1.0,3.0
+2022-23,380,3901311,control,193204,798659,Joe Aribo,Southampton,,,,,,,
+2022-23,380,3901311,control,194634,570461,Diogo Jota,Liverpool,90.0,2.0,3.0,0.0,0.0,0.0,3.0
+2022-23,380,3901311,control,200720,776689,Caoimhin Kelleher,Liverpool,90.0,,0.0,,0.0,0.0,7.0
+2022-23,380,3901311,control,204043,654044,Arthur,Liverpool,,,,,,,
+2022-23,380,3901311,control,204716,820140,Ibrahima Konaté,Liverpool,,,,,,,
+2022-23,380,3901311,control,206915,933768,Curtis Jones,Liverpool,57.0,0.0,1.0,0.0,0.0,0.0,7.0
+2022-23,380,3901311,control,212721,654045,Lyanco,Southampton,90.0,0.0,2.0,6.0,11.0,3.0,4.0
+2022-23,380,3901311,control,214285,671529,Konstantinos Tsimikas,Liverpool,57.0,0.0,0.0,0.0,0.0,3.0,6.0
+2022-23,380,3901311,control,219937,1081076,Rhys Williams,Liverpool,,,,,,,
+2022-23,380,3901311,control,243298,806552,Cody Gakpo,Liverpool,33.0,1.0,4.0,0.0,0.0,0.0,2.0
+2022-23,380,3901311,control,244731,860914,Luis Diaz,Liverpool,33.0,0.0,1.0,0.0,0.0,0.0,4.0
+2022-23,380,3901311,control,244858,963965,Fabio Carvalho,Liverpool,,,,,,,
+2022-23,380,3901311,control,441191,1107910,Valentino Livramento,Southampton,13.0,0.0,1.0,0.0,2.0,1.0,3.0
+2022-23,380,3901311,control,444884,963964,Harvey Elliott,Liverpool,33.0,0.0,2.0,0.0,0.0,1.0,4.0
+2022-23,380,3901311,control,456350,939390,Gavin Bazunu,Southampton,,,,,,,
+2022-23,380,3901311,control,494541,1254240,Kami Doyle,Southampton,,,,,,,
+2022-23,380,3901311,control,494543,1254208,Dominic Ballard,Southampton,4.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,380,3901311,control,499724,1418073,Samuel Amo-Ameyaw,Southampton,3.0,0.0,0.0,0.0,0.0,0.0,1.0
+2022-23,380,3901311,control,502697,1128965,Carlos Alcaraz,Southampton,90.0,0.0,2.0,1.0,2.0,0.0,4.0
+2022-23,380,3901311,control,504783,1130691,Kamaldeen Sulemana,Southampton,86.0,2.0,1.0,0.0,0.0,1.0,3.0
+2022-23,380,3901311,control,514356,1190867,Romeo Lavia,Southampton,62.0,0.0,3.0,0.0,1.0,1.0,2.0
+2023-24,1,4193450,control,40145,46008,Jack Cork,Burnley,,,,,,,
+2023-24,1,4193450,control,58621,159833,Kyle Walker,Man City,89.0,0.0,0.0,0.0,1.0,0.0,9.0
+2023-24,1,4193450,control,60586,129915,Johann Berg Gudmundsson,Burnley,,,,,,,
+2023-24,1,4193450,control,61366,169200,Kevin De Bruyne,Man City,23.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,1,4193450,control,83283,201664,Nathan Redmond,Burnley,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,1,4193450,control,88248,276729,Stefan Ortega,Man City,,,,,,,
+2023-24,1,4193450,control,91651,239219,Mateo Kovacic,Man City,67.0,0.0,2.0,0.0,0.0,0.0,1.0
+2023-24,1,4193450,control,114283,312765,Jack Grealish,Man City,,,,,,,
+2023-24,1,4193450,control,121160,363364,Ederson Moraes,Man City,90.0,,0.0,,0.0,0.0,9.0
+2023-24,1,4193450,control,126184,417068,Nathan Aké,Man City,79.0,0.0,3.0,0.0,1.0,2.0,5.0
+2023-24,1,4193450,control,146941,411617,Aymeric Laporte,Man City,11.0,0.0,0.0,1.0,1.0,0.0,2.0
+2023-24,1,4193450,control,155405,609755,Kalvin Phillips,Man City,,,,,,,
+2023-24,1,4193450,control,165809,488139,Bernardo Silva,Man City,90.0,0.0,1.0,0.0,0.0,0.0,4.0
+2023-24,1,4193450,control,172567,623716,Josh Cullen,Burnley,90.0,0.0,1.0,0.0,0.0,0.0,5.0
+2023-24,1,4193450,control,172782,494597,Josh Brownhill,Burnley,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,1,4193450,control,179458,655575,Jacob Bruun Larsen,Burnley,29.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,1,4193450,control,183751,536457,Manuel Benson,Burnley,16.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,1,4193450,control,192290,484878,Connor Roberts,Burnley,90.0,0.0,2.0,0.0,1.0,0.0,3.0
+2023-24,1,4193450,control,207189,540963,Sander Berge,Burnley,89.0,0.0,0.0,1.0,0.0,0.0,3.0
+2023-24,1,4193450,control,209244,815006,Phil Foden,Man City,90.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,1,4193450,control,211975,521318,Manuel Akanji,Man City,90.0,0.0,3.0,1.0,2.0,0.0,2.0
+2023-24,1,4193450,control,216616,789578,Dara O'Shea,Burnley,90.0,0.0,0.0,2.0,1.0,1.0,6.0
+2023-24,1,4193450,control,220566,675088,Rodri,Man City,90.0,1.0,5.0,0.0,0.0,0.0,8.0
+2023-24,1,4193450,control,223094,737066,Erling Haaland,Man City,80.0,2.0,0.0,0.0,1.0,0.0,3.0
+2023-24,1,4193450,control,232917,760752,Arijanet Muric,Burnley,,,,,,,
+2023-24,1,4193450,control,241231,861447,Jordan Beyer,Burnley,74.0,0.0,4.0,0.0,4.0,4.0,2.0
+2023-24,1,4193450,control,244851,1096353,Cole Palmer,Man City,10.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,1,4193450,control,432714,1107648,James McAtee,Man City,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,1,4193450,control,432720,1187213,James Trafford,Burnley,90.0,,0.0,,1.0,0.0,13.0
+2023-24,1,4193450,control,435973,881500,Lyle Foster,Burnley,89.0,0.0,2.0,0.0,2.0,0.0,5.0
+2023-24,1,4193450,control,437468,844477,Sergio Gomez,Man City,,,,,,,
+2023-24,1,4193450,control,441455,905498,Vitinho,Burnley,90.0,0.0,0.0,1.0,1.0,1.0,2.0
+2023-24,1,4193450,control,461358,974753,Julián Álvarez,Man City,90.0,0.0,1.0,0.0,0.0,0.0,2.0
+2023-24,1,4193450,control,477064,1288450,Rico Lewis,Man City,79.0,0.0,0.0,0.0,0.0,1.0,9.0
+2023-24,1,4193450,control,477424,1070712,Josko Gvardiol,Man City,11.0,0.0,2.0,0.0,0.0,0.0,2.0
+2023-24,1,4193450,control,478969,831044,Hjalmar Ekdal,Burnley,,,,,,,
+2023-24,1,4193450,control,487702,1368318,Luca Koleosho,Burnley,61.0,0.0,0.0,0.0,0.0,0.0,5.0
+2023-24,1,4193450,control,487968,1279764,Ameen Al Dakhil,Burnley,90.0,0.0,2.0,1.0,4.0,1.0,4.0
+2023-24,1,4193450,control,492831,1067168,Zeki Amdouni,Burnley,61.0,0.0,1.0,0.0,1.0,0.0,4.0
+2023-24,1,4193450,control,511783,1069536,Anass Zaroury,Burnley,28.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,59,4193518,control,17601,36373,Scott Carson,Man City,,,,,,,
+2023-24,59,4193518,control,55037,148302,Cheikhou Kouyaté,Nott'm Forest,,,,,,,
+2023-24,59,4193518,control,58621,159833,Kyle Walker,Man City,90.0,0.0,0.0,0.0,2.0,0.0,2.0
+2023-24,59,4193518,control,60689,169719,Chris Wood,Nott'm Forest,15.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,59,4193518,control,80226,195299,Serge Aurier,Nott'm Forest,56.0,0.0,0.0,0.0,1.0,0.0,4.0
+2023-24,59,4193518,control,88248,276729,Stefan Ortega,Man City,,,,,,,
+2023-24,59,4193518,control,90585,246331,Willy Boly,Nott'm Forest,90.0,0.0,2.0,2.0,6.0,1.0,7.0
+2023-24,59,4193518,control,111452,304355,Odisseas Vlachodimos,Nott'm Forest,,,,,,,
+2023-24,59,4193518,control,114283,312765,Jack Grealish,Man City,3.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,59,4193518,control,121160,363364,Ederson Moraes,Man City,90.0,,0.0,,1.0,0.0,8.0
+2023-24,59,4193518,control,126184,417068,Nathan Aké,Man City,33.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,59,4193518,control,152760,426202,Divock Origi,Nott'm Forest,15.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,59,4193518,control,155405,609755,Kalvin Phillips,Man City,39.0,0.0,1.0,0.0,2.0,1.0,4.0
+2023-24,59,4193518,control,159506,682548,Ola Aina,Nott'm Forest,75.0,0.0,2.0,0.0,2.0,1.0,4.0
+2023-24,59,4193518,control,171314,614006,Ruben Dias,Man City,90.0,0.0,0.0,1.0,5.0,1.0,2.0
+2023-24,59,4193518,control,179519,765693,Orel Mangala,Nott'm Forest,90.0,0.0,2.0,0.0,0.0,2.0,5.0
+2023-24,59,4193518,control,199170,592102,Moussa Niakhaté,Nott'm Forest,90.0,0.0,2.0,0.0,1.0,1.0,7.0
+2023-24,59,4193518,control,204968,775614,Ryan Yates,Nott'm Forest,,,,,,,
+2023-24,59,4193518,control,208912,716687,Joe Worrall,Nott'm Forest,,,,,,,
+2023-24,59,4193518,control,209046,846383,Callum Hudson-Odoi,Nott'm Forest,34.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,59,4193518,control,209244,815006,Phil Foden,Man City,87.0,1.0,2.0,0.0,2.0,1.0,2.0
+2023-24,59,4193518,control,210156,643717,Taiwo Awoniyi,Nott'm Forest,75.0,0.0,1.0,0.0,1.0,0.0,5.0
+2023-24,59,4193518,control,210462,795371,Ibrahim Sangaré,Nott'm Forest,56.0,0.0,1.0,0.0,0.0,0.0,4.0
+2023-24,59,4193518,control,211975,521318,Manuel Akanji,Man City,90.0,0.0,0.0,1.0,1.0,1.0,6.0
+2023-24,59,4193518,control,218430,687008,Gonzalo Montiel,Nott'm Forest,51.0,0.0,2.0,0.0,0.0,1.0,3.0
+2023-24,59,4193518,control,220566,675088,Rodri,Man City,46.0,0.0,0.0,0.0,0.0,0.0,6.0
+2023-24,59,4193518,control,222531,789502,Morgan Gibbs-White,Nott'm Forest,90.0,0.0,1.0,0.0,0.0,1.0,1.0
+2023-24,59,4193518,control,223094,737066,Erling Haaland,Man City,90.0,1.0,0.0,0.0,1.0,0.0,1.0
+2023-24,59,4193518,control,224068,729988,Matt Turner,Nott'm Forest,90.0,,0.0,,0.0,0.0,3.0
+2023-24,59,4193518,control,248875,942368,Jérémy Doku,Man City,51.0,0.0,1.0,0.0,0.0,0.0,3.0
+2023-24,59,4193518,control,250199,827315,Nicolás Dominguez,Nott'm Forest,90.0,0.0,5.0,0.0,1.0,1.0,8.0
+2023-24,59,4193518,control,437468,844477,Sergio Gomez,Man City,,,,,,,
+2023-24,59,4193518,control,437626,957118,Nuno Tavares,Nott'm Forest,39.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,59,4193518,control,449434,1050166,Anthony Elanga,Nott'm Forest,34.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,59,4193518,control,461358,974753,Julián Álvarez,Man City,57.0,0.0,1.0,0.0,1.0,0.0,3.0
+2023-24,59,4193518,control,465351,955529,Matheus Nunes,Man City,90.0,0.0,2.0,1.0,3.0,0.0,5.0
+2023-24,59,4193518,control,477064,1288450,Rico Lewis,Man City,,,,,,,
+2023-24,59,4193518,control,477424,1070712,Josko Gvardiol,Man City,90.0,0.0,1.0,1.0,5.0,2.0,6.0
+2023-24,59,4193518,control,477555,1113790,Oscar Bobb,Man City,,,,,,,
+2023-24,83,4193542,gap,40145,46008,Jack Cork,Burnley,,,,,,,
+2023-24,83,4193542,gap,44683,109491,Jay Rodriguez,Burnley,,,,,,,
+2023-24,83,4193542,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,83,4193542,gap,51927,240538,Ben Mee,Brentford,,,,,,,
+2023-24,83,4193542,gap,83283,201664,Nathan Redmond,Burnley,14.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,83,4193542,gap,103914,289137,Charlie Taylor,Burnley,90.0,0.0,1.0,1.0,3.0,1.0,5.0
+2023-24,83,4193542,gap,115382,391064,Neal Maupay,Brentford,88.0,0.0,0.0,0.0,0.0,0.0,3.0
+2023-24,83,4193542,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,0.0,0.0,5.0
+2023-24,83,4193542,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,4.0,0.0,4.0,1.0,9.0
+2023-24,83,4193542,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,83,4193542,gap,172567,623716,Josh Cullen,Burnley,90.0,0.0,1.0,0.0,2.0,1.0,6.0
+2023-24,83,4193542,gap,172782,494597,Josh Brownhill,Burnley,24.0,0.0,0.0,0.0,0.0,1.0,0.0
+2023-24,83,4193542,gap,179458,655575,Jacob Bruun Larsen,Burnley,14.0,0.0,0.0,0.0,0.0,1.0,0.0
+2023-24,83,4193542,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,76.0,0.0,2.0,0.0,1.0,1.0,2.0
+2023-24,83,4193542,gap,192290,484878,Connor Roberts,Burnley,78.0,0.0,1.0,0.0,2.0,1.0,5.0
+2023-24,83,4193542,gap,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,0.0,0.0,0.0,0.0,6.0
+2023-24,83,4193542,gap,205836,532220,Saman Ghoddos,Brentford,6.0,1.0,0.0,0.0,0.0,0.0,0.0
+2023-24,83,4193542,gap,207189,540963,Sander Berge,Burnley,66.0,0.0,1.0,1.0,2.0,0.0,1.0
+2023-24,83,4193542,gap,207283,650616,Mathias Jensen,Brentford,76.0,0.0,2.0,0.0,1.0,0.0,2.0
+2023-24,83,4193542,gap,216616,789578,Dara O'Shea,Burnley,90.0,0.0,0.0,2.0,12.0,2.0,9.0
+2023-24,83,4193542,gap,216646,666857,Yoane Wissa,Brentford,90.0,1.0,2.0,0.0,0.0,1.0,8.0
+2023-24,83,4193542,gap,226956,803343,Mads Roerslev,Brentford,14.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,83,4193542,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,0.0,2.0,1.0,4.0
+2023-24,83,4193542,gap,232917,760752,Arijanet Muric,Burnley,,,,,,,
+2023-24,83,4193542,gap,247245,822716,Hannes Delcroix,Burnley,10.0,0.0,0.0,0.0,1.0,1.0,1.0
+2023-24,83,4193542,gap,428580,856685,Frank Onyeka,Brentford,84.0,0.0,3.0,0.0,1.0,2.0,8.0
+2023-24,83,4193542,gap,432720,1187213,James Trafford,Burnley,90.0,,1.0,,1.0,1.0,20.0
+2023-24,83,4193542,gap,432830,961306,Nathan Collins,Brentford,90.0,0.0,1.0,1.0,3.0,1.0,7.0
+2023-24,83,4193542,gap,435973,881500,Lyle Foster,Burnley,90.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,83,4193542,gap,437748,963983,Mike Tresor,Burnley,66.0,0.0,0.0,0.0,0.0,0.0,3.0
+2023-24,83,4193542,gap,446008,923312,Bryan Mbeumo,Brentford,90.0,1.0,1.0,0.0,0.0,0.0,2.0
+2023-24,83,4193542,gap,487702,1368318,Luca Koleosho,Burnley,45.0,0.0,2.0,0.0,0.0,0.0,4.0
+2023-24,83,4193542,gap,487968,1279764,Ameen Al Dakhil,Burnley,90.0,0.0,0.0,1.0,3.0,0.0,2.0
+2023-24,83,4193542,gap,492831,1067168,Zeki Amdouni,Burnley,76.0,0.0,0.0,1.0,0.0,2.0,2.0
+2023-24,83,4193542,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,83,4193542,gap,501284,1130797,Michael Olakigbe,Brentford,2.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,83,4193542,gap,508395,1157236,Yehor Yarmoliuk,Brentford,14.0,0.0,1.0,0.0,1.0,1.0,2.0
+2023-24,83,4193542,gap,511783,1069536,Anass Zaroury,Burnley,,,,,,,
+2023-24,83,4193542,gap,550839,1341387,Wilson Odobert,Burnley,45.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,83,4193542,gap,570241,1341538,Ji-Soo Kim,Brentford,,,,,,,
+2023-24,95,4193554,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,95,4193554,gap,51090,80562,Thiago Silva,Chelsea,90.0,0.0,0.0,1.0,2.0,1.0,11.0
+2023-24,95,4193554,gap,51927,240538,Ben Mee,Brentford,,,,,,,
+2023-24,95,4193554,gap,103955,246575,Raheem Sterling,Chelsea,90.0,0.0,0.0,0.0,0.0,2.0,4.0
+2023-24,95,4193554,gap,115382,391064,Neal Maupay,Brentford,14.0,0.0,0.0,0.0,0.0,1.0,5.0
+2023-24,95,4193554,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,0.0,0.0,8.0
+2023-24,95,4193554,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,2.0,0.0,3.0,2.0,9.0
+2023-24,95,4193554,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,95,4193554,gap,179268,873289,Marc Cucurella,Chelsea,81.0,0.0,2.0,0.0,2.0,2.0,5.0
+2023-24,95,4193554,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,90.0,0.0,2.0,0.0,4.0,0.0,1.0
+2023-24,95,4193554,gap,204580,688273,Vitaly Janelt,Brentford,76.0,0.0,2.0,0.0,2.0,0.0,3.0
+2023-24,95,4193554,gap,205836,532220,Saman Ghoddos,Brentford,6.0,0.0,1.0,1.0,0.0,0.0,0.0
+2023-24,95,4193554,gap,207283,650616,Mathias Jensen,Brentford,64.0,0.0,2.0,0.0,0.0,0.0,5.0
+2023-24,95,4193554,gap,215059,789571,Robert Sánchez,Chelsea,90.0,,0.0,,1.0,0.0,6.0
+2023-24,95,4193554,gap,216646,666857,Yoane Wissa,Brentford,76.0,0.0,2.0,0.0,0.0,0.0,0.0
+2023-24,95,4193554,gap,220362,696646,Axel Disasi,Chelsea,67.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,95,4193554,gap,225796,807729,Reece James,Chelsea,23.0,0.0,1.0,0.0,0.0,0.0,1.0
+2023-24,95,4193554,gap,226956,803343,Mads Roerslev,Brentford,90.0,0.0,1.0,0.0,8.0,0.0,9.0
+2023-24,95,4193554,gap,231065,711357,Ethan Pinnock,Brentford,90.0,1.0,2.0,1.0,8.0,0.0,1.0
+2023-24,95,4193554,gap,232787,966027,Conor Gallagher,Chelsea,90.0,0.0,1.0,0.0,1.0,1.0,5.0
+2023-24,95,4193554,gap,242880,955376,Benoit Badiashile,Chelsea,,,,,,,
+2023-24,95,4193554,gap,244851,1096353,Cole Palmer,Chelsea,90.0,0.0,1.0,0.0,0.0,1.0,4.0
+2023-24,95,4193554,gap,248857,1084981,Noni Madueke,Chelsea,67.0,0.0,0.0,0.0,1.0,0.0,2.0
+2023-24,95,4193554,gap,428580,856685,Frank Onyeka,Brentford,26.0,0.0,0.0,0.0,3.0,0.0,1.0
+2023-24,95,4193554,gap,432830,961306,Nathan Collins,Brentford,90.0,0.0,2.0,1.0,5.0,3.0,7.0
+2023-24,95,4193554,gap,441302,966026,Ian Maatsen,Chelsea,23.0,0.0,1.0,0.0,2.0,2.0,1.0
+2023-24,95,4193554,gap,446008,923312,Bryan Mbeumo,Brentford,90.0,1.0,1.0,0.0,0.0,0.0,2.0
+2023-24,95,4193554,gap,457569,1067256,Djordje Petrovic,Chelsea,,,,,,,
+2023-24,95,4193554,gap,460028,1096400,Levi Colwill,Chelsea,90.0,0.0,2.0,0.0,2.0,1.0,6.0
+2023-24,95,4193554,gap,472713,1002039,Aaron Hickey,Brentford,84.0,0.0,2.0,2.0,1.0,1.0,3.0
+2023-24,95,4193554,gap,474803,1421811,Eddie Beach,Chelsea,,,,,,,
+2023-24,95,4193554,gap,482609,1197250,Malo Gusto,Chelsea,,,,,,,
+2023-24,95,4193554,gap,486672,1137668,Moisés Caicedo,Chelsea,81.0,0.0,1.0,0.0,0.0,3.0,5.0
+2023-24,95,4193554,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,95,4193554,gap,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2023-24,95,4193554,gap,503714,1200631,Lesley Ugochukwu,Chelsea,9.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,95,4193554,gap,508395,1157236,Yehor Yarmoliuk,Brentford,14.0,0.0,0.0,0.0,1.0,0.0,2.0
+2023-24,95,4193554,gap,517052,1197347,Nicolas Jackson,Chelsea,90.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,95,4193554,gap,519198,1202031,Alex Matos,Chelsea,,,,,,,
+2023-24,95,4193554,gap,617054,1458868,Deivid Washington,Chelsea,9.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,101,4193560,gap,37096,30973,Lukasz Fabianski,West Ham,,,,,,,
+2023-24,101,4193560,gap,40669,49543,Angelo Ogbonna,West Ham,,,,,,,
+2023-24,101,4193560,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,101,4193560,gap,51927,240538,Ben Mee,Brentford,1.0,0.0,0.0,0.0,2.0,0.0,0.0
+2023-24,101,4193560,gap,55459,155782,Aaron Cresswell,West Ham,,,,,,,
+2023-24,101,4193560,gap,57531,158545,Michail Antonio,West Ham,64.0,0.0,1.0,0.0,0.0,0.0,1.0
+2023-24,101,4193560,gap,84182,210164,Alphonse Areola,West Ham,90.0,,0.0,,0.0,0.0,3.0
+2023-24,101,4193560,gap,84939,214426,Danny Ings,West Ham,26.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,101,4193560,gap,101178,279490,James Ward-Prowse,West Ham,90.0,0.0,2.0,0.0,1.0,1.0,5.0
+2023-24,101,4193560,gap,109533,267371,Emerson,West Ham,90.0,0.0,2.0,0.0,3.0,3.0,3.0
+2023-24,101,4193560,gap,115382,391064,Neal Maupay,Brentford,90.0,1.0,2.0,0.0,0.0,0.0,3.0
+2023-24,101,4193560,gap,118342,330643,Mark Flekken,Brentford,45.0,,0.0,,0.0,0.0,1.0
+2023-24,101,4193560,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,2.0,0.0,4.0,1.0,7.0
+2023-24,101,4193560,gap,140200,403049,Thomas Strakosha,Brentford,45.0,,0.0,,0.0,0.0,5.0
+2023-24,101,4193560,gap,149519,426880,Maxwel Cornet,West Ham,,,,,,,
+2023-24,101,4193560,gap,164555,307317,Vladimir Coufal,West Ham,90.0,0.0,3.0,1.0,5.0,3.0,7.0
+2023-24,101,4193560,gap,172841,491883,Said Benrahma,West Ham,64.0,0.0,0.0,0.0,0.0,1.0,7.0
+2023-24,101,4193560,gap,178186,523825,Jarrod Bowen,West Ham,90.0,1.0,0.0,0.0,1.0,0.0,2.0
+2023-24,101,4193560,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,79.0,0.0,1.0,0.0,1.0,0.0,2.0
+2023-24,101,4193560,gap,201057,604088,Thilo Kehrer,West Ham,,,,,,,
+2023-24,101,4193560,gap,204580,688273,Vitaly Janelt,Brentford,89.0,0.0,0.0,0.0,3.0,1.0,9.0
+2023-24,101,4193560,gap,205836,532220,Saman Ghoddos,Brentford,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,101,4193560,gap,207283,650616,Mathias Jensen,Brentford,78.0,0.0,1.0,0.0,0.0,0.0,4.0
+2023-24,101,4193560,gap,210494,617310,Nayef Aguerd,West Ham,90.0,0.0,0.0,2.0,7.0,0.0,3.0
+2023-24,101,4193560,gap,215439,524437,Tomas Soucek,West Ham,90.0,0.0,0.0,0.0,1.0,1.0,2.0
+2023-24,101,4193560,gap,216646,666857,Yoane Wissa,Brentford,89.0,0.0,1.0,0.0,1.0,0.0,1.0
+2023-24,101,4193560,gap,217593,683450,Pablo Fornals,West Ham,26.0,0.0,1.0,0.0,0.0,0.0,3.0
+2023-24,101,4193560,gap,222018,770267,Ben Johnson,West Ham,,,,,,,
+2023-24,101,4193560,gap,226956,803343,Mads Roerslev,Brentford,11.0,0.0,0.0,0.0,2.0,0.0,0.0
+2023-24,101,4193560,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,0.0,0.0,4.0,1.0,7.0
+2023-24,101,4193560,gap,233963,719219,Konstantinos Mavropanos,West Ham,90.0,0.0,1.0,1.0,5.0,2.0,3.0
+2023-24,101,4193560,gap,428580,856685,Frank Onyeka,Brentford,90.0,0.0,2.0,0.0,1.0,1.0,5.0
+2023-24,101,4193560,gap,432830,961306,Nathan Collins,Brentford,90.0,1.0,0.0,0.0,13.0,0.0,4.0
+2023-24,101,4193560,gap,446008,923312,Bryan Mbeumo,Brentford,90.0,0.0,0.0,0.0,0.0,1.0,6.0
+2023-24,101,4193560,gap,460842,891743,Mohammed Kudus,West Ham,90.0,1.0,3.0,0.0,1.0,0.0,5.0
+2023-24,101,4193560,gap,487837,1203658,Divin Mubama,West Ham,,,,,,,
+2023-24,101,4193560,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,101,4193560,gap,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2023-24,101,4193560,gap,508395,1157236,Yehor Yarmoliuk,Brentford,12.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,101,4193560,gap,516432,1190125,Valintino Adedokun,Brentford,,,,,,,
+2023-24,108,4193567,control,55037,148302,Cheikhou Kouyaté,Nott'm Forest,,,,,,,
+2023-24,108,4193567,control,80226,195299,Serge Aurier,Nott'm Forest,19.0,0.0,1.0,0.0,1.0,0.0,1.0
+2023-24,108,4193567,control,90585,246331,Willy Boly,Nott'm Forest,,,,,,,
+2023-24,108,4193567,control,98980,268375,Emiliano Martinez,Aston Villa,90.0,,0.0,,0.0,0.0,10.0
+2023-24,108,4193567,control,101184,425255,Calum Chambers,Aston Villa,,,,,,,
+2023-24,108,4193567,control,101188,210111,Lucas Digne,Aston Villa,90.0,0.0,3.0,0.0,1.0,1.0,2.0
+2023-24,108,4193567,control,106468,477588,Álex Moreno,Aston Villa,,,,,,,
+2023-24,108,4193567,control,110504,303059,Bertrand Traoré,Aston Villa,,,,,,,
+2023-24,108,4193567,control,111452,304355,Odisseas Vlachodimos,Nott'm Forest,90.0,,0.0,,2.0,0.0,8.0
+2023-24,108,4193567,control,111782,120569,Robin Olsen,Aston Villa,,,,,,,
+2023-24,108,4193567,control,114241,575804,Harry Toffolo,Nott'm Forest,71.0,0.0,3.0,1.0,2.0,0.0,3.0
+2023-24,108,4193567,control,122806,356406,John McGinn,Aston Villa,90.0,0.0,0.0,0.0,0.0,1.0,5.0
+2023-24,108,4193567,control,151589,424129,Leander Dendoncker,Aston Villa,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,108,4193567,control,159506,682548,Ola Aina,Nott'm Forest,86.0,1.0,3.0,0.0,4.0,0.0,9.0
+2023-24,108,4193567,control,165659,570434,Diego Carlos,Aston Villa,12.0,0.0,0.0,0.0,0.0,0.0,3.0
+2023-24,108,4193567,control,166989,465960,Youri Tielemans,Aston Villa,31.0,0.0,0.0,0.0,0.0,0.0,5.0
+2023-24,108,4193567,control,171101,488412,Clément Lenglet,Aston Villa,,,,,,,
+2023-24,108,4193567,control,178301,540088,Ollie Watkins,Aston Villa,90.0,0.0,1.0,0.0,0.0,0.0,1.0
+2023-24,108,4193567,control,179519,765693,Orel Mangala,Nott'm Forest,90.0,1.0,1.0,1.0,4.0,1.0,4.0
+2023-24,108,4193567,control,199170,592102,Moussa Niakhaté,Nott'm Forest,90.0,0.0,5.0,1.0,8.0,2.0,5.0
+2023-24,108,4193567,control,199796,729731,Matty Cash,Aston Villa,59.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,108,4193567,control,199798,710159,Ezri Konsa,Aston Villa,90.0,0.0,1.0,0.0,0.0,2.0,6.0
+2023-24,108,4193567,control,204968,775614,Ryan Yates,Nott'm Forest,3.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,108,4193567,control,210156,643717,Taiwo Awoniyi,Nott'm Forest,82.0,0.0,1.0,0.0,0.0,0.0,3.0
+2023-24,108,4193567,control,210462,795371,Ibrahim Sangaré,Nott'm Forest,90.0,0.0,2.0,0.0,3.0,0.0,3.0
+2023-24,108,4193567,control,215136,1078788,Neco Williams,Nott'm Forest,4.0,0.0,4.0,0.0,0.0,1.0,2.0
+2023-24,108,4193567,control,215711,671331,Leon Bailey,Aston Villa,45.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,108,4193567,control,222531,789502,Morgan Gibbs-White,Nott'm Forest,90.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,108,4193567,control,224068,729988,Matt Turner,Nott'm Forest,,,,,,,
+2023-24,108,4193567,control,226944,816325,Boubacar Kamara,Aston Villa,78.0,0.0,1.0,0.0,3.0,1.0,6.0
+2023-24,108,4193567,control,230046,787350,Douglas Luiz,Aston Villa,86.0,0.0,1.0,0.0,1.0,1.0,0.0
+2023-24,108,4193567,control,243557,923498,Moussa Diaby,Aston Villa,90.0,0.0,2.0,0.0,0.0,1.0,3.0
+2023-24,108,4193567,control,244954,792645,Pau Torres,Aston Villa,90.0,0.0,1.0,0.0,5.0,0.0,4.0
+2023-24,108,4193567,control,245414,818893,Nicolo Zaniolo,Aston Villa,45.0,0.0,0.0,0.0,0.0,0.0,3.0
+2023-24,108,4193567,control,250199,827315,Nicolás Dominguez,Nott'm Forest,87.0,0.0,8.0,0.0,1.0,0.0,3.0
+2023-24,108,4193567,control,437626,957118,Nuno Tavares,Nott'm Forest,,,,,,,
+2023-24,108,4193567,control,449434,1050166,Anthony Elanga,Nott'm Forest,90.0,0.0,1.0,1.0,1.0,2.0,4.0
+2023-24,108,4193567,control,513046,1181700,Danilo,Nott'm Forest,8.0,0.0,0.0,0.0,0.0,1.0,1.0
+2023-24,108,4193567,control,532605,1372921,Andrey Santos,Nott'm Forest,,,,,,,
+2023-24,108,4193567,control,575476,1458711,Murillo,Nott'm Forest,90.0,0.0,1.0,0.0,7.0,1.0,2.0
+2023-24,117,4193576,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,117,4193576,gap,51927,240538,Ben Mee,Brentford,90.0,0.0,1.0,0.0,4.0,1.0,4.0
+2023-24,117,4193576,gap,60914,171698,Joel Matip,Liverpool,90.0,0.0,2.0,1.0,3.0,0.0,6.0
+2023-24,117,4193576,gap,97032,209405,Virgil van Dijk,Liverpool,90.0,0.0,3.0,2.0,4.0,0.0,3.0
+2023-24,117,4193576,gap,115382,391064,Neal Maupay,Brentford,18.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,117,4193576,gap,116535,319784,Alisson Becker,Liverpool,90.0,,0.0,,3.0,0.0,5.0
+2023-24,117,4193576,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,1.0,0.0,17.0
+2023-24,117,4193576,gap,118748,292462,Mohamed Salah,Liverpool,90.0,2.0,0.0,0.0,0.0,0.0,3.0
+2023-24,117,4193576,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,1.0,0.0,2.0,2.0,8.0
+2023-24,117,4193576,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,117,4193576,gap,158983,202643,Wataru Endo,Liverpool,90.0,0.0,1.0,0.0,4.0,0.0,4.0
+2023-24,117,4193576,gap,169187,760712,Trent Alexander-Arnold,Liverpool,89.0,0.0,0.0,0.0,1.0,1.0,5.0
+2023-24,117,4193576,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,90.0,0.0,4.0,0.0,1.0,1.0,1.0
+2023-24,117,4193576,gap,194634,570461,Diogo Jota,Liverpool,84.0,1.0,0.0,0.0,1.0,1.0,2.0
+2023-24,117,4193576,gap,200720,776689,Caoimhin Kelleher,Liverpool,,,,,,,
+2023-24,117,4193576,gap,204580,688273,Vitaly Janelt,Brentford,45.0,0.0,3.0,0.0,1.0,0.0,2.0
+2023-24,117,4193576,gap,205836,532220,Saman Ghoddos,Brentford,18.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,117,4193576,gap,207283,650616,Mathias Jensen,Brentford,72.0,0.0,0.0,0.0,2.0,2.0,2.0
+2023-24,117,4193576,gap,214285,671529,Konstantinos Tsimikas,Liverpool,90.0,0.0,2.0,0.0,1.0,0.0,7.0
+2023-24,117,4193576,gap,216646,666857,Yoane Wissa,Brentford,72.0,0.0,0.0,0.0,1.0,0.0,4.0
+2023-24,117,4193576,gap,226956,803343,Mads Roerslev,Brentford,72.0,0.0,0.0,0.0,3.0,0.0,1.0
+2023-24,117,4193576,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,1.0,6.0,3.0,6.0
+2023-24,117,4193576,gap,243298,806552,Cody Gakpo,Liverpool,83.0,0.0,1.0,0.0,0.0,1.0,6.0
+2023-24,117,4193576,gap,244731,860914,Luis Diaz,Liverpool,6.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,117,4193576,gap,424876,846005,Dominik Szoboszlai,Liverpool,89.0,0.0,0.0,0.0,1.0,0.0,9.0
+2023-24,117,4193576,gap,428580,856685,Frank Onyeka,Brentford,45.0,0.0,0.0,0.0,2.0,0.0,3.0
+2023-24,117,4193576,gap,432160,865131,Shandon Baptiste,Brentford,,,,,,,
+2023-24,117,4193576,gap,432830,961306,Nathan Collins,Brentford,90.0,0.0,2.0,1.0,6.0,2.0,4.0
+2023-24,117,4193576,gap,441428,1107620,Jarell Quansah,Liverpool,1.0,0.0,0.0,0.0,1.0,1.0,0.0
+2023-24,117,4193576,gap,444884,963964,Harvey Elliott,Liverpool,7.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,117,4193576,gap,446008,923312,Bryan Mbeumo,Brentford,90.0,0.0,0.0,0.0,2.0,0.0,6.0
+2023-24,117,4193576,gap,447203,950561,Darwin Nunez,Liverpool,90.0,0.0,1.0,1.0,1.0,0.0,1.0
+2023-24,117,4193576,gap,450539,1113813,Myles Peart-Harris,Brentford,,,,,,,
+2023-24,117,4193576,gap,462491,1249634,Luke Chambers,Liverpool,,,,,,,
+2023-24,117,4193576,gap,491501,1231075,James McConnell,Liverpool,1.0,0.0,0.0,0.0,0.0,1.0,0.0
+2023-24,117,4193576,gap,496208,1324871,Ben Gannon Doak,Liverpool,,,,,,,
+2023-24,117,4193576,gap,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2023-24,117,4193576,gap,508395,1157236,Yehor Yarmoliuk,Brentford,18.0,0.0,2.0,0.0,0.0,0.0,5.0
+2023-24,117,4193576,gap,519328,1355539,Calum Scanlon,Liverpool,,,,,,,
+2023-24,117,4193576,gap,591386,1436258,Trey Nyoni,Liverpool,,,,,,,
+2023-24,121,4193651,gap,48760,71908,Mathias Jørgensen,Brentford,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,121,4193651,gap,51927,240538,Ben Mee,Brentford,90.0,0.0,2.0,0.0,8.0,2.0,5.0
+2023-24,121,4193651,gap,58822,160627,Cédric Soares,Arsenal,,,,,,,
+2023-24,121,4193651,gap,85955,282775,Jorginho,Arsenal,1.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,121,4193651,gap,115382,391064,Neal Maupay,Brentford,18.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,121,4193651,gap,116216,318615,Leandro Trossard,Arsenal,90.0,0.0,1.0,0.0,0.0,0.0,4.0
+2023-24,121,4193651,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,1.0,0.0,4.0
+2023-24,121,4193651,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,5.0,0.0,3.0,0.0,8.0
+2023-24,121,4193651,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,121,4193651,gap,153256,339992,Mohamed Elneny,Arsenal,,,,,,,
+2023-24,121,4193651,gap,184029,534670,Martin Ødegaard,Arsenal,89.0,0.0,0.0,0.0,0.0,0.0,6.0
+2023-24,121,4193651,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,90.0,0.0,2.0,0.0,4.0,1.0,0.0
+2023-24,121,4193651,gap,198869,776151,Ben White,Arsenal,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,121,4193651,gap,200641,748382,Reiss Nelson,Arsenal,,,,,,,
+2023-24,121,4193651,gap,204480,654096,Declan Rice,Arsenal,90.0,0.0,0.0,1.0,2.0,1.0,4.0
+2023-24,121,4193651,gap,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,2.0,0.0,1.0,2.0,7.0
+2023-24,121,4193651,gap,205533,860920,Edward Nketiah,Arsenal,24.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,121,4193651,gap,205651,576165,Gabriel Jesus,Arsenal,66.0,0.0,1.0,0.0,1.0,0.0,0.0
+2023-24,121,4193651,gap,205836,532220,Saman Ghoddos,Brentford,89.0,0.0,2.0,0.0,2.0,0.0,1.0
+2023-24,121,4193651,gap,206325,623621,Oleksandr Zinchenko,Arsenal,90.0,0.0,1.0,1.0,1.0,1.0,5.0
+2023-24,121,4193651,gap,213687,650647,Charlie Goode,Brentford,,,,,,,
+2023-24,121,4193651,gap,216646,666857,Yoane Wissa,Brentford,72.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,121,4193651,gap,219847,749736,Kai Havertz,Arsenal,11.0,1.0,1.0,0.0,0.0,0.0,0.0
+2023-24,121,4193651,gap,223340,961995,Bukayo Saka,Arsenal,89.0,0.0,1.0,0.0,0.0,1.0,6.0
+2023-24,121,4193651,gap,223723,664444,Takehiro Tomiyasu,Arsenal,90.0,0.0,1.0,0.0,4.0,2.0,4.0
+2023-24,121,4193651,gap,225321,746395,Aaron Ramsdale,Arsenal,90.0,,0.0,,1.0,0.0,11.0
+2023-24,121,4193651,gap,226597,795179,Gabriel,Arsenal,90.0,0.0,0.0,1.0,3.0,0.0,5.0
+2023-24,121,4193651,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,0.0,2.0,12.0,2.0,7.0
+2023-24,121,4193651,gap,249231,1010426,Keane Lewis-Potter,Brentford,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,121,4193651,gap,428580,856685,Frank Onyeka,Brentford,89.0,0.0,1.0,2.0,0.0,4.0,9.0
+2023-24,121,4193651,gap,432160,865131,Shandon Baptiste,Brentford,18.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,121,4193651,gap,440854,1021834,Jakub Kiwior,Arsenal,,,,,,,
+2023-24,121,4193651,gap,444145,1021586,Gabriel Martinelli,Arsenal,79.0,0.0,0.0,0.0,0.0,0.0,5.0
+2023-24,121,4193651,gap,446008,923312,Bryan Mbeumo,Brentford,90.0,0.0,0.0,0.0,2.0,0.0,2.0
+2023-24,121,4193651,gap,450539,1113813,Myles Peart-Harris,Brentford,,,,,,,
+2023-24,121,4193651,gap,462424,955406,William Saliba,Arsenal,90.0,0.0,2.0,0.0,1.0,0.0,5.0
+2023-24,121,4193651,gap,463748,982692,Karl Hein,Arsenal,,,,,,,
+2023-24,121,4193651,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,121,4193651,gap,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2023-24,121,4193651,gap,508395,1157236,Yehor Yarmoliuk,Brentford,72.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,133,4193663,gap,20480,24229,Tim Krul,Luton,,,,,,,
+2023-24,133,4193663,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,133,4193663,gap,51927,240538,Ben Mee,Brentford,90.0,1.0,0.0,2.0,2.0,1.0,10.0
+2023-24,133,4193663,gap,54738,131408,Thomas Kaminski,Luton,90.0,,0.0,,0.0,0.0,9.0
+2023-24,133,4193663,gap,60252,166422,Andros Townsend,Luton,30.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,133,4193663,gap,82738,185349,Luke Berry,Luton,,,,,,,
+2023-24,133,4193663,gap,88894,215384,Ross Barkley,Luton,90.0,0.0,0.0,0.0,4.0,1.0,4.0
+2023-24,133,4193663,gap,96784,259301,Jordan Clark,Luton,30.0,0.0,1.0,0.0,1.0,0.0,1.0
+2023-24,133,4193663,gap,104047,498532,Pelly-Ruddock Mpanzu,Luton,60.0,0.0,1.0,1.0,3.0,0.0,1.0
+2023-24,133,4193663,gap,108796,369761,Tom Lockyer,Luton,45.0,0.0,2.0,1.0,6.0,2.0,2.0
+2023-24,133,4193663,gap,115382,391064,Neal Maupay,Brentford,89.0,1.0,2.0,0.0,0.0,0.0,7.0
+2023-24,133,4193663,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,0.0,0.0,0.0
+2023-24,133,4193663,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,4.0,0.0,6.0,0.0,3.0
+2023-24,133,4193663,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,133,4193663,gap,156700,562725,Carlton Morris,Luton,61.0,0.0,2.0,1.0,1.0,0.0,2.0
+2023-24,133,4193663,gap,165183,471271,Amari'i Bell,Luton,90.0,0.0,2.0,2.0,3.0,2.0,7.0
+2023-24,133,4193663,gap,174310,873237,Elijah Adebayo,Luton,29.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,133,4193663,gap,199056,789509,Gabriel Osho,Luton,90.0,0.0,3.0,4.0,6.0,0.0,9.0
+2023-24,133,4193663,gap,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,1.0,0.0,5.0,1.0,9.0
+2023-24,133,4193663,gap,205836,532220,Saman Ghoddos,Brentford,77.0,0.0,1.0,0.0,1.0,0.0,5.0
+2023-24,133,4193663,gap,213687,650647,Charlie Goode,Brentford,,,,,,,
+2023-24,133,4193663,gap,216646,666857,Yoane Wissa,Brentford,90.0,0.0,1.0,0.0,0.0,0.0,7.0
+2023-24,133,4193663,gap,222677,751066,Tahith Chong,Luton,90.0,0.0,2.0,0.0,1.0,0.0,4.0
+2023-24,133,4193663,gap,226956,803343,Mads Roerslev,Brentford,13.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,133,4193663,gap,229164,674009,Chiedozie Ogbene,Luton,60.0,0.0,0.0,0.0,1.0,0.0,6.0
+2023-24,133,4193663,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,1.0,3.0,1.0,7.0
+2023-24,133,4193663,gap,232351,933635,Ryan Giles,Luton,14.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,133,4193663,gap,242453,802245,Jacob Brown,Luton,45.0,1.0,2.0,0.0,2.0,0.0,1.0
+2023-24,133,4193663,gap,244856,1098780,Teden Mengi,Luton,76.0,0.0,1.0,1.0,5.0,1.0,2.0
+2023-24,133,4193663,gap,249231,1010426,Keane Lewis-Potter,Brentford,12.0,0.0,0.0,1.0,1.0,0.0,2.0
+2023-24,133,4193663,gap,428580,856685,Frank Onyeka,Brentford,90.0,0.0,3.0,1.0,0.0,2.0,2.0
+2023-24,133,4193663,gap,432160,865131,Shandon Baptiste,Brentford,20.0,1.0,2.0,0.0,1.0,1.0,2.0
+2023-24,133,4193663,gap,446008,923312,Bryan Mbeumo,Brentford,78.0,0.0,0.0,0.0,0.0,1.0,5.0
+2023-24,133,4193663,gap,450539,1113813,Myles Peart-Harris,Brentford,1.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,133,4193663,gap,476369,1099974,Issa Kaboré,Luton,90.0,0.0,1.0,1.0,5.0,2.0,3.0
+2023-24,133,4193663,gap,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2023-24,133,4193663,gap,508395,1157236,Yehor Yarmoliuk,Brentford,70.0,0.0,3.0,0.0,0.0,0.0,3.0
+2023-24,133,4193663,gap,563883,1321131,Vincent Angelini,Brentford,,,,,,,
+2023-24,133,4193663,gap,589114,1411552,Zack Nelson,Luton,,,,,,,
+2023-24,133,4193663,gap,611011,1437880,Joseph Johnson,Luton,,,,,,,
+2023-24,142,4193672,gap,15157,38807,James Milner,Brighton,21.0,0.0,2.0,0.0,1.0,1.0,0.0
+2023-24,142,4193672,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,142,4193672,gap,49262,107917,Jason Steele,Brighton,90.0,,0.0,,1.0,0.0,8.0
+2023-24,142,4193672,gap,51927,240538,Ben Mee,Brentford,90.0,0.0,1.0,1.0,3.0,0.0,5.0
+2023-24,142,4193672,gap,60307,167008,Pascal Gross,Brighton,90.0,1.0,2.0,0.0,0.0,0.0,5.0
+2023-24,142,4193672,gap,111478,304455,Joel Veltman,Brighton,17.0,0.0,0.0,0.0,2.0,1.0,3.0
+2023-24,142,4193672,gap,115382,391064,Neal Maupay,Brentford,90.0,0.0,0.0,0.0,1.0,0.0,4.0
+2023-24,142,4193672,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,1.0,0.0,8.0
+2023-24,142,4193672,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,142,4193672,gap,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,4.0,1.0,3.0,0.0,7.0
+2023-24,142,4193672,gap,205836,532220,Saman Ghoddos,Brentford,90.0,0.0,4.0,0.0,0.0,1.0,5.0
+2023-24,142,4193672,gap,213687,650647,Charlie Goode,Brentford,,,,,,,
+2023-24,142,4193672,gap,216646,666857,Yoane Wissa,Brentford,50.0,0.0,1.0,0.0,0.0,1.0,2.0
+2023-24,142,4193672,gap,223434,768331,Igor Julio,Brighton,90.0,0.0,2.0,1.0,2.0,1.0,10.0
+2023-24,142,4193672,gap,226956,803343,Mads Roerslev,Brentford,84.0,0.0,2.0,0.0,2.0,3.0,3.0
+2023-24,142,4193672,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,5.0,0.0,7.0,2.0,8.0
+2023-24,142,4193672,gap,243505,891855,Jakub Moder,Brighton,6.0,0.0,1.0,0.0,1.0,0.0,2.0
+2023-24,142,4193672,gap,243568,942549,Billy Gilmour,Brighton,90.0,0.0,0.0,1.0,1.0,1.0,5.0
+2023-24,142,4193672,gap,249231,1010426,Keane Lewis-Potter,Brentford,45.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,142,4193672,gap,428580,856685,Frank Onyeka,Brentford,90.0,0.0,5.0,0.0,1.0,0.0,3.0
+2023-24,142,4193672,gap,432160,865131,Shandon Baptiste,Brentford,69.0,0.0,1.0,1.0,1.0,2.0,4.0
+2023-24,142,4193672,gap,440089,888912,Mikkel Damsgaard,Brentford,21.0,0.0,3.0,0.0,0.0,0.0,5.0
+2023-24,142,4193672,gap,446008,923312,Bryan Mbeumo,Brentford,40.0,1.0,1.0,0.0,0.0,0.0,2.0
+2023-24,142,4193672,gap,450539,1113813,Myles Peart-Harris,Brentford,6.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,142,4193672,gap,451340,862608,Kaoru Mitoma,Brighton,90.0,0.0,1.0,1.0,1.0,0.0,3.0
+2023-24,142,4193672,gap,469142,974618,Jan Paul van Hecke,Brighton,90.0,0.0,1.0,0.0,2.0,1.0,6.0
+2023-24,142,4193672,gap,475168,1021382,Joao Pedro,Brighton,69.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,142,4193672,gap,475480,1516021,Benicio Baker-Boaitey,Brighton,6.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,142,4193672,gap,487117,1068482,Evan Ferguson,Brighton,21.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,142,4193672,gap,489639,1131987,Bart Verbruggen,Brighton,,,,,,,
+2023-24,142,4193672,gap,500052,1288346,Luca Barrington,Brighton,,,,,,,
+2023-24,142,4193672,gap,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2023-24,142,4193672,gap,508395,1157236,Yehor Yarmoliuk,Brentford,45.0,0.0,1.0,1.0,0.0,1.0,3.0
+2023-24,142,4193672,gap,513836,1292786,Leigh Kavanagh,Brighton,,,,,,,
+2023-24,142,4193672,gap,516432,1190125,Valintino Adedokun,Brentford,,,,,,,
+2023-24,142,4193672,gap,532529,1251334,Jack Hinshelwood,Brighton,73.0,1.0,0.0,1.0,3.0,2.0,0.0
+2023-24,142,4193672,gap,535301,1352713,Carlos Baleba,Brighton,84.0,0.0,2.0,0.0,3.0,1.0,8.0
+2023-24,142,4193672,gap,535818,1227012,Simon Adingra,Brighton,84.0,0.0,1.0,0.0,2.0,0.0,3.0
+2023-24,142,4193672,gap,536916,1336566,Facundo Buonanotte,Brighton,69.0,0.0,3.0,0.0,0.0,0.0,7.0
+2023-24,142,4193672,gap,574402,1435604,Mark O'Mahony,Brighton,,,,,,,
+2023-24,158,4193688,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,158,4193688,gap,51927,240538,Ben Mee,Brentford,90.0,0.0,2.0,0.0,1.0,2.0,4.0
+2023-24,158,4193688,gap,82143,212944,Wesley Foderingham,Sheffield Utd,90.0,,0.0,,0.0,0.0,16.0
+2023-24,158,4193688,gap,83427,202181,Jack Robinson,Sheffield Utd,90.0,0.0,0.0,1.0,6.0,0.0,9.0
+2023-24,158,4193688,gap,102549,401932,Adam Davies,Sheffield Utd,,,,,,,
+2023-24,158,4193688,gap,115382,391064,Neal Maupay,Brentford,90.0,0.0,1.0,0.0,1.0,0.0,3.0
+2023-24,158,4193688,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,0.0,0.0,6.0
+2023-24,158,4193688,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,3.0,0.0,3.0,1.0,5.0
+2023-24,158,4193688,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,158,4193688,gap,155197,492589,Max Lowe,Sheffield Utd,17.0,0.0,2.0,0.0,1.0,0.0,0.0
+2023-24,158,4193688,gap,196100,775355,Gustavo Hamer,Sheffield Utd,90.0,0.0,2.0,0.0,3.0,0.0,9.0
+2023-24,158,4193688,gap,201410,688271,Auston Trusty,Sheffield Utd,90.0,0.0,1.0,0.0,8.0,1.0,3.0
+2023-24,158,4193688,gap,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,4.0,0.0,2.0,0.0,4.0
+2023-24,158,4193688,gap,205836,532220,Saman Ghoddos,Brentford,90.0,0.0,4.0,0.0,1.0,1.0,4.0
+2023-24,158,4193688,gap,213687,650647,Charlie Goode,Brentford,,,,,,,
+2023-24,158,4193688,gap,216646,666857,Yoane Wissa,Brentford,90.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,158,4193688,gap,226182,789646,Jayden Bogle,Sheffield Utd,90.0,0.0,1.0,1.0,6.0,3.0,3.0
+2023-24,158,4193688,gap,226956,803343,Mads Roerslev,Brentford,,,,,,,
+2023-24,158,4193688,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,3.0,0.0,5.0,3.0,7.0
+2023-24,158,4193688,gap,233821,793820,Anel Ahmedhodzic,Sheffield Utd,90.0,0.0,4.0,1.0,11.0,1.0,4.0
+2023-24,158,4193688,gap,244619,916332,Luke Thomas,Sheffield Utd,,,,,,,
+2023-24,158,4193688,gap,249231,1010426,Keane Lewis-Potter,Brentford,66.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,158,4193688,gap,424001,1047671,Vini Souza,Sheffield Utd,90.0,0.0,1.0,0.0,3.0,0.0,4.0
+2023-24,158,4193688,gap,428580,856685,Frank Onyeka,Brentford,45.0,0.0,2.0,1.0,1.0,0.0,4.0
+2023-24,158,4193688,gap,432160,865131,Shandon Baptiste,Brentford,65.0,0.0,1.0,0.0,0.0,0.0,6.0
+2023-24,158,4193688,gap,432714,1107648,James McAtee,Sheffield Utd,81.0,1.0,1.0,0.0,1.0,1.0,4.0
+2023-24,158,4193688,gap,432990,1068902,Yasser Larouci,Sheffield Utd,,,,,,,
+2023-24,158,4193688,gap,433979,1086647,Cameron Archer,Sheffield Utd,90.0,0.0,1.0,0.0,3.0,0.0,8.0
+2023-24,158,4193688,gap,440089,888912,Mikkel Damsgaard,Brentford,25.0,0.0,0.0,0.0,0.0,1.0,4.0
+2023-24,158,4193688,gap,450539,1113813,Myles Peart-Harris,Brentford,,,,,,,
+2023-24,158,4193688,gap,471848,997560,Femi Seriki,Sheffield Utd,,,,,,,
+2023-24,158,4193688,gap,501284,1130797,Michael Olakigbe,Brentford,24.0,0.0,1.0,0.0,0.0,0.0,2.0
+2023-24,158,4193688,gap,504198,1055316,Anis Ben Slimane,Sheffield Utd,37.0,0.0,1.0,0.0,1.0,0.0,5.0
+2023-24,158,4193688,gap,508395,1157236,Yehor Yarmoliuk,Brentford,45.0,0.0,2.0,0.0,0.0,0.0,2.0
+2023-24,158,4193688,gap,516432,1190125,Valintino Adedokun,Brentford,,,,,,,
+2023-24,158,4193688,gap,523957,1231770,Bénie Traoré,Sheffield Utd,,,,,,,
+2023-24,158,4193688,gap,538207,1258092,William Osula,Sheffield Utd,53.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,158,4193688,gap,538210,1396784,Andre Brooks,Sheffield Utd,73.0,0.0,0.0,0.0,0.0,2.0,4.0
+2023-24,158,4193688,gap,552425,1420818,Sydie Peck,Sheffield Utd,9.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,158,4193688,gap,585472,1390003,Ryan One,Sheffield Utd,,,,,,,
+2023-24,161,4193692,control,15157,38807,James Milner,Brighton,60.0,0.0,3.0,0.0,2.0,0.0,1.0
+2023-24,161,4193692,control,39155,37234,Adam Lallana,Brighton,60.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,161,4193692,control,49262,107917,Jason Steele,Brighton,,,,,,,
+2023-24,161,4193692,control,50175,113836,Danny Welbeck,Brighton,11.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,161,4193692,control,58822,160627,Cédric Soares,Arsenal,,,,,,,
+2023-24,161,4193692,control,60307,167008,Pascal Gross,Brighton,90.0,0.0,3.0,2.0,1.0,0.0,1.0
+2023-24,161,4193692,control,83299,201690,Lewis Dunk,Brighton,90.0,0.0,0.0,4.0,3.0,1.0,4.0
+2023-24,161,4193692,control,111478,304455,Joel Veltman,Brighton,27.0,0.0,1.0,0.0,0.0,0.0,1.0
+2023-24,161,4193692,control,116216,318615,Leandro Trossard,Arsenal,8.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,161,4193692,control,154561,562727,David Raya,Arsenal,90.0,,0.0,,0.0,0.0,7.0
+2023-24,161,4193692,control,168090,469701,Mahmoud Dahoud,Brighton,,,,,,,
+2023-24,161,4193692,control,184029,534670,Martin Ødegaard,Arsenal,90.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,161,4193692,control,198869,776151,Ben White,Arsenal,90.0,0.0,1.0,1.0,1.0,0.0,1.0
+2023-24,161,4193692,control,200641,748382,Reiss Nelson,Arsenal,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,161,4193692,control,204480,654096,Declan Rice,Arsenal,90.0,0.0,2.0,0.0,1.0,3.0,4.0
+2023-24,161,4193692,control,205533,860920,Edward Nketiah,Arsenal,9.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,161,4193692,control,205651,576165,Gabriel Jesus,Arsenal,81.0,1.0,0.0,0.0,0.0,0.0,1.0
+2023-24,161,4193692,control,206325,623621,Oleksandr Zinchenko,Arsenal,89.0,0.0,1.0,0.0,0.0,4.0,1.0
+2023-24,161,4193692,control,209289,889534,Emile Smith Rowe,Arsenal,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,161,4193692,control,219847,749736,Kai Havertz,Arsenal,89.0,1.0,0.0,0.0,0.0,2.0,4.0
+2023-24,161,4193692,control,223340,961995,Bukayo Saka,Arsenal,89.0,0.0,1.0,0.0,0.0,0.0,3.0
+2023-24,161,4193692,control,223434,768331,Igor Julio,Brighton,30.0,0.0,0.0,0.0,2.0,0.0,0.0
+2023-24,161,4193692,control,225321,746395,Aaron Ramsdale,Arsenal,,,,,,,
+2023-24,161,4193692,control,226597,795179,Gabriel,Arsenal,90.0,0.0,1.0,0.0,1.0,1.0,1.0
+2023-24,161,4193692,control,243505,891855,Jakub Moder,Brighton,,,,,,,
+2023-24,161,4193692,control,243568,942549,Billy Gilmour,Brighton,90.0,0.0,1.0,1.0,0.0,0.0,2.0
+2023-24,161,4193692,control,440854,1021834,Jakub Kiwior,Arsenal,1.0,0.0,1.0,0.0,0.0,0.0,1.0
+2023-24,161,4193692,control,444145,1021586,Gabriel Martinelli,Arsenal,82.0,0.0,3.0,0.0,0.0,0.0,4.0
+2023-24,161,4193692,control,451340,862608,Kaoru Mitoma,Brighton,90.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,161,4193692,control,462424,955406,William Saliba,Arsenal,90.0,0.0,2.0,1.0,2.0,1.0,10.0
+2023-24,161,4193692,control,469142,974618,Jan Paul van Hecke,Brighton,90.0,0.0,3.0,2.0,9.0,0.0,4.0
+2023-24,161,4193692,control,475168,1021382,Joao Pedro,Brighton,30.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,161,4193692,control,487117,1068482,Evan Ferguson,Brighton,60.0,0.0,1.0,1.0,0.0,0.0,0.0
+2023-24,161,4193692,control,489639,1131987,Bart Verbruggen,Brighton,90.0,,0.0,,1.0,0.0,11.0
+2023-24,161,4193692,control,499169,1406436,Myles Lewis-Skelly,Arsenal,,,,,,,
+2023-24,161,4193692,control,532529,1251334,Jack Hinshelwood,Brighton,63.0,0.0,3.0,0.0,1.0,2.0,2.0
+2023-24,161,4193692,control,535262,1327975,Reuell Walters,Arsenal,,,,,,,
+2023-24,161,4193692,control,535301,1352713,Carlos Baleba,Brighton,,,,,,,
+2023-24,161,4193692,control,535818,1227012,Simon Adingra,Brighton,79.0,0.0,2.0,0.0,0.0,0.0,4.0
+2023-24,161,4193692,control,536916,1336566,Facundo Buonanotte,Brighton,30.0,0.0,0.0,0.0,1.0,0.0,3.0
+2023-24,163,4193693,gap,48760,71908,Mathias Jørgensen,Brentford,90.0,0.0,0.0,0.0,3.0,1.0,3.0
+2023-24,163,4193693,gap,51927,240538,Ben Mee,Brentford,71.0,0.0,0.0,1.0,2.0,0.0,1.0
+2023-24,163,4193693,gap,98980,268375,Emiliano Martinez,Aston Villa,90.0,,0.0,,1.0,0.0,6.0
+2023-24,163,4193693,gap,101184,425255,Calum Chambers,Aston Villa,,,,,,,
+2023-24,163,4193693,gap,106468,477588,Álex Moreno,Aston Villa,90.0,1.0,0.0,0.0,4.0,2.0,6.0
+2023-24,163,4193693,gap,115382,391064,Neal Maupay,Brentford,22.0,0.0,1.0,0.0,0.0,0.0,1.0
+2023-24,163,4193693,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,1.0,0.0,7.0
+2023-24,163,4193693,gap,122806,356406,John McGinn,Aston Villa,90.0,0.0,2.0,0.0,1.0,0.0,5.0
+2023-24,163,4193693,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,6.0,0.0,0.0,4.0,15.0
+2023-24,163,4193693,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,163,4193693,gap,151589,424129,Leander Dendoncker,Aston Villa,1.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,163,4193693,gap,165659,570434,Diego Carlos,Aston Villa,90.0,0.0,2.0,0.0,10.0,0.0,4.0
+2023-24,163,4193693,gap,171101,488412,Clément Lenglet,Aston Villa,,,,,,,
+2023-24,163,4193693,gap,178301,540088,Ollie Watkins,Aston Villa,90.0,1.0,1.0,0.0,1.0,0.0,4.0
+2023-24,163,4193693,gap,199796,729731,Matty Cash,Aston Villa,65.0,0.0,1.0,0.0,1.0,1.0,2.0
+2023-24,163,4193693,gap,199798,710159,Ezri Konsa,Aston Villa,90.0,0.0,0.0,0.0,1.0,1.0,4.0
+2023-24,163,4193693,gap,204580,688273,Vitaly Janelt,Brentford,88.0,0.0,0.0,0.0,2.0,0.0,4.0
+2023-24,163,4193693,gap,205836,532220,Saman Ghoddos,Brentford,90.0,0.0,8.0,1.0,0.0,1.0,9.0
+2023-24,163,4193693,gap,213687,650647,Charlie Goode,Brentford,,,,,,,
+2023-24,163,4193693,gap,215711,671331,Leon Bailey,Aston Villa,25.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,163,4193693,gap,216646,666857,Yoane Wissa,Brentford,76.0,0.0,4.0,0.0,0.0,0.0,3.0
+2023-24,163,4193693,gap,226944,816325,Boubacar Kamara,Aston Villa,89.0,0.0,4.0,0.0,2.0,2.0,6.0
+2023-24,163,4193693,gap,226956,803343,Mads Roerslev,Brentford,89.0,0.0,2.0,1.0,1.0,2.0,3.0
+2023-24,163,4193693,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,1.0,3.0,4.0,3.0
+2023-24,163,4193693,gap,232653,1021929,Jacob Ramsey,Aston Villa,89.0,0.0,1.0,0.0,1.0,0.0,3.0
+2023-24,163,4193693,gap,243557,923498,Moussa Diaby,Aston Villa,65.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,163,4193693,gap,244954,792645,Pau Torres,Aston Villa,81.0,0.0,0.0,0.0,3.0,1.0,8.0
+2023-24,163,4193693,gap,245414,818893,Nicolo Zaniolo,Aston Villa,9.0,0.0,1.0,0.0,1.0,0.0,1.0
+2023-24,163,4193693,gap,249231,1010426,Keane Lewis-Potter,Brentford,68.0,1.0,4.0,0.0,0.0,0.0,3.0
+2023-24,163,4193693,gap,428580,856685,Frank Onyeka,Brentford,22.0,0.0,0.0,0.0,3.0,1.0,0.0
+2023-24,163,4193693,gap,432160,865131,Shandon Baptiste,Brentford,,,,,,,
+2023-24,163,4193693,gap,432830,961306,Nathan Collins,Brentford,14.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,163,4193693,gap,440089,888912,Mikkel Damsgaard,Brentford,68.0,0.0,5.0,0.0,0.0,1.0,2.0
+2023-24,163,4193693,gap,450539,1113813,Myles Peart-Harris,Brentford,,,,,,,
+2023-24,163,4193693,gap,462381,1089687,Filip Marschall,Aston Villa,,,,,,,
+2023-24,163,4193693,gap,476344,1088066,Jhon Duran,Aston Villa,25.0,0.0,0.0,0.0,2.0,0.0,1.0
+2023-24,163,4193693,gap,490094,1203512,Tim Iroegbunam,Aston Villa,,,,,,,
+2023-24,163,4193693,gap,501284,1130797,Michael Olakigbe,Brentford,1.0,0.0,2.0,0.0,0.0,1.0,1.0
+2023-24,163,4193693,gap,508395,1157236,Yehor Yarmoliuk,Brentford,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,163,4193693,gap,564505,1596340,Sam Proctor,Aston Villa,,,,,,,
+2023-24,183,4193713,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,183,4193713,gap,79602,189103,Daniel Bentley,Wolves,,,,,,,
+2023-24,183,4193713,gap,87835,239920,Matt Doherty,Wolves,26.0,0.0,3.0,0.0,1.0,1.0,4.0
+2023-24,183,4193713,gap,88484,240054,Pablo Sarabia,Wolves,65.0,0.0,0.0,0.0,1.0,0.0,2.0
+2023-24,183,4193713,gap,115382,391064,Neal Maupay,Brentford,90.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,183,4193713,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,0.0,0.0,10.0
+2023-24,183,4193713,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,3.0,0.0,1.0,0.0,10.0
+2023-24,183,4193713,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,183,4193713,gap,149065,416175,José Sá,Wolves,90.0,,0.0,,2.0,0.0,11.0
+2023-24,183,4193713,gap,151086,421786,Mario Lemina,Wolves,90.0,1.0,3.0,0.0,3.0,1.0,7.0
+2023-24,183,4193713,gap,184754,620026,Hee-Chan Hwang,Wolves,45.0,2.0,0.0,0.0,0.0,0.0,2.0
+2023-24,183,4193713,gap,200402,470834,Nélson Semedo,Wolves,64.0,0.0,0.0,0.0,1.0,0.0,3.0
+2023-24,183,4193713,gap,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,4.0,1.0,1.0,0.0,11.0
+2023-24,183,4193713,gap,205836,532220,Saman Ghoddos,Brentford,90.0,0.0,2.0,0.0,2.0,1.0,6.0
+2023-24,183,4193713,gap,207283,650616,Mathias Jensen,Brentford,23.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,183,4193713,gap,214048,865931,Max Kilman,Wolves,90.0,0.0,0.0,1.0,8.0,2.0,4.0
+2023-24,183,4193713,gap,216646,666857,Yoane Wissa,Brentford,86.0,1.0,0.0,0.0,1.0,0.0,2.0
+2023-24,183,4193713,gap,220394,940442,Tommy Doyle,Wolves,25.0,0.0,2.0,0.0,1.0,0.0,2.0
+2023-24,183,4193713,gap,226956,803343,Mads Roerslev,Brentford,67.0,0.0,3.0,0.0,1.0,2.0,3.0
+2023-24,183,4193713,gap,231057,769166,Jean-Ricner Bellegarde,Wolves,45.0,1.0,1.0,0.0,1.0,0.0,2.0
+2023-24,183,4193713,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,0.0,0.0,1.0,1.0,10.0
+2023-24,183,4193713,gap,231480,848034,Santiago Bueno,Wolves,90.0,0.0,2.0,0.0,8.0,2.0,5.0
+2023-24,183,4193713,gap,240299,1070794,Joe Hodge,Wolves,,,,,,,
+2023-24,183,4193713,gap,247632,843040,Pedro Neto,Wolves,,,,,,,
+2023-24,183,4193713,gap,249231,1010426,Keane Lewis-Potter,Brentford,86.0,0.0,1.0,0.0,1.0,0.0,2.0
+2023-24,183,4193713,gap,429414,858198,Sasa Kalajdzic,Wolves,,,,,,,
+2023-24,183,4193713,gap,430871,863098,Matheus Cunha,Wolves,90.0,0.0,0.0,1.0,3.0,2.0,3.0
+2023-24,183,4193713,gap,432830,961306,Nathan Collins,Brentford,90.0,0.0,0.0,3.0,2.0,1.0,5.0
+2023-24,183,4193713,gap,440089,888912,Mikkel Damsgaard,Brentford,45.0,0.0,0.0,0.0,1.0,1.0,2.0
+2023-24,183,4193713,gap,448089,1174672,Joao Gomes,Wolves,90.0,0.0,10.0,0.0,2.0,0.0,12.0
+2023-24,183,4193713,gap,448514,933845,Rayan Ait Nouri,Wolves,80.0,0.0,2.0,0.0,3.0,0.0,9.0
+2023-24,183,4193713,gap,450539,1113813,Myles Peart-Harris,Brentford,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,183,4193713,gap,490721,1116391,Hugo Bueno,Wolves,10.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,183,4193713,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,183,4193713,gap,497606,1111392,Tawanda Chirewa,Wolves,,,,,,,
+2023-24,183,4193713,gap,501284,1130797,Michael Olakigbe,Brentford,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,183,4193713,gap,508395,1157236,Yehor Yarmoliuk,Brentford,45.0,0.0,1.0,0.0,0.0,0.0,2.0
+2023-24,183,4193713,gap,510362,1013277,Toti Gomes,Wolves,90.0,0.0,2.0,2.0,4.0,1.0,9.0
+2023-24,183,4193713,gap,516432,1190125,Valintino Adedokun,Brentford,,,,,,,
+2023-24,183,4193713,gap,563883,1321131,Vincent Angelini,Brentford,,,,,,,
+2023-24,192,4193722,gap,48760,71908,Mathias Jørgensen,Brentford,90.0,0.0,3.0,0.0,3.0,2.0,6.0
+2023-24,192,4193722,gap,49413,109897,James Tomkins,Crystal Palace,,,,,,,
+2023-24,192,4193722,gap,57328,157838,Nathaniel Clyne,Crystal Palace,90.0,0.0,1.0,0.0,2.0,2.0,6.0
+2023-24,192,4193722,gap,80146,154280,Jordan Ayew,Crystal Palace,89.0,0.0,1.0,0.0,0.0,0.0,3.0
+2023-24,192,4193722,gap,86417,214570,Jeffrey Schlupp,Crystal Palace,1.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,192,4193722,gap,108413,295067,Will Hughes,Crystal Palace,4.0,0.0,2.0,0.0,0.0,0.0,0.0
+2023-24,192,4193722,gap,115382,391064,Neal Maupay,Brentford,27.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,192,4193722,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,2.0,0.0,13.0
+2023-24,192,4193722,gap,128295,266520,Christian Nørgaard,Brentford,67.0,0.0,2.0,0.0,2.0,0.0,7.0
+2023-24,192,4193722,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,192,4193722,gap,152551,466672,Jefferson Lerma,Crystal Palace,90.0,0.0,4.0,0.0,3.0,1.0,8.0
+2023-24,192,4193722,gap,169593,562726,Remi Matthews,Crystal Palace,,,,,,,
+2023-24,192,4193722,gap,172649,719330,Dean Henderson,Crystal Palace,90.0,,0.0,,1.0,0.0,14.0
+2023-24,192,4193722,gap,173954,496563,Jairo Riedewald,Crystal Palace,,,,,,,
+2023-24,192,4193722,gap,174874,503659,Joachim Andersen,Crystal Palace,90.0,0.0,1.0,0.0,5.0,2.0,5.0
+2023-24,192,4193722,gap,199670,637746,Odsonne Edouard,Crystal Palace,,,,,,,
+2023-24,192,4193722,gap,204580,688273,Vitaly Janelt,Brentford,80.0,0.0,2.0,0.0,0.0,3.0,5.0
+2023-24,192,4193722,gap,205836,532220,Saman Ghoddos,Brentford,90.0,0.0,1.0,0.0,1.0,1.0,4.0
+2023-24,192,4193722,gap,207283,650616,Mathias Jensen,Brentford,63.0,0.0,3.0,0.0,0.0,0.0,6.0
+2023-24,192,4193722,gap,209036,844425,Marc Guehi,Crystal Palace,90.0,0.0,1.0,0.0,6.0,1.0,10.0
+2023-24,192,4193722,gap,216646,666857,Yoane Wissa,Brentford,90.0,0.0,1.0,0.0,0.0,0.0,2.0
+2023-24,192,4193722,gap,226956,803343,Mads Roerslev,Brentford,63.0,0.0,2.0,0.0,1.0,0.0,4.0
+2023-24,192,4193722,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,1.0,6.0,1.0,5.0
+2023-24,192,4193722,gap,231747,706297,Jean-Philippe Mateta,Crystal Palace,86.0,0.0,1.0,0.0,1.0,0.0,5.0
+2023-24,192,4193722,gap,232413,818975,Eberechi Eze,Crystal Palace,86.0,1.0,1.0,0.0,0.0,0.0,8.0
+2023-24,192,4193722,gap,244723,1120224,Tyrick Mitchell,Crystal Palace,90.0,0.0,1.0,1.0,2.0,2.0,8.0
+2023-24,192,4193722,gap,249231,1010426,Keane Lewis-Potter,Brentford,80.0,1.0,3.0,0.0,1.0,0.0,2.0
+2023-24,192,4193722,gap,427623,950829,Chris Richards,Crystal Palace,90.0,0.0,3.0,0.0,3.0,1.0,2.0
+2023-24,192,4193722,gap,428580,856685,Frank Onyeka,Brentford,27.0,0.0,1.0,0.0,0.0,1.0,2.0
+2023-24,192,4193722,gap,432830,961306,Nathan Collins,Brentford,90.0,0.0,1.0,2.0,2.0,1.0,7.0
+2023-24,192,4193722,gap,440089,888912,Mikkel Damsgaard,Brentford,23.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,192,4193722,gap,443661,1029063,Michael Olise,Crystal Palace,90.0,2.0,1.0,0.0,4.0,0.0,1.0
+2023-24,192,4193722,gap,450539,1113813,Myles Peart-Harris,Brentford,,,,,,,
+2023-24,192,4193722,gap,466117,1192854,Naouirou Ahamada,Crystal Palace,,,,,,,
+2023-24,192,4193722,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,192,4193722,gap,501284,1130797,Michael Olakigbe,Brentford,10.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,192,4193722,gap,508395,1157236,Yehor Yarmoliuk,Brentford,10.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,192,4193722,gap,516432,1190125,Valintino Adedokun,Brentford,,,,,,,
+2023-24,192,4193722,gap,531989,1330872,David Ozoh,Crystal Palace,,,,,,,
+2023-24,192,4193722,gap,536694,1316124,Matheus Franca,Crystal Palace,4.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,203,4193733,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,203,4193733,gap,51927,240538,Ben Mee,Brentford,90.0,1.0,2.0,2.0,5.0,1.0,7.0
+2023-24,203,4193733,gap,60689,169719,Chris Wood,Nott'm Forest,90.0,1.0,0.0,0.0,1.0,0.0,4.0
+2023-24,203,4193733,gap,111452,304355,Odysseas Vlachodimos,Nott'm Forest,,,,,,,
+2023-24,203,4193733,gap,114241,575804,Harry Toffolo,Nott'm Forest,,,,,,,
+2023-24,203,4193733,gap,115382,391064,Neal Maupay,Brentford,74.0,1.0,2.0,0.0,0.0,0.0,2.0
+2023-24,203,4193733,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,1.0,0.0,6.0
+2023-24,203,4193733,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,203,4193733,gap,144485,408987,Ivan Toney,Brentford,90.0,1.0,1.0,0.0,4.0,1.0,5.0
+2023-24,203,4193733,gap,168281,551805,Scott McKenna,Nott'm Forest,,,,,,,
+2023-24,203,4193733,gap,179519,765693,Orel Mangala,Nott'm Forest,90.0,0.0,1.0,0.0,1.0,0.0,2.0
+2023-24,203,4193733,gap,183656,759566,Joshua Dasilva,Brentford,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,203,4193733,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,1.0,0.0,2.0,0.0,0.0,1.0,1.0
+2023-24,203,4193733,gap,199249,724436,Sergio Reguilon,Brentford,16.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,203,4193733,gap,204580,688273,Vitaly Janelt,Brentford,90.0,0.0,1.0,0.0,2.0,3.0,6.0
+2023-24,203,4193733,gap,204968,775614,Ryan Yates,Nott'm Forest,62.0,0.0,0.0,0.0,1.0,1.0,5.0
+2023-24,203,4193733,gap,207283,650616,Mathias Jensen,Brentford,89.0,0.0,1.0,1.0,0.0,0.0,4.0
+2023-24,203,4193733,gap,208912,716687,Joe Worrall,Nott'm Forest,,,,,,,
+2023-24,203,4193733,gap,209046,846383,Callum Hudson-Odoi,Nott'm Forest,90.0,0.0,2.0,0.0,0.0,0.0,2.0
+2023-24,203,4193733,gap,215136,1078788,Neco Williams,Nott'm Forest,28.0,0.0,3.0,0.0,0.0,0.0,5.0
+2023-24,203,4193733,gap,218430,687008,Gonzalo Montiel,Nott'm Forest,86.0,0.0,2.0,1.0,3.0,1.0,4.0
+2023-24,203,4193733,gap,224068,729988,Matt Turner,Nott'm Forest,90.0,,0.0,,2.0,0.0,7.0
+2023-24,203,4193733,gap,226956,803343,Mads Roerslev,Brentford,89.0,0.0,2.0,0.0,4.0,1.0,2.0
+2023-24,203,4193733,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,2.0,0.0,6.0,1.0,3.0
+2023-24,203,4193733,gap,249231,1010426,Keane Lewis-Potter,Brentford,89.0,0.0,2.0,0.0,1.0,1.0,1.0
+2023-24,203,4193733,gap,250199,827315,Nicolás Dominguez,Nott'm Forest,90.0,0.0,2.0,1.0,0.0,1.0,6.0
+2023-24,203,4193733,gap,432160,865131,Shandon Baptiste,Brentford,16.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,203,4193733,gap,432830,961306,Nathan Collins,Brentford,90.0,0.0,0.0,1.0,4.0,1.0,4.0
+2023-24,203,4193733,gap,437626,957118,Nuno Tavares,Nott'm Forest,90.0,0.0,0.0,0.0,2.0,0.0,4.0
+2023-24,203,4193733,gap,440089,888912,Mikkel Damsgaard,Brentford,74.0,0.0,0.0,0.0,0.0,2.0,5.0
+2023-24,203,4193733,gap,450539,1113813,Myles Peart-Harris,Brentford,,,,,,,
+2023-24,203,4193733,gap,461682,1021336,Brandon Aguilera,Nott'm Forest,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,203,4193733,gap,466404,1050822,Andrew Omobamidele,Nott'm Forest,90.0,0.0,1.0,1.0,6.0,3.0,2.0
+2023-24,203,4193733,gap,501284,1130797,Michael Olakigbe,Brentford,,,,,,,
+2023-24,203,4193733,gap,508395,1157236,Yehor Yarmoliuk,Brentford,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,203,4193733,gap,513046,1181700,Danilo,Nott'm Forest,90.0,1.0,1.0,0.0,2.0,1.0,8.0
+2023-24,203,4193733,gap,524070,1358339,Jamie McDonnell,Nott'm Forest,,,,,,,
+2023-24,203,4193733,gap,536677,1290925,Detlef Osong,Nott'm Forest,,,,,,,
+2023-24,203,4193733,gap,536681,1319809,Joseph Gardner,Nott'm Forest,,,,,,,
+2023-24,203,4193733,gap,575476,1458711,Murillo,Nott'm Forest,90.0,0.0,1.0,0.0,7.0,2.0,6.0
+2023-24,216,4193745,gap,40383,95336,Fraser Forster,Spurs,,,,,,,
+2023-24,216,4193745,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,216,4193745,gap,51927,240538,Ben Mee,Brentford,90.0,0.0,4.0,2.0,4.0,1.0,2.0
+2023-24,216,4193745,gap,115382,391064,Neal Maupay,Brentford,90.0,1.0,0.0,0.0,0.0,1.0,5.0
+2023-24,216,4193745,gap,115556,276121,Ben Davies,Spurs,,,,,,,
+2023-24,216,4193745,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,1.0,0.0,7.0
+2023-24,216,4193745,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,3.0,0.0,0.0,7.0,11.0
+2023-24,216,4193745,gap,132015,266523,Pierre-Emile Højbjerg,Spurs,45.0,0.0,2.0,0.0,2.0,1.0,5.0
+2023-24,216,4193745,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,216,4193745,gap,144485,408987,Ivan Toney,Brentford,90.0,1.0,3.0,0.0,0.0,0.0,6.0
+2023-24,216,4193745,gap,165153,450980,Timo Werner,Spurs,89.0,0.0,2.0,0.0,0.0,0.0,5.0
+2023-24,216,4193745,gap,172780,493165,James Maddison,Spurs,88.0,0.0,3.0,1.0,0.0,1.0,2.0
+2023-24,216,4193745,gap,183656,759566,Joshua Dasilva,Brentford,12.0,0.0,1.0,0.0,0.0,0.0,1.0
+2023-24,216,4193745,gap,184254,538501,Guglielmo Vicario,Spurs,90.0,,0.0,,1.0,0.0,7.0
+2023-24,216,4193745,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,12.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,216,4193745,gap,202993,620618,Rodrigo Bentancur,Spurs,45.0,0.0,0.0,0.0,2.0,1.0,3.0
+2023-24,216,4193745,gap,204580,688273,Vitaly Janelt,Brentford,88.0,0.0,1.0,1.0,0.0,2.0,5.0
+2023-24,216,4193745,gap,207283,650616,Mathias Jensen,Brentford,57.0,0.0,3.0,0.0,1.0,3.0,6.0
+2023-24,216,4193745,gap,209042,873014,Oliver Skipp,Spurs,45.0,0.0,2.0,0.0,1.0,0.0,2.0
+2023-24,216,4193745,gap,212319,654908,Richarlison,Spurs,90.0,1.0,2.0,0.0,3.0,1.0,4.0
+2023-24,216,4193745,gap,221632,789066,Cristian Romero,Spurs,90.0,0.0,2.0,0.0,4.0,2.0,6.0
+2023-24,216,4193745,gap,226956,803343,Mads Roerslev,Brentford,78.0,0.0,1.0,0.0,2.0,1.0,5.0
+2023-24,216,4193745,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,3.0,7.0,1.0,2.0
+2023-24,216,4193745,gap,241157,797908,Emerson Royal,Spurs,,,,,,,
+2023-24,216,4193745,gap,242898,1076756,Brennan Johnson,Spurs,45.0,1.0,1.0,0.0,1.0,0.0,1.0
+2023-24,216,4193745,gap,249231,1010426,Keane Lewis-Potter,Brentford,88.0,0.0,1.0,0.0,1.0,0.0,4.0
+2023-24,216,4193745,gap,432160,865131,Shandon Baptiste,Brentford,2.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,216,4193745,gap,432830,961306,Nathan Collins,Brentford,78.0,0.0,0.0,1.0,4.0,1.0,5.0
+2023-24,216,4193745,gap,436234,970692,Bryan Gil,Spurs,,,,,,,
+2023-24,216,4193745,gap,440089,888912,Mikkel Damsgaard,Brentford,2.0,0.0,1.0,0.0,1.0,0.0,0.0
+2023-24,216,4193745,gap,441164,941573,Pedro Porro,Spurs,90.0,0.0,3.0,0.0,4.0,0.0,6.0
+2023-24,216,4193745,gap,445044,935379,Dejan Kulusevski,Spurs,90.0,0.0,2.0,0.0,0.0,0.0,2.0
+2023-24,216,4193745,gap,487053,1052898,Destiny Udogie,Spurs,90.0,1.0,2.0,0.0,6.0,2.0,7.0
+2023-24,216,4193745,gap,490145,1113753,Dane Scarlett,Spurs,,,,,,,
+2023-24,216,4193745,gap,491279,1097466,Micky van de Ven,Spurs,90.0,0.0,2.0,0.0,3.0,1.0,7.0
+2023-24,216,4193745,gap,493125,1203661,Radu Dragusin,Spurs,2.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,216,4193745,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,216,4193745,gap,508395,1157236,Yehor Yarmoliuk,Brentford,33.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,216,4193745,gap,513588,1211646,Jamie Donley,Spurs,1.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,216,4193745,gap,612534,1478706,Benjamin Fredrick,Brentford,,,,,,,
+2023-24,223,4193753,gap,48760,71908,Mathias Jørgensen,Brentford,,,,,,,
+2023-24,223,4193753,gap,51927,240538,Ben Mee,Brentford,90.0,0.0,4.0,0.0,8.0,1.0,6.0
+2023-24,223,4193753,gap,58621,159833,Kyle Walker,Man City,90.0,0.0,0.0,0.0,1.0,0.0,7.0
+2023-24,223,4193753,gap,61366,169200,Kevin De Bruyne,Man City,90.0,0.0,1.0,0.0,0.0,0.0,4.0
+2023-24,223,4193753,gap,88248,276729,Stefan Ortega,Man City,,,,,,,
+2023-24,223,4193753,gap,91651,239219,Mateo Kovacic,Man City,4.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,223,4193753,gap,97299,263653,John Stones,Man City,,,,,,,
+2023-24,223,4193753,gap,114283,312765,Jack Grealish,Man City,,,,,,,
+2023-24,223,4193753,gap,115382,391064,Neal Maupay,Brentford,89.0,1.0,0.0,0.0,0.0,0.0,2.0
+2023-24,223,4193753,gap,118342,330643,Mark Flekken,Brentford,90.0,,0.0,,1.0,0.0,8.0
+2023-24,223,4193753,gap,121160,363364,Ederson,Man City,90.0,,0.0,,1.0,0.0,6.0
+2023-24,223,4193753,gap,126184,417068,Nathan Aké,Man City,90.0,0.0,0.0,0.0,7.0,0.0,6.0
+2023-24,223,4193753,gap,128295,266520,Christian Nørgaard,Brentford,90.0,0.0,2.0,0.0,3.0,2.0,7.0
+2023-24,223,4193753,gap,140200,403049,Thomas Strakosha,Brentford,,,,,,,
+2023-24,223,4193753,gap,144485,408987,Ivan Toney,Brentford,90.0,0.0,2.0,0.0,1.0,1.0,3.0
+2023-24,223,4193753,gap,165809,488139,Bernardo Silva,Man City,71.0,0.0,2.0,0.0,1.0,0.0,4.0
+2023-24,223,4193753,gap,171314,614006,Ruben Dias,Man City,90.0,0.0,1.0,3.0,3.0,1.0,6.0
+2023-24,223,4193753,gap,191866,552718,Kristoffer Vassbakk Ajer,Brentford,11.0,0.0,1.0,0.0,0.0,1.0,1.0
+2023-24,223,4193753,gap,199249,724436,Sergio Reguilon,Brentford,79.0,0.0,4.0,0.0,2.0,3.0,8.0
+2023-24,223,4193753,gap,204580,688273,Vitaly Janelt,Brentford,76.0,0.0,2.0,1.0,1.0,0.0,10.0
+2023-24,223,4193753,gap,207283,650616,Mathias Jensen,Brentford,77.0,0.0,0.0,1.0,0.0,0.0,3.0
+2023-24,223,4193753,gap,209244,815006,Phil Foden,Man City,90.0,3.0,0.0,0.0,2.0,0.0,6.0
+2023-24,223,4193753,gap,211975,521318,Manuel Akanji,Man City,,,,,,,
+2023-24,223,4193753,gap,220566,675088,Rodri,Man City,90.0,0.0,4.0,0.0,4.0,1.0,9.0
+2023-24,223,4193753,gap,223094,737066,Erling Haaland,Man City,86.0,0.0,0.0,0.0,2.0,0.0,1.0
+2023-24,223,4193753,gap,226956,803343,Mads Roerslev,Brentford,76.0,0.0,0.0,1.0,1.0,1.0,4.0
+2023-24,223,4193753,gap,231065,711357,Ethan Pinnock,Brentford,90.0,0.0,1.0,2.0,7.0,0.0,2.0
+2023-24,223,4193753,gap,248875,942368,Jérémy Doku,Man City,19.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,223,4193753,gap,249231,1010426,Keane Lewis-Potter,Brentford,14.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,223,4193753,gap,432160,865131,Shandon Baptiste,Brentford,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,223,4193753,gap,432830,961306,Nathan Collins,Brentford,90.0,0.0,1.0,2.0,7.0,2.0,2.0
+2023-24,223,4193753,gap,440089,888912,Mikkel Damsgaard,Brentford,13.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,223,4193753,gap,461358,974753,Julián Álvarez,Man City,90.0,0.0,0.0,0.0,1.0,1.0,2.0
+2023-24,223,4193753,gap,465351,955529,Matheus Nunes,Man City,,,,,,,
+2023-24,223,4193753,gap,477064,1288450,Rico Lewis,Man City,,,,,,,
+2023-24,223,4193753,gap,477424,1070712,Josko Gvardiol,Man City,90.0,0.0,3.0,1.0,1.0,1.0,8.0
+2023-24,223,4193753,gap,477555,1113790,Oscar Bobb,Man City,,,,,,,
+2023-24,223,4193753,gap,494041,1098754,Ethan Brierley,Brentford,,,,,,,
+2023-24,223,4193753,gap,508395,1157236,Yehor Yarmoliuk,Brentford,14.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,223,4193753,gap,612534,1478706,Benjamin Fredrick,Brentford,,,,,,,
+2023-24,230,4193760,control,79934,210971,Oliver Norwood,Sheffield Utd,,,,,,,
+2023-24,230,4193760,control,82143,212944,Wesley Foderingham,Sheffield Utd,90.0,,0.0,,2.0,0.0,9.0
+2023-24,230,4193760,control,83427,202181,Jack Robinson,Sheffield Utd,40.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,230,4193760,control,98980,268375,Emiliano Martinez,Aston Villa,90.0,,0.0,,0.0,0.0,5.0
+2023-24,230,4193760,control,101184,425255,Calum Chambers,Aston Villa,,,,,,,
+2023-24,230,4193760,control,106468,477588,Álex Moreno,Aston Villa,90.0,1.0,2.0,0.0,1.0,3.0,4.0
+2023-24,230,4193760,control,111782,120569,Robin Olsen,Aston Villa,,,,,,,
+2023-24,230,4193760,control,122806,356406,John McGinn,Aston Villa,71.0,1.0,0.0,0.0,1.0,0.0,8.0
+2023-24,230,4193760,control,165659,570434,Diego Carlos,Aston Villa,90.0,0.0,0.0,0.0,4.0,0.0,4.0
+2023-24,230,4193760,control,166989,465960,Youri Tielemans,Aston Villa,81.0,1.0,0.0,0.0,0.0,1.0,3.0
+2023-24,230,4193760,control,167878,511032,Ben Osborn,Sheffield Utd,40.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,230,4193760,control,171101,488412,Clément Lenglet,Aston Villa,90.0,0.0,0.0,1.0,4.0,1.0,4.0
+2023-24,230,4193760,control,173807,742405,Tom Davies,Sheffield Utd,18.0,0.0,1.0,0.0,0.0,0.0,2.0
+2023-24,230,4193760,control,178301,540088,Ollie Watkins,Aston Villa,90.0,1.0,0.0,1.0,0.0,0.0,1.0
+2023-24,230,4193760,control,194164,603329,Mason Holgate,Sheffield Utd,90.0,0.0,2.0,0.0,2.0,3.0,4.0
+2023-24,230,4193760,control,196100,775355,Gustavo Hamer,Sheffield Utd,45.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,230,4193760,control,199796,729731,Matty Cash,Aston Villa,31.0,0.0,0.0,0.0,3.0,0.0,0.0
+2023-24,230,4193760,control,199798,710159,Ezri Konsa,Aston Villa,59.0,0.0,1.0,0.0,0.0,0.0,2.0
+2023-24,230,4193760,control,201410,688271,Auston Trusty,Sheffield Utd,90.0,0.0,0.0,0.0,4.0,1.0,5.0
+2023-24,230,4193760,control,204814,820581,Ben Brereton Diaz,Sheffield Utd,65.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,230,4193760,control,215711,671331,Leon Bailey,Aston Villa,60.0,1.0,1.0,0.0,0.0,1.0,4.0
+2023-24,230,4193760,control,226182,789646,Jayden Bogle,Sheffield Utd,90.0,0.0,1.0,0.0,0.0,0.0,4.0
+2023-24,230,4193760,control,226944,816325,Boubacar Kamara,Aston Villa,90.0,0.0,1.0,1.0,0.0,1.0,4.0
+2023-24,230,4193760,control,230046,787350,Douglas Luiz,Aston Villa,45.0,0.0,2.0,0.0,0.0,0.0,2.0
+2023-24,230,4193760,control,232653,1021929,Jacob Ramsey,Aston Villa,45.0,0.0,1.0,1.0,0.0,0.0,3.0
+2023-24,230,4193760,control,233821,793820,Anel Ahmedhodzic,Sheffield Utd,90.0,0.0,3.0,0.0,3.0,0.0,2.0
+2023-24,230,4193760,control,243557,923498,Moussa Diaby,Aston Villa,30.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,230,4193760,control,244850,883080,Morgan Rogers,Aston Villa,9.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,230,4193760,control,424001,1047671,Vini Souza,Sheffield Utd,90.0,0.0,7.0,1.0,0.0,2.0,3.0
+2023-24,230,4193760,control,432714,1107648,James McAtee,Sheffield Utd,72.0,0.0,1.0,0.0,1.0,0.0,1.0
+2023-24,230,4193760,control,432990,1068902,Yasser Larouci,Sheffield Utd,,,,,,,
+2023-24,230,4193760,control,433979,1086647,Cameron Archer,Sheffield Utd,25.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,230,4193760,control,443211,914132,Rhys Norrington-Davies,Sheffield Utd,50.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,230,4193760,control,465390,1089686,Kaine Kesler-Hayden,Aston Villa,,,,,,,
+2023-24,230,4193760,control,481283,1340673,James Wright,Aston Villa,,,,,,,
+2023-24,230,4193760,control,490094,1203512,Tim Iroegbunam,Aston Villa,19.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,230,4193760,control,538206,1348595,Jordan Amissah,Sheffield Utd,,,,,,,
+2023-24,230,4193760,control,538207,1258092,William Osula,Sheffield Utd,45.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,230,4193760,control,538210,1396784,Andre Brooks,Sheffield Utd,50.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,230,4193760,control,585472,1390003,Ryan One,Sheffield Utd,,,,,,,
+2023-24,277,4193807,control,58621,159833,Kyle Walker,Man City,90.0,0.0,3.0,0.0,3.0,3.0,6.0
+2023-24,277,4193807,control,60706,169756,Adrian,Liverpool,,,,,,,
+2023-24,277,4193807,control,61366,169200,Kevin De Bruyne,Man City,69.0,0.0,0.0,0.0,0.0,1.0,1.0
+2023-24,277,4193807,control,88248,276729,Stefan Ortega,Man City,34.0,,0.0,,0.0,0.0,4.0
+2023-24,277,4193807,control,91651,239219,Mateo Kovacic,Man City,21.0,0.0,0.0,0.0,0.0,1.0,2.0
+2023-24,277,4193807,control,97032,209405,Virgil van Dijk,Liverpool,90.0,0.0,4.0,0.0,2.0,4.0,5.0
+2023-24,277,4193807,control,97299,263653,John Stones,Man City,90.0,1.0,0.0,2.0,2.0,1.0,7.0
+2023-24,277,4193807,control,118748,292462,Mohamed Salah,Liverpool,29.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,277,4193807,control,121160,363364,Ederson,Man City,56.0,,0.0,,0.0,0.0,8.0
+2023-24,277,4193807,control,122798,357880,Andrew Robertson,Liverpool,29.0,0.0,1.0,0.0,1.0,0.0,0.0
+2023-24,277,4193807,control,126184,417068,Nathan Aké,Man City,90.0,0.0,3.0,1.0,4.0,2.0,8.0
+2023-24,277,4193807,control,158983,202643,Wataru Endo,Liverpool,90.0,0.0,4.0,0.0,2.0,2.0,6.0
+2023-24,277,4193807,control,165809,488139,Bernardo Silva,Man City,90.0,0.0,2.0,0.0,1.0,1.0,7.0
+2023-24,277,4193807,control,171287,568571,Joseph Gomez,Liverpool,90.0,0.0,3.0,0.0,1.0,1.0,7.0
+2023-24,277,4193807,control,171314,614006,Ruben Dias,Man City,,,,,,,
+2023-24,277,4193807,control,200720,776689,Caoimhin Kelleher,Liverpool,90.0,,0.0,,1.0,0.0,8.0
+2023-24,277,4193807,control,209244,815006,Phil Foden,Man City,90.0,0.0,1.0,0.0,1.0,0.0,3.0
+2023-24,277,4193807,control,211975,521318,Manuel Akanji,Man City,90.0,0.0,1.0,0.0,4.0,3.0,2.0
+2023-24,277,4193807,control,214285,671529,Konstantinos Tsimikas,Liverpool,,,,,,,
+2023-24,277,4193807,control,220566,675088,Rodri,Man City,90.0,0.0,3.0,1.0,2.0,0.0,8.0
+2023-24,277,4193807,control,223094,737066,Erling Haaland,Man City,90.0,0.0,1.0,0.0,1.0,0.0,6.0
+2023-24,277,4193807,control,243016,831489,Alexis Mac Allister,Liverpool,90.0,1.0,4.0,0.0,0.0,1.0,11.0
+2023-24,277,4193807,control,243298,806552,Cody Gakpo,Liverpool,14.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,277,4193807,control,244731,860914,Luis Diaz,Liverpool,90.0,0.0,2.0,0.0,0.0,1.0,8.0
+2023-24,277,4193807,control,248875,942368,Jérémy Doku,Man City,21.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,277,4193807,control,424876,846005,Dominik Szoboszlai,Liverpool,61.0,0.0,0.0,0.0,0.0,0.0,5.0
+2023-24,277,4193807,control,437468,844477,Sergio Gomez,Man City,,,,,,,
+2023-24,277,4193807,control,441428,1107620,Jarell Quansah,Liverpool,90.0,0.0,0.0,1.0,3.0,0.0,11.0
+2023-24,277,4193807,control,444884,963964,Harvey Elliott,Liverpool,90.0,0.0,1.0,0.0,0.0,1.0,4.0
+2023-24,277,4193807,control,447203,950561,Darwin Nunez,Liverpool,76.0,0.0,0.0,0.0,1.0,0.0,1.0
+2023-24,277,4193807,control,461358,974753,Julián Álvarez,Man City,69.0,0.0,1.0,0.0,0.0,0.0,6.0
+2023-24,277,4193807,control,465351,955529,Matheus Nunes,Man City,,,,,,,
+2023-24,277,4193807,control,477064,1288450,Rico Lewis,Man City,,,,,,,
+2023-24,277,4193807,control,477424,1070712,Josko Gvardiol,Man City,,,,,,,
+2023-24,277,4193807,control,477555,1113790,Oscar Bobb,Man City,,,,,,,
+2023-24,277,4193807,control,491501,1231075,James McConnell,Liverpool,,,,,,,
+2023-24,277,4193807,control,491970,1296625,Bobby Clark,Liverpool,,,,,,,
+2023-24,277,4193807,control,492777,1113690,Conor Bradley,Liverpool,61.0,0.0,4.0,1.0,2.0,2.0,5.0
+2023-24,277,4193807,control,514514,1364042,Lewis Koumas,Liverpool,,,,,,,
+2023-24,277,4193807,control,611926,1589629,Amara Nallo,Liverpool,,,,,,,
+2023-24,333,4193863,control,37096,30973,Lukasz Fabianski,West Ham,90.0,,0.0,,0.0,0.0,5.0
+2023-24,333,4193863,control,40669,49543,Angelo Ogbonna,West Ham,45.0,0.0,1.0,0.0,3.0,0.0,0.0
+2023-24,333,4193863,control,49413,109897,James Tomkins,Crystal Palace,,,,,,,
+2023-24,333,4193863,control,55459,155782,Aaron Cresswell,West Ham,45.0,0.0,0.0,0.0,1.0,0.0,3.0
+2023-24,333,4193863,control,55494,146830,Joel Ward,Crystal Palace,,,,,,,
+2023-24,333,4193863,control,57328,157838,Nathaniel Clyne,Crystal Palace,90.0,0.0,4.0,0.0,1.0,1.0,1.0
+2023-24,333,4193863,control,57531,158545,Michail Antonio,West Ham,75.0,1.0,0.0,0.0,0.0,0.0,4.0
+2023-24,333,4193863,control,80146,154280,Jordan Ayew,Crystal Palace,22.0,0.0,3.0,0.0,0.0,1.0,0.0
+2023-24,333,4193863,control,84182,210164,Alphonse Areola,West Ham,,,,,,,
+2023-24,333,4193863,control,84939,214426,Danny Ings,West Ham,15.0,0.0,1.0,0.0,0.0,1.0,1.0
+2023-24,333,4193863,control,86417,214570,Jeffrey Schlupp,Crystal Palace,9.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,333,4193863,control,101178,279490,James Ward-Prowse,West Ham,90.0,0.0,4.0,0.0,0.0,2.0,5.0
+2023-24,333,4193863,control,103192,281207,Kurt Zouma,West Ham,90.0,0.0,1.0,1.0,4.0,1.0,4.0
+2023-24,333,4193863,control,108413,295067,Will Hughes,Crystal Palace,81.0,0.0,4.0,1.0,0.0,1.0,0.0
+2023-24,333,4193863,control,109533,267371,Emerson,West Ham,90.0,0.0,3.0,0.0,1.0,3.0,5.0
+2023-24,333,4193863,control,149519,426880,Maxwel Cornet,West Ham,5.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,333,4193863,control,155405,609755,Kalvin Phillips,West Ham,15.0,0.0,2.0,0.0,0.0,0.0,3.0
+2023-24,333,4193863,control,156074,626667,Rob Holding,Crystal Palace,,,,,,,
+2023-24,333,4193863,control,164555,307317,Vladimir Coufal,West Ham,90.0,0.0,2.0,0.0,1.0,1.0,1.0
+2023-24,333,4193863,control,169593,562726,Remi Matthews,Crystal Palace,,,,,,,
+2023-24,333,4193863,control,172649,719330,Dean Henderson,Crystal Palace,90.0,,0.0,,0.0,0.0,6.0
+2023-24,333,4193863,control,173954,496563,Jairo Riedewald,Crystal Palace,9.0,0.0,2.0,0.0,0.0,0.0,1.0
+2023-24,333,4193863,control,174874,503659,Joachim Andersen,Crystal Palace,90.0,0.0,2.0,0.0,4.0,0.0,14.0
+2023-24,333,4193863,control,199670,637746,Odsonne Edouard,Crystal Palace,22.0,0.0,0.0,0.0,0.0,1.0,0.0
+2023-24,333,4193863,control,213999,783505,Edson Álvarez,West Ham,75.0,0.0,5.0,0.0,1.0,2.0,6.0
+2023-24,333,4193863,control,215439,524437,Tomas Soucek,West Ham,45.0,0.0,2.0,1.0,2.0,1.0,6.0
+2023-24,333,4193863,control,222018,770267,Ben Johnson,West Ham,45.0,0.0,1.0,0.0,2.0,0.0,9.0
+2023-24,333,4193863,control,224024,766435,Lucas Paquetá,West Ham,90.0,0.0,4.0,0.0,0.0,1.0,7.0
+2023-24,333,4193863,control,231747,706297,Jean-Philippe Mateta,Crystal Palace,68.0,2.0,0.0,0.0,0.0,0.0,4.0
+2023-24,333,4193863,control,232413,818975,Eberechi Eze,Crystal Palace,81.0,1.0,1.0,0.0,0.0,1.0,5.0
+2023-24,333,4193863,control,244723,1120224,Tyrick Mitchell,Crystal Palace,90.0,0.0,4.0,0.0,0.0,0.0,8.0
+2023-24,333,4193863,control,247348,859282,Daniel Munoz,Crystal Palace,90.0,0.0,8.0,0.0,2.0,3.0,6.0
+2023-24,333,4193863,control,427623,950829,Chris Richards,Crystal Palace,90.0,0.0,2.0,0.0,1.0,1.0,4.0
+2023-24,333,4193863,control,443661,1029063,Michael Olise,Crystal Palace,68.0,1.0,0.0,0.0,0.0,1.0,3.0
+2023-24,333,4193863,control,460842,891743,Mohammed Kudus,West Ham,85.0,0.0,0.0,0.0,0.0,0.0,3.0
+2023-24,333,4193863,control,466117,1192854,Naouirou Ahamada,Crystal Palace,29.0,0.0,4.0,0.0,0.0,0.0,3.0
+2023-24,333,4193863,control,487837,1203658,Divin Mubama,West Ham,,,,,,,
+2023-24,333,4193863,control,496221,1296650,Adam Wharton,Crystal Palace,61.0,0.0,4.0,0.0,0.0,0.0,6.0
+2023-24,333,4193863,control,518438,1302814,Kaelan Casey,West Ham,,,,,,,
+2023-24,333,4193863,control,518442,1331666,Lewis Orford,West Ham,,,,,,,
+2023-24,380,4193910,control,82143,212944,Wesley Foderingham,Sheffield Utd,90.0,,0.0,,2.0,0.0,6.0
+2023-24,380,4193910,control,83427,202181,Jack Robinson,Sheffield Utd,90.0,0.0,3.0,1.0,2.0,2.0,2.0
+2023-24,380,4193910,control,85971,212867,Heung-Min Son,Spurs,88.0,0.0,2.0,0.0,0.0,0.0,3.0
+2023-24,380,4193910,control,102549,401932,Adam Davies,Sheffield Utd,,,,,,,
+2023-24,380,4193910,control,132015,266523,Pierre-Emile Højbjerg,Spurs,24.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,380,4193910,control,155197,492589,Max Lowe,Sheffield Utd,69.0,0.0,1.0,1.0,0.0,0.0,2.0
+2023-24,380,4193910,control,167878,511032,Ben Osborn,Sheffield Utd,5.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,380,4193910,control,169432,509151,Oli McBurnie,Sheffield Utd,,,,,,,
+2023-24,380,4193910,control,172780,493165,James Maddison,Spurs,88.0,0.0,0.0,0.0,0.0,0.0,4.0
+2023-24,380,4193910,control,175941,795539,Alfie Whiteman,Spurs,,,,,,,
+2023-24,380,4193910,control,184254,538501,Guglielmo Vicario,Spurs,90.0,,0.0,,0.0,0.0,9.0
+2023-24,380,4193910,control,194164,603329,Mason Holgate,Sheffield Utd,21.0,0.0,1.0,1.0,1.0,1.0,2.0
+2023-24,380,4193910,control,195473,841150,Rhian Brewster,Sheffield Utd,28.0,0.0,0.0,0.0,0.0,0.0,2.0
+2023-24,380,4193910,control,196100,775355,Gustavo Hamer,Sheffield Utd,90.0,0.0,1.0,1.0,0.0,0.0,1.0
+2023-24,380,4193910,control,201410,688271,Auston Trusty,Sheffield Utd,90.0,0.0,0.0,1.0,7.0,2.0,0.0
+2023-24,380,4193910,control,202993,620618,Rodrigo Bentancur,Spurs,76.0,0.0,2.0,0.0,1.0,3.0,3.0
+2023-24,380,4193910,control,204814,820581,Ben Brereton Diaz,Sheffield Utd,70.0,0.0,0.0,0.0,0.0,0.0,3.0
+2023-24,380,4193910,control,209042,873014,Oliver Skipp,Spurs,14.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,380,4193910,control,214572,862993,Brandon Austin,Spurs,,,,,,,
+2023-24,380,4193910,control,221632,789066,Cristian Romero,Spurs,90.0,0.0,2.0,0.0,3.0,2.0,6.0
+2023-24,380,4193910,control,226182,789646,Jayden Bogle,Sheffield Utd,90.0,0.0,0.0,0.0,2.0,1.0,2.0
+2023-24,380,4193910,control,233821,793820,Anel Ahmedhodzic,Sheffield Utd,90.0,0.0,3.0,1.0,4.0,1.0,3.0
+2023-24,380,4193910,control,241157,797908,Emerson Royal,Spurs,14.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,380,4193910,control,242898,1076756,Brennan Johnson,Spurs,90.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,380,4193910,control,424001,1047671,Vini Souza,Sheffield Utd,85.0,0.0,3.0,0.0,3.0,1.0,5.0
+2023-24,380,4193910,control,432714,1107648,James McAtee,Sheffield Utd,,,,,,,
+2023-24,380,4193910,control,432990,1068902,Yasser Larouci,Sheffield Utd,,,,,,,
+2023-24,380,4193910,control,433979,1086647,Cameron Archer,Sheffield Utd,62.0,0.0,0.0,0.0,1.0,0.0,0.0
+2023-24,380,4193910,control,436234,970692,Bryan Gil,Spurs,,,,,,,
+2023-24,380,4193910,control,441164,941573,Pedro Porro,Spurs,76.0,1.0,1.0,1.0,2.0,1.0,6.0
+2023-24,380,4193910,control,445044,935379,Dejan Kulusevski,Spurs,90.0,2.0,1.0,0.0,0.0,1.0,3.0
+2023-24,380,4193910,control,482442,1107280,Pape Sarr,Spurs,66.0,0.0,0.0,1.0,1.0,0.0,1.0
+2023-24,380,4193910,control,490145,1113753,Dane Scarlett,Spurs,2.0,0.0,1.0,0.0,0.0,0.0,0.0
+2023-24,380,4193910,control,491279,1097466,Micky van de Ven,Spurs,90.0,0.0,1.0,0.0,0.0,0.0,3.0
+2023-24,380,4193910,control,493125,1203661,Radu Dragusin,Spurs,90.0,0.0,0.0,0.0,5.0,1.0,2.0
+2023-24,380,4193910,control,499721,1407250,Mikey Moore,Spurs,2.0,0.0,0.0,0.0,0.0,0.0,0.0
+2023-24,380,4193910,control,513588,1211646,Jamie Donley,Spurs,,,,,,,
+2023-24,380,4193910,control,523700,1253827,Daniel Jebbison,Sheffield Utd,20.0,0.0,0.0,0.0,0.0,0.0,1.0
+2023-24,380,4193910,control,532372,1344572,Ollie Arblaster,Sheffield Utd,62.0,0.0,2.0,0.0,1.0,1.0,2.0
+2023-24,380,4193910,control,538210,1396784,Andre Brooks,Sheffield Utd,28.0,0.0,0.0,0.0,1.0,0.0,1.0

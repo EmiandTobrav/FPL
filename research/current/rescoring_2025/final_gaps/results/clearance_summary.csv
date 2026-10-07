@@ -1,0 +1,4 @@
+purpose,n,minutes_ok,goals_ok,fbref_equals_pl_clearance,fbref_equals_clearance_plus_blocked_cross,fotmob_equals_pl_clearance,official_cbi_equal,official_count_equal,official_award_equal,clearance_only_award_equal
+2025_matched_control,10,10,10,6,10,0,10,10,10,10
+2025_official_award_disagreement,10,10,10,2,10,0,8,7,7,7
+historical_clearance_diagnostic,30,30,30,10,30,30,0,0,0,0
