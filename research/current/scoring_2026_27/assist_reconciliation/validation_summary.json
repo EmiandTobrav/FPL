@@ -1,0 +1,14 @@
+{
+  "controls": 40,
+  "fixtures": 30,
+  "resolved": 18,
+  "correct": 18,
+  "incorrect": 0,
+  "unresolved": 22,
+  "qualified_routes": [
+    "direct_pass",
+    "foul"
+  ],
+  "limits": "A new temporal assist control split, not independent event-provider validation. Zero observed errors does not prove universal accuracy. Routes absent from resolved controls remain gated. Old ten narrative cases remain development only.",
+  "baseline_sha256": "94c9a6196357dd3b26fa807db051d23aa24b64a70e7e3c6c6e7913e5e61c71b7"
+}

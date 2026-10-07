@@ -2,9 +2,51 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
-## Uttrekk og kvalitetskontroll ferdigstilt – 7. oktober 2026
+## Assists: fire arbeidssteg gjennomført – 7. oktober 2026
 
-**Gjeldende restliste: [delta_input_audit/](../research/current/scoring_2026_27/delta_input_audit/README.md).**
+**Gjeldende restliste: [assist_reconciliation/](../research/current/scoring_2026_27/assist_reconciliation/README.md).**
+Regelvurdering, separat kontrollutvalg, historisk målkjøring og aggregering til
+spillerkamper er nå gjennomført. Manglende årsaksdata betyr fortsatt uavklart;
+full harmonisering av poeng/BPS/bonus er ikke ferdig.
+
+7 543 tilgjengelige mål er behandlet. **9 681 assistverdier er avklart**, hvorav
+820 positive kampverdier og 8 861 dokumenterte nuller. 39 035 gjenstår:
+583 mangler komplett målinventar, 38 452 trenger ytterligere årsaksbevis eller
+kvalifisering av automatisk hendelsestolkning. Fire komplette kampverdier
+endres fra 0 til 1: Marmoush, Pedro Porro, Alex Scott og Pickford, alle tidligere
+dokumenterte offisielle eksempler fra 2024/25. Øvrige ferdige historiske
+kampverdier stemmer med FPL. Alle 11 492 FPL-assistverdier fra 2025/26 beholdes.
+
+Nytt fryst utvalg: 40 mål i 30 kamper, valgt uten assistfasit og uten gamle
+utviklingseksempler. **18 riktige avgjørelser, 0 feil, 22 uavklarte**.
+15 direkte pasningsassists og 3 foul-winner-assists gir kontrollstøtte for disse
+to automatiske rutene. Andre ruter holdes igjen. Dette er et separat tidsbasert
+kontrollutvalg fra eksisterende FPL-uttrekk, ikke uavhengig Opta-validering eller
+bevis for alle sesonger. De gamle ti eksemplene teller ikke som holdout.
+
+Ny totalrest: **258 302 feltkrav i 66 087 unike spillerkamper**. Fordeling:
+219 615 manglende data, 234 eksterne konflikter, 38 452 assistvurderinger og
+ett kjent FPL-uttrekksunntak. 339 783 tilgjengelige eksterne felt har fortsatt
+individuelt kvalitetsbehov; unionen med åpne krav er 77 214 spillerkamper.
+At 9 681 assistkrav lukkes reduserer den globale spillerkampkøen med bare 22,
+fordi de fleste fortsatt har andre manglende felt.
+
+4 604 tilgjengelige mål før 2025/26 trenger videre assistbevis. Dette er en
+separat målkø, ikke ekstra spillerkampmangler som skal summeres inn. 21 manglende
+arkivkamper og tre ytterligere kamper uten hendelser beholdes som datagap.
+Ingen dokumenterte målscorerkonflikter gjenstår etter de allerede godkjente
+mål-/selvmålsrettelsene. Manglende hendelser er ikke registrert som observerte nuller.
+
+Rå FPL, alle andre kravfelt, keeperverdier og låste poeng/BPS/bonus/modeller/
+benchmark er bevart. Videre arbeid bør skaffe årsaksbevis for de 4 604 målene
+og egne kontroller for flere assistforløp, parallelt med de øvrige eksterne
+statistikkmanglene. Ingen modelltrening eller endelig bonusrangering er kjørt.
+38 nye og 107 eksisterende fokuserte tester består; 34 data-/kontrollfiler er
+identiske ved full ny kjøring. Full repository-test og GitHub CI er ikke verifisert.
+
+## Historikk: uttrekk og kvalitetskontroll – 7. oktober 2026
+
+**Forrige restliste: [delta_input_audit/](../research/current/scoring_2026_27/delta_input_audit/README.md).**
 Kildepolitikken i `fpl_authority/` gjelder fortsatt. Punkt 1 og 2 er gjennomført
 som reproduserbart uttrekk og kildekontroll; ikke som godkjenning av hele
 scoringsmotoren eller hver enkelt ekstern verdi.

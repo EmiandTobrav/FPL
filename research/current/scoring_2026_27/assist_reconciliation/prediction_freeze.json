@@ -1,0 +1,15 @@
+{
+  "inputs": {
+    "engine.py": "ab268ee61de3a8ab35f9bf1e253a0b6018117adc71847c8b0609cb7d9163246e",
+    "rules.py": "30f9509ee2ea720b057d4e4547a2adc4a0ca361b07b9251168ee901b95b89340",
+    "predict.py": "cf6431103c7d2e138e7a6503660b6f3c49211065f14782cabbf31aa6277fa3a1",
+    "validation_protocol.json": "13dd076586d7b8a4605f7e6ee312535782439cdc0f47ec81e8e819b466d09a2a",
+    "validation_plan.csv": "bdfbe8b6310874f0afa91ceb90a2ce075ba3f920f00b60d5f00fb464cebdf1aa",
+    "inputs/goals.csv.gz": "5ec75ccc56da3827fc8f30271d997011578ae360a6d6b0b14e762046807f977e",
+    "inputs/goal_episodes.csv.gz": "67384c4c3f5fbb40b08ea76080e12cdfb6e7e255dd9a080d30a887dd9d9afb85",
+    "inputs/participants.csv.gz": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090"
+  },
+  "prediction_sha256": "eae253d426086e59d36d0a7eb5fc5b9d9e469d1329fd9a1632c0a29c755557a9",
+  "candidate_sha256": "5d4db46952df366588cf51e6520c555b437e2cd706640c3c9a2b607f639eb0f1",
+  "protocol": "Predictions saved before loading any control assist outcome."
+}

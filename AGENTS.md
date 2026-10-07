@@ -14,8 +14,10 @@
 
 - Historical FPL is authoritative for compatible existing statistics, including minutes and explicit zeros. Never replace it by external source voting.
 - Use external sources for missing/new inputs and documented season-to-2026/27 transformations. Keep missing values missing.
-- The current requirements ledger is `research/current/scoring_2026_27/delta_input_audit/`, based on the authority policy in `fpl_authority/`. Older conflict/minute queues are historical diagnostics, not current work priorities.
+- The current requirements ledger is `research/current/scoring_2026_27/assist_reconciliation/`, based on the authority policy in `fpl_authority/`. Older conflict/minute queues are historical diagnostics, not current work priorities.
 - Preserve raw FPL, approved keeper values, approved official-event exceptions and locked labels/models/benchmark. Build derived corrections separately.
 - Retain historical FPL BPS components that have not changed; qualify changed components before recalculating BPS and reranking whole-match bonus. Do not label baseline totals as harmonized outputs.
 
 - External source checks do not make omitted values zero. Keep signed legacy net-tackle counters separate from the still-unqualified historical BPS clipping rule; distinguish field mapping checks, direct primary agreement and unresolved conflicts.
+
+- Assist reconstruction must keep per-goal awards separate from complete player-match totals. Preserve the frozen control split/predictions in `assist_reconciliation/`; a new predictor version needs a new validation plan. Missing goal inventories, unknown causal facts and unvalidated routes remain explicit.

@@ -1,0 +1,7 @@
+{
+  "archive_sha256": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+  "goals": 7543,
+  "episode_rows": 243581,
+  "source_url": "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+  "window": "60 seconds for open play; 600 seconds for explicit penalty/direct free-kick. Long/ambiguous causal chains abstain."
+}

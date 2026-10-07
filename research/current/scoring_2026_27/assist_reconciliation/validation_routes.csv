@@ -1,0 +1,6 @@
+route,controls,resolved,correct,incorrect,unresolved,qualified
+direct_pass,15,15,15,0,0,True
+foul,3,3,3,0,0,True
+own_goal,2,0,0,0,2,False
+set_piece,1,0,0,0,1,False
+unknown,19,0,0,0,19,False

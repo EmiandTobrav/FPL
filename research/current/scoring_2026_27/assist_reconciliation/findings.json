@@ -1,0 +1,51 @@
+{
+  "historical_population": 77280,
+  "goal_events": 7543,
+  "new_control_goals": 40,
+  "control_resolved": 18,
+  "control_errors": 0,
+  "newly_resolved_assist_cells": 9681,
+  "remaining_assist_cells": 39035,
+  "assist_missing_goal_inventory_cells": 583,
+  "assist_unresolved_causal_or_rule_cells": 38452,
+  "old_open_cells": 267983,
+  "open_cells": 258302,
+  "unique_affected_player_matches": 66087,
+  "old_unique_affected_player_matches": 66109,
+  "status_counts": {
+    "external_available": 339783,
+    "missing_data": 219615,
+    "fpl_authoritative": 143827,
+    "rule_recalculation": 38452,
+    "documented_zero": 17072,
+    "documented_assist_reconstruction": 9681,
+    "approved_reconstruction": 5343,
+    "external_checked": 1240,
+    "external_conflict": 234,
+    "fpl_extract_exception": 1
+  },
+  "goal_status_counts": {
+    "unresolved": 5038,
+    "awarded": 2478,
+    "no_assist": 27
+  },
+  "pre_2025_goal_status_counts": {
+    "unresolved": 4604,
+    "awarded": 1894
+  },
+  "resolved_historical_changed_totals": 4,
+  "resolved_historical_net_assist_delta": 4.0,
+  "external_quality_cells": 339783,
+  "external_quality_unique_player_matches": 77125,
+  "unique_open_or_external_quality_player_matches": 77214,
+  "source_scorer_conflict_matches": 0,
+  "missing_archive_fixtures": 21,
+  "additional_event_gap_fixtures": 3,
+  "inferred_sparse_zeros": 0,
+  "fpl_values_modified": false,
+  "keeper_values_modified": false,
+  "locked_labels_modified": false,
+  "all_assists_resolved": false,
+  "full_historical_harmonization_complete": false,
+  "cost_nok": 0
+}

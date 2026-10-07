@@ -1,5 +1,7 @@
 # Uttrekk og kvalitetskontroll av nødvendige eksterne felt
 
+Latest consolidated requirements: [assist_reconciliation/](../assist_reconciliation/README.md). This directory remains the immutable input audit before assist aggregation.
+
 7. oktober 2026. Punkt 1 og 2 i arbeidsrekkefølgen er gjennomført som et
 reproduserbart uttrekk og en kildekontroll. **Dette er gjeldende restliste.**
 Den viderefører kildepolitikken i `../fpl_authority/`: kompatible historiske

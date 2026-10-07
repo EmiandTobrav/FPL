@@ -1,0 +1,5 @@
+season,fixture,code,name,match_id,team_id,player_id,own_team_goals,historical_fpl_assists,value,lower_bound,unknown_goals,unresolved_goal_ids,reason,resolved,assist_delta
+2024-25,201,441164,Pedro Porro,c6k3plvhac9g481xwld3jb0gk,22doj4sgsocqpxw45h607udje,77yaqzy45dxtzicao00jxrlgq,1,0,1.0,1.0,0,,all_player_goal_contributions_resolved,True,1.0
+2024-25,223,111234,Jordan Pickford,cfjmtr9xrz3ydur0k879qbjmc,ehd2iemqmschhj2ec0vayztzz,e8dina16u5kt5ho4u5igtmimt,1,0,1.0,1.0,0,,all_player_goal_contributions_resolved,True,1.0
+2024-25,312,503139,Alex Scott,dfhjo3usa3fmon5n36gz1jz84,1pse9ta7a45pi2w2grjim70ge,mfsus6ryni5b1hjn0y70sbo4,1,0,1.0,1.0,0,,all_player_goal_contributions_resolved,True,1.0
+2024-25,336,438234,Omar Marmoush,dpu5hhj5p5c0yy1emku249z4k,a3nyxabgsqlnqfkeg41m6tnpp,b8if5dg0k9prjik99aiutewh5,2,0,1.0,1.0,0,,all_player_goal_contributions_resolved,True,1.0

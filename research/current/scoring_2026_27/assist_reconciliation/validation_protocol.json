@@ -1,0 +1,7 @@
+{
+  "selection": "First 40 one-goal team/matches in date/fixture/team order from 2026-01-01 in 2025/26; exclude prior assist development and primary/delta controls. No assist outcomes read for selection.",
+  "unit": "One goal by that team, so official FPL match assists uniquely identify its recipient or no recipient.",
+  "freeze": "Freeze engine.py, rules.py and protocol SHA256 and write predictions before reading expected FPL assists.",
+  "acceptance": "Zero incorrect resolved goal decisions. Unresolved decisions are reported separately, never counted correct. Any failed route is withheld from historical automatic approval; no tuning on these labels.",
+  "limits": "Previously stored official FPL snapshots; new evaluation split, not fresh observations or independent Opta-provider validation. Rare routes may be absent; unit/development tests are not independent validation."
+}
