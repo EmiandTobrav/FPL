@@ -1,0 +1,11 @@
+{
+  "rows": 143975,
+  "goal_events": 7543,
+  "first_touch_goals": 4125,
+  "tackles_interceptions": 136432,
+  "explicit_pass_subtype": 31063,
+  "missing_subtype": 20553,
+  "conflicting_subtypes": 0,
+  "absence_means_non_pass": false,
+  "first_touch_marker_alone_proves_assist": false
+}

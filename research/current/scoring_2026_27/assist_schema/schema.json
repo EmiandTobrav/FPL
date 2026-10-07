@@ -1,0 +1,28 @@
+{
+  "repository": "andrewRowlinson/optasoccer",
+  "commit": "825cadb56c9c976a8c34c9d5da26d6e37c6ff239",
+  "path": "optasoccer/metadata.py",
+  "git_blob_sha": "d81d8786c1424cda79b0757b51326fa1f39c34d2",
+  "sha256": "e0400475f9fc07644e835402fc29d32385858c20801ebb2011fffcad098323d0",
+  "source_url": "https://github.com/andrewRowlinson/optasoccer/blob/825cadb56c9c976a8c34c9d5da26d6e37c6ff239/optasoccer/metadata.py",
+  "authority": "Published parser implementation; not a provider-certified data dictionary",
+  "qualifiers": {
+    "10": "foul_handball",
+    "28": "own_goal",
+    "55": "related_event_id",
+    "140": "pass_end_x",
+    "141": "pass_end_y",
+    "144": "explanation_of_deleted_event",
+    "154": "shot_intentional_assist",
+    "233": "opposite_related_event_id",
+    "280": "fantasy_assist_type",
+    "281": "fantasy_assisted_by",
+    "282": "fantasy_assist_team",
+    "328": "shot_first_touch",
+    "383": "defensive_touch_type_control",
+    "384": "defensive_touch_type_pass",
+    "385": "defensive_touch_type_clearance",
+    "458": "not_assisted",
+    "472": "fantasy_assist_id"
+  }
+}

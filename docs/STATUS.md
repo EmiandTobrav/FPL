@@ -2,6 +2,23 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Eksplisitte berøringsmerker – 7. oktober 2026
+
+[Ny kode- og dekningskontroll](../research/current/scoring_2026_27/assist_schema/README.md)
+viderefører `fcbef323` på PR #1. En versjonert, offentlig parserordbok beskriver
+383/384/385 som kontroll/pasning/klarering og 328 som skudd på første berøring.
+Dette er ikke en leverandørsertifisert kodeoversikt. Rådatakontrollen går fra tre
+til fire riktige negative avgjørelser av ti; seks er fortsatt uavklart. Jensen
+er den nye avklaringen. Ingen nye historiske assistetiketter er godkjent.
+
+4 125 av 7 543 mål har eksplisitt førstegangsmerke. Blant 136 432 taklinger og
+brytninger har 31 063 pasningsmerke. Berøringstype mangler for 20 246 av 20 337
+hendelser i 2019/20 og 301 i 2025/26; fravær kan ikke tolkes som ikke-pasning.
+Åtte nye tester består. Neste arbeid er kandidatvalg og nye uavhengige kontroller;
+intensjon og fullstendige berøringsforløp gjenstår. Keeperstatus er fortsatt
+5 343 / 5 381, med 38 uløste. Poeng, BPS, bonus og modeller er uendret.
+Eldre avsnitt nedenfor viser fremdriftshistorikken.
+
 ## Assistregler og hendelseskontroll – 7. oktober 2026
 
 [Regelkontroll med kildegrenser](../research/current/scoring_2026_27/assist_rules/README.md)

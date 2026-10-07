@@ -1,0 +1,13 @@
+{
+  "controls": 10,
+  "baseline_raw_decisions": 3,
+  "schema_raw_decisions": 4,
+  "schema_unresolved": 6,
+  "resolved_matching_official": 4,
+  "first_touch_receipt_fields": 4,
+  "new_historical_assist_labels": 0,
+  "independent_holdout": false,
+  "provider_certified_schema": false,
+  "locked_labels_modified": false,
+  "keeper_values_modified": false
+}

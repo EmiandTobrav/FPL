@@ -1,0 +1,10 @@
+{
+  "tests_passed": 8,
+  "raw_control_replay_byte_identical": true,
+  "unchanged_prior_manifests": [
+    "assist_rules",
+    "bps_recovery"
+  ],
+  "goal_ledger_rows": 7543,
+  "coverage_replay_performed": false
+}

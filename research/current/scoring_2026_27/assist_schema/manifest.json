@@ -1,0 +1,104 @@
+{
+  "base_commit": "fcbef323cba697af865ca978d4a162d72a990791",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4488,
+      "sha256": "c7e40818520d8e2c82992073ace7e42903fcf632520eb2e71b16d8afeef03810"
+    },
+    {
+      "path": "coverage.py",
+      "bytes": 2526,
+      "sha256": "819c061bf9e5e1dc884bbe3d96305c941a9ca3a510bb4383e61f2d560d16cb46"
+    },
+    {
+      "path": "coverage_findings.json",
+      "bytes": 285,
+      "sha256": "b32890a2d6f2630140842c125bdd3eda02101a6648072ec3c02b42c0300b49fc"
+    },
+    {
+      "path": "evidence.json",
+      "bytes": 20512,
+      "sha256": "7399eb6944ec0c48059c0a69b192a5b33cc26fb1416b541141fd2c02d7d0a1f6"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 354,
+      "sha256": "caefdb6d2352b2407a602ed339759e8d5e9944f482ebcbcbf9dbfa575ef8ecc1"
+    },
+    {
+      "path": "goal_markers.csv.gz",
+      "bytes": 626648,
+      "sha256": "5bc11e00c3f6e80479daf8c86732ba8f19d8d2bc9e3de59893d9259a34e6a6eb"
+    },
+    {
+      "path": "marker_coverage.csv",
+      "bytes": 567,
+      "sha256": "771c6e1dbc50c81f341511361e399ff157604d31c8736a1efc597c2c8f005556"
+    },
+    {
+      "path": "qualifiers.py",
+      "bytes": 2449,
+      "sha256": "c4f94a76c58bac12a489442c9420d6bb17489f64ee5e05d01201e4dbfad28c68"
+    },
+    {
+      "path": "results.csv",
+      "bytes": 2089,
+      "sha256": "1aeb254bfe1ebadb16e04a8fc36cf34f992e930409daf1e50565284404260c71"
+    },
+    {
+      "path": "run.py",
+      "bytes": 2072,
+      "sha256": "bd9c4d734d81a8d11681b9487c84f0bbd8dbba1af63b03ce107fda9a1f0a9ca8"
+    },
+    {
+      "path": "schema.json",
+      "bytes": 1101,
+      "sha256": "d16b8925c7c806779d51a2c32be1ede370c878d1ea0fb45770ef31d62f21e6b4"
+    },
+    {
+      "path": "test_schema.py",
+      "bytes": 2695,
+      "sha256": "2337f3282a0c334cae65a46022e99a700cab7b2d3841c3bc2aec4a14708df619"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 212,
+      "sha256": "7fbe3b470d629d3bef8b4cefb387323974daaad38b82cd99fe043af8be981406"
+    }
+  ],
+  "reused_inputs": [
+    {
+      "path": "assist_rules/inputs/cases.json",
+      "sha256": "03906e1af7c8ce7c495afde67e44ec8c959194aa7fe060e316945a93205e6920"
+    },
+    {
+      "path": "assist_rules/inputs/challenge_match_events.csv.gz",
+      "sha256": "5e29e3f8534e995049c09602a4030042d2f4c3a344140197fd338ea9075b4840"
+    },
+    {
+      "path": "assist_rules/results.csv",
+      "sha256": "4e943e7099e1a1abcdfb113fda563f355452c52c889c1cc9957e8fdb93356815"
+    },
+    {
+      "path": "assist_rules/extract.py",
+      "sha256": "eaedb770c2d35d883c843a2a60b766ebfe44be0f548aad400cb3d1ca5e11280f"
+    },
+    {
+      "path": "assist_rules/rules.py",
+      "sha256": "46cb1ba1ff0ee687277ce83390e5d935ca692bc6579c1aa9ec180a6b12717f04"
+    },
+    {
+      "path": "bps_recovery/inputs/official_assist_match_events.csv.gz",
+      "sha256": "a27a5d312759fce6332c58b6e7ac2e476b284db98facea04650b67d5eebea097"
+    },
+    {
+      "path": "bps_recovery/goal_match_coverage.csv",
+      "sha256": "9d3a1e2c213dab9126de9a47c1543b7431bc1bd1808cae5959749225189bbfe7"
+    },
+    {
+      "path": "bps_recovery/prepare_sources.py",
+      "sha256": "6d93ba8e28513cddb83b7932f5ea3d391bfb419b779ba878e5e3ea2b93e503cc"
+    }
+  ]
+}

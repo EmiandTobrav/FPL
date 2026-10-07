@@ -1,0 +1,667 @@
+[
+  {
+    "case_id": "438234_2024",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 0,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": true,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": null,
+      "reason": "insufficient_verified_facts",
+      "missing": [
+        "scorer_own_rebound",
+        "scorer_lost_and_regained",
+        "candidate_last_attacking_touch",
+        "sequence_verified",
+        "defensive_touch_upper_bound_at_most_one",
+        "defensive_touch_is_pass"
+      ]
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 398.0,
+      "goal_time": 400.0,
+      "period_id": 1,
+      "source_rows": 3,
+      "auxiliary_rows": 0,
+      "strict_defensive_contact_event_ids": [],
+      "distinct_defensive_contact_players": [],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 16,
+      "first_scorer_action_xy": [
+        89.5,
+        45.5
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": [
+        89.0,
+        44.2
+      ],
+      "clearance_end_inside_box_proxy": true,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [
+        {
+          "field": "received_inside_box",
+          "value": true,
+          "event_id": 2804966659,
+          "basis": "first_touch_shot_marker_and_shot_coordinates",
+          "qualifiers": [
+            "328"
+          ]
+        }
+      ],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "441164_2024",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 1,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": true,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": null,
+      "reason": "insufficient_verified_facts",
+      "missing": [
+        "scorer_own_rebound",
+        "scorer_lost_and_regained",
+        "candidate_last_attacking_touch",
+        "sequence_verified",
+        "defensive_touch_upper_bound_at_most_one",
+        "defensive_touch_is_pass"
+      ]
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 1460.0,
+      "goal_time": 1465.0,
+      "period_id": 1,
+      "source_rows": 5,
+      "auxiliary_rows": 2,
+      "strict_defensive_contact_event_ids": [
+        2765773111
+      ],
+      "distinct_defensive_contact_players": [
+        "Gabriel Magalh\u00e3es"
+      ],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 16,
+      "first_scorer_action_xy": [
+        84.2,
+        51.9
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": [
+        84.4,
+        46.4
+      ],
+      "clearance_end_inside_box_proxy": true,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [
+        {
+          "field": "received_inside_box",
+          "value": true,
+          "event_id": 2765773119,
+          "basis": "first_touch_shot_marker_and_shot_coordinates",
+          "qualifiers": [
+            "328"
+          ]
+        }
+      ],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "503139_2024",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 1,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": null,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": null,
+      "reason": "insufficient_verified_facts",
+      "missing": [
+        "scorer_own_rebound",
+        "scorer_lost_and_regained",
+        "candidate_last_attacking_touch",
+        "sequence_verified",
+        "defensive_touch_upper_bound_at_most_one",
+        "defensive_touch_is_pass",
+        "received_inside_box_or_intended_for_scorer"
+      ]
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 47.0,
+      "goal_time": 53.0,
+      "period_id": 1,
+      "source_rows": 7,
+      "auxiliary_rows": 3,
+      "strict_defensive_contact_event_ids": [
+        2801458979
+      ],
+      "distinct_defensive_contact_players": [
+        "A. Robinson"
+      ],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 3,
+      "first_scorer_action_xy": [
+        73.6,
+        26.3
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": null,
+      "clearance_end_inside_box_proxy": null,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "111234_2024",
+    "facts": {
+      "route": "handball",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 0,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": null,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": null,
+      "reason": "insufficient_verified_facts",
+      "missing": [
+        "scorer_own_rebound",
+        "scorer_lost_and_regained",
+        "candidate_last_attacking_touch",
+        "sequence_verified",
+        "conversion_direct",
+        "action_directly_caused_handball"
+      ]
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 2214.0,
+      "goal_time": 2493.0,
+      "period_id": 1,
+      "source_rows": 12,
+      "auxiliary_rows": 1,
+      "strict_defensive_contact_event_ids": [],
+      "distinct_defensive_contact_players": [],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 16,
+      "first_scorer_action_xy": [
+        88.5,
+        50.0
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": null,
+      "clearance_end_inside_box_proxy": null,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [
+        2768697813
+      ],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "141746_2024",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 1,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": null,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": null,
+      "reason": "insufficient_verified_facts",
+      "missing": [
+        "scorer_own_rebound",
+        "scorer_lost_and_regained",
+        "candidate_last_attacking_touch",
+        "sequence_verified",
+        "defensive_touch_upper_bound_at_most_one",
+        "defensive_touch_is_pass",
+        "received_inside_box_or_intended_for_scorer"
+      ]
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 4750.0,
+      "goal_time": 4754.0,
+      "period_id": 2,
+      "source_rows": 5,
+      "auxiliary_rows": 2,
+      "strict_defensive_contact_event_ids": [
+        2779231865
+      ],
+      "distinct_defensive_contact_players": [
+        "Beto"
+      ],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 16,
+      "first_scorer_action_xy": [
+        84.9,
+        50.4
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": [
+        81.5,
+        49.3
+      ],
+      "clearance_end_inside_box_proxy": false,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "430871_2024",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 2,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": true,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": false,
+      "reason": "at_least_two_defensive_touches",
+      "missing": []
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 2990.0,
+      "goal_time": 2994.0,
+      "period_id": 1,
+      "source_rows": 5,
+      "auxiliary_rows": 1,
+      "strict_defensive_contact_event_ids": [
+        2767514345,
+        2767514411
+      ],
+      "distinct_defensive_contact_players": [
+        "M. Caicedo",
+        "Robert S\u00e1nchez"
+      ],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 16,
+      "first_scorer_action_xy": [
+        97.4,
+        53.0
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": null,
+      "clearance_end_inside_box_proxy": null,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [
+        {
+          "field": "received_inside_box",
+          "value": true,
+          "event_id": 2767514355,
+          "basis": "first_touch_shot_marker_and_shot_coordinates",
+          "qualifiers": [
+            "328"
+          ]
+        }
+      ],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "60307_2025",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 0,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": null,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": null,
+      "reason": "insufficient_verified_facts",
+      "missing": [
+        "scorer_own_rebound",
+        "scorer_lost_and_regained",
+        "candidate_last_attacking_touch",
+        "sequence_verified",
+        "defensive_touch_upper_bound_at_most_one",
+        "defensive_touch_is_pass",
+        "received_inside_box_or_intended_for_scorer"
+      ]
+    },
+    "diagnostics": {
+      "candidate_type": 7,
+      "candidate_time": 5155.0,
+      "goal_time": 5157.0,
+      "period_id": 2,
+      "source_rows": 4,
+      "auxiliary_rows": 1,
+      "strict_defensive_contact_event_ids": [],
+      "distinct_defensive_contact_players": [],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 16,
+      "first_scorer_action_xy": [
+        93.0,
+        65.8
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": null,
+      "clearance_end_inside_box_proxy": null,
+      "q384_event_ids": [
+        2935232917
+      ],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": "3k6znit6fd9mbfcnphlwyvj6d",
+      "q280_type_value": "PASS_LOST",
+      "schema_enrichment": [
+        {
+          "field": "route",
+          "value": "pass",
+          "event_id": 2935232917,
+          "basis": "explicit_touch_subtype",
+          "qualifiers": [
+            "384"
+          ]
+        }
+      ],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "207283_2025",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": null,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 1,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": true,
+      "received_inside_box": true,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": false,
+      "reason": "defender_pass",
+      "missing": []
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 5691.0,
+      "goal_time": 5696.0,
+      "period_id": 2,
+      "source_rows": 3,
+      "auxiliary_rows": 0,
+      "strict_defensive_contact_event_ids": [
+        2871680029
+      ],
+      "distinct_defensive_contact_players": [
+        "M. Thiaw"
+      ],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": false,
+      "first_scorer_action_type": 16,
+      "first_scorer_action_xy": [
+        86.2,
+        50.2
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": null,
+      "clearance_end_inside_box_proxy": null,
+      "q384_event_ids": [
+        2871680029
+      ],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [
+        {
+          "field": "defensive_touch_is_pass",
+          "value": true,
+          "event_id": 2871680029,
+          "basis": "explicit_touch_subtype",
+          "qualifiers": [
+            "384"
+          ]
+        },
+        {
+          "field": "received_inside_box",
+          "value": true,
+          "event_id": 2871680101,
+          "basis": "first_touch_shot_marker_and_shot_coordinates",
+          "qualifiers": [
+            "328"
+          ]
+        }
+      ],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "437730_2025",
+    "facts": {
+      "route": "pass",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": true,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": false,
+      "sequence_verified": null,
+      "defensive_touches_min": 1,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": null,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": false,
+      "reason": "scorer_converts_own_rebound",
+      "missing": []
+    },
+    "diagnostics": {
+      "candidate_type": 1,
+      "candidate_time": 4479.0,
+      "goal_time": 4484.0,
+      "period_id": 2,
+      "source_rows": 6,
+      "auxiliary_rows": 0,
+      "strict_defensive_contact_event_ids": [
+        2935358153
+      ],
+      "distinct_defensive_contact_players": [
+        "N. Collins"
+      ],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 15,
+      "first_scorer_action_xy": [
+        97.4,
+        49.8
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": null,
+      "clearance_end_inside_box_proxy": null,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  },
+  {
+    "case_id": "438234_2025",
+    "facts": {
+      "route": "touch",
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": true,
+      "scorer_lost_and_regained": null,
+      "candidate_last_attacking_touch": null,
+      "sequence_verified": null,
+      "defensive_touches_min": 0,
+      "defensive_touches_max": null,
+      "defensive_touch_is_pass": null,
+      "received_inside_box": null,
+      "intended_for_scorer": null,
+      "action_directly_caused_handball": null,
+      "conversion_direct": null
+    },
+    "decision": {
+      "awarded": false,
+      "reason": "scorer_converts_own_rebound",
+      "missing": []
+    },
+    "diagnostics": {
+      "candidate_type": 61,
+      "candidate_time": 4481.0,
+      "goal_time": 4484.0,
+      "period_id": 2,
+      "source_rows": 5,
+      "auxiliary_rows": 0,
+      "strict_defensive_contact_event_ids": [],
+      "distinct_defensive_contact_players": [],
+      "touch_count_is_lower_bound": true,
+      "unverified_same_second_order": true,
+      "first_scorer_action_type": 15,
+      "first_scorer_action_xy": [
+        97.4,
+        49.8
+      ],
+      "shot_inside_box_proxy": true,
+      "clearance_end_xy_proxy": null,
+      "clearance_end_inside_box_proxy": null,
+      "q384_event_ids": [],
+      "q384_interpretation": "explicit pass subtype, decoded using the pinned published parser in schema.json; absence remains unknown",
+      "handball_foul_event_ids": [],
+      "q281_player_id_value": null,
+      "q280_type_value": null,
+      "schema_enrichment": [],
+      "schema_authority": "published_parser_dictionary_plus_official_scenario_crosschecks",
+      "absence_is_not_false": true
+    }
+  }
+]
