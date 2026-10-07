@@ -2,6 +2,41 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Samlet restliste etter kildekobling – 7. oktober 2026
+
+[Ny spiller-/kamp-/feltoversikt](../research/current/scoring_2026_27/remaining_ledger/README.md)
+viderefører PR #1 fra `f799229`. FPL, FotMob, det supplerende arkivet,
+primærkontroller og eksisterende rekonstruksjoner er koblet på samme nøkkel.
+**77 280 unike spillerkamper / 2 660 kamper** er med. Ingen aktive historiske
+FPL-rader faller utenfor; én leverandøraktiv Ferguson-rad har null FPL-minutter.
+
+Av 2 355 867 nødvendige felt–spillerkamper er 673 347 dokumenterte positive
+verdier og 800 612 dokumenterte nuller. **806 298 mangler data, 18 322 har
+kildekonflikt og 57 288 har uavklart assistberegning**: 881 908 åpne felt,
+men **77 280 unike berørte spillerkamper**, uten dobbelttelling.
+18 016 spillerkamper har konflikt; 793 har konflikt utenom minuttfeltet.
+Dette er konservativ eksakt tellerdekning, ikke antallet nødvendige nye
+datatrekk eller dokumenterte poengfeil. De gamle 3 003 033 arkivblankene er
+ikke brukt som restmål. CBI-delkomponenter telles ikke igjen når summen er behovet.
+
+Lagets offisielle null mål gir separat nullbevis for assists i **19 992
+spillerkamper**. Fire offisielle målspesifikke assisttillegg bevares, men
+tolkes ikke som komplette kamptotaler. Keeperverdiene er identiske:
+5 343/5 381 godkjent, 38 uløste. Arkivhullet er fortsatt 593 spillerkamper
+i 21 kamper; ytterligere tre kamper med 95 spillerkamper mangler hendelser
+for ni mål. Disse er overlappende kildeflagg, ikke ekstra spillerkamper.
+
+`remaining_fields.csv.gz` inneholder navn, kamp-/spiller-ID-er, felt, alle
+kildeverdier, status og grunn. Felt-, sesong-, spiller- og kampoppsummeringer
+følger med; globale regel-/formelsperrer ligger separat i `rule_gates.json`.
+Neste arbeid: dokumenter sparsomfeltenes nullsemantikk, avklar konkrete
+kildekonflikter og hendelseshull, og fullfør assistkandidat-/regelsporet.
+Ingen mangler er automatisk null, ingen xG-imputering og ingen endring i
+låste poeng/BPS/bonus/modeller/benchmark. Full harmonisering er fortsatt uferdig.
+13 nye og 72 relevante eksisterende tester består; to offline-kjøringer
+gir byte-identiske dataresultater. Valideringen står i den nye rapportmappen;
+full testsuite og GitHub CI er ikke kontrollert her.
+
 ## Eksplisitte berøringsmerker – 7. oktober 2026
 
 [Ny kode- og dekningskontroll](../research/current/scoring_2026_27/assist_schema/README.md)
@@ -324,4 +359,3 @@ Global H3 gir 2308,25 med chips, +70,0 mot referansen (4/4, beskrivende interval
 Samspill mellom globalvekt og H3 er +21,25 med chips, usikkert, men −78,25 uten og negativt i alle fire sesonger. Tidligere forbedringer kan ikke summeres. Global H1 gjenskaper alle åtte gamle globalvektspor med samme tropper og poeng. Alle 544 nye beslutninger er optimale innen toleransen, maks gap 9,55e-6. Poengregnskap, starttilstand, spillerkobling og matchede før-frist-prognoser er kontrollert. Tre relevante eksisterende regresjonstester er kjørt på nytt og består; ingen ny full testkjøring påstås.
 
 De to bekreftede utfordrerne beholdes; `constant_h3` legges til som forskningskandidat. Kode, protokoll, prognoser, spor, parete resultater og hashkontroller er lagret under `research/current/global_horizon`. Ingen produksjonsendring, urørt holdout eller verifisert GitHub CI-status.
-

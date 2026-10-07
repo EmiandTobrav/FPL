@@ -1,0 +1,11 @@
+{
+  "not_counted_as_missing_cells": true,
+  "gates": [
+    "Non-corner cross mapping versus displayed open-play wording remains empirically qualified only on reused controls.",
+    "Pass definitions and integer component thresholds require historical qualification; two current primary BPS residuals remain.",
+    "Assists: exhaustive candidate selection, continuity, receiving location, intention, touch interpretation, own-goal/rebound routes and independent controls remain incomplete.",
+    "Recompute BPS only with resolved inputs; rank bonus jointly within each full fixture; do not reuse historical BPS/bonus.",
+    "Recompute basic points including goalkeeper goals and defensive awards; preserve the historical FPL roster position policy.",
+    "Provider rows include one historically FPL-inactive appearance: adjudicate participation before final rescoring."
+  ]
+}

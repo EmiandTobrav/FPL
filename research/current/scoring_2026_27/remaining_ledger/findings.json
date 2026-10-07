@@ -1,0 +1,55 @@
+{
+  "base_commit": "f799229dfbecaa11baf5d2a86b431eff6368a6ab",
+  "population": 77280,
+  "fixtures": 2660,
+  "required_field_cells": 2355867,
+  "unresolved_field_cells": 881908,
+  "affected_unique_player_matches": 77280,
+  "unique_by_category": {
+    "missing_data": 77280,
+    "source_conflict": 18016,
+    "rule_unresolved": 57288
+  },
+  "unique_nonminute_source_conflicts": 793,
+  "category_overlap": [
+    {
+      "missing_data": true,
+      "source_conflict": false,
+      "rule_unresolved": true,
+      "player_matches": 43883
+    },
+    {
+      "missing_data": true,
+      "source_conflict": false,
+      "rule_unresolved": false,
+      "player_matches": 15381
+    },
+    {
+      "missing_data": true,
+      "source_conflict": true,
+      "rule_unresolved": true,
+      "player_matches": 13405
+    },
+    {
+      "missing_data": true,
+      "source_conflict": true,
+      "rule_unresolved": false,
+      "player_matches": 4611
+    }
+  ],
+  "fpl_active_outside_population": 0,
+  "fpl_rows_missing": 0,
+  "source_active_fpl_inactive": 1,
+  "keeper_approved": 5343,
+  "keeper_unresolved": 38,
+  "missing_archive_player_matches": 593,
+  "missing_archive_matches": 21,
+  "additional_event_gap_matches": 3,
+  "additional_event_gap_player_matches": 95,
+  "additional_event_gap_goals": 9,
+  "assists_zero_team_bound": 19992,
+  "official_assist_additions_preserved": 4,
+  "full_historical_rescoring_ready": false,
+  "locked_labels_modified": false,
+  "cost_nok": 0
+}

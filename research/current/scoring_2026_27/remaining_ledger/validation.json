@@ -1,0 +1,19 @@
+{
+  "new_tests_passed": 13,
+  "existing_focused_tests_passed": 72,
+  "existing_suites": {
+    "keeper_recovery": 25,
+    "bps_recovery": 8,
+    "assist_rules": 17,
+    "assist_schema": 8,
+    "acquisition_followup": 8,
+    "test_bps": 6
+  },
+  "offline_replay_byte_identical": true,
+  "replayed_output_files": 12,
+  "input_hashes_verified": 122,
+  "keeper_historical_values_equal_including_missing": true,
+  "new_assist_labels_written_to_locked_data": false,
+  "full_repository_suite_run": false,
+  "github_ci_verified": false
+}
