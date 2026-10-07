@@ -20,6 +20,11 @@ i 2024/25 er nå dekket. `resolution_method` angir bevismetoden.
 via eksplisitt lagstatistikk og entydig keepertilordning. Hele 2025/26 er nå dekket.
 38 observasjoner i 22 kamper gjenstår.
 
+[Videre kontroll av restlisten](remaining_audit/README.md): 2 295 offisielle
+hendelseskommentarer fra alle 22 kamper er kontrollert, sammen med nyere
+kampstatistikk og fire nye arkivkandidater. Ingen nye eksakte tellinger ble
+funnet. En konkret liste med alle 38 databehov og kilde-ID-er er lagret.
+
 ## Løsningen
 
 Det offentlige [pannadata-arkivet](https://github.com/peteowen1/pannadata)

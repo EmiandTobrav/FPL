@@ -1,0 +1,178 @@
+[
+  {
+    "season": "2019-20",
+    "fixture": 133,
+    "pulse_id": 46737,
+    "url": "https://footballapi.pulselive.com/football/fixtures/46737/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_46737.json",
+    "sha256": "d2e65756b294d9ae9e271d904e542fac52ca5ca7950c4e10eb8f9c13a78171b0"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 135,
+    "pulse_id": 46739,
+    "url": "https://footballapi.pulselive.com/football/fixtures/46739/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_46739.json",
+    "sha256": "f95ef036d319b5de5f1b73eba913d1ed795355b314acec19f9abe0afe52e0ec9"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 137,
+    "pulse_id": 46741,
+    "url": "https://footballapi.pulselive.com/football/fixtures/46741/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_46741.json",
+    "sha256": "588cf479fcf035a70ad9b1309535f637e84d04d816c49472d26a3378da0ecabc"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 140,
+    "pulse_id": 46744,
+    "url": "https://footballapi.pulselive.com/football/fixtures/46744/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_46744.json",
+    "sha256": "4d1ee9e893a9e7b198794755f4b1ec5ca6d18eb72e4f596b1a196a0e4be24025"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 241,
+    "pulse_id": 46845,
+    "url": "https://footballapi.pulselive.com/football/fixtures/46845/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_46845.json",
+    "sha256": "dbca0dce660027ff55d543a0aa5a5f9f45b3f3f3a40e242706b81ca3c6fefc71"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 101,
+    "pulse_id": 58998,
+    "url": "https://footballapi.pulselive.com/football/fixtures/58998/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_58998.json",
+    "sha256": "d7b519e2c3c67542c5cfa740eb4eb7dc36e481abe1cbf366a0803fc4ae96a306"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 102,
+    "pulse_id": 58999,
+    "url": "https://footballapi.pulselive.com/football/fixtures/58999/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_58999.json",
+    "sha256": "b2332856567d5536d0034f04c379896617e094bdf50dd43632632a59d7fe39c5"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 104,
+    "pulse_id": 59001,
+    "url": "https://footballapi.pulselive.com/football/fixtures/59001/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_59001.json",
+    "sha256": "36467970fc2f2170986d5739387e20466dd03db0a0d50af960011ee06da43764"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 105,
+    "pulse_id": 59002,
+    "url": "https://footballapi.pulselive.com/football/fixtures/59002/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_59002.json",
+    "sha256": "a7b9a47a5c69e82d06e90465fa1673cb62d3cc472f42cd49fd8c46a9ead66af5"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 106,
+    "pulse_id": 59003,
+    "url": "https://footballapi.pulselive.com/football/fixtures/59003/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_59003.json",
+    "sha256": "7f4a49872d93f3f0f2a47bb5c3115eac668f9f1119c1b03f1103cb51657647a8"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 107,
+    "pulse_id": 59004,
+    "url": "https://footballapi.pulselive.com/football/fixtures/59004/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_59004.json",
+    "sha256": "d5cbcdbf0e88916a8e04b1da85dce2fb5c128c472da8d411667aff7cf65acab4"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 108,
+    "pulse_id": 59005,
+    "url": "https://footballapi.pulselive.com/football/fixtures/59005/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_59005.json",
+    "sha256": "d5598e71512270f941aa6c68cabf94dc712c43d3e072ceacd9594129f210fb35"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 281,
+    "pulse_id": 75191,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75191/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75191.json",
+    "sha256": "0ab3452fcfc472a47cba8343cfa503d32fe74d762f37344ab3f828a77e38b734"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 282,
+    "pulse_id": 75192,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75192/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75192.json",
+    "sha256": "147f61d70757da32d57c86b446fbc978a68111c1d6e9cf42b039739a037f8096"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 283,
+    "pulse_id": 75193,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75193/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75193.json",
+    "sha256": "cd825f4a5ca5ee0b40e534eea888fd831893893f95cd1f96bfd0831c02006273"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 284,
+    "pulse_id": 75194,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75194/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75194.json",
+    "sha256": "5c57c7270a7d9861d81a874c8737b192403c83f06c68de3198a11d8d5b540695"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 285,
+    "pulse_id": 75195,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75195/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75195.json",
+    "sha256": "48fe5d4a0001acd4c3d8979df19fd6021041ce1dfae2d1cd6c4c7aa1fd4e88ef"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 286,
+    "pulse_id": 75196,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75196/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75196.json",
+    "sha256": "e735dc5cda1752f8f1ab6f1e553684c7fefa02c66fa4c6248e4ea13aebd16b9b"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 287,
+    "pulse_id": 75197,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75197/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75197.json",
+    "sha256": "7e48dcdfbaa4a8928c41db344528768af9b95f43ad03f7e74b3824154659444a"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 288,
+    "pulse_id": 75198,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75198/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75198.json",
+    "sha256": "147270ccb54da6537f1cd0c4ddddf410ab4e81e215934da287774151b63fe042"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 289,
+    "pulse_id": 75199,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75199/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75199.json",
+    "sha256": "3ee367621a90bdb618f0b9968016667231263106a4bffb5c97c92b2d1f2266d8"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 290,
+    "pulse_id": 75200,
+    "url": "https://footballapi.pulselive.com/football/fixtures/75200/textstream/EN?pageSize=1000&sort=desc",
+    "file": "raw/textstream_75200.json",
+    "sha256": "61ad847203a7017afebaa0393451a95941c586c487d50cad19b6c74ae3bf7d26"
+  }
+]

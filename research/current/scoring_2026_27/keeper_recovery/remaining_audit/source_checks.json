@@ -1,0 +1,45 @@
+[
+  {
+    "repository": "InigoG99/whoscored_dataset",
+    "tree_sha": "599e72784552a5a7f9d295daf226bab71caeee32",
+    "truncated": false,
+    "entries": 2,
+    "inventory_sha256": "c6daab44b14718ac376595fb16386aae501bd6d815386580fb025874c590cd49",
+    "result": "Player season statistics and subsequent-team/rating outcomes, not match events (README inspected)."
+  },
+  {
+    "repository": "Sportshero-sh/whoScoredDataImport",
+    "tree_sha": "06c6fb3cd0fc69faf50a11e49cee9bea72b7da8c",
+    "truncated": false,
+    "entries": 90505,
+    "inventory_sha256": "02d101cdfd0f1ace8eb56df92f7941e33b78a5b5bc0cbf8164f4f1a99e467ef1",
+    "result": "Repository last pushed 2018-04-23, before all remaining target dates."
+  },
+  {
+    "repository": "HalcyonVector/FootIQ",
+    "tree_sha": "be7b6d553c913ef5f6577ba9550fa5c77159503c",
+    "truncated": false,
+    "entries": 1664,
+    "inventory_sha256": "eeea8293beb34010d5dfb64757b864b5d0180217b80046b6b15a6591e1466ab0",
+    "result": "Premier League partitions start at 2023-24; remaining observations are 2019-20, 2020-21 and 2022-23."
+  },
+  {
+    "repository": "drinkdata/Scrape-Whoscored-Event-Data",
+    "tree_sha": "8bda09397c3e0bdc35c660e57405e1ef202d87ef",
+    "truncated": false,
+    "entries": 20,
+    "inventory_sha256": "d59cc912e4bb2ff1d62339672bacdcd1835a0498f049b37b891f66f222e7e982",
+    "result": "No target raw match export in complete file tree; published League PPDA data is aggregate."
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v3/matches/1059942/stats",
+    "file": "raw/sdp_stats_1059942.json",
+    "sha256": "48d20d037b91dcd61debeab7b387bc9f827179c72e86f8b0875fd27c30f98541",
+    "result": "Away team bigChanceMissed and Home bigChanceSaves omitted. No explicit zero; Ramsdale remains unresolved."
+  },
+  {
+    "url": "https://api.github.com/repos/peteowen1/pannadata/releases",
+    "sha256": "f7457df264bae9dc67d9944b5789881ed990156974b6e95e3f9149cc0fcfb0cb",
+    "result": "11 releases inspected; no separately labelled WhoScored event export. This is not an audit of every asset payload."
+  }
+]
