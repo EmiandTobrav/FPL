@@ -2,6 +2,14 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Målet er 2026/27 – datakrav kontrollert og nye BPS-data hentet
+
+7. oktober 2026: [2026/27-audit og kildevalidering](../research/current/scoring_2026_27/README.md). Brukeren har presisert at målregelverket er 2026/27. Regelvektene er hentet fra FPLs faktiske regelkomponent/API. Alle 2660 tidligere råkamper er gjennomgått; flere BPS-felter er trukket ut for 77280 aktive kildeobservasjoner. 830 nye primære spiller-/kampresponser er hentet, inkludert hele GW1–2 i 2026/27.
+
+GW1 utvikling: 309/310 eksakt BPS og 310/310 bonus. Forhåndsdefinert GW2-kontroll: 311/312 eksakt BPS og 312/312 bonus, uten videre formeltilpasning. Seks tester består. Kode, data, kildehash, dekningsrapporter og kontroller er lagret.
+
+**Full historisk 2026/27-harmonisering er IKKE ferdig.** `big_chance_saves` mangler i FotMob og har utilstrekkelig historisk dekning i PL-kilden. Historiske FPL-assists er ikke omregnet og påvirker også BPS. Resterende primære historiske komponenter er bare innhentet i kontrollutvalg, ikke hele korpuset. Sofascore/WhoScored svarte 403 og ble ikke omgått. Ikke fyll slike hull med null. `results/readiness.json` sperrer full omregning. Det tidligere låste datasettet er et mellomsteg med 2025/26-defcon, ikke en komplett 2026/27-fasit. Ingen modelltrening, benchmarkendring eller kostnad.
+
 ## Felles defcon-grunnlag låst 7. oktober 2026
 
 [Harmonisert datasett og reproduksjon](../research/current/rescoring_2025/harmonized/README.md): `historical_points_plus_harmonized_defcon_v1` er låst som forskningsgrunnlag etter åtte beståtte kvalitetskrav. Alle 2660 kamper fra 2019/20–2025/26 og 71898 aktive utespillerobservasjoner er dekket, uten uløste etiketter. Ett sett FotMob-definisjoner brukes over hele perioden; offisiell FPL-fasit beholdes i 2025/26.

@@ -1,0 +1,36 @@
+{
+  "target_season": "2026-27",
+  "status": "NOT_READY_FOR_FULL_HISTORICAL_RESCORING",
+  "cost_nok": 0,
+  "extracted_source_matches": 2660,
+  "extracted_active_source_rows": 77280,
+  "new_primary_player_match_rows": 830,
+  "development": {
+    "gameweek": 1,
+    "rows": 310,
+    "equal_bps": 309,
+    "equal_bonus": 310
+  },
+  "holdout": {
+    "gameweek": 2,
+    "rows": 312,
+    "equal_bps": 311,
+    "equal_bonus": 312,
+    "passed": true
+  },
+  "blockers": [
+    "Historical big-chance-save coverage is absent or partial; omitted values are not proven zero.",
+    "Historical assists have not been re-adjudicated under modern FPL rules; current validation shows FPL assists affect BPS.",
+    "Primary provider column mappings qualified on two current gameweeks, but full historical collection/coverage remains incomplete."
+  ],
+  "preserved_dataset": "historical_points_plus_harmonized_defcon_v1 is a 2025/26-defcon hybrid, NOT the requested final 2026/27 dataset",
+  "validation_scope": "GW1 development; GW2 predeclared holdout; no extrapolation to full seasons",
+  "files_sha256": {
+    "audit_raw.py": "e79e818ef374b6e7164b5016ece8762f4b845c2fba3d00d0fe7dc75e7cb82da5",
+    "collect_primary.py": "f765330700a419c831f2481e325cf5ea094018b3f67aad54327121de1ba8548d",
+    "package_data.py": "568e489ec6134cafac28d69cb964e54f74d90a70a5acf58d7e07db150d94ebd0",
+    "report.py": "b0302ba28ae73e4567042d611f7f904ab97768a1b16f2ba1400871f11992fc8f",
+    "test_bps.py": "1824562b358517c382b77bc38c29a0ed63ac105507d4539f07e39fd654bf2243",
+    "validate_bps.py": "60e48680c48139811292c1621932f460cc08d5961f59c8173c657af096c0f395"
+  }
+}

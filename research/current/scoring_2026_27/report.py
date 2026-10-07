@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,hashlib
+P=Path(__file__).resolve().parent;R=P/'results'
+def run():
+ a=json.loads((R/'bps_2026_diagnostic_summary_gw2.json').read_text());gate=a['equal_bps']/a['rows']>=.99 and a['equal_bonus']/a['rows']>=.99 and a['matches']==10
+ m=dict(target_season='2026-27',status='NOT_READY_FOR_FULL_HISTORICAL_RESCORING',cost_nok=0,extracted_source_matches=2660,extracted_active_source_rows=77280,new_primary_player_match_rows=830,development=dict(gameweek=1,rows=310,equal_bps=309,equal_bonus=310),holdout=dict(gameweek=2,rows=a['rows'],equal_bps=a['equal_bps'],equal_bonus=a['equal_bonus'],passed=gate),blockers=['Historical big-chance-save coverage is absent or partial; omitted values are not proven zero.','Historical assists have not been re-adjudicated under modern FPL rules; current validation shows FPL assists affect BPS.','Primary provider column mappings qualified on two current gameweeks, but full historical collection/coverage remains incomplete.'],preserved_dataset='historical_points_plus_harmonized_defcon_v1 is a 2025/26-defcon hybrid, NOT the requested final 2026/27 dataset',validation_scope='GW1 development; GW2 predeclared holdout; no extrapolation to full seasons',files_sha256={str(x.relative_to(P)):hashlib.sha256(x.read_bytes()).hexdigest() for x in sorted(P.glob('*.py'))})
+ (R/'readiness.json').write_text(json.dumps(m,indent=2)+'\n')
+ (R/'source_access_notes.json').write_text(json.dumps(dict(sofascore='HTTP 403 challenge at seasons endpoint; no retries/workarounds',whoscored='HTTP 403 Forbidden at observed match URL; no retries/workarounds',legacy_ranked_scope='fixtures/matches/match/gameweeks filters were ignored; season aggregates rejected as per-match data',alternative_github='jakeyk11 football-data-analytics contains only a README in whoscored_data, not the required event dataset',historical_big_chance_saves='No complete alternate event archive obtained; no claim that none exists'),indent=2)+'\n')
+ print(json.dumps({k:m[k] for k in ['target_season','status','holdout']},indent=2))
+if __name__=='__main__':run()

@@ -1,0 +1,10 @@
+{
+  "rows": 310,
+  "matches": 10,
+  "equal_bps": 298,
+  "equal_bonus": 301,
+  "mean_absolute_bps_error": 0.24838709677419354,
+  "fpl_assist_equal_bps": 305,
+  "fractional_equal_bps": 58,
+  "scope": "Source qualification only; sparse-zero and component mappings not yet validated; not harmonized labels"
+}

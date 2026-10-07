@@ -1,0 +1,50 @@
+[
+  {
+    "season": "2019-20",
+    "players": 0,
+    "total": 0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=274&page=0&pageSize=1000&altIds=true"
+  },
+  {
+    "season": "2020-21",
+    "players": 0,
+    "total": 0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=363&page=0&pageSize=1000&altIds=true"
+  },
+  {
+    "season": "2021-22",
+    "players": 2,
+    "total": 2.0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=418&page=0&pageSize=1000&altIds=true"
+  },
+  {
+    "season": "2022-23",
+    "players": 0,
+    "total": 0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=489&page=0&pageSize=1000&altIds=true"
+  },
+  {
+    "season": "2023-24",
+    "players": 2,
+    "total": 3.0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=578&page=0&pageSize=1000&altIds=true"
+  },
+  {
+    "season": "2024-25",
+    "players": 47,
+    "total": 144.0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=719&page=0&pageSize=1000&altIds=true"
+  },
+  {
+    "season": "2025-26",
+    "players": 114,
+    "total": 540.0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=777&page=0&pageSize=1000&altIds=true"
+  },
+  {
+    "season": "2026-27",
+    "players": 38,
+    "total": 91.0,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/big_chance_saves?comps=1&compSeasons=841&page=0&pageSize=1000&altIds=true"
+  }
+]

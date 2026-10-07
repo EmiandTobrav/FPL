@@ -1,0 +1,7 @@
+{
+  "sofascore": "HTTP 403 challenge at seasons endpoint; no retries/workarounds",
+  "whoscored": "HTTP 403 Forbidden at observed match URL; no retries/workarounds",
+  "legacy_ranked_scope": "fixtures/matches/match/gameweeks filters were ignored; season aggregates rejected as per-match data",
+  "alternative_github": "jakeyk11 football-data-analytics contains only a README in whoscored_data, not the required event dataset",
+  "historical_big_chance_saves": "No complete alternate event archive obtained; no claim that none exists"
+}
