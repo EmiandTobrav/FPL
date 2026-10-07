@@ -2,6 +2,19 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Keeperrestlisten – 18 nye avklaringer, 7. oktober 2026
+
+[Oppfølgingsrapport](../research/current/scoring_2026_27/keeper_recovery/followup/README.md):
+57/57 primære spiller-/kamprader er hentet. 18 av 57 uløste observasjoner er
+avklart, slik at dekningen er **5 342/5 381 (99,28 %)**. Hele 2024/25 er nå dekket.
+39 observasjoner i 23 kamper gjenstår: 37 fra 21 manglende kildekamper, pluss
+Ramsdale mot Villa 1. februar 2020 og Sánchez mot Spurs 19. mai 2026.
+De 39 feltene forblir manglende. Tjue transformasjonstester består. Kjør
+`recover.py` og deretter `reconcile_followup.py` for full gjenkjøring.
+Bevis, primærresponser og vedtak er versjonert. Ward har et dokumentert avvik
+mellom oppdatert redningstall og historisk FPL. Låste poeng og benchmark er
+uendret; kostnad 0 kroner. Avsnittene nedenfor er tidligere kontrollpunkter.
+
 ## Storsjanseredninger – ny løsning, 7. oktober 2026
 
 [Rekonstruksjon og restliste](../research/current/scoring_2026_27/keeper_recovery/README.md): Et offentlig Opta-basert hendelsesarkiv er funnet og kontrollert. **5 324 av 5 381 historiske keeperobservasjoner (98,94 %) har nå en kontrollert telling.** Alle observasjonene i 2021/22 og 2023/24 er dekket. Skudd med eksplisitt storsjansemerke skilles fra utespillerblokker; keeperbytter håndteres med periode og redningshendelser. Ingen xG-anslag brukes.

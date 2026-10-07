@@ -1,13 +1,13 @@
 [
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/README.md",
-    "bytes": 6943,
-    "sha256": "87823918e5a094a200a86e19760b6da01d26f9d64e8c17c20ae2d1a4122ad4b0"
+    "bytes": 6625,
+    "sha256": "ad8013f06aa519f30971777735ae7291740f4e6d2d18cd049d95d19349ea5a42"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/coverage.csv",
     "bytes": 219,
-    "sha256": "336ed9a51ac4e089ad4cb78b0df81f81714f5ee42c37cf2db1e29bb0f2b51f9e"
+    "sha256": "d48e7a75f19be361df0c4e25753d12e52be8c06c86113a143ccf8da9e8bf9025"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/current_season_validation.csv",
@@ -21,13 +21,58 @@
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/findings.json",
-    "bytes": 705,
-    "sha256": "8e4a7700d788a52b8b0519aa61111609847c982863802acecfdf6a5270e92cc4"
+    "bytes": 959,
+    "sha256": "3405fe99aafe379f09e85859189a518d6cc557172436cbda5dd34fcb87e68849"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/fixture_mapping.csv.gz",
     "bytes": 77376,
     "sha256": "6912c36b07c4cba002716467433197d6102babfdb9cdfe5cae4a7cd231c47fd6"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/README.md",
+    "bytes": 4905,
+    "sha256": "69583eed0d86729cf4a32c1dd7862c263279cfee996a590caf82a2b7e6d26e06"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/decisions.csv",
+    "bytes": 4111,
+    "sha256": "0c092e3bdaa4164336455b3fad49fb072377eb23f5c77cb5853bfbeb26038c45"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/identity_evidence.json.gz",
+    "bytes": 8946,
+    "sha256": "993b86a27e6514e274e18b08b2466a882ef5ed0b070eb567786a69370c09feec"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/primary_manifest.csv",
+    "bytes": 2658,
+    "sha256": "59d4790944b480931751072f2db0c143f6bbe908c6a6c8d41c69089ec93c0342"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/primary_raw.jsonl.gz",
+    "bytes": 20375,
+    "sha256": "d2f5af2492dc9fa31c553ce0878406cec12e436df4149935ce504e40abc2a6a5"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/primary_sources.json",
+    "bytes": 14722,
+    "sha256": "0b8e8adefe937da07aad9ac02cbf797925d2cfc6faa2422bf55ebe7a970cc1f5"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/primary_verified/observations.csv",
+    "bytes": 21195,
+    "sha256": "d2a9217182242242817b5b742d162f5374936f40b43ac011dc17822dfa83f7b2"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/raw_event_evidence.csv.gz",
+    "bytes": 29391,
+    "sha256": "b5ef98f9980377c0a9cd5a442a7d6750a0e0982cef1e8f20c3a4c53296bced5d"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/followup/shooter_totals.csv.gz",
+    "bytes": 6360,
+    "sha256": "47aa88e1fd92d6505479457653a01284ab212d22773878edd1cf8e1531705440"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/fotmob_keepers.csv.gz",
@@ -131,8 +176,8 @@
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/keeper_counts.csv.gz",
-    "bytes": 141526,
-    "sha256": "c48d41eec75f0c4b623dccb483b2d5448a0d0cc171c84e25a6289e9bf0e25381"
+    "bytes": 143907,
+    "sha256": "b87c9ee128a58c6d92f8b84091809c4c78fefb23488e0078b38ab2fc23873bc0"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/missing_source_matches.csv",
@@ -143,6 +188,11 @@
     "path": "research/current/scoring_2026_27/keeper_recovery/prepare_inputs.py",
     "bytes": 3764,
     "sha256": "3c30653f89d37838f0402dcba10510e7546513b051b7aef9d48a2e912cdc17b2"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/reconcile_followup.py",
+    "bytes": 8997,
+    "sha256": "cdca13296335f0d20c33dcbade573873fdc248e3e581bc44172152c511f554f3"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/recover.py",
@@ -156,8 +206,13 @@
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/source_manifest.json",
-    "bytes": 8017,
-    "sha256": "2ecfcf1b00057ec0186db4a11fe405f9895eeb81fae01ae461b7c8e8fe6c324a"
+    "bytes": 8619,
+    "sha256": "43fb12ae06ec8d43ecff96f3db44b100fe8df43d40c5894f2e36ff724ee52c1e"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/test_followup.py",
+    "bytes": 2391,
+    "sha256": "bb073bbf97227889d98bc59b73bf913110c8b4df6da4e990982b4e8f836111c0"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/test_recovery.py",
@@ -166,8 +221,8 @@
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/unresolved_keepers.csv",
-    "bytes": 9968,
-    "sha256": "8dcb9a21aa50fcdb4d9b9e7c5d7e0d424cc90a6b464b866a9d43fbaffd5b2de8"
+    "bytes": 7279,
+    "sha256": "9624c962c0c01db373db86102d3b5b53af38a774cb4dc4127e9ee24e476e9579"
   },
   {
     "path": "research/current/scoring_2026_27/keeper_recovery/validate_current.py",

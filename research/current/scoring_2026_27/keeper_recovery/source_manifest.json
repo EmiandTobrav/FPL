@@ -214,5 +214,19 @@
     "https://github.com/peteowen1/pannadata/blob/main/scripts/opta/opta_scraper.py",
     "https://github.com/peteowen1/panna/blob/main/OPTA_REFERENCE.md"
   ],
-  "cost_nok": 0
+  "cost_nok": 0,
+  "followup": {
+    "retrieved_at": "2026-10-07",
+    "primary_observations": 57,
+    "primary_sources": "followup/primary_sources.json",
+    "raw_primary_archive": "followup/primary_raw.jsonl.gz",
+    "additional_asset": {
+      "name": "opta_shots.parquet",
+      "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_shots.parquet",
+      "size": 27638232,
+      "sha256": "4f73273f2b719acedf5d7778cea5b955573b562d33969d56e85e32d2f1abbcde",
+      "projection": "followup/shooter_totals.csv.gz"
+    },
+    "raw_event_projection": "followup/raw_event_evidence.csv.gz"
+  }
 }
