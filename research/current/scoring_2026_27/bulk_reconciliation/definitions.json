@@ -1,0 +1,10 @@
+{
+  "target": "2026-27 historical input availability; no final scoring labels",
+  "sources": [{"url": "https://www.statsperform.com/opta-event-definitions/", "checked": "2026-10-08", "paraphrase": "Won and lost tackles partition total tackles. Foul-won and shot-on-target definitions specify counted player actions."}],
+  "subset": "With the same tackle definition, explicit total=0 proves won=0 and lost=0. Signed net then equals zero. Check source/event contradictions first.",
+  "conservation": "For nonnegative player counts sharing an explicit team total, if all known player contributions sum exactly to the total, every omitted contribution must be zero. A missing team total or positive residual proves no player zero. No residual is allocated to a particular player.",
+  "team_mapping": {"totalTackle":"total_tackle", "wonTackle":"won_tackle", "wasFouled":"fk_foul_won", "ontargetScoringAtt":"ontarget_scoring_att", "clearanceOffLine":"clearance_off_line"},
+  "mapping_qualification": "Two initial and two later fixture controls per season; per-team exact conservation gates across the full historical population. Team fk_foul_won is checked against summed player wasFouled, not substituted for an individual player counter.",
+  "source_assumptions": ["Counts refer to the same fixture, team and full match.", "Source player IDs are unique; bench and non-FPL participants remain in sums.", "Existing explicit values are inputs, not overridden to force a balance.", "Shared Opta ancestry and aggregate agreement do not independently verify every player value; retain the external quality caveat.", "Signed raw net tackles remain separate from unqualified historical BPS clipping."],
+  "not_allowed": ["Blank team count interpreted as zero", "Positive residual allocated to a missing player", "Source conflicts overwritten", "General null-to-zero policy", "Normalized third-party zeros treated as raw observations without transformation provenance"]
+}

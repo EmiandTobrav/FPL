@@ -1,0 +1,25 @@
+season,fixture,fixture_code,match_id,date,home,away,home_score,away_score,expected_goals,source_goal_events,goal_count_matches_score,coverage_status,pulse_id,home_primary_id,away_primary_id,side,primary_team_id,total_tackle,won_tackle,was_fouled,fk_foul_won,ontarget_scoring_att,clearance_off_line,total_scoring_att,saves,goals,own_goals,interception,total_clearance,outfielder_block
+2019-20,1,1059702,6hy62na4oiugr5shiyxsztkyy,2019-08-09,Liverpool,Norwich,4,1,5.0,5.0,True,goal_inventory_complete,46605,10,14,away,14,12.0,8.0,,9.0,5.0,,12.0,4.0,1.0,1.0,11.0,35.0,3.0
+2019-20,1,1059702,6hy62na4oiugr5shiyxsztkyy,2019-08-09,Liverpool,Norwich,4,1,5.0,5.0,True,goal_inventory_complete,46605,10,14,home,10,21.0,13.0,,9.0,7.0,,15.0,4.0,4.0,,14.0,5.0,2.0
+2019-20,2,1059703,6ibcom3b8uj9de11oqe3tqqne,2019-08-10,Bournemouth,Sheffield Utd,1,1,2.0,2.0,True,goal_inventory_complete,46606,127,18,away,18,14.0,11.0,,9.0,3.0,,8.0,2.0,1.0,,14.0,16.0,2.0
+2019-20,2,1059703,6ibcom3b8uj9de11oqe3tqqne,2019-08-10,Bournemouth,Sheffield Utd,1,1,2.0,2.0,True,goal_inventory_complete,46606,127,18,home,127,18.0,13.0,,17.0,3.0,,13.0,2.0,1.0,,13.0,13.0,1.0
+2020-21,1,2128287,85x1cgdta3wxsl49h1bt8a5g4,2020-09-12,Crystal Palace,Southampton,1,0,1.0,1.0,True,goal_inventory_complete,58897,6,20,away,20,28.0,18.0,,14.0,5.0,,9.0,2.0,,,9.0,15.0,
+2020-21,1,2128287,85x1cgdta3wxsl49h1bt8a5g4,2020-09-12,Crystal Palace,Southampton,1,0,1.0,1.0,True,goal_inventory_complete,58897,6,20,home,6,15.0,9.0,,10.0,3.0,,5.0,5.0,1.0,,12.0,22.0,1.0
+2020-21,2,2128288,861ksnkk5xej2wzo78ud9rytw,2020-09-12,Fulham,Arsenal,0,3,3.0,3.0,True,goal_inventory_complete,58898,34,1,away,1,12.0,5.0,,12.0,6.0,,13.0,2.0,3.0,,18.0,11.0,1.0
+2020-21,2,2128288,861ksnkk5xej2wzo78ud9rytw,2020-09-12,Fulham,Arsenal,0,3,3.0,3.0,True,goal_inventory_complete,58898,34,1,home,34,11.0,7.0,,11.0,2.0,1.0,5.0,2.0,,,10.0,7.0,4.0
+2021-22,1,2210271,drnl1etmyzjz088y0bb4kh4pg,2021-08-13,Brentford,Arsenal,2,0,2.0,2.0,True,goal_inventory_complete,66342,130,1,away,1,9.0,3.0,,12.0,4.0,,22.0,1.0,,,7.0,14.0,
+2021-22,1,2210271,drnl1etmyzjz088y0bb4kh4pg,2021-08-13,Brentford,Arsenal,2,0,2.0,2.0,True,goal_inventory_complete,66342,130,1,home,130,20.0,12.0,,7.0,3.0,,8.0,4.0,2.0,,9.0,19.0,4.0
+2021-22,2,2210272,dru80d3leis6aelo350fviuj8,2021-08-14,Burnley,Brighton,1,2,3.0,3.0,True,goal_inventory_complete,66343,43,131,away,131,16.0,9.0,,10.0,8.0,,14.0,2.0,2.0,,6.0,27.0,3.0
+2021-22,2,2210272,dru80d3leis6aelo350fviuj8,2021-08-14,Burnley,Brighton,1,2,3.0,3.0,True,goal_inventory_complete,66343,43,131,home,43,16.0,12.0,,7.0,3.0,2.0,14.0,4.0,1.0,,10.0,12.0,4.0
+2022-23,1,2292810,77un7n0p62hpiztlkk8dh8s9g,2022-08-05,Crystal Palace,Arsenal,0,2,2.0,2.0,True,goal_inventory_complete,74911,6,1,away,1,29.0,16.0,,16.0,2.0,,10.0,2.0,2.0,,9.0,24.0,6.0
+2022-23,1,2292810,77un7n0p62hpiztlkk8dh8s9g,2022-08-05,Crystal Palace,Arsenal,0,2,2.0,2.0,True,goal_inventory_complete,74911,6,1,home,6,18.0,9.0,,9.0,2.0,,10.0,1.0,,1.0,8.0,19.0,4.0
+2022-23,2,2292811,7819maaj4jri83a8c753xcowk,2022-08-06,Bournemouth,Aston Villa,2,0,2.0,2.0,True,goal_inventory_complete,74912,127,2,away,2,10.0,8.0,,18.0,2.0,,15.0,1.0,,,8.0,8.0,2.0
+2022-23,2,2292811,7819maaj4jri83a8c753xcowk,2022-08-06,Bournemouth,Aston Villa,2,0,2.0,2.0,True,goal_inventory_complete,74912,127,2,home,127,20.0,12.0,,16.0,3.0,,7.0,2.0,2.0,,13.0,36.0,6.0
+2023-24,1,2367538,c3h42njfgxs5smffn86jc6kno,2023-08-11,Burnley,Man City,0,3,3.0,3.0,True,goal_inventory_complete,93321,43,11,away,11,17.0,12.0,,11.0,8.0,,17.0,1.0,3.0,,4.0,6.0,2.0
+2023-24,1,2367538,c3h42njfgxs5smffn86jc6kno,2023-08-11,Burnley,Man City,0,3,3.0,3.0,True,goal_inventory_complete,93321,43,11,home,43,12.0,8.0,,8.0,1.0,,6.0,5.0,,,7.0,16.0,5.0
+2023-24,2,2367540,c474ytrpizn8udf0664xqn7ys,2023-08-12,Arsenal,Nott'm Forest,2,1,3.0,3.0,True,goal_inventory_complete,93322,1,15,away,15,17.0,10.0,,12.0,2.0,,6.0,5.0,1.0,,8.0,16.0,5.0
+2023-24,2,2367540,c474ytrpizn8udf0664xqn7ys,2023-08-12,Arsenal,Nott'm Forest,2,1,3.0,3.0,True,goal_inventory_complete,93322,1,15,home,1,19.0,15.0,,12.0,7.0,,15.0,1.0,2.0,,7.0,9.0,1.0
+2024-25,1,2444470,9x16f7izg27mw8l6rxtehfitw,2024-08-16,Man Utd,Fulham,1,0,1.0,1.0,True,goal_inventory_complete,115827,12,34,away,34,24.0,17.0,,11.0,2.0,,10.0,4.0,,,9.0,19.0,2.0
+2024-25,1,2444470,9x16f7izg27mw8l6rxtehfitw,2024-08-16,Man Utd,Fulham,1,0,1.0,1.0,True,goal_inventory_complete,115827,12,34,home,12,21.0,14.0,,10.0,5.0,,14.0,2.0,1.0,,19.0,20.0,3.0
+2024-25,2,2444471,9xlphha9gt647b84dy64ts8b8,2024-08-17,Arsenal,Wolves,2,0,2.0,2.0,True,goal_inventory_complete,115828,1,38,away,38,19.0,12.0,,17.0,3.0,,9.0,4.0,,,7.0,14.0,6.0
+2024-25,2,2444471,9xlphha9gt647b84dy64ts8b8,2024-08-17,Arsenal,Wolves,2,0,2.0,2.0,True,goal_inventory_complete,115828,1,38,home,1,18.0,13.0,,14.0,6.0,,18.0,3.0,2.0,,8.0,15.0,1.0

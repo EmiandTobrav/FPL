@@ -1,0 +1,9 @@
+{
+  "pilot_fixtures": 12,
+  "later_temporal_fixtures": 12,
+  "explicit_balanced_groups": 194,
+  "explicit_unbalanced_groups": 0,
+  "omitted_team_totals": 46,
+  "individual_player_holdout_accuracy_not_estimated": true,
+  "independent_provider_validation": false
+}

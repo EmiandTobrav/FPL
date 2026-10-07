@@ -1,0 +1,5 @@
+{
+  "player_archive_sha256": "2765b1771493c917ce7c544b01cf3a151e159a818abb889c7fcbd746353eaead",
+  "player_archive_url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_player_stats.parquet",
+  "method": "Preserve explicit counts. Empty cells remain empty. Sums of known nonnegative contributions are lower bounds, not imputed player values."
+}

@@ -1,0 +1,51 @@
+{
+  "stage": "full",
+  "old_open_cells": 258302,
+  "newly_available_cells": 138522,
+  "open_cells": 119780,
+  "old_unique_affected_player_matches": 66087,
+  "unique_affected_player_matches": 63882,
+  "newly_available_by_field": {
+    "won_tackles": 37735,
+    "legacy_net_tackles": 37733,
+    "fouls_won": 29693,
+    "shots_on_target": 27276,
+    "goal_line_clearances": 6085
+  },
+  "source_team_field_groups": 22590,
+  "conservation_group_status": {
+    "explicit_team_total_exhausted": 18400,
+    "missing_or_invalid_team_total": 4158,
+    "unallocated_positive_residual": 30,
+    "aggregate_conflict": 2
+  },
+  "available_player_matches": 13398,
+  "newly_available_player_matches": 2205,
+  "available_complete_fixtures": 119,
+  "newly_available_complete_fixtures": 0,
+  "bonus_ready_fixtures": 0,
+  "quality_cells": 478305,
+  "quality_player_matches": 77198,
+  "unique_open_or_quality_player_matches": 77214,
+  "status_counts": {
+    "external_available": 339783,
+    "fpl_authoritative": 143827,
+    "external_derived": 138522,
+    "missing_data": 81093,
+    "rule_recalculation": 38452,
+    "documented_zero": 17072,
+    "documented_assist_reconstruction": 9681,
+    "approved_reconstruction": 5343,
+    "external_checked": 1240,
+    "external_conflict": 234,
+    "fpl_extract_exception": 1
+  },
+  "newly_available_not_individually_primary_checked": true,
+  "legacy_net_clipping_qualified": false,
+  "independent_provider_validation": false,
+  "raw_fpl_modified": false,
+  "approved_keeper_modified": false,
+  "locked_scoring_modified": false,
+  "full_harmonization_complete": false,
+  "cost_nok": 0
+}

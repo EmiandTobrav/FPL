@@ -1,0 +1,36 @@
+{
+  "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_match_stats.parquet",
+  "sha256": "f70f7e57fd4d59f6d59a562aa4b24193468356efd232e70eaf1d8487e6c9d047",
+  "actual_grain": "player_match_not_team_match",
+  "pilot": [
+    {
+      "field": "totalTackle",
+      "rows": 313,
+      "new_explicit": 118,
+      "equal": 195
+    },
+    {
+      "field": "wonTackle",
+      "rows": 313,
+      "new_explicit": 154,
+      "equal": 159
+    },
+    {
+      "field": "wasFouled",
+      "rows": 313,
+      "new_explicit": 146,
+      "equal": 167
+    },
+    {
+      "field": "clearanceOffLine",
+      "rows": 313,
+      "new_explicit": 310,
+      "equal": 3
+    }
+  ],
+  "decision": "Do not use: the normalized player-match table introduces zeros where pinned raw counters are absent. The inspected published code did not establish observational provenance for those zeros. Official team conservation provides explicit evidence instead.",
+  "code_checked": [
+    "https://github.com/peteowen1/pannadata/blob/8caf7733c07ab9326f7010f5192de18bdcfd291a/scripts/opta/consolidate_opta.py",
+    "https://github.com/peteowen1/pannadata/blob/8caf7733c07ab9326f7010f5192de18bdcfd291a/scripts/opta/build_player_profiles.py"
+  ]
+}

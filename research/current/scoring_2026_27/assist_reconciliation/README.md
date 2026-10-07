@@ -1,7 +1,7 @@
 # Assist reconciliation and current requirements ledger
 
 7 October 2026. Continues draft PR #1 from `482b86d`.
-**This directory is now the current consolidated requirements ledger.** The
+**Latest consolidated requirements: [bulk_reconciliation/](../bulk_reconciliation/README.md).** This directory preserves the assist reconciliation snapshot. The
 historical FPL authority policy in `../fpl_authority/` remains in force.
 
 The four requested work stages are implemented: evidence-based target rules,

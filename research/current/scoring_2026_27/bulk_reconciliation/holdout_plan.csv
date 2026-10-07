@@ -1,0 +1,13 @@
+season,fixture,fixture_code,match_id,date,home,away,home_score,away_score,expected_goals,source_goal_events,goal_count_matches_score,coverage_status,pulse_id,home_primary_id,away_primary_id
+2019-20,379,1060080,8noaxp9krlu079poe97on9w8a,2020-07-26,Southampton,Sheffield Utd,3,1,4.0,4.0,True,goal_inventory_complete,46983,20,18
+2019-20,380,1060081,8o064mhxvby1449t08yirp6y2,2020-07-26,West Ham,Aston Villa,1,1,2.0,2.0,True,goal_inventory_complete,46984,25,2
+2020-21,377,2128664,94dlio5tgg5mar4y0p9ggdjx0,2021-05-23,West Ham,Southampton,3,0,3.0,3.0,True,goal_inventory_complete,59274,25,20
+2020-21,378,2128665,94gjjs7zfy8yuwuqvwo9jq2hg,2021-05-23,Wolves,Man Utd,1,2,3.0,3.0,True,goal_inventory_complete,59275,38,12
+2021-22,379,2210649,ew3gjwasqfowc0cyimi3akzdg,2022-05-22,Man City,Aston Villa,3,2,5.0,5.0,True,goal_inventory_complete,66720,11,2
+2021-22,380,2210650,ew92044hbj98z55l8rxc6eqz8,2022-05-22,Norwich,Spurs,0,5,5.0,5.0,True,goal_inventory_complete,66721,14,21
+2022-23,379,2293188,8d91bnpqvzq5w4j4sice62i38,2023-05-28,Man Utd,Fulham,2,1,3.0,3.0,True,goal_inventory_complete,75289,12,34
+2022-23,380,2293189,8dcpa3h5ct098c9huu7k5uqdw,2023-05-28,Southampton,Liverpool,4,4,8.0,8.0,True,goal_inventory_complete,75290,20,10
+2023-24,379,2367916,eqzazn9mgdkxfmz4eq7tdv0no,2024-05-19,Man City,West Ham,3,1,4.0,4.0,True,goal_inventory_complete,93699,11,25
+2023-24,380,2367917,er8a46kqojgwtslqc8k3827f8,2024-05-19,Sheffield Utd,Spurs,0,3,3.0,3.0,True,goal_inventory_complete,93700,18,21
+2024-25,379,2444848,e7i2wj9yoz8oc8w6kaknkt3bo,2025-05-25,Spurs,Brighton,1,4,5.0,5.0,True,goal_inventory_complete,116205,21,131
+2024-25,380,2444849,e7y2hbbz0d91khvu418gzrrbo,2025-05-25,Wolves,Brentford,1,1,2.0,2.0,True,goal_inventory_complete,116206,38,130

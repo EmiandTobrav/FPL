@@ -1,0 +1,11 @@
+{
+  "method": "Nonnegative sum conservation on explicit same-definition team totals. Missing team totals do not certify anything. Residual >0 is not allocated to a player. Explicit zero total tackles implies zero won and zero signed net. Existing conflicts are never overwritten.",
+  "controls": "12 initial pilot fixtures across six seasons; 12 later-date fixtures preselected before data collection for temporal confirmation. No universal zero-omission rule.",
+  "acceptance": "Apply conservation only to individual team/field groups with valid integers and exact sum equality. Reject missing totals and all residuals/conflicts. Field mapping must agree on pilot and temporal checks; shared Opta ancestry is not independent-provider validation.",
+  "frozen": {
+    "rules.py": "d99192f1542258e7d5d4f3a97332333ef79d17db3a64d72b588ce09fcd6bcea9",
+    "probe.py": "780a90e711c5569ce5e1bd8c60ceccc3512d4a3365b5c4ac63546ffd3d2d2b1b",
+    "pilot_plan.csv": "13d2cd8b57ee7e39a8408bbb0609453e2f779a37af0d83857838925c6e99d7d1",
+    "holdout_plan.csv": "e6693ca5ad8f644c7d4996f8645f59a0a12aa7bf15de8236ba568c42fe9f6642"
+  }
+}

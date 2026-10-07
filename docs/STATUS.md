@@ -1,10 +1,47 @@
 # Fortsett her
 
-Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
+Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
+
+## Masseavklaring fra eksplisitte totaler – 8. oktober 2026
+
+**Gjeldende restliste: [bulk_reconciliation/](../research/current/scoring_2026_27/bulk_reconciliation/README.md).**
+Arbeidsrekkefølgen med store feltgrupper  liten kildeprøve  masseberegning og
+måling av komplette spillerkamper/kamper er gjennomført.
+
+**138 522 feltkrav er gjort tilgjengelige (53.6 % av forrige rest).**
+Ny rest: **119 780 feltkrav i 63 882 unike spillerkamper**.
+Taklinger  frispark vunnet  skudd på mål og mållinjeklareringer avledes bare fra
+eksplisitte foreldreverdier eller komplette summer mot offisielle lagtotaler.
+Tom lagtotal  positiv restsum eller kildeavvik gir ingen automatisk null.
+Gammel netto taklingsteller beholdes signert; BPS-klipping er fortsatt uavklart.
+
+2 280 offisielle kampsvar er hentet for 2019/20–2024/25. Tolv små prøvekampers
+resultater ble bekreftet på tolv separat valgte senere kamper: 194 eksplisitte
+lag-/feltsammenligninger stemmer  ingen avvik. Dette er kontroll av summer og
+feltdefinisjoner  ikke et estimat for individuell spillerpresisjon eller en
+uavhengig Opta-leverandørtest. Hver eneste lag-/feltgruppe kontrolleres før bruk.
+Tre moteksempler avviser en snarvei for mållinjeklareringer fra klareringer og
+blokkeringer. Normaliserte nuller fra et alternativt arkiv er heller ikke brukt.
+
+**2 205 nye spillerkamper har komplett tallgrunnlag**  totalt 13 398.
+**0 nye kamper har komplett tallgrunnlag**  totalt 119.
+Dette er tilgjengelige innganger  ikke nye godkjente poeng-/BPS-/bonusetiketter.
+Ingen kamper får ny ferdig bonusberegning i denne fasen. Globale scorings- og
+kvalifiseringskrav beholdes separat.
+
+478 305 eksterne verdier har fortsatt kildekvalitetsforbehold.
+Dette er ikke like mange manuelle oppgaver: kontroll av alle 775 248 kravrader
+kombineres med grupper etter felt/sesong og egne avvikslister. Unionen av åpne
+krav og kvalitetsforbehold er 77 214 spillerkamper  uten dobbelttelling.
+Rå FPL  alle assistavgjørelser  keeperverdier og låste poeng/BPS/bonus/modeller/
+benchmark er uendret. Ingen main-merge eller betalte data.
+24 nye og 145 eksisterende fokuserte tester består. Alle 2 280 råsvar er
+hashkontrollert; 2 332 data-/kontroll-/evidensfiler er identiske ved lokal
+omkjøring uten nettinnhenting. Full repository-test og GitHub CI er ikke verifisert.
 
 ## Assists: fire arbeidssteg gjennomført – 7. oktober 2026
 
-**Gjeldende restliste: [assist_reconciliation/](../research/current/scoring_2026_27/assist_reconciliation/README.md).**
+**Forrige restliste: [assist_reconciliation/](../research/current/scoring_2026_27/assist_reconciliation/README.md).**
 Regelvurdering, separat kontrollutvalg, historisk målkjøring og aggregering til
 spillerkamper er nå gjennomført. Manglende årsaksdata betyr fortsatt uavklart;
 full harmonisering av poeng/BPS/bonus er ikke ferdig.
