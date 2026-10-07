@@ -1,0 +1,17 @@
+{
+  "controls": 10,
+  "original_controls": 6,
+  "additional_cases": 4,
+  "additional_matches": 3,
+  "annotated_rule_consistency_correct": 10,
+  "raw_decisions": 3,
+  "raw_unresolved": 7,
+  "raw_decisions_matching_official": 3,
+  "raw_positive_decisions": 0,
+  "new_historical_assist_labels": 0,
+  "existing_official_additions_preserved": 4,
+  "independent_holdout": false,
+  "automatic_full_history_rescoring_ready": false,
+  "locked_labels_modified": false,
+  "keeper_values_modified": false
+}

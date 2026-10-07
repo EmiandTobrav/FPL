@@ -1,0 +1,85 @@
+{
+  "base_commit": "e8677041fdd13fc8e516378a72dad0e0c7547904",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6677,
+      "sha256": "20d21d3a3418407fe093150d4e26bb620f903d5cb01acf4afd0a02597b4c5049"
+    },
+    {
+      "path": "episode_events.csv.gz",
+      "bytes": 4077,
+      "sha256": "c27dd1818256d3000649753cb5213eb1d2f77aea90c17289d92b12d968252d89"
+    },
+    {
+      "path": "evidence.json",
+      "bytes": 22626,
+      "sha256": "2ed225d0792e158e0224073b55aca997e52887ac20df0bf653e8db3a94298336"
+    },
+    {
+      "path": "extract.py",
+      "bytes": 5885,
+      "sha256": "eaedb770c2d35d883c843a2a60b766ebfe44be0f548aad400cb3d1ca5e11280f"
+    },
+    {
+      "path": "fact_provenance.csv",
+      "bytes": 14828,
+      "sha256": "325373db0c7e8a88bc58b93d1ca147d53bd34b1f41a8e7010268a27d7606d0ba"
+    },
+    {
+      "path": "findings.json",
+      "bytes": 495,
+      "sha256": "229967147d451aa9bafd063f108ce5f1a5390a8fbb114c90fcc57d29f254e451"
+    },
+    {
+      "path": "inputs/cases.json",
+      "bytes": 4988,
+      "sha256": "03906e1af7c8ce7c495afde67e44ec8c959194aa7fe060e316945a93205e6920"
+    },
+    {
+      "path": "inputs/challenge_match_events.csv.gz",
+      "bytes": 160657,
+      "sha256": "5e29e3f8534e995049c09602a4030042d2f4c3a344140197fd338ea9075b4840"
+    },
+    {
+      "path": "inputs/official_facts.json",
+      "bytes": 6582,
+      "sha256": "66d0ea63bed73a7962354ba68f2c2644ca4da9f5f7d0464c1f51115aac0f53a3"
+    },
+    {
+      "path": "prepare_inputs.py",
+      "bytes": 847,
+      "sha256": "606d1a8ee8ddabfafb6f4561fe374665677c8207c6c2bed4e182884c31c88dc9"
+    },
+    {
+      "path": "results.csv",
+      "bytes": 3600,
+      "sha256": "4e943e7099e1a1abcdfb113fda563f355452c52c889c1cc9957e8fdb93356815"
+    },
+    {
+      "path": "rules.py",
+      "bytes": 3362,
+      "sha256": "46cb1ba1ff0ee687277ce83390e5d935ca692bc6579c1aa9ec180a6b12717f04"
+    },
+    {
+      "path": "run.py",
+      "bytes": 3538,
+      "sha256": "62d308372f4541400a5c59ad4a303e8c084a30fe5e2860d3db650f1a63e786c8"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 2713,
+      "sha256": "4733665ebe25b873d266227777a484d4e915253a3f992fb4ba67304f06a76bab"
+    },
+    {
+      "path": "test_rules.py",
+      "bytes": 4964,
+      "sha256": "0e41fe38229d93b9406db5137a178f6c6c7e0e45df395dbbc93c15e8371778bc"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 686,
+      "sha256": "2e2a20043eec8b9c6d346dcfb2990783f865a7b4486bfa58ea5122609dc7426d"
+    }
+  ]
+}

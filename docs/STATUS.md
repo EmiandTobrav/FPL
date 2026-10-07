@@ -2,6 +2,26 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Assistregler og hendelseskontroll – 7. oktober 2026
+
+[Regelkontroll med kildegrenser](../research/current/scoring_2026_27/assist_rules/README.md)
+er lagt til på eksisterende PR #1, videreført fra `e867704`.
+Seks tidligere eksempler og fire ekstra offisielle avgjørelser er kontrollert.
+Reglene gjenskaper alle ti når offisielt beskrevne situasjonsfakta legges inn;
+dette er utviklingskontroller, ikke ti automatiske prediksjoner eller en ny
+uavhengig test. Råhendelsene alene støtter tre negative avgjørelser. Sju forblir
+uavklart, og ingen nye historiske assistetiketter er godkjent.
+
+Konkrete sperrer: mottakssted er forskjellig fra skuddsted; luftduell/klarering
+kan beskrive samme berøring; taklinger/brytninger kan være klassifisert som
+pasninger; VAR-forsinkelse og perioder må bevares. Qualifier 384 forekommer i
+to offisielt beskrevne pasningsberøringer, men er ikke godkjent som universell
+kodeoversettelse. Fullstendige hendelser fra de tre nye eksempelkampene er lagret.
+17 tester består, og offline-gjenkjøring er byte-identisk. Neste arbeid er
+verifiserbar berøringsklassifisering, mottaks-/intensjonsdata og kandidatvalg før
+reglene kan kjøres som eksakt historisk beregning. Keeperstatus er uendret:
+5 343 / 5 381, med 38 uløste. Poeng, BPS, bonus, modeller og benchmark er uendret.
+
 ## BPS-kildeaudit og assistgrunnlag – 7. oktober 2026
 
 Arbeidet er videreført på PR #1-grenen fra `dfa2ff30b36e33c4b16f5402d25af9337266af3f`,

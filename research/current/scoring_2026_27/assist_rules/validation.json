@@ -1,0 +1,15 @@
+{
+  "tests_passed": 17,
+  "offline_replay_byte_identical": true,
+  "result_sha256": {
+    "results.csv": "4e943e7099e1a1abcdfb113fda563f355452c52c889c1cc9957e8fdb93356815",
+    "fact_provenance.csv": "325373db0c7e8a88bc58b93d1ca147d53bd34b1f41a8e7010268a27d7606d0ba",
+    "evidence.json": "2ed225d0792e158e0224073b55aca997e52887ac20df0bf653e8db3a94298336",
+    "episode_events.csv.gz": "c27dd1818256d3000649753cb5213eb1d2f77aea90c17289d92b12d968252d89",
+    "findings.json": "229967147d451aa9bafd063f108ce5f1a5390a8fbb114c90fcc57d29f254e451"
+  },
+  "previous_bps_manifest_unchanged": true,
+  "compressed_files_valid": true,
+  "keeper_pipeline_rerun": false,
+  "models_trained": false
+}

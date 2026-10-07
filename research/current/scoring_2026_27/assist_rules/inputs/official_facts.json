@@ -1,0 +1,166 @@
+{
+  "438234_2024": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "pass",
+      "defensive_touches_min": 1,
+      "defensive_touches_max": 1,
+      "received_inside_box": true
+    },
+    "source_url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "441164_2024": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "pass",
+      "defensive_touches_min": 1,
+      "defensive_touches_max": 1,
+      "received_inside_box": true
+    },
+    "source_url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "503139_2024": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "pass",
+      "defensive_touches_min": 1,
+      "defensive_touches_max": 1,
+      "received_inside_box": false,
+      "intended_for_scorer": true
+    },
+    "source_url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "111234_2024": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "handball",
+      "conversion_direct": true,
+      "action_directly_caused_handball": true
+    },
+    "source_url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "141746_2024": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "pass",
+      "defensive_touches_min": 1,
+      "defensive_touches_max": 1,
+      "received_inside_box": false,
+      "intended_for_scorer": false
+    },
+    "source_url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "430871_2024": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "pass",
+      "defensive_touches_min": 2,
+      "defensive_touches_max": 2
+    },
+    "source_url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "60307_2025": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "pass",
+      "defensive_touches_min": 1,
+      "defensive_touches_max": 1,
+      "received_inside_box": true
+    },
+    "source_url": "https://www.premierleague.com/en/news/4655693",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "207283_2025": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": false,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": true,
+      "route": "pass",
+      "defensive_touches_min": 1,
+      "defensive_touches_max": 1,
+      "received_inside_box": true
+    },
+    "source_url": "https://www.premierleague.com/en/news/4655693",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "437730_2025": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": true,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": false,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "pass"
+    },
+    "source_url": "https://www.premierleague.com/en/news/4655693",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  },
+  "438234_2025": {
+    "facts": {
+      "own_goal": false,
+      "candidate_is_scorer": false,
+      "scorer_own_rebound": true,
+      "scorer_lost_and_regained": false,
+      "candidate_last_attacking_touch": true,
+      "sequence_verified": true,
+      "defensive_touch_is_pass": false,
+      "route": "touch"
+    },
+    "source_url": "https://www.premierleague.com/en/news/4655693",
+    "scope": "Facts transcribed from official scenario descriptions; development consistency check, not automatic extraction or independent accuracy."
+  }
+}

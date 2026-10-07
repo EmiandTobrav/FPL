@@ -1,0 +1,78 @@
+{
+  "base_commit": "e8677041fdd13fc8e516378a72dad0e0c7547904",
+  "retrieved_date": "2026-10-07",
+  "target_rules": "2026/27",
+  "files": [
+    {
+      "path": "bps_recovery/inputs/official_assist_match_events.csv.gz",
+      "bytes": 346392,
+      "sha256": "a27a5d312759fce6332c58b6e7ac2e476b284db98facea04650b67d5eebea097",
+      "committed_here": false
+    },
+    {
+      "path": "acquisition_followup/assist_decisions.csv",
+      "bytes": 2065,
+      "sha256": "2d78672c7a97a207e505381ee431516548b824326261921aba9b02fc1014aab5",
+      "committed_here": false
+    },
+    {
+      "path": "acquisition_followup/raw/rules_current.js",
+      "bytes": 57216,
+      "sha256": "47d2a1072593effbf013afc1913ce61d115340f81e7ee90dbec12ecec0ae6c55",
+      "committed_here": false
+    },
+    {
+      "path": "assist_rules/inputs/challenge_match_events.csv.gz",
+      "bytes": 160657,
+      "sha256": "5e29e3f8534e995049c09602a4030042d2f4c3a344140197fd338ea9075b4840",
+      "committed_here": true
+    }
+  ],
+  "archive": {
+    "url": "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+    "asset": "events_EPL.parquet",
+    "sha256": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+    "fresh_download": false
+  },
+  "official_sources": [
+    {
+      "url": "https://www.premierleague.com/en/news/4661029",
+      "purpose": "Target assist rules cross-checked with prior rule component"
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+      "purpose": "Six previously recorded official examples"
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4655693",
+      "purpose": "Gross, Jensen, Semenyo and Marmoush goal-specific decisions"
+    },
+    {
+      "url": "https://www.statsperform.com/opta-event-definitions/",
+      "purpose": "Event meaning; physical contacts versus auxiliary rows"
+    }
+  ],
+  "parser_reference": {
+    "repository": "PySport/kloppy",
+    "commit": "11822569caa4490e99321be54afc3919ad6b417a",
+    "files": [
+      {
+        "path": "kloppy/infra/serializers/event/statsperform/deserializer.py",
+        "git_blob_sha": "6b5e5673534e42d393aa7e534983574a6a3a3d16"
+      },
+      {
+        "path": "kloppy/domain/models/pitch.py",
+        "git_blob_sha": "c1b485899505d13f0f8f296056ad8ebc995692b1"
+      }
+    ]
+  },
+  "unresolved_schema": [
+    {
+      "qualifier": "384",
+      "hypothesis": "pass-type contact",
+      "support": "Present in both the Gross tackle and Thiaw interception officially described as pass-type touches",
+      "status": "not used as an automatic semantic mapping; no authoritative numeric dictionary retrieved"
+    }
+  ],
+  "costs_nok": 0
+}
