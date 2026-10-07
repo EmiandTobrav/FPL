@@ -1,0 +1,13 @@
+season,fixture,code,field,revised_event_id,ordinary_assist_candidate_code,status,additional_missing_cell,reason
+2019-20,115,195851,assists_2026_27,2164521835,95658.0,event_dependency_review,False,Re-evaluate the revised goal under target assist rules; no automatic historical own-goal assist carry-over.
+2019-20,115,195851,shots_on_target,2164521835,,event_dependency_review,False,Check revised shot attribution against the linked event; do not infer a new total.
+2019-20,115,195851,winning_goal,2164521835,,event_dependency_review,False,Check winning-goal attribution against the revised ordered scoring timeline.
+2022-23,265,109345,assists_2026_27,2520177145,,event_dependency_review,False,Re-evaluate the revised goal under target assist rules; no automatic historical own-goal assist carry-over.
+2022-23,265,109345,shots_on_target,2520177145,,event_dependency_review,False,Check revised shot attribution against the linked event; do not infer a new total.
+2022-23,265,109345,winning_goal,2520177145,,event_dependency_review,False,Check winning-goal attribution against the revised ordered scoring timeline.
+2023-24,201,226597,assists_2026_27,2637213413,223340.0,event_dependency_review,False,Re-evaluate the revised goal under target assist rules; no automatic historical own-goal assist carry-over.
+2023-24,201,226597,shots_on_target,2637213413,,event_dependency_review,False,Check revised shot attribution against the linked event; do not infer a new total.
+2023-24,201,226597,winning_goal,2637213413,,event_dependency_review,False,Check winning-goal attribution against the revised ordered scoring timeline.
+2024-25,83,216646,assists_2026_27,2739189475,440089.0,event_dependency_review,False,Re-evaluate the revised goal under target assist rules; no automatic historical own-goal assist carry-over.
+2024-25,83,216646,shots_on_target,2739189475,,event_dependency_review,False,Check revised shot attribution against the linked event; do not infer a new total.
+2024-25,83,216646,winning_goal,2739189475,,event_dependency_review,False,Check winning-goal attribution against the revised ordered scoring timeline.

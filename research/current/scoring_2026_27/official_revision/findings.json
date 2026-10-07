@@ -1,0 +1,20 @@
+{
+  "policy": "final_official_revisions_with_2026_27_rules",
+  "paired_goal_revisions": 4,
+  "corrected_counter_cells": 8,
+  "corrected_unique_player_matches": 8,
+  "closed_goal_conflicts": 4,
+  "proven_minute_components": 1,
+  "exact_minute_counts_recovered": 0,
+  "new_scoring_requirements_discharged": 5,
+  "remaining_scoring_requirement_cells": 880709,
+  "remaining_raw_stat_or_rule_cells": 881632,
+  "remaining_unique_player_matches": 77280,
+  "event_dependency_reviews": 12,
+  "event_dependencies_are_additional_missing_cells": false,
+  "full_bps_or_bonus_labels_produced": 0,
+  "locked_labels_modified": false,
+  "keeper_values_modified": false,
+  "full_historical_harmonization_complete": false,
+  "cost_nok": 0
+}

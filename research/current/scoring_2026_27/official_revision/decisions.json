@@ -1,0 +1,66 @@
+{
+  "policy": "final_official_revisions_with_2026_27_rules",
+  "authorized_by": "User explicit choice in this task on 2026-10-07",
+  "historical_fpl_cutoff_replay": false,
+  "cases": [
+    {
+      "season": "2019-20",
+      "fixture": 115,
+      "scorer_code": 195851,
+      "former_own_goal_code": 66242,
+      "ordinary_assist_candidate_code": 95658,
+      "revised_event_id": "2164521835",
+      "source_url": "https://www.premierleague.com/en/news/1494715",
+      "published": "2019-11-13",
+      "accessed": "2026-10-07",
+      "evidence_paraphrase": "Premier League appeals panel awards the former Davy Propper own goal to Scott McTominay."
+    },
+    {
+      "season": "2022-23",
+      "fixture": 265,
+      "scorer_code": 109345,
+      "former_own_goal_code": 221399,
+      "ordinary_assist_candidate_code": null,
+      "revised_event_id": "2520177145",
+      "source_url": "https://www.premierleague.com/en/news/3110528",
+      "published": "2023-03-15",
+      "accessed": "2026-10-07",
+      "evidence_paraphrase": "Premier League appeal changes Jack Harrison own goal to Solly March goal. Historical FPL points remain unchanged."
+    },
+    {
+      "season": "2023-24",
+      "fixture": 201,
+      "scorer_code": 226597,
+      "former_own_goal_code": 172649,
+      "ordinary_assist_candidate_code": 223340,
+      "revised_event_id": "2637213413",
+      "source_url": "https://www.premierleague.com/en/news/3868439",
+      "published": "2024-01-26",
+      "accessed": "2026-10-07",
+      "evidence_paraphrase": "Premier League appeal awards the Dean Henderson own goal to Gabriel. Historical FPL points remain unchanged."
+    },
+    {
+      "season": "2024-25",
+      "fixture": 83,
+      "scorer_code": 216646,
+      "former_own_goal_code": 232228,
+      "ordinary_assist_candidate_code": 440089,
+      "revised_event_id": "2739189475",
+      "source_url": "https://www.premierleague.com/en/news/4159875",
+      "published": "2024-10-29",
+      "accessed": "2026-10-07",
+      "evidence_paraphrase": "Premier League appeal awards Harry Clarke own goal to Yoane Wissa and ordinary assist to Mikkel Damsgaard; historical FPL points unchanged."
+    }
+  ],
+  "minute_case": {
+    "season": "2024-25",
+    "fixture": 239,
+    "code": 487117,
+    "source_url": "https://www.brightonandhovealbion.com/media-article/albion-concede-seven-against-nottingham-forest",
+    "published": "2025-02-01",
+    "accessed": "2026-10-07",
+    "evidence_paraphrase": "Club report lists Ferguson replacing Welbeck at 72 minutes against Nottingham Forest. This proves participation below 60 regulation minutes, not an exact integer minute count.",
+    "accepted_minute_lower": 1,
+    "accepted_minute_upper": 59
+  }
+}

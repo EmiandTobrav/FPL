@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "project/data/2019-20_fixtures.csv.gz": "6afa41dd231e013362646459124f6fe4cc1cbd327c74e6dcb098e1d2e3561e33",
+    "project/data/2019-20_gw.csv.gz": "1d8e3e5b6b65461170e3c4e18cc47ace51db113f82aee7a108e8ef6445f7fd68",
+    "project/data/2019-20_players.csv.gz": "9b442062e5fbf7e4a0acfad8255d2a68912fd0917db97ffbe2b7fa72f081cbb4",
+    "project/data/2022-23_fixtures.csv.gz": "1ee9426018d6a7d03a4caaa3acf1106e184706f740c4439ee6108e515972e8a6",
+    "project/data/2022-23_gw.csv.gz": "6d6418ea9a3f88fd872a340a2f0764b196239f3fcb0a5b4afa4a06c7eb7e2331",
+    "project/data/2022-23_players.csv.gz": "0f3460ed47032a5099ebaff1bb5cec28a487f8193ca68d614e820aa366016468",
+    "project/data/2023-24_fixtures.csv.gz": "c20fba7cc5dbe98ef08fc16d1e8e7648d151b8070c8fadbef2cb6d0cc2001d30",
+    "project/data/2023-24_gw.csv.gz": "ff0a23bea4fbdfab3309b3d7353d4f8f9ad239c498d001876ba6c9d912019c77",
+    "project/data/2023-24_players.csv.gz": "e7b9641f732b6e8c09c40019506298dbd04f321be221b1396fe69b54e113ab02",
+    "project/data/2024-25_fixtures.csv.gz": "9649822e2581422840b1d46d7e57ea4d3673bb8089faae3c8b5a6d4b802354d3",
+    "project/data/2024-25_gw.csv.gz": "642377cbfc91a08cb2fab627eea8a0b926041cc735a3a0080229feb7c4a8a451",
+    "project/data/2024-25_players.csv.gz": "4f0d412168228b736714cb4b1bcbaa196c83dab939c43433bdb0cadca95618ed",
+    "scoring_2026_27/bps_recovery/goal_review_queue.csv.gz": "d3d700985ff447eafef852a7a4bb20dbda00594acf1040ad2b9bf5657c616ad6",
+    "scoring_2026_27/bps_recovery/inputs/counts-2019-20.csv.gz": "54f73b5082638a93790043a8bda624c15f3be4496b264c5f6d57dd92c670d5f2",
+    "scoring_2026_27/bps_recovery/inputs/counts-2022-23.csv.gz": "373373b22566ab3c1cbe61b545ca30b44c6aed8870a2c680a0a4469d4edd8eb1",
+    "scoring_2026_27/bps_recovery/inputs/counts-2023-24.csv.gz": "a418af92304df39b76f983251c56b21757e8a73a5c93eae94c91bf6c807592e3",
+    "scoring_2026_27/bps_recovery/inputs/counts-2024-25.csv.gz": "844f1e3de089c94506cf815c74bff2c653b1c08e1b695e385e59f6e3eac10db2",
+    "scoring_2026_27/keeper_recovery/keeper_counts.csv.gz": "18e453a1087b0dc317ebabc3723e13f23f5af5ce728f712f17fcaeff2018732f",
+    "scoring_2026_27/official_revision/build.py": "85150ad7bbae495a6fb24e199027ca0a0c1cd8fe2f044c392f50f6ad5eebe1f9",
+    "scoring_2026_27/official_revision/decisions.json": "16e5ff7289966f99e5a2b2aea73ea10ef348b699c6bbe4bbcbe83fda742e524f",
+    "scoring_2026_27/remaining_ledger/field_ledger.csv.gz": "172cf8c0e680ee3d5ab7c7943e1046e732a64f328fd0d006d49910a81e7016b8",
+    "scoring_2026_27/remaining_ledger/player_matches.csv.gz": "52d9db2ea7197d280c729fdbf3994d86ce4448393a8dd34977dd81cdaeeaa4db",
+    "scoring_2026_27/resolution_priority/resolution_queue.csv.gz": "f5ebb12e99140d17108507d01482821e6dbda025511c9ea6d857b51863753994",
+    "scoring_2026_27/rules_2026_27.json": "ff0927179422b0fea3c4ebf0a38b0206792c74a5a4dad5f22899ecb89aab87c9"
+  }
+}

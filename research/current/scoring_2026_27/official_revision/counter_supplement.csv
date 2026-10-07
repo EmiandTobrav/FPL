@@ -1,0 +1,9 @@
+season,fixture,code,name,field,historical_fpl_value,revised_value,previous_status,status,source_url,revised_event_id,reason
+2019-20,115,195851,Scott McTominay,goals,0,1,source_conflict,documented_value,https://www.premierleague.com/en/news/1494715,2164521835,reviewed_official_appeal_paired_goal_transfer
+2019-20,115,66242,Davy Pröpper,own_goals,1,0,documented_value,documented_zero,https://www.premierleague.com/en/news/1494715,2164521835,reviewed_official_appeal_paired_goal_transfer
+2022-23,265,109345,Solly March,goals,0,1,source_conflict,documented_value,https://www.premierleague.com/en/news/3110528,2520177145,reviewed_official_appeal_paired_goal_transfer
+2022-23,265,221399,Jack Harrison,own_goals,1,0,documented_value,documented_zero,https://www.premierleague.com/en/news/3110528,2520177145,reviewed_official_appeal_paired_goal_transfer
+2023-24,201,226597,Gabriel,goals,1,2,source_conflict,documented_value,https://www.premierleague.com/en/news/3868439,2637213413,reviewed_official_appeal_paired_goal_transfer
+2023-24,201,172649,Dean Henderson,own_goals,1,0,documented_value,documented_zero,https://www.premierleague.com/en/news/3868439,2637213413,reviewed_official_appeal_paired_goal_transfer
+2024-25,83,216646,Yoane Wissa,goals,1,2,source_conflict,documented_value,https://www.premierleague.com/en/news/4159875,2739189475,reviewed_official_appeal_paired_goal_transfer
+2024-25,83,232228,Harry Clarke,own_goals,1,0,documented_value,documented_zero,https://www.premierleague.com/en/news/4159875,2739189475,reviewed_official_appeal_paired_goal_transfer

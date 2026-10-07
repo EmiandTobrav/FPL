@@ -1,0 +1,12 @@
+season,fixture,code,role,name,historical_fpl_goals,historical_fpl_own_goals,historical_fpl_assists,archive_goals,archive_own_goals,archive_ordinary_assists,target_assists_2026_27
+2019-20,115,195851,revised_scorer,Scott McTominay,0,0,1,1.0,,,
+2019-20,115,66242,former_own_goal,Davy Pröpper,0,1,0,,,,
+2019-20,115,95658,ordinary_assist_candidate,Harry Maguire,0,0,0,,,1.0,
+2022-23,265,109345,revised_scorer,Solly March,0,0,0,1.0,,,
+2022-23,265,221399,former_own_goal,Jack Harrison,1,1,1,1.0,,1.0,
+2023-24,201,226597,revised_scorer,Gabriel,1,0,1,2.0,,,
+2023-24,201,172649,former_own_goal,Dean Henderson,0,1,0,,,,
+2023-24,201,223340,ordinary_assist_candidate,Bukayo Saka,0,0,0,,,1.0,
+2024-25,83,216646,revised_scorer,Yoane Wissa,1,0,1,2.0,,,
+2024-25,83,232228,former_own_goal,Harry Clarke,0,1,0,,,,
+2024-25,83,440089,ordinary_assist_candidate,Mikkel Damsgaard,0,0,0,,,1.0,

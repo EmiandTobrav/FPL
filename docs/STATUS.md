@@ -2,6 +2,37 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Offisielle målrettinger og minuttbevis – 7. oktober 2026
+
+[Nyeste restliste og revisjonstillegg](../research/current/scoring_2026_27/official_revision/README.md)
+viderefører `4883ccc`. Brukeren har valgt **endelig korrigerte offisielle
+hendelser omregnet etter 2026/27-reglene**. Historiske FPL-låsefrister
+rekonstrueres ikke, og historiske FPL-verdier bevares separat.
+
+Alle fire målkonfliktene er forklart av offisielle omgjøringer. McTominay,
+March, Gabriel og Wissa får ett mål mer; tilhørende selvmål hos Pröpper,
+Harrison, Henderson og Harry Clarke fjernes i samme korreksjon. Dette gir
+**åtte korrigerte tellere i åtte spillerkamper, men fire lukkede konflikter**.
+Begge lagenes målsummer er kontrollert mot sluttresultatet. Ingen automatisk
+videreføring av historiske own-goal-assists; målregel-assists er fortsatt åpne.
+
+Brightons egen rapport beviser Fergusons innhopp mot Forest 01.02.2025.
+Null minutter avvises; **1 grunnpoeng og 3 BPS i minuttkomponenten** er bevist.
+Eksakt minuttall forblir ukjent. 710 av de opprinnelige 711 poengfølsomme
+minuttkonfliktene gjenstår. Dette er neste prioritet.
+
+Ny kø har **880 709 åpne poengbehov**, **881 632 råstatistikk-/regelbehov**
+og **77 280 unike berørte spillerkamper**. Felt-, spillerkamp- og kampfiler
+bruker samme nøkler uten dobbelttelling. Tolv hendelsesavhengigheter er
+kontroller av assists/skudd/kampvinnende mål, ikke ekstra manglende felt.
+Tidligere køer nedenfor er historiske øyeblikksbilder; bruk `official_revision/`
+som nyeste kø sammen med de eksplisitte teller- og minuttilleggene.
+
+12 nye tester og 36 eksisterende fokuserte tester består. To bygg gir
+identiske resultatfiler. Keeperverdier, låste poeng/BPS/bonus/modeller og
+benchmark er uendret. Ingen komplette nye BPS-/bonusetiketter eller holdout.
+Full harmonisering er fortsatt uferdig. Kostnad 0 NOK.
+
 ## Prioritert avklaringskø og 1 194 avklarte poengbehov – 7. oktober 2026
 
 [Ny prioritering](../research/current/scoring_2026_27/resolution_priority/README.md)
