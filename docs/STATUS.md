@@ -1,6 +1,10 @@
 # Fortsett her
 
-Oppdatert 6. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
+Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
+
+## Datagap reparert 7. oktober 2026
+
+[Reparasjoner og usikkerhet](../research/current/rescoring_2025/gap_repair/README.md): tre feil i ID-kartet rettet, 59 duplikatnøkler avgjort fra offisiell kampdato/runde og fire defcon-utfall bevist fra delvise tellinger. Gjenværende aktive utespillerhull: 0 / 0 / 1238 / 119 / 14 i 2019/20–2023/24. Ukjent beholdes som manglende med eksplisitt 0–2-poengsintervall. Alternativ RDS-kilde inneholder samme recovery-data; ingen ekstra kampstatistikk gjenfunnet. Benchmarkens lagrede tellende spillere i GW5–38 har null eksponering mot de gjenværende hullene i 2022/23 og 2023/24; dette gjelder ikke nye lagvalg eller åpningsrundene. Ingen modelltrening, benchmarkendring eller kostnad. Neste: målrettet innhenting fra listen over manglende kamper og felles evaluering med eksplisitt usikkerhet. Eldre statusavsnitt nedenfor er historikk.
 
 ## Historikken utvidet
 

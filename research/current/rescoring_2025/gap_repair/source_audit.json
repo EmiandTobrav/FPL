@@ -1,0 +1,37 @@
+{
+  "base_commit": "a990c287c7b03fc0990e6cdda43c785c63b4d026",
+  "sha256": {
+    "research/current/rescoring_2025/historical_fbref/raw/misc.csv": "0894cfbe4db2606a0521b14dde72d3d0c16fc24633d7a5333bb389a487826c00",
+    "research/current/rescoring_2025/historical_fbref/raw/Master.csv": "1e18222bbbb8bfdf3e7cba49f54ceeabf8bd92c908d84fe63f250103d9f380ca",
+    "research/current/rescoring_2025/historical_fbref/raw/defense.csv": "412b6ea3f1e5481296ca2bb8d24793018c2eb2ecc0f6d834038e7ef7d967cf0b",
+    "research/current/rescoring_2025/gap_repair/raw/misc.rds": "9c8b96b0bf1166c51cd996b0b16eaebfaa633c0981d028feca71d6ea04e738c2",
+    "research/current/rescoring_2025/gap_repair/raw/trace_2022-23.json": "c439a4a8dabbecc6a53f4a2237bd0e51d4861f0613d47fabc8cf9e21a4c3f48a",
+    "research/current/rescoring_2025/gap_repair/raw/trace_2023-24.json": "1b0d15b1e05fd88d2d3d9f824f20f4af5b07c03bdcf63df9f25675a3431a8b94",
+    "research/current/project/data/2019-20_gw.csv": "750dbc03cab3f894152173f6e0a42d1cfa86efd6d8dab7e9b5c6c608c93b72cc",
+    "research/current/project/data/2019-20_players.csv": "6ebf73e7f4fe0d697869a12cbf39ccb1df444c6b9b1be6c02e61677ebbfc243f",
+    "research/current/project/data/2019-20_fixtures.csv": "81851c3c55373c443aa6b7062be85d5710d61ab784239e9810655b343728e0ed",
+    "research/current/project/data/2019-20_teams.csv": "fbe8ae4036e5cb9e05aba4eb029da73036c76e66ee276b007e8296072af11b22",
+    "research/current/project/data/2020-21_gw.csv": "fb2a2bc54b6cfbe835a39183b096b382f7961e3828e7845e9288671cccca3ad8",
+    "research/current/project/data/2020-21_players.csv": "e3aff899fc2486bd96fe5d11d8c8e8c066dea36cc71de2bf8a85e8aa7245ed32",
+    "research/current/project/data/2020-21_fixtures.csv": "75ca4859c7898bff9c73055337651893c041e596462d08935f2a6964c437f65d",
+    "research/current/project/data/2020-21_teams.csv": "0e3b9fdad72feefb88db3b848e4d579020327f4bf9975fa82fb2085dbe7f0fae",
+    "research/current/project/data/2021-22_gw.csv": "29770bbe305feee681f7122c0bd08451783366e0a3a9604194f528a0880f23de",
+    "research/current/project/data/2021-22_players.csv": "78e185fb0b5c81f58c2b89f232358b1097bededc9852d4171edaea2e9d3bd887",
+    "research/current/project/data/2021-22_fixtures.csv": "9fc11cc675ff49dd5b8858211aa5cbe08375e064810536931e0ac38c060dee64",
+    "research/current/project/data/2021-22_teams.csv": "c1dd02ed25fe832ba7bf6ce846ac506a00a0f0babdacb6bf2a011dc9eaa8cfad",
+    "research/current/project/data/2022-23_gw.csv": "b78a6d0456141f9033c32fc4122931baae780ac4a4938683451b1fce7a4fdd15",
+    "research/current/project/data/2022-23_players.csv": "a874c12817bbf4d454e60a5765629742b528d4ad0c2f39f56e4fc89640605f7f",
+    "research/current/project/data/2022-23_fixtures.csv": "e783060da73700d4ec6fd12acec4568524eac8bb3ba3ccd8ce68a374dadba8f8",
+    "research/current/project/data/2022-23_teams.csv": "be6a1fe120a61f9c441a0751ca177c933bcbf234c1d28d49b3cd8827ca18066b",
+    "research/current/project/data/2023-24_gw.csv": "e9c09c8856f1c86b4f920f46ddd5033af83409439dfda53be925df2a3e7c8a9e",
+    "research/current/project/data/2023-24_players.csv": "43d8cf5efb3d901f2499558c40b392b7f0ee22afe28030f36266ad29024c63d9",
+    "research/current/project/data/2023-24_fixtures.csv": "d8521bdbb80edb5141bc17df71bf6026275f2e56fd6a6dc6041b3ae23a39ce6a",
+    "research/current/project/data/2023-24_teams.csv": "7795f091ccea17fda0752cb07b935e1515b09a9d3f924147997cbf28139edd49"
+  },
+  "alternate_rds": {
+    "matched_rows": 81328,
+    "recovery_differences_including_missing": 0,
+    "new_observations": 0
+  },
+  "cost_nok": 0
+}

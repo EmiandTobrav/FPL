@@ -1,0 +1,8 @@
+season,element,fixture,round,position,minutes,total_points,defcon_v2,historical_plus_defcon,quality,defcon_lower,defcon_upper,defcon_shotblocks,total_points_v1,minutes_v1
+2021-22,506,7,1,MID,7,1,0.0,1.0,fbref_provisional,0.0,0.0,,1,7
+2021-22,506,15,2,MID,90,3,0.0,3.0,fbref_provisional,0.0,0.0,,3,90
+2021-22,506,23,3,MID,90,2,2.0,4.0,fbref_provisional,2.0,2.0,,2,90
+2021-22,506,36,4,MID,62,3,0.0,3.0,fbref_provisional,0.0,0.0,,3,62
+2021-22,506,237,24,MID,31,1,0.0,1.0,fbref_provisional,0.0,0.0,,1,31
+2021-22,171,338,34,MID,72,1,2.0,3.0,threshold_proven_with_partial_counts,2.0,2.0,,1,72
+2021-22,421,369,37,MID,90,2,2.0,4.0,threshold_proven_with_partial_counts,2.0,2.0,,2,90
