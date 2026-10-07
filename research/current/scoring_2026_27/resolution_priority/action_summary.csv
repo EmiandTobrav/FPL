@@ -1,0 +1,11 @@
+tier,action,cells,unique_player_matches,fixtures
+0,penalty_split_irrelevant_to_scoring,922,922,786
+0,apply_documented_winner_zero_supplement,272,272,171
+1,reconcile_goal_credit_conflict,4,4,4
+2,reconcile_stat_conflict,826,731,205
+2,reconcile_minutes_scoring_band_change,711,711,484
+3,qualify_sparse_counter_semantics_or_complete_events,805066,77280,2660
+3,complete_goal_assist_adjudication,57288,57288,2510
+3,obtain_remaining_keeper_evidence,38,38,22
+4,minutes_same_candidate_scoring_bands,16649,16649,2660
+4,passes_same_candidate_bps_band,132,81,9

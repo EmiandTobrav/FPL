@@ -1,0 +1,273 @@
+season,fixture,code,name,position,date,home,away,fixture_code,field,value,own_team_goals,opponent_goals,evidence,destination
+2019-20,1,57127,Teemu Pukki,FWD,2019-08-09,Liverpool,Norwich,1059702,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,2,18867,Billy Sharp,FWD,2019-08-10,Bournemouth,Sheffield Utd,1059703,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,2,223911,Chris Mepham,DEF,2019-08-10,Bournemouth,Sheffield Utd,1059703,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,6,122806,John McGinn,MID,2019-08-10,Spurs,Aston Villa,1059707,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,11,44699,Ashley Barnes,FWD,2019-08-17,Arsenal,Burnley,1059712,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,12,230046,Douglas Luiz,MID,2019-08-17,Aston Villa,Bournemouth,1059713,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,13,43020,Javier Hernández,FWD,2019-08-17,Brighton,West Ham,1059714,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,13,116216,Leandro Trossard,MID,2019-08-17,Brighton,West Ham,1059714,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,16,37572,Sergio Agüero,FWD,2019-08-17,Man City,Spurs,1059717,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,16,62974,Erik Lamela,MID,2019-08-17,Man City,Spurs,1059717,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,16,95715,Lucas Moura,MID,2019-08-17,Man City,Spurs,1059717,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,16,103955,Raheem Sterling,MID,2019-08-17,Man City,Spurs,1059717,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,17,50232,Jonjo Shelvey,MID,2019-08-17,Norwich,Newcastle,1059718,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,19,84939,Danny Ings,FWD,2019-08-17,Southampton,Liverpool,1059720,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,20,148225,Anthony Martial,MID,2019-08-19,Wolves,Man Utd,1059721,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,20,171317,Ruben Neves,MID,2019-08-19,Wolves,Man Utd,1059721,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,22,153682,Harry Wilson,MID,2019-08-25,Bournemouth,Man City,1059722,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,24,198849,Lucas Torreira,MID,2019-08-24,Liverpool,Arsenal,1059725,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,25,200617,Daniel James,MID,2019-08-24,Man Utd,Crystal Palace,1059726,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,27,169432,Oliver McBurnie,FWD,2019-08-24,Sheffield Utd,Leicester,1059728,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,29,73426,Andre Gray,FWD,2019-08-24,Watford,West Ham,1059730,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,30,44699,Ashley Barnes,FWD,2019-08-25,Wolves,Burnley,1059731,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,30,102057,Raul Jiménez,FWD,2019-08-25,Wolves,Burnley,1059731,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,31,54694,Pierre-Emerick Aubameyang,FWD,2019-09-01,Arsenal,Spurs,1059732,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,31,59966,Alexandre Lacazette,FWD,2019-09-01,Arsenal,Spurs,1059732,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,31,78830,Harry Kane,FWD,2019-09-01,Arsenal,Spurs,1059732,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,31,80607,Christian Eriksen,MID,2019-09-01,Arsenal,Spurs,1059732,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,35,102057,Raul Jiménez,FWD,2019-09-01,Everton,Wolves,1059736,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,35,107613,Romain Saiss,DEF,2019-09-01,Everton,Wolves,1059736,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,36,75115,Callum Wilson,FWD,2019-08-31,Leicester,Bournemouth,1059737,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,38,108413,Will Hughes,MID,2019-08-31,Newcastle,Watford,1059739,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,38,119471,Fabian Schär,DEF,2019-08-31,Newcastle,Watford,1059739,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,39,93100,Jannik Vestergaard,DEF,2019-08-31,Southampton,Man Utd,1059740,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,39,200617,Daniel James,MID,2019-08-31,Southampton,Man Utd,1059740,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,42,177815,Dominic Calvert-Lewin,FWD,2019-09-15,Bournemouth,Everton,1059742,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,43,83314,Jeff Hendrick,MID,2019-09-14,Brighton,Burnley,1059744,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,43,115382,Neal Maupay,FWD,2019-09-14,Brighton,Burnley,1059744,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,44,92159,Jetro Willems,DEF,2019-09-14,Liverpool,Newcastle,1059745,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,46,37572,Sergio Agüero,FWD,2019-09-14,Norwich,Man City,1059747,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,46,220566,Rodri,MID,2019-09-14,Norwich,Man City,1059747,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,49,43250,Tom Cleverley,MID,2019-09-15,Watford,Arsenal,1059750,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,49,54694,Pierre-Emerick Aubameyang,FWD,2019-09-15,Watford,Arsenal,1059750,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,49,61566,Roberto Pereyra,MID,2019-09-15,Watford,Arsenal,1059750,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,51,122806,John McGinn,MID,2019-09-22,Arsenal,Aston Villa,1059752,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,51,213345,Wesley,FWD,2019-09-22,Arsenal,Aston Villa,1059752,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,54,194634,Diogo Jota,FWD,2019-09-22,Crystal Palace,Wolves,1059755,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,56,78830,Harry Kane,FWD,2019-09-21,Leicester,Spurs,1059757,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,59,101178,James Ward-Prowse,MID,2019-09-20,Southampton,Bournemouth,1059760,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,61,44683,Jay Rodriguez,FWD,2019-09-28,Aston Villa,Burnley,1059763,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,61,60689,Chris Wood,FWD,2019-09-28,Aston Villa,Burnley,1059763,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,61,122806,John McGinn,MID,2019-09-28,Aston Villa,Burnley,1059763,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,61,193488,Anwar El-Ghazi,MID,2019-09-28,Aston Villa,Burnley,1059763,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,62,55459,Aaron Cresswell,DEF,2019-09-28,Bournemouth,West Ham,1059762,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,62,56377,Andriy Yarmolenko,MID,2019-09-28,Bournemouth,West Ham,1059762,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,62,75115,Callum Wilson,FWD,2019-09-28,Bournemouth,West Ham,1059762,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,62,78007,Joshua King,FWD,2019-09-28,Bournemouth,West Ham,1059762,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,65,177815,Dominic Calvert-Lewin,FWD,2019-09-28,Everton,Man City,1059766,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,67,54694,Pierre-Emerick Aubameyang,FWD,2019-09-30,Man Utd,Arsenal,1059768,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,67,195851,Scott McTominay,MID,2019-09-30,Man Utd,Arsenal,1059768,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,69,84939,Danny Ings,FWD,2019-09-28,Spurs,Southampton,1059770,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,77,81048,Josip Drmic,FWD,2019-10-05,Norwich,Aston Villa,1059778,winning_goal,0,1,5,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,80,103123,Sebastien Haller,FWD,2019-10-05,West Ham,Crystal Palace,1059781,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,81,110735,Adam Webster,DEF,2019-10-19,Aston Villa,Brighton,1059783,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,86,60689,Chris Wood,FWD,2019-10-19,Leicester,Burnley,1059787,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,87,39155,Adam Lallana,MID,2019-10-20,Man Utd,Liverpool,1059788,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,87,176297,Marcus Rashford,FWD,2019-10-20,Man Utd,Liverpool,1059788,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,89,108823,Dele Alli,MID,2019-10-19,Spurs,Watford,1059790,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,89,121599,Abdoulaye Doucouré,MID,2019-10-19,Spurs,Watford,1059790,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,90,84939,Danny Ings,FWD,2019-10-19,Wolves,Southampton,1059791,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,90,102057,Raul Jiménez,FWD,2019-10-19,Wolves,Southampton,1059791,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,91,39476,Sokratis Papastathopoulos,DEF,2019-10-27,Arsenal,Crystal Palace,1059792,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,91,41270,David Luiz,DEF,2019-10-27,Arsenal,Crystal Palace,1059792,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,91,66975,Luka Milivojevic,MID,2019-10-27,Arsenal,Crystal Palace,1059792,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,91,80146,Jordan Ayew,FWD,2019-10-27,Arsenal,Crystal Palace,1059792,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,92,177815,Dominic Calvert-Lewin,FWD,2019-10-26,Brighton,Everton,1059793,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,94,78830,Harry Kane,FWD,2019-10-27,Liverpool,Spurs,1059795,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,96,101148,Jamaal Lascelles,DEF,2019-10-27,Newcastle,Wolves,1059797,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,96,114128,Jonny,DEF,2019-10-27,Newcastle,Wolves,1059797,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,97,89470,Onel Hernández,MID,2019-10-27,Norwich,Man Utd,1059798,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,100,18987,Robert Snodgrass,MID,2019-10-26,West Ham,Sheffield Utd,1059801,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,100,178304,Lys Mousset,FWD,2019-10-26,West Ham,Sheffield Utd,1059801,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,101,54694,Pierre-Emerick Aubameyang,FWD,2019-11-02,Arsenal,Wolves,1059803,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,101,102057,Raul Jiménez,FWD,2019-11-02,Arsenal,Wolves,1059803,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,102,148508,Trezeguet,MID,2019-11-02,Aston Villa,Liverpool,1059804,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,106,66838,Cenk Tosun,FWD,2019-11-03,Everton,Spurs,1059807,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,106,108823,Dele Alli,MID,2019-11-03,Everton,Spurs,1059807,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,107,101178,James Ward-Prowse,MID,2019-11-02,Man City,Southampton,1059808,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,110,18987,Robert Snodgrass,MID,2019-11-02,West Ham,Newcastle,1059811,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,110,166640,Fabian Balbuena,DEF,2019-11-02,West Ham,Newcastle,1059811,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,114,165809,Bernardo Silva,MID,2019-11-10,Liverpool,Man City,1059815,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,115,83299,Lewis Dunk,DEF,2019-11-10,Man Utd,Brighton,1059816,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,116,153682,Harry Wilson,MID,2019-11-09,Newcastle,Bournemouth,1059817,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,118,84939,Danny Ings,FWD,2019-11-09,Southampton,Everton,1059819,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,119,82691,George Baldock,DEF,2019-11-09,Spurs,Sheffield Utd,1059820,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,119,85971,Heung-Min Son,MID,2019-11-09,Spurs,Sheffield Utd,1059820,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,120,148508,Trezeguet,MID,2019-11-10,Wolves,Aston Villa,1059821,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,123,56917,Steve Cook,DEF,2019-11-23,Bournemouth,Wolves,1059822,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,125,82403,Wilfried Zaha,MID,2019-11-23,Crystal Palace,Liverpool,1059826,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,128,47247,John Fleck,MID,2019-11-24,Sheffield Utd,Man Utd,1059829,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,128,169432,Oliver McBurnie,FWD,2019-11-24,Sheffield Utd,Man Utd,1059829,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,128,176297,Marcus Rashford,FWD,2019-11-24,Sheffield Utd,Man Utd,1059829,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,128,178304,Lys Mousset,FWD,2019-11-24,Sheffield Utd,Man Utd,1059829,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,128,220688,Mason Greenwood,FWD,2019-11-24,Sheffield Utd,Man Utd,1059829,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,128,232937,Brandon Williams,DEF,2019-11-24,Sheffield Utd,Man Utd,1059829,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,130,40669,Angelo Ogbonna,DEF,2019-11-23,West Ham,Spurs,1059831,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,130,57531,Michail Antonio,MID,2019-11-23,West Ham,Spurs,1059831,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,133,212319,Richarlison,MID,2019-12-01,Leicester,Everton,1059834,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,134,83299,Lewis Dunk,DEF,2019-11-30,Liverpool,Brighton,1059835,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,135,114283,Jack Grealish,MID,2019-12-01,Man Utd,Aston Villa,1059836,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,135,149484,Tyrone Mings,DEF,2019-12-01,Man Utd,Aston Villa,1059836,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,135,184667,Victor Nilsson Lindelöf,DEF,2019-12-01,Man Utd,Aston Villa,1059836,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,136,50232,Jonjo Shelvey,MID,2019-11-30,Newcastle,Man City,1059837,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,136,61366,Kevin De Bruyne,MID,2019-11-30,Newcastle,Man City,1059837,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,136,92159,Jetro Willems,DEF,2019-11-30,Newcastle,Man City,1059837,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,136,103955,Raheem Sterling,MID,2019-11-30,Newcastle,Man City,1059837,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,137,54694,Pierre-Emerick Aubameyang,FWD,2019-12-01,Norwich,Arsenal,1059838,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,137,57127,Teemu Pukki,FWD,2019-12-01,Norwich,Arsenal,1059838,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,137,193111,Todd Cantwell,MID,2019-12-01,Norwich,Arsenal,1059838,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,138,232185,Ismaila Sarr,MID,2019-11-30,Southampton,Watford,1059839,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,139,153682,Harry Wilson,MID,2019-11-30,Spurs,Bournemouth,1059840,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,140,87835,Matt Doherty,DEF,2019-12-01,Wolves,Sheffield Utd,1059841,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,140,178304,Lys Mousset,FWD,2019-12-01,Wolves,Sheffield Utd,1059841,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,141,59966,Alexandre Lacazette,FWD,2019-12-05,Arsenal,Brighton,1059842,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,142,90517,Robert Brady,MID,2019-12-03,Burnley,Man City,1059843,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,144,108823,Dele Alli,MID,2019-12-04,Man Utd,Spurs,1059845,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,149,106611,Michael Keane,DEF,2019-12-04,Liverpool,Everton,1059850,winning_goal,0,2,5,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,149,212319,Richarlison,MID,2019-12-04,Liverpool,Everton,1059850,winning_goal,0,2,5,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,150,57127,Teemu Pukki,FWD,2019-12-04,Southampton,Norwich,1059851,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,151,114283,Jack Grealish,MID,2019-12-08,Aston Villa,Leicester,1059853,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,153,66242,Davy Pröpper,MID,2019-12-08,Brighton,Wolves,1059854,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,153,115382,Neal Maupay,FWD,2019-12-08,Brighton,Wolves,1059854,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,153,194634,Diogo Jota,FWD,2019-12-08,Brighton,Wolves,1059854,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,155,57410,Nicolás Otamendi,DEF,2019-12-07,Man City,Man Utd,1059856,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,156,84939,Danny Ings,FWD,2019-12-08,Newcastle,Southampton,1059857,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,157,18665,Alexander Tettey,MID,2019-12-08,Norwich,Sheffield Utd,1059858,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,160,40669,Angelo Ogbonna,DEF,2019-12-09,West Ham,Arsenal,1059861,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,164,82403,Wilfried Zaha,MID,2019-12-16,Crystal Palace,Brighton,1059865,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,164,115382,Neal Maupay,FWD,2019-12-16,Crystal Palace,Brighton,1059865,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,165,57127,Teemu Pukki,FWD,2019-12-14,Leicester,Norwich,1059866,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,170,159533,Adama Traoré,MID,2019-12-15,Wolves,Spurs,1059871,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,171,114283,Jack Grealish,MID,2019-12-21,Aston Villa,Southampton,1059873,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,175,101668,Jamie Vardy,FWD,2019-12-21,Man City,Leicester,1059876,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,177,193111,Todd Cantwell,MID,2019-12-21,Norwich,Wolves,1059878,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,182,40387,Dan Gosling,MID,2019-12-26,Bournemouth,Arsenal,1059882,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,182,54694,Pierre-Emerick Aubameyang,FWD,2019-12-26,Bournemouth,Arsenal,1059882,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,187,223175,Matthew Longstaff,MID,2019-12-26,Man Utd,Newcastle,1059888,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,188,79934,Oliver Norwood,MID,2019-12-26,Sheffield Utd,Watford,1059889,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,188,94924,Gerard Deulofeu,FWD,2019-12-26,Sheffield Utd,Watford,1059889,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,189,110735,Adam Webster,DEF,2019-12-26,Spurs,Brighton,1059890,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,190,103955,Raheem Sterling,MID,2019-12-27,Wolves,Man City,1059891,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,196,119471,Fabian Schär,DEF,2019-12-28,Newcastle,Everton,1059897,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,197,37614,Mario Vrancic,MID,2019-12-28,Norwich,Spurs,1059898,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,197,78830,Harry Kane,FWD,2019-12-28,Norwich,Spurs,1059898,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,197,80607,Christian Eriksen,MID,2019-12-28,Norwich,Spurs,1059898,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,203,60689,Chris Wood,FWD,2020-01-01,Burnley,Aston Villa,1059904,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,205,212319,Richarlison,MID,2020-01-01,Man City,Everton,1059906,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,209,247632,Pedro Neto,MID,2020-01-01,Watford,Wolves,1059910,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,211,193488,Anwar El-Ghazi,MID,2020-01-12,Aston Villa,Man City,1059913,winning_goal,0,1,6,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,214,54694,Pierre-Emerick Aubameyang,FWD,2020-01-11,Crystal Palace,Arsenal,1059915,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,214,80146,Jordan Ayew,FWD,2020-01-11,Crystal Palace,Arsenal,1059915,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,216,106837,Dennis Praet,MID,2020-01-11,Leicester,Southampton,1059917,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,221,47247,John Fleck,MID,2020-01-18,Arsenal,Sheffield Utd,1059922,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,221,444145,Gabriel Martinelli,FWD,2020-01-18,Arsenal,Sheffield Utd,1059922,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,222,114283,Jack Grealish,MID,2020-01-18,Brighton,Aston Villa,1059923,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,222,116216,Leandro Trossard,MID,2020-01-18,Brighton,Aston Villa,1059923,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,223,201666,Harvey Barnes,MID,2020-01-19,Burnley,Leicester,1059924,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,228,20452,Shane Long,FWD,2020-01-18,Southampton,Wolves,1059929,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,228,171771,Jan Bednarek,DEF,2020-01-18,Southampton,Wolves,1059929,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,230,177815,Dominic Calvert-Lewin,FWD,2020-01-18,West Ham,Everton,1059931,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,230,219924,Issa Diop,DEF,2020-01-18,West Ham,Everton,1059931,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,231,41725,Troy Deeney,FWD,2020-01-21,Aston Villa,Watford,1059933,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,232,74471,Aaron Mooy,MID,2020-01-21,Bournemouth,Brighton,1059932,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,233,77359,Florian Lejeune,DEF,2020-01-21,Everton,Newcastle,1059934,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,233,177815,Dominic Calvert-Lewin,FWD,2020-01-21,Everton,Newcastle,1059934,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,233,242058,Moise Kean,FWD,2020-01-21,Everton,Newcastle,1059934,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,234,18073,Mark Noble,MID,2020-01-22,Leicester,West Ham,1059935,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,237,102057,Raul Jiménez,FWD,2020-01-23,Wolves,Liverpool,1059938,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,240,57127,Teemu Pukki,FWD,2020-01-22,Spurs,Norwich,1059941,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,241,217487,Mbwana Samatta,FWD,2020-02-01,Bournemouth,Aston Villa,1059942,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,249,61566,Roberto Pereyra,MID,2020-02-01,Watford,Everton,1059950,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,249,155651,Adam Masina,DEF,2020-02-01,Watford,Everton,1059950,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,250,18987,Robert Snodgrass,MID,2020-02-01,West Ham,Brighton,1059951,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,250,20529,Glenn Murray,FWD,2020-02-01,West Ham,Brighton,1059951,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,250,60307,Pascal Gross,MID,2020-02-01,West Ham,Brighton,1059951,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,250,219924,Issa Diop,DEF,2020-02-01,West Ham,Brighton,1059951,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,252,108156,Björn Engels,DEF,2020-02-16,Aston Villa,Spurs,1059953,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,253,121599,Abdoulaye Doucouré,MID,2020-02-08,Brighton,Watford,1059954,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,255,54861,Christian Benteke,FWD,2020-02-08,Everton,Crystal Palace,1059956,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,258,75115,Callum Wilson,FWD,2020-02-09,Sheffield Utd,Bournemouth,1059959,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,259,84939,Danny Ings,FWD,2020-02-15,Southampton,Burnley,1059960,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,261,177815,Dominic Calvert-Lewin,FWD,2020-02-23,Arsenal,Everton,1059962,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,261,212319,Richarlison,MID,2020-02-23,Arsenal,Everton,1059962,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,266,217593,Pablo Fornals,MID,2020-02-24,Liverpool,West Ham,1059967,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,266,219924,Issa Diop,DEF,2020-02-24,Liverpool,West Ham,1059967,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,268,63426,Enda Stevens,DEF,2020-02-22,Sheffield Utd,Brighton,1059969,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,268,115382,Neal Maupay,FWD,2020-02-22,Sheffield Utd,Brighton,1059969,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,274,141746,Bruno Fernandes,MID,2020-03-01,Everton,Man Utd,1059975,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,274,177815,Dominic Calvert-Lewin,FWD,2020-03-01,Everton,Man Utd,1059975,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,278,80226,Serge Aurier,DEF,2020-03-01,Spurs,Wolves,1059979,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,278,194252,Steven Bergwijn,MID,2020-03-01,Spurs,Wolves,1059979,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,280,220598,Michael Obafemi,FWD,2020-02-29,West Ham,Southampton,1059981,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,282,60689,Chris Wood,FWD,2020-03-07,Burnley,Spurs,1059983,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,282,108823,Dele Alli,MID,2020-03-07,Burnley,Spurs,1059983,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,286,75115,Callum Wilson,FWD,2020-03-07,Liverpool,Bournemouth,1059987,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,293,195735,Nicolas Pépé,MID,2020-06-20,Brighton,Arsenal,1059994,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,298,141746,Bruno Fernandes,MID,2020-06-19,Spurs,Man Utd,1059999,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,298,194252,Steven Bergwijn,MID,2020-06-19,Spurs,Man Utd,1059999,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,299,60232,Craig Dawson,DEF,2020-06-20,Watford,Leicester,1060000,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,299,172850,Ben Chilwell,DEF,2020-06-20,Watford,Leicester,1060000,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,306,37339,Ahmed El Mohamady,DEF,2020-06-24,Newcastle,Aston Villa,1060007,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,306,104547,Dwight Gayle,FWD,2020-06-24,Newcastle,Aston Villa,1060007,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,313,40387,Dan Gosling,MID,2020-07-01,Bournemouth,Newcastle,1060012,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,316,173515,Kelechi Iheanacho,FWD,2020-07-01,Everton,Leicester,1060017,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,318,78830,Harry Kane,FWD,2020-07-02,Sheffield Utd,Spurs,1060019,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,321,17761,James Tarkowski,DEF,2020-07-05,Burnley,Sheffield Utd,1060022,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,321,108416,John Egan,DEF,2020-07-05,Burnley,Sheffield Utd,1060022,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,325,56872,Junior Stanislas,MID,2020-07-04,Man Utd,Bournemouth,1060026,winning_goal,0,2,5,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,325,78007,Joshua King,FWD,2020-07-04,Man Utd,Bournemouth,1060026,winning_goal,0,2,5,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,331,54694,Pierre-Emerick Aubameyang,FWD,2020-07-07,Arsenal,Leicester,1060033,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,331,101668,Jamie Vardy,FWD,2020-07-07,Arsenal,Leicester,1060033,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,334,116216,Leandro Trossard,MID,2020-07-08,Brighton,Liverpool,1060035,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,336,84939,Danny Ings,FWD,2020-07-09,Everton,Southampton,1060037,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,336,212319,Richarlison,MID,2020-07-09,Everton,Southampton,1060037,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,339,195546,Emiliano Buendia,MID,2020-07-07,Watford,Norwich,1060040,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,342,101668,Jamie Vardy,FWD,2020-07-12,Bournemouth,Leicester,1060042,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,344,44683,Jay Rodriguez,FWD,2020-07-11,Liverpool,Burnley,1060045,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,344,122798,Andrew Robertson,DEF,2020-07-11,Liverpool,Burnley,1060045,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,345,91047,Stuart Armstrong,MID,2020-07-13,Man Utd,Southampton,1060046,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,345,148225,Anthony Martial,MID,2020-07-13,Man Utd,Southampton,1060046,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,345,176297,Marcus Rashford,FWD,2020-07-13,Man Utd,Southampton,1060046,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,345,220598,Michael Obafemi,FWD,2020-07-13,Man Utd,Southampton,1060046,winning_goal,0,2,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,348,59966,Alexandre Lacazette,FWD,2020-07-12,Spurs,Arsenal,1060049,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,349,104547,Dwight Gayle,FWD,2020-07-11,Watford,Newcastle,1060050,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,351,110979,Sadio Mané,MID,2020-07-15,Arsenal,Liverpool,1060052,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,352,60689,Chris Wood,FWD,2020-07-15,Burnley,Wolves,1060053,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,352,102057,Raul Jiménez,FWD,2020-07-15,Burnley,Wolves,1060053,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,357,111317,David Brooks,MID,2020-07-15,Man City,Bournemouth,1060058,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,358,56983,Matt Ritchie,DEF,2020-07-15,Newcastle,Spurs,1060059,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,359,84939,Danny Ings,FWD,2020-07-16,Southampton,Brighton,1060060,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,359,115382,Neal Maupay,FWD,2020-07-16,Southampton,Brighton,1060060,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,360,41725,Troy Deeney,FWD,2020-07-17,West Ham,Watford,1060061,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,365,57531,Michail Antonio,MID,2020-07-22,Man Utd,West Ham,1060066,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,365,220688,Mason Greenwood,FWD,2020-07-22,Man Utd,West Ham,1060066,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,371,41725,Troy Deeney,FWD,2020-07-26,Arsenal,Watford,1060072,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,371,50175,Danny Welbeck,FWD,2020-07-26,Arsenal,Watford,1060072,winning_goal,0,2,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,372,60689,Chris Wood,FWD,2020-07-26,Burnley,Brighton,1060073,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,374,78830,Harry Kane,FWD,2020-07-26,Crystal Palace,Spurs,1060075,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,374,86417,Jeffrey Schlupp,MID,2020-07-26,Crystal Palace,Spurs,1060075,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,375,242058,Moise Kean,FWD,2020-07-26,Everton,Bournemouth,1060076,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,378,104547,Dwight Gayle,FWD,2020-07-26,Newcastle,Liverpool,1060079,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,380,56377,Andriy Yarmolenko,MID,2020-07-26,West Ham,Aston Villa,1060081,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2019-20,380,114283,Jack Grealish,MID,2020-07-26,West Ham,Aston Villa,1060081,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2020-21,101,90517,Robert Brady,MID,2020-12-05,Burnley,Everton,2128388,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2020-21,101,177815,Dominic Calvert-Lewin,FWD,2020-12-05,Burnley,Everton,2128388,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2020-21,102,106617,Patrick Bamford,FWD,2020-12-05,Chelsea,Leeds,2128389,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2020-21,105,169432,Oli McBurnie,FWD,2020-12-06,Sheffield Utd,Leicester,2128392,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2020-21,107,232787,Conor Gallagher,MID,2020-12-06,West Brom,Crystal Palace,2128394,winning_goal,0,1,5,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2020-21,108,215439,Tomas Soucek,MID,2020-12-05,West Ham,Man Utd,2128395,winning_goal,0,1,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,281,224209,Rasmus Kristensen,DEF,2023-04-01,Arsenal,Leeds,2293091,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,282,156689,Andreas Pereira,MID,2023-04-01,Bournemouth,Fulham,2293090,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,283,50175,Danny Welbeck,FWD,2023-04-01,Brighton,Brentford,2293092,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,283,61810,Pontus Jansson,DEF,2023-04-01,Brighton,Brentford,2293092,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,283,144485,Ivan Toney,FWD,2023-04-01,Brighton,Brentford,2293092,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,283,231065,Ethan Pinnock,DEF,2023-04-01,Brighton,Brentford,2293092,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,283,243016,Alexis Mac Allister,MID,2023-04-01,Brighton,Brentford,2293092,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,283,451340,Kaoru Mitoma,MID,2023-04-01,Brighton,Brentford,2293092,winning_goal,0,3,3,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,285,111931,Ricardo Pereira,DEF,2023-04-01,Crystal Palace,Leicester,2293094,winning_goal,0,1,2,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,286,78830,Harry Kane,FWD,2023-04-03,Everton,Spurs,2293095,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,286,106611,Michael Keane,DEF,2023-04-03,Everton,Spurs,2293095,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,287,118748,Mohamed Salah,MID,2023-04-01,Man City,Liverpool,2293096,winning_goal,0,1,4,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,289,200600,Daniel Podence,MID,2023-04-01,Nott'm Forest,Wolves,2293098,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only
+2022-23,289,242898,Brennan Johnson,FWD,2023-04-01,Nott'm Forest,Wolves,2293098,winning_goal,0,1,1,official_final_score_draw_or_loss_no_winning_goal,separate_supplement_only

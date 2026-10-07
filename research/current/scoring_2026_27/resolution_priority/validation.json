@@ -1,0 +1,12 @@
+{
+  "new_tests_passed": 15,
+  "existing_ledger_tests_passed": 13,
+  "existing_bps_tests_passed": 6,
+  "offline_replay_byte_identical": true,
+  "output_files": 16,
+  "input_files_hashed": 11,
+  "source_conflict_ranges_not_certified_bounds": true,
+  "new_keeper_or_locked_scoring_labels": false,
+  "full_repository_suite_run": false,
+  "github_ci_verified": false
+}

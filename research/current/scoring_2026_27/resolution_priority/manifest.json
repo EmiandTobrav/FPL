@@ -1,0 +1,37 @@
+{
+  "inputs_sha256": {
+    "scoring_2026_27/rules_2026_27.json": "ff0927179422b0fea3c4ebf0a38b0206792c74a5a4dad5f22899ecb89aab87c9",
+    "scoring_2026_27/validate_bps.py": "60e48680c48139811292c1621932f460cc08d5961f59c8173c657af096c0f395",
+    "scoring_2026_27/remaining_ledger/player_matches.csv.gz": "52d9db2ea7197d280c729fdbf3994d86ce4448393a8dd34977dd81cdaeeaa4db",
+    "scoring_2026_27/remaining_ledger/field_ledger.csv.gz": "172cf8c0e680ee3d5ab7c7943e1046e732a64f328fd0d006d49910a81e7016b8",
+    "project/data/2019-20_fixtures.csv.gz": "6afa41dd231e013362646459124f6fe4cc1cbd327c74e6dcb098e1d2e3561e33",
+    "project/data/2020-21_fixtures.csv.gz": "2bb74650819e4c4a5515232c1594d004410931c4c10db5e5fb5f283f78b2fee2",
+    "project/data/2021-22_fixtures.csv.gz": "b0c7ef09abd1ba345f50a9eeaa27ee096d5d21b43d1c85168f64461aa32a7ad0",
+    "project/data/2022-23_fixtures.csv.gz": "1ee9426018d6a7d03a4caaa3acf1106e184706f740c4439ee6108e515972e8a6",
+    "project/data/2023-24_fixtures.csv.gz": "c20fba7cc5dbe98ef08fc16d1e8e7648d151b8070c8fadbef2cb6d0cc2001d30",
+    "project/data/2024-25_fixtures.csv.gz": "9649822e2581422840b1d46d7e57ea4d3673bb8089faae3c8b5a6d4b802354d3",
+    "project/data/2025-26_fixtures.csv.gz": "ba7cf7a5f915b18fb77d1024f32ab90b04e462ff00de110198dd6699730fc042"
+  },
+  "code_sha256": {
+    "build.py": "2cb6eb9f6089002ba0e57a40bcd0e6b8920cf817e545eb1e53bb44749281288b",
+    "test_priority.py": "8511249bf7896bacacb80dbac669f11cc1b174ebaba96e2b1330f2e2007644fc"
+  },
+  "outputs_sha256": {
+    "acquisition_scope.csv": "986a0637d1dee81e23e17bca032075fbad6004f4823b87a368a138d57923acd8",
+    "action_catalog.json": "913ce794f43b9b6a7b8ce1f271db9cde0eb423acc43353a65d8cc8fd71ff7234",
+    "action_field_summary.csv": "ee31588136e3f827699d9b7a7b87452ee369c603ac52bbd4c10802507a19cc57",
+    "action_summary.csv": "c0654bcf5967e75267b553000595765d206c7820b347b5369d536e641e0e0e18",
+    "defensive_thresholds.csv.gz": "ba30b57d7012aa915576ec83a9e816da826205fb60b2c656b50ab506b0ee9622",
+    "documented_zero_supplement.csv": "2ea7d55428f73ca56ca9851779eab611ef8a32217e888f3b54e7bba67a5840c1",
+    "findings.json": "9dd61f95714d1c3a4f292a9746d709f616d1b9b618a00243cb04dc6945a2731b",
+    "minute_conflicts.csv.gz": "744ca7849cb4953f06385c15032ca9ece412721ac11f44c59cbbac8ba0d56884",
+    "other_stat_conflicts.csv.gz": "9b948f453aba96a310e178bf8d368eec4627a67942d7ba906e1b40bf25862078",
+    "pass_conflicts.csv.gz": "ff87bb554e62d4712d17a8907ad18e4bf2e0bc3fb4eb1203677801a69eebedee",
+    "prioritized_player_matches.csv.gz": "66de9ddcc37d256194caa52357939d21cdc839c52b7e3c1190e1b606acbf8cce",
+    "remaining_scoring_requirements.csv": "21a986a804bcc42ed503c69680d8b67a15ad1ec90616bc0ea46eb8b07472ec3d",
+    "resolution_queue.csv.gz": "f5ebb12e99140d17108507d01482821e6dbda025511c9ea6d857b51863753994",
+    "subset_bound_evidence.csv.gz": "911b2aabcabf5ca5402339aca5fce1c2d62fbde53df9a27cc919b38f480a0cca",
+    "subset_bound_screen.csv": "a21ef4e080c141f1b8e6bc8703a6d1c626df502929d720f2463fccaca9c1ae7f",
+    "winning_goal_contradictions.csv": "21404ed4458fa99d2586acaabc367290d8904f7444f392f1a2c8d1884370a278"
+  }
+}

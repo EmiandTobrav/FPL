@@ -1,0 +1,17 @@
+{
+  "priority_basis": "Tier 0 local proofs; 1 four goal-credit conflicts with direct scoring consequences; 2 minute band changes and other explicit conflicts; 3 missing evidence; 4 candidate-invariant conflicts. Action summary within tiers is sorted by affected population, not estimated success.",
+  "tiers_are_not_forecast_roi": true,
+  "proof_requirements": {
+    "qualify_sparse_counter_semantics_or_complete_events": "Document omission semantics for the exact source version, field and season, or reconstruct from independently complete event inventories. Two omitted fields do not verify zero.",
+    "reconcile_stat_conflict": "Check raw payloads, timestamps/revisions and metric definitions. Preserve conflicting values; do not select source by order.",
+    "reconcile_goal_credit_conflict": "Obtain official goal-credit/revision evidence and distinguish original FPL scoring from later event adjudication. Audit linked own-goal and assist credits before choosing a historical target policy.",
+    "complete_goal_assist_adjudication": "Exhaustive goal/candidate coverage, verified receiving/touch/intent facts and supported rule route; new frozen holdout controls before historical approval.",
+    "obtain_remaining_keeper_evidence": "Use the existing 38-row request and approved bounds; explicit big-chance/blocked-shot evidence or verified keeper counter. No xG proxy.",
+    "reconcile_minutes_scoring_band_change": "Verify participation and official FPL versus provider minute conventions at zero, 60 and >60. Candidate span does not prove which source is right.",
+    "minutes_same_candidate_scoring_bands": "Retain source conflict; deprioritize minute-component review only. Clean sheets, goals conceded and complete labels are separate.",
+    "passes_same_candidate_bps_band": "Retain raw conflicts; equal output across valid recorded combinations is conditional on source candidates and qualified pass formula.",
+    "apply_documented_winner_zero_supplement": "Official final result is a draw or loss; all explicit winner counters checked for contradictions. Supplement remains separate from locked labels.",
+    "penalty_split_irrelevant_to_scoring": "Historical roster position GK/DEF gives 12 BPS for either goal type. Leave penalty count unknown; total goals and other components still require resolution."
+  },
+  "new_source_search_policy": "Use the existing 21 missing-match, three missing-event-match and 38 keeper queues; do not repeat previously documented blocked or exhausted sources."
+}

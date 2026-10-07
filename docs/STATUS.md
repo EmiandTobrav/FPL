@@ -2,6 +2,40 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Prioritert avklaringskø og 1 194 avklarte poengbehov – 7. oktober 2026
+
+[Ny prioritering](../research/current/scoring_2026_27/resolution_priority/README.md)
+viderefører PR #1 fra `2aded7f`. Offisielle sluttresultater beviser **272 nye
+nuller for kampvinnende mål**, lagret separat. **922 ukjente straffemålsfordelinger
+for GK/DEF** er uten betydning for poeng, men råtellerne forblir ukjente.
+Dette løser 1 194 feltbehov i **1 146 unike spillerkamper**. Etterpå står
+880 714 poengbehov åpne i 77 280 spillerkamper; råstatistikk-/regelrest er
+881 636 fordi de 922 fordelingene ikke er rekonstruert.
+
+16 649 av 17 360 minuttkonflikter gir samme minuttpoeng for registrerte
+kildealternativer; **711 krysser en poenggrense**. 81 av 120 spillerkamper
+med pasningskonflikt gir samme BPS-bånd. Dette er betingede kandidatkontroller,
+ikke sanne verdiintervaller eller nye godkjente totalscorer. Konfliktene beholdes.
+
+Først i neste kontroll står fire måltilordninger: McTominay 10.11.2019,
+March 11.03.2023, Gabriel 20.01.2024 og Wissa 26.10.2024. Historisk FPL har
+ett mål mindre enn FotMob/arkivet i hver kamp. Offisielt revisjonsgrunnlag
+og tilhørende selvmål/assists må avklares før en kildepolitikk velges.
+Målkonfliktene, minuttgrenseavvikene og øvrige prioriterte konflikter omfatter
+samlet **1 442 unike spillerkamper**, uten dobbelttelling.
+
+En mulig nullgrense for vunne taklinger har 28 522 kandidater og ingen
+moteksempler i 32 344 eksplisitte sammenligninger, men er ikke godkjent uten
+definisjonsbevis. Grensen «store sjanser skapt ≤ sjanser skapt» har **42
+moteksempler** og kan ikke brukes generelt. Ingen kandidatnuller er imputert.
+Kø, tiltaksbevis, felt-/spillerkampoppsummeringer og konservative defensive
+terskelkontroller er versjonert. Dekningspotensial er ikke en suksessprognose.
+
+34 fokuserte tester består; to kjøringer gir identiske resultatfiler.
+Keeperverdier, tidligere restliste og låste poeng/BPS/bonus/modeller/benchmark
+er uendret. Ingen komplett BPS-/bonusberegning eller ny holdout; full historisk
+harmonisering er fortsatt uferdig. Kostnad 0 NOK.
+
 ## Samlet restliste etter kildekobling – 7. oktober 2026
 
 [Ny spiller-/kamp-/feltoversikt](../research/current/scoring_2026_27/remaining_ledger/README.md)
