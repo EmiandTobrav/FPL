@@ -1,0 +1,50 @@
+{
+  "target_season": "2026-27",
+  "new_primary_rows": 119,
+  "matches": 4,
+  "keeper_rows": 8,
+  "code_mapping_validated": true,
+  "minutes_equal_fotmob": 119,
+  "max_minutes_difference": 0.0,
+  "field_coverage": {
+    "won_tackle": {
+      "explicit_values": 54,
+      "unknown_or_omitted": 65
+    },
+    "accurate_cross_nocorner": {
+      "explicit_values": 20,
+      "unknown_or_omitted": 99
+    },
+    "error_lead_to_shot": {
+      "explicit_values": 5,
+      "unknown_or_omitted": 114
+    },
+    "error_lead_to_goal": {
+      "explicit_values": 2,
+      "unknown_or_omitted": 117
+    },
+    "saved_ibox": {
+      "explicit_values": 7,
+      "unknown_or_omitted": 112
+    },
+    "big_chance_saves": {
+      "explicit_values": 0,
+      "unknown_or_omitted": 119
+    }
+  },
+  "verified_assist_additions": 4,
+  "official_negative_examples": 2,
+  "full_2024_queue_rows": 11567,
+  "full_historical_rescoring_ready": false,
+  "cost_nok": 0,
+  "sources": [
+    {
+      "url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+      "sha256": "7b8890ae6d6cc72807f1a7430ba6f38518ef8bbcd6f123109c0643df9b22fff4"
+    },
+    {
+      "url": "https://fantasy.premierleague.com/assets/Rules-CC6uyTMY.js",
+      "sha256": "47d2a1072593effbf013afc1913ce61d115340f81e7ee90dbec12ecec0ae6c55"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "season": "2024-25",
+    "rows": 11567,
+    "matches": 380,
+    "fixture_filter": null,
+    "primary_directory_url": "https://footballapi.pulselive.com/football/stats/ranked/players/appearances?comps=1&compSeasons=719&page=0&pageSize=1000&altIds=true",
+    "input_sha256": {
+      "research/current/scoring_2026_27/data/2024-25/part-000.csv": "0329d8aafcf42a7e3a89ced7ca903cc0ae7b2d8d1cfd178c5ad3b0345e6c85df",
+      "research/current/scoring_2026_27/data/2024-25/part-001.csv": "8fb50eb071832857b97e5c85422a5200626cf7e37292277ec0aa4bd78916812a",
+      "research/current/scoring_2026_27/data/2024-25/part-002.csv": "bc9588af4f7b8e7efbc7ee41d4fc86047f94b16e27b14c080bedd055ec9d066d",
+      "research/current/scoring_2026_27/data/2024-25/part-003.csv": "59707a91314ce10f0dcfdb952e4fbc159dd1810b89556abd5b5dfb89696b8409",
+      "research/current/scoring_2026_27/data/2024-25/part-004.csv": "12ba904671ee8290845b86955676315881e5ac196aceb46f2615a4f34f282b98",
+      "research/current/scoring_2026_27/data/2024-25/part-005.csv": "fe09301e09d07f0950102c9a9a3bf42f3c07cca16c6ca37435752c728614df1a",
+      "research/current/project/data/2024-25_fixtures.csv.gz": "9649822e2581422840b1d46d7e57ea4d3673bb8089faae3c8b5a6d4b802354d3",
+      "research/current/project/data/2024-25_players.csv.gz": "4f0d412168228b736714cb4b1bcbaa196c83dab939c43433bdb0cadca95618ed",
+      "research/current/scoring_2026_27/acquisition_followup/raw/players_2024-25.json": "12f6b078a801ea6e72cf3858999424593a3a0305f17d69062180ce7bd07fb994"
+    }
+  }
+]

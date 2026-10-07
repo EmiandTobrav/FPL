@@ -1,0 +1,10 @@
+{
+  "requested_rows": 119,
+  "completed_rows": 119,
+  "errors": 0,
+  "remaining_rows": 0,
+  "stopped_for_access_or_rate_limit": false,
+  "full_historical_rescoring_ready": false,
+  "missing_policy": "omitted counters stay blank",
+  "manifest_sha256": "48e837445fd138feb9a0b16d481c9867b7f3331ac746d5498efb25f06e7fdd55"
+}

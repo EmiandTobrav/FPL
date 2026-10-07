@@ -2,6 +2,14 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Oppfølging av datainnhenting – 7. oktober 2026
+
+[Innhenting og offisielle assistkorreksjoner](../research/current/scoring_2026_27/acquisition_followup/README.md): 119 nye primære spiller-/kamprader fra fire 2024/25-kamper er hentet, med null feil og 119/119 like minuttall mot FotMob. Fire offisielt dokumenterte assisttillegg er koblet til kamp-/spiller-ID: Marmoush, Pedro Porro, Alex Scott og Pickford. To negative eksempler er bevart. Tilleggene gir 12 direkte spillerpoeng før bonus, men er ikke skrevet inn i det låste datasettet. Gjeldende 2026/27-assistkriterier er kontrollert mot FPLs regelkomponent.
+
+En gjenopptakbar innhenter lagrer kontrollpunkt etter hvert svar og stopper på 401/403/429. Full 2024/25-kø er bygget med 11 567 rader / 380 kamper og ingen uløste ID-er; hele køen er ikke kjørt. Åtte nye tester består, og gjentatt kjøring av kontrollkøen hentet ingen svar på nytt. Kode, komprimert kø, normaliserte nye data, kildehash og rapport er lagret. Lokale råcacher/kontrollpunkt er ikke publisert; se rapporten for oppstart på ny checkout.
+
+**Full historisk 2026/27-harmonisering er fortsatt IKKE ferdig.** Ingen av de åtte nye keeperradene har eksplisitt storsjanseredningsfelt. Nye kildeundersøkelser ga ikke en full historisk hendelseseksport; Opta-datatjenesten svarte 403 og ble ikke omgått. Ingen modelltrening, benchmarkendring eller kostnad. Neste konkrete arbeid: bolkvis primærinnhenting med fast manifest; flere offisielle assistavgjørelser; en faktisk hendelseskilde for historiske storsjanseredninger. Ikke merke approximasjoner som fasit.
+
 ## Målet er 2026/27 – datakrav kontrollert og nye BPS-data hentet
 
 7. oktober 2026: [2026/27-audit og kildevalidering](../research/current/scoring_2026_27/README.md). Brukeren har presisert at målregelverket er 2026/27. Regelvektene er hentet fra FPLs faktiske regelkomponent/API. Alle 2660 tidligere råkamper er gjennomgått; flere BPS-felter er trukket ut for 77280 aktive kildeobservasjoner. 830 nye primære spiller-/kampresponser er hentet, inkludert hele GW1–2 i 2026/27.

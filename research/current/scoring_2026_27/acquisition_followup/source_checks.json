@@ -1,0 +1,30 @@
+[
+  {
+    "source": "https://sdp-prem-prod.premier-league-prod.pulselive.com",
+    "result": "2019 match catalog, lineups, match team stats, commentary and player season stats readable; tested payloads lack full event qualifiers"
+  },
+  {
+    "source": "https://api.github.com/repos/imadeddine-belkat/Premier-League-Stats/git/trees/903f83a5089e99e3fdf8af3db2552d7f4097284f?recursive=1",
+    "result": "5959 entries, non-truncated; zero players_match_stats paths"
+  },
+  {
+    "source": "https://github.com/Akshat29-shah/epl-analysis/blob/9aa6ccf6fbace76ee6b35a8aced0751343610ac5/data/2021-22_match%20id%20home%20away%20and%20event%20type.csv",
+    "result": "schema Match_Id,Home_Away,Event_Minute,Event_Type; no player identity or shot qualifiers"
+  },
+  {
+    "source": "https://theanalyst.com/competition/premier-league",
+    "result": "public HTML and client bundle readable; Perform tournament-calendar request returned HTTP 403; no retry/workaround"
+  },
+  {
+    "source": "https://www.reddit.com/r/FantasyPL/comments/1v2mv3q/i_recalculated_every_fpl_bonus_point_from_202526/",
+    "result": "author discloses xG threshold reconstruction, not observed Opta big-chance flags"
+  },
+  {
+    "source": "https://github.com/withqwerty/open-football",
+    "result": "catalog reviewed; listed full open event releases do not provide the target 2019-26 Premier League corpus"
+  },
+  {
+    "source": "https://link.springer.com/article/10.1186/s40537-026-01369-w",
+    "result": "reports WhoScored event corpus covering 2019/20-2023/24 but no dataset download in inspected availability section"
+  }
+]
