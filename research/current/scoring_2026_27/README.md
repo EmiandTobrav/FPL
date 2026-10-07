@@ -1,6 +1,6 @@
 # 2026/27 scoring: data audit, collection and BPS qualification
 
-**Current source policy and work queue:** [FPL-authoritative requirements](fpl_authority/README.md). Historical FPL is the authority for unchanged inputs. Old source-conflict and minute queues below are historical diagnostics; only changed scoring components need reconstruction.
+**Current work queue and source checks:** [delta-input audit](delta_input_audit/README.md). Source policy: [FPL-authoritative requirements](fpl_authority/README.md). Historical FPL is the authority for unchanged inputs. Old source-conflict and minute queues below are historical diagnostics; only changed scoring components need reconstruction.
 
 **Target: 2026/27. Status: NOT READY for complete historical rescoring.** The previous `historical_points_plus_harmonized_defcon_v1` remains a frozen intermediate, not a complete 2026/27 scoring dataset. No model or benchmark has been changed. Cost: NOK 0.
 

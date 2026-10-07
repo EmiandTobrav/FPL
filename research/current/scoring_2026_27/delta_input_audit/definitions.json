@@ -1,0 +1,63 @@
+{
+  "scope": "Raw input definitions and source QA only; no new target points, BPS or bonus.",
+  "times_tackled": {
+    "archive": "timesTackled",
+    "primary": "times_tackled",
+    "rule": "Explicit count including source-stored zeros. No dispossessed/dribble proxy.",
+    "source": "https://www.premierleague.com/en/news/4679946/"
+  },
+  "saves_outside_box": {
+    "archive": "savedObox",
+    "primary": "saved_obox",
+    "rule": "Explicit shot-origin outside-box saves. Not saves minus inside-box saves.",
+    "source": "https://www.premierleague.com/en/news/4362127/whats-new-in-202526-fantasy-changes-to-bonus-points-system"
+  },
+  "legacy_net_tackles": {
+    "archive_inputs": [
+      "totalTackle",
+      "wonTackle"
+    ],
+    "primary_inputs": [
+      "total_tackle",
+      "won_tackle"
+    ],
+    "raw_signed_formula": "won - (total - won) = 2*won - total, only when both counts are explicit, integer, nonnegative and won<=total",
+    "definition_basis": "Opta partitions legal ball-winning tackles by subsequent possession: won and lost. Challenge lost is a failed challenge, not the possession outcome of a tackle.",
+    "sources": [
+      "https://www.statsperform.com/opta-event-definitions/",
+      "https://www.premierleague.com/en/news/4362127/whats-new-in-202526-fantasy-changes-to-bonus-points-system",
+      "https://www.premierleague.com/en/news/661215"
+    ],
+    "example": "Kante 2018-04-08: published net 3; archive total=3, won=3, challengeLost=1. Supports possession-outcome definition; his published recoveries 10 differ from archive 11, so this is not a full independent match validation.",
+    "bps_clipping": "NOT QUALIFIED. Keep signed raw counter. Do not assume negative BPS or silently clip before old-season component qualification."
+  },
+  "line_clearances": {
+    "archive": "clearanceOffLine",
+    "primary": "clearance_off_line",
+    "explicit_source_zeros": false,
+    "event_candidate": "Types 10/12 with explicit qualifier 14. Candidate event zeros are not approved observed zeros.",
+    "reason": "Agreement for positive values does not demonstrate complete negative/qualifier reporting across seasons. Three mapped fixtures have no events; other counters show event/stats revision differences."
+  },
+  "event_dictionary": {
+    "sha256": "e0400475f9fc07644e835402fc29d32385858c20801ebb2011fffcad098323d0",
+    "source": "https://github.com/andrewRowlinson/optasoccer/blob/825cadb56c9c976a8c34c9d5da26d6e37c6ff239/optasoccer/metadata.py",
+    "selected_types": {
+      "7": "tackle",
+      "10": "save",
+      "12": "clearance",
+      "45": "challenge"
+    },
+    "selected_qualifiers": {
+      "14": "defensive_last_line"
+    },
+    "authority": "Published parser, not a provider-certified dictionary. Event counts are corroboration/diagnostics."
+  },
+  "source_quality_limits": [
+    "Archive and Premier League controls share Opta ancestry.",
+    "Fresh 28-row sample selected before primary requests, but purposely stratified, not random or a scoring holdout.",
+    "Cell-level primary agreement is distinguished from reviewed field mappings.",
+    "Explicit counter/event disagreements stay open. No global NA-to-zero rule.",
+    "FPL values override external differences and are never patched by this audit."
+  ],
+  "checked_at": "2026-10-07"
+}

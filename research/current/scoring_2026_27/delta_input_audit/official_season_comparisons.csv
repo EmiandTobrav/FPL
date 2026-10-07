@@ -1,0 +1,17 @@
+code,name,value,archive_match_sum,published_minus_archive,primary_season_total,primary_match_sum,resolution,conflict_fixtures
+244850,Morgan Rogers,156,156.0,0.0,,,published_agrees,
+178186,Jarrod Bowen,143,142.0,1.0,142.0,,current_primary_agrees_archive_published_snapshot_differs,
+437730,Antoine Semenyo,137,137.0,0.0,,,published_agrees,
+427637,Brenden Aaronson,127,127.0,0.0,,,published_agrees,
+440993,Iliman Ndiaye,126,125.0,1.0,125.0,,current_primary_agrees_archive_published_snapshot_differs,
+248875,Jeremy Doku,113,112.0,1.0,113.0,113.0,located_primary_match_conflict,356
+444180,Jaidon Anthony,106,106.0,0.0,,,published_agrees,
+215379,Elliot Anderson,104,104.0,0.0,,,published_agrees,
+460842,Mohammed Kudus,104,104.0,0.0,,,published_agrees,
+118748,Mohamed Salah,103,103.0,0.0,,,published_agrees,
+607464,Michael Kayode,83,83.0,0.0,,,published_agrees,
+490721,Hugo Bueno,78,78.0,0.0,,,published_agrees,
+226182,Jayden Bogle,72,72.0,0.0,,,published_agrees,
+232859,Djed Spence,72,72.0,0.0,,,published_agrees,
+472769,Nico O'Reilly,69,69.0,0.0,,,published_agrees,
+487838,Lewis Hall,69,69.0,0.0,,,published_agrees,

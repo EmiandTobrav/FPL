@@ -2,10 +2,47 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
-## Gjeldende kildeprioritet og restliste – 7. oktober 2026
+## Uttrekk og kvalitetskontroll ferdigstilt – 7. oktober 2026
 
-**Bruk [fpl_authority/](../research/current/scoring_2026_27/fpl_authority/README.md)
-som gjeldende arbeidsgrunnlag.** Alle eldre køer og tall nedenfor er historikk.
+**Gjeldende restliste: [delta_input_audit/](../research/current/scoring_2026_27/delta_input_audit/README.md).**
+Kildepolitikken i `fpl_authority/` gjelder fortsatt. Punkt 1 og 2 er gjennomført
+som reproduserbart uttrekk og kildekontroll; ikke som godkjenning av hele
+scoringsmotoren eller hver enkelt ekstern verdi.
+
+95 551 tidligere åpne feltkrav er nå tilgjengelige: 67 431 for antall ganger
+taklet, 27 698 for signert gammel netto taklingsteller og 422 for redninger
+utenfor boksen. 17 tidligere tilgjengelige taklingsfelt flagges som konflikter.
+**267 983 åpne feltkrav i 66 109 unike spillerkamper** gjenstår, mot 363 517.
+Fordeling: 219 032 manglende verdier, 234 eksterne konflikter, 48 716
+assistomregninger og ett kjent FPL-uttrekksunntak.
+
+De 28 forhåndsvalgte nye kontrollene gir 160/160 eksplisitte feltsamsvar.
+1 240 nødvendige eksterne verdier stemmer direkte med primærkontroller;
+339 783 andre tilgjengelige verdier har kilde-/formatkontroll, men er ikke
+individuelt primærbekreftet. Åpne krav og videre kvalitetsbehov har en union
+på 77 215 spillerkamper. Felles Opta-opphav er ikke uavhengig validering.
+
+Alle 576 sammenlignbare historiske positive mållinjeklareringer stemmer med
+hendelser, men ingen av de tomme tellerne er gjort om til null. Netto taklinger
+beregnes bare fra to eksplisitte tellere; gammel BPS-klipping er fortsatt en
+separat regelgate. Eksterne/FPL-avvik i 2025/26 endrer ikke FPL-fasiten.
+
+Kontroll mot 16 publiserte sesongsummer finner tre forskjeller. Nåværende
+PL-API støtter arkivet for Bowen og Ndiaye. Alle 30 Doku-opptredener er kontrollert:
+forskjellen ligger i 2025/26 kamp 356, arkiv 4 mot PL 5. Denne konflikten står
+åpen, uten gjetting på historisk BPS. Tidligere godkjente målrettelser,
+5 343 keeperverdier og de 38 uløste keeperobservasjonene er bevart.
+Ingen rå FPL-data, låste poeng/BPS/bonus, modeller eller benchmark er endret.
+
+Assistberegningen (punkt 3) og videre innhenting/full poengomregning (punkt 4)
+er ikke utført i denne fasen. Nye etiketter er ikke produsert. Kostnad 0 NOK.
+15 nye og 104 eksisterende fokuserte tester består; 25 resultatfiler er identiske
+ved ny kjøring. Full repository-test og GitHub CI er ikke verifisert.
+
+## Historikk: første FPL-prioriterte restliste – 7. oktober 2026
+
+[fpl_authority/](../research/current/scoring_2026_27/fpl_authority/README.md)
+etablerte FPL-prioriteten. Tallene nedenfor er nå historikk; se nyeste kø over.
 Historisk FPL er fasiten for kompatible felt, inklusive minutter og eksplisitte
 nuller. Eksterne kildeforskjeller er ikke automatisk FPL-feil. Ingen generell
 minutt- eller pasningsrekonstruksjon skal prioriteres videre.

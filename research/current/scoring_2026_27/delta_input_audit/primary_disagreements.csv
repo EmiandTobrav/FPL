@@ -1,0 +1,208 @@
+season,fixture,code,name,control_scope,archive,field,primary,comparison
+2020-21,101,98747,Nick Pope,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,101,111234,Jordan Pickford,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,102,228286,Edouard Mendy,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,102,437495,Illan Meslier,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,104,84182,Alphonse Areola,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,104,121160,Ederson,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,105,17745,Kasper Schmeichel,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,105,225321,Aaron Ramsdale,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,106,37915,Hugo Lloris,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,106,80201,Bernd Leno,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,107,40836,Vicente Guaita,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,107,101982,Sam Johnstone,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,108,37096,Lukasz Fabianski,existing_followup,,timesTackled,0.0,omission_difference
+2020-21,108,172649,Dean Henderson,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,281,225321,Aaron Ramsdale,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,281,437495,Illan Meslier,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,282,69752,Neto,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,282,80201,Bernd Leno,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,283,49262,Jason Steele,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,283,154561,David Raya,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,284,98980,Emiliano Martinez,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,284,109745,Kepa Arrizabalaga,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,285,40836,Vicente Guaita,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,285,207270,Daniel Iversen,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,286,37915,Hugo Lloris,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,286,111234,Jordan Pickford,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,287,116535,Alisson Becker,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,287,121160,Ederson,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,288,51940,David de Gea,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,288,98747,Nick Pope,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,289,28411,Keylor Navas,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,289,149065,José Sá,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,290,37096,Lukasz Fabianski,existing_followup,,timesTackled,0.0,omission_difference
+2022-23,290,456350,Gavin Bazunu,existing_followup,,timesTackled,0.0,omission_difference
+2025-26,356,248875,Jérémy Doku,targeted_after_aggregate_difference,4.0,timesTackled,5.0,explicit_conflict
+2019-20,135,51940,David De Gea,existing_followup,,savedObox,1.0,omission_difference
+2019-20,137,20480,Tim Krul,existing_followup,,savedObox,1.0,omission_difference
+2019-20,137,80201,Bernd Leno,existing_followup,,savedObox,1.0,omission_difference
+2019-20,140,172649,Dean Henderson,existing_followup,,savedObox,1.0,omission_difference
+2020-21,101,98747,Nick Pope,existing_followup,,savedObox,1.0,omission_difference
+2020-21,102,228286,Edouard Mendy,existing_followup,,savedObox,2.0,omission_difference
+2020-21,102,437495,Illan Meslier,existing_followup,,savedObox,1.0,omission_difference
+2020-21,105,225321,Aaron Ramsdale,existing_followup,,savedObox,1.0,omission_difference
+2020-21,106,80201,Bernd Leno,existing_followup,,savedObox,1.0,omission_difference
+2020-21,107,40836,Vicente Guaita,existing_followup,,savedObox,1.0,omission_difference
+2020-21,107,101982,Sam Johnstone,existing_followup,,savedObox,1.0,omission_difference
+2020-21,108,37096,Lukasz Fabianski,existing_followup,,savedObox,2.0,omission_difference
+2020-21,108,172649,Dean Henderson,existing_followup,,savedObox,4.0,omission_difference
+2022-23,282,69752,Neto,existing_followup,,savedObox,1.0,omission_difference
+2022-23,283,49262,Jason Steele,existing_followup,,savedObox,1.0,omission_difference
+2022-23,283,154561,David Raya,existing_followup,,savedObox,5.0,omission_difference
+2022-23,284,98980,Emiliano Martinez,existing_followup,,savedObox,1.0,omission_difference
+2022-23,285,207270,Daniel Iversen,existing_followup,,savedObox,5.0,omission_difference
+2022-23,286,37915,Hugo Lloris,existing_followup,,savedObox,3.0,omission_difference
+2022-23,288,51940,David de Gea,existing_followup,,savedObox,1.0,omission_difference
+2022-23,288,98747,Nick Pope,existing_followup,,savedObox,1.0,omission_difference
+2022-23,289,149065,José Sá,existing_followup,,savedObox,2.0,omission_difference
+2022-23,290,37096,Lukasz Fabianski,existing_followup,,savedObox,2.0,omission_difference
+2022-23,290,456350,Gavin Bazunu,existing_followup,,savedObox,1.0,omission_difference
+2019-20,133,17745,Kasper Schmeichel,existing_followup,,savedIbox,2.0,omission_difference
+2019-20,133,111234,Jordan Pickford,existing_followup,,savedIbox,4.0,omission_difference
+2019-20,135,21205,Tom Heaton,existing_followup,,savedIbox,5.0,omission_difference
+2019-20,137,20480,Tim Krul,existing_followup,,savedIbox,3.0,omission_difference
+2019-20,137,80201,Bernd Leno,existing_followup,,savedIbox,5.0,omission_difference
+2019-20,140,38533,Rui Patricio,existing_followup,,savedIbox,3.0,omission_difference
+2019-20,140,172649,Dean Henderson,existing_followup,,savedIbox,1.0,omission_difference
+2020-21,101,98747,Nick Pope,existing_followup,,savedIbox,4.0,omission_difference
+2020-21,101,111234,Jordan Pickford,existing_followup,,savedIbox,2.0,omission_difference
+2020-21,102,437495,Illan Meslier,existing_followup,,savedIbox,6.0,omission_difference
+2020-21,104,84182,Alphonse Areola,existing_followup,,savedIbox,3.0,omission_difference
+2020-21,104,121160,Ederson,existing_followup,,savedIbox,1.0,omission_difference
+2020-21,105,225321,Aaron Ramsdale,existing_followup,,savedIbox,1.0,omission_difference
+2020-21,106,37915,Hugo Lloris,existing_followup,,savedIbox,2.0,omission_difference
+2020-21,107,40836,Vicente Guaita,existing_followup,,savedIbox,2.0,omission_difference
+2020-21,107,101982,Sam Johnstone,existing_followup,,savedIbox,1.0,omission_difference
+2020-21,108,37096,Lukasz Fabianski,existing_followup,,savedIbox,1.0,omission_difference
+2020-21,108,172649,Dean Henderson,existing_followup,,savedIbox,1.0,omission_difference
+2022-23,281,225321,Aaron Ramsdale,existing_followup,,savedIbox,4.0,omission_difference
+2022-23,281,437495,Illan Meslier,existing_followup,,savedIbox,1.0,omission_difference
+2022-23,282,80201,Bernd Leno,existing_followup,,savedIbox,4.0,omission_difference
+2022-23,283,49262,Jason Steele,existing_followup,,savedIbox,1.0,omission_difference
+2022-23,283,154561,David Raya,existing_followup,,savedIbox,6.0,omission_difference
+2022-23,284,98980,Emiliano Martinez,existing_followup,,savedIbox,6.0,omission_difference
+2022-23,285,40836,Vicente Guaita,existing_followup,,savedIbox,1.0,omission_difference
+2022-23,285,207270,Daniel Iversen,existing_followup,,savedIbox,3.0,omission_difference
+2022-23,286,37915,Hugo Lloris,existing_followup,,savedIbox,2.0,omission_difference
+2022-23,287,116535,Alisson Becker,existing_followup,,savedIbox,4.0,omission_difference
+2022-23,288,51940,David de Gea,existing_followup,,savedIbox,3.0,omission_difference
+2022-23,289,149065,José Sá,existing_followup,,savedIbox,4.0,omission_difference
+2022-23,290,37096,Lukasz Fabianski,existing_followup,,savedIbox,1.0,omission_difference
+2019-20,135,21205,Tom Heaton,existing_followup,,totalTackle,1.0,omission_difference
+2019-20,135,21205,Tom Heaton,existing_followup,,wonTackle,1.0,omission_difference
+2026-27,8,494521,Truffert,existing_development,,wonTackle,1.0,omission_difference
+2020-21,102,228286,Edouard Mendy,existing_followup,,challengeLost,1.0,omission_difference
+2020-21,108,172649,Dean Henderson,existing_followup,,challengeLost,1.0,omission_difference
+2019-20,133,111234,Jordan Pickford,existing_followup,,totalClearance,2.0,omission_difference
+2019-20,137,20480,Tim Krul,existing_followup,,totalClearance,1.0,omission_difference
+2019-20,137,80201,Bernd Leno,existing_followup,,totalClearance,2.0,omission_difference
+2019-20,140,38533,Rui Patricio,existing_followup,,totalClearance,1.0,omission_difference
+2019-20,140,172649,Dean Henderson,existing_followup,,totalClearance,2.0,omission_difference
+2020-21,101,98747,Nick Pope,existing_followup,,totalClearance,1.0,omission_difference
+2020-21,101,111234,Jordan Pickford,existing_followup,,totalClearance,3.0,omission_difference
+2020-21,102,437495,Illan Meslier,existing_followup,,totalClearance,1.0,omission_difference
+2020-21,104,84182,Alphonse Areola,existing_followup,,totalClearance,1.0,omission_difference
+2020-21,104,121160,Ederson,existing_followup,,totalClearance,1.0,omission_difference
+2020-21,105,225321,Aaron Ramsdale,existing_followup,,totalClearance,3.0,omission_difference
+2020-21,106,37915,Hugo Lloris,existing_followup,,totalClearance,1.0,omission_difference
+2020-21,107,101982,Sam Johnstone,existing_followup,,totalClearance,1.0,omission_difference
+2022-23,281,437495,Illan Meslier,existing_followup,,totalClearance,1.0,omission_difference
+2022-23,282,80201,Bernd Leno,existing_followup,,totalClearance,1.0,omission_difference
+2022-23,283,154561,David Raya,existing_followup,,totalClearance,3.0,omission_difference
+2022-23,285,207270,Daniel Iversen,existing_followup,,totalClearance,1.0,omission_difference
+2022-23,286,37915,Hugo Lloris,existing_followup,,totalClearance,2.0,omission_difference
+2022-23,287,116535,Alisson Becker,existing_followup,,totalClearance,1.0,omission_difference
+2022-23,288,51940,David de Gea,existing_followup,,totalClearance,1.0,omission_difference
+2022-23,290,37096,Lukasz Fabianski,existing_followup,,totalClearance,1.0,omission_difference
+2020-21,102,228286,Edouard Mendy,existing_followup,,interception,1.0,omission_difference
+2022-23,286,111234,Jordan Pickford,existing_followup,,interception,1.0,omission_difference
+2026-27,8,200785,Adams,existing_development,2.0,interception,3.0,explicit_conflict
+2026-27,8,215379,Anderson,existing_development,2.0,interception,1.0,explicit_conflict
+2026-27,8,477424,Gvardiol,existing_development,2.0,interception,4.0,explicit_conflict
+2019-20,133,17745,Kasper Schmeichel,existing_followup,,ballRecovery,10.0,omission_difference
+2019-20,133,111234,Jordan Pickford,existing_followup,,ballRecovery,16.0,omission_difference
+2019-20,135,21205,Tom Heaton,existing_followup,,ballRecovery,9.0,omission_difference
+2019-20,135,51940,David De Gea,existing_followup,,ballRecovery,6.0,omission_difference
+2019-20,137,20480,Tim Krul,existing_followup,,ballRecovery,6.0,omission_difference
+2019-20,137,80201,Bernd Leno,existing_followup,,ballRecovery,5.0,omission_difference
+2019-20,140,38533,Rui Patricio,existing_followup,,ballRecovery,8.0,omission_difference
+2019-20,140,172649,Dean Henderson,existing_followup,,ballRecovery,12.0,omission_difference
+2020-21,101,98747,Nick Pope,existing_followup,,ballRecovery,11.0,omission_difference
+2020-21,101,111234,Jordan Pickford,existing_followup,,ballRecovery,8.0,omission_difference
+2020-21,102,228286,Edouard Mendy,existing_followup,,ballRecovery,6.0,omission_difference
+2020-21,102,437495,Illan Meslier,existing_followup,,ballRecovery,8.0,omission_difference
+2020-21,104,84182,Alphonse Areola,existing_followup,,ballRecovery,7.0,omission_difference
+2020-21,104,121160,Ederson,existing_followup,,ballRecovery,6.0,omission_difference
+2020-21,105,17745,Kasper Schmeichel,existing_followup,,ballRecovery,7.0,omission_difference
+2020-21,105,225321,Aaron Ramsdale,existing_followup,,ballRecovery,8.0,omission_difference
+2020-21,106,37915,Hugo Lloris,existing_followup,,ballRecovery,2.0,omission_difference
+2020-21,106,80201,Bernd Leno,existing_followup,,ballRecovery,7.0,omission_difference
+2020-21,107,40836,Vicente Guaita,existing_followup,,ballRecovery,6.0,omission_difference
+2020-21,107,101982,Sam Johnstone,existing_followup,,ballRecovery,7.0,omission_difference
+2020-21,108,37096,Lukasz Fabianski,existing_followup,,ballRecovery,7.0,omission_difference
+2020-21,108,172649,Dean Henderson,existing_followup,,ballRecovery,10.0,omission_difference
+2022-23,281,225321,Aaron Ramsdale,existing_followup,,ballRecovery,3.0,omission_difference
+2022-23,281,437495,Illan Meslier,existing_followup,,ballRecovery,7.0,omission_difference
+2022-23,282,69752,Neto,existing_followup,,ballRecovery,11.0,omission_difference
+2022-23,282,80201,Bernd Leno,existing_followup,,ballRecovery,3.0,omission_difference
+2022-23,283,49262,Jason Steele,existing_followup,,ballRecovery,8.0,omission_difference
+2022-23,283,154561,David Raya,existing_followup,,ballRecovery,17.0,omission_difference
+2022-23,284,98980,Emiliano Martinez,existing_followup,,ballRecovery,6.0,omission_difference
+2022-23,284,109745,Kepa Arrizabalaga,existing_followup,,ballRecovery,6.0,omission_difference
+2022-23,285,40836,Vicente Guaita,existing_followup,,ballRecovery,9.0,omission_difference
+2022-23,285,207270,Daniel Iversen,existing_followup,,ballRecovery,9.0,omission_difference
+2022-23,286,37915,Hugo Lloris,existing_followup,,ballRecovery,14.0,omission_difference
+2022-23,286,111234,Jordan Pickford,existing_followup,,ballRecovery,4.0,omission_difference
+2022-23,287,116535,Alisson Becker,existing_followup,,ballRecovery,6.0,omission_difference
+2022-23,287,121160,Ederson,existing_followup,,ballRecovery,4.0,omission_difference
+2022-23,288,51940,David de Gea,existing_followup,,ballRecovery,3.0,omission_difference
+2022-23,288,98747,Nick Pope,existing_followup,,ballRecovery,6.0,omission_difference
+2022-23,289,28411,Keylor Navas,existing_followup,,ballRecovery,9.0,omission_difference
+2022-23,289,149065,José Sá,existing_followup,,ballRecovery,9.0,omission_difference
+2022-23,290,37096,Lukasz Fabianski,existing_followup,,ballRecovery,9.0,omission_difference
+2022-23,290,456350,Gavin Bazunu,existing_followup,,ballRecovery,8.0,omission_difference
+2026-27,8,114283,Grealish,existing_development,1.0,ballRecovery,,omission_difference
+2019-20,140,38533,Rui Patricio,existing_followup,,wasFouled,1.0,omission_difference
+2019-20,140,172649,Dean Henderson,existing_followup,,wasFouled,1.0,omission_difference
+2020-21,101,111234,Jordan Pickford,existing_followup,,wasFouled,1.0,omission_difference
+2022-23,281,437495,Illan Meslier,existing_followup,,wasFouled,1.0,omission_difference
+2022-23,283,154561,David Raya,existing_followup,,wasFouled,1.0,omission_difference
+2022-23,284,98980,Emiliano Martinez,existing_followup,,wasFouled,1.0,omission_difference
+2019-20,133,17745,Kasper Schmeichel,existing_followup,,saves,2.0,omission_difference
+2019-20,133,111234,Jordan Pickford,existing_followup,,saves,4.0,omission_difference
+2019-20,135,21205,Tom Heaton,existing_followup,,saves,5.0,omission_difference
+2019-20,135,51940,David De Gea,existing_followup,,saves,1.0,omission_difference
+2019-20,137,20480,Tim Krul,existing_followup,,saves,4.0,omission_difference
+2019-20,137,80201,Bernd Leno,existing_followup,,saves,6.0,omission_difference
+2019-20,140,38533,Rui Patricio,existing_followup,,saves,3.0,omission_difference
+2019-20,140,172649,Dean Henderson,existing_followup,,saves,3.0,omission_difference
+2020-21,101,98747,Nick Pope,existing_followup,,saves,5.0,omission_difference
+2020-21,101,111234,Jordan Pickford,existing_followup,,saves,2.0,omission_difference
+2020-21,102,228286,Edouard Mendy,existing_followup,,saves,2.0,omission_difference
+2020-21,102,437495,Illan Meslier,existing_followup,,saves,7.0,omission_difference
+2020-21,104,84182,Alphonse Areola,existing_followup,,saves,4.0,omission_difference
+2020-21,104,121160,Ederson,existing_followup,,saves,1.0,omission_difference
+2020-21,105,225321,Aaron Ramsdale,existing_followup,,saves,2.0,omission_difference
+2020-21,106,37915,Hugo Lloris,existing_followup,,saves,2.0,omission_difference
+2020-21,106,80201,Bernd Leno,existing_followup,,saves,1.0,omission_difference
+2020-21,107,40836,Vicente Guaita,existing_followup,,saves,3.0,omission_difference
+2020-21,107,101982,Sam Johnstone,existing_followup,,saves,2.0,omission_difference
+2020-21,108,37096,Lukasz Fabianski,existing_followup,,saves,3.0,omission_difference
+2020-21,108,172649,Dean Henderson,existing_followup,,saves,5.0,omission_difference
+2022-23,281,225321,Aaron Ramsdale,existing_followup,,saves,4.0,omission_difference
+2022-23,281,437495,Illan Meslier,existing_followup,,saves,1.0,omission_difference
+2022-23,282,69752,Neto,existing_followup,,saves,1.0,omission_difference
+2022-23,282,80201,Bernd Leno,existing_followup,,saves,4.0,omission_difference
+2022-23,283,49262,Jason Steele,existing_followup,,saves,2.0,omission_difference
+2022-23,283,154561,David Raya,existing_followup,,saves,11.0,omission_difference
+2022-23,284,98980,Emiliano Martinez,existing_followup,,saves,7.0,omission_difference
+2022-23,285,40836,Vicente Guaita,existing_followup,,saves,1.0,omission_difference
+2022-23,285,207270,Daniel Iversen,existing_followup,,saves,8.0,omission_difference
+2022-23,286,37915,Hugo Lloris,existing_followup,,saves,5.0,omission_difference
+2022-23,287,116535,Alisson Becker,existing_followup,,saves,4.0,omission_difference
+2022-23,288,51940,David de Gea,existing_followup,,saves,4.0,omission_difference
+2022-23,288,98747,Nick Pope,existing_followup,,saves,1.0,omission_difference
+2022-23,289,149065,José Sá,existing_followup,,saves,6.0,omission_difference
+2022-23,290,37096,Lukasz Fabianski,existing_followup,,saves,3.0,omission_difference
+2022-23,290,456350,Gavin Bazunu,existing_followup,,saves,2.0,omission_difference

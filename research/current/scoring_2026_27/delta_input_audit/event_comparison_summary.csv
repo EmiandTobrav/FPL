@@ -1,0 +1,16 @@
+field,comparison,cells
+challengeLost,both_omitted,12655
+challengeLost,equal_explicit,29799
+challengeLost,explicit_conflict,12
+challengeLost,omission_difference,35436
+clearanceOffLine,both_omitted,12689
+clearanceOffLine,equal_explicit,583
+clearanceOffLine,omission_difference,64630
+totalTackle,both_omitted,12631
+totalTackle,equal_explicit,43458
+totalTackle,explicit_conflict,16
+totalTackle,omission_difference,21797
+wonTackle,both_omitted,12649
+wonTackle,equal_explicit,32707
+wonTackle,explicit_conflict,11
+wonTackle,omission_difference,32535

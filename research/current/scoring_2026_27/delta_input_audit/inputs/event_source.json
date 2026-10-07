@@ -1,0 +1,12 @@
+{
+  "sha256": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+  "types": [
+    7,
+    10,
+    12,
+    45
+  ],
+  "line_marker_candidate": 14,
+  "role": "Diagnostics only; published parser mapping is not provider-certified. No new absent-marker zeros.",
+  "source": "https://github.com/andrewRowlinson/optasoccer/blob/825cadb56c9c976a8c34c9d5da26d6e37c6ff239/optasoccer/metadata.py"
+}

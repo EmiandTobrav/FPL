@@ -1,0 +1,40 @@
+season,fixture,code,name,archive,event_candidate,field,comparison
+2019-20,35,19624,Joao Moutinho,3.0,4.0,totalTackle,explicit_conflict
+2019-20,35,100649,Bernard,1.0,0.0,totalTackle,explicit_conflict
+2019-20,35,216054,Ruben Vinagre,5.0,4.0,totalTackle,explicit_conflict
+2019-20,155,200617,Daniel James,2.0,1.0,totalTackle,explicit_conflict
+2019-20,196,102747,Djibril Sidibé,2.0,3.0,totalTackle,explicit_conflict
+2019-20,196,106611,Michael Keane,1.0,2.0,totalTackle,explicit_conflict
+2020-21,21,50472,James McCarthy,4.0,5.0,totalTackle,explicit_conflict
+2020-21,21,80146,Jordan Ayew,1.0,0.0,totalTackle,explicit_conflict
+2020-21,21,101188,Lucas Digne,2.0,3.0,totalTackle,explicit_conflict
+2020-21,21,212319,Richarlison,4.0,3.0,totalTackle,explicit_conflict
+2020-21,21,244723,Tyrick Mitchell,6.0,7.0,totalTackle,explicit_conflict
+2025-26,87,462116,Jean-Clair Todibo,3.0,2.0,totalTackle,explicit_conflict
+2025-26,294,475168,João Pedro,3.0,2.0,totalTackle,explicit_conflict
+2025-26,297,516895,Kobbie Mainoo,3.0,2.0,totalTackle,explicit_conflict
+2025-26,300,220566,Rodri,2.0,1.0,totalTackle,explicit_conflict
+2025-26,300,564940,Soungoutou Magassa,2.0,3.0,totalTackle,explicit_conflict
+2019-20,35,19624,Joao Moutinho,2.0,3.0,wonTackle,explicit_conflict
+2019-20,35,216054,Ruben Vinagre,2.0,1.0,wonTackle,explicit_conflict
+2019-20,196,102747,Djibril Sidibé,2.0,3.0,wonTackle,explicit_conflict
+2019-20,196,106611,Michael Keane,1.0,2.0,wonTackle,explicit_conflict
+2020-21,21,101188,Lucas Digne,1.0,2.0,wonTackle,explicit_conflict
+2020-21,21,212319,Richarlison,3.0,2.0,wonTackle,explicit_conflict
+2025-26,294,475168,João Pedro,1.0,0.0,wonTackle,explicit_conflict
+2025-26,297,516895,Kobbie Mainoo,2.0,1.0,wonTackle,explicit_conflict
+2025-26,300,215439,Tomás Soucek,4.0,3.0,wonTackle,explicit_conflict
+2025-26,300,220566,Rodri,2.0,1.0,wonTackle,explicit_conflict
+2025-26,332,220627,James Justin,1.0,0.0,wonTackle,explicit_conflict
+2019-20,35,120250,André Gomes,3.0,2.0,challengeLost,explicit_conflict
+2019-20,35,212319,Richarlison,3.0,2.0,challengeLost,explicit_conflict
+2019-20,155,205651,Gabriel Jesus,2.0,1.0,challengeLost,explicit_conflict
+2019-20,155,200617,Daniel James,2.0,3.0,challengeLost,explicit_conflict
+2019-20,196,57145,Federico Fernández,2.0,1.0,challengeLost,explicit_conflict
+2020-21,31,85955,Jorginho,2.0,1.0,challengeLost,explicit_conflict
+2022-23,101,91651,Mateo Kovacic,1.0,0.0,challengeLost,explicit_conflict
+2022-23,101,122806,John McGinn,2.0,0.0,challengeLost,explicit_conflict
+2022-23,101,195546,Emiliano Buendia,1.0,0.0,challengeLost,explicit_conflict
+2022-23,101,184341,Mason Mount,1.0,0.0,challengeLost,explicit_conflict
+2025-26,300,551226,Mateus Fernandes,4.0,3.0,challengeLost,explicit_conflict
+2025-26,332,243526,Gabriel Gudmundsson,3.0,4.0,challengeLost,explicit_conflict

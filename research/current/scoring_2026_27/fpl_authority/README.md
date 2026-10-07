@@ -1,5 +1,7 @@
 # Gjeldende restliste: FPL som fasit
 
+> Kildepolitikken gjelder fortsatt. **Nyeste uttrekk, kvalitetskontroll og resttall finnes i [delta_input_audit/](../delta_input_audit/README.md).** Tallene nedenfor er øyeblikksbildet før dette uttrekket.
+
 Oppdatert 7. oktober 2026. Denne listen **erstatter** arbeidskøene i
 `remaining_ledger/`, `resolution_priority/`, `official_revision/`,
 `minute_reconciliation/` og `bps_minute_qualification/`. Tidligere køer beholdes

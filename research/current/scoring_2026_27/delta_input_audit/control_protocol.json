@@ -1,0 +1,13 @@
+{
+  "selection": "First season/fixture/code in each explicit source stratum; exclude all prior controls. Frozen before collecting official responses.",
+  "strata": [
+    "explicit_line_clearance",
+    "explicit_tackled_zero",
+    "explicit_tackled_positive",
+    "explicit_keeper_outside_save"
+  ],
+  "rows": 28,
+  "primary_comparison": "Compare both-explicit values, omission differences and invalid values separately. No missing-to-zero coercion.",
+  "acceptance": "No disagreement may be hidden by aggregate agreement. Conflicting cells stay open; field agreement is not blanket row approval.",
+  "limitations": "Purposeful coverage sample, not random population estimate; same Opta ancestry, not independent provider validation; no scoring holdout claimed."
+}

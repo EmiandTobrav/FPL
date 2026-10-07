@@ -1,0 +1,13 @@
+field,comparison,cells
+clearances_blocks_interceptions,equal_explicit,988
+clearances_blocks_interceptions,explicit_conflict,30
+clearances_blocks_interceptions,omission_difference,10474
+recoveries,equal_explicit,9484
+recoveries,explicit_conflict,132
+recoveries,omission_difference,1876
+saves,equal_explicit,709
+saves,explicit_conflict,1
+saves,omission_difference,10782
+tackles,equal_explicit,6232
+tackles,explicit_conflict,84
+tackles,omission_difference,5176

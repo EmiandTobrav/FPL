@@ -1,0 +1,152 @@
+[
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124797&altIds=true",
+    "file": "inputs/primary/targeted_54156_124797.json",
+    "sha256": "5f2a2407330c698aa02edef82e300536cb2944fb372bbf4c12d3d4093cdd22fd"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124808&altIds=true",
+    "file": "inputs/primary/targeted_54156_124808.json",
+    "sha256": "9c0ca70c4b061db755f1ef8a6f91c3c28ddd7543750ee1fb98032be6619ab973"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124812&altIds=true",
+    "file": "inputs/primary/targeted_54156_124812.json",
+    "sha256": "9a960b8d6e000213d51b6f5e22d9db9d95170c5d64913090538fa882bb0ae9bc"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124828&altIds=true",
+    "file": "inputs/primary/targeted_54156_124828.json",
+    "sha256": "e9ff8506e2a09f4fcfc1b0f75161ff3a0bfc33313c496dedc37bda797c68c3e9"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124831&altIds=true",
+    "file": "inputs/primary/targeted_54156_124831.json",
+    "sha256": "e5de0885cba7d8551ecacebefc8e53fb091be9b16a5446a8d81ae90d33a504e4"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124847&altIds=true",
+    "file": "inputs/primary/targeted_54156_124847.json",
+    "sha256": "4bd533f736d095e6ba5225ca2cbbd215e086e903d6d017434c7b0a755c99fe13"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124854&altIds=true",
+    "file": "inputs/primary/targeted_54156_124854.json",
+    "sha256": "7a4fabe9d61989a37456091b61a3be298672f4ba8edc0374aa9b09ad7939dd46"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124866&altIds=true",
+    "file": "inputs/primary/targeted_54156_124866.json",
+    "sha256": "fdb7670768619cadcc3f0e17f2399256f7feb08bd2478e4433dac9b889bf9bf4"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124872&altIds=true",
+    "file": "inputs/primary/targeted_54156_124872.json",
+    "sha256": "271df33a9029ab883e13a49bf02cc79302893d86419e6330e0314eeee5ad4a82"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124886&altIds=true",
+    "file": "inputs/primary/targeted_54156_124886.json",
+    "sha256": "3338d7cdd7ecd6ee33612f68856c95e87b32d4a9f3fe22c24cf8be8edea53ddd"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124896&altIds=true",
+    "file": "inputs/primary/targeted_54156_124896.json",
+    "sha256": "96320c260a3883e844144a0bf068d9c3759527fc6d0940b14ebcc62102d967ed"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124909&altIds=true",
+    "file": "inputs/primary/targeted_54156_124909.json",
+    "sha256": "2fe4d62eb332c20dd317e80f8a257e7284b8caf2739ce98857cd61bbc3ab6282"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124916&altIds=true",
+    "file": "inputs/primary/targeted_54156_124916.json",
+    "sha256": "73c0f7957618864e0646875ea1839afa0ad1496253fd51356f11acc126881063"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124925&altIds=true",
+    "file": "inputs/primary/targeted_54156_124925.json",
+    "sha256": "6ec02c9e07b1e6a21e5581f45a81512c97604c6de31e85042b2a1000360f684b"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124937&altIds=true",
+    "file": "inputs/primary/targeted_54156_124937.json",
+    "sha256": "a72f6757ec6b3e3f18ea898cbac4be69346f8f08bab5a61c306d423c6f59e0e6"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124979&altIds=true",
+    "file": "inputs/primary/targeted_54156_124979.json",
+    "sha256": "454fa844feca0199cbd694784e3d3ae010829d5c06e0416fd51166208be6d780"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124987&altIds=true",
+    "file": "inputs/primary/targeted_54156_124987.json",
+    "sha256": "d07f537d2ec21b09247e8456c870d715b7aeb6a1b1d76c48972e9ccfc5617ceb"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=124998&altIds=true",
+    "file": "inputs/primary/targeted_54156_124998.json",
+    "sha256": "c39deac031cbf80bbb14c10bc0a55dbdd6c9e1fccadf683039ca8e53b043e5e2"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125006&altIds=true",
+    "file": "inputs/primary/targeted_54156_125006.json",
+    "sha256": "b0299a234537ffe0f69351badb45a3eddc463e150da30742a94631f83c7275c0"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125018&altIds=true",
+    "file": "inputs/primary/targeted_54156_125018.json",
+    "sha256": "4a4e5a1c5f9770f5014c445f7eeba7e26204374e58c68327fbfed774b375a4c1"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125077&altIds=true",
+    "file": "inputs/primary/targeted_54156_125077.json",
+    "sha256": "f760f285f2ae8fb417dd01d3f1d675b1c7a06a1ae57f2174c6cf3d239819bf21"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125090&altIds=true",
+    "file": "inputs/primary/targeted_54156_125090.json",
+    "sha256": "db18e2a5bdab6fcd59d769a8ebcc1203e32cf508caddf3e3c8ece7a3aa6df4a6"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125097&altIds=true",
+    "file": "inputs/primary/targeted_54156_125097.json",
+    "sha256": "a7509e49f59227b891eb528aad7f61b7b028d23382070a40b3bf86df3b2eb7ad"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125104&altIds=true",
+    "file": "inputs/primary/targeted_54156_125104.json",
+    "sha256": "7b53a7edc7b49f0c2722f1f51aa430f60ca977a50e86326013c565f51bd1cdc0"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125117&altIds=true",
+    "file": "inputs/primary/targeted_54156_125117.json",
+    "sha256": "ce712ff1004b5800abecfe9b5dc6ee170a9c1b661985f15d5c763b72580304e6"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125124&altIds=true",
+    "file": "inputs/primary/targeted_54156_125124.json",
+    "sha256": "6bb5aa54770e741a2cdb497bc49b8894cd0652dd075ec4c0b02e69483f72c43e"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125136&altIds=true",
+    "file": "inputs/primary/targeted_54156_125136.json",
+    "sha256": "3344dbecda5be7015df9b48f15beddcd7632d264024675c891f160cda6153579"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125146&altIds=true",
+    "file": "inputs/primary/targeted_54156_125146.json",
+    "sha256": "32ff8ebaeeba852c1f9d216bb00d3a965fb13b86d9e2d8bdafb4b7238454b293"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125153&altIds=true",
+    "file": "inputs/primary/targeted_54156_125153.json",
+    "sha256": "c157fb23bc5117101262712a41750cb7debff36275c80932322d25437a9aecc4"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?fixtures=125166&altIds=true",
+    "file": "inputs/primary/targeted_54156_125166.json",
+    "sha256": "44c5e7917eddf1cf27009460ff29e60d9a0180b42fc64d3cef21170375e278ae"
+  }
+]

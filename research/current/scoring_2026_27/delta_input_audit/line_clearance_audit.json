@@ -1,0 +1,9 @@
+{
+  "explicit_pairs": 576,
+  "explicit_equal": 576,
+  "explicit_conflicts": 0,
+  "omitted_stat_event_positive": 0,
+  "omitted_stat_event_zero_candidate": 64123,
+  "zeros_approved": 0,
+  "reason": "Matching positives do not establish complete negative reporting; zero event counts are diagnostic only."
+}

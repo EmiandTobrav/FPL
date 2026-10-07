@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/8868?comps=1&compSeasons=777&altIds=true",
+    "file": "inputs/primary/season_2025_8868.json",
+    "sha256": "3cef68f9f131d149b9eb075b5e18edda6427f13e7d9dc493a7a1d2f7c5df147b"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/31936?comps=1&compSeasons=777&altIds=true",
+    "file": "inputs/primary/season_2025_31936.json",
+    "sha256": "6f85bfc809f791fa96333816233e7eb1d045b693ccb09288aad9e8f6a4f97fc3"
+  },
+  {
+    "url": "https://footballapi.pulselive.com/football/stats/player/54156?comps=1&compSeasons=777&altIds=true",
+    "file": "inputs/primary/season_2025_54156.json",
+    "sha256": "e602f71815366553291d39cd991bbe984e0388b640bfe107211faf26062076b1"
+  }
+]

@@ -1,0 +1,29 @@
+season,fixture,code,name,date,home,away,stratum
+2019-20,4,74230,Patrick van Aanholt,2019-08-10,Crystal Palace,Everton,explicit_line_clearance
+2019-20,9,43670,Juan Mata,2019-08-11,Man Utd,Chelsea,explicit_tackled_zero
+2019-20,9,41328,César Azpilicueta,2019-08-11,Man Utd,Chelsea,explicit_tackled_positive
+2019-20,2,172649,Dean Henderson,2019-08-10,Bournemouth,Sheffield Utd,explicit_keeper_outside_save
+2020-21,8,107613,Romain Saiss,2020-09-14,Sheffield Utd,Wolves,explicit_line_clearance
+2020-21,1,19188,Scott Dann,2020-09-12,Crystal Palace,Southampton,explicit_tackled_zero
+2020-21,1,20452,Shane Long,2020-09-12,Crystal Palace,Southampton,explicit_tackled_positive
+2020-21,3,437495,Illan Meslier,2020-09-12,Liverpool,Leeds,explicit_keeper_outside_save
+2021-22,2,17761,James Tarkowski,2021-08-14,Burnley,Brighton,explicit_line_clearance
+2021-22,2,44683,Jay Rodriguez,2021-08-14,Burnley,Brighton,explicit_tackled_zero
+2021-22,2,39155,Adam Lallana,2021-08-14,Burnley,Brighton,explicit_tackled_positive
+2021-22,2,98747,Nick Pope,2021-08-14,Burnley,Brighton,explicit_keeper_outside_save
+2022-23,3,184341,Mason Mount,2022-08-06,Everton,Chelsea,explicit_line_clearance
+2022-23,2,54469,Adam Smith,2022-08-06,Bournemouth,Aston Villa,explicit_tackled_zero
+2022-23,2,84583,Philippe Coutinho,2022-08-06,Bournemouth,Aston Villa,explicit_tackled_positive
+2022-23,2,229600,Mark Travers,2022-08-06,Bournemouth,Aston Villa,explicit_keeper_outside_save
+2023-24,3,168991,Philip Billing,2023-08-12,Bournemouth,West Ham,explicit_line_clearance
+2023-24,2,55037,Cheikhou Kouyaté,2023-08-12,Arsenal,Nott'm Forest,explicit_tackled_zero
+2023-24,2,80226,Serge Aurier,2023-08-12,Arsenal,Nott'm Forest,explicit_tackled_positive
+2023-24,2,224068,Matt Turner,2023-08-12,Arsenal,Nott'm Forest,explicit_keeper_outside_save
+2024-25,5,487838,Lewis Hall,2024-08-17,Newcastle,Southampton,explicit_line_clearance
+2024-25,2,87835,Matt Doherty,2024-08-17,Arsenal,Wolves,explicit_tackled_zero
+2024-25,2,60232,Craig Dawson,2024-08-17,Arsenal,Wolves,explicit_tackled_positive
+2024-25,2,149065,José Sá,2024-08-17,Arsenal,Wolves,explicit_keeper_outside_save
+2025-26,5,223827,Daniel Ballard,2025-08-16,Sunderland,West Ham,explicit_line_clearance
+2025-26,2,72147,Marco Bizot,2025-08-16,Aston Villa,Newcastle,explicit_tackled_zero
+2025-26,2,114243,Jacob Murphy,2025-08-16,Aston Villa,Newcastle,explicit_tackled_positive
+2025-26,3,80201,Bernd Leno,2025-08-16,Brighton,Fulham,explicit_keeper_outside_save
