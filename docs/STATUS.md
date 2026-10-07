@@ -2,6 +2,39 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Gjeldende kildeprioritet og restliste – 7. oktober 2026
+
+**Bruk [fpl_authority/](../research/current/scoring_2026_27/fpl_authority/README.md)
+som gjeldende arbeidsgrunnlag.** Alle eldre køer og tall nedenfor er historikk.
+Historisk FPL er fasiten for kompatible felt, inklusive minutter og eksplisitte
+nuller. Eksterne kildeforskjeller er ikke automatisk FPL-feil. Ingen generell
+minutt- eller pasningsrekonstruksjon skal prioriteres videre.
+
+Metoden bruker historisk FPL-BPS og endrer bare regelledd som har endret seg
+mot 2026/27. Bonus må rangeres på nytt etter dette; historisk bonus/totalpoeng
+skal ikke merkes som ferdig harmonisert. Sesongavhengigheter og globale
+kvalifiseringskrav står i `fpl_authority/rule_dependencies.json`.
+
+Ny rest: **363 517 åpne feltkrav i 77 248 unike spillerkamper**:
+314 595 manglende eksterne verdier, 205 eksterne kildekonflikter,
+48 716 assistomregninger og ett kjent FPL-uttrekksunntak (Ferguson).
+Separat finnes **245 489 tilgjengelige eksterne verdier i 66 584 spillerkamper**
+for kvalitetskontroll. Unionen berører 77 280 spillerkamper, uten dobbelttelling.
+Reduksjonen fra 880 385 er korrigert metode/prioritering, ikke ny datadekning.
+
+Alle 77 280 FPL-minuttverdier, 5 343 godkjente keeperverdier og 38 uløste
+keeperobservasjoner er bevart. De fire godkjente offisielle målomgjøringene
+videreføres som åtte avledede mål-/selvmålsrettelser med separate hendelsesgater.
+Ingen kilder eller låste etiketter/modeller/benchmark er endret.
+16 nye og 80 eksisterende fokuserte tester består; 17 filer er identiske ved ny kjøring.
+
+Neste prioritet er å projisere `times_tackled`, gammel netto taklingsteller og
+redninger utenfor boksen fra tilgjengelige råarkiver, kvalifisere delta-leddene,
+og deretter håndtere manglende eksterne data og assists. Uprojiserte felt er
+ikke bevist fraværende hos kildene. Nye målpoeng/BPS/bonus er ikke produsert.
+
+## Historikk – tidligere køer er erstattet
+
 ## BPS-hypoteser kontrollert; fire minuttunntak avklart – 7. oktober 2026
 
 [Nyeste restliste og BPS-minuttkontroll](../research/current/scoring_2026_27/bps_minute_qualification/README.md)

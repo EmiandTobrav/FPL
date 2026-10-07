@@ -1,5 +1,7 @@
 # Endelige offisielle målrettinger og første minuttavklaring
 
+> **Superseded as the current work queue:** see [FPL-authoritative ledger](../fpl_authority/README.md). Historical diagnostics and approved evidence below are retained; provider differences do not override compatible FPL values.
+
 7. oktober 2026, videreført fra `4883ccc` på PR #1.
 Brukeren har uttrykkelig valgt **endelig korrigerte offisielle hendelser,
 omregnet etter 2026/27-reglene**, som fasit for det nye datasettet. Dette er

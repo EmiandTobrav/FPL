@@ -1,5 +1,7 @@
 # Kontroll av poengfølsomme minuttkonflikter
 
+> **Superseded as the current work queue:** see [FPL-authoritative ledger](../fpl_authority/README.md). Historical diagnostics and approved evidence below are retained; provider differences do not override compatible FPL values.
+
 7. oktober 2026. Videreført fra `579fe37` på PR #1, med brukerens valg om
 endelig korrigerte hendelser etter 2026/27-reglene. Ingen historiske
 kilderader, keeperverdier eller låste etiketter er overskrevet.

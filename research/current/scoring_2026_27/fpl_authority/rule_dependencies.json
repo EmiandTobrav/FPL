@@ -1,0 +1,82 @@
+{
+  "target": "2026-27",
+  "strategy": "historical_fpl_bps_plus_changed_components_only",
+  "scope": "Dependency ledger; not an executed or qualified delta scorer",
+  "sources": [
+    {
+      "url": "https://www.premierleague.com/en/news/4059044",
+      "season": "2024-25",
+      "facts": "GK goal basic points 6 to 10; penalty-save BPS 15 to 9; new conceded-goal, goalline-clearance, foul-won and shot-on-target BPS."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4362127/whats-new-in-202526-fantasy-changes-to-bonus-points-system",
+      "season": "2025-26",
+      "facts": "Location-sensitive saves; penalty-save BPS 9 to 8; line-clearance BPS 3 to 9; penalties fixed at 12 BPS; net-tackle component replaced by won tackles."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4679946/",
+      "season": "2026-27",
+      "facts": "Remove times-tackled deduction; CBI divisor 2 to 3; all saves count, with inside-box and big-chance increments; penalty-save BPS 8 to 7."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4679873",
+      "season": "2026-27",
+      "facts": "Defensive-contribution awards continue; no new assist or minute scoring change identified."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4362187/whats-new-in-202526-fantasy-changes-to-assists-rules",
+      "season": "2025-26",
+      "facts": "Assist eligibility changed for 2025/26; older awards cannot all be carried forward."
+    }
+  ],
+  "unchanged_bps_components_carried_by_baseline": [
+    "minutes",
+    "passing",
+    "recoveries",
+    "crosses",
+    "chance_creation",
+    "dribbles",
+    "winning_goal",
+    "errors",
+    "fouls_committed",
+    "offsides",
+    "shots_off_target",
+    "cards"
+  ],
+  "changed_components": {
+    "all_historical": [
+      "CBI weighting",
+      "remove being-tackled deduction",
+      "new goalkeeper big-chance-save reward"
+    ],
+    "before_2025_26": [
+      "tackle definition",
+      "goal-line clearance weight",
+      "penalty goal weight MID/FWD",
+      "goalkeeper save location",
+      "target assists",
+      "new defensive contribution"
+    ],
+    "before_2024_25": [
+      "goalkeeper goal basic value",
+      "fouls won",
+      "shots on target",
+      "defensive goals-conceded BPS"
+    ],
+    "keeper_save_caution": "For 2025/26 retain explicit saved_ibox and saved_obox to remove old shot-location terms; do not assume their sum equals FPL saves."
+  },
+  "global_gates_not_missing_cells": [
+    "Verify complete season-specific delta coefficients and integer/clipping rules before executing the scorer.",
+    "Qualify legacy net-tackle counter and the prior component clipping convention; do not substitute total_tackles or dispossessed.",
+    "Align external counter revisions with the historical FPL BPS component being removed; source-definition/revision drift may require explicit exceptions.",
+    "Apply paired goal revisions and re-evaluate their assist/shot/winning-goal bundles coherently.",
+    "Require complete match participants and resolved BPS before ranking bonus."
+  ],
+  "raw_fields_not_yet_projected": [
+    "times_tackled outside existing primary controls",
+    "legacy_net_tackles",
+    "saved_obox outside existing primary controls"
+  ],
+  "not_claimed": "No blanket claim that all non-projected counters are absent from upstream archives. The ledger identifies needs in the currently reviewed local extracts.",
+  "accessed": "2026-10-07"
+}

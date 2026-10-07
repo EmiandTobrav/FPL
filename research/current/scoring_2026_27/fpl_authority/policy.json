@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "approved_by": "User 2026-10-07: historical FPL is authoritative except required target-rule rescoring",
+  "priority": [
+    "compatible_historical_fpl",
+    "explicit_approved_official_revision",
+    "approved_keeper_reconstruction",
+    "qualified_external_evidence_when_fpl_missing"
+  ],
+  "never_replace_fpl_by_source_vote": true,
+  "baseline_bps": "Retain official historical BPS; change only documented season-to-target components. Do not output baseline BPS as target BPS.",
+  "bonus": "Re-rank every complete fixture after BPS deltas, using official tie rules; historical bonus is a baseline only.",
+  "basic_points": "Retain historical total minus old bonus, adjust changed assists/goalkeeper goal value/defensive contributions and approved revisions, then add recomputed bonus.",
+  "assists": "Retain 2025/26 FPL assists under unchanged target assist rules; pre-2025/26 requires target-rule event review except proven team-score zeros.",
+  "official_revision_policy": "Preserve the four user-approved retrospective paired goal corrections; review event bundles before scoring.",
+  "ferguson": "Keep original FPL values. Known participation anomaly is one extraction exception requiring baseline review, not authority for a guessed 17-minute replacement.",
+  "no_sparse_zero_fill": true,
+  "no_xg_imputation": true,
+  "minute_supplements": "Prior reconciliation experiments are superseded as work priorities; no minute patch is automatically applied.",
+  "external_quality": "Available external evidence is separate from missing/conflicting data and from completed quality assurance.",
+  "locked_outputs_modified": false
+}

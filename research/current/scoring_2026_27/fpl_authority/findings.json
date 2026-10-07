@@ -1,0 +1,30 @@
+{
+  "population": 77280,
+  "required_cells": 775248,
+  "status_counts": {
+    "missing_data": 314595,
+    "external_available": 245489,
+    "fpl_authoritative": 143827,
+    "rule_recalculation": 48716,
+    "documented_zero": 17072,
+    "approved_reconstruction": 5343,
+    "external_conflict": 205,
+    "fpl_extract_exception": 1
+  },
+  "open_cells": 363517,
+  "unique_affected_player_matches": 77248,
+  "external_quality_review_cells": 245489,
+  "external_quality_unique_player_matches": 66584,
+  "unique_open_or_external_quality_player_matches": 77280,
+  "required_minute_cells": 0,
+  "previous_364_minute_rule_cases_are_not_delta_requirements": true,
+  "fpl_provider_disagreements_are_not_fpl_errors": true,
+  "approved_keeper_values": 5343,
+  "unresolved_keeper_values": 38,
+  "official_goal_revision_cells": 8,
+  "baseline_values_modified": false,
+  "full_target_labels_produced": 0,
+  "delta_engine_qualified": false,
+  "full_historical_harmonization_complete": false,
+  "cost_nok": 0
+}

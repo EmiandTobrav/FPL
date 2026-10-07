@@ -1,5 +1,7 @@
 # BPS-minuttregel: hypotesetest og fire avklarte særtilfeller
 
+> **Superseded as the current work queue:** see [FPL-authoritative ledger](../fpl_authority/README.md). Historical diagnostics and approved evidence below are retained; provider differences do not override compatible FPL values.
+
 7. oktober 2026. Videreført fra `84da2fd` på PR #1.
 **BPS-minuttkonvensjonen er fortsatt ikke kvalifisert.** Fire konkrete
 minuttbidrag er derimot dokumentert uten å velge en ny generell regel.

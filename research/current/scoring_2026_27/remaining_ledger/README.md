@@ -1,5 +1,7 @@
 # Samlet restliste for historisk 2026/27-harmonisering
 
+> **Superseded as the current work queue:** see [FPL-authoritative ledger](../fpl_authority/README.md). Historical diagnostics and approved evidence below are retained; provider differences do not override compatible FPL values.
+
 7. oktober 2026. Videreført på PR #1 fra `f799229dfbecaa11baf5d2a86b431eff6368a6ab`.
 Dette er en **sammenkoblet kilde- og behovsoversikt**, ikke nye poengetiketter.
 Alle godkjente keeperverdier, låste poeng/BPS/bonus, modeller og benchmark er bevart.
