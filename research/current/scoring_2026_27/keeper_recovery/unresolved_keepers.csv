@@ -1,0 +1,58 @@
+season,fixture,fixture_code,date,home,away,match_id,element,code,name,side,fpl_saves,fotmob_saves,fotmob_minutes,provider_minutes,player_id,provider_name,team_id,source_saves,explicit_big_chance_saves,identity_status,candidate_big_chance_saves,big_chance_saves,status,reason
+2019-20,133,1059834,2019-12-01,Leicester,Everton,,148,111234,Jordan Pickford,a,4,4.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,133,1059834,2019-12-01,Leicester,Everton,,168,17745,Kasper Schmeichel,h,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,135,1059836,2019-12-01,Man Utd,Aston Villa,,94,21205,Tom Heaton,a,5,5.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,135,1059836,2019-12-01,Man Utd,Aston Villa,,235,51940,David de Gea,h,1,1.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,137,1059838,2019-12-01,Norwich,Arsenal,,14,80201,Bernd Leno,a,6,6.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,137,1059838,2019-12-01,Norwich,Arsenal,,280,20480,Tim Krul,h,4,4.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,140,1059841,2019-12-01,Wolves,Sheffield Utd,,471,172649,Dean Henderson,a,3,3.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,140,1059841,2019-12-01,Wolves,Sheffield Utd,,411,38533,Rui Pedro dos Santos Patrício,h,3,3.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2019-20,155,1059856,2019-12-07,Man City,Man Utd,7fcdyc5mxxd9rjthk1s6vttnu,235,51940,David de Gea,a,4,4.0,90.0,90.0,e00004wkpfc8jawioejmpu1n9,David de Gea,6eqit8ye8aomdsrrq0hk3v7gh,4.0,,matched,0.0,,unresolved,shot_count_mismatch
+2019-20,241,1059942,2020-02-01,Bournemouth,Aston Villa,7vout1c43rz1j7szvj41w9k6i,494,225321,Aaron Ramsdale,h,4,4.0,90.0,90.0,6yovfcug6e9hykfauqy0fq67d,A. Ramsdale,1pse9ta7a45pi2w2grjim70ge,4.0,,matched,0.0,,unresolved,shot_count_mismatch
+2019-20,269,1059970,2020-02-22,Southampton,Aston Villa,80w4z95a2x9qrnl85qk7486ei,318,58376,Alex McCarthy,h,1,1.0,90.0,90.0,d3p7p18i2ybzlwz5p5gjdd239,A. McCarthy,d5ydtvt96bv7fq04yqm2w2632,1.0,,matched,1.0,,unresolved,big_chance_missed_conflict
+2020-21,101,2128388,2020-12-05,Burnley,Everton,,157,111234,Jordan Pickford,a,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,101,2128388,2020-12-05,Burnley,Everton,,96,98747,Nick Pope,h,5,5.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,102,2128389,2020-12-05,Chelsea,Leeds,,213,437495,Illan Meslier,a,7,7.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,102,2128389,2020-12-05,Chelsea,Leeds,,548,228286,Edouard Mendy,h,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,104,2128391,2020-12-05,Man City,Fulham,,516,84182,Alphonse Areola,a,4,4.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,104,2128391,2020-12-05,Man City,Fulham,,278,121160,Ederson Santana de Moraes,h,1,1.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,105,2128392,2020-12-06,Sheffield Utd,Leicester,,217,17745,Kasper Schmeichel,a,0,0.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,105,2128392,2020-12-06,Sheffield Utd,Leicester,,483,225321,Aaron Ramsdale,h,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,106,2128393,2020-12-06,Spurs,Arsenal,,8,80201,Bernd Leno,a,1,1.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,106,2128393,2020-12-06,Spurs,Arsenal,,383,37915,Hugo Lloris,h,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,107,2128394,2020-12-06,West Brom,Crystal Palace,,128,40836,Vicente Guaita,a,3,3.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,107,2128394,2020-12-06,West Brom,Crystal Palace,,417,101982,Sam Johnstone,h,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,108,2128395,2020-12-05,West Ham,Man Utd,,305,172649,Dean Henderson,a,5,5.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2020-21,108,2128395,2020-12-05,West Ham,Man Utd,,431,37096,Lukasz Fabianski,h,3,3.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,35,2292844,2022-08-27,Chelsea,Leicester,7brsfi4ilbeqrm4lwx9ckm1p0,254,95463,Danny Ward,a,1,2.0,90.0,90.0,5h2biadv4hd2ntcd7zo2c8639,D. Ward,avxknfz4f6ob0rv9dbnxdzde0,2.0,,matched,2.0,,unresolved,exceeds_fpl_saves
+2022-23,281,2293091,2023-04-01,Arsenal,Leeds,,238,437495,Illan Meslier,a,1,1.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,281,2293091,2023-04-01,Arsenal,Leeds,,15,225321,Aaron Ramsdale,h,4,4.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,282,2293090,2023-04-01,Bournemouth,Fulham,,2,80201,Bernd Leno,a,4,4.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,282,2293090,2023-04-01,Bournemouth,Fulham,,574,69752,Norberto Murara Neto,h,1,1.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,283,2293092,2023-04-01,Brighton,Brentford,,81,154561,David Raya Martin,a,11,11.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,283,2293092,2023-04-01,Brighton,Brentford,,102,49262,Jason Steele,h,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,284,2293093,2023-04-01,Chelsea,Aston Villa,,31,98980,Emiliano Martínez Romero,a,7,7.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,284,2293093,2023-04-01,Chelsea,Aston Villa,,133,109745,Kepa Arrizabalaga,h,0,0.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,285,2293094,2023-04-01,Crystal Palace,Leicester,,548,207270,Daniel Iversen,a,8,8.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,285,2293094,2023-04-01,Crystal Palace,Leicester,,152,40836,Vicente Guaita,h,1,1.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,286,2293095,2023-04-03,Everton,Spurs,,425,37915,Hugo Lloris,a,5,5.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,286,2293095,2023-04-03,Everton,Spurs,,182,111234,Jordan Pickford,h,0,0.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,287,2293096,2023-04-01,Man City,Liverpool,,281,116535,Alisson Ramses Becker,a,4,4.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,287,2293096,2023-04-01,Man City,Liverpool,,307,121160,Ederson Santana de Moraes,h,0,0.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,288,2293097,2023-04-02,Newcastle,Man Utd,,327,51940,David De Gea Quintana,a,4,4.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,288,2293097,2023-04-02,Newcastle,Man Utd,,376,98747,Nick Pope,h,1,1.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,289,2293098,2023-04-01,Nott'm Forest,Wolves,,478,149065,José Malheiro de Sá,a,6,6.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,289,2293098,2023-04-01,Nott'm Forest,Wolves,,729,28411,Keylor Navas,h,0,0.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,290,2293099,2023-04-02,West Ham,Southampton,,422,456350,Gavin Bazunu,a,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2022-23,290,2293099,2023-04-02,West Ham,Southampton,,455,37096,Lukasz Fabianski,h,3,3.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved
+2024-25,123,2444592,2024-12-01,Chelsea,Aston Villa,basek4892ykrxflbww4zim61g,51,111782,Robin Olsen,a,2,2.0,45.0,45.0,4myy5br8yj5678xlji3up1ryt,R. Olsen,b496gs285it6bheuikox6z9mj,2.0,,matched,0.0,,unresolved,missing_shot_flags;shot_count_mismatch
+2024-25,123,2444592,2024-12-01,Chelsea,Aston Villa,basek4892ykrxflbww4zim61g,47,98980,Emiliano Martínez Romero,a,3,3.0,45.0,45.0,3zl1q2gk6tdmzirsyfgm38no5,E. Martínez,b496gs285it6bheuikox6z9mj,3.0,,matched,0.0,,unresolved,missing_shot_flags;shot_count_mismatch
+2024-25,123,2444592,2024-12-01,Chelsea,Aston Villa,basek4892ykrxflbww4zim61g,185,215059,Robert Sánchez,h,3,3.0,90.0,90.0,d9yxninyn4bac8f0ufxsnlqll,Robert Sánchez,9q0arba2kbnywth8bkxlhgmdr,3.0,,matched,0.0,,unresolved,missing_shot_flags;shot_count_mismatch
+2024-25,126,2444595,2024-12-01,Man Utd,Everton,bbzdk3ell1dra16xq98m5nkt0,235,111234,Jordan Pickford,a,1,1.0,90.0,90.0,e8dina16u5kt5ho4u5igtmimt,J. Pickford,ehd2iemqmschhj2ec0vayztzz,1.0,,matched,0.0,,unresolved,big_chance_scored_conflict;missing_shot_flags;shot_count_mismatch
+2024-25,126,2444595,2024-12-01,Man Utd,Everton,bbzdk3ell1dra16xq98m5nkt0,383,202641,André Onana,h,2,2.0,90.0,90.0,8kttsnok9bbh7kpy3zz3j2xg5,A. Onana,6eqit8ye8aomdsrrq0hk3v7gh,2.0,,matched,0.0,,unresolved,missing_shot_flags;shot_count_mismatch
+2024-25,128,2444597,2024-12-01,Spurs,Fulham,bcsdyyjyzsnw41qse2hagqbro,248,80201,Bernd Leno,a,2,2.0,90.0,90.0,2f79rc4i712sxstahjkq6pxp1,B. Leno,hzqh7z0mdl3v7gwete66syxp,2.0,,matched,0.0,,unresolved,big_chance_scored_conflict;missing_shot_flags;shot_count_mismatch
+2024-25,128,2444597,2024-12-01,Spurs,Fulham,bcsdyyjyzsnw41qse2hagqbro,488,40383,Fraser Forster,h,5,5.0,90.0,90.0,8wz5pdydepr5kzcichz17pv4l,F. Forster,22doj4sgsocqpxw45h607udje,5.0,,matched,0.0,,unresolved,missing_shot_flags;shot_count_mismatch
+2025-26,298,2562192,2026-03-15,Nott'm Forest,Fulham,4btd13vohred1mnqymrbxt72s,502,85633,Matz Sels,h,1,1.0,90.0,90.0,2vgr8c97x4b2e51tyvvixusid,M. Sels,1qtaiy11gswx327s0vkibf70n,1.0,,matched,0.0,,unresolved,missing_shot_flags;shot_count_mismatch
+2025-26,332,2562225,2026-04-22,Bournemouth,Leeds,4pi8q807b9bc5r55gvpy5omqc,341,59735,Karl Darlow,a,5,5.0,90.0,90.0,cnoomjxp6tna0mx2ycuptgixh,K. Darlow,48gk2hpqtsl6p9sx9kjhaydq4,5.0,,matched,1.0,,unresolved,big_chance_missed_conflict
+2025-26,334,2562228,2026-04-22,Burnley,Man City,4qx1vfv92l7yqyy7fs7ekytjo,470,67089,Martin Dúbravka,h,8,8.0,90.0,90.0,7w4l5mrrrg66wvdd8ndb5zb9x,M. Dúbravka,64bxxwu2mv2qqlv0monbkj1om,8.0,2.0,matched,3.0,,unresolved,explicit_count_conflict
+2025-26,365,2562259,2026-05-19,Chelsea,Spurs,53j6evjl6xalzvbm90cxhzdw4,220,215059,Robert Lynch Sánchez,h,2,2.0,90.0,90.0,d9yxninyn4bac8f0ufxsnlqll,Robert Sánchez,9q0arba2kbnywth8bkxlhgmdr,2.0,1.0,matched,0.0,,unresolved,explicit_count_conflict

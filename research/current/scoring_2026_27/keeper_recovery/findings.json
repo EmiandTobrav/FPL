@@ -1,0 +1,25 @@
+{
+  "historical_observations": 5381,
+  "reconstructed": 5324,
+  "unresolved_observations": 57,
+  "unresolved_matches": 32,
+  "missing_source_matches": 21,
+  "historical_coverage_fraction": 0.9894071733878461,
+  "explicit_comparisons_in_fpl_scope": 343,
+  "explicit_matches": 341,
+  "explicit_conflicts": 2,
+  "current_season_validation": {
+    "keeper_observations": 100,
+    "matches": 50,
+    "explicit_comparisons": 52,
+    "explicit_exact": 52,
+    "unresolved": 0,
+    "independent_provider": false
+  },
+  "full_historical_keeper_coverage_ready": false,
+  "full_historical_rescoring_ready": false,
+  "locked_labels_modified": false,
+  "bonus_recomputed": false,
+  "test_count": 10,
+  "cost_nok": 0
+}

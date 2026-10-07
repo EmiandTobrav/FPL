@@ -1,0 +1,218 @@
+{
+  "retrieved_at": "2026-10-07",
+  "source_repository": "peteowen1/pannadata",
+  "source_commit": "8caf7733c07ab9326f7010f5192de18bdcfd291a",
+  "release": "opta-latest",
+  "assets": [
+    {
+      "name": "events_EPL.parquet",
+      "id": 578855763,
+      "size": 310557261,
+      "sha256": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+      "updated_at": "2026-09-21T10:58:11Z",
+      "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/events_EPL.parquet"
+    },
+    {
+      "name": "opta_fixtures.parquet",
+      "id": 618548998,
+      "size": 9828921,
+      "sha256": "9dcdffe83ae68395b299c99bb867e644140a43af14d28ae1a90861cf343d208f",
+      "updated_at": "2026-10-07T11:53:14Z",
+      "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_fixtures.parquet"
+    },
+    {
+      "name": "opta_player_stats.parquet",
+      "id": 618549179,
+      "size": 316399136,
+      "sha256": "2765b1771493c917ce7c544b01cf3a151e159a818abb889c7fcbd746353eaead",
+      "updated_at": "2026-10-07T11:53:28Z",
+      "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_player_stats.parquet"
+    },
+    {
+      "name": "opta_shot_events.parquet",
+      "id": 618549579,
+      "size": 74332792,
+      "sha256": "b3e5b780dad724edb8f68f1be6af409374448bcc3d150d0f0f43ae806fb9fed1",
+      "updated_at": "2026-10-07T11:53:33Z",
+      "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_shot_events.parquet"
+    }
+  ],
+  "fpl_repository": "EmiandTobrav/FPL",
+  "fpl_commit": "ef61ea0839da5aba5e19249e9f0a7826199a0885",
+  "fotmob_sources": [
+    {
+      "path": "research/current/scoring_2026_27/data/2019-20/part-000.csv",
+      "sha": "d2c8e4971d8d92a2e18000fd1e9078c09a585422"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2019-20/part-001.csv",
+      "sha": "3cc22587e819c358354f59b6506c28253f4a5221"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2019-20/part-002.csv",
+      "sha": "7e0a8fbad33550e6f4ad2c312f5a4094f9eae59f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2019-20/part-003.csv",
+      "sha": "771b495b919bb0cfe3ab3c746dbb0f8c7881ce21"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2019-20/part-004.csv",
+      "sha": "1b4b907ff06106c4800333377a2678772800c48c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2019-20/part-005.csv",
+      "sha": "377fc9c0fd116336ab59337c643b634212876193"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2020-21/part-000.csv",
+      "sha": "278b2be88aba6930838b28d7ed8101887d345e68"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2020-21/part-001.csv",
+      "sha": "102b3a3e8bda4f9db866401badb84c4a230a6dcd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2020-21/part-002.csv",
+      "sha": "d28fa0362601944f240cc9434b616f324df46953"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2020-21/part-003.csv",
+      "sha": "209f42873e00254a4937c48739a05decd283068c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2020-21/part-004.csv",
+      "sha": "d926cdac0bd7f8ed4885a5b1943269e37058f9be"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2020-21/part-005.csv",
+      "sha": "04bee041f680472f7cf23cf940c4e4e2a0ba098d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2021-22/part-000.csv",
+      "sha": "f61a7b9ad5c285c3e61c209b3beea96844c4a4d7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2021-22/part-001.csv",
+      "sha": "1179070a8377b3052be67eb961f93baf4d025671"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2021-22/part-002.csv",
+      "sha": "d2064fe5144508bd679bd83febd1c3e5d51919c8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2021-22/part-003.csv",
+      "sha": "0ade8094593493d26192e21353e8c7bfafbc78d9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2021-22/part-004.csv",
+      "sha": "2e6213e927b9439e67c2648d413d80c02c5d48ff"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2021-22/part-005.csv",
+      "sha": "ae77a0a4fe4d2112349c2156a5091e373b3ad3f3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2022-23/part-000.csv",
+      "sha": "ef29d716652d43953a1cf6a5a7a63a7f5eb3864c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2022-23/part-001.csv",
+      "sha": "56c202a69870ce34f2f2b1ae45406b93e6da15fb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2022-23/part-002.csv",
+      "sha": "8d8cbbd4bce3396f190f3f59a83cd0f02e76cfa9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2022-23/part-003.csv",
+      "sha": "98739ceaf07d83ad22d3addb5c2c169991b71885"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2022-23/part-004.csv",
+      "sha": "74ea5cc0e4b16d88ab7534abce07498b38ec0784"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2022-23/part-005.csv",
+      "sha": "0f07725b7c3a809a1bbe2533d86623d90cae4b10"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2023-24/part-000.csv",
+      "sha": "37fed2dfc1f2f216be283d04e6ab546787582faa"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2023-24/part-001.csv",
+      "sha": "fc66afbb5dc4333573c71784b34e0e9cef8debd3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2023-24/part-002.csv",
+      "sha": "f84ea6886e50f3038f8fd372dea313c24e1d3118"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2023-24/part-003.csv",
+      "sha": "446113f251f5cff43fb0feaedf994edf98aeb944"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2023-24/part-004.csv",
+      "sha": "91eb1e42f7d89aa4872b5f51cbee2f3f18d80c6e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2023-24/part-005.csv",
+      "sha": "cc301ab84ca13e733832f3c87c327bffe23bb048"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2024-25/part-000.csv",
+      "sha": "299dff99a95e23395f0d81bd584f26e05cd9d75c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2024-25/part-001.csv",
+      "sha": "adb3382dfc28a589d4b17d48a80788c2433935aa"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2024-25/part-002.csv",
+      "sha": "93e1bedec30e58a04ac8b80ea759f0221810e1da"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2024-25/part-003.csv",
+      "sha": "17189a9fe83cd2f7e9e1ce402895dcba91e0ec59"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2024-25/part-004.csv",
+      "sha": "52cb97bc3cb1dbdf2ccf5a345eb66da5e1739328"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2024-25/part-005.csv",
+      "sha": "1a9fda72f4778509e456b1d85b0715a3f34fac86"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2025-26/part-000.csv",
+      "sha": "0e9c37c2fcd0250979081ec303005b3b3d860b55"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2025-26/part-001.csv",
+      "sha": "e0a240bbb7bc1be98b57d27d30a31eb06c93fa38"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2025-26/part-002.csv",
+      "sha": "865d3fca62787da0cb9c0a168e15137fa805665c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2025-26/part-003.csv",
+      "sha": "0cb0b58abba17be432c28134076605c0c77cca67"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2025-26/part-004.csv",
+      "sha": "8bff3bfa566426fc39a296ee28fe5e8926623a98"
+    },
+    {
+      "path": "research/current/scoring_2026_27/data/2025-26/part-005.csv",
+      "sha": "9fd9d56ce14fb112dd98f18118d985e0ebc92cb9"
+    }
+  ],
+  "source_docs": [
+    "https://github.com/peteowen1/pannadata/blob/main/DATA_DICTIONARY.md",
+    "https://github.com/peteowen1/pannadata/blob/main/scripts/opta/opta_scraper.py",
+    "https://github.com/peteowen1/panna/blob/main/OPTA_REFERENCE.md"
+  ],
+  "cost_nok": 0
+}

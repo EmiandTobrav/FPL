@@ -2,6 +2,14 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Storsjanseredninger – ny løsning, 7. oktober 2026
+
+[Rekonstruksjon og restliste](../research/current/scoring_2026_27/keeper_recovery/README.md): Et offentlig Opta-basert hendelsesarkiv er funnet og kontrollert. **5 324 av 5 381 historiske keeperobservasjoner (98,94 %) har nå en kontrollert telling.** Alle observasjonene i 2021/22 og 2023/24 er dekket. Skudd med eksplisitt storsjansemerke skilles fra utespillerblokker; keeperbytter håndteres med periode og redningshendelser. Ingen xG-anslag brukes.
+
+57 observasjoner i 32 kamper er fortsatt uløste: 42 observasjoner i 21 kamper som mangler i arkivet, og 15 observasjoner i 11 kamper med manglende merker eller kildekonflikter. I en nyere kontroll av 100 keeperobservasjoner stemmer alle 52 eksplisitte storsjanseredningstall. Dette er en kontroll mellom Opta-baserte datatyper, ikke en uavhengig leverandørkontroll. Ti tester består. Kode, versjonerte kildeuttrekk, hendelsesbevis, koblinger og konkret restliste er lagret i keeper_recovery.
+
+**Keeperdekningen er ennå ikke komplett.** Godkjente tellinger ligger separat; låste poeng/BPS/bonus og benchmark er uendret. Kostnad 0 kroner. Neste keeperarbeid skal rette seg mot restlisten, ikke gjenta det brede kildesøket. Historiske assists og øvrig BPS-innhenting gjenstår separat. Eldre statusavsnitt nedenfor beskriver tidligere kontrollpunkter.
+
 ## Oppfølging av datainnhenting – 7. oktober 2026
 
 [Innhenting og offisielle assistkorreksjoner](../research/current/scoring_2026_27/acquisition_followup/README.md): 119 nye primære spiller-/kamprader fra fire 2024/25-kamper er hentet, med null feil og 119/119 like minuttall mot FotMob. Fire offisielt dokumenterte assisttillegg er koblet til kamp-/spiller-ID: Marmoush, Pedro Porro, Alex Scott og Pickford. To negative eksempler er bevart. Tilleggene gir 12 direkte spillerpoeng før bonus, men er ikke skrevet inn i det låste datasettet. Gjeldende 2026/27-assistkriterier er kontrollert mot FPLs regelkomponent.

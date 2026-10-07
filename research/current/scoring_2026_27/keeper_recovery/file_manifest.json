@@ -1,0 +1,177 @@
+[
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/README.md",
+    "bytes": 6943,
+    "sha256": "87823918e5a094a200a86e19760b6da01d26f9d64e8c17c20ae2d1a4122ad4b0"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/coverage.csv",
+    "bytes": 219,
+    "sha256": "336ed9a51ac4e089ad4cb78b0df81f81714f5ee42c37cf2db1e29bb0f2b51f9e"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/current_season_validation.csv",
+    "bytes": 6985,
+    "sha256": "a4369e8a08df2aeea701c7a88fdf2f4542f68f367917d9b4d791f65ecb02bbdc"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/current_validation.json",
+    "bytes": 156,
+    "sha256": "5751a27af1986d29402083d0de20bb3dd2ccd3462221e4dfec06a65f9af79541"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/findings.json",
+    "bytes": 705,
+    "sha256": "8e4a7700d788a52b8b0519aa61111609847c982863802acecfdf6a5270e92cc4"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/fixture_mapping.csv.gz",
+    "bytes": 77376,
+    "sha256": "6912c36b07c4cba002716467433197d6102babfdb9cdfe5cae4a7cd231c47fd6"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/fotmob_keepers.csv.gz",
+    "bytes": 25120,
+    "sha256": "8a326a5f7b3757928d5611619946f9736d7710d04d1ce91589c1d8c0b84fa0a7"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/current_validation_targets.csv.gz",
+    "bytes": 2525,
+    "sha256": "1068b4a4cf9601e45138322ea3ebbd5871d6cbd9453d180c3695e02336da4b43"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2019-2020.csv.gz",
+    "bytes": 411273,
+    "sha256": "a132e62051a2bf88011f9a0fa898f94eb670060f9822bb496c6e49310ee31578"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2020-2021.csv.gz",
+    "bytes": 420840,
+    "sha256": "aea241cb36b42abaa7cab404f8fc0cf70fec31cf9124745684d5be66f85f4b21"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2021-2022.csv.gz",
+    "bytes": 448208,
+    "sha256": "4f96c8063f3e86ae5320a0b3cf8555cc2af446263fd40d806885008d6bfd1dec"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2022-2023.csv.gz",
+    "bytes": 445021,
+    "sha256": "2597600735ab5a9921fd827693939ec26db020eb35edf216bacd18f289741d4b"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2023-2024.csv.gz",
+    "bytes": 499982,
+    "sha256": "bc59d75b2cdfecde141ea01ee2f8e4668b5e629608862dfeee4c935ed6720a8a"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2024-2025.csv.gz",
+    "bytes": 483703,
+    "sha256": "f4c5e73e7b360673ff74f20c1da2adc7b82a35a65a8e5059736dc95fc95860e9"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2025-2026.csv.gz",
+    "bytes": 458989,
+    "sha256": "eadc868eaab184a5b4cb96f4291d39f6789fdb4a0f0a30f205f1258c68ca5436"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/events-2026-2027.csv.gz",
+    "bytes": 63610,
+    "sha256": "91bd57c4a5c3dc9b564b8eec9fcb2918ce3de26ebf6463a10c0c809a09561200"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/player_stats.csv.gz",
+    "bytes": 77973,
+    "sha256": "1a9530d7c9484dfa68b7b80af1f89e72bdd9a0766ce66d97aec1af34728306ad"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2019-2020.csv.gz",
+    "bytes": 145458,
+    "sha256": "fa1b7d4ddda93cc112d961d0ab8c7fd8350449d92208a44fae250538003df62e"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2020-2021.csv.gz",
+    "bytes": 138110,
+    "sha256": "91894d7738dd2e164c6ebbcfae10c66044ef39d197eb61f29b3d73523c2b8f70"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2021-2022.csv.gz",
+    "bytes": 149469,
+    "sha256": "840290575c138f48acfbdc3d20df8af37f1b0aa79d582669fca6faf25af3eb25"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2022-2023.csv.gz",
+    "bytes": 144003,
+    "sha256": "38b3c4b9b0ddb30c5ea1aec00f5261d58165f3c17f9932c60dd1f80b932bcbf1"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2023-2024.csv.gz",
+    "bytes": 161670,
+    "sha256": "81377741a4ecbd2c3f69471028b15c7fd5fc30291545ef61cb9c8075d7e051f2"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2024-2025.csv.gz",
+    "bytes": 153582,
+    "sha256": "add0d7dffd5ba2ab191338bf6945ec48bc248cd9bc29ba045da268d8033a74e7"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2025-2026.csv.gz",
+    "bytes": 147521,
+    "sha256": "cd66743fb22681b321a29413e9f7eadfacf52b07febb2149f95bc8a44bbbf35e"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/shots-2026-2027.csv.gz",
+    "bytes": 22392,
+    "sha256": "c53cfab67822eee3e138001f101f4a0b5dbf38be883a5d454e835e09976950c1"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/inputs/targets.csv.gz",
+    "bytes": 135632,
+    "sha256": "ef8c45b58c5c1869644a1676a21a80d1b497f2437e836e81b10ffe5ecbe460d9"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/keeper_counts.csv.gz",
+    "bytes": 141526,
+    "sha256": "c48d41eec75f0c4b623dccb483b2d5448a0d0cc171c84e25a6289e9bf0e25381"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/missing_source_matches.csv",
+    "bytes": 1115,
+    "sha256": "55c4eed1348d0431ff0187ab4f7e9dc8699381dd9a20b4481d2804f6e25e76a6"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/prepare_inputs.py",
+    "bytes": 3764,
+    "sha256": "3c30653f89d37838f0402dcba10510e7546513b051b7aef9d48a2e912cdc17b2"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/recover.py",
+    "bytes": 14553,
+    "sha256": "429b72bd97a247fb48159236df67bb7a5b4b934c9d19b518ff22f8b5a6fd8fa1"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/save_evidence.csv.gz",
+    "bytes": 238580,
+    "sha256": "281abb2d47c22665c093cdddf22b90f73c935448bb6a2e17d825ab916663ef73"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/source_manifest.json",
+    "bytes": 8017,
+    "sha256": "2ecfcf1b00057ec0186db4a11fe405f9895eeb81fae01ae461b7c8e8fe6c324a"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/test_recovery.py",
+    "bytes": 3851,
+    "sha256": "50e2b6c3080b730e359d90b5d5ee503ce0ec82aaf435a0d3b499827dd54a66c4"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/unresolved_keepers.csv",
+    "bytes": 9968,
+    "sha256": "8dcb9a21aa50fcdb4d9b9e7c5d7e0d424cc90a6b464b866a9d43fbaffd5b2de8"
+  },
+  {
+    "path": "research/current/scoring_2026_27/keeper_recovery/validate_current.py",
+    "bytes": 1955,
+    "sha256": "576fba8bae2835dee2e362af49810b9758257e21ef4b5c98acc1e45613d57087"
+  }
+]
