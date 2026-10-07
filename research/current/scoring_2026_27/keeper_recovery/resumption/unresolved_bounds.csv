@@ -1,0 +1,39 @@
+season,fixture,code,name,minimum,maximum,primary_saves,opponent_big_chance_missed,tightened,status,source_sha256
+2019-20,133,111234,Jordan Pickford,0,2,4,2.0,True,unresolved,fe17729e1bdceb2e03c840098974017e968f2dcefe6770d5122460c2823b89df
+2019-20,133,17745,Kasper Schmeichel,0,1,2,1.0,True,unresolved,fe17729e1bdceb2e03c840098974017e968f2dcefe6770d5122460c2823b89df
+2019-20,135,21205,Tom Heaton,0,3,5,3.0,True,unresolved,1e47bd23db4afedc725c9607c440bd7f47a9fd59e28c49187b93bbc01c80cb13
+2019-20,135,51940,David de Gea,0,1,1,1.0,False,unresolved,1e47bd23db4afedc725c9607c440bd7f47a9fd59e28c49187b93bbc01c80cb13
+2019-20,137,80201,Bernd Leno,0,6,6,,False,unresolved,9ef29de617e87884176d10fd84bbe8cc2d7db6cbd04efa557166dbd80ec0128c
+2019-20,137,20480,Tim Krul,0,1,4,1.0,True,unresolved,9ef29de617e87884176d10fd84bbe8cc2d7db6cbd04efa557166dbd80ec0128c
+2019-20,140,172649,Dean Henderson,0,1,3,1.0,True,unresolved,bc4c40855b71fe50564f7229857cf54e5726d85e395f0991c24c79cc9a3ea64b
+2019-20,140,38533,Rui Pedro dos Santos Patrício,0,3,3,3.0,False,unresolved,bc4c40855b71fe50564f7229857cf54e5726d85e395f0991c24c79cc9a3ea64b
+2019-20,241,225321,Aaron Ramsdale,0,4,4,,False,unresolved,4cdceda6aa7cea353f2053bdba1d00b99f67c2a60a51e137c463f8f375f0ade6
+2020-21,101,111234,Jordan Pickford,0,1,2,1.0,True,unresolved,f4f7d59c838e09dab0104fb72c8c84d3ee806e9fccac0d11ea3735ec1af06d07
+2020-21,101,98747,Nick Pope,0,3,5,3.0,True,unresolved,f4f7d59c838e09dab0104fb72c8c84d3ee806e9fccac0d11ea3735ec1af06d07
+2020-21,102,437495,Illan Meslier,0,5,7,5.0,True,unresolved,770b5fda063fcedf7bbaf2ebb7e250f834dc7e597fc8a6334c04ce3c443a72dc
+2020-21,102,228286,Edouard Mendy,0,2,2,,False,unresolved,770b5fda063fcedf7bbaf2ebb7e250f834dc7e597fc8a6334c04ce3c443a72dc
+2020-21,104,84182,Alphonse Areola,0,4,4,4.0,False,unresolved,b042e20d5addc0633aee41e9bff9b1d87f68eedf463109a64354897103cbd6c1
+2020-21,104,121160,Ederson Santana de Moraes,0,1,1,,False,unresolved,b042e20d5addc0633aee41e9bff9b1d87f68eedf463109a64354897103cbd6c1
+2020-21,105,225321,Aaron Ramsdale,0,2,2,,False,unresolved,56e013c08e27dd81c6c3ddf582c96062690ed40b925d13407bf5aa8ec7c0d650
+2020-21,106,80201,Bernd Leno,0,1,1,,False,unresolved,6735724fa01c237250b00d96a3d8aacff560361b65d871116dca9798abb26f41
+2020-21,106,37915,Hugo Lloris,0,2,2,,False,unresolved,6735724fa01c237250b00d96a3d8aacff560361b65d871116dca9798abb26f41
+2020-21,107,40836,Vicente Guaita,0,3,3,,False,unresolved,5086d343e01324873bc84f11c0b2ce6ccf30669be4be9eae9e2c744293a97c1e
+2020-21,107,101982,Sam Johnstone,0,2,2,,False,unresolved,5086d343e01324873bc84f11c0b2ce6ccf30669be4be9eae9e2c744293a97c1e
+2020-21,108,172649,Dean Henderson,0,5,5,5.0,False,unresolved,e1f81d92d827229029c597947b133640738f7d3ec67f72d0229b044c8f73df72
+2020-21,108,37096,Lukasz Fabianski,0,2,3,2.0,True,unresolved,e1f81d92d827229029c597947b133640738f7d3ec67f72d0229b044c8f73df72
+2022-23,281,437495,Illan Meslier,0,1,1,2.0,False,unresolved,766c228d4e61ce68bf87fb081c5d676cc9b70994e59f7a68e79c75bb75b37ee9
+2022-23,281,225321,Aaron Ramsdale,0,4,4,,False,unresolved,766c228d4e61ce68bf87fb081c5d676cc9b70994e59f7a68e79c75bb75b37ee9
+2022-23,282,80201,Bernd Leno,0,4,4,4.0,False,unresolved,2aaee7eb2165779e04a0887efe7fb69b33ee49496c6a1b713ca8397b256faa9f
+2022-23,282,69752,Norberto Murara Neto,0,1,1,,False,unresolved,2aaee7eb2165779e04a0887efe7fb69b33ee49496c6a1b713ca8397b256faa9f
+2022-23,283,154561,David Raya Martin,0,3,11,3.0,True,unresolved,65dc77a37af84722f3f84e1bcc5112c7c3e4e976c9c33e098be24d28caedb49a
+2022-23,283,49262,Jason Steele,0,1,2,1.0,True,unresolved,65dc77a37af84722f3f84e1bcc5112c7c3e4e976c9c33e098be24d28caedb49a
+2022-23,284,98980,Emiliano Martínez Romero,0,3,7,3.0,True,unresolved,f3e3cd3e7dee57a8b860ab4ef7fc51979443f9fcd7162b69375924436d7677cc
+2022-23,285,207270,Daniel Iversen,0,1,8,1.0,True,unresolved,e19e8a1a4b858b4b71ec74594072318f4732638f3c7be6a62c92612b7f608ce6
+2022-23,285,40836,Vicente Guaita,0,1,1,,False,unresolved,e19e8a1a4b858b4b71ec74594072318f4732638f3c7be6a62c92612b7f608ce6
+2022-23,286,37915,Hugo Lloris,0,1,5,1.0,True,unresolved,78016b767c8a2ce9685d211bb8f33cedffaea1ed38cbbed325c8e8f8e4fb544b
+2022-23,287,116535,Alisson Ramses Becker,0,4,4,,False,unresolved,a5a27545dff8422a3af3964d5a3d2fccb2dbf6049c3391bdc898277395179bdd
+2022-23,288,51940,David De Gea Quintana,0,2,4,2.0,True,unresolved,a45c99ff8ec36e2a50e6f3ba5fe0977a989e2fb537bcc6acaac3692579507176
+2022-23,288,98747,Nick Pope,0,1,1,,False,unresolved,a45c99ff8ec36e2a50e6f3ba5fe0977a989e2fb537bcc6acaac3692579507176
+2022-23,289,149065,José Malheiro de Sá,0,6,6,,False,unresolved,d9f873b9478addfcd878dfb36dfda9eb530747585dd578bfaa2f17a9e83ede51
+2022-23,290,456350,Gavin Bazunu,0,1,2,1.0,True,unresolved,b527b47f0ee3fa7f0954861d59f2a9cc974a431f6174debb861d1d54b4c9e24f
+2022-23,290,37096,Lukasz Fabianski,0,3,3,,False,unresolved,b527b47f0ee3fa7f0954861d59f2a9cc974a431f6174debb861d1d54b4c9e24f

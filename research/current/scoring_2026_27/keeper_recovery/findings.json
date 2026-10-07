@@ -1,10 +1,10 @@
 {
   "historical_observations": 5381,
-  "reconstructed": 5342,
-  "unresolved_observations": 39,
-  "unresolved_matches": 23,
+  "reconstructed": 5343,
+  "unresolved_observations": 38,
+  "unresolved_matches": 22,
   "missing_source_matches": 21,
-  "historical_coverage_fraction": 0.9927522765285263,
+  "historical_coverage_fraction": 0.9929381155918974,
   "explicit_comparisons_in_fpl_scope": 343,
   "explicit_matches": 341,
   "explicit_conflicts": 2,
@@ -29,5 +29,7 @@
     "verified_zero_save_bound": 5,
     "complete_team_shots_and_shooter_blocks": 4,
     "complete_paired_save_inventory": 3
-  }
+  },
+  "primary_match_totals_resolved": 1,
+  "primary_match_totals_collected": 23
 }

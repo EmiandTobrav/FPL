@@ -37,4 +37,3 @@ season,fixture,fixture_code,date,home,away,match_id,element,code,name,side,fpl_s
 2022-23,289,2293098,2023-04-01,Nott'm Forest,Wolves,,478,149065,José Malheiro de Sá,a,6,6.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved,unresolved,identity_unresolved
 2022-23,290,2293099,2023-04-02,West Ham,Southampton,,422,456350,Gavin Bazunu,a,2,2.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved,unresolved,identity_unresolved
 2022-23,290,2293099,2023-04-02,West Ham,Southampton,,455,37096,Lukasz Fabianski,h,3,3.0,90.0,,,,,,,missing_match,,,unresolved,identity_unresolved,unresolved,identity_unresolved
-2025-26,365,2562259,2026-05-19,Chelsea,Spurs,53j6evjl6xalzvbm90cxhzdw4,220,215059,Robert Lynch Sánchez,h,2,2.0,90.0,90.0,d9yxninyn4bac8f0ufxsnlqll,Robert Sánchez,9q0arba2kbnywth8bkxlhgmdr,2.0,1.0,matched,0.0,,unresolved,explicit_count_conflict,unresolved,explicit_count_conflict

@@ -1,0 +1,186 @@
+[
+  {
+    "season": "2019-20",
+    "fixture": 133,
+    "pulse_id": 46737,
+    "url": "https://footballapi.pulselive.com/football/stats/match/46737",
+    "file": "raw/match_46737.json",
+    "sha256": "fe17729e1bdceb2e03c840098974017e968f2dcefe6770d5122460c2823b89df"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 135,
+    "pulse_id": 46739,
+    "url": "https://footballapi.pulselive.com/football/stats/match/46739",
+    "file": "raw/match_46739.json",
+    "sha256": "1e47bd23db4afedc725c9607c440bd7f47a9fd59e28c49187b93bbc01c80cb13"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 137,
+    "pulse_id": 46741,
+    "url": "https://footballapi.pulselive.com/football/stats/match/46741",
+    "file": "raw/match_46741.json",
+    "sha256": "9ef29de617e87884176d10fd84bbe8cc2d7db6cbd04efa557166dbd80ec0128c"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 140,
+    "pulse_id": 46744,
+    "url": "https://footballapi.pulselive.com/football/stats/match/46744",
+    "file": "raw/match_46744.json",
+    "sha256": "bc4c40855b71fe50564f7229857cf54e5726d85e395f0991c24c79cc9a3ea64b"
+  },
+  {
+    "season": "2019-20",
+    "fixture": 241,
+    "pulse_id": 46845,
+    "url": "https://footballapi.pulselive.com/football/stats/match/46845",
+    "file": "raw/match_46845.json",
+    "sha256": "4cdceda6aa7cea353f2053bdba1d00b99f67c2a60a51e137c463f8f375f0ade6"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 101,
+    "pulse_id": 58998,
+    "url": "https://footballapi.pulselive.com/football/stats/match/58998",
+    "file": "raw/match_58998.json",
+    "sha256": "f4f7d59c838e09dab0104fb72c8c84d3ee806e9fccac0d11ea3735ec1af06d07"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 102,
+    "pulse_id": 58999,
+    "url": "https://footballapi.pulselive.com/football/stats/match/58999",
+    "file": "raw/match_58999.json",
+    "sha256": "770b5fda063fcedf7bbaf2ebb7e250f834dc7e597fc8a6334c04ce3c443a72dc"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 104,
+    "pulse_id": 59001,
+    "url": "https://footballapi.pulselive.com/football/stats/match/59001",
+    "file": "raw/match_59001.json",
+    "sha256": "b042e20d5addc0633aee41e9bff9b1d87f68eedf463109a64354897103cbd6c1"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 105,
+    "pulse_id": 59002,
+    "url": "https://footballapi.pulselive.com/football/stats/match/59002",
+    "file": "raw/match_59002.json",
+    "sha256": "56e013c08e27dd81c6c3ddf582c96062690ed40b925d13407bf5aa8ec7c0d650"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 106,
+    "pulse_id": 59003,
+    "url": "https://footballapi.pulselive.com/football/stats/match/59003",
+    "file": "raw/match_59003.json",
+    "sha256": "6735724fa01c237250b00d96a3d8aacff560361b65d871116dca9798abb26f41"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 107,
+    "pulse_id": 59004,
+    "url": "https://footballapi.pulselive.com/football/stats/match/59004",
+    "file": "raw/match_59004.json",
+    "sha256": "5086d343e01324873bc84f11c0b2ce6ccf30669be4be9eae9e2c744293a97c1e"
+  },
+  {
+    "season": "2020-21",
+    "fixture": 108,
+    "pulse_id": 59005,
+    "url": "https://footballapi.pulselive.com/football/stats/match/59005",
+    "file": "raw/match_59005.json",
+    "sha256": "e1f81d92d827229029c597947b133640738f7d3ec67f72d0229b044c8f73df72"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 281,
+    "pulse_id": 75191,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75191",
+    "file": "raw/match_75191.json",
+    "sha256": "766c228d4e61ce68bf87fb081c5d676cc9b70994e59f7a68e79c75bb75b37ee9"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 282,
+    "pulse_id": 75192,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75192",
+    "file": "raw/match_75192.json",
+    "sha256": "2aaee7eb2165779e04a0887efe7fb69b33ee49496c6a1b713ca8397b256faa9f"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 283,
+    "pulse_id": 75193,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75193",
+    "file": "raw/match_75193.json",
+    "sha256": "65dc77a37af84722f3f84e1bcc5112c7c3e4e976c9c33e098be24d28caedb49a"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 284,
+    "pulse_id": 75194,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75194",
+    "file": "raw/match_75194.json",
+    "sha256": "f3e3cd3e7dee57a8b860ab4ef7fc51979443f9fcd7162b69375924436d7677cc"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 285,
+    "pulse_id": 75195,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75195",
+    "file": "raw/match_75195.json",
+    "sha256": "e19e8a1a4b858b4b71ec74594072318f4732638f3c7be6a62c92612b7f608ce6"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 286,
+    "pulse_id": 75196,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75196",
+    "file": "raw/match_75196.json",
+    "sha256": "78016b767c8a2ce9685d211bb8f33cedffaea1ed38cbbed325c8e8f8e4fb544b"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 287,
+    "pulse_id": 75197,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75197",
+    "file": "raw/match_75197.json",
+    "sha256": "a5a27545dff8422a3af3964d5a3d2fccb2dbf6049c3391bdc898277395179bdd"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 288,
+    "pulse_id": 75198,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75198",
+    "file": "raw/match_75198.json",
+    "sha256": "a45c99ff8ec36e2a50e6f3ba5fe0977a989e2fb537bcc6acaac3692579507176"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 289,
+    "pulse_id": 75199,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75199",
+    "file": "raw/match_75199.json",
+    "sha256": "d9f873b9478addfcd878dfb36dfda9eb530747585dd578bfaa2f17a9e83ede51"
+  },
+  {
+    "season": "2022-23",
+    "fixture": 290,
+    "pulse_id": 75200,
+    "url": "https://footballapi.pulselive.com/football/stats/match/75200",
+    "file": "raw/match_75200.json",
+    "sha256": "b527b47f0ee3fa7f0954861d59f2a9cc974a431f6174debb861d1d54b4c9e24f"
+  },
+  {
+    "season": "2025-26",
+    "fixture": 365,
+    "pulse_id": 125155,
+    "url": "https://footballapi.pulselive.com/football/stats/match/125155",
+    "file": "raw/match_125155.json",
+    "sha256": "87ba467985d76b54d728c6baf12331696ab6eab68259b76263f2c21d87cff39d"
+  }
+]

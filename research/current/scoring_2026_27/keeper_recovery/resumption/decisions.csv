@@ -1,0 +1,2 @@
+season,fixture,code,name,big_chance_saves,evidence
+2025-26,365,215059,Robert Lynch Sánchez,1,"{""pulse_id"": 125155, ""source_sha256"": ""87ba467985d76b54d728c6baf12331696ab6eab68259b76263f2c21d87cff39d"", ""team_saves"": 2.0, ""primary_keeper_saves"": 2.0, ""active_keepers"": 1, ""keeper_minutes"": 90.0, ""explicit_team_big_chance_saves"": 1, ""archive_keeper_big_chance_saves"": 1.0, ""conflicting_shot_candidate"": 0.0}"

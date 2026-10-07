@@ -1,7 +1,7 @@
-# Historiske storsjanseredninger: 5 342 av 5 381 avklart
+# Historiske storsjanseredninger: 5 343 av 5 381 avklart
 
-Kontrollert 7. oktober 2026. **99,28 % av de historiske keeperobservasjonene har
-nå en kontrollert telling. 39 observasjoner i 23 kamper er
+Kontrollert 7. oktober 2026. **99,29 % av de historiske keeperobservasjonene har
+nå en kontrollert telling. 38 observasjoner i 22 kamper er
 fortsatt uløste.** Dette er et separat datatillegg. Låste poeng, BPS, bonus,
 modelltrening og benchmark er ikke endret. Kostnad: 0 kroner.
 
@@ -12,6 +12,13 @@ er hentet og kontrollert. Seks eksplisitte primærtall, fem dokumenterte
 null-redningsgrenser, tre komplette redningsinventarer og fire tellinger fra
 skudd- og skytterstatistikk løser 18 observasjoner. Alle keeperobservasjoner
 i 2024/25 er nå dekket. `resolution_method` angir bevismetoden.
+
+## Ny kontroll av kampstatistikk
+
+[Én ny avklaring og 16 strammere usikkerhetsgrenser](resumption/README.md):
+23 offisielle kampsvar er hentet. Sánchez er avklart til én storsjanseredning
+via eksplisitt lagstatistikk og entydig keepertilordning. Hele 2025/26 er nå dekket.
+38 observasjoner i 22 kamper gjenstår.
 
 ## Løsningen
 
@@ -43,8 +50,8 @@ feltet tolkes fortsatt ikke som null.
 | 2022/23 | 770 | 754 | 16 |
 | 2023/24 | 776 | 776 | 0 |
 | 2024/25 | 770 | 770 | 0 |
-| 2025/26 | 767 | 766 | 1 |
-| **Sum** | **5 381** | **5 342** | **39** |
+| 2025/26 | 767 | 767 | 0 |
+| **Sum** | **5 381** | **5 343** | **38** |
 
 Historisk populasjon kommer fra de 42 allerede låste FotMob-partisjonene.
 FPLs BPS-lister alene er ikke en fullstendig deltakerliste; enkelte keepere
@@ -73,8 +80,8 @@ minuttene er identiske mot FotMob for alle unntatt Robin Olsen mot Chelsea
 - Blant den historiske populasjonen og 19 tilgjengelige FPL-observasjoner fra
   2026/27 fant første kontroll 343 eksplisitte sammenligninger: 341 like, to
   konflikter. Oppfølgingen avklarer Dúbravka med offisielt primærtall tre;
-  Sánchez-konflikten står fortsatt åpen.
-- Tjue fokuserte tester kontrollerer blokkeringer, manglende verdier, skudddekning,
+  Sánchez-konflikten ble senere avklart med eksplisitt primærtall på lagnivå.
+- Tjuefem fokuserte tester kontrollerer blokkeringer, manglende verdier, skudddekning,
   duplikater, periodekobling, keeperbytte, retursekvenser og identitetsnormalisering.
 
 ## Hva gjenstår konkret?
@@ -83,11 +90,11 @@ minuttene er identiske mot FotMob for alle unntatt Robin Olsen mot Chelsea
 øvrige keeperne i disse kampene er avklart med eksplisitt null redninger.
 `missing_source_matches.csv` er fortsatt den konkrete listen over kildekampene.
 
-**To andre observasjoner har kildekonflikter:** Ramsdale mot Aston Villa
-1. februar 2020 og Sánchez mot Tottenham 19. mai 2026. Detaljer og alle 18
-nye vedtak finnes i [oppfølgingsrapporten](followup/README.md).
+**Én annen observasjon mangler skuddgrunnlag:** Ramsdale mot Aston Villa
+1. februar 2020. Sánchez-konflikten er avklart i [den nye kontrollen](resumption/README.md).
+De tidligere 18 vedtakene finnes i [oppfølgingsrapporten](followup/README.md).
 
-Ingen av de 39 manglende verdiene er erstattet med null eller et xG-anslag.
+Ingen av de 38 manglende verdiene er erstattet med null eller et xG-anslag.
 En supplerende kilde må levere eksplisitte storsjansemerker og skille mellom
 keeperredninger og utespillerblokker.
 
@@ -110,6 +117,7 @@ Rutinekjøring krever bare pandas og de innlagte filene:
 ```sh
 python research/current/scoring_2026_27/keeper_recovery/recover.py
 python research/current/scoring_2026_27/keeper_recovery/reconcile_followup.py
+python research/current/scoring_2026_27/keeper_recovery/reconcile_match_totals.py
 python research/current/scoring_2026_27/keeper_recovery/validate_current.py
 python -m unittest discover -s research/current/scoring_2026_27/keeper_recovery -p 'test_*.py'
 ```
