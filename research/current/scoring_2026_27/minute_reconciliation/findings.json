@@ -1,0 +1,30 @@
+{
+  "target_player_matches": 710,
+  "status_counts": {
+    "base_component_proven_bps_rule_open": 364,
+    "minute_components_proven": 320,
+    "unresolved": 26
+  },
+  "reason_counts": {
+    "bps_rounding_at_60_plus_seconds_unqualified": 364,
+    "starter_paired_exit_clock_and_fpl_corroboration": 320,
+    "clock_disagrees_with_completed_fpl_minutes": 9,
+    "early_end_or_coverage_interruption": 4,
+    "missing_archive_match": 4,
+    "dismissal_requires_separate_clock_review": 3,
+    "substitute_interval_requires_reconstruction": 2,
+    "unbalanced_substitution_timestamp": 2,
+    "noncontinuous_participation": 1,
+    "missing_clock_events": 1
+  },
+  "new_discharged_minute_requirements": 320,
+  "remaining_sensitive_minute_requirements": 390,
+  "remaining_scoring_requirement_cells": 880389,
+  "remaining_raw_stat_or_rule_cells": 881632,
+  "remaining_unique_player_matches": 77280,
+  "raw_minute_counters_overwritten": 0,
+  "full_bps_or_bonus_labels_produced": 0,
+  "keeper_values_modified": false,
+  "locked_labels_modified": false,
+  "cost_nok": 0
+}

@@ -1,0 +1,14 @@
+{
+  "new_tests_passed": 16,
+  "existing_tests_passed": 48,
+  "existing_suites": {
+    "official_revision": 12,
+    "remaining_ledger": 13,
+    "resolution_priority": 15,
+    "bps_recovery": 8
+  },
+  "byte_identical_rebuild": true,
+  "compared_output_files": 9,
+  "full_repository_suite_run": false,
+  "github_ci_verified": false
+}

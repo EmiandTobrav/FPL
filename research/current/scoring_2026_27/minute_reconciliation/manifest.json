@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "scoring_2026_27/keeper_recovery/keeper_counts.csv.gz": "18e453a1087b0dc317ebabc3723e13f23f5af5ce728f712f17fcaeff2018732f",
+    "scoring_2026_27/minute_reconciliation/build.py": "cf0baa8dc7eb31cde0e7c0252da17565aefcc516ccb180be17a262329964bfca",
+    "scoring_2026_27/minute_reconciliation/inputs/clock_events.csv.gz": "41655800035f439037154dc4066a3b806d2a8e9538c285aa36c2491e10662b7f",
+    "scoring_2026_27/minute_reconciliation/inputs/provenance.json": "ba821afa64d5a0e66ec04a46be39db82c8020132cc0fca4904773649717e091e",
+    "scoring_2026_27/minute_reconciliation/inputs/targets.csv": "20563ec41a58bf2e418659c68a741866dce91ec8239cddd0a0a54020301f0e35",
+    "scoring_2026_27/minute_reconciliation/prepare_inputs.py": "04cdd3143e9f464591df445c82cfe1fe4404ebddcd83498bca2fe8a9450c15f4",
+    "scoring_2026_27/official_revision/resolution_queue.csv.gz": "6c7a6338f7a668463d9612ea21f59c5085591c9d1a8fd6432d830c6ebbd8b547",
+    "scoring_2026_27/remaining_ledger/field_ledger.csv.gz": "172cf8c0e680ee3d5ab7c7943e1046e732a64f328fd0d006d49910a81e7016b8",
+    "scoring_2026_27/rules_2026_27.json": "ff0927179422b0fea3c4ebf0a38b0206792c74a5a4dad5f22899ecb89aab87c9"
+  }
+}

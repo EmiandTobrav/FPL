@@ -1,0 +1,55 @@
+{
+  "adjudication": "Both components discharged only for validated continuous starters with paired exit timestamps corroborating FPL completed minutes and invariant BPS across whole-minute/clock readings.",
+  "bps_rule_limitation": "Published 1-60 versus over-60 table does not settle conversion of fractional match-clock duration to BPS minutes. Abstain for 60:01-60:59.",
+  "bps_rule_source": "https://www.premierleague.com/en/news/4661029",
+  "events": {
+    "18": "player_off",
+    "19": "player_on",
+    "30": "end",
+    "32": "start",
+    "34": "team_set_up"
+  },
+  "extract_types": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    30,
+    32,
+    34,
+    43,
+    76,
+    79,
+    84
+  ],
+  "input_sha256": {
+    "scoring_2026_27/bps_recovery/inputs/counts-2019-20.csv.gz": "54f73b5082638a93790043a8bda624c15f3be4496b264c5f6d57dd92c670d5f2",
+    "scoring_2026_27/bps_recovery/inputs/counts-2020-21.csv.gz": "04e6a5f5245d9e59804d525e0835ad6e2d82676e190c2bdc936fe43c7d8ad898",
+    "scoring_2026_27/bps_recovery/inputs/counts-2021-22.csv.gz": "d13783f0822f281e091d7f3964e46a3d7a22995f9e7b1e6810886ebcd06ef281",
+    "scoring_2026_27/bps_recovery/inputs/counts-2022-23.csv.gz": "373373b22566ab3c1cbe61b545ca30b44c6aed8870a2c680a0a4469d4edd8eb1",
+    "scoring_2026_27/bps_recovery/inputs/counts-2023-24.csv.gz": "a418af92304df39b76f983251c56b21757e8a73a5c93eae94c91bf6c807592e3",
+    "scoring_2026_27/bps_recovery/inputs/counts-2024-25.csv.gz": "844f1e3de089c94506cf815c74bff2c653b1c08e1b695e385e59f6e3eac10db2",
+    "scoring_2026_27/bps_recovery/inputs/counts-2025-26.csv.gz": "08def1f6ad3eba3ffac08604c9f64ab8821f98a27ed010a4ad79f1bba4412b14",
+    "scoring_2026_27/bps_recovery/inputs/counts-2026-27.csv.gz": "5e54f3491f571ef7b5e14d4eec223b22ba89e194bf39cdef1d70b36d941b8b65",
+    "scoring_2026_27/resolution_priority/minute_conflicts.csv.gz": "744ca7849cb4953f06385c15032ca9ece412721ac11f44c59cbbac8ba0d56884"
+  },
+  "qualifiers": {
+    "131": "team_player_formation",
+    "30": "lineup_involved",
+    "32": "second_yellow",
+    "33": "red_card",
+    "44": "player_position"
+  },
+  "rows": 37394,
+  "rule_accessed": "2026-10-07",
+  "rule_paraphrase": "FPL counts completed regulation minutes; exiting between 59:00 and 59:59 does not meet the 60-minute threshold.",
+  "rule_source": "https://www.premierleague.com/en/news/4661030",
+  "schema_authority": "Published parser implementation, not provider-certified. Lineup slots and position arrays cross-validated.",
+  "schema_sha256": "e0400475f9fc07644e835402fc29d32385858c20801ebb2011fffcad098323d0",
+  "schema_url": "https://github.com/andrewRowlinson/optasoccer/blob/825cadb56c9c976a8c34c9d5da26d6e37c6ff239/optasoccer/metadata.py",
+  "source_file": "events_EPL.parquet",
+  "source_sha256": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+  "source_url": "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+  "targets": 710
+}

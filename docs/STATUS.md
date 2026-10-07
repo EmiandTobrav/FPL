@@ -2,6 +2,36 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Minuttgrenser: 320 avklaringer og 364 regelspørsmål – 7. oktober 2026
+
+[Nyeste kø og minuttkontroll](../research/current/scoring_2026_27/minute_reconciliation/README.md)
+viderefører `579fe37`. Alle 710 gjenværende poengfølsomme minuttkonflikter
+er undersøkt mot bytter, startoppstillinger og periodeklokker. **320** har
+nå dokumentert minuttbidrag, **364** har bekreftede grunnpoeng men uavklart
+BPS-avrunding, og **26** krever særskilt hendelseskontroll eller mangler kilder.
+
+Mange kildeavvik er fullførte minutter versus påbegynt kampminutt. FPLs
+regel om 60 fullførte ordinære minutter og sekunder i byttehendelsene
+understøtter avklaringene. Metoden krever dokumentert starter, sammenhengende
+deltakelse, periodegrenser, samtidige inn-/utbytter og samsvar med FPL.
+Ingen overføring av grunnpoengenes avrunding til BPS ved 60:01–60:59 uten
+regelbevis. Disse 364 poengbehovene er merket `rule_unresolved`, med tidligere
+kildekonflikt bevart. Ingen ny komplett BPS-/bonusberegning.
+
+Samlet gjenstår **880 389 poengbehov i 77 280 unike spillerkamper**.
+Råstatistikk-/regelresten er fortsatt **881 632**, fordi kildeheltallene ikke
+er overskrevet. 390 poengfølsomme minuttbehov gjenstår; Fergusons tidligere
+avklaring er videreført uten dobbelttelling. Nye felt-, spillerkamp- og
+kampoppsummeringer finnes i `minute_reconciliation/` og erstatter forrige
+kø som arbeidsgrunnlag. Tidligere rapporter er historiske øyeblikksbilder.
+
+Neste prioritet er én dokumentert BPS-minuttkonvensjon for de 364 tilfellene,
+og konkrete oppfølgingskontroller for de 26 særtilfellene. Flere kopier av
+samme avrundede minuttall vil ikke alene løse regelspørsmålet.
+16 nye og 48 eksisterende fokuserte tester består; ni resultatfiler er identiske
+ved ny kjøring. Keeperverdier og låste
+poeng/BPS/bonus/modeller/benchmark er uendret. Kostnad 0 NOK.
+
 ## Offisielle målrettinger og minuttbevis – 7. oktober 2026
 
 [Nyeste restliste og revisjonstillegg](../research/current/scoring_2026_27/official_revision/README.md)
