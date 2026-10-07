@@ -1,0 +1,15 @@
+{
+  "research/current/rescoring_2025/missing_2021/results/fotmob_players.csv": "c62b85035a3087359ce7efc19ba399845348e6e1f6d9c633ab47f7f550d4c7e9",
+  "research/current/rescoring_2025/missing_2021/results/fixture_manifest.csv": "f032744a93ae0b2eb7a94ad7dc36d21e5de58990db74efc7077fb69b6b1036cb",
+  "research/current/rescoring_2025/gap_repair/results/remaining_gaps.csv": "f278f0d40d12299de3968344bc60ab7d4b7ac31870dbf46a5b3b3b8c87be7029",
+  "research/current/rescoring_2025/gap_repair/results/2021-22_labels.csv": "75ab5b3bab0833958930337050d7e9eb1f601014ac8d06f1a0a86dc2679ed486",
+  "research/current/rescoring_2025/gap_repair/repair.py": "b874d1f4d8255c6148dd7355143809f8ad894d5d517e6499882bc1b9b2378182",
+  "research/current/rescoring_2025/historical_fbref/build.py": "11e33a5f0f7e23c51d031e8d3cc5c5da136e7633c9365dcd2e505928cd61e8e2",
+  "research/current/rescoring_2025/historical_fbref/raw/defense.csv": "412b6ea3f1e5481296ca2bb8d24793018c2eb2ecc0f6d834038e7ef7d967cf0b",
+  "research/current/rescoring_2025/historical_fbref/raw/misc.csv": "0894cfbe4db2606a0521b14dde72d3d0c16fc24633d7a5333bb389a487826c00",
+  "research/current/rescoring_2025/historical_fbref/raw/Master.csv": "1e18222bbbb8bfdf3e7cba49f54ceeabf8bd92c908d84fe63f250103d9f380ca",
+  "research/current/project/data/2021-22_gw.csv": "29770bbe305feee681f7122c0bd08451783366e0a3a9604194f528a0880f23de",
+  "research/current/project/data/2021-22_players.csv": "78e185fb0b5c81f58c2b89f232358b1097bededc9852d4171edaea2e9d3bd887",
+  "research/current/project/data/2021-22_fixtures.csv": "9fc11cc675ff49dd5b8858211aa5cbe08375e064810536931e0ac38c060dee64",
+  "research/current/project/data/2021-22_teams.csv": "c1dd02ed25fe832ba7bf6ce846ac506a00a0f0babdacb6bf2a011dc9eaa8cfad"
+}

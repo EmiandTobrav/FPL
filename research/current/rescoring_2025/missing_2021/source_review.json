@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-07",
+  "repository_base": "1cb6b1d2d8a28af966c12d742a3c8cac7918a977",
+  "cost_nok": 0,
+  "sources_reviewed": [
+    {
+      "source": "worldfootballR fotmob_match_details/47_match_details.csv",
+      "decision": "Use dates and team names to resolve match IDs only; data rows are shot events; parent_league_season is inconsistent with dates."
+    },
+    {
+      "source": "aminekebichi/GOALS at 89ad603cd54455e755837ddb1e22fa7228021dba",
+      "file": "data/processed/outfield_clean.parquet",
+      "decision": "Rejected for gap filling: match 3609929 dated 2021-08-13 includes Trossard for Arsenal and a 1-1 result, conflicting with official fixture and player data."
+    },
+    {
+      "source": "imadeddine-belkat/Premier-League-Stats at 903f83a5089e99e3fdf8af3db2552d7f4097284f",
+      "decision": "Inspected Brentford examples: events_stats has team-match totals; players_stats has player-season totals. Not player-match recovery data."
+    },
+    {
+      "source": "https://www.fotmob.com/api/matchDetails?matchId=3610151",
+      "decision": "Old route returned 404; documented public /api/data/matchDetails route worked without authentication."
+    },
+    {
+      "source": "https://footballapi.pulselive.com/football/stats/match/66563",
+      "decision": "Official team totals used to verify the full missing Brentford-Wolves match."
+    },
+    {
+      "source": "https://footballapi.pulselive.com/football/stats/ranked/players/ball_recovery?compSeasons=418&comps=1&matches=66563&pageSize=1000&altIds=true",
+      "decision": "Rejected as match data: matches parameter ignored; response equals unfiltered season totals."
+    }
+  ],
+  "inspection_file_hashes": {
+    "outfield_clean.parquet": "9d8c60b126e8ae69adcf733c9bc85ffe90eb85a3651db5122979088d610e0865",
+    "pl_recoveries_66563.json": "315c85a96648d2034cc07f5d2ea96919e885c0523584698e323c981be2633987",
+    "fotmob_47.csv": "28450c923e6091fc04cd7f40ff1c25d94d4a213edaeec64c2f189d24ac440006",
+    "fotmob_final.ipynb": "1e3d7677918829dc4be6581991fb14cee187d6a2eaed48dcd6437fb515524311",
+    "pl_events_sample.csv": "53d29fc87a00a8fcea297886d9664e220cb5b573bd93566d2e7248cfe13b55d5",
+    "pl_recoveries_season.json": "315c85a96648d2034cc07f5d2ea96919e885c0523584698e323c981be2633987",
+    "fetch_pulselive_reference.py": "8ff2764d7de21738eb18cc1199efeca2352b2d9a2e374f2601e150534a8f55de",
+    "pl_fixtures.json": "88d8a95d1d346ba7f1ea28c50a51aeb73af0963cb061c5f12e1471617d78eb6a",
+    "pl_players_sample.csv": "02f150a04f2b193f5702285378035335fd09c830742cd1bdef045b51f537cede",
+    "pl_match_66563.json": "61f6f33b46100bd7d9165a85a4e7c6bc02387f718562b4e6bbfd08a7b2a9d646"
+  }
+}

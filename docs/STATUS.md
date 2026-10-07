@@ -2,6 +2,10 @@
 
 Oppdatert 7. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## 2021/22-gapet fylt 7. oktober 2026
+
+[FotMob-rekonstruksjonen](../research/current/rescoring_2025/missing_2021/README.md) fyller alle 1238 gjenværende aktive utespilleretiketter fra 76 kamper. 9722/9722 dekning; 1211 recovery-fyll og 27 fullstendige defensive tellinger. 20 kontrollkamper: recoveries/taklinger/skuddblokker/interceptions er like på 509/509 observasjoner; klareringer 447/509 og defcon 505/509. Nye tellinger er derfor fortsatt kvalitetsmerket som foreløpige. Alle ti lagtotaler for Brentford–Wolves samsvarer med offisiell PL-statistikk. 178 nye to-poengsutfall er spillerpopulasjonens tillegg, ikke en managers gevinst. Ingen modelltrening, benchmarkendring eller kostnad. Kode, normaliserte kildetellinger, patcher, auditer og kildehash er lagret. Neste: undersøk samme kilde for 2022/23 og 2023/24, og avklar klareringsavvik før et felles nytt poenggrunnlag låses.
+
 ## Datagap reparert 7. oktober 2026
 
 [Reparasjoner og usikkerhet](../research/current/rescoring_2025/gap_repair/README.md): tre feil i ID-kartet rettet, 59 duplikatnøkler avgjort fra offisiell kampdato/runde og fire defcon-utfall bevist fra delvise tellinger. Gjenværende aktive utespillerhull: 0 / 0 / 1238 / 119 / 14 i 2019/20–2023/24. Ukjent beholdes som manglende med eksplisitt 0–2-poengsintervall. Alternativ RDS-kilde inneholder samme recovery-data; ingen ekstra kampstatistikk gjenfunnet. Benchmarkens lagrede tellende spillere i GW5–38 har null eksponering mot de gjenværende hullene i 2022/23 og 2023/24; dette gjelder ikke nye lagvalg eller åpningsrundene. Ingen modelltrening, benchmarkendring eller kostnad. Neste: målrettet innhenting fra listen over manglende kamper og felles evaluering med eksplisitt usikkerhet. Eldre statusavsnitt nedenfor er historikk.
