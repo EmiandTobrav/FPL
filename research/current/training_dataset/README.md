@@ -21,13 +21,17 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | Historisk omregning | Fortsatt ikke kvalifisert; ingen nye historiske poengetiketter |
 | Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
 | Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
+| 2022/23 forventede statistikker | 26 505 kvalifiserte xG/xA/xGI/xGC-rader i 380 kamper; tilgjengelighet før frist uavklart |
 
 Den [fulle startversjonen](lineups/conservation/README.md) avklarer de siste
 32 672 null-minutt-rolleverdiene fra eksakte, komplette startellevere.
-[Ny avsluttende 2022/23-historikk](fpl_history_2022/README.md) dekker alle 26 505
-kanoniske rader og tidlige xG-kandidater. GW16-avvik og semantisk ugyldige
-GW29-xGI-nuller må avklares før xG-godkjenning. 42 fokuserte tester består.
-Tidligere delvise dataversjoner nedenfor er bevart som historikk.
+[Kvalifisert 2022/23-statistikkversjon](fpl_history_2022/reconciliation/README.md)
+dekker alle 26 505 kanoniske rader. GW16-versjoner er dokumentert med arkiv-
+og Git-objektbevis; GW29-xGI er rettet fra kompatibel xG+xA. Første mislykkede
+kontroll beholdes med uendrede gater. 55 fokuserte tester består. Samlet
+offline-replay dekker 82 byteidentiske resultatfiler.
+
+## Historikk: tidligere delvise dataversjoner
 
 [Ny startleveranse](lineups/README.md) har 152 901 kvalifiserte verdier på
 185 573 kanoniske rader. Råverdiene beholdes. Offisielle lagoppstillinger
@@ -85,8 +89,11 @@ De tidligere åtte testene inkluderer feil poengforklaring, uferdig kamp, endret
 null-BPS-deltakere, bonus ved delt plass og negative BPS, fasituavhengig
 kontrollutvelgelse, endret inngang og feil assistfasit som skal sperre godkjenning.
 Fjorten nye historiske transformasjons-/sperretester er også lagt til.
-Ingen full repository-/CI-test påstås. Samlet replay gjenskaper nå også den
-historiske beregningen fra fryste FPL- og ledgerinnganger: 25 identiske filer.
+Ingen full repository-/CI-test påstås. Samlet replay gjenskaper historisk
+beregning, startroller og den separate 2022/23-statistikkversjonen fra fryste
+innganger: 82 identiske filer. De 55 fokuserte testene kjøres med separate
+oppdagelser i `training_dataset`, `penalty_controls`, `lineups`,
+`lineups/conservation`, `fpl_history_2022` og `fpl_history_2022/reconciliation`.
 
 Den eldre batch 3 er også gjenskapt: alle 63 resultatfiler ble identiske.
 `replay_batch3.py` tilpasser kun gzip-headerens OS-byte for Linux-produserte
@@ -127,7 +134,9 @@ forsøk er bevart; utvalg og kvalitetsgrenser ble ikke endret.
 3. Kontroller de 73 eksterne felt-/sesonggruppene og dokumenterte unntak.
 4. Beregn ny historisk BPS og helkampbonus, deretter komponentavstemte totaler;
    ingen uavklart kamp skal få kopierte historiske poeng som harmonisert label.
-5. Fullfør sammenlignbar eldre xG/xA/xGI/xGC, starter og defensive tellinger.
+5. Fullfør sammenlignbar pre-2022 xG/xA/xGI/xGC og defensive tellinger.
+   Historiske starter og en separat 2022/23-xG-versjon er nå kvalifisert;
+   historisk før-frist-tilgjengelighet for statistikkene gjenstår.
 6. Bygg hele det historiske spillerkamp-/rundeuniverset, tidsriktige features,
    horisont-targets og faktisk innlesing i den aktive treningspipelinen.
 7. Frys samlet datakort, dekning, manifest og reproduksjon for hele leveransen.

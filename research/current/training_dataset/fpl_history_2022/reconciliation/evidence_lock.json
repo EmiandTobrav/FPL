@@ -1,0 +1,9 @@
+{
+  "stage": "post-diagnostic source-evidence lock; no new holdout claimed",
+  "original_protocol_and_input_lock_sha256": "d4b96a1376f2fe9a01b436d5758f8cdf9b0d791cf2feed2fa1b8d91ed1c92528",
+  "input_sha256": {
+    "end_season_file_blobs.csv": "2d79daf8108319d82e904112facb042f124cf28cc3ae5153f2c8fec7bdaac401",
+    "weekly_source.json": "c8fa9b5236cfdb3fe2570c2663313793e1b439d8dc6418764440fad9a3249140",
+    "gw16_2022_11_23.csv": "bbcb513d021c07870df89321691241482ce7ed456167c937d8e6fe452f7e6cae"
+  }
+}

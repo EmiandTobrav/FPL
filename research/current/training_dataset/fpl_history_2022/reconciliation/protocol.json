@@ -1,0 +1,35 @@
+{
+  "version": "same_fpl_final_2022_snapshot_reconciliation_v2",
+  "design": "Post-diagnostic deterministic official-source version reconciliation. V1 equality control and failures remain immutable and failed. This is not a refitted predictor or new holdout.",
+  "authority": "Both weekly and final histories come from archived official FPL. Preserve all raw and compatible existing values. A separately named derived expected-stat version may use explicit final FPL backfill/revision; no external source voting or estimates.",
+  "source_gates": {
+    "required_unchanged_player_directory_trees": 778,
+    "maximum_old_snapshot_identity_or_anchor_disagreements": 0,
+    "maximum_old_snapshot_expected_value_disagreements": 0,
+    "maximum_changes_outside_explicit_scope": 0,
+    "maximum_nonfinite_or_negative_final_expected_values": 0
+  },
+  "unchanged_numeric_gates": {
+    "minimum_control_fixtures": 240,
+    "minimum_control_players": 300,
+    "maximum_identity_disagreements": 0,
+    "maximum_performance_anchor_disagreements": 0,
+    "maximum_source_duplicates": 0,
+    "maximum_late_start_disagreements": 0,
+    "maximum_direct_primary_start_disagreements": 0,
+    "maximum_late_xg_absolute_rounding_difference": 0.01000001,
+    "maximum_xgi_additivity_difference": 0.01000001,
+    "maximum_season_total_difference_per_summed_row": 0.00500001,
+    "season_total_fixed_rounding_allowance": 0.01000001,
+    "minimum_early_primary_fixtures": 136
+  },
+  "scopes": {
+    "early": "Events <16: use direct final official FPL history for the documented structural zero block.",
+    "gw16": "Event 16: use explicit final FPL history as a separately recorded later snapshot revision, only after proving the weekly baseline reproduces the 2022-11-23 archive and final byte objects are unchanged since 2023-05-29.",
+    "gw29": "Only xGI values inconsistent with native compatible xG+xA: derive the exact sum under the official field definition. No xG/xA/xGC replacement in this group.",
+    "other": "All other native compatible values remain numerically unchanged."
+  },
+  "gates_not_relaxed": "V1 same-value gate remains failed. V2 proves two real versions and records their revisions. Identical-version equality, identity, algebra and season-aggregate controls keep their original tolerances.",
+  "temporal": "Archive publication date bounds the existence of the final version, not when a historical manager knew each value. All before-deadline feature availability remains unqualified.",
+  "scoring": "Expected-statistics-only view. No points/BPS/bonus/defcon/assist-event labels are approved."
+}

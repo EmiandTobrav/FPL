@@ -1,0 +1,31 @@
+{
+  "repository": "vaastav/Fantasy-Premier-League",
+  "late_commit": "7009d351b6077cc3f3ae5bdc3a7e23f58f6817e6",
+  "late_commit_date": "2023-05-29T06:53:24Z",
+  "gw16_commit": "92f81c3063ae2ae361daecc81fa51f909dd109a9",
+  "gw16_commit_date": "2022-11-23T04:10:18Z",
+  "tree_url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/contents/data/2022-23/players?ref=7009d351b6077cc3f3ae5bdc3a7e23f58f6817e6",
+  "provenance": [
+    {
+      "path": "global_scraper.py",
+      "git_blob_sha": "fd829db51a60cac4691429212a81b1110ccda81f"
+    },
+    {
+      "path": "getters.py",
+      "git_blob_sha": "8286f8799bf054696f582c6944de1d318397a868"
+    },
+    {
+      "path": "parsers.py",
+      "git_blob_sha": "82dc4d2eeb76ad03165d97de4226ebf7e48e6fec"
+    }
+  ],
+  "timing_caveat": "Git commit bounds archive publication, not exact FPL field release or per-observation historical feature availability.",
+  "official_definition_source": "https://www.premierleague.com/en/news/3118332",
+  "official_final_season_control": {
+    "code": 223094,
+    "expected_goals": 28.54,
+    "expected_assists": 3.11,
+    "expected_goal_involvements": 31.65
+  },
+  "captured_text_note": "Provenance text copies normalize final blank lines; git blob identities refer to upstream originals."
+}

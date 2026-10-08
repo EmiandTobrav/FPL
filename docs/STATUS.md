@@ -11,7 +11,20 @@ avklarer de siste 32 672 nullene fra dokumenterte komplette startellevere;
 113 260 kontrollrader og 5 675 direkte primærroller stemmer uten avvik.
 Den tidligere delvise V4-leveransen nedenfor er bevart.
 
-**Ny offisiell 2022/23-kilde:**
+**Kvalifisert egen 2022/23-statistikkversjon:**
+[Reconciliation V2](../research/current/training_dataset/fpl_history_2022/reconciliation/README.md)
+dekker alle 26 505 rader og 380 kamper med kvalifisert xG/xA/xGI/xGC.
+Alle 778 kildefiler samsvarer med Git-objektene fra 29. mai 2023; dagens
+GW16-baseline gjenskapes eksakt av ukesarkivet fra 23. november 2022.
+8 491 tidlige rader har direkte FPL-backfill, 667 GW16-rader har dokumentert
+senere FPL-versjon, og 296 GW29-xGI-nuller er rettet fra original xG+xA.
+3 112 sesongsummer for den faktiske nye visningen består uendrede toleranser.
+V1s 482 kontrollfeil nedenfor beholdes; dette er kildeversjonsavstemming,
+ikke en ny holdout eller senkede gater. 55 fokuserte tester består og 82
+resultatfiler gjenskapes byteidentisk offline. Poengrest er fortsatt 16 227,
+godkjente historiske poengkamper 0; før-frist-features og integrasjon gjenstår.
+
+**Historikk: første kontroll av offisiell 2022/23-kilde:**
 [Avsluttende spillerhistorikk](../research/current/training_dataset/fpl_history_2022/README.md)
 dekker alle 26 505 originale rader, med tilbakefylte starter og xG fra GW1.
 778 råfiler er låst med bytehash. Identiteter, minutter, hendelsesankre,
@@ -21,7 +34,8 @@ som motsier xG+xA. Ingen xG-verdier er anvendt; kilderevisjon må kvalifiseres.
 42 fokuserte tester består. Poengrest 16 227 og godkjente historiske
 poengkamper 0 er uendret; modellenes treningsintegrasjon gjenstår.
 
-[Lineups](../research/current/training_dataset/lineups/README.md) har nå
+**Historikk: delvis V4-startleveranse:**
+[Lineups](../research/current/training_dataset/lineups/README.md) hadde
 152 901 kvalifiserte startverdier, inklusive alle 77 279 rader med spilte
 minutter. Hver av de 2 660 kampene har nøyaktig 22 kvalifiserte starter.
 42 697 eldre manglende verdier er fylt med eksplisitt kildebelegg. 142

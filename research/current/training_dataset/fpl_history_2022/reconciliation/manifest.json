@@ -1,0 +1,53 @@
+{
+  "status": "qualified_same_fpl_expected_stat_version",
+  "statistic_values_qualified": true,
+  "rows": 26505,
+  "fixtures": 380,
+  "verified_final_git_objects": 778,
+  "exact_old_snapshot_rows": 667,
+  "direct_backfilled_rows": 8491,
+  "revised_snapshot_rows": 667,
+  "mathematical_xgi_repair_rows": 296,
+  "changed_field_values": 12571,
+  "retained_v1_qualified": false,
+  "qualified_season_total_checks": 3112,
+  "qualified_season_total_failed_checks": 0,
+  "source_snapshot_dates": {
+    "weekly": "2022-11-23T04:10:18Z",
+    "final": "2023-05-29T06:53:24Z"
+  },
+  "historical_feature_availability_qualified": false,
+  "scoring_qualified": false,
+  "training_dataset_ready": false,
+  "evidence_type": "Post-diagnostic deterministic official-source version reconciliation. V1 equality control and failures remain immutable and failed. This is not a refitted predictor or new holdout.",
+  "protocol_sha256": "fbc5ae1c412fb472a7ee609ff5c9c5683087d985bb2993fc9d49d6c4af75fbfa",
+  "code_sha256": "f10a5a9bfbf72d1c36ae5a43006b1e41072293f09f5f5639676a39b9fa9f80f7",
+  "input_sha256": {
+    "training_dataset/fpl_history_2022/reconciliation/source_metadata.json": "545a9fa182d5a54556cee7fd845998316fe22ae160217a1916b52dccec8ffdb2",
+    "training_dataset/fpl_history_2022/reconciliation/end_season_directory_trees.csv": "2bf01afeddd13cd5d6e5d869bcc323efa70b2957032646e3234acc031404b412",
+    "training_dataset/fpl_history_2022/reconciliation/protocol.json": "fbc5ae1c412fb472a7ee609ff5c9c5683087d985bb2993fc9d49d6c4af75fbfa",
+    "training_dataset/fpl_history_2022/source_plan.json": "6a802b120b50a48d5417c1acc7af33abf0ace3fcf27bafdcd35f78eb2d9e1d6a",
+    "training_dataset/fpl_history_2022/raw_manifest.json": "4e780ca79a8fb74c673a939b76df681c3dd6575e2a42e702eb77f6a8c170cf73",
+    "training_dataset/fpl_history_2022/late_player_history.csv.xz": "940ba331118236b5ec955fdfad42caff31487f778bf24737d6d7c1b4fff0231b",
+    "training_dataset/fpl_history_2022/validation_summary.json": "c3ce3a86588ae2a5b2f37114af76331c9662eaef42a4a955e19c195140cf0d9c",
+    "project/data/2022-23_players.csv.gz": "0f3460ed47032a5099ebaff1bb5cec28a487f8193ca68d614e820aa366016468",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "training_dataset/fpl_history_2022/reconciliation/provenance/getters.txt": "242a7706459b1313b9b2b195391d217df23650461d43404894b2fe67a103d255",
+    "training_dataset/fpl_history_2022/reconciliation/provenance/global_scraper.txt": "7614e6766a254ec508794b5de17b5e508a3909fc27687abf7e919d0b8bbd8829",
+    "training_dataset/fpl_history_2022/reconciliation/provenance/parsers.txt": "37b4acc036d44a4f74a1d41d515cea6b6c82cac32f2929eccf0ebe3c9052e672"
+  },
+  "evidence_lock_sha256": "149f2b302be9f18833abcc523e96e885c7ebac41dd77ed7f90986f2c1af0187d",
+  "additional_evidence_sha256": {
+    "end_season_file_blobs.csv": "2d79daf8108319d82e904112facb042f124cf28cc3ae5153f2c8fec7bdaac401",
+    "weekly_source.json": "c8fa9b5236cfdb3fe2570c2663313793e1b439d8dc6418764440fad9a3249140",
+    "gw16_2022_11_23.csv": "bbcb513d021c07870df89321691241482ce7ed456167c937d8e6fe452f7e6cae"
+  },
+  "output_sha256": {
+    "verified_final_objects.csv": "7d2331a4365fbcb83b2cc84769d5a671110553f1c2fd7bf62a389b4f854bdc52",
+    "same_old_snapshot_checks.csv": "8fba44328efa4b201e5b01bbf32a3cbc82d0547bf4247af93f2c24390940da9c",
+    "reconciled_reference_checks.csv": "1570c54a85f1b253278cb52fd2c9b2b59b0fd43343a77dd9ef3d1ef3ccc1502c",
+    "documented_revisions.csv.xz": "c30a6a3e82ad067865df1d3c61e77a2a4097df37d20846e957cb590edab6b50c",
+    "expected_statistics_qualified.csv.xz": "542d5927d3652caf79265d8050f4fe3d2214b2dd014b8a8accb5a8a24edd1608",
+    "qualified_season_total_checks.csv.xz": "4c4f2e26b77dff6a6eb0c206294c2fe30970332a6f8a133987b54af793f7fa32"
+  }
+}

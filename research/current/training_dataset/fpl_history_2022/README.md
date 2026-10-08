@@ -1,4 +1,11 @@
-# Avsluttende FPL-historikk for 2022/23 — samlet, ennå ikke kvalifisert
+# Avsluttende FPL-historikk for 2022/23 — V1-kontroll bevart
+
+**Gjeldende statistikkleveranse:** En separat
+[kvalifisert V2-visning](reconciliation/README.md) dekker alle 26 505 rader med
+xG/xA/xGI/xGC. Den dokumenterer de faktiske GW16-kildeversjonene og eksplisitt
+GW29-xGI-reparasjon, med originalverdier bevart. V1-kontrollen nedenfor er
+fortsatt mislykket og uendret; ingen nye før-frist-features eller poenglabels
+godkjennes av statistikkvisningen.
 
 Alle **778** spillerhistorikker er hentet fra vaastav/Fantasy-Premier-League,
 låst til commit `9779cdbc0c07f6c900c2d0c181ddf6bb9c800f88`. De inneholder
@@ -54,7 +61,7 @@ summen av xG og xA; dette er en konkret semantisk konflikt i originalfeltet,
 ikke et behov for å anslå hendelser. Se den offisielle
 [FPL-forklaringen av forventede statistikker](https://www.premierleague.com/en/news/3118332).
 
-## Leveranse og neste handling
+## V1-leveranse og dokumentert oppfølging
 
 [Alle kildeverdier](late_player_history.csv.xz),
 [kvalitetsstatus](validation_summary.json),
@@ -62,10 +69,10 @@ ikke et behov for å anslå hendelser. Se den offisielle
 [originale xGI-konflikter](original_xgi_semantic_conflicts.csv) og
 [kontroll mot sesongtotaler](season_total_checks.csv.xz) er versjonert separat.
 
-Neste arbeid skal avklare den offisielle versjonen/revisjonen av GW16-data og
-en eksplisitt xGI-rettelse for GW29. Behold den mislykkede kontrollen og dens
-terskler; ikke ekskluder feilkampene og kall resten full kvalifisering. Tidlige
-8 491 rader er tilbakefylte kandidater inntil kildegatene er avklart.
+Oppfølgingen i `reconciliation/` dokumenterer den offisielle versjonen av
+GW16-data og en eksplisitt xGI-rettelse for GW29. Den mislykkede kontrollen og
+dens terskler beholdes; feilkampene er ikke ekskludert. Tidlige 8 491 rader
+brukes bare i den separat kvalifiserte statistikkversjonen.
 
 Dette arkivet dokumenterer post-match-verdier og senere backfill. Det etablerer
 ikke når hver verdi var offentlig kjent før historiske FPL-frister. Ingen

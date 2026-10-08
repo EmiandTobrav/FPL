@@ -19,9 +19,11 @@ Kampstarter er nå kvalifisert for alle 185 573 historiske observasjoner i
 null-minutt-roller. Offisielle lagoppstillinger dokumenterer
 2 992 starter som feilaktig stod som null før GW16 i 2022/23. Se
 [startdekning og kildekontroll](research/current/training_dataset/lineups/README.md).
-Den avsluttende FPL-historikken for 2022/23 er samlet med tilbakefylte xG-data,
-men avvik i GW16 og GW29 må avklares før bruk. Se
-[kildekontroll og neste handling](research/current/training_dataset/fpl_history_2022/README.md).
+En separat xG/xA/xGI/xGC-versjon er nå kvalifisert for alle 26 505 rader i
+2022/23. Den dokumenterer tidlig FPL-backfill, en senere GW16-kildeversjon og
+296 eksakte GW29-xGI-rettelser; rådata og den mislykkede første kontrollen
+bevares. Tilgjengelighet før frist er fortsatt uavklart. Se
+[statistikkversjon og kildebevis](research/current/training_dataset/fpl_history_2022/reconciliation/README.md).
 Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
 og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
 

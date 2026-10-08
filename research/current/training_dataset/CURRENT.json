@@ -22,9 +22,15 @@
   "historical_starts_missing_zero_minute_rows": 0,
   "late_2022_23_fpl_history_validation": "fpl_history_2022/validation_summary.json",
   "late_2022_23_fpl_history_rows": 26505,
-  "late_2022_23_fpl_xg_qualified": false,
+  "late_2022_23_fpl_xg_qualified": true,
+  "late_2022_23_fpl_xg_manifest": "fpl_history_2022/reconciliation/manifest.json",
+  "late_2022_23_fpl_xg_version": "same_fpl_final_2022_snapshot_reconciliation_v2",
+  "late_2022_23_fpl_xg_qualified_rows": 26505,
+  "late_2022_23_fpl_xg_qualified_fixtures": 380,
+  "late_2022_23_fpl_xg_original_v1_qualified": false,
+  "late_2022_23_fpl_xg_historical_feature_availability_qualified": false,
   "historical_rich_stat_schema_audit": "lineups/primary_reference/raw_schema_audit.csv",
-  "early_2022_23_xg_semantic_coverage_qualified": false,
+  "early_2022_23_xg_semantic_coverage_qualified": true,
   "current_season_manifest": "snapshots/2026_10_08/derived/manifest.json",
   "current_season_fixtures": 50,
   "current_season_player_matches": 1538,
@@ -37,5 +43,5 @@
   ],
   "reproduce": "python research/current/training_dataset/reproduce.py",
   "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
-  "next_work": "Historical starts now cover all 185573 canonical rows. Late official FPL histories recover 26505 exact 2022/23 identities and early xG candidates; resolve GW16 statistical revisions/version and GW29 invalid xGI zeros before qualification. Obtain comparable pre-2022 xG. Qualify historical changed scoring components/source groups and resolve causal/numerical gaps plus zero-minute cards/source disagreements. Candidates are not labels. Historical labels, temporal features and active training integration remain required."
+  "next_work": "Historical starts cover all 185573 canonical rows. A separate qualified 2022/23 expected-stat version covers 26505 rows/380 fixtures with documented final-FPL backfill, GW16 snapshot revision and native xG+xA GW29 repair. Retained V1 equality validation stays failed. Historical before-deadline availability is still unqualified. Obtain comparable pre-2022 xG. Qualify historical changed scoring components/source groups and resolve causal/numerical gaps plus zero-minute cards/source disagreements. Candidates are not labels. Historical labels, temporal features and active training integration remain required."
 }

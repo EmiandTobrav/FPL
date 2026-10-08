@@ -35,6 +35,7 @@ def main():
     inputs.update(reference_lock['input_sha256'])
     inputs.update(json.loads((P / 'lineups/conservation/freeze.json').read_text())['input_sha256'])
     inputs.update(json.loads((P / 'fpl_history_2022/plan_lock.json').read_text())['input_sha256'])
+    inputs.update(json.loads((P / 'fpl_history_2022/reconciliation/plan_lock.json').read_text())['input_sha256'])
     inputs.update(str(path.relative_to(R)) for path in P.rglob('*')
                   if path.is_file() and '__pycache__' not in path.parts
                   and path.name != 'reproduction_verification.json'
@@ -67,6 +68,11 @@ def main():
         'performance_disagreements.csv','late_xg_controls.csv','late_xg_disagreements.csv',
         'season_total_checks.csv.xz','original_xgi_semantic_conflicts.csv',
         'disagreement_groups.csv','validation_summary.json']]
+    output_paths += [P / 'fpl_history_2022/reconciliation' / name for name in
+        ['protocol.json', 'plan_lock.json', 'evidence_lock.json',
+         'verified_final_objects.csv', 'same_old_snapshot_checks.csv',
+         'reconciled_reference_checks.csv', 'qualified_season_total_checks.csv.xz',
+         'documented_revisions.csv.xz', 'expected_statistics_qualified.csv.xz', 'manifest.json']]
     expected = {str(path.relative_to(R)): digest(path) for path in output_paths}
     with tempfile.TemporaryDirectory(prefix='fpl_dataset_replay_') as tmp:
         root = Path(tmp) / 'research/current'
@@ -78,7 +84,7 @@ def main():
             # Freeze and plan are copied then compared by the scripts themselves.
             if Path(name).name not in ['plan.csv', 'freeze.json', 'isolation_evidence.csv',
                                       'fixture_plan.csv', 'freeze_v2.json', 'freeze_v4.json', 'plan_lock.json',
-                                      'raw_schema_audit.csv']:
+                                      'raw_schema_audit.csv', 'evidence_lock.json']:
                 if Path(name).name == 'protocol.json':
                     continue  # Included in locked input checks before regeneration.
                 (root / name).unlink()
@@ -97,7 +103,10 @@ def main():
                  ['training_dataset/lineups/conservation/predict.py'],
                  ['training_dataset/lineups/conservation/build.py'],
                  ['training_dataset/fpl_history_2022/plan.py'],
-                 ['training_dataset/fpl_history_2022/build.py']]
+                 ['training_dataset/fpl_history_2022/build.py'],
+                 ['training_dataset/fpl_history_2022/reconciliation/plan.py'],
+                 ['training_dataset/fpl_history_2022/reconciliation/freeze_evidence.py'],
+                 ['training_dataset/fpl_history_2022/reconciliation/build.py']]
         for task in tasks:
             result = subprocess.run([sys.executable, *task], cwd=root, capture_output=True, text=True)
             if result.returncode:
