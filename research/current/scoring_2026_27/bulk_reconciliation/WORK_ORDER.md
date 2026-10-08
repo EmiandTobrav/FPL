@@ -1,7 +1,49 @@
-# Arbeidsrekkefølge for å fullføre harmoniseringen
+# Arbeidsrekkefølge: datagap først, deretter kvalitet og harmonisering
 
-Oppdatert 8. oktober 2026, keeperlokasjon. [CURRENT.json](CURRENT.json) peker til gjeldende
+Oppdatert 8. oktober 2026 etter brukerens omprioritering. [CURRENT.json](CURRENT.json) peker til gjeldende
 ledger. Eldre avviks-, minutt- og restlister er historiske diagnoser.
+
+## Gjeldende mål og faseorden
+
+**Førsteprioritet er å lukke datagapene så effektivt og raskt som mulig.**
+Sluttleveransen er fortsatt et reproduserbart, treningsklart datasett for
+2019/20–2025/26 og avsluttede runder i 2026/27. Brukerens nye rekkefølge
+erstatter tidligere prioritering av scoring, labels og features:
+
+1. Innhent manglende statistikk og hendelsesbevis, og anvend kvalifiserte
+   utfyllinger gruppevis på den gjeldende restlisten. Ta med manglende relevante
+   modellstatistikker og nødvendige historiske inventarer i innhentingen.
+2. Kvalitetssikre det samlede datagrunnlaget: definisjoner, identiteter,
+   dekning, duplikater, konsistens og sammenlignbarhet mellom sesonger.
+3. Omregn BPS, bonus, assists, defcon og øvrige poeng til 2026/27; bygg nye
+   poengetiketter etter at nødvendig datagrunnlag er kvalifisert.
+4. Bygg fristsikre features og treningsvisninger, og verifiser innlesingen.
+   Modelltrening er fortsatt en senere oppgave.
+
+Faste kilde-/regelkontroller som kreves før en masseutfylling, inngår i fase 1.
+Den samlede kvalitetssikringen i fase 2 skal ikke brukes som grunn til å utsette
+innhenting fra uavhengige feltgrupper. Rekonstruksjon av manglende statistikk
+fra hendelser er datagaparbeid; ny BPS-/bonus-/totalpoengberegning er fase 3.
+Eksisterende kvalifiserte poengversjoner bevares, men utvides ikke nå.
+
+## Effektivitet og rapportering i datagapfasen
+
+- Velg neste batch etter forventede dokumenterbare feltlukkinger per tidsbruk,
+  gjenbrukbarhet og mulighet for å fullføre hele kamper. Store grupper er
+  kandidater, ikke et krav om å bli stående i den vanskeligste gruppen.
+- Gjenbruk rådata, identitetskoblinger, kvalifiserte regler og kontroller.
+  Kjør et lite, målrettet kildeforsøk før en stor innhenting.
+- Hvis forsøket mangler nødvendige felt eller feiler kontrollen, registrer den
+  konkrete hindringen og gå videre til neste gjennomførbare gruppe. Gjenta
+  forsøket bare når nye fakta eller en annen kompatibel kilde gir grunnlag.
+- Rapporter faktisk antall lukkede krav og resttall før/etter hver batch,
+  nye inputkomplette spillerkamper/hele kamper og kildebelegg. Dokumentasjon,
+  kildefunn og poengberegninger teller ikke som lukkede datagap.
+- Bevar manglende verdier og beskyttede konflikter. En dokumentert hindring
+  er fortsatt et åpent krav, og betingede gruppetak er ikke realiserte lukkinger.
+- Ikke gjenta omfattende replay eller bygge scoring/features for hver
+  datainnhentingsbatch. Verifiser de berørte utfyllingene og deres reproduksjon;
+  samlet kontroll følger i fase 2. Eksisterende kontrollgater beholdes.
 
 ## Nåværende status
 
@@ -30,13 +72,17 @@ Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger
 
 | Prioritet | Gruppe / forventet gevinstgrunnlag | Neste avgrensede handling |
 |---|---|---|
-| 0 | 374 kvalifiserte 2025/26-poengkamper; felles tabeller/innlesing levert | Fullfør resterende lokasjonsteller-/times-tackled-konflikter og bevar Kellehers nye BCS-revisjon i kamp 337 som sperre. Kvalifiser historiske ikke-deltakelses-/blankrundelabels med null-minutt-kort bevart. Skaff faktiske frister, før-frist-rosters og statistikkversjoner; bygg features og verifiser nye treningsrader gjennom innlesingen. Fortsett hele den historiske restlisten. |
 | 1 | Straffer: 185 mål, betinget 2 245 lukkbare krav; direkte frispark ytterligere 273 | Del ordinært foul, selvtatt straffe og hands etter faktisk hendelsesbevis. Gjenbruk den frosne straffefoul-prediktoren og kildene; ordinære positive avgjørelser er allerede anvendt fra tidligere rute. Nye selvtatte tilfeller trenger tilstrekkelig målspesifikk tidsordnet eller uavhengig kontroll. Den gamle piloten har bare seks relevante enmåls-kontroller og ingen selvtatte: ikke senk gaten eller gjenta den som ny validering. Planlegg ny kontroll før fasit, og mål hvilke hele kamper den kan ferdigstille. |
 | 2 | Pasninger med mellomliggende hendelser: 1 711 betinget lukkbare krav og 235 hele kamper | Bruk de gjenværende faktiske kandidatene og samle like årsaksforløp. Kvalifiser mottaker, intensjon/mottakssted, forsvarskontakt, returer og kontinuitet før målavgjørelse. Skill slettede rader og dueller fra faktiske berøringer. Alle fire nye kandidatregler er allerede brukt over hele populasjonen; et nytt trekk må tilføre nye fakta eller en ny kvalifisert årsaksregel. |
 | 3 | Mållinjeklareringer: 2 992; 2 598 bak fem manglende sesongtotaler | Krev en dokumentert ny kilde for eksplisitte totaler eller et kvalifisert komplett inventar. Tidligere fullstatistikk/rangeringer omitterer totalene. Nytt offisielt SDP-endepunkt for Man Utd 2019/20 omitterer også feltet; stats/comp/1-forsøket ga404. Ingen tom rangering, API-utelatelse eller positiv rest er null. Ikke kjør samme mislykkede kildebatch igjen. |
 | 4 | Øvrige assistårsaker: source-not-assisted, uklart pasningssertifikat, selvmål og returer | Bruk oppdaterte mål–spiller-avhengigheter nedenfor. Source-not-assisted har 2 071 betinget lukkbare krav, men er ikke i seg selv et nullbevis. Prioriter positive, sammenhengende handlingsforløp og de tilfellene som faktisk fullfører kamper; behold usikre utfall. |
 | 5 | Resterende tellere og arkivgap | 1 237 times-tackled-krav er fra 2019/20; ett er en beskyttet 2025/26-konflikt. Den gamle spiller-API-en og den nye SDP-kamppiloten gir ikke dette manglende spillerfeltet. Prioriter schema/paring av faktiske forsvarshendelser og komplett inventar, ingen dribleproxy. Alle manglende CBI-verdier er keepere; kvalifiser en relevant primær-/FotMob-komponentrute med fryste kontrollkrav. Keeperlokasjon har nå to beskyttede Sánchez-krav med én minutts kildeavvik i sesonginventaret; ingen lokasjonsproxy eller differanseberegning. De 21 tidligere arkivkampene har fortsatt 761 åpne krav; statistikk/identiteter er allerede hentet, men komplette hendelsesinventarer mangler. |
-| 6 | Kvalitets- og regelgater, deretter scoring | Kvalifiser felt-/sesonggrupper samlet. Behold uendrede historiske BPS-komponenter; verifiser endrede ledd, klipping/avrunding og godkjente revisjoner før omberegning. Ranger bonus for alle deltakere i hele kvalifiserte kamper. Låste labels/modeller/benchmark beholdes, ingen modelltrening før datakvalifisering. |
+| 6 | Andre manglende modellstatistikker og historiske inventarer | Fullfør innhenting av relevante xG/xA/xGI/xGC, kampstarter, defensive tellinger og faktiske frister/roster-/statistikkversjoner der disse mangler. Gjenbruk allerede innhentede data; ukvalifiserte felter beholdes separat til samlet kvalitetssikring. Ikke bygg features eller nye poenglabels i denne fasen. |
+
+Tabellen er en startkø for fase 1. Velg en annen gjennomførbar gruppe hvis
+den gir raskere dokumenterbar lukking enn gruppen foran. Samlet kvalitet,
+regelgater for scoring, helkampbonus og treningsintegrasjon følger faseordenen
+over. Ingen omprioritering reduserer datakrav eller senker kontrollgater.
 
 ## Oppdaterte assistavhengigheter
 
@@ -78,7 +124,7 @@ er også reprodusert byteidentisk. Eldre
 94 beregnings-/kontrollresultater bevares og reproduseres med originalpeker. Full
 repositorietest og GitHub CI er ikke bekreftet. Se replayrapporten for filkontrollen.
 
-## Siste reproduksjon og konkret neste featurekilde
+## Bevarte reproduksjonsresultater og innhentet arkivkilde
 
 Primærbatchens syv tester og fem nye integrasjonstester består. Tolv
 primærresultater, tolv utvidede poengresultater og syv kanoniske resultater

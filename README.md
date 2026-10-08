@@ -41,6 +41,11 @@ Se [datatabeller og innlesing](research/current/training_dataset/canonical_exten
 
 **Historisk harmonisering til 2026/27 – 8. oktober 2026:** 14 893 åpne feltkrav i 13 731 spillerkamper. 63 549 spillerkamper og 766 hele kamper har komplette inputfelt. Databatchene har lukket 994 skuddkrav og 340 lokasjonskrav. 2025/26 har nå 374 kvalifiserte poengkamper; eldre sesonger og full treningsintegrasjon gjenstår. Se [avstemming og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/README.md).
 
+**Gjeldende prioritet etter brukerens omdefinering:** lukk datagapene så
+effektivt og raskt som mulig → kvalitetssikre samlet datagrunnlag → omregn
+og bygg poengetiketter → ferdigstill fristsikre treningsvisninger.
+Fremdrift måles først i faktisk lukkede feltkrav. Se arbeidsrekkefølgen under.
+
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)
 - [Prioritert arbeidsrekkefølge](research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md)
 - [Maskinlesbar status og filpekere](research/current/scoring_2026_27/bulk_reconciliation/CURRENT.json)

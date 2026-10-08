@@ -2,6 +2,21 @@
 
 Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Gjeldende mål – datagap først
+
+**Brukeren har omprioritert målet: lukk datagapene så effektivt og raskt som
+mulig før samlet kvalitetssikring, omregning og nye poengetiketter.**
+Deretter følger fristsikre features og verifisert treningsinnlesing.
+Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
+
+Fremdrift i første fase måles i faktisk reduksjon fra **14 893 åpne feltkrav**,
+med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
+Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
+bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
+kildekontroller beholdes før masseutfylling; manglende data er fortsatt manglende.
+Eksisterende poengversjoner bevares. Ny scoring og featurebygging er utsatt.
+Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
+
 ## Nyeste leveranse – direkte primærlokasjon og 374 kvalifiserte poengkamper
 
 **14 nye feltkrav er lukket og 14 hele kamper har fått komplette input.**
@@ -21,7 +36,7 @@ ikke-deltakelses-/blankrundelabels gjenstår; ingen treningsrader er godkjent.
 
 De etterfølgende avsnittene dokumenterer de bevarte tidligere leveransene.
 
-## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, første kvalifiserte historiske poengversjon
+## Tidligere kø og leveranse – første kvalifiserte historiske poengversjon
 
 **Felles datatabeller og innlesingskontrakt er levert:** 187 111 spillerkamper,
 181 604 spiller–runde-rader og 14 023 kvalifiserte rundepoeng. 12 905 H1-,
