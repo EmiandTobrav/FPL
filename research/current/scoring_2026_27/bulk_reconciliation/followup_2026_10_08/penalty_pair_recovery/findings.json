@@ -1,0 +1,10 @@
+{
+  "predictions_identical_goal_scope_to_prior_rule": true,
+  "native_control_goals": 31,
+  "self_won_full_vector_control_goals": 1,
+  "required_self_won_controls": 5,
+  "outcome_comparison_run": false,
+  "new_fields": 0,
+  "self_won_qualified": false,
+  "next_action": "Stop this route: the new physical-pair interpretation supplies no additional predictions and only one isolatable self-won native whole-vector control. Need additional causal evidence/controls; proceed to goal-line block inventory."
+}

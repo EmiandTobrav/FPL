@@ -1,0 +1,17 @@
+{
+  "source_url": "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+  "raw_archives": {
+    "fpl_events_EPL.parquet": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+    "fpl_opta_player_stats.parquet": "2765b1771493c917ce7c544b01cf3a151e159a818abb889c7fcbd746353eaead"
+  },
+  "files": {
+    "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/season_conservation/inputs/full_team_totals.csv": "004214fb008229bab37cebf00b51db4fe22bd0226c94c91633fc0719daf49cc2",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/protocol.json": "873fb23d19c4fa468ee9bc83a9e8635d08a616c24c729a885819e46703246004",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/prepare.py": "30c84599b634c8564289e23c3bb0d0f4a0626283a94eb8ff415ccf94d2157b59",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/inputs/events.csv.gz": "1a58130594b6abb7b9a0635b53dc06f58ac54a22d780f6fe4d954fefae304e2d",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/inputs/players.csv.gz": "f44470b383f1c1f46cc0bf146ca0f7fbe4c0a320e0afea567632245bea1deb00",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/inputs/parent_CURRENT.json": "2c5fd72ef784af89578a5e90cdd2a8c9f3e352c75d58f900ce4a114a12f901d7"
+  }
+}

@@ -1,6 +1,6 @@
 # Fortsett her
 
-Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
+Oppdatert 9. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
 ## Gjeldende mål – datagap først
 
@@ -9,7 +9,8 @@ mulig før samlet kvalitetssikring, omregning og nye poengetiketter.**
 Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
-Fremdrift i første fase måles i faktisk reduksjon fra **14 893 åpne feltkrav**,
+Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
+**14 893 åpne feltkrav**, nå **12 779**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -17,7 +18,28 @@ kildekontroller beholdes før masseutfylling; manglende data er fortsatt manglen
 Eksisterende poengversjoner bevares. Ny scoring og featurebygging er utsatt.
 Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
 
-## Nyeste leveranse – direkte primærlokasjon og 374 kvalifiserte poengkamper
+## Nyeste datagapleveranse – 2 114 mållinjekrav lukket
+
+**12 779 åpne krav i 12 075 spillerkamper.** 65 205 spillerkamper og 768 hele
+kamper har komplette inputfelt. [Direkte hendelsesavstemming](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/README.md)
+lukker 2 114 mållinjekrav med komplette blokkinventarer og eksplisitte markører.
+1 656 flere spillerkamper og to hele kamper er inputkomplette.
+
+44 956 lukkede historiske kontrollverdier og 492 eksplisitte positive
+kildeverdier stemmer uten avvik; 411 kontroller overlapper og kildene deler
+Opta-opphav. Dette er kildekompatibilitet, ikke full datasettkvalifisering.
+Fem tester består; ti resultatfiler og fryste prediksjoner gjenskapes identisk
+uten nettverk i separat kopi. Alle øvrige ledger-rader og kildekolonner bevares.
+
+878 mållinjekrav gjenstår: 590 med kilde-/FPL-minuttavvik, 249 uten kvalifisert
+blokkinventar og 39 med arkiv-/identitetsgap. Neste avgrensede innhenting søker
+eksplisitte sesongblokktotaler; gamle mislykkede mållinjetotalforsøk gjentas ikke.
+Straffe-par-forsøket ga ingen nye prediksjoner eller tilstrekkelige selvtatte
+kontroller og legges til side. Ingen ny scoring, labels, features eller trening.
+De 374 tidligere kvalifiserte poengkampene og den fryste 145-filreproduksjonen
+bevares; de inkluderer ikke denne nye inputbatchen.
+
+## Tidligere leveranse – direkte primærlokasjon og 374 kvalifiserte poengkamper
 
 **14 nye feltkrav er lukket og 14 hele kamper har fått komplette input.**
 Resten er 14 893 krav i 13 731 spillerkamper; 766 hele kamper er inputkomplette.

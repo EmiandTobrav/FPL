@@ -1,4 +1,39 @@
-# Gjeldende historisk harmonisering og restliste
+# Gjeldende datagaparbeid og restliste
+
+Oppdatert 9. oktober 2026: **12 779 åpne feltkrav i 12 075 spillerkamper**.
+**65 205 spillerkamper og 768 hele kamper** har komplette input.
+Siste batch lukker **2 114 mållinjekrav**, med 1 656 nye komplette spillerkamper
+og to hele kamper. Fem tester består; ti resultater og de fryste prediksjonene
+gjenskapes byteidentisk uten nettverk i separat kopi.
+
+Førsteprioritet er effektiv lukking av datagap. Samlet kvalitetssikring,
+poengomregning og treningsvisninger følger etterpå; se [arbeidsrekkefølgen](WORK_ORDER.md).
+Nye utfyllinger beholder kvalitetsflagg. Tidligere poengversjoner og rå FPL bevares.
+De 374 poengkvalifiserte 2025/26-kampene utvides ikke i denne innhentingsbatchen.
+
+Start med [CURRENT.json](CURRENT.json) og [hendelsesbevisene](followup_2026_10_08/goal_line_events/README.md).
+[Restliste](followup_2026_10_08/goal_line_events/results/remaining_fields.csv.xz),
+[full ledger](followup_2026_10_08/goal_line_events/results/requirements.csv.xz),
+[dekning](followup_2026_10_08/goal_line_events/results/match_readiness.csv)
+og [assistavhengigheter](priority/assist_groups.csv) er oppdatert sammen.
+
+| Feltgruppe | Åpne krav |
+|---|---:|
+| Assists etter målreglene | 9 926 |
+| Times tackled | 1 238 |
+| Mållinjeklareringer | 878 |
+| CBI | 545 |
+| Øvrige felt | 192 |
+| **Totalt** | **12 779** |
+
+For de 878 mållinjekravene gjenstår 590 minuttavvik, 249 ukvalifiserte
+blokkinventarer og 39 arkiv-/identitetsgap. Neste mulige kilde er eksplisitte
+sesongtotaler for blokkeringer og eksakt sesongavstemming. Den nye
+[straffe-par-piloten](followup_2026_10_08/penalty_pair_recovery/README.md)
+ga ingen nye prediksjoner og mangler tilstrekkelige selvtatte kontroller;
+den legges til side uten å endre krav eller kontrollgater.
+
+## Historikk: keeperlokasjon før siste mållinjebatch
 
 Oppdatert 8. oktober 2026, keeperlokasjon: **14 907 åpne feltkrav i 13 745
 spillerkamper**. **63 535 spillerkamper og 752 hele kamper** har komplette input.

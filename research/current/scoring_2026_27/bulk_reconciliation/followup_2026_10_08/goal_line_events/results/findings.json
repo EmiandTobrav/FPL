@@ -1,0 +1,51 @@
+{
+  "old_open_fields": 14893,
+  "new_fields": 2114,
+  "zero_values": 2114,
+  "positive_values": 0,
+  "open_fields": 12779,
+  "unique_affected_player_matches": 12075,
+  "complete_player_matches": 65205,
+  "complete_matches": 768,
+  "new_complete_player_matches": 1656,
+  "new_complete_matches": 2,
+  "remaining_goal_line_clearances": 878,
+  "new_fields_by_season": {
+    "2019-20": 492,
+    "2020-21": 766,
+    "2021-22": 451,
+    "2022-23": 35,
+    "2024-25": 370
+  },
+  "unchanged_ledger_rows": 773134,
+  "raw_fpl_preserved": true,
+  "old_scoring_labels_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "qualified": true,
+    "closed_controls": 44956,
+    "closed_zero_controls": 44545,
+    "closed_control_errors": 0,
+    "explicit_source_controls": 492,
+    "explicit_source_errors": 0,
+    "positive_source_controls_by_season": {
+      "2019-20": 47,
+      "2020-21": 61,
+      "2021-22": 80,
+      "2022-23": 71,
+      "2023-24": 88,
+      "2024-25": 64,
+      "2025-26": 81
+    },
+    "closed_controls_by_season": {
+      "2019-20": 7176,
+      "2020-21": 6818,
+      "2021-22": 7408,
+      "2022-23": 7846,
+      "2023-24": 8023,
+      "2024-25": 7685
+    },
+    "overlapping_source_and_closed_control_keys": 411,
+    "limits": "Shared Opta lineage; previously observed development/source controls and closed-ledger regression. Not independent holdout, not native FPL goal-line observations, not scoring qualification."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "offline": true,
+  "isolated": true,
+  "byte_identical_results": 10,
+  "frozen_predictions_identical": true,
+  "output_sha256": {
+    "closed_controls.csv.gz": "13f8ec326c5ae945e9c5c63851e56e03060aeb3d95f7adfb39a03a88f4f65030",
+    "explicit_source_controls.csv": "a617b02dd338c3d5682497171f51c40bad3df2e97cd38af590ac27f3d6b0c774",
+    "field_summary.csv": "ac5b16bf9df5e7dfdee4ce06ac0dbe8b8f3851f7457dd29bdb00e6ab3d3dbdda",
+    "findings.json": "7c42e257ca51e201d592bc788928353f3db6b2fcf7b7744f114d254fb75defc3",
+    "match_readiness.csv": "13ed17966c7178195b9097adee6ce15a0eaeacf10aa805cd3a82ab94b22d6fcf",
+    "overlay.csv.gz": "79367c0a9573c07fc5305fced0b6c42a8b1a3e711789d6ada7b4c7eabb919690",
+    "player_match_readiness.csv.xz": "768264a07589bd16ec6e40543b3a5dddef34287cc0596df4043ed64765f16775",
+    "remaining_fields.csv.xz": "86a853a8f2e6ec28cced2dfa619eb29c8e675c7b0d0025df0b44586140a32b0b",
+    "requirements.csv.xz": "01fa56f75c94d7bbb94565b3e3cb94f1b694f39631267f49bfcfc569cd75bf70",
+    "validation.json": "f433320e8dbc29eeb9be856e9ba230fe07fa1d51c80ce4c01b5c18a4eb5d0306"
+  }
+}

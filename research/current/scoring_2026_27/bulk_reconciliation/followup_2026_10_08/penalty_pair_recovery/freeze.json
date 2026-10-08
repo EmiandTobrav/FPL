@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "assist_intentional_pass/inputs/participants.csv.gz": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090",
+    "assist_intentional_pass/inputs/goals.csv.gz": "5ec75ccc56da3827fc8f30271d997011578ae360a6d6b0b14e762046807f977e",
+    "assist_intentional_pass/inputs/goal_episodes.csv.gz": "67384c4c3f5fbb40b08ea76080e12cdfb6e7e255dd9a080d30a887dd9d9afb85",
+    "assist_intentional_pass/results/team_coverage.csv": "c2afcb1177dac5a370936d6a76f5e64920984e914eace64ecdb2ffa05be13713",
+    "bulk_batch3/joint_predictions.csv.gz": "180ebfd3c12eee13e50f88b3fcfb3757619aa2b2482a72833290a51c5dc62269",
+    "bulk_batch3/joint_freeze.json": "6fc5a25127ddd9da1feb853a30993ec7f92fd47f951905f288b7a3d788d63c6a",
+    "penalty_pair_recovery/protocol.json": "a49d31806b57753a16f0ed88a9db56e4b133589aaeefc64554a99752b1b07c47",
+    "penalty_pair_recovery/rule.py": "6e517f48a8159874e6919cc2ec6ea041181fe59edd5bf0600bb1282dce06218c",
+    "penalty_pair_recovery/prepare.py": "bbc13d7be48e6e0ab45fa631f342c23359a7cec9710466efd1fdaceb57622ae2",
+    "penalty_pair_recovery/predictions.csv.gz": "18c865a21049369f38aa64c682ee8a5e405eb004c8be59527759451408caf1b0",
+    "penalty_pair_recovery/plan.csv": "da31d2da900797ea844069a10b743732ef722ac6fb0c8ca230eb0b62b564dd88",
+    "penalty_pair_recovery/isolation_evidence.csv": "c02cb2252afbc958ba29da14ed3e65a9bf824af226d9a7ad2594302620d52437"
+  },
+  "outcomes_read_by_selection": false
+}

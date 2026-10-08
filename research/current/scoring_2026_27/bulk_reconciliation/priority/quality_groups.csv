@@ -16,12 +16,12 @@ fouls_won,2020-21,10368,10368
 fouls_won,2021-22,10460,10460
 fouls_won,2022-23,11328,11328
 fouls_won,2023-24,11368,11368
-goal_line_clearances,2019-20,9932,9932
-goal_line_clearances,2020-21,9324,9324
-goal_line_clearances,2021-22,9846,9846
-goal_line_clearances,2022-23,11298,11298
+goal_line_clearances,2019-20,10424,10424
+goal_line_clearances,2020-21,10090,10090
+goal_line_clearances,2021-22,10297,10297
+goal_line_clearances,2022-23,11333,11333
 goal_line_clearances,2023-24,11383,11383
-goal_line_clearances,2024-25,11006,11006
+goal_line_clearances,2024-25,11376,11376
 legacy_net_tackles,2019-20,10592,10592
 legacy_net_tackles,2020-21,10375,10375
 legacy_net_tackles,2021-22,10474,10474
@@ -47,7 +47,7 @@ saves_inside_box,2022-23,753,753
 saves_inside_box,2023-24,773,773
 saves_inside_box,2024-25,754,754
 saves_inside_box,2025-26,759,759
-saves_outside_box,2025-26,746,746
+saves_outside_box,2025-26,760,760
 shots_on_target,2019-20,10603,10603
 shots_on_target,2020-21,10386,10386
 shots_on_target,2021-22,10477,10477

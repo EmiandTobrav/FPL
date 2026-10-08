@@ -1,0 +1,10 @@
+{
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/protocol.json": "873fb23d19c4fa468ee9bc83a9e8635d08a616c24c729a885819e46703246004",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/inputs/manifest.json": "e62fba1fef867883b73fa0d9200393f270195f60541f05516471694fa699afda",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/predict.py": "db7d05793c123579521e9a40c8ea91e9f65390641438596d490c46cc414b7246",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/predictions.csv.gz": "261f7629273fff9850b7c33d0b087f49d890d82c105b65238caddd7d4ed047dd",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/team_gates.csv": "74bcc9551d74e71b575695377b7c9fd9f6a3fb89a613bc4a664bac0d073b5cc6"
+  },
+  "closed_ledger_values_read_by_prediction": false
+}
