@@ -10,7 +10,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **12 779**,
+**14 893 åpne feltkrav**, nå **12 476**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -18,7 +18,24 @@ kildekontroller beholdes før masseutfylling; manglende data er fortsatt manglen
 Eksisterende poengversjoner bevares. Ny scoring og featurebygging er utsatt.
 Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
 
-## Nyeste datagapleveranse – 2 114 mållinjekrav lukket
+## Nyeste datagapleveranse – 303 nye krav fra eksakte sesongblokktotaler
+
+**12 476 åpne krav i 11 834 spillerkamper.** 65 446 spillerkamper og 768 hele
+kamper har komplette inputfelt. [Sesongblokkavstemmingen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/README.md)
+lukker 303 mållinjekrav og gjør 241 flere spillerkamper inputkomplette.
+
+Seks nye primærresponser dekker alle 120 lag–sesong-grupper. Kjente kamptall
+uttømmer hver eksplisitte sesongtotal nøyaktig; 327 omitterte kampblokktotaler
+er dermed null. 4 377 eksisterende mållinjekontroller stemmer uten avvik.
+Fem tester består, og elleve resultater og fryst prediksjon gjenskapes identisk
+uten nettverk i separat kopi. Ny scoring, features og trening er fortsatt utsatt.
+
+575 mållinjekrav gjenstår: 536 spiller-minuttilfeller og 39 arkiv-/identitetsgap.
+Alle 249 tidligere inventartilfeller er lukket, samt 54 minuttilfeller med et
+nytt bevis for null for hele laget. FPL-minutter og tidligere fryste kilde-/poengversjoner
+er bevart. Kollektiv kvalitetssikring gjenstår.
+
+## Tidligere datagapleveranse – 2 114 mållinjekrav lukket
 
 **12 779 åpne krav i 12 075 spillerkamper.** 65 205 spillerkamper og 768 hele
 kamper har komplette inputfelt. [Direkte hendelsesavstemming](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/README.md)

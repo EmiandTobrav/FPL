@@ -1,0 +1,17 @@
+{
+  "qualified": true,
+  "closed_controls": 4377,
+  "closed_control_errors": 0,
+  "explicit_positive_conflicts": 0,
+  "closed_controls_by_season": {
+    "2019-20": 919,
+    "2020-21": 781,
+    "2021-22": 714,
+    "2022-23": 607,
+    "2023-24": 777,
+    "2024-25": 579
+  },
+  "exact_season_team_groups": 120,
+  "zero_team_matches": 327,
+  "limits": "Exact primary season/match conservation and reused closed-source regression; not independent holdout, native FPL goal-line observations, or scoring qualification."
+}

@@ -1,0 +1,13 @@
+{
+  "closed_controls.csv.gz": "bae14aa1b11d572d73c45d88641a1671f2352f46c3f041082c428489742a687f",
+  "controls_by_season.csv": "06bf6dd592e0b995ff262cff182a3704e5b9764c3b113708bfcecdfb20a0c445",
+  "explicit_positive_conflicts.csv": "eb9d2951f490670ad6d32f84ca9988c4ed4388b2c2be837be74c8f5497425713",
+  "field_summary.csv": "e1d122534d916fe8d752e17ed766606e795d097a7616814e456fe3cc4b374c96",
+  "findings.json": "6400e90597b5f0f2ef924808a1f74c6f281fb7ac6bb50470a0ad1d0080e2babf",
+  "match_readiness.csv": "550041dbb8e2a71856bcf2f753230abc32a3583925f8604da79eb433c09adcdd",
+  "overlay.csv.gz": "7ef58d8faf980da0ca49e184c79840e04f6316cd87e12ec13b255e2b014ed22c",
+  "player_match_readiness.csv.xz": "986204cb4f753d350c987fcce3954eda4a468bdab70fc0c26a386541702c021d",
+  "remaining_fields.csv.xz": "9fd36deeb8ebd3c62c99854fc8dff66d66345c055cb99a5650c36b6fce14b923",
+  "requirements.csv.xz": "d1d0c94a8a7db4e82a508ff6980403fe280e34cf433811d428a45a24bb2c86f8",
+  "validation.json": "c4202ad8e4742e84890cfdfd04201fd4d4cf3e770a3d4fd2747dd1601dd4c078"
+}

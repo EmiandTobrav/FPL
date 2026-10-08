@@ -1,6 +1,6 @@
 # Arbeidsrekkefølge: datagap først, deretter kvalitet og harmonisering
 
-Oppdatert 9. oktober 2026 etter brukerens omprioritering og mållinjebatchen. [CURRENT.json](CURRENT.json) peker til gjeldende
+Oppdatert 9. oktober 2026 etter brukerens omprioritering og sesongblokkavstemmingen. [CURRENT.json](CURRENT.json) peker til gjeldende
 ledger. Eldre avviks-, minutt- og restlister er historiske diagnoser.
 
 ## Gjeldende mål og faseorden
@@ -47,16 +47,18 @@ Eksisterende kvalifiserte poengversjoner bevares, men utvides ikke nå.
 
 ## Nåværende status
 
-**12 779 åpne feltkrav i 12 075 spillerkamper.** **65 205 spillerkamper og
+**12 476 åpne feltkrav i 11 834 spillerkamper.** **65 446 spillerkamper og
 768 hele kamper** har komplette input, av 77 280 og 2 660. Siste
-[hendelsesbatch for mållinjen](followup_2026_10_08/goal_line_events/README.md)
-lukket 2 114 krav og ga 1 656 nye komplette spillerkamper og to hele kamper.
+[sesongblokkavstemming](followup_2026_10_08/goal_line_season_blocks/README.md)
+lukket 303 krav og ga 241 nye komplette spillerkamper. Den forrige
+[hendelsesbatchen](followup_2026_10_08/goal_line_events/README.md) lukket 2 114
+krav og ga 1 656 nye komplette spillerkamper og to hele kamper.
 374 av 380 kamper i 2025/26 er poengkvalifisert: 11 315 spillerkamper med
 ny BPS, helkampbonus og avstemte totalpoeng. Se
 [utvidet sesongversjon](../../training_dataset/scoring/season_2025_extension/README.md).
 Alle eldre regelsesonger og full før-frist-/treningsintegrasjon gjenstår.
 
-Numerisk rest: 878 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
+Numerisk rest: 575 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
 manglende keeperverdier og 204 beskyttede konflikter), 2 keeperlokasjoner og
 mindre grupper. Assists gjenstår i 9 926 rader. Alle 994 skuddkrav er allerede
 lukket. [Keeperlokasjon](followup_2026_10_08/fotmob_keeper_location/README.md)
@@ -75,7 +77,7 @@ Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger
 |---|---|---|
 | 1 | Straffer: 185 mål, betinget 2 245 lukkbare krav; direkte frispark ytterligere 273 | Del ordinært foul, selvtatt straffe og hands etter faktisk hendelsesbevis. Gjenbruk den frosne straffefoul-prediktoren og kildene; ordinære positive avgjørelser er allerede anvendt fra tidligere rute. Nye selvtatte tilfeller trenger tilstrekkelig målspesifikk tidsordnet eller uavhengig kontroll. Den gamle piloten har bare seks relevante enmåls-kontroller og ingen selvtatte: ikke senk gaten eller gjenta den som ny validering. Planlegg ny kontroll før fasit, og mål hvilke hele kamper den kan ferdigstille. |
 | 2 | Pasninger med mellomliggende hendelser: 1 711 betinget lukkbare krav og 243 hele kamper | Bruk de gjenværende faktiske kandidatene og samle like årsaksforløp. Kvalifiser mottaker, intensjon/mottakssted, forsvarskontakt, returer og kontinuitet før målavgjørelse. Skill slettede rader og dueller fra faktiske berøringer. Alle fire nye kandidatregler er allerede brukt over hele populasjonen; et nytt trekk må tilføre nye fakta eller en ny kvalifisert årsaksregel. |
-| 3 | Mållinjeklareringer: 878 etter 2 114 nye hendelseslukkinger | Direkte last-line-blokkeringer er kvalifisert med komplette spiller-/primærlagtellere. Gjenstående grupper: 590 kilde-/FPL-minuttavvik, 249 ukvalifiserte blokkinventarer og 39 arkiv-/identitetsgap. Undersøk en ny eksplisitt primær sesongtotal for blokkeringer og eksakt fullsesongavstemming for de omitterte kampblokktotalene. Bevar minuttsperrer og kontrollkrav. Ikke gjenta de mislykkede mållinjetotal-/SDP-rangeringene; API-utelatelser og positive rester er ikke null. |
+| 3 | Mållinjeklareringer: 575 etter 2 114 hendelseslukkinger og 303 sesongavklaringer | Alle 120 primære lag–sesong-blokktotaler er eksakt avstemt og lukker hele den gamle gruppen med 249 ukvalifiserte blokkinventarer, samt 54 minuttilfeller med en ny bevis for null for hele laget uavhengig av individuelle minutter. FPL-minutter bevares. Resterende 536 spiller-minuttilfeller trenger feltspesifikk identitets-/inventarkvalifisering; 39 positive-blokk-arkivgap trenger faktiske hendelser. Ikke gjenkjør gamle BPS/minutt- eller tomme mållinjerangeringer. |
 | 4 | Øvrige assistårsaker: source-not-assisted, uklart pasningssertifikat, selvmål og returer | Bruk oppdaterte mål–spiller-avhengigheter nedenfor. Source-not-assisted har 2 071 betinget lukkbare krav, men er ikke i seg selv et nullbevis. Prioriter positive, sammenhengende handlingsforløp og de tilfellene som faktisk fullfører kamper; behold usikre utfall. |
 | 5 | Resterende tellere og arkivgap | 1 237 times-tackled-krav er fra 2019/20; ett er en beskyttet 2025/26-konflikt. Den gamle spiller-API-en og den nye SDP-kamppiloten gir ikke dette manglende spillerfeltet. Prioriter schema/paring av faktiske forsvarshendelser og komplett inventar, ingen dribleproxy. Alle manglende CBI-verdier er keepere; kvalifiser en relevant primær-/FotMob-komponentrute med fryste kontrollkrav. Keeperlokasjon har nå to beskyttede Sánchez-krav med én minutts kildeavvik i sesonginventaret; ingen lokasjonsproxy eller differanseberegning. De 21 tidligere arkivkampene har fortsatt 761 åpne krav; statistikk/identiteter er allerede hentet, men komplette hendelsesinventarer mangler. |
 | 6 | Andre manglende modellstatistikker og historiske inventarer | Fullfør innhenting av relevante xG/xA/xGI/xGC, kampstarter, defensive tellinger og faktiske frister/roster-/statistikkversjoner der disse mangler. Gjenbruk allerede innhentede data; ukvalifiserte felter beholdes separat til samlet kvalitetssikring. Ikke bygg features eller nye poenglabels i denne fasen. |
@@ -100,11 +102,11 @@ utenfor målgruppene. Gruppetak kan øke når andre blokkeringer fjernes.
 | Gruppe | Mål | Berørte krav | Betinget lukkbare krav | Nye komplette spillerkamper | Nye hele kamper |
 |---|---:|---:|---:|---:|---:|
 | penalty | 185 | 2449 | 2245 | 2163 | 37 |
-| source_not_assisted_marker | 758 | 2295 | 2071 | 2036 | 207 |
-| paired_pass_with_intervening_events | 1028 | 1948 | 1711 | 1653 | 243 |
-| assisted_goal_without_unique_pass_certificate | 391 | 1167 | 975 | 935 | 73 |
-| own_goal | 228 | 890 | 817 | 797 | 47 |
-| no_positive_goal_assist_certificate | 352 | 817 | 731 | 638 | 47 |
+| source_not_assisted_marker | 758 | 2295 | 2071 | 2048 | 207 |
+| paired_pass_with_intervening_events | 1028 | 1948 | 1711 | 1657 | 243 |
+| assisted_goal_without_unique_pass_certificate | 391 | 1167 | 975 | 939 | 73 |
+| own_goal | 228 | 890 | 817 | 799 | 47 |
+| no_positive_goal_assist_certificate | 352 | 817 | 731 | 654 | 47 |
 | direct_free_kick | 23 | 308 | 273 | 265 | 4 |
 
 ## Kontroller og kildeprioritet

@@ -1,0 +1,22 @@
+{
+  "source_observed_date": "2026-10-09",
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/protocol.json": "105a862d17d79b63e29672c0a61c07de34bb17e15e066da8e97f73303774cb76",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/plan.json": "36124f2890cec83f512643cd1c25192a45d37e85242ecf48e50ebd0dc9ab5250",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/collect.py": "e51382f71cc44404b1eb56e88a8bea66345e0f33766a8524baf97e19df3a0e0c",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/sources.json": "53619cf1290118af17b0606200c749de4c03d5e4abbe3517edcda76d92e9c294",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/parent_CURRENT.json": "bdb94c578141ba9ff5d8c06f4d3c19d80d13427ce1ccb9190e92fc1bb6e4021c",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/season_conservation/inputs/full_team_totals.csv": "004214fb008229bab37cebf00b51db4fe22bd0226c94c91633fc0719daf49cc2",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/2019-20.json": "e63a2c0ee0dc792bee909dca6c7d00718713965dd8f77e9c391b68efa48ea9c2",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/2020-21.json": "b300282fd02ebc975ee5b9b3a3aff3528e821294308ae302e3af5211edd9eff3",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/2021-22.json": "01588f507d1bfacc326f7b1c0dc83a780429c5c10c5bee4bba346a140afee3c7",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/2022-23.json": "9dee352f998492e69c1f69cd12fe238af23d66aef3b1c5eae03d6b53afcb73a4",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/2023-24.json": "44ffd65787f70f5dc95077dfc2c708b25b8f19677137014ef9e28a8d0c076f0f",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/2024-25.json": "3c5a2b9d5507dd9bfc126c226d90ba4e61596eb4117a377130de9e10e27a3b16",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/results/requirements.csv.xz": "01fa56f75c94d7bbb94565b3e3cb94f1b694f39631267f49bfcfc569cd75bf70",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/results/player_match_readiness.csv.xz": "768264a07589bd16ec6e40543b3a5dddef34287cc0596df4043ed64765f16775",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/results/match_readiness.csv": "13ed17966c7178195b9097adee6ce15a0eaeacf10aa805cd3a82ab94b22d6fcf"
+  }
+}

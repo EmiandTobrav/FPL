@@ -1,0 +1,10 @@
+{
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/inputs/manifest.json": "a397a3539154f3ec4dc3f9940523c3cd25f3daada01f93e80d04171cf19fb0ca",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/predict.py": "c9b737419d33178cbd6170bc9b777504da71137bbca06e8fd898e71b4009a346",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/predictions.csv.gz": "213573d128cf01622f846e76798176d49556fcd169a39f2e7cc4009002281054",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/season_conservation.csv": "decb531e99200be900bc2f6d631f0ef2a34f5b2564f1ca936dafcdcba52f10c8",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/team_gates.csv": "94748598ac5900d8497198aec6e4e19352978176b18849b5860841b8052e1c59"
+  },
+  "closed_goal_line_outcomes_read_by_prediction": false
+}

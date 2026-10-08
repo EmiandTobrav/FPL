@@ -1,0 +1,44 @@
+[
+  {
+    "season": "2019-20",
+    "comp_season": 274,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/outfielder_block?comps=1&compSeasons=274&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2019-20.json",
+    "sha256": "e63a2c0ee0dc792bee909dca6c7d00718713965dd8f77e9c391b68efa48ea9c2"
+  },
+  {
+    "season": "2020-21",
+    "comp_season": 363,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/outfielder_block?comps=1&compSeasons=363&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2020-21.json",
+    "sha256": "b300282fd02ebc975ee5b9b3a3aff3528e821294308ae302e3af5211edd9eff3"
+  },
+  {
+    "season": "2021-22",
+    "comp_season": 418,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/outfielder_block?comps=1&compSeasons=418&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2021-22.json",
+    "sha256": "01588f507d1bfacc326f7b1c0dc83a780429c5c10c5bee4bba346a140afee3c7"
+  },
+  {
+    "season": "2022-23",
+    "comp_season": 489,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/outfielder_block?comps=1&compSeasons=489&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2022-23.json",
+    "sha256": "9dee352f998492e69c1f69cd12fe238af23d66aef3b1c5eae03d6b53afcb73a4"
+  },
+  {
+    "season": "2023-24",
+    "comp_season": 578,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/outfielder_block?comps=1&compSeasons=578&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2023-24.json",
+    "sha256": "44ffd65787f70f5dc95077dfc2c708b25b8f19677137014ef9e28a8d0c076f0f"
+  },
+  {
+    "season": "2024-25",
+    "comp_season": 719,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/outfielder_block?comps=1&compSeasons=719&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2024-25.json",
+    "sha256": "3c5a2b9d5507dd9bfc126c226d90ba4e61596eb4117a377130de9e10e27a3b16"
+  }
+]

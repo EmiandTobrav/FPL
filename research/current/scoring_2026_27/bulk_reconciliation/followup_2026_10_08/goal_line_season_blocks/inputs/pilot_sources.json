@@ -1,0 +1,9 @@
+[
+  {
+    "season": "2019-20",
+    "comp_season": 274,
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/outfielder_block?comps=1&compSeasons=274&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2019-20.json",
+    "sha256": "e63a2c0ee0dc792bee909dca6c7d00718713965dd8f77e9c391b68efa48ea9c2"
+  }
+]

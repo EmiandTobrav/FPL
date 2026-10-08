@@ -1,5 +1,36 @@
 # Gjeldende datagaparbeid og restliste
 
+Oppdatert 9. oktober 2026: **12 476 åpne feltkrav i 11 834 spillerkamper**.
+**65 446 spillerkamper og 768 hele kamper** har komplette input. Siste batch
+lukker **303 mållinjekrav** med eksplisitte primære sesongblokktotaler, og gjør
+241 flere spillerkamper inputkomplette. Fem tester består; elleve resultater
+og fryst prediksjon gjenskapes identisk i separat offline kopi.
+
+Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md)
+og [sesongbevisene](followup_2026_10_08/goal_line_season_blocks/README.md).
+[Restliste](followup_2026_10_08/goal_line_season_blocks/results/remaining_fields.csv.xz),
+[full ledger](followup_2026_10_08/goal_line_season_blocks/results/requirements.csv.xz)
+og [assistavhengigheter](priority/assist_groups.csv) er oppdatert sammen.
+
+Førsteprioritet er fortsatt effektiv lukking av datagap. Samlet kvalitet,
+poengomregning og fristsikre treningsvisninger følger etterpå. Ingen ny scoring
+eller trening utføres; tidligere 374 kvalifiserte poengkamper bevares.
+
+| Feltgruppe | Åpne krav |
+|---|---:|
+| Assists etter målreglene | 9 926 |
+| Times tackled | 1 238 |
+| Mållinjeklareringer | 575 |
+| CBI | 545 |
+| Øvrige felt | 192 |
+| **Totalt** | **12 476** |
+
+575 mållinjekrav gjenstår: 536 spiller-minuttilfeller og 39 arkiv-/identitetsgap.
+Feltspesifikk identitet og komplette hendelser er neste kildebehov;
+FPL-minutter og tidligere fryste kontrollgater bevares.
+
+## Historikk: 2 114 hendelseslukkinger før sesongavstemmingen
+
 Oppdatert 9. oktober 2026: **12 779 åpne feltkrav i 12 075 spillerkamper**.
 **65 205 spillerkamper og 768 hele kamper** har komplette input.
 Siste batch lukker **2 114 mållinjekrav**, med 1 656 nye komplette spillerkamper
@@ -152,7 +183,7 @@ The new queue contains **119,780 open cells in
 
 | Field | Newly available | Still open |
 |---|---:|---:|
-| fouls_won | 29,693 | 356 |
+| fouls_won | 29, 693 | 356 |
 | goal_line_clearances | 6,085 | 59,216 |
 | legacy_net_tackles | 37,733 | 357 |
 | shots_on_target | 27,276 | 1,314 |
