@@ -6,6 +6,8 @@ ledger. Eldre avviks-, minutt- og restlister er historiske diagnoser.
 ## Gjeldende mål og faseorden
 
 **Førsteprioritet er å lukke datagapene så effektivt og raskt som mulig.**
+Den konkrete [operative målbeskrivelsen](../../../../docs/DATA_GAP_GOAL.md)
+styrer arbeidet nå, med målbare leveranser og overgangskriterier for fasen.
 Sluttleveransen er fortsatt et reproduserbart, treningsklart datasett for
 2019/20–2025/26 og avsluttede runder i 2026/27. Brukerens nye rekkefølge
 erstatter tidligere prioritering av scoring, labels og features:

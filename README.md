@@ -45,6 +45,8 @@ Se [datatabeller og innlesing](research/current/training_dataset/canonical_exten
 effektivt og raskt som mulig → kvalitetssikre samlet datagrunnlag → omregn
 og bygg poengetiketter → ferdigstill fristsikre treningsvisninger.
 Fremdrift måles først i faktisk lukkede feltkrav. Se arbeidsrekkefølgen under.
+Den [operative målbeskrivelsen](docs/DATA_GAP_GOAL.md) angir leveransen
+for datagapfasen og når neste fase kan tas opp.
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)
 - [Prioritert arbeidsrekkefølge](research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md)

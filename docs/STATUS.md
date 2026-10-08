@@ -4,6 +4,9 @@ Oppdatert 9. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremg
 
 ## Gjeldende mål – datagap først
 
+Den [operative målbeskrivelsen](DATA_GAP_GOAL.md) konkretiserer leveransen
+for datagapfasen og styrer videre arbeid foran den brede målbeskrivelsen.
+
 **Brukeren har omprioritert målet: lukk datagapene så effektivt og raskt som
 mulig før samlet kvalitetssikring, omregning og nye poengetiketter.**
 Deretter følger fristsikre features og verifisert treningsinnlesing.
