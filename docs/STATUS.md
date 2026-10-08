@@ -4,6 +4,18 @@ Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremg
 
 ## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, batch 3
 
+**Ny historisk regelkontroll — ikke kvalifisert:**
+[Legacy-tackles V4](../research/current/training_dataset/scoring/legacy_tackles/README.md)
+bevarer 291 faste primærsvar fra 2019/20–2024/25. 264 beregninger har avstemte
+positive komponenter, 25 kontroller mangler CBI-belegg og to har fire kildeavvik.
+185 rader skiller signert/klippet beregning, men 15 native BPS-verdier overskrider
+også den klippede beregningen. Originale akseptgater feiler; ingen klipping,
+ledgerverdi eller historisk treningslabel kvalifiseres. Undersøk de konkrete
+BPS-/komponent-/kildemotsetningene før nye hypoteser eller masseanvendelse.
+17 nye tester gir totalt 72 fokuserte tester; samlet offline-replay gjenskaper
+94 resultatfiler byteidentisk. Poengrest 16 227, kvalifiserte historiske hele
+kamper 0, før-frist-features og treningsintegrasjon fortsatt uferdig.
+
 **Ny statistikkløsning – historiske kampstarter:**
 Full startrolle er nå kvalifisert for alle 185 573 kanoniske rader.
 [Conservation](../research/current/training_dataset/lineups/conservation/README.md)

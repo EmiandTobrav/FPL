@@ -1,0 +1,6 @@
+{
+  "status": "superseded_before_primary_outcomes",
+  "reason": "2024/25 fouls-won and SOT already belong to original BPS, so changed-term ledger does not contain their requirements. Initial selection consequently omitted 2024/25. V2 reads their source fields explicitly and requires all six legacy seasons. No published BPS/bonus read and no primary response completed before correction.",
+  "initial_candidate_rows": 271,
+  "initial_primary_responses_completed": 0
+}

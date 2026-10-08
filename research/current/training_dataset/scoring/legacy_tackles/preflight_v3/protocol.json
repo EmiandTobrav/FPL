@@ -1,0 +1,28 @@
+{
+  "version": "legacy_net_tackle_upper_bound_v3",
+  "design": "Retrospective fixed source/BPS control study, not an untouched scoring holdout. All complete-positive negative-net archived rows selected without reading published BPS/bonus/totals; full pre-known revision fixtures excluded.",
+  "hypotheses": [
+    "signed",
+    "clipped"
+  ],
+  "method": "Every positive component must be explicit and primary-agreed or have an exact compatible nonnegative total-conservation zero certificate. Allow maximum minute/winning-goal awards; subtract only known nonnegative negative counters. Unknown negative counts remain unknown and are ignored only when computing an upper bound, never stored as observed zero.",
+  "primary_gate": "Require explicit primary positive counters, all three CBI components and both raw tackle components; equality against frozen source/ledger. For an omitted CBI/raw tackle component, certify zero only when that player archive cell is missing and all known source-player contributions exactly exhaust its explicit primary team-match total. The 2024 line-zero certificate requires exact source-player season sums against an explicit primary team-season total and consistent team identity. Other primary omissions abstain before outcomes; positive residuals never imply zero.",
+  "acceptance": {
+    "minimum_discriminating_rows": 20,
+    "minimum_discriminating_rows_per_season": 2,
+    "required_seasons": [
+      "2019-20",
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25"
+    ],
+    "maximum_clipped_bound_violations": 0,
+    "maximum_primary_explicit_disagreements": 0
+  },
+  "authority": "Published historical FPL BPS discriminates only source-verified upper bounds. Dated copied FPL no-negative footnote is corroboration, not authenticated primary rule evidence.",
+  "source_limits": "Primary PL and archive share Opta ancestry; no independent provider holdout. Empirical rule qualification does not approve every external input or final points/bonus.",
+  "missing_policy": "No unknown negative count becomes an observed zero; incomplete positive terms have no bound.",
+  "training_labels_enabled": false
+}

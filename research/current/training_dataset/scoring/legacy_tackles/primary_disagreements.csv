@@ -1,0 +1,5 @@
+season,fixture,code,field,archived,primary,primary_method,status
+2019-20,104,66242,won_contest,3.0,4.0,explicit_primary_counter,disagreed
+2019-20,104,66242,total_pass,68.0,69.0,explicit_primary_counter,disagreed
+2023-24,276,232413,ball_recovery,5.0,6.0,explicit_primary_counter,disagreed
+2023-24,276,232413,total_pass,43.0,42.0,explicit_primary_counter,disagreed

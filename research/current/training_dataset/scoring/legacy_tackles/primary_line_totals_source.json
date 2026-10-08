@@ -1,0 +1,5 @@
+{
+  "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/clearance_off_line?comps=1&compSeasons=719&page=0&pageSize=100&altIds=true",
+  "file": "primary_line_totals_2024.json",
+  "sha256": "5e9467fbe321c073be5d79c4a71da2d7974ef9e9d06c52a27d4ea29069b73e10"
+}

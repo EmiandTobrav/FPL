@@ -1,0 +1,23 @@
+{
+  "repository": "steinim/fpl-tools",
+  "ref": "c9e68f4e440bef58aa2225781329e4f3600bc803",
+  "path": "00-rules.txt",
+  "git_blob_sha": "690364ccf9d0268e4a56aeb7ef2bd28a0457c681",
+  "url": "https://github.com/steinim/fpl-tools/blob/c9e68f4e440bef58aa2225781329e4f3600bc803/00-rules.txt",
+  "file_commits": [
+    {
+      "sha": "a56837d311d1ea7d43720fc7bef98ab856192091",
+      "date": "2024-10-13T08:31:38Z",
+      "message": "committing current status"
+    },
+    {
+      "sha": "8e08ae3a0d7a83e027d0e11dd5c3f8f073e2d79e",
+      "date": "2024-09-29T08:19:23Z",
+      "message": "Get old things out of the way"
+    }
+  ],
+  "corroborating_excerpt": "Players will not be awarded negative BPS points for this statistic.",
+  "stated_net_tackle_weight": 2,
+  "scope": "Dated third-party copy of 2024/25 FPL rules. Corroboration only; not an authenticated official archived response and never sole qualification evidence.",
+  "primary_definition_source": "https://www.premierleague.com/en/news/4362127/whats-new-in-202526-fantasy-changes-to-bonus-points-system"
+}

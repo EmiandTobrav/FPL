@@ -1,0 +1,5 @@
+{
+  "status": "superseded_before_published_bps_outcomes",
+  "outcomes_read": false,
+  "reason": "Reject invalid nonfinite counters and invalid selected conservation values; add explicit whole conservation source-scope checks and dependency hashes. Same control population and unchanged acceptance gates. Existing four disagreements retained."
+}

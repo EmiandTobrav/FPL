@@ -43,5 +43,11 @@
   ],
   "reproduce": "python research/current/training_dataset/reproduce.py",
   "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
-  "next_work": "Historical starts cover all 185573 canonical rows. A separate qualified 2022/23 expected-stat version covers 26505 rows/380 fixtures with documented final-FPL backfill, GW16 snapshot revision and native xG+xA GW29 repair. Retained V1 equality validation stays failed. Historical before-deadline availability is still unqualified. Obtain comparable pre-2022 xG. Qualify historical changed scoring components/source groups and resolve causal/numerical gaps plus zero-minute cards/source disagreements. Candidates are not labels. Historical labels, temporal features and active training integration remain required."
+  "next_work": "Historical starts and separate final-FPL 2022/23 expected statistics are qualified, but before-deadline availability remains unqualified. The frozen 291-row legacy-tackle study fails: 15 native-BPS counterexamples to the proposed clipped bound and four explicit source discrepancies. Investigate historical component mapping, quantization and source versions with new controlled evidence; do not repeat the failed route or qualify clipping from its conditional diagnostics. Continue the 16227 numerical/causal input gaps, other scoring/source quality gates, pre-2022 comparable xG, zero-minute cards/source conflicts, qualified whole-match labels, deadline-safe features and active training ingestion.",
+  "historical_legacy_rule_validation": "scoring/legacy_tackles/validation_summary.json",
+  "historical_legacy_clipping_qualified": false,
+  "historical_legacy_rule_controls": 291,
+  "historical_legacy_rule_primary_bounds": 264,
+  "historical_legacy_rule_clipped_bound_counterexamples": 15,
+  "historical_legacy_rule_source_disagreements": 4
 }

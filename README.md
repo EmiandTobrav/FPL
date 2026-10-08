@@ -24,6 +24,10 @@ En separat xG/xA/xGI/xGC-versjon er nå kvalifisert for alle 26 505 rader i
 296 eksakte GW29-xGI-rettelser; rådata og den mislykkede første kontrollen
 bevares. Tilgjengelighet før frist er fortsatt uavklart. Se
 [statistikkversjon og kildebevis](research/current/training_dataset/fpl_history_2022/reconciliation/README.md).
+Ny legacy-taklingskontroll med 291 primærsvar er gjennomført. Den kvalifiserer
+ikke regelen: 15 native BPS-verdier overskrider den foreslåtte klippede grensen,
+og fire eksplisitte kildeavvik står åpne. Alle gater og råtellere er bevart.
+Se [kontrollbevis og neste avklaringer](research/current/training_dataset/scoring/legacy_tackles/README.md).
 Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
 og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
 

@@ -28,8 +28,20 @@ Den [fulle startversjonen](lineups/conservation/README.md) avklarer de siste
 [Kvalifisert 2022/23-statistikkversjon](fpl_history_2022/reconciliation/README.md)
 dekker alle 26 505 kanoniske rader. GW16-versjoner er dokumentert med arkiv-
 og Git-objektbevis; GW29-xGI er rettet fra kompatibel xG+xA. Første mislykkede
-kontroll beholdes med uendrede gater. 55 fokuserte tester består. Samlet
-offline-replay dekker 82 byteidentiske resultatfiler.
+kontroll beholdes med uendrede gater. 72 fokuserte tester består. Samlet
+offline-replay dekker 94 byteidentiske resultatfiler.
+
+## Ny regelkontroll: mislykket kvalifisering bevart
+
+[Legacy-taklingskontrollen](scoring/legacy_tackles/README.md) har 291 fryste
+primærsvar fra alle seks gamle regelsesonger, med 264 feltavstemte beregninger.
+185 rader skiller signert og klippet beregning, men 15 publiserte BPS-verdier
+overskrider også den klippede beregningen. Fire kildeavvik gjelder to spillere.
+De opprinnelige null-feil-gatene består ikke; ingen klipping eller historisk
+poenglabel godkjennes. 25 ytterligere kontroller mangler CBI-belegg. Alle
+kontroller, versjoner, uavklarte tellere og avvik er bevart. Ikke gjenta samme
+kontroll uten nytt komponent-/kildebelegg. 17 nye tester dekker blant annet
+feil nullsertifikater og kildeidentitet; samlet replay gjenskaper 94 filer.
 
 ## Historikk: tidligere delvise dataversjoner
 
@@ -91,9 +103,10 @@ kontrollutvelgelse, endret inngang og feil assistfasit som skal sperre godkjenni
 Fjorten nye historiske transformasjons-/sperretester er også lagt til.
 Ingen full repository-/CI-test påstås. Samlet replay gjenskaper historisk
 beregning, startroller og den separate 2022/23-statistikkversjonen fra fryste
-innganger: 82 identiske filer. De 55 fokuserte testene kjøres med separate
+innganger: 94 identiske filer. De 72 fokuserte testene kjøres med separate
 oppdagelser i `training_dataset`, `penalty_controls`, `lineups`,
-`lineups/conservation`, `fpl_history_2022` og `fpl_history_2022/reconciliation`.
+`lineups/conservation`, `fpl_history_2022`, `fpl_history_2022/reconciliation`
+og `scoring/legacy_tackles`.
 
 Den eldre batch 3 er også gjenskapt: alle 63 resultatfiler ble identiske.
 `replay_batch3.py` tilpasser kun gzip-headerens OS-byte for Linux-produserte

@@ -1,0 +1,14 @@
+{
+  "status": "superseded_before_bps_outcomes",
+  "reason": "Primary field availability preflight found only nine all-explicit CBI controls, and no all-explicit 2024/25 line-clearance zero. V3 revalidates the already permitted exact nonnegative team-total conservation route for missing zero components. Acceptance counts and zero-error thresholds remain unchanged; no FPL BPS read.",
+  "primary_explicit_positive_rows_by_season": {
+    "2019-20": 1,
+    "2020-21": 4,
+    "2021-22": 2,
+    "2022-23": 1,
+    "2023-24": 1,
+    "2024-25": 0
+  },
+  "primary_responses_collected": 291,
+  "bps_outcomes_read": false
+}

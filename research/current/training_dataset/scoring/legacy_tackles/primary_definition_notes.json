@@ -1,0 +1,20 @@
+{
+  "purpose": "Bounded primary-source research notes for investigation of failed V4 controls; not a validated replacement formula.",
+  "checked_date": "2026-10-08",
+  "sources": [
+    {
+      "url": "https://www.premierleague.com/en/news/4362127/whats-new-in-202526-fantasy-changes-to-bonus-points-system",
+      "supports": "2025/26 successful-tackle scoring changed from the previous won-minus-lost net statistic to won tackles. Does not establish old clipping, raw-feed mapping or the full historical formula."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/97334",
+      "supports": "2016 explanation gives minimum 30 attempted passes and three completion tiers with 2/4/6 BPS. Does not prove identity of a particular archived pass counter or rounding behavior."
+    },
+    {
+      "url": "https://www.statsperform.com/opta-event-definitions/",
+      "supports": "Tackles won/lost differ according to subsequent possession; being beaten by a dribble is a separate challenge-lost concept. Blocks are defined for attempts at goal. Pass-completion calculations depend on the selected pass combination. A key pass leads to a non-goal shot, while chances created add conventional assists. These definitions require exact feed-to-FPL mapping rather than proxy substitution."
+    }
+  ],
+  "qualification": false,
+  "next_action": "Explain the 15 native-BPS counterexamples and four explicit source discrepancies using versioned component evidence. Retain V4 failure; freeze new hypotheses before any new outcome control."
+}

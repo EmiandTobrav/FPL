@@ -36,12 +36,14 @@ def main():
     inputs.update(json.loads((P / 'lineups/conservation/freeze.json').read_text())['input_sha256'])
     inputs.update(json.loads((P / 'fpl_history_2022/plan_lock.json').read_text())['input_sha256'])
     inputs.update(json.loads((P / 'fpl_history_2022/reconciliation/plan_lock.json').read_text())['input_sha256'])
+    inputs.update(json.loads((P / 'scoring/legacy_tackles/freeze.json').read_text())['input_sha256'])
     inputs.update(str(path.relative_to(R)) for path in P.rglob('*')
                   if path.is_file() and '__pycache__' not in path.parts
                   and path.name != 'reproduction_verification.json'
                   and not path.is_relative_to(P / 'lineups/raw')
                   and not path.is_relative_to(P / 'lineups/primary_reference/raw')
-                  and not path.is_relative_to(P / 'fpl_history_2022/raw'))
+                  and not path.is_relative_to(P / 'fpl_history_2022/raw')
+                  and not path.is_relative_to(P / 'scoring/legacy_tackles/raw'))
     output_paths = list((P / 'snapshots/2026_10_08/derived').glob('*'))
     output_paths += [P / 'penalty_controls' / n for n in
                     ['plan.csv', 'freeze.json', 'isolation_evidence.csv', 'comparisons.csv',
@@ -73,6 +75,11 @@ def main():
          'verified_final_objects.csv', 'same_old_snapshot_checks.csv',
          'reconciled_reference_checks.csv', 'qualified_season_total_checks.csv.xz',
          'documented_revisions.csv.xz', 'expected_statistics_qualified.csv.xz', 'manifest.json']]
+    output_paths += [P / 'scoring/legacy_tackles' / name for name in
+        ['plan.csv','protocol.json','freeze.json','primary_comparisons.csv',
+         'zero_certificates.csv','primary_predictions.csv','primary_prediction_freeze.json',
+         'bps_bound_checks.csv','primary_disagreements.csv','source_eligibility.csv',
+         'season_summary.csv','validation_summary.json']]
     expected = {str(path.relative_to(R)): digest(path) for path in output_paths}
     with tempfile.TemporaryDirectory(prefix='fpl_dataset_replay_') as tmp:
         root = Path(tmp) / 'research/current'
@@ -106,7 +113,10 @@ def main():
                  ['training_dataset/fpl_history_2022/build.py'],
                  ['training_dataset/fpl_history_2022/reconciliation/plan.py'],
                  ['training_dataset/fpl_history_2022/reconciliation/freeze_evidence.py'],
-                 ['training_dataset/fpl_history_2022/reconciliation/build.py']]
+                 ['training_dataset/fpl_history_2022/reconciliation/build.py'],
+                 ['training_dataset/scoring/legacy_tackles/prepare.py'],
+                 ['training_dataset/scoring/legacy_tackles/primary_predict.py'],
+                 ['training_dataset/scoring/legacy_tackles/validate.py']]
         for task in tasks:
             result = subprocess.run([sys.executable, *task], cwd=root, capture_output=True, text=True)
             if result.returncode:

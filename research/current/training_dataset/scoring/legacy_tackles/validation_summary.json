@@ -1,0 +1,49 @@
+{
+  "version": "legacy_net_tackle_upper_bound_v4",
+  "status": "not_qualified",
+  "fixed_controls": 291,
+  "primary_responses": 291,
+  "source_verified_bounds": 264,
+  "source_missing_controls": 25,
+  "source_disagreed_controls": 2,
+  "primary_explicit_disagreements": 4,
+  "signed_bound_violations": 200,
+  "clipped_bound_violations": 15,
+  "discriminating_rows": 185,
+  "discriminating_rows_by_season": {
+    "2019-20": 26,
+    "2020-21": 38,
+    "2021-22": 32,
+    "2022-23": 34,
+    "2023-24": 45,
+    "2024-25": 10
+  },
+  "acceptance_gates": {
+    "minimum_discriminating_rows": true,
+    "minimum_discriminating_rows_per_season": true,
+    "maximum_clipped_bound_violations": false,
+    "maximum_primary_explicit_disagreements": false
+  },
+  "legacy_clipping_qualified": false,
+  "raw_signed_counts_preserved": true,
+  "unknown_negative_counts_kept_missing": true,
+  "source_agreement_and_rule_qualification_are_separate": true,
+  "final_bps_bonus_or_points_qualified": false,
+  "qualified_historical_fixtures": 0,
+  "new_ledger_inputs": 0,
+  "training_labels_enabled": false,
+  "primary_evidence_warning": "Current primary/archived source share Opta ancestry and may have version differences. Dated copied rule text is corroboration only. Bound diagnostics do not reconstruct complete BPS.",
+  "failed_control_policy": "No gate relaxed and no post-outcome exclusions. Missing controls remain recorded. Explicit disagreements keep the global source gate failed.",
+  "evidence_sha256": {
+    "protocol.json": "7169b1c514ab76827873646eebaf4c5da5f2579c482c7fcc41e44b114059584b",
+    "freeze.json": "8fb68911e504c5c823d6ca021b75486e0e9a4579baf37c6a79179f286cb0735c",
+    "primary_prediction_freeze.json": "618e235fc6d5a65e871f497cf10a0f0c99b99d48939619bd519b34633ea5b01c"
+  },
+  "validator_code_sha256": "c9ea4cfeb7fd64f4e121ff946d4462088a85044465c810e36ed1d9b710d36aa6",
+  "output_sha256": {
+    "bps_bound_checks.csv": "058f3eb8ae98c215bfe5b3c2fc7cd938514589fe0ff445aeeba27c2e5131d323",
+    "primary_disagreements.csv": "402cb070d71eff1647a95e65107534a229570754d93a06f088974eb1d9920ae7",
+    "source_eligibility.csv": "16c9d166aa9b4f2b21d556eb98c42bed15f782a40c85f6906441e2d4a91b6b73",
+    "season_summary.csv": "3ea8ccce35bcf2ec5960c1385c97b94eb6d5cbd6b4188f27d4ec47c82036a81b"
+  }
+}

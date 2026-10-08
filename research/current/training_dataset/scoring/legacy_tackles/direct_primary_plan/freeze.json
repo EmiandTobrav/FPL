@@ -1,0 +1,32 @@
+{
+  "input_sha256": {
+    "scoring_2026_27/bulk_reconciliation/CURRENT.json": "0c2fdff6676f8e553920f79a29482590a69ff2501be8beac1f32614f25db4955",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/requirements.csv.xz": "30d57452e0604a80e6555cb7654c6ca0e923ea97ad8ac766b3feef364241cfae",
+    "training_dataset/scoring/legacy_tackles/bounds.py": "a7069ed1e96ae6e32c4e9ad7d7419634748dd690f19369e3b8cf6e7850c591ff",
+    "training_dataset/scoring/legacy_tackles/rule_corroboration.json": "70c55b7ce65025cb2d0cc0bc56158316214b070267890fcb1b683b71d638fbe3",
+    "scoring_2026_27/bps_recovery/inputs/counts-2019-20.csv.gz": "54f73b5082638a93790043a8bda624c15f3be4496b264c5f6d57dd92c670d5f2",
+    "scoring_2026_27/bps_recovery/inputs/counts-2020-21.csv.gz": "04e6a5f5245d9e59804d525e0835ad6e2d82676e190c2bdc936fe43c7d8ad898",
+    "scoring_2026_27/bps_recovery/inputs/counts-2021-22.csv.gz": "d13783f0822f281e091d7f3964e46a3d7a22995f9e7b1e6810886ebcd06ef281",
+    "scoring_2026_27/bps_recovery/inputs/counts-2022-23.csv.gz": "373373b22566ab3c1cbe61b545ca30b44c6aed8870a2c680a0a4469d4edd8eb1",
+    "scoring_2026_27/bps_recovery/inputs/counts-2023-24.csv.gz": "a418af92304df39b76f983251c56b21757e8a73a5c93eae94c91bf6c807592e3",
+    "scoring_2026_27/bps_recovery/inputs/counts-2024-25.csv.gz": "844f1e3de089c94506cf815c74bff2c653b1c08e1b695e385e59f6e3eac10db2",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "scoring_2026_27/bulk_reconciliation/collection_plan.csv": "2631323d5147a92bb1a7b6237cabf9dbd3ba62e1d680a272159df08537723cea",
+    "scoring_2026_27/delta_input_audit/inputs/primary/players_2019-20.json": "f7a7a62d88ae78cf3fcad44c48122f6dbccae764706d5efc1932699fe3a45d4a",
+    "project/data/2019-20_fixtures.csv.gz": "6afa41dd231e013362646459124f6fe4cc1cbd327c74e6dcb098e1d2e3561e33",
+    "scoring_2026_27/delta_input_audit/inputs/primary/players_2020-21.json": "4d8c0d21257f92a23ab0597103ae8f7821ba8ec407c9ef53eb9f74096c5faddc",
+    "project/data/2020-21_fixtures.csv.gz": "2bb74650819e4c4a5515232c1594d004410931c4c10db5e5fb5f283f78b2fee2",
+    "scoring_2026_27/delta_input_audit/inputs/primary/players_2021-22.json": "2bd82de1ca2b07654a6c1dd65cf8005417fb036f3cb9d2e6000043863b7c7537",
+    "project/data/2021-22_fixtures.csv.gz": "b0c7ef09abd1ba345f50a9eeaa27ee096d5d21b43d1c85168f64461aa32a7ad0",
+    "scoring_2026_27/delta_input_audit/inputs/primary/players_2022-23.json": "0a704ff39e5e0b13d30656387dea82b05427d402ad7e52c22a0f43f2acee28d6",
+    "project/data/2022-23_fixtures.csv.gz": "1ee9426018d6a7d03a4caaa3acf1106e184706f740c4439ee6108e515972e8a6",
+    "scoring_2026_27/delta_input_audit/inputs/primary/players_2023-24.json": "cb960832e4f438f3b7357966e8dd5d8c086e227ddd2cbf8ee2ab5a1d9c81c527",
+    "project/data/2023-24_fixtures.csv.gz": "c20fba7cc5dbe98ef08fc16d1e8e7648d151b8070c8fadbef2cb6d0cc2001d30",
+    "scoring_2026_27/delta_input_audit/inputs/primary/players_2024-25.json": "12f6b078a801ea6e72cf3858999424593a3a0305f17d69062180ce7bd07fb994",
+    "project/data/2024-25_fixtures.csv.gz": "9649822e2581422840b1d46d7e57ea4d3673bb8089faae3c8b5a6d4b802354d3",
+    "training_dataset/scoring/legacy_tackles/plan.csv": "22c44b259c7d9d6f20244863ede48f41a0707c4676543a18db651ab510001d8b",
+    "training_dataset/scoring/legacy_tackles/protocol.json": "f404b6be1c7c0c6417e9945d6fba7b55d3ecf40def42ab7f9603e0e0ece903c4"
+  },
+  "code_sha256": "b9e79559d24bcd8db4e5dde3ba060f82dfe629f44df46296e403e5d873e4c57d",
+  "outcomes_read": false
+}
