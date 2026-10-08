@@ -8,7 +8,10 @@ ledger. Eldre avviks-, minutt- og restlister er historiske diagnoser.
 **14 907 åpne feltkrav i 13 745 spillerkamper.** **63 535 spillerkamper og
 752 hele kamper** har komplette input, av 77 280 og 2 660. Siste batch lukket
 326 lokasjonskrav og ga 326 nye komplette spillerkamper og 244 nye hele kamper.
-363 av 380 kamper i 2025/26 er inputkomplette; historiske labels er fortsatt 0.
+363 av 380 kamper i 2025/26 er nå også poengkvalifisert: 10 971 spillerkamper
+med ny BPS, helkampbonus og avstemte totalpoeng. Se
+[egen sesongversjon](../../training_dataset/scoring/season_2025/README.md).
+Alle eldre regelsesonger og full før-frist-/treningsintegrasjon gjenstår.
 
 Numerisk rest: 2 992 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
 manglende keeperverdier og 204 beskyttede konflikter), 16 keeperlokasjoner og
@@ -24,7 +27,7 @@ Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger
 
 | Prioritet | Gruppe / forventet gevinstgrunnlag | Neste avgrensede handling |
 |---|---|---|
-| 0 | 363 inputkomplette 2025/26-kamper | Kvalifiser relevante keeper-/scoringkilder og sesongens faktiske deltaberegning, og beregn helkampbonus. Gamle taklingsklippingshypoteser gjelder eldre sesonger; de skal ikke automatisk blokkere en 2025/26-visning. Ikke godkjenn labels før alle gater som faktisk gjelder visningen består. Fortsett hele den historiske restlisten og før-frist-features/integrasjon. |
+| 0 | 363 kvalifiserte 2025/26-poengkamper; 17 sperrede kamper | Scoringversjonen er levert og kvalifisert. Fullfør resterende lokasjonsteller-/times-tackled-konflikter og avstem Kellehers nye BCS-revisjon i kamp 337 med kildene; godkjent gammel keeperverdi bevares. Bygg kanoniske runde-/ikke-deltakelseslabels, før-frist-features og faktisk treningsinnlesing. Fortsett hele den historiske restlisten; ikke gjenta ferdig kvalifisering uten nye avvik. |
 | 1 | Straffer: 185 mål, betinget 2 245 lukkbare krav; direkte frispark ytterligere 273 | Del ordinært foul, selvtatt straffe og hands etter faktisk hendelsesbevis. Gjenbruk den frosne straffefoul-prediktoren og kildene; ordinære positive avgjørelser er allerede anvendt fra tidligere rute. Nye selvtatte tilfeller trenger tilstrekkelig målspesifikk tidsordnet eller uavhengig kontroll. Den gamle piloten har bare seks relevante enmåls-kontroller og ingen selvtatte: ikke senk gaten eller gjenta den som ny validering. Planlegg ny kontroll før fasit, og mål hvilke hele kamper den kan ferdigstille. |
 | 2 | Pasninger med mellomliggende hendelser: 1 711 betinget lukkbare krav og 235 hele kamper | Bruk de gjenværende faktiske kandidatene og samle like årsaksforløp. Kvalifiser mottaker, intensjon/mottakssted, forsvarskontakt, returer og kontinuitet før målavgjørelse. Skill slettede rader og dueller fra faktiske berøringer. Alle fire nye kandidatregler er allerede brukt over hele populasjonen; et nytt trekk må tilføre nye fakta eller en ny kvalifisert årsaksregel. |
 | 3 | Mållinjeklareringer: 2 992; 2 598 bak fem manglende sesongtotaler | Krev en dokumentert ny kilde for eksplisitte totaler eller et kvalifisert komplett inventar. Tidligere fullstatistikk/rangeringer omitterer totalene. Nytt offisielt SDP-endepunkt for Man Utd 2019/20 omitterer også feltet; stats/comp/1-forsøket ga404. Ingen tom rangering, API-utelatelse eller positiv rest er null. Ikke kjør samme mislykkede kildebatch igjen. |

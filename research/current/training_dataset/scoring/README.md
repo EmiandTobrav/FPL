@@ -1,5 +1,11 @@
 # Historisk beregning etablert; kvalifisering gjenstår
 
+**Ny gjeldende delversjon:** [2025/26 etter 2026/27-reglene](season_2025/README.md)
+har 363 kvalifiserte hele kamper og 10 971 poengetiketter. Den har en egen
+låst ledger, regel-/kildekvalifisering og helkampbonus. Features og loader
+gjenstår. Resten av denne siden beskriver den bevarte opprinnelige beregningen;
+den gamle versjonens 489 kandidater og mislykkede globale gater endres ikke.
+
 Dette trinnet bruker gjeldende batch-3-ledger og originale FPL-innganger.
 Rådata, fryste labels, modeller og benchmark er bevart. Ingen modelltrening.
 

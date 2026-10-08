@@ -2,7 +2,15 @@
 
 Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
-## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, keeperlokasjon
+## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, første kvalifiserte historiske poengversjon
+
+**363 hele kamper og 10 971 spillerkamper fra 2025/26 har nå kvalifisert BPS,
+helkampbonus og poeng etter 2026/27-reglene.** 435 poengsummer endres; alle
+totaler stemmer med et separat komponentregnskap. [Poengversjon og kildekontroll](../research/current/training_dataset/scoring/season_2025/README.md)
+bevarer tidligere godkjente keeperdata og alle eldre mislykkede gater.
+En fersk Kelleher-kilderevisjon er lokalisert til kamp 337 og sperret sammen
+med hele kampen. 17 kamper gjenstår. Ni nye tester og separat byteidentisk
+replay av 12 resultatfiler består; samlet replay dekker 106 filer.
 
 **326 nye feltavklaringer og 244 nye hele kamper med komplette input.**
 [Direkte keeperlokasjon](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md)
@@ -13,10 +21,11 @@ består. 16 lokasjonskrav står igjen på uenige redningsantall.
 
 Gjeldende rest: **14 907 krav i 13 745 spillerkamper**, med **63 535
 inputkomplette spillerkamper og 752 hele kamper**. 2025/26 har **363 av 380**
-inputkomplette kamper. Kvalifiserte historiske poengkamper er fortsatt 0;
-før-frist-features og aktiv treningsintegrasjon gjenstår. Prioriter konkret
-kilde-/regelkvalifisering og poeng/helkampbonus for den store 2025/26-dekningen,
-parallelt med hele den opprinnelige historiske restlisten.
+inputkomplette og nå poengkvalifiserte kamper. Før-frist-features og aktiv
+treningsintegrasjon gjenstår. Fortsett de 17 numeriske 2025/26-kravene med
+bevarte kildekonflikter, resten av den opprinnelige historiske restlisten og
+avklaringen av eldre regelsesonger. Poengversjonen har full kanonisk
+spillerkampinventar, men gir ingen oppdiktede labels til inaktive rader.
 
 [CBI-V1](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_cbi_conservation/README.md)
 feilet på ni kontrollsammenligninger; ingen verdier er anvendt. Alle 341 manglende

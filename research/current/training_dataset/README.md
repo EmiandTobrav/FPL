@@ -18,7 +18,7 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | Kvalitetskontroll | 16 918 sammenligninger av kampstatistikk; bonus for alle 1 538 deltakere; poengsum mot offisiell komponentforklaring |
 | Historisk datarest | 14 907 feltkrav i 13 745 spillerkamper; 326 nye keeperlokasjoner avklart |
 | Historisk inputdekning | 63 535 spillerkamper og 752 kamper inputkomplette |
-| Historisk omregning | Fortsatt ikke kvalifisert; ingen nye historiske poengetiketter |
+| Historisk omregning | 2025/26: 363 hele kamper og 10 971 kvalifiserte poengetiketter; 435 totalpoeng endres |
 | Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
 | Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
 | 2022/23 forventede statistikker | 26 505 kvalifiserte xG/xA/xGI/xGC-rader i 380 kamper; tilgjengelighet før frist uavklart |
@@ -37,8 +37,9 @@ offline-replay dekker 94 byteidentiske resultatfiler.
 lukker 326 krav med eksplisitt skuddopphav og entydig keeper-ID. Hele rednings-
 inventaret må stemme med FPL og primære lag-/keeperankre. 40 kontrollkeepere
 stemmer uten avvik; ti nye tester og elleve byteidentiske replayresultater består.
-244 nye kamper er inputkomplette. 2025/26 har nå 363 slike kamper; disse trenger
-sesongrelevante kilde-/regelgater og helkampbonus før poengetiketter godkjennes.
+244 nye kamper er inputkomplette. 2025/26 har nå 363 slike kamper; disse har nå
+bestått sesongrelevante kilde-/regelkontroller og helkampbonus i
+[en egen kvalifisert poengversjon](scoring/season_2025/README.md).
 De siste 16 lokasjonskravene er sperret av redningsantall. Ingen differanseberegning
 av lokasjon brukes. CBI-V1 feilet og er bevart med null nye avklaringer.
 
@@ -55,6 +56,22 @@ og 95 aktuelle kamper gir 710 samsvarende kildekontroller. Den tidligere
 beregningsversjonen med 489 kandidatkamper bevares og reproduseres mot sitt
 opprinnelige snapshot; 508 kamper i gjeldende ledger har nå komplette input.
 Poengetiketter, features før frist og aktiv treningsintegrasjon gjenstår.
+
+## Ny poengleveranse: 2025/26 etter årets regler
+
+[Sesongversjonen](scoring/season_2025/README.md) leverer **363 kvalifiserte
+hele kamper og 10 971 spillerkamper**, med ny BPS, bonus og komponentavstemte
+poeng. 435 spillerkamper får endret bonus og poengsum. Grunnpoeng er uendret
+mellom 2025/26 og 2026/27; allerede tildelt defcon legges ikke til på nytt.
+Alle grunnpoeng-/helkampkontroller består uten residualer.
+
+De 17 ufullstendige kampene og ikke-poengrelevante inaktive rader får ingen
+harmonisert poengetikett. Ny primærinnhenting av Kellehers 37 spilte kamper
+lokaliserer en BCS-kilderevisjon til kamp 337; gammel godkjent verdi bevares
+og hele kampen sperres. Dokus kjente times-tackled-konflikt forblir sperret.
+Ni nye tester består. Den nye versjonen gjenskaper 12 filer byteidentisk;
+samlet offline-replay dekker nå 106 filer. Før-frist-features, spiller–runde-
+targets og faktisk treningsinnlesing gjenstår; datasettet er fortsatt uferdig.
 
 ## Ny regelkontroll: mislykket kvalifisering bevart
 
@@ -79,7 +96,8 @@ dekker nå 50 byteidentiske resultatfiler; 33 fokuserte tester består.
 
 Historisk beregningsmotor er etablert med 185 573 kanoniske originalrader og
 avstemt grunnpoengregnskap. Separate omregningskandidater finnes for 489 hele
-kamper; **ingen historiske kandidater er godkjent for trening**. Kontrollen fant
+kamper; denne opprinnelige versjonen er bevart uten godkjenning. Den nye
+2025/26-poengversjonen er separat kvalifisert. Kontrollen fant
 også 12 null-minutt-rader med kort utenfor gammel ledger og to kildekonflikter.
 Se [beregning, sensitivitet og sperrer](scoring/README.md).
 
@@ -127,11 +145,14 @@ null-BPS-deltakere, bonus ved delt plass og negative BPS, fasituavhengig
 kontrollutvelgelse, endret inngang og feil assistfasit som skal sperre godkjenning.
 Fjorten nye historiske transformasjons-/sperretester er også lagt til.
 Ingen full repository-/CI-test påstås. Samlet replay gjenskaper historisk
-beregning, startroller og den separate 2022/23-statistikkversjonen fra fryste
-innganger: 94 identiske filer. De 72 fokuserte testene kjøres med separate
+beregning, startroller, den separate 2022/23-statistikkversjonen og nye
+2025/26-poenglabels fra fryste innganger: 106 identiske filer. De tidligere
+72 fokuserte testene kjøres med separate
 oppdagelser i `training_dataset`, `penalty_controls`, `lineups`,
 `lineups/conservation`, `fpl_history_2022`, `fpl_history_2022/reconciliation`
 og `scoring/legacy_tackles`.
+
+De ni nye sesongkvalifiseringstestene kjøres separat i `scoring/season_2025`.
 
 Den eldre batch 3 er også gjenskapt: alle 63 resultatfiler ble identiske.
 `replay_batch3.py` tilpasser kun gzip-headerens OS-byte for Linux-produserte

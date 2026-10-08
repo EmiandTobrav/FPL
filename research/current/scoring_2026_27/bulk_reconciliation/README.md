@@ -3,8 +3,11 @@
 Oppdatert 8. oktober 2026, keeperlokasjon: **14 907 åpne feltkrav i 13 745
 spillerkamper**. **63 535 spillerkamper og 752 hele kamper** har komplette input.
 Siste batch lukker **326 keeperlokasjonskrav** og gir **244 nye hele kamper**.
-363 av 380 kamper i 2025/26 har komplette input. Historiske poeng/BPS/bonus er
-fortsatt ikke kvalifisert.
+363 av 380 kamper i 2025/26 har nå også kvalifiserte poeng/BPS/bonus i
+[en egen sesongversjon](../../training_dataset/scoring/season_2025/README.md):
+10 971 spillerkamper, null komponentavvik og 435 endrede poengsummer.
+`CURRENT.json` her gjelder fortsatt datakrav og full historisk kvalifisering;
+eldre sesonger, tidsriktige features og aktiv treningsinnlesing gjenstår.
 
 Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md) og
 [ny direkte lokasjonsavstemming](followup_2026_10_08/fotmob_keeper_location/README.md).
@@ -239,4 +242,3 @@ control, manifest and raw-evidence files byte-identical. Full repository tests
 and GitHub CI were not verified. See `test_results.json`,
 `existing_test_results.json`, `source_verification.json` and
 `replay_verification.json`.
-

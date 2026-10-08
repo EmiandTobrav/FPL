@@ -1,0 +1,23 @@
+{
+  "status": "qualified_partial_season_scoring_not_training_ready",
+  "source_season": "2025-26",
+  "target_season": "2026-27",
+  "points_version": "season_2025_changed_components_v1",
+  "canonical_rows": 29747,
+  "scoring_relevant_rows": 11493,
+  "qualified_player_matches": 10971,
+  "qualified_whole_fixtures": 363,
+  "blocked_whole_fixtures": 17,
+  "remaining_2025_input_fields": 17,
+  "historical_open_fields": 14907,
+  "changed_bonus_rows": 435,
+  "changed_total_point_rows": 435,
+  "target_basic_point_residuals": 0,
+  "approved_keeper_values_modified": 0,
+  "inactive_rows_with_invented_labels": 0,
+  "training_ready_rows": 0,
+  "source_revision_fixture": 337,
+  "source_revision_code": 200720,
+  "source_revision_old_big_chance_saves": 0,
+  "source_revision_primary_big_chance_saves": 1
+}

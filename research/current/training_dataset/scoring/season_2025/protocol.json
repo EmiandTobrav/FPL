@@ -1,0 +1,48 @@
+{
+  "version": "season_2025_changed_components_v1",
+  "source_season": "2025-26",
+  "target_season": "2026-27",
+  "scope": "Whole-fixture scoring labels for scoring-relevant FPL participants only; not a training-ready dataset",
+  "source_validation": "Reuse published, frozen regression controls and population checks; shared Opta lineage, not an independent provider holdout",
+  "rules": {
+    "old_cbi_divisor": 2,
+    "new_cbi_divisor": 3,
+    "removed_times_tackled_deduction": -1,
+    "old_keeper": "3 * inside + 2 * outside + 8 * penalty_saves",
+    "new_keeper": "2 * native_fpl_saves + inside + big_chance_saves + 7 * penalty_saves",
+    "unchanged_basic_points": true,
+    "unchanged_assist_definition": true,
+    "unchanged_defensive_awards": true,
+    "legacy_net_tackle_clipping_applicable": false,
+    "sources": [
+      "https://www.premierleague.com/en/news/4362127/whats-new-in-202526-fantasy-changes-to-bonus-points-system",
+      "https://www.premierleague.com/en/news/4679946/",
+      "https://www.premierleague.com/en/news/4679873"
+    ]
+  },
+  "required_controls": {
+    "all_68_explicit_times_tackled_comparisons_equal": true,
+    "known_times_tackled_conflict_quarantined": [356, 248875],
+    "all_543_eligible_inside_save_inventories_equal": true,
+    "all_40_frozen_outside_save_controls_equal": true,
+    "all_52_explicit_target_season_big_chance_save_controls_equal": true,
+    "original_basic_points_residuals": 0,
+    "original_whole_fixture_bonus_residuals": 0,
+    "native_delta_inputs_agree_with_canonical_fpl": true,
+    "full_scoring_relevant_participants_required": true,
+    "two_club_sides_at_least_eleven_played_each": true,
+    "keeper_primary_season_inventory_exhaustion_required": true,
+    "new_counter_revision_quarantine": [337, 200720]
+  },
+  "official_2025_big_chance_save_totals": {
+    "111234": 28,
+    "200720": 27,
+    "172649": 26,
+    "67089": 23,
+    "80201": 22
+  },
+  "missing_values": "Never fill missing delta inputs; a primary omitted big-chance-save count is zero only after complete appearance inventory and exact season-total exhaustion",
+  "revision_policy": "Preserve approved keeper artifacts and old source values. Block entire fixtures with unresolved current-source changes. No goal or own-goal correction is applied.",
+  "inactive_rows": "Keep full canonical inventory but leave harmonized labels missing on non-scoring-relevant rows; do not invent zero delta inputs",
+  "training_ready": false
+}
