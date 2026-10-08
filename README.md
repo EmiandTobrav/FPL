@@ -6,7 +6,13 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 
 ## Start her
 
-- [Historisk omregning til 2025/26: datakontroll og kildevurdering](research/current/rescoring_2025/README.md)
+**Historisk harmonisering til 2026/27 – batch 3, 8. oktober 2026:** 16 227 åpne feltkrav i 14 990 spillerkamper. 62 290 spillerkamper og 490 hele kamper har komplette inputfelt. Siste batch avklarte 8 058 krav (33,18 %); dette er inputtilgjengelighet, ikke ferdig kvalifiserte poeng/BPS/bonus.
+
+- [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)
+- [Prioritert arbeidsrekkefølge](research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md)
+- [Maskinlesbar status og filpekere](research/current/scoring_2026_27/bulk_reconciliation/CURRENT.json)
+
+- [Tidligere datakontroll for 2025/26 (historisk)](research/current/rescoring_2025/README.md)
 
 - [Status og neste steg](docs/STATUS.md)
 - [Kampjustering, H3/H5/H8 og adaptive chips: 84 nye forløp](research/current/fixture_strategy/README.md)
