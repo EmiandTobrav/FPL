@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **12 476**,
+**14 893 åpne feltkrav**, nå **11 949**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -21,7 +21,30 @@ kildekontroller beholdes før masseutfylling; manglende data er fortsatt manglen
 Eksisterende poengversjoner bevares. Ny scoring og featurebygging er utsatt.
 Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
 
-## Nyeste datagapleveranse – 303 nye krav fra eksakte sesongblokktotaler
+## Nyeste datagapleveranse – 527 nye mållinjekrav og 44 nye komplette kamper
+
+**11 949 åpne krav i 11 444 spillerkamper.** **65 836 spillerkamper og 812 hele
+kamper** har komplette inputfelt. [Identitets- og inventarbatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/README.md)
+lukker 527 krav og gjør 390 flere spillerkamper inputkomplette.
+
+Eksisterende komplette blokkinventarer gjenbrukes. Et hashfestet uttrekk med
+2 639 faktiske kildekamper kontrollerer dato, lagidentiteter og sluttresultat
+mot FPL; spillerkoblingene krever entydige ID-er med andre kampankre.
+FPL-minuttene bevares. Ett minutts varighetsforskjell er bare kvalifisert for
+mållinjetelleren i denne separate versjonen, uten endringer i keeper-/BPS-gater.
+
+59 534 lukkede kontrollverdier og 574 positive kildeverdier stemmer uten avvik;
+478 nøkler overlapper. Ettminuttsgruppen har 12 667 lukkede kontroller og 83
+positive kildeverdier uten avvik. Kildene deler Opta-opphav; dette er regresjon
+og kildekompatibilitet, ikke uavhengig holdout eller native FPL-mållinjetellinger.
+Syv tester består, og ti resultater samt fryste prediksjoner gjenskapes
+byteidentisk i isolert offline-replay. Ingen ny scoring, features eller trening.
+
+48 mållinjekrav gjenstår: 39 arkiv-/identitetsgap og ni avvik større enn ett
+minutt. Assists (9 926), times tackled (1 238) og CBI (545) er hovedrestene.
+Kollektiv kvalitetssikring og full treningsklarhet gjenstår.
+
+## Tidligere datagapleveranse – 303 nye krav fra eksakte sesongblokktotaler
 
 **12 476 åpne krav i 11 834 spillerkamper.** 65 446 spillerkamper og 768 hele
 kamper har komplette inputfelt. [Sesongblokkavstemmingen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/README.md)

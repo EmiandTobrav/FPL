@@ -1,0 +1,24 @@
+{
+  "raw_fixtures_sha256": "9dcdffe83ae68395b299c99bb867e644140a43af14d28ae1a90861cf343d208f",
+  "raw_fixture_source": "https://github.com/peteowen1/pannadata/releases/tag/opta-latest",
+  "reused_raw_archives": {
+    "fpl_events_EPL.parquet": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+    "fpl_opta_player_stats.parquet": "2765b1771493c917ce7c544b01cf3a151e159a818abb889c7fcbd746353eaead"
+  },
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/protocol.json": "b3f487b2cb29aede947fe21c61add8ca70d514d2f7066e07a6ea22e672201fe6",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/prepare.py": "90be3f2f8c04b4443357d37075a7086e00b3f035d0511017b401128469feb919",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/inputs/fixtures.csv.gz": "a0b769466d83eadb695da70b8c98dee3626092e773e34923388ae97890b46026",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/inputs/parent_CURRENT.json": "1b607574d0f0dde090ac2b1b78426f5e0e8d5b96b275c4b3560e6f06970ddfc9",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/predict.py": "db7d05793c123579521e9a40c8ea91e9f65390641438596d490c46cc414b7246",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/inputs/events.csv.gz": "1a58130594b6abb7b9a0635b53dc06f58ac54a22d780f6fe4d954fefae304e2d",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_events/inputs/players.csv.gz": "f44470b383f1c1f46cc0bf146ca0f7fbe4c0a320e0afea567632245bea1deb00",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/season_conservation/inputs/full_team_totals.csv": "004214fb008229bab37cebf00b51db4fe22bd0226c94c91633fc0719daf49cc2",
+    "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "scoring_2026_27/keeper_recovery/recover.py": "429b72bd97a247fb48159236df67bb7a5b4b934c9d19b518ff22f8b5a6fd8fa1",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/results/requirements.csv.xz": "d1d0c94a8a7db4e82a508ff6980403fe280e34cf433811d428a45a24bb2c86f8",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/results/player_match_readiness.csv.xz": "986204cb4f753d350c987fcce3954eda4a468bdab70fc0c26a386541702c021d",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/results/match_readiness.csv": "550041dbb8e2a71856bcf2f753230abc32a3583925f8604da79eb433c09adcdd"
+  }
+}

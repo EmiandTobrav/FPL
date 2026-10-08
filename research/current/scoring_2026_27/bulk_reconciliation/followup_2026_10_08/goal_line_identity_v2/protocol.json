@@ -1,0 +1,19 @@
+{
+  "version": "goal_line_identity_block_inventory_v2",
+  "mapping": "Unchanged v1: actual type10 with explicit94 defensive block and explicit14 last-line marker. All original malformed/unknown-actor/impossible-marker/block-counter inventory guards remain. Never count normal type12 clearances.",
+  "new_evidence": "Hash-pinned source fixture identities, home/away UUIDs and final scores, native historical team/side/date/scores and stable cross-match player UUID anchors. These controls qualify a whole-match event counter when individual duration bookkeeping differs by exactly one minute; they do not normalize or override native FPL minutes.",
+  "identity": "Matched original projection; unique fixture/player/team; same season and date; source home/away names and final scores equal native fixture; source roster role/UUID matches fixture side and native historical club; one unanimous source UUID per FPL code across matched appearances and at least two distinct other exact-minute fixtures as identity anchors. Require both source/native minutes positive nonnegative integers. Only delta0 or absolute delta1 eligible. Delta2+, zero-minute discrepancies or ambiguous anchors abstain.",
+  "inventory": "Reuse v1 exact explicit player outfielderBlock or complete primary team outfielder_block conservation, all original actor/qualifier/player-conflict checks. No missing-to-zero conversion from omitted events alone.",
+  "controls": "Freeze before reading approved goal-line outcomes. Recheck all eligible closed ledger and explicit source controls. Source controls share Opta lineage and previously inspected development positives; not independent holdout or native FPL goal-line truth.",
+  "gate": {
+    "minimum_closed_controls": 1000,
+    "minimum_explicit_positive_each_2019_to_2024": 20,
+    "minimum_explicit_positive_2025": 50,
+    "minimum_closed_one_minute_controls": 1000,
+    "minimum_positive_one_minute_controls": 20,
+    "minimum_closed_one_minute_controls_each_applied_season": 100,
+    "maximum_control_errors": 0
+  },
+  "application": "Only missing_data goal_line_clearances with absolute delta1. Preserve exact-minute v1 results and all original native/source columns, approved data, protected conflicts and previous scoring/labels. No scoring/features. Keep source-quality flags pending.",
+  "limits": "Separate counter-specific identity qualification, never transfer this minute exception to saves, CBI, BPS or seasonal keeper gates. Collective QA remains later. The v1 minute rule and frozen results remain unchanged."
+}

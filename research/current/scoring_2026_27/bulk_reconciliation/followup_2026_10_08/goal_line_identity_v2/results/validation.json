@@ -1,0 +1,47 @@
+{
+  "qualified": true,
+  "closed_controls": 59534,
+  "closed_zero_controls": 59056,
+  "closed_control_errors": 0,
+  "explicit_source_controls": 574,
+  "explicit_source_errors": 0,
+  "positive_source_controls_by_season": {
+    "2019-20": 50,
+    "2020-21": 66,
+    "2021-22": 90,
+    "2022-23": 89,
+    "2023-24": 102,
+    "2024-25": 81,
+    "2025-26": 96
+  },
+  "closed_controls_by_season": {
+    "2019-20": 9369,
+    "2020-21": 9078,
+    "2021-22": 9506,
+    "2022-23": 10385,
+    "2023-24": 10545,
+    "2024-25": 10651
+  },
+  "overlapping_source_and_closed_control_keys": 478,
+  "one_minute_closed_controls": 12667,
+  "one_minute_closed_control_errors": 0,
+  "one_minute_explicit_positive_controls": 83,
+  "one_minute_explicit_control_errors": 0,
+  "one_minute_closed_controls_by_season": {
+    "2019-20": 1744,
+    "2020-21": 1528,
+    "2021-22": 1678,
+    "2022-23": 2531,
+    "2023-24": 2554,
+    "2024-25": 2632
+  },
+  "qualified_application_seasons": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "limits": "Shared Opta lineage; previously observed development/source controls and closed-ledger regression. Not independent holdout, not native FPL goal-line observations, not scoring qualification."
+}

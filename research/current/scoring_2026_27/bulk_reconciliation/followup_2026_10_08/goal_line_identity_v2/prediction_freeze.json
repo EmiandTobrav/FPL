@@ -1,0 +1,11 @@
+{
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/protocol.json": "b3f487b2cb29aede947fe21c61add8ca70d514d2f7066e07a6ea22e672201fe6",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/inputs/manifest.json": "c52a66c2eb3ae3685b4d9b4e7d88d3c676456e0574876e9bc0774ec43def79f2",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/predict.py": "3a2a82da6d63da8292650cc937df103ccad7b7b8d215b07ffd9601978e2e6cbd",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/predictions.csv.gz": "a064b8b7fea701579423d531172e0eb6d2e637b5fe19fb2e7fc9f56bf1c60ab7",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/team_gates.csv": "74bcc9551d74e71b575695377b7c9fd9f6a3fb89a613bc4a664bac0d073b5cc6",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/identity_scope.csv.gz": "a9be2a9c3441938a4b4df52730da4b68ffb074d85c1b9a071e59e6296122ea07"
+  },
+  "closed_ledger_values_read_by_prediction": false
+}

@@ -1,5 +1,34 @@
 # Gjeldende datagaparbeid og restliste
 
+Oppdatert 9. oktober 2026: **11 949 åpne feltkrav i 11 444 spillerkamper**.
+**65 836 spillerkamper og 812 hele kamper** har komplette input. Siste batch
+lukker **527 mållinjekrav**, med **390 nye komplette spillerkamper og 44 nye
+hele kamper**. Syv tester består; ti resultater og fryste prediksjoner
+gjenskapes byteidentisk i separat offline-replay.
+
+Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md)
+og [nytt identitets-/inventarbevis](followup_2026_10_08/goal_line_identity_v2/README.md).
+[Restliste](followup_2026_10_08/goal_line_identity_v2/results/remaining_fields.csv.xz),
+[full ledger](followup_2026_10_08/goal_line_identity_v2/results/requirements.csv.xz)
+og [assistavhengigheter](priority/assist_groups.csv) er oppdatert sammen.
+
+| Feltgruppe | Åpne krav |
+|---|---:|
+| Assists etter målreglene | 9 926 |
+| Times tackled | 1 238 |
+| CBI | 545 |
+| Mållinjeklareringer | 48 |
+| Øvrige felt | 192 |
+| **Totalt** | **11 949** |
+
+48 mållinjekrav gjenstår: 39 arkiv-/identitetsgap og ni større minuttavvik.
+Det nye ettminuttsunntaket gjelder bare denne tellerens kvalifiserte inventar
+og identitet. FPL-minutter og alle tidligere keeper-/BPS-gater bevares.
+Effektiv datainnhenting fortsetter før samlet kvalitet, scoring og features.
+De tidligere 374 kvalifiserte 2025/26-poengkampene utvides ikke her.
+
+## Historikk: 303 krav fra sesongblokktotaler
+
 Oppdatert 9. oktober 2026: **12 476 åpne feltkrav i 11 834 spillerkamper**.
 **65 446 spillerkamper og 768 hele kamper** har komplette input. Siste batch
 lukker **303 mållinjekrav** med eksplisitte primære sesongblokktotaler, og gjør

@@ -39,7 +39,7 @@ Felles tabeller dekker nå alle åtte sesonger: **187 111 spillerkamper og
 kontrakt. 14 365 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
 Se [datatabeller og innlesing](research/current/training_dataset/canonical_extension/README.md).
 
-**Historisk datagaparbeid – 9. oktober 2026:** 12 476 åpne feltkrav i 11 834 spillerkamper. 65 446 spillerkamper og 768 hele kamper har komplette inputfelt. Siste batch lukker 303 mållinjekrav med eksplisitte sesongblokktotaler og gir 241 nye komplette spillerkamper. Se [sesongavstemming og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_season_blocks/README.md). Forrige batch lukket 2 114 krav. De tidligere 374 poengkvalifiserte 2025/26-kampene bevares; ny poengomregning og full treningsintegrasjon følger etter datagap og samlet kvalitetssikring.
+**Historisk datagaparbeid – 9. oktober 2026:** **11 949 åpne feltkrav i 11 444 spillerkamper**. **65 836 spillerkamper og 812 hele kamper** har komplette inputfelt. Siste batch lukker **527 mållinjekrav**, og gir **390 nye komplette spillerkamper og 44 nye hele kamper**. Syv tester består; ti resultater og fryste prediksjoner gjenskapes byteidentisk uten nettverk. Se [feltspesifikk identitet og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/README.md). Totalt 2 944 krav er lukket fra omprioriteringens 14 893. De tidligere 374 poengkvalifiserte 2025/26-kampene bevares; ny poengomregning og full treningsintegrasjon følger etter datagap og samlet kvalitetssikring.
 
 **Gjeldende prioritet etter brukerens omdefinering:** lukk datagapene så
 effektivt og raskt som mulig → kvalitetssikre samlet datagrunnlag → omregn
