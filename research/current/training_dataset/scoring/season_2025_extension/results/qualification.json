@@ -1,0 +1,31 @@
+{
+  "scope": "Whole-fixture scoring labels for scoring-relevant FPL participants only; not a training-ready dataset",
+  "passed": true,
+  "checks": {
+    "native_assists_2026_27": 11492,
+    "native_historical_bps": 11492,
+    "native_clearances_blocks_interceptions": 11492,
+    "native_defensive_contribution": 10725,
+    "native_saves": 767,
+    "native_penalties_saved": 767,
+    "times_tackled_explicit_equal": 68,
+    "inside_save_population_equal": 543,
+    "outside_save_frozen_controls_equal": 40,
+    "big_chance_save_explicit_controls_equal": 52,
+    "original_basic_account_rows": 11493,
+    "original_bonus_checked_fixtures": 380,
+    "direct_primary_location_control_cells_equal": 746,
+    "previous_qualified_labels_preserved": 10941,
+    "latest_primary_big_chance_controls": 381,
+    "latest_primary_big_chance_revisions_quarantined": [
+      337,
+      365
+    ]
+  },
+  "target_bonus_requires_whole_fixture": true,
+  "labels_enabled_only_for_qualified_fixtures": true,
+  "before_deadline_features_qualified": false,
+  "training_pipeline_connected": false,
+  "other_historical_season_rule_gates_unchanged": true,
+  "source_lineage": "Reuse published, frozen regression controls and population checks; shared Opta lineage, not an independent provider holdout; plus all 746 direct primary location controls and 14 independently conserved outside-box zeros"
+}

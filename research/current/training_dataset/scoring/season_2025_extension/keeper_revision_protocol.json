@@ -1,0 +1,8 @@
+{
+  "reason": "Published official Kelleher big-chance-save total 27 versus approved reconstructed total 26; audit all 37 played matches and season total before scoring qualification",
+  "scope": "Provider/source-version reconciliation; preserve approved counts and ledger; no automatic correction",
+  "player_code": 200720,
+  "pl_player_id": 14723,
+  "primary_comp_season": 777,
+  "plan_sha256": "88397300e27430bc429d3241c17f54e040597f7eb3bfcd91701b46a8f8d3e085"
+}

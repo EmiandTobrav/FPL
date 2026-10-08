@@ -13,10 +13,10 @@ helkampbonus og kampstatistikk er avstemt. Historisk rest og scoring er fortsatt
 uavklart; full treningsleveranse er ikke ferdig.
 Historisk beregning er etablert: 185 573 originalrader har avstemt grunnpoeng
 og en bevart tidligere versjon har 489 separate omregningskandidater.
-**2025/26 har nå kvalifiserte omregnede poengetiketter for 363 hele kamper og
-10 971 spillerkamper**, med ny BPS og helkampbonus; 435 poengsummer endres.
-Null avvik i komponentregnskapet. 17 kamper er sperret. Features og loader
-gjenstår før trening. Se [kvalifisert poengversjon](research/current/training_dataset/scoring/season_2025/README.md).
+**2025/26 har nå kvalifiserte omregnede poengetiketter for 374 hele kamper og
+11 315 spillerkamper**, med ny BPS og helkampbonus; 442 poengsummer endres.
+Null avvik i komponentregnskapet. Seks kamper er sperret. Tidsriktige features
+og kvalifiserte treningsrader gjenstår. Se [kvalifisert poengversjon](research/current/training_dataset/scoring/season_2025_extension/README.md).
 Kampstarter er nå kvalifisert for alle 185 573 historiske observasjoner i
 2 660 kamper. Komplette startellevere avklarer også 32 672 tidligere manglende
 null-minutt-roller. Offisielle lagoppstillinger dokumenterer
@@ -36,10 +36,10 @@ og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json
 
 Felles tabeller dekker nå alle åtte sesonger: **187 111 spillerkamper og
 181 604 spiller–runde-rader**, med H1-/H3-/H6-targets og en testet innlesings-
-kontrakt. 14 023 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
-Se [datatabeller og innlesing](research/current/training_dataset/canonical/README.md).
+kontrakt. 14 365 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
+Se [datatabeller og innlesing](research/current/training_dataset/canonical_extension/README.md).
 
-**Historisk harmonisering til 2026/27 – 8. oktober 2026:** 14 907 åpne feltkrav i 13 745 spillerkamper. 63 535 spillerkamper og 752 hele kamper har komplette inputfelt. De siste databatchene lukket 994 skuddkrav og 326 lokasjonskrav. 2025/26 har nå 363 kvalifiserte poengkamper; eldre sesonger og full treningsintegrasjon gjenstår. Se [avstemming og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md).
+**Historisk harmonisering til 2026/27 – 8. oktober 2026:** 14 893 åpne feltkrav i 13 731 spillerkamper. 63 549 spillerkamper og 766 hele kamper har komplette inputfelt. Databatchene har lukket 994 skuddkrav og 340 lokasjonskrav. 2025/26 har nå 374 kvalifiserte poengkamper; eldre sesonger og full treningsintegrasjon gjenstår. Se [avstemming og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/README.md).
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)
 - [Prioritert arbeidsrekkefølge](research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md)

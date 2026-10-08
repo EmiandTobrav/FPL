@@ -16,11 +16,11 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | 2026/27 spillerkamper | 1 538 observasjoner, 50 avsluttede hele kamper |
 | 2026/27 spiller–runde | 3 216 offisielle rader, inkludert ikke-deltakelse |
 | Kvalitetskontroll | 16 918 sammenligninger av kampstatistikk; bonus for alle 1 538 deltakere; poengsum mot offisiell komponentforklaring |
-| Historisk datarest | 14 907 feltkrav i 13 745 spillerkamper; 326 nye keeperlokasjoner avklart |
-| Historisk inputdekning | 63 535 spillerkamper og 752 kamper inputkomplette |
-| Historisk omregning | 2025/26: 363 hele kamper og 10 971 kvalifiserte poengetiketter; 435 totalpoeng endres |
+| Historisk datarest | 14 893 feltkrav i 13 731 spillerkamper; siste primærbatch lukket 14 lokasjonskrav |
+| Historisk inputdekning | 63 549 spillerkamper og 766 kamper inputkomplette |
+| Historisk omregning | 2025/26: 374 hele kamper og 11 315 kvalifiserte poengetiketter; 442 totalpoeng endres |
 | Kanoniske datatabeller | 187 111 spillerkamper og 181 604 spiller–runde-rader for alle åtte sesonger |
-| Neste-runde-/horisont-targets | 12 905 H1, 7 884 H3 og 3 945 H6 har kvalifisert komplett sum |
+| Neste-runde-/horisont-targets | 13 203 H1, 8 387 H3 og 4 522 H6 har kvalifisert komplett sum |
 | Modellinput/treningspipeline | Ny dataversjon leses og kontrolleres; trening sperret fordi fristsikre features/rosters mangler |
 | Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
 | 2022/23 forventede statistikker | 26 505 kvalifiserte xG/xA/xGI/xGC-rader i 380 kamper; tilgjengelighet før frist uavklart |
@@ -33,28 +33,23 @@ og Git-objektbevis; GW29-xGI er rettet fra kompatibel xG+xA. Første mislykkede
 kontroll beholdes med uendrede gater. 72 fokuserte tester består. Samlet
 offline-replay dekker 94 byteidentiske resultatfiler.
 
-## Ny dataavklaring: direkte keeperlokasjon
+## Gjeldende primæravklaring og poengversjon
 
-Den nyeste leveransen er [felles kanoniske tabeller og innlesing](canonical/README.md).
-14 023 spiller–runde-poeng er kvalifisert; 1 678 native ikke-deltakelsesrader
-er bevart. Historiske blank-/ikke-deltakelseslabels, reelle frister, rosters og
-statistikkversjoner før frist gjenstår. Samlet replay dekker 113 resultatfiler.
+[Direkte primærtellere](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/README.md)
+lukker 14 keeperlokasjoner fra komplette sesonginventarer. Alle 746 kjente
+inside-/outside-verdier stemmer. Sánchez har én minutts kildeavvik i kamp 47;
+hans to krav holdes utenfor. Ingen lokasjon er beregnet som total minus inside.
+
+[Utvidet poengversjon](scoring/season_2025_extension/README.md) kvalifiserer
+12 nye hele kamper: samlet 374 kamper og 11 315 spillerkamper. Kamp 365 sperres av et nytt BCS-kildeavvik; øvrige tidligere poeng er identiske.
+Seks kamper er sperret: 33, 215, 323, 337, 356 og 365.
+
+[Aktive felles tabeller](canonical_extension/README.md) har 14 365 kvalifiserte
+rundepoeng. Historiske blank-/ikke-deltakelseslabels, reelle frister, rosters og
+statistikkversjoner før frist gjenstår. `ACTIVE.json` peker til denne versjonen;
 `python research/current/training_dataset/pipeline.py --inspect` leser faktisk
-alle åtte sesonger gjennom `ACTIVE.json`, med `training_ready=false`.
-
-[Lokasjonsavstemming](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md)
-lukker 326 krav med eksplisitt skuddopphav og entydig keeper-ID. Hele rednings-
-inventaret må stemme med FPL og primære lag-/keeperankre. 40 kontrollkeepere
-stemmer uten avvik; ti nye tester og elleve byteidentiske replayresultater består.
-244 nye kamper er inputkomplette. 2025/26 har nå 363 slike kamper; disse har nå
-bestått sesongrelevante kilde-/regelkontroller og helkampbonus i
-[en egen kvalifisert poengversjon](scoring/season_2025/README.md).
-De siste 16 lokasjonskravene er sperret av redningsantall. Ingen differanseberegning
-av lokasjon brukes. CBI-V1 feilet og er bevart med null nye avklaringer.
-
-Den tidligere beregningsversjonen med 489 kandidatkamper er et bevart snapshot;
-den er ikke den oppdaterte inputdekningen. Samlet historisk replay bruker fortsatt
-den opprinnelige ledgerpekeren og endrer ikke fryste kontroller eller labels.
+alle åtte sesonger, med `training_ready=false`. Tidligere kanonisk v1 og alle
+skudd-/keeper-/poengkontroller bevares i sine opprinnelige mapper.
 
 ## Ny dataavklaring: alle skuddkrav lukket
 
@@ -66,7 +61,7 @@ beregningsversjonen med 489 kandidatkamper bevares og reproduseres mot sitt
 opprinnelige snapshot; 508 kamper i gjeldende ledger har nå komplette input.
 Poengetiketter, features før frist og aktiv treningsintegrasjon gjenstår.
 
-## Ny poengleveranse: 2025/26 etter årets regler
+## Bevart første poengleveranse: 2025/26 etter årets regler
 
 [Sesongversjonen](scoring/season_2025/README.md) leverer **363 kvalifiserte
 hele kamper og 10 971 spillerkamper**, med ny BPS, bonus og komponentavstemte

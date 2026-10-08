@@ -53,6 +53,17 @@ def main():
     canonical_manifest = json.loads((P / 'canonical/results/manifest.json').read_text())
     inputs.update(canonical_manifest['input_sha256'])
     inputs.update(canonical_manifest['code_sha256'])
+    location = S / 'primary_keeper_location'
+    location_manifest = json.loads((location / 'results/manifest.json').read_text())
+    inputs.update(location_manifest['input_sha256'])
+    inputs.update(str((location/'results'/name).relative_to(R)) for name in location_manifest['outputs_sha256'])
+    inputs.add(str((location/'results/manifest.json').relative_to(R)))
+    extension_manifest = json.loads((P / 'scoring/season_2025_extension/results/manifest.json').read_text())
+    inputs.update(extension_manifest['input_sha256'])
+    inputs.update(extension_manifest['code_sha256'])
+    extended_canonical_manifest = json.loads((P / 'canonical_extension/results/manifest.json').read_text())
+    inputs.update(extended_canonical_manifest['input_sha256'])
+    inputs.update(extended_canonical_manifest['code_sha256'])
     inputs.update(str(path.relative_to(R)) for path in P.rglob('*')
                   if path.is_file() and '__pycache__' not in path.parts
                   and path.name != 'reproduction_verification.json'
@@ -98,6 +109,9 @@ def main():
          'season_summary.csv','validation_summary.json']]
     output_paths += list((P / 'scoring/season_2025/results').glob('*'))
     output_paths += list((P / 'canonical/results').glob('*'))
+    output_paths += list((location / 'results').glob('*'))
+    output_paths += list((P / 'scoring/season_2025_extension/results').glob('*'))
+    output_paths += list((P / 'canonical_extension/results').glob('*'))
     expected = {str(path.relative_to(R)): digest(path) for path in output_paths}
     with tempfile.TemporaryDirectory(prefix='fpl_dataset_replay_') as tmp:
         root = Path(tmp) / 'research/current'
@@ -136,7 +150,10 @@ def main():
                  ['training_dataset/scoring/legacy_tackles/primary_predict.py'],
                  ['training_dataset/scoring/legacy_tackles/validate.py'],
                  ['training_dataset/scoring/season_2025/build.py'],
-                 ['training_dataset/canonical/build.py']]
+                 ['training_dataset/canonical/build.py'],
+                 ['scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/build.py'],
+                 ['training_dataset/scoring/season_2025_extension/build.py'],
+                 ['training_dataset/canonical_extension/build.py']]
         for task in tasks:
             result = subprocess.run([sys.executable, *task], cwd=root, capture_output=True, text=True)
             if result.returncode:

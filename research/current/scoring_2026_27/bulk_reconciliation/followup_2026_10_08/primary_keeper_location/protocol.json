@@ -1,0 +1,27 @@
+{
+  "scope": "Direct primary saved_ibox and saved_obox counts; field-specific qualification; native FPL saves retained independently",
+  "selection": "All 12 keepers with the 16 remaining 2025/26 outside-box gaps; complete native appearance inventories, including every known inside/outside control",
+  "exploratory_pilot": "Kelleher 37 appearances: 37 inside and 36 outside controls agree; one native-total-save difference is recorded and never used to derive location",
+  "controls_selected_before_other_keeper_comparisons": true,
+  "minimum_closed_controls_per_field_per_keeper": 10,
+  "minimum_positive_outside_controls_per_keeper": 5,
+  "maximum_location_control_disagreements": 0,
+  "requirements": [
+    "Unique primary player ID and explicit Opta ID match the native keeper code",
+    "Every match has explicit appearances=1 and exact native minutes; full fixture plan matches the native season appearance set",
+    "Primary season appearances and minutes equal the complete native inventory",
+    "For each location field, the sum of all explicit nonnegative match counts exactly exhausts the explicit primary season count; only then omitted match counts are proved zero",
+    "All closed inside and outside controls in the keeper season agree; any discrepancy vetoes that keeper",
+    "Direct inside-plus-outside counts never exceed native FPL saves; any such discrepancy vetoes the keeper season",
+    "Never infer outside from saves minus inside; never replace native saves or any closed location value",
+    "Existing conflicts remain protected; only missing outside-box requirements may be filled",
+    "This qualifies direct location inputs only, not BPS, bonus, targets or feature availability"
+  ],
+  "parent_requirements_sha256": "df8003ae232548d0150d3c00a2fdb4d5eb82834a934ec45c7b029cb9309ef607",
+  "plan_sha256": "1651288c6d59fa5fcb56072d8ce60d592da9f250876640e4ef5f24a7270a9ad6",
+  "input_sha256": {
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "project/data/2025-26_fixtures.csv.gz": "ba7cf7a5f915b18fb77d1024f32ab90b04e462ff00de110198dd6699730fc042",
+    "scoring_2026_27/delta_input_audit/inputs/primary/players_2025-26.json": "2375983034120463766445897e256e7c3f5b6c8bd3ce14591e7368e121cabb06"
+  }
+}

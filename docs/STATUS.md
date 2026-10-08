@@ -2,6 +2,25 @@
 
 Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
+## Nyeste leveranse – direkte primærlokasjon og 374 kvalifiserte poengkamper
+
+**14 nye feltkrav er lukket og 14 hele kamper har fått komplette input.**
+Resten er 14 893 krav i 13 731 spillerkamper; 766 hele kamper er inputkomplette.
+[Primærbatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/README.md)
+avstemmer alle 381 keeperopptredener og 746 kjente lokasjonsverdier uten avvik.
+Sánchez sine to krav holdes tilbake på en minuttsforskjell i kamp 47.
+
+**374 kamper og 11 315 spillerkamper fra 2025/26 er poengkvalifisert**, 12 nye
+hele kamper. Kamp 365 sperres av et nytt BCS-avvik; øvrige tidligere labels bevares identisk.
+Seks kamper er sperret.
+[Aktiv dataversjon](../research/current/training_dataset/canonical_extension/README.md)
+har 14 365 kvalifiserte rundepoeng, 13 203 H1-, 8 387 H3- og 4 522 H6-targets.
+Tolv nye tester består; samlet offline-replay gjenskaper 145 resultatfiler identisk.
+Alle åtte sesonger leses gjennom ACTIVE.json. Fristsikre features og historiske
+ikke-deltakelses-/blankrundelabels gjenstår; ingen treningsrader er godkjent.
+
+De etterfølgende avsnittene dokumenterer de bevarte tidligere leveransene.
+
 ## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, første kvalifiserte historiske poengversjon
 
 **Felles datatabeller og innlesingskontrakt er levert:** 187 111 spillerkamper,

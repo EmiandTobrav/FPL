@@ -3,14 +3,14 @@
   "target_season": "2026-27",
   "historical_source_commit": "3365c6cb5b3f827c88378e8349bfa7492af91361",
   "historical_ledger": "../scoring_2026_27/bulk_reconciliation/CURRENT.json",
-  "historical_open_fields": 14907,
-  "historical_input_complete_fixtures": 752,
+  "historical_open_fields": 14893,
+  "historical_input_complete_fixtures": 766,
   "historical_scoring_qualified": false,
   "historical_calculation_manifest": "scoring/results/manifest.json",
   "historical_inventory_rows": 185573,
   "historical_original_basic_point_residuals": 0,
   "historical_candidate_fixtures": 489,
-  "historical_qualified_fixtures": 363,
+  "historical_qualified_fixtures": 374,
   "additional_zero_minute_card_observations": 12,
   "additional_official_source_disagreements": 2,
   "historical_source_statistic_coverage": "scoring/results/statistic_coverage.csv",
@@ -43,18 +43,18 @@
   ],
   "reproduce": "python research/current/training_dataset/reproduce.py",
   "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
-  "next_work": "Qualify historical nonparticipation/blank-round labels with zero-minute cards retained, obtain actual historical deadlines, eligible pre-deadline universes and statistic vintages, build deadline-safe features and verify real qualified training rows through ACTIVE.json/pipeline.py. Complete remaining 17 numeric 2025/26 inputs and preserve Kelleher fixture337 source revision. Continue the full 14907-row historical list, causal assists, goal-line and times-tackled data, older-season BPS gates and comparable early xG. Generic CBI and keeper-only CBI pilots both failed native controls; do not repeat without new facts.",
+  "next_work": "Finish 2025/26: Sanchez outside counts in fixtures33/323 remain under the strict direct-location minute gate (one-minute primary/FPL difference in fixture47); preserve Doku356 times-tackled conflict, Kelleher337 and Sanchez365 big-chance-save revisions and Barnes215 zero-minute card participant. Qualify nonparticipation/blank-round labels and acquire actual pre-deadline universes, deadlines and statistic snapshots. Build features and real training rows. Continue the full 14893 historical requirements, causal assists, goal-line data, older BPS gates and comparable early xG; do not repeat failed CBI pilots without new facts.",
   "historical_legacy_rule_validation": "scoring/legacy_tackles/validation_summary.json",
   "historical_legacy_clipping_qualified": false,
   "historical_legacy_rule_controls": 291,
   "historical_legacy_rule_primary_bounds": 264,
   "historical_legacy_rule_clipped_bound_counterexamples": 15,
   "historical_legacy_rule_source_disagreements": 4,
-  "historical_input_complete_player_matches": 63535,
-  "historical_latest_requirements": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/results/requirements.csv.xz",
-  "historical_latest_batch": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md",
-  "historical_scoring_candidate_snapshot_note": "The 489 candidate fixtures remain the preserved original calculation. The live ledger has 752 input-complete fixtures. A separate qualified 2025/26 scoring version now covers 363 whole fixtures and 10971 player matches; full historical qualification remains incomplete.",
-  "historical_qualified_player_matches": 10971,
+  "historical_input_complete_player_matches": 63549,
+  "historical_latest_requirements": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/results/requirements.csv.xz",
+  "historical_latest_batch": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/README.md",
+  "historical_scoring_candidate_snapshot_note": "The 489 candidates remain an immutable earlier study. The live ledger has 766 input-complete fixtures. Active 2025/26 scoring covers 374 whole fixtures and 11315 player matches; older rule seasons, six protected 2025 fixtures and deadline-safe training remain incomplete.",
+  "historical_qualified_player_matches": 11315,
   "historical_qualified_scoring_versions": [
     {
       "season": "2025-26",
@@ -63,22 +63,35 @@
       "qualified_fixtures": 363,
       "qualified_player_matches": 10971,
       "training_ready": false
+    },
+    {
+      "season": "2025-26",
+      "version": "season_2025_changed_components_v3_direct_locations_bcs_revision_quarantine",
+      "manifest": "scoring/season_2025_extension/results/manifest.json",
+      "qualified_fixtures": 374,
+      "qualified_player_matches": 11315,
+      "training_ready": false
     }
   ],
-  "canonical_manifest": "canonical/results/manifest.json",
+  "canonical_manifest": "canonical_extension/results/manifest.json",
   "canonical_player_matches": 187111,
   "canonical_player_rounds": 181604,
-  "canonical_qualified_match_labels": 12509,
-  "canonical_qualified_round_labels": 14023,
+  "canonical_qualified_match_labels": 12853,
+  "canonical_qualified_round_labels": 14365,
   "next_round_target_counts": {
-    "H1": 12905,
-    "H3": 7884,
-    "H6": 3945
+    "H1": 13203,
+    "H3": 8387,
+    "H6": 4522
   },
   "active_dataset_config": "ACTIVE.json",
   "active_dataset_loader": "pipeline.py",
   "active_dataset_inspection_verified": true,
   "training_feature_availability_qualified": false,
   "training_ready_rows": 0,
-  "latest_keeper_cbi_pilot": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/README.md"
+  "latest_keeper_cbi_pilot": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/README.md",
+  "historical_latest_primary_big_chance_control_cells": 381,
+  "historical_latest_primary_revision_fixtures": [
+    337,
+    365
+  ]
 }

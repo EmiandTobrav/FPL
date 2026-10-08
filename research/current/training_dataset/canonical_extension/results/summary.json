@@ -1,0 +1,42 @@
+{
+  "version": "fpl_2026_27_canonical_v3_partial",
+  "status": "canonical_scoring_and_horizon_tables_features_unqualified",
+  "seasons": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26",
+    "2026-27"
+  ],
+  "player_matches": 187111,
+  "player_rounds": 181604,
+  "qualified_player_match_labels": 12853,
+  "qualified_player_round_labels": 14365,
+  "qualified_whole_historical_fixtures": 374,
+  "qualified_native_fixtures": 50,
+  "historical_rounds_with_multiple_observed_fixtures": 7146,
+  "historical_rounds_with_club_change": 0,
+  "official_native_nonparticipation_rounds": 1678,
+  "historical_blank_rounds_fabricated": 0,
+  "native_fixture_round_point_residuals": 0,
+  "qualified_next_round_targets": 13203,
+  "qualified_next_three_round_targets": 8387,
+  "qualified_next_six_round_targets": 4522,
+  "training_ready_rows": 0,
+  "remaining_gates": [
+    "All historical season scoring gates and unresolved inputs",
+    "Historical nonparticipation and blank-round membership/labels",
+    "Actual historical deadlines and eligible universes",
+    "Verified pre-deadline performance/metadata availability and feature construction"
+  ],
+  "historical_open_fields": 14893,
+  "previous_still_qualified_point_labels_preserved": true,
+  "source_revision_fixtures": [
+    337,
+    365
+  ],
+  "prior_qualified_fixture_quarantined": 365
+}

@@ -1,0 +1,27 @@
+{
+  "source_hashes_verified": true,
+  "source_commit": "4aaec38e6b5f5ade8b63162a3678ce67148adb67",
+  "deadline": "2025-08-15T17:30:00Z",
+  "players": 685,
+  "stable_codes_unique": true,
+  "nonzero_minutes_before_first_round": 395,
+  "nonzero_points_before_first_round": 394,
+  "previous_season_comparable_players": 511,
+  "previous_season_equal_values": {
+    "minutes": 504,
+    "total_points": 504,
+    "goals_scored": 510,
+    "assists": 509
+  },
+  "inventory_sha256": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+  "preseason_performance_fields_are_not_current_season_cumulative": true,
+  "collector_filename_consistent_with_utc_commit": true,
+  "historical_feature_availability_qualified": false,
+  "remaining_checks": [
+    "Historical collector timezone/publication attestation",
+    "Selection of pre-deadline snapshots for every required round",
+    "Preseason carryover/reset semantics and source revisions per statistic",
+    "Eligible universe and native zero-participation outcome evidence",
+    "Feature definition and source-season compatibility across seasons"
+  ]
+}

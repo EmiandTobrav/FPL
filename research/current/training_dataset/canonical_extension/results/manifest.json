@@ -1,0 +1,84 @@
+{
+  "version": "fpl_2026_27_canonical_v3_partial",
+  "points_standard": "2026-27",
+  "training_ready": false,
+  "path_root": "research/current",
+  "input_sha256": {
+    "training_dataset/canonical/results/manifest.json": "b2d1e1970df8972fe070c87f2aef19aa95290a4124478e461ea63b2be4883ed0",
+    "training_dataset/canonical/results/input_counters.csv.xz": "693ea2b6d94ed208b869cd63fbcae5a291da877e6ebdf00b02750bbc23a3a892",
+    "training_dataset/canonical/results/next_round_targets.csv.xz": "0b20e3fa2a651f153ac2aa0ee6ab1c7be4f8b706ff51d063b6b2771a58d79417",
+    "training_dataset/canonical/results/player_matches.csv.xz": "9cfe5be0b7697b29e9da34e68c6c5ada55464a6d6c49dcb1ff1e2fba31e727af",
+    "training_dataset/canonical/results/player_rounds.csv.xz": "f92c5f9a044b417ce104b7097696b6ad60be1dd82d4125c500ef399324808f36",
+    "training_dataset/canonical/results/statistic_coverage.csv": "31ef61d6f6521083fddc02d8c3581b89ef3378b5e7e7dc1e02a7b9b2fb66e073",
+    "training_dataset/canonical/results/summary.json": "fac1564181143e3ecad47c97622874c2ca288237fa6b23e7a29d72f809b3f988",
+    "training_dataset/scoring/season_2025_extension/results/manifest.json": "0e834bbe446c60d62ea8c74bc42bc11095bf18697e7530ece1577e2ac9ec517a",
+    "training_dataset/scoring/season_2025_extension/results/player_matches.csv.xz": "aef4b6b5f739cf90f752f1f9a3a0928d1fdbc59cf711c3a48d61ebbde94eb572",
+    "training_dataset/scoring/season_2025_extension/results/qualified_player_matches.csv.xz": "93079d82e1546ae1a90e199a8c4e11095b5ba59b01efa11cf3665d1cbd71ca9d",
+    "training_dataset/scoring/season_2025_extension/results/fixture_status.csv": "199089195c0c80b1e092547cf72d06cba5a082c19cf8c7daa4397899eb5cfd04",
+    "training_dataset/scoring/season_2025_extension/results/changed_bps_components.csv.xz": "25919c77cec676d9d29660814fe01a9e9ac32fca6f81a78e63f6ce9773c6e4fc",
+    "training_dataset/scoring/season_2025_extension/results/basic_components.csv.xz": "ecb08833a14dce87e3063ad2ba7d49c0ad21a35dbd60e86efbafef1c6d4a7e4b",
+    "training_dataset/scoring/season_2025_extension/results/inside_save_controls.csv": "7b8dbf4c199ac2315d111bda79c8089764f2f46e6f5f54a736cb52927710782d",
+    "training_dataset/scoring/season_2025_extension/results/times_tackled_controls.csv": "57b2fae51c586c0593c44d71e8c191ecef6ccf5700515a9ff6327dcdf23252ba",
+    "training_dataset/scoring/season_2025_extension/results/big_chance_save_season_controls.csv": "33f80b2c1f0407945850e3958bcf661707413dd0966f330f1348d133dfc69829",
+    "training_dataset/scoring/season_2025_extension/results/keeper_primary_comparisons.csv": "0b452467fbb835216de2a395013a86ebd1fa4a54981415efae96fb4ca8399827",
+    "training_dataset/scoring/season_2025_extension/results/qualification.json": "ffd5594c4ea384561b1b23745f1e0ad81789934ec921712c913d817652d70d1d",
+    "training_dataset/scoring/season_2025_extension/results/summary.json": "b0c77365e0dd1db303c0a1ea88702f13684826f9e4973ec225dd6ca6f1ef8db0",
+    "training_dataset/scoring/season_2025_extension/results/latest_primary_big_chance_controls.csv": "9c7a4243d42b8a40c4e32353506ba43862c5019ca5cf6b423fa78ff5be8d4c1e",
+    "training_dataset/canonical_extension/inputs/ledger_CURRENT.json": "2c5fd72ef784af89578a5e90cdd2a8c9f3e352c75d58f900ce4a114a12f901d7",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/results/requirements.csv.xz": "50786a3c5526e75670805fb9761c76f942e4a12e816179b46bd7ac00ad50a44a"
+  },
+  "code_sha256": {
+    "training_dataset/canonical_extension/build.py": "de2c04fe365ffa8fe79ff9765a61304fb07f79088555e22d3a958fda684be8c2",
+    "training_dataset/canonical/build.py": "a4ac5a23a01aad48a648c4f6b4f2bdc29fde32aa105f24275d50928628e4be8e"
+  },
+  "output_sha256": {
+    "input_counters.csv.xz": "e0ac0892b695bc533cf511c1cac7affab1149f521bdb3d5d918e03927e847a27",
+    "next_round_targets.csv.xz": "d40b402e3bc366f5b51bd49125bf3eb936215b122bfffdae12bd81e84ca85d85",
+    "player_matches.csv.xz": "c1a306df24942d08e978560d28c9defaeb9830e481ce9d8c8e0784d92aec6adf",
+    "player_rounds.csv.xz": "bcff4c32929d340fec7ccd8e66519ec3d76ad849f7d1d5075805a1b7ad9524b8",
+    "statistic_coverage.csv": "4c96a093e6f0d1cc9a1b0a9e911d361c95643183e3ed555526c023886cc1a0c7",
+    "summary.json": "d0f1078cca8198e27ac61cc014d9f683aad6a95f0a4a95a3b5d02470f5138e4a"
+  },
+  "counts": {
+    "version": "fpl_2026_27_canonical_v3_partial",
+    "status": "canonical_scoring_and_horizon_tables_features_unqualified",
+    "seasons": [
+      "2019-20",
+      "2020-21",
+      "2021-22",
+      "2022-23",
+      "2023-24",
+      "2024-25",
+      "2025-26",
+      "2026-27"
+    ],
+    "player_matches": 187111,
+    "player_rounds": 181604,
+    "qualified_player_match_labels": 12853,
+    "qualified_player_round_labels": 14365,
+    "qualified_whole_historical_fixtures": 374,
+    "qualified_native_fixtures": 50,
+    "historical_rounds_with_multiple_observed_fixtures": 7146,
+    "historical_rounds_with_club_change": 0,
+    "official_native_nonparticipation_rounds": 1678,
+    "historical_blank_rounds_fabricated": 0,
+    "native_fixture_round_point_residuals": 0,
+    "qualified_next_round_targets": 13203,
+    "qualified_next_three_round_targets": 8387,
+    "qualified_next_six_round_targets": 4522,
+    "training_ready_rows": 0,
+    "remaining_gates": [
+      "All historical season scoring gates and unresolved inputs",
+      "Historical nonparticipation and blank-round membership/labels",
+      "Actual historical deadlines and eligible universes",
+      "Verified pre-deadline performance/metadata availability and feature construction"
+    ],
+    "historical_open_fields": 14893,
+    "previous_still_qualified_point_labels_preserved": true,
+    "source_revision_fixtures": [
+      337,
+      365
+    ],
+    "prior_qualified_fixture_quarantined": 365
+  }
+}
