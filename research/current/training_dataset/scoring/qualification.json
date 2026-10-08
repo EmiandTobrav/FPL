@@ -1,0 +1,22 @@
+{
+  "version": "historical_changed_components_v1",
+  "training_labels_enabled": false,
+  "authority": "Historical FPL plus only changed terms; approved defcon awards reused separately.",
+  "coefficient_sources": [
+    "https://www.premierleague.com/en/news/4059044",
+    "https://www.premierleague.com/en/news/4362127/whats-new-in-202526-fantasy-changes-to-bonus-points-system",
+    "https://www.premierleague.com/en/news/4679946/"
+  ],
+  "open_gates": {
+    "season_component_thresholds_and_coefficients": "Weights documented; historical application and source agreement still to qualify.",
+    "legacy_net_tackle_clipping": "Both clipped and signed hypotheses remain separate candidate views; raw signed counts unchanged.",
+    "external_component_revision_compatibility": "73 field/season quality groups still require resolution.",
+    "official_event_bundles": "Four affected fixtures blocked until goal/own-goal, assist, shot and winning-goal consequences are jointly adjudicated.",
+    "full_fixture_participant_inventory": "Full FPL source contains 12 zero-minute card observations outside the old active ledger; changed-component input qualification still required for these rows."
+  },
+  "verified_gates": {
+    "original_basic_point_accounting": "Independent reconstruction matches all 185573 canonical historical player observations, including zero-minute cards. This validates original basic points, not historical target BPS or new labels."
+  },
+  "candidates_are_not_labels": true,
+  "missing_policy": "Open ledger values remain missing; no sparse-zero fill or copied historical total into target fields."
+}

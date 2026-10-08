@@ -1,0 +1,27 @@
+{
+  "status": "candidate_calculation_only_not_training_ready",
+  "inventory_rows": 185573,
+  "historical_ledger_player_matches": 77280,
+  "historical_fixtures": 2660,
+  "original_point_residual_rows": 0,
+  "scoring_relevant_rows_outside_ledger": 12,
+  "historical_bonus_residual_rows": 1,
+  "official_fixture_source_disagreements": 2,
+  "open_fields": 16227,
+  "input_complete_player_matches": 62290,
+  "input_complete_fixtures": 490,
+  "calculated_player_matches": 62217,
+  "calculated_whole_fixtures": 489,
+  "qualified_historical_fixtures": 0,
+  "training_ready_historical_rows": 0,
+  "legacy_hypothesis_bps_differing_rows": 9293,
+  "legacy_hypothesis_bonus_differing_rows": 221,
+  "legacy_hypothesis_bonus_differing_fixtures": 122,
+  "open_global_gates": {
+    "season_component_thresholds_and_coefficients": "Weights documented; historical application and source agreement still to qualify.",
+    "legacy_net_tackle_clipping": "Both clipped and signed hypotheses remain separate candidate views; raw signed counts unchanged.",
+    "external_component_revision_compatibility": "73 field/season quality groups still require resolution.",
+    "official_event_bundles": "Four affected fixtures blocked until goal/own-goal, assist, shot and winning-goal consequences are jointly adjudicated.",
+    "full_fixture_participant_inventory": "Full FPL source contains 12 zero-minute card observations outside the old active ledger; changed-component input qualification still required for these rows."
+  }
+}

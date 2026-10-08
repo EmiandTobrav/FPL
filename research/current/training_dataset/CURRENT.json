@@ -6,6 +6,14 @@
   "historical_open_fields": 16227,
   "historical_input_complete_fixtures": 490,
   "historical_scoring_qualified": false,
+  "historical_calculation_manifest": "scoring/results/manifest.json",
+  "historical_inventory_rows": 185573,
+  "historical_original_basic_point_residuals": 0,
+  "historical_candidate_fixtures": 489,
+  "historical_qualified_fixtures": 0,
+  "additional_zero_minute_card_observations": 12,
+  "additional_official_source_disagreements": 2,
+  "historical_source_statistic_coverage": "scoring/results/statistic_coverage.csv",
   "current_season_manifest": "snapshots/2026_10_08/derived/manifest.json",
   "current_season_fixtures": 50,
   "current_season_player_matches": 1538,
@@ -18,5 +26,5 @@
   ],
   "reproduce": "python research/current/training_dataset/reproduce.py",
   "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
-  "next_work": "Actual unresolved assist causal patterns, historical changed-component rule qualification, numerical/source gaps; complete historical labels and active training integration still required."
+  "next_work": "Qualify historical changed components and external source groups, resolve causal/numerical gaps plus 12 zero-minute card observations and source disagreements. Candidates are not labels. Complete historical labels, richer statistics, temporal features and active training integration still required."
 }

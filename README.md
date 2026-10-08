@@ -11,6 +11,9 @@ Offisielle 2026/27 GW1–GW5 er samlet i en ny, separat kildeversjon: 1 538
 spillerkamper, 50 hele kamper og 3 216 spiller–runde-rader. Poengforklaring,
 helkampbonus og kampstatistikk er avstemt. Historisk rest og scoring er fortsatt
 uavklart; full treningsleveranse er ikke ferdig.
+Historisk beregning er etablert: 185 573 originalrader har avstemt grunnpoeng
+og 489 hele kamper har separate omregningskandidater. Kvalifisering gjenstår;
+ingen nye historiske treningslabels er godkjent.
 Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
 og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
 

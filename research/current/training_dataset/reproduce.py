@@ -1,4 +1,4 @@
-"""Offline reproduction of the current snapshot and penalty validation pilot."""
+"""Offline reproduction of current, historical and penalty-derived artifacts."""
 from pathlib import Path
 import hashlib
 import json
@@ -26,6 +26,8 @@ def main():
               'penalty_foul_recovery/validation_summary.json']
     inputs.update(str((S / n).relative_to(R)) for n in extras)
     inputs.add(str((S.parent / 'CURRENT.json').relative_to(R)))
+    historical_manifest = json.loads((P / 'scoring/results/manifest.json').read_text())
+    inputs.update(historical_manifest['input_sha256'])
     inputs.update(str(path.relative_to(R)) for path in P.rglob('*')
                   if path.is_file() and '__pycache__' not in path.parts
                   and path.name != 'reproduction_verification.json')
@@ -34,6 +36,7 @@ def main():
                     ['plan.csv', 'freeze.json', 'isolation_evidence.csv', 'comparisons.csv',
                      'validation_summary.json', 'protected_conflicts.csv', 'denial_conflicts.csv']]
     output_paths += list((P / 'penalty_controls/results').glob('*'))
+    output_paths += list((P / 'scoring/results').glob('*'))
     expected = {str(path.relative_to(R)): digest(path) for path in output_paths}
     with tempfile.TemporaryDirectory(prefix='fpl_dataset_replay_') as tmp:
         root = Path(tmp) / 'research/current'
@@ -48,7 +51,8 @@ def main():
         tasks = [['training_dataset/penalty_controls/plan.py'],
                  ['training_dataset/penalty_controls/validate.py'],
                  ['training_dataset/penalty_controls/build.py'],
-                 ['training_dataset/current_season.py', 'training_dataset/snapshots/2026_10_08']]
+                 ['training_dataset/current_season.py', 'training_dataset/snapshots/2026_10_08'],
+                 ['training_dataset/scoring/historical.py']]
         for task in tasks:
             result = subprocess.run([sys.executable, *task], cwd=root, capture_output=True, text=True)
             if result.returncode:

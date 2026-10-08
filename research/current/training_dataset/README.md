@@ -21,6 +21,12 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | Historisk omregning | Fortsatt ikke kvalifisert; ingen nye historiske poengetiketter |
 | Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
 
+Historisk beregningsmotor er etablert med 185 573 kanoniske originalrader og
+avstemt grunnpoengregnskap. Separate omregningskandidater finnes for 489 hele
+kamper; **ingen historiske kandidater er godkjent for trening**. Kontrollen fant
+også 12 null-minutt-rader med kort utenfor gammel ledger og to kildekonflikter.
+Se [beregning, sensitivitet og sperrer](scoring/README.md).
+
 Tabellene ligger i `snapshots/2026_10_08/derived/`:
 
 - `player_matches.csv.gz`: historisk kampidentitet og klubbside fra FPL-historikk,
@@ -59,10 +65,12 @@ python -m unittest discover -s research/current/training_dataset/penalty_control
 
 Reproduksjonen bruker bare fryste, lokale innganger i en separat kopi og
 sammenligner SHA-256 for alle avledede resultatfiler. Den henter ikke nye data.
-De åtte nye testene inkluderer feil poengforklaring, uferdig kamp, endret BPS,
+De tidligere åtte testene inkluderer feil poengforklaring, uferdig kamp, endret BPS,
 null-BPS-deltakere, bonus ved delt plass og negative BPS, fasituavhengig
 kontrollutvelgelse, endret inngang og feil assistfasit som skal sperre godkjenning.
-Ingen full repository-/CI-test påstås.
+Fjorten nye historiske transformasjons-/sperretester er også lagt til.
+Ingen full repository-/CI-test påstås. Samlet replay gjenskaper nå også den
+historiske beregningen fra fryste FPL- og ledgerinnganger: 25 identiske filer.
 
 Den eldre batch 3 er også gjenskapt: alle 63 resultatfiler ble identiske.
 `replay_batch3.py` tilpasser kun gzip-headerens OS-byte for Linux-produserte

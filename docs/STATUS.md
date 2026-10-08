@@ -13,6 +13,16 @@ er bevart. Åtte fokuserte tester består, og 13 avledede filer er gjenskapt
 identisk offline i separat kopi. Batch 3s 63 filer er også gjenskapt identisk
 med en adapter som bare normaliserer gzip-headerens plattformbyte.
 
+Historisk beregningsmotor er nå etablert med 185 573 kanoniske originalrader,
+alle med avstemt grunnpoengregnskap. 62 217 spillerkamper har BPS-kandidater og
+489 hele kamper har bonus-/poengkandidater under to gamle taklingshypoteser.
+Hypotesene endrer bonus for 221 spillere i 122 beregnede kamper; klippingsregelen
+er fortsatt uavklart. Fullpopulasjonskontrollen fant 12 null-minutt-kortobservasjoner
+utenfor gammel ledger, én kickoff-konflikt og én historisk BPS-/bonuskonflikt.
+Ingen historiske treningslabels er godkjent. 19 aktuelle tester består og samlet
+offline-replay gir 25 identiske resultatfiler. Se
+[beregning og neste gater](../research/current/training_dataset/scoring/README.md).
+
 En ny, fryst komponentisolering gir 30 straffekontroller i 27 kamper uten feil,
 men ingen nye historiske verdier: den samme strenge prediktoren finner bare
 allerede avklarte historiske mål. Ikke gjenta denne anvendelsen. Selvvunne
