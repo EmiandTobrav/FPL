@@ -68,7 +68,7 @@ def build(snapshot):
             histories[key] = row
     finished = [e for e in bootstrap['events'] if e['finished']]
     require(bool(finished), 'No finished events')
-    season = f"{finished[0]['deadline_time'][:4]}-{int(finished[0]['deadline_time'][:4])+1:04d}" 
+    season = f"{finished[0]['deadline_time'][:4]}-{int(finished[0]['deadline_time'][:4])+1:04d}"
     season = season[:5] + season[-2:]
     rounds, matches, points, source_records = [], [], [], []
     bonus_checks = statistic_checks = 0
