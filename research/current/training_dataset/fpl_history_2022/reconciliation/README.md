@@ -12,11 +12,11 @@ hendelsesankre. Ingen ekstern leverandør erstatter kompatibel FPL-statistikk.
 
 - Ukentlig GW16-fil er fra commit
   [`92f81c3`](https://github.com/vaastav/Fantasy-Premier-League/commit/92f81c3063ae2ae361daecc81fa51f909dd109a9),
-  publisert 23. november 2022. Alle 667 kanoniske GW16-rader gjenskapes eksakt:
+  datert 23. november 2022. Alle 667 kanoniske GW16-rader gjenskapes eksakt:
   identitet, kamp, minutter, hendelsesankre og fire forventede statistikker.
 - Sesongens avsluttende historikk er dokumentert i commit
   [`7009d35`](https://github.com/vaastav/Fantasy-Premier-League/commit/7009d351b6077cc3f3ae5bdc3a7e23f58f6817e6),
-  publisert 29. mai 2023. Alle 778 spillerkatalogers Git-treidentiteter er
+  datert 29. mai 2023. Alle 778 spillerkatalogers Git-treidentiteter er
   uendret mellom dette tidspunktet og den allerede innhentede kilden.
   Dessuten samsvarer SHA-1 for **hver faktisk CSV-bytefil** med Git-bloben fra
   mai 2023. Kontrollen avviser manglende, ekstra eller dupliserte filer.
@@ -27,8 +27,10 @@ hendelsesankre. Ingen ekstern leverandør erstatter kompatibel FPL-statistikk.
   definerer xGI som xG+xA. De publiserte Haaland-sesongtotalene 28,54 xG,
   3,11 xA og 31,65 xGI stemmer også med det fryste FPL-registeret.
 
-Git-dato dokumenterer eksistensen av arkivversjonen, ikke den eksakte
-publiseringsdatoen hos FPL for hver historisk verdi. De ulike GW16-verdiene er
+Git-datoene er registrerte commitdatoer. De beviser verken tidspunktet for
+push/offentlig tilgjengelighet eller den eksakte publiseringsdatoen hos FPL
+for hver historisk verdi. Git-objektene dokumenterer innholdet i de daterte
+arkivversjonene. De ulike GW16-verdiene er
 reelle tidligere/senere FPL-versjoner, ikke bare avrundingsavvik. Arkivbeviset
 fastsetter ikke hvorfor FPL reviderte dem.
 
