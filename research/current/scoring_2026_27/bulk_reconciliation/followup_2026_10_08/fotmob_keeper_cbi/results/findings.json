@@ -1,0 +1,17 @@
+{
+  "old_open_fields": 14907,
+  "new_fields": 0,
+  "open_fields": 14907,
+  "native_fpl_gate_passed": false,
+  "qualified_keeper_mapping_seasons": [],
+  "control_disagreements": 6,
+  "native_control_keepers": 569,
+  "complete_matches": 752,
+  "complete_player_matches": 63535,
+  "unique_affected_player_matches": 13745,
+  "new_complete_matches": 0,
+  "new_fields_by_season": {},
+  "scoring_qualified": false,
+  "generic_cbi_v1_unchanged": true,
+  "raw_fpl_preserved": true
+}

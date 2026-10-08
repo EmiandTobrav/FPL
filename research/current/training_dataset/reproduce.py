@@ -50,6 +50,9 @@ def main():
     season_manifest = json.loads((P / 'scoring/season_2025/results/manifest.json').read_text())
     inputs.update(season_manifest['input_sha256'])
     inputs.update(season_manifest['code_sha256'])
+    canonical_manifest = json.loads((P / 'canonical/results/manifest.json').read_text())
+    inputs.update(canonical_manifest['input_sha256'])
+    inputs.update(canonical_manifest['code_sha256'])
     inputs.update(str(path.relative_to(R)) for path in P.rglob('*')
                   if path.is_file() and '__pycache__' not in path.parts
                   and path.name != 'reproduction_verification.json'
@@ -94,6 +97,7 @@ def main():
          'bps_bound_checks.csv','primary_disagreements.csv','source_eligibility.csv',
          'season_summary.csv','validation_summary.json']]
     output_paths += list((P / 'scoring/season_2025/results').glob('*'))
+    output_paths += list((P / 'canonical/results').glob('*'))
     expected = {str(path.relative_to(R)): digest(path) for path in output_paths}
     with tempfile.TemporaryDirectory(prefix='fpl_dataset_replay_') as tmp:
         root = Path(tmp) / 'research/current'
@@ -131,7 +135,8 @@ def main():
                  ['training_dataset/scoring/legacy_tackles/prepare.py'],
                  ['training_dataset/scoring/legacy_tackles/primary_predict.py'],
                  ['training_dataset/scoring/legacy_tackles/validate.py'],
-                 ['training_dataset/scoring/season_2025/build.py']]
+                 ['training_dataset/scoring/season_2025/build.py'],
+                 ['training_dataset/canonical/build.py']]
         for task in tasks:
             result = subprocess.run([sys.executable, *task], cwd=root, capture_output=True, text=True)
             if result.returncode:

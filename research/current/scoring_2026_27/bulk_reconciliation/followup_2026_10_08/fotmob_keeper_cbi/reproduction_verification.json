@@ -1,0 +1,20 @@
+{
+  "offline": true,
+  "isolated_copy": true,
+  "identical": true,
+  "checked_outputs": 11,
+  "output_sha256": {
+    "derived_values.csv": "b3a9edcaa920aa33b8a8f974d4b1abff3b80e28a4ea10e6cc3cddf45a757f3f8",
+    "requirements.csv.xz": "df8003ae232548d0150d3c00a2fdb4d5eb82834a934ec45c7b029cb9309ef607",
+    "match_readiness.csv": "e1dc505a979b4f0404fbb0d9ee03243db42114af2ae4ab5a75f7a52c8fbe1725",
+    "remaining_fields.csv.xz": "64a2bac102e9776c213ebd1599daa934b59953bde1317743c95e218e977d5ece",
+    "keeper_predictions.csv": "afe4ae523a3f06bf7ea2b1b935c230abab7b45328dbaf5fb8115bc0b42cafa64",
+    "control_comparisons.csv": "d0ef2c283671025c76907dd1d0477637506c2f4b1a6907dc5390ed98e43c18ae",
+    "source_quality_by_season.csv": "9fca7b62d29be4cea7f62cfad4e65e162e04827c854d2f21ce56287e8f3ae2bc",
+    "findings.json": "8607a49d10c4e9df5655722dc1de0a3420c1f76623d9569d560f2d72d2f4c619",
+    "manifest.json": "98a55a4dcb656a4c52ade19835b7db1320b92d861b224fe95bb769c0cd280b24",
+    "player_match_readiness.csv.xz": "4b7767d9347b308613d654c8b2f24152360431b6ff4a1ae178c8eeed0509020f",
+    "field_summary.csv": "6260f512327248d9fa9033d3da6c72eb5950a66b3193b8bff8e8a2249dd4aa0e"
+  },
+  "failed_native_gate_preserved": true
+}

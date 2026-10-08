@@ -4,6 +4,17 @@ Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremg
 
 ## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, første kvalifiserte historiske poengversjon
 
+**Felles datatabeller og innlesingskontrakt er levert:** 187 111 spillerkamper,
+181 604 spiller–runde-rader og 14 023 kvalifiserte rundepoeng. 12 905 H1-,
+7 884 H3- og 3 945 H6-targets har full kvalifisert sum.
+[Dataversjon og innlesing](../research/current/training_dataset/canonical/README.md)
+bevarer tomme labels og ukjente blankrunder. Tidsriktige features/rosters og
+aktive treningsrader gjenstår. Samlet replay dekker 113 filer.
+
+[Keeper-CBI-piloten](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/README.md)
+gjenbrukte 640 råkamper. Seks native avvik blant 569 keeperkontroller stopper
+masseregelen; ingen verdier anvendes. Ikke gjenta den uten nye kildefakta.
+
 **363 hele kamper og 10 971 spillerkamper fra 2025/26 har nå kvalifisert BPS,
 helkampbonus og poeng etter 2026/27-reglene.** 435 poengsummer endres; alle
 totaler stemmer med et separat komponentregnskap. [Poengversjon og kildekontroll](../research/current/training_dataset/scoring/season_2025/README.md)

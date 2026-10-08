@@ -19,7 +19,9 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | Historisk datarest | 14 907 feltkrav i 13 745 spillerkamper; 326 nye keeperlokasjoner avklart |
 | Historisk inputdekning | 63 535 spillerkamper og 752 kamper inputkomplette |
 | Historisk omregning | 2025/26: 363 hele kamper og 10 971 kvalifiserte poengetiketter; 435 totalpoeng endres |
-| Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
+| Kanoniske datatabeller | 187 111 spillerkamper og 181 604 spiller–runde-rader for alle åtte sesonger |
+| Neste-runde-/horisont-targets | 12 905 H1, 7 884 H3 og 3 945 H6 har kvalifisert komplett sum |
+| Modellinput/treningspipeline | Ny dataversjon leses og kontrolleres; trening sperret fordi fristsikre features/rosters mangler |
 | Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
 | 2022/23 forventede statistikker | 26 505 kvalifiserte xG/xA/xGI/xGC-rader i 380 kamper; tilgjengelighet før frist uavklart |
 
@@ -32,6 +34,13 @@ kontroll beholdes med uendrede gater. 72 fokuserte tester består. Samlet
 offline-replay dekker 94 byteidentiske resultatfiler.
 
 ## Ny dataavklaring: direkte keeperlokasjon
+
+Den nyeste leveransen er [felles kanoniske tabeller og innlesing](canonical/README.md).
+14 023 spiller–runde-poeng er kvalifisert; 1 678 native ikke-deltakelsesrader
+er bevart. Historiske blank-/ikke-deltakelseslabels, reelle frister, rosters og
+statistikkversjoner før frist gjenstår. Samlet replay dekker 113 resultatfiler.
+`python research/current/training_dataset/pipeline.py --inspect` leser faktisk
+alle åtte sesonger gjennom `ACTIVE.json`, med `training_ready=false`.
 
 [Lokasjonsavstemming](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md)
 lukker 326 krav med eksplisitt skuddopphav og entydig keeper-ID. Hele rednings-

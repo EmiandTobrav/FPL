@@ -1,0 +1,21 @@
+{
+  "version": "keeper_cbi_conservation_v1",
+  "scope": "Goalkeepers only; never qualify outfield CBI",
+  "selection": "All archived CBI-study and keeper-location responses, with explicit keeper role and native FPL participation. No outcome-selected controls.",
+  "exploratory_prior_evidence": "Old generic failed study had ten agreeing 2025 keeper comparisons; those are reused regression evidence, not new holdout.",
+  "control_lineage": "Shared Opta/FotMob lineage; all closed historical keeper anchors plus native FPL keeper anchors, not independent provider holdout.",
+  "minimum_closed_keeper_controls_per_historical_season": 30,
+  "minimum_nonzero_closed_controls_per_historical_season": 5,
+  "minimum_native_keeper_controls": 100,
+  "minimum_native_control_fixtures": 50,
+  "minimum_native_nonzero_controls": 20,
+  "maximum_disagreements": 0,
+  "rules": [
+    "Keep omitted counters missing unless exact full-team component exhaustion proves zero.",
+    "Preserve all previous generic-study team/primary/closed-CBI vetoes for historical targets.",
+    "Require explicit isGoalkeeper=true, historical position GK, minutes>0 and matching club side.",
+    "Apply only missing_data CBI rows; preserve all conflicts and closed values.",
+    "The generic failed V1 mapping and its acceptance gates remain unchanged."
+  ],
+  "plan_sha256": "cf7bc28931854a8fac722292805126ec49ad47794d913bdb74a4f183edda4b31"
+}

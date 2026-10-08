@@ -1,0 +1,12 @@
+{
+  "dataset_version": "fpl_2026_27_canonical_v1_partial",
+  "points_standard": "2026-27",
+  "manifest": "canonical/results/manifest.json",
+  "player_matches": "canonical/results/player_matches.csv.xz",
+  "player_rounds": "canonical/results/player_rounds.csv.xz",
+  "next_round_targets": "canonical/results/next_round_targets.csv.xz",
+  "input_counters": "canonical/results/input_counters.csv.xz",
+  "loader": "pipeline.py",
+  "training_requires_qualified_features_and_labels": true,
+  "status": "scoring_inspection_available_training_blocked_by_incomplete_data"
+}

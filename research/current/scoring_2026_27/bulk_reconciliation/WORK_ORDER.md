@@ -18,8 +18,11 @@ manglende keeperverdier og 204 beskyttede konflikter), 16 keeperlokasjoner og
 mindre grupper. Assists gjenstår i 9 926 rader. Alle 994 skuddkrav er allerede
 lukket. [Keeperlokasjon](followup_2026_10_08/fotmob_keeper_location/README.md)
 er direkte telt; de siste 16 kravene har uenige redningsantall.
-[CBI-V1](followup_2026_10_08/fotmob_cbi_conservation/README.md) feilet. Gjenbruk
-råsvar for et korrekt keeperrettet kontrollopplegg; ikke gjenta generell mapping.
+[CBI-V1](followup_2026_10_08/fotmob_cbi_conservation/README.md) feilet.
+[Keeper-CBI-piloten](followup_2026_10_08/fotmob_keeper_cbi/README.md) gjenbrukte
+640 råkamper og feilet på seks native avvik blant 569 keeperkontroller. Ingen
+av 341 manglende keeperverdier anvendes. Ikke gjenta noen av disse rutene uten
+fakta som forklarer avvikene eller en annen kompatibel kilde.
 Kvalitetsflagg er grupper for kilde-/feltdefinisjon, ikke manuelle celleoppgaver.
 Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger.
 
@@ -27,7 +30,7 @@ Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger
 
 | Prioritet | Gruppe / forventet gevinstgrunnlag | Neste avgrensede handling |
 |---|---|---|
-| 0 | 363 kvalifiserte 2025/26-poengkamper; 17 sperrede kamper | Scoringversjonen er levert og kvalifisert. Fullfør resterende lokasjonsteller-/times-tackled-konflikter og avstem Kellehers nye BCS-revisjon i kamp 337 med kildene; godkjent gammel keeperverdi bevares. Bygg kanoniske runde-/ikke-deltakelseslabels, før-frist-features og faktisk treningsinnlesing. Fortsett hele den historiske restlisten; ikke gjenta ferdig kvalifisering uten nye avvik. |
+| 0 | 363 kvalifiserte 2025/26-poengkamper; felles tabeller/innlesing levert | Fullfør resterende lokasjonsteller-/times-tackled-konflikter og bevar Kellehers nye BCS-revisjon i kamp 337 som sperre. Kvalifiser historiske ikke-deltakelses-/blankrundelabels med null-minutt-kort bevart. Skaff faktiske frister, før-frist-rosters og statistikkversjoner; bygg features og verifiser nye treningsrader gjennom innlesingen. Fortsett hele den historiske restlisten. |
 | 1 | Straffer: 185 mål, betinget 2 245 lukkbare krav; direkte frispark ytterligere 273 | Del ordinært foul, selvtatt straffe og hands etter faktisk hendelsesbevis. Gjenbruk den frosne straffefoul-prediktoren og kildene; ordinære positive avgjørelser er allerede anvendt fra tidligere rute. Nye selvtatte tilfeller trenger tilstrekkelig målspesifikk tidsordnet eller uavhengig kontroll. Den gamle piloten har bare seks relevante enmåls-kontroller og ingen selvtatte: ikke senk gaten eller gjenta den som ny validering. Planlegg ny kontroll før fasit, og mål hvilke hele kamper den kan ferdigstille. |
 | 2 | Pasninger med mellomliggende hendelser: 1 711 betinget lukkbare krav og 235 hele kamper | Bruk de gjenværende faktiske kandidatene og samle like årsaksforløp. Kvalifiser mottaker, intensjon/mottakssted, forsvarskontakt, returer og kontinuitet før målavgjørelse. Skill slettede rader og dueller fra faktiske berøringer. Alle fire nye kandidatregler er allerede brukt over hele populasjonen; et nytt trekk må tilføre nye fakta eller en ny kvalifisert årsaksregel. |
 | 3 | Mållinjeklareringer: 2 992; 2 598 bak fem manglende sesongtotaler | Krev en dokumentert ny kilde for eksplisitte totaler eller et kvalifisert komplett inventar. Tidligere fullstatistikk/rangeringer omitterer totalene. Nytt offisielt SDP-endepunkt for Man Utd 2019/20 omitterer også feltet; stats/comp/1-forsøket ga404. Ingen tom rangering, API-utelatelse eller positiv rest er null. Ikke kjør samme mislykkede kildebatch igjen. |

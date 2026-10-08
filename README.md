@@ -34,6 +34,11 @@ Se [kontrollbevis og neste avklaringer](research/current/training_dataset/scorin
 Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
 og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
 
+Felles tabeller dekker nå alle åtte sesonger: **187 111 spillerkamper og
+181 604 spiller–runde-rader**, med H1-/H3-/H6-targets og en testet innlesings-
+kontrakt. 14 023 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
+Se [datatabeller og innlesing](research/current/training_dataset/canonical/README.md).
+
 **Historisk harmonisering til 2026/27 – 8. oktober 2026:** 14 907 åpne feltkrav i 13 745 spillerkamper. 63 535 spillerkamper og 752 hele kamper har komplette inputfelt. De siste databatchene lukket 994 skuddkrav og 326 lokasjonskrav. 2025/26 har nå 363 kvalifiserte poengkamper; eldre sesonger og full treningsintegrasjon gjenstår. Se [avstemming og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md).
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)

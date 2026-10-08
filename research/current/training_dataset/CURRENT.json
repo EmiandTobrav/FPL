@@ -43,7 +43,7 @@
   ],
   "reproduce": "python research/current/training_dataset/reproduce.py",
   "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
-  "next_work": "Complete the 17 remaining 2025/26 numeric inputs with unresolved source revisions preserved, canonical nonparticipation/GW labels, deadline-safe features and active training ingestion. Continue the full 14907-row historical requirement list, goalkeeper-specific CBI qualification using retained sources, causal assists, goal-line and times-tackled data, compatible older-season BPS rules and comparable early xG. Do not repeat failed BPS/CBI routes.",
+  "next_work": "Qualify historical nonparticipation/blank-round labels with zero-minute cards retained, obtain actual historical deadlines, eligible pre-deadline universes and statistic vintages, build deadline-safe features and verify real qualified training rows through ACTIVE.json/pipeline.py. Complete remaining 17 numeric 2025/26 inputs and preserve Kelleher fixture337 source revision. Continue the full 14907-row historical list, causal assists, goal-line and times-tackled data, older-season BPS gates and comparable early xG. Generic CBI and keeper-only CBI pilots both failed native controls; do not repeat without new facts.",
   "historical_legacy_rule_validation": "scoring/legacy_tackles/validation_summary.json",
   "historical_legacy_clipping_qualified": false,
   "historical_legacy_rule_controls": 291,
@@ -64,5 +64,21 @@
       "qualified_player_matches": 10971,
       "training_ready": false
     }
-  ]
+  ],
+  "canonical_manifest": "canonical/results/manifest.json",
+  "canonical_player_matches": 187111,
+  "canonical_player_rounds": 181604,
+  "canonical_qualified_match_labels": 12509,
+  "canonical_qualified_round_labels": 14023,
+  "next_round_target_counts": {
+    "H1": 12905,
+    "H3": 7884,
+    "H6": 3945
+  },
+  "active_dataset_config": "ACTIVE.json",
+  "active_dataset_loader": "pipeline.py",
+  "active_dataset_inspection_verified": true,
+  "training_feature_availability_qualified": false,
+  "training_ready_rows": 0,
+  "latest_keeper_cbi_pilot": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/README.md"
 }
