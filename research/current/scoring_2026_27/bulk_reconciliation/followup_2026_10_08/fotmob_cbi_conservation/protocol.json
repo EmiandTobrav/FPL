@@ -1,0 +1,29 @@
+{
+  "scope": "CBI = explicit/qualified clearances + shot blocks + interceptions; full-match component conservation only",
+  "components": {
+    "clearances": "totalClearance",
+    "shot_blocks": "outfielderBlock",
+    "interceptions": "interception"
+  },
+  "selection": "All current missing-CBI fixtures; first five non-target fixtures per season 2019/20 through 2025/26; no outcome-based selection",
+  "pilot_schema_source": "120 already frozen FotMob responses; exploratory target-only scope test found 28 potential CBI values, not used as controls",
+  "controls_selected_before_comparison": true,
+  "minimum_control_fixtures_per_season": 5,
+  "minimum_explicit_player_checks_per_component_per_season": 20,
+  "minimum_primary_team_checks_per_component_per_season": 8,
+  "minimum_closed_cbi_checks_per_season": 100,
+  "maximum_disagreements": 0,
+  "require_native_2025_fpl_gate": true,
+  "apply_status": [
+    "missing_data"
+  ],
+  "rules": [
+    "Never default omitted components or team metrics to zero.",
+    "Derive omitted player component zero only when every explicit nonnegative source player value exactly exhausts its explicit full-match team total.",
+    "Any component conflict with primary data or closed FPL/qualified CBI vetoes its entire club group.",
+    "Leave all external_conflict rows and existing closed rows unchanged.",
+    "No BPS, bonus, point-label or before-deadline-feature qualification is implied."
+  ],
+  "parent_requirements_sha256": "0fedfb45a22587ef5fe3a9811b2785010911f81b89fd3d97b5b23372169e56c7",
+  "plan_sha256": "8b88b0577eb1a3b9aa99d11c2cf0244d4a56e3ef65086ae43a032fe4407f2e4c"
+}

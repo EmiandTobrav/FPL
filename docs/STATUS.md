@@ -2,21 +2,28 @@
 
 Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
-## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, skuddavstemming
+## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, keeperlokasjon
 
-**994 feltkrav lukket; 18 nye hele kamper inputkomplette.**
-[Ny kildeavstemming](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/README.md)
-bruker eksplisitte fullkamptotaler for skudd på mål som den tidligere
-FotMob-projeksjonen ikke hentet. Alle 994 nye nuller er eksakt dokumentert;
-710 kildekontroller har ingen avvik. Ni nye tester består. Gjeldende rest er
-**15 233 krav i 14 071 spillerkamper**, med **63 209 inputkomplette spillerkamper
-og 508 hele kamper**. Kvalifiserte historiske poengkamper er fortsatt 0.
+**326 nye feltavklaringer og 244 nye hele kamper med komplette input.**
+[Direkte keeperlokasjon](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md)
+bruker eksplisitt skuddopphav og keeper-ID, med komplett skudd-/redningsavstemming
+mot FPL og kildeankre. Ingen total-minus-inside-beregning. Alle 40 kontrollkeepere
+stemmer uten lokasjonsavvik; ti tester og elleve byteidentiske replayresultater
+består. 16 lokasjonskrav står igjen på uenige redningsantall.
 
-CURRENT, restliste, felt- og kampdekning og assistprioriteringer peker på den
-nye ledgeren. Tidligere beregninger og kontrollutfall bevares med opprinnelig
-CURRENT-peker ved replay. Prioriter videre felt- og helkamplukking; den
-mislykkede BPS-kontrollen nedenfor skal ikke gjentas uten nye fakta.
-Før-frist-features og treningsintegrasjon er fortsatt uferdig.
+Gjeldende rest: **14 907 krav i 13 745 spillerkamper**, med **63 535
+inputkomplette spillerkamper og 752 hele kamper**. 2025/26 har **363 av 380**
+inputkomplette kamper. Kvalifiserte historiske poengkamper er fortsatt 0;
+før-frist-features og aktiv treningsintegrasjon gjenstår. Prioriter konkret
+kilde-/regelkvalifisering og poeng/helkampbonus for den store 2025/26-dekningen,
+parallelt med hele den opprinnelige historiske restlisten.
+
+[CBI-V1](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_cbi_conservation/README.md)
+feilet på ni kontrollsammenligninger; ingen verdier er anvendt. Alle 341 manglende
+CBI-verdier gjelder keepere, mens observerte kontrollavvik gjelder utespillere.
+Et nytt keeperrettet spor må få riktig kilde-/kontrollplan; gjenbruk de 364 råsvarene.
+Den tidligere skuddavstemmingen lukket 994 krav. BPS-forsøket og gamle kontroll-
+utfall bevares med original ledgerpeker. Ingen modeller eller benchmark er endret.
 
 ## Bevarte tidligere leveranser og kontrollutfall
 

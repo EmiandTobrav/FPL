@@ -1,0 +1,8 @@
+season,control_fixtures,cbi_checks,native_fpl_cbi_checks,disagreements,source_mapping_qualified,clearances_primary_team,clearances_primary_player_explicit,shot_blocks_primary_team,shot_blocks_primary_player_explicit,interceptions_primary_team,interceptions_primary_player_explicit
+2019-20,5,132,0,7,False,10,71,10,25,10,62
+2020-21,5,139,0,0,True,10,72,10,32,10,66
+2021-22,5,140,0,0,True,10,78,10,23,10,66
+2022-23,5,144,0,0,True,10,75,10,32,10,64
+2023-24,5,151,0,0,True,10,73,10,32,10,48
+2024-25,5,153,0,0,True,10,87,10,30,10,50
+2025-26,5,147,147,2,False,0,0,0,0,0,0

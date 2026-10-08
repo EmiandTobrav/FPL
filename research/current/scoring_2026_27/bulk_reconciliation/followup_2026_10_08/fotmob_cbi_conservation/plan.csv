@@ -1,0 +1,365 @@
+season,fixture,purpose,fotmob_match_id,date,home,away,team_h_score,team_a_score
+2019-20,1,control,3055738,2019-08-09,Liverpool,Norwich,4,1
+2019-20,2,control,3055740,2019-08-10,Bournemouth,Sheffield Utd,1,1
+2019-20,3,control,3055741,2019-08-10,Burnley,Southampton,3,0
+2019-20,4,control,3055742,2019-08-10,Crystal Palace,Everton,0,0
+2019-20,5,control,3055743,2019-08-11,Leicester,Wolves,0,0
+2020-21,2,control,3411352,2020-09-12,Fulham,Arsenal,0,3
+2020-21,3,control,3411353,2020-09-12,Liverpool,Leeds,4,3
+2020-21,4,control,3411354,2020-09-13,Spurs,Everton,0,1
+2020-21,5,control,3411355,2020-09-13,West Brom,Leicester,0,3
+2020-21,6,control,3411356,2020-09-12,West Ham,Newcastle,0,2
+2021-22,2,control,3609930,2021-08-14,Burnley,Brighton,1,2
+2021-22,3,control,3609931,2021-08-14,Chelsea,Crystal Palace,3,0
+2021-22,4,control,3609932,2021-08-14,Everton,Southampton,3,1
+2021-22,5,control,3609933,2021-08-14,Leicester,Wolves,1,0
+2021-22,6,control,3609934,2021-08-14,Man Utd,Leeds,5,1
+2022-23,1,control,3900932,2022-08-05,Crystal Palace,Arsenal,0,2
+2022-23,2,control,3900934,2022-08-06,Bournemouth,Aston Villa,2,0
+2022-23,3,control,3900939,2022-08-06,Everton,Chelsea,0,1
+2022-23,4,control,3900933,2022-08-06,Fulham,Liverpool,2,2
+2022-23,5,control,3900935,2022-08-06,Leeds,Wolves,2,1
+2023-24,1,control,4193450,2023-08-11,Burnley,Man City,0,3
+2023-24,2,control,4193451,2023-08-12,Arsenal,Nott'm Forest,2,1
+2023-24,3,control,4193452,2023-08-12,Bournemouth,West Ham,1,1
+2023-24,4,control,4193453,2023-08-12,Brighton,Luton,4,1
+2023-24,5,control,4193454,2023-08-12,Everton,Fulham,0,1
+2024-25,1,control,4506263,2024-08-16,Man Utd,Fulham,1,0
+2024-25,2,control,4506265,2024-08-17,Arsenal,Wolves,2,0
+2024-25,3,control,4506266,2024-08-17,Everton,Brighton,0,3
+2024-25,4,control,4506264,2024-08-17,Ipswich,Liverpool,0,2
+2024-25,5,control,4506267,2024-08-17,Newcastle,Southampton,1,0
+2025-26,1,control,4813374,2025-08-15,Liverpool,Bournemouth,4,2
+2025-26,2,control,4813375,2025-08-16,Aston Villa,Newcastle,0,0
+2025-26,3,control,4813376,2025-08-16,Brighton,Fulham,1,1
+2025-26,4,control,4813377,2025-08-17,Nott'm Forest,Brentford,3,1
+2025-26,5,control,4813378,2025-08-16,Sunderland,West Ham,3,0
+2019-20,7,target,3055744,2019-08-10,Watford,Brighton,0,3
+2019-20,8,target,3055739,2019-08-10,West Ham,Man City,0,5
+2019-20,16,target,3055753,2019-08-17,Man City,Spurs,2,2
+2019-20,26,target,3055763,2019-08-24,Norwich,Chelsea,2,3
+2019-20,37,target,3055774,2019-08-31,Man City,Brighton,4,0
+2019-20,43,target,3055780,2019-09-14,Brighton,Burnley,1,1
+2019-20,45,target,3055782,2019-09-14,Man Utd,Leicester,1,0
+2019-20,55,target,3055792,2019-09-21,Everton,Sheffield Utd,0,2
+2019-20,66,target,3055803,2019-09-29,Leicester,Newcastle,5,0
+2019-20,70,target,3055807,2019-09-28,Wolves,Watford,2,0
+2019-20,74,target,3055811,2019-10-05,Liverpool,Leicester,2,1
+2019-20,90,target,3055827,2019-10-19,Wolves,Southampton,1,1
+2019-20,104,target,3055841,2019-11-02,Brighton,Norwich,2,0
+2019-20,107,target,3055844,2019-11-02,Man City,Southampton,2,1
+2019-20,110,target,3055847,2019-11-02,West Ham,Newcastle,2,3
+2019-20,118,target,3055855,2019-11-09,Southampton,Everton,1,2
+2019-20,132,target,3055869,2019-11-30,Chelsea,West Ham,0,1
+2019-20,136,target,3055873,2019-11-30,Newcastle,Man City,2,2
+2019-20,138,target,3055875,2019-11-30,Southampton,Watford,2,1
+2019-20,140,target,3055877,2019-12-01,Wolves,Sheffield Utd,1,1
+2019-20,142,target,3055879,2019-12-03,Burnley,Man City,1,4
+2019-20,146,target,3055882,2019-12-04,Wolves,West Ham,2,0
+2019-20,166,target,3055903,2019-12-14,Liverpool,Watford,2,0
+2019-20,167,target,3055904,2019-12-15,Man Utd,Everton,1,1
+2019-20,169,target,3055906,2019-12-14,Southampton,West Ham,0,1
+2019-20,172,target,3055909,2019-12-21,Bournemouth,Burnley,0,1
+2019-20,173,target,3055910,2019-12-21,Brighton,Sheffield Utd,0,1
+2019-20,174,target,3055911,2019-12-21,Everton,Arsenal,0,0
+2019-20,175,target,3055912,2019-12-21,Man City,Leicester,3,1
+2019-20,180,target,3055917,2020-01-29,West Ham,Liverpool,0,2
+2019-20,185,target,3055922,2019-12-26,Everton,Burnley,1,0
+2019-20,187,target,3055924,2019-12-26,Man Utd,Newcastle,4,1
+2019-20,191,target,3055928,2019-12-29,Arsenal,Chelsea,1,2
+2019-20,197,target,3055934,2019-12-28,Norwich,Spurs,2,2
+2019-20,198,target,3055935,2019-12-28,Southampton,Crystal Palace,1,1
+2019-20,204,target,3055941,2020-01-02,Liverpool,Sheffield Utd,2,0
+2019-20,210,target,3055947,2020-01-01,West Ham,Bournemouth,4,0
+2019-20,216,target,3055953,2020-01-11,Leicester,Southampton,1,2
+2019-20,218,target,3055955,2020-01-10,Sheffield Utd,West Ham,1,0
+2019-20,222,target,3055959,2020-01-18,Brighton,Aston Villa,1,1
+2019-20,224,target,3055961,2020-01-19,Liverpool,Man Utd,2,0
+2019-20,226,target,3055963,2020-01-18,Newcastle,Chelsea,1,0
+2019-20,238,target,3055975,2020-01-21,Chelsea,Arsenal,2,2
+2019-20,248,target,3055985,2020-02-02,Spurs,Man City,2,0
+2019-20,257,target,3055994,2020-02-15,Norwich,Liverpool,0,1
+2019-20,259,target,3055996,2020-02-15,Southampton,Burnley,1,2
+2019-20,261,target,3055998,2020-02-23,Arsenal,Everton,3,2
+2019-20,275,target,3056012,2020-06-17,Man City,Arsenal,3,0
+2019-20,285,target,3056022,2020-03-09,Leicester,Aston Villa,4,0
+2019-20,287,target,3056024,2020-03-08,Man Utd,Man City,2,0
+2019-20,295,target,3056032,2020-06-22,Man City,Burnley,5,0
+2019-20,304,target,3056041,2020-06-24,Liverpool,Crystal Palace,4,0
+2019-20,309,target,3056046,2020-06-23,Spurs,West Ham,2,0
+2019-20,318,target,3056055,2020-07-02,Sheffield Utd,Spurs,3,1
+2019-20,321,target,3056058,2020-07-05,Burnley,Sheffield Utd,1,1
+2019-20,322,target,3056059,2020-07-04,Chelsea,Watford,3,0
+2019-20,338,target,3056075,2020-07-08,Sheffield Utd,Wolves,1,0
+2019-20,339,target,3056076,2020-07-07,Watford,Norwich,2,1
+2019-20,343,target,3056080,2020-07-11,Brighton,Man City,0,5
+2019-20,346,target,3056083,2020-07-11,Norwich,West Ham,0,4
+2019-20,349,target,3056086,2020-07-11,Watford,Newcastle,2,1
+2019-20,351,target,3056088,2020-07-15,Arsenal,Liverpool,2,1
+2019-20,356,target,3056093,2020-07-16,Leicester,Sheffield Utd,2,0
+2019-20,357,target,3056094,2020-07-15,Man City,Bournemouth,2,1
+2019-20,364,target,3056101,2020-07-22,Liverpool,Chelsea,5,3
+2019-20,367,target,3056104,2020-07-20,Sheffield Utd,Everton,0,1
+2019-20,369,target,3056106,2020-07-21,Watford,Man City,0,4
+2019-20,377,target,3056114,2020-07-26,Man City,Norwich,5,0
+2019-20,378,target,3056115,2020-07-26,Newcastle,Liverpool,1,3
+2020-21,1,target,3411351,2020-09-12,Crystal Palace,Southampton,1,0
+2020-21,11,target,3411361,2020-09-20,Chelsea,Liverpool,0,2
+2020-21,23,target,3411373,2020-09-28,Liverpool,Arsenal,3,1
+2020-21,24,target,3411374,2020-09-27,Man City,Leicester,2,5
+2020-21,40,target,3411390,2020-10-18,Crystal Palace,Brighton,1,1
+2020-21,64,target,3411414,2020-11-01,Man Utd,Arsenal,0,1
+2020-21,67,target,3411417,2020-11-01,Spurs,Brighton,2,1
+2020-21,70,target,3411420,2020-11-06,Brighton,Burnley,0,0
+2020-21,100,target,3411450,2020-12-07,Brighton,Southampton,1,2
+2020-21,117,target,3411467,2020-12-13,Southampton,Sheffield Utd,3,0
+2020-21,120,target,3411470,2020-12-17,Aston Villa,Burnley,0,0
+2020-21,125,target,3411475,2020-12-16,West Ham,Crystal Palace,1,1
+2020-21,127,target,3411477,2020-12-16,Liverpool,Spurs,2,1
+2020-21,128,target,3411478,2020-12-15,Man City,West Brom,1,1
+2020-21,129,target,3411479,2020-12-20,Brighton,Sheffield Utd,1,1
+2020-21,131,target,3411481,2020-12-21,Chelsea,West Ham,3,0
+2020-21,132,target,3411482,2020-12-19,Crystal Palace,Liverpool,0,7
+2020-21,138,target,3411488,2020-12-20,West Brom,Aston Villa,0,3
+2020-21,141,target,3411491,2020-12-26,Fulham,Southampton,0,0
+2020-21,150,target,3411500,2020-12-29,Burnley,Sheffield Utd,1,0
+2020-21,152,target,3411502,2020-12-28,Crystal Palace,Leicester,1,1
+2020-21,153,target,3411503,2021-02-17,Everton,Man City,1,3
+2020-21,160,target,3411510,2021-02-17,Burnley,Fulham,1,1
+2020-21,172,target,3411522,2021-02-23,Leeds,Southampton,3,0
+2020-21,173,target,3411523,2021-01-19,Leicester,Chelsea,2,0
+2020-21,175,target,3411525,2021-01-19,West Ham,West Brom,2,1
+2020-21,177,target,3411527,2021-01-21,Liverpool,Burnley,0,1
+2020-21,183,target,3411533,2021-01-16,Leicester,Southampton,2,0
+2020-21,194,target,3411544,2021-01-27,Chelsea,Wolves,0,0
+2020-21,195,target,3411548,2021-01-26,Crystal Palace,West Ham,2,3
+2020-21,198,target,3411547,2021-01-28,Spurs,Liverpool,1,3
+2020-21,201,target,3411551,2021-01-31,Chelsea,Burnley,2,0
+2020-21,207,target,3411557,2021-01-30,West Brom,Fulham,2,2
+2020-21,210,target,3411560,2021-02-03,Burnley,Man City,0,2
+2020-21,212,target,3411562,2021-02-03,Leeds,Everton,1,2
+2020-21,213,target,3411565,2021-02-02,Man Utd,Southampton,9,0
+2020-21,215,target,3411564,2021-02-02,Wolves,Arsenal,2,1
+2020-21,218,target,3411567,2021-02-04,Spurs,Chelsea,0,1
+2020-21,223,target,3411573,2021-02-07,Liverpool,Man City,1,4
+2020-21,224,target,3411574,2021-02-06,Man Utd,Everton,3,3
+2020-21,227,target,3411577,2021-02-07,Spurs,West Brom,2,0
+2020-21,237,target,3411587,2021-02-14,West Brom,Man Utd,1,1
+2020-21,241,target,3411591,2021-02-22,Brighton,Crystal Palace,1,2
+2020-21,243,target,3411593,2021-02-20,Fulham,Sheffield Utd,1,0
+2020-21,244,target,3411594,2021-02-20,Liverpool,Everton,0,2
+2020-21,246,target,3411596,2021-02-20,Southampton,Chelsea,1,1
+2020-21,247,target,3411597,2021-02-21,West Ham,Spurs,2,1
+2020-21,260,target,3411610,2021-03-06,Brighton,Leicester,1,2
+2020-21,261,target,3411611,2021-03-06,Burnley,Arsenal,1,1
+2020-21,272,target,3411622,2021-03-13,Fulham,Man City,0,3
+2020-21,274,target,3411624,2021-03-14,Leicester,Sheffield Utd,5,0
+2020-21,279,target,3411629,2021-03-20,Brighton,Newcastle,3,0
+2020-21,280,target,3411630,2021-03-03,Burnley,Leicester,1,1
+2020-21,297,target,3411647,2021-04-04,Southampton,Burnley,3,2
+2020-21,298,target,3411648,2021-04-05,Wolves,West Ham,2,3
+2020-21,301,target,3411651,2021-04-10,Crystal Palace,Chelsea,1,4
+2020-21,302,target,3411652,2021-04-09,Fulham,Wolves,0,1
+2020-21,303,target,3411653,2021-04-10,Liverpool,Aston Villa,2,1
+2020-21,304,target,3411654,2021-04-10,Man City,Leeds,1,2
+2020-21,307,target,3411657,2021-04-12,West Brom,Southampton,3,0
+2020-21,308,target,3411658,2021-04-11,West Ham,Leicester,3,2
+2020-21,314,target,3411664,2021-04-22,Leicester,West Brom,3,0
+2020-21,352,target,3411702,2021-05-11,Man Utd,Leicester,1,2
+2020-21,370,target,3411720,2021-05-23,Aston Villa,Chelsea,2,1
+2020-21,374,target,3411724,2021-05-23,Liverpool,Crystal Palace,2,0
+2020-21,378,target,3411728,2021-05-23,Wolves,Man Utd,1,2
+2021-22,1,target,3609929,2021-08-13,Brentford,Arsenal,2,0
+2021-22,11,target,3609940,2021-08-21,Aston Villa,Newcastle,2,0
+2021-22,13,target,3609942,2021-08-21,Crystal Palace,Brentford,0,0
+2021-22,16,target,3609945,2021-08-21,Man City,Norwich,5,0
+2021-22,21,target,3609949,2021-08-28,Aston Villa,Brentford,1,1
+2021-22,24,target,3609953,2021-08-28,Man City,Arsenal,5,0
+2021-22,32,target,3609960,2021-09-11,Brentford,Brighton,0,1
+2021-22,34,target,3609962,2021-09-11,Crystal Palace,Spurs,3,0
+2021-22,40,target,3609968,2021-09-11,Watford,Wolves,0,2
+2021-22,71,target,3609999,2021-10-18,Arsenal,Crystal Palace,2,2
+2021-22,94,target,3610022,2021-10-30,Liverpool,Brighton,2,2
+2021-22,105,target,3610033,2021-11-06,Crystal Palace,Wolves,2,0
+2021-22,107,target,3610035,2021-11-07,Leeds,Leicester,1,1
+2021-22,113,target,3610041,2021-11-20,Leicester,Chelsea,0,3
+2021-22,122,target,3610050,2021-11-28,Brentford,Everton,1,0
+2021-22,125,target,3610053,2021-11-28,Chelsea,Man Utd,1,1
+2021-22,130,target,3610058,2021-11-27,Norwich,Wolves,0,0
+2021-22,150,target,3610078,2021-12-04,Wolves,Liverpool,0,1
+2021-22,159,target,3610088,2021-12-11,Man City,Wolves,1,0
+2021-22,169,target,3610098,2021-12-16,Liverpool,Newcastle,3,1
+2021-22,175,target,3610104,2021-12-19,Newcastle,Man City,0,4
+2021-22,178,target,3610107,2022-02-23,Watford,Crystal Palace,1,4
+2021-22,184,target,3610113,2022-02-23,Liverpool,Leeds,6,0
+2021-22,191,target,3610120,2022-02-24,Arsenal,Wolves,2,1
+2021-22,202,target,3610131,2022-01-02,Brentford,Aston Villa,2,1
+2021-22,207,target,3610136,2022-05-11,Leicester,Norwich,3,0
+2021-22,210,target,3610139,2022-01-01,Watford,Spurs,0,1
+2021-22,211,target,3610140,2022-01-15,Aston Villa,Man Utd,2,2
+2021-22,220,target,3610149,2022-01-15,Wolves,Southampton,3,1
+2021-22,224,target,3610153,2022-01-23,Crystal Palace,Liverpool,1,3
+2021-22,242,target,3610171,2022-02-13,Burnley,Liverpool,0,1
+2021-22,257,target,3610186,2022-02-19,Man City,Spurs,2,3
+2021-22,264,target,3610193,2022-05-19,Chelsea,Leicester,1,1
+2021-22,284,target,3610213,2022-03-13,Chelsea,Newcastle,1,0
+2021-22,286,target,3610215,2022-03-13,Everton,Wolves,0,1
+2021-22,295,target,3610224,2022-04-20,Man City,Brighton,3,0
+2021-22,298,target,3610227,2022-03-20,Spurs,West Ham,3,1
+2021-22,302,target,3610238,2022-04-02,Burnley,Man City,0,2
+2021-22,304,target,3610236,2022-04-04,Crystal Palace,Arsenal,3,0
+2021-22,311,target,3610249,2022-04-09,Arsenal,Brighton,1,2
+2021-22,316,target,3610244,2022-04-10,Man City,Liverpool,2,2
+2021-22,320,target,3610240,2022-04-09,Watford,Leeds,0,3
+2021-22,321,target,3610259,2022-05-10,Aston Villa,Liverpool,1,2
+2021-22,322,target,3610258,2022-05-19,Everton,Crystal Palace,3,2
+2021-22,325,target,3610255,2022-04-17,Newcastle,Leicester,2,1
+2021-22,337,target,3610263,2022-04-23,Leicester,Aston Villa,0,0
+2021-22,340,target,3610260,2022-04-23,Norwich,Newcastle,0,3
+2021-22,341,target,3610279,2022-04-30,Aston Villa,Norwich,2,0
+2021-22,359,target,3610281,2022-05-08,Man City,Newcastle,5,0
+2021-22,362,target,3610298,2022-05-15,Everton,Brentford,2,3
+2021-22,368,target,3610292,2022-05-15,Watford,Leicester,1,5
+2021-22,374,target,3610303,2022-05-22,Burnley,Newcastle,1,2
+2021-22,376,target,3610305,2022-05-22,Crystal Palace,Man Utd,1,0
+2021-22,377,target,3610306,2022-05-22,Leicester,Southampton,4,1
+2021-22,378,target,3610307,2022-05-22,Liverpool,Wolves,3,1
+2022-23,16,target,3900947,2022-08-15,Liverpool,Crystal Palace,1,1
+2022-23,21,target,3900952,2022-08-20,Bournemouth,Arsenal,0,3
+2022-23,37,target,3900968,2022-08-27,Man City,Crystal Palace,4,2
+2022-23,41,target,3900972,2022-08-31,Arsenal,Aston Villa,2,1
+2022-23,44,target,3900974,2022-08-30,Fulham,Brighton,2,1
+2022-23,48,target,3900980,2022-08-31,Liverpool,Newcastle,2,1
+2022-23,72,target,3901003,2022-09-18,Brentford,Arsenal,0,3
+2022-23,83,target,3901014,2022-10-01,Crystal Palace,Chelsea,1,2
+2022-23,87,target,3901018,2022-10-01,Liverpool,Brighton,3,3
+2022-23,103,target,3901034,2022-10-15,Fulham,Bournemouth,2,2
+2022-23,114,target,3901045,2022-10-18,Brighton,Nott'm Forest,0,0
+2022-23,120,target,3901049,2022-10-19,Newcastle,Everton,1,0
+2022-23,129,target,3901060,2022-10-24,West Ham,Bournemouth,2,0
+2022-23,130,target,3901061,2022-10-23,Wolves,Leicester,0,4
+2022-23,132,target,3901063,2022-10-29,Bournemouth,Spurs,2,3
+2022-23,141,target,3901072,2022-11-06,Aston Villa,Man Utd,3,1
+2022-23,149,target,3901080,2022-11-06,West Ham,Crystal Palace,1,2
+2022-23,161,target,3901092,2022-12-26,Arsenal,West Ham,3,1
+2022-23,211,target,3901142,2023-02-04,Aston Villa,Leicester,2,4
+2022-23,231,target,3901162,2023-02-18,Aston Villa,Arsenal,2,4
+2022-23,243,target,3901174,2023-02-25,Everton,Aston Villa,0,2
+2022-23,246,target,3901177,2023-02-25,Leicester,Arsenal,0,1
+2022-23,251,target,3901182,2023-03-04,Arsenal,Bournemouth,3,2
+2022-23,253,target,3901184,2023-03-06,Brentford,Fulham,3,2
+2022-23,260,target,3901191,2023-03-04,Wolves,Spurs,1,0
+2022-23,261,target,3901192,2023-03-11,Bournemouth,Liverpool,1,0
+2022-23,268,target,3901199,2023-03-12,Newcastle,Wolves,2,1
+2022-23,278,target,3901209,2023-03-17,Nott'm Forest,Newcastle,1,2
+2022-23,284,target,3901215,2023-04-01,Chelsea,Aston Villa,0,2
+2022-23,293,target,3901224,2023-04-08,Fulham,West Ham,0,1
+2022-23,294,target,3901225,2023-04-09,Leeds,Crystal Palace,1,5
+2022-23,311,target,3901242,2023-04-21,Arsenal,Southampton,3,3
+2022-23,318,target,3901249,2023-04-22,Liverpool,Nott'm Forest,3,2
+2022-23,321,target,3901258,2023-04-25,Aston Villa,Fulham,1,0
+2022-23,336,target,3901267,2023-04-30,Fulham,Man City,1,2
+2022-23,340,target,3901271,2023-04-30,Newcastle,Southampton,3,1
+2022-23,352,target,3901283,2023-05-13,Aston Villa,Spurs,2,1
+2022-23,353,target,3901284,2023-05-14,Brentford,West Ham,2,0
+2022-23,358,target,3901289,2023-05-15,Leicester,Liverpool,0,3
+2022-23,359,target,3901290,2023-05-13,Man Utd,Wolves,2,0
+2022-23,366,target,3901297,2023-05-22,Newcastle,Leicester,0,0
+2022-23,380,target,3901311,2023-05-28,Southampton,Liverpool,4,4
+2023-24,14,target,4193473,2023-08-19,Liverpool,Bournemouth,3,1
+2023-24,35,target,4193494,2023-09-02,Chelsea,Nott'm Forest,0,1
+2023-24,37,target,4193496,2023-09-03,Liverpool,Aston Villa,3,0
+2023-24,39,target,4193498,2023-09-02,Man City,Fulham,5,1
+2023-24,45,target,4193504,2023-09-16,Man Utd,Brighton,1,3
+2023-24,48,target,4193507,2023-09-16,Spurs,Sheffield Utd,2,1
+2023-24,58,target,4193517,2023-09-23,Luton,Wolves,1,1
+2023-24,79,target,4193538,2023-10-08,West Ham,Newcastle,2,2
+2023-24,86,target,4193545,2023-10-21,Man City,Brighton,2,1
+2023-24,87,target,4193546,2023-10-21,Newcastle,Crystal Palace,4,0
+2023-24,101,target,4193560,2023-11-04,Brentford,West Ham,3,2
+2023-24,108,target,4193567,2023-11-05,Nott'm Forest,Aston Villa,2,0
+2023-24,111,target,4193571,2023-11-11,Arsenal,Burnley,3,1
+2023-24,112,target,4193572,2023-11-12,Aston Villa,Fulham,3,1
+2023-24,113,target,4193570,2023-11-11,Bournemouth,Newcastle,2,0
+2023-24,122,target,4193652,2023-11-25,Burnley,West Ham,1,2
+2023-24,123,target,4193653,2023-11-26,Everton,Man Utd,0,3
+2023-24,124,target,4193654,2023-11-27,Fulham,Wolves,3,2
+2023-24,127,target,4193657,2023-11-25,Newcastle,Chelsea,4,1
+2023-24,131,target,4193662,2023-12-02,Arsenal,Wolves,2,1
+2023-24,134,target,4193664,2023-12-02,Burnley,Sheffield Utd,5,0
+2023-24,141,target,4193671,2023-12-06,Aston Villa,Man City,1,0
+2023-24,145,target,4193674,2023-12-06,Fulham,Nott'm Forest,5,0
+2023-24,149,target,4193678,2023-12-05,Wolves,Burnley,1,0
+2023-24,156,target,4193686,2023-12-10,Luton,Man City,1,2
+2023-24,163,target,4193693,2023-12-17,Brentford,Aston Villa,1,2
+2023-24,164,target,4193694,2023-12-16,Burnley,Everton,0,2
+2023-24,168,target,4193698,2023-12-16,Newcastle,Fulham,3,0
+2023-24,187,target,4193717,2023-12-27,Everton,Man City,1,3
+2023-24,199,target,4193729,2024-01-02,West Ham,Brighton,0,0
+2023-24,204,target,4193734,2024-01-22,Brighton,Wolves,0,0
+2023-24,205,target,4193735,2024-01-12,Burnley,Luton,1,1
+2023-24,219,target,4193749,2024-01-31,Liverpool,Chelsea,4,1
+2023-24,222,target,4193751,2024-02-04,Bournemouth,Nott'm Forest,1,1
+2023-24,233,target,4193763,2024-02-10,Fulham,Bournemouth,3,1
+2023-24,235,target,4193765,2024-02-10,Luton,Sheffield Utd,1,3
+2023-24,240,target,4193770,2024-02-10,Wolves,Brentford,0,2
+2023-24,251,target,4193782,2024-02-24,Arsenal,Newcastle,4,1
+2023-24,265,target,4193795,2024-03-02,Luton,Aston Villa,2,3
+2023-24,266,target,4193796,2024-03-03,Man City,Man Utd,3,1
+2023-24,276,target,4193806,2024-03-09,Crystal Palace,Luton,1,1
+2023-24,280,target,4193810,2024-03-09,Wolves,Fulham,2,1
+2023-24,302,target,4193831,2024-04-02,Bournemouth,Crystal Palace,1,0
+2023-24,308,target,4193839,2024-04-04,Liverpool,Sheffield Utd,3,1
+2023-24,319,target,4193849,2024-04-07,Spurs,Nott'm Forest,3,1
+2023-24,323,target,4193853,2024-04-13,Brentford,Sheffield Utd,2,0
+2023-24,327,target,4193857,2024-04-13,Man City,Luton,5,1
+2023-24,340,target,4193870,2024-04-20,Wolves,Arsenal,0,2
+2023-24,341,target,4193872,2024-04-27,Aston Villa,Chelsea,2,2
+2023-24,353,target,4193883,2024-05-05,Brighton,Aston Villa,1,0
+2023-24,364,target,4193894,2024-05-11,Fulham,Man City,0,4
+2023-24,376,target,4193906,2024-05-19,Crystal Palace,Aston Villa,5,0
+2023-24,379,target,4193909,2024-05-19,Man City,West Ham,3,1
+2024-25,17,target,4506279,2024-08-24,Man City,Ipswich,4,1
+2024-25,27,target,4506289,2024-09-01,Man Utd,Liverpool,0,3
+2024-25,36,target,4506298,2024-09-14,Liverpool,Nott'm Forest,0,1
+2024-25,47,target,4506309,2024-09-22,Man City,Arsenal,2,2
+2024-25,49,target,4506311,2024-09-21,Spurs,Brentford,3,1
+2024-25,52,target,4506313,2024-09-30,Bournemouth,Southampton,3,1
+2024-25,56,target,4506318,2024-09-29,Ipswich,Aston Villa,2,2
+2024-25,66,target,4506328,2024-10-05,Crystal Palace,Liverpool,0,1
+2024-25,68,target,4506330,2024-10-05,Leicester,Bournemouth,1,0
+2024-25,73,target,4506395,2024-10-19,Ipswich,Everton,0,2
+2024-25,74,target,4506396,2024-10-20,Liverpool,Chelsea,2,1
+2024-25,80,target,4506402,2024-10-20,Wolves,Man City,1,2
+2024-25,83,target,4506405,2024-10-26,Brentford,Ipswich,4,3
+2024-25,106,target,4506478,2024-11-10,Man Utd,Leicester,3,0
+2024-25,118,target,4506540,2024-11-23,Man City,Spurs,0,4
+2024-25,120,target,4506542,2024-11-24,Southampton,Liverpool,2,3
+2024-25,131,target,4506424,2024-12-04,Arsenal,Man Utd,2,0
+2024-25,137,target,4506429,2024-12-03,Leicester,West Ham,3,1
+2024-25,145,target,4506437,2024-12-08,Fulham,Arsenal,1,1
+2024-25,151,target,4506444,2024-12-14,Arsenal,Everton,0,0
+2024-25,174,target,4506486,2024-12-26,Chelsea,Fulham,1,2
+2024-25,184,target,4506496,2024-12-29,Everton,Nott'm Forest,0,2
+2024-25,191,target,4506504,2025-01-04,Aston Villa,Leicester,2,1
+2024-25,192,target,4506503,2025-01-04,Bournemouth,Everton,1,0
+2024-25,204,target,4506516,2025-01-16,Ipswich,Brighton,0,2
+2024-25,207,target,4506519,2025-01-14,West Ham,Fulham,3,2
+2024-25,223,target,4506605,2025-01-25,Brighton,Everton,0,1
+2024-25,226,target,4506608,2025-01-25,Liverpool,Ipswich,4,1
+2024-25,231,target,4506614,2025-02-02,Arsenal,Man City,5,1
+2024-25,240,target,4506622,2025-02-01,Wolves,Aston Villa,2,0
+2024-25,251,target,4506634,2025-02-22,Arsenal,West Ham,0,1
+2024-25,273,target,4506345,2025-03-09,Chelsea,Leicester,1,0
+2024-25,290,target,4506362,2025-03-15,Southampton,Wolves,1,2
+2024-25,293,target,4506365,2025-04-02,Brighton,Aston Villa,0,3
+2024-25,298,target,4506369,2025-04-02,Man City,Leicester,2,0
+2024-25,311,target,4506384,2025-04-12,Arsenal,Brentford,1,1
+2024-25,316,target,4506388,2025-04-12,Man City,Crystal Palace,5,2
+2024-25,329,target,4506551,2025-04-21,Spurs,Nott'm Forest,1,2
+2024-25,350,target,4506571,2025-05-04,West Ham,Spurs,1,1
+2024-25,351,target,4506573,2025-05-10,Bournemouth,Aston Villa,0,1
+2024-25,357,target,4506579,2025-05-11,Nott'm Forest,Leicester,2,2
+2024-25,365,target,4506587,2025-05-16,Chelsea,Man Utd,1,0
+2024-25,366,target,4506588,2025-05-20,Crystal Palace,Wolves,4,2
+2024-25,371,target,4506593,2025-05-25,Bournemouth,Leicester,2,0

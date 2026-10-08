@@ -31,7 +31,7 @@ Se [kontrollbevis og neste avklaringer](research/current/training_dataset/scorin
 Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
 og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
 
-**Historisk harmonisering til 2026/27 – skuddavstemming, 8. oktober 2026:** 15 233 åpne feltkrav i 14 071 spillerkamper. 63 209 spillerkamper og 508 hele kamper har komplette inputfelt. Alle 994 åpne skudd-på-mål-krav er lukket med eksplisitte lagtotaler; 18 nye hele kamper er inputkomplette. Poeng/BPS/bonus er fortsatt ikke kvalifisert. Se [ny avstemming og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/README.md).
+**Historisk harmonisering til 2026/27 – keeperlokasjon, 8. oktober 2026:** 14 907 åpne feltkrav i 13 745 spillerkamper. 63 535 spillerkamper og 752 hele kamper har komplette inputfelt. Siste batch lukker 326 lokasjonskrav med direkte skuddopphav og gir 244 nye hele kamper. 2025/26 har nå 363 inputkomplette kamper; historiske poeng/BPS/bonus er fortsatt ikke kvalifisert. Se [avstemming og kildebevis](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md).
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)
 - [Prioritert arbeidsrekkefølge](research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md)

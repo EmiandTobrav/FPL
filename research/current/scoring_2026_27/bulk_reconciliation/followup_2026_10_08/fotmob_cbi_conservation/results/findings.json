@@ -1,0 +1,18 @@
+{
+  "old_open_fields": 15233,
+  "new_fields": 0,
+  "open_fields": 15233,
+  "old_complete_matches": 508,
+  "complete_matches": 508,
+  "new_complete_matches": 0,
+  "complete_player_matches": 63209,
+  "unique_affected_player_matches": 14071,
+  "native_fpl_gate_passed": false,
+  "source_mapping_qualified_seasons": [],
+  "control_disagreements": 9,
+  "all_source_disagreements": 86,
+  "qualified_scoring_matches": 0,
+  "scoring_qualified": false,
+  "raw_fpl_preserved": true,
+  "new_fields_by_season": {}
+}

@@ -16,8 +16,8 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | 2026/27 spillerkamper | 1 538 observasjoner, 50 avsluttede hele kamper |
 | 2026/27 spiller–runde | 3 216 offisielle rader, inkludert ikke-deltakelse |
 | Kvalitetskontroll | 16 918 sammenligninger av kampstatistikk; bonus for alle 1 538 deltakere; poengsum mot offisiell komponentforklaring |
-| Historisk datarest | 15 233 feltkrav i 14 071 spillerkamper; 994 skuddkrav lukket |
-| Historisk inputdekning | 63 209 spillerkamper og 508 kamper inputkomplette |
+| Historisk datarest | 14 907 feltkrav i 13 745 spillerkamper; 326 nye keeperlokasjoner avklart |
+| Historisk inputdekning | 63 535 spillerkamper og 752 kamper inputkomplette |
 | Historisk omregning | Fortsatt ikke kvalifisert; ingen nye historiske poengetiketter |
 | Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
 | Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
@@ -30,6 +30,21 @@ dekker alle 26 505 kanoniske rader. GW16-versjoner er dokumentert med arkiv-
 og Git-objektbevis; GW29-xGI er rettet fra kompatibel xG+xA. Første mislykkede
 kontroll beholdes med uendrede gater. 72 fokuserte tester består. Samlet
 offline-replay dekker 94 byteidentiske resultatfiler.
+
+## Ny dataavklaring: direkte keeperlokasjon
+
+[Lokasjonsavstemming](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/README.md)
+lukker 326 krav med eksplisitt skuddopphav og entydig keeper-ID. Hele rednings-
+inventaret må stemme med FPL og primære lag-/keeperankre. 40 kontrollkeepere
+stemmer uten avvik; ti nye tester og elleve byteidentiske replayresultater består.
+244 nye kamper er inputkomplette. 2025/26 har nå 363 slike kamper; disse trenger
+sesongrelevante kilde-/regelgater og helkampbonus før poengetiketter godkjennes.
+De siste 16 lokasjonskravene er sperret av redningsantall. Ingen differanseberegning
+av lokasjon brukes. CBI-V1 feilet og er bevart med null nye avklaringer.
+
+Den tidligere beregningsversjonen med 489 kandidatkamper er et bevart snapshot;
+den er ikke den oppdaterte inputdekningen. Samlet historisk replay bruker fortsatt
+den opprinnelige ledgerpekeren og endrer ikke fryste kontroller eller labels.
 
 ## Ny dataavklaring: alle skuddkrav lukket
 

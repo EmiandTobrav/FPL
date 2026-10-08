@@ -1,0 +1,30 @@
+{
+  "scope": "Direct saved-shot origin, with explicit keeper identity and whole-match shot coverage; never saves minus inside saves",
+  "selection": "All current outside-box-save gap fixtures plus first 20 non-target 2025/26 fixtures by FPL fixture ID",
+  "pilot_schema_fixtures": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "controls_selected_before_location_comparison": true,
+  "minimum_eligible_control_keeper_rows": 30,
+  "maximum_location_disagreements": 0,
+  "eligibility": [
+    "Verified date, clubs, full score, match and Opta-player identity",
+    "Explicit non-own-goal shot inventory equals explicit full-match total shots for both clubs",
+    "Every candidate keeper save has explicit blocked, off-line and on-target flags, origin flag and keeper ID",
+    "Save keeper belongs to opponent club; keeper ID resolves uniquely to player Opta code",
+    "Candidate save count equals authoritative FPL saves and explicit FotMob keeper saves for the same player-match",
+    "Only eligible controls compare known outside counts; failed eligibility is an abstention, never zero"
+  ],
+  "rules": [
+    "Count AttemptSaved, not blocked, not saved off line, on target, not own goal, with explicit keeperId.",
+    "Outside count uses explicit isFromInsideBox=false on those keeper saves.",
+    "Missing flags, unknown identity, incomplete shots, inconsistent saves and any known outside-count conflict veto application.",
+    "Preserve closed rows and all unresolved conflicts; no scoring or bonus qualification."
+  ],
+  "parent_requirements_sha256": "0fedfb45a22587ef5fe3a9811b2785010911f81b89fd3d97b5b23372169e56c7",
+  "plan_sha256": "c86c4bf1a49d6d1fb3af1d2d2329ae90be5aea27ca0446ace359cdc4a2ea8a0f"
+}

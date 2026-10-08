@@ -1,0 +1,28 @@
+{
+  "input_sha256": {
+    "bulk_reconciliation/followup_2026_10_08/fotmob_cbi_conservation/plan.csv": "8b88b0577eb1a3b9aa99d11c2cf0244d4a56e3ef65086ae43a032fe4407f2e4c",
+    "bulk_reconciliation/followup_2026_10_08/fotmob_cbi_conservation/protocol.json": "7e4d392d0ce3853bc80f8041f5feb907fd79caa58b5bb30c978ed6032be89968",
+    "bulk_reconciliation/followup_2026_10_08/fotmob_cbi_conservation/inputs/parent_CURRENT.json": "56e41562e957a0b3abc178221ae89a768a6884406b8c7b74515b940ba44fd917",
+    "bulk_reconciliation/followup_2026_10_08/fotmob_cbi_conservation/inputs/source_manifest.csv": "fded233cb4b971fd1a1d262a01376eb82c822aeff0d96faccd64598425e80c2d",
+    "bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/results/requirements.csv.xz": "0fedfb45a22587ef5fe3a9811b2785010911f81b89fd3d97b5b23372169e56c7",
+    "delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "bulk_reconciliation/inputs/source_players.csv.gz": "aeeb16b2fd321adce3bb0e7223bdf71026fba8e0009d703ce7d6aaae5b3896b5",
+    "bulk_reconciliation/full_team_totals.csv": "004214fb008229bab37cebf00b51db4fe22bd0226c94c91633fc0719daf49cc2",
+    "bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/build.py": "96d6814074e9d6b3c56a8fda8ed7362b03652dc4c64934f2b449551968d72a8f",
+    "bulk_reconciliation/followup_2026_10_08/fotmob_cbi_conservation/build.py": "cba62994136bf67a241bda8cc04a2483c7e89c233899c97ab3933dc5cc86b394"
+  },
+  "raw_sources": 364,
+  "outputs_sha256": {
+    "derived_values.csv": "43f9a82641ad8de907bade613f1dc909e0a9d056b3e4c5233e191428c8e21287",
+    "field_summary.csv": "a66b13f3ef727a728a7981135a610ae5cebe25f31ed5ba7ee60ebc3ebd8a915d",
+    "findings.json": "59cb993f4bc94971d54e0000016c22665dbf65e6d1ca34be3e7c9d021efdcf66",
+    "match_readiness.csv": "ad250d0afcd59de3e27c64581229920d3921a319a67b664886192011a6b99c5a",
+    "player_match_readiness.csv.xz": "b123840009416b19a0207b3b96d7a6b48ec63afba0f06aba4863f11dcfe3d0b1",
+    "remaining_fields.csv.xz": "39098b09165a82600f3caf73992dce22a3b80d853a959a21c3167e71bdce840f",
+    "requirements.csv.xz": "0fedfb45a22587ef5fe3a9811b2785010911f81b89fd3d97b5b23372169e56c7",
+    "source_comparisons.csv": "177bb977386e7c90a9c6383235bc35fe112122e4e436478f16e9dc87a9278e1d",
+    "source_player_components.csv.xz": "8307b4b3a0aaebedee77b97b2f4d13fdf2229e469005b0f25971429b2d4a50b1",
+    "source_quality_by_season.csv": "101319662647ab91118d0477f101e8998f21fe1919dc3fae28269c7a06d5eb3e",
+    "team_conservation.csv": "517099100250d0a278b06a343c6aa1ad261404af4bafef700e722fc8bdf6fd29"
+  }
+}

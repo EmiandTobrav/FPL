@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/plan.csv": "c86c4bf1a49d6d1fb3af1d2d2329ae90be5aea27ca0446ace359cdc4a2ea8a0f",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/protocol.json": "712c1a54a10c503dcbd413337d7522adfb22e977b049fcfb1a6602f4dc4d94e6",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/inputs/parent_CURRENT.json": "56e41562e957a0b3abc178221ae89a768a6884406b8c7b74515b940ba44fd917",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/inputs/source_manifest.csv": "0f76f68cebe379125d73ce26eec9f36860e2e64176054d0ae97ed471867403fb",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/results/requirements.csv.xz": "0fedfb45a22587ef5fe3a9811b2785010911f81b89fd3d97b5b23372169e56c7",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/build.py": "96d6814074e9d6b3c56a8fda8ed7362b03652dc4c64934f2b449551968d72a8f",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_location/build.py": "cba1e9042de39b467a8c4825d13169d41854e3aaf136ce73a8062e9e0c268194"
+  },
+  "path_root": "research/current",
+  "raw_sources": 281,
+  "outputs_sha256": {
+    "control_comparisons.csv": "e98060c159a5adb3f5583ebd3257d4ab3143c14ccde11097edfe4846dd2f9b78",
+    "derived_values.csv": "383f2e946f1759d8c8157ae5d1779893a23adfa55ea6e99c03163283c0c8dd05",
+    "field_summary.csv": "6260f512327248d9fa9033d3da6c72eb5950a66b3193b8bff8e8a2249dd4aa0e",
+    "findings.json": "e7001870522b32cb9f10f13c6eb06e42d80bade4c5c3be255554450fc24f85ff",
+    "keeper_predictions.csv": "c37b66dc8fc370a234dc8ddc02c7dbd9255e2b3b06f17415f5e11a1f570095a2",
+    "match_readiness.csv": "e1dc505a979b4f0404fbb0d9ee03243db42114af2ae4ab5a75f7a52c8fbe1725",
+    "player_match_readiness.csv.xz": "4b7767d9347b308613d654c8b2f24152360431b6ff4a1ae178c8eeed0509020f",
+    "remaining_fields.csv.xz": "64a2bac102e9776c213ebd1599daa934b59953bde1317743c95e218e977d5ece",
+    "requirements.csv.xz": "df8003ae232548d0150d3c00a2fdb4d5eb82834a934ec45c7b029cb9309ef607",
+    "save_evidence.csv": "3a1c0841a478f8e73c7a7825074c8fb77067ae9b2d57a4ddb16e7dfdbb1e027a"
+  }
+}

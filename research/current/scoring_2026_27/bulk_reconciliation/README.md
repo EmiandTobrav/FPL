@@ -1,17 +1,21 @@
 # Gjeldende historisk harmonisering og restliste
 
-Oppdatert 8. oktober 2026, skuddavstemming: **15 233 åpne feltkrav i 14 071
-spillerkamper**. **63 209 spillerkamper og 508 hele kamper** har komplette input.
-Siste batch lukket alle **994 skudd-på-mål-krav**, med **18 nye hele kamper**.
-Poeng/BPS/bonus er fortsatt ikke kvalifisert.
+Oppdatert 8. oktober 2026, keeperlokasjon: **14 907 åpne feltkrav i 13 745
+spillerkamper**. **63 535 spillerkamper og 752 hele kamper** har komplette input.
+Siste batch lukker **326 keeperlokasjonskrav** og gir **244 nye hele kamper**.
+363 av 380 kamper i 2025/26 har komplette input. Historiske poeng/BPS/bonus er
+fortsatt ikke kvalifisert.
 
 Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md) og
-[ny avstemming](followup_2026_10_08/fotmob_shot_conservation/README.md).
-[Restliste](followup_2026_10_08/fotmob_shot_conservation/results/remaining_fields.csv.xz),
-[full ledger](followup_2026_10_08/fotmob_shot_conservation/results/requirements.csv.xz)
+[ny direkte lokasjonsavstemming](followup_2026_10_08/fotmob_keeper_location/README.md).
+[Restliste](followup_2026_10_08/fotmob_keeper_location/results/remaining_fields.csv.xz),
+[full ledger](followup_2026_10_08/fotmob_keeper_location/results/requirements.csv.xz)
 og [assistavhengigheter](priority/assist_groups.csv) er oppdatert sammen.
-Ny replay bruker inncheckede, hashverifiserte råsvar uten nettverk. Eldre
-beregninger og kontrollutvalg reproduseres fra sine opprinnelige kildesnapshot.
+Ti nye tester består; elleve resultater gjenskapes byteidentisk uten nettverk.
+Det [generelle CBI-forsøket](followup_2026_10_08/fotmob_cbi_conservation/README.md)
+feilet på ni kontrollsammenligninger og har ikke endret noen verdier.
+Den tidligere [skuddavstemmingen](followup_2026_10_08/fotmob_shot_conservation/README.md)
+lukket alle 994 skuddkrav. Eldre beregninger bruker fortsatt originale snapshot.
 
 ## Historikk fra tidligere publiseringer
 

@@ -1,0 +1,21 @@
+{
+  "old_open_fields": 15233,
+  "new_fields": 326,
+  "open_fields": 14907,
+  "old_complete_matches": 508,
+  "complete_matches": 752,
+  "new_complete_matches": 244,
+  "complete_player_matches": 63535,
+  "unique_affected_player_matches": 13745,
+  "source_mapping_qualified": true,
+  "eligible_control_keepers": 40,
+  "control_location_disagreements": 0,
+  "control_abstentions": 0,
+  "prediction_status": {
+    "complete_located_save_inventory": 543,
+    "save_count_mismatch_or_missing": 26
+  },
+  "qualified_scoring_matches": 0,
+  "scoring_qualified": false,
+  "raw_fpl_preserved": true
+}

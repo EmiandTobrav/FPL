@@ -1,0 +1,14 @@
+{
+  "file_sha256": {
+    "build.py": "cba1e9042de39b467a8c4825d13169d41854e3aaf136ce73a8062e9e0c268194",
+    "collect.py": "ec17b490592253edea3e895bb30dbaed7ed4324349355976ab47a16a82caf5cb",
+    "reproduce.py": "fd8a7a189addbba58697c00b17232b1ccb680e320eee2b726f63dc99937ae0e2",
+    "plan.csv": "c86c4bf1a49d6d1fb3af1d2d2329ae90be5aea27ca0446ace359cdc4a2ea8a0f",
+    "protocol.json": "712c1a54a10c503dcbd413337d7522adfb22e977b049fcfb1a6602f4dc4d94e6",
+    "inputs/parent_CURRENT.json": "56e41562e957a0b3abc178221ae89a768a6884406b8c7b74515b940ba44fd917",
+    "inputs/source_manifest.csv": "0f76f68cebe379125d73ce26eec9f36860e2e64176054d0ae97ed471867403fb",
+    "results/manifest.json": "136a02df266e4ea8f3b82533e918a067ca6525d65742c0884d174ed4290cd266",
+    "test_keeper_location.py": "3eabde4cccb44efc18c7116beb80cb64dc3e9381ec468f3bca4c759643557e9c"
+  },
+  "scoring_qualified": false
+}

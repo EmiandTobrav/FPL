@@ -1,0 +1,13 @@
+{
+  "file_sha256": {
+    "build.py": "cba62994136bf67a241bda8cc04a2483c7e89c233899c97ab3933dc5cc86b394",
+    "collect.py": "ec17b490592253edea3e895bb30dbaed7ed4324349355976ab47a16a82caf5cb",
+    "reproduce.py": "c40b748c88d52433b5d25e85b4fb35207ac6e246d83af176f0f9b7847c067cb1",
+    "plan.csv": "8b88b0577eb1a3b9aa99d11c2cf0244d4a56e3ef65086ae43a032fe4407f2e4c",
+    "protocol.json": "7e4d392d0ce3853bc80f8041f5feb907fd79caa58b5bb30c978ed6032be89968",
+    "inputs/parent_CURRENT.json": "56e41562e957a0b3abc178221ae89a768a6884406b8c7b74515b940ba44fd917",
+    "inputs/source_manifest.csv": "fded233cb4b971fd1a1d262a01376eb82c822aeff0d96faccd64598425e80c2d",
+    "results/manifest.json": "b986f2cc513740d75afff9df7cde55d1244b233a7d41aebadab35feaec93598e"
+  },
+  "scoring_qualified": false
+}
