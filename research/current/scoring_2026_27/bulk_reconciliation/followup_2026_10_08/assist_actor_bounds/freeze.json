@@ -1,0 +1,13 @@
+{
+  "inputs": {
+    "assist_actor_bounds/certificates.py": "cc0c9b9cc7fa4d0d86609a08d60b8cc6caeb79a1a7edf5579d31015723056b17",
+    "assist_actor_bounds/predict.py": "1d19c26571e191003108934d3e9b4613ca04715523f6b912d994484b28fada43",
+    "assist_actor_bounds/protocol.json": "64d38b6b2335edc4e66fe2f0f8d31d3ab5f4156cce75815a72c407d33b220344",
+    "assist_actor_bounds/validation_plan.csv": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f",
+    "assist_intentional_pass/inputs/participants.csv.gz": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090",
+    "assist_intentional_pass/inputs/goals.csv.gz": "5ec75ccc56da3827fc8f30271d997011578ae360a6d6b0b14e762046807f977e",
+    "assist_intentional_pass/inputs/goal_episodes.csv.gz": "67384c4c3f5fbb40b08ea76080e12cdfb6e7e255dd9a080d30a887dd9d9afb85",
+    "assist_team_identity/inputs/team_identity.csv": "56684693320e0aab546590df9b43ceeb52be840fa17c8f93b059e155e5105bd6"
+  },
+  "prediction_sha256": "66a4eaa65339f4d82308021345794d6a1c33ae2969087d30526457027905ed9f"
+}

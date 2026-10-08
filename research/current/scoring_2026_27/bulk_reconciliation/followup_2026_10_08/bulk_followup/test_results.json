@@ -1,0 +1,14 @@
+[
+  {
+    "folder": "match_inventory_recovery",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_exact (test_conservation.ConservationTests.test_exact) ... ok\ntest_explicit_zero_empty (test_conservation.ConservationTests.test_explicit_zero_empty) ... ok\ntest_fractional_player (test_conservation.ConservationTests.test_fractional_player) ... ok\ntest_fractional_total (test_conservation.ConservationTests.test_fractional_total) ... ok\ntest_missing_not_zero (test_conservation.ConservationTests.test_missing_not_zero) ... ok\ntest_nan_not_zero (test_conservation.ConservationTests.test_nan_not_zero) ... ok\ntest_negative_player (test_conservation.ConservationTests.test_negative_player) ... ok\ntest_negative_residual (test_conservation.ConservationTests.test_negative_residual) ... ok\ntest_negative_total (test_conservation.ConservationTests.test_negative_total) ... ok\ntest_positive_residual (test_conservation.ConservationTests.test_positive_residual) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.000s\n\nOK\n"
+  },
+  {
+    "folder": "assist_actor_bounds",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_absent_marker_blocks (test_certificates.ActorTests.test_absent_marker_blocks) ... ok\ntest_admin_does_not_add_actor (test_certificates.ActorTests.test_admin_does_not_add_actor) ... ok\ntest_bad_identity_blocks (test_certificates.ActorTests.test_bad_identity_blocks) ... ok\ntest_direct_set_piece_blocked (test_certificates.ActorTests.test_direct_set_piece_blocked) ... ok\ntest_duplicate_pass_blocks (test_certificates.ActorTests.test_duplicate_pass_blocks) ... ok\ntest_missing_player_blocks (test_certificates.ActorTests.test_missing_player_blocks) ... ok\ntest_missing_team_blocks (test_certificates.ActorTests.test_missing_team_blocks) ... ok\ntest_no_award (test_certificates.ActorTests.test_no_award) ... ok\ntest_non_goal_shot_marker_blocks (test_certificates.ActorTests.test_non_goal_shot_marker_blocks) ... ok\ntest_null_marker_positive (test_certificates.ActorTests.test_null_marker_positive) ... ok\ntest_opponent_not_candidate (test_certificates.ActorTests.test_opponent_not_candidate) ... ok\ntest_own_goal_actor_retained (test_certificates.ActorTests.test_own_goal_actor_retained) ... ok\ntest_period_isolation (test_certificates.ActorTests.test_period_isolation) ... ok\ntest_scorer_excluded (test_certificates.ActorTests.test_scorer_excluded) ... ok\ntest_union_includes_other_actor (test_certificates.ActorTests.test_union_includes_other_actor) ... ok\ntest_window (test_certificates.ActorTests.test_window) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.044s\n\nOK\n"
+  }
+]

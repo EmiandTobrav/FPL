@@ -1,0 +1,36 @@
+[
+  {
+    "original": "bulk_followup/results/requirements.csv.gz",
+    "sha256": "d30f0252bfec18eb4a3ca937db51afcacb68800e60f94c7f283113598c2cac28",
+    "bytes": 13418732,
+    "parts": [
+      {
+        "path": "bulk_followup/results/requirements.csv.gz.parts/part-001",
+        "sha256": "f40bb699d8e273c9a9ead44f56bf93f59ee8d094dda91d720f92a840802f5c39",
+        "bytes": 8388608
+      },
+      {
+        "path": "bulk_followup/results/requirements.csv.gz.parts/part-002",
+        "sha256": "092c3683b6133efbb30ea50a505c44898cd5946779e28ef9150f53363e3fa5e2",
+        "bytes": 5030124
+      }
+    ]
+  },
+  {
+    "original": "tackle_event_recovery_v2/results/requirements.csv.gz",
+    "sha256": "2f43be077e406eb80646c5369f50d0d1744e236ce67cd6614c926e1146c9f666",
+    "bytes": 13387838,
+    "parts": [
+      {
+        "path": "tackle_event_recovery_v2/results/requirements.csv.gz.parts/part-001",
+        "sha256": "580f8e1699dff66cb0bc580917015ca9bf3564f4f8d10f42b285a8c4e8e857cc",
+        "bytes": 8388608
+      },
+      {
+        "path": "tackle_event_recovery_v2/results/requirements.csv.gz.parts/part-002",
+        "sha256": "608b2967d79b45831d671a556a322bc3a230e761ee65b39116faf1c9708968c2",
+        "bytes": 4999230
+      }
+    ]
+  }
+]

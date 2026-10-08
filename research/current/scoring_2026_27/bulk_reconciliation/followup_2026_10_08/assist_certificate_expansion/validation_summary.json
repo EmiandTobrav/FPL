@@ -1,0 +1,29 @@
+{
+  "direct_controls": 95,
+  "direct_correct": 95,
+  "direct_errors": 0,
+  "new_null_flag_controls": 14,
+  "direct_qualified": false,
+  "bound_teams": 566,
+  "bound_fixtures": 353,
+  "infeasible_teams": 0,
+  "bound_single_goal_checks": 171,
+  "bound_single_goal_errors": 0,
+  "new_unresolved_bound_controls": {
+    "pass210_flag": 133,
+    "linked_PASS_LOST": 45,
+    "linked_ATTEMPT_SAVED": 21,
+    "linked_OWN_GOAL": 17,
+    "linked_BLOCKED_SHOT": 12,
+    "linked_POST": 2
+  },
+  "protected_conflicts": 0,
+  "qualified_bound_kinds": [
+    "pass210_flag",
+    "linked_PASS_LOST",
+    "linked_ATTEMPT_SAVED",
+    "linked_OWN_GOAL",
+    "linked_BLOCKED_SHOT"
+  ],
+  "limits": "2025/26 bound controls reuse historical FPL outcomes and are regression/consistency checks, not independent validation.2020/21 actual-null direct controls test the unchanged clean-pass rule and season-dependent marker encoding. Shared source quality and temporal transfer remain open."
+}

@@ -1,0 +1,248 @@
+season,fixture,date,home,away,match_id,team_id
+2020-21,1,2020-09-12,Crystal Palace,Southampton,85x1cgdta3wxsl49h1bt8a5g4,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,4,2020-09-13,Spurs,Everton,86c3yn1e6edf1i6yignqz55hw,ehd2iemqmschhj2ec0vayztzz
+2020-21,7,2020-09-14,Brighton,Chelsea,86lzfuhtk78dkzcve3s7dlxjo,e5p0ehyguld7egzhiedpdnc3w
+2020-21,9,2020-09-19,Arsenal,West Ham,86sacju69usq3dbltqwrouql0,4txjdaqveermfryvbfrr4taf7
+2020-21,15,2020-09-19,Man Utd,Crystal Palace,878v6iip4euf7c0nbj6iqawpg,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,10,2020-09-21,Aston Villa,Sheffield Utd,86v2ttxq1pdm9c0prdrc4hqtw,b496gs285it6bheuikox6z9mj
+2020-21,18,2020-09-21,Wolves,Man City,87i8vcp1quq0mikjnc635d3x0,b9si1jn1lfxfund69e9ogcu2n
+2020-21,20,2020-09-26,Burnley,Southampton,87nn9mx8eidu48yhwrflzex3o,d5ydtvt96bv7fq04yqm2w2632
+2020-21,21,2020-09-26,Crystal Palace,Everton,87qhl5un3my66c0hhr4k2xams,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,25,2020-09-27,Sheffield Utd,Leeds,882989rtx6vkiy42oyhr8npqs,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,26,2020-09-27,Spurs,Newcastle,884ycm2idus2az1f8kecowh04,22doj4sgsocqpxw45h607udje
+2020-21,26,2020-09-27,Spurs,Newcastle,884ycm2idus2az1f8kecowh04,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,23,2020-09-28,Liverpool,Arsenal,87wcpqgkgz67jjwyw8pgfsu1g,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,33,2020-10-03,Leeds,Man City,88nsepijzgia30woq8ad2oo44,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,33,2020-10-03,Leeds,Man City,88nsepijzgia30woq8ad2oo44,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,36,2020-10-03,Newcastle,Burnley,88vk6ql8vly9rxymjyqbgg7is,64bxxwu2mv2qqlv0monbkj1om
+2020-21,29,2020-10-04,Arsenal,Sheffield Utd,88cl03w0h741zpgeh84f9sg7o,bws31egwjda253q9lvykgnivo
+2020-21,35,2020-10-04,Man Utd,Spurs,88sudw0eiejtkx3vs1xb4kxec,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,38,2020-10-04,Wolves,Fulham,8910a77s4q0hsgslvp8l5pvro,b9si1jn1lfxfund69e9ogcu2n
+2020-21,44,2020-10-17,Man City,Arsenal,89hk3hcr8fybrdw47t1bngs9g,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,45,2020-10-17,Newcastle,Man Utd,89kaz52qfjy3u8akc7nssmj2s,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,40,2020-10-18,Crystal Palace,Brighton,896jaxpimkypq3is76tbo62hg,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,40,2020-10-18,Crystal Palace,Brighton,896jaxpimkypq3is76tbo62hg,e5p0ehyguld7egzhiedpdnc3w
+2020-21,43,2020-10-18,Leicester,Aston Villa,89evaros5n6j3sxloqpy6a1w4,b496gs285it6bheuikox6z9mj
+2020-21,46,2020-10-18,Sheffield Utd,Fulham,89mx2k2j7dhyzgj61mfte2qs4,bws31egwjda253q9lvykgnivo
+2020-21,46,2020-10-18,Sheffield Utd,Fulham,89mx2k2j7dhyzgj61mfte2qs4,hzqh7z0mdl3v7gwete66syxp
+2020-21,42,2020-10-19,Leeds,Wolves,89c38qsw3ws4pgu2yr9cn38r8,b9si1jn1lfxfund69e9ogcu2n
+2020-21,53,2020-10-24,Fulham,Crystal Palace,8a6b5jmrb4vj68tu7bys8kyz8,hzqh7z0mdl3v7gwete66syxp
+2020-21,54,2020-10-24,Liverpool,Sheffield Utd,8a8w4hiz8ydw1ppl0knhjeqs4,bws31egwjda253q9lvykgnivo
+2020-21,57,2020-10-24,West Ham,Man City,8ahg06majhrreps9ib4ciukno,4txjdaqveermfryvbfrr4taf7
+2020-21,57,2020-10-24,West Ham,Man City,8ahg06majhrreps9ib4ciukno,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,49,2020-10-25,Arsenal,Leicester,89vymtvw63xkc1gjcpf9lzz84,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,58,2020-10-25,Wolves,Newcastle,8akeea66iz34kp6pib0hjqy38,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,58,2020-10-25,Wolves,Newcastle,8akeea66iz34kp6pib0hjqy38,b9si1jn1lfxfund69e9ogcu2n
+2020-21,51,2020-10-26,Brighton,West Brom,8a16n4qpaii6gil057bf0rpjo,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,51,2020-10-26,Brighton,West Brom,8a16n4qpaii6gil057bf0rpjo,e5p0ehyguld7egzhiedpdnc3w
+2020-21,52,2020-10-26,Burnley,Spurs,8a3qz121f7gnpmz8rf5yfg5ck,22doj4sgsocqpxw45h607udje
+2020-21,63,2020-10-31,Liverpool,West Ham,8ayb15k3p66sh5qzrm75z29zo,4txjdaqveermfryvbfrr4taf7
+2020-21,66,2020-10-31,Sheffield Utd,Man City,8b86b2s7rnxm54y5fvef4gw0k,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,64,2020-11-01,Man Utd,Arsenal,8b1215w5hssubkoyv0k049udw,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,65,2020-11-01,Newcastle,Everton,8b3t8ap4ds8w2l0ks92tz2jh0,ehd2iemqmschhj2ec0vayztzz
+2020-21,67,2020-11-01,Spurs,Brighton,8bau56srz09c9fxppe2i33u38,e5p0ehyguld7egzhiedpdnc3w
+2020-21,62,2020-11-02,Leeds,Leicester,8avm3qh6f6m70fu0jg8yqjv2s,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,71,2020-11-07,Chelsea,Sheffield Utd,8blwlhmurmx8n93bvvxdwiz2s,bws31egwjda253q9lvykgnivo
+2020-21,72,2020-11-07,Crystal Palace,Leeds,8bojei66cuxheonxn9kkrn5ec,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,73,2020-11-07,Everton,Man Utd,8br4cguze2xvwuelppizzgt1w,ehd2iemqmschhj2ec0vayztzz
+2020-21,78,2020-11-07,West Ham,Fulham,8c5o6tnaa6j5hek8fnnaqgm50,4txjdaqveermfryvbfrr4taf7
+2020-21,74,2020-11-08,Leicester,Wolves,8btx90ljxywovos76nw7vnxuc,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,75,2020-11-08,Man City,Liverpool,8bx96q1riywdwefi3ltydm4no,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,75,2020-11-08,Man City,Liverpool,8bx96q1riywdwefi3ltydm4no,c8h9bw1l82s06h77xxrelzhur
+2020-21,77,2020-11-08,West Brom,Spurs,8c2sxnf5iclv6uikokrz36plg,22doj4sgsocqpxw45h607udje
+2020-21,79,2020-11-21,Aston Villa,Brighton,8c8iskmxjdb71jjnm9imm3gus,b496gs285it6bheuikox6z9mj
+2020-21,84,2020-11-21,Man Utd,West Brom,8cp5bf9f6a7kbm7q8fueu38yc,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,86,2020-11-22,Sheffield Utd,West Ham,8cuzx380desh7iq2ktz88wk5w,4txjdaqveermfryvbfrr4taf7
+2020-21,80,2020-11-23,Burnley,Crystal Palace,8cbagei451gzabqy538b8lp1w,64bxxwu2mv2qqlv0monbkj1om
+2020-21,88,2020-11-23,Wolves,Southampton,8d108hvgwi3jbuvpgficrttlg,b9si1jn1lfxfund69e9ogcu2n
+2020-21,88,2020-11-23,Wolves,Southampton,8d108hvgwi3jbuvpgficrttlg,d5ydtvt96bv7fq04yqm2w2632
+2020-21,90,2020-11-28,Brighton,Liverpool,8d6xe5bshdla541pe6wwthlw4,c8h9bw1l82s06h77xxrelzhur
+2020-21,90,2020-11-28,Brighton,Liverpool,8d6xe5bshdla541pe6wwthlw4,e5p0ehyguld7egzhiedpdnc3w
+2020-21,93,2020-11-28,Everton,Leeds,8dfiapsgdidp770a8bxpadkb8,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,97,2020-11-28,West Brom,Sheffield Utd,8dqcc7ddjq0gi0br7pbvq0vmc,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,89,2020-11-29,Arsenal,Wolves,8d3saepexz1gwapp3jqgzzb4k,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,94,2020-11-30,Leicester,Fulham,8di7nizphq03bxy6ecrpulct0,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,98,2020-11-30,West Ham,Aston Villa,8dt08jef9igzn3wo9edvf4g7o,b496gs285it6bheuikox6z9mj
+2020-21,101,2020-12-05,Burnley,Everton,,
+2020-21,100,2020-12-07,Brighton,Southampton,8e04gdm16yjodj2q3ygwo7z84,e5p0ehyguld7egzhiedpdnc3w
+2020-21,113,2020-12-11,Leeds,West Ham,8f0vzz2x1esg16ypfkipgkgt0,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,111,2020-12-12,Everton,Chelsea,8ev5hzuw5cbtiwd7z6t7heg44,ehd2iemqmschhj2ec0vayztzz
+2020-21,116,2020-12-12,Newcastle,West Brom,8falzw405wu152viwwz90qfpw,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,118,2020-12-12,Wolves,Aston Villa,8frz741hm2ih26ppbyhsk56vo,b496gs285it6bheuikox6z9mj
+2020-21,109,2020-12-13,Arsenal,Burnley,8epq4oek6276q6kjm95hqtgd0,64bxxwu2mv2qqlv0monbkj1om
+2020-21,110,2020-12-13,Crystal Palace,Spurs,8esfll1l8giddktnscx7aqln8,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,110,2020-12-13,Crystal Palace,Spurs,8esfll1l8giddktnscx7aqln8,22doj4sgsocqpxw45h607udje
+2020-21,112,2020-12-13,Fulham,Liverpool,8exy7x1rum461qqw8gh34lgd0,c8h9bw1l82s06h77xxrelzhur
+2020-21,112,2020-12-13,Fulham,Liverpool,8exy7x1rum461qqw8gh34lgd0,hzqh7z0mdl3v7gwete66syxp
+2020-21,126,2020-12-15,Wolves,Chelsea,8gfnqkcbq7od23yuupik5rb4k,9q0arba2kbnywth8bkxlhgmdr
+2020-21,128,2020-12-15,Man City,West Brom,8gm683pu0k6nol6ync6l6sc2c,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,128,2020-12-15,Man City,West Brom,8gm683pu0k6nol6ync6l6sc2c,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,119,2020-12-16,Arsenal,Southampton,8fv1xtvnn4pbbc6khit9wx3x0,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,119,2020-12-16,Arsenal,Southampton,8fv1xtvnn4pbbc6khit9wx3x0,d5ydtvt96bv7fq04yqm2w2632
+2020-21,125,2020-12-16,West Ham,Crystal Palace,8gcqv41zwy8a8xnpap7a7y3o4,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,125,2020-12-16,West Ham,Crystal Palace,8gcqv41zwy8a8xnpap7a7y3o4,4txjdaqveermfryvbfrr4taf7
+2020-21,127,2020-12-16,Liverpool,Spurs,8gj379vdfp8kra26z0x7cx9g4,22doj4sgsocqpxw45h607udje
+2020-21,133,2020-12-19,Everton,Arsenal,8h324do979rnm6r11ur1v7nkk,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,135,2020-12-19,Newcastle,Fulham,8h96b7u8ch6mdy95144crrw2c,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,135,2020-12-19,Newcastle,Fulham,8h96b7u8ch6mdy95144crrw2c,hzqh7z0mdl3v7gwete66syxp
+2020-21,136,2020-12-19,Southampton,Man City,8hc6luda1anbn40b2zw6zjwgk,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,129,2020-12-20,Brighton,Sheffield Utd,8gp8q3h4qqq4c3ez7krzf8r2s,bws31egwjda253q9lvykgnivo
+2020-21,129,2020-12-20,Brighton,Sheffield Utd,8gp8q3h4qqq4c3ez7krzf8r2s,e5p0ehyguld7egzhiedpdnc3w
+2020-21,130,2020-12-21,Burnley,Wolves,8gsdgyg1rgwoacsfagn8c6jv8,b9si1jn1lfxfund69e9ogcu2n
+2020-21,139,2020-12-26,Arsenal,Chelsea,8hn6qz7e6fp3z8eaut8vrbhuc,9q0arba2kbnywth8bkxlhgmdr
+2020-21,146,2020-12-26,Sheffield Utd,Everton,8i99eectk7f90wxb3w8pwsa38,ehd2iemqmschhj2ec0vayztzz
+2020-21,142,2020-12-27,Leeds,Burnley,8hwulo16ekctgsvccad04i6ms,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,144,2020-12-27,Liverpool,West Brom,8i2misf46satjv9sg37s4ig44,c8h9bw1l82s06h77xxrelzhur
+2020-21,144,2020-12-27,Liverpool,West Brom,8i2misf46satjv9sg37s4ig44,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,148,2020-12-27,Wolves,Spurs,8ihvgvc97zl01nfxwh10zg2z8,22doj4sgsocqpxw45h607udje
+2020-21,148,2020-12-27,Wolves,Spurs,8ihvgvc97zl01nfxwh10zg2z8,b9si1jn1lfxfund69e9ogcu2n
+2020-21,151,2020-12-28,Chelsea,Aston Villa,8irngfd6kgd1vfc6j5icd4ys4,9q0arba2kbnywth8bkxlhgmdr
+2020-21,151,2020-12-28,Chelsea,Aston Villa,8irngfd6kgd1vfc6j5icd4ys4,b496gs285it6bheuikox6z9mj
+2020-21,152,2020-12-28,Crystal Palace,Leicester,8iuvstqj527hy4dt6uohin9jo,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,152,2020-12-28,Crystal Palace,Leicester,8iuvstqj527hy4dt6uohin9jo,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,149,2020-12-29,Brighton,Arsenal,8il2dobwve477zmhla3yvyuj8,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,150,2020-12-29,Burnley,Sheffield Utd,8iogcczxpl4jw3coaarkbrw2c,64bxxwu2mv2qqlv0monbkj1om
+2020-21,154,2020-12-29,Man Utd,Wolves,8j1eajih88t23dtdujaqxb7ys,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,163,2021-01-01,Everton,West Ham,8juihiwitt3vctpr060xhivpw,4txjdaqveermfryvbfrr4taf7
+2020-21,164,2021-01-01,Man Utd,Aston Villa,8jxt85sqvsxlhjdk15dycy904,b496gs285it6bheuikox6z9mj
+2020-21,161,2021-01-03,Chelsea,Man City,8jobnl84s86y0zxac38tbgw7o,9q0arba2kbnywth8bkxlhgmdr
+2020-21,165,2021-01-03,Newcastle,Leicester,8k3h8bepmyl3x0i91zk7n6rys,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,166,2021-01-04,Southampton,Liverpool,8k6wtn5hn7whnxgbfvmkeuy38,d5ydtvt96bv7fq04yqm2w2632
+2020-21,174,2021-01-12,Sheffield Utd,Newcastle,8kyga41m1kxtb32eqzv5z5fro,bws31egwjda253q9lvykgnivo
+2020-21,176,2021-01-12,Wolves,Everton,8l4gfk9d8o7ig69uqa1ht8jkk,b9si1jn1lfxfund69e9ogcu2n
+2020-21,379,2021-01-12,Burnley,Man Utd,85l57jh7jxgumy8faimtcxe6s,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,157,2021-01-13,Spurs,Fulham,8jasp4kdu47r2f7ia6s0lehp0,22doj4sgsocqpxw45h607udje
+2020-21,157,2021-01-13,Spurs,Fulham,8jasp4kdu47r2f7ia6s0lehp0,hzqh7z0mdl3v7gwete66syxp
+2020-21,178,2021-01-13,Man City,Brighton,8larsy0w34ogwghxa05w20zkk,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,181,2021-01-16,Fulham,Chelsea,8ll9spnuf0bgh7id1irocq7tg,9q0arba2kbnywth8bkxlhgmdr
+2020-21,182,2021-01-16,Leeds,Brighton,8lnz0guy9bk89vmay64qoefis,e5p0ehyguld7egzhiedpdnc3w
+2020-21,187,2021-01-16,West Ham,Burnley,8m2d7g37yz161tort4str2238,4txjdaqveermfryvbfrr4taf7
+2020-21,186,2021-01-17,Sheffield Utd,Spurs,8lz5z72z9i28sgab4o58j65uc,bws31egwjda253q9lvykgnivo
+2020-21,175,2021-01-19,West Ham,West Brom,8l1evmb4ek177ps1cx1o4989g,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,171,2021-01-20,Fulham,Man Utd,8ko62nxaidv0b7nd28xn55dsk,hzqh7z0mdl3v7gwete66syxp
+2020-21,177,2021-01-21,Liverpool,Burnley,8l7m0h855mbh3h8wr5of0vhg4,64bxxwu2mv2qqlv0monbkj1om
+2020-21,196,2021-01-26,Newcastle,Leeds,8mti0cc18h7m2c5r8yhukd82c,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,197,2021-01-26,Southampton,Arsenal,8mwap7rbpm9i0cwytencrwjkk,d5ydtvt96bv7fq04yqm2w2632
+2020-21,191,2021-01-27,Everton,Leicester,8mewokvk91s79ttnykdz3osno,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,191,2021-01-27,Everton,Leicester,8mewokvk91s79ttnykdz3osno,ehd2iemqmschhj2ec0vayztzz
+2020-21,192,2021-01-27,Man Utd,Sheffield Utd,8mhqilq3lrmegziwwe1og2hp0,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,198,2021-01-28,Spurs,Liverpool,8n0nj9rjsmauh9lovp8usze38,22doj4sgsocqpxw45h607udje
+2020-21,202,2021-01-30,Crystal Palace,Wolves,8nck7o0ks8vtaya7ubp0pox04,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,205,2021-01-30,Man City,Sheffield Utd,8nlynk0d9kyg3qj3xphbtsc9g,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,206,2021-01-30,Southampton,Aston Villa,8npla1tr9adx9a6xvlbem72fo,b496gs285it6bheuikox6z9mj
+2020-21,200,2021-01-31,Brighton,Spurs,8n6p3obf13r8n3bqbohjq5vro,e5p0ehyguld7egzhiedpdnc3w
+2020-21,204,2021-01-31,Leicester,Leeds,8niuff2o39q1ldsvw11l77vh0,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,208,2021-01-31,West Ham,Liverpool,8nvrxiahma742rhpdv0pim1as,4txjdaqveermfryvbfrr4taf7
+2020-21,214,2021-02-02,Sheffield Utd,West Brom,8oftmfvgl9fsddl5hy5k5xpuc,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,215,2021-02-02,Wolves,Arsenal,8oik8w0paoc2f8fxqjpzaavx0,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,217,2021-02-02,Newcastle,Crystal Palace,8oofvno7mvu66mwoqwy12oxlg,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,209,2021-02-03,Aston Villa,West Ham,8nysssu7wsegh73cmvjxmnok4,b496gs285it6bheuikox6z9mj
+2020-21,212,2021-02-03,Leeds,Everton,8o8gykgcje3xyzah287jztpn8,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,216,2021-02-03,Liverpool,Brighton,8ole9r3ggm28oxl9q4faxnf9w,e5p0ehyguld7egzhiedpdnc3w
+2020-21,218,2021-02-04,Spurs,Chelsea,8orcn6piru30hbkn027i4dr10,9q0arba2kbnywth8bkxlhgmdr
+2020-21,219,2021-02-06,Aston Villa,Arsenal,8oucfkhja3fz7afy5dtgo7jf8,b496gs285it6bheuikox6z9mj
+2020-21,220,2021-02-06,Burnley,Brighton,8pbxdp5i665wk9ao2fj37byfo,64bxxwu2mv2qqlv0monbkj1om
+2020-21,220,2021-02-06,Burnley,Brighton,8pbxdp5i665wk9ao2fj37byfo,e5p0ehyguld7egzhiedpdnc3w
+2020-21,223,2021-02-07,Liverpool,Man City,8pklxiw6cxhrsclmhkpowm2hg,c8h9bw1l82s06h77xxrelzhur
+2020-21,226,2021-02-07,Sheffield Utd,Chelsea,8pus1ujnmdqmk3fgoneau5fys,bws31egwjda253q9lvykgnivo
+2020-21,234,2021-02-13,Leicester,Liverpool,8r121jcbgult2mcxryitcwc9g,c8h9bw1l82s06h77xxrelzhur
+2020-21,236,2021-02-14,Southampton,Wolves,8r6sct8snt1rerxnwsojgcp3o,d5ydtvt96bv7fq04yqm2w2632
+2020-21,237,2021-02-14,West Brom,Man Utd,8r9ngpzxq3hm9c8nq9sz369sk,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,237,2021-02-14,West Brom,Man Utd,8r9ngpzxq3hm9c8nq9sz369sk,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,153,2021-02-17,Everton,Man City,8iy4818td9vx9li8oeob20npw,ehd2iemqmschhj2ec0vayztzz
+2020-21,160,2021-02-17,Burnley,Fulham,8jkzryo22lv1m1wkba4suo6qc,64bxxwu2mv2qqlv0monbkj1om
+2020-21,160,2021-02-17,Burnley,Fulham,8jkzryo22lv1m1wkba4suo6qc,hzqh7z0mdl3v7gwete66syxp
+2020-21,248,2021-02-19,Wolves,Leeds,8s70gvkw88xrc8g8q7gocmm8k,b9si1jn1lfxfund69e9ogcu2n
+2020-21,243,2021-02-20,Fulham,Sheffield Utd,8rqolit26i0nei0tswuvj75ec,hzqh7z0mdl3v7gwete66syxp
+2020-21,246,2021-02-20,Southampton,Chelsea,8rzcs72xmd8nj8ikjvqlheej8,9q0arba2kbnywth8bkxlhgmdr
+2020-21,246,2021-02-20,Southampton,Chelsea,8rzcs72xmd8nj8ikjvqlheej8,d5ydtvt96bv7fq04yqm2w2632
+2020-21,239,2021-02-21,Arsenal,Man City,8rfaama93xl9oled2kb90d3bo,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,240,2021-02-21,Aston Villa,Leicester,8rhvy219wde5xt4lsfrompgk4,b496gs285it6bheuikox6z9mj
+2020-21,245,2021-02-21,Man Utd,Newcastle,8rwl98e3fu5t2huv3pey5ow7o,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,247,2021-02-21,West Ham,Spurs,8s3y7k70l9805d5hgm2n01zis,22doj4sgsocqpxw45h607udje
+2020-21,241,2021-02-22,Brighton,Crystal Palace,8rkov98sdzoxtixl39af8wo44,e5p0ehyguld7egzhiedpdnc3w
+2020-21,252,2021-02-27,Leeds,Aston Villa,8sight85qolm33bdv4m5yjehg,b496gs285it6bheuikox6z9mj
+2020-21,254,2021-02-27,Man City,West Ham,8so8es2dtwv6pvo5r7s2p4lck,4txjdaqveermfryvbfrr4taf7
+2020-21,255,2021-02-27,Newcastle,Wolves,8squ6xnpvgoathfrhv00mwkk4,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,255,2021-02-27,Newcastle,Wolves,8squ6xnpvgoathfrhv00mwkk4,b9si1jn1lfxfund69e9ogcu2n
+2020-21,258,2021-02-27,West Brom,Brighton,8szedy2mmx8avquhevm0sibdg,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,253,2021-02-28,Leicester,Arsenal,8sla0k8vb7hn7dgqiil434xlg,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,251,2021-03-01,Everton,Southampton,8sfnlvofyrcixd4h910f40k5w,ehd2iemqmschhj2ec0vayztzz
+2020-21,284,2021-03-02,Man City,Wolves,8vb22ixxlyjo9bvzv9mniz8yc,b9si1jn1lfxfund69e9ogcu2n
+2020-21,280,2021-03-03,Burnley,Leicester,8uy75iwkfh59xrcc450pskxec,64bxxwu2mv2qqlv0monbkj1om
+2020-21,280,2021-03-03,Burnley,Leicester,8uy75iwkfh59xrcc450pskxec,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,285,2021-03-03,Sheffield Utd,Aston Villa,8ve1wz6pxod0jtazl1xnjul90,bws31egwjda253q9lvykgnivo
+2020-21,283,2021-03-04,Liverpool,Chelsea,8v7qd10bi7qotshhfzrbulnv8,9q0arba2kbnywth8bkxlhgmdr
+2020-21,287,2021-03-04,West Brom,Everton,8vjxgtfo31yypwvyiv17da978,ehd2iemqmschhj2ec0vayztzz
+2020-21,321,2021-03-04,Fulham,Spurs,8yzbggwfnfv9oak64rrma5jx0,22doj4sgsocqpxw45h607udje
+2020-21,260,2021-03-06,Brighton,Leicester,8t5kwhfvu4j69jqmdzc7vmvx0,e5p0ehyguld7egzhiedpdnc3w
+2020-21,261,2021-03-06,Burnley,Arsenal,8t8cbacg9wafir561w0f51fkk,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,261,2021-03-06,Burnley,Arsenal,8t8cbacg9wafir561w0f51fkk,64bxxwu2mv2qqlv0monbkj1om
+2020-21,263,2021-03-07,Liverpool,Fulham,8teekvxiif7047goj1p3c6b6c,hzqh7z0mdl3v7gwete66syxp
+2020-21,266,2021-03-07,Spurs,Crystal Palace,8tpianitmdn8eyv62wehm5uz8,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,276,2021-03-12,Newcastle,Aston Villa,8ulccnddtzg7pyt569o6g5s7o,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,276,2021-03-12,Newcastle,Aston Villa,8ulccnddtzg7pyt569o6g5s7o,b496gs285it6bheuikox6z9mj
+2020-21,270,2021-03-13,Crystal Palace,West Brom,8u29hstrt8dpyaft98d7s9n9w,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,271,2021-03-13,Everton,Burnley,8u4xx1ah69vo22vf76sy5dhck,ehd2iemqmschhj2ec0vayztzz
+2020-21,269,2021-03-14,Arsenal,Spurs,8tyqzb9qkhmt45v2yggvigaac,22doj4sgsocqpxw45h607udje
+2020-21,275,2021-03-14,Man Utd,West Ham,8uihew3fhey3xba5lo1spz6s4,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,277,2021-03-14,Southampton,Brighton,8uo1x834xd15mxh5obp0vuuqc,d5ydtvt96bv7fq04yqm2w2632
+2020-21,278,2021-03-15,Wolves,Liverpool,8uqqwq272q9jpf0psmgy5iqz8,c8h9bw1l82s06h77xxrelzhur
+2020-21,282,2021-03-19,Fulham,Leeds,8v4b05qr3kxsech2cuhpmsljo,hzqh7z0mdl3v7gwete66syxp
+2020-21,293,2021-04-03,Leeds,Sheffield Utd,8w2f9zoywh17561puz4e9tp90,bws31egwjda253q9lvykgnivo
+2020-21,290,2021-04-04,Aston Villa,Fulham,8vt024t4x9anrqd8vkgh68kyc,hzqh7z0mdl3v7gwete66syxp
+2020-21,295,2021-04-04,Man Utd,Brighton,8w8dwthw16ufzybo1lz851hxw,e5p0ehyguld7egzhiedpdnc3w
+2020-21,292,2021-04-05,Everton,Crystal Palace,8vz9x7993bo0u9r622n3yzv2s,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,292,2021-04-05,Everton,Crystal Palace,8vz9x7993bo0u9r622n3yzv2s,ehd2iemqmschhj2ec0vayztzz
+2020-21,302,2021-04-09,Fulham,Wolves,8wx7jtmbadrlmywbpyncbsf10,b9si1jn1lfxfund69e9ogcu2n
+2020-21,301,2021-04-10,Crystal Palace,Chelsea,8wu037c2vpbttiny6a64quvpw,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,303,2021-04-10,Liverpool,Aston Villa,8x0dlpw075jbm3om4ilhpr6dw,b496gs285it6bheuikox6z9mj
+2020-21,304,2021-04-10,Man City,Leeds,8x3r5a1cwdmrwcp369ameb8k4,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,300,2021-04-11,Burnley,Newcastle,8wqsupkwktmuch42ukuk2qg44,64bxxwu2mv2qqlv0monbkj1om
+2020-21,306,2021-04-11,Spurs,Man Utd,8xae0i3s1bk4qp8fas3e11dzo,22doj4sgsocqpxw45h607udje
+2020-21,318,2021-04-17,Wolves,Sheffield Utd,8yqjucctkuabs58b9odaxf66s,b9si1jn1lfxfund69e9ogcu2n
+2020-21,309,2021-04-18,Arsenal,Fulham,8xl1kpoitutl04wsovyjr2gb8,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,309,2021-04-18,Arsenal,Fulham,8xl1kpoitutl04wsovyjr2gb8,hzqh7z0mdl3v7gwete66syxp
+2020-21,315,2021-04-18,Man Utd,Burnley,8yhgzu9ccs9yrud5oi5c7w4k4,64bxxwu2mv2qqlv0monbkj1om
+2020-21,313,2021-04-19,Leeds,Liverpool,8xz3wjdpa6g4br9nxbw658h78,48gk2hpqtsl6p9sx9kjhaydq4
+2020-21,313,2021-04-19,Leeds,Liverpool,8xz3wjdpa6g4br9nxbw658h78,c8h9bw1l82s06h77xxrelzhur
+2020-21,286,2021-04-21,Spurs,Southampton,8vh1l9iyhr16r4v2qalx3z0us,d5ydtvt96bv7fq04yqm2w2632
+2020-21,310,2021-04-21,Aston Villa,Man City,8xondjdc5tiq3c378294ebpxw,b496gs285it6bheuikox6z9mj
+2020-21,319,2021-04-23,Arsenal,Everton,8ytfcjyxkhtk3j5m7ceshwopg,ehd2iemqmschhj2ec0vayztzz
+2020-21,324,2021-04-24,Liverpool,Newcastle,8z8zs4e3aidlxt83iezxzi61g,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,324,2021-04-24,Liverpool,Newcastle,8z8zs4e3aidlxt83iezxzi61g,c8h9bw1l82s06h77xxrelzhur
+2020-21,326,2021-04-24,Sheffield Utd,Brighton,8zt4zbdqjtt78m8gkhh2f82l0,bws31egwjda253q9lvykgnivo
+2020-21,327,2021-04-24,West Ham,Chelsea,8zw2lm0nsccibhbw7ub5a5r10,9q0arba2kbnywth8bkxlhgmdr
+2020-21,323,2021-04-26,Leicester,Crystal Palace,8z5wnuksp72peq7hnvydvxtec,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,336,2021-04-30,Southampton,Leicester,90oidlnx5vdaqho712pr84r2s,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,336,2021-04-30,Southampton,Leicester,90oidlnx5vdaqho712pr84r2s,d5ydtvt96bv7fq04yqm2w2632
+2020-21,333,2021-05-01,Everton,Aston Villa,90fv6l0qcjxj8hbbeb21i6xp0,ehd2iemqmschhj2ec0vayztzz
+2020-21,330,2021-05-03,Burnley,West Ham,9078c67ntp4f882civptub9ck,64bxxwu2mv2qqlv0monbkj1om
+2020-21,338,2021-05-03,West Brom,Wolves,90tyuza53vbtl50axpwwpiolw,b9si1jn1lfxfund69e9ogcu2n
+2020-21,338,2021-05-03,West Brom,Wolves,90tyuza53vbtl50axpwwpiolw,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,342,2021-05-08,Leeds,Spurs,914ytust1zl3k2w7jmlejnxuc,22doj4sgsocqpxw45h607udje
+2020-21,345,2021-05-08,Man City,Chelsea,91d9e5yjzdq68xxc0b6x5fyms,a3nyxabgsqlnqfkeg41m6tnpp
+2020-21,339,2021-05-09,Arsenal,West Brom,90wo05g7b3njstki68x99eg44,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,340,2021-05-09,Aston Villa,Man Utd,90zeymqh7qoq5p4ng6i3cj7ro,b496gs285it6bheuikox6z9mj
+2020-21,347,2021-05-09,West Ham,Everton,91kp8b52t3bzyw7phix63kc9g,ehd2iemqmschhj2ec0vayztzz
+2020-21,348,2021-05-09,Wolves,Brighton,91nbf2whoy71yi8exmi8rwd90,e5p0ehyguld7egzhiedpdnc3w
+2020-21,317,2021-05-11,Southampton,Crystal Palace,8ync6qq0pvhkh4l2s7aac7ndg,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,352,2021-05-11,Man Utd,Leicester,91yguyth56xe1lzbbksmbs3ys,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,354,2021-05-12,Chelsea,Arsenal,924cxv9h5ruw5b03j714cp2qc,4dsgumo7d4zupm2ugsvm4zm4d
+2020-21,349,2021-05-15,Brighton,West Ham,91q1t7h6wug5lakvlorrrnlzo,4txjdaqveermfryvbfrr4taf7
+2020-21,349,2021-05-15,Brighton,West Ham,91q1t7h6wug5lakvlorrrnlzo,e5p0ehyguld7egzhiedpdnc3w
+2020-21,357,2021-05-15,Southampton,Fulham,92d1uvr196wvkicyliwnhdtzo,hzqh7z0mdl3v7gwete66syxp
+2020-21,351,2021-05-16,Everton,Sheffield Utd,91vm60lxgyil3d9glzt3moil0,bws31egwjda253q9lvykgnivo
+2020-21,353,2021-05-16,West Brom,Liverpool,921d4x7qm77l9ut4zj8r9oob8,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,361,2021-05-18,Chelsea,Leicester,92oxo60xli89lp9yri0fdokd0,avxknfz4f6ob0rv9dbnxdzde0
+2020-21,364,2021-05-18,Man Utd,Fulham,92zryqpa78an2cso853hyz7dg,6eqit8ye8aomdsrrq0hk3v7gh
+2020-21,364,2021-05-18,Man Utd,Fulham,92zryqpa78an2cso853hyz7dg,hzqh7z0mdl3v7gwete66syxp
+2020-21,362,2021-05-19,Crystal Palace,Arsenal,92ry2mls27uklyklopuyari1g,1c8m2ko0wxq1asfkuykurdr0y
+2020-21,363,2021-05-19,Everton,Wolves,92wux013k51iava6p1sbp9u6s,ehd2iemqmschhj2ec0vayztzz
+2020-21,365,2021-05-19,Newcastle,Sheffield Utd,932jvr2snsjdqzudtljj806qc,7vn2i2kd35zuetw6b38gw9jsz
+2020-21,367,2021-05-19,Spurs,Aston Villa,9384ql2cwwebn3f7qkc4eymtw,22doj4sgsocqpxw45h607udje
+2020-21,368,2021-05-19,West Brom,West Ham,93b18gy73zix533q9xsn1vh90,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,370,2021-05-23,Aston Villa,Chelsea,93sqypfob8tgj9oyvruvpg8wk,9q0arba2kbnywth8bkxlhgmdr
+2020-21,372,2021-05-23,Leeds,West Brom,93yyt4tt8wjkg3slit13hgn4k,d1lhefp805y0rcbjqkpu4fq0n
+2020-21,376,2021-05-23,Sheffield Utd,Burnley,94akitj64s870u324gpxkdc0k,bws31egwjda253q9lvykgnivo
+2020-21,378,2021-05-23,Wolves,Man Utd,94gjjs7zfy8yuwuqvwo9jq2hg,b9si1jn1lfxfund69e9ogcu2n

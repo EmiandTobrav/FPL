@@ -1,0 +1,77 @@
+{
+  "equal_outputs": 27,
+  "logs": [
+    {
+      "script": "match_inventory_recovery/predict.py",
+      "exit_code": 0,
+      "stdout": "Predictions 6404\n",
+      "stderr": ""
+    },
+    {
+      "script": "match_inventory_recovery/validate.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"regression_comparisons\": 395,\n  \"regression_errors\": 0,\n  \"all_known_comparisons\": 395,\n  \"all_known_errors\": 0,\n  \"qualified\": true,\n  \"limits\": \"Additional exact conservation gate; event rule unchanged. Later-season regression previously seen by v2 audit, not independent holdout.\"\n}\nNew tackle fields 1868\n",
+      "stderr": ""
+    },
+    {
+      "script": "assist_null_pass_recovery/prepare.py",
+      "exit_code": 0,
+      "stdout": "                 match_id                   team_id  goals  new_null\n8hiox9rdanftu28jrlik2bp5g b496gs285it6bheuikox6z9mj      3         1\n8krz71xpnqdib94zg927ounf8 48gk2hpqtsl6p9sx9kjhaydq4      3         1\n8kvlei0acyqat33xups9cpxjo avxknfz4f6ob0rv9dbnxdzde0      2         1\n8lduqsrc9gwq3gfbl2s1ohyqc 4dsgumo7d4zupm2ugsvm4zm4d      3         1\n8utnp5qqsqru5wccujolxk3ys e5p0ehyguld7egzhiedpdnc3w      3         2\n",
+      "stderr": ""
+    },
+    {
+      "script": "assist_null_pass_recovery/validate.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"previous_single_goal_null_checks\": 14,\n  \"new_team_vectors\": 5,\n  \"new_goal_occurrences\": 6,\n  \"total_goal_occurrences\": 20,\n  \"new_player_comparisons\": 67,\n  \"new_vector_errors\": 0,\n  \"qualified\": true,\n  \"limits\": \"20 goal occurrences across19 team vectors; two new awards share one vector and are not individually identified by match totals. Temporal/shared-source regression evidence, not independent provider validation.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "assist_null_pass_recovery/build.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"new_goal_awards\": 154,\n  \"new_complete_assist_fields\": 99,\n  \"new_zero_values\": 0,\n  \"new_positive_values\": 99,\n  \"changed_from_historical_fpl\": 0,\n  \"previously_complete_assists_preserved\": 56136,\n  \"validation\": {\n    \"previous_single_goal_null_checks\": 14,\n    \"new_team_vectors\": 5,\n    \"new_goal_occurrences\": 6,\n    \"total_goal_occurrences\": 20,\n    \"new_player_comparisons\": 67,\n    \"new_vector_errors\": 0,\n    \"qualified\": true,\n    \"limits\": \"20 goal occurrences across19 team vectors; two new awards share one vector and are not individually identified by match totals. Temporal/shared-source regression evidence, not independent provider validation.\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "assist_actor_bounds/predict.py",
+      "exit_code": 0,
+      "stdout": "season   kind                          \n2019-20  linked_ATTEMPT_SAVED_actor_set     1\n         linked_OWN_GOAL_actor_set          2\n         linked_PASS_LOST_actor_set         2\n         pass210_actor_set                 19\n2020-21  linked_BLOCKED_SHOT_actor_set      1\n         linked_OWN_GOAL_actor_set          7\n         linked_PASS_LOST_actor_set         1\n         pass210_actor_set                 19\n2021-22  linked_ATTEMPT_SAVED_actor_set     3\n         linked_BLOCKED_SHOT_actor_set      1\n         linked_OWN_GOAL_actor_set          4\n         pass210_actor_set                  7\n2022-23  linked_ATTEMPT_SAVED_actor_set     1\n         linked_BLOCKED_SHOT_actor_set      2\n         linked_OWN_GOAL_actor_set          2\n         linked_PASS_LOST_actor_set         2\n         pass210_actor_set                  8\n2023-24  linked_ATTEMPT_SAVED_actor_set     1\n         linked_BLOCKED_SHOT_actor_set      3\n         linked_OWN_GOAL_actor_set          3\n         pass210_actor_set                  7\n2024-25  linked_ATTEMPT_SAVED_actor_set     2\n         linked_OWN_GOAL_actor_set          3\n         pass210_actor_set                  4\n2025-26  linked_OWN_GOAL_actor_set          6\n         linked_PASS_LOST_actor_set        15\n         linked_POST_actor_set              1\n         pass210_actor_set                 13\n",
+      "stderr": ""
+    },
+    {
+      "script": "assist_actor_bounds/validate.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"teams\": 566,\n  \"fixtures\": 353,\n  \"infeasible_teams\": 0,\n  \"single_goal_checks\": 7,\n  \"single_goal_errors\": 0,\n  \"new_bound_controls\": {\n    \"linked_PASS_LOST_actor_set\": 12,\n    \"pass210_actor_set\": 8,\n    \"linked_OWN_GOAL_actor_set\": 6,\n    \"linked_POST_actor_set\": 1\n  },\n  \"protected_conflicts\": 0,\n  \"qualified_kinds\": [\n    \"linked_PASS_LOST_actor_set\",\n    \"pass210_actor_set\",\n    \"linked_OWN_GOAL_actor_set\"\n  ],\n  \"limits\": \"Temporal regression with previously seen2025 outcomes and sharedOpta source, not independent validation. Candidate exclusions only.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "assist_actor_bounds/build.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"new_bound_goals\": 90,\n  \"new_candidate_exclusions\": 1084,\n  \"new_assist_fields_including_null_pass\": 856,\n  \"additional_assist_fields\": 757,\n  \"zero_values\": 725,\n  \"positive_values\": 131,\n  \"different_from_historical_fpl\": 0,\n  \"validation\": {\n    \"teams\": 566,\n    \"fixtures\": 353,\n    \"infeasible_teams\": 0,\n    \"single_goal_checks\": 7,\n    \"single_goal_errors\": 0,\n    \"new_bound_controls\": {\n      \"linked_PASS_LOST_actor_set\": 12,\n      \"pass210_actor_set\": 8,\n      \"linked_OWN_GOAL_actor_set\": 6,\n      \"linked_POST_actor_set\": 1\n    },\n    \"protected_conflicts\": 0,\n    \"qualified_kinds\": [\n      \"linked_PASS_LOST_actor_set\",\n      \"pass210_actor_set\",\n      \"linked_OWN_GOAL_actor_set\"\n    ],\n    \"limits\": \"Temporal regression with previously seen2025 outcomes and sharedOpta source, not independent validation. Candidate exclusions only.\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "bulk_followup/build.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"previous_open_fields\": 31658,\n  \"new_fields\": 2724,\n  \"reduction_percent\": 8.604460168045991,\n  \"by_field\": {\n    \"times_tackled\": 1868,\n    \"assists_2026_27\": 856\n  },\n  \"unique_player_matches_with_new_fields\": 2709,\n  \"open_fields\": 28934,\n  \"unique_affected_player_matches\": 24716,\n  \"complete_player_matches\": 52564,\n  \"new_complete_player_matches\": 1850,\n  \"complete_matches\": 479,\n  \"new_complete_matches\": 11,\n  \"protected_rows_unchanged\": true,\n  \"raw_fpl_unchanged\": true,\n  \"scoring_qualified\": false,\n  \"published\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "tests": "match_inventory_recovery",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_exact (test_conservation.ConservationTests.test_exact) ... ok\ntest_explicit_zero_empty (test_conservation.ConservationTests.test_explicit_zero_empty) ... ok\ntest_fractional_player (test_conservation.ConservationTests.test_fractional_player) ... ok\ntest_fractional_total (test_conservation.ConservationTests.test_fractional_total) ... ok\ntest_missing_not_zero (test_conservation.ConservationTests.test_missing_not_zero) ... ok\ntest_nan_not_zero (test_conservation.ConservationTests.test_nan_not_zero) ... ok\ntest_negative_player (test_conservation.ConservationTests.test_negative_player) ... ok\ntest_negative_residual (test_conservation.ConservationTests.test_negative_residual) ... ok\ntest_negative_total (test_conservation.ConservationTests.test_negative_total) ... ok\ntest_positive_residual (test_conservation.ConservationTests.test_positive_residual) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "tests": "assist_actor_bounds",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_absent_marker_blocks (test_certificates.ActorTests.test_absent_marker_blocks) ... ok\ntest_admin_does_not_add_actor (test_certificates.ActorTests.test_admin_does_not_add_actor) ... ok\ntest_bad_identity_blocks (test_certificates.ActorTests.test_bad_identity_blocks) ... ok\ntest_direct_set_piece_blocked (test_certificates.ActorTests.test_direct_set_piece_blocked) ... ok\ntest_duplicate_pass_blocks (test_certificates.ActorTests.test_duplicate_pass_blocks) ... ok\ntest_missing_player_blocks (test_certificates.ActorTests.test_missing_player_blocks) ... ok\ntest_missing_team_blocks (test_certificates.ActorTests.test_missing_team_blocks) ... ok\ntest_no_award (test_certificates.ActorTests.test_no_award) ... ok\ntest_non_goal_shot_marker_blocks (test_certificates.ActorTests.test_non_goal_shot_marker_blocks) ... ok\ntest_null_marker_positive (test_certificates.ActorTests.test_null_marker_positive) ... ok\ntest_opponent_not_candidate (test_certificates.ActorTests.test_opponent_not_candidate) ... ok\ntest_own_goal_actor_retained (test_certificates.ActorTests.test_own_goal_actor_retained) ... ok\ntest_period_isolation (test_certificates.ActorTests.test_period_isolation) ... ok\ntest_scorer_excluded (test_certificates.ActorTests.test_scorer_excluded) ... ok\ntest_union_includes_other_actor (test_certificates.ActorTests.test_union_includes_other_actor) ... ok\ntest_window (test_certificates.ActorTests.test_window) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.037s\n\nOK\n"
+    },
+    {
+      "script": "bulk_followup/diagnose.py",
+      "exit_code": 0,
+      "stdout": "{'individual_inventory_not_proven': 2, 'missing_archive_or_player_identity': 559, 'opponent_whole_tackle_inventory_unqualified': 221, 'protected_explicit_conflict': 1, 'smother_subtype_not_qualified': 2, 'unpaired_failed_takeon_or_dispossession': 908}\n",
+      "stderr": ""
+    }
+  ]
+}

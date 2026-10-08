@@ -1,0 +1,2523 @@
+{
+  "baseline_commit": "5a68098541997eb0ff890998624d0e2f6aac85cb",
+  "snapshot_date": "2026-10-08",
+  "logical_original_snapshot_files": 399,
+  "original_gzip_files_restored_from_parts": 2,
+  "physical_files": 419,
+  "files": [
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/build.py",
+      "size": 4422,
+      "sha": "8372527b4059f66d3057d2b78f60633684319e53",
+      "sha256": "453adcc03d10e676e3bf7bd88d90db5dab9ff536622185b80da52d89344ff5f5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/certificates.py",
+      "size": 2719,
+      "sha": "654f8ba61d53e025450a77258fb7a4624b2bf80c",
+      "sha256": "cc0c9b9cc7fa4d0d86609a08d60b8cc6caeb79a1a7edf5579d31015723056b17"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/freeze.json",
+      "size": 1046,
+      "sha": "dbde32aea6708916fa2688f993feb88e5cc955f2",
+      "sha256": "4def71cd15b1ed770403895be20f273e4443148ccc6dcea4894ff98140a6cd28"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/predict.py",
+      "size": 1980,
+      "sha": "1801ac50713397881ece65a2140e9522eef8e6f1",
+      "sha256": "1d19c26571e191003108934d3e9b4613ca04715523f6b912d994484b28fada43"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/predictions.csv.gz",
+      "size": 9730,
+      "sha": "913e24b0ffdd801d8f915980859f80200348cd3a",
+      "sha256": "66a4eaa65339f4d82308021345794d6a1c33ae2969087d30526457027905ed9f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/protected_conflicts.csv",
+      "size": 33,
+      "sha": "3d3f487a1a0693238a63a04adaa24bb09a550d2d",
+      "sha256": "62814eb84086c490c6d890ce6e48b220b0e99cac0b04c03bf0a0828d3cf90d7d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/protocol.json",
+      "size": 1651,
+      "sha": "9f7bfe1da67c9e667e4298870496b3a3c3322df2",
+      "sha256": "64d38b6b2335edc4e66fe2f0f8d31d3ab5f4156cce75815a72c407d33b220344"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/results/applied_bounds.csv",
+      "size": 16375,
+      "sha": "b9a4c9485e8b94d63b8e6ea30cd7e4a082a4150d",
+      "sha256": "c52e943b2f5daa5359c6f1d3ac6947b4356f68e876265c95eb61f8f7346977f2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/results/candidate_exclusions.csv.gz",
+      "size": 332007,
+      "sha": "974c9ab8a4894d6adf12c48694926b4fcebd4062",
+      "sha256": "e390f00f9f8ca0d2c1a8a5549909e25800ee4c72b42da77a221d4104a5ff916a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/results/goal_decisions.csv.gz",
+      "size": 328603,
+      "sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9",
+      "sha256": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/results/new_candidate_exclusions.csv.gz",
+      "size": 20438,
+      "sha": "3059bbc2ffb73fc7a546cfe219b6c171942715af",
+      "sha256": "9384d69582454f016ca04a29128bc0e4672eac8e2c39e612c8ef3f03ac01b623"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/results/overlay.csv.gz",
+      "size": 27494,
+      "sha": "ae4934c631f6ea77f4cb539dccd95c299990c16e",
+      "sha256": "42dab538299002e83c31c696a19a89468491681cbd79fbe1cad0154a5c1c1d55"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/results/player_match_totals.csv.gz",
+      "size": 2516255,
+      "sha": "f9080bcf5f2162350401fc9d2d0c5aab1e81e338",
+      "sha256": "f5ac96715893af3910a4791f7f3c3dde057970c8125b515bbc68385b46af1da9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/results/summary.json",
+      "size": 863,
+      "sha": "a7ed536309440a92d1c21423fd636ea9b54a7a05",
+      "sha256": "d56ed8e77971f5c8c14965aadda0d3c9eb6661b0871d3bf131b752dc6ecc99e8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/single_goal_controls.csv",
+      "size": 763,
+      "sha": "6dd5037f2b9d906a11c652eb45434e5ef8cfd78f",
+      "sha256": "9c661469e080cc9b4f5de81c6e7fbdd30eae1d00c766b9595481f58a3b788055"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/test_certificates.py",
+      "size": 3022,
+      "sha": "2046758a5d29e816f98bb4e58822ba4678cceaf1",
+      "sha256": "a0269243ece264c35ad1443975899a73170c55ca8a2db3b67e8b80d6d58311dc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/validate.py",
+      "size": 3068,
+      "sha": "409b885fea938320aa1f9185b2f9d3f0e3385ed1",
+      "sha256": "34d5b6febd804cd77177b4cfc7fa0d0599b49745cde51635ce1a5a1921922df7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/validation_plan.csv",
+      "size": 52847,
+      "sha": "6e28e98dc37be76319dd4cd915d8e043c669d553",
+      "sha256": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/validation_summary.json",
+      "size": 575,
+      "sha": "36a9f68865bb69122aac8eaf85b46fdb0e5c4a53",
+      "sha256": "00d6efa6f361152cad6d5a0a9b89b88bb7d35f14a3d85c75c1a8223b804e3bed"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_actor_bounds/vector_controls.csv",
+      "size": 55686,
+      "sha": "ebd17f42a5d207350f5ef46139d1c1fae20977c4",
+      "sha256": "d022e77280e4a02f28c1fa7d729babfc63620accf3062c75095e322b657d58b0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_candidate_bounds/validate.py",
+      "size": 3181,
+      "sha": "8667fe0babe35cadf43ef046b5dcaca4fe8a871b",
+      "sha256": "d56240ecb2e1adb321bad32650db9e2d0e92bb99a5181363cd3a0117899f0eb8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/bound_control_plan.csv",
+      "size": 52847,
+      "sha": "6e28e98dc37be76319dd4cd915d8e043c669d553",
+      "sha256": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/certificates.py",
+      "size": 3159,
+      "sha": "c2d3ef138305969584cb546ef283a3b9189b32ca",
+      "sha256": "87062f6d8f1ac17b84f36539d573b458afba0d49801dfc2dc74d436c43399c73"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/direct_control_plan.csv",
+      "size": 23024,
+      "sha": "b9977b388f8fd0ff8648a998b60735f025b4cb79",
+      "sha256": "29e6d14b5745e785360fa1b27ea89d55ae1dca9d09ecd2787eb69a79f629de76"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/direct_validation.csv",
+      "size": 16141,
+      "sha": "2bab389fa66a391f69bfd4d29db1731733a1b7dd",
+      "sha256": "1d1fbcee083ba35e896d7bb3ad3642847105c7dd820fadc12050d66e0e12fc69"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/predict.py",
+      "size": 1848,
+      "sha": "ca3e257eb95a8a8172f6224bab2f1820a56ac79e",
+      "sha256": "297d071ca34562e97a5d430dac8bbd27838e520b232bee61cd0388bc694eeb6d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/prediction_freeze.json",
+      "size": 1213,
+      "sha": "ee5056634336cef023be22cb88074eae52dbd6b1",
+      "sha256": "b7df645174e09a8b62c5e73715b28219d50fa9ae9f33a663e500d34b16460bed"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/predictions.csv.gz",
+      "size": 155140,
+      "sha": "a92d55876b81cd7cde1ec500a88353b3c211cb50",
+      "sha256": "ef28f285b7c3710e3f1948958f9925ef6e7b283cda978c87f8ffcded7da6727d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/protocol.json",
+      "size": 1689,
+      "sha": "c3bc7c4c5cd8dbbabd43ca5636306fa716526c38",
+      "sha256": "62bfe0c5f11069badd642abe95661d11d055c08837ea42e41bc0a842876248c6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/results/candidate_exclusions.csv.gz",
+      "size": 310593,
+      "sha": "d7b2bdd3c38b0e17a0d00503197a08fdba8bb238",
+      "sha256": "4f01e9719cb4bf702fe0087231dcc1e5e821f75d8c4f3bc8537f01cc63ebade1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_certificate_expansion/validation_summary.json",
+      "size": 964,
+      "sha": "682fc042c7286fb375b2a23a880bf4b70b0a1592",
+      "sha256": "7638ee833a6622a9d374c049e15d621b2bd2eca8c4f2a09b84a76f36b5a39971"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/baseline/build.py",
+      "size": 14683,
+      "sha": "10d47fbe62a9e1d75c6acb36cbbe933ee593751c",
+      "sha256": "71cda99719d61117ab406b09b401c267729c3b440e72e12b8bf647d61b82d15c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/baseline/fpl_baseline.csv.gz",
+      "size": 1299297,
+      "sha": "78165bb40d1ba6aa0aa88deb1ba0aa198661399f",
+      "sha256": "94c9a6196357dd3b26fa807db051d23aa24b64a70e7e3c6c6e7913e5e61c71b7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/goal_episodes.csv.gz",
+      "size": 10797178,
+      "sha": "15d67d7bf43eb077ab242112307040eeb0dff8d9",
+      "sha256": "67384c4c3f5fbb40b08ea76080e12cdfb6e7e255dd9a080d30a887dd9d9afb85"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/goals.csv.gz",
+      "size": 829230,
+      "sha": "1ddce979f3e8f364e2d4e9e9a4b8f22235f91b4d",
+      "sha256": "5ec75ccc56da3827fc8f30271d997011578ae360a6d6b0b14e762046807f977e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/official_cases.json",
+      "size": 4988,
+      "sha": "79be869ce20a6fe7361af90cd9b161e388411a4b",
+      "sha256": "03906e1af7c8ce7c495afde67e44ec8c959194aa7fe060e316945a93205e6920"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/participants.csv.gz",
+      "size": 2414042,
+      "sha": "db7f894657d142c9d4acb8e53ce4efc19612529a",
+      "sha256": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/results/team_coverage.csv",
+      "size": 311187,
+      "sha": "d8fb4f52ea536d73a7479f9703742228b85e8cc3",
+      "sha256": "c2afcb1177dac5a370936d6a76f5e64920984e914eace64ecdb2ffa05be13713"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/rules.py",
+      "size": 4506,
+      "sha": "0be9d99db5d7a4303da900d179aacb7657670fce",
+      "sha256": "30f9509ee2ea720b057d4e4547a2adc4a0ca361b07b9251168ee901b95b89340"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/build.py",
+      "size": 4665,
+      "sha": "73a73dff9f1cd5fea12a33b78d0fc9c047a2f4e8",
+      "sha256": "ad14545f08621b570fb293ea0521a8fac4e6484db8716ebb8fa614fc16565228"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/control_comparisons.csv",
+      "size": 5877,
+      "sha": "7a9bd245d46785fb40842996e53813b595427b0c",
+      "sha256": "2e16c0bb21f33eda4f5d627109aca1b9679565ad586990e34007e411f36f4619"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/control_plan.csv",
+      "size": 312,
+      "sha": "4265149cc1979dee51b066a38e5ad44d793a5081",
+      "sha256": "741d7cc8b8c601aa84d1cec8ac9647b7c1dcd20367aa371179d2d9e157765f46"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/control_predictions.csv",
+      "size": 1395,
+      "sha": "cac58fd6a56bc83e96e83735c41c1c78133429b1",
+      "sha256": "2ba690baa20661e1957febdc6ae9c7cfa530ff541cedd488ae285c1f3adf8fa3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/control_vectors.csv",
+      "size": 329,
+      "sha": "d39556d880f55eeb4b77cf4b515240bbd048b073",
+      "sha256": "7f4d9339d7c066b4982beb6a1db5ac98b2c291012a9b6de44118b51b4bb9c367"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/freeze.json",
+      "size": 1085,
+      "sha": "2e28c5807c316bea5f9f7c27be565cffea534a4d",
+      "sha256": "440bcbf88aa0dcf0c60ef26a1131312354a8e8f492607d6faf9426ba96dc865e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/prepare.py",
+      "size": 3692,
+      "sha": "26d29b5d19be8f8ef29ea0130326c886ba9fa346",
+      "sha256": "4e4f4c7354fcc646cc14ea45801b022c5bfaaf68f29d4b99375ffa5de59cb3c7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/protocol.json",
+      "size": 1175,
+      "sha": "995a3128aa744638af22b673c1a0ac9b3f9cafe1",
+      "sha256": "33dce5e01dedb043199af14e530b849d078a9328dc5ea7cd36e2d4fde4ea3dcf"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/results/candidate_exclusions.csv.gz",
+      "size": 310593,
+      "sha": "d7b2bdd3c38b0e17a0d00503197a08fdba8bb238",
+      "sha256": "4f01e9719cb4bf702fe0087231dcc1e5e821f75d8c4f3bc8537f01cc63ebade1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/results/goal_decisions.csv.gz",
+      "size": 328603,
+      "sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9",
+      "sha256": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/results/new_goal_awards.csv",
+      "size": 59900,
+      "sha": "75dd16693bae017852ae92d85a03760caba92045",
+      "sha256": "dda428fb442d222bd0577f8f4e8f6e66b625c7dc328ceb5c202dddf3f45f3e0c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/results/overlay.csv.gz",
+      "size": 5672,
+      "sha": "5ef18a9234352e9c3259863e81df61b1735ae2ec",
+      "sha256": "cf73ff61c34012f248c4fc7ff373ec4523e9de5e6476e0d47a25f9f8af1128f8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/results/player_match_totals.csv.gz",
+      "size": 2516229,
+      "sha": "1bfbd7d62d7407418323b06963cef9dbd2ee21f0",
+      "sha256": "2fdacfb25145915b7631690eebda12fb4bf280682d01b6c0f49525146b3d28d7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/results/summary.json",
+      "size": 673,
+      "sha": "deb1d217cc5f573d435831f6ad4671b1f3a2e480",
+      "sha256": "c92c57297a455529bf5bf5f2244cc3131535c30412394e6802bc4f8428d42d95"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/validate.py",
+      "size": 2437,
+      "sha": "22e3db84ae2caea6d774379050aa992306279b80",
+      "sha256": "cca8408649d177b934bdc8c5e5f3dc20279bef8c2daf59002aaa0b1acd1c7fb7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_null_pass_recovery/validation_summary.json",
+      "size": 434,
+      "sha": "53128ef91bd473114e96fb0eebd70241e2139d5f",
+      "sha256": "e8f762072c1b5d3b347d7df7d4834473a4b28dff2e6fcb07d1d890df96d3f845"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_team_identity/inputs/team_identity.csv",
+      "size": 6856,
+      "sha": "4987c5a0c1d8e3a3b7f6a5f1b81288735b65ff49",
+      "sha256": "56684693320e0aab546590df9b43ceeb52be840fa17c8f93b059e155e5105bd6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_team_identity/results/goal_decisions.csv.gz",
+      "size": 326478,
+      "sha": "fedd42ae8c990afa3539602ef56ab5f8caf8719d",
+      "sha256": "0235761f80276aec6b26e2ca72312377e6881511c8106b6f552a09deabbecfee"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/README.md",
+      "size": 6522,
+      "sha": "45e1d0b8645e64d210bf3e8f240756603528ab0c",
+      "sha256": "d5bce54f0214bc995cfb78d185fe7b4c65c2e079692ae1cfbfe89a7adf0f36c5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/build.py",
+      "size": 4174,
+      "sha": "09be50ceb7b78e39a3c300792919533b031d6e5e",
+      "sha256": "5e43fcfb798ec0c4bcf4ae8be2cb932fe80aa30adf481ea85be4ead901229c3d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/diagnose.py",
+      "size": 1827,
+      "sha": "2544dc561b1240cc08eb860d8233d4f387601dfe",
+      "sha256": "3ece77f0619e0ab795fbfea01bd966491e8992e969ff3b13a430b7132d96daf1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/package.py",
+      "size": 2182,
+      "sha": "599b0a52a2f46fb707c54fa0ed7a6a5e036ddbf3",
+      "sha256": "30e79a80799864bfc64473516766cf00fe2e642da4fc18b6b90e077d230d3ee3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/package_manifest.json",
+      "size": 64520,
+      "sha": "69b14b849808614021b02582b588ea34324a39e0",
+      "sha256": "b3dee331520f4b0f312c27febdf7f809cfbda6d120b7d98bbb62fe8559ff32bf"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/replay_verification.json",
+      "size": 9782,
+      "sha": "84877c968a9b48e7339bf9363a1ba7e595c54c38",
+      "sha256": "5c8e10065ddc170ba859c19e9ac623a1294a80d53e520ef79a3a46135986267d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/reproduce.py",
+      "size": 1745,
+      "sha": "95139554a672431a51273c64b8ca2334013cee91",
+      "sha256": "55117b672c6d63727a1f9853caa73ddff13684c96a9148a226d2abc12ccc37bc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/field_summary.csv",
+      "size": 614,
+      "sha": "95c8eca0918f18ea149e001cd04c940df51c8b6c",
+      "sha256": "56e4030d8381163922f30aa3f0df33eb636ef924c2b2fd7a3b5338048d2feac3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/match_readiness.csv",
+      "size": 52578,
+      "sha": "cc0eb3c9928f58fc690754161ced2f39eb78b122",
+      "sha256": "4802b49cef9b44a9273f2c36427b72e8dda65c1afc96a957bc60351a2e625e00"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/new_fields.csv.gz",
+      "size": 59606,
+      "sha": "22bf53e331a49d81bf408e5c244e5749a96d8a38",
+      "sha256": "96006f0e05fc55b2cc1356b5a8c950805d170518e731d8e503f169db12011209"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/player_match_readiness.csv.gz",
+      "size": 300725,
+      "sha": "55f6768a797c15a7687269e3df23a74907e2494f",
+      "sha256": "96828a4d45cf0ccabf4535f5c456c3c6c85971100b3190106aa646b52ab7d66e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/remaining_fields.csv.gz",
+      "size": 950086,
+      "sha": "2fb26d759dc1d159c95da41e2691fa61b4e5ea4e",
+      "sha256": "42c1920478032b13db69650daa14090f414a530520753a3f407cf337990d45b4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/season_summary.csv",
+      "size": 284,
+      "sha": "b6a7948b94775c1fa622a692180c956cd8da7146",
+      "sha256": "6223444b2dd1357c1dc5a0c2bcb599a35ca8547c72c12ebd20942dd0c203bc3b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/summary.json",
+      "size": 540,
+      "sha": "531ae9f2585db46be118a7b00b26a6deadb5c5b6",
+      "sha256": "18b4ed68e126de39ed6f257ba91efaaad39d063e77a9e9ac3e02de4a878ead0d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/tackle_remaining_reasons.csv",
+      "size": 96904,
+      "sha": "3de500601eb93e39e6ee5b3e009906014b4b1d60",
+      "sha256": "47107b6e6ec8380ec1d8835f6ae296720cbbda1ef4fa06e14a218b7366961ce4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/tackle_remaining_summary.json",
+      "size": 266,
+      "sha": "43a59297607cba271a70756140baab29539ae95b",
+      "sha256": "c9eb8a4c7dad811e95c47f6fb0a8ba7fca23e92d0b1fb1d240abfd8f55ee64f0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/test_results.json",
+      "size": 2732,
+      "sha": "c28379b3b7f1a3da9f4cd6d7c24de6c44331d63b",
+      "sha256": "7d32edf549c86c0c4a176d11c0867f7fafd7bc020c741709745c5ddd3abc2f04"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/component_conservation/inputs/archive_projection.csv.gz",
+      "size": 3992982,
+      "sha": "9f00ffcdef77678a05742f0b44efe6c31abf5da7",
+      "sha256": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/existing_counter_audit.csv.gz",
+      "size": 8125,
+      "sha": "cf95494970587bc7b92ddaa8becdb99f70cca3c4",
+      "sha256": "63d69d5ceb3909d6df88e016729008988b7583886dfa0a44866926deb59bcaa9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/fetch.py",
+      "size": 2253,
+      "sha": "69e37c6b263758eba5210f23c5e2e69b221740a8",
+      "sha256": "953fc0d06dad528cb49a790e6571999a059505ce4e2f9167c80bf06268ffe1f4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/freeze.json",
+      "size": 38850,
+      "sha": "8b886f99edda46f2ced583472d2fad9e4cc54847",
+      "sha256": "b7a20a01f3393a4e3cc24ff0e0524eeb57239dc70065ea16fe212605646f39fc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46605.json",
+      "size": 31221,
+      "sha": "f07f14409935e88021ff779ad423ca5d3fa97cf3",
+      "sha256": "04ff6e1f794ad2faa847f22ab4569a940ce8bb09b46babb31cf1bf2609671f2f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46606.json",
+      "size": 29373,
+      "sha": "bc1e1c9bd034f839c74216d983fe9f1217e96c66",
+      "sha256": "90ec2ab4a32253c952ffb33e7e19254aa9bc47967811e422f0ef2898f5c69e91"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46607.json",
+      "size": 28281,
+      "sha": "5db2206302ec88480cd766337c5f915859c93bc7",
+      "sha256": "df8667a50bb614551ebdefa3e2c65b7fed8e609e1a1d75c3d7dace2cb1cf3cb6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46608.json",
+      "size": 26615,
+      "sha": "759303d47182ced91ced1075e0620eee2d378c31",
+      "sha256": "70eb2d9fd9c87b0d0fc435f5ff529c96b5bc90760cb152325f099fcc614465c1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46609.json",
+      "size": 27959,
+      "sha": "1190c23f3dbbf6dd0e88f38976faeefeb043b81c",
+      "sha256": "e0bd5f49f85a2895b7854a154b5a87d820e2c0dc24bfe7c9b1302990ff3650b8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46610.json",
+      "size": 30900,
+      "sha": "8ff64b0da17852b4b65a060e43885197681fde33",
+      "sha256": "d5923d1947cf71c7ca55a2c3e55e910541b653abf1a0a28ff1feb3803f59072d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46611.json",
+      "size": 27736,
+      "sha": "be42ffcf8f0455f3ddea9242a03c88fdbd0d7292",
+      "sha256": "d92713015ddb041aecc42433e7e1885447ffec831601a22e5f462149204eb9d1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46612.json",
+      "size": 29381,
+      "sha": "693f16c937992593a577bbbbe67e9cc1a6d3849c",
+      "sha256": "69c332a79d8bc8993a72f61f039cd1cceff885d34bdd80c1f236c21f9ca6e262"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46614.json",
+      "size": 29160,
+      "sha": "499234dc57b2ecea60549914d3ac75637b078082",
+      "sha256": "400f95b08826e8ffb5152d24443f9f0e0bd1ccd843a0bf660e52d365c964c27f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46615.json",
+      "size": 31593,
+      "sha": "e1f76e98e6e1754ad349d521ab74831ae021517e",
+      "sha256": "b56fbaca592b8ad1d80ff348a7812d0e55b42a24ed8998854bf0c85d8e797d93"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46616.json",
+      "size": 31530,
+      "sha": "7148f69f5c8f52e2369ac59c238f5f35b5c4462b",
+      "sha256": "207f31f546cf1a3b0f4caa14f89e5f641b2ae86e517bb7e00cba06b26d99ce67"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46617.json",
+      "size": 30189,
+      "sha": "3efc61110f214cf7b41c7c424ad34a557c9d646a",
+      "sha256": "fcd62daac5fdb4f4b39835209860e019d91ddba275f741dc337e8c589daabdc2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46619.json",
+      "size": 28586,
+      "sha": "b21d007c13255855d45f1050609ecd2d5a00be1a",
+      "sha256": "a9de3fd9342941cb6acd413a6e8fd82d3dfb2e191acf82aeaefee60867a18294"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46621.json",
+      "size": 30170,
+      "sha": "06aa9d48a929ee7021874244205b0ecf2dc83149",
+      "sha256": "d3683fd0934a0797d381893ac9ac960775bfa907619fdc4a204c8930185e4242"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46622.json",
+      "size": 28221,
+      "sha": "b09f6fa98a50fe5e2571dd06462f69d7ae63d1e4",
+      "sha256": "1ce0c5d32583ac9135d1a419c70b9909d70c47ddc887b489ee66b96a311b0126"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46624.json",
+      "size": 29422,
+      "sha": "21bf8070db9317e7cbedc9a217ca7088a1366945",
+      "sha256": "48d6a74a727a91fa1a42b64f3ab60acdbccb8791a10895afc719eb4127061147"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46625.json",
+      "size": 27565,
+      "sha": "15f52e0897dfe086151e573ca754c3e368fd2a7a",
+      "sha256": "fe782f934fadc8d928cb99fc3007c183734dbbf0e407c1268d8c853ab22a4d6d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46626.json",
+      "size": 30231,
+      "sha": "475d8530c90121eebc39064726aeb33a25c70468",
+      "sha256": "731569f6c561fea77ddbd07dd569c31e054cce5695892f0933586545e0aedd9d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46627.json",
+      "size": 30713,
+      "sha": "cd75cdec69cc77149a27d9ccd6d547d7a7c48579",
+      "sha256": "2f8fbd831e3bb552e35c63b567c6809e4d89178de5492c8ba2fb363d9aff03dd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46628.json",
+      "size": 31411,
+      "sha": "f2421e53396645f63882186ae1208153efd14404",
+      "sha256": "ab3d4a16414ffe31b6c0e2939e2c907c8c42c6934f052d054e58d18d5603975b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46629.json",
+      "size": 29712,
+      "sha": "b26016c835ad3b29a6a0d20eb44e51e0ffa95e86",
+      "sha256": "690703e6f352f608a7984d8333874c07edcefb8f61c8bc3dbf06fdda98c31ebf"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46631.json",
+      "size": 29322,
+      "sha": "2f8773307ff1cb7693b7b6977dde14eb52aee16b",
+      "sha256": "a74576cdb544a4587e4f2145cd9110be4e2e491a86bd0cf15cbb3d2eba332121"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46634.json",
+      "size": 31334,
+      "sha": "00c21f91881ba2bdc6003105f7588d3603b0038e",
+      "sha256": "3f77693d0eb001a076a6cb3bb084fa9fb4658536938aa1f1bbf0633578e39896"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46635.json",
+      "size": 32768,
+      "sha": "136f0a503b57ebf7fc5b30c6319c6bee32d3d353",
+      "sha256": "9c3e7d8cb18c979f2416b214a1de36bb047bbd21b37406d286b6fed77e131ea6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46636.json",
+      "size": 31077,
+      "sha": "756697c0aa52b6b9fcd9f6a48c43d7fc76992abc",
+      "sha256": "463a9299ec6932e37871e0501bf8e071db8941be9fe59020435e8f1000e2c782"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46638.json",
+      "size": 29229,
+      "sha": "b4ecf29c6137eb9de251a5e7418d45846f86273c",
+      "sha256": "22705ab19fee588b9ab56d2078b2186bca7f196ab6c71753db97c9c5be852e45"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46639.json",
+      "size": 30522,
+      "sha": "0a285cee3e9b37f70d71a73c44ee7d7120090b46",
+      "sha256": "46dd14fcdd46cd1dd40be88437eb9aafc54f2555bf9b82589466ce1f2dad3feb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46640.json",
+      "size": 30129,
+      "sha": "8eee58bdaa1e146b65a2dd1fb7b03f1f5d55b083",
+      "sha256": "0d91545ce944d2f47b6b4d35ae19c0d1e3d5cc89b4f011d7c7d60280b0fc2f2b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46641.json",
+      "size": 28489,
+      "sha": "774e1517f3061fecc86e0bf662b7f9f4fc92a0d8",
+      "sha256": "9eae7577e8b1c2fbd2874073ea9bc02c474744afe2192e2b0e646e73bfab9c81"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46643.json",
+      "size": 30330,
+      "sha": "f2db0579530f93dc934ec099295132d4be12358b",
+      "sha256": "3544bd5fbfac9bc69dc684202e5eff2926c944847572701306b42c030008f714"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46644.json",
+      "size": 29715,
+      "sha": "d780848b0cb3241f083153704fd2241e9de713f3",
+      "sha256": "2392d814fe983d54fe38fc439ea79b1acc114e634846a8e973d37d18cc8a25a8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46645.json",
+      "size": 28032,
+      "sha": "6e50250f330cfc751204676f180c166640ac03ef",
+      "sha256": "4f7eff46bfd00ba314801f18cd2912b75b5ae1fdd308c688bff42cecad00f33b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46646.json",
+      "size": 31727,
+      "sha": "70d59b4b88c909941be020b0b2a3bb7cdd7af225",
+      "sha256": "8fce30b7d2922e455f928b48d0a473ab9a48866fc58e948a620730ca5f83ba02"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46647.json",
+      "size": 29262,
+      "sha": "fe9f4db24857c10293c455dc29fa12bf786c97a9",
+      "sha256": "061627402330762fbb79f52498ec9ee7a061a9f03925cc3d56487b30ff7bd6c7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46648.json",
+      "size": 29129,
+      "sha": "1a6fabad92f9e7f1b739737c11d37a7ca1dfe074",
+      "sha256": "6af0e54a9cc71b8a9c0af3bc91a3da5ddef938dbf7a38fabe32f77f522bb34aa"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46649.json",
+      "size": 29208,
+      "sha": "694fde256c82e9d3111004282ebe8ee5717404a8",
+      "sha256": "96869cd22027729690cee21a3ae320dbeb6a9c6e8036ee63c9cbaef15e60e88d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46650.json",
+      "size": 30708,
+      "sha": "0022979ad3ef1ebe35482fac5525665f32c78247",
+      "sha256": "6ffe1e79238f059770637a423b74ec21f4bb4d8e1ac9fa8c29482a2350c647f9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46651.json",
+      "size": 30677,
+      "sha": "281858f771ae9e2ccd0413aec542619e32e7d920",
+      "sha256": "3067382c4766545c3e5c648b7eefef6cb62437251b4f7a7cc8e496e7290056c6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46652.json",
+      "size": 29416,
+      "sha": "8e5b5d1688db739ad063876b6c1d1227628ce184",
+      "sha256": "4387d37dd06e55d6eb2bb6defe0d47520fd95361d53861da77b2209734efbcb0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46653.json",
+      "size": 30753,
+      "sha": "f82f9d473db5f6d0ec007c2af299d3e7e610550d",
+      "sha256": "81b66e7f28191ee551d79c09c69b99b9b8fd8d024cb8f9f1c6adaead0546f2ca"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46655.json",
+      "size": 33577,
+      "sha": "415d528b43e8647fc68fd067f91430bca592e65b",
+      "sha256": "6d2a439d053f08c6deb2068bcca90e26120a4e67bf7517ed1129d93da61ccde9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46656.json",
+      "size": 30204,
+      "sha": "856099bd4384f6a8a61b2dbfee8562f277ab36e0",
+      "sha256": "305178ffdfb643579430599295223c74ea4d72a062ea94b9b4485e78e679f63d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46658.json",
+      "size": 30402,
+      "sha": "3198e07af44f51f02f278aa8d71e17f48f7cf837",
+      "sha256": "652f7c363a73fabb946ef8111eda571a87b9a00ded1aa4ce4e4dc96aa65b5798"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46659.json",
+      "size": 27828,
+      "sha": "610df52146384d036dc88515a937a9ffd49de14c",
+      "sha256": "ed22b7e789365c52b179c6b6506b3f002bd6be8b800c96580472d437c4e603ad"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46660.json",
+      "size": 30734,
+      "sha": "0d519595c17486e866eddb0ac0075379ca3910f5",
+      "sha256": "2ec5a89747eb6e87652a3584525e75fcd92ffacafa02d13dd65ab424cebed61d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46662.json",
+      "size": 29476,
+      "sha": "b5636dbb25dc8acaa9b6bf748d0930defdeee79d",
+      "sha256": "667ba608912e5b793d67dbd55e9f581ce2ad340a466e2536626e30281618908a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46663.json",
+      "size": 29865,
+      "sha": "74f800ab5f43f8f7c54923557e9b08f0f40d8b2b",
+      "sha256": "1c42b06bf003469a7786f950b16c16c41cec06c435b1d5430940b13ee5009bd3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46664.json",
+      "size": 27241,
+      "sha": "d69d506d33cf7ded904fccfac72ae2772532dcec",
+      "sha256": "76d538cbf528bc76b14864fdcc6a5b914fb460b89666875246c90a461dc9941a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46665.json",
+      "size": 31500,
+      "sha": "b1ca423595a5a684d29cea52cf8322bc5d415536",
+      "sha256": "8e331542ea96b9806cf5735f5f89a840c4b2b1750f60ee32773a229633f761ca"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46668.json",
+      "size": 29931,
+      "sha": "e0bb58ed57bba72357b812c38fd549d1e1089d4d",
+      "sha256": "b3b15d2cfb0ae6474060a3bc168b702fdb601917be6a686ef74b199978bc9311"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46669.json",
+      "size": 32238,
+      "sha": "aae84b232b722e53223be7d89ea49770fcb5c998",
+      "sha256": "570a13abfeb28b46e0906630fcefcf2ede5edaf5f1f96e78fd124c7c51a15c07"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46670.json",
+      "size": 28239,
+      "sha": "6630fc2720e7e84316f472e6670240dec7f2a57d",
+      "sha256": "724547ea5d7464bcce2c76b0009a6bde021dc1ee11e1b0930460f554db8d2c2f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46671.json",
+      "size": 31539,
+      "sha": "ef2fbab931e7575617ff209954af9cd2d578c989",
+      "sha256": "2abc318c845b0248c509ba59f3847760e5b3d2e570a19b9cdb0ab21838ba006d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46672.json",
+      "size": 30117,
+      "sha": "8416f99bc08ecbbbed298aafb6391016e1a03298",
+      "sha256": "a4e4e2ffd322070582c489ffaf782b1afe179bf8923f95878af5d2a90f165445"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46674.json",
+      "size": 27542,
+      "sha": "39d70876f2bff3a582e79a1a975699ebd5fb0a24",
+      "sha256": "2c139f478d0cb7ee85ff350e8896b2f6a688b616f5bb4649eeb84311913c7809"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46675.json",
+      "size": 29564,
+      "sha": "1db376ab829fb106e643640ec32a9ff4a42979ae",
+      "sha256": "943ceb35b82b0bc9235827de136c46b4ff69c2478a7f92853656fa95fb3c8df5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46676.json",
+      "size": 29334,
+      "sha": "32f107effbf25caa1b8ca1bc0206fcb5dac3b2df",
+      "sha256": "595b0bec6cf5398ed65fe0fb7413062e4094bb9bee76a7619c39d9b08be4c838"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46677.json",
+      "size": 28775,
+      "sha": "7e172d0faa0c7a696fc5ee04fc72746a95d619a3",
+      "sha256": "be8d04e1ff85f3c3326cd9d341f02e722145298383934a459fffa2b6ef0b91ec"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46679.json",
+      "size": 29726,
+      "sha": "f55a934f2cd3567178283afa2ec80d7b59410d28",
+      "sha256": "a34ba2fe594358ef86aa28f73b516c0ca44e7670c549ba8f22d88c1be8e15874"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46680.json",
+      "size": 29081,
+      "sha": "83f7deaf58ec87e6ecc86e7e56dcae451da38b0f",
+      "sha256": "427ffdb8c36a9063e05bd626d687308cc772a5b90a040cf85d63205ced0ed302"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46681.json",
+      "size": 31453,
+      "sha": "3dd87e19ab110e100de9d84333bf0c22c0d24ba7",
+      "sha256": "44a3eddb08f25b19e6c3161a785a9a1272f78f81581f7ade13eeb9d5783a5a7e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46685.json",
+      "size": 32812,
+      "sha": "1ee7aa2d84d811033cdafecc79c7e8b103dd8677",
+      "sha256": "f0835f550fc3d65bb42620dedad9b0986ac99eabb321d3accb3825c378f607bd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46686.json",
+      "size": 26997,
+      "sha": "8a5007e95098b220bdf9147c2f4aa7d57e252570",
+      "sha256": "98287a8a96889a6921fd218dda575fb0f893535e80e51cd5465d17a79e6c0268"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46689.json",
+      "size": 30254,
+      "sha": "c61abc1e062be92e3c8ca0c2c9c53d14b4b5e66f",
+      "sha256": "3403a82cc16d94514fcce3221b274f210fe87d1f86d95ca68748e475a557c19d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46690.json",
+      "size": 30434,
+      "sha": "96c6292593180772d02ad29eae3fc4f9e8b70715",
+      "sha256": "5d8923b56873aeec2b1f55af566bf2eb63ea68c7d01e2cbbdc1fda2447f24583"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46691.json",
+      "size": 29681,
+      "sha": "e13066841afc34181ec309d97a9db866cf106471",
+      "sha256": "e6649a2ec60b80451e9fe9f6572c2e4268dc2ebf098a1488c2beaaa90565992c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46692.json",
+      "size": 28985,
+      "sha": "81427fe5ff5ebb177f8de1a758641621a4d20164",
+      "sha256": "a2c566102a86b07fe2ec0de766ef8646993b0563224ad8192bb96cfc49f29f22"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46693.json",
+      "size": 29604,
+      "sha": "08ccedec35d95e8facc0e2b12adbbafa7642fda1",
+      "sha256": "ec3aef2b2bee1ef8bd91b3175ca8e95fea12d07085f1e4857d75caa93f441027"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46694.json",
+      "size": 28829,
+      "sha": "90d18b58ca50bf4beda9088814d54a72907e249b",
+      "sha256": "d8567d882fcb014974e93722ad3521d596b7408c2ce84e4834553a39206cf181"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46695.json",
+      "size": 32009,
+      "sha": "32c8665ad89e4764fefdc6f8f82304e00bc239dd",
+      "sha256": "28d0e263bca698c2a0dfc1a07d33c498024c2496109a73463b52f394d5eeb179"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46696.json",
+      "size": 30667,
+      "sha": "7acc44dc1f57a2cebc394032fb05ac59dbb04aee",
+      "sha256": "bd47d2056c84aa059a4d832eed684dec505b8edd87409fcab43361117962ed3a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46699.json",
+      "size": 31286,
+      "sha": "bd2077d9b79cc1c7c767d535d7a3f05d77ecf74d",
+      "sha256": "66b0e65961bfd6f35cbf23c3c57fc2878ad09ecda7cc0c22a126d3e813a5fe52"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46700.json",
+      "size": 31097,
+      "sha": "0c85827f7c9d8578412a6b1aec0aa01421bf4e55",
+      "sha256": "2051372b96cbec3d66811f091d2816d2d7d9f6d52c5b9937844209a3d7a8747d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46701.json",
+      "size": 30680,
+      "sha": "28a0ac9d6369c9aa19dbd8be253dd295a833e7f2",
+      "sha256": "20eaea2327fc9f24b08cebcc7e55c43d8542377113b87a816caaa11a472ccd94"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46702.json",
+      "size": 30272,
+      "sha": "c3d0f7097d005c947b99a40d3c11ff15f614f268",
+      "sha256": "451f18a414a554e4c1b9ad55bb7f8b18a2a27bb62fc227950e75d01300a74e94"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46703.json",
+      "size": 28943,
+      "sha": "8ffa7199dc8440e447f18967e1d630b507ce394f",
+      "sha256": "c5f45c062ad5bb59febdc59577ea7a2b1bfc5566b739b19234901c3780ebebdc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46704.json",
+      "size": 31099,
+      "sha": "2152539c84f9dba88b001a20ab34abf40891172e",
+      "sha256": "d15d5ff76ffd9bc1528fad5c0770d1538fde98f832020dcde1ce1327d7f1dd5f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46705.json",
+      "size": 30789,
+      "sha": "280344578ff30ceea3d0add455ad234d2231f123",
+      "sha256": "55f0f474fc0d187fb83af72ba70934c52e3d87b09f95b4fe2035d2bd8ceb8965"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46706.json",
+      "size": 31328,
+      "sha": "65cd06f7c6077accdb6d5be21c305470b495e963",
+      "sha256": "eb0b181575c7b63fc4871cfd563087b190b234f07a669966984d0c12308e235f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46707.json",
+      "size": 29720,
+      "sha": "0b88ffea7ec2b7db8ffc1dbabe997237e883ca6a",
+      "sha256": "6461b677a520db2dc806b9e966238e1ac58ad8a6b1677639fc937a6960427423"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46708.json",
+      "size": 29660,
+      "sha": "c95b9621f6e6214a0bb60a68db06600b646774e8",
+      "sha256": "ce23438aa4d29c6e09eac39c4c9cf1f486b4fd42eadce4ca77926b3e42bad4dd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46709.json",
+      "size": 30178,
+      "sha": "c8d1e6b257f78f6423469aa509906e7add413888",
+      "sha256": "909f793aefccaecc7c9332a905ba1858a81dfa0d0d3ebd287fc0a2c99f4fe515"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46710.json",
+      "size": 28791,
+      "sha": "f1446163d9a54dd71b08e8c58c581bff84c39efa",
+      "sha256": "2b88c6f2d9a53a782770d51652aef7888b76a5e5ac562f26cc74681c59f93c04"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46712.json",
+      "size": 27507,
+      "sha": "5ea63a4b985cef8177e259092e066a72ada9fdd7",
+      "sha256": "b922a291d4f24a39df183bb0b05f25824f95eea7083224b3606ef27e2193b6ae"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46715.json",
+      "size": 29864,
+      "sha": "28edecb41fdcef80dfb444ee0e0ec64814765a6d",
+      "sha256": "1141f08df46acb2f25779a22f3af7607f1dff91462a1bddf74e7dcb77b5f1878"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46717.json",
+      "size": 29687,
+      "sha": "ce9fcd26db3b46749594c96cdcd6697af9577cd7",
+      "sha256": "58fd4f4888de03f44d7503a7d2b92f4bd7f9e29656cf88914be8ccd70ae2fd4d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46719.json",
+      "size": 31552,
+      "sha": "9256361057d45c170911a27166fa1283ec1c959c",
+      "sha256": "88defe42d8daa8a7830e16e40a35b55f028d471dcb1b84ecca223b882f238f8d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46721.json",
+      "size": 29212,
+      "sha": "badc42b75ecd04435990106fe6b0bbd3caf0434c",
+      "sha256": "68a1ed2fe0c72f870fe47e7f06ce8a283b414977897389b5bc01c479af5ae3b3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46722.json",
+      "size": 29632,
+      "sha": "19147ceec3d0645089041e4c55fff374b1ab4e8b",
+      "sha256": "cf6424bf9272f2231b0fc8c4f1e7f150f1ca5eac9de3bbb3c2d9e13c91a4e3bf"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46723.json",
+      "size": 30647,
+      "sha": "13bc585cc68d634750336840f3904419776b342d",
+      "sha256": "53f7168bc32bc26137f2b71f9ac022d07774549fde3c238660f60cf6b0206ee9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46724.json",
+      "size": 31126,
+      "sha": "becc2538e582e8770a127fe69cc6a73dd483d4f6",
+      "sha256": "97a99eab64757b9261ab18e859a60394561c8754d412765bd4c969d9eeaa1bba"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46727.json",
+      "size": 31406,
+      "sha": "5de9171b3d7a7b2230bbd88ec737458277e9f4ca",
+      "sha256": "58205e9fba80857d565b5a334629c2fba3e3c7a0f65068da6cac360396bbb2ad"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46728.json",
+      "size": 30903,
+      "sha": "1b95d2eae3ae29dbe632b6ada52dde18ed578e8a",
+      "sha256": "5e985df99b58d73dc5283fec193671e8503d2dc44dbb761911d56b828e6a1da3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46730.json",
+      "size": 30540,
+      "sha": "ebe82158173fef401f45b339922b15f816926221",
+      "sha256": "f03f8ea1af6f2e6b18b129834548d6647c3ad21c842120903831ce58e54f8bfd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46732.json",
+      "size": 31379,
+      "sha": "f25d434f577ea7433b5e445682b88c992ec8ef42",
+      "sha256": "7b605e88b78198440aefc4eb1a0a31f6b3c46f518f5d85698d74a4a38957425d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46733.json",
+      "size": 30431,
+      "sha": "c068ff10e39f9c73251e026734fc4c118c18260d",
+      "sha256": "ad6bd285529e8d97170a37bddb2e7a0686aa33361a4b7053c694a983f3cfd620"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46738.json",
+      "size": 30189,
+      "sha": "fe7cbd7473a871f94522a4a42c4eda9a3ee55739",
+      "sha256": "27655079bce1aa8280226b7bd5edd9cb6ae5f64409f3affbe95395d3020ac3ba"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46745.json",
+      "size": 31731,
+      "sha": "462fc8df4721e46d0f4fdac27635dd8c81c28e1c",
+      "sha256": "ae4a58bf81b64c2696c8c5de2c9620854b3e3c4fd92cb6bf24c10e94320d62ad"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46747.json",
+      "size": 28394,
+      "sha": "20d9b4587bfebaab6e9b8b6cdf0c42eaebf3432f",
+      "sha256": "67f6ae0e1887a040d15a9bf0751d8e2eb5917501fc23c2ea46789323ebd0aaba"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46748.json",
+      "size": 29310,
+      "sha": "ecde24edf711b5201e7c12e73a53a2eac3821c46",
+      "sha256": "c8958292de88ced71fa23676c12d84e9d5cb9b7ac5adbc65d52f8c2f5eee6ce5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46749.json",
+      "size": 28864,
+      "sha": "40011b5da9623ea702c083aeee5c6619a39bb501",
+      "sha256": "9c3c1492cc4d6b0379bac818ce8dfcf2bf9bfeae4fbdc9978370b5bc37d27dfc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46750.json",
+      "size": 29477,
+      "sha": "97c79c6c694c2406f56ac894e44ebe73d8fdffe5",
+      "sha256": "67b5689449d27954c19888c396c41d50e11bfc1abcfe3351f34d5b2d9e30aae4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46752.json",
+      "size": 27810,
+      "sha": "958ab05c203750b47be362598879543458e153df",
+      "sha256": "c5b4e7b6618a6419a4c85afc6ea7cdf7f7dd5fbe739021964bd87fab6a12540c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46753.json",
+      "size": 32152,
+      "sha": "1978ac8d9383fd60323bbf9b3676f261c14d7e36",
+      "sha256": "870332e16bec2f864d87625fcf20780d6c090ef73ef6cec58f59416a3778aa7b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46754.json",
+      "size": 30646,
+      "sha": "fa1f64131b6d67007cbe40ee8f6b6f53fed8755d",
+      "sha256": "b0bbdeb8eeedf586137b8a3ad1ec429283c2815bc346853a6986d3d38bf7af1a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46755.json",
+      "size": 32321,
+      "sha": "329a8909036f644f3c0854627e977547662c32e6",
+      "sha256": "7eb24715c7038f61a2b6d8927928e053940f212978e2a84c54b19a39b5c25a4c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46757.json",
+      "size": 31617,
+      "sha": "27fd267dd46d5a39941fa8452702a49d175d93a1",
+      "sha256": "bd59109962c0576c18d2ccca2665ed6c0639cfcdb12f057b168843f84486ac45"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46759.json",
+      "size": 30910,
+      "sha": "dc18278cf182e653f7fddeccd5367c937f74c7e5",
+      "sha256": "267ab1903218dd83ef425e5b6910cb73f717a1ed0c993c8058f83344dcc6b505"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46761.json",
+      "size": 29921,
+      "sha": "6a999c2b27c669076303f20997e8a24ff6a7a650",
+      "sha256": "8bc03636598dbff2ee7e6b1ccf12c39205ba81a7d192160be6ad75e1ce5c7da4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46764.json",
+      "size": 28448,
+      "sha": "09cb555e32cc02e5ae8f85c4b1043be7e6304bd2",
+      "sha256": "3ba4716c5d1cbdef47dbe6cf59d8a2059ceaf2b90b79bb3a28b4c6951bff52fc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46765.json",
+      "size": 28985,
+      "sha": "29c81c04f6d971d90af78ac46cef07b49c12770a",
+      "sha256": "93921cfee92865a634bff11bc637249dd3291ae852e085441381809fb1c4eba1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46768.json",
+      "size": 31445,
+      "sha": "59000e9c1c7341bfc6c7e5a0d4c293ccdf23cc20",
+      "sha256": "b4fe93444d7b4c2270cc9e204343f5ca40b621dc1611e23c0bef0340b32f89c6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46769.json",
+      "size": 31784,
+      "sha": "53e2923d5ac9b16a1e27b644d1c29b99c835f470",
+      "sha256": "c7c29f24f6f289a31b2b21e6abb89416808d25e6f8ffcf51e6d9daa27867978a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46770.json",
+      "size": 27993,
+      "sha": "e0585c8ca854ee6b49691a9c652ebeaa31cff565",
+      "sha256": "af2b732d05f468bbb18dc478054863f99a7d9da4e6514edc449faa8c1d288576"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46772.json",
+      "size": 27783,
+      "sha": "9e9476cb1cb661fe25d6880bbf2618c8b40020d4",
+      "sha256": "f033eef13ab62a43f666db0d58f311797088e220a3f6fb9aa1c10a886cfde4bb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46773.json",
+      "size": 29522,
+      "sha": "ca86d41ed5ea7022f175fad309062015da6edc05",
+      "sha256": "7045fce25642b17b72802d39ffd59beb211a51bfcac74dc8aea36f5ea83040b1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46774.json",
+      "size": 30477,
+      "sha": "6595a5b1d5a32d8843dda10e2224adff359780b3",
+      "sha256": "67ddcbb5ef93d9254220b22716d1646a13ccced679cae715c19832a1a5e3931a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46775.json",
+      "size": 32225,
+      "sha": "0095669605ceecdc10204f1ec51aa13e90b9a2d0",
+      "sha256": "e999ad32269b4c0ad3207233ffcd296424a6745610ccfbdb3fc1148a016b9bc7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46776.json",
+      "size": 23891,
+      "sha": "3c96ae8dcce6c7651b4a168055697cbf200a8e0f",
+      "sha256": "692ecf79063a973991edce9a770b43516694d0c372225225944e2dfaad40c0ac"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46777.json",
+      "size": 29721,
+      "sha": "380b392ac0c55280fb1f46328778a326b474ccde",
+      "sha256": "b7f12f2453dfc9ae784c9024bbc4ea1acabf70dbbfcc646bbc4e80e77c86d4eb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46778.json",
+      "size": 26557,
+      "sha": "655121956defeb931e0aa4abcb5ca7997dfe3d71",
+      "sha256": "421b5a24790b38a23327bb8c26c9a3e9e9db936f28ea5c1f78462e972f3139ac"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46779.json",
+      "size": 31998,
+      "sha": "5aee83027590d334b2f23a60acfdf8a223d10b35",
+      "sha256": "c61faff94a6666e6ac634dfc50a2bd8b945a7b2970a02db8903f8b01b627dc14"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46781.json",
+      "size": 30557,
+      "sha": "4e13615aa8f23479b983e09b7050ceb167228b47",
+      "sha256": "d37651bc615b7e2cc35af2cf673d7ee0ff363faf819b02a61f6294f6ea6e67d9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46783.json",
+      "size": 31147,
+      "sha": "b815183183c0e80c385fd0b799e837a80f7021cf",
+      "sha256": "f2fa92778750660b909122fa643652052463ce799e5c6214bfbd220edeba467c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46784.json",
+      "size": 30331,
+      "sha": "15f13a89f020b30c3c4cfed37d9950467fd6f09a",
+      "sha256": "e52f402ffb25448f5c46a038951ca8315bff10d31cba238d18a94a1f11d0fb48"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46785.json",
+      "size": 30209,
+      "sha": "f6dd5bcb67e528d732a8dce41a63ecb24065b61e",
+      "sha256": "b9e6635808de36bdd4e92ab7dd7342aea300ce779b90ae107feae5756a072439"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46786.json",
+      "size": 30640,
+      "sha": "54265cf0ec664dca2bc101bb6a6013c8b2a9e804",
+      "sha256": "b66c218c2219e3aa5eb55cc068c4f40c2584eb6dc31aa59d8c7eae797fbbb2e0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46789.json",
+      "size": 26592,
+      "sha": "dc1696c33bd9df72799076e1a8996a6b03c6dcb4",
+      "sha256": "9628d75366c460f16719bd7e04b9436a2eb8944a28c01ef5ced6c6da3ff25de0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46790.json",
+      "size": 28438,
+      "sha": "3c1fba3c1c0b8deac973664cf488115184ddd4d6",
+      "sha256": "15d3ed47b449eae4e1053c50a7c98b10df3ec9da18e388c177a11d75aa7d47a3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46791.json",
+      "size": 31304,
+      "sha": "8ca97d3a3e9c3aeb8be2df3c4fe78bdc2328566c",
+      "sha256": "90675e5b7c9256b7305c0d41508e2eb1396ac1aa61e15874b9e9be63d6d89623"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46792.json",
+      "size": 29297,
+      "sha": "7c31e562cee4ed8e8ff33c4a025e6896022c650e",
+      "sha256": "922a79d99825ed7262efb5a28fed54caef3d10631edc3811791d9a3bbd41c4f1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46793.json",
+      "size": 31109,
+      "sha": "e1215395fe693b6cfcfe9ef444aae2431d419c4c",
+      "sha256": "96ffaf082413ddc35ef2fc3ab5dd0a9ddf71e8f6caf5893a9fae0c9a18f0c513"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46794.json",
+      "size": 31110,
+      "sha": "2c954d063f786705c8339b4192a95c73d9d20c16",
+      "sha256": "0c6bb2450e9e72bf27fa85e72e65b874d3aea5a095f184e27d1db3cbe0477130"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46796.json",
+      "size": 29722,
+      "sha": "afa5f2af19b6804cdea9acc67e2be36c182bdb58",
+      "sha256": "0b836711222ad3ac4bcff3e8a8a387a10aabf812c8c1f0cfb74520b081d0d53e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46797.json",
+      "size": 29735,
+      "sha": "f9b9d1cabc987871c3db9131db6d9970011eea93",
+      "sha256": "c7833a90bffa42b6dad322fbfb3bc5fcbe7903fc0906adc76133e2e6cea3a279"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46798.json",
+      "size": 28657,
+      "sha": "01322d7826eb433ca54b6eb8806bdd169008ff51",
+      "sha256": "7fe34b1320a5f94e2b38f76e2968d8d609a08468feaa2f9c0302e110d3c277de"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46799.json",
+      "size": 28651,
+      "sha": "e5e9d59421d20d46801b9cad6216fa97f8cc0f42",
+      "sha256": "b5eee96a4dabfe4af44bf919d1446f21583e486d53953d02360c4da1452e5bb1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46800.json",
+      "size": 33436,
+      "sha": "045c562da8476886432149b1ba2e86779e4c31c1",
+      "sha256": "3a1c2c964d4d8256e92f96560a7dc00ac7e5e1da934a7c4f4f47bc324d071188"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46801.json",
+      "size": 29986,
+      "sha": "831964e641e19cecbe32e9d881daaf6fec04260f",
+      "sha256": "4d57c1a35843bf839e34882372d330cbb3aed9a06e9a57ffa1c89ca8f74e2600"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46803.json",
+      "size": 30200,
+      "sha": "1a5cd477d57aeb35c13efb55021be4e4b95c9734",
+      "sha256": "e5f683c43e721d97848de83e7365d865b806eda37d630b9db34bedae87804a7e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46805.json",
+      "size": 29068,
+      "sha": "aafe7f2c4d1a130ede72ffbb998e43d52d4de1f5",
+      "sha256": "c6f155ef1d87227e6bc301e18144424b5e6a5f27769faa0cc168bb567e869655"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46807.json",
+      "size": 30259,
+      "sha": "efe264d3232cd79d180e4f5017d2f2fbf3c338e0",
+      "sha256": "0f891b8c7cc34a19b1f2082deae5f13a19aca47a994745c02f09cc9c115d375e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46808.json",
+      "size": 28754,
+      "sha": "7ac8b4da71c6ba5401bf348ec94c1495071a84f7",
+      "sha256": "5125b7d21e6f64319ffebb594e34f10a40e3140666f7452397cbba1fcf0ee18e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46809.json",
+      "size": 29876,
+      "sha": "1c4f38475f91d8d1cc05c9b8fa0cd0dccc51579d",
+      "sha256": "2709bcb53c523ed23c6495bd8edb6e07699c5bbd3c2eeb22f4a0993e8fe1c10b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46810.json",
+      "size": 29971,
+      "sha": "9bb4ad7e49242a2a93d9e04d0866f2cab373cfda",
+      "sha256": "0e470002c99b500bedc2c68181e27ec61a2ffb53063d4ae73669ef3c02503212"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46813.json",
+      "size": 30135,
+      "sha": "77b78d24ea7ecb39c0f5fddaf109707c10b220a8",
+      "sha256": "7518b3783f25f7e9d0a53ae9c8a30bc9a96721bf0c862c04c0a8e7fe017dfd44"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46814.json",
+      "size": 29003,
+      "sha": "78ac1e083fcf35c67e64ce80325dae3f1e54f71a",
+      "sha256": "280eba2fa4bca8c7c4ae70355635db20ab33a38ab18f6296ebe868c209abf829"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46815.json",
+      "size": 29355,
+      "sha": "ce5459cce38daceef83bd4358980864cf3cdbe99",
+      "sha256": "3c6088cc4214d2120f6f99043137c367863e66c4cd9491e3bb381e9a59abe89a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46818.json",
+      "size": 28790,
+      "sha": "800147730b050b73cbe5cdfb9639329360b87f46",
+      "sha256": "50739fd816d00c03865f9ff030a6934a86bbee2bb9f1f3ca10d2bea7269f91b4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46819.json",
+      "size": 31178,
+      "sha": "2348635a7a0b8df5f008b0710c1719bafbc82093",
+      "sha256": "bf449902d7fd5214f833840952f9f05892b835c3f5cffa4ae4056a3c5f6ed4ba"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46820.json",
+      "size": 32671,
+      "sha": "1ead8051567e0e722ca860bf25654819af4c5a13",
+      "sha256": "42a1cca9f46b35045b3c37d3cdd7ce14eb794d141e5e9074fc479333e588e974"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46821.json",
+      "size": 28901,
+      "sha": "e4a7737e3f9ff2f337edcbce4d24cfa94f9eeda2",
+      "sha256": "e0760997717006411822cc033d4a1c822c9be832e74d0869140108ef722b4ba8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46822.json",
+      "size": 29667,
+      "sha": "e7ec33460eea910a67c8cb5a9c88c56f57d73a32",
+      "sha256": "7a5306bf009f859f4e2a18f4719cf15825df77bc3701b92c7066db1e8516af2e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46825.json",
+      "size": 30567,
+      "sha": "e837ef51a5126ae135f72a99d35fa52f2210018a",
+      "sha256": "9ebcbc3a6a69e8617a1cb3cf53ab2a59fb0b8678ff6c474dbf94cce3c9f5f815"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46826.json",
+      "size": 29906,
+      "sha": "91f63176c982dee4765e9e4d11d2de9f5d7387f9",
+      "sha256": "aa6d8a0b273ad684ef672f15caca7b45fca67bc0d5204358c3db498a412d2ac0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46827.json",
+      "size": 31301,
+      "sha": "18a60a38c630e69e8f88914817f22b6d7213559c",
+      "sha256": "2313c5766d2bb96290183b97dbc9f217a197b1811cf76196c9ef9b8072d81e4e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46828.json",
+      "size": 30872,
+      "sha": "88fda95ca7012894adfd579923d1e8abd8b5e3f3",
+      "sha256": "bb8af44af546dde5bf028d41e667fa97171fc866aae36fb2f668d221d17a9c2b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46831.json",
+      "size": 29660,
+      "sha": "47d7f8cb03387130ceacb0d35b76196a1005577b",
+      "sha256": "dc468cd618a27fc06fc6f75f59b4cc95d067a329a65c11891f43739d1982ef59"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46832.json",
+      "size": 30578,
+      "sha": "a8494c549ccbffec8ccfea2152f309902524be83",
+      "sha256": "59d61d7bafb4c2e8bb6303b01693a912d7c622e2e9cb68131f01fb4e2bc8f46e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46833.json",
+      "size": 28865,
+      "sha": "4b6dea0ccdb7139b394914d983d3e6a0cdbcf561",
+      "sha256": "7811bb7a2636b71729f9f8216ee01c8364c5949ad3cb74d6eccceacfc264ed58"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46834.json",
+      "size": 30626,
+      "sha": "b6f73adfff6cfcb43ed09e3470401385511f405e",
+      "sha256": "adc40c2de941c7f086198a070c52984f07da03ce509767afde6f3e1620379f6b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46835.json",
+      "size": 29039,
+      "sha": "e09eb956326c20f8135d61e8ff7ef53727058a0f",
+      "sha256": "07ec5b070b5cab1d9829e5cdc63ff12ce3ca7e0c0c1ccfb4e19f963e3c5c4e5e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46836.json",
+      "size": 31480,
+      "sha": "88975a1f91ddbd22cfbdf15883d4a54da668f333",
+      "sha256": "335a6acae9f0fc965d4dd076d7e8d7d7d785b69ef07fb94b72a365a4913d1097"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46837.json",
+      "size": 30866,
+      "sha": "1c53afe94562ac11b5144825849795c1e1eb8fc5",
+      "sha256": "a107ea343b96cad7c25bce9ab3bf555ed547bb6505cec2b1bea33426e4129dde"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46838.json",
+      "size": 30591,
+      "sha": "0327f020801afad12b5925f6191ee92b045b773c",
+      "sha256": "b0216f10244e795668573e89b7deac19ba9a6a2096d02877a63c0825218f69f0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46839.json",
+      "size": 28579,
+      "sha": "6669fd2ddf039e9df8e4c5f49a6d910cc2e37bf5",
+      "sha256": "13c917da5648b083af62b3e8f61d4d23b32ca6698b642c06ed1ccbf87bacd24a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46840.json",
+      "size": 28527,
+      "sha": "effc1bfb4f86cb4a845b5107b00e0a3ac1c786e3",
+      "sha256": "ccf12c9e5ad256abb4e3c40bdc42bb8528e1e36338acb389dd022e639e43ae91"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46841.json",
+      "size": 29980,
+      "sha": "ef9a861d0a1c7fe9e6f8f8b0caf7c63d99a5ab07",
+      "sha256": "410e127e69c5bdcb799ca2c20997be353c5b25ce52cf4285e60040e6f410dba0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46844.json",
+      "size": 29326,
+      "sha": "28e332ad485fe416e28ace27da0a03478f344c04",
+      "sha256": "ee2632c77c5b9ff9ba7aa274e71eef6badd37d4ab05a75b1664271da2e8e5120"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46845.json",
+      "size": 31558,
+      "sha": "80d25967f72e7b4e09f06f0a036cb53ebf4c5f79",
+      "sha256": "4cdceda6aa7cea353f2053bdba1d00b99f67c2a60a51e137c463f8f375f0ade6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46846.json",
+      "size": 28672,
+      "sha": "80d68a7d1a6cf90b9881e0535a31e7d0b3a7d53e",
+      "sha256": "28073557b4fcc6e7f9f61accce77e9a4cbe0872bdddae1d5d643d4466175064e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46847.json",
+      "size": 29265,
+      "sha": "5dabbfa6f4e8795e62aab93825c9385bed849b8f",
+      "sha256": "50f9f3dfd86e48a516e93a173563e31fbe43ee0380d031aa68c92eab6cebb202"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46850.json",
+      "size": 28652,
+      "sha": "a60fc980970989c2a668378e8ba7e2d558c7902d",
+      "sha256": "1c55eeea81583365bc7758060ade4266a8241eebeb7c0950363ae1f29e4efe22"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46851.json",
+      "size": 29724,
+      "sha": "4855e7e0d1e2d346d00e94e4af14f519637a6561",
+      "sha256": "8f6241aa9ab191f3048ae8206816de07ca5b5a181fd007154d7a1bdb278ce8b9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46853.json",
+      "size": 30602,
+      "sha": "f9022d5b0d3e9622a48bb7b555352eb7ca4657bc",
+      "sha256": "5f70ebb8c2c328bf10f31c3cbd07f84321109d743e0061b2d9622024f539fe0a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46854.json",
+      "size": 33245,
+      "sha": "9270de9b36ed3db177d13451e00100bb4fd27dce",
+      "sha256": "358712af9901d57f7a6867263b37ffedeab6a7de935095d485d64da0a61cd855"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46855.json",
+      "size": 30890,
+      "sha": "de9974a91b24f2993782a39e3374773fcd16302b",
+      "sha256": "b2d09bf1822de67c59fb8ae185eab7aad6cc9270de7266b86e2cc80170e25068"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46856.json",
+      "size": 34018,
+      "sha": "19ae098fd9d6d62dc3cb78e99871da528eb8d729",
+      "sha256": "2738a07f39228932daba8a91be9f5bbb5d0e1cc6f9ac7406573f285a66391b65"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46857.json",
+      "size": 28492,
+      "sha": "45a11884129fa601aec99c3fb7be4296f3b4ac88",
+      "sha256": "ba7a445b1b634858424d7871710be2905f2724d327cec64dafb5479cb6a47f45"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46859.json",
+      "size": 30947,
+      "sha": "77f0ece36dd9184319c70d629c6e7f461fd403a6",
+      "sha256": "94186cd14fe39cd96539bab63243139597e509ceea15434c15ea05f727118fe3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46860.json",
+      "size": 27172,
+      "sha": "c41b67651a7922d3d9f5d82380613d1d372578e1",
+      "sha256": "53600a0795cd4b03459791dcc505a40085c1d94f86ef7f045c538a2d348f2676"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46861.json",
+      "size": 27997,
+      "sha": "899837774277246d36af118da3f9c153bedef8df",
+      "sha256": "a56b07ba86a944005e6c553a24cd11a18eedd28289fb00891430f08b92e26caf"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46862.json",
+      "size": 30074,
+      "sha": "1a9e15a709c536cfca3abc0deabc9035362246ea",
+      "sha256": "fe274613ae66235a5d771873a8faf2978ef1874834931148da1713ee32da93fb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46864.json",
+      "size": 29143,
+      "sha": "0dc161c290d9287117a04b16f6b49d7f072c3bc6",
+      "sha256": "371e0ee0fbaf5dc299678102f3b1b4a466491bb044702e8eeff53f7abfc3578c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46865.json",
+      "size": 30894,
+      "sha": "017bd70358e519819e98b4d76ac1c5fdce7418af",
+      "sha256": "b9194d45087fe8c6eebed2f75df99851a83227f99fbde9a52a1f4cc0e21d1a64"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46869.json",
+      "size": 30760,
+      "sha": "62f51ebec3fe6e31fd43c0a6af3125770e78b27d",
+      "sha256": "42f537b563377ab40ffd30066dcca64302fc38cc5205fd5844cc4e86abdbe7c0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46870.json",
+      "size": 32849,
+      "sha": "6bcaccbd2edd0f567c0fe81af9bd08520a984185",
+      "sha256": "9e3f0a902833f70038b78a164820ae00f7d687a70d11b940f03e6f7668682512"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46871.json",
+      "size": 31056,
+      "sha": "9277dbdf166733b7e506ff9a81f592570a98ec4a",
+      "sha256": "5cdd4114f5247d2186034a068c8ecaeabc58af5d4f45cc981e062ef74d0e77b1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46872.json",
+      "size": 29378,
+      "sha": "db1e5249d9158648182b7ef59dbf52bcd146a8e7",
+      "sha256": "142b3a8da1eb2f01035604d193a9295655d1ef07b7be3e0064f7ef8c3b25f44a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46873.json",
+      "size": 29207,
+      "sha": "57a3530ea683b179632d40325b54fd69b70bd899",
+      "sha256": "305083fb779c8e60e22343dcd6f26bc045d1522c5e02b60c7b9495777408ab05"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46874.json",
+      "size": 30053,
+      "sha": "828ad832ba0be3c2f615457135b781426b9c6fe2",
+      "sha256": "6187cd6b2145eb7da8efba5a09e749c1abe531d55944d081b9080bab3d02b37c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46875.json",
+      "size": 26979,
+      "sha": "80b8b67da21f9e5725cd00fbf259e2cb740223a0",
+      "sha256": "ddf2136d1de5fea13190f29f2ccc59e79b2b4511f134d1c05db6604864e06895"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46877.json",
+      "size": 29696,
+      "sha": "0371d7beb0f31369072dffbf666dca76817d811d",
+      "sha256": "fe675522c47da1c481c742e97d7c4c1186cf2e3709041ae1002ca490fd6d965d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46878.json",
+      "size": 32210,
+      "sha": "a23253e9d5f9818fd690082c32ddd3e17b2a2752",
+      "sha256": "66e362ad3cbc226221e40e52ff27169eeae40a795358e8320710d3f63b486dc7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46879.json",
+      "size": 27738,
+      "sha": "09907c6234ab1648e1f5d702c84060bc7d25641a",
+      "sha256": "899c34dcd88b7a16046259af41eeddafaf559b4c2e22abf3d2fab965000cf4f4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46881.json",
+      "size": 29544,
+      "sha": "35268bcc7c3bde13cd4091fd939ce04dbc4ce37b",
+      "sha256": "fe1f6886e9e8e5465564ad7551d20474b6499405ef1026bd0a85e7fae5dee8c3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46882.json",
+      "size": 30893,
+      "sha": "be6f2c1d1105a0d013457e91f85fa8d244fce4f4",
+      "sha256": "c1f4b4074dcc1717253431ef73712a526f3e3dee4192fd970184618cb2f4a15d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46883.json",
+      "size": 29279,
+      "sha": "e014f9693760810fca6d7734c364ff52f8f72158",
+      "sha256": "a6357c5e5fdf806c649e81358df5a28c3ab770a385f15500ea02b6a6c5d600d5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46885.json",
+      "size": 29577,
+      "sha": "19c5ce3c9de7302bd46395b6db6d0d9fcd283071",
+      "sha256": "b3966926d2e71bc46d008881235c68980129fdf6c4c503a387a6e64de5cf060e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46886.json",
+      "size": 30442,
+      "sha": "0fa92041ee7745f57e0aa8b6b7d2dee46dfb3e2f",
+      "sha256": "f9e6c91c9f5e2d062795de52504a2f7f2157cd5f8aecb409c3d8a37b224f3d07"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46888.json",
+      "size": 29173,
+      "sha": "9fd4c6e52407ed3ade296248b1976a44edb2804b",
+      "sha256": "eab57577a256c50b432622bc27946e12f77333f1995f83ba57afa192ac46a382"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46889.json",
+      "size": 29631,
+      "sha": "bcb00d6894b3e9e12fd827b7ccab0a31f3cd2209",
+      "sha256": "255fe035840eabd6d52840567627bc34f6fb8bbefe811376e83342235bb3677b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46890.json",
+      "size": 31069,
+      "sha": "dab4844aaa06c260df1c0fcbf5b33123cc5ad173",
+      "sha256": "a32e2c213570492fd8475a7ec9996a83a2ca605169e6e1d9faa2b3a27fada4e2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46891.json",
+      "size": 29436,
+      "sha": "7f528c3e859fd7b40e351b8879e33c55a55536ef",
+      "sha256": "55fdc82629d4968534878bee06634b95a9d3fbb83d911c01a430961018644241"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46892.json",
+      "size": 29318,
+      "sha": "a08dfe0c4085b01601bd48b6a6cce2212b8ebea0",
+      "sha256": "c96d32b53261b3dc32f88223acd614b911882a200b29b50c04ce747c6302df23"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46893.json",
+      "size": 28831,
+      "sha": "d07e80c8d0ab4bba571dc2c10b657472a29ed953",
+      "sha256": "f183e936b63a32c97a28e90ac93bc376bb39d2f7df1829df8d748467482c5818"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46894.json",
+      "size": 25541,
+      "sha": "48e930885e7051037dbc7976388604576cdd5cf4",
+      "sha256": "1412fa447bdde52e29d15c6347a8fd659076fca3b7cc8b2d1b025289224be3ac"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46897.json",
+      "size": 30706,
+      "sha": "cf7624c20864bddfb9b655197c10d4f175cdb933",
+      "sha256": "8c9c17f7d404bc35495d7ab44d387b1e673d9e244afbbf4105a148cc03e35538"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46900.json",
+      "size": 29834,
+      "sha": "04e50667084d40a2bfa79e002886824149681876",
+      "sha256": "43ba722fb595b61742a5472933e757301da7127865e482853de0290de2472d67"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46901.json",
+      "size": 29977,
+      "sha": "123241de091ed8aaf95b7b34b1000f3e73e8c023",
+      "sha256": "b1be6bd59a6f0b7323099b6d1c343e06dd11c503b98a039abf7d12b62fdfded4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46902.json",
+      "size": 29049,
+      "sha": "2eab681848145a568de9ca7a7cc82f19b5b44d24",
+      "sha256": "1e7131b0ba90bb78fb78f0783a8a5b7f17b1e95982d035d73a8d55140909cf53"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46903.json",
+      "size": 30580,
+      "sha": "fa83f31ef8fbf442c5e9553d8fec341dbd6018e9",
+      "sha256": "35667914830a02db80de28855170121603780b30452d90a5809dbee893a65261"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46904.json",
+      "size": 29010,
+      "sha": "ed1820dd873ae43a14dc0036aff43e37e27c5884",
+      "sha256": "b3b61b4efe4fb3eaa76601adcb0620a39ec33b4e7f3df0002c2c82f39faa3c17"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46907.json",
+      "size": 27345,
+      "sha": "88466c9c3cc25531589b062487c32db108672d49",
+      "sha256": "d330fada7fac86e01d5beb928f9a8e1ebc5667dc359ac958667346d10eb8225e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46909.json",
+      "size": 27470,
+      "sha": "27b575941e759f5635198999459aaea35c879b1b",
+      "sha256": "29c4daa7d0da0e28b17bdaa913c09dd23d4565520818c47a9abfc0c997caa628"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46910.json",
+      "size": 30517,
+      "sha": "3438b08bf7ce42f814104dca162a4be105055a5d",
+      "sha256": "7bfbb035b5319e0f7a7bf5df682151b49f18d20b8743e85f793b6cb72307d8ae"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46912.json",
+      "size": 29562,
+      "sha": "75842fd85da369488629aaf68b48f38dc9b886e9",
+      "sha256": "f506b00078e6d976dfa602e7c3b01d975e7e15eb41b22e72abe4209dcaf86c3f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46914.json",
+      "size": 28257,
+      "sha": "5bc439ad1008b6a2af77700e8f6b6966833153a9",
+      "sha256": "227f38cfdca763498b1bf6c312bafe935fa80822327afa867f1fe674fe8bcf06"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46915.json",
+      "size": 28330,
+      "sha": "8d88eb53936bb36c21a6067287b0c7184a7bae8b",
+      "sha256": "c041661e380b992ae30ca6f1819dfa4b9c17dd9b054c5f5541e6f3052c9e3ae1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46916.json",
+      "size": 28375,
+      "sha": "73706cc01a954f4e96cf380e28a8b44179419298",
+      "sha256": "5e1a599df26fa564e11bb713616425ffea803deef95cd7dc4b8b4c3b74f03c11"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46918.json",
+      "size": 30294,
+      "sha": "5c666a2de7076ada2c8d0e2e2f3679609f2b9bb5",
+      "sha256": "7034efb08db4831a4815e7968903cc10b2240be45dbf46cb6c5749bb85e6f91c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46920.json",
+      "size": 28870,
+      "sha": "13cad607c13f1fe2e0bde2fc681b05d7243cd928",
+      "sha256": "8f6a816a8e2499121b01c8fd44af341b96f125600584e8e9e252d48aee296568"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46921.json",
+      "size": 30702,
+      "sha": "31be208f70033ef26b8545afa7ee5ca59dba663f",
+      "sha256": "d214cdb9c60198f0c5bde0f706c6c8e615eb8a5026fcd56a7e5cbbca4a2c5a42"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46922.json",
+      "size": 29573,
+      "sha": "e86c69f4d5545331b8893f224d31f7fbaf4d0fbc",
+      "sha256": "f9bb94d7cec28ec24cc4ea7b40a7fc8e09a976c829fe4586c5db68b4f30066c8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46925.json",
+      "size": 30328,
+      "sha": "f4b35f3ef7bfa36e49ee24177799d843daaca4b7",
+      "sha256": "45c0f36ec233c979a57144443d5b2bfd5f355b378361ec762a0a3b1b697642c2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46927.json",
+      "size": 29635,
+      "sha": "17831837d6e15b7e17147c3e9b8278dd503b921f",
+      "sha256": "7380e2d0775ffa4864bf6c36e4c828ce6067ec54ad6e93c35233fed94efee6b3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46928.json",
+      "size": 28842,
+      "sha": "e942286e44c6110d97a4d86c70ae21da1b794ae0",
+      "sha256": "f7e47567221483b435ddc09ce26fcafe5cdd833337f489c89c7b25987761b91e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46929.json",
+      "size": 31183,
+      "sha": "7713ac137f14d208dcb18e4216ef911b769925fa",
+      "sha256": "1ed93839c4a6a6c6ef653e99c71073bc24a6215c14ea49b8f097561f1be3d386"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46931.json",
+      "size": 27259,
+      "sha": "f9f7503544f34bf66df871e65c2471d54584e45f",
+      "sha256": "244c2e2c06e858631c75d880581c5d166b8e7ea9a1faa7590d30c285ad4f08d7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46933.json",
+      "size": 28555,
+      "sha": "3ac39df15f676e46cc036d44582f0f66e5d52cc4",
+      "sha256": "3db79e01add7c0b7de3cc326e50c8db719493c0190ac1e134dd3e24897a4d1b3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46934.json",
+      "size": 28432,
+      "sha": "0437b29709e6c59192733ecc401c2af09f2d5f10",
+      "sha256": "f938457e83eb1f97ad4ad3f24f696a279f8c0278cf2916c9654438cb709baafa"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46935.json",
+      "size": 31472,
+      "sha": "281a9c20e7d757e2d42a640b1bee015bad5e74c2",
+      "sha256": "e90b660f3a7f906f5d42b8bc4ccf492fc7d583da034444e9129fff8f1bc5edb1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46936.json",
+      "size": 30917,
+      "sha": "f027d500861160a0770cced596c605ed8598f1b3",
+      "sha256": "8a9e5875fbed09559b7cda121eb899ff0bc703d343a14658b6a79b98c6e72e9f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46937.json",
+      "size": 27911,
+      "sha": "7f2fdab32eef8c30b4892c6d87bab15ef5c65bde",
+      "sha256": "69dd2193b93a84fa5d9d866c7a872ae241c7ad55eb2d329a14dc0d75b676443e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46938.json",
+      "size": 32347,
+      "sha": "0e8142118232c85e6d881ea1653df299944e8467",
+      "sha256": "5a27f676abc8d082028225000c7830807a0deaf9f89c5dac852b85496d50fa4c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46940.json",
+      "size": 32621,
+      "sha": "22b8440d690d934cc6cce2189422771f49dd84d8",
+      "sha256": "06cb9bef6d3eb2cd1518b6cc8201f96a3b0d9edfff1f9b3ce060d345106289e5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46942.json",
+      "size": 27445,
+      "sha": "3e0aa44ea14661ae0e7111ad9c1cd2fbfd3eea93",
+      "sha256": "2727660717bfff1ed7576c3466f35f7e6bc55a2fbc6b01ed56fc6839b81053d0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46943.json",
+      "size": 31104,
+      "sha": "d5166256f6d88e73d45e91fcef0e51b4e5b2f3e5",
+      "sha256": "9c117cf07a59b9d7f4944559463747dcffa7938d7a0ab75eb5d6ed0c2fcd6c0b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46945.json",
+      "size": 29781,
+      "sha": "3bebf38187b8d5de65305965867ada36318db0a0",
+      "sha256": "f806a9d62de6acbadafc3d3752f8b0b04aaedfb944665a986679fdf6332eaf36"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46946.json",
+      "size": 30880,
+      "sha": "bc77ab23b6da011bdf9c6baafee937d962e47656",
+      "sha256": "7623f088c20169007c256144e4b5142452367fb4c0045fb1de57a042ac630b59"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46947.json",
+      "size": 28154,
+      "sha": "b0723542f50fadcd33027490624e488a5569896b",
+      "sha256": "57ab1974531768570f04a25ed2c93356ca6ffcf3c1a93405692a03a5fa98bf42"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46949.json",
+      "size": 30563,
+      "sha": "0ef095b9adf6f61f006dfd3aad80190397b2aab8",
+      "sha256": "91b447d1968bf2d6b8dad6906984de3e6088124bd865089e823fffb2c1edc85f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46950.json",
+      "size": 29564,
+      "sha": "0d7070e401b99cf09405401efa88988e1b201f7c",
+      "sha256": "8e2b32e165820d05b1afa568e76264216fcc60f8b1c9f41a0b51d8c6da77a915"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46952.json",
+      "size": 31722,
+      "sha": "aeeed55036901c1daeb7ce5a06ce0ed1260946cb",
+      "sha256": "43a71de1bed4da76b03d1b4800fc13fe60d910775d5b548b14243c97882b46e0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46954.json",
+      "size": 30239,
+      "sha": "9fa42a1ae8403a48726f3ca91946a63a87a0db43",
+      "sha256": "5395dd2cd63c8038c3451dad6d116afdd11d7279aefe9e6195c2180d1cb84023"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46955.json",
+      "size": 28428,
+      "sha": "246c6a7bdf53fd38e937cb7a6090f4017a0cba85",
+      "sha256": "6e34a36520f2ef705a8a0c026aba1b973261a16ca5fd75ca5e0e39d7cfd788be"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46956.json",
+      "size": 30430,
+      "sha": "19fc15dac564c082f84fd47f667fe0791a308660",
+      "sha256": "b422518bb6f88aa1aa39a62892e64679596fd3182e17820bb9e070ed66edf939"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46958.json",
+      "size": 29840,
+      "sha": "26e827361bc5d3bc418bdc4de1eb6493c29c1740",
+      "sha256": "3c2bdc32f35a4cd20ca3eb3fd22a1125bffea71d29cbbd70b9bb3762d2d1ea3a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46960.json",
+      "size": 29204,
+      "sha": "be333b3b42f13b951aeb24db7f7000df6ad19d9c",
+      "sha256": "76b712b8dc275204ede539d99e273ad3844f26e5a18aa783c5d2a60e2dd251ef"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46961.json",
+      "size": 30993,
+      "sha": "0f19c78e7bc74d40e8576775c218b261324ae0df",
+      "sha256": "5ca2ea90896de57fc8f9ce130e4ea83c016e7db26a5e7c930c673a479404524a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46962.json",
+      "size": 31501,
+      "sha": "79b5626abd7ca5c0a5bd0e9bac1630186613da72",
+      "sha256": "4a4b4731e84009c0993fd6c2c58eb7c61e0e8180088f9094f11017005727a61f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46963.json",
+      "size": 30089,
+      "sha": "7044243cde97146ed3429ae62baa53fca10757d9",
+      "sha256": "6ebeb5971161e40034842f30d56749df1dd52d39eee80e0d46c5824cfc9e3b05"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46964.json",
+      "size": 30225,
+      "sha": "4600514eb0e85435fe8e7bb180285b05c3c784a2",
+      "sha256": "244557fb3d9ee3bdd5ce022cf6f4bf5ef3d3506fc7a0ec315016f868f2fb920d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46965.json",
+      "size": 27475,
+      "sha": "2cdd245794201f9d892ebb71c8b308f2e1877932",
+      "sha256": "adf07f0cd91e9b7f1c1d0fc4edfc58bbebf8d60b954877a8a935a44803a06afd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46967.json",
+      "size": 27368,
+      "sha": "1f1433d5068e71cce961bb753b5f14b190e1f487",
+      "sha256": "66fb0e85dc82f712b40cec9607db5d25153e9491f8eaa5d3dceb5dabacabef20"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46969.json",
+      "size": 30006,
+      "sha": "5a69c132eee68c9c49544df71fe4e42a705f3d91",
+      "sha256": "9c65254fbc1d460fa72e74bf869f84fc9ce734a2746f3188b32f1d255b5a95b1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46971.json",
+      "size": 26846,
+      "sha": "a5ac316caee1b137b2f7b62fc4ee234d514066e1",
+      "sha256": "856ca5b9592abc8afd98d433a63decb57cbb260eb94047ff52a659933f19f7e2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46972.json",
+      "size": 29611,
+      "sha": "350e768a09a6cafccbf9920c05116f7f99a338ef",
+      "sha256": "fa1a2aa2571ae88de26e208815935d8ef3c2c13f63a595b8012fcb310ae04310"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46974.json",
+      "size": 28370,
+      "sha": "d80f0b632c5472012cd4cd19de6401678226f68f",
+      "sha256": "19edc8670894a9ac896509b10ea31962de37332771f6fe2b5075aa09c8dcf0dc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46975.json",
+      "size": 32589,
+      "sha": "a4459e84ef3cfc068eece3d03eee5241c9a9911e",
+      "sha256": "5618a6ca19c7896c62906c3f2a1a237750fec561130313ec7d08f981fa52920c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46976.json",
+      "size": 31205,
+      "sha": "d35212e3338ec7ddd8f299a381743a3f7580d089",
+      "sha256": "215a2b79dafe1d90b782d2838856330f3ff28f012e44eb821cbc091832ab03a3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46978.json",
+      "size": 28921,
+      "sha": "57af1a88dcf8330a4f8ed1d084b76343258dce27",
+      "sha256": "f681bfaa615f02459f6f00a58ffc7cb6ad66578c1efcb0ffa97042bd00b23b1d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46979.json",
+      "size": 31577,
+      "sha": "706859ea63cb1926a2987ec1f30c5a90c6fad8c2",
+      "sha256": "fec90874de495221e55a02251084971d7634420b89bfceac46135f13af5d0755"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46980.json",
+      "size": 28348,
+      "sha": "5a3cc017840ab73680137a12473731b0725dbcaf",
+      "sha256": "30d64a332b0812ab2d46a5a6c014a4bad32ddccb193cd31391633148227eb79c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46981.json",
+      "size": 29322,
+      "sha": "939b1b1cf62982be743bcf2dfa4eba9d06a85a6c",
+      "sha256": "a22e8d719565ba75d42a0b11ced331bd9be7b6c8423185873fcc62fc88c7b67d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46982.json",
+      "size": 30371,
+      "sha": "4def4c5b0b870c70b7534fca8ea53234ebe3f42c",
+      "sha256": "cf5682bc0d1a8acfc71a1e33b840808c300427d24db315a8aba374cac7620a2f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/46984.json",
+      "size": 28353,
+      "sha": "ab0b83c3e173dbac20e85e6b94e3ec0c2c35fa87",
+      "sha256": "f4d6a9d0be33362c2e9df96445dc227e5df79e2bd55f04de67635948af90e951"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93321.json",
+      "size": 29499,
+      "sha": "e4f879191036c644492126beaa63182289cf0b2d",
+      "sha256": "9246fd7c834f1c0f0f6ec0cef4b5c1339dd86df34c35f4a1597f6b66d136c2a9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93322.json",
+      "size": 29742,
+      "sha": "b8abadbaa5ec820844b0712965d012d5250fbf4c",
+      "sha256": "935a2b35ed2f0e29eb34fe04341cb19a4f75d275e6cc6d5f466ba25857f742db"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93323.json",
+      "size": 30758,
+      "sha": "890c5773cc09904d9f111cffbf13e471dddaf0bb",
+      "sha256": "9c74a63e9ee2dfcf611fdfd9e60e3f30704fde1c2915dd219bf698e568158ce7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93324.json",
+      "size": 32772,
+      "sha": "54c3254bcf01a297b745406d6d694d259f07d968",
+      "sha256": "7ee3ac573958b04ed94f68a9c6092191030194a9a69f901b427ea953ab25e9a1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93325.json",
+      "size": 28913,
+      "sha": "a4f6de998018707dad31ebdf83b99398c71261a2",
+      "sha256": "e878ed702cfa107145a5a21425f780160516e763c0ca22a44a48a8445bfdba7d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93326.json",
+      "size": 32485,
+      "sha": "305ee6ab7ebb63400f6bb97effe8a88288760aaa",
+      "sha256": "81fa69a1eedc7611703de92a5074e1d4d967888c8b3578fec9801a9be8f08883"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93327.json",
+      "size": 28871,
+      "sha": "9626cea51d376b177d07751554959fe7af655c64",
+      "sha256": "a7db7958bd4a44303f618989fe0b074f4203218f96ef585e109c706211a34ee8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93328.json",
+      "size": 32489,
+      "sha": "41eae88b96657e70e388956fd57e223d5764450f",
+      "sha256": "86df249095ed868975effe68ee885e63aa5672eae3a80d1fb52fd3f5d9dad34f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93329.json",
+      "size": 30915,
+      "sha": "a0dc8b894143806583d7e67cc4c97ca579755ead",
+      "sha256": "2c7b4071c7d3c1e2b9b67430b799ef6ea4317f7fdf159e5e49826bf763733bfa"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93330.json",
+      "size": 31123,
+      "sha": "c04129d59826e3139cb36d47a2e2fa66eaf9fb3f",
+      "sha256": "1bca94017f54ca374983446b4c0bf8d5112d6a5399672c4c79f0ef995eb3bf38"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93331.json",
+      "size": 30160,
+      "sha": "3069b55b5ccb477f45c25e07d634d0182dae9061",
+      "sha256": "3b117e0ebd06fc71db2d566a4d9916ab54877330a7741bd1e1d9cd599653ef29"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93332.json",
+      "size": 30120,
+      "sha": "28d2bafc65132374dd8634cd028c4f537e8444bd",
+      "sha256": "f6f2713aea6f013bacaf61f206c0c1cfffd5f4096f5f12501b24146e690cb23f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93333.json",
+      "size": 30605,
+      "sha": "02549a8297e37f70cff2280d80a804b635c7e696",
+      "sha256": "e2b728f64a5e3017992855706e86250942274037f9591679fe43b65e41eb8574"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93334.json",
+      "size": 32412,
+      "sha": "7d79d692ef0e7dbdd3f18dc2697db34c40a6556f",
+      "sha256": "bfd2376d37051213410381a2c544cac8f01ddedd0de1309e4343e67e9d373341"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93335.json",
+      "size": 30067,
+      "sha": "2b31f5967633436fe6e6b909fc02f859f688df49",
+      "sha256": "8a29bc6d8125d12ce0d316ea1aae3f4a69774a6d4bd3760725fd1d0c072b7ffe"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93336.json",
+      "size": 25752,
+      "sha": "fade5be922918fd199eb9a15195f5a0cb529f498",
+      "sha256": "00eb73072e7c569a2e364334d1124a331779374dde20d1bc8a80a3a8fb928a61"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93337.json",
+      "size": 29466,
+      "sha": "271f904ddf99053b1f95b85f506e17af735895d4",
+      "sha256": "426a24ba3b77b4016f37c646d904f9e6ab501bf056ddb336290625a6ea3bdc0f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93338.json",
+      "size": 30777,
+      "sha": "c68944a592a96a5b52fe24d4691dfa576b0bbbe5",
+      "sha256": "4c1685d9284da398fb3045065c2317ef07358aa620907943d9c25d492367fdd4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93339.json",
+      "size": 31662,
+      "sha": "afca7c691ca0efe917fa2364a34ed49d688fea21",
+      "sha256": "35aede58c0e9200a9947fe6088af513c7a00a68620a23e77cbedbee52f0eb03a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93340.json",
+      "size": 32617,
+      "sha": "9c059480869dcd80f83f32abd34c03d9041c7e14",
+      "sha256": "49abe7e807f218bbcbe3e1bdb00db6ade9f4c3d14024dc362ee1534b1857172e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93341.json",
+      "size": 31971,
+      "sha": "fdd9913ffbb391fa972d2c329a968bfe0028c0c7",
+      "sha256": "d3f056ec52755dc314df0c331392b6a3b161d1245f8e5161c1ff66b3b3436ce1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93342.json",
+      "size": 30523,
+      "sha": "0daf647864f87bd9de6580cfd4d11ac1197ad487",
+      "sha256": "67f97f94febb25e84170c5d9f70c3aaadc4bb75043079a0932c44778535d74be"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93343.json",
+      "size": 28993,
+      "sha": "e23fc60746d4df0847b5179ca3e529f6895fd4bb",
+      "sha256": "017c0bdc440330571d947de4923a5e5c7dd34a8d51593e221abd6dfa7faf191f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93344.json",
+      "size": 30172,
+      "sha": "64a6c7c8fd02e1a5fd05a8cd26b62592d76a38a3",
+      "sha256": "12b8b477b178fe152139b58c6588a0160b290ee3d4dd779c6067fdbf2788d6f6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93345.json",
+      "size": 30167,
+      "sha": "f506cf4f9b0ce2483a06007cc40727b1bba5ab2f",
+      "sha256": "a96e09a1aa1b94bcb702e0f6487a4bd6a75d5bfbb3905c6899051ab3d706d4ab"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93346.json",
+      "size": 29400,
+      "sha": "8da1137e4212b877b2019e9e3e1dd9312439e98e",
+      "sha256": "555391548402e561e8bebacfaa2ba0223b7a56f889fe02d784eccb9b1b7db9d8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93347.json",
+      "size": 30083,
+      "sha": "54d31d153eb7edaf9c4779f2f611e88c4c712419",
+      "sha256": "776df44dc1c445c493a0030cee4c8fccbb9e0f62271fb5f9460adb0a3be5cbd9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93348.json",
+      "size": 31979,
+      "sha": "1d3d40286f637b54599b34c0e45bc45b2c29f1ca",
+      "sha256": "76f462d9f6656bb7bbb88a56845e889341353b6e8a7c0460b5ccd40105fb34b3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93349.json",
+      "size": 32712,
+      "sha": "29f8ebb9e2c0de6b3f82c8f0d6327e3c5c2eb477",
+      "sha256": "88e958239bd3895737033cfe3cf37492633c4713ee0078edeec72fb59e7e387b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/primary/93350.json",
+      "size": 29526,
+      "sha": "b4fcac5cb60c10a35529798f90ab66bbc3b99929",
+      "sha256": "9745917c795ba57ec92aaf7309213f38a85c5967a8c5d5c401f222bb1f539903"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/sources.json",
+      "size": 74967,
+      "sha": "c3253347a430a162ddad70f1f297b34eba00e1a5",
+      "sha256": "84d3003da872282c7a7b732d9695db93e896bc4f8b33ea368458c02679d1fb8e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/inputs/target_fixtures.csv",
+      "size": 15183,
+      "sha": "5b57f9d620db01c3e13c0aa76ebea5a18b01eb63",
+      "sha256": "a0e24d035062ec95e9a840fc11e7fd733210d2abd2f8c6b5f759cd358ca679eb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/match_conservation.csv",
+      "size": 59383,
+      "sha": "d479262bd6ed4bbfd89969e04ded48d5693744a7",
+      "sha256": "4972fde365ec2865867f82d0bd55597da21c47ebc9ff2a26241e5e1078c1a334"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/overlay.csv.gz",
+      "size": 28496,
+      "sha": "c86411b9758dffd08fe46562ddbcdae725bc397e",
+      "sha256": "7234c72e3f1a6d62b0ea6c48bc1f5e701fa3fc8d670ddadc48cfe02754b50acd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/predict.py",
+      "size": 4005,
+      "sha": "ecad73b96630b316e66d852e966875a4518462c7",
+      "sha256": "835eaec00cbfc8f4c5426e3ac92f6e4bd8053293a66285a4da0ca6b7598d93f6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/predictions.csv.gz",
+      "size": 77610,
+      "sha": "84cc0ae556a8db9f0299d996de3915849492d12f",
+      "sha256": "40666a43f4e7933b5e2adac475891eb823b102c20c1aeaae1bc66ee38e909698"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/protocol.json",
+      "size": 1167,
+      "sha": "41128ab606c08dc702f33682482777f47e7cf2b6",
+      "sha256": "84de6edcd784e838022857f148e2782b8dc6d1ed9181d4b01f008ee128606983"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/regression_controls.csv",
+      "size": 42079,
+      "sha": "a81393db38cafa0c1f9cf4d1c5cfb08700f77aaf",
+      "sha256": "4e088b439fb345b3eda3ecb949a3186b0f7c52bfc4b4ebaefdc7ddd9abb3e9ab"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/test_conservation.py",
+      "size": 891,
+      "sha": "6ef4b9a3e3fa238756569d7b8009bc083ad53fd7",
+      "sha256": "8d6b59c09e3d94b86d04499bd5058fd579988b7642257bbee81f3e1ffe23d62e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/validate.py",
+      "size": 2133,
+      "sha": "ce90900e401e161f3dcd541019807d60046f2c28",
+      "sha256": "a3e18ba4d943755d5ad3a61d14d398a4d3d6a8980c7039d29d587257b3d337ca"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/match_inventory_recovery/validation_summary.json",
+      "size": 291,
+      "sha": "b551aa759c113fb270b63207d9575a603ccc807d",
+      "sha256": "fad529a2f9d7aeb1b541cab8c215c6774060a2f26c5c17ea43929c8722aedfbd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/season_conservation/inputs/full_team_totals.csv",
+      "size": 831428,
+      "sha": "07b48524fd812fffd2a5bd5eb20cc8eb9f707444",
+      "sha256": "004214fb008229bab37cebf00b51db4fe22bd0226c94c91633fc0719daf49cc2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/README.md",
+      "size": 7604,
+      "sha": "0da1dbef2eb3e64710b74e0aa5b9436b86c2e82f",
+      "sha256": "9d4de2bec3fbb12740af62e46a0d805c2032da13706b076c2205188fafcf56c2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/inputs/duels.csv.gz",
+      "size": 7178835,
+      "sha": "248551a5cdca26591d4b4419221894cfdb0f9801",
+      "sha256": "a1477b966e5e13323ca454d1036b60e089b7267ac6ee96470f5b652ef06c8377"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/inputs/players.csv.gz",
+      "size": 2132797,
+      "sha": "93321b34cd65f615523a5ba5de91516f38b00fe6",
+      "sha256": "99c76ad08be68639e8147eb3e1f5fa5c35b720a5bb3eceb98ea3752df1e236a5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/paired_events.csv.gz",
+      "size": 6959514,
+      "sha": "d4e9ff91fa1835af859d1dad8fefc7e74f9ae507",
+      "sha256": "435bcbbb72fea5950608d3fb9e07e0ea012253bbfe2bb0f4467debae03440174"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/pairing.py",
+      "size": 1540,
+      "sha": "43cb014ab730f697b542d3c0399bdd845239a61f",
+      "sha256": "92e1ba6f5d28cf11ae66f7f0f780bea758971019e1bf25ed0b7ad644bff41d2c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/predict.py",
+      "size": 6414,
+      "sha": "4a4e674ac034e6f67d3f3b8508d3059dd297b6e4",
+      "sha256": "e3f14548f9b16db64d2731d9f6b65b4acd9dd8b7c5ebd5dcc2bdf91425d423ab"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/prediction_freeze.json",
+      "size": 2617,
+      "sha": "90a56682698505fc59b291d5dc12e793a21ef1d9",
+      "sha256": "3b8f6ebfd65138d334dbd60d3da70dc877023623cba1abdd1671532960f0ae0a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/protocol.json",
+      "size": 2116,
+      "sha": "a264ac7ea91f35ad093d3d3636756295219aae83",
+      "sha256": "bbc2da4ffcfcd06e7bbbfd9dd8d16f5c1f12583c73e1f1e945fcf7ee8eb9e9ea"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/team_gates.csv",
+      "size": 557461,
+      "sha": "95f904739f92d4b804e48aeb7f701ee6d00e8997",
+      "sha256": "41d17b8e67cd93387bd5f37ca2fb7c13448a3059b3912c0cb455861b040198b6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/validation_summary.json",
+      "size": 452,
+      "sha": "44f1297a3a58e72485c09eb2e1c0f89ba8a96361",
+      "sha256": "e3628f9abb858e1752e48c795c640692753ee88d7e062d04ca222f4920fe0ae2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/requirements.csv.gz.parts/part-001",
+      "size": 8388608,
+      "sha": "c2aa121e89980e9f13bc21d977e2a71f9057bac6",
+      "sha256": "f40bb699d8e273c9a9ead44f56bf93f59ee8d094dda91d720f92a840802f5c39"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/requirements.csv.gz.parts/part-002",
+      "size": 5030124,
+      "sha": "b7504d839d78a0d041e61160c58667dd569ee476",
+      "sha256": "092c3683b6133efbb30ea50a505c44898cd5946779e28ef9150f53363e3fa5e2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/results/requirements.csv.gz.parts/part-001",
+      "size": 8388608,
+      "sha": "4971db83f2c22677553c9aa4f62a80647dfec26c",
+      "sha256": "580f8e1699dff66cb0bc580917015ca9bf3564f4f8d10f42b285a8c4e8e857cc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_event_recovery_v2/results/requirements.csv.gz.parts/part-002",
+      "size": 4999230,
+      "sha": "fe333145cf3f9a2466de34efae7c7183758b3219",
+      "sha256": "608b2967d79b45831d671a556a322bc3a230e761ee65b39116faf1c9708968c2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_followup/results/requirements.csv.xz",
+      "size": 8264096,
+      "sha": "576cae92eebef02f38b41180fcd071a14b66c318",
+      "sha256": "d27e6c2019c8e705bccd7e5609df7f7a517a801215c5df21acdce1b037358380"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/README.md",
+      "size": 10219,
+      "sha": "f7a814b564f60a94de2e171488346059206c2b59",
+      "sha256": "86013739a70af557fc589ff3a331ef0569af6b8adbd2ed27b1074c468e0c2b53"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md",
+      "size": 7446,
+      "sha": "4b68281e485cc1ed2d5c25b06816809bb35b394e",
+      "sha256": "8058f27969a16b0193a4ac074b3f5adecf23d07d137a1cccdb1ba470265ac282"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/CURRENT.json",
+      "size": 1801,
+      "sha": "12ed4e9a3adbeef602ce81fbbf73ee6c91b30e88",
+      "sha256": "1c3ab63361277282a9425c70a7e5bd5f15df6fa80a1b98b732000862da9e7f7f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bootstrap.py",
+      "size": 931,
+      "sha": "a403b286df5a480c02af847abf9a91613a3ad244",
+      "sha256": "7b8cf95d11e6ac629e2fab3f5fa51871c051e4ac9cf5953e2bc25dace640c1ba"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/ledger_parts.json",
+      "size": 1242,
+      "sha": "c97072c3e2fff0ae4d418200d6ea906f984b7334",
+      "sha256": "7bfb25b1ecdb6ab06074bdf566681dbcccbd49f49af94e87eb686c993b50cb62"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/README.md",
+      "size": 1822,
+      "sha": "698960f693e381ce3c8926e229fe3a974a2e1d23",
+      "sha256": "9293251d86c14b74e4ee745625c65f89b78bbca91d12ea4935bd61b1ae3e7fcb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/.gitignore",
+      "size": 184,
+      "sha": "cc8d9d4e743a2ada44931d5ce46e1ab33c301d78",
+      "sha256": "741665c7811f538948782d268a1463da2095808fa7f6db6a7f54d2aa5f3fb22b"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "size": 62342,
+      "sha": "8b5ed7b5216d21d261f461df4ba23902af79ed82",
+      "sha256": "dfadfff6984868228311c87206ffed623f189070d98c9f9845194883e84d182f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_dependencies.csv.gz",
+      "size": 177423,
+      "sha": "22587529eeb425981ab09af0a36e00508f56dbd4",
+      "sha256": "14160df750e79870cc2fae513c9a63d67501fd29dda1ae97cdf858a7797de4ff"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_groups.csv",
+      "size": 460,
+      "sha": "87373de5e6fc70698dc49778eb924c710c92e4cb",
+      "sha256": "51432fe398413c294c7f38c73d38c6e046db2530fc0904fd7e9be4b70f68fd9b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_inventory_gaps.csv.gz",
+      "size": 7472,
+      "sha": "73a6847dd7ddbc09f5bb0c24ac29954c2ea20f1e",
+      "sha256": "be61ab76ef62509d94a56d2e02b36744cc994be2749c8ad1815dbf6444b098d9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_summary.json",
+      "size": 310,
+      "sha": "13a5a15486990414559fe0c216692b6b08db6b28",
+      "sha256": "1f2ebba89389fc8b942884585d83c475db73a2adfbe5a98668a978dc0295ad36"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/build.py",
+      "size": 3475,
+      "sha": "339cbd9ccef6e69f000c2ca652944cbef449ae5f",
+      "sha256": "b30ee356e2f5343bb8bdea1643ee3f2661422839b2be3fb397272b0da3ce29a0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/goal_group_classification.csv.gz",
+      "size": 140336,
+      "sha": "0fa3f34db7439692b18f2cbe726dae072acf6407",
+      "sha256": "3bb41b283a4accbf00ac8e1545810ee914cdb9bbae14d1e51ce6a577afb24019"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/quality_groups.csv",
+      "size": 2600,
+      "sha": "55862fb724801395cf22fdf0d050702de6778fc9",
+      "sha256": "34014fce30d17757e72dbadc94ca281e2a6fb971753176aa287134ed98cdc6fd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/quality_summary.json",
+      "size": 147,
+      "sha": "aac77f5c923f76eb898639f9fc7449ab7d0071fe",
+      "sha256": "771ebec9737a754687b6be94ddb6088d89b4fdf11779df97ffa575a1b1af6da7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/publication_verification.json",
+      "size": 368,
+      "sha": "0733fe88eb0f286d33c88740046b7b04d6b3daf3",
+      "sha256": "fa790ea37e0b0697d22b77583b5b1c928559c8cd3017ea63fb87f1a4cd7f655e"
+    }
+  ]
+}

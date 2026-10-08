@@ -1,0 +1,11 @@
+{
+  "assist_null_pass_recovery/prepare.py": "4e4f4c7354fcc646cc14ea45801b022c5bfaaf68f29d4b99375ffa5de59cb3c7",
+  "assist_null_pass_recovery/protocol.json": "33dce5e01dedb043199af14e530b849d078a9328dc5ea7cd36e2d4fde4ea3dcf",
+  "assist_null_pass_recovery/control_plan.csv": "741d7cc8b8c601aa84d1cec8ac9647b7c1dcd20367aa371179d2d9e157765f46",
+  "assist_null_pass_recovery/control_predictions.csv": "2ba690baa20661e1957febdc6ae9c7cfa530ff541cedd488ae285c1f3adf8fa3",
+  "assist_certificate_expansion/predictions.csv.gz": "ef28f285b7c3710e3f1948958f9925ef6e7b283cda978c87f8ffcded7da6727d",
+  "assist_certificate_expansion/prediction_freeze.json": "b7df645174e09a8b62c5e73715b28219d50fa9ae9f33a663e500d34b16460bed",
+  "assist_certificate_expansion/direct_validation.csv": "1d1fbcee083ba35e896d7bb3ad3642847105c7dd820fadc12050d66e0e12fc69",
+  "assist_certificate_expansion/validation_summary.json": "7638ee833a6622a9d374c049e15d621b2bd2eca8c4f2a09b84a76f36b5a39971",
+  "assist_team_identity/results/goal_decisions.csv.gz": "0235761f80276aec6b26e2ca72312377e6881511c8106b6f552a09deabbecfee"
+}

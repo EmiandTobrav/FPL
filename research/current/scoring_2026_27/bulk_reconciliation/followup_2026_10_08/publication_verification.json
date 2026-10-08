@@ -1,0 +1,8 @@
+{
+  "exact_gzip_restorations": 2,
+  "readable_xz_csv_matches_original": true,
+  "replay_outputs_previously_verified": 27,
+  "new_unit_tests_previously_passed": 26,
+  "bootstrap_exit_code": 0,
+  "bootstrap_stdout": "Verified original ledger: bulk_followup/results/requirements.csv.gz\nVerified original ledger: tackle_event_recovery_v2/results/requirements.csv.gz\n"
+}

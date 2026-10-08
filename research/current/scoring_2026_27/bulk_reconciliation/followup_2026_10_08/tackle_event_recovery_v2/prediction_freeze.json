@@ -1,0 +1,27 @@
+{
+  "inputs": {
+    "tackle_event_recovery_v2/pairing.py": "92e1ba6f5d28cf11ae66f7f0f780bea758971019e1bf25ed0b7ad644bff41d2c",
+    "tackle_event_recovery_v2/predict.py": "e3f14548f9b16db64d2731d9f6b65b4acd9dd8b7c5ebd5dcc2bdf91425d423ab",
+    "tackle_event_recovery_v2/protocol.json": "bbc2da4ffcfcd06e7bbbfd9dd8d16f5c1f12583c73e1f1e945fcf7ee8eb9e9ea",
+    "tackle_event_recovery_v2/validation_plan.csv": "1136dd628309f95b13fe31e92c5cbb85240293b10b9d4752235dfdf2edd71f1c",
+    "tackle_event_recovery_v2/inputs/players.csv.gz": "99c76ad08be68639e8147eb3e1f5fa5c35b720a5bb3eceb98ea3752df1e236a5",
+    "tackle_event_recovery_v2/inputs/duels.csv.gz": "a1477b966e5e13323ca454d1036b60e089b7267ac6ee96470f5b652ef06c8377",
+    "tackle_event_recovery_v2/inputs/primary/sources.json": "6eb92601804d486a131a498984c8de205cf30b5c823ef6784c7d0b9961abd7e6",
+    "tackle_event_recovery_v2/inputs/primary/total_contest_2025-26.json": "f23e81dd14a4e4dccc007b44d93e3db92b03ad75f04b9c372cf11868c11c0449",
+    "tackle_event_recovery_v2/inputs/primary/total_contest_2024-25.json": "068a0c7cf9811cd938963d8c29aaf2ec83caf54117302b7216cf09f151bc2d1a",
+    "tackle_event_recovery_v2/inputs/primary/total_contest_2023-24.json": "33d9c5716df634b606416bf41ce10251c2884059b82a65666514a4c8efef3afd",
+    "tackle_event_recovery_v2/inputs/primary/total_contest_2021-22.json": "47cd922a71740c9d99379ee6370563c40665ab0ac355c63889bffdc937359a7b",
+    "tackle_event_recovery_v2/inputs/primary/total_tackle_2025-26.json": "2ae8f6f5297198f6fe4ef1928a073b698ce0d2276a9eaa6d74f9d307b33d9109",
+    "tackle_event_recovery_v2/inputs/primary/total_contest_2020-21.json": "e763951e0d7727be8c8d3adc7c6ef8a413b08dec44035edff0908b7385583d9d",
+    "tackle_event_recovery_v2/inputs/primary/total_contest_2022-23.json": "a586e5c1389d56b96a42ee9fbc128d07e62c8c6b81c393c7df2fdad350305817",
+    "tackle_event_recovery_v2/inputs/primary/total_contest_2019-20.json": "020143363a8fe3c59258397341deeaa7992d00a5423fbd3b062fcb2760dbca81",
+    "season_conservation/inputs/full_team_totals.csv": "004214fb008229bab37cebf00b51db4fe22bd0226c94c91633fc0719daf49cc2",
+    "assist_team_identity/prepare.py": "7be8876e2c72e25ba0371c19baa6f431f55ab85ff1a4e1c24f390d883323e1f0"
+  },
+  "outputs": {
+    "season_conservation.csv": "15da908fcd0b8a6a0cec52f65faded8d323270a76206909b65f28ffd72f98f37",
+    "team_gates.csv": "41d17b8e67cd93387bd5f37ca2fb7c13448a3059b3912c0cb455861b040198b6",
+    "paired_events.csv.gz": "435bcbbb72fea5950608d3fb9e07e0ea012253bbfe2bb0f4467debae03440174",
+    "player_predictions.csv.gz": "8520b352e24c9e0c38b1e3a4f4dfd96c452b8301cfb0ecb449387b770328e386"
+  }
+}

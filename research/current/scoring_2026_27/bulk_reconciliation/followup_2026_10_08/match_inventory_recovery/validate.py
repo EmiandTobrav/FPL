@@ -1,0 +1,10 @@
+from pathlib import Path
+import pandas as pd,json,hashlib,gzip
+P=Path(__file__).resolve().parent;S=P.parent
+f=json.loads((P/'freeze.json').read_text())
+for n,h in f['inputs'].items():assert hashlib.sha256((S/n).read_bytes()).hexdigest()==h
+for n,h in f['outputs'].items():assert hashlib.sha256((P/n).read_bytes()).hexdigest()==h
+p=pd.read_csv(P/'predictions.csv.gz');people=pd.read_csv(S/'assist_intentional_pass/inputs/participants.csv.gz').dropna(subset=['player_id','team_id']);mapped=p.merge(people[['season','fixture','code','match_id','team_id','player_id']],on=['season','fixture','match_id','team_id','player_id'],validate='one_to_one');source=pd.read_csv(S/'component_conservation/inputs/archive_projection.csv.gz',low_memory=False);obs=mapped.merge(source[['season','fixture','code','timesTackled']],on=['season','fixture','code'],validate='one_to_one').dropna(subset=['timesTackled']);obs['agrees']=obs.value.eq(obs.timesTackled);(P/'existing_counter_audit.csv.gz').write_bytes(gzip.compress(obs.to_csv(index=False).encode(),mtime=0))
+plan=pd.read_csv(P/'inputs/target_fixtures.csv');reg=obs[obs.match_id.isin(plan.loc[plan.scope.eq('regression'),'match_id'])];reg.to_csv(P/'regression_controls.csv',index=False);v=dict(regression_comparisons=len(reg),regression_errors=int((~reg.agrees).sum()),all_known_comparisons=len(obs),all_known_errors=int((~obs.agrees).sum()),qualified=bool(len(reg)>=100 and reg.agrees.all() and obs.agrees.all()),limits='Additional exact conservation gate; event rule unchanged. Later-season regression previously seen by v2 audit, not independent holdout.')
+(P/'validation_summary.json').write_text(json.dumps(v,indent=2)+'\n');print(json.dumps(v,indent=2));assert v['qualified']
+r=pd.read_csv(S/'tackle_event_recovery_v2/results/requirements.csv.gz',low_memory=False);pending=r[r.is_open&r.field.eq('times_tackled')&r.status.eq('missing_data')][['season','fixture','code','field']];layer=pending.merge(mapped,on=['season','fixture','code'],validate='one_to_one');(P/'overlay.csv.gz').write_bytes(gzip.compress(layer.to_csv(index=False).encode(),mtime=0));print('New tackle fields',len(layer))

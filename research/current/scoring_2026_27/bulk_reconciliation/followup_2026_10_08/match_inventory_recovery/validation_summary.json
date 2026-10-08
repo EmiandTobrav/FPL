@@ -1,0 +1,8 @@
+{
+  "regression_comparisons": 395,
+  "regression_errors": 0,
+  "all_known_comparisons": 395,
+  "all_known_errors": 0,
+  "qualified": true,
+  "limits": "Additional exact conservation gate; event rule unchanged. Later-season regression previously seen by v2 audit, not independent holdout."
+}

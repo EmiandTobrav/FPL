@@ -1,0 +1,8 @@
+group,goals,open_assist_fields_touched,conditional_resolved_fields,conditional_complete_player_matches,conditional_complete_matches
+source_not_assisted_marker,827,7488,5866,5684,211
+assisted_goal_without_unique_pass_certificate,391,4352,3010,2778,64
+paired_pass_with_intervening_events,1028,4158,2993,2836,221
+no_positive_goal_assist_certificate,383,2879,2461,2005,48
+penalty,185,2449,1782,1635,33
+own_goal,228,890,715,703,43
+direct_free_kick,23,308,199,194,4

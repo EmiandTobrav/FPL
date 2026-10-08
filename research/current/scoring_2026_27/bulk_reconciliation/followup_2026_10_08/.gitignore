@@ -1,0 +1,4 @@
+# Exact byte copies restored offline by bootstrap.py; committed as parts.
+/bulk_followup/results/requirements.csv.gz
+/tackle_event_recovery_v2/results/requirements.csv.gz
+__pycache__/

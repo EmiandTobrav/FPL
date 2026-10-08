@@ -1,0 +1,20 @@
+{
+  "teams": 566,
+  "fixtures": 353,
+  "infeasible_teams": 0,
+  "single_goal_checks": 7,
+  "single_goal_errors": 0,
+  "new_bound_controls": {
+    "linked_PASS_LOST_actor_set": 12,
+    "pass210_actor_set": 8,
+    "linked_OWN_GOAL_actor_set": 6,
+    "linked_POST_actor_set": 1
+  },
+  "protected_conflicts": 0,
+  "qualified_kinds": [
+    "linked_PASS_LOST_actor_set",
+    "pass210_actor_set",
+    "linked_OWN_GOAL_actor_set"
+  ],
+  "limits": "Temporal regression with previously seen2025 outcomes and sharedOpta source, not independent validation. Candidate exclusions only."
+}

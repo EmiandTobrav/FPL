@@ -2,9 +2,41 @@
 
 Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
-## Masseavklaring fra eksplisitte totaler – 8. oktober 2026
+## Gjeldende kø og gjennomføringsplan – 8. oktober 2026
 
-**Gjeldende restliste: [bulk_reconciliation/](../research/current/scoring_2026_27/bulk_reconciliation/README.md).**
+**28 934 åpne feltkrav i 24 716 unike spillerkamper.**
+**52 564 spillerkamper og 479 hele kamper har komplette inputfelt**, av
+77 280 og 2 660. Tilgjengelig input er ikke kvalifisert poeng/BPS/bonus.
+
+[Gjeldende restliste](../research/current/scoring_2026_27/bulk_reconciliation/README.md),
+[maskinlesbar peker](../research/current/scoring_2026_27/bulk_reconciliation/CURRENT.json) og
+[prioritert arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
+Dette erstatter alle eldre køtall nedenfor. Mellomliggende lokale avklaringer
+og siste batch er samlet i et publisert øyeblikksbilde; rådata og gamle kontroller
+beholdes. Siste batch ga 2 724 nye felt (1 868 taklinger, 856 assists), 1 850 nye
+komplette spillerkamper og 11 nye komplette hele kamper. Fra forrige publiserte
+rest på 119 780 er den kumulative reduksjonen 90 846.
+
+Arbeidsrekkefølge: felles arkivgap (21 kamper / 3 106 feltkrav), fem manglende
+lag-/sesongtotaler bak hoveddelen av mållinjeklareringene, store assistgrupper
+med positivt kildebelegg, deretter vanskelige årsaksgrupper og gjenværende
+hendelses-/tellerunntak. Små piloter før batchinnhenting; velg etter faktisk
+dekning og komplette kampenheter. Assists utgjør 20 288 av de åpne kravene.
+Gamle kildeforsøk skal leses før nye forsøk; markerfravær gir aldri automatisk null.
+
+Kvalitetsflagg samles i 73 ikke-tomme felt-/sesonggrupper, ikke individuelle
+manuelle oppgaver for alle 569 151 flaggede kravrader. Globale regelgater må
+kvalifiseres før BPS-deltaer og bonusrangering for hele kamper. Låste
+poeng/BPS/bonus/modeller/benchmark er uendret. Ingen main-merge.
+
+26 nye tester og separat replay av 27 resultatfiler bestod ved siste batch.
+Kontrollenes faktiske uavhengighet er dokumentert; kjente utfall kalles regresjon.
+Full repositorietest og GitHub CI er ikke bekreftet. Øyeblikksbildets interne
+`published=false` beskriver opprinnelig lokal kjøring, ikke denne publiseringen.
+
+## Historikk: masseavklaring fra eksplisitte totaler – 8. oktober 2026
+
+**Tidligere restliste: [bulk_reconciliation/](../research/current/scoring_2026_27/bulk_reconciliation/README.md).**
 Arbeidsrekkefølgen med store feltgrupper  liten kildeprøve  masseberegning og
 måling av komplette spillerkamper/kamper er gjennomført.
 
@@ -632,3 +664,4 @@ Global H3 gir 2308,25 med chips, +70,0 mot referansen (4/4, beskrivende interval
 Samspill mellom globalvekt og H3 er +21,25 med chips, usikkert, men −78,25 uten og negativt i alle fire sesonger. Tidligere forbedringer kan ikke summeres. Global H1 gjenskaper alle åtte gamle globalvektspor med samme tropper og poeng. Alle 544 nye beslutninger er optimale innen toleransen, maks gap 9,55e-6. Poengregnskap, starttilstand, spillerkobling og matchede før-frist-prognoser er kontrollert. Tre relevante eksisterende regresjonstester er kjørt på nytt og består; ingen ny full testkjøring påstås.
 
 De to bekreftede utfordrerne beholdes; `constant_h3` legges til som forskningskandidat. Kode, protokoll, prognoser, spor, parete resultater og hashkontroller er lagret under `research/current/global_horizon`. Ingen produksjonsendring, urørt holdout eller verifisert GitHub CI-status.
+

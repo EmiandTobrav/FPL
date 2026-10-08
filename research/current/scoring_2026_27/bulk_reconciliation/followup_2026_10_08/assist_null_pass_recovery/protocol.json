@@ -1,0 +1,7 @@
+{
+  "rule": "Unchanged frozen assist_certificate_expansion award=True clean pass210 rule. No new causal rule or threshold relaxation.",
+  "plan": "All 2020/21 multi-goal teams in fixtures excluded from the old one-goal plan, whose entire goal inventory is either approved compatible direct/foul assist or this unchanged null-flag proposal. Selection uses no FPL assist outcomes.",
+  "gate": "Original 14 null-flag single-goal checks plus every new-null goal in complete multi-goal team vectors; at least20 goal occurrences total, zero vector errors, coverage and identities complete, no protected conflicts. Count goal occurrences and team vectors separately, not independent per-goal labels.",
+  "validation_limits": "2020/21 follows 2019/20 development encoding. Five new team vectors are regression/temporal evidence, not independent provider validation. Two proposed awards in one vector cannot be individually identified from match totals. All proposals and the selection rule remain frozen; no lower threshold if failure.",
+  "scope": "Apply qualified null-flag rule to pre2025 unknown goals only, preserve existing goals/exclusions/values. Input availability only."
+}

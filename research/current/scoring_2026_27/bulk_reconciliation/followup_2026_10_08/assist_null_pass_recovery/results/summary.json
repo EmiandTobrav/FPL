@@ -1,0 +1,18 @@
+{
+  "new_goal_awards": 154,
+  "new_complete_assist_fields": 99,
+  "new_zero_values": 0,
+  "new_positive_values": 99,
+  "changed_from_historical_fpl": 0,
+  "previously_complete_assists_preserved": 56136,
+  "validation": {
+    "previous_single_goal_null_checks": 14,
+    "new_team_vectors": 5,
+    "new_goal_occurrences": 6,
+    "total_goal_occurrences": 20,
+    "new_player_comparisons": 67,
+    "new_vector_errors": 0,
+    "qualified": true,
+    "limits": "20 goal occurrences across19 team vectors; two new awards share one vector and are not individually identified by match totals. Temporal/shared-source regression evidence, not independent provider validation."
+  }
+}

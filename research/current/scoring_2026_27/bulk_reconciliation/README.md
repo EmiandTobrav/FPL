@@ -1,3 +1,63 @@
+# Gjeldende restliste og arbeidsrekkefølge
+
+Oppdatert 8. oktober 2026. **28 934 åpne feltkrav i 24 716 unike spillerkamper.**
+**52 564 spillerkamper og 479 hele kamper har komplette nødvendige inputfelt.**
+Dette er datatilgjengelighet, ikke ferdig kvalifiserte poeng, BPS eller bonus.
+
+- [Maskinlesbar inngang og kontrollsummer](CURRENT.json)
+- [Full gjeldende kravtabell](followup_2026_10_08/bulk_followup/results/requirements.csv.xz)
+- [Kun gjenværende feltkrav](followup_2026_10_08/bulk_followup/results/remaining_fields.csv.gz)
+- [Prioritert arbeidsrekkefølge](WORK_ORDER.md)
+- [Målgrupper og betinget assistpotensial](priority/assist_groups.csv)
+- [Siste batch: metode, kildebelegg og valideringsgrenser](followup_2026_10_08/bulk_followup/README.md)
+
+| Felt | Åpne krav |
+|---|---:|
+| `assists_2026_27` | 20 288 |
+| `goal_line_clearances` | 3 540 |
+| `times_tackled` | 1 693 |
+| `shots_on_target` | 1 314 |
+| `clearances_blocks_interceptions` | 585 |
+| `legacy_net_tackles` | 357 |
+| `fouls_won` | 356 |
+| `won_tackles` | 352 |
+| `saves_outside_box` | 342 |
+| `penalty_goals` | 56 |
+| `big_chance_saves` | 38 |
+| `total_tackles` | 11 |
+| `historical_bps` | 1 |
+| `recoveries` | 1 |
+
+Sammenlignet med sist publiserte kø på 119 780 er 90 846 ytterligere feltkrav
+avklart gjennom de mellomliggende arbeidsstegene. Den siste batchen alene
+avklarte 2 724 av 31 658 (8,6 %): 1 868 taklingsfelt og 856 assistfelt.
+Populasjonen er fortsatt 77 280 spillerkamper / 2 660 kamper.
+
+Øyeblikksbildet inneholder siste fullstendige kravtabell, forrige fullstendige
+lokale tabell som replay-input, kode, frosne kontrollfiler og 297 nye primærsvar.
+De to store originale gzip-tabellene er lagret som byte-deler. Kjør først
+`python followup_2026_10_08/bootstrap.py`; dette gjenskaper begge filene med
+identiske kontrollsummer uten omkomprimering. Gjeldende fulltabell finnes også
+som vanlig `CSV.xz`, lesbar direkte med pandas.
+
+Siste batch er verifisert med 26 nye tester og 27 identiske resultatfiler fra en
+separat kopi. Replay krever Python 3.12 og pandas 2.2.3, ingen tidligere lokale
+mapper eller ny nedlasting. Det gjenskaper siste batch, ikke alle historiske
+mellomsteg. Filer med `published=false` og omtale av upublisert arbeid inne i det
+uforandrede øyeblikksbildet beskriver opprinnelig kjørestatus; denne inngangen
+publiserer materialet. Full repository-test og GitHub CI er ikke bekreftet.
+
+Eksterne kvalitetsflagg: 569 151 kravrader i 73 ikke-tomme felt-/sesonggrupper.
+Kvalitet behandles gruppevis med unntak; felles Opta-opphav er ikke uavhengig
+validering. Rå FPL, eksplisitte nuller, keeperverdier, godkjente offisielle
+målrettelser, frosne kontroller og låste etiketter/modeller/benchmark bevares.
+
+**De øvrige CSV-/JSON-filene direkte i denne katalogen og teksten nedenfor er
+historiske resultater fra den første masseavklaringen.** De bevares for replay.
+Bruk alltid CURRENT.json og øyeblikksbildet over som gjeldende arbeidskø.
+
+---
+
 # Bulk reconciliation: current requirements ledger
 
 8 October 2026. Historical FPL remains authoritative for compatible fields.
@@ -138,3 +198,4 @@ control, manifest and raw-evidence files byte-identical. Full repository tests
 and GitHub CI were not verified. See `test_results.json`,
 `existing_test_results.json`, `source_verification.json` and
 `replay_verification.json`.
+

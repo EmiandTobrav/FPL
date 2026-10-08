@@ -1,0 +1,12 @@
+{
+  "fixtures": 380,
+  "ordinary_comparisons": 2997,
+  "ordinary_disagreements": 0,
+  "ordinary_qualified": true,
+  "smother_comparisons": 0,
+  "smother_disagreements": 0,
+  "smother_qualified": false,
+  "zero_controls": 1365,
+  "positive_controls": 1632,
+  "limits": "2025/26 season separate from both development cohorts; shared Opta supplier and historical transfer remain explicit quality caveats. No claim of independent provider verification."
+}

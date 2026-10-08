@@ -1,0 +1,8 @@
+{
+  "scope": "Pass210 explicit flag None or goal-assist16 with goal29+55; preserve prior direct-award causal and boundary guards. Bound-only linked fantasy recipients require explicit280/281/282, matching unique team/player identity, route-compatible anchor event and no other attacking actor afterwards. Never award from a linked bound.",
+  "direct_validation": "All2020/21 one-goal teams, latest season with actual null-valued210 flags. At least20 correct newly resolved null-flag direct controls and zero errors. Direct clean-pass rule is compatible with historical FPL; other routes are not validated with old rules.",
+  "bound_validation": "All2025/26 scoring teams. Exact joint matching of official assist totals to goal candidate sets, supplemented by direct one-goal attribution checks. At least20 previously unresolved bound goals overall and at least5 per bound kind, zero infeasible team assignments, zero candidate conflicts or protected-decision conflicts.",
+  "limits": "New frozen plans, but2025/26 official totals have been used in earlier experiments: this is a regression/consistency gate, not independent validation or a pristine holdout.2020/21 is a temporal control for2019/20 null encoding; source-quality qualification remains outstanding. All previous controls and raw source events remain unchanged.",
+  "missingness": "Missing210 is not a flag. Present210 with null is positive schema evidence for an assisted attempt, not a missing observation. Null alone never awards: paired assisted goal and full existing causal guards remain required.",
+  "source": "Pinned parser_metadata.py calls210 pass_assist; parser implementation is not provider-certified schema."
+}
