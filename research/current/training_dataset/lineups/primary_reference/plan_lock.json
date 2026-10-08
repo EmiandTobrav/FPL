@@ -1,0 +1,14 @@
+{
+  "input_sha256": {
+    "project/data/2022-23_fixtures.csv.gz": "1ee9426018d6a7d03a4caaa3acf1106e184706f740c4439ee6108e515972e8a6",
+    "scoring_2026_27/bulk_reconciliation/collection_plan.csv": "2631323d5147a92bb1a7b6237cabf9dbd3ba62e1d680a272159df08537723cea",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "training_dataset/lineups/validation_summary.json": "16796bee8f4404b022e0de5d48d877ed0a81efdffbdb39b529b98c247b8755e6"
+  },
+  "predictor_freeze_sha256": "f89663fbfbce773e14b91dc3db04f2b1ef10f4339958e60524e4f93fd9d731a9",
+  "frozen_prediction_sha256": "a9fe69e2f1d66cc62191dc8c74804b33c0fb726f877673cc3bb962783c32ee4e",
+  "plan_sha256": "65f1eb4276437a292b0b90871ddedae4f7da9589d9037de3af7c5d7912c08d0f",
+  "protocol_sha256": "1967ddb50e8dec2d1d1a70ffe9dcf222633661b500711f42ac1b55b3291f2dd6",
+  "audit_sha256": "28c9fb72478bbd9269246a4dbc0c1f597cde31e6ab82aa0f92cf92e08a5cf1f5",
+  "plan_code_sha256": "740f7bac48ecf0fa26efc48c48ce96e636f10730bffd4631a5c70489437754d8"
+}

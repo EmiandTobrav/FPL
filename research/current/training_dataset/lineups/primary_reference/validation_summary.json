@@ -1,0 +1,61 @@
+{
+  "version": "explicit_primary_starts_reference_v3",
+  "qualified": false,
+  "evidence_type": "Post-outcome reference investigation triggered by v2 failure. Not new blind holdout; original failures retained. Predictor v2 and all thresholds remain unchanged. Shared Opta ancestry; not independent holdout.",
+  "unchanged_prediction_sha256": "a9fe69e2f1d66cc62191dc8c74804b33c0fb726f877673cc3bb962783c32ee4e",
+  "groups": [
+    {
+      "season": "2022-23",
+      "rows": 14888,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6528,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2023-24",
+      "rows": 14790,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6430,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2024-25",
+      "rows": 14846,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6486,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2025-26",
+      "rows": 14780,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6420,
+      "disagreements": 0,
+      "passed": true
+    }
+  ],
+  "primary_early_fixtures": 136,
+  "raw_early_rows": 8491,
+  "primary_early_starters": 2992,
+  "raw_early_start_sum": 0,
+  "later_primary_rows": 240,
+  "later_primary_passed": false,
+  "later_native_disagreements": 0,
+  "later_missing_prediction_rows": 5,
+  "later_observed_prediction_disagreements": 0,
+  "changed_reference_rows": 5331,
+  "original_v2_disagreements": 2992,
+  "compatible_disagreements": 0,
+  "primary_reference_sha256": "55b6dbc16d9d765c1ba126b80a3fbb5d60d563e4c12e8e0251bf273fd217c2f0",
+  "protocol_sha256": "1967ddb50e8dec2d1d1a70ffe9dcf222633661b500711f42ac1b55b3291f2dd6",
+  "plan_lock_sha256": "83e7935b1717765755b861278a92acce5b13efa0441c01b23a4165025bf89873",
+  "raw_manifest_sha256": "36cd0fbbc7c3d160ac643fa49c71355d9a66684cc066fa782af0b13c6caedd11",
+  "build_code_sha256": "584e50db675882d1e2f94a81f7665575ee205037eef1eb832fcca7ba55d73362"
+}

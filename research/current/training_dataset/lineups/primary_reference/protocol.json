@@ -1,0 +1,22 @@
+{
+  "version": "explicit_primary_starts_reference_v3",
+  "design": "Post-outcome reference investigation triggered by v2 failure. Not new blind holdout; original failures retained. Predictor v2 and all thresholds remain unchanged.",
+  "selection": "All 136 FPL 2022/23 fixtures with official event <16; plus fixed fixtures 1,2,3 from each of 2023/24 and 2024/25. No outcome ranking or filtering.",
+  "primary_reference": "Only exact fixture/date/team/score identity, eleven unique starters per side and direct stable Opta code membership. Never default zeros or absence from squad.",
+  "replacement": "Only starts references for the fixed 136 fixtures may be replaced, after proving every original match has zero starts despite two explicit primary elevens. Preserve raw starts and all failed v2 comparisons. No xG/xA/xGI/xGC correction authorized.",
+  "controls": "All original mappable four-season controls, unchanged selection. Early 2022 reference must cover every control identity directly. Later primary controls must agree with native FPL starts and frozen v2 predictions. Shared Opta ancestry; not independent provider validation.",
+  "gates": {
+    "minimum_control_fixtures_per_season": 300,
+    "minimum_positive_per_season": 5000,
+    "minimum_negative_per_season": 1500,
+    "maximum_disagreements": 0
+  },
+  "extra_gates": {
+    "primary_early_fixtures": 136,
+    "later_control_fixtures": 6,
+    "maximum_primary_native_disagreements": 0,
+    "maximum_missing_reference": 0
+  },
+  "historical_application": "Only direct explicit source membership, compatible native FPL starts retained. Fill missing historical starts and repair documented early-2022 structural defaults separately; no scoring labels approved.",
+  "unused_substitutes": "Not sufficient on its own to approve changed scoring-component zero counters."
+}

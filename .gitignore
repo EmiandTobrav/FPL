@@ -30,3 +30,7 @@ research/current/project/tuning_v3/inputs_*.pkl
 research/current/results/games_*.pkl
 research/current/project/results/
 *.log
+
+# External binary source caches; committed projections carry verified hashes.
+research/current/training_dataset/lineups/raw/
+research/current/training_dataset/lineups/primary_reference/raw/

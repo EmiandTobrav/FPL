@@ -1,0 +1,53 @@
+{
+  "version": "epl_lossless_lineups_and_fixtures_v1",
+  "scope": "EPL seasons 2019-2020..2026-2027; all source columns and all lineup rows retained",
+  "source_assets_sha256": "33f47387bbb00f23e4171907c1e7bb042edddffca2d872833933cefeaefd2565",
+  "projection_code_sha256": "76ad075f20b6cdf162440e79c6968c75914dd39afc71c98fcae17416d505976c",
+  "pyarrow_version": "18.1.0",
+  "projections": {
+    "opta_fixtures.csv.xz": {
+      "rows": 3019,
+      "sha256": "bb58783d9f4e7fbae490d03822862984dedff3ad71f4dafcb7d157e8e9db673d",
+      "source_archive_sha256": "12052ee8175b3be336c79e90cd2a7d60c208e8ee6d6acd85fb8dda798a9f9c84",
+      "columns": [
+        "match_id",
+        "match_date",
+        "match_status",
+        "home_team",
+        "away_team",
+        "home_team_id",
+        "away_team_id",
+        "home_score",
+        "away_score",
+        "home_score_ht",
+        "away_score_ht",
+        "competition",
+        "season"
+      ]
+    },
+    "opta_lineups.csv.xz": {
+      "rows": 105786,
+      "sha256": "07b24dd936259173dda3923f8ef1c89f8dd820a6842a8648ad04d64d93c07c36",
+      "source_archive_sha256": "c2e710f641e51743ec6192dcb56d3dd1a6613d1842eb5c938052fe3aedc32b34",
+      "columns": [
+        "match_id",
+        "match_date",
+        "player_id",
+        "player_name",
+        "team_id",
+        "team_name",
+        "team_position",
+        "position",
+        "position_side",
+        "formation_place",
+        "shirt_number",
+        "is_starter",
+        "minutes_played",
+        "sub_on_minute",
+        "sub_off_minute",
+        "competition",
+        "season"
+      ]
+    }
+  }
+}

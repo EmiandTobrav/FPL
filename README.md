@@ -14,6 +14,10 @@ uavklart; full treningsleveranse er ikke ferdig.
 Historisk beregning er etablert: 185 573 originalrader har avstemt grunnpoeng
 og 489 hele kamper har separate omregningskandidater. Kvalifisering gjenstår;
 ingen nye historiske treningslabels er godkjent.
+Kampstarter er nå kvalifisert for alle 77 279 historiske observasjoner med
+spilte minutter i 2 660 kamper. Offisielle lagoppstillinger dokumenterer
+2 992 starter som feilaktig stod som null før GW16 i 2022/23. Se
+[startdekning og kildekontroll](research/current/training_dataset/lineups/README.md).
 Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
 og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
 

@@ -1,0 +1,25 @@
+{
+  "source_repository": "peteowen1/pannadata",
+  "source_commit": "55d2a80b097bbeac1c0093f572d5ce7efa41f675",
+  "release": "opta-latest",
+  "snapshot_date": "2026-10-08",
+  "note": "New separate source snapshot; never replaces the earlier frozen archive. Download only the required assets and verify digest.",
+  "assets": [
+    {
+      "name": "opta_fixtures.parquet",
+      "id": 621737253,
+      "size": 9829116,
+      "digest": "sha256:12052ee8175b3be336c79e90cd2a7d60c208e8ee6d6acd85fb8dda798a9f9c84",
+      "updated_at": "2026-10-08T12:12:43Z",
+      "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_fixtures.parquet"
+    },
+    {
+      "name": "opta_lineups.parquet",
+      "id": 621737377,
+      "size": 77985957,
+      "digest": "sha256:c2e710f641e51743ec6192dcb56d3dd1a6613d1842eb5c938052fe3aedc32b34",
+      "updated_at": "2026-10-08T12:12:48Z",
+      "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_lineups.parquet"
+    }
+  ]
+}

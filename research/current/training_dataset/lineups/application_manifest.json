@@ -1,0 +1,23 @@
+{
+  "status": "qualified_starts_partial_coverage",
+  "historical_scoring_qualified": false,
+  "training_dataset_ready": false,
+  "rows": 185573,
+  "qualified_rows": 152901,
+  "compatible_values_preserved": true,
+  "full_archive_inventory_verified": true,
+  "verified_twenty_two_starters_per_fixture": 2660,
+  "output_sha256": {
+    "starts_qualified.csv.xz": "199d8c8dfa2e877265a564ed49b0f202548a3e8f45d684784eb78e3f2c73a62f",
+    "starts_coverage.csv": "4e6508eef418c83264c48d01411563308a88b15aca844c8b99f07f09df4fd1a3",
+    "starts_active_gaps.csv": "53d631ca6304eb78cc9fb3c0cee4fb8c8c0dab0ea3631aee0a97ad50b0bebad9"
+  },
+  "input_sha256": {
+    "inventory": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "prediction": "99a45d241752a4d021249bccbdf7ce66ddc07f98ab5a1780fe7efebb0d2808d4",
+    "qualification": "f62ae8f369ecee97323aeffd86070e3cf25e4aa0f57c2b074a8a9d5e6ee52298",
+    "reference": "55b6dbc16d9d765c1ba126b80a3fbb5d60d563e4c12e8e0251bf273fd217c2f0"
+  },
+  "application_code_sha256": "2da00f0bf838c1f1f2dbe0df33e2af6d27c743f1e92e805521c1e25e05310a5a",
+  "limitations": "Starts alone, with unresolved absent identities remaining nullable. Shared Opta ancestry, post-diagnostic reference repair. No points/BPS/bonus/defcon or xG labels qualified here."
+}

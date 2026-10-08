@@ -1,4 +1,4 @@
-"""Offline reproduction of current, historical and penalty-derived artifacts."""
+"""Offline reproduction of current, historical, penalty and lineup artifacts."""
 from pathlib import Path
 import hashlib
 import json
@@ -28,15 +28,33 @@ def main():
     inputs.add(str((S.parent / 'CURRENT.json').relative_to(R)))
     historical_manifest = json.loads((P / 'scoring/results/manifest.json').read_text())
     inputs.update(historical_manifest['input_sha256'])
+    lineup_freeze = json.loads((P / 'lineups/freeze_v2.json').read_text())
+    inputs.update(lineup_freeze['input_sha256'])
+    inputs.update(json.loads((P / 'lineups/freeze_v4.json').read_text())['input_sha256'])
+    reference_lock = json.loads((P / 'lineups/primary_reference/plan_lock.json').read_text())
+    inputs.update(reference_lock['input_sha256'])
     inputs.update(str(path.relative_to(R)) for path in P.rglob('*')
                   if path.is_file() and '__pycache__' not in path.parts
-                  and path.name != 'reproduction_verification.json')
+                  and path.name != 'reproduction_verification.json'
+                  and not path.is_relative_to(P / 'lineups/raw')
+                  and not path.is_relative_to(P / 'lineups/primary_reference/raw'))
     output_paths = list((P / 'snapshots/2026_10_08/derived').glob('*'))
     output_paths += [P / 'penalty_controls' / n for n in
                     ['plan.csv', 'freeze.json', 'isolation_evidence.csv', 'comparisons.csv',
                      'validation_summary.json', 'protected_conflicts.csv', 'denial_conflicts.csv']]
     output_paths += list((P / 'penalty_controls/results').glob('*'))
     output_paths += list((P / 'scoring/results').glob('*'))
+    output_paths += [P / 'lineups' / name for name in ['predictions.csv.xz',
+        'fixture_identity.csv', 'freeze_v2.json', 'control_comparisons.csv.xz',
+        'control_disagreements.csv', 'control_summary.csv', 'validation_summary.json']]
+    output_paths += [P / 'lineups' / name for name in ['protocol_v4.json', 'predictions_v4.csv.xz',
+        'freeze_v4.json', 'control_comparisons_v4.csv.xz', 'control_summary_v4.csv',
+        'validation_summary_v4.json', 'starts_qualified.csv.xz', 'starts_coverage.csv',
+        'starts_active_gaps.csv', 'application_manifest.json']]
+    output_paths += [P / 'lineups/primary_reference' / name for name in ['fixture_plan.csv',
+        'raw_schema_audit.csv', 'plan_lock.json', 'explicit_lineups.csv.xz',
+        'later_primary_controls.csv.xz', 'compatible_control_comparisons.csv.xz',
+        'compatible_control_summary.csv', 'validation_summary.json']]
     expected = {str(path.relative_to(R)): digest(path) for path in output_paths}
     with tempfile.TemporaryDirectory(prefix='fpl_dataset_replay_') as tmp:
         root = Path(tmp) / 'research/current'
@@ -46,13 +64,22 @@ def main():
             shutil.copy2(R / name, target)
         for name in expected:
             # Freeze and plan are copied then compared by the scripts themselves.
-            if Path(name).name not in ['plan.csv', 'freeze.json', 'isolation_evidence.csv']:
+            if Path(name).name not in ['plan.csv', 'freeze.json', 'isolation_evidence.csv',
+                                      'fixture_plan.csv', 'freeze_v2.json', 'freeze_v4.json', 'plan_lock.json',
+                                      'raw_schema_audit.csv']:
                 (root / name).unlink()
         tasks = [['training_dataset/penalty_controls/plan.py'],
                  ['training_dataset/penalty_controls/validate.py'],
                  ['training_dataset/penalty_controls/build.py'],
                  ['training_dataset/current_season.py', 'training_dataset/snapshots/2026_10_08'],
-                 ['training_dataset/scoring/historical.py']]
+                 ['training_dataset/scoring/historical.py'],
+                 ['training_dataset/lineups/predict.py'],
+                 ['training_dataset/lineups/validate.py'],
+                 ['training_dataset/lineups/primary_reference/plan.py'],
+                 ['training_dataset/lineups/primary_reference/build.py'],
+                 ['training_dataset/lineups/predict_v4.py'],
+                 ['training_dataset/lineups/validate_v4.py'],
+                 ['training_dataset/lineups/apply.py']]
         for task in tasks:
             result = subprocess.run([sys.executable, *task], cwd=root, capture_output=True, text=True)
             if result.returncode:

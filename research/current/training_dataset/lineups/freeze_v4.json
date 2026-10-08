@@ -1,0 +1,20 @@
+{
+  "protocol_version": "explicit_lineups_primary_identity_extension_v4",
+  "outcomes_read": false,
+  "evidence_type": "Post-diagnostic source coverage extension. V2/V3 failures retained. Previously seen native controls and shared Opta ancestry: regression, not blind holdout.",
+  "input_sha256": {
+    "training_dataset/lineups/predictions.csv.xz": "a9fe69e2f1d66cc62191dc8c74804b33c0fb726f877673cc3bb962783c32ee4e",
+    "training_dataset/lineups/freeze_v2.json": "f89663fbfbce773e14b91dc3db04f2b1ef10f4339958e60524e4f93fd9d731a9",
+    "training_dataset/lineups/protocol_v4.json": "727a187e0121bd9174f134472192c92ab8ae14256ffe29a7356b0d0fe58054b6",
+    "training_dataset/lineups/primary_reference/raw_inputs.tar.gz": "78ff4eda9327080aeed4d44850a959e467951b487d1e67d1edc2fa8bc1450662",
+    "training_dataset/lineups/primary_reference/raw_manifest.json": "36cd0fbbc7c3d160ac643fa49c71355d9a66684cc066fa782af0b13c6caedd11",
+    "training_dataset/lineups/primary_reference/fixture_plan.csv": "65f1eb4276437a292b0b90871ddedae4f7da9589d9037de3af7c5d7912c08d0f",
+    "training_dataset/lineups/primary_reference/plan_lock.json": "83e7935b1717765755b861278a92acce5b13efa0441c01b23a4165025bf89873",
+    "training_dataset/lineups/primary_reference/build.py": "584e50db675882d1e2f94a81f7665575ee205037eef1eb832fcca7ba55d73362",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5"
+  },
+  "prediction_code_sha256": "1d9d4e2a6cf1978919adb4835e4498e2a19ae86e194fac90abc4cdec01808cfd",
+  "prediction_sha256": "99a45d241752a4d021249bccbdf7ce66ddc07f98ab5a1780fe7efebb0d2808d4",
+  "base_prediction_sha256": "a9fe69e2f1d66cc62191dc8c74804b33c0fb726f877673cc3bb962783c32ee4e",
+  "new_explicit_memberships": 109
+}

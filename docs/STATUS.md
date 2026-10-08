@@ -4,6 +4,20 @@ Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremg
 
 ## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, batch 3
 
+**Ny statistikkløsning – historiske kampstarter:**
+[Lineups](../research/current/training_dataset/lineups/README.md) har nå
+152 901 kvalifiserte startverdier, inklusive alle 77 279 rader med spilte
+minutter. Hver av de 2 660 kampene har nøyaktig 22 kvalifiserte starter.
+42 697 eldre manglende verdier er fylt med eksplisitt kildebelegg. 142
+offisielle fullkampoppstillinger dokumenterer blant annet 2 992 starter som
+står som null i tidlige 2022/23-rådata. V2/V3-feil er bevart; V4 utvider bare
+direkte primæridentiteter og består uendrede terskler med 59 413 kontroller.
+32 672 null-minutt-observasjoner mangler fortsatt kvalifisert startverdi.
+Tidlig 2022/23-xG har også en uniform nullblokk og må undersøkes separat.
+33 fokuserte tester består, og 50 avledede filer er gjenskapt byteidentisk
+offline i separat kopi. Historisk poengrest er fortsatt 16 227, antall
+godkjente historiske poengkamper er 0, og treningsintegrasjonen gjenstår.
+
 **Pågående treningsleveranse på `codex/training-dataset-2026-27`:**
 [training_dataset](../research/current/training_dataset/README.md) supplerer
 den historiske restlisten nedenfor. Ny offisiell snapshot dekker 2026/27 GW1–GW5:

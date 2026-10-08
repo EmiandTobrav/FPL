@@ -20,6 +20,14 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | Historisk inputdekning | 62 290 spillerkamper og 490 kamper inputkomplette |
 | Historisk omregning | Fortsatt ikke kvalifisert; ingen nye historiske poengetiketter |
 | Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
+| Historiske kampstarter | Alle 77 279 observasjoner med spilte minutter; 22 startere i hver av 2 660 kamper |
+
+[Ny startleveranse](lineups/README.md) har 152 901 kvalifiserte verdier på
+185 573 kanoniske rader. Råverdiene beholdes. Offisielle lagoppstillinger
+dokumenterer 2 992 feilaktige rånuller før GW16 i 2022/23. Samme periode har
+uniforme xG/xA/xGI/xGC-nuller; semantisk dekning av disse feltene er uavklart.
+Startleveransen godkjenner ingen historiske poenglabels. Samlet offline-replay
+dekker nå 50 byteidentiske resultatfiler; 33 fokuserte tester består.
 
 Historisk beregningsmotor er etablert med 185 573 kanoniske originalrader og
 avstemt grunnpoengregnskap. Separate omregningskandidater finnes for 489 hele
@@ -61,6 +69,7 @@ Bruk Python 3.12 og pandas 2.2.3. Fra repositoryroten:
 python research/current/training_dataset/reproduce.py
 python -m unittest discover -s research/current/training_dataset -p 'test_*.py' -v
 python -m unittest discover -s research/current/training_dataset/penalty_controls -p 'test_*.py' -v
+python -m unittest discover -s research/current/training_dataset/lineups -p 'test_*.py' -v
 ```
 
 Reproduksjonen bruker bare fryste, lokale innganger i en separat kopi og

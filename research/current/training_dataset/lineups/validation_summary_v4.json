@@ -1,0 +1,54 @@
+{
+  "version": "explicit_lineups_primary_identity_extension_v4",
+  "qualified": true,
+  "groups": [
+    {
+      "season": "2022-23",
+      "rows": 14992,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6632,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2023-24",
+      "rows": 14795,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6435,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2024-25",
+      "rows": 14846,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6486,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2025-26",
+      "rows": 14780,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6420,
+      "disagreements": 0,
+      "passed": true
+    }
+  ],
+  "evidence_type": "Post-diagnostic source coverage extension. V2/V3 failures retained. Previously seen native controls and shared Opta ancestry: regression, not blind holdout.",
+  "unchanged_gates": true,
+  "rows": 59413,
+  "later_primary_rows": 240,
+  "later_primary_missing": 0,
+  "later_primary_disagreements": 0,
+  "freeze_sha256": "a3041acd243a74117ed85e40482a1d3f5fc3d7d81a5f6ecf26f1c434219a6e4c",
+  "prediction_sha256": "99a45d241752a4d021249bccbdf7ce66ddc07f98ab5a1780fe7efebb0d2808d4",
+  "primary_reference_sha256": "55b6dbc16d9d765c1ba126b80a3fbb5d60d563e4c12e8e0251bf273fd217c2f0",
+  "reference_validation_sha256": "28b3fac641bda64595a9ecd926462ca58621a1ec00f0185076e03c086170df86",
+  "validation_code_sha256": "416926c314158dd50a4c3ba7d15c35a96c6442839bd0438cf387c05aa19800b0",
+  "historical_scoring_qualified": false
+}

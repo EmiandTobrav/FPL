@@ -1,0 +1,20 @@
+{
+  "version": "explicit_lineups_primary_identity_extension_v4",
+  "design": "Post-diagnostic source coverage extension. V2/V3 failures retained. Previously seen native controls and shared Opta ancestry: regression, not blind holdout.",
+  "predictor": "Preserve frozen v2 predictions; extend only by direct stable code membership in all 142 locked official full squads. No names, minutes or FPL starts outcomes read. Abort on any known prediction conflict.",
+  "reference": "Same fixed 136 early-2022 primary structural references and all compatible native controls. Do not alter raw FPL. No xG correction.",
+  "gates": {
+    "minimum_control_fixtures_per_season": 300,
+    "minimum_positive_per_season": 5000,
+    "minimum_negative_per_season": 1500,
+    "maximum_disagreements": 0
+  },
+  "extra_gates": {
+    "primary_early_fixtures": 136,
+    "later_control_fixtures": 6,
+    "maximum_primary_native_disagreements": 0,
+    "maximum_missing_reference": 0
+  },
+  "later_controls": "All 240 available native-FPL observations from the six fixed primary control fixtures must agree with official membership and the extended predictor. No missing predictions allowed.",
+  "application": "Only starts. Fill historical missing values from explicit membership, replace documented incompatible early-2022 defaults using primary membership, preserve other native FPL values. Unknown absent identities remain missing."
+}

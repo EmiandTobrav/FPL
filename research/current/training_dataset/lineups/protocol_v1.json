@@ -1,0 +1,12 @@
+{
+  "version": "lineup_starts_explicit_slots_v1",
+  "status": "frozen_before_fpl_start_comparisons",
+  "prediction": "1 only for explicit formation_place integer 1..11; 0 only for position Substitute with blank/zero formation_place in a verified full two-team lineup. Unknown otherwise. Ignore provider is_starter and reconstructed source minutes as an authority.",
+  "fixture_gate": "Unique season/date/home/away identity; exact final scores; two correct club sides; 11 unique explicit starting slots per team; unique match/player identities.",
+  "identity_gate": "Reuse only unanimous approved code/player-ID anchors; require the ID to exist on the correct side in the matched fixture. Never identify by minutes or future performance. Unmatched identities remain missing.",
+  "controls": "All mappable 2022/23..2025/26 player-match observations with explicit FPL starts, including substitutes/non-appearance. Read FPL starts only after predictions are frozen. Same Opta ancestry and previously observed seasons; not independent holdout.",
+  "gates": {"minimum_control_fixtures_per_season": 300, "minimum_positive_per_season": 5000, "minimum_negative_per_season": 1500, "maximum_disagreements": 0},
+  "historical_application": "Only missing pre-2022 FPL starts may be filled after controls pass; preserve all original FPL values and nullable unmatched observations.",
+  "unused_substitutes": "Lineup zero/default timing alone does not qualify zero changed-component counters. Retain as evidence candidates until full primary lineup/substitution proof is verified.",
+  "scoring": "No new points, BPS, bonus, assists or defcon labels are approved by this starts protocol."
+}

@@ -1,0 +1,48 @@
+{
+  "protocol_version": "lineup_starts_explicit_slots_plus_primary_v2",
+  "qualified": false,
+  "rows": 59304,
+  "fixture_count": 1520,
+  "disagreements": 2992,
+  "groups": [
+    {
+      "season": "2022-23",
+      "rows": 14888,
+      "fixtures": 380,
+      "positives": 5368,
+      "negatives": 9520,
+      "disagreements": 2992,
+      "passed": false
+    },
+    {
+      "season": "2023-24",
+      "rows": 14790,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6430,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2024-25",
+      "rows": 14846,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6486,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2025-26",
+      "rows": 14780,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 6420,
+      "disagreements": 0,
+      "passed": true
+    }
+  ],
+  "evidence_type": "Full-population mapping regression against already observed FPL with shared Opta ancestry, not independent holdout",
+  "frozen_prediction_sha256": "a9fe69e2f1d66cc62191dc8c74804b33c0fb726f877673cc3bb962783c32ee4e",
+  "validation_code_sha256": "09b69a750043759c01a28b4a7a8e9e69bf175ea6477ec7dcdc5905f964c336ad"
+}

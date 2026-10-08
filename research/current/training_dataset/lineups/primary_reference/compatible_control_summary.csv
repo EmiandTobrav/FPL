@@ -1,0 +1,5 @@
+season,rows,fixtures,positives,negatives,disagreements,passed
+2022-23,14888,380,8360,6528,0,True
+2023-24,14790,380,8360,6430,0,True
+2024-25,14846,380,8360,6486,0,True
+2025-26,14780,380,8360,6420,0,True
