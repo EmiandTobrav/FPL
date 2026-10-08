@@ -245,8 +245,8 @@
     "scoring_2026_27/delta_input_audit/inputs/primary/players_2024-25.json": "12f6b078a801ea6e72cf3858999424593a3a0305f17d69062180ce7bd07fb994",
     "scoring_2026_27/fpl_authority/fpl_baseline.csv.gz": "94c9a6196357dd3b26fa807db051d23aa24b64a70e7e3c6c6e7913e5e61c71b7",
     "scoring_2026_27/official_revision/counter_supplement.csv": "e0334f491d109bca1b45de63decc9d6c198ddc151d1e49329f4a19f741ad9249",
-    "training_dataset/CURRENT.json": "a6df3daf8547518d922d9806551794ee74993e76407a6bd3d995f5de0de4e733",
-    "training_dataset/README.md": "cedf50516c0a48cf6dbd70ac63b714cc136be39986effcbd7fc3f7b2281c03bc",
+    "training_dataset/CURRENT.json": "2c8c33288e3a173730b8335f068c91a8bfacf060dba6e88bdae8404a27dd90f8",
+    "training_dataset/README.md": "e4ca541c6256bebf97bbe253fc35fd35c772b833112660039d6984a6a2f6841e",
     "training_dataset/batch3_replay_verification.json": "2b727a6ffdf720044b32c1556249898674c1a1d2da66bb9970d6b1ec7d449180",
     "training_dataset/collect_current.py": "1c747c0d0039c22d9a532496cd324f9a06f59057b2532459153891dc2bc67834",
     "training_dataset/current_season.py": "9aac0cfbe1886df38025a6b743af7781387fd9567acb743ed5dae85c72f958ab",
@@ -382,7 +382,7 @@
     "training_dataset/penalty_controls/validation_lock_v2.json": "71121dcdf935b4972f57edffbd73d5ceaaa597196865a73a19548e90ea22a2cb",
     "training_dataset/penalty_controls/validation_summary.json": "6c73900705a5260e4d67675f38ef1a564ec4a15906ae6e2c2b8719fa67cf4deb",
     "training_dataset/replay_batch3.py": "19d29c6aaa084c1fc631ec76c7df355d2a4090ac8ef446f6b20a67ffd1f4cbfb",
-    "training_dataset/reproduce.py": "54beb295530fb04e1cd24ae841d61e27d0e1e7c03f770da0a9baf82d549c7c5a",
+    "training_dataset/reproduce.py": "d41dd611a74b7d1f79e6df9b700d56675eeef67c3a965972493bc6b3a7d0c172",
     "training_dataset/scoring/README.md": "ea918fb394c460c1ee6d726783f3b7183d3daee8457993c8fefbe1ccaf8f5fa9",
     "training_dataset/scoring/__init__.py": "c2eb42e2cc68a537150e11ec6bb2469be438f240653d70f46bff2912687f9736",
     "training_dataset/scoring/core.py": "4dd6459464c4c5f931e545525e6c9c1546d698132ae7459bd101b3ec107f3452",
@@ -1133,5 +1133,8 @@
     "training_dataset/snapshots/2026_10_08/raw/fixtures.json": "113c3c674e681542b8a7926a02036cab9d438f7f1c0bd5d4410afa367a31ad04",
     "training_dataset/test_current_season.py": "d6fc03d732ea8d232921cc0ad8d8bdea3afeca5306d49840c02fd2ed33fbd792",
     "training_dataset/test_historical_scoring.py": "5673c01bdb4da48b51b3f691d230f5ebcf5d3c7ab138f00fe067e1fe138053d3"
+  },
+  "replay_input_overrides": {
+    "scoring_2026_27/bulk_reconciliation/CURRENT.json": "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/inputs/parent_CURRENT.json"
   }
 }

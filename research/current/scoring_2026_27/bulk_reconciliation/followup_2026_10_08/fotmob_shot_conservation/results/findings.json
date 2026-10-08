@@ -1,0 +1,28 @@
+{
+  "old_open_fields": 16227,
+  "new_fields": 994,
+  "open_fields": 15233,
+  "old_complete_matches": 490,
+  "complete_matches": 508,
+  "new_complete_matches": 18,
+  "complete_player_matches": 63209,
+  "unique_affected_player_matches": 14071,
+  "qualified_scoring_matches": 0,
+  "scoring_qualified": false,
+  "raw_fpl_preserved": true,
+  "source_mapping_qualified_seasons": [
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24"
+  ],
+  "source_disagreements": 0,
+  "new_fields_by_season": {
+    "2019-20": 297,
+    "2020-21": 174,
+    "2021-22": 202,
+    "2022-23": 256,
+    "2023-24": 65
+  }
+}

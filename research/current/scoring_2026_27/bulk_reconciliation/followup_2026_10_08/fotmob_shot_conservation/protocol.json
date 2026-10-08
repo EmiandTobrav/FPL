@@ -1,0 +1,36 @@
+{
+  "scope": "explicit FotMob full-match ShotsOnTarget and exact nonnegative team conservation only",
+  "selection": "all 95 current SOT-gap fixtures; first five non-target fixtures per affected season sorted by FPL fixture id",
+  "pilot_schema_matches": [
+    4193786,
+    4506263
+  ],
+  "controls_selected_before_comparison": true,
+  "minimum_control_fixtures_per_season": 5,
+  "minimum_explicit_player_comparisons_per_season": 20,
+  "minimum_primary_team_comparisons_per_season": 8,
+  "maximum_disagreements": 0,
+  "apply_status": [
+    "missing_data"
+  ],
+  "known_positive_veto": true,
+  "identity_checks": [
+    "match_id",
+    "league",
+    "finished",
+    "date",
+    "clubs",
+    "score",
+    "Opta_player_code",
+    "team_side"
+  ],
+  "rules": [
+    "Require explicit full-match team total; never default missing metric to zero.",
+    "Sum every source player, including non-FPL participants.",
+    "Certify omitted player zero only when sum of explicit nonnegative counters equals the explicit team total.",
+    "Any known positive event or conflicting closed/primary value vetoes its entire team group.",
+    "Preserve all closed requirements and conflicts; rule and bonus qualification remain false."
+  ],
+  "parent_requirements_sha256": "30d57452e0604a80e6555cb7654c6ca0e923ea97ad8ac766b3feef364241cfae",
+  "plan_sha256": "8f382e3a10d960a909e18483b00f3016e0bdc212586446cabb153974b0c3dc3c"
+}

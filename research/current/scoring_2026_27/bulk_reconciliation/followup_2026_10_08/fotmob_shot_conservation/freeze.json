@@ -1,0 +1,15 @@
+{
+  "file_sha256": {
+    "build.py": "96d6814074e9d6b3c56a8fda8ed7362b03652dc4c64934f2b449551968d72a8f",
+    "collect.py": "ec17b490592253edea3e895bb30dbaed7ed4324349355976ab47a16a82caf5cb",
+    "reproduce.py": "c40b748c88d52433b5d25e85b4fb35207ac6e246d83af176f0f9b7847c067cb1",
+    "test_shots.py": "b4c0e34429f8fa884a69741915e3aba4fac7fd4c5abc5965e46cbae38f56bc0f",
+    "plan.csv": "8f382e3a10d960a909e18483b00f3016e0bdc212586446cabb153974b0c3dc3c",
+    "protocol.json": "3ae836fc02ca4333337f0dc9bd7a6266d34c9bf5edc93ffcde50f6b8e31813be",
+    "inputs/parent_CURRENT.json": "0c2fdff6676f8e553920f79a29482590a69ff2501be8beac1f32614f25db4955",
+    "inputs/source_manifest.csv": "6c73aa165813228b79cf4ce3d5631de5db6f61368c843cb80414832a98212d97",
+    "results/manifest.json": "aac70a3e77be0aa26b1ab6f30a5142a3cfd445b2a8297dd0deb96d0e1d551bb6"
+  },
+  "source_mapping_controls_frozen": true,
+  "scoring_qualified": false
+}

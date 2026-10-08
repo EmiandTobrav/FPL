@@ -1,16 +1,17 @@
 # Gjeldende historisk harmonisering og restliste
 
-Oppdatert 8. oktober 2026, batch 3: **16 227 åpne feltkrav i 14 990 unike
-spillerkamper**. **62 290 spillerkamper og 490 hele kamper** har komplette inputfelt.
-Siste batch avklarte **8 058 krav (33,18 %)**. Input er ikke ferdig kvalifisert scoring.
+Oppdatert 8. oktober 2026, skuddavstemming: **15 233 åpne feltkrav i 14 071
+spillerkamper**. **63 209 spillerkamper og 508 hele kamper** har komplette input.
+Siste batch lukket alle **994 skudd-på-mål-krav**, med **18 nye hele kamper**.
+Poeng/BPS/bonus er fortsatt ikke kvalifisert.
 
 Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md) og
-[nyeste batch](followup_2026_10_08/bulk_batch3/README.md).
-[Restliste](followup_2026_10_08/bulk_batch3/results/remaining_fields.csv.gz),
-[full ledger](followup_2026_10_08/bulk_batch3/results/requirements.csv.xz) og
-[assistavhengigheter](priority/assist_groups.csv) er oppdatert sammen.
-Batch3-replay trenger bare Python 3.12, pandas og inncheckede filer; ingen bootstrap
-eller nettverk. Historiske snapshot og kildeforsøk nedenfor er ikke dagens kø.
+[ny avstemming](followup_2026_10_08/fotmob_shot_conservation/README.md).
+[Restliste](followup_2026_10_08/fotmob_shot_conservation/results/remaining_fields.csv.xz),
+[full ledger](followup_2026_10_08/fotmob_shot_conservation/results/requirements.csv.xz)
+og [assistavhengigheter](priority/assist_groups.csv) er oppdatert sammen.
+Ny replay bruker inncheckede, hashverifiserte råsvar uten nettverk. Eldre
+beregninger og kontrollutvalg reproduseres fra sine opprinnelige kildesnapshot.
 
 ## Historikk fra tidligere publiseringer
 

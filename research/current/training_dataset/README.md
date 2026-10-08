@@ -16,8 +16,8 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | 2026/27 spillerkamper | 1 538 observasjoner, 50 avsluttede hele kamper |
 | 2026/27 spiller–runde | 3 216 offisielle rader, inkludert ikke-deltakelse |
 | Kvalitetskontroll | 16 918 sammenligninger av kampstatistikk; bonus for alle 1 538 deltakere; poengsum mot offisiell komponentforklaring |
-| Historisk datarest | 16 227 feltkrav i 14 990 spillerkamper; uendret |
-| Historisk inputdekning | 62 290 spillerkamper og 490 kamper inputkomplette |
+| Historisk datarest | 15 233 feltkrav i 14 071 spillerkamper; 994 skuddkrav lukket |
+| Historisk inputdekning | 63 209 spillerkamper og 508 kamper inputkomplette |
 | Historisk omregning | Fortsatt ikke kvalifisert; ingen nye historiske poengetiketter |
 | Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
 | Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
@@ -30,6 +30,16 @@ dekker alle 26 505 kanoniske rader. GW16-versjoner er dokumentert med arkiv-
 og Git-objektbevis; GW29-xGI er rettet fra kompatibel xG+xA. Første mislykkede
 kontroll beholdes med uendrede gater. 72 fokuserte tester består. Samlet
 offline-replay dekker 94 byteidentiske resultatfiler.
+
+## Ny dataavklaring: alle skuddkrav lukket
+
+[Skuddavstemming](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/README.md)
+lukker 994 krav med eksplisitte lagtotaler og eksakt fordeling. 919 flere
+spillerkamper og 18 flere hele kamper har komplette poenginput. 25 kontrollkamper
+og 95 aktuelle kamper gir 710 samsvarende kildekontroller. Den tidligere
+beregningsversjonen med 489 kandidatkamper bevares og reproduseres mot sitt
+opprinnelige snapshot; 508 kamper i gjeldende ledger har nå komplette input.
+Poengetiketter, features før frist og aktiv treningsintegrasjon gjenstår.
 
 ## Ny regelkontroll: mislykket kvalifisering bevart
 

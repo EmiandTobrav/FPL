@@ -1,25 +1,23 @@
 # Arbeidsrekkefølge for å fullføre harmoniseringen
 
-Oppdatert 8. oktober 2026, batch 3. [CURRENT.json](CURRENT.json) peker til gjeldende
+Oppdatert 8. oktober 2026, skuddavstemming. [CURRENT.json](CURRENT.json) peker til gjeldende
 ledger. Eldre avviks-, minutt- og restlister er historiske diagnoser.
 
 ## Nåværende status
 
-**16 227 åpne feltkrav i 14 990 unike spillerkamper.** **62 290 spillerkamper og
-490 hele kamper** har komplette inputfelt, av 77 280 og 2 660. Siste batch lukket
-8 058 krav (33,18 %), ga 7 506 nye komplette spillerkamper og én ny hel kamp.
-Assists er redusert fra 17 984 til **9 926**. Ingen nye poeng/BPS/bonus er beregnet.
+**15 233 åpne feltkrav i 14 071 spillerkamper.** **63 209 spillerkamper og
+508 hele kamper** har komplette input, av 77 280 og 2 660. Siste batch lukket
+alle 994 skuddkrav og ga 919 nye komplette spillerkamper og 18 nye hele kamper.
+Assists gjenstår i **9 926** rader. Poeng, BPS og bonus er fortsatt ikke kvalifisert.
 
-Den store forskjellen mellom spiller- og kampfremdrift er reell: konservative
-kandidatgrenser har avklart mange spillere, men mange mål har fortsatt én eller
-få mulige assistgivere som ikke er endelig kvalifisert. Neste innsats bør derfor
-avklare de resterende målbidragene, ikke gjenta allerede anvendte kandidatregler.
-
-Numerisk rest er uendret i denne batchen: 2 992 mållinjeklareringer, 1 238 times
-tackled, 994 SOT, 545 CBI, 342 keeperlokasjoner og mindre grupper. Se
-[feltsammendraget](followup_2026_10_08/bulk_batch3/results/field_summary.csv).
-Kvalitetsflagg: 581 858 kravrader i 73 felt-/sesonggrupper. Dette er ikke like
-mange manuelle oppgaver. Åpen-/kvalitetsunionen er 77 214 spillerkamper.
+Numerisk rest omfatter 2 992 mållinjeklareringer, 1 238 times tackled, 545 CBI,
+342 keeperlokasjoner og mindre grupper. Skuddgruppen er ferdig og skal ikke
+samles inn igjen. Se [ny avstemming](followup_2026_10_08/fotmob_shot_conservation/README.md)
+og [gjeldende feltsammendrag](followup_2026_10_08/fotmob_shot_conservation/results/field_summary.csv).
+582 852 kvalitetsflagg fordeles over 73 felt-/sesonggrupper; dette er ikke like
+mange manuelle oppgaver. Nye spor skal prøves kort og prioriteres etter faktisk
+felt- og helkampgevinst. Legacy-BPS-kontrollen er bevart, men legges til side
+inntil et konkret nytt grunnlag kan avklare de dokumenterte motsetningene.
 
 ## Prioritert gjennomføring
 
@@ -29,7 +27,7 @@ mange manuelle oppgaver. Åpen-/kvalitetsunionen er 77 214 spillerkamper.
 | 2 | Pasninger med mellomliggende hendelser: 1 711 betinget lukkbare krav og 235 hele kamper | Bruk de gjenværende faktiske kandidatene og samle like årsaksforløp. Kvalifiser mottaker, intensjon/mottakssted, forsvarskontakt, returer og kontinuitet før målavgjørelse. Skill slettede rader og dueller fra faktiske berøringer. Alle fire nye kandidatregler er allerede brukt over hele populasjonen; et nytt trekk må tilføre nye fakta eller en ny kvalifisert årsaksregel. |
 | 3 | Mållinjeklareringer: 2 992; 2 598 bak fem manglende sesongtotaler | Krev en dokumentert ny kilde for eksplisitte totaler eller et kvalifisert komplett inventar. Tidligere fullstatistikk/rangeringer omitterer totalene. Nytt offisielt SDP-endepunkt for Man Utd 2019/20 omitterer også feltet; stats/comp/1-forsøket ga404. Ingen tom rangering, API-utelatelse eller positiv rest er null. Ikke kjør samme mislykkede kildebatch igjen. |
 | 4 | Øvrige assistårsaker: source-not-assisted, uklart pasningssertifikat, selvmål og returer | Bruk oppdaterte mål–spiller-avhengigheter nedenfor. Source-not-assisted har 2 071 betinget lukkbare krav, men er ikke i seg selv et nullbevis. Prioriter positive, sammenhengende handlingsforløp og de tilfellene som faktisk fullfører kamper; behold usikre utfall. |
-| 5 | Resterende tellere og arkivgap | 1 237 times-tackled-krav er fra 2019/20; ett er en beskyttet 2025/26-konflikt. Den gamle spiller-API-en og den nye SDP-kamppiloten gir ikke dette manglende spillerfeltet. Prioriter schema/paring av faktiske forsvarshendelser og komplett inventar, ingen dribleproxy. Grupper SOT/CBI/keeperlokasjon etter felles manglende komponent eller restsum før kildepilot. De 21 tidligere arkivkampene har fortsatt 761 åpne krav; statistikk/identiteter er allerede hentet, men komplette hendelsesinventarer mangler. |
+| 5 | Resterende tellere og arkivgap | 1 237 times-tackled-krav er fra 2019/20; ett er en beskyttet 2025/26-konflikt. Den gamle spiller-API-en og den nye SDP-kamppiloten gir ikke dette manglende spillerfeltet. Prioriter schema/paring av faktiske forsvarshendelser og komplett inventar, ingen dribleproxy. Grupper CBI/keeperlokasjon etter felles manglende komponent eller restsum før kildepilot. De 21 tidligere arkivkampene har fortsatt 761 åpne krav; statistikk/identiteter er allerede hentet, men komplette hendelsesinventarer mangler. |
 | 6 | Kvalitets- og regelgater, deretter scoring | Kvalifiser felt-/sesonggrupper samlet. Behold uendrede historiske BPS-komponenter; verifiser endrede ledd, klipping/avrunding og godkjente revisjoner før omberegning. Ranger bonus for alle deltakere i hele kvalifiserte kamper. Låste labels/modeller/benchmark beholdes, ingen modelltrening før datakvalifisering. |
 
 ## Oppdaterte assistavhengigheter
@@ -41,12 +39,12 @@ utenfor målgruppene. Gruppetak kan øke når andre blokkeringer fjernes.
 
 | Gruppe | Mål | Berørte krav | Betinget lukkbare krav | Nye komplette spillerkamper | Nye hele kamper |
 |---|---:|---:|---:|---:|---:|
-| penalty | 185 | 2449 | 2245 | 2016 | 35 |
-| source_not_assisted_marker | 758 | 2295 | 2071 | 1994 | 202 |
-| paired_pass_with_intervening_events | 1028 | 1948 | 1711 | 1612 | 235 |
-| assisted_goal_without_unique_pass_certificate | 391 | 1167 | 975 | 907 | 68 |
-| own_goal | 228 | 890 | 817 | 782 | 44 |
-| no_positive_goal_assist_certificate | 352 | 817 | 731 | 556 | 46 |
+| penalty | 185 | 2449 | 2245 | 2016 | 37 |
+| source_not_assisted_marker | 758 | 2295 | 2071 | 1994 | 207 |
+| paired_pass_with_intervening_events | 1028 | 1948 | 1711 | 1612 | 243 |
+| assisted_goal_without_unique_pass_certificate | 391 | 1167 | 975 | 907 | 73 |
+| own_goal | 228 | 890 | 817 | 783 | 46 |
+| no_positive_goal_assist_certificate | 352 | 817 | 731 | 556 | 47 |
 | direct_free_kick | 23 | 308 | 273 | 265 | 4 |
 
 ## Kontroller og kildeprioritet
@@ -65,6 +63,7 @@ fasit; de er regresjon, ikke nye uavhengige holdout-observasjoner.
 
 `python priority/build.py` bygger prioriteringsfilene. ID-kolonnen leses nå som
 tekst, slik at et enkelt mål-ID ikke feiltolkes som flyttall i pandas-chunker.
-`python followup_2026_10_08/bulk_batch3/reproduce.py` gjenskaper den nye batchen i
-separat kopi uten nettverk eller bootstrap. 15 nye testmetoder bestod. Full
+`python followup_2026_10_08/fotmob_shot_conservation/reproduce.py` gjenskaper den nye skuddbatchen i
+separat kopi uten nettverk eller bootstrap. Ni nye skuddtester består. Tolv skuddresultater gjenskapes byteidentisk; eldre
+94 beregnings-/kontrollresultater bevares og reproduseres med originalpeker. Full
 repositorietest og GitHub CI er ikke bekreftet. Se replayrapporten for filkontrollen.

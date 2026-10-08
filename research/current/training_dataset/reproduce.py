@@ -28,6 +28,16 @@ def main():
     inputs.add(str((S.parent / 'CURRENT.json').relative_to(R)))
     historical_manifest = json.loads((P / 'scoring/results/manifest.json').read_text())
     inputs.update(historical_manifest['input_sha256'])
+    # Replay the frozen historical study against its original ledger pointer.
+    # The live rest list can advance without changing old controls or outputs.
+    pointer_name = 'scoring_2026_27/bulk_reconciliation/CURRENT.json'
+    overrides = {}
+    archived_pointer = S / 'fotmob_shot_conservation/inputs/parent_CURRENT.json'
+    expected_pointer_sha = historical_manifest['input_sha256'][pointer_name]
+    if digest(R / pointer_name) != expected_pointer_sha:
+        if digest(archived_pointer) != expected_pointer_sha:
+            raise ValueError('Original historical ledger pointer is unavailable')
+        overrides[pointer_name] = archived_pointer
     lineup_freeze = json.loads((P / 'lineups/freeze_v2.json').read_text())
     inputs.update(lineup_freeze['input_sha256'])
     inputs.update(json.loads((P / 'lineups/freeze_v4.json').read_text())['input_sha256'])
@@ -86,7 +96,7 @@ def main():
         for name in inputs:
             target = root / name
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(R / name, target)
+            shutil.copy2(overrides.get(name, R / name), target)
         for name in expected:
             # Freeze and plan are copied then compared by the scripts themselves.
             if Path(name).name not in ['plan.csv', 'freeze.json', 'isolation_evidence.csv',
@@ -126,7 +136,8 @@ def main():
             raise ValueError(f'Reproduced bytes differ: {mismatch}')
     report = dict(offline=True, isolated_copy=True, checked_outputs=len(expected), identical=True,
                   python=sys.version.split()[0], output_sha256=expected,
-                  input_sha256={name: digest(R / name) for name in sorted(inputs)})
+                  input_sha256={name: digest(overrides.get(name, R / name)) for name in sorted(inputs)},
+                  replay_input_overrides={name: str(path.relative_to(R)) for name,path in overrides.items()})
     (P / 'reproduction_verification.json').write_text(json.dumps(report, indent=2) + '\n')
     print(dict(offline=True, isolated_copy=True, checked_outputs=len(expected), identical=True))
 

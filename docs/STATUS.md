@@ -2,7 +2,24 @@
 
 Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
-## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, batch 3
+## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, skuddavstemming
+
+**994 feltkrav lukket; 18 nye hele kamper inputkomplette.**
+[Ny kildeavstemming](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/README.md)
+bruker eksplisitte fullkamptotaler for skudd på mål som den tidligere
+FotMob-projeksjonen ikke hentet. Alle 994 nye nuller er eksakt dokumentert;
+710 kildekontroller har ingen avvik. Ni nye tester består. Gjeldende rest er
+**15 233 krav i 14 071 spillerkamper**, med **63 209 inputkomplette spillerkamper
+og 508 hele kamper**. Kvalifiserte historiske poengkamper er fortsatt 0.
+
+CURRENT, restliste, felt- og kampdekning og assistprioriteringer peker på den
+nye ledgeren. Tidligere beregninger og kontrollutfall bevares med opprinnelig
+CURRENT-peker ved replay. Prioriter videre felt- og helkamplukking; den
+mislykkede BPS-kontrollen nedenfor skal ikke gjentas uten nye fakta.
+Før-frist-features og treningsintegrasjon er fortsatt uferdig.
+
+## Bevarte tidligere leveranser og kontrollutfall
+
 
 **Ny historisk regelkontroll — ikke kvalifisert:**
 [Legacy-tackles V4](../research/current/training_dataset/scoring/legacy_tackles/README.md)
