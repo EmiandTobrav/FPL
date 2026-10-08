@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "assist_possession_bounds/results/goal_decisions.csv.gz": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e",
+    "assist_intentional_pass/inputs/participants.csv.gz": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090",
+    "assist_pass_boundary/validation_plan.csv": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f",
+    "bulk_batch3/joint_predict.py": "7df4ed8a5457a765cd49da9a6e12c934267d07ce2e3b0a159fab0e0ad37af929",
+    "bulk_batch3/joint_protocol.json": "a5366204715e6bea2447af31ffb9fb49f8c53e39234fbada44a77cc7df0ecd42",
+    "assist_candidate_bounds/bounds.csv.gz": "29f872d035a98949eef00273eb76c0f092417b130adb0254276ef16b1e77bb9f",
+    "assist_certificate_expansion/predictions.csv.gz": "ef28f285b7c3710e3f1948958f9925ef6e7b283cda978c87f8ffcded7da6727d",
+    "assist_certificate_expansion/validation_summary.json": "7638ee833a6622a9d374c049e15d621b2bd2eca8c4f2a09b84a76f36b5a39971",
+    "assist_actor_bounds/predictions.csv.gz": "66a4eaa65339f4d82308021345794d6a1c33ae2969087d30526457027905ed9f",
+    "assist_actor_bounds/validation_summary.json": "00d6efa6f361152cad6d5a0a9b89b88bb7d35f14a3d85c75c1a8223b804e3bed",
+    "assist_possession_bounds/predictions.csv.gz": "1d8fe9a82c4199ccebf5d9f7c987241a830ae4c33cdfbeead757f92e13dc1475",
+    "assist_possession_bounds/validation_summary.json": "06b0166a6caeba2987a0de86a8c038b3b57f73c1cdca68fdc4d6fbdc9ff12c65",
+    "assist_pass_boundary/predictions.csv.gz": "68f098c309fc316574322e367cfb7d016373966fc8a61f392e48001ab3622f98",
+    "assist_pass_boundary/validation_summary.json": "554d50ab7be6b9d319dee7a080dd1a4ee74dd35a171ae3fa82e27a0105865815",
+    "assist_attacking_touch_bounds/predictions.csv.gz": "906201912d273cea72681ddff98e04a957f75404e0b525368101bb676a55ee91",
+    "assist_attacking_touch_bounds/validation_summary.json": "7a2f67a78149f8a13ea182ad1714e43112bf4ab176a1988b99139ef5e6013472",
+    "assist_failed_pass_bounds/predictions.csv.gz": "c294fc663753be5d3ff4d663c3187c9496b889016ad10b48810cdcdd8e9cd173",
+    "assist_failed_pass_bounds/validation_summary.json": "d990d37e3f1edb386d354b1e8e2009394623580d9a688e8da90f4a348c2a89af",
+    "assist_touch_bounds/predictions.csv.gz": "c095315887679e520b7414f3ffaaaa8e5ecac2f86226e8dfb423190cedb73d44",
+    "assist_touch_bounds/validation_summary.json": "4c7ebd565b66b31659062ee3ec0b1793d7cfb6d55031e2cf2bb8b6782158b180"
+  },
+  "prediction_sha256": "180ebfd3c12eee13e50f88b3fcfb3757619aa2b2482a72833290a51c5dc62269"
+}

@@ -1,0 +1,24 @@
+{
+  "new_bound_goals": 1944,
+  "new_candidate_exclusions": 7397,
+  "new_complete_assist_fields": 6897,
+  "zero_values": 6590,
+  "positive_values": 307,
+  "previously_complete_totals_preserved": 60753,
+  "validation": {
+    "teams": 566,
+    "fixtures": 353,
+    "infeasible_teams": 0,
+    "single_goal_checks": 185,
+    "single_goal_errors": 0,
+    "new_bound_controls": {
+      "successful_attacking_pass_actor_bound": 287
+    },
+    "protected_conflicts": 0,
+    "positive_bound_conflicts": 0,
+    "qualified_kinds": [
+      "successful_attacking_pass_actor_bound"
+    ],
+    "limits": "Temporal regression with previously seen2025 outcomes and sharedOpta source, not independent validation. Candidate exclusions only."
+  }
+}

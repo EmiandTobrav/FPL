@@ -1,0 +1,8 @@
+{
+  "python": "3.12.14",
+  "new_unittest_methods": 15,
+  "passed": 15,
+  "parameterized_routes": 4,
+  "full_repository_suite_run": false,
+  "github_ci_verified": false
+}

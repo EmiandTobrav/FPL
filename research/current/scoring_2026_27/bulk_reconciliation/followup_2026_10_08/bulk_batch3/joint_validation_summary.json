@@ -1,0 +1,8 @@
+{
+  "teams": 566,
+  "fixtures": 353,
+  "infeasible_teams": 0,
+  "protected_award_conflicts": 0,
+  "qualified": true,
+  "limits": "Intersection regression over reused shared-Opta controls, not independent validation. Fixed awards forced, not optional slots."
+}

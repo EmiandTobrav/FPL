@@ -1,0 +1,12 @@
+{
+  "url": "https://www.premierleague.com/en/stats/top/clubs/total-clearances",
+  "sha256": "4fa401b4050143508c26634662f96fadf5c92f8eb1b669bf9577780c9c60a92d",
+  "scripts": [
+    "https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js",
+    "https://assets.adobedtm.com/e7ad550d4f82/693c01019a2b/launch-a4f579b5dcc4.min.js",
+    "//translations.premier-league-prod.pulselive.com/premierleague/en.js",
+    "https://cdn.optimizely.com/js/5530288147660800.js",
+    "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+    "https://sdk.mvp.fan/web-sdk/0.34.2/index.js"
+  ]
+}

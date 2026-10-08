@@ -1,0 +1,16 @@
+{
+  "teams": 566,
+  "fixtures": 353,
+  "infeasible_teams": 0,
+  "single_goal_checks": 185,
+  "single_goal_errors": 0,
+  "new_bound_controls": {
+    "successful_attacking_pass_actor_bound": 287
+  },
+  "protected_conflicts": 0,
+  "positive_bound_conflicts": 0,
+  "qualified_kinds": [
+    "successful_attacking_pass_actor_bound"
+  ],
+  "limits": "Temporal regression with previously seen2025 outcomes and sharedOpta source, not independent validation. Candidate exclusions only."
+}

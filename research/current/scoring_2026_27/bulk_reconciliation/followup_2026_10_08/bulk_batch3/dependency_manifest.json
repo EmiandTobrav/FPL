@@ -1,0 +1,198 @@
+[
+  {
+    "local": "assist_actor_bounds/predictions.csv.gz",
+    "git_sha": "913e24b0ffdd801d8f915980859f80200348cd3a"
+  },
+  {
+    "local": "assist_actor_bounds/results/applied_bounds.csv",
+    "git_sha": "b9a4c9485e8b94d63b8e6ea30cd7e4a082a4150d"
+  },
+  {
+    "local": "assist_actor_bounds/validation_summary.json",
+    "git_sha": "36a9f68865bb69122aac8eaf85b46fdb0e5c4a53"
+  },
+  {
+    "local": "assist_attacking_touch_bounds/certificates.py",
+    "git_sha": "841653cd2d6a8be98d8030642b014bc2a362469e"
+  },
+  {
+    "local": "assist_attacking_touch_bounds/predict.py",
+    "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+  },
+  {
+    "local": "assist_attacking_touch_bounds/predictions.csv.gz",
+    "git_sha": "d523434fd41e5251444d040dd8fd63e5fd6d18ed"
+  },
+  {
+    "local": "assist_attacking_touch_bounds/protocol.json",
+    "git_sha": "532b174b93f9da6e2e230ad19a3d2766390b845e"
+  },
+  {
+    "local": "assist_attacking_touch_bounds/validation_plan.csv",
+    "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+  },
+  {
+    "local": "assist_attacking_touch_bounds/validation_summary.json",
+    "git_sha": "04999aa6586ebb206a02f70c05ae1fc007c28759"
+  },
+  {
+    "local": "assist_candidate_bounds/bounds.csv.gz",
+    "git_sha": "4e4146c8671a1d1d44a6f68b938f2e46983fca97"
+  },
+  {
+    "local": "assist_candidate_bounds/validate.py",
+    "git_sha": "8667fe0babe35cadf43ef046b5dcaca4fe8a871b"
+  },
+  {
+    "local": "assist_certificate_expansion/bound_control_plan.csv",
+    "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+  },
+  {
+    "local": "assist_certificate_expansion/predictions.csv.gz",
+    "git_sha": "a92d55876b81cd7cde1ec500a88353b3c211cb50"
+  },
+  {
+    "local": "assist_certificate_expansion/validation_summary.json",
+    "git_sha": "682fc042c7286fb375b2a23a880bf4b70b0a1592"
+  },
+  {
+    "local": "assist_failed_pass_bounds/certificates.py",
+    "git_sha": "8b8e95c5c30f1a0bca1185642f43986cd57c2531"
+  },
+  {
+    "local": "assist_failed_pass_bounds/predict.py",
+    "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+  },
+  {
+    "local": "assist_failed_pass_bounds/predictions.csv.gz",
+    "git_sha": "50b8a70615c43f755074dd447099f62a2e324164"
+  },
+  {
+    "local": "assist_failed_pass_bounds/protocol.json",
+    "git_sha": "df6f90dc764c0d46a0a953694a710194c799af88"
+  },
+  {
+    "local": "assist_failed_pass_bounds/validation_plan.csv",
+    "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+  },
+  {
+    "local": "assist_failed_pass_bounds/validation_summary.json",
+    "git_sha": "97e586328c2dfbbbde1e545c5e9bb697fd4cd755"
+  },
+  {
+    "local": "assist_intentional_pass/baseline/build.py",
+    "git_sha": "10d47fbe62a9e1d75c6acb36cbbe933ee593751c"
+  },
+  {
+    "local": "assist_intentional_pass/baseline/fpl_baseline.csv.gz",
+    "git_sha": "78165bb40d1ba6aa0aa88deb1ba0aa198661399f"
+  },
+  {
+    "local": "assist_intentional_pass/inputs/goal_episodes.csv.gz",
+    "git_sha": "15d67d7bf43eb077ab242112307040eeb0dff8d9"
+  },
+  {
+    "local": "assist_intentional_pass/inputs/goals.csv.gz",
+    "git_sha": "1ddce979f3e8f364e2d4e9e9a4b8f22235f91b4d"
+  },
+  {
+    "local": "assist_intentional_pass/inputs/official_cases.json",
+    "git_sha": "79be869ce20a6fe7361af90cd9b161e388411a4b"
+  },
+  {
+    "local": "assist_intentional_pass/inputs/participants.csv.gz",
+    "git_sha": "db7f894657d142c9d4acb8e53ce4efc19612529a"
+  },
+  {
+    "local": "assist_intentional_pass/results/team_coverage.csv",
+    "git_sha": "d8fb4f52ea536d73a7479f9703742228b85e8cc3"
+  },
+  {
+    "local": "assist_intentional_pass/rules.py",
+    "git_sha": "0be9d99db5d7a4303da900d179aacb7657670fce"
+  },
+  {
+    "local": "assist_pass_boundary/certificates.py",
+    "git_sha": "891ed9907efdd4981471c0e7aac9648e83e06139"
+  },
+  {
+    "local": "assist_pass_boundary/predict.py",
+    "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+  },
+  {
+    "local": "assist_pass_boundary/predictions.csv.gz",
+    "git_sha": "d944f0ea544c919887fb8d94b4760b7cfbd584fe"
+  },
+  {
+    "local": "assist_pass_boundary/protocol.json",
+    "git_sha": "6e170d07e84450de4ba945f9a18a1f2a783d5aa4"
+  },
+  {
+    "local": "assist_pass_boundary/validation_plan.csv",
+    "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+  },
+  {
+    "local": "assist_pass_boundary/validation_summary.json",
+    "git_sha": "e70ecf43fdbed7ba31b9cd2afa67d8d1bf5ae12d"
+  },
+  {
+    "local": "assist_possession_bounds/predictions.csv.gz",
+    "git_sha": "7a159ce498942f6872b2129832a9a6bc24014a54"
+  },
+  {
+    "local": "assist_possession_bounds/results/candidate_exclusions.csv.gz",
+    "git_sha": "ae37fbd1c7a3e976fa2b1b3ff80c24e40e0095cd"
+  },
+  {
+    "local": "assist_possession_bounds/results/goal_decisions.csv.gz",
+    "git_sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9"
+  },
+  {
+    "local": "assist_possession_bounds/results/player_match_totals.csv.gz",
+    "git_sha": "fcda352556bdbf9d5b6f8b1dc195cba46529bd8e"
+  },
+  {
+    "local": "assist_possession_bounds/validation_summary.json",
+    "git_sha": "df478f55f4c94da3869e01623229e204e2c8ecd5"
+  },
+  {
+    "local": "assist_team_identity/inputs/team_identity.csv",
+    "git_sha": "4987c5a0c1d8e3a3b7f6a5f1b81288735b65ff49"
+  },
+  {
+    "local": "assist_touch_bounds/certificates.py",
+    "git_sha": "296b1ec4e35059a0509edf45828fef70c15924db"
+  },
+  {
+    "local": "assist_touch_bounds/predict.py",
+    "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+  },
+  {
+    "local": "assist_touch_bounds/predictions.csv.gz",
+    "git_sha": "404ca07caaa602a059bcb9effedae8955dbd8dce"
+  },
+  {
+    "local": "assist_touch_bounds/protocol.json",
+    "git_sha": "808f9ee4de2dc7c1b1d379844cbbe08b0e266a7e"
+  },
+  {
+    "local": "assist_touch_bounds/validation_plan.csv",
+    "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+  },
+  {
+    "local": "assist_touch_bounds/validation_summary.json",
+    "git_sha": "020330a196d69cee4d93c3846fa8a207a6adc2e9"
+  },
+  {
+    "local": "bulk_batch2/results/requirements.csv.xz",
+    "git_sha": "e1d3467fcac3ba7bd5fd9f6ca1dc362643a5da04"
+  },
+  {
+    "local": "bulk_batch3/joint_predict.py",
+    "git_sha": "b53338b43195536bbb1681dd5831a6cd6907450c"
+  },
+  {
+    "local": "bulk_batch3/joint_protocol.json",
+    "git_sha": "67b8299789fae6e683ba87dbabfa5b27c2237e7b"
+  }
+]

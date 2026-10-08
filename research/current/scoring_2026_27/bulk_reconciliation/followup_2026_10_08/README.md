@@ -1,9 +1,17 @@
+# Current snapshot: batch 3
+
+The current ledger is `bulk_batch3/results/requirements.csv.xz`: 16,227 open fields,
+14,990 affected player-matches; 62,290 complete player-matches and490 whole fixtures.
+Batch3 closes8,058 fields (33.18%). Run `python bulk_batch3/reproduce.py` directly;
+this batch needs no bootstrap or network. All earlier stages and raw inputs remain
+preserved. The historical instructions below still apply to older-stage replays.
+
 # Published follow-up snapshot — 8 October 2026
 
 The current queue and work order are linked from [CURRENT.json](../CURRENT.json)
 and [WORK_ORDER.md](../WORK_ORDER.md). The full current ledger is
-[requirements.csv.xz](bulk_batch2/results/requirements.csv.xz); the open-only
-queue is [remaining_fields.csv.gz](bulk_batch2/results/remaining_fields.csv.gz).
+[requirements.csv.xz](bulk_batch3/results/requirements.csv.xz); the open-only
+queue is [remaining_fields.csv.gz](bulk_batch3/results/remaining_fields.csv.gz).
 Both can be read directly with `pandas.read_csv`.
 
 Batch 2 adds primary_gap_recovery, assist_possession_bounds, a withheld penalty
@@ -22,7 +30,7 @@ Restore them before running the original frozen scripts:
 
 ```sh
 python bootstrap.py
-python bulk_batch2/reproduce.py
+python bulk_batch3/reproduce.py
 # From the parent bulk_reconciliation directory:
 python priority/build.py
 ```

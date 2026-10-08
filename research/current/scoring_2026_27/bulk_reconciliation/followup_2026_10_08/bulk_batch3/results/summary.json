@@ -1,0 +1,19 @@
+{
+  "previous_open_fields": 24285,
+  "new_fields": 8058,
+  "reduction_percent": 33.18097591105621,
+  "by_field": {
+    "assists_2026_27": 8058
+  },
+  "unique_player_matches_with_new_fields": 8058,
+  "open_fields": 16227,
+  "unique_affected_player_matches": 14990,
+  "complete_player_matches": 62290,
+  "new_complete_player_matches": 7506,
+  "complete_matches": 490,
+  "new_complete_matches": 1,
+  "protected_rows_unchanged": true,
+  "raw_fpl_unchanged": true,
+  "scoring_qualified": false,
+  "published": false
+}

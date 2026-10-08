@@ -1,0 +1,41 @@
+season,fixture,date,home,away,match_id,team_id,compatible
+2025-26,20,2025-08-22,West Ham,Chelsea,17umsvptey1sqmfwpp2m7ci6s,4txjdaqveermfryvbfrr4taf7,True
+2025-26,12,2025-08-23,Bournemouth,Wolves,14cmzlbe4pl6c3xuucuzj2590,1pse9ta7a45pi2w2grjim70ge,True
+2025-26,39,2025-09-13,Newcastle,Wolves,1fby3aaqw8svx24c078ktdb10,7vn2i2kd35zuetw6b38gw9jsz,True
+2025-26,41,2025-09-21,Arsenal,Man City,1gil6wudqtyaauvngcgucwbh0,a3nyxabgsqlnqfkeg41m6tnpp,True
+2025-26,57,2025-09-27,Man City,Burnley,1mgz1t6rbrx41ljreydpdy39w,64bxxwu2mv2qqlv0monbkj1om,True
+2025-26,55,2025-09-29,Everton,West Ham,1lokw5qi9ag7bgvg102gj21as,4txjdaqveermfryvbfrr4taf7,True
+2025-26,65,2025-10-04,Chelsea,Liverpool,1pow6zy0g8vyp6ag9wvnubkes,c8h9bw1l82s06h77xxrelzhur,True
+2025-26,70,2025-10-05,Wolves,Brighton,1ro6dtfyd439umqwi6dq6xr84,e5p0ehyguld7egzhiedpdnc3w,True
+2025-26,85,2025-10-25,Chelsea,Sunderland,1xse56xeo3sjk9vbxu1rmwf10,9q0arba2kbnywth8bkxlhgmdr,True
+2025-26,99,2025-11-01,Spurs,Chelsea,23f8sz2bv6v5zzsc5k00guhw4,9q0arba2kbnywth8bkxlhgmdr,True
+2025-26,111,2025-11-23,Arsenal,Spurs,28m9dl3dg3b2kv50yxgrt2sk4,22doj4sgsocqpxw45h607udje,True
+2025-26,121,2025-11-30,Aston Villa,Wolves,2c6en0pmvpp4ltcnwp8nprhg4,b496gs285it6bheuikox6z9mj,True
+2025-26,123,2025-11-30,Chelsea,Arsenal,2cz22hrl9l7pesg0j8977wrh0,4dsgumo7d4zupm2ugsvm4zm4d,True
+2025-26,140,2025-12-03,Wolves,Nott'm Forest,2jviknbx9xlpifeu3a3qmq49g,1qtaiy11gswx327s0vkibf70n,True
+2025-26,145,2025-12-07,Fulham,Crystal Palace,2luiolpt1jy5d28eus95spudw,hzqh7z0mdl3v7gwete66syxp,True
+2025-26,152,2025-12-14,Brentford,Leeds,2oo4yru8uymi9bjbi0aq2ttsk,48gk2hpqtsl6p9sx9kjhaydq4,True
+2025-26,162,2025-12-20,Bournemouth,Burnley,2s81w4s408kw8ji84hnhmy7tg,1pse9ta7a45pi2w2grjim70ge,True
+2025-26,162,2025-12-20,Bournemouth,Burnley,2s81w4s408kw8ji84hnhmy7tg,64bxxwu2mv2qqlv0monbkj1om,True
+2025-26,171,2025-12-27,Arsenal,Brighton,2wehv0cptselv086q8jud4hec,e5p0ehyguld7egzhiedpdnc3w,True
+2025-26,178,2025-12-27,Nott'm Forest,Man City,2z98uvv8ew6frqtuw6byswkyc,1qtaiy11gswx327s0vkibf70n,True
+2025-26,179,2025-12-28,Sunderland,Leeds,2znj52xnfa1uxidhp2c3thd78,1r3545b2dzan8yqa80gtmcjch,True
+2025-26,183,2025-12-30,Burnley,Newcastle,318bi20a3b1kac2q6hasanf2s,64bxxwu2mv2qqlv0monbkj1om,True
+2025-26,185,2026-01-01,Crystal Palace,Fulham,3213l7phvb9z5fvoks5hkjnkk,hzqh7z0mdl3v7gwete66syxp,True
+2025-26,197,2026-01-04,Man City,Chelsea,376x4oj5st9ovcbc0cdsuxxjo,a3nyxabgsqlnqfkeg41m6tnpp,True
+2025-26,225,2026-01-25,Crystal Palace,Chelsea,3iezhys6o0o727757ymaskwlw,1c8m2ko0wxq1asfkuykurdr0y,True
+2025-26,226,2026-01-26,Everton,Leeds,3itbneix35u519v2wie4e72fo,48gk2hpqtsl6p9sx9kjhaydq4,True
+2025-26,232,2026-01-31,Brighton,Everton,3l9k0znksnhr6n21grjymo6qc,e5p0ehyguld7egzhiedpdnc3w,True
+2025-26,232,2026-01-31,Brighton,Everton,3l9k0znksnhr6n21grjymo6qc,ehd2iemqmschhj2ec0vayztzz,True
+2025-26,235,2026-01-31,Liverpool,Newcastle,3mgg86hgrlwba3qazktbvu32s,7vn2i2kd35zuetw6b38gw9jsz,True
+2025-26,242,2026-02-07,Bournemouth,Aston Villa,3oumjz6zimfaum3qm0wemcljo,b496gs285it6bheuikox6z9mj,True
+2025-26,260,2026-02-10,West Ham,Man Utd,3wie337w5hnugj3j5iul98tuc,4txjdaqveermfryvbfrr4taf7,True
+2025-26,290,2026-03-03,Wolves,Liverpool,48ktj4rhfezvam9t3849mcj6c,c8h9bw1l82s06h77xxrelzhur,True
+2025-26,283,2026-03-04,Brighton,Arsenal,45skrbpsdh3x4g4jsq6rb56ac,4dsgumo7d4zupm2ugsvm4zm4d,True
+2025-26,300,2026-03-14,West Ham,Man City,4cm108ohxx531fr98bh9uy68k,a3nyxabgsqlnqfkeg41m6tnpp,True
+2025-26,336,2026-04-25,Liverpool,Crystal Palace,4rq7t37ngva3ecwacchy43e38,1c8m2ko0wxq1asfkuykurdr0y,True
+2025-26,340,2026-04-25,Wolves,Spurs,4tbi56lct23i6mjvzto0otedw,22doj4sgsocqpxw45h607udje,True
+2025-26,357,2026-05-10,Nott'm Forest,Newcastle,509u8t50pwxnn67v5plk4tc0k,1qtaiy11gswx327s0vkibf70n,True
+2025-26,369,2026-05-17,Newcastle,West Ham,554i630ssgkurs2xqqckp9tec,4txjdaqveermfryvbfrr4taf7,True
+2025-26,375,2026-05-24,Liverpool,Brentford,57mwrh5wr8gy7obpu0kjmstg4,c8h9bw1l82s06h77xxrelzhur,True
+2025-26,377,2026-05-24,Nott'm Forest,Bournemouth,58j0iztxifq963szj8t2ylhjo,1pse9ta7a45pi2w2grjim70ge,True

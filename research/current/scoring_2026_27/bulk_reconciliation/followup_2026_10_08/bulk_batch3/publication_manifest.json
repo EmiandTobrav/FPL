@@ -1,0 +1,798 @@
+{
+  "parent_commit": "3368befa766c771d327d8faa18f4dd9d31f4e7e9",
+  "additional_dependency_note": "The older frozen assist_candidate_bounds/bounds.csv.gz is now committed because the new joint constraint replay needs it; its outcomes are rechecked in the joint temporal regression.",
+  "files": [
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/README.md",
+      "bytes": 1966,
+      "sha256": "3a2c3a3d2b1be313aa3c118ffb6f1afcaf739c7879fddc296d6e56436216dc89",
+      "git_sha": "71b3315803c303009e932c4eaa45fae2776fa175"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/build.py",
+      "bytes": 4083,
+      "sha256": "71b9495f3150710c45485ac269261f706a4884349bc44cd0e408cb362fb92e18",
+      "git_sha": "396d5513e3746f91e12d88720211844cabeafb51"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/certificates.py",
+      "bytes": 1218,
+      "sha256": "8a1b48fa8d8f9918be226b99c358bed7b2d7afb5a2689d131ab05920302a61ea",
+      "git_sha": "891ed9907efdd4981471c0e7aac9648e83e06139"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/freeze.json",
+      "bytes": 1050,
+      "sha256": "20ec114d05048639943e6892673302e1f5f1a4d60332bef70e87de0ae226c603",
+      "git_sha": "36a90d5bfaa0b572becc33b3fc3178142df89a8d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/positive_bound_conflicts.csv",
+      "bytes": 18,
+      "sha256": "42037e76fe4fddb659e51be795c41d276a9c25ca9c2f17b1ac0447d0e0468f93",
+      "git_sha": "3523157e400def068e1b0eb8009b93de1d3b79e9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/predict.py",
+      "bytes": 1980,
+      "sha256": "1d19c26571e191003108934d3e9b4613ca04715523f6b912d994484b28fada43",
+      "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/predictions.csv.gz",
+      "bytes": 145662,
+      "sha256": "68f098c309fc316574322e367cfb7d016373966fc8a61f392e48001ab3622f98",
+      "git_sha": "d944f0ea544c919887fb8d94b4760b7cfbd584fe"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/protected_conflicts.csv",
+      "bytes": 33,
+      "sha256": "62814eb84086c490c6d890ce6e48b220b0e99cac0b04c03bf0a0828d3cf90d7d",
+      "git_sha": "3d3f487a1a0693238a63a04adaa24bb09a550d2d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/protocol.json",
+      "bytes": 1724,
+      "sha256": "6a819079143b34a59a4619534d7d37658e7297fffbd8421a0c75bd4dcbeb6d81",
+      "git_sha": "6e170d07e84450de4ba945f9a18a1f2a783d5aa4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/results/applied_bounds.csv",
+      "bytes": 227984,
+      "sha256": "ebdc3013443f57c035e6faa697b81937a702b4d7b94d065868e47913c448636e",
+      "git_sha": "b0302e93cd4216ddd1c658f1fdf3f8d3b46d2470"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/results/candidate_exclusions.csv.gz",
+      "bytes": 461565,
+      "sha256": "7c57af7f1e010f001e53735367b9180998473bc4c92536927bfeb51709b8a0c0",
+      "git_sha": "1778271933b9c532d2b47bfdb26280b9fbebaffb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/results/goal_decisions.csv.gz",
+      "bytes": 328603,
+      "sha256": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e",
+      "git_sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/results/new_candidate_exclusions.csv.gz",
+      "bytes": 47509,
+      "sha256": "1f20aeab933119c783eee6392a95b19be54e6d5cdb376d8f25d80211f144dbfd",
+      "git_sha": "b780fc1f1923e62c94696f40cb3cc37c2d20bb33"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/results/overlay.csv.gz",
+      "bytes": 47583,
+      "sha256": "7e40afa046e8d9aebbbd7de9161fd2005f07e2745dc63934f747c0e94e7dccf5",
+      "git_sha": "6fd5d523106070b4690c95b2f98a6702505e3131"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/results/player_match_totals.csv.gz",
+      "bytes": 2515568,
+      "sha256": "f9e29420627f65b14eaac1d2fb1ebf324c3f52cf483f6bcc374751a1da3488f1",
+      "git_sha": "415b48fae715a97d6cec5992df0ce093b49065df"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/results/summary.json",
+      "bytes": 725,
+      "sha256": "92b97a888089955b784c2ae8cb1011d1083101e31d38f8f614a828a66dd9edc8",
+      "git_sha": "726002d2c68ef77664531c7116ec160f18ae2e2a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/single_goal_controls.csv",
+      "bytes": 7335,
+      "sha256": "98c29caf2c4f2dd885b3cdf62da5a371efa7c1f9085ea5b0da63383f025791ca",
+      "git_sha": "0c0ce537c643abfa989093eeee0bcc42e027e18a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/test_boundaries.py",
+      "bytes": 4557,
+      "sha256": "87b95954945547f52eeac1a7aae83f9ce6726b4f8c9ef09d36a630183f36892e",
+      "git_sha": "bb964cfd0346f717c96226a772a475564a6a58a1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/validate.py",
+      "bytes": 3570,
+      "sha256": "c50bbaef8252ba11518464b72903734d0c23bc394d6601fd56cd71ebc76f7503",
+      "git_sha": "e81b33c7f778ec6fcab5cfa940c5f674ec1bd0f5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/validation_plan.csv",
+      "bytes": 52847,
+      "sha256": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f",
+      "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/validation_summary.json",
+      "bytes": 478,
+      "sha256": "554d50ab7be6b9d319dee7a080dd1a4ee74dd35a171ae3fa82e27a0105865815",
+      "git_sha": "e70ecf43fdbed7ba31b9cd2afa67d8d1bf5ae12d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_pass_boundary/vector_controls.csv",
+      "bytes": 55686,
+      "sha256": "d022e77280e4a02f28c1fa7d729babfc63620accf3062c75095e322b657d58b0",
+      "git_sha": "ebd17f42a5d207350f5ef46139d1c1fae20977c4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/README.md",
+      "bytes": 1928,
+      "sha256": "f75ead53e6ceb3b65cc28fa5d84ec25c964d4af1a02bda4805b6167f14ae0c19",
+      "git_sha": "8e2879b9facfa21392723ede8030f34f1f264524"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/build.py",
+      "bytes": 4071,
+      "sha256": "b6b0c7ed5a088fcd85ef67470409e78e96dca35c9e514593738a217aa4fc8232",
+      "git_sha": "df9a8c02060972c084426fad30ce374bc4f302e4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/certificates.py",
+      "bytes": 1312,
+      "sha256": "252744e334f3127bbd5fe08711c30804e9f1ab6fa76974c96d60847e73674de5",
+      "git_sha": "841653cd2d6a8be98d8030642b014bc2a362469e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/freeze.json",
+      "bytes": 1086,
+      "sha256": "82c1a88dcb74ed07a05754d31ee8390ed27c90136ba236274983a723644e4b7f",
+      "git_sha": "7d3b2ed9ce434d2706e3b514736e660f4ce7843b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/positive_bound_conflicts.csv",
+      "bytes": 18,
+      "sha256": "42037e76fe4fddb659e51be795c41d276a9c25ca9c2f17b1ac0447d0e0468f93",
+      "git_sha": "3523157e400def068e1b0eb8009b93de1d3b79e9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/predict.py",
+      "bytes": 1980,
+      "sha256": "1d19c26571e191003108934d3e9b4613ca04715523f6b912d994484b28fada43",
+      "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/predictions.csv.gz",
+      "bytes": 191449,
+      "sha256": "906201912d273cea72681ddff98e04a957f75404e0b525368101bb676a55ee91",
+      "git_sha": "d523434fd41e5251444d040dd8fd63e5fd6d18ed"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/protected_conflicts.csv",
+      "bytes": 33,
+      "sha256": "62814eb84086c490c6d890ce6e48b220b0e99cac0b04c03bf0a0828d3cf90d7d",
+      "git_sha": "3d3f487a1a0693238a63a04adaa24bb09a550d2d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/protocol.json",
+      "bytes": 1766,
+      "sha256": "3d86a03c4bea979d2718b69b893f978a603a5d0b3bef6c4714340ed7f0d0fadf",
+      "git_sha": "532b174b93f9da6e2e230ad19a3d2766390b845e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/results/applied_bounds.csv",
+      "bytes": 366096,
+      "sha256": "c19b0d38cf17bb0ab911e81927a36f5413c5f3edfc98facfea5adfdcdd69d242",
+      "git_sha": "4cee62df1de11929ec23fe5f74b968d925a81ecf"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/results/candidate_exclusions.csv.gz",
+      "bytes": 607396,
+      "sha256": "11a684642812c663c4605436628c11397b017ce9db7d21cbafb3918366f2570a",
+      "git_sha": "0bf1d83ce47a4e629224cafd16b5c0b3c03056a2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/results/goal_decisions.csv.gz",
+      "bytes": 328603,
+      "sha256": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e",
+      "git_sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/results/new_candidate_exclusions.csv.gz",
+      "bytes": 145744,
+      "sha256": "4d73073ba6ea428d5fd0853902f47df0ece31850d8a108f595fb75f2a246527c",
+      "git_sha": "4075833826c7dfb61659cdd19e3d445ecd75a2de"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/results/overlay.csv.gz",
+      "bytes": 210431,
+      "sha256": "cfebebc0c1fba9a231bde6ae46470da2ae0e1d4ed09a2bc2a6a5020b920a48a5",
+      "git_sha": "841e6393a050b519acb0ccbf3030b52f9787a1a9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/results/player_match_totals.csv.gz",
+      "bytes": 2514614,
+      "sha256": "be536a67216baab1885c4b1a11ebd0402e1135011655a5ec22b7cb51e59f8b6b",
+      "git_sha": "d3ff6ac902086355119bc5d8163502516a8f82ea"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/results/summary.json",
+      "bytes": 728,
+      "sha256": "fb6427f38d389d83819840a37a83a6e7f499636e48d31e3162797c25efa47d37",
+      "git_sha": "81c8f62cee148c27d0303d4c551b489416d8a69b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/single_goal_controls.csv",
+      "bytes": 18195,
+      "sha256": "467de06b86bdbae410316929c5d6fe599faf4ed338a1c6897e6b3eae19e0a89e",
+      "git_sha": "04a72514df4f6996e79058b6d08794cf5e3a8e17"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/validate.py",
+      "bytes": 3570,
+      "sha256": "c50bbaef8252ba11518464b72903734d0c23bc394d6601fd56cd71ebc76f7503",
+      "git_sha": "e81b33c7f778ec6fcab5cfa940c5f674ec1bd0f5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/validation_plan.csv",
+      "bytes": 52847,
+      "sha256": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f",
+      "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/validation_summary.json",
+      "bytes": 479,
+      "sha256": "7a2f67a78149f8a13ea182ad1714e43112bf4ab176a1988b99139ef5e6013472",
+      "git_sha": "04999aa6586ebb206a02f70c05ae1fc007c28759"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_attacking_touch_bounds/vector_controls.csv",
+      "bytes": 55686,
+      "sha256": "d022e77280e4a02f28c1fa7d729babfc63620accf3062c75095e322b657d58b0",
+      "git_sha": "ebd17f42a5d207350f5ef46139d1c1fae20977c4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/README.md",
+      "bytes": 1902,
+      "sha256": "4a1eb2b0b185710ef96fa3f1e98b864a23e041cdea33065c0aa667074f3856e3",
+      "git_sha": "11b1ae60d4cc3f40b8878b616d765c09087bb327"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/build.py",
+      "bytes": 4111,
+      "sha256": "d81cfd2a19dfbdcd0632caa3994ad16072aa071ac22d4d2701fee46bdc6b1b1a",
+      "git_sha": "a6e6288a215966d893d090180b5079faa948a3d6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/certificates.py",
+      "bytes": 1314,
+      "sha256": "8cc9a6273d437a1319f27312c63e9d9fa6d763efdcef234abf90003c360bd9ce",
+      "git_sha": "8b8e95c5c30f1a0bca1185642f43986cd57c2531"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/freeze.json",
+      "bytes": 1070,
+      "sha256": "34d203b390db3d912c4be1e5101cbb332b021c1a66993c92abd1efa0332e8139",
+      "git_sha": "5ac0a087acba5b2a75239359c3e9c64605d815ef"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/positive_bound_conflicts.csv",
+      "bytes": 18,
+      "sha256": "42037e76fe4fddb659e51be795c41d276a9c25ca9c2f17b1ac0447d0e0468f93",
+      "git_sha": "3523157e400def068e1b0eb8009b93de1d3b79e9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/predict.py",
+      "bytes": 1980,
+      "sha256": "1d19c26571e191003108934d3e9b4613ca04715523f6b912d994484b28fada43",
+      "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/predictions.csv.gz",
+      "bytes": 166363,
+      "sha256": "c294fc663753be5d3ff4d663c3187c9496b889016ad10b48810cdcdd8e9cd173",
+      "git_sha": "50b8a70615c43f755074dd447099f62a2e324164"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/protected_conflicts.csv",
+      "bytes": 33,
+      "sha256": "62814eb84086c490c6d890ce6e48b220b0e99cac0b04c03bf0a0828d3cf90d7d",
+      "git_sha": "3d3f487a1a0693238a63a04adaa24bb09a550d2d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/protocol.json",
+      "bytes": 1660,
+      "sha256": "821cee8b9a155ac78fcf00161dab36ec035978e136ae7870337d129555eb8833",
+      "git_sha": "df6f90dc764c0d46a0a953694a710194c799af88"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/results/applied_bounds.csv",
+      "bytes": 306972,
+      "sha256": "e0ff5e93162055c41fbe5ff1bff46e5fcc9c2d4d46cd98c35f6da9af574c91a1",
+      "git_sha": "0b1cb9b8c7de4a784419af726cbfffa0f07f10ed"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/results/candidate_exclusions.csv.gz",
+      "bytes": 645790,
+      "sha256": "5288204652a0103069452abf4e101d979f46fa7cb5461b61b162bd58e5d27d7a",
+      "git_sha": "a0fc602a9249c38c87c61772207eee1808cf1201"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/results/goal_decisions.csv.gz",
+      "bytes": 328603,
+      "sha256": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e",
+      "git_sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/results/new_candidate_exclusions.csv.gz",
+      "bytes": 38541,
+      "sha256": "506ad6fb434f1ef294cc356add380b3a294115e762e69e64a0a3149b695fa81d",
+      "git_sha": "978db24665aef205c5a3c0ba147576c5b77145bd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/results/overlay.csv.gz",
+      "bytes": 240125,
+      "sha256": "33e1a5b2f8885bd513fba4edaaf41f96d9ec2f2108ee9b7ea7449e93d0dab2f2",
+      "git_sha": "5f6894a0590377dfd2245764bf79f1883a51533a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/results/player_match_totals.csv.gz",
+      "bytes": 2514086,
+      "sha256": "a1464f47c5f4bab616b0f61f3c4b4ad1a4226550fa92a2a4498345184b83822c",
+      "git_sha": "8f9162ffdc3fe8ca4e294789af9f4b82aea4cf91"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/results/summary.json",
+      "bytes": 732,
+      "sha256": "81b163b7884ca8e563e7952e81662bdb15219da7bf24adc8577df8aece43c517",
+      "git_sha": "db4a47fbe419f20ff6c2451fd0be04ce1e32515f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/single_goal_controls.csv",
+      "bytes": 11613,
+      "sha256": "f06df47c0988ee7c215ccca7ae2b544067bd13b9a658b1c837f8b21457d728b1",
+      "git_sha": "bad0bc9fdbcd5e1804fc58d652c26e094baa9f7d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/validate.py",
+      "bytes": 3570,
+      "sha256": "c50bbaef8252ba11518464b72903734d0c23bc394d6601fd56cd71ebc76f7503",
+      "git_sha": "e81b33c7f778ec6fcab5cfa940c5f674ec1bd0f5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/validation_plan.csv",
+      "bytes": 52847,
+      "sha256": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f",
+      "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/validation_summary.json",
+      "bytes": 483,
+      "sha256": "d990d37e3f1edb386d354b1e8e2009394623580d9a688e8da90f4a348c2a89af",
+      "git_sha": "97e586328c2dfbbbde1e545c5e9bb697fd4cd755"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_failed_pass_bounds/vector_controls.csv",
+      "bytes": 55686,
+      "sha256": "d022e77280e4a02f28c1fa7d729babfc63620accf3062c75095e322b657d58b0",
+      "git_sha": "ebd17f42a5d207350f5ef46139d1c1fae20977c4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/README.md",
+      "bytes": 1875,
+      "sha256": "622c5e07fa4d98a2bd94ac58704e52c08e0176cc5c0d42b80ddba9ee41b444b1",
+      "git_sha": "ef4bc0c62280fbcda7137533b7b9c53ac40899b0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/build.py",
+      "bytes": 4096,
+      "sha256": "249c296495502ddd16bd76e5467ff35a659f1301f9e15cb6eb6b9bf1fbba8e2d",
+      "git_sha": "b40daa2207f472f73eaea78a085a86ccc92b8b4e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/certificates.py",
+      "bytes": 1294,
+      "sha256": "e4a25cc9d241538a70c97a70978bd8d2da3c977df154e9831061344f25d75c80",
+      "git_sha": "296b1ec4e35059a0509edf45828fef70c15924db"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/freeze.json",
+      "bytes": 1046,
+      "sha256": "93cd6b83b55b497b6620bc107d4e59e6bd7d242845ed5d0dbc839b906724cd35",
+      "git_sha": "40c30195847753575671ab84f80f49f6be5c9f64"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/positive_bound_conflicts.csv",
+      "bytes": 18,
+      "sha256": "42037e76fe4fddb659e51be795c41d276a9c25ca9c2f17b1ac0447d0e0468f93",
+      "git_sha": "3523157e400def068e1b0eb8009b93de1d3b79e9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/predict.py",
+      "bytes": 1980,
+      "sha256": "1d19c26571e191003108934d3e9b4613ca04715523f6b912d994484b28fada43",
+      "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/predictions.csv.gz",
+      "bytes": 71804,
+      "sha256": "c095315887679e520b7414f3ffaaaa8e5ecac2f86226e8dfb423190cedb73d44",
+      "git_sha": "404ca07caaa602a059bcb9effedae8955dbd8dce"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/protected_conflicts.csv",
+      "bytes": 33,
+      "sha256": "62814eb84086c490c6d890ce6e48b220b0e99cac0b04c03bf0a0828d3cf90d7d",
+      "git_sha": "3d3f487a1a0693238a63a04adaa24bb09a550d2d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/protocol.json",
+      "bytes": 1674,
+      "sha256": "1d83e59f8a25335b7df72401ce14b58858a9e5402b151716afc94a67633742fc",
+      "git_sha": "808f9ee4de2dc7c1b1d379844cbbe08b0e266a7e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/applied_bounds.csv",
+      "bytes": 103012,
+      "sha256": "70c800a3632daa2d7079ef8e4329ee25ec0950f2a6fe4c851b7bfe61f1280c91",
+      "git_sha": "d3fb23ed494b0e5ddb017aa91f412b4d0bff752d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/candidate_exclusions.csv.gz",
+      "bytes": 653665,
+      "sha256": "d2fe0f20337d69d5561cc0ba06a9964242a36781fbdf3559ac100516e214d801",
+      "git_sha": "f90560aef494f190e7263fdf922b47371de7a281"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/goal_decisions.csv.gz",
+      "bytes": 328603,
+      "sha256": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e",
+      "git_sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/new_candidate_exclusions.csv.gz",
+      "bytes": 8389,
+      "sha256": "437af315fafff87c7957b8c001b459b73c909b3a077105f83e729751ea1b908d",
+      "git_sha": "32dc70ec51ed69c2c8d1dade614e5ea4ba278049"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/overlay.csv.gz",
+      "bytes": 244126,
+      "sha256": "1e0e28a6fe0c4f075a36504c5da696b1f130cee96e509b2eabef564524742797",
+      "git_sha": "cd03fe7d02f090d0c6f5943007948e98d0d47951"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/player_match_totals.csv.gz",
+      "bytes": 2513677,
+      "sha256": "a72689da60f5fe84b1d0749e30fcc485913adbdc38be08dc433e506ed41b6e9d",
+      "git_sha": "b0f43e311abe8588c897ffa9e24b7a4effd3ced0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/summary.json",
+      "bytes": 720,
+      "sha256": "cd7bf82f7f1e61ed02bf6ef63ee67d32ea42e5f531163f9c651de864549b3f17",
+      "git_sha": "127c489fd21891ac926a8756dfa285c8a3cff96c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/single_goal_controls.csv",
+      "bytes": 3990,
+      "sha256": "a775998c051d03a2258794bb5c5409ba1c34bb16c28febfaa0404b87f2962881",
+      "git_sha": "711d6b585b3eacf6fa51862ef17f871c8e368881"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/validate.py",
+      "bytes": 3570,
+      "sha256": "c50bbaef8252ba11518464b72903734d0c23bc394d6601fd56cd71ebc76f7503",
+      "git_sha": "e81b33c7f778ec6fcab5cfa940c5f674ec1bd0f5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/validation_plan.csv",
+      "bytes": 52847,
+      "sha256": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f",
+      "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/validation_summary.json",
+      "bytes": 473,
+      "sha256": "4c7ebd565b66b31659062ee3ec0b1793d7cfb6d55031e2cf2bb8b6782158b180",
+      "git_sha": "020330a196d69cee4d93c3846fa8a207a6adc2e9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/vector_controls.csv",
+      "bytes": 55686,
+      "sha256": "d022e77280e4a02f28c1fa7d729babfc63620accf3062c75095e322b657d58b0",
+      "git_sha": "ebd17f42a5d207350f5ef46139d1c1fae20977c4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/README.md",
+      "bytes": 3648,
+      "sha256": "52b8d39950d30b282739eded126152841f22f63a1961a88c7352bfdfcac56eba",
+      "git_sha": "15250b38b29e6db1363a1c232f76f6a4ca8d5aac"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/build.py",
+      "bytes": 4194,
+      "sha256": "6c3f79a5573d2f966162bcde677da72fbb57ac449351c8db3ec452753a73b177",
+      "git_sha": "c8c5c35c1d8c879e03f531d5970f527893e6113f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/dependency_manifest.json",
+      "bytes": 6217,
+      "sha256": "b416c33d3305b7400844174219fdf009ce33012e4ed3162759bb83fa18a68bd1",
+      "git_sha": "8d18eed4bdbc78f38719a794a948208d7d54f1f9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_comparisons.csv",
+      "bytes": 61980,
+      "sha256": "37056dc3e0575f6c80d4f34ba70e0e1381b04b60c95a5f74dc6485dc56512ad3",
+      "git_sha": "e9b528b24e07912ad07f7cacede721441daa2f6b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_freeze.json",
+      "bytes": 2501,
+      "sha256": "6fc5a25127ddd9da1feb853a30993ec7f92fd47f951905f288b7a3d788d63c6a",
+      "git_sha": "3fbf36eeef2a8d3f3646b6e5cf7d8d969c6552db"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_predict.py",
+      "bytes": 2345,
+      "sha256": "7df4ed8a5457a765cd49da9a6e12c934267d07ce2e3b0a159fab0e0ad37af929",
+      "git_sha": "b53338b43195536bbb1681dd5831a6cd6907450c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_predictions.csv.gz",
+      "bytes": 41015,
+      "sha256": "180ebfd3c12eee13e50f88b3fcfb3757619aa2b2482a72833290a51c5dc62269",
+      "git_sha": "f0c1ba0b461bcaed2d6265f76924e1c3a0329c74"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_protocol.json",
+      "bytes": 509,
+      "sha256": "a5366204715e6bea2447af31ffb9fb49f8c53e39234fbada44a77cc7df0ecd42",
+      "git_sha": "67b8299789fae6e683ba87dbabfa5b27c2237e7b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_validate.py",
+      "bytes": 2267,
+      "sha256": "d5cbb4875c4ec833df131ecdd165805f0d9fd34612366ae1577faca4bf605c36",
+      "git_sha": "3ffd22b9d2dd19238b9ab991f67f968354a73dc5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_validation_summary.json",
+      "bytes": 260,
+      "sha256": "d26780fff17697c0099fa84f8b3bb81320e87323afae33d83093c10e0f2cc839",
+      "git_sha": "fd00bdfa8c25c739c4498dfa6bbb13eae4551271"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/replay_verification.json",
+      "bytes": 7974,
+      "sha256": "e3436cd7625dfb8ea5b7b7c213e08658fe588beb2ca163cb1fc5ae4e2e2cd15a",
+      "git_sha": "512aeb752c4a7c5c58df49e5ad6b4415644c9596"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/reproduce.py",
+      "bytes": 2924,
+      "sha256": "b1d4aad442f931af805adf1755c5ffd8c09b2bd2611f2fd1e039ba13b3d7ab7b",
+      "git_sha": "a37637f69cd8427683b5d3c965b3bf3a8f98afc4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/field_summary.csv",
+      "bytes": 609,
+      "sha256": "0fd9b9772f6fca2a9c0517d414438090ef5f234940b839e99e7cd652b8c666f1",
+      "git_sha": "ab8052f197dda6078d0afcac78c21f0eacbcdda0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/match_readiness.csv",
+      "bytes": 51321,
+      "sha256": "69da4b4801df893834945cfdff4a1f455822b32e1e54563a9b4633589fa31f97",
+      "git_sha": "29345f3841d4813a3a4d20dc772c4cdb3e9809ce"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/new_fields.csv.gz",
+      "bytes": 256893,
+      "sha256": "3b611a45e67469a4563187541c9ad2537687957150421b5b1287e322003f799e",
+      "git_sha": "5796269cfc5472e0f476dd4744a503215520093f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/player_match_readiness.csv.gz",
+      "bytes": 298432,
+      "sha256": "2f262cf9d10a649d68259ab8ceecd5d1a9694e537c81055a19fa6777be70ca80",
+      "git_sha": "17d103ed9679b4ec7a7053294f6a2d5fa07d0073"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/remaining_fields.csv.gz",
+      "bytes": 540449,
+      "sha256": "ebcbf60a7f07b27816459994817791e378d840aa5f58885f771673462b20373d",
+      "git_sha": "71c9f9590e9c8663a01ed3bcef134872d0e92d94"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/requirements.csv.xz",
+      "bytes": 8353548,
+      "sha256": "30d57452e0604a80e6555cb7654c6ca0e923ea97ad8ac766b3feef364241cfae",
+      "git_sha": "718db6b773325d30bc9665afbd69a5abd63cbc98"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/season_summary.csv",
+      "bytes": 300,
+      "sha256": "a0344dc6a21dafa73f86a6d7c5ba94d3a636bc2b41bad1775ca1538072255419",
+      "git_sha": "27b56f47916673e034b4746a127bbd7d5de2b44b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/results/summary.json",
+      "bytes": 513,
+      "sha256": "d6a461ab3dd9f819ff2e8742f389b8357763a807a7c0c3a132f02619c498bb58",
+      "git_sha": "ab608edeb264d64dd3e99a665b0c94b7a2f588ac"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/test_results.json",
+      "bytes": 170,
+      "sha256": "ea371709845f42402c6ea3d05fa7a6eb2cc8bbbacf5bcf364920cd7a9de4fd29",
+      "git_sha": "115bd101fd51e31256a189791cfad040354f034e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/README.md",
+      "bytes": 1111,
+      "sha256": "a934e55c78e03a27a0324eac736ee2bc4f43e8d84deaf347e9c77f15c4e75a86",
+      "git_sha": "8354a77f0583c51ebf04dcc89630bb3862145672"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/bundle_source.json",
+      "bytes": 169,
+      "sha256": "5468ec47e3abd62a256c67bb2a5e892cb4857d41cb8e316d02a628a36af499e5",
+      "git_sha": "94e4712892809df81c4168ac20b5b37dbff9a055"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/discover.py",
+      "bytes": 505,
+      "sha256": "35673fc2f895ae9dd21cedbfeaee74aebad1625f0d1dbd182754c063558de6ff",
+      "git_sha": "68f3d16944243831e4a23e518e8036e0bc60cd43"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/findings.json",
+      "bytes": 1040,
+      "sha256": "4969f44648ad87d80330fa00ea3eeb1e7e6aca8b39a441166af4bc75c63b66b6",
+      "git_sha": "d8955df5ceef0ffa2f2262cdb3734942389910ac"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/manutd2019.json",
+      "bytes": 2823,
+      "sha256": "f7df835bb23845db65c0592857e174a054a23a14e41134f60db1667e2f0ed32b",
+      "git_sha": "1da20fecf976519c754e3593ff1878db8f4ec01a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/match1059702.json",
+      "bytes": 6580,
+      "sha256": "4171dd4680aedc1bba7eaadd1cd5dacb4b8110cae3bc6834086f7aacaf43ac6a",
+      "git_sha": "042d11f3d23ab7256bbe0a15bed6f735f4ee189b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/match_pilot.py",
+      "bytes": 571,
+      "sha256": "85ef03c42ff6ed14e595ae4567b9743661c3b9d01af75a9346dd4d2e3f6c1071",
+      "git_sha": "6c3fcd2cbb10b386588514bd0021660f080b0598"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/match_source.json",
+      "bytes": 180,
+      "sha256": "2d525205fb36f1f3a5cdb8099e33da48c7c3fa5b9b2b6047f12abe2898a0959e",
+      "git_sha": "1288eb758c809f72301f8e120e94e156b39ae8b5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/page_source.json",
+      "bytes": 580,
+      "sha256": "d4de147e27c269a3a21da2d7f44d42d7b1bbd2ad5955ddcfac37579f4ef05a76",
+      "git_sha": "64dc84f5e641beeb988c89a82e0532638c0654e1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/pilot_source.json",
+      "bytes": 200,
+      "sha256": "d8f9404aeed3f10ec5ff2f2bd2bbdd3ff03f0f04f6d4895fab5a0a38222848c2",
+      "git_sha": "3f27afcdeaf3bad9649422bbf25c01a929973454"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/read_bundle.py",
+      "bytes": 591,
+      "sha256": "5a196d3203bf818bdf2b1c845957b3e013f7c25d78bece5b90fe2b3d5010d10b",
+      "git_sha": "cdacc3aa6ad836921c581c06d19a04b70b6715b4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/sdp_schema_pilot/team_pilot.py",
+      "bytes": 551,
+      "sha256": "1ccefb7c73d26937dc3386c2396dd72865315d8654904442eab618aee21759c0",
+      "git_sha": "01ef4696a822a5d79f0c92d8c090bcfca2da04ff"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/CURRENT.json",
+      "bytes": 1894,
+      "sha256": "0c2fdff6676f8e553920f79a29482590a69ff2501be8beac1f32614f25db4955",
+      "git_sha": "1dda55020c614d3b71bf799f19d46952723dff65"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md",
+      "bytes": 6358,
+      "sha256": "771c58061fbe7e4978afb9e4b992187af842abf0259ec19c0e3c74520872e69c",
+      "git_sha": "df228f8e6f48c3caf40cef18a5338596a56f0235"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/README.md",
+      "bytes": 12153,
+      "sha256": "4e2389f46149cc8c764674c7325c5fbc2a7d7132e435b11144ddbdff281dbd4f",
+      "git_sha": "c8e41c371dce7a5198714342c45f9cfe7cc20ba3"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 62415,
+      "sha256": "a22b44c3847da20d7faf805fba59ab524e7b04b0dad49e7378a30551c1ae3d20",
+      "git_sha": "b4ebc75c19ee2bce942be03ebb530b9b12fe472c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/README.md",
+      "bytes": 2482,
+      "sha256": "2a949493b5871e300f0d651e5850e9e53cb5ef91bd5c84de000317abc1126fff",
+      "git_sha": "fff7bbd62927a35475d4ee799be7685be60d0ddb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_dependencies.csv.gz",
+      "bytes": 104338,
+      "sha256": "dd8399763269f3205fbfa74fa54ef8766cc7b43954ec853829a726a67088d719",
+      "git_sha": "45223b1995badd1042e8f956d817afa1868947b0"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_groups.csv",
+      "bytes": 455,
+      "sha256": "e6dc4de3d9472d2b60932a83982dc089576cffdc7e59fe00ced724368ba15b24",
+      "git_sha": "7f39f6a3f660f1ea4caf9af38b39f777f18bec4b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_inventory_gaps.csv.gz",
+      "bytes": 7472,
+      "sha256": "be61ab76ef62509d94a56d2e02b36744cc994be2749c8ad1815dbf6444b098d9",
+      "git_sha": "73a6847dd7ddbc09f5bb0c24ac29954c2ea20f1e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_summary.json",
+      "bytes": 308,
+      "sha256": "61d0055f6ec4245281e8ec134d54984faaef590e300b0989ee5a9004891ae9ab",
+      "git_sha": "d10ffdf4aa73dc9b266976a41ab2c03710ad50c2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/build.py",
+      "bytes": 3529,
+      "sha256": "8616e4c42d12d8592c2bb18454d53c9712a3f57a93205f1482c722b60f4fea70",
+      "git_sha": "ec61c72aeb7a68d8e815ae15d76a71eb74e676bc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/goal_group_classification.csv.gz",
+      "bytes": 140336,
+      "sha256": "3bb41b283a4accbf00ac8e1545810ee914cdb9bbae14d1e51ce6a577afb24019",
+      "git_sha": "0fa3f34db7439692b18f2cbe726dae072acf6407"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/quality_groups.csv",
+      "bytes": 2600,
+      "sha256": "0c008710ae8ed9936ce086f6a4029c0c15a87442b3123f92342f952c776ca2db",
+      "git_sha": "54e78ccb3fee12aa0e8d6738fcfcfe881a30a69f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/quality_summary.json",
+      "bytes": 147,
+      "sha256": "48819711f05695833a4b84eaf09f8e3ca3fa39e2519e88c5ee04fa08f40f5621",
+      "git_sha": "845a072e96ab0e8438e8f6f4b81b79a83a550073"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_candidate_bounds/bounds.csv.gz",
+      "bytes": 144656,
+      "sha256": "29f872d035a98949eef00273eb76c0f092417b130adb0254276ef16b1e77bb9f",
+      "git_sha": "4e4146c8671a1d1d44a6f68b938f2e46983fca97"
+    }
+  ]
+}

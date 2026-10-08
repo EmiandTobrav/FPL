@@ -1,0 +1,13 @@
+{
+  "basis": "Current official statistics page and its versioned JavaScript bundle identify documented public SDP routes; API discovery, not guessed endpoint permutations.",
+  "competition_id": "8",
+  "season_id_convention": "Starting year; official page ACTIVE_PL_SEASON_ID=2026",
+  "team_season_stats_route": "/v2/competitions/{competition}/seasons/{season}/teams/{team}/stats",
+  "match_stats_route": "/v3/matches/{matchCode}/stats",
+  "pilot_results": {
+    "ManUtd2019": "38 games and66 goals identify intended competition season; no line-clearance metric in returned stats. Missing is not zero.",
+    "LiverpoolNorwich2019fixture1": "Two team-statistic rows; no complete player-stat inventory or times-tackled counter. No values applied."
+  },
+  "new_fields": 0,
+  "earlier_attempt_context": "The older web retrieval of match1059702 failed without a payload. This bounded direct API check was justified by current official frontend route discovery and a successful season endpoint; it did not bypass a login or access restriction."
+}
