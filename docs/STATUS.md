@@ -2,37 +2,40 @@
 
 Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremgang på tvers av enheter. Denne mappen og repositoryet skal være tilstrekkelig kontekst uten den gamle samtalen eller ZIP-filene.
 
-## Gjeldende kø og gjennomføringsplan – 8. oktober 2026
+## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, batch 2
 
-**28 934 åpne feltkrav i 24 716 unike spillerkamper.**
-**52 564 spillerkamper og 479 hele kamper har komplette inputfelt**, av
-77 280 og 2 660. Tilgjengelig input er ikke kvalifisert poeng/BPS/bonus.
+**24 285 åpne feltkrav i 22 496 unike spillerkamper.**
+**54 784 spillerkamper og 489 hele kamper har komplette inputfelt**, av
+77 280 og 2 660. Inputtilgjengelighet er ikke kvalifisert poeng/BPS/bonus.
 
 [Gjeldende restliste](../research/current/scoring_2026_27/bulk_reconciliation/README.md),
 [maskinlesbar peker](../research/current/scoring_2026_27/bulk_reconciliation/CURRENT.json) og
-[prioritert arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
-Dette erstatter alle eldre køtall nedenfor. Mellomliggende lokale avklaringer
-og siste batch er samlet i et publisert øyeblikksbilde; rådata og gamle kontroller
-beholdes. Siste batch ga 2 724 nye felt (1 868 taklinger, 856 assists), 1 850 nye
-komplette spillerkamper og 11 nye komplette hele kamper. Fra forrige publiserte
-rest på 119 780 er den kumulative reduksjonen 90 846.
+[arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
+Dette erstatter eldre køtall nedenfor. Siste publiserte utgangspunkt var 28 934.
+**4 649 nye felt (16,07 %)** er avklart: 2 304 assists fra kvalifiserte
+kandidatgrenser etter forsvarspasninger og 2 345 numeriske felt fra offisielle
+spillersvar/eksakt sumavstemming. 2 220 nye spillerkamper og 10 nye hele kamper
+har komplett input. Arkivgruppens åpne krav er redusert fra 3 106 til 761.
 
-Arbeidsrekkefølge: felles arkivgap (21 kamper / 3 106 feltkrav), fem manglende
-lag-/sesongtotaler bak hoveddelen av mållinjeklareringene, store assistgrupper
-med positivt kildebelegg, deretter vanskelige årsaksgrupper og gjenværende
-hendelses-/tellerunntak. Små piloter før batchinnhenting; velg etter faktisk
-dekning og komplette kampenheter. Assists utgjør 20 288 av de åpne kravene.
-Gamle kildeforsøk skal leses før nye forsøk; markerfravær gir aldri automatisk null.
+Nå prioriteres store assistårsaksgrupper (17 984 åpne krav), dokumentert nye
+kildeveier for fem manglende mållinjesesongtotaler, deretter øvrige numeriske
+årsaksgrupper og resterende hendelsesgap. De 685 primære spillersvarene er lagret
+med 24 offisielle kampinventarer og kan verifiseres offline. Times tackled finnes
+eksplisitt for de nye 2020/21- og 2022/23-kampene, men ikke 2019/20. Straffefoul-
+piloten er tilbakeholdt for utilstrekkelige kontroller; et ligaaggregat-forsøk ga404.
 
-Kvalitetsflagg samles i 73 ikke-tomme felt-/sesonggrupper, ikke individuelle
-manuelle oppgaver for alle 569 151 flaggede kravrader. Globale regelgater må
-kvalifiseres før BPS-deltaer og bonusrangering for hele kamper. Låste
-poeng/BPS/bonus/modeller/benchmark er uendret. Ingen main-merge.
+22 nye fokuserte tester bestod. Separat offline replay gjenskapte 33 resultatfiler
+identisk og verifiserte kildene. Mappingkontroll: 532 feltpar og 344 eksplisitte
+komponentpar uten avvik (overlappende). Assistkontroll: 566 lagvektorer, 44 enmåls-
+kontroller og74 relevante uavklarte kontrollmål uten motstrid. Dette er tidsordnet
+regresjon med delt Opta-kilde og tidligere sett fasit, ikke uavhengig holdout.
 
-26 nye tester og separat replay av 27 resultatfiler bestod ved siste batch.
-Kontrollenes faktiske uavhengighet er dokumentert; kjente utfall kalles regresjon.
-Full repositorietest og GitHub CI er ikke bekreftet. Øyeblikksbildets interne
-`published=false` beskriver opprinnelig lokal kjøring, ikke denne publiseringen.
+573 800 kvalitetsflagg er samlet i 73 felt-/sesonggrupper. Globale regelgater må
+kvalifiseres før BPS-deltaer og bonusrangering. Rå FPL, godkjente keeperverdier,
+offisielle rettelser, frosne kontroller, låste poeng/BPS/bonus/modeller/benchmark
+er uendret. Ingen main-merge. Full repositorietest og GitHub CI er ikke bekreftet.
+Internt `published=false` i uforanderlige kjøreresultater beskriver lokal kjøring
+før publisering, ikke statusen til gjeldende GitHub-peker.
 
 ## Historikk: masseavklaring fra eksplisitte totaler – 8. oktober 2026
 

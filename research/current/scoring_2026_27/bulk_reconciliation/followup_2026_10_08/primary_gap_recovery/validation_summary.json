@@ -1,0 +1,33 @@
+{
+  "control_fixtures": 3,
+  "field_comparisons": 532,
+  "field_errors": 0,
+  "explicit_component_comparisons": 344,
+  "explicit_component_errors": 0,
+  "qualified_fields": [
+    "clearances_blocks_interceptions",
+    "goal_line_clearances",
+    "legacy_net_tackles",
+    "times_tackled",
+    "total_tackles",
+    "won_tackles",
+    "fouls_won",
+    "shots_on_target",
+    "saves_outside_box"
+  ],
+  "withheld_fields": [
+    "penalty_goals"
+  ],
+  "new_fields": 2345,
+  "by_field": {
+    "goal_line_clearances": 548,
+    "times_tackled": 455,
+    "won_tackles": 330,
+    "legacy_net_tackles": 330,
+    "fouls_won": 322,
+    "shots_on_target": 320,
+    "clearances_blocks_interceptions": 40
+  },
+  "primary_player_responses": 685,
+  "limits": "Fixed mapping/arithmetic checks, shared Opta source and previously seen controls; not independent provider or final scoring qualification."
+}

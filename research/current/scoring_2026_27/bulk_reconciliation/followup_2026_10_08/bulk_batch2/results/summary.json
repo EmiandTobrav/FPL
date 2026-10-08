@@ -1,0 +1,26 @@
+{
+  "previous_open_fields": 28934,
+  "new_fields": 4649,
+  "reduction_percent": 16.067602128983204,
+  "by_field": {
+    "assists_2026_27": 2304,
+    "goal_line_clearances": 548,
+    "times_tackled": 455,
+    "won_tackles": 330,
+    "legacy_net_tackles": 330,
+    "fouls_won": 322,
+    "shots_on_target": 320,
+    "clearances_blocks_interceptions": 40
+  },
+  "unique_player_matches_with_new_fields": 2895,
+  "open_fields": 24285,
+  "unique_affected_player_matches": 22496,
+  "complete_player_matches": 54784,
+  "new_complete_player_matches": 2220,
+  "complete_matches": 489,
+  "new_complete_matches": 10,
+  "protected_rows_unchanged": true,
+  "raw_fpl_unchanged": true,
+  "scoring_qualified": false,
+  "published": false
+}

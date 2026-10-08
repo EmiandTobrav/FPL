@@ -1,3 +1,23 @@
+# Gjeldende historisk harmonisering og restliste
+
+Oppdatert 8. oktober 2026, batch 2: **24 285 åpne feltkrav i 22 496 unike
+spillerkamper**. **54 784 spillerkamper og 489 hele kamper** har komplette inputfelt.
+Siste batch avklarte **4 649 krav (16,07 %)**. Tilgjengelig input er ikke ferdig
+kvalifisert scoring.
+
+Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md) og
+[nyeste batch](followup_2026_10_08/bulk_batch2/README.md).
+[Restliste](followup_2026_10_08/bulk_batch2/results/remaining_fields.csv.gz),
+[full ledger](followup_2026_10_08/bulk_batch2/results/requirements.csv.xz) og
+[prioriterte assistavhengigheter](priority/assist_groups.csv) er oppdatert sammen.
+Kildebelegg og kode er innchecket; offline replay krever Python3.12 og pandas.
+Kjør snapshot-bootstrap før replaykommandoen i CURRENT. 22 nye tester og33
+identiske replayfiler; full repositorietest/GitHub CI er ikke bekreftet.
+
+Eldre øyeblikksbilder og kildediagnoser beholdes nedenfor; de er ikke dagens kø.
+
+## Historisk dokumentasjon fra forrige publisering
+
 # Gjeldende restliste og arbeidsrekkefølge
 
 Oppdatert 8. oktober 2026. **28 934 åpne feltkrav i 24 716 unike spillerkamper.**

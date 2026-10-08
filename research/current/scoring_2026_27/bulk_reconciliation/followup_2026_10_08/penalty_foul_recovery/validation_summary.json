@@ -1,0 +1,11 @@
+{
+  "comparisons": 6,
+  "by_kind": {
+    "ordinary_foul_penalty": 6
+  },
+  "errors": 0,
+  "protected_conflicts": 0,
+  "denial_conflicts": 0,
+  "qualified_kinds": [],
+  "limits": "Temporal regression/shared Opta source; reused outcomes, not independent validation."
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "21 missing-archive fixtures plus three preselected later 2024/25 control fixtures; fixed existing stat mappings, no broad crawl.",
+  "mapping": {
+    "was_fouled": "fouls_won",
+    "ontarget_scoring_att": "shots_on_target",
+    "won_tackle": "won_tackles",
+    "total_tackle": "total_tackles",
+    "att_pen_goal": "penalty_goals",
+    "clearance_off_line": "goal_line_clearances",
+    "times_tackled": "times_tackled",
+    "saved_obox": "saves_outside_box"
+  },
+  "identity": "Official fixture ID, Opta fixture code, kickoff date, both team IDs, final scores, lineup/substitution participation; official player ID plus Opta/FPL player code and exactly one appearance. Include non-FPL participants in team conservation.",
+  "derivation": "Preserve explicit nonnegative integer player components. Infer a missing component zero only if all active players are enumerated and their known nonnegative values exactly exhaust an explicit compatible team total. No positive-residual allocation. CBI requires all three clearance/block/interception components; legacy net tackle equals 2*won-total and remains signed.",
+  "line_conservation": "Existing qualified primary season-to-match conservation may supply team-match zero. Rebuild positive contradiction veto from current closed ledger plus all new primary player values using official roster identities. Never treat an omitted team-season total as zero.",
+  "validation": "Freeze predictions before comparing later control outcomes. Check every explicit counter pair and derived sum available in the fixed three-fixture control set; any disagreement blocks the affected mapping/derivation. Reuse previously qualified mappings, not a new target scoring rule. Report absent control coverage separately. Shared Opta-source temporal regression, not independent provider validation.",
+  "application": "Only current missing_data fields with absent values; preserve all closed/conflicting cells, raw FPL, official corrections, keeper decisions, frozen controls and locked scoring/models. Report input availability separately from quality. No times-tackled substitution and no big-chance save imputation.",
+  "new_source_observation": "Explicit times_tackled counts, including explicit zeros, are present in the 2020/21 and 2022/23 missing fixtures. The earlier 2019/20 pilot omitted this counter; that absence does not establish absence in later seasons. Only explicit counts are eligible; no failed-dribble proxy or automatic zero."
+}

@@ -2,9 +2,13 @@
 
 The current queue and work order are linked from [CURRENT.json](../CURRENT.json)
 and [WORK_ORDER.md](../WORK_ORDER.md). The full current ledger is
-[requirements.csv.xz](bulk_followup/results/requirements.csv.xz); the open-only
-queue is [remaining_fields.csv.gz](bulk_followup/results/remaining_fields.csv.gz).
+[requirements.csv.xz](bulk_batch2/results/requirements.csv.xz); the open-only
+queue is [remaining_fields.csv.gz](bulk_batch2/results/remaining_fields.csv.gz).
 Both can be read directly with `pandas.read_csv`.
+
+Batch 2 adds primary_gap_recovery, assist_possession_bounds, a withheld penalty
+pilot, and bulk_batch2: 4,649 more fields resolved, 24,285 remaining. Its replay
+verifies 33 outputs and the new raw responses offline.
 
 The original local snapshot is preserved, including its historical
 `published=false` run metadata. This Git commit publishes it; that metadata is
@@ -18,7 +22,7 @@ Restore them before running the original frozen scripts:
 
 ```sh
 python bootstrap.py
-python bulk_followup/reproduce.py
+python bulk_batch2/reproduce.py
 # From the parent bulk_reconciliation directory:
 python priority/build.py
 ```

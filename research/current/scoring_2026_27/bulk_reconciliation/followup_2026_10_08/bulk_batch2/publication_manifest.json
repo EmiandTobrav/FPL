@@ -1,0 +1,545 @@
+{
+  "parent_commit": "430831e22403c5cd71af4c6546329b82a37f9478",
+  "files": [
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/README.md",
+      "bytes": 3709,
+      "sha256": "3b67eafa22d2ce0503f2525f360cff8a8332ae81443ea9039059bbe2597f25fe",
+      "git_sha": "8e9f050660d9d35b85cb0ea2eb40e4360fc3b998"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/bootstrap.py",
+      "bytes": 1075,
+      "sha256": "c7eb56be482a0c1d34fe255862164e455b70aff205e8e60e5478743dfdb40415",
+      "git_sha": "81c851bd78d289fd7054fbf37394c8e976be715e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/collect.py",
+      "bytes": 4140,
+      "sha256": "0973f364adeb484743661075365a7db18335496034cee9e974ba0e411a3550cd",
+      "git_sha": "156bf7985dba6ed5b3a6432557ca0e36cf2728eb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/conservation.csv",
+      "bytes": 42747,
+      "sha256": "2b5c2168d9b6ead53e9759934683e643b5a407a95903492c6c4786a5cd587b21",
+      "git_sha": "225ffc0ef5839a41805214ced1368eba9ac4d836"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/conservation.py",
+      "bytes": 648,
+      "sha256": "70f5b4befe4382924ee4740b848865d1d958ed0ff704d0764329c6b2223873ec",
+      "git_sha": "a499ca4346f075d0e2f2dcf88836d6ca46918a78"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/control_comparisons.csv",
+      "bytes": 56893,
+      "sha256": "dc860a85ec37b7dda26bf2cd2a2241e39c128bdd60520c08c2bb8234c160cbfd",
+      "git_sha": "3628ff23a926e6638ad5b8c381829ec0588115be"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/control_summary.csv",
+      "bytes": 167,
+      "sha256": "4fb570be7cf88b1e57f1b402bc75d2bdda50f50cf2f4cce4d3e2b4789368a056",
+      "git_sha": "d3c21703cfd8029b966afb7ba922c5e7589d25ef"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/explicit_component_controls.csv",
+      "bytes": 15025,
+      "sha256": "7aaadc98ba807a7edaef57774d0fbe51684687111d8c613c90b8df6305245e1c",
+      "git_sha": "156dc1df36b74c323a9731920760bfc6f60ea29e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/fixture_plan.csv",
+      "bytes": 1341,
+      "sha256": "19666ba9e5f39337de5af1884fb4ab11c637919216831f451c684eeeace806b4",
+      "git_sha": "28c7d376b9a6b9a2d7f5b00fa005ba98e200ef3f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/freeze.json",
+      "bytes": 1242,
+      "sha256": "0253e96df6af1f625ba4a4028a80d92294efa1696be4ff214e3df0a599e028ba",
+      "git_sha": "e8eebeb3264684f8d9a80eb6eb3f4c4972cdd621"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/initial_validation_summary.json",
+      "bytes": 835,
+      "sha256": "39c9a4f8734271d770485058a3a35cb54116f461390fbfb9fddea93b0465b8f2",
+      "git_sha": "f15dca4e833d9e936703240b00398f99ba25cb7f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/overlay.csv.gz",
+      "bytes": 13868,
+      "sha256": "8edf256b8f30fd5853c5d60310db049be13f9648d3ae76139a6fb1ea948613cb",
+      "git_sha": "80775dd112fe28f6db3cf03c8f50bafcb80e37d3"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/pack_sources.py",
+      "bytes": 703,
+      "sha256": "c3d38b147ae107daf2c41c277aae43880758e7fe9ada15fbe76508f77805ea4f",
+      "git_sha": "2f75c92f1c7860ce2ab585864ff8d0aae5c89cd6"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/pilot.py",
+      "bytes": 1301,
+      "sha256": "5fcc4bbac661d735fd450ecac38c8cd138b9e877d032716c3a5ff0c2ea5f8d9d",
+      "git_sha": "ec675d6955fcf718db102a4475665ce3bdbf56d4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/pilot_sources.json",
+      "bytes": 1174,
+      "sha256": "298dabbb6f686bbbf0910134600399fce97271d0c564574b52db76f62b59c215",
+      "git_sha": "6dc9a0e22551ca74859bfaef30a7110001c935e2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/players.json",
+      "bytes": 1398331,
+      "sha256": "60caa778eacd80c3613a02b66488e47ab55bb4ff95e65eef7c4f991cdcc72329",
+      "git_sha": "d8dbbb9fd083730a1a9cf8d5f2f391d60eb51cc5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/predict.py",
+      "bytes": 4159,
+      "sha256": "5a5d6d283af3a6be75d70675b528e7f1db912ca9e53097d540d36982224a00e6",
+      "git_sha": "530ca69a183522b7d3ff916c59d5f447d704fd66"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/predictions.csv.gz",
+      "bytes": 28139,
+      "sha256": "aa63c1b28b524343090b429b9c64f5ca8f5fd5822d3d50e57d52f69ca3d74e11",
+      "git_sha": "9d2e351469d9ee5c51fe1b1a5810affaa4453930"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/protocol.json",
+      "bytes": 2490,
+      "sha256": "9d8216a753d9e7a84f78707dcca30cbc11a626fe7e01f4e50dd09d0146138f10",
+      "git_sha": "5d831542741049e44c3b784de2f45b8540b14100"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/qualified_components.csv.gz",
+      "bytes": 67023,
+      "sha256": "cfce4602fe7f778f574ef59f01e293a26ad1ebab2e34bceb672d9862f3d7faaa",
+      "git_sha": "af1dff977c7e1d00db824c96cef9a108c2d095a7"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/raw_inputs.tar.gz",
+      "bytes": 402391,
+      "sha256": "607e62cf9b0333ebd9b2191edad2e5d00a0e100e6e6ab0531386e6e88502bd22",
+      "git_sha": "f5b60e4150c765eed73da50dd6b88702370744d5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/raw_manifest.json",
+      "bytes": 117187,
+      "sha256": "cec2476e30cd987d3a186cb051c8cea6dfaf3cf1e4972f045d241a8aba052292",
+      "git_sha": "67fbe0ede8511d548a9dd9f8dfd7c8b0e2266163"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/roster.csv",
+      "bytes": 39518,
+      "sha256": "1ad92344928e356dcec315873f2a28a1f1483de96a0332e3b487e6b2de1ce2ba",
+      "git_sha": "8153bbacdd8b58d3cd6f592a6d3ef4df5e4c74fa"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/sources.json",
+      "bytes": 168584,
+      "sha256": "01dbad7a3fd7072e0d0bb6b1eecc8c26af35bb84b6ad144e0aa9df437d47e8da",
+      "git_sha": "f0ba8b590e89b4204b8a382c4fb391aad0d4e01b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/test_conservation.py",
+      "bytes": 916,
+      "sha256": "156bfe0218abfb518808b89f83b595034520fe6211fc81be34de3b0aeea1dad4",
+      "git_sha": "34014f0129e8aa4cd950d0dece4804ff5f1180d2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/validate.py",
+      "bytes": 4321,
+      "sha256": "0ef860f7f09dff3e89a58cbfc83fc7e2b20e405086b85ea59eec6fe96f563f56",
+      "git_sha": "40d4ea5f41dfa936d4bf20ad36e3a8007c16cf70"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/validation_summary.json",
+      "bytes": 885,
+      "sha256": "28f4027f40b2b86536f9e896ee13bd0190d818464b746d2651a59c5ad6317649",
+      "git_sha": "286bcfe62528dc4b2b22ddfbcbe21af20a4d8577"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/verify_sources.py",
+      "bytes": 1997,
+      "sha256": "7e8592b291804ed64682f084b620d9ef52e2ce906aabe68041e21b42a8d23994",
+      "git_sha": "71e5e615fce73702b28dc20c9c854fc72ce0c784"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/README.md",
+      "bytes": 1893,
+      "sha256": "c6dd025692448effe1e9a6a0ae7304a882eb990457f2fc568af912172b392ce5",
+      "git_sha": "146d1f3106af7b52b38539d97460248dc4c97087"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/build.py",
+      "bytes": 4075,
+      "sha256": "4980efabf761ec8ae9bf4585fc45e7dc50ec29b249a8e74df6e11b9ed77e2f9e",
+      "git_sha": "339ded6404e3d136a8c4406c16666a9f3de96b64"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/certificates.py",
+      "bytes": 1410,
+      "sha256": "b498f0ac899dfc33b789c8db779cc083c1c53bd4f17dd84cfd8a3c73720557a8",
+      "git_sha": "7d033ed45f0d37ac8b25ab42f54f56e56961c9d5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/freeze.json",
+      "bytes": 1066,
+      "sha256": "4ef0a3869760fbc923ad40adcd959f64064765c563dd68f09c531037443dd5d8",
+      "git_sha": "1ca54f4d14b991f1944f2070964cfb562064b547"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/positive_bound_conflicts.csv",
+      "bytes": 18,
+      "sha256": "42037e76fe4fddb659e51be795c41d276a9c25ca9c2f17b1ac0447d0e0468f93",
+      "git_sha": "3523157e400def068e1b0eb8009b93de1d3b79e9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/predict.py",
+      "bytes": 1980,
+      "sha256": "1d19c26571e191003108934d3e9b4613ca04715523f6b912d994484b28fada43",
+      "git_sha": "1801ac50713397881ece65a2140e9522eef8e6f1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/predictions.csv.gz",
+      "bytes": 101934,
+      "sha256": "1d8fe9a82c4199ccebf5d9f7c987241a830ae4c33cdfbeead757f92e13dc1475",
+      "git_sha": "7a159ce498942f6872b2129832a9a6bc24014a54"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/protected_conflicts.csv",
+      "bytes": 33,
+      "sha256": "62814eb84086c490c6d890ce6e48b220b0e99cac0b04c03bf0a0828d3cf90d7d",
+      "git_sha": "3d3f487a1a0693238a63a04adaa24bb09a550d2d"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/protocol.json",
+      "bytes": 2042,
+      "sha256": "a8afd4bd78bffb0a4d494f48e0f1d949d154ae572d1675f755aa539e780c1b9e",
+      "git_sha": "fa0620db0b1805fa2c29a7f5e82f0ba484eed504"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/results/applied_bounds.csv",
+      "bytes": 138852,
+      "sha256": "feffab6da0ce7d93ef7833639bd078b77ee01efc9122f41f08502bf24dfe75fc",
+      "git_sha": "31dff41063995af289d9611e868d412b75eae5b5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/results/candidate_exclusions.csv.gz",
+      "bytes": 414216,
+      "sha256": "858680b93c27f4297e93b470ef95bd99f4b9fbd9ed0dfb8698954692a0d52184",
+      "git_sha": "ae37fbd1c7a3e976fa2b1b3ff80c24e40e0095cd"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/results/goal_decisions.csv.gz",
+      "bytes": 328603,
+      "sha256": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e",
+      "git_sha": "4a5c6c120afc190269d5cc3d013ee2575bf5bab9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/results/new_candidate_exclusions.csv.gz",
+      "bytes": 78824,
+      "sha256": "8dd543a305f7923ec27635c79c38fb2de347393d128669e031d2b0c72b94bc26",
+      "git_sha": "d903c975b042f893499817375522b24788306c3a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/results/overlay.csv.gz",
+      "bytes": 71652,
+      "sha256": "25b876fe4e5c81572d8a0ecc5137170aab02c80458777184d901383affe82053",
+      "git_sha": "8abe62855d1f161d9b079c168ff0109410f32c1f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/results/player_match_totals.csv.gz",
+      "bytes": 2515712,
+      "sha256": "6d81475eb6a4937d7b1d51aebd38b4a81adaf8d4461c450b8915f42e75593329",
+      "git_sha": "fcda352556bdbf9d5b6f8b1dc195cba46529bd8e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/results/summary.json",
+      "bytes": 715,
+      "sha256": "7f77a323cc1e0661568d9a99c7343280d8e31ecd6ef66025129de49f526544f8",
+      "git_sha": "cccbb7af32847d95ce9269f75a556957c000e096"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/single_goal_controls.csv",
+      "bytes": 4408,
+      "sha256": "a9a1840642248600b6d802f7423852515ce7b5986365ebd1444462ee31020337",
+      "git_sha": "52469899b92d26656424b5e22031581a0f0efd56"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/test_rules.py",
+      "bytes": 2008,
+      "sha256": "14c0f7538d804e916dd1f22c7a87f4bb088e664fb0ab985b24a2e0bc1b914a2f",
+      "git_sha": "3ab978aa1bff397caa005f0a753482fc8d58a434"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/validate.py",
+      "bytes": 3565,
+      "sha256": "039b6841ef5f8dc2e9f9172a49d70355f6312f356e0cc38e8a29ab54217733be",
+      "git_sha": "c36ce4c0beafae1a17f95906d931f942ddecfd26"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/validation_plan.csv",
+      "bytes": 52847,
+      "sha256": "0d50e9ab45486eb6bddc39d64c5bb9604007a983fde62aea4476e31836162e8f",
+      "git_sha": "6e28e98dc37be76319dd4cd915d8e043c669d553"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/validation_summary.json",
+      "bytes": 467,
+      "sha256": "06b0166a6caeba2987a0de86a8c038b3b57f73c1cdca68fdc4d6fbdc9ff12c65",
+      "git_sha": "df478f55f4c94da3869e01623229e204e2c8ecd5"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_possession_bounds/vector_controls.csv",
+      "bytes": 55686,
+      "sha256": "d022e77280e4a02f28c1fa7d729babfc63620accf3062c75095e322b657d58b0",
+      "git_sha": "ebd17f42a5d207350f5ef46139d1c1fae20977c4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/README.md",
+      "bytes": 935,
+      "sha256": "b16e15a0dfeee19082f6f84270d1be07d558b775cb12186513dce3448538f4d2",
+      "git_sha": "be066496abd38f8543df8d7494c02a7af86d2451"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/freeze.json",
+      "bytes": 926,
+      "sha256": "5ae0799ceaa9b9f389da78d2f7a32e492785acea019a8a242687c0ba8c9a3274",
+      "git_sha": "eae7adeee96a060167cbb9880f5e3895aa284e9a"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/predict.py",
+      "bytes": 1533,
+      "sha256": "537ff461105356a203489cfd07f3ae9976ae1cbee8c35af8d6105ec6987c9bb0",
+      "git_sha": "e920d828716df8894bcad4d5d545efbc9b99dd89"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/predictions.csv.gz",
+      "bytes": 14149,
+      "sha256": "1d80f67f3faaed61b9be1177a0c2741f633dd3d64b590e727f3c994207b7ed3e",
+      "git_sha": "625a0538dead6e2334a64305aef2bdca04d79f3c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/protected_conflicts.csv",
+      "bytes": 161,
+      "sha256": "5544924a5840b6910678004c282ac3b0d68a8414b67599361fa16684c2319d8b",
+      "git_sha": "bf1eaabbcac3465b13308099a6f724c2749039cc"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/protocol.json",
+      "bytes": 1407,
+      "sha256": "ba9946a69b5a96b0e167ddf80f2a23c087c8bdb4bfe1221b4f4c6b5774f98d5c",
+      "git_sha": "0cd4eae88395bbe6cc16f64910913e1982cd6723"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/rule.py",
+      "bytes": 2170,
+      "sha256": "325368d0719eaef5fa767cdd55ffaf6f7c189e69c1bffaa3cde628a56e225e17",
+      "git_sha": "ee80bbc83efd7d69bd2cbcb21fe6cb61a2d77878"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/validate.py",
+      "bytes": 2867,
+      "sha256": "9809d1a4ff2af6630f83efe1cc754503c36cbf9cc37fa8cdfa7248a884329dd8",
+      "git_sha": "06fac7a69d393c06762004f0a954dd4519baecc2"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/validation_comparisons.csv",
+      "bytes": 603,
+      "sha256": "44babaf3209671fc344947db2731b9c43f0eccc996311a725f3a9d1ba888eeb5",
+      "git_sha": "11d888d33a828082a8292d283f1baa2943dfa829"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/validation_plan.csv",
+      "bytes": 16079,
+      "sha256": "404bb7bf495a1259210b3ea0ea0e935e1a78693e109b931fc7559f10677b4672",
+      "git_sha": "8bdb537d71ddf62c7fac72c01f053c723fb6307e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/validation_summary.json",
+      "bytes": 267,
+      "sha256": "07420197f153a27edaf57442b3d44a669242e676cc22e579e608ba171ebf65f8",
+      "git_sha": "a426b22577731ea61c121ac2bcdd48075bef6d05"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/league_conservation_pilot/README.md",
+      "bytes": 517,
+      "sha256": "c1a3aed7b9e7b8a75009b75b00a11b370ed6d376e422bb736db1dad14f794b74",
+      "git_sha": "f8a1f4e11a3d491c3e387cf90c57675f7035b26f"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/league_conservation_pilot/probe.py",
+      "bytes": 724,
+      "sha256": "eac422489a01a4264056b55f659dd9f9f268a9101e86b8829198e4580920241a",
+      "git_sha": "4a34943e7a4501ec2ca4576e873907cb0cfbe4a4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/league_conservation_pilot/source_attempt.json",
+      "bytes": 116,
+      "sha256": "6f808a98887b557339ad9c0860662ebedb7762302ca7cd93a2284ab3d9898d55",
+      "git_sha": "dc1c716ba2b82bdaaffb1f0d8841687ce6161c93"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/README.md",
+      "bytes": 2496,
+      "sha256": "c7e1cc20aae5aa74f32c5b423146df9b03a312255a4dac8cb95f6025c7db13b8",
+      "git_sha": "6ef9d51d56fcf84f09df659e3b50177e021d6698"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/build.py",
+      "bytes": 4181,
+      "sha256": "440b4395aa1754a3024f636460e1665c00a1254b165adf7c0c13cd8d8d13c0e1",
+      "git_sha": "15034b3ab5c33ac22e804dcf0b705191505a7560"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/replay_verification.json",
+      "bytes": 4207,
+      "sha256": "6532aaa97cb6925c19a971f6b7379abad89f7c2f2151a7dba28694fe119fea81",
+      "git_sha": "372f2bd86d1458cebb7a89870d662287e38d53c4"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/reproduce.py",
+      "bytes": 3746,
+      "sha256": "d8f508cc5cd6ec5e6902d1b9627c68e00d0cbc527198cba2c466fb12f0805363",
+      "git_sha": "613e801393344829bb4414e769d6c8abe2d97888"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/field_summary.csv",
+      "bytes": 610,
+      "sha256": "cf35beec60c26ec4eb6cc687b83633c0e663a6a2200d6f8e6d8fdfcb2ce925ea",
+      "git_sha": "90bc8aab5989500b0383683b31466ff8362f6b95"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/match_readiness.csv",
+      "bytes": 52296,
+      "sha256": "4640e6323428da4c287ad1086abf787277217d21119335bdaf851a61f2f86668",
+      "git_sha": "ff781d19891cc30179bfa9bb639db6e4f7adece9"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/new_fields.csv.gz",
+      "bytes": 89978,
+      "sha256": "26d4e8566ce384d4b7d988dba70a88a8e2011ad4b02cd5f8a98c095d02810866",
+      "git_sha": "43a88ac23f6cf1750d79ad510bf4b88f7b287732"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/player_match_readiness.csv.gz",
+      "bytes": 300105,
+      "sha256": "4e76175af665179e48ada74e6f52659ba2dd5c8970c77e8260378cff00079c2a",
+      "git_sha": "afc0a620026216133fc828774f09008d96cf0774"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/remaining_fields.csv.gz",
+      "bytes": 848957,
+      "sha256": "604a68257107de5d1610f68ceebb7ee220e54e05f35faa8c419c3e34c94dc3c0",
+      "git_sha": "392ec1c87c793ecb9298d894041bc1295fef44f1"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/requirements.csv.xz",
+      "bytes": 8293408,
+      "sha256": "ff85adeea5126aa45bd577659d6c78f191ff0de84830373a63a915ca4eb4f462",
+      "git_sha": "e1d3467fcac3ba7bd5fd9f6ca1dc362643a5da04"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/season_summary.csv",
+      "bytes": 1034,
+      "sha256": "3d33f000e073a9e77210a8ff18e4c8d0ab6cf1daa31b1cef6383752df237532b",
+      "git_sha": "93337d58a30f0a8b3cd56b4ccf8d288437efbf6c"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/results/summary.json",
+      "bytes": 722,
+      "sha256": "41be283d9d18a9e944b38a3ec8b535c74fda12dc9554e40d008b4e972f8132d8",
+      "git_sha": "88523bbe7ac0a6b04ee50a683f23234b887a21b8"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch2/test_results.json",
+      "bytes": 258,
+      "sha256": "90f9eff6a61e9dc03853060c27d8223e20ea1a0cbb4ca205b427615b4b6c9e96",
+      "git_sha": "ed9ab6456b0cccd6e92df987643c1f6c3ec8e31e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/CURRENT.json",
+      "bytes": 1810,
+      "sha256": "ab95af658d540b06475cde88c153ccf543cf2a34ddfe2409969b4ebd7128443a",
+      "git_sha": "15f2fc496d1110fa636fe133979e7d41e12c5c46"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md",
+      "bytes": 5713,
+      "sha256": "098cfda5efaa45f3b9c779e23741f675cdfbc56e66b26ebd4044d2bd438aeeeb",
+      "git_sha": "cc3cae427dd0d5c9d61399d754758d6ee2efb506"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/README.md",
+      "bytes": 11277,
+      "sha256": "c466712feeea4cbf54a1a6d92593dcecad421f1444db00093be7af801321ae57",
+      "git_sha": "f8bb2d66060e7a8c237f6c13e5814390983744f4"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 62637,
+      "sha256": "e714460e0c99e612fd60ddd8d86e0a8678a0b29df11ccab5ff430e2d9b1ddc12",
+      "git_sha": "6e08422ddaa51e0952bf862cb24e14789611b9eb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/README.md",
+      "bytes": 2033,
+      "sha256": "ace8402e198a9420aab5c159a86d5cb8b11e3c39ea412bf711cc37c43972f98c",
+      "git_sha": "877caeb8c353df699373ca19f5ef9bd6fbc6dc28"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_dependencies.csv.gz",
+      "bytes": 158942,
+      "sha256": "09224f722b1adb19a14aed2ee3a3be6f723ab4cb84941195552822c3ea10ee98",
+      "git_sha": "f941fdeb66ee9d81604d1cc4eba58c3783eb161b"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_groups.csv",
+      "bytes": 460,
+      "sha256": "d0b54e5f09703d3ea91e7aacacd0f76c8e8bd5065af84dbf9cb5e32830a9c2a0",
+      "git_sha": "6c2cdf9a2573a815c0c72f9aa42c04e0e4164f94"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_inventory_gaps.csv.gz",
+      "bytes": 7472,
+      "sha256": "be61ab76ef62509d94a56d2e02b36744cc994be2749c8ad1815dbf6444b098d9",
+      "git_sha": "73a6847dd7ddbc09f5bb0c24ac29954c2ea20f1e"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/assist_summary.json",
+      "bytes": 310,
+      "sha256": "43892dc7053d1a1435f647b763f0ef16cac72fd43093534b28985d2201d33bdc",
+      "git_sha": "1fa664bc7037b6b12e939015c6199b826e801c31"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/build.py",
+      "bytes": 3478,
+      "sha256": "2a25633f6906615cef7a97241018d27c43ad7f28b69331327c90cae14d9c3a67",
+      "git_sha": "51db1760fd472ab32e1ae609821ebb69be0116cb"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/goal_group_classification.csv.gz",
+      "bytes": 140336,
+      "sha256": "3bb41b283a4accbf00ac8e1545810ee914cdb9bbae14d1e51ce6a577afb24019",
+      "git_sha": "0fa3f34db7439692b18f2cbe726dae072acf6407"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/quality_groups.csv",
+      "bytes": 2600,
+      "sha256": "bddf314ffddf13ec20b3c3c63d936f047203a8ade09467c85654bd9ca22bf435",
+      "git_sha": "ac543e7c5810feb5995ac4a5eda29f80e12ef773"
+    },
+    {
+      "path": "research/current/scoring_2026_27/bulk_reconciliation/priority/quality_summary.json",
+      "bytes": 147,
+      "sha256": "7e97ec4e7bb2a7730498f18d1217e50bb9b51aa8d0a12169c01a5231bad18708",
+      "git_sha": "f9689a1f92de618f6faa9b3b4be04f6822b5562e"
+    }
+  ]
+}

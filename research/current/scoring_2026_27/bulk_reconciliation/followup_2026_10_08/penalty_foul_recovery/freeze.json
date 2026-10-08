@@ -1,0 +1,12 @@
+{
+  "inputs": {
+    "penalty_foul_recovery/rule.py": "325368d0719eaef5fa767cdd55ffaf6f7c189e69c1bffaa3cde628a56e225e17",
+    "penalty_foul_recovery/predict.py": "537ff461105356a203489cfd07f3ae9976ae1cbee8c35af8d6105ec6987c9bb0",
+    "penalty_foul_recovery/protocol.json": "ba9946a69b5a96b0e167ddf80f2a23c087c8bdb4bfe1221b4f4c6b5774f98d5c",
+    "penalty_foul_recovery/validation_plan.csv": "404bb7bf495a1259210b3ea0ea0e935e1a78693e109b931fc7559f10677b4672",
+    "assist_intentional_pass/inputs/goals.csv.gz": "5ec75ccc56da3827fc8f30271d997011578ae360a6d6b0b14e762046807f977e",
+    "assist_intentional_pass/inputs/goal_episodes.csv.gz": "67384c4c3f5fbb40b08ea76080e12cdfb6e7e255dd9a080d30a887dd9d9afb85",
+    "assist_intentional_pass/inputs/participants.csv.gz": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090"
+  },
+  "predictions_sha256": "1d80f67f3faaed61b9be1177a0c2741f633dd3d64b590e727f3c994207b7ed3e"
+}

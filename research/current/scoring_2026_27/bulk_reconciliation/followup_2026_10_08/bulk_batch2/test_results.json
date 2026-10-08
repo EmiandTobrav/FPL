@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "assist_possession_bounds": {
+    "tests": 12,
+    "passed": 12
+  },
+  "primary_gap_recovery": {
+    "tests": 10,
+    "passed": 10
+  },
+  "total_new_tests": 22,
+  "full_repository_suite_run": false,
+  "github_ci_verified": false
+}

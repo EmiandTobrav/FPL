@@ -1,0 +1,7 @@
+{
+ "rule":"Direct converted penalty (goal9) linked by an explicit348 taker ID to a unique ordinary penalty foul won (type4 outcome1,9+13,no10), paired to one opposing foul committed with mirrored coordinates, clock within2seconds, explicit related references on both. No intervening play, other foul/shot, deletion or coverage interruption. Missing/ambiguous evidence abstains. Handball is excluded.",
+ "decision":"The existing target foul rule awards the actual foul winner; if that winner takes and scores the direct penalty there is no assist for any player. No historical totals are copied.",
+ "validation":"Freeze before comparing all applicable2025/26 one-goal team outcomes. At least20 comparisons overall and5 for each decision kind, zero discrepancies with FPL and zero contradictions of protected decisions/candidate denials. The two kinds qualify separately only if the whole error gate passes.",
+ "limits":"2025/26 FPL outcomes were seen in earlier experiments. This is temporal regression/shared-Opta source evidence, not an untouched holdout or independent provider test. Numeric metadata comes from the pinned parser dictionary and must retain source-quality caveats.",
+ "preservation":"Apply only to previously unresolved pre2025 goals with complete identity/scorer/goal coverage. Preserve frozen controls, all known totals, approved official revisions, rawFPL and locked scoring/models."
+}
