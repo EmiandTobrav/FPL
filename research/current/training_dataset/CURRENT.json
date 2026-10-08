@@ -1,0 +1,22 @@
+{
+  "status": "partial_not_training_ready",
+  "target_season": "2026-27",
+  "historical_source_commit": "3365c6cb5b3f827c88378e8349bfa7492af91361",
+  "historical_ledger": "../scoring_2026_27/bulk_reconciliation/CURRENT.json",
+  "historical_open_fields": 16227,
+  "historical_input_complete_fixtures": 490,
+  "historical_scoring_qualified": false,
+  "current_season_manifest": "snapshots/2026_10_08/derived/manifest.json",
+  "current_season_fixtures": 50,
+  "current_season_player_matches": 1538,
+  "current_season_finished_events": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "reproduce": "python research/current/training_dataset/reproduce.py",
+  "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
+  "next_work": "Actual unresolved assist causal patterns, historical changed-component rule qualification, numerical/source gaps; complete historical labels and active training integration still required."
+}

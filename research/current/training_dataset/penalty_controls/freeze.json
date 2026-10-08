@@ -1,0 +1,18 @@
+{
+  "inputs": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/predictions.csv.gz": "1d80f67f3faaed61b9be1177a0c2741f633dd3d64b590e727f3c994207b7ed3e",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_predictions.csv.gz": "180ebfd3c12eee13e50f88b3fcfb3757619aa2b2482a72833290a51c5dc62269",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/participants.csv.gz": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/results/team_coverage.csv": "c2afcb1177dac5a370936d6a76f5e64920984e914eace64ecdb2ffa05be13713",
+    "training_dataset/penalty_controls/plan.py": "db0d3e07833fde0d87f25f0eb15ee881f3692c1414d849ab11c0d5e34fc22901",
+    "training_dataset/penalty_controls/protocol.json": "96bd893eeb75572e0129ff110564521b88e2dfea03f436989a19483cc1c4a953",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/rule.py": "325368d0719eaef5fa767cdd55ffaf6f7c189e69c1bffaa3cde628a56e225e17",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/freeze.json": "5ae0799ceaa9b9f389da78d2f7a32e492785acea019a8a242687c0ba8c9a3274",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/bulk_batch3/joint_freeze.json": "6fc5a25127ddd9da1feb853a30993ec7f92fd47f951905f288b7a3d788d63c6a",
+    "training_dataset/penalty_controls/plan.csv": "b6af56056deb08a0648a48f649cea4ae232f0414fc98049740e2c49ae395ccae",
+    "training_dataset/penalty_controls/isolation_evidence.csv": "c0a1a7aaa8740c8a7867e3838356cad5ee3420d8fb1d6691f483d0f21a02daef"
+  },
+  "comparisons": 30,
+  "distinct_fixtures": 27,
+  "outcomes_read_by_selection": false
+}

@@ -6,6 +6,14 @@ Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid 
 
 ## Start her
 
+**Treningsdatasett, pågående ferdigstillelse — 8. oktober 2026:**
+Offisielle 2026/27 GW1–GW5 er samlet i en ny, separat kildeversjon: 1 538
+spillerkamper, 50 hele kamper og 3 216 spiller–runde-rader. Poengforklaring,
+helkampbonus og kampstatistikk er avstemt. Historisk rest og scoring er fortsatt
+uavklart; full treningsleveranse er ikke ferdig.
+Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
+og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
+
 **Historisk harmonisering til 2026/27 – batch 3, 8. oktober 2026:** 16 227 åpne feltkrav i 14 990 spillerkamper. 62 290 spillerkamper og 490 hele kamper har komplette inputfelt. Siste batch avklarte 8 058 krav (33,18 %); dette er inputtilgjengelighet, ikke ferdig kvalifiserte poeng/BPS/bonus.
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)

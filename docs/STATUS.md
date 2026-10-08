@@ -4,6 +4,22 @@ Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremg
 
 ## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, batch 3
 
+**Pågående treningsleveranse på `codex/training-dataset-2026-27`:**
+[training_dataset](../research/current/training_dataset/README.md) supplerer
+den historiske restlisten nedenfor. Ny offisiell snapshot dekker 2026/27 GW1–GW5:
+1 538 spillerkamper i 50 hele kamper og 3 216 spiller–runde-rader. 674 råsvar,
+kildefingeravtrykk, komponentforklaringer og avstemte bonus-/statistikkverdier
+er bevart. Åtte fokuserte tester består, og 13 avledede filer er gjenskapt
+identisk offline i separat kopi. Batch 3s 63 filer er også gjenskapt identisk
+med en adapter som bare normaliserer gzip-headerens plattformbyte.
+
+En ny, fryst komponentisolering gir 30 straffekontroller i 27 kamper uten feil,
+men ingen nye historiske verdier: den samme strenge prediktoren finner bare
+allerede avklarte historiske mål. Ikke gjenta denne anvendelsen. Selvvunne
+straffer er fortsatt ikke kvalifisert. Historisk rest er fortsatt **16 227**,
+inputkomplette hele kamper **490**, full historisk scoring og treningsintegrasjon
+**ikke ferdig**. Modeller og benchmark er uendret; ingen ny trening eller merge.
+
 **16 227 åpne feltkrav i 14 990 unike spillerkamper.**
 **62 290 spillerkamper og 490 hele kamper har komplette inputfelt**, av
 77 280 og 2 660. Dette er inputtilgjengelighet, ikke ferdig harmoniserte poeng.
@@ -664,4 +680,3 @@ Global H3 gir 2308,25 med chips, +70,0 mot referansen (4/4, beskrivende interval
 Samspill mellom globalvekt og H3 er +21,25 med chips, usikkert, men −78,25 uten og negativt i alle fire sesonger. Tidligere forbedringer kan ikke summeres. Global H1 gjenskaper alle åtte gamle globalvektspor med samme tropper og poeng. Alle 544 nye beslutninger er optimale innen toleransen, maks gap 9,55e-6. Poengregnskap, starttilstand, spillerkobling og matchede før-frist-prognoser er kontrollert. Tre relevante eksisterende regresjonstester er kjørt på nytt og består; ingen ny full testkjøring påstås.
 
 De to bekreftede utfordrerne beholdes; `constant_h3` legges til som forskningskandidat. Kode, protokoll, prognoser, spor, parete resultater og hashkontroller er lagret under `research/current/global_horizon`. Ingen produksjonsendring, urørt holdout eller verifisert GitHub CI-status.
-

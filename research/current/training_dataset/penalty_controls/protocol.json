@@ -1,0 +1,11 @@
+{
+  "version": "ordinary_penalty_recipient_isolation_v1",
+  "predictor": "Unchanged frozen penalty_foul_recovery rule and predictions; no new event interpretation.",
+  "scope": "Only ordinary_foul_penalty positive awards. The self_won_penalty predictor remains withheld and receives no new qualification.",
+  "selection": "Use every covered 2025/26 ordinary penalty prediction whose recipient has one unique FPL-linked identity. For each other goal in that team match, its contribution to this recipient must be a previously qualified fixed award/no-assist, or the joint qualified actor bounds must exclude this recipient. Reject every ambiguous contribution. Selection reads no player-match FPL assist totals.",
+  "comparison": "Subtract the other goal contributions from the recipient's authoritative FPL match assists. The uniquely isolated residual must equal the frozen predicted award of one. Also retain the old whole-vector single-goal check results and run protection/denial checks across all frozen predictions.",
+  "gate": "At least 20 isolated comparisons in at least 20 distinct fixtures, zero residual errors, zero protected-award/no-assist conflicts, zero candidate-denial conflicts, and the old six whole-vector comparisons remain correct. No lowering of the old minimum size; multi-goal recipient isolation supplies additional comparable evidence.",
+  "freeze": "Freeze the selected plan, contributions and all selection/predictor input hashes before reading FPL assist totals in validate.py. Existing frozen files remain unchanged.",
+  "limits": "Justified new validation design using reused 2025/26 outcomes and previously qualified shared-Opta bounds. This is temporal regression and component identification, not untouched holdout, independent-provider validation or a test of all other causal routes. A recipient-isolated comparison is not labelled a whole-team vector comparison.",
+  "application": "Apply only previously unresolved pre-2025 goals with complete team/scorer/recipient identity and goal coverage. Preserve every already resolved goal and player-match total, 2025/26 FPL totals, approved keeper/revision data and locked model outputs. New totals retain external quality review flags."
+}

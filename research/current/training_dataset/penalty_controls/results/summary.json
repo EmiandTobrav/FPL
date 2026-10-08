@@ -1,0 +1,28 @@
+{
+  "new_goal_awards": 0,
+  "new_assist_fields": 0,
+  "open_fields": 16227,
+  "unique_affected_player_matches": 14990,
+  "complete_player_matches": 62290,
+  "complete_matches": 490,
+  "historical_ledger_unchanged": true,
+  "raw_fpl_preserved": true,
+  "self_won_route_applied": false,
+  "scoring_qualified": false,
+  "reason": "Every eligible frozen historical positive penalty prediction is already a protected goal award.",
+  "validation": {
+    "isolated_recipient_comparisons": 30,
+    "distinct_fixtures": 27,
+    "one_goal_comparisons": 6,
+    "multi_goal_isolated_comparisons": 24,
+    "residual_errors": 0,
+    "protected_conflicts": 0,
+    "denial_conflicts": 0,
+    "old_six_vector_controls_still_pass": true,
+    "qualified_kinds": [
+      "ordinary_foul_penalty"
+    ],
+    "self_won_penalty_qualified": false,
+    "limits": "Reused temporal shared-Opta evidence, component-isolated comparisons; not independent holdout or whole-team vector comparisons."
+  }
+}
