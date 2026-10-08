@@ -1,0 +1,16 @@
+{
+  "status": "qualified_starts_full_canonical_coverage",
+  "rows": 185573,
+  "qualified_rows": 185573,
+  "new_qualified_zeros": 32672,
+  "complete_fixtures": 2660,
+  "original_values_preserved": true,
+  "scoring_qualified": false,
+  "training_dataset_ready": false,
+  "validation_sha256": "8ae5fbf7ecb260d3cf6d03318c70b685784e0f396a6e1d530b04789083a127c7",
+  "output_sha256": {
+    "starts_qualified.csv.xz": "12cabba1de99dafff8654dcb21c62db8bd6c09dcb26b7986a4285602fec0ac3b",
+    "coverage.csv": "cfa36bb3d3fe2966c2829ab280f9f47444ac505b4222554361bd497c9abd3ff1"
+  },
+  "limitations": "Only start role completed. No inference for minutes or other event counters; historical publication time remains unqualified. Prior partial starts view and raw FPL preserved."
+}

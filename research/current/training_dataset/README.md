@@ -20,7 +20,14 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | Historisk inputdekning | 62 290 spillerkamper og 490 kamper inputkomplette |
 | Historisk omregning | Fortsatt ikke kvalifisert; ingen nye historiske poengetiketter |
 | Modellinput/treningspipeline | Ikke ferdigstilt eller koblet om |
-| Historiske kampstarter | Alle 77 279 observasjoner med spilte minutter; 22 startere i hver av 2 660 kamper |
+| Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
+
+Den [fulle startversjonen](lineups/conservation/README.md) avklarer de siste
+32 672 null-minutt-rolleverdiene fra eksakte, komplette startellevere.
+[Ny avsluttende 2022/23-historikk](fpl_history_2022/README.md) dekker alle 26 505
+kanoniske rader og tidlige xG-kandidater. GW16-avvik og semantisk ugyldige
+GW29-xGI-nuller må avklares før xG-godkjenning. 42 fokuserte tester består.
+Tidligere delvise dataversjoner nedenfor er bevart som historikk.
 
 [Ny startleveranse](lineups/README.md) har 152 901 kvalifiserte verdier på
 185 573 kanoniske rader. Råverdiene beholdes. Offisielle lagoppstillinger

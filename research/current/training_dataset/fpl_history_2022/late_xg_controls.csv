@@ -1,0 +1,5 @@
+field,controls,errors,maximum_difference
+expected_goals,17941,26,0.3144
+expected_assists,17941,4,0.3760800000000001
+expected_goal_involvements,17941,327,1.88
+expected_goals_conceded,17941,125,0.30179999999999985

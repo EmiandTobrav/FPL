@@ -14,10 +14,14 @@ uavklart; full treningsleveranse er ikke ferdig.
 Historisk beregning er etablert: 185 573 originalrader har avstemt grunnpoeng
 og 489 hele kamper har separate omregningskandidater. Kvalifisering gjenstår;
 ingen nye historiske treningslabels er godkjent.
-Kampstarter er nå kvalifisert for alle 77 279 historiske observasjoner med
-spilte minutter i 2 660 kamper. Offisielle lagoppstillinger dokumenterer
+Kampstarter er nå kvalifisert for alle 185 573 historiske observasjoner i
+2 660 kamper. Komplette startellevere avklarer også 32 672 tidligere manglende
+null-minutt-roller. Offisielle lagoppstillinger dokumenterer
 2 992 starter som feilaktig stod som null før GW16 i 2022/23. Se
 [startdekning og kildekontroll](research/current/training_dataset/lineups/README.md).
+Den avsluttende FPL-historikken for 2022/23 er samlet med tilbakefylte xG-data,
+men avvik i GW16 og GW29 må avklares før bruk. Se
+[kildekontroll og neste handling](research/current/training_dataset/fpl_history_2022/README.md).
 Se [dataleveranse og videre arbeid](research/current/training_dataset/README.md)
 og [maskinlesbar leveransestatus](research/current/training_dataset/CURRENT.json).
 

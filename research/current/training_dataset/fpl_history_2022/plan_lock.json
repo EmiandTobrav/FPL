@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "training_dataset/fpl_history_2022/source_plan.json": "6a802b120b50a48d5417c1acc7af33abf0ace3fcf27bafdcd35f78eb2d9e1d6a",
+    "training_dataset/fpl_history_2022/protocol.json": "cb663a9a4e33e557800b4614ae8e768a64da6fc8d52531e785da4da0c964ed70",
+    "project/data/2022-23_players.csv.gz": "0f3460ed47032a5099ebaff1bb5cec28a487f8193ca68d614e820aa366016468",
+    "project/data/2022-23_fixtures.csv.gz": "1ee9426018d6a7d03a4caaa3acf1106e184706f740c4439ee6108e515972e8a6",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "training_dataset/lineups/primary_reference/explicit_lineups.csv.xz": "55b6dbc16d9d765c1ba126b80a3fbb5d60d563e4c12e8e0251bf273fd217c2f0",
+    "training_dataset/fpl_history_2022/provenance/getters.py": "ae2882966f81bfa4e10e60373d78b8374575cad45f518014616b96953604b280",
+    "training_dataset/fpl_history_2022/provenance/global_scraper.py": "48506534c94048552811b552c0d9e3099236a64a2c4bd7b0635c47a848c2e9e4",
+    "training_dataset/fpl_history_2022/provenance/parsers.py": "5727ba4044cbfaf720b9b8ad083c4d0ca533a2e57a9e942ba8cfc561de77616f"
+  },
+  "plan_code_sha256": "1f831b24c4c7ef17c1ed975a21c5aff02cbc1618a3180a8d7e0f44ac4d799b3c",
+  "diagnostic_pilots": [
+    318,
+    407,
+    346
+  ]
+}

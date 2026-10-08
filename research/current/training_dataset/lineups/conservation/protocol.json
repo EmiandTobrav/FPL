@@ -1,0 +1,19 @@
+{
+  "version": "full_identified_start_inventory_conservation_v5",
+  "design": "Logical exhaustive-lineup inference, followed by whole-population regression. Earlier controls have been seen and share Opta ancestry; no independent holdout claimed.",
+  "rule": "Only if eleven distinct stable canonical player codes are explicit qualified starters on EACH fixture club side, every other distinct canonical identity cannot be a starter. Infer starts=0 only for previously missing source roles. Missing/incomplete elevens preserve missing values; never infer from minutes, provider timing, an empty roster or a positive residual.",
+  "gates": {
+    "minimum_control_fixtures_per_season": 300,
+    "minimum_positive_per_season": 5000,
+    "minimum_negative_per_season": 1500,
+    "maximum_disagreements": 0
+  },
+  "extra_gates": {
+    "all_historical_fixtures_with_two_complete_elevens": 2660,
+    "maximum_compatible_native_start_disagreements": 0,
+    "maximum_existing_qualified_value_changes": 0,
+    "maximum_direct_primary_disagreements": 0
+  },
+  "comparison": "All four seasons 2022/23..2025/26. For the documented early-2022 incompatible block, use the separate official primary full starting sets as truth; missing original primary squad membership is a zero ONLY because primary has two fully identified complete elevens.",
+  "scope": "Starts only. No other event count, point/BPS/bonus/defcon label, or historical feature publication time is qualified."
+}

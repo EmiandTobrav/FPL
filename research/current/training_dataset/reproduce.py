@@ -33,11 +33,14 @@ def main():
     inputs.update(json.loads((P / 'lineups/freeze_v4.json').read_text())['input_sha256'])
     reference_lock = json.loads((P / 'lineups/primary_reference/plan_lock.json').read_text())
     inputs.update(reference_lock['input_sha256'])
+    inputs.update(json.loads((P / 'lineups/conservation/freeze.json').read_text())['input_sha256'])
+    inputs.update(json.loads((P / 'fpl_history_2022/plan_lock.json').read_text())['input_sha256'])
     inputs.update(str(path.relative_to(R)) for path in P.rglob('*')
                   if path.is_file() and '__pycache__' not in path.parts
                   and path.name != 'reproduction_verification.json'
                   and not path.is_relative_to(P / 'lineups/raw')
-                  and not path.is_relative_to(P / 'lineups/primary_reference/raw'))
+                  and not path.is_relative_to(P / 'lineups/primary_reference/raw')
+                  and not path.is_relative_to(P / 'fpl_history_2022/raw'))
     output_paths = list((P / 'snapshots/2026_10_08/derived').glob('*'))
     output_paths += [P / 'penalty_controls' / n for n in
                     ['plan.csv', 'freeze.json', 'isolation_evidence.csv', 'comparisons.csv',
@@ -55,6 +58,15 @@ def main():
         'raw_schema_audit.csv', 'plan_lock.json', 'explicit_lineups.csv.xz',
         'later_primary_controls.csv.xz', 'compatible_control_comparisons.csv.xz',
         'compatible_control_summary.csv', 'validation_summary.json']]
+    output_paths += [P / 'lineups/conservation' / name for name in ['protocol.json',
+        'predictions.csv.xz', 'complete_start_inventories.csv', 'freeze.json',
+        'control_comparisons.csv.xz', 'control_summary.csv', 'validation_summary.json',
+        'starts_qualified.csv.xz', 'coverage.csv', 'manifest.json']]
+    output_paths += [P / 'fpl_history_2022' / name for name in ['protocol.json','plan_lock.json',
+        'late_player_history.csv.xz','source_inventory_gaps.csv','identity_disagreements.csv',
+        'performance_disagreements.csv','late_xg_controls.csv','late_xg_disagreements.csv',
+        'season_total_checks.csv.xz','original_xgi_semantic_conflicts.csv',
+        'disagreement_groups.csv','validation_summary.json']]
     expected = {str(path.relative_to(R)): digest(path) for path in output_paths}
     with tempfile.TemporaryDirectory(prefix='fpl_dataset_replay_') as tmp:
         root = Path(tmp) / 'research/current'
@@ -67,6 +79,8 @@ def main():
             if Path(name).name not in ['plan.csv', 'freeze.json', 'isolation_evidence.csv',
                                       'fixture_plan.csv', 'freeze_v2.json', 'freeze_v4.json', 'plan_lock.json',
                                       'raw_schema_audit.csv']:
+                if Path(name).name == 'protocol.json':
+                    continue  # Included in locked input checks before regeneration.
                 (root / name).unlink()
         tasks = [['training_dataset/penalty_controls/plan.py'],
                  ['training_dataset/penalty_controls/validate.py'],
@@ -79,7 +93,11 @@ def main():
                  ['training_dataset/lineups/primary_reference/build.py'],
                  ['training_dataset/lineups/predict_v4.py'],
                  ['training_dataset/lineups/validate_v4.py'],
-                 ['training_dataset/lineups/apply.py']]
+                 ['training_dataset/lineups/apply.py'],
+                 ['training_dataset/lineups/conservation/predict.py'],
+                 ['training_dataset/lineups/conservation/build.py'],
+                 ['training_dataset/fpl_history_2022/plan.py'],
+                 ['training_dataset/fpl_history_2022/build.py']]
         for task in tasks:
             result = subprocess.run([sys.executable, *task], cwd=root, capture_output=True, text=True)
             if result.returncode:

@@ -1,0 +1,61 @@
+{
+  "status": "unqualified_late_fpl_history",
+  "qualified": false,
+  "source_rows": 26505,
+  "canonical_matched_rows": 26505,
+  "source_unmatched_rows": 0,
+  "original_unmatched_rows": 0,
+  "early_candidate_rows": 8491,
+  "control_fixtures": 244,
+  "control_players": 775,
+  "identity_disagreements": 0,
+  "anchor_disagreements": 0,
+  "late_start_disagreements": 0,
+  "direct_primary_rows": 5435,
+  "direct_primary_disagreements": 0,
+  "xgi_additivity_disagreements": 0,
+  "season_total_failed_checks": 0,
+  "xg_groups": [
+    {
+      "field": "expected_goals",
+      "controls": 17941,
+      "errors": 26,
+      "maximum_difference": 0.3144
+    },
+    {
+      "field": "expected_assists",
+      "controls": 17941,
+      "errors": 4,
+      "maximum_difference": 0.3760800000000001
+    },
+    {
+      "field": "expected_goal_involvements",
+      "controls": 17941,
+      "errors": 327,
+      "maximum_difference": 1.88
+    },
+    {
+      "field": "expected_goals_conceded",
+      "controls": 17941,
+      "errors": 125,
+      "maximum_difference": 0.30179999999999985
+    }
+  ],
+  "protocol_sha256": "cb663a9a4e33e557800b4614ae8e768a64da6fc8d52531e785da4da0c964ed70",
+  "raw_manifest_sha256": "4e780ca79a8fb74c673a939b76df681c3dd6575e2a42e702eb77f6a8c170cf73",
+  "code_sha256": "154824329c7146cb2e18fffa60814e66276f4df161c613f0f853037873303732",
+  "scoring_qualified": false,
+  "historical_feature_availability_qualified": false,
+  "evidence_type": "Three inspected diagnostic players (318,407,346) are pilots, not unseen controls. All remaining archived players are a fixed acquisition/compatibility population. Shared official FPL origin, not independent provider holdout.",
+  "output_sha256": {
+    "late_player_history.csv.xz": "940ba331118236b5ec955fdfad42caff31487f778bf24737d6d7c1b4fff0231b",
+    "source_inventory_gaps.csv": "f910729696f70a48111861e4bd96a7a2d6f000d525aa6ddefdb3e3edec6495ae",
+    "identity_disagreements.csv": "7d65ed80b3708be247dacf73842a639587090376b524b6d306bb3038165cd20b",
+    "performance_disagreements.csv": "7d65ed80b3708be247dacf73842a639587090376b524b6d306bb3038165cd20b",
+    "late_xg_controls.csv": "d62f508a8975668d446ee4959f9e79f8a4d09df562e018a3fdbbd5eae62d73ec",
+    "late_xg_disagreements.csv": "09e8dc5bfb763ee3d4778e6e33bde6713cd852446ac2da0ee614529337bc253c",
+    "season_total_checks.csv.xz": "c032d4efa9f2b844abe772a370b70e1a66d1969ce60e4c21ac1cddbbf23d07f1",
+    "original_xgi_semantic_conflicts.csv": "c245c1fde2a5976b2a2f5dd2b32f422a0831deb5e2fb7a8e5ebd27fb896daff6",
+    "disagreement_groups.csv": "8719709d1917747d6a2bc61e569a8c4b81290f7d925ee1e9902619f6973d7ba4"
+  }
+}

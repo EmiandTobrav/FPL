@@ -34,3 +34,4 @@ research/current/project/results/
 # External binary source caches; committed projections carry verified hashes.
 research/current/training_dataset/lineups/raw/
 research/current/training_dataset/lineups/primary_reference/raw/
+research/current/training_dataset/fpl_history_2022/raw/

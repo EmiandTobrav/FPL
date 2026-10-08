@@ -14,12 +14,15 @@
   "additional_zero_minute_card_observations": 12,
   "additional_official_source_disagreements": 2,
   "historical_source_statistic_coverage": "scoring/results/statistic_coverage.csv",
-  "historical_starts_manifest": "lineups/application_manifest.json",
-  "historical_starts_coverage": "lineups/starts_coverage.csv",
-  "historical_starts_qualified_rows": 152901,
+  "historical_starts_manifest": "lineups/conservation/manifest.json",
+  "historical_starts_coverage": "lineups/conservation/coverage.csv",
+  "historical_starts_qualified_rows": 185573,
   "historical_starts_qualified_active_rows": 77279,
   "historical_starts_complete_active_fixtures": 2660,
-  "historical_starts_missing_zero_minute_rows": 32672,
+  "historical_starts_missing_zero_minute_rows": 0,
+  "late_2022_23_fpl_history_validation": "fpl_history_2022/validation_summary.json",
+  "late_2022_23_fpl_history_rows": 26505,
+  "late_2022_23_fpl_xg_qualified": false,
   "historical_rich_stat_schema_audit": "lineups/primary_reference/raw_schema_audit.csv",
   "early_2022_23_xg_semantic_coverage_qualified": false,
   "current_season_manifest": "snapshots/2026_10_08/derived/manifest.json",
@@ -34,5 +37,5 @@
   ],
   "reproduce": "python research/current/training_dataset/reproduce.py",
   "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
-  "next_work": "Historical starts cover all played-minute observations; qualify complete-lineup conservation for remaining zero-minute rows. Investigate early-2022 structural xG zeros and obtain comparable older xG. Qualify historical changed scoring components and external source groups, resolve causal/numerical gaps plus zero-minute cards/source disagreements. Candidates are not labels. Historical labels, temporal features and active training integration remain required."
+  "next_work": "Historical starts now cover all 185573 canonical rows. Late official FPL histories recover 26505 exact 2022/23 identities and early xG candidates; resolve GW16 statistical revisions/version and GW29 invalid xGI zeros before qualification. Obtain comparable pre-2022 xG. Qualify historical changed scoring components/source groups and resolve causal/numerical gaps plus zero-minute cards/source disagreements. Candidates are not labels. Historical labels, temporal features and active training integration remain required."
 }

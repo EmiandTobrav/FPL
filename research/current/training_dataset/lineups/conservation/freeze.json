@@ -1,0 +1,17 @@
+{
+  "outcomes_read": false,
+  "design": "Logical exhaustive-lineup inference, followed by whole-population regression. Earlier controls have been seen and share Opta ancestry; no independent holdout claimed.",
+  "input_sha256": {
+    "training_dataset/lineups/predictions_v4.csv.xz": "99a45d241752a4d021249bccbdf7ce66ddc07f98ab5a1780fe7efebb0d2808d4",
+    "training_dataset/lineups/freeze_v4.json": "a3041acd243a74117ed85e40482a1d3f5fc3d7d81a5f6ecf26f1c434219a6e4c",
+    "training_dataset/lineups/validation_summary_v4.json": "f62ae8f369ecee97323aeffd86070e3cf25e4aa0f57c2b074a8a9d5e6ee52298",
+    "training_dataset/lineups/conservation/protocol.json": "ff6fb477fa81d1d0598a9acc7d1a4f66d0da8cb796e008f855fa477b96c0c2c1",
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "training_dataset/lineups/starts_qualified.csv.xz": "199d8c8dfa2e877265a564ed49b0f202548a3e8f45d684784eb78e3f2c73a62f",
+    "training_dataset/lineups/application_manifest.json": "75c1ec5601978ef82cba12eea1b73669e5042a1b209d0495d35c13db6f3cb67a",
+    "training_dataset/lineups/primary_reference/explicit_lineups.csv.xz": "55b6dbc16d9d765c1ba126b80a3fbb5d60d563e4c12e8e0251bf273fd217c2f0"
+  },
+  "prediction_code_sha256": "8933f023c3b737980a1c6b5c6cfa0b9aae00aeba22929c65160c29527d92f4dc",
+  "prediction_sha256": "bd1e0931ee15114a45f696626562f4cdfdc009d5b9eaf13973ce2ef682e200db",
+  "proof_sha256": "bc28c3778f2121a040d179709d7d9a15afa967a356929466e72b2cba045d8e70"
+}

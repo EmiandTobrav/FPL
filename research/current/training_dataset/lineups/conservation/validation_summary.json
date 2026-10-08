@@ -1,0 +1,51 @@
+{
+  "qualified": true,
+  "groups": [
+    {
+      "season": "2022-23",
+      "rows": 26505,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 18145,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2023-24",
+      "rows": 29725,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 21365,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2024-25",
+      "rows": 27283,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 18923,
+      "disagreements": 0,
+      "passed": true
+    },
+    {
+      "season": "2025-26",
+      "rows": 29747,
+      "fixtures": 380,
+      "positives": 8360,
+      "negatives": 21387,
+      "disagreements": 0,
+      "passed": true
+    }
+  ],
+  "controls": 113260,
+  "complete_fixtures": 2660,
+  "primary_controls": 5675,
+  "primary_disagreements": 0,
+  "existing_value_changes": 0,
+  "prediction_sha256": "bd1e0931ee15114a45f696626562f4cdfdc009d5b9eaf13973ce2ef682e200db",
+  "freeze_sha256": "469d92349f2273066b94211952cc4d680bcd8fbbca201589326748f1fe042333",
+  "code_sha256": "a18f78249874e6278e90f6ad84c464c5e802eec97c3434d1442c4eac5d946e92",
+  "scoring_qualified": false,
+  "evidence_type": "Logical exhaustive-lineup inference, followed by whole-population regression. Earlier controls have been seen and share Opta ancestry; no independent holdout claimed."
+}

@@ -5,6 +5,22 @@ Oppdatert 8. oktober 2026. Brukeren ønsker GitHub som sentral for kode og fremg
 ## Gjeldende kø og gjennomføringsplan – 8. oktober 2026, batch 3
 
 **Ny statistikkløsning – historiske kampstarter:**
+Full startrolle er nå kvalifisert for alle 185 573 kanoniske rader.
+[Conservation](../research/current/training_dataset/lineups/conservation/README.md)
+avklarer de siste 32 672 nullene fra dokumenterte komplette startellevere;
+113 260 kontrollrader og 5 675 direkte primærroller stemmer uten avvik.
+Den tidligere delvise V4-leveransen nedenfor er bevart.
+
+**Ny offisiell 2022/23-kilde:**
+[Avsluttende spillerhistorikk](../research/current/training_dataset/fpl_history_2022/README.md)
+dekker alle 26 505 originale rader, med tilbakefylte starter og xG fra GW1.
+778 råfiler er låst med bytehash. Identiteter, minutter, hendelsesankre,
+sesongsummer og starter består. XG-kompatibilitet feiler på 188 GW16-felt og
+294 GW29-xGI-felt uten pilotene. Full originalaudit finner 296 GW29-xGI-nuller
+som motsier xG+xA. Ingen xG-verdier er anvendt; kilderevisjon må kvalifiseres.
+42 fokuserte tester består. Poengrest 16 227 og godkjente historiske
+poengkamper 0 er uendret; modellenes treningsintegrasjon gjenstår.
+
 [Lineups](../research/current/training_dataset/lineups/README.md) har nå
 152 901 kvalifiserte startverdier, inklusive alle 77 279 rader med spilte
 minutter. Hver av de 2 660 kampene har nøyaktig 22 kvalifiserte starter.

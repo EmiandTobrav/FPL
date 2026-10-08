@@ -3,6 +3,11 @@
 Oppdatert 8. oktober 2026. Dette er et separat statistikklag. Historiske
 poeng/BPS/bonus/assists/defcon er fortsatt ikke kvalifisert til trening.
 
+**Gjeldende fullversjon:** [conservation](conservation/README.md) har nå
+kvalifisert startrolle for alle 185 573 rader. Den avklarer de siste 32 672
+verdiene gjennom dokumenterte komplette startellevere på begge klubbside.
+V4s delvise leveranse og kontrollhistorikk nedenfor er bevart.
+
 ## Leveranse og dekning
 
 `starts_qualified.csv.xz` har de samme 185 573 kanoniske spillerkampnøklene
