@@ -4,6 +4,14 @@ Arbeidsgren: `codex/training-dataset-2026-27`, fra GitHub-commit
 `3365c6cb5b3f827c88378e8349bfa7492af91361`. Rå FPL, godkjente historiske
 rekonstruksjoner, gamle modeller og benchmark er bevart. Ingen modelltrening.
 
+**Aktivt delmål: lukk datagapene effektivt og raskt.** Følg den
+[operative målbeskrivelsen](../../../docs/DATA_GAP_GOAL.md) og
+[gjeldende datagapstatus](../scoring_2026_27/bulk_reconciliation/CURRENT.json).
+Samlet kvalitetssikring følger innhentingen; deretter kommer ny scoring,
+poengetiketter og fristsikre treningsvisninger. Nødvendige kontroller av
+den enkelte utfyllingsbatch beholdes. Faktiske feltlukkinger per tidsbruk
+er det primære fremdriftsmålet.
+
 ## Gjeldende leveranse
 
 Den offisielle kilden markerte GW1–GW5 i 2026/27 som avsluttet ved innhenting
@@ -16,14 +24,19 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | 2026/27 spillerkamper | 1 538 observasjoner, 50 avsluttede hele kamper |
 | 2026/27 spiller–runde | 3 216 offisielle rader, inkludert ikke-deltakelse |
 | Kvalitetskontroll | 16 918 sammenligninger av kampstatistikk; bonus for alle 1 538 deltakere; poengsum mot offisiell komponentforklaring |
-| Historisk datarest | 14 893 feltkrav i 13 731 spillerkamper; siste primærbatch lukket 14 lokasjonskrav |
-| Historisk inputdekning | 63 549 spillerkamper og 766 kamper inputkomplette |
+| Historisk datarest | 11 219 feltkrav i 10 802 spillerkamper; 1 949 data-/kildekrav og 9 270 uløste assistkrav |
+| Historisk inputdekning | 66 478 spillerkamper og 824 kamper inputkomplette |
 | Historisk omregning | 2025/26: 374 hele kamper og 11 315 kvalifiserte poengetiketter; 442 totalpoeng endres |
 | Kanoniske datatabeller | 187 111 spillerkamper og 181 604 spiller–runde-rader for alle åtte sesonger |
 | Neste-runde-/horisont-targets | 13 203 H1, 8 387 H3 og 4 522 H6 har kvalifisert komplett sum |
 | Modellinput/treningspipeline | Ny dataversjon leses og kontrolleres; trening sperret fordi fristsikre features/rosters mangler |
 | Historiske kampstarter | Alle 185 573 kanoniske rader; 22 startere i hver av 2 660 kamper |
 | 2022/23 forventede statistikker | 26 505 kvalifiserte xG/xA/xGI/xGC-rader i 380 kamper; tilgjengelighet før frist uavklart |
+
+Rest- og inputtall følger den levende innhentingslisten. De senere
+utfyllingene er ennå ikke innarbeidet i de fryste kanoniske tabellene eller
+en utvidet poengversjon. Inputkomplett betyr derfor ikke treningsklar.
+Manglende modellstatistikk utenfor poenglisten skal rapporteres separat.
 
 Den [fulle startversjonen](lineups/conservation/README.md) avklarer de siste
 32 672 null-minutt-rolleverdiene fra eksakte, komplette startellevere.
@@ -33,9 +46,15 @@ og Git-objektbevis; GW29-xGI er rettet fra kompatibel xG+xA. Første mislykkede
 kontroll beholdes med uendrede gater. 72 fokuserte tester består. Samlet
 offline-replay dekker 94 byteidentiske resultatfiler.
 
-## Gjeldende primæravklaring og poengversjon
+## Gjeldende innhentingsstatus og bevart poengversjon
 
-[Direkte primærtellere](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/README.md)
+[Siste datagapbatch](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/README.md)
+lukket 15 storsjanseredningskrav. Samlet er 3 674 krav lukket siden
+omprioriteringen fra 14 893. Innhentingskøen har 1 715 manglende datafelt og
+234 beskyttede kildekonflikter. De 9 270 assistkravene beholdes åpne;
+komplette målinventarer beviser ikke komplette årsaksfakta.
+
+[Tidligere direkte primærtellere](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/README.md)
 lukker 14 keeperlokasjoner fra komplette sesonginventarer. Alle 746 kjente
 inside-/outside-verdier stemmer. Sánchez har én minutts kildeavvik i kamp 47;
 hans to krav holdes utenfor. Ingen lokasjon er beregnet som total minus inside.
@@ -58,7 +77,7 @@ lukker 994 krav med eksplisitte lagtotaler og eksakt fordeling. 919 flere
 spillerkamper og 18 flere hele kamper har komplette poenginput. 25 kontrollkamper
 og 95 aktuelle kamper gir 710 samsvarende kildekontroller. Den tidligere
 beregningsversjonen med 489 kandidatkamper bevares og reproduseres mot sitt
-opprinnelige snapshot; 508 kamper i gjeldende ledger har nå komplette input.
+opprinnelige snapshot; ved denne tidligere skuddbatchen hadde 508 kamper komplette input.
 Poengetiketter, features før frist og aktiv treningsintegrasjon gjenstår.
 
 ## Bevart første poengleveranse: 2025/26 etter årets regler

@@ -4,6 +4,17 @@ Omdefinert etter brukerens beskjed 9. oktober 2026. Dette styrer det aktive
 arbeidet foran den opprinnelige, bredere målbeskrivelsen. Sluttleveransen om
 et treningsklart datasett beholdes, men de senere fasene utsettes.
 
+**Aktivt delmål:** Innhent og innarbeid manglende data så raskt og effektivt
+som mulig. Velg neste konkrete batch etter forventet antall dokumenterbare
+feltlukkinger per tidsbruk. Samlet kvalitetssikring, ny poengomregning og
+featurebygging tas opp etter datagapfasen. Bare nødvendige kilde- og
+integritetskontroller for den aktuelle utfyllingen gjøres underveis.
+
+Denne prioriteringen gjelder også når den opprinnelige målteksten omtaler
+scoring eller treningsintegrasjon. Den maskinlesbare leveransestatusen skal
+peke til gjeldende datagapliste; eldre kanoniske tabeller og poengversjoner
+skal fortsatt beskrives med sitt opprinnelige omfang.
+
 ## Mål for arbeidet nå
 
 Lukk flest mulig reelle datagap i FPL-datasettet for 2019/20–2025/26 og
