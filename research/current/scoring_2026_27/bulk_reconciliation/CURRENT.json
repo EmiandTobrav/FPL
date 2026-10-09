@@ -43,7 +43,10 @@
   "assist_goal_inventory": "followup_2026_10_08/espn_last_inventory/results/source_goal_inventories.csv.gz",
   "source_goal_inventory_note": "Negative ESPN play IDs are a separate source namespace. Missing archive identities use explicit canonical FPL-key namespaces, not Opta IDs. No new provider-assist rule or penalty-commentary inference is applied.",
   "keeper_cbi_track": "followup_2026_10_08/keeper_cbi_resolution/TRACK_CURRENT.json",
-  "keeper_cbi_track_note": "Consolidated investigation of all six native vetoes; native history agrees with FPL, and event hypothesis fails369/569 controls. All341 missing keeper values and204 outfield conflicts remain. Do not repeat unchanged routes; require specific new FPL-compatible source evidence.",
+  "keeper_cbi_track_note": "Consolidated investigation: native history agrees with FPL and event hypothesis fails369/569 controls. All341 missing keepers and204 outfield conflicts remain. Later official SDP route audit extends the earlier SDP pilot, supplies no matched player-match values and resolves zero vetoes. Do not rediscover SDP or repeat unchanged routes; require specific compatible player-match data/definition. User has no known alternate export.",
   "free_kick_trial": "followup_2026_10_08/free_kick_foul_recovery/results/findings.json",
-  "free_kick_trial_note": "Earlier started trial completed without applying values:9/20 required full one-goal controls; ordinary group4/5. All zero-error gates and prior outcomes preserved. Unchanged source rerun forbidden; new compatible causal inventory/control evidence needed."
+  "free_kick_trial_note": "Earlier started trial completed without applying values:9/20 required full one-goal controls; ordinary group4/5. All zero-error gates and prior outcomes preserved. Unchanged source rerun forbidden; new compatible causal inventory/control evidence needed.",
+  "goal_line_positive_season_track": "followup_2026_10_08/player_season_goal_line_exhaustion/findings.json",
+  "goal_line_positive_season_track_note": "Completed compatible conservation audit371 positive player-seasons/10109 PM, zero errors but zero candidates;16 remaining counters absent. No ledger changes. Do not repeat unchanged input.",
+  "keeper_cbi_source_addendum": "../../training_dataset/official_expected_metrics/findings.json"
 }

@@ -80,6 +80,11 @@ sesonger er innhentet; 1 028 kontroller i 818 kamper gir null avvik. Den
 separate lagavstemmingen er forkastet på ufullstendige lag/residual, og
 utelatte spillere blir ikke null. Tre tester og 16 offline-filer består.
 
+Det påbegynte [positive sesongtotalsporet](followup_2026_10_08/player_season_goal_line_exhaustion/README.md)
+er ferdig: 371 komplette grupper / 10 109 spillerkamper avstemmes uten avvik,
+men ingen rest har en uttrykkelig sesongteller. Null kandidater og null lukkinger;
+ni filer gjenskapes offline. Uendrede sesonggrenser skal ikke prøves igjen.
+
 Numerisk rest: 16 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
 manglende keeperverdier og 204 beskyttede konflikter), 2 keeperlokasjoner og
 mindre grupper. Assists gjenstår i 9 270 rader. Alle 994 skuddkrav er allerede
@@ -216,3 +221,12 @@ Dataene er ikke ferdige; videre utfylling krever konkret ny FPL-kompatibel
 kildedefinisjon eller korrigert kildeversjon. Uendrede prøver skal ikke
 gjenåpnes. 204 utespillerkonflikter beholdes separat. Se den maskinlesbare
 [sporstaten](followup_2026_10_08/keeper_cbi_resolution/TRACK_CURRENT.json).
+
+Den [senere SDP-ruteutvidelsen](../../training_dataset/official_expected_metrics/README.md)
+kobles til den gamle SDP-skjemaprøven. Lag-per-kamp- og spiller-sesongstatistikk
+gir ingen keeper-CBI per spillerkamp i observerte ruter; seks vetoer og alle
+341 manglende verdier består. Ikke gjenoppdag denne leverandøren eller gjenta
+kamp-skjemaprøven. Et konkret støttet spiller-kampendepunkt eller kvalifiserte
+kilde-/definisjonsversjoner kreves før ny prøve. Pannas [skudd-xG-ruter](../../training_dataset/shot_xg_lineage/README.md)
+er også avsluttet: egne modeller, ingen native import. Fullførte undersøkelser
+uten anvendelse er ikke feltlukkinger.

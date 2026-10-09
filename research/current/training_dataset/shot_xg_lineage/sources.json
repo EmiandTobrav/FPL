@@ -1,0 +1,41 @@
+{
+  "commit": "55d2a80b097bbeac1c0093f572d5ce7efa41f675",
+  "sources": [
+    {
+      "path": "scripts/enrich_shots_xg.R",
+      "url": "https://raw.githubusercontent.com/peteowen1/pannadata/55d2a80b097bbeac1c0093f572d5ce7efa41f675/scripts/enrich_shots_xg.R",
+      "file": "inputs/scripts__enrich_shots_xg.R",
+      "sha256": "4c20f4f17726d27d3357f6e198810a31619b20322cac82524f427a7d35d2f52e"
+    },
+    {
+      "path": "scripts/enrich_shots_xgot.R",
+      "url": "https://raw.githubusercontent.com/peteowen1/pannadata/55d2a80b097bbeac1c0093f572d5ce7efa41f675/scripts/enrich_shots_xgot.R",
+      "file": "inputs/scripts__enrich_shots_xgot.R",
+      "sha256": "87e0d6d2ccfe19b0349b62f27cc2d77866107744035fc69c6e37bf96e3b6fa40"
+    },
+    {
+      "path": ".github/workflows/daily-opta-scrape.yml",
+      "url": "https://raw.githubusercontent.com/peteowen1/pannadata/55d2a80b097bbeac1c0093f572d5ce7efa41f675/.github/workflows/daily-opta-scrape.yml",
+      "file": "inputs/.github__workflows__daily-opta-scrape.yml",
+      "sha256": "e25feab3daa503af37725b122998b57528d9d4e289300b9ecda4e67826d495d2"
+    },
+    {
+      "path": "scripts/opta/opta_scraper.py",
+      "url": "https://raw.githubusercontent.com/peteowen1/pannadata/55d2a80b097bbeac1c0093f572d5ce7efa41f675/scripts/opta/opta_scraper.py",
+      "file": "inputs/scripts__opta__opta_scraper.py",
+      "sha256": "f3975852757f4dda4c6329f31c6ee3c4eaf4a7d988e29ad4e643940024e78e63"
+    },
+    {
+      "path": "DATA_DICTIONARY.md",
+      "url": "https://raw.githubusercontent.com/peteowen1/pannadata/55d2a80b097bbeac1c0093f572d5ce7efa41f675/DATA_DICTIONARY.md",
+      "file": "inputs/DATA_DICTIONARY.md",
+      "sha256": "51ccba332717b447fb672d8ce73bf62ef0cdfb11a7403f3e61e89944778b2bb9"
+    },
+    {
+      "path": "scripts/score_shots_context.R",
+      "url": "https://raw.githubusercontent.com/peteowen1/pannadata/55d2a80b097bbeac1c0093f572d5ce7efa41f675/scripts/score_shots_context.R",
+      "file": "inputs/scripts__score_shots_context.R",
+      "sha256": "1da4db4b43ba9a0b4a5a52384756944cdb70bb71b47e30b28756b07973ba5738"
+    }
+  ]
+}

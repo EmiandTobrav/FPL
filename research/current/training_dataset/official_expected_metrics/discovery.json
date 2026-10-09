@@ -1,0 +1,18 @@
+{
+  "base_url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api",
+  "competition": "8",
+  "season": "2025",
+  "observed_paths": {
+    "matchStats": "/v3/matches/${e}/stats",
+    "matchLineups": "/v3/matches/${e}/lineups",
+    "playerSeasonStats": "/v2/competitions/${t}/seasons/${n}/players/${e}/stats",
+    "playerMatchList": "/v1/competitions/${e}/seasons/${t}/players/${n}/matches/all",
+    "teamPlayerStatsLeaderboard": "/v1/competitions/${e}/seasons/${t}/teams/players/stats/leaderboard",
+    "matchList": "/v2/matches${ju(e,!0)}"
+  },
+  "expected_goals_sort": "expected_goals:desc,player_metadata.last_name:asc",
+  "player_ids": "numeric FPL Opta code; 204936 confirmed by returned player identity and lineup",
+  "match_ids": "numeric FPL fixture code; 2561936 confirmed by player match list and native fixture inventory",
+  "uuid_probe": "HTTP 200 empty array; not a missing-value-zero rule",
+  "unused_vX_route": "HTTP 400 No configuration found; frontend matchList route /v2/matches succeeds"
+}

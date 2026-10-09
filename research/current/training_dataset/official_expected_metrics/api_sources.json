@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v1/competitions/8/seasons/2025/teams/players/stats/leaderboard?_sort=expected_goals%3Adesc%2Cplayer_metadata.last_name%3Aasc&_limit=10",
+    "status": 200,
+    "bytes": 25142,
+    "sha256": "6137ac5d1f09899a5fb1d3035107faa9a179642670a585ba49aaacea2f89f9d1",
+    "path": "inputs/leaderboard_2025_xg.json",
+    "retrieved_at": "2026-10-09T10:23:39.457655+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/vX/competitions/8/seasons/2025/matches?_limit=10",
+    "status": 400,
+    "bytes": 160,
+    "sha256": "ac52a329bc8b354bf0fee51a28b9449fe7977b8900400c07187d240dfef0e007",
+    "path": "inputs/matches_2025_first.json",
+    "retrieved_at": "2026-10-09T10:23:55.796058+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v2/competitions/8/seasons/2025/players/204936/stats",
+    "status": 200,
+    "bytes": 1841,
+    "sha256": "0ffa6013123a174fa35c6168a885ec9d115522cc69e1be714cdf4d42ba1e7f34",
+    "path": "inputs/donnarumma_2025_season.json",
+    "retrieved_at": "2026-10-09T10:23:56.016964+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v1/competitions/8/seasons/2025/structure",
+    "status": 200,
+    "bytes": 73,
+    "sha256": "ead7e064ae14ca7c930eba32a47be59ef5657c7a08c30e7a54ed9b7865f8a102",
+    "path": "inputs/structure_2025.json",
+    "retrieved_at": "2026-10-09T10:24:15.230148+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v3/matches/1gil6wudqtyaauvngcgucwbh0/stats",
+    "status": 200,
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "path": "inputs/keeper_veto_41_uuid.json",
+    "retrieved_at": "2026-10-09T10:24:38.232559+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v2/matches?competition=8&season=2025&_limit=20",
+    "status": 200,
+    "bytes": 11597,
+    "sha256": "bc568decde6ca700448b011c6ada1ba3638b5fb13a191dcdabc295962dc8b8e6",
+    "path": "inputs/matches_2025_page1.json",
+    "retrieved_at": "2026-10-09T10:25:17.310677+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v3/matches/2561895/stats",
+    "status": 200,
+    "bytes": 7699,
+    "sha256": "0a8f53143dc62ef6a8fc90347e16c627e28029566011e2aa487314164bfc9b08",
+    "path": "inputs/match_2561895_stats.json",
+    "retrieved_at": "2026-10-09T10:25:37.396383+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v3/matches/2561936/lineups",
+    "status": 200,
+    "bytes": 6122,
+    "sha256": "228c476119848092f8339a15be79de00cadf366c82888a8643aca538dbdd7f61",
+    "path": "inputs/keeper_veto_41_lineups.json",
+    "retrieved_at": "2026-10-09T10:25:54.518609+00:00"
+  },
+  {
+    "url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api/v1/competitions/8/seasons/2025/players/204936/matches/all",
+    "status": 200,
+    "bytes": 21624,
+    "sha256": "a88ac2a487b3180c10057a80d346a6d81f786d9a9413bef4d860bedc521b72f8",
+    "path": "inputs/donnarumma_2025_matches.json",
+    "retrieved_at": "2026-10-09T10:26:10.756325+00:00"
+  }
+]

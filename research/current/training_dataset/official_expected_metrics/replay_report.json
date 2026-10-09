@@ -1,0 +1,9 @@
+{
+  "byte_identical_files": 3,
+  "files": {
+    "discovery.json": "52488ef44abdba74fbec9cfc40ede6af95313b3c6258c5f9ee2c3a12536bbef1",
+    "six_case_coverage.csv": "6f09fd7215b451b5600aaa4582874384e5a9fa5a78c2c1d06cd4bf2568cfce5e",
+    "findings.json": "4521cd9aec42a50f698e63d16ceb9442afa6a9604de2a474cd6d8deed6fbb6c4"
+  },
+  "network": false
+}

@@ -1,0 +1,22 @@
+{
+  "source_stage": "player_season_goal_line_zeros",
+  "scope": "All explicitly positive primary player-season GL totals for native DEF/MID/FWD,2019/20\u20132024/25; no omitted totals, no positive residual allocation, no goalkeeper rule",
+  "identity": "Pinned original primary season/Opta-code/owner appearances, native historical inventory; number of positive-minute ledger PM rows must exactly equal primary appearances. Counter groups need all source appearances represented.",
+  "proof": "Approved nonnegative GL values for other matches exhaust the explicit season total; every remaining match must then have zero. Use known values as inputs, not outcome-blind or holdout.",
+  "control_selection": "Every whole complete positive source player-season in the same independently complete appearance population, regardless of agreement. Compare complete GL sums to positive primary total. Also every partial group known sum must not exceed source total. Global no-error gate, no post-outcome group exclusions.",
+  "gates": {
+    "minimum_complete_player_matches": 1000,
+    "minimum_complete_positive_player_seasons": 100,
+    "minimum_complete_positive_player_seasons_per_season": 20,
+    "maximum_complete_sum_errors": 0,
+    "maximum_partial_negative_residuals": 0
+  },
+  "sources_sha256": {
+    "sources.json": "7b8148943adddad9ec2635bd8297b5a4e9197ca808ccdc1eb8b546dac3c8c6ef",
+    "predict.py": "32fc950c18103ecd638ae97c67fd1e7042debb86bd38bfd3695f0076b668824c",
+    "results/validation.json": "e1b63d8e21001d5dc90123fad3b10e1c9ad2ac0d091c30deccc5a8ef3d1b9766"
+  },
+  "raw_fpl_preserved": true,
+  "scoring_allowed": false,
+  "features_allowed": false
+}

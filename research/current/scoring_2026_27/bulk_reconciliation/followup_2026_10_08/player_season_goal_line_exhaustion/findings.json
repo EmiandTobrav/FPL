@@ -1,0 +1,13 @@
+{
+  "investigation_status": "completed_qualified_zero_candidates",
+  "fields_closed": 0,
+  "ledger_modified": false,
+  "scoring_modified": false,
+  "remaining_goal_line_requirements": 16,
+  "complete_player_seasons": 371,
+  "complete_player_matches": 10109,
+  "sum_errors": 0,
+  "all_remaining_targets_lack_explicit_source_counter": true,
+  "same_input_retry_allowed": false,
+  "reopening_condition": "A new explicit compatible player or match GL counter, or a qualified complete event inventory for one of the16 remaining targets. Existing season-counter omission and positive residuals remain missing."
+}

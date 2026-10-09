@@ -1,0 +1,21 @@
+{
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/results/requirements.csv.xz": "bdbe7f077f8cd7d6d9fe68c7244e870007f594277bac17872fee4604a5ad2818",
+  "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/ferguson_fpl_history/results/native_fpl_corrections.csv.gz": "388fb3026482d0444b8ea4334c351a7270a396e7bb2f54891493aed7dd2bbbbd",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/sources.json": "7b8148943adddad9ec2635bd8297b5a4e9197ca808ccdc1eb8b546dac3c8c6ef",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/predict.py": "32fc950c18103ecd638ae97c67fd1e7042debb86bd38bfd3695f0076b668824c",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/results/validation.json": "e1b63d8e21001d5dc90123fad3b10e1c9ad2ac0d091c30deccc5a8ef3d1b9766",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/inputs/2019-20.json": "dc73cc455aec6808fd1b093d28930d980334bc4c99363f9701ab94e225d96fc3",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2019-20.json": "f7a7a62d88ae78cf3fcad44c48122f6dbccae764706d5efc1932699fe3a45d4a",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/inputs/2020-21.json": "9393782130d13e8aeaf824a30225b1e5ef20f32cb8651c46deac58312b1ae1e8",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2020-21.json": "4d8c0d21257f92a23ab0597103ae8f7821ba8ec407c9ef53eb9f74096c5faddc",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/inputs/2021-22.json": "8b1e3e4b968aaf98a08eefbc55c2820f770d57039bcff2ded3f50654a0bc367e",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2021-22.json": "2bd82de1ca2b07654a6c1dd65cf8005417fb036f3cb9d2e6000043863b7c7537",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/inputs/2024-25.json": "7da17fa5df0ddbb6041f858d0b738dc314d42b0687726bb393fcfa2bb1c29880",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2024-25.json": "12f6b078a801ea6e72cf3858999424593a3a0305f17d69062180ce7bd07fb994",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/inputs/2022-23.json": "e1f741b5be4b63b8838da736ad2cc844517cd246bf7dddaed47def456ec0d18a",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2022-23.json": "0a704ff39e5e0b13d30656387dea82b05427d402ad7e52c22a0f43f2acee28d6",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/inputs/2023-24.json": "46d3f2fba76a7cd89e36bec3da5880a4bc6719ee4dcc6d094f44830f0b09c2ab",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2023-24.json": "cb960832e4f438f3b7357966e8dd5d8c086e227ddd2cbf8ee2ab5a1d9c81c527",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/inputs/2025-26.json": "be3d7f9a2516dcd8481e848e782d41f70f78611a165369a202d4b1b1dffa16ad"
+}

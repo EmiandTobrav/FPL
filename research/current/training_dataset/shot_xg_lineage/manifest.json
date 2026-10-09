@@ -1,0 +1,16 @@
+{
+  "README.md": "365011d54a501a52fcafe8af01051e75635897f2cc86709aa412ec69bb794d86",
+  "finalize.py": "564340cb4ed60d20aeb3fa8885d6fd8444a0f02c881585b19cca110c61a4a933",
+  "findings.json": "5c15d1a484e60b7385bfb3a5a66ae1d7950bd2737021aa3e2341c6395574a1ed",
+  "inputs/.github__workflows__daily-opta-scrape.yml": "e25feab3daa503af37725b122998b57528d9d4e289300b9ecda4e67826d495d2",
+  "inputs/DATA_DICTIONARY.md": "51ccba332717b447fb672d8ce73bf62ef0cdfb11a7403f3e61e89944778b2bb9",
+  "inputs/commit.json": "da1f3893d583ed82e83bc506218dd4829454a99fa9c7db780483d59c9e130fd7",
+  "inputs/scripts__enrich_shots_xg.R": "4c20f4f17726d27d3357f6e198810a31619b20322cac82524f427a7d35d2f52e",
+  "inputs/scripts__enrich_shots_xgot.R": "87e0d6d2ccfe19b0349b62f27cc2d77866107744035fc69c6e37bf96e3b6fa40",
+  "inputs/scripts__opta__opta_scraper.py": "f3975852757f4dda4c6329f31c6ee3c4eaf4a7d988e29ad4e643940024e78e63",
+  "inputs/scripts__score_shots_context.R": "1da4db4b43ba9a0b4a5a52384756944cdb70bb71b47e30b28756b07973ba5738",
+  "inputs/tree.json": "117ea643da28f792485d9dab03a80912ecd9165865d85a2c92db1ee9354abf73",
+  "replay_report.json": "ff7e3df92ef448240ca0cfa98833f7c64691f5da5e576ca52af745ceda461a5a",
+  "reproduce.py": "014d4d11f06aab05ffcfcea88318f9b89491622786e35d5c156d11e21ede6669",
+  "sources.json": "82942560b8b1596325027af05049c309b45c0b1706af5a79a1cf17cf32f4db02"
+}

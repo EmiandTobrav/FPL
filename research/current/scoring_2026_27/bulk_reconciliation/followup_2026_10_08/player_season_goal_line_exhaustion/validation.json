@@ -1,0 +1,21 @@
+{
+  "qualified": true,
+  "complete_positive_player_seasons": 371,
+  "complete_player_matches": 10109,
+  "complete_groups_by_season": {
+    "2019-20": 45,
+    "2020-21": 51,
+    "2021-22": 67,
+    "2022-23": 73,
+    "2023-24": 74,
+    "2024-25": 61
+  },
+  "complete_sum_errors": 0,
+  "partial_negative_residuals": 0,
+  "candidate_fields": 0,
+  "qualified_candidate_fields": 0,
+  "scope_excluded_independent_incomplete_appearance_groups": 0,
+  "fields_closed": 0,
+  "ledger_modified": false,
+  "limits": "Every independently complete positive player-season is compared, including all mismatches. Known values are proof inputs; this is same-source compatibility regression, not holdout. No positive residual is allocated and no incomplete appearance scope is complete. No fields applied by this trial."
+}

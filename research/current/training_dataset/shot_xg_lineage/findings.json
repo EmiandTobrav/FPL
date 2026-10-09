@@ -1,0 +1,91 @@
+{
+  "investigation_status": "completed_alternate_model_lineage",
+  "pinned_commit": "55d2a80b097bbeac1c0093f572d5ce7efa41f675",
+  "verified_source_files": 6,
+  "anchors": [
+    {
+      "check": "legacy_xg_own_model",
+      "source": "scripts/enrich_shots_xg.R",
+      "text": "xg_model.rds",
+      "line": 5
+    },
+    {
+      "check": "legacy_xg_own_model",
+      "source": "scripts/enrich_shots_xg.R",
+      "text": "predict(xg_model$model, X)",
+      "line": 37
+    },
+    {
+      "check": "legacy_xg_own_model",
+      "source": "scripts/enrich_shots_xg.R",
+      "text": "model is the only xG source",
+      "line": 40
+    },
+    {
+      "check": "legacy_xgot_own_model",
+      "source": "scripts/enrich_shots_xgot.R",
+      "text": "xgot_model.rds",
+      "line": 6
+    },
+    {
+      "check": "legacy_xgot_own_model",
+      "source": "scripts/enrich_shots_xgot.R",
+      "text": "predict(",
+      "line": 96
+    },
+    {
+      "check": "context_workflow",
+      "source": ".github/workflows/daily-opta-scrape.yml",
+      "text": "SHOT_MODELS: context",
+      "line": 64
+    },
+    {
+      "check": "context_workflow",
+      "source": ".github/workflows/daily-opta-scrape.yml",
+      "text": "xg_model_v5.rds",
+      "line": 462
+    },
+    {
+      "check": "context_workflow",
+      "source": ".github/workflows/daily-opta-scrape.yml",
+      "text": "xgot_model_v3.rds",
+      "line": 462
+    },
+    {
+      "check": "context_workflow",
+      "source": ".github/workflows/daily-opta-scrape.yml",
+      "text": "score_shots_context.R",
+      "line": 60
+    },
+    {
+      "check": "context_model_scoring",
+      "source": "scripts/score_shots_context.R",
+      "text": "readRDS(",
+      "line": 52
+    },
+    {
+      "check": "context_model_scoring",
+      "source": "scripts/score_shots_context.R",
+      "text": "add_xg_to_spadl",
+      "line": 9
+    }
+  ],
+  "qualification": "not_qualified_as_native_FPL_expected_statistics",
+  "reason": "Both published enrichment paths use Panna-trained model predictions. The legacy source says the model is the only current xG source; non-null preservation does not certify upstream or per-row historical native FPL lineage.",
+  "legacy_model_files": [
+    "xg_model.rds",
+    "xgot_model.rds"
+  ],
+  "context_model_files": [
+    "xg_model_v5.rds",
+    "xgot_model_v3.rds"
+  ],
+  "per_row_historical_model_version_certified": false,
+  "physical_events_disqualified": false,
+  "fields_closed": 0,
+  "native_expected_values_imported": 0,
+  "ledger_modified": false,
+  "scoring_modified": false,
+  "same_input_retry_allowed": false,
+  "reopening_condition": "A specific native-compatible model/data provenance version, or another source with native FPL qualification evidence."
+}

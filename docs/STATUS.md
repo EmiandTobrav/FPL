@@ -36,7 +36,31 @@ utfyllingskandidater. Påviste kompatible bulkinnhentinger kan fortsette;
 nødvendige kontroller beholdes. Samle små utfyllinger i felles batcher og
 rapporter tidsbruk sammen med faktiske lukkinger.
 
-## Nyeste datagapleveranse – én spiller-sesongnull
+## Nyeste avklaringer – påbegynte spor avsluttet, ingen nye utfyllinger
+
+Resten er uendret: **11 187 krav**, **66 479 inputkomplette spillerkamper**
+og **824 hele kamper**. [Positive mållinje-sesongtotaler](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_exhaustion/README.md)
+stemmer for 371 komplette spiller-sesonger / 10 109 spillerkamper, men gir
+ingen kandidat blant de 16 gjenværende mållinjekravene. Alle mangler en
+uttrykkelig primær sesongteller. Ni resultatfiler gjenskapes offline.
+
+[Skuddarkivets xG-opphav](../research/current/training_dataset/shot_xg_lineage/README.md)
+er avklart fra seks versjonslåste kildefiler: de publiserte berikingsrutene
+bruker Pannas egne modeller. Ingen native FPL-forventningsstatistikk importeres.
+[Utvidelsen av den tidligere SDP-prøven](../research/current/training_dataset/official_expected_metrics/README.md)
+gir spiller-sesongsummer, lagstatistikk per kamp, oppstillinger og kamplister,
+men ingen spiller-kampverdier i de observerte rutene. SDP-leverandøren var
+allerede undersøkt; den gjentatte kamp-skjemaprøven var unødvendig og teller
+ikke som fremdrift. Tre nye beslutningsfiler gjenskapes offline.
+
+Keeper-CBI beholder sin samlede kildehindring: **341 ukjente keeperverdier**
+og **seks native vetoer**. Sporet gjenåpnes først ved konkrete kompatible
+spiller-kampdata eller en dokumentert FPL-definisjon. Brukeren har ingen kjent
+alternativ eksport. Uendrede prøver skal ikke startes på nytt. Alle gamle
+kildeverdier, ledger, poengversjoner og modeller er bevart. Datasettet er
+fortsatt ikke treningsklart; disse avklaringene lukker **null feltkrav**.
+
+## Siste faktiske datagapleveranse – én spiller-sesongnull
 
 **11 187 åpne krav**, 66 479 inputkomplette spillerkamper og 824 hele kamper.
 [Reece James 2021/22 kamp 23](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/README.md) får mållinjeteller null fra
@@ -118,7 +142,7 @@ assists, rettelser og gamle poengversjoner bevares. Ny poengberegning er utsatt.
 En kort [kildekontroll for forventningsstatistikk](../research/current/training_dataset/statistics_source_audit/README.md)
 finner ingen xG-/xA-felt i rå spillerstatistikk. Pannadatas sesongvise
 modellberegninger kan ikke automatisk brukes som native FPL-statistikk;
-skuddfeltenes xG-/xGOT-opphav må fortsatt dokumenteres. Ingen modellstatistikk
+skuddfeltenes xG-/xGOT-opphav er senere dokumentert i avklaringen over. Ingen modellstatistikk
 er fylt med en alternativ modell eller talt som lukkede felt.
 
 ## Tidligere datagapleveranse – to taklingsfelt fra godkjent nulltotal

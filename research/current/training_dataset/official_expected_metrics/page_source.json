@@ -1,0 +1,12 @@
+{
+  "url": "https://www.premierleague.com/en/stats/top/players/expected-goals",
+  "sha256": "c8a5a702e463f62dd7344d8813b471d53dd64bf0a6364f5c88285923e161787e",
+  "scripts": [
+    "https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js",
+    "https://assets.adobedtm.com/e7ad550d4f82/693c01019a2b/launch-a4f579b5dcc4.min.js",
+    "//translations.premier-league-prod.pulselive.com/premierleague/en.js",
+    "https://cdn.optimizely.com/js/5530288147660800.js",
+    "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+    "https://sdk.mvp.fan/web-sdk/0.34.2/index.js"
+  ]
+}

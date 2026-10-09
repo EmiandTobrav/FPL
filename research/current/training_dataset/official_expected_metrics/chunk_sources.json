@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://www.premierleague.com/resources/v1.54.15/scripts/stats-leaderboard.js",
+    "file": "inputs/stats-leaderboard.js",
+    "sha256": "16752de49220c42f54c2fd693150ce4297379f235758ce3ae8d3954586c66b8d"
+  },
+  {
+    "url": "https://www.premierleague.com/resources/v1.54.15/scripts/stats-leaderboard-class.js",
+    "file": "inputs/stats-leaderboard-class.js",
+    "sha256": "030222ff811b4261d891f3b92b9d9c513f0283a13ecb59a29f5c802030996960"
+  },
+  {
+    "url": "https://www.premierleague.com/resources/v1.54.15/scripts/match-list-root.js",
+    "path": "inputs/match-list-root.js",
+    "sha256": "8a458dd743d6f610049cfec015cc4e22a91af5a5734f4a24a55f6c60de2f1541",
+    "bytes": 4289
+  },
+  {
+    "url": "https://www.premierleague.com/resources/v1.54.15/scripts/filters-constants.js",
+    "path": "inputs/filters-constants.js",
+    "sha256": "19523d833095f487da19a79aa8b9f4971e0fa3d9fe8b54399c3c18780b638637",
+    "bytes": 27701
+  },
+  {
+    "url": "https://www.premierleague.com/resources/v1.54.15/scripts/match-centre.js",
+    "path": "inputs/match-centre.js",
+    "sha256": "f273caf8cc8c1900319dcfc05550265d39cc6db9f75bb4740f1e317a991d2c03",
+    "bytes": 1029
+  }
+]

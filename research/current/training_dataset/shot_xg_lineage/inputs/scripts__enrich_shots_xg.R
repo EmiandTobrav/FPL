@@ -1,0 +1,112 @@
+#!/usr/bin/env Rscript
+# Enrich opta_shot_events.parquet with xG predictions from pre-trained model.
+# Run after Opta scrape, before uploading to opta-latest release.
+# Usage: Rscript scripts/enrich_shots_xg.R [shot_file] [model_file]
+# Defaults: data/opta/opta_shot_events.parquet, source/xg_model.rds
+# Overwrites the input file with xG column added.
+
+library(arrow)
+library(dplyr)
+library(xgboost)
+
+args <- commandArgs(trailingOnly = TRUE)
+shot_path  <- if (length(args) >= 1) args[1] else "data/opta/opta_shot_events.parquet"
+model_path <- if (length(args) >= 2) args[2] else "source/xg_model.rds"
+
+if (!file.exists(shot_path)) stop("Shot file not found: ", shot_path)
+if (!file.exists(model_path)) stop("xG model not found: ", model_path)
+
+cat("=== Enrich shots with xG ===\n")
+shots <- read_parquet(shot_path)
+cat("Shots:", nrow(shots), "rows\n")
+
+xg_model <- readRDS(model_path)
+feature_cols <- xg_model$panna_metadata$feature_cols
+penalty_xg <- xg_model$panna_metadata$penalty_xg
+if (is.null(penalty_xg)) {
+  stop("xg_model.rds panna_metadata lacks penalty_xg (pre-panna#91 artifact) -- ",
+       "republish the model from panna::fit_xg_model()")
+}
+cat("Model features:", length(feature_cols), "| penalty_xg:", penalty_xg, "\n")
+
+# Features: one shared builder (scripts/xg_features.R), including season_num,
+# and a hard stop on any feature it cannot build.
+source("scripts/xg_features.R")   # run from the repo root, as every workflow does
+X <- xg_feature_matrix(shots, xg_model)
+
+pred_xg <- round(predict(xg_model$model, X), 3)
+
+# Preserve existing non-NA xG values; only fill NaN/NA rows with model
+# predictions. Today the model is the only xG source, so this is a no-op —
+# but if upstream ever provides real Opta xG we don't want to overwrite it
+# with a weaker signal. Also makes re-runs idempotent on already-enriched
+# rows, since build-blog-data.yml now invokes this script defensively.
+if ("xg" %in% names(shots)) {
+  n_filled <- sum(is.na(shots$xg))
+  shots$xg <- ifelse(is.na(shots$xg), pred_xg, shots$xg)
+  cat("Filled xG on", n_filled, "NaN rows (preserved", nrow(shots) - n_filled, "existing)\n")
+} else {
+  shots$xg <- pred_xg
+  cat("Added xG to all", nrow(shots), "rows\n")
+}
+
+# Own-goal guard. Opta logs an own goal as a goal (type_id == 16) at the
+# scoring player's location -- which is near their OWN goal, so the
+# attacking-right x-coordinate lands in their own half (x < 50). The xG model
+# reads that as a point-blank chance and returns ~0.97, which is meaningless:
+# an own goal has no shot xG by construction. Left in, these ~0.97 values are
+# the single largest xG entries (confirmed: every top-20 xG shot is an OG at
+# x = 0.6-7.4) and they pollute the blog shot map + inflate team/league xG
+# totals. Set them to NA (surface, never impute a fabricated number) so
+# downstream sum(xg, na.rm = TRUE) ignores them and the shot map can show
+# "OG -- no xG" rather than a fake 0.97. Mirrors panna's "own goals use EPV
+# not xG" convention (panna/CLAUDE.md).
+#
+# pannadata#105: prefer the real Opta qualifier-28 marker (`is_own_goal`,
+# scraped since the pannadata#105 fix / backfilled onto historical rows) over
+# the x<50 positional heuristic -- the marker also catches legit own-half
+# goals the heuristic would wrongly flag, and misses none the heuristic
+# catches (99.63% agreement measured on the historical backfill; the marker
+# is strictly more precise, not just different). Missing-column fallback for
+# any shots file that predates the backfill.
+if ("is_own_goal" %in% names(shots)) {
+  is_own_goal <- !is.na(shots$is_own_goal) & shots$is_own_goal
+  n_og <- sum(is_own_goal, na.rm = TRUE)
+  if (n_og > 0L) {
+    shots$xg[is_own_goal] <- NA_real_
+    cat("Own-goal guard: set xG = NA on", n_og,
+        "own-goal shot(s) (is_own_goal marker)\n")
+  }
+} else if ("type_id" %in% names(shots)) {
+  is_own_goal <- shots$type_id == 16L & !is.na(shots$x) & shots$x < 50
+  n_og <- sum(is_own_goal, na.rm = TRUE)
+  if (n_og > 0L) {
+    shots$xg[is_own_goal] <- NA_real_
+    cat("Own-goal guard: set xG = NA on", n_og,
+        "own-goal shot(s) (type_id == 16, x < 50 heuristic -- no is_own_goal column)\n")
+  }
+} else {
+  cat("::warning:: no is_own_goal or type_id column -- skipping own-goal xG guard\n")
+}
+
+# Penalty override. panna's xG model is deliberately penalty-free (penalties
+# carry no shot-geometry signal), so a spot kick scores ~0.33 geometric xG --
+# meaningless. The EPV pipeline overrides penalties to a fixed conversion rate;
+# replicate that here so the blog shot map and team/league xG totals use the
+# right value. The value rides in the model artifact's panna_metadata$penalty_xg
+# (single-sourced from panna::PENALTY_XG at training time -- panna#91).
+if ("situation" %in% names(shots)) {
+  is_pen <- !is.na(shots$situation) & tolower(shots$situation) == "penalty"
+  n_pen <- sum(is_pen)
+  shots$xg[is_pen] <- penalty_xg
+  cat("Penalty override: set xG =", penalty_xg, "on", n_pen, "penalty shot(s)\n")
+} else {
+  cat("::warning:: no situation column -- skipping penalty xG override\n")
+}
+
+cat("xG: mean =", round(mean(shots$xg, na.rm = TRUE), 4),
+    ", total =", round(sum(shots$xg, na.rm = TRUE), 1),
+    ", goals =", sum(shots$is_goal, na.rm = TRUE), "\n")
+
+write_parquet(shots, shot_path)
+cat("Written:", shot_path, "(", round(file.size(shot_path) / 1e6, 1), "MB)\n")

@@ -1,0 +1,15 @@
+{
+  "byte_identical_files": 9,
+  "files": {
+    "season_groups.csv": "1f74a9e8020eda5502e396ce783cb181d479982d38a46002e3f77ab001374c27",
+    "predictions.csv.gz": "bee95a44fe1d0c786d2849e9104b29fdac2d0c72b817e2cf02248a51c7503c34",
+    "dependencies.json": "528c7de188d088a8fc02b18650545572498eb7952b7a889a613a1cefaa042602",
+    "prediction_freeze.json": "f22ac27376ff6882e8c66f2a7ac964910ddde3b3a39df74b2ccfa2d3f1926737",
+    "complete_controls.csv": "0efcea1a0667d3c7d8d2ffe6a5b3693df7211c6b87498c609929332ade95a524",
+    "partial_groups.csv": "d02325c4cb31b153761777c128312b380a119e291b0b78b06015947b5d188ec7",
+    "validation.json": "a670b0a2719f9430ce17ddd09d3fe90ad7c66750a88d1db5446d124a7ab17e93",
+    "remaining_target_sources.csv": "cd827ddb09984a7af40c49413e0850a8b2446be5ef5371f522a0867a6705ffc0",
+    "findings.json": "010f84420d0aa03bbd035942d60d9a60d1a56cf96ef0bf5da34ca620828c72e7"
+  },
+  "network": false
+}

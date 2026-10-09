@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "source": "public official Premier League frontend SDP production API",
+  "purpose": "Determine actual field availability before collecting or qualifying historical FPL inputs",
+  "base_url": "https://sdp-prem-prod.premier-league-prod.pulselive.com/api",
+  "discovery_files": {
+    "inputs/bundle-es.min.js": "860c0496db1a48b2ad20ba7cbdefd2e776e5fe970d2bb1cb6f7e0ac700784633",
+    "inputs/page.html": "c8a5a702e463f62dd7344d8813b471d53dd64bf0a6364f5c88285923e161787e",
+    "inputs/stats-leaderboard.js": "16752de49220c42f54c2fd693150ce4297379f235758ce3ae8d3954586c66b8d",
+    "inputs/stats-leaderboard-class.js": "030222ff811b4261d891f3b92b9d9c513f0283a13ecb59a29f5c802030996960"
+  },
+  "first_request": {
+    "path": "/v1/competitions/8/seasons/2025/teams/players/stats/leaderboard",
+    "params": {
+      "_sort": "expected_goals:desc,player_metadata.last_name:asc",
+      "_limit": 10
+    }
+  },
+  "request_policy": "Anonymous public read; no authentication; preserve response bytes, URL, status and hash; no retry or bypass on access denial. Derive IDs and further paths from observed code and response only.",
+  "qualification_policy": "No ledger or canonical writes before fixed full control gate passes. Keeper CBI must explain all six native vetoes and pass existing complete controls; no majority substitution. Alternate model xG is not native FPL xG. Season leaderboard alone does not establish per-match values."
+}
