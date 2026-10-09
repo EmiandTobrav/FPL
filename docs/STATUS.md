@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 237**,
+**14 893 åpne feltkrav**, nå **11 236**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,13 +24,36 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 1 747 manglende dataverdier/inventarer og 234 kildekonflikter:
-**1 981 krav**. **9 256 assistkrav merket regelomregning**
+omfatter 1 732 manglende dataverdier/inventarer og 234 kildekonflikter:
+**1 966 krav**. **9 270 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
 
-## Nyeste datagapleveranse – 23 komplette målinventarer, 20 assistkrav lukket
+## Nyeste datagapleveranse – siste assistinventar innhentet
+
+**11 236 åpne krav i 10 804 spillerkamper.** **66 476 spillerkamper og 824
+hele kamper** er inputkomplette. [Siste kamprespons](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_last_inventory/README.md)
+dekker West Ham–Southampton 2022/23, kamp 290, med 30 entydige native
+spillerkoder, ett mål og avstemt sluttresultat. Den kvalifiserte parseren
+brukes byteidentisk; tidligere kildekontroller gjenbrukes, uten ny holdout.
+
+Målscorerens assistnull lukker ett krav og gjør én spillerkamp komplett.
+14 andre krav får inventar, men er fortsatt åpne og tomme med ukjente
+årsaksbidrag. **Ingen assistinventargap gjenstår**, men **9 270 assistkrav**
+er fortsatt uløste. Foul-/berørings-/retur-/intensjonsbevis må fortsatt hentes.
+Statusflyttinger er ikke talt som feltlukkinger.
+
+Kumulative kildetillegg omfatter 24 kamper og 76 mål. 7 618 tidligere
+målavgjørelser, 68 009 kjente assisttotaler, kanoniske ID-er og native
+FPL-rettelser bevares. Fem tester består; 24 genererte filer gjenskapes
+byteidentisk i isolert offline-replay. Ingen nye assistregler, poeng eller trening.
+
+**1 966 data-/kildekrav** står igjen: 1 732 manglende tellere og 234 beskyttede
+konflikter. 9 270 årsaks-/regelkrav beholdes separat. Totalt **3 657 feltkrav**
+er lukket siden omprioriteringen. Full treningsklarhet gjenstår.
+
+## Tidligere datagapleveranse – 23 komplette målinventarer, 20 assistkrav lukket
 
 **11 237 åpne krav i 10 805 spillerkamper.** **66 475 spillerkamper og 824
 hele kamper** er inputkomplette. [Inventarbatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_goal_inventory/README.md)

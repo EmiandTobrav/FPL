@@ -1,0 +1,8 @@
+{
+  "plan_sha256": "b12573d833b0cf39d3a23e24d795dad4e9e917d3871a0b811c3ea51fcceb0f8d",
+  "native_players_sha256": "0244cb098352461c68528e68a9906b1bf16f77a722bfffa9d8dcc29d0049bcd4",
+  "protocol_sha256": "db0d3745d32cd2a5a370f30554d8fb160d9b7155a6215643b33ff3c1dc9233d3",
+  "primary_identity_source_sha256": "1ad92344928e356dcec315873f2a28a1f1483de96a0332e3b487e6b2de1ce2ba",
+  "qualified_parser_sha256": "681d76c29a7e42b39adb6b95b8884ad22b12fe936fd28921274e4601c7a60370",
+  "prior_source_qualification_sha256": "bb30df337d969f18d1e78feac24ed21654a8bea6067768577267c45e0456b534"
+}

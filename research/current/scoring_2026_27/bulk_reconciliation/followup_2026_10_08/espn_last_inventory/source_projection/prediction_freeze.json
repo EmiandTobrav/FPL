@@ -1,0 +1,31 @@
+{
+  "files": {
+    "protocol.json": "db0d3745d32cd2a5a370f30554d8fb160d9b7155a6215643b33ff3c1dc9233d3",
+    "prepare.py": "762b2fb053372bc283799977e3819ac40af201ec475f34f69b3bb22bd95eef75",
+    "collect.py": "74923fa6e26654e3235d94bb492d8ce670b09f33ad39da86276f3ca1cd155645",
+    "predict.py": "681d76c29a7e42b39adb6b95b8884ad22b12fe936fd28921274e4601c7a60370",
+    "plan.csv": "b12573d833b0cf39d3a23e24d795dad4e9e917d3871a0b811c3ea51fcceb0f8d",
+    "selection_freeze.json": "77fcd4b5057e77609b998240bc887a60eea48cbb2915d30339cddf6e003c4a07",
+    "inputs/native_players.csv.gz": "0244cb098352461c68528e68a9906b1bf16f77a722bfffa9d8dcc29d0049bcd4",
+    "inputs/fixture_bridge.csv": "eac21d20244d8db54340441746d1f53f7138f28b52b39bd8fd858be474c1f511",
+    "inputs/sources.json": "3242b9a67cb49694b5ea230789d6d0b95c2f5be718bc629cf947f3eb0dc23590",
+    "inputs/parent_CURRENT.json": "d94957e5449f703ce25d9430d8ca03aebb85ab2b9325c21517e9c86a47f68069",
+    "inputs/primary_identities.csv": "1ad92344928e356dcec315873f2a28a1f1483de96a0332e3b487e6b2de1ce2ba",
+    "players.csv.gz": "1db3a5f05165486119680685a7a45ab99829fd3f924c68dd076df91cb9681f0f",
+    "goal_events.csv.gz": "d607c2bdfc29dce8b7b543ba0e4b71e8beeac8d3ace4226c85f509e6bd6cc4de",
+    "fixture_gates.csv": "0db2699424eb253b93801a7f40dcfd690cbd0af0db94a66cdd167ab685863a29",
+    "predictions.csv.gz": "3619747b41ee2a9406787e65db4924b2d38b598aacd8b359b48aa92a438b7f87"
+  },
+  "sources": [
+    {
+      "file": "inputs/raw/scoreboard_2023-04-02.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20230402",
+      "sha256": "b2360b60fae70854b9c42853f2ecf759eb62b6bca6fc38a855b9a67845fcb384"
+    },
+    {
+      "file": "inputs/raw/summary_638101.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638101",
+      "sha256": "442ddaf941d8a5949e3054a6046427246ba94fccd2c2ff05afe5b2bc18d5862f"
+    }
+  ]
+}

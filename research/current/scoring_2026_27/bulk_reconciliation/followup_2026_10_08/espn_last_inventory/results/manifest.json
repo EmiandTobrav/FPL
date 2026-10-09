@@ -1,0 +1,14 @@
+{
+  "field_summary.csv": "399687cae10843ae2c63cd6fe657f71ab07523b49501e0c6e47077b28d449e08",
+  "findings.json": "eec8407241022cf840b8a87a746ba11df6c54ce9b65c38d36c8fe048022e5176",
+  "goal_decisions.csv.gz": "7500da04c583afc32851130b846cc4144545bbfe848a9dd5374d5d8a85edf146",
+  "goal_group_classification.csv.gz": "1141baa485266ffad64edfe4d03a26208200e225be55c9017c9423b2c0cad460",
+  "match_readiness.csv": "4f9df3ff08744de6e61c28ed5577cc3e889c4cc638c2c4c8b4f1e7f59a48618f",
+  "overlay.csv.gz": "647e38c06a723587dfe90e107a451c22529d9ff22b9e4a873d641e0e3e843cd1",
+  "player_match_readiness.csv.xz": "03b9a2760d66fc5cc2f303d1691f1c29db102a38e632d5a62c3ca3adedb6e524",
+  "player_match_totals.csv.gz": "f30b8f06310aa831d765c1a2474ace7b91bf25d3e9d08d06ad36c8e28970e1c2",
+  "remaining_fields.csv.xz": "6ea896a42f24be585b51044849c242087e9a1d36eb4755b282bc4c394cc6704a",
+  "requirements.csv.xz": "4121ff0406fdf277dd573ccbcd9c7805d30a33661853936b57797ecdb289a278",
+  "source_goal_inventories.csv.gz": "9cbce53b66c7267af38bfca2433fdd9dbd372bc4c283d2a7f99d9067c3b4fc32",
+  "team_coverage_supplement.csv.gz": "be57e7804863b4edfff36a300c00daee12ef9c1f2b3d5091ec7231498525d159"
+}

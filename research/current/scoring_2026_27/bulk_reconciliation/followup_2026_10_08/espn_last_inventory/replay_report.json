@@ -1,0 +1,30 @@
+{
+  "byte_identical_files": 24,
+  "files": {
+    "goal_inventory.csv.gz": "d3eedafb9a6d1f42bbcee241032355ef93f5087a6a250082ad564659d3ba8aa3",
+    "participants.csv.gz": "5270438f2b18e5eb4631c360763ec1c2ebe033f35097fd72a31ff20e40b75aa6",
+    "identity_bridge.csv.gz": "820ce2a46064ea206413a0548a957d4445148d1d7f66312e156d5b176d5f939b",
+    "team_goal_coverage.csv.gz": "f281917c387f7a788320ccb517a8dfa3ffafd2647565a9315cb71e4b3e9aeb0a",
+    "prediction_freeze.json": "df9be9a584f376c1358e7ef635da8fc48ae8d8215fc59897400a0cc032edef13",
+    "application_freeze.json": "9fb830c595d3937ff452161796411d7e0fa87fda6351e503298a8bbc0d858d4f",
+    "source_projection/players.csv.gz": "1db3a5f05165486119680685a7a45ab99829fd3f924c68dd076df91cb9681f0f",
+    "source_projection/goal_events.csv.gz": "d607c2bdfc29dce8b7b543ba0e4b71e8beeac8d3ace4226c85f509e6bd6cc4de",
+    "source_projection/fixture_gates.csv": "0db2699424eb253b93801a7f40dcfd690cbd0af0db94a66cdd167ab685863a29",
+    "source_projection/predictions.csv.gz": "3619747b41ee2a9406787e65db4924b2d38b598aacd8b359b48aa92a438b7f87",
+    "source_projection/prediction_freeze.json": "a1098e16e8c332ecf47cab426d6b593569f8f9f93a73ce78dc810d5e896b7b9e",
+    "results/field_summary.csv": "399687cae10843ae2c63cd6fe657f71ab07523b49501e0c6e47077b28d449e08",
+    "results/findings.json": "eec8407241022cf840b8a87a746ba11df6c54ce9b65c38d36c8fe048022e5176",
+    "results/goal_decisions.csv.gz": "7500da04c583afc32851130b846cc4144545bbfe848a9dd5374d5d8a85edf146",
+    "results/goal_group_classification.csv.gz": "1141baa485266ffad64edfe4d03a26208200e225be55c9017c9423b2c0cad460",
+    "results/manifest.json": "711fb8401bb13056ca60cf9bb060f165497d653fc52708a05cb553842fa96f43",
+    "results/match_readiness.csv": "4f9df3ff08744de6e61c28ed5577cc3e889c4cc638c2c4c8b4f1e7f59a48618f",
+    "results/overlay.csv.gz": "647e38c06a723587dfe90e107a451c22529d9ff22b9e4a873d641e0e3e843cd1",
+    "results/player_match_readiness.csv.xz": "03b9a2760d66fc5cc2f303d1691f1c29db102a38e632d5a62c3ca3adedb6e524",
+    "results/player_match_totals.csv.gz": "f30b8f06310aa831d765c1a2474ace7b91bf25d3e9d08d06ad36c8e28970e1c2",
+    "results/remaining_fields.csv.xz": "6ea896a42f24be585b51044849c242087e9a1d36eb4755b282bc4c394cc6704a",
+    "results/requirements.csv.xz": "4121ff0406fdf277dd573ccbcd9c7805d30a33661853936b57797ecdb289a278",
+    "results/source_goal_inventories.csv.gz": "9cbce53b66c7267af38bfca2433fdd9dbd372bc4c283d2a7f99d9067c3b4fc32",
+    "results/team_coverage_supplement.csv.gz": "be57e7804863b4edfff36a300c00daee12ef9c1f2b3d5091ec7231498525d159"
+  },
+  "network": false
+}

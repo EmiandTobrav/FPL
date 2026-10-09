@@ -1,0 +1,21 @@
+{
+  "files": {
+    "prepare.py": "1940df183fbc5e134c75dc77666513d9f3e01968900cc43e81dd4508af010fc3",
+    "predict.py": "43938a3d68b0b91e4a52ee8608e49a0f7e1d38630e697fe605cc087892f1a197",
+    "selection_freeze.json": "c3ad1319da30da1767bf9ce2c784b6167bd62224b50cd45d98749a266d550475",
+    "protocol.json": "3f7d343ed43c017e5f496a6b6fc42c0bac6b3e39733f4ac773d129fe6f971600",
+    "dependencies.json": "564d63b11cdd3c550d2fc975260092fa3d6e056836a8f28e3584c43654813711",
+    "goal_inventory.csv.gz": "d3eedafb9a6d1f42bbcee241032355ef93f5087a6a250082ad564659d3ba8aa3",
+    "participants.csv.gz": "5270438f2b18e5eb4631c360763ec1c2ebe033f35097fd72a31ff20e40b75aa6",
+    "identity_bridge.csv.gz": "820ce2a46064ea206413a0548a957d4445148d1d7f66312e156d5b176d5f939b",
+    "team_goal_coverage.csv.gz": "f281917c387f7a788320ccb517a8dfa3ffafd2647565a9315cb71e4b3e9aeb0a"
+  },
+  "raw_source_proofs": [
+    {
+      "file": "inputs/raw/summary_638101.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638101",
+      "sha256": "442ddaf941d8a5949e3054a6046427246ba94fccd2c2ff05afe5b2bc18d5862f"
+    }
+  ],
+  "assist_rule_predictions": false
+}

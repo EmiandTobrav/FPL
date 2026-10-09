@@ -1,0 +1,32 @@
+{
+  "old_open_fields": 11237,
+  "new_fields": 1,
+  "open_fields": 11236,
+  "unique_affected_player_matches": 10804,
+  "complete_player_matches": 66476,
+  "complete_matches": 824,
+  "new_complete_player_matches": 1,
+  "new_complete_matches": 0,
+  "new_goal_inventory_rows": 1,
+  "new_goal_decisions": 0,
+  "acquired_fixture_inventories": 1,
+  "acquired_team_inventories": 2,
+  "inventory_requirements_now_rule_pending": 14,
+  "new_fields_by_season": {
+    "2022-23": 1
+  },
+  "zero_values": 1,
+  "positive_values": 0,
+  "remaining_assists": 9270,
+  "previously_complete_assist_totals_preserved": 68009,
+  "unchanged_ledger_rows": 775233,
+  "raw_fpl_preserved": true,
+  "old_scoring_labels_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "reused_published_source_controls": true,
+    "new_assist_rule": false,
+    "prior_goal_decisions_preserved": 7618,
+    "source_goal_vectors_complete": true
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "inputs/raw/scoreboard_2023-04-02.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20230402",
+    "sha256": "b2360b60fae70854b9c42853f2ecf759eb62b6bca6fc38a855b9a67845fcb384"
+  },
+  {
+    "file": "inputs/raw/summary_638101.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638101",
+    "sha256": "442ddaf941d8a5949e3054a6046427246ba94fccd2c2ff05afe5b2bc18d5862f"
+  }
+]
