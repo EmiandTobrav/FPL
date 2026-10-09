@@ -28,10 +28,7 @@ legacy_net_tackles,missing_data,2019-20,2
 legacy_net_tackles,missing_data,2020-21,1
 legacy_net_tackles,missing_data,2022-23,9
 legacy_net_tackles,missing_data,2023-24,4
-penalty_goals,missing_data,2019-20,8
-penalty_goals,missing_data,2020-21,19
-penalty_goals,missing_data,2022-23,22
-penalty_goals,missing_data,2024-25,7
+penalty_goals,missing_data,2022-23,2
 recoveries,external_conflict,2019-20,1
 saves_outside_box,missing_data,2025-26,2
 times_tackled,external_conflict,2025-26,1

@@ -1,0 +1,7 @@
+{
+  "scoring_2026_27/keeper_recovery/recover.py": "429b72bd97a247fb48159236df67bb7a5b4b934c9d19b518ff22f8b5a6fd8fa1",
+  "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/results/requirements.csv.xz": "9616ac11cd6923bb170325b630a73cd809e3c3aae5e58f66d8e05c24ba827e08",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/results/player_match_readiness.csv.xz": "6ec11d04a052e7451de6011faf8e02d27b733053ead84fce60131d0018a65951",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/results/match_readiness.csv": "c17bbb5b38bc405a79eb71a872c0cf58f6d23f97393d788c15967a7f9886d5a0"
+}

@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 314**,
+**14 893 åpne feltkrav**, nå **11 260**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,13 +24,36 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 2 371 manglende dataverdier/inventarer, 234 kildekonflikter og ett
-uttrekksunntak: **2 606 krav**. **8 708 assistkrav merket regelomregning**
+omfatter 2 317 manglende dataverdier/inventarer, 234 kildekonflikter og ett
+uttrekksunntak: **2 552 krav**. **8 708 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
 
-## Nyeste datagapleveranse – 635 assistkrav og 12 nye komplette kamper
+## Nyeste datagapleveranse – 54 straffemålkrav fra ny offentlig kampkilde
+
+**11 260 åpne krav i 10 822 spillerkamper.** 66 458 spillerkamper og 824 hele
+kamper er inputkomplette. Den nye [kildebatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/README.md)
+lukker 54 av 56 straffemålkrav (50 nuller og fire positive verdier). Ingen nye
+spillerkamper eller hele kamper blir komplette; andre krav står igjen.
+
+119 nøyaktige offentlige responser dekker 44 gapkamper og 30 kontrollkamper.
+Komplette mållister avstemmes mot native FPL-spillermål, selvmål og sluttresultat.
+769 kontrollverdier fra 28 kamper, inkludert 14 positive, stemmer uten avvik.
+Foul-kilden har fem referanseavvik på tre spillerkamper og brukes ikke til noen
+utfylling. To straffemålkrav står igjen i Arsenal–Leeds 2022/23, kamp 281,
+fordi scoreridentiteten ikke er entydig i denne fryste kildetolkningen.
+
+Kampresponsene bevarer også 1 279 nøkkelhendelser og 7 508 kommentarinnslag som
+nye kildebevis; de er ikke komplette Opta-berøringsinventarer eller nye assists.
+Fem tester består. 16 genererte filer gjenskapes byteidentisk offline. Bare 54
+manglende verdier endres; rå FPL og alle 775 194 andre ledger-rader bevares.
+Ingen ny scoring, features eller modelltrening. Innhentingskøen er nå 2 552
+krav, og 8 708 regelomregningskrav beholdes. Totalt 3 633 krav er lukket siden
+omprioriteringen. Arkivets nyere skuddfil ga ingen ny relevant EPL-dekning og
+legges til side; ikke gjenta denne versjonen uten nye data.
+
+## Tidligere datagapleveranse – 635 assistkrav og 12 nye komplette kamper
 
 **11 314 åpne feltkrav i 10 822 spillerkamper.** **66 458 spillerkamper og
 824 hele kamper** har komplette input. [Straffebatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/README.md)

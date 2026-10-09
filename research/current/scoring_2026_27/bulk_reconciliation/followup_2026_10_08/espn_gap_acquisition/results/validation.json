@@ -1,0 +1,55 @@
+{
+  "fields": {
+    "penalty_goals": {
+      "control_values": 769,
+      "control_fixtures": 28,
+      "positive_control_values": 14,
+      "goalkeeper_controls": 56,
+      "all_reference_comparisons": 1829,
+      "unique_checked_values": 1815,
+      "errors": 0,
+      "control_values_by_season": {
+        "2019-20": 158,
+        "2020-21": 159,
+        "2022-23": 146,
+        "2024-25": 144,
+        "2025-26": 162
+      },
+      "reference_counts": {
+        "native_FPL_goal_zero_subset": 1733,
+        "closed_ledger": 79,
+        "explicit_archive_attPenGoal": 17
+      },
+      "qualified": true
+    },
+    "fouls_won": {
+      "control_values": 655,
+      "control_fixtures": 30,
+      "positive_control_values": 391,
+      "goalkeeper_controls": 38,
+      "all_reference_comparisons": 2310,
+      "unique_checked_values": 1793,
+      "errors": 5,
+      "control_values_by_season": {
+        "2019-20": 160,
+        "2020-21": 164,
+        "2022-23": 173,
+        "2024-25": 77,
+        "2025-26": 81
+      },
+      "reference_counts": {
+        "closed_ledger": 1595,
+        "explicit_archive_wasFouled": 715
+      },
+      "qualified": false
+    }
+  },
+  "qualified_fields": [
+    "penalty_goals"
+  ],
+  "new_fields": 54,
+  "by_field": {
+    "penalty_goals": 54
+  },
+  "limits": "Previously observed closed values/native source compatibility, with ESPN and archive possibly sharing upstream event data. Not independent holdout or final source/scoring qualification. All collected commentary remains evidence only; no target assists inferred."
+}

@@ -1,0 +1,42 @@
+{
+  "source": "https://api.github.com/repos/peteowen1/pannadata/releases/tags/opta-latest",
+  "checked_date": "2026-10-09",
+  "assets": [
+    {
+      "name": "events_EPL.parquet",
+      "size": 310557261,
+      "updated_at": "2026-09-21T10:58:11Z",
+      "digest": "sha256:a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+      "browser_download_url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/events_EPL.parquet"
+    },
+    {
+      "name": "opta_events.parquet",
+      "size": 73073303,
+      "updated_at": "2026-10-08T12:12:40Z",
+      "digest": "sha256:7f7bea1d9bd599082f8c01de0662994e5db3429f648a0a88d8df10446da837b5",
+      "browser_download_url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_events.parquet"
+    },
+    {
+      "name": "opta_shot_events.parquet",
+      "size": 111704908,
+      "updated_at": "2026-10-08T12:13:08Z",
+      "digest": "sha256:6aac6fea4cd3b02b9150bebf44da354616787593c0d3eb7124c8d0309abd8ffb",
+      "browser_download_url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_shot_events.parquet"
+    }
+  ],
+  "EPL_shot_rows_2019_to_2025": 67518,
+  "new_shot_keys": 0,
+  "lost_shot_keys": 0,
+  "changed_existing_recovery_projection_values": 0,
+  "compact_events_fixture_coverage": {
+    "2019-20": 376,
+    "2020-21": 373,
+    "2021-22": 380,
+    "2022-23": 370,
+    "2023-24": 380,
+    "2024-25": 380,
+    "2025-26": 380
+  },
+  "new_fields": 0,
+  "next_action": "Do not repeat this archive refresh for historical gap recovery without changed EPL coverage or relevant input values. Separate public ESPN acquisition supplies additional factual goal/commentary evidence."
+}

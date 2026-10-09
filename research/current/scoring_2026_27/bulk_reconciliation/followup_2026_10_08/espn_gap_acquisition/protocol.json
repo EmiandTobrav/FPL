@@ -1,0 +1,26 @@
+{
+  "purpose": "Acquire missing factual player counters and complete goal/commentary evidence; no target-assist rules or rescoring.",
+  "source": "Public ESPN eng.1 scoreboard by fixture date and event-scoped summary; exact response bytes retained.",
+  "development": "Leicester-Everton and Norwich-Arsenal, 2019-12-01, inspected only for source schema before control selection.",
+  "selection": "All current missing_data penalty_goals/fouls_won fixtures. Controls: first three closed-ledger positive penalty fixtures and first three fully closed all-zero penalty fixtures in each of 2019-20, 2020-21, 2022-23, 2024-25 and 2025-26; disjoint from targets. Freeze plan before fetching controls. For 2025-26, where penalty_goals is not a requirement, use archived explicit attPenGoal positives and the first three other source fixtures.",
+  "identity": "Unique date/home/away identity, exact final scores, completed FT. Unique native roster name match within actual historical club, reciprocal athlete matching, globally consistent season/player code versus ESPN athlete ID. Unknown/ambiguous identities abstain.",
+  "fouls_won": "Use only explicit finite nonnegative integer foulsSuffered from an explicit one-appearance roster record. Never use omitted values as zero.",
+  "penalty_goals": "Require unique complete non-shootout scoring-event inventory equal to final scores, recognized goal/goal-header/own-goal or exact id98 penalty---scored type, all scorer identities, and each participant's goal and own-goal counts equal native FPL. Count exact id98 events per scorer; zero requires the complete inventory. Unknown goal types, cancelled/incomplete events or conflicting score/scorer vectors abstain for the fixture.",
+  "validation": {
+    "penalty_goals": {
+      "minimum_control_fixtures": 20,
+      "minimum_control_values": 100,
+      "minimum_positive_control_values": 10,
+      "maximum_errors": 0
+    },
+    "fouls_won": {
+      "minimum_control_fixtures": 20,
+      "minimum_control_values": 100,
+      "minimum_positive_control_values": 20,
+      "minimum_goalkeeper_controls": 20,
+      "maximum_errors": 0
+    },
+    "all": "Freeze predictions before comparing closed-ledger outcomes; compare all available closed values in fetched fixtures, including protected values outside planned controls. Any conflict blocks the field globally. Report shared-source/previously observed regression limits and retain collective quality flags. This is an additional source-specific qualification, not a replacement or reduction of prior gates. Penalty control references also include explicit archived attPenGoal and native FPL goals_scored=0 subset bounds; these are reported separately. An omitted source penalty counter for a goal scorer is never zero."
+  },
+  "application": "Only absent missing_data penalty_goals/fouls_won fields. Preserve every other ledger cell and all raw/native fields, approved values, locked scoring and models. Acquire commentary/key events for later use without treating provider goalAssists as target-rule assists."
+}

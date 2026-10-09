@@ -1,0 +1,23 @@
+{
+  "byte_identical_files": 16,
+  "files": {
+    "players.csv.gz": "1357d107dac3e6ae00effde2bcf9475fcd0d1e22715c3e40fcb1e66372537efd",
+    "goal_events.csv.gz": "5f5a149b1e42487545aa1f54a3d8fb33803c01f04a4e6015c7eba36cdd07be8f",
+    "fixture_gates.csv": "9944f210941255a9c26fa72687386e1083442b179ce029bec3ccd15cd8c9c082",
+    "predictions.csv.gz": "10d79456bd4fee637ac855a396569edff1e4fcae14b5b9a2aaddd74b1b3a9093",
+    "prediction_freeze.json": "92b0bad2ed1746533d263208d25ee185525a400fb4b58748fb55b791e4f93cef",
+    "application_freeze.json": "93a8af777608376253faa9a17614128b44e876c9ce7cb956feff451728b9613f",
+    "results/control_comparisons.csv.gz": "9f08e66a4535affc48bb4d0ed63f2b3dac2992cfed8083ee685c06a9400f0567",
+    "results/field_summary.csv": "a920229f2dcf67bf1157ba06ac7e34311248f6ef43ab2d250dec48378592b095",
+    "results/findings.json": "0bc3ba5ae0c6f897a064cdf25d1cbc347bb4a5d951d6d77ee405a7fbbb21c349",
+    "results/manifest.json": "692b2d83c65ab9ae6ba11b440be1cfb5f13dbe2c55fdf7a2179261a5a4879deb",
+    "results/match_readiness.csv": "9bef18f9cef4110c689d5e7a47d72126ec8a844783019246392a3ff61035fb15",
+    "results/overlay.csv.gz": "ff5717fa2760aeaa14e827e7549f0671acb021d2e0cb6e10dd96f3b07c80f476",
+    "results/player_match_readiness.csv.xz": "12072650f088b18427a6f04371cca6de30c519053a6fed7ea4b30a337007d89a",
+    "results/remaining_fields.csv.xz": "4f42f867f9ccf9221ad5918be3673cf0237cae5759a216ae0ecabc84a99a2b31",
+    "results/requirements.csv.xz": "6b6977a1a3383b1560909a7badd1157f5a1ad61e077dc7ea5dfe5765bb036400",
+    "results/validation.json": "8ad963da73c4cc6f1d5c4b0c8cb731dba04bd3c54e16818a6ffe646079f5c57e"
+  },
+  "network": false,
+  "bootstrap_external_archives": false
+}

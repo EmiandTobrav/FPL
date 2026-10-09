@@ -1,5 +1,33 @@
 # Gjeldende datagaparbeid og restliste
 
+Oppdatert 9. oktober 2026: **11 260 åpne krav i 10 822 spillerkamper**.
+**66 458 spillerkamper og 824 hele kamper** er inputkomplette. Siste
+[kildebatch](followup_2026_10_08/espn_gap_acquisition/README.md) lukker **54
+straffemålkrav**, uten nye komplette spillerkamper eller hele kamper. Fem tester
+består; 16 genererte filer gjenskapes byteidentisk uten nettverk.
+
+Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md),
+[gjeldende restliste](followup_2026_10_08/espn_gap_acquisition/results/remaining_fields.csv.xz)
+og [full ledger](followup_2026_10_08/espn_gap_acquisition/results/requirements.csv.xz).
+Innhentingskøen har 2 552 data-/kilde-/uttrekkskrav; 8 708 regelomregningskrav
+beholdes. Prioriter manglende kildefelt og hendelsesbevis; ny scoring følger senere.
+
+| Feltgruppe | Åpne krav |
+|---|---:|
+| Assists etter målreglene | 9 291 |
+| Times tackled | 1 238 |
+| CBI | 545 |
+| Mållinjeklareringer | 48 |
+| Øvrige felt | 138 |
+| **Totalt** | **11 260** |
+
+Ny kildeinnhenting bevarer 119 eksakte offentlige responser for 74 kamper,
+med faktiske mål- og kommentarforløp. Straffemålfeltet består fryste
+source-kontroller; foul-feltet feiler og brukes ikke. Kvalitetsflagg og alle
+andre godkjente verdier bevares. Samlet datakvalitet og treningsklarhet gjenstår.
+
+# Historikk: 635 assistkrav
+
 Oppdatert 9. oktober 2026: **11 314 åpne feltkrav i 10 822 spillerkamper**.
 **66 458 spillerkamper og 824 hele kamper** har komplette input. Siste batch
 lukker **635 assistkrav**, med **622 nye komplette spillerkamper og 12 nye hele

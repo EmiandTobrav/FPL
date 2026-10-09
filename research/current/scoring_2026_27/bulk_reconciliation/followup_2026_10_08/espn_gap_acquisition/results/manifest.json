@@ -1,0 +1,11 @@
+{
+  "control_comparisons.csv.gz": "9f08e66a4535affc48bb4d0ed63f2b3dac2992cfed8083ee685c06a9400f0567",
+  "field_summary.csv": "a920229f2dcf67bf1157ba06ac7e34311248f6ef43ab2d250dec48378592b095",
+  "findings.json": "0bc3ba5ae0c6f897a064cdf25d1cbc347bb4a5d951d6d77ee405a7fbbb21c349",
+  "match_readiness.csv": "9bef18f9cef4110c689d5e7a47d72126ec8a844783019246392a3ff61035fb15",
+  "overlay.csv.gz": "ff5717fa2760aeaa14e827e7549f0671acb021d2e0cb6e10dd96f3b07c80f476",
+  "player_match_readiness.csv.xz": "12072650f088b18427a6f04371cca6de30c519053a6fed7ea4b30a337007d89a",
+  "remaining_fields.csv.xz": "4f42f867f9ccf9221ad5918be3673cf0237cae5759a216ae0ecabc84a99a2b31",
+  "requirements.csv.xz": "6b6977a1a3383b1560909a7badd1157f5a1ad61e077dc7ea5dfe5765bb036400",
+  "validation.json": "8ad963da73c4cc6f1d5c4b0c8cb731dba04bd3c54e16818a6ffe646079f5c57e"
+}

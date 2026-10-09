@@ -19,10 +19,10 @@ Følg alltid gjeldende filpeker ved videre arbeid; tallene her er et startpunkt.
 Registrer også relevante manglende modellstatistikker utenfor poengrestlisten
 separat, slik at lukking av denne listen ikke fremstilles som full datadekning.
 
-Gjeldende utgangspunkt er nå **11 314 åpne krav**: **2 371 manglende
+Gjeldende utgangspunkt er nå **11 260 åpne krav**: **2 317 manglende
 dataverdier/inventarer**, **234 kildekonflikter**, **ett FPL-uttrekksunntak**
 og **8 708 assistkrav merket regelomregning**. De første tre kategoriene
-utgjør en egen [innhentingskø med 2 606 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
+utgjør en egen [innhentingskø med 2 552 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
 Dette er en arbeidsvisning, ikke en redusert restliste. Også assistkravene
 kan mangle faktisk hendelsesbevis; innhent slike bevis nå, men utsett nye
 regelberegninger og poengetiketter. Ingen kategori anses automatisk komplett.
