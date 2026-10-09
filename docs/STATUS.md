@@ -30,6 +30,12 @@ beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
 
+Effektiviteten er nå konkretisert i målbeskrivelsen: normalt 15 minutter
+til første kildeforsøk og bytte av rute etter senest 30 minutter uten konkrete
+utfyllingskandidater. Påviste kompatible bulkinnhentinger kan fortsette;
+nødvendige kontroller beholdes. Samle små utfyllinger i felles batcher og
+rapporter tidsbruk sammen med faktiske lukkinger.
+
 ## Nyeste datagapleveranse – siste assistinventar innhentet
 
 **11 236 åpne krav i 10 804 spillerkamper.** **66 476 spillerkamper og 824

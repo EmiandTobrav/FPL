@@ -30,6 +30,11 @@ Eksisterende kvalifiserte poengversjoner bevares, men utvides ikke nå.
 
 ## Effektivitet og rapportering i datagapfasen
 
+- Følg tidsrammene i den operative målbeskrivelsen: normalt 15 minutter
+  til første kildeundersøkelse og bytte av rute etter senest 30 minutter
+  uten konkrete utfyllingskandidater. Fortsett større innhentinger når
+  kompatible data og batchomfang allerede er påvist. Samle små utfyllinger
+  med samme godkjente rute i felles batcher; kontrollgater beholdes.
 - Velg neste batch etter forventede dokumenterbare feltlukkinger per tidsbruk,
   gjenbrukbarhet og mulighet for å fullføre hele kamper. Store grupper er
   kandidater, ikke et krav om å bli stående i den vanskeligste gruppen.

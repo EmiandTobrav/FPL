@@ -47,6 +47,9 @@ og bygg poengetiketter → ferdigstill fristsikre treningsvisninger.
 Fremdrift måles først i faktisk lukkede feltkrav. Se arbeidsrekkefølgen under.
 Den [operative målbeskrivelsen](docs/DATA_GAP_GOAL.md) angir leveransen
 for datagapfasen og når neste fase kan tas opp.
+Kilderuter får korte innledende tidsrammer, og små utfyllinger samles i
+batcher. Arbeid uten konkrete utfyllingskandidater skal bytte rute;
+faktiske feltlukkinger og tidsbruk rapporteres sammen.
 En egen [innhentingskø](research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
 skiller **1 966 data-/kildekrav** fra **9 270 assistkrav merket
 regelomregning**. Alle 11 236 åpne krav beholdes. Innhent også manglende

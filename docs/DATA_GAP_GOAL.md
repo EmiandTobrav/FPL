@@ -41,6 +41,10 @@ Anvend eksisterende kvalifiserte regler når de gir raske, faktiske lukkinger.
 
 ## Arbeidsregler
 
+- Hovedresultatet i denne fasen er flere dokumenterte dataverdier i den
+  gjeldende dataversjonen. Velg konkrete innhentingsbatcher foran nye
+  analyse- og regelprosjekter. Statistikk til modellinput utenfor
+  poengrestlisten inngår også; rapporter dekningen separat.
 - Prioriter dokumenterbare lukkinger per tidsbruk. Bruk eksisterende rådata,
   koblinger og kvalifiserte regler før nye omfattende kildeinnhentinger.
 - Løs felles årsaker og anvend utfyllinger gruppevis. Komplette spillerkamper
@@ -61,6 +65,25 @@ Anvend eksisterende kvalifiserte regler når de gir raske, faktiske lukkinger.
 - Etter hver batch: rapporter rest før/etter, faktiske lukkinger, nye komplette
   spillerkamper/hele kamper og neste konkrete datainnhenting. Kildefunn,
   dokumentasjon og beregninger alene teller ikke som lukkinger.
+
+## Tidsbruk og valg av neste batch
+
+- Bruk normalt høyst 15 minutter på den første undersøkelsen av en ny
+  kilderute: finn om den faktisk leverer feltet, riktig sesong og identitet.
+  Tidligere dokumenterte mislykkede ruter skal ikke undersøkes på nytt uten
+  konkrete nye kildefakta.
+- Etter senest 30 minutter uten konkrete utfyllingskandidater skal ruten
+  legges til side med en kort begrunnelse og arbeidet flyttes til neste
+  gjennomførbare gruppe. Langvarig innhenting kan fortsette når kilden
+  allerede har vist kompatible data og et konkret batchomfang er kjent.
+  Tidsgrensene gir aldri adgang til å hoppe over nødvendige kontroller.
+- Når flere små utfyllinger bruker samme godkjente kilde og transformasjon,
+  samle dem i en batch med felles kontroll og reproduksjon. Ikke bygg en ny
+  omfattende leveranse eller kontrollstudie for hver enkelt celle.
+- Rapporter per batch tidsbruk, godkjente feltlukkinger og innhentede
+  råverdier som fortsatt venter på kvalifisering. Ved null lukkinger skal
+  neste handling ha et konkret nytt datagrunnlag eller være en annen rute.
+  Flytting av status, sletting av krav og dokumentasjon gir null lukkinger.
 
 ## Leveranse og overgang til neste fase
 
