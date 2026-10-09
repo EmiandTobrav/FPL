@@ -24,7 +24,7 @@ innhentingstidspunkter. For øvrige råsvar oppgis lokal filskrivetid.
 | 2026/27 spillerkamper | 1 538 observasjoner, 50 avsluttede hele kamper |
 | 2026/27 spiller–runde | 3 216 offisielle rader, inkludert ikke-deltakelse |
 | Kvalitetskontroll | 16 918 sammenligninger av kampstatistikk; bonus for alle 1 538 deltakere; poengsum mot offisiell komponentforklaring |
-| Historisk datarest | 11 219 feltkrav i 10 802 spillerkamper; 1 949 data-/kildekrav og 9 270 uløste assistkrav |
+| Historisk datarest | 11 215 feltkrav i 10 802 spillerkamper; 1 945 data-/kildekrav og 9 270 uløste assistkrav |
 | Historisk inputdekning | 66 478 spillerkamper og 824 kamper inputkomplette |
 | Historisk omregning | 2025/26: 374 hele kamper og 11 315 kvalifiserte poengetiketter; 442 totalpoeng endres |
 | Kanoniske datatabeller | 187 111 spillerkamper og 181 604 spiller–runde-rader for alle åtte sesonger |
@@ -48,9 +48,9 @@ offline-replay dekker 94 byteidentiske resultatfiler.
 
 ## Gjeldende innhentingsstatus og bevart poengversjon
 
-[Siste datagapbatch](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/README.md)
-lukket 15 storsjanseredningskrav. Samlet er 3 674 krav lukket siden
-omprioriteringen fra 14 893. Innhentingskøen har 1 715 manglende datafelt og
+[Siste datagapbatch](../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/README.md)
+lukket fire mållinjeklareringskrav. Samlet er 3 678 krav lukket siden
+omprioriteringen fra 14 893. Innhentingskøen har 1 711 manglende datafelt og
 234 beskyttede kildekonflikter. De 9 270 assistkravene beholdes åpne;
 komplette målinventarer beviser ikke komplette årsaksfakta.
 

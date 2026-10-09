@@ -1,0 +1,32 @@
+{
+  "seasons": {
+    "2019-20": 274,
+    "2020-21": 363,
+    "2021-22": 418,
+    "2024-25": 719
+  },
+  "team_files": {
+    "2019-20": "followup_2026_10_08/goal_line_season_blocks/inputs/2019-20.json",
+    "2020-21": "followup_2026_10_08/goal_line_season_blocks/inputs/2020-21.json",
+    "2021-22": "followup_2026_10_08/goal_line_season_blocks/inputs/2021-22.json",
+    "2024-25": "followup_2026_10_08/goal_line_season_blocks/inputs/2024-25.json"
+  },
+  "team_sha256": {
+    "2019-20": "e63a2c0ee0dc792bee909dca6c7d00718713965dd8f77e9c391b68efa48ea9c2",
+    "2020-21": "b300282fd02ebc975ee5b9b3a3aff3528e821294308ae302e3af5211edd9eff3",
+    "2021-22": "01588f507d1bfacc326f7b1c0dc83a780429c5c10c5bee4bba346a140afee3c7",
+    "2024-25": "3c5a2b9d5507dd9bfc126c226d90ba4e61596eb4117a377130de9e10e27a3b16"
+  },
+  "target": "missing goal_line_clearances for outfield native FPL players only",
+  "proof": "Full ranked player block sum exactly exhausts explicit whole-league team block sum; unlisted active outfield players then have zero season blocks, bounding goal-line clearances to zero in every match.",
+  "controls": "All closed historical goal-line values in certified outfield zero-block player-seasons; all explicit positive archive line-clearance counters must remain outside predictions.",
+  "gates": {
+    "min_controls": 1000,
+    "max_errors": 0,
+    "max_positive_contradictions": 0
+  },
+  "no_omitted_zero_without_exact_conservation": true,
+  "source_trial_stop": "Stop on incomplete ranking, missing team totals, positive residual or invalid/duplicate identity/counter.",
+  "scoring_allowed": false,
+  "features_allowed": false
+}

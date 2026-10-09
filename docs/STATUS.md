@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 219**,
+**14 893 åpne feltkrav**, nå **11 215**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,8 +24,8 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 1 715 manglende dataverdier/inventarer og 234 kildekonflikter:
-**1 949 krav**. **9 270 assistkrav merket regelomregning**
+omfatter 1 711 manglende dataverdier/inventarer og 234 kildekonflikter:
+**1 945 krav**. **9 270 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
@@ -36,7 +36,40 @@ utfyllingskandidater. Påviste kompatible bulkinnhentinger kan fortsette;
 nødvendige kontroller beholdes. Samle små utfyllinger i felles batcher og
 rapporter tidsbruk sammen med faktiske lukkinger.
 
-## Nyeste datagapleveranse – 15 storsjanseredninger med kildevern
+## Nyeste datagapleveranse – fire mållinjeverdier
+
+**11 215 åpne krav**, 66 478 inputkomplette spillerkamper og 824 hele kamper.
+[Eksakte spiller-sesonggrenser](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/README.md)
+lukker fire verdier i 2019/20 kamp 135. Spillersummen på 2 521 blokkerte skudd
+uttømmer den eksplisitte ligatotalen. 1 513 gamle kontroller i 378 kamper har
+null avvik, og ingen positiv arkivtelling motsier grensen. 2020/21 har en
+residual på én blokkering og holdes helt utenfor; videre innhenting stoppes.
+Tre tester og 16 byteidentiske offline-filer består. Alle øvrige rader,
+assist-/rettelsespekere og gamle poengversjoner bevares. Totalt 3 678 krav lukket.
+
+Brukeren ber nå om at påbegynte spor ferdigstilles samlet. Keeper-CBI skal
+følges fra eksisterende kildebevis og hendelser til en samlet avklaring.
+Ikke gjenta FotMob-/arkiv-/primærprøvene eller native historikk uten et
+konkret nytt kildefunn; ingen gate eller feltkrav fjernes.
+
+[Keeper-CBI-sporet har nå ett samlet fortsettelsespunkt](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_resolution/README.md).
+Alle 341 manglende keeperverdier har kildekandidater; 334 oppfyller de gamle
+historiske gruppekravene. Native FPL-gaten feiler fortsatt på seks av 569
+kontroller. Komplett FPL-historikk bekrefter alle seks gamle verdier.
+Et hendelsesbasert alternativ treffer de seks, men feiler 369 av 569 kontroller
+og forkastes. 479 567 hendelser i alle 281 kontrollkamper og de seks fulle
+avvikskampene er bevart. Åtte avklaringsfiler gjenskapes byteidentisk offline.
+Ingen CBI-verdi er utfylt. Sporet har en dokumentert kildehindring, ikke
+ferdige data; gjenåpning krever konkret ny kompatibel data-/definisjonsversjon.
+Brukeren har ingen kjent ekstra kildetilgang. 204 utespillerkonflikter beholdes.
+
+To tidligere påbegynte forventningsstatistikkprøver er også avsluttet med
+bevart resultat: [FotMob xG/xA](../research/current/training_dataset/fotmob_expected_metrics/README.md)
+feiler 101/312 og 34/526 native kontroller; syv filer gjenskapes offline.
+[Direkte Opta-prøve](../research/current/training_dataset/opta_expected_goals_pilot/README.md)
+stoppet ved første HTTP 403. Ingen forventningsstatistikk er utfylt.
+
+## Tidligere datagapleveranse – 15 storsjanseredninger med kildevern
 
 **11 219 åpne krav i 10 802 spillerkamper.** **66 478 spillerkamper og 824
 hele kamper** er inputkomplette. [Den nye kildeversjonen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/README.md)

@@ -1,0 +1,14 @@
+[
+  {
+    "season": "2019-20",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/outfielder_block?comps=1&compSeasons=274&page=0&pageSize=1000&altIds=true",
+    "file": "inputs/2019-20.json",
+    "sha256": "0843d243baf94252cd10787d68de31385f1ba75b8fbea02b7d041926f437e5cb"
+  },
+  {
+    "season": "2020-21",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/outfielder_block?comps=1&compSeasons=363&page=0&pageSize=1000&altIds=true",
+    "file": "inputs/2020-21.json",
+    "sha256": "32b4a6df0b32397046933cc49007be7cfc705143b494553af68b3139aae17647"
+  }
+]

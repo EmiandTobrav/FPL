@@ -1,0 +1,42 @@
+[
+  {
+    "file": "inputs/commit.json",
+    "url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/commits?path=data/2025-26/players&per_page=1",
+    "sha256": "7935fd3f47fd36d3b0bc7b43de2a786ee84a922f9617475ee0dc66bf2e00d684"
+  },
+  {
+    "file": "inputs/directories.json",
+    "url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/contents/data/2025-26/players?ref=a8337d50698de908f92e8d1905142d968384a2ca",
+    "sha256": "17745ea1962f624c3bb1abde55f6afb635cd82d0177b9a6303dd28d29486284d"
+  },
+  {
+    "file": "inputs/players_raw.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a8337d50698de908f92e8d1905142d968384a2ca/data/2025-26/players_raw.csv",
+    "sha256": "412ce0172016f8f98f25177dc6de9f3cd2a8ec7a6135f9aa638d7fdee784d67b"
+  },
+  {
+    "file": "inputs/172649_history.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a8337d50698de908f92e8d1905142d968384a2ca/data/2025-26/players/Dean_Henderson_253/gw.csv",
+    "sha256": "c2e5c2be939e0ad22b1b4b4b0fa3edffd5c81ee6577d2eeb3e47f217ca607d39"
+  },
+  {
+    "file": "inputs/59735_history.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a8337d50698de908f92e8d1905142d968384a2ca/data/2025-26/players/Karl_Darlow_341/gw.csv",
+    "sha256": "9a58c4ed1ac348a3e2a81ac89a4c0f2c6b58a8ca7d8285fae2b885187f4eb644"
+  },
+  {
+    "file": "inputs/204936_history.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a8337d50698de908f92e8d1905142d968384a2ca/data/2025-26/players/Gianluigi_Donnarumma_736/gw.csv",
+    "sha256": "e82fe0e38c52a815950c9cf9c069244fc032c884056f17299ffbe3a7582b57cc"
+  },
+  {
+    "file": "inputs/184254_history.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a8337d50698de908f92e8d1905142d968384a2ca/data/2025-26/players/Guglielmo_Vicario_565/gw.csv",
+    "sha256": "a47249c67ce972484ebbac1d1383f7cb93f25bd64185b6e002894140f8f1741c"
+  },
+  {
+    "file": "inputs/149065_history.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a8337d50698de908f92e8d1905142d968384a2ca/data/2025-26/players/Jos%C3%A9_Malheiro%20de%20S%C3%A1_628/gw.csv",
+    "sha256": "9113d744ec262ccce720d2be80e7cfb769c25348f0b03f47d741d9c03e6d6f79"
+  }
+]

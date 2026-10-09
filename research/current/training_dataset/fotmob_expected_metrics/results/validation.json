@@ -1,0 +1,35 @@
+{
+  "source_fixtures": 120,
+  "source_identity_decoder_sha256": "96d6814074e9d6b3c56a8fda8ed7362b03652dc4c64934f2b449551968d72a8f",
+  "fields": [
+    {
+      "field": "expected_goals",
+      "controls": 312,
+      "positive_native_controls": 309,
+      "fixtures": 38,
+      "errors": 101,
+      "pilot_qualified": false,
+      "reference_seasons": [
+        "2022-23",
+        "2023-24"
+      ]
+    },
+    {
+      "field": "expected_assists",
+      "controls": 526,
+      "positive_native_controls": 523,
+      "fixtures": 38,
+      "errors": 34,
+      "pilot_qualified": false,
+      "reference_seasons": [
+        "2022-23",
+        "2023-24"
+      ]
+    }
+  ],
+  "source_lineage_and_current_season_qualification_pending": true,
+  "canonical_modified": false,
+  "ledger_fields_closed": 0,
+  "expected_fields_added": 0,
+  "historical_deadline_availability_qualified": false
+}

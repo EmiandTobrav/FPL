@@ -1,0 +1,8 @@
+{
+  "validate.py": "5b1a726988d26835723967117becf6c6a69ad72c963bdcda7bb0af5077b6cfe8",
+  "build.py": "717b66f1c3ca8a7cf00791351316f17fe881671382bbb1824c5b01163d12c637",
+  "results/overlay.csv.gz": "865a8843c8eadda9f753dfff33ee0c7c15b90dfe42851bfe0c695395890977d5",
+  "results/validation.json": "9a00b567401c085473fc98da761f70adb11abbcad261ef2600c93fee25ce4948",
+  "results/controls.csv.gz": "d09b7e60066cf90b978f041c99cf55a53a0258a56ac51e4ec8138d790c3c916e",
+  "results/positive_contradictions.csv.gz": "5603a9b75fea08f492b7841eec7b5fb5e2f82a50a6315864aaa31512f8170cbf"
+}

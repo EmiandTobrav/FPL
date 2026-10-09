@@ -1,0 +1,10 @@
+{
+  "native_controls": 569,
+  "frozen_vetoes": 6,
+  "hypothesis_errors": 369,
+  "hypothesis_veto_errors": 0,
+  "hypothesis_qualified": false,
+  "application_allowed": false,
+  "fields_closed": 0,
+  "limits": "Outcome-informed diagnostic. Neither a new holdout nor documented FPL event inclusion. No failing control is excluded and no source counter is replaced."
+}

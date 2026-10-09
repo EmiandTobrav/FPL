@@ -1,0 +1,35 @@
+{
+  "fixtures": [
+    {
+      "season": "2019-20",
+      "fixture": 1,
+      "fixture_code": 1059702,
+      "date": "2019-08-09",
+      "home": "Liverpool",
+      "away": "Norwich",
+      "match_id": "6hy62na4oiugr5shiyxsztkyy"
+    },
+    {
+      "season": "2022-23",
+      "fixture": 5,
+      "fixture_code": 2292814,
+      "date": "2022-08-06",
+      "home": "Leeds",
+      "away": "Wolves",
+      "match_id": "78gauarxibmuqx5lb5zpgbllg"
+    },
+    {
+      "season": "2026-27",
+      "fixture": 1,
+      "fixture_code": 2645195,
+      "date": "2026-08-21",
+      "home": "Arsenal",
+      "away": "Coventry City",
+      "match_id": "3vbv2xjkan2xyjoah3kjz7uok"
+    }
+  ],
+  "purpose": "Probe documented matchexpectedgoals endpoint via the public outlet already used by the archive client. First historical target, then a mismatching native reference and current-season native reference. No alternate outlet after denial. This is diagnostic, not independent holdout.",
+  "identity_source_sha256": "6912c36b07c4cba002716467433197d6102babfdb9cdfe5cae4a7cd231c47fd6",
+  "source_client": "https://github.com/peteowen1/pannadata/blob/main/scripts/opta/opta_scraper.py",
+  "endpoint_reference": "https://github.com/withqwerty/football-docs/blob/main/docs/opta/api-access.md"
+}

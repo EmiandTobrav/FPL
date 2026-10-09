@@ -1,0 +1,17 @@
+{
+  "local": {
+    "inputs/ledger_CURRENT.json": "845cef96ea08b865dd95893a7936ca3d023f405c6949697990c62e57386d99a8",
+    "inputs/remaining_fields.csv.xz": "8b50d680750e3312270cac38b3be6af95331767ed818b9d9c6ebbd0cd1c81003"
+  },
+  "references": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/results/control_comparisons.csv": "d0ef2c283671025c76907dd1d0477637506c2f4b1a6907dc5390ed98e43c18ae",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/results/keeper_predictions.csv": "afe4ae523a3f06bf7ea2b1b935c230abab7b45328dbaf5fb8115bc0b42cafa64",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/protocol.json": "064466a33781cad68b2d46339371896be54faf0ddcf832fcba3956380df280c5",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_source_check/archive_comparison.csv": "ad8c3247c1f73f384ee9bf6c00666417ceb9f48b47f9d078e7fb07035c5bd020",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_source_check/primary_comparison.csv": "ec42b50babb78d8d4f2d9e79942e0d50d9e64cdc6624fb3b64426c081d7a7e03",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_native_history/results/comparisons.csv.gz": "ce1078a6c3e8524b0ebb57706b6fcd45de3046590cc4607efc9c4dc49c4603a1",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_native_history/results/findings.json": "ca6a1a1ccde0a0fa9f164c578b11fc51db7b0784782bde9e20041c687f7681b8"
+  },
+  "direction": "Complete the started keeper-CBI track; never reopen the same failed routes without specific new source evidence.",
+  "user_source_access": "User confirmed no known additional source access on 2026-10-09."
+}

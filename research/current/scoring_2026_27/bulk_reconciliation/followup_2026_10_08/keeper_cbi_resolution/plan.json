@@ -1,0 +1,21 @@
+{
+  "diagnostic_only": true,
+  "application_allowed": false,
+  "scope": "All 569 frozen native keeper controls; six old vetoes kept explicitly.",
+  "prior_exploration": "Six veto event streams were inspected first. Claims plus punches happens to equal all six native values. This is outcome-informed discovery, not a qualified rule.",
+  "fixed_hypothesis": "Count type11 + type41 + type8 events for a keeper, compared diagnostically with native CBI. No fitted time windows, outcomes, calibration or case-specific corrections.",
+  "source_type_labels_provisional": {
+    "11": "claim",
+    "41": "punch",
+    "8": "interception",
+    "12": "clearance",
+    "59": "keeper_sweeper"
+  },
+  "definition_source": "https://www.statsperform.com/opta-event-definitions/",
+  "definition_limit": "Public definitions distinguish punches, clearances and keeper sweeper, but do not specify FPL CBI inclusion or the numerical event-ID mapping used by this archive.",
+  "raw_sha256": "a69184e1c0d35ed39e1146b748f0ff3b649750bb1d52624286406e0cacd4b6f2",
+  "dependencies": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/results/control_comparisons.csv": "d0ef2c283671025c76907dd1d0477637506c2f4b1a6907dc5390ed98e43c18ae",
+    "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88"
+  }
+}

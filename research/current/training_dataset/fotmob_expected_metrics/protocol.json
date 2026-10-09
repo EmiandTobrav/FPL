@@ -1,0 +1,9 @@
+{
+ "scope":"Bounded cached-source pilot for native-compatible per-player xG and xA. Only explicit numeric expected_goals/expected_assists fields; absent fields abstain. Exact Opta code, FPL fixture, date, clubs, score and equal native/source minutes required.",
+ "selection":"All 120 already frozen FotMob shot-conservation source responses. Use 2022/23 qualified FPL expected-statistic view and native 2023/24 as references. No additional source collection. Target only structurally absent pre-2022 expected fields; preserve all original FPL values.",
+ "gate":{"minimum_field_controls":100,"minimum_positive_native_controls":20,"minimum_reference_fixtures":20,"maximum_disagreements":0},
+ "precision":"Both source fields are already published per-player expected-statistic values. Compare decimal values rounded to the same two decimal places, without regression calibration or loose tolerance. Unknowns and inactive/no-appearance records are not default zeros.",
+ "xGI":"Derive xG+xA only after both input fields qualify; preserve original FPL xGI when available.",
+ "xGC":"Not supported by direct source player-stat fields in this pilot. Keep missing; do not substitute xGOT faced or whole-match totals for partial appearances.",
+ "application":"Pilot cannot mutate any canonical view or point ledger. Record field outcomes before deciding whether a larger current-season qualification/source lineage check is worthwhile. Historical deadline availability remains unqualified."
+}

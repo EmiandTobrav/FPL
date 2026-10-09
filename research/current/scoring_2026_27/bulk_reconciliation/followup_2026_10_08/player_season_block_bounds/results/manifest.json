@@ -1,0 +1,12 @@
+{
+  "controls.csv.gz": "d09b7e60066cf90b978f041c99cf55a53a0258a56ac51e4ec8138d790c3c916e",
+  "field_summary.csv": "b8e59ac4f1f6cedb8c9e44a59a5a7db7b48c7a0de2755d430dde6ae0e3a2693c",
+  "findings.json": "b5de3107ed5c299454c8577ac5f62760df895c498f637e0abbec89fe4a9b03b8",
+  "match_readiness.csv": "eda5e9d176b55c6ec3a63e646ebd84ed71187f9e84a9c00ea21ec8292c51f601",
+  "overlay.csv.gz": "865a8843c8eadda9f753dfff33ee0c7c15b90dfe42851bfe0c695395890977d5",
+  "player_match_readiness.csv.xz": "f77ef80e476c69310a74149f3d7d731558112612745636c11cece4f42d2f897f",
+  "positive_contradictions.csv.gz": "5603a9b75fea08f492b7841eec7b5fb5e2f82a50a6315864aaa31512f8170cbf",
+  "remaining_fields.csv.xz": "8b50d680750e3312270cac38b3be6af95331767ed818b9d9c6ebbd0cd1c81003",
+  "requirements.csv.xz": "3a8f2adc61d685343422fb820ddd325ab38fedb02ba8b737f10893914be8f9fa",
+  "validation.json": "9a00b567401c085473fc98da761f70adb11abbcad261ef2600c93fee25ce4948"
+}

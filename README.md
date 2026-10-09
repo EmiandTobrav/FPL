@@ -39,7 +39,20 @@ Felles tabeller dekker nå alle åtte sesonger: **187 111 spillerkamper og
 kontrakt. 14 365 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
 Se [datatabeller og innlesing](research/current/training_dataset/canonical_extension/README.md).
 
-**Gjeldende datagapstatus:** **11 219 åpne krav**, **66 478 inputkomplette
+**Gjeldende datagapstatus:** **11 215 åpne krav**, **66 478 inputkomplette
+spillerkamper og 824 hele kamper**. [Fire mållinjeverdier](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/README.md)
+er innarbeidet fra eksakt spiller-/lag-sesongavstemming i 2019/20. 1 513
+kontroller i 378 kamper har null avvik. 2020/21 sperres på en residual på én
+blokkering; videre innhenting stoppes. Tre tester og 16 byteidentiske
+replayfiler består. Totalt 3 678 krav er lukket. Ingen ny scoring eller trening.
+Brukerens siste presisering: ferdigstill påbegynte spor som samlet arbeid;
+keeper-CBI følges opp samlet fra eksisterende bevis, uten gjentatte kildeprøver.
+Se [samlet CBI-avklaring og kildehindring](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_resolution/README.md):
+341 keeperverdier står fortsatt åpne. Komplett native historikk gir ingen
+rettelse; et alternativ som treffer seks avvik, feiler 369 av 569 kontroller.
+Åtte filer gjenskapes byteidentisk offline. Uendrede kilder prøves ikke igjen.
+
+**Tidligere datagapstatus:** **11 219 åpne krav**, **66 478 inputkomplette
 spillerkamper og 824 hele kamper**. [15 storsjanseredninger](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/README.md)
 er avklart med eksakte sesong-/kampgrenser og sperring av en hel lag-sesong
 med et tidligere dokumentert hendelsesunntak. Én kandidat forblir åpen.
@@ -65,8 +78,8 @@ Kilderuter får korte innledende tidsrammer, og små utfyllinger samles i
 batcher. Arbeid uten konkrete utfyllingskandidater skal bytte rute;
 faktiske feltlukkinger og tidsbruk rapporteres sammen.
 En egen [innhentingskø](research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-skiller **1 949 data-/kildekrav** fra **9 270 assistkrav merket
-regelomregning**. Alle 11 219 åpne krav beholdes. Innhent også manglende
+skiller **1 945 data-/kildekrav** fra **9 270 assistkrav merket
+regelomregning**. Alle 11 215 åpne krav beholdes. Innhent også manglende
 hendelsesbevis for assists nå; nye regelberegninger følger senere.
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)

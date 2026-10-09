@@ -1,0 +1,15 @@
+{
+  "source_commit": "a8337d50698de908f92e8d1905142d968384a2ca",
+  "players": 5,
+  "checked_vetoes": 6,
+  "native_cbi_revisions": 0,
+  "external_vetoes_retained": 6,
+  "missing_keeper_cbi_withheld": 341,
+  "fields_closed": 0,
+  "corrections_created": 0,
+  "ledger_modified": false,
+  "scoring_modified": false,
+  "native_inventory_sha256": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+  "route_status": "stopped_no_native_revision_at_any_frozen_veto",
+  "scope": "Only the six frozen CBI vetoes; no claim of whole-season reconciliation or source qualification."
+}

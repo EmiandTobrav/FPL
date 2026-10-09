@@ -1,0 +1,19 @@
+{
+  "README.md": "7f40893f1ad2d1a2f350521895a3e7f01fc2f7cc9e12272de4dd4d7200d18dbd",
+  "collect.py": "f32ad8912e3b66135549dc3b9146ab7ff75b302d0c833ed1f158528df06df068",
+  "inputs/149065_history.csv": "9113d744ec262ccce720d2be80e7cfb769c25348f0b03f47d741d9c03e6d6f79",
+  "inputs/172649_history.csv": "c2e5c2be939e0ad22b1b4b4b0fa3edffd5c81ee6577d2eeb3e47f217ca607d39",
+  "inputs/184254_history.csv": "a47249c67ce972484ebbac1d1383f7cb93f25bd64185b6e002894140f8f1741c",
+  "inputs/204936_history.csv": "e82fe0e38c52a815950c9cf9c069244fc032c884056f17299ffbe3a7582b57cc",
+  "inputs/59735_history.csv": "9a58c4ed1ac348a3e2a81ac89a4c0f2c6b58a8ca7d8285fae2b885187f4eb644",
+  "inputs/commit.json": "7935fd3f47fd36d3b0bc7b43de2a786ee84a922f9617475ee0dc66bf2e00d684",
+  "inputs/directories.json": "17745ea1962f624c3bb1abde55f6afb635cd82d0177b9a6303dd28d29486284d",
+  "inputs/players_raw.csv": "412ce0172016f8f98f25177dc6de9f3cd2a8ec7a6135f9aa638d7fdee784d67b",
+  "inputs/source_freeze.json": "874516282ab3dd5bf993a07512162d75ab31bec49a8daba415b8b99e006d0469",
+  "inputs/sources.json": "36d38f79834db47daf5105e2865770fbe131bde98ca7626e07bd0af0a09c1efa",
+  "plan.json": "1f5c52a379c60aa766d52f886fdd52cffe5056129e6543c3c7631e3ec3dca2d7",
+  "plan_freeze.json": "0d8d8d9105dd09e0465e47c7bec00d1f96e6ab84fff66ad3e70d872c7fa25cc7",
+  "results/comparisons.csv.gz": "ce1078a6c3e8524b0ebb57706b6fcd45de3046590cc4607efc9c4dc49c4603a1",
+  "results/findings.json": "ca6a1a1ccde0a0fa9f164c578b11fc51db7b0784782bde9e20041c687f7681b8",
+  "verify.py": "dad78d5bce13bf0a7f0b5e89a8c62b2100a01a0a08805ec873a8666e22870847"
+}

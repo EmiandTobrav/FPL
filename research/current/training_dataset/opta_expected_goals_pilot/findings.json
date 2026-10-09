@@ -1,0 +1,10 @@
+{
+  "requests": 1,
+  "planned_requests": 3,
+  "status": 403,
+  "remaining_requests_not_attempted": 2,
+  "expected_values_collected": 0,
+  "fields_closed": 0,
+  "source_retry": false,
+  "ledger_modified": false
+}

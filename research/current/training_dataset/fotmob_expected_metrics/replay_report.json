@@ -1,0 +1,14 @@
+{
+  "byte_identical_files": 7,
+  "files": {
+    "predictions.csv.gz": "bf4ca499a08b8a2f3cc0accdc07f76b87b386e0e09d36c115d7e5b070693c4db",
+    "identity_inventory.csv.gz": "b67125c10044aecedbae3a5b85fa57749a5e187f6e6de3837362639a62e0da37",
+    "source_files.json": "1d020b678658b8e866aa00a3be47da5b7191d8f3041fc6216cc8cde581edef44",
+    "prediction_freeze.json": "a1fa69c203328a7c06ff8259b93170cad59cb3d7c9643ec23be08c34edb1bdf6",
+    "results/disagreements.csv.gz": "9d8e7be0532917f3a8cb07e7875344505a80caae141590a2898e8c3c9ba5b258",
+    "results/native_comparisons.csv.gz": "9d397806bf69b720cad0b73051d8aac4ef09ce0cbab75e0eb2c6cabe283ec0ec",
+    "results/validation.json": "de5b73c13fad747ab9da30e1217b4bd21d51c7e71788f96b2d6c8ebda837ffce"
+  },
+  "network": false,
+  "fields_added": 0
+}

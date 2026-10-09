@@ -1,0 +1,6 @@
+{
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/inputs/source_manifest.csv": "6c73aa165813228b79cf4ce3d5631de5db6f61368c843cb80414832a98212d97",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_shot_conservation/plan.csv": "8f382e3a10d960a909e18483b00f3016e0bdc212586446cabb153974b0c3dc3c",
+  "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+  "training_dataset/fpl_history_2022/reconciliation/expected_statistics_qualified.csv.xz": "542d5927d3652caf79265d8050f4fe3d2214b2dd014b8a8accb5a8a24edd1608"
+}

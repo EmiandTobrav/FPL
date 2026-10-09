@@ -1,0 +1,15 @@
+[
+  {
+    "season": "2019-20",
+    "fixture": 1,
+    "fixture_code": 1059702,
+    "date": "2019-08-09",
+    "home": "Liverpool",
+    "away": "Norwich",
+    "match_id": "6hy62na4oiugr5shiyxsztkyy",
+    "url": "https://api.performfeeds.com/soccerdata/matchexpectedgoals/1mjq6w6ezkxe611ykkj8rgz7f1?fx=6hy62na4oiugr5shiyxsztkyy&_rt=b&_fmt=json",
+    "status": 403,
+    "file": "inputs/2019-20_1_http_error.txt",
+    "sha256": "253a598c7b62fdbe87d359ee821b2bad7b5c08c90011b4cd8ea5c1c821e1420e"
+  }
+]

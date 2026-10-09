@@ -54,7 +54,7 @@ Eksisterende kvalifiserte poengversjoner bevares, men utvides ikke nå.
 
 ## Nåværende status
 
-**11 219 åpne feltkrav i 10 802 spillerkamper.** **66 478 spillerkamper og
+**11 215 åpne feltkrav i 10 802 spillerkamper.** **66 478 spillerkamper og
 824 hele kamper** har komplette input, av 77 280 og 2 660. Den tidligere
 [delmengdeutfylling](followup_2026_10_08/tackle_subset_bounds/README.md)
 lukker to taklingsfelt og gjør én spillerkamp komplett. Tre tester og 15
@@ -62,13 +62,13 @@ byteidentiske offline-replayfiler består. [Siste kampinventar](followup_2026_10
 avklarer ett assistkrav og gjør én spillerkamp komplett. 14 andre krav har
 komplette mål, men forblir åpne med ukjente årsaksbidrag. Ingen assistinventargap
 står igjen. Dette beviser ikke full dekning av foul/berøringer/returer/intensjon.
-Totalt **3 674 krav** er lukket siden omprioriteringen. Fem tester og 24
+Totalt **3 678 krav** er lukket siden omprioriteringen. Fem tester og 24
 byteidentiske replayfiler består. Alle gamle målavgjørelser, kjente assist-
 totaler og native rettelser bevares. Ingen ny assistregel, poengberegning eller trening.
 374 av 380 kamper i 2025/26 har tidligere kvalifiserte poengetiketter.
 Ny omregning og full før-frist-/treningsintegrasjon følger senere.
 
-Numerisk rest: 48 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
+Numerisk rest: 44 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
 manglende keeperverdier og 204 beskyttede konflikter), 2 keeperlokasjoner og
 mindre grupper. Assists gjenstår i 9 270 rader. Alle 994 skuddkrav er allerede
 lukket. [Keeperlokasjon](followup_2026_10_08/fotmob_keeper_location/README.md)
@@ -99,7 +99,7 @@ i den fulle gamle populasjonen på 983 tilfeller. Originalpiloten forblir feilet
 
 **Innhenting styrer køen nedenfor.** De regelbaserte assistgruppenes betingede
 tak skal ikke prioriteres som om alle var rene kildegap. Start fra
-[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **1 949 krav**,
+[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **1 945 krav**,
 fordelt på manglende data/inventarer og kildekonflikter. Uttrekksunntaket er avklart.
 Velg en kilde som faktisk kan tilføre manglende felt eller komplette hendelser;
 bruk eksisterende kvalifiserte utfyllinger før utvikling av nye regler.
@@ -114,7 +114,7 @@ lukking eller innbyrdes rangering uten et konkret gjennomførbart kildeforsøk.
 
 | Arbeidsspor | Gjeldende omfang | Neste avgrensede handling |
 |---|---|---|
-| Manglende kildefelt og inventarer | 1 715 krav; blant annet 1 237 times tackled; ingen assistinventargap, 341 keeper-CBI og 48 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
+| Manglende kildefelt og inventarer | 1 711 krav; blant annet 1 237 times tackled; ingen assistinventargap, 341 keeper-CBI og 44 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
 | Kildekonflikter og FPL-uttrekk | 234 konflikter; ingen åpne uttrekksunntak | Innhent manglende bevis eller en kompatibel kildeversjon som kan forklare avviket. Bevar FPL og godkjente verdier. Keeperlokasjonens to Sánchez-krav inngår blant manglende data, men er sperret av kilde-/minuttavvik; ikke fyll dem med proxyer. Ingen ny scoring for å omgå sperren. |
 | Hendelsesbevis til senere assistomregning | 9 270 krav merket regelomregning; ingen inventargap står igjen | Skaff faktisk mottak, foul/hands, berøringer, returer, intensjon og kontinuitet der dette mangler. Betingede lukkingstak nedenfor er hjelp til å velge kildeomfang, ikke forventet gevinst. Utsett nye assistregler og store kontrollstudier; bruk eksisterende kvalifiserte regler når nytt kildebevis gir rask utfylling. |
 | Andre modellstatistikker og historiske inventarer | Egen dekningskartlegging; ikke talt som lukkede poengkrav | Hent manglende relevante xG/xA/xGI/xGC, defensive tellinger og faktiske frist-/roster-/statistikkversjoner. Gjenbruk kvalifiserte kampstarter og eksisterende statistikk. Ikke bygg features eller nye poengetiketter nå. |
@@ -146,7 +146,7 @@ utenfor målgruppene. Gruppetak kan øke når andre blokkeringer fjernes.
 | assisted_goal_without_unique_pass_certificate | 391 | 1167 | 980 | 956 | 81 |
 | own_goal | 228 | 890 | 818 | 804 | 50 |
 | no_positive_goal_assist_certificate | 352 | 817 | 747 | 690 | 57 |
-| new_goal_inventory_facts_pending | 76 | 562 | 562 | 409 | 3 |
+| new_goal_inventory_facts_pending | 76 | 562 | 562 | 421 | 7 |
 | direct_free_kick | 23 | 308 | 285 | 272 | 4 |
 
 ## Kontroller og kildeprioritet
@@ -186,3 +186,15 @@ har egne byteidentiske replays. Samlet treningsdatasett-replay gjenskaper
 bevarer ett faktisk 2025/26-snapshot før GW1-fristen, 685 spillerkoder,
 kildeversjon og collector-oppsett. Før-frist-kvalifisering er fortsatt false;
 hele tids-/univers-/statistikk-kontrollen og de tidlige sesongene gjenstår.
+
+## Samlet keeper-CBI-spor
+
+Brukerens siste presisering er å ferdigstille påbegynte spor samlet.
+[Avklaringsfilen](followup_2026_10_08/keeper_cbi_resolution/README.md) samler
+alle tidligere kilder, native historikk, komplette hendelsesuttrekk og
+alle 341 manglende keeperkrav. De seks native vetoene står igjen.
+En alternativ telling som treffer dem, feiler 369 av 569 kontroller.
+Dataene er ikke ferdige; videre utfylling krever konkret ny FPL-kompatibel
+kildedefinisjon eller korrigert kildeversjon. Uendrede prøver skal ikke
+gjenåpnes. 204 utespillerkonflikter beholdes separat. Se den maskinlesbare
+[sporstaten](followup_2026_10_08/keeper_cbi_resolution/TRACK_CURRENT.json).

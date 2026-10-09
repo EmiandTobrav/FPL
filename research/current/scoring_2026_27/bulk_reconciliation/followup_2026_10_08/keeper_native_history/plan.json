@@ -1,0 +1,103 @@
+{
+  "season": "2025-26",
+  "scope": "five keepers in all six frozen native CBI vetoes",
+  "hypothesis": "Complete native player histories may document revisions relative to weekly FPL snapshots.",
+  "stop_condition": "No native CBI revision at the six vetoes means this route cannot qualify keeper CBI.",
+  "source": "vaastav/Fantasy-Premier-League mirror of native FPL",
+  "native_source_authority": "FPL; external majority agreement never replaces native values",
+  "application_allowed": false,
+  "scoring_allowed": false,
+  "controls_file": "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/results/control_comparisons.csv",
+  "controls_sha256": "d0ef2c283671025c76907dd1d0477637506c2f4b1a6907dc5390ed98e43c18ae",
+  "roster_file": "project/data/2025-26_players.csv.gz",
+  "roster_sha256": "698c5bc12787f5be80f9fba697817094d61f80312421b592f1cd73595292df89",
+  "vetoes": [
+    {
+      "season": "2025-26",
+      "fixture": 41,
+      "code": 204936,
+      "expected": 4,
+      "actual": 5,
+      "agrees": false,
+      "kind": "native_fpl_keeper_cbi"
+    },
+    {
+      "season": "2025-26",
+      "fixture": 289,
+      "code": 184254,
+      "expected": 1,
+      "actual": 3,
+      "agrees": false,
+      "kind": "native_fpl_keeper_cbi"
+    },
+    {
+      "season": "2025-26",
+      "fixture": 307,
+      "code": 172649,
+      "expected": 0,
+      "actual": 2,
+      "agrees": false,
+      "kind": "native_fpl_keeper_cbi"
+    },
+    {
+      "season": "2025-26",
+      "fixture": 310,
+      "code": 149065,
+      "expected": 3,
+      "actual": 4,
+      "agrees": false,
+      "kind": "native_fpl_keeper_cbi"
+    },
+    {
+      "season": "2025-26",
+      "fixture": 317,
+      "code": 59735,
+      "expected": 3,
+      "actual": 2,
+      "agrees": false,
+      "kind": "native_fpl_keeper_cbi"
+    },
+    {
+      "season": "2025-26",
+      "fixture": 346,
+      "code": 204936,
+      "expected": 1,
+      "actual": 2,
+      "agrees": false,
+      "kind": "native_fpl_keeper_cbi"
+    }
+  ],
+  "players": [
+    {
+      "code": 172649,
+      "id": 253,
+      "first_name": "Dean",
+      "second_name": "Henderson"
+    },
+    {
+      "code": 59735,
+      "id": 341,
+      "first_name": "Karl",
+      "second_name": "Darlow"
+    },
+    {
+      "code": 204936,
+      "id": 736,
+      "first_name": "Gianluigi",
+      "second_name": "Donnarumma"
+    },
+    {
+      "code": 184254,
+      "id": 565,
+      "first_name": "Guglielmo",
+      "second_name": "Vicario"
+    },
+    {
+      "code": 149065,
+      "id": 628,
+      "first_name": "José",
+      "second_name": "Malheiro de Sá"
+    }
+  ],
+  "prepared_at_utc": "2026-10-09 08:48:38 UTC"
+}

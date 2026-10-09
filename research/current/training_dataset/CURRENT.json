@@ -3,7 +3,7 @@
   "target_season": "2026-27",
   "historical_source_commit": "3365c6cb5b3f827c88378e8349bfa7492af91361",
   "historical_ledger": "../scoring_2026_27/bulk_reconciliation/CURRENT.json",
-  "historical_open_fields": 11219,
+  "historical_open_fields": 11215,
   "historical_input_complete_fixtures": 824,
   "active_work_phase": "data_gap_acquisition",
   "operational_goal": "../../../docs/DATA_GAP_GOAL.md",
@@ -14,8 +14,8 @@
     "deadline_safe_features_and_training_ingestion"
   ],
   "progress_primary_measure": "verified_previously_open_fields_closed_per_elapsed_time",
-  "historical_acquisition_requirements": 1949,
-  "historical_missing_data_requirements": 1715,
+  "historical_acquisition_requirements": 1945,
+  "historical_missing_data_requirements": 1711,
   "historical_protected_source_conflicts": 234,
   "historical_deferred_rule_requirements": 9270,
   "historical_scoring_qualified": false,
@@ -56,7 +56,7 @@
   ],
   "reproduce": "python research/current/training_dataset/reproduce.py",
   "prior_batch_replay": "python research/current/training_dataset/replay_batch3.py",
-  "next_work": "Close missing source fields and acquire causal event evidence first. Select concrete batches by expected verified closures per elapsed time; reuse cached inputs and qualified routes. Follow the live bulk CURRENT and acquisition queue; retain all 11219 open requirements, including 9270 unresolved assist rule outputs. Track missing model statistics separately. Normally limit initial source discovery to 15 minutes and change route after 30 minutes without concrete fill candidates; failed routes require new source facts. Apply necessary batch-specific source, identity, definition and integrity checks. Defer collective QA, new BPS/bonus/points, labels and feature building until the acquisition phase is assessed. Preserve protected conflicts, raw FPL, approved values and frozen scoring/canonical/model versions.",
+  "next_work": "Finish started acquisition tracks from their consolidated state. Keeper CBI is documented in keeper_cbi_track: all341 values remain missing, six native vetoes unchanged, outcome-informed event rule rejected369/569. This track needs specific new compatible provider data/definition and must not restart unchanged FotMob/Opta/primary/native-history trials. Finish other started batches using new concrete source evidence; preserve all11215 requirements, raw FPL and approved values. Existing xG/xA FotMob pilot fails101/312 and34/526; direct expected-goals access returned403. Do not repeat either unchanged route. Collective QA, new point labels and features remain deferred.",
   "historical_legacy_rule_validation": "scoring/legacy_tackles/validation_summary.json",
   "historical_legacy_clipping_qualified": false,
   "historical_legacy_rule_controls": 291,
@@ -64,9 +64,9 @@
   "historical_legacy_rule_clipped_bound_counterexamples": 15,
   "historical_legacy_rule_source_disagreements": 4,
   "historical_input_complete_player_matches": 66478,
-  "historical_latest_requirements": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/results/requirements.csv.xz",
-  "historical_latest_batch": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/README.md",
-  "historical_latest_requirements_sha256": "115763b5b65e0318097899b8149f5a794ecbc909800a51b5a6fdc0720c688be1",
+  "historical_latest_requirements": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/results/requirements.csv.xz",
+  "historical_latest_batch": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/README.md",
+  "historical_latest_requirements_sha256": "3a8f2adc61d685343422fb820ddd325ab38fedb02ba8b737f10893914be8f9fa",
   "historical_acquisition_status_note": "Live acquisition counts and pointers only. These additions have not rebuilt frozen canonical tables or extended scoring qualification. Missing model statistics outside the point ledger require separate coverage reporting.",
   "historical_scoring_candidate_snapshot_note": "The 489 candidates remain an immutable earlier study. The live acquisition ledger has 824 input-complete fixtures. Frozen 2025/26 scoring still covers 374 whole fixtures and 11315 player matches; older rule seasons, six protected 2025 fixtures and deadline-safe training remain incomplete.",
   "historical_qualified_player_matches": 11315,
@@ -108,5 +108,8 @@
   "historical_latest_primary_revision_fixtures": [
     337,
     365
-  ]
+  ],
+  "keeper_cbi_track": "../scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_resolution/TRACK_CURRENT.json",
+  "latest_expected_metric_pilot": "fotmob_expected_metrics/README.md",
+  "latest_direct_expected_metric_access_trial": "opta_expected_goals_pilot/README.md"
 }

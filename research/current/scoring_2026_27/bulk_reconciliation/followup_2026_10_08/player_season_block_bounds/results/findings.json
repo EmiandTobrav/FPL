@@ -1,0 +1,42 @@
+{
+  "old_open_fields": 11219,
+  "new_fields": 4,
+  "open_fields": 11215,
+  "unique_affected_player_matches": 10802,
+  "complete_player_matches": 66478,
+  "complete_matches": 824,
+  "new_complete_player_matches": 0,
+  "new_complete_matches": 0,
+  "zero_values": 4,
+  "positive_values": 0,
+  "new_fields_by_season": {
+    "2019-20": 4
+  },
+  "unchanged_ledger_rows": 775244,
+  "raw_fpl_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "qualified": true,
+    "qualified_fields": [
+      "goal_line_clearances"
+    ],
+    "controls": 1513,
+    "control_fixtures": 378,
+    "errors": 0,
+    "positive_contradictions": 0,
+    "candidate_fields": 4,
+    "new_fields": 4,
+    "certified_seasons": [
+      "2019-20"
+    ],
+    "failed_seasons": [
+      "2020-21"
+    ],
+    "uncollected_seasons": [
+      "2021-22",
+      "2024-25"
+    ],
+    "archive_sha256": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "limits": "Exact season-wide player/team conservation and reused approved-source regression, not independent holdout or final collective QA. The failed 2020 residual withholds that whole season; collection stopped as planned."
+  }
+}

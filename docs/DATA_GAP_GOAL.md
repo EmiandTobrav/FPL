@@ -30,10 +30,10 @@ Følg alltid gjeldende filpeker ved videre arbeid; tallene her er et startpunkt.
 Registrer også relevante manglende modellstatistikker utenfor poengrestlisten
 separat, slik at lukking av denne listen ikke fremstilles som full datadekning.
 
-Gjeldende utgangspunkt er nå **11 219 åpne krav**: **1 715 manglende
+Gjeldende utgangspunkt er nå **11 215 åpne krav**: **1 711 manglende
 dataverdier/inventarer**, **234 kildekonflikter**, **ingen gjenværende FPL-uttrekksunntak**
 og **9 270 assistkrav merket regelomregning**. De første tre kategoriene
-utgjør en egen [innhentingskø med 1 949 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
+utgjør en egen [innhentingskø med 1 945 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
 Dette er en arbeidsvisning, ikke en redusert restliste. Også assistkravene
 kan mangle faktisk hendelsesbevis; innhent slike bevis nå, men utsett nye
 regelberegninger og poengetiketter. Ingen kategori anses automatisk komplett.
@@ -50,12 +50,25 @@ manglende kildefelt og komplette hendelsesinventarer. Ikke la utvikling av
 nye assistregler eller større kontrollstudier overta innhentingsfasen.
 Anvend eksisterende kvalifiserte regler når de gir raske, faktiske lukkinger.
 
-Siste utfylling avklarer 15 storsjanseredninger med en kildeversjon som
+Tidligere utfylling avklarer 15 storsjanseredninger med en kildeversjon som
 sperrer hele lag-sesonger med dokumenterte hendelsesunntak.
 66 478 spillerkamper og 824 hele kamper har komplette input.
 
 ## Arbeidsregler
 
+- Ferdigstill påbegynte spor samlet. Bevar én samlet status med alle
+  kildeforsøk, avvik, neste nødvendige bevis og sluttkriterier. Ikke forlat
+  et spor for så å gjenta samme prøve senere. Tidsrammene nedenfor gjelder
+  kildeforsøk; et avbrutt kildeforsøk er ikke et ferdig løst datagapspor.
+- Keeper-CBI er det aktive sporet etter de fire nye mållinjeutfyllingene.
+  Bruk alle eksisterende bevis og avklar de seks native vetoene samlet.
+  Feltlukking krever fortsatt kvalifisert telling; en konkret kildehindring
+  skal dokumenteres som åpent krav og aldri omtales som utfylt statistikk.
+  Den [samlede avklaringen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_resolution/README.md)
+  bevarer nå alle 341 tomme krav og de seks native vetoene. Kildene som er
+  innhentet, kvalifiserer ikke tellingen. Videre utfylling krever konkret
+  ny FPL-kompatibel kildeversjon eller dokumentert hendelsesdefinisjon;
+  uendrede kildeprøver skal ikke startes på nytt.
 - Hovedresultatet i denne fasen er flere dokumenterte dataverdier i den
   gjeldende dataversjonen. Velg konkrete innhentingsbatcher foran nye
   analyse- og regelprosjekter. Statistikk til modellinput utenfor

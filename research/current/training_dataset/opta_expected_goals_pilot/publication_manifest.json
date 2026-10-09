@@ -1,0 +1,10 @@
+{
+  "README.md": "55b197afe3413d00dedcd562edd14bec24b538c066e40cba6cf6eae17e4eedf5",
+  "collect.py": "eed99698b22ebe8682d8fb056bb8b7ef12a56fa98f203eb23a8e7debaf7d79cb",
+  "findings.json": "27f8c50105cecc4b7a951721de45655945efb4bfc4a21639dc16d4b760c896f8",
+  "inputs/2019-20_1_http_error.txt": "253a598c7b62fdbe87d359ee821b2bad7b5c08c90011b4cd8ea5c1c821e1420e",
+  "plan.json": "fc5c290ee0247ddf215a394002d9cdf42e5815320ff1b842bfee0ceb5b85c56e",
+  "plan_freeze.json": "148273114e074d1aca16a5f3d2f8643d6d6a02eb5ed454feea2d31b714e23ff0",
+  "sources.json": "2442084048ac55690404990c51c3a8a3f3b4119a75a43f74f5839074615f8269",
+  "verify.py": "68407ec2c91873ab4ff4e4ad495d92aadaadb666b8001803710d736b1f521491"
+}

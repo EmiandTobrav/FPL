@@ -1,0 +1,15 @@
+{
+  "byte_identical_files": 8,
+  "files": {
+    "results/all_native_diagnostic.csv.gz": "333edefa93873703c19ad09b56a2def50bc6f86dedbed1f17fdd664b07e44ade",
+    "results/findings.json": "8ca96025beeb1d723d24117f68f17038a4946c49bdd4cebdaa494ee247e797a7",
+    "results/remaining_keeper_targets.csv.gz": "b3976a1c0a3cd978217523ea9c2a560012ff21e2aa94d8c25524684c469bab2b",
+    "results/six_case_decisions.csv.gz": "a2f3e3cac7d18d24ba45fe9f2e98170a42e4fd53a624b9ea2552ee91a2676385",
+    "results/six_complete_veto_match_events.csv.gz": "0e2f36e1605feeddf0655fd24b7d518ecd45184e215841482285f93080fbada8",
+    "results/six_veto_event_counts.csv.gz": "d22615599035d856df461a8d5062812866646f10c448e868b077fba77306ffab",
+    "TRACK_CURRENT.json": "c07bf258c915bf059bf07a18655c24b87a3c8f3b557de4a5e46d22b57eac4426",
+    "manifest.json": "f1c415ebe0c29b32bf3f8ff13230ecbe98ba62f6cfafef452f0eaa88bef3db2d"
+  },
+  "network": false,
+  "application": false
+}

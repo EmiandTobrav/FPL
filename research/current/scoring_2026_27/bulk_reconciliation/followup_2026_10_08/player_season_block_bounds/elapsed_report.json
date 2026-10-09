@@ -1,0 +1,8 @@
+{
+  "measurement": "local filesystem modification times from initial frozen plan to first successful isolated replay; not provider timestamps",
+  "started_utc": "2026-10-09T08:53:44.587012+00:00",
+  "verified_replay_utc": "2026-10-09T09:00:30.874296+00:00",
+  "elapsed_seconds": 406.29,
+  "verified_fields_closed": 4,
+  "new_complete_matches": 0
+}
