@@ -1,5 +1,12 @@
 # FPL modellutvikling
 
+**Gjeldende omfang — endret av brukeren 9. oktober 2026:** Arbeid med datagap i **2020/21–2025/26** og avsluttede runder i **2026/27**. **2019/20 er satt på vent inntil videre** og gjenåpnes bare etter ny brukerbeskjed. Data, kildebelegg og dokumenterte hindringer for sesongen bevares.
+
+**7 952 aktive feltkrav gjenstår:** 7 642 assistkrav med manglende årsaksbelegg, 296 manglende dataverdier/inventarer og 14 kildekonflikter. **2 711 krav i 2019/20 er utsatt, ikke lukket.** Samlet bevart rest er 10 663. Omfangsendringen lukker **null felt**; 524 faktiske feltlukkinger siden overleveringen beholdes som separat fremdrift. Datagap kommer fortsatt før samlet kvalitetssikring, poengomregning, BPS, bonus, defcon, nye etiketter og modelltrening. Målet er ikke oppnådd.
+
+Se [oppdatert operativt mål](docs/DATA_GAP_GOAL.md). Tallene over gjelder den nyeste lokale arbeidsversjonen. De øvrige statusavsnittene og maskinlesbare dataversjonene i denne GitHub-publiseringen er tidligere historikk; 2019/20 skal filtreres ut av videre aktivt arbeid.
+
+
 Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid på tvers av enheter. Det samler mai-prosjektet og den nye start-/hovedmodelltesten. Ingen ZIP-utpakking er nødvendig.
 
 **Gjeldende arbeidsbenchmark:** full kampjustering med H3 og adaptiv Triple Captain (`fixture_full_h3_adaptive_tc`), valgt av brukeren 6. oktober 2026. Gjennomsnitt **2351,50 poeng** på 2022/23–2025/26. Øvrige chips følger faste datoer. Dette er historiske spillerpoeng, ikke full 2025/26-omregning. Se [benchmarkmanifestet](research/current/benchmark.json).
