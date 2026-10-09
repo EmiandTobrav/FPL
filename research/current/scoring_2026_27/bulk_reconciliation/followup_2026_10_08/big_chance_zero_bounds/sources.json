@@ -1,0 +1,26 @@
+[
+  {
+    "season": "2019-20",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/big_chance_missed?comps=1&compSeasons=274&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2019-20.json",
+    "sha256": "832e50190392e9a293677726ee3f863c4a87ca4d5676f0245e704e16794500c9"
+  },
+  {
+    "season": "2020-21",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/big_chance_missed?comps=1&compSeasons=363&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2020-21.json",
+    "sha256": "cd8505e1e30a6fa6b107f684d1aaeeaaf408fd393531026d8d898a5cc1d719fa"
+  },
+  {
+    "season": "2022-23",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/big_chance_missed?comps=1&compSeasons=489&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2022-23.json",
+    "sha256": "8d9b71558a07b7d465e4349bb60819b3150c53c42b732939c2c1b14692f9fc79"
+  },
+  {
+    "season": "2024-25",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/big_chance_missed?comps=1&compSeasons=719&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2024-25.json",
+    "sha256": "3bac2fea1d10e8eac34e6c84b7d614b16566a740637fabb24f1357e1204ea4e3"
+  }
+]

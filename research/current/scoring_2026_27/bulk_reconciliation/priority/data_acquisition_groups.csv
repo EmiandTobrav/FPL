@@ -20,7 +20,6 @@ goal_line_clearances,missing_data,2024-25,1
 legacy_net_tackles,external_conflict,2019-20,6
 legacy_net_tackles,external_conflict,2020-21,5
 legacy_net_tackles,missing_data,2019-20,2
-legacy_net_tackles,missing_data,2020-21,1
 legacy_net_tackles,missing_data,2022-23,9
 legacy_net_tackles,missing_data,2023-24,4
 recoveries,external_conflict,2019-20,1
@@ -32,6 +31,5 @@ total_tackles,external_conflict,2020-21,5
 won_tackles,external_conflict,2019-20,4
 won_tackles,external_conflict,2020-21,2
 won_tackles,missing_data,2019-20,2
-won_tackles,missing_data,2020-21,1
 won_tackles,missing_data,2022-23,9
 won_tackles,missing_data,2023-24,4

@@ -1,0 +1,7 @@
+{
+  "url": "https://www.statsperform.com/opta-event-definitions/",
+  "accessed": "2026-10-09",
+  "section": "Tackle",
+  "paraphrase": "Won and lost outcomes are both tackles. Thus a nonnegative won counter cannot exceed the total count; an explicit zero total bounds wins to zero.",
+  "application": "No missing totals default to zero. Signed legacy net is arithmetic on approved counts, not a historical BPS clipping rule."
+}

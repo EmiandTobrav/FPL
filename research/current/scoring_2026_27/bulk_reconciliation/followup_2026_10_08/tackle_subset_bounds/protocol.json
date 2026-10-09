@@ -1,0 +1,15 @@
+{
+  "purpose": "Close missing won_tackles from explicit approved total_tackles=0 using the Opta nonnegative subset definition. Derive signed legacy_net_tackles only from closed/just-qualified won and total counts. No BPS clipping or negative-value normalization.",
+  "definitions_url": "https://www.statsperform.com/opta-event-definitions/",
+  "controls": "All available closed approved won/total pairs; use source regression and mathematical subset consistency, not an independent holdout. Never apply to protected conflicts or unknown totals.",
+  "gate": {
+    "minimum_pairs": 100,
+    "minimum_fixtures": 20,
+    "minimum_positive_won_controls": 20,
+    "minimum_zero_total_controls": 20,
+    "maximum_subset_errors": 0,
+    "maximum_zero_bound_errors": 0,
+    "maximum_known_zero_net_errors": 0
+  },
+  "application": "Only empty missing_data targets. Unknown total is not zero. Positive totals without known wins remain unknown. Preserve all source values, non-target rows and previous failed source/BPS studies."
+}

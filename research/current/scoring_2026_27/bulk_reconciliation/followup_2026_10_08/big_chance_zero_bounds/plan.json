@@ -1,0 +1,8 @@
+{
+  "seasons": {"2019-20": 274, "2020-21": 363, "2022-23": 489, "2024-25": 719},
+  "purpose": "Trial explicit official team-season big_chance_missed totals against all 38 full official match responses. Only exact season-total exhaustion can qualify omitted match counters as zero. If the opponent missed no big chance, the keeper saved no big chance.",
+  "source": "https://www.statsperform.com/opta-event-definitions/",
+  "controls": "All closed compatible keeper big-chance saves in selected seasons, not an independent holdout. Freeze predictions before comparisons.",
+  "gate": {"minimum_zero_bound_controls": 20, "minimum_fixtures": 20, "maximum_bound_errors": 0},
+  "application": "Only missing_data empty targets; no default zeros, xG threshold or new scoring. Complete team-season identity, full 38-match inventory and explicit integer season total required. Positive residual abstains. Positive known keeper values veto a proposed zero."
+}

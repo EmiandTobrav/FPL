@@ -1,0 +1,15 @@
+{
+  "byte_identical_files": 9,
+  "files": {
+    "season_proofs.csv.gz": "432ca7468d2d50334802b6b659db218ff76180510f76c652ed07ec96e41cae2d",
+    "match_bounds.csv.gz": "37101e5443fb5089132f02692f24c2c5438e2b945212b0f31c0c1c559721022d",
+    "all_counter_bounds.csv.gz": "c1582ac0c08783f5cca881ee5aba9fcf89cd6cdae767e12f1b23c70042a9b6f6",
+    "predictions.csv.gz": "998260a9515c70768c7c75d40abaa1d6bc1a83221e74b8aa077e4e74f0f5aa4a",
+    "dependencies.json": "11afe55cd28110427202f0a692403ddfb4ed2efe3616b303e2e1aaf64aa35dc5",
+    "prediction_freeze.json": "62517ed8c3b34f7be7faf9762b1e3f418aec8287056898a03fc61e25261a42b7",
+    "results/closed_counter_controls.csv.gz": "d4ca6294ea20eaed03a85fb9db1e46cc0458dfcf055a47f785dafe78aa8f89f9",
+    "results/overlay.csv.gz": "e103d269e3b6fb929379d312fa18215a72d2f88a0eedc057ae34e26005570742",
+    "results/validation.json": "22e3a9c5271d5f8ff6a71fd3d3b9ba1396dccba673a07a7417f2eef21f95f3fd"
+  },
+  "network": false
+}

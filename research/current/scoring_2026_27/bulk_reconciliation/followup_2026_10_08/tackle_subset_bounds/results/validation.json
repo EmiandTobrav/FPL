@@ -1,0 +1,21 @@
+{
+  "known_counter_pairs": 61148,
+  "fixtures": 2280,
+  "positive_won_controls": 27873,
+  "zero_total_controls": 24097,
+  "known_zero_total_net_controls": 24097,
+  "subset_errors": 0,
+  "zero_bound_errors": 0,
+  "known_zero_net_errors": 0,
+  "limits": "Mathematical Opta subset and previously approved counter regression; shared upstream evidence, not an independent holdout. Does not qualify historical BPS clipping.",
+  "qualified": true,
+  "qualified_fields": [
+    "legacy_net_tackles",
+    "won_tackles"
+  ],
+  "new_fields": 2,
+  "by_field": {
+    "legacy_net_tackles": 1,
+    "won_tackles": 1
+  }
+}

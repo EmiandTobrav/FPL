@@ -1,0 +1,21 @@
+{
+  "byte_identical_files": 15,
+  "files": {
+    "predictions.csv.gz": "ef66ddc001e53badeb43959d86341f106e1821ea64fbedbc8a8e99b4bb64be0f",
+    "input_evidence.csv.gz": "8c72f3121807099477dc2e47335584cff209d5b77abbaf52b2e97bb439d32af6",
+    "prediction_freeze.json": "8f4c65cfe4cbd225ecdce3c136a0b0e2df92d1e990a544a6ebf64fe3c3b5db0b",
+    "application_freeze.json": "faa9e89f4bc2944149f7c08d1790dd4e63d2d1efa28737995c85a3c2c8b3d70e",
+    "results/closed_counter_controls.csv.gz": "b0f44824e68bbff5a58f9f9cde282d8e0f7008dc6179c46ae55f8239f9bd5876",
+    "results/field_summary.csv": "46cec202904a16041b78cf4d356b88758773384f1060178bb01cfac04e261829",
+    "results/findings.json": "169d098d6019a00c50778f6bf8edc1938280e09b48473a0509e6426dc74c472c",
+    "results/manifest.json": "8f43c9199d4325915f6ce646388f3b03836181ea3f85b717db72619e34b0ee29",
+    "results/match_readiness.csv": "9b0f1978c768f182e2bdca64fb5b35692568b70e31b0d6263f9d661200d3407e",
+    "results/overlay.csv.gz": "ef66ddc001e53badeb43959d86341f106e1821ea64fbedbc8a8e99b4bb64be0f",
+    "results/player_match_readiness.csv.xz": "75c08445a61fd5cb3eb0f7b256c8506ad5319124b8af15464b0bb0d8a124b10b",
+    "results/remaining_fields.csv.xz": "26b5dc5554f6ef25c3f38eca4267f37aaac5bb4b0205e3592151994ada0f83cd",
+    "results/requirements.csv.xz": "d47b28889681dd2632cecb5b40924739d22703f23990c0ca9486e8681aa1c851",
+    "results/validation.json": "fdca50c3f141886c6ba8e58a33b3dd1bee94adec02089f3713ce5864496338d7",
+    "results/zero_total_net_controls.csv.gz": "04789c8d445471ac157400a7670e2bab973eb79e897ff638b544798121e810bc"
+  },
+  "network": false
+}

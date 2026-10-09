@@ -1,0 +1,39 @@
+{
+  "old_open_fields": 11236,
+  "new_fields": 2,
+  "open_fields": 11234,
+  "unique_affected_player_matches": 10803,
+  "complete_player_matches": 66477,
+  "complete_matches": 824,
+  "new_complete_player_matches": 1,
+  "new_complete_matches": 0,
+  "zero_values": 2,
+  "positive_values": 0,
+  "new_fields_by_season": {
+    "2020-21": 2
+  },
+  "unchanged_ledger_rows": 775246,
+  "raw_fpl_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "known_counter_pairs": 61148,
+    "fixtures": 2280,
+    "positive_won_controls": 27873,
+    "zero_total_controls": 24097,
+    "known_zero_total_net_controls": 24097,
+    "subset_errors": 0,
+    "zero_bound_errors": 0,
+    "known_zero_net_errors": 0,
+    "limits": "Mathematical Opta subset and previously approved counter regression; shared upstream evidence, not an independent holdout. Does not qualify historical BPS clipping.",
+    "qualified": true,
+    "qualified_fields": [
+      "legacy_net_tackles",
+      "won_tackles"
+    ],
+    "new_fields": 2,
+    "by_field": {
+      "legacy_net_tackles": 1,
+      "won_tackles": 1
+    }
+  }
+}

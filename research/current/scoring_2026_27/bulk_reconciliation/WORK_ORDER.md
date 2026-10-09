@@ -54,12 +54,15 @@ Eksisterende kvalifiserte poengversjoner bevares, men utvides ikke nå.
 
 ## Nåværende status
 
-**11 236 åpne feltkrav i 10 804 spillerkamper.** **66 476 spillerkamper og
-824 hele kamper** har komplette input, av 77 280 og 2 660. [Siste kampinventar](followup_2026_10_08/espn_last_inventory/README.md)
+**11 234 åpne feltkrav i 10 803 spillerkamper.** **66 477 spillerkamper og
+824 hele kamper** har komplette input, av 77 280 og 2 660. Siste
+[delmengdeutfylling](followup_2026_10_08/tackle_subset_bounds/README.md)
+lukker to taklingsfelt og gjør én spillerkamp komplett. Tre tester og 15
+byteidentiske offline-replayfiler består. [Siste kampinventar](followup_2026_10_08/espn_last_inventory/README.md)
 avklarer ett assistkrav og gjør én spillerkamp komplett. 14 andre krav har
 komplette mål, men forblir åpne med ukjente årsaksbidrag. Ingen assistinventargap
 står igjen. Dette beviser ikke full dekning av foul/berøringer/returer/intensjon.
-Totalt **3 657 krav** er lukket siden omprioriteringen. Fem tester og 24
+Totalt **3 659 krav** er lukket siden omprioriteringen. Fem tester og 24
 byteidentiske replayfiler består. Alle gamle målavgjørelser, kjente assist-
 totaler og native rettelser bevares. Ingen ny assistregel, poengberegning eller trening.
 374 av 380 kamper i 2025/26 har tidligere kvalifiserte poengetiketter.
@@ -81,11 +84,16 @@ overstiger FPL-CBI. Ingen arkiv-only-rute eller ny primærbatch kvalifiseres.
 Kvalitetsflagg er grupper for kilde-/feltdefinisjon, ikke manuelle celleoppgaver.
 Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger.
 
+[Storsjansegrensen](followup_2026_10_08/big_chance_zero_bounds/README.md)
+feiler på ett kjent keepertilfelle blant 983 kontroller til tross for eksakt
+sesongavstemming. Ingen av 16 kandidater er utfylt. Ikke gjenta ruten uten
+nytt bevis som forklarer avviket.
+
 ## Prioritert gjennomføring
 
 **Innhenting styrer køen nedenfor.** De regelbaserte assistgruppenes betingede
 tak skal ikke prioriteres som om alle var rene kildegap. Start fra
-[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **1 966 krav**,
+[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **1 964 krav**,
 fordelt på manglende data/inventarer og kildekonflikter. Uttrekksunntaket er avklart.
 Velg en kilde som faktisk kan tilføre manglende felt eller komplette hendelser;
 bruk eksisterende kvalifiserte utfyllinger før utvikling av nye regler.
@@ -100,7 +108,7 @@ lukking eller innbyrdes rangering uten et konkret gjennomførbart kildeforsøk.
 
 | Arbeidsspor | Gjeldende omfang | Neste avgrensede handling |
 |---|---|---|
-| Manglende kildefelt og inventarer | 1 732 krav; blant annet 1 237 times tackled; ingen assistinventargap, 341 keeper-CBI og 48 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
+| Manglende kildefelt og inventarer | 1 730 krav; blant annet 1 237 times tackled; ingen assistinventargap, 341 keeper-CBI og 48 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
 | Kildekonflikter og FPL-uttrekk | 234 konflikter; ingen åpne uttrekksunntak | Innhent manglende bevis eller en kompatibel kildeversjon som kan forklare avviket. Bevar FPL og godkjente verdier. Keeperlokasjonens to Sánchez-krav inngår blant manglende data, men er sperret av kilde-/minuttavvik; ikke fyll dem med proxyer. Ingen ny scoring for å omgå sperren. |
 | Hendelsesbevis til senere assistomregning | 9 270 krav merket regelomregning; ingen inventargap står igjen | Skaff faktisk mottak, foul/hands, berøringer, returer, intensjon og kontinuitet der dette mangler. Betingede lukkingstak nedenfor er hjelp til å velge kildeomfang, ikke forventet gevinst. Utsett nye assistregler og store kontrollstudier; bruk eksisterende kvalifiserte regler når nytt kildebevis gir rask utfylling. |
 | Andre modellstatistikker og historiske inventarer | Egen dekningskartlegging; ikke talt som lukkede poengkrav | Hent manglende relevante xG/xA/xGI/xGC, defensive tellinger og faktiske frist-/roster-/statistikkversjoner. Gjenbruk kvalifiserte kampstarter og eksisterende statistikk. Ikke bygg features eller nye poengetiketter nå. |

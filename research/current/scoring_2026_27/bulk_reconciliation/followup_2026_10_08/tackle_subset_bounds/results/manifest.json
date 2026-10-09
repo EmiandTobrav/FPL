@@ -1,0 +1,12 @@
+{
+  "closed_counter_controls.csv.gz": "b0f44824e68bbff5a58f9f9cde282d8e0f7008dc6179c46ae55f8239f9bd5876",
+  "field_summary.csv": "46cec202904a16041b78cf4d356b88758773384f1060178bb01cfac04e261829",
+  "findings.json": "169d098d6019a00c50778f6bf8edc1938280e09b48473a0509e6426dc74c472c",
+  "match_readiness.csv": "9b0f1978c768f182e2bdca64fb5b35692568b70e31b0d6263f9d661200d3407e",
+  "overlay.csv.gz": "ef66ddc001e53badeb43959d86341f106e1821ea64fbedbc8a8e99b4bb64be0f",
+  "player_match_readiness.csv.xz": "75c08445a61fd5cb3eb0f7b256c8506ad5319124b8af15464b0bb0d8a124b10b",
+  "remaining_fields.csv.xz": "26b5dc5554f6ef25c3f38eca4267f37aaac5bb4b0205e3592151994ada0f83cd",
+  "requirements.csv.xz": "d47b28889681dd2632cecb5b40924739d22703f23990c0ca9486e8681aa1c851",
+  "validation.json": "fdca50c3f141886c6ba8e58a33b3dd1bee94adec02089f3713ce5864496338d7",
+  "zero_total_net_controls.csv.gz": "04789c8d445471ac157400a7670e2bab973eb79e897ff638b544798121e810bc"
+}

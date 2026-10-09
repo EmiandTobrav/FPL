@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 236**,
+**14 893 åpne feltkrav**, nå **11 234**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,8 +24,8 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 1 732 manglende dataverdier/inventarer og 234 kildekonflikter:
-**1 966 krav**. **9 270 assistkrav merket regelomregning**
+omfatter 1 730 manglende dataverdier/inventarer og 234 kildekonflikter:
+**1 964 krav**. **9 270 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
@@ -36,7 +36,26 @@ utfyllingskandidater. Påviste kompatible bulkinnhentinger kan fortsette;
 nødvendige kontroller beholdes. Samle små utfyllinger i felles batcher og
 rapporter tidsbruk sammen med faktiske lukkinger.
 
-## Nyeste datagapleveranse – siste assistinventar innhentet
+## Nyeste datagapleveranse – to taklingsfelt fra godkjent nulltotal
+
+**11 234 åpne krav i 10 803 spillerkamper.** **66 477 spillerkamper og 824
+hele kamper** er inputkomplette. [Eksakt delmengdeutfylling](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_subset_bounds/README.md)
+avklarer vunne og signerte nettotaklinger til null for Joel Ward, kamp 31 i
+2020/21. 61 148 godkjente tellerpar har null avvik; tre tester og 15
+byteidentiske offline-replayfiler består. Alle andre ledgerverdier, kilder,
+assists og native rettelser bevares. Ingen BPS-klipping eller ny poengversjon.
+Totalt **3 659 krav** er lukket siden omprioriteringen; innhentingskøen har
+**1 964 krav**, og **9 270 assistkrav** beholdes. Treningsklarhet gjenstår.
+
+
+Ny kildeprøve for storsjanseredninger legges til side: alle 80 lag-sesonger
+stemmer mot eksplisitte sesongtotaler, men ett av 983 kjente keepertilfeller
+motsier nullgrensen. [Bevis og avgrensning](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds/README.md).
+Ingen av 16 kandidater anvendes. To tester og ni byteidentiske replayfiler
+bevarer feilen; tidligere godkjent verdi endres ikke. Gjenta ikke denne
+ruten uten nye fakta som forklarer avviket.
+
+## Tidligere datagapleveranse – siste assistinventar innhentet
 
 **11 236 åpne krav i 10 804 spillerkamper.** **66 476 spillerkamper og 824
 hele kamper** er inputkomplette. [Siste kamprespons](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_last_inventory/README.md)
