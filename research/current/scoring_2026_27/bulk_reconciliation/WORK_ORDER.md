@@ -49,19 +49,23 @@ Eksisterende kvalifiserte poengversjoner bevares, men utvides ikke nå.
 
 ## Nåværende status
 
-**11 257 åpne feltkrav i 10 821 spillerkamper.** **66 459 spillerkamper og
-824 hele kamper** har komplette input, av 77 280 og 2 660. [FPL-historikken](followup_2026_10_08/ferguson_fpl_history/README.md)
-avklarer ett uttrekksunntak og gjør én spillerkamp komplett. Seks faktarettelser
-lagres separat; native BPS 4 beholdes. Totalt **3 636 krav** er lukket siden
-omprioriteringen. Alle straffemålkrav er allerede lukket. ESPN-foul/tackle/CBI-
-rutene feiler og legges til side uten nye fakta. CURRENTs native_fpl_corrections-
-peker skal brukes når neste kanoniske/poengversjon bygges; gamle labels bevares.
+**11 237 åpne feltkrav i 10 805 spillerkamper.** **66 475 spillerkamper og
+824 hele kamper** har komplette input, av 77 280 og 2 660. [Inventarbatchen](followup_2026_10_08/espn_goal_inventory/README.md)
+gjenbruker kvalifiserte kampresponser til 75 mål i 23 kamper. Eksisterende
+scorer-selvutelukkelse lukker 20 assistnuller og gjør 16 spillerkamper komplette.
+548 andre assistinventargap har komplette mål, men kravene står åpne med
+manglende årsaksbevis; disse er ikke telt som lukkede feltkrav. 15 inventargap
+står igjen i West Ham–Southampton 2022/23 kamp 290: neste kildeoppslag.
+Totalt **3 656 krav** er lukket siden omprioriteringen. Fem tester og 17
+byteidentiske replayfiler består. Alle gamle målavgjørelser og kjente totaler bevares.
+CURRENT peker til nye inventarer/deltakere og klassifisering; det native FPL-
+rettelsestillegget bevares. Ingen ny assistregel, poengberegning eller trening.
 374 av 380 kamper i 2025/26 har tidligere kvalifiserte poengetiketter.
 Ny omregning og full før-frist-/treningsintegrasjon følger senere.
 
 Numerisk rest: 48 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
 manglende keeperverdier og 204 beskyttede konflikter), 2 keeperlokasjoner og
-mindre grupper. Assists gjenstår i 9 291 rader. Alle 994 skuddkrav er allerede
+mindre grupper. Assists gjenstår i 9 271 rader. Alle 994 skuddkrav er allerede
 lukket. [Keeperlokasjon](followup_2026_10_08/fotmob_keeper_location/README.md)
 er direkte telt. [Primærens hele sesonger](followup_2026_10_08/primary_keeper_location/README.md) lukket ytterligere 14. De to siste Sánchez-kravene er sperret fordi kilde-/FPL-minutter avviker i kamp 47.
 [CBI-V1](followup_2026_10_08/fotmob_cbi_conservation/README.md) feilet.
@@ -79,11 +83,11 @@ Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger
 
 **Innhenting styrer køen nedenfor.** De regelbaserte assistgruppenes betingede
 tak skal ikke prioriteres som om alle var rene kildegap. Start fra
-[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **2 549 krav**,
+[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **1 981 krav**,
 fordelt på manglende data/inventarer og kildekonflikter. Uttrekksunntaket er avklart.
 Velg en kilde som faktisk kan tilføre manglende felt eller komplette hendelser;
 bruk eksisterende kvalifiserte utfyllinger før utvikling av nye regler.
-De **8 708 regelomregningskravene** er fortsatt åpne. Hent deres manglende
+De **9 256 regelomregningskravene** er fortsatt åpne. Hent deres manglende
 årsaksbevis i første fase; nye regelberegninger og større kontrollstudier
 følger etter innhentingen. Ingen av disse tallene er et bevis på full dekning.
 
@@ -94,9 +98,9 @@ lukking eller innbyrdes rangering uten et konkret gjennomførbart kildeforsøk.
 
 | Arbeidsspor | Gjeldende omfang | Neste avgrensede handling |
 |---|---|---|
-| Manglende kildefelt og inventarer | 2 315 krav; blant annet 1 237 times tackled, 583 assistinventarer, 341 keeper-CBI og 48 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
+| Manglende kildefelt og inventarer | 1 747 krav; blant annet 1 237 times tackled, 15 assistinventarer, 341 keeper-CBI og 48 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
 | Kildekonflikter og FPL-uttrekk | 234 konflikter; ingen åpne uttrekksunntak | Innhent manglende bevis eller en kompatibel kildeversjon som kan forklare avviket. Bevar FPL og godkjente verdier. Keeperlokasjonens to Sánchez-krav inngår blant manglende data, men er sperret av kilde-/minuttavvik; ikke fyll dem med proxyer. Ingen ny scoring for å omgå sperren. |
-| Hendelsesbevis til senere assistomregning | 8 708 krav merket regelomregning, i tillegg til de 583 inventargapene over | Skaff faktisk mottak, foul/hands, berøringer, returer, intensjon og kontinuitet der dette mangler. Betingede lukkingstak nedenfor er hjelp til å velge kildeomfang, ikke forventet gevinst. Utsett nye assistregler og store kontrollstudier; bruk eksisterende kvalifiserte regler når nytt kildebevis gir rask utfylling. |
+| Hendelsesbevis til senere assistomregning | 9 256 krav merket regelomregning, i tillegg til de 15 inventargapene over | Skaff faktisk mottak, foul/hands, berøringer, returer, intensjon og kontinuitet der dette mangler. Betingede lukkingstak nedenfor er hjelp til å velge kildeomfang, ikke forventet gevinst. Utsett nye assistregler og store kontrollstudier; bruk eksisterende kvalifiserte regler når nytt kildebevis gir rask utfylling. |
 | Andre modellstatistikker og historiske inventarer | Egen dekningskartlegging; ikke talt som lukkede poengkrav | Hent manglende relevante xG/xA/xGI/xGC, defensive tellinger og faktiske frist-/roster-/statistikkversjoner. Gjenbruk kvalifiserte kampstarter og eksisterende statistikk. Ikke bygg features eller nye poengetiketter nå. |
 
 Den gamle native2025-straffe-par-piloten ga samme prediksjonsomfang og bare ett
@@ -115,7 +119,7 @@ over. Ingen omprioritering reduserer datakrav eller senker kontrollgater.
 
 Dette er **betingede tak hvis alle resterende målbidrag i gruppen avklares**, ikke
 prognoser eller nye avklaringer. Berørte krav overlapper og skal ikke summeres.
-Tallene er beregnet etter alle kandidatgrenser; 583 inventar-/identitetsgap står
+Tallene er beregnet etter alle kandidatgrenser; 15 inventar-/identitetsgap står
 utenfor målgruppene. Gruppetak kan øke når andre blokkeringer fjernes.
 
 | Gruppe | Mål | Berørte krav | Betinget lukkbare krav | Nye komplette spillerkamper | Nye hele kamper |
@@ -126,6 +130,7 @@ utenfor målgruppene. Gruppetak kan øke når andre blokkeringer fjernes.
 | assisted_goal_without_unique_pass_certificate | 391 | 1167 | 980 | 956 | 81 |
 | own_goal | 228 | 890 | 818 | 804 | 50 |
 | no_positive_goal_assist_certificate | 352 | 817 | 747 | 690 | 57 |
+| new_goal_inventory_facts_pending | 75 | 548 | 548 | 396 | 3 |
 | direct_free_kick | 23 | 308 | 285 | 272 | 4 |
 
 ## Kontroller og kildeprioritet
@@ -143,7 +148,9 @@ tidligere godkjente mål-assists. Kontrollene deler Opta-kilde og tidligere sett
 fasit; de er regresjon, ikke nye uavhengige holdout-observasjoner.
 
 `python priority/build.py` bygger prioriteringsfilene fra gjeldende CURRENT
-og den nye eksplisitte assisttotalpekeren (med gammel kompatibel fallback). ID-kolonnen leses nå som
+og CURRENTs eksplisitte assisttotal-/klassifiseringspekere (med gamle kompatible fallbacks).
+Klassifiseringsfilen hashkontrolleres; de 75 nye kildemålene har en egen gruppe
+for manglende årsaksfakta. Ingen uklassifiserte avhengigheter er skjult. ID-kolonnen leses nå som
 tekst, slik at et enkelt mål-ID ikke feiltolkes som flyttall i pandas-chunker.
 `python followup_2026_10_08/fotmob_keeper_location/reproduce.py` gjenskaper den nye keeperlokasjonsbatchen i
 separat kopi uten nettverk eller bootstrap. Ti nye lokasjonstester består. Elleve keeperresultater gjenskapes byteidentisk;

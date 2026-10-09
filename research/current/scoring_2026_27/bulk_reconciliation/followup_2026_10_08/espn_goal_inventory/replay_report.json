@@ -1,0 +1,23 @@
+{
+  "byte_identical_files": 17,
+  "files": {
+    "goal_inventory.csv.gz": "fa9f32bd7de85a6ec3f7d3a0c14e92229acfa27ad31b74cca6007e85ae0b794a",
+    "participants.csv.gz": "b600ef52b4dcfde8f6508882439870e0efe554999305c798ec0acc945374db32",
+    "identity_bridge.csv.gz": "2f91081b8676c5cbc8501c00499a282ed635cccb011a5814d81caa4cc0fce632",
+    "team_goal_coverage.csv.gz": "de4064d3ba80f0782f23d4e19f0f9aebf03230d9b1b9161af15215844cf0e565",
+    "prediction_freeze.json": "3f6692317fa488985c74a1c1a99d71c0e002f24d7200d2c298fb5d7b09691fb4",
+    "application_freeze.json": "79963a77d5f79e9a419b9978f727df79460f82a3a8345a59314a535a9aad9e7a",
+    "results/field_summary.csv": "d9c6edd0d3ad0f29e2a93774f104658195bf63827f43179eeb75d8c70274f7b4",
+    "results/findings.json": "7c8b54dd37e9b163e05af338baa9151021f4c1dd93156c3183c05261a54fd1f5",
+    "results/goal_decisions.csv.gz": "b55e5128325f1232f9a7bc47a216753ca035182f44a9eda3deda111da641bd8a",
+    "results/goal_group_classification.csv.gz": "bb09a0269fdabf94f78d696d4f5664b73a6fbe218cc8b0b7f6b4bb6998befd33",
+    "results/manifest.json": "b14495bc83375f4151d42f5c82a5b5e53b6f25900a82895371497be0dfa8791c",
+    "results/match_readiness.csv": "85cd38550bb50969fc03590f3283f134558c448c1d65fafa3e641a0646d6d799",
+    "results/overlay.csv.gz": "714b5db6548ecaa2c0552fd88b90f9d5b4aa6a30739433106fd6c5dfa24cf570",
+    "results/player_match_readiness.csv.xz": "d2d58d2af8b174356a45af958c7548007b1ca75774bb4f5df31cc8b6f32dde58",
+    "results/player_match_totals.csv.gz": "b3fcf2f114cdec8b7708fa6d9282f5ab341a8cfc6f9b79c6ceacb24e0281cba5",
+    "results/remaining_fields.csv.xz": "dec18820596a26e8de2993462572a524687b44ab2e4504328b578d1e5bfe68a6",
+    "results/requirements.csv.xz": "f7b6c0bd430547bfebca28f678e29e7fe136435b9ef0b1c1feca2e5093b6d15e"
+  },
+  "network": false
+}

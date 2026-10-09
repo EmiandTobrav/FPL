@@ -19,13 +19,18 @@ Følg alltid gjeldende filpeker ved videre arbeid; tallene her er et startpunkt.
 Registrer også relevante manglende modellstatistikker utenfor poengrestlisten
 separat, slik at lukking av denne listen ikke fremstilles som full datadekning.
 
-Gjeldende utgangspunkt er nå **11 257 åpne krav**: **2 315 manglende
+Gjeldende utgangspunkt er nå **11 237 åpne krav**: **1 747 manglende
 dataverdier/inventarer**, **234 kildekonflikter**, **ingen gjenværende FPL-uttrekksunntak**
-og **8 708 assistkrav merket regelomregning**. De første tre kategoriene
-utgjør en egen [innhentingskø med 2 549 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
+og **9 256 assistkrav merket regelomregning**. De første tre kategoriene
+utgjør en egen [innhentingskø med 1 981 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
 Dette er en arbeidsvisning, ikke en redusert restliste. Også assistkravene
 kan mangle faktisk hendelsesbevis; innhent slike bevis nå, men utsett nye
 regelberegninger og poengetiketter. Ingen kategori anses automatisk komplett.
+
+548 tidligere assistinventargap har komplette mål etter siste kildebatch,
+men deres ukjente årsaksbidrag er fortsatt åpne. Bare 20 faktiske assisttotaler
+ble lukket i denne batchen; statusflyttingen teller ikke som 548 feltlukkinger.
+15 inventarkrav står igjen i én kamp, West Ham–Southampton 2022/23 kamp 290.
 
 **Prioriteringsendringen gjelder også assistarbeidet:** let først etter
 manglende kildefelt og komplette hendelsesinventarer. Ikke la utvikling av

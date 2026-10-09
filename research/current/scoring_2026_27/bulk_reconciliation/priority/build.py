@@ -1,6 +1,6 @@
 """Refresh deduplicated priorities from the published cumulative snapshot."""
 from pathlib import Path
-import pandas as pd,json,gzip
+import pandas as pd,json,gzip,hashlib
 P=Path(__file__).resolve().parent;S=P.parent/'followup_2026_10_08';K=['season','fixture','code']
 def save(d,n):(P/n).write_bytes(gzip.compress(d.to_csv(index=False).encode(),mtime=0) if n.endswith('.gz') else d.to_csv(index=False).encode())
 def main():
@@ -8,7 +8,10 @@ def main():
  # One field/season row is a review group, not a queue of individual manual jobs.
  quality={'field_season_groups':len(q.groupby(['field','season'])),'external_quality_fields':len(q),'quality_player_matches':len(q[K].drop_duplicates()),'open_or_quality_player_matches':len(r[r.is_open|r.needs_external_quality_review][K].drop_duplicates())};(P/'quality_summary.json').write_text(json.dumps(quality,indent=2)+'\n')
  totals_path=S.parent/current.get('assist_totals','followup_2026_10_08/assist_touch_bounds/results/player_match_totals.csv.gz')
- totals=pd.read_csv(totals_path,dtype={'unresolved_goal_ids':'string'},low_memory=False);a=pending[pending.field.eq('assists_2026_27')][K].merge(totals,on=K,validate='one_to_one');groups=pd.read_csv(P/'goal_group_classification.csv.gz');mapping=groups.set_index(['match_id','event_id']).group.to_dict();rows=[];key_goals={}
+ totals=pd.read_csv(totals_path,dtype={'unresolved_goal_ids':'string'},low_memory=False);a=pending[pending.field.eq('assists_2026_27')][K].merge(totals,on=K,validate='one_to_one')
+ groups_path=S.parent/current['assist_goal_classification'] if 'assist_goal_classification' in current else P/'goal_group_classification.csv.gz'
+ if 'assist_goal_classification_sha256' in current:assert hashlib.sha256(groups_path.read_bytes()).hexdigest()==current['assist_goal_classification_sha256']
+ groups=pd.read_csv(groups_path);assert not groups.duplicated(['match_id','event_id']).any();mapping=groups.set_index(['match_id','event_id']).group.to_dict();rows=[];key_goals={}
  for x in a.itertuples():
   key=(x.season,x.fixture,x.code);ids=[] if pd.isna(x.unresolved_goal_ids) else [int(v) for v in str(x.unresolved_goal_ids).split('|') if v]
   key_goals[key]={(x.match_id,e) for e in ids}

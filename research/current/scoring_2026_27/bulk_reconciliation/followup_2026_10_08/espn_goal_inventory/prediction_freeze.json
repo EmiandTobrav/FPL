@@ -1,0 +1,131 @@
+{
+  "files": {
+    "prepare.py": "1940df183fbc5e134c75dc77666513d9f3e01968900cc43e81dd4508af010fc3",
+    "predict.py": "4d6885d11f404b61727f026d65589ed5d0b5b83ebe78602b6ffaa948faaefb0c",
+    "selection_freeze.json": "2b6dea9ae38e1f5b1401c8bf70201aaa34156df236e2a3ee989d5a96314d0fa6",
+    "protocol.json": "a9c9ed1d7939a5701705713e5be57e3b0eef338f1b07262211fc14c0c9d42f35",
+    "dependencies.json": "b77fcf3492c59700cc05a0d5f395e62c5ac2761d604a8a591c0dd21ae7f01215",
+    "goal_inventory.csv.gz": "fa9f32bd7de85a6ec3f7d3a0c14e92229acfa27ad31b74cca6007e85ae0b794a",
+    "participants.csv.gz": "b600ef52b4dcfde8f6508882439870e0efe554999305c798ec0acc945374db32",
+    "identity_bridge.csv.gz": "2f91081b8676c5cbc8501c00499a282ed635cccb011a5814d81caa4cc0fce632",
+    "team_goal_coverage.csv.gz": "de4064d3ba80f0782f23d4e19f0f9aebf03230d9b1b9161af15215844cf0e565"
+  },
+  "raw_source_proofs": [
+    {
+      "file": "inputs/raw/summary_541710.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=541710",
+      "sha256": "285632a176f1e18ae2e34a2a9d6d93ac9fb6f56e91762b5053a02fc6a840cb42"
+    },
+    {
+      "file": "inputs/raw/summary_541706.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=541706",
+      "sha256": "5c3c3b4e7416a09172fc4bfe04e19b1ce29f7c48e9f49e7929bb129d77382846"
+    },
+    {
+      "file": "inputs/raw/summary_541705.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=541705",
+      "sha256": "b3ed9608aa9f5a617be259ddd610024cc1e42bfa53ffed704b1ba9f079c2fc76"
+    },
+    {
+      "file": "inputs/raw/summary_541712.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=541712",
+      "sha256": "9ba174aa5e5baaec3413bf7cd3a3aa7928facc5d5b4f0056b175f155eba32640"
+    },
+    {
+      "file": "inputs/raw/summary_578553.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=578553",
+      "sha256": "ba2029386f54dabe064255af5e5e61d4d5e9d24c79826066de3c22b885b73540"
+    },
+    {
+      "file": "inputs/raw/summary_578555.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=578555",
+      "sha256": "06b4c852ebdd97a0790e303184419782c83781bd81118712de6e5d4403aa4fc2"
+    },
+    {
+      "file": "inputs/raw/summary_578554.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=578554",
+      "sha256": "01ea674e14d757fe9b37bb18377d05e0fcf1f8574d729b3b681294518bb5dc87"
+    },
+    {
+      "file": "inputs/raw/summary_578556.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=578556",
+      "sha256": "df44724d0f352cd5f1e6a39d17d39803447f30d23b1472c78f697aac1ccd823e"
+    },
+    {
+      "file": "inputs/raw/summary_578551.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=578551",
+      "sha256": "65774468f3a7533ddaabd1c51e44fe360116684eb168a43a173318f6bd726bf1"
+    },
+    {
+      "file": "inputs/raw/summary_578552.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=578552",
+      "sha256": "3d8fcea84ad5468f36aa30d682749cea87e1d0c782404c6c1dc614564762a6e7"
+    },
+    {
+      "file": "inputs/raw/summary_578557.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=578557",
+      "sha256": "243d56c6bad4b50c0bcdac35e2cc61b45794fd23ba2f786ad52785bf25421f10"
+    },
+    {
+      "file": "inputs/raw/summary_638102.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638102",
+      "sha256": "0d893e0ac2b97e957d206e060642fa074ad841009404c20d72b97ab4eea4fd55"
+    },
+    {
+      "file": "inputs/raw/summary_638103.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638103",
+      "sha256": "d7b6b75f7ed3153179ad58474d84b05f4e7d46a1aa5efd0ea96f8f49490b51be"
+    },
+    {
+      "file": "inputs/raw/summary_638104.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638104",
+      "sha256": "cd20de61458e36c94bdcc9c806e12f900f839f6177016f4699697292ad1d00d8"
+    },
+    {
+      "file": "inputs/raw/summary_638105.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638105",
+      "sha256": "57ca0106dcff2afdfe5014c1e23ef59e0e575c6c318c72383b3645f68cf4efee"
+    },
+    {
+      "file": "inputs/raw/summary_638106.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638106",
+      "sha256": "908b3ec67a4de5ad41f8de94a4205cb273670fa82d578ea27a02c34d2e1717ab"
+    },
+    {
+      "file": "inputs/raw/summary_638107.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638107",
+      "sha256": "01b251295a168d2882a9d9dcb41124dc3feb70b10e74e99320d08f9900c7ea2f"
+    },
+    {
+      "file": "inputs/raw/summary_638108.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638108",
+      "sha256": "644924f4d240a5017e106479071c7e0b2c7acd5df74d5b88517df66edba81567"
+    },
+    {
+      "file": "inputs/raw/summary_638100.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638100",
+      "sha256": "908215a36eec294fa5ae62180f2d7e8f09cc1964923bfdc1f1ba33ebec21aa9c"
+    },
+    {
+      "file": "inputs/raw/summary_638099.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=638099",
+      "sha256": "25b83cd0ed88d136301a40f9967cb72faa35279f0893dfd615e9e13ef870f830"
+    },
+    {
+      "file": "inputs/raw/summary_704404.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=704404",
+      "sha256": "b3926621508f50036c5f272d40abeb6f020714d83f44b4c8567e6e65060479ef"
+    },
+    {
+      "file": "inputs/raw/summary_704407.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=704407",
+      "sha256": "94495ea345f319ae1d6f76b6609f28bfa304f1068bbd755556ae5279518b2f8c"
+    },
+    {
+      "file": "inputs/raw/summary_704401.json",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=704401",
+      "sha256": "28c575645df48ff7701cc3d947c5e667f10bd3835d97dfabf59c5f20ae2adefe"
+    }
+  ],
+  "assist_rule_predictions": false
+}

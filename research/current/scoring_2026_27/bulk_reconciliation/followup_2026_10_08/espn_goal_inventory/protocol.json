@@ -1,0 +1,15 @@
+{
+  "purpose": "Acquire all 23 current missing-data assist fixtures in the qualified ESPN batch with zero prior goal rows. Reuse scorer self-exclusion and complete-goal-sum aggregation only.",
+  "identity": "Preserve existing IDs; for absent archive IDs use explicit canonical namespaces fpl_fixture:{season}:{fixture}, fpl_team:{season}:{historical_team_id}, fpl_player:{code}. These are FPL keys, not invented Opta IDs. Bind ESPN athlete IDs through published primary-coded native bridge.",
+  "event_identity": "Reserve negative integer ESPN play IDs as a disjoint namespace; unique and collision checked. Append only to fixtures with zero prior goal rows.",
+  "gates": [
+    "Reuse pinned published ESPN complete typed goal vectors and unchanged 30-fixture source controls",
+    "All scorer/native goal and own-goal vectors and final scores agree",
+    "Native own-team goal count equals complete inventory",
+    "Never copy provider assists; new goal decisions all unresolved",
+    "Only existing scorer self-exclusion/team-zero aggregation yields totals",
+    "Preserve all known totals, old goals and ledger source values"
+  ],
+  "hist_projection_source_sha256": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+  "point_rescoring": false
+}

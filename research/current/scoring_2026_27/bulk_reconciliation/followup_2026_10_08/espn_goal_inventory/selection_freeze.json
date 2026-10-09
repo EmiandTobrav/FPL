@@ -1,0 +1,7 @@
+{
+  "inputs/plan.csv.gz": "05fde1d66c126c1361c000d33790bfb56b279c6e8450c7f33bfb6e7adc14585d",
+  "inputs/native_identity_scope.csv.gz": "21348b878c1dd4b0bc5d07db601095006c1067b0503ca7fccfa3e80d8f2e2dc5",
+  "inputs/parent_CURRENT.json": "2f5f756f9715a4712dc8e6272facbdd70f820ef1862461c55547a45f98d11088",
+  "protocol.json": "a9c9ed1d7939a5701705713e5be57e3b0eef338f1b07262211fc14c0c9d42f35",
+  "dependencies.json": "b77fcf3492c59700cc05a0d5f395e62c5ac2761d604a8a591c0dd21ae7f01215"
+}

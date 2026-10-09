@@ -1,0 +1,35 @@
+{
+  "old_open_fields": 11257,
+  "new_fields": 20,
+  "open_fields": 11237,
+  "unique_affected_player_matches": 10805,
+  "complete_player_matches": 66475,
+  "complete_matches": 824,
+  "new_complete_player_matches": 16,
+  "new_complete_matches": 0,
+  "new_goal_inventory_rows": 75,
+  "new_goal_decisions": 0,
+  "acquired_fixture_inventories": 23,
+  "acquired_team_inventories": 46,
+  "inventory_requirements_now_rule_pending": 548,
+  "new_fields_by_season": {
+    "2019-20": 4,
+    "2020-21": 6,
+    "2022-23": 8,
+    "2024-25": 2
+  },
+  "zero_values": 20,
+  "positive_values": 0,
+  "remaining_assists": 9271,
+  "previously_complete_assist_totals_preserved": 67989,
+  "unchanged_ledger_rows": 774680,
+  "raw_fpl_preserved": true,
+  "old_scoring_labels_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "reused_published_source_controls": true,
+    "new_assist_rule": false,
+    "prior_goal_decisions_preserved": 7543,
+    "source_goal_vectors_complete": true
+  }
+}

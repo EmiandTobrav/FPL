@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 257**,
+**14 893 åpne feltkrav**, nå **11 237**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,13 +24,38 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 2 315 manglende dataverdier/inventarer og 234 kildekonflikter:
-**2 549 krav**. **8 708 assistkrav merket regelomregning**
+omfatter 1 747 manglende dataverdier/inventarer og 234 kildekonflikter:
+**1 981 krav**. **9 256 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
 
-## Nyeste datagapleveranse – Ferguson avklart mot historisk FPL
+## Nyeste datagapleveranse – 23 komplette målinventarer, 20 assistkrav lukket
+
+**11 237 åpne krav i 10 805 spillerkamper.** **66 475 spillerkamper og 824
+hele kamper** er inputkomplette. [Inventarbatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_goal_inventory/README.md)
+gjenbruker de kvalifiserte kampresponsene til 75 mål i 23 kamper og 46 lag.
+Ingen ny assistregel utvikles. Alle nye målavgjørelser forblir unresolved;
+scorer-selvutelukkelsen i den eksisterende aggregatoren gir 20 trygge nuller.
+16 flere spillerkamper er komplette, ingen nye hele kamper.
+
+548 andre assistkrav har komplette inventarer, men mangler fortsatt årsaksbevis.
+De flyttes til regelomregning med tom verdi og beholdes åpne. Det er ikke
+548 lukkede feltkrav. 15 inventarkrav står igjen, alle i 2022/23 kamp 290,
+West Ham–Southampton. Neste kildeoppslag kan derfor avgrenses til denne kampen.
+
+Alle 7 543 gamle målavgjørelser og 67 989 kjente assisttotaler bevares.
+Manglende arkiv-ID-er får eksplisitte FPL-nøkler; ingen Opta-ID oppdiktes.
+ESPN-play-ID-er har separat negativt ID-rom. Native korrigeringspeker og
+alle rå FPL-/kildekolonner bevares. Fem tester består; 17 filer gjenskapes
+byteidentisk i isolert offline-replay. Kildekontroller gjenbrukes og er ikke
+en ny uavhengig holdout. Ingen nye poenglabels, features eller modelltrening.
+
+Innhentingskø: **1 981 krav** (1 747 manglende data, 234 konflikter).
+**9 256 regelomregningskrav** beholdes og kan fortsatt mangle fysiske bevis.
+Totalt **3 656 feltkrav er lukket** siden omprioriteringen. Full treningsklarhet gjenstår.
+
+## Tidligere datagapleveranse – Ferguson avklart mot historisk FPL
 
 **11 257 åpne krav i 10 821 spillerkamper.** **66 459 spillerkamper og 824
 hele kamper** er inputkomplette. [FPL-spillerhistorikken](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/ferguson_fpl_history/README.md)
