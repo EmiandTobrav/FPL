@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 234**,
+**14 893 åpne feltkrav**, nå **11 219**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,8 +24,8 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 1 730 manglende dataverdier/inventarer og 234 kildekonflikter:
-**1 964 krav**. **9 270 assistkrav merket regelomregning**
+omfatter 1 715 manglende dataverdier/inventarer og 234 kildekonflikter:
+**1 949 krav**. **9 270 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
@@ -36,7 +36,27 @@ utfyllingskandidater. Påviste kompatible bulkinnhentinger kan fortsette;
 nødvendige kontroller beholdes. Samle små utfyllinger i felles batcher og
 rapporter tidsbruk sammen med faktiske lukkinger.
 
-## Nyeste datagapleveranse – to taklingsfelt fra godkjent nulltotal
+## Nyeste datagapleveranse – 15 storsjanseredninger med kildevern
+
+**11 219 åpne krav i 10 802 spillerkamper.** **66 478 spillerkamper og 824
+hele kamper** er inputkomplette. [Den nye kildeversjonen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/README.md)
+lukker 15 tidligere ukjente keeperverdier til null. Et allerede godkjent
+hendelsesunntak for Alex McCarthy sperrer hele den aggregerte Aston
+Villa-kilden i 2019/20. Én av de opprinnelige 16 kandidatene forblir ukjent.
+Alle 983 gamle kontrolltilfeller er med: 971 numeriske treff og 12 eksplisitte
+kildeabsteneringer, inkludert det gamle positive avviket. Originalpiloten
+forblir mislykket. Tre tester og 17 byteidentiske offline-replayfiler består.
+Totalt **3 674 krav** er lukket siden omprioriteringen. Innhentingskøen har
+**1 949 krav**, og 9 270 assistkrav beholdes. Native FPL, øvrige verdier,
+assists, rettelser og gamle poengversjoner bevares. Ny poengberegning er utsatt.
+
+En kort [kildekontroll for forventningsstatistikk](../research/current/training_dataset/statistics_source_audit/README.md)
+finner ingen xG-/xA-felt i rå spillerstatistikk. Pannadatas sesongvise
+modellberegninger kan ikke automatisk brukes som native FPL-statistikk;
+skuddfeltenes xG-/xGOT-opphav må fortsatt dokumenteres. Ingen modellstatistikk
+er fylt med en alternativ modell eller talt som lukkede felt.
+
+## Tidligere datagapleveranse – to taklingsfelt fra godkjent nulltotal
 
 **11 234 åpne krav i 10 803 spillerkamper.** **66 477 spillerkamper og 824
 hele kamper** er inputkomplette. [Eksakt delmengdeutfylling](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_subset_bounds/README.md)

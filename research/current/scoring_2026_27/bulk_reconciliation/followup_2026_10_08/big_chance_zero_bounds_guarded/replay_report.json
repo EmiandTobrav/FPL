@@ -1,0 +1,23 @@
+{
+  "byte_identical_files": 17,
+  "files": {
+    "source_guards.csv.gz": "5365a4286eff05aa841102ebf1e778a1b85e34f73b7abc48a84b95a4947d1343",
+    "guard_event_evidence.csv.gz": "2382df9b01a18eb67a8349efa4bee53ac02005aa47c7d898989d70e0cc23f75b",
+    "all_counter_bounds.csv.gz": "3ab544727a52d18f718d210c32777b43838b3b21af966edd3ba992d7264c6911",
+    "predictions.csv.gz": "b821a6d09017a51bd2d4ee7dccbcab5befa5536bbf16a4b2477936f569cc0997",
+    "prediction_freeze.json": "7cdb4b8b2bb56df439cc916de12326788cf904428620a150c4e5ece1f978bae5",
+    "application_freeze.json": "739169bc1b9b26266cecfb0afbf02b9926e1f90a6dd1883645282aedd42b5da4",
+    "results/closed_counter_controls.csv.gz": "b33e9bac7c2f80443f9b0c1fc72e625544057f129fa5edf434c08f93a1ee2042",
+    "results/field_summary.csv": "3c5f24949606b2ec4bbb56f5afc0c1c45321739b005f3078595705f1563c4ec2",
+    "results/findings.json": "2a84a0d4ec32d20bfdad1bd235bf7dcfb72bcfff9941b45fbce908886de43ee1",
+    "results/guard_negative_controls.csv.gz": "7963f5bed641a723f5059a80f1b2909e457bbd8e6ad4a118529d31f67ecbd166",
+    "results/manifest.json": "f89bb88dac73c40c026abbdf3717ca012549e2802a9c95aa726b9c6c45ed521f",
+    "results/match_readiness.csv": "e91b5db39b85ff32a92b8ea884b40060003a3fb3da1be03e32e7eddff96d6606",
+    "results/overlay.csv.gz": "b821a6d09017a51bd2d4ee7dccbcab5befa5536bbf16a4b2477936f569cc0997",
+    "results/player_match_readiness.csv.xz": "2291993e03e9ab77360e8997f03fd13bf4dde7b44f6948d6fc3ae707251e8a6c",
+    "results/remaining_fields.csv.xz": "df918dce490e4d89755a6f55b717bfbbcf22a355d482e9915c952d819e88cf91",
+    "results/requirements.csv.xz": "115763b5b65e0318097899b8149f5a794ecbc909800a51b5a6fdc0720c688be1",
+    "results/validation.json": "8304af95226e9197758c6d57c1f58941366916a0bdaac328d276b3c2ee7c1a30"
+  },
+  "network": false
+}

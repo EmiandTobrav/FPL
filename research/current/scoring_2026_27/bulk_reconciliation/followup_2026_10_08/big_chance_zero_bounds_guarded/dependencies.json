@@ -1,0 +1,11 @@
+{
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds/prediction_freeze.json": "62517ed8c3b34f7be7faf9762b1e3f418aec8287056898a03fc61e25261a42b7",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds/all_counter_bounds.csv.gz": "c1582ac0c08783f5cca881ee5aba9fcf89cd6cdae767e12f1b23c70042a9b6f6",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds/season_proofs.csv.gz": "432ca7468d2d50334802b6b659db218ff76180510f76c652ed07ec96e41cae2d",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds/match_bounds.csv.gz": "37101e5443fb5089132f02692f24c2c5438e2b945212b0f31c0c1c559721022d",
+  "scoring_2026_27/keeper_recovery/keeper_counts.csv.gz": "18e453a1087b0dc317ebabc3723e13f23f5af5ce728f712f17fcaeff2018732f",
+  "scoring_2026_27/keeper_recovery/save_evidence.csv.gz": "281abb2d47c22665c093cdddf22b90f73c935448bb6a2e17d825ab916663ef73",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_subset_bounds/results/requirements.csv.xz": "d47b28889681dd2632cecb5b40924739d22703f23990c0ca9486e8681aa1c851",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_subset_bounds/results/player_match_readiness.csv.xz": "75c08445a61fd5cb3eb0f7b256c8506ad5319124b8af15464b0bb0d8a124b10b",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_subset_bounds/results/match_readiness.csv": "9b0f1978c768f182e2bdca64fb5b35692568b70e31b0d6263f9d661200d3407e"
+}

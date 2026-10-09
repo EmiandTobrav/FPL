@@ -39,7 +39,15 @@ Felles tabeller dekker nå alle åtte sesonger: **187 111 spillerkamper og
 kontrakt. 14 365 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
 Se [datatabeller og innlesing](research/current/training_dataset/canonical_extension/README.md).
 
-**Gjeldende datagapstatus:** **11 234 åpne krav**, **66 477 inputkomplette
+**Gjeldende datagapstatus:** **11 219 åpne krav**, **66 478 inputkomplette
+spillerkamper og 824 hele kamper**. [15 storsjanseredninger](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds_guarded/README.md)
+er avklart med eksakte sesong-/kampgrenser og sperring av en hel lag-sesong
+med et tidligere dokumentert hendelsesunntak. Én kandidat forblir åpen.
+Alle 983 gamle kontrolltilfeller beholdes; tre tester og 17 byteidentiske
+replayfiler består. Originalpiloten er fortsatt feilet. Totalt 3 674 krav
+lukket. Ingen ny scoring eller trening.
+
+**Tidligere datagapstatus:** **11 234 åpne krav**, **66 477 inputkomplette
 spillerkamper og 824 hele kamper**. [To taklingsfelt](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/tackle_subset_bounds/README.md)
 er utfylt fra en godkjent nulltotal; én ny spillerkamp blir komplett. Tre
 tester og 15 byteidentiske replayfiler består. Totalt 3 659 krav er lukket.
@@ -57,8 +65,8 @@ Kilderuter får korte innledende tidsrammer, og små utfyllinger samles i
 batcher. Arbeid uten konkrete utfyllingskandidater skal bytte rute;
 faktiske feltlukkinger og tidsbruk rapporteres sammen.
 En egen [innhentingskø](research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-skiller **1 964 data-/kildekrav** fra **9 270 assistkrav merket
-regelomregning**. Alle 11 234 åpne krav beholdes. Innhent også manglende
+skiller **1 949 data-/kildekrav** fra **9 270 assistkrav merket
+regelomregning**. Alle 11 219 åpne krav beholdes. Innhent også manglende
 hendelsesbevis for assists nå; nye regelberegninger følger senere.
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)

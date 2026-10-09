@@ -6,7 +6,7 @@ Four exact public ranked team-season totals (2019/20, 2020/21, 2022/23,
 season total. The frozen projection proposes 16 missing keeper counters.
 
 **The rule fails and zero candidates are applied.** Among 983 closed keeper
-controls in 846 fixtures, one contradicts the proposed zero: Martin Dúbravka,
+controls in 846 fixtures, one contradicts the proposed zero: Alex McCarthy,
 2019/20 fixture 269, code 58376, has a previously approved big-chance save 1.
 Aston Villa's official match counter is omitted. Exact season exhaustion does
 not overcome this counterexample. The prior value, gate and all 16 open
@@ -32,3 +32,7 @@ Reproduce from the repository root, offline:
 python research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds/reproduce.py
 python research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/big_chance_zero_bounds/test_withholding.py
 ```
+
+The [guarded source version](../big_chance_zero_bounds_guarded/README.md)
+uses the previously approved event exception to withhold the whole incompatible
+source team-season. This original version and its failed controls are unchanged.

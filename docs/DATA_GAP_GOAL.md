@@ -19,10 +19,10 @@ Følg alltid gjeldende filpeker ved videre arbeid; tallene her er et startpunkt.
 Registrer også relevante manglende modellstatistikker utenfor poengrestlisten
 separat, slik at lukking av denne listen ikke fremstilles som full datadekning.
 
-Gjeldende utgangspunkt er nå **11 234 åpne krav**: **1 730 manglende
+Gjeldende utgangspunkt er nå **11 219 åpne krav**: **1 715 manglende
 dataverdier/inventarer**, **234 kildekonflikter**, **ingen gjenværende FPL-uttrekksunntak**
 og **9 270 assistkrav merket regelomregning**. De første tre kategoriene
-utgjør en egen [innhentingskø med 1 964 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
+utgjør en egen [innhentingskø med 1 949 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
 Dette er en arbeidsvisning, ikke en redusert restliste. Også assistkravene
 kan mangle faktisk hendelsesbevis; innhent slike bevis nå, men utsett nye
 regelberegninger og poengetiketter. Ingen kategori anses automatisk komplett.
@@ -39,8 +39,9 @@ manglende kildefelt og komplette hendelsesinventarer. Ikke la utvikling av
 nye assistregler eller større kontrollstudier overta innhentingsfasen.
 Anvend eksisterende kvalifiserte regler når de gir raske, faktiske lukkinger.
 
-Siste utfylling avklarer to taklingsfelt fra en eksplisitt godkjent nulltotal.
-66 477 spillerkamper og 824 hele kamper har komplette input.
+Siste utfylling avklarer 15 storsjanseredninger med en kildeversjon som
+sperrer hele lag-sesonger med dokumenterte hendelsesunntak.
+66 478 spillerkamper og 824 hele kamper har komplette input.
 
 ## Arbeidsregler
 

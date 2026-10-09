@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-09",
+  "candidate_source_repository": "https://github.com/peteowen1/pannadata",
+  "primary_documentation": [
+    "https://github.com/peteowen1/pannadata/blob/main/README.md",
+    "https://github.com/peteowen1/pannadata/blob/main/DATA_DICTIONARY.md",
+    "https://github.com/peteowen1/pannadata/blob/main/scripts/opta/opta_scraper.py"
+  ],
+  "observations": [
+    "The inspected raw player_stats schema contains no expected/xg/xa field.",
+    "The inspected shot_events schema contains xg and xgot; their native Opta/FPL provenance has not been established.",
+    "The repository explicitly describes seasonal xmetrics as generated SPADL/XGBoost/xPass model outputs. They are not a direct substitute for native match-level FPL expected statistics."
+  ],
+  "decision": "Do not fill FPL-standard xG/xA/xGI/xGC from these model outputs. Keep missing/native/alternative model metrics distinct. A new source or verified shot-metric lineage plus native-FPL comparison is required.",
+  "ledger_fields_closed": 0,
+  "expected_fields_added": 0,
+  "schemas": {
+    "opta_player_stats": {
+      "source_sha256": "2765b1771493c917ce7c544b01cf3a151e159a818abb889c7fcbd746353eaead",
+      "expected_metric_fields": []
+    },
+    "opta_shot_events_2026_10_08": {
+      "source_sha256": "6aac6fea4cd3b02b9150bebf44da354616787593c0d3eb7124c8d0309abd8ffb",
+      "expected_metric_fields": [
+        "xg",
+        "xgot"
+      ]
+    }
+  }
+}

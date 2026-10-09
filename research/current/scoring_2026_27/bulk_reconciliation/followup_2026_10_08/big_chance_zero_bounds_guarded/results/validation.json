@@ -1,0 +1,18 @@
+{
+  "qualified": true,
+  "all_original_controls": 983,
+  "numeric_zero_controls": 971,
+  "fixtures": 835,
+  "errors": 0,
+  "guard_abstentions": 12,
+  "guarded_source_rows": 13,
+  "guarded_team_seasons": 1,
+  "guard_violations": 0,
+  "verified_negative_controls": 1,
+  "new_fields": 15,
+  "qualified_fields": [
+    "big_chance_saves"
+  ],
+  "original_rule_remains_failed": true,
+  "limits": "The entire source team-season is withheld for a pre-existing approved event exception. All old cases remain; abstentions are not claimed as numeric agreements. Shared upstream evidence, no new independent holdout or scoring qualification."
+}
