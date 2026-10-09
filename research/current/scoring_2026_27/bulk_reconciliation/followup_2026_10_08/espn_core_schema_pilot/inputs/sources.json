@@ -1,0 +1,32 @@
+[
+  {
+    "file": "inputs/roster.json",
+    "url": "https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/events/541844/competitions/541844/competitors/364/roster",
+    "sha256": "1cee539d344e25cb0af00851963a3dab53c001ac83207bfcdab93ed7f6e3a1ae"
+  },
+  {
+    "file": "inputs/keeper_stats.json",
+    "url": "https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/events/541844/competitions/541844/competitors/364/roster/196876/statistics/0?lang=en&region=us",
+    "sha256": "1184d000eac94ae900c1d2f9ccb7203ee20b2d8f9d34debf8bc1313a141d63cf"
+  },
+  {
+    "file": "inputs/outfielder_stats.json",
+    "url": "https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/events/541844/competitions/541844/competitors/364/roster/157892/statistics/0?lang=en&region=us",
+    "sha256": "b7d639d94b009201b5a473d637b11337dead5ba22627771debd3cf1f7ca8067c"
+  },
+  {
+    "file": "inputs/keeper_scoreboard.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20250921",
+    "sha256": "afc228df82f042ed2909be580e965c833ffd00e5dbc4b8a0f6069781373af416"
+  },
+  {
+    "file": "inputs/keeper_summary.json",
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=740643",
+    "sha256": "3d98935fbddd7a53a414459b568c1e8ef06e1afc35c7d1aab1edeb5b89025d68"
+  },
+  {
+    "file": "inputs/keeper_veto_stats.json",
+    "url": "https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/events/740643/competitions/740643/competitors/382/roster/217092/statistics/0?lang=en&region=us",
+    "sha256": "fa262fa30637b78d3286e660b00a737b09dcf71161b09754a7fa7eeb662ac15e"
+  }
+]

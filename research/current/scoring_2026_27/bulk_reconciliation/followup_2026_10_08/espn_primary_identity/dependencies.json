@@ -1,0 +1,9 @@
+{
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/raw_manifest.json": "d55e9cbd39f4667eb4b35da580a9fe0af25ac631509f7ec6a574e96e989c1c83",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/raw_inputs.tar.gz": "8564c0606e4e1ed3b41087d8b1c1adbbd4347c02581c433649932e2d229e0643",
+  "scoring_2026_27/keeper_recovery/recover.py": "429b72bd97a247fb48159236df67bb7a5b4b934c9d19b518ff22f8b5a6fd8fa1",
+  "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/results/requirements.csv.xz": "6b6977a1a3383b1560909a7badd1157f5a1ad61e077dc7ea5dfe5765bb036400",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/results/player_match_readiness.csv.xz": "12072650f088b18427a6f04371cca6de30c519053a6fed7ea4b30a337007d89a",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/results/match_readiness.csv": "9bef18f9cef4110c689d5e7a47d72126ec8a844783019246392a3ff61035fb15"
+}

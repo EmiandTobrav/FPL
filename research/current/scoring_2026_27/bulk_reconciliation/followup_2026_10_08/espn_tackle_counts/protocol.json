@@ -1,0 +1,10 @@
+{
+  "purpose": "Recover missing factual won-tackle and signed legacy net-tackle inputs; no historical BPS clipping or rescoring.",
+  "development": "A public linked 2019-20 Robertson participant-stat response has totalTackles=3 and effectiveTackles=1, providing a plausible explicit source route. No missing-value zero inference.",
+  "selection": "All 16 currently missing won_tackles participants. Five DEF/MID participants sorted by FPL code from each of the preceding fixed 30-control-fixture acquisition scope; do not select using newly fetched tackle outcomes.",
+  "identity": "Completed FT date/home/away/final-score fixture bridge, unique reciprocal native-club player identity using original helper plus exact verified official Pulse/Opta-coded display names. Require explicit one appearance and source minutes exactly equal native FPL minutes before prediction. No duration exception.",
+  "mapping": {"effectiveTackles":"won_tackles", "totalTackles":"total_tackles", "2*effectiveTackles-totalTackles":"legacy_net_tackles"},
+  "counts": "Source participant statistics must explicitly contain finite nonnegative integer counters, with effectiveTackles <= totalTackles. Missing/invalid counters abstain. Signed net is not clipped and is not a BPS delta.",
+  "validation": "Freeze source-only predictions before outcome comparisons. For each field require at least 100 planned-control values from at least 20 fixtures, at least 20 nonzero controls and zero disagreement with any available closed/native reference in the fetched population. Native 2025 tackles and direct archived counter pairs add mapping checks; report overlaps and shared/previously observed lineage. The earlier ESPN foul and keeper-CBI mapping failures stay quarantined and are not reconsidered.",
+  "application": "Only absent current missing_data fields; never overwrite protected conflicts or any known count. Preserve raw/native data, old outputs, model/benchmark, all BPS clipping gates and collective quality flags."
+}

@@ -39,7 +39,7 @@ Felles tabeller dekker nå alle åtte sesonger: **187 111 spillerkamper og
 kontrakt. 14 365 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
 Se [datatabeller og innlesing](research/current/training_dataset/canonical_extension/README.md).
 
-**Historisk datagaparbeid – 9. oktober 2026:** **11 260 åpne feltkrav i 10 822 spillerkamper**. **66 458 spillerkamper og 824 hele kamper** har komplette input. Siste [kildebatch](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/README.md) lukker **54 straffemålkrav** fra komplette målforløp og native målregnskap. Fem tester består; 16 genererte filer gjenskapes byteidentisk offline. Batchen gir ingen nye komplette spillerkamper eller hele kamper, siden andre gap står igjen. Totalt **3 633 krav er lukket** fra omprioriteringens 14 893. Nye poengversjoner og treningsintegrasjon følger datagap og samlet kvalitet.
+**Historisk datagaparbeid – 9. oktober 2026:** **11 258 åpne feltkrav i 10 822 spillerkamper**. **66 458 spillerkamper og 824 hele kamper** har komplette input. [Siste batch](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_primary_identity/README.md) lukker de to siste straffemålkravene med offisiell spilleridentitet og eksisterende målforløp. Fem tester består; 16 genererte filer gjenskapes byteidentisk offline. Ingen nye komplette spillerkamper/hele kamper; andre gap står igjen. Totalt **3 635 krav er lukket** fra omprioriteringens 14 893. Taklings- og keeper-CBI-kilden feiler og legges til side. Datagap først, deretter samlet kvalitet og ny poengversjon.
 
 **Gjeldende prioritet etter brukerens omdefinering:** lukk datagapene så
 effektivt og raskt som mulig → kvalitetssikre samlet datagrunnlag → omregn
@@ -48,8 +48,8 @@ Fremdrift måles først i faktisk lukkede feltkrav. Se arbeidsrekkefølgen under
 Den [operative målbeskrivelsen](docs/DATA_GAP_GOAL.md) angir leveransen
 for datagapfasen og når neste fase kan tas opp.
 En egen [innhentingskø](research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-skiller **2 552 data-/kilde-/uttrekkskrav** fra **8 708 assistkrav merket
-regelomregning**. Alle 11 314 krav beholdes. Innhent også manglende
+skiller **2 550 data-/kilde-/uttrekkskrav** fra **8 708 assistkrav merket
+regelomregning**. Alle 11 258 åpne krav beholdes. Innhent også manglende
 hendelsesbevis for assists nå; nye regelberegninger følger senere.
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)

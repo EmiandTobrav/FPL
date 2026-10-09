@@ -1,0 +1,31 @@
+{
+  "source_inputs": {
+    "training_dataset/scoring/results/historical_inventory.csv.xz": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/results/requirements.csv.xz": "9616ac11cd6923bb170325b630a73cd809e3c3aae5e58f66d8e05c24ba827e08",
+    "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "project/data/2019-20_players.csv.gz": "9b442062e5fbf7e4a0acfad8255d2a68912fd0917db97ffbe2b7fa72f081cbb4",
+    "project/data/2019-20_fixtures.csv.gz": "6afa41dd231e013362646459124f6fe4cc1cbd327c74e6dcb098e1d2e3561e33",
+    "project/data/2019-20_teams.csv.gz": "9d887054b5f02a862c2b3bfd2923b4a45d657bd88bedbc970f9dec8668b3f8f0",
+    "project/data/2020-21_players.csv.gz": "38e357475bb83f943650ebbb118ae9b341e5db2132766a1e6c30d1d2a74b0020",
+    "project/data/2020-21_fixtures.csv.gz": "2bb74650819e4c4a5515232c1594d004410931c4c10db5e5fb5f283f78b2fee2",
+    "project/data/2020-21_teams.csv.gz": "1252099269233c663783fbcdf49338e46c7a466b82974774ae2ab3eccadbf51d",
+    "project/data/2021-22_players.csv.gz": "67ceb6414733fd27294673da417d6287fb5795326c580659af056ba573ee8177",
+    "project/data/2021-22_fixtures.csv.gz": "b0c7ef09abd1ba345f50a9eeaa27ee096d5d21b43d1c85168f64461aa32a7ad0",
+    "project/data/2021-22_teams.csv.gz": "07e1b234b69b977aa680a377d4ec949c1e11b8df4c7cc545a3865a0d2fb2cc8f",
+    "project/data/2022-23_players.csv.gz": "0f3460ed47032a5099ebaff1bb5cec28a487f8193ca68d614e820aa366016468",
+    "project/data/2022-23_fixtures.csv.gz": "1ee9426018d6a7d03a4caaa3acf1106e184706f740c4439ee6108e515972e8a6",
+    "project/data/2022-23_teams.csv.gz": "e774de2558a8d1326ca6909551aaef04189c3a6e1dfaec21a413dbad8c11b436",
+    "project/data/2024-25_players.csv.gz": "4f0d412168228b736714cb4b1bcbaa196c83dab939c43433bdb0cadca95618ed",
+    "project/data/2024-25_fixtures.csv.gz": "9649822e2581422840b1d46d7e57ea4d3673bb8089faae3c8b5a6d4b802354d3",
+    "project/data/2024-25_teams.csv.gz": "38c71f8f78009fa2ebe25ce6054e7a12ad1c8dad35aedfbce08f1773ab627187",
+    "project/data/2025-26_players.csv.gz": "698c5bc12787f5be80f9fba697817094d61f80312421b592f1cd73595292df89",
+    "project/data/2025-26_fixtures.csv.gz": "ba7cf7a5f915b18fb77d1024f32ab90b04e462ff00de110198dd6699730fc042",
+    "project/data/2025-26_teams.csv.gz": "70127c1fb27579b294a0d6047305bfbf861c81e9732c5a13ed5b0808236bc008",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/results/requirements.csv.xz": "6b6977a1a3383b1560909a7badd1157f5a1ad61e077dc7ea5dfe5765bb036400"
+  },
+  "plan_sha256": "1d6ea0d97ff4f864a28f24cd68a80c3594612b4cadf6c638a1afd67e26dbc813",
+  "native_players_sha256": "708634dd8859a41d8098e46f95305bcfc9d5dd8cf80d815100ffe1ca197b4679",
+  "protocol_sha256": "8a37488c74f078fb41776cf6dd6faf5713d2a9c9f7756d6a0bf1e1d978ca079a",
+  "primary_identity_source": "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/roster.csv",
+  "primary_identity_source_sha256": "1ad92344928e356dcec315873f2a28a1f1483de96a0332e3b487e6b2de1ce2ba"
+}

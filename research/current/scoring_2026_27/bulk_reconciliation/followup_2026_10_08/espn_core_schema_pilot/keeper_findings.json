@@ -1,0 +1,17 @@
+{
+  "season": "2025-26",
+  "fixture": 41,
+  "code": 204936,
+  "native_cbi": 4,
+  "source_cbi": 5.0,
+  "components": {
+    "totalClearance": 5.0,
+    "effectiveClearance": 5.0,
+    "blockedShots": 0.0,
+    "interceptions": 0.0,
+    "minutes": 90.0
+  },
+  "qualified": false,
+  "new_fields": 0,
+  "decision": "First preserved native keeper veto already conflicts; no broader keeper collection on this mapping."
+}

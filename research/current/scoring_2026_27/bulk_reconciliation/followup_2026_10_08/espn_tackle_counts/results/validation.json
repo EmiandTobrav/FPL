@@ -1,0 +1,64 @@
+{
+  "fields": {
+    "total_tackles": {
+      "control_values": 100,
+      "control_fixtures": 30,
+      "nonzero_control_values": 60,
+      "errors": 47,
+      "all_comparisons": 175,
+      "control_values_by_season": {
+        "2019-20": 25,
+        "2020-21": 23,
+        "2022-23": 19,
+        "2024-25": 9,
+        "2025-26": 24
+      },
+      "reference_counts": {
+        "closed_approved_ledger": 86,
+        "explicit_archive_totalTackle": 65,
+        "native_2025_FPL_tackles": 24
+      },
+      "qualified": false
+    },
+    "won_tackles": {
+      "control_values": 82,
+      "control_fixtures": 28,
+      "nonzero_control_values": 46,
+      "errors": 30,
+      "all_comparisons": 122,
+      "control_values_by_season": {
+        "2019-20": 25,
+        "2020-21": 23,
+        "2022-23": 19,
+        "2024-25": 9,
+        "2025-26": 6
+      },
+      "reference_counts": {
+        "closed_approved_ledger": 76,
+        "explicit_archive_wonTackle": 46
+      },
+      "qualified": false
+    },
+    "legacy_net_tackles": {
+      "control_values": 76,
+      "control_fixtures": 24,
+      "nonzero_control_values": 35,
+      "errors": 12,
+      "all_comparisons": 76,
+      "control_values_by_season": {
+        "2019-20": 25,
+        "2020-21": 23,
+        "2022-23": 19,
+        "2024-25": 9
+      },
+      "reference_counts": {
+        "closed_approved_ledger": 76
+      },
+      "qualified": false
+    }
+  },
+  "qualified_fields": [],
+  "new_fields": 0,
+  "by_field": {},
+  "limits": "Source/closed-value regression with possible common upstream Opta lineage and previously observed references; no independent holdout, BPS clipping, scoring or final source-quality qualification."
+}

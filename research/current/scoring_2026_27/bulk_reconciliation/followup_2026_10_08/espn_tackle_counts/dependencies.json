@@ -1,0 +1,6 @@
+{
+  "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+  "scoring_2026_27/keeper_recovery/recover.py": "429b72bd97a247fb48159236df67bb7a5b4b934c9d19b518ff22f8b5a6fd8fa1",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_gap_acquisition/inputs/sources.json": "05509bad7c67d499ec0ad8851ae44aa91ee8b9cd496f772747dd12955ab0b1c6",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_primary_identity/results/requirements.csv.xz": "4aced62087a9fd19ace72c267daef3aa6cbf18d5657869f810f74e37150f8e0b"
+}

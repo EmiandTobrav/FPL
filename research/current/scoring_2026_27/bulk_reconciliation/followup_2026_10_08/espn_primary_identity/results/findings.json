@@ -1,0 +1,73 @@
+{
+  "old_open_fields": 11260,
+  "new_fields": 2,
+  "open_fields": 11258,
+  "unique_affected_player_matches": 10822,
+  "complete_player_matches": 66458,
+  "complete_matches": 824,
+  "new_complete_player_matches": 0,
+  "new_complete_matches": 0,
+  "zero_values": 1,
+  "positive_values": 1,
+  "new_fields_by_season": {
+    "2022-23": 2
+  },
+  "unchanged_ledger_rows": 775246,
+  "raw_fpl_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "fields": {
+      "penalty_goals": {
+        "control_values": 842,
+        "control_fixtures": 30,
+        "positive_control_values": 15,
+        "goalkeeper_controls": 62,
+        "all_reference_comparisons": 2076,
+        "unique_checked_values": 2059,
+        "errors": 0,
+        "control_values_by_season": {
+          "2019-20": 159,
+          "2020-21": 160,
+          "2022-23": 176,
+          "2024-25": 183,
+          "2025-26": 164
+        },
+        "reference_counts": {
+          "native_FPL_goal_zero_subset": 1911,
+          "closed_ledger": 145,
+          "explicit_archive_attPenGoal": 20
+        },
+        "qualified": true
+      },
+      "fouls_won": {
+        "control_values": 663,
+        "control_fixtures": 30,
+        "positive_control_values": 396,
+        "goalkeeper_controls": 39,
+        "all_reference_comparisons": 2335,
+        "unique_checked_values": 1813,
+        "errors": 5,
+        "control_values_by_season": {
+          "2019-20": 161,
+          "2020-21": 165,
+          "2022-23": 176,
+          "2024-25": 79,
+          "2025-26": 82
+        },
+        "reference_counts": {
+          "closed_ledger": 1612,
+          "explicit_archive_wasFouled": 723
+        },
+        "qualified": false
+      }
+    },
+    "qualified_fields": [
+      "penalty_goals"
+    ],
+    "new_fields": 2,
+    "by_field": {
+      "penalty_goals": 2
+    },
+    "limits": "Previously observed closed values/native source compatibility, with ESPN and archive possibly sharing upstream event data. Not independent holdout or final source/scoring qualification. All collected commentary remains evidence only; no target assists inferred."
+  }
+}

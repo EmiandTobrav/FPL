@@ -1,0 +1,15 @@
+{
+  "byte_identical_files": 8,
+  "files": {
+    "inputs/player_bridge.csv": "5bbb3785d26e8992545e4bd6288d0ce19e18a7d14a25f630cc7fefb1cbb11823",
+    "inputs/sources.json": "26686597bfcca19b53485a13040d93cff75185d9630cfd8d8230735025310d24",
+    "player_gates.csv": "06f2616e08fadd1166162d9a258a8f3f02a2a25ab64eb738934a5932ec7e5eee",
+    "predictions.csv.gz": "81e0d28d743bed2c6f50e665f7c8ea58dcc9639819068d5c533853ed7c852709",
+    "prediction_freeze.json": "24f6eb65203d41326d54d0c796a2769abc478c82e4b23c56f84c6b5f57d8f251",
+    "results/control_comparisons.csv.gz": "9bd4f2d7a880365e30b3cb2b7c7d4b44c26d56eb84c34f237ae14f95d4f3bcb8",
+    "results/overlay.csv.gz": "8155313fbd5be9cf0f35e02d215804cf66bb35ce41b926d84faea0647562d0fb",
+    "results/validation.json": "745c91f97d8b276cfec6648b7a52e246f784bad814836e131fa3f2821658a6df"
+  },
+  "network": false,
+  "new_fields": 0
+}

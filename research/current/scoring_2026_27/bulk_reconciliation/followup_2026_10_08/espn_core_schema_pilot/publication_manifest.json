@@ -1,0 +1,13 @@
+{
+  "README.md": "333883e42632785f6e7b24add979312b2f4ae3d6c56066d74ce632962988a065",
+  "inputs/keeper_scoreboard.json": "afc228df82f042ed2909be580e965c833ffd00e5dbc4b8a0f6069781373af416",
+  "inputs/keeper_stats.json": "1184d000eac94ae900c1d2f9ccb7203ee20b2d8f9d34debf8bc1313a141d63cf",
+  "inputs/keeper_summary.json": "3d98935fbddd7a53a414459b568c1e8ef06e1afc35c7d1aab1edeb5b89025d68",
+  "inputs/keeper_veto_stats.json": "fa262fa30637b78d3286e660b00a737b09dcf71161b09754a7fa7eeb662ac15e",
+  "inputs/outfielder_stats.json": "b7d639d94b009201b5a473d637b11337dead5ba22627771debd3cf1f7ca8067c",
+  "inputs/roster.json": "1cee539d344e25cb0af00851963a3dab53c001ac83207bfcdab93ed7f6e3a1ae",
+  "inputs/sources.json": "60ba25148e271cd15becb15af521196b62db0fce3dc09089d198c95030c6ed88",
+  "keeper_findings.json": "0fb844610f96f3ec1fd6c26404c058ab3ce17e569ae22be44733eb3ccfa1472b",
+  "keeper_veto_plan.csv": "a8e278105a4ca03dd623bf5bc9859ead178e268abd30666fe21c44f9d8dd2e6d",
+  "verify.py": "acb8f0a52f4a87cc7b6ef73f1a722c753b0564a2bd6ecb5ae86959c351315191"
+}
