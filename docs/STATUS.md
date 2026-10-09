@@ -21,6 +21,15 @@ kildekontroller beholdes før masseutfylling; manglende data er fortsatt manglen
 Eksisterende poengversjoner bevares. Ny scoring og featurebygging er utsatt.
 Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
 
+Presisering: første fase retter seg mot manglende kildefelt og inventarer,
+ikke utvikling av nye assistregler. Den separate
+[innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
+omfatter 2 371 manglende dataverdier/inventarer, 234 kildekonflikter og ett
+uttrekksunntak: **2 606 krav**. **8 708 assistkrav merket regelomregning**
+beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
+første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
+Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
+
 ## Nyeste datagapleveranse – 635 assistkrav og 12 nye komplette kamper
 
 **11 314 åpne feltkrav i 10 822 spillerkamper.** **66 458 spillerkamper og

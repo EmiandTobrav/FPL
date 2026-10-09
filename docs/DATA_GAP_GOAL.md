@@ -19,6 +19,19 @@ Følg alltid gjeldende filpeker ved videre arbeid; tallene her er et startpunkt.
 Registrer også relevante manglende modellstatistikker utenfor poengrestlisten
 separat, slik at lukking av denne listen ikke fremstilles som full datadekning.
 
+Gjeldende utgangspunkt er nå **11 314 åpne krav**: **2 371 manglende
+dataverdier/inventarer**, **234 kildekonflikter**, **ett FPL-uttrekksunntak**
+og **8 708 assistkrav merket regelomregning**. De første tre kategoriene
+utgjør en egen [innhentingskø med 2 606 krav](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json).
+Dette er en arbeidsvisning, ikke en redusert restliste. Også assistkravene
+kan mangle faktisk hendelsesbevis; innhent slike bevis nå, men utsett nye
+regelberegninger og poengetiketter. Ingen kategori anses automatisk komplett.
+
+**Prioriteringsendringen gjelder også assistarbeidet:** let først etter
+manglende kildefelt og komplette hendelsesinventarer. Ikke la utvikling av
+nye assistregler eller større kontrollstudier overta innhentingsfasen.
+Anvend eksisterende kvalifiserte regler når de gir raske, faktiske lukkinger.
+
 ## Arbeidsregler
 
 - Prioriter dokumenterbare lukkinger per tidsbruk. Bruk eksisterende rådata,
@@ -29,6 +42,10 @@ separat, slik at lukking av denne listen ikke fremstilles som full datadekning.
 - Bruk et lite kildeforsøk til å avgjøre om en ny rute faktisk leverer de
   nødvendige feltene. Ved manglende bevis eller feilet kontroll: dokumenter
   hindringen, legg ruten til side og velg neste gjennomførbare gruppe.
+- Skill innhentede rådata fra godkjente utfyllinger. Rapporter begge, men
+  tell bare godkjente, tidligere åpne krav som lukkede. En pilot med for få
+  kontroller skal legges til side uten en ny stor studie, med mindre et
+  konkret nytt kildefunn gir utsikt til rask utfylling.
 - Behold nødvendige kontroller av kilde, identitet, feltdefinisjon og
   hendelsesdekning før masseutfylling. Gjenbruk beståtte kontroller;
   ikke gjenta full datasettkontroll etter hver batch.

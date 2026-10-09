@@ -79,14 +79,27 @@ Gamle BPS-kontroller legges til side frem til nye fakta kan avklare motsetninger
 
 ## Prioritert gjennomføring
 
-| Prioritet | Gruppe / forventet gevinstgrunnlag | Neste avgrensede handling |
+**Innhenting styrer køen nedenfor.** De regelbaserte assistgruppenes betingede
+tak skal ikke prioriteres som om alle var rene kildegap. Start fra
+[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **2 606 krav**,
+fordelt på manglende data/inventarer, kildekonflikter og ett uttrekksunntak.
+Velg en kilde som faktisk kan tilføre manglende felt eller komplette hendelser;
+bruk eksisterende kvalifiserte utfyllinger før utvikling av nye regler.
+De **8 708 regelomregningskravene** er fortsatt åpne. Hent deres manglende
+årsaksbevis i første fase; nye regelberegninger og større kontrollstudier
+følger etter innhentingen. Ingen av disse tallene er et bevis på full dekning.
+
+`python priority/acquisition_build.py` gjenskaper denne arbeidsvisningen fra
+hashkontrollert CURRENT-restliste uten å endre ledgeren. Den separate
+gruppefilen viser felt, sesong og type hindring; den hevder ingen forventet
+lukking eller innbyrdes rangering uten et konkret gjennomførbart kildeforsøk.
+
+| Arbeidsspor | Gjeldende omfang | Neste avgrensede handling |
 |---|---|---|
-| 1 | Straffer: 132 mål, betinget 1 610 lukkbare krav; direkte frispark ytterligere 285 | 53 selvtatte mål er nå kvalifisert med uendret fysisk regel og separat regelkompatibelt historisk enmålsutvalg. Gamle native2025-gater og piloter forblir uendret. Gjenstående ordinære straffer mangler faktisk årsaksbevis for foul/hands eller inventar. Ikke gjenta kvalifiserte paringer; neste rute må tilføre nye målspesifikke fakta. |
-| 2 | Pasninger med mellomliggende hendelser: 1 732 betinget lukkbare krav og 262 hele kamper | Bruk gjenværende faktiske kandidatforløp. Nye fakta må avklare mottak, intensjon ved mottak utenfor boksen, forsvarskontakt, returer og kontinuitet. Alle gamle kandidatregler er brukt over hele populasjonen; slettede hendelser og dueller er ikke automatisk berøringer. |
-| 3 | Mållinjeklareringer: 48 etter siste 527 lukkinger | Ettminuttsgruppen er nå kvalifisert med eget kamp-/lag-/resultat-/spilleridentitetsbevis og komplette blokkinventarer, 12 667 lukkede kontroller og 83 positive kildeverdier uten avvik. FPL-minuttene og alle keeper-/BPS-gater bevares. De 39 arkiv-/identitetsgapene trenger faktiske hendelser; ni større minuttavvik er fortsatt åpne. Ikke gjenta gamle tomme primærtotalforsøk eller anta at ettminuttsbeviset gjelder større avvik. |
-| 4 | Øvrige assistårsaker: source-not-assisted, uklart pasningssertifikat, selvmål og returer | Bruk oppdaterte mål–spiller-avhengigheter nedenfor. Source-not-assisted har 2 076 betinget lukkbare krav, men er ikke i seg selv et nullbevis. Prioriter positive, sammenhengende handlingsforløp og de tilfellene som faktisk fullfører kamper; behold usikre utfall. |
-| 5 | Resterende tellere og arkivgap | 1 237 times-tackled-krav er fra 2019/20; ett er en beskyttet 2025/26-konflikt. Den gamle spiller-API-en og den nye SDP-kamppiloten gir ikke dette manglende spillerfeltet. Prioriter schema/paring av faktiske forsvarshendelser og komplett inventar, ingen dribleproxy. Alle manglende CBI-verdier er keepere; kvalifiser en relevant primær-/FotMob-komponentrute med fryste kontrollkrav. Keeperlokasjon har nå to beskyttede Sánchez-krav med én minutts kildeavvik i sesonginventaret; ingen lokasjonsproxy eller differanseberegning. De 21 tidligere arkivkampene har fortsatt 761 åpne krav; statistikk/identiteter er allerede hentet, men komplette hendelsesinventarer mangler. |
-| 6 | Andre manglende modellstatistikker og historiske inventarer | Fullfør innhenting av relevante xG/xA/xGI/xGC, kampstarter, defensive tellinger og faktiske frister/roster-/statistikkversjoner der disse mangler. Gjenbruk allerede innhentede data; ukvalifiserte felter beholdes separat til samlet kvalitetssikring. Ikke bygg features eller nye poenglabels i denne fasen. |
+| Manglende kildefelt og inventarer | 2 371 krav; blant annet 1 237 times tackled, 583 assistinventarer, 341 keeper-CBI og 48 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
+| Kildekonflikter og FPL-uttrekk | 234 konflikter og ett uttrekksunntak | Innhent manglende bevis eller en kompatibel kildeversjon som kan forklare avviket. Bevar FPL og godkjente verdier. Keeperlokasjonens to Sánchez-krav inngår blant manglende data, men er sperret av kilde-/minuttavvik; ikke fyll dem med proxyer. Ingen ny scoring for å omgå sperren. |
+| Hendelsesbevis til senere assistomregning | 8 708 krav merket regelomregning, i tillegg til de 583 inventargapene over | Skaff faktisk mottak, foul/hands, berøringer, returer, intensjon og kontinuitet der dette mangler. Betingede lukkingstak nedenfor er hjelp til å velge kildeomfang, ikke forventet gevinst. Utsett nye assistregler og store kontrollstudier; bruk eksisterende kvalifiserte regler når nytt kildebevis gir rask utfylling. |
+| Andre modellstatistikker og historiske inventarer | Egen dekningskartlegging; ikke talt som lukkede poengkrav | Hent manglende relevante xG/xA/xGI/xGC, defensive tellinger og faktiske frist-/roster-/statistikkversjoner. Gjenbruk kvalifiserte kampstarter og eksisterende statistikk. Ikke bygg features eller nye poengetiketter nå. |
 
 Den gamle native2025-straffe-par-piloten ga samme prediksjonsomfang og bare ett
 isolerbart selvtatt kontrollmål. Den beholdes som mislykket; se
@@ -95,8 +108,8 @@ Den nye historiske regelen er separat begrunnet med offisiell regelkompatibilite
 53 kontrollmål og null feil; 53 selvtatte mål er allerede anvendt. Gjenværende
 hands og uparrede fouls krever andre faktiske bevis.
 
-Tabellen er en startkø for fase 1. Velg en annen gjennomførbar gruppe hvis
-den gir raskere dokumenterbar lukking enn gruppen foran. Samlet kvalitet,
+Tabellen viser arbeidsspor i fase 1, ikke en tvungen rangering av felter.
+Velg den konkrete innhentingen som gir raskest dokumenterbar utfylling. Samlet kvalitet,
 regelgater for scoring, helkampbonus og treningsintegrasjon følger faseordenen
 over. Ingen omprioritering reduserer datakrav eller senker kontrollgater.
 
