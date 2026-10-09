@@ -1,0 +1,8 @@
+[
+  {
+    "season": "2019-20",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/teams/clearance_off_line?comps=1&compSeasons=274&page=0&pageSize=100&altIds=true",
+    "file": "inputs/2019-20_teams.json",
+    "sha256": "a596d36b77f94879751cc2aac55b72f7615530f66cb17357ad716211ff702a52"
+  }
+]

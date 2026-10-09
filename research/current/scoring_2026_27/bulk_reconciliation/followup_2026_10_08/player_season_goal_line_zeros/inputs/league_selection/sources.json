@@ -1,0 +1,8 @@
+[
+  {
+    "season": "2019-20",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/clearance_off_line?comps=1&compSeasons=274&page=0&pageSize=1000&altIds=true",
+    "file": "inputs/2019-20.json",
+    "sha256": "dc73cc455aec6808fd1b093d28930d980334bc4c99363f9701ab94e225d96fc3"
+  }
+]

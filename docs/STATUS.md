@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 188**,
+**14 893 åpne feltkrav**, nå **11 187**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,8 +24,8 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 1 684 manglende dataverdier/inventarer og 234 kildekonflikter:
-**1 918 krav**. **9 270 assistkrav merket regelomregning**
+omfatter 1 683 manglende dataverdier/inventarer og 234 kildekonflikter:
+**1 917 krav**. **9 270 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
@@ -36,7 +36,20 @@ utfyllingskandidater. Påviste kompatible bulkinnhentinger kan fortsette;
 nødvendige kontroller beholdes. Samle små utfyllinger i felles batcher og
 rapporter tidsbruk sammen med faktiske lukkinger.
 
-## Nyeste datagapleveranse – 27 mållinjeverdier
+## Nyeste datagapleveranse – én spiller-sesongnull
+
+**11 187 åpne krav**, 66 479 inputkomplette spillerkamper og 824 hele kamper.
+[Reece James 2021/22 kamp 23](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_goal_line_zeros/README.md) får mållinjeteller null fra
+uttrykkelig sesongstatistikk, med bevart FPL-minuttall. Én spillerkamp blir
+komplett. 1 028 kontroller i 818 kamper har null avvik; tre tester og 16
+byteidentiske offline-filer består. 16 mållinjekrav gjenstår. Kildesporet er
+ferdig innhentet for alle syv sesonger; en separat lagprøve med 19 lag og
+residual på ti forkastes. Ingen utelatelse blir null. 775 247 øvrige rader
+og alle gamle kildeverdier bevares. Totalt **3 706 krav** lukket; innhentingskø
+**1 917 krav**, med 1 683 manglende og 234 beskyttede konflikter.
+Batchen tok 14 minutter 31 sekunder fra kildefrys til replay. Ingen ny scoring.
+
+## Tidligere datagapleveranse – 27 mållinjeverdier
 
 **11 188 åpne krav**, 66 478 inputkomplette spillerkamper og 824 hele kamper.
 [Nullblokker per spillerkamp](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_match_block_bounds/README.md)

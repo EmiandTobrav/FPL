@@ -1,0 +1,16 @@
+{
+  "seasons": {
+    "2019-20": 274,
+    "2020-21": 363,
+    "2021-22": 418,
+    "2024-25": 719
+  },
+  "proof": "Complete explicitly enumerated active league team goal-line totals, exactly20 unique season clubs, exhaust complete ranked player goal-line sum. Only then may unlisted active players have zero. Complete active appearance roster, unique historical codes, nonnegative integer counts, identical counter and season required. Do not infer omitted team zeros.",
+  "gates": {
+    "minimum_controls": 1000,
+    "maximum_errors": 0,
+    "maximum_positive_archive_contradictions": 0
+  },
+  "stop": "Stop further collection if first season lacks20 explicit active teams or exact integer conservation; preserve player-only pilot separately. No gate lowering or provider voting.",
+  "source_before_outcome_comparison": true
+}

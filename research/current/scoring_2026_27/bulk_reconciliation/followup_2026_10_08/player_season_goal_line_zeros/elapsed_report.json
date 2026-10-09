@@ -1,0 +1,10 @@
+{
+  "measurement": "Filesystem timestamps from frozen first source plan through completed isolated replay, excluding later publication; not provider time",
+  "started_utc": "2026-10-09T09:42:19.551639+00:00",
+  "verified_replay_utc": "2026-10-09T09:56:50.617052+00:00",
+  "elapsed_seconds": 871.07,
+  "verified_fields_closed": 1,
+  "new_complete_player_matches": 1,
+  "new_complete_matches": 0,
+  "public_responses": 8
+}

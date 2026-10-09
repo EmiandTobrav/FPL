@@ -1,0 +1,11 @@
+{
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_match_block_bounds/results/requirements.csv.xz": "af68348980c60e3f8f43eda66d044a7927565521fc6b731aa77c1cebbb91c3ff",
+  "scoring_2026_27/delta_input_audit/primary_sources.json": "b532175a2fa4580ff8d4027a273fbd9e114129f44546cf035e4b8f6c071a869c",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2019-20.json": "f7a7a62d88ae78cf3fcad44c48122f6dbccae764706d5efc1932699fe3a45d4a",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2020-21.json": "4d8c0d21257f92a23ab0597103ae8f7821ba8ec407c9ef53eb9f74096c5faddc",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2021-22.json": "2bd82de1ca2b07654a6c1dd65cf8005417fb036f3cb9d2e6000043863b7c7537",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2024-25.json": "12f6b078a801ea6e72cf3858999424593a3a0305f17d69062180ce7bd07fb994",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2022-23.json": "0a704ff39e5e0b13d30656387dea82b05427d402ad7e52c22a0f43f2acee28d6",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2023-24.json": "cb960832e4f438f3b7357966e8dd5d8c086e227ddd2cbf8ee2ab5a1d9c81c527",
+  "scoring_2026_27/delta_input_audit/inputs/primary/players_2025-26.json": "2375983034120463766445897e256e7c3f5b6c8bd3ce14591e7368e121cabb06"
+}

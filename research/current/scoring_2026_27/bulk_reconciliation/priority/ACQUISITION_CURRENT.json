@@ -1,18 +1,18 @@
 {
-  "source": "followup_2026_10_08/primary_match_block_bounds/results/remaining_fields.csv.xz",
-  "source_sha256": "7510eb185783f56e680ef5262d825325fd9706b53df000a3eb67d0f7e4c7fe73",
-  "total_open_requirements": 11188,
-  "acquisition_or_source_resolution_requirements": 1918,
+  "source": "followup_2026_10_08/player_season_goal_line_zeros/results/remaining_fields.csv.xz",
+  "source_sha256": "dfa3a9db42b925ef6b0693e3f2cb510cd01162059c3808427850ea3709abe35a",
+  "total_open_requirements": 11187,
+  "acquisition_or_source_resolution_requirements": 1917,
   "counts_by_status": {
     "external_conflict": 234,
-    "missing_data": 1684,
+    "missing_data": 1683,
     "rule_recalculation": 9270
   },
   "rule_recalculation_requirements_retained": 9270,
   "rule_recalculation_note": "Deferred rule outputs may still require missing causal event evidence. Acquire that evidence in phase 1; this view does not certify its completeness or remove those requirements.",
   "files": {
-    "data_acquisition_requirements.csv.xz": "511881a2d01e27beb96015a3a1021c307c8c25fd38e9fc4b02939f5535b7fb54",
-    "data_acquisition_groups.csv": "b78bcab6d5223ee6e61979aa13b9f024f036f69449fa8e07732d1116f40999e9"
+    "data_acquisition_requirements.csv.xz": "e9b3e61a565d35786ce9118e684286a0dfe6066873eb2a8bac86fa822092f2ac",
+    "data_acquisition_groups.csv": "1f930e7b490fe92647aded9c205da1c884c7230118986717fc7609169e8c3896"
   },
   "ledger_modified": false,
   "newly_closed_requirements": 0

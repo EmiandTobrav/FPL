@@ -1,0 +1,26 @@
+[
+  {
+    "season": "2019-20",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/clearance_off_line?comps=1&compSeasons=274&page=0&pageSize=1000&altIds=true",
+    "file": "inputs/2019-20.json",
+    "sha256": "dc73cc455aec6808fd1b093d28930d980334bc4c99363f9701ab94e225d96fc3"
+  },
+  {
+    "season": "2020-21",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/clearance_off_line?comps=1&compSeasons=363&page=0&pageSize=1000&altIds=true",
+    "file": "inputs/2020-21.json",
+    "sha256": "9393782130d13e8aeaf824a30225b1e5ef20f32cb8651c46deac58312b1ae1e8"
+  },
+  {
+    "season": "2021-22",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/clearance_off_line?comps=1&compSeasons=418&page=0&pageSize=1000&altIds=true",
+    "file": "inputs/2021-22.json",
+    "sha256": "8b1e3e4b968aaf98a08eefbc55c2820f770d57039bcff2ded3f50654a0bc367e"
+  },
+  {
+    "season": "2024-25",
+    "url": "https://footballapi.pulselive.com/football/stats/ranked/players/clearance_off_line?comps=1&compSeasons=719&page=0&pageSize=1000&altIds=true",
+    "file": "inputs/2024-25.json",
+    "sha256": "7da17fa5df0ddbb6041f858d0b738dc314d42b0687726bb393fcfa2bb1c29880"
+  }
+]

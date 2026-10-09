@@ -1,0 +1,10 @@
+{
+  "additional_control_seasons": {
+    "2022-23": 489,
+    "2023-24": 578,
+    "2025-26": 777
+  },
+  "reason": "Complete every remaining historical season for the same explicit-counter-zero rule. Original547 prediction scope is below1000 controls. No approved goal-line outcomes have been compared; add every eligible zero, remove none, and keep original gates.",
+  "season_id_evidence": "scoring_2026_27/delta_input_audit/primary_sources.json",
+  "original_plan_unchanged": true
+}

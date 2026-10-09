@@ -1,0 +1,12 @@
+{
+  "status": "completed_rejected",
+  "explicit_team_records": 19,
+  "required_active_teams": 20,
+  "player_sum": 51.0,
+  "team_sum": 61.0,
+  "team_minus_player_residual": 10.0,
+  "fields_closed": 0,
+  "omitted_player_zero_inference_allowed": false,
+  "remaining_season_team_requests": 0,
+  "same_source_retry_allowed": false
+}

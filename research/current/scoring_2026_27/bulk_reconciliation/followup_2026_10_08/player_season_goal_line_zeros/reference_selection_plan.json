@@ -1,0 +1,9 @@
+{
+  "reason": "The pre2025 ledger has no required GL rows for2025/26. Complete the already planned2025 control season using all eligible keys from the pre-existing qualified v1 whole-match GL event inventories. Before any GL outcome comparison; no key chosen by outcome, zero error/minimum1000 gates unchanged. These are approved-source regression references, not native FPL GL or holdout.",
+  "reference_files": {
+    "goal_line_events/predictions.csv.gz": "261f7629273fff9850b7c33d0b087f49d890d82c105b65238caddd7d4ed047dd",
+    "goal_line_events/results/validation.json": "f433320e8dbc29eeb9be856e9ba230fe07fa1d51c80ce4c01b5c18a4eb5d0306",
+    "goal_line_events/protocol.json": "873fb23d19c4fa468ee9bc83a9e8635d08a616c24c729a885819e46703246004"
+  },
+  "season": "2025-26"
+}

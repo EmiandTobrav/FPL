@@ -1,0 +1,47 @@
+{
+  "old_open_fields": 11188,
+  "new_fields": 1,
+  "open_fields": 11187,
+  "unique_affected_player_matches": 10801,
+  "complete_player_matches": 66479,
+  "complete_matches": 824,
+  "new_complete_player_matches": 1,
+  "new_complete_matches": 0,
+  "zero_values": 1,
+  "positive_values": 0,
+  "new_fields_by_season": {
+    "2021-22": 1
+  },
+  "unchanged_ledger_rows": 775247,
+  "raw_fpl_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "qualified": true,
+    "qualified_fields": [
+      "goal_line_clearances"
+    ],
+    "controls": 1028,
+    "control_fixtures": 818,
+    "errors": 0,
+    "positive_contradictions": 0,
+    "candidate_fields": 1,
+    "new_fields": 1,
+    "controls_by_scope": {
+      "closed_historical_ledger": 976,
+      "previously_qualified_2025_event_inventory": 52
+    },
+    "controls_by_season": {
+      "2019-20": 154,
+      "2020-21": 81,
+      "2021-22": 145,
+      "2022-23": 360,
+      "2023-24": 70,
+      "2024-25": 166,
+      "2025-26": 52
+    },
+    "omitted_players_inferred_zero": false,
+    "failed_league_exhaustion_applied": false,
+    "archive_sha256": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "limits": "Only explicit individual season GL zeros; active appearance/code identities checked. Shared-source approved GL regression, including52 prior qualified2025 event inventories; not native FPL GL, independent holdout or final collective QA. The separate failed league-total probe remains rejected; unlisted players are not zero."
+  }
+}

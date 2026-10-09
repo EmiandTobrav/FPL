@@ -1,0 +1,20 @@
+{
+  "seasons": {
+    "2019-20": 274,
+    "2020-21": 363,
+    "2021-22": 418,
+    "2024-25": 719
+  },
+  "field": "clearance_off_line",
+  "scope": "Explicit nonnegative integer zero player-season goal-line total only; no omitted/ranked-unlisted zero, no block/GK proxy, no positive totals distributed across matches",
+  "source": "Public ranked player statistical endpoint, exact season ID and Opta/FPL player code; full pagination preserved",
+  "controls": "All previously approved historical GL outcomes for explicit season-zero players, plus every explicit positive archive contradiction",
+  "gates": {
+    "minimum_controls": 1000,
+    "maximum_errors": 0,
+    "maximum_positive_archive_contradictions": 0
+  },
+  "stop": "Stop at first missing/invalid entity or no explicit zero player values; no unchanged retries",
+  "scoring": false,
+  "features": false
+}

@@ -1,17 +1,18 @@
 # Gjeldende datagaparbeid og restliste
 
-Oppdatert 9. oktober 2026: **11 188 åpne krav i 10 802 spillerkamper**.
-**66 478 spillerkamper og 824 hele kamper** har komplette input.
-[Siste ferdigstilte batch](followup_2026_10_08/primary_match_block_bounds/README.md)
-lukker **27 mållinjekrav**, med 1 975 kontroller i 398 kamper uten avvik.
-Tre tester og 16 byteidentiske offline-filer består. Totalt **3 705 krav**
-er lukket siden omprioriteringen. Ingen ny poengberegning eller trening.
+Oppdatert 9. oktober 2026: **11 187 åpne krav i 10 801 spillerkamper**.
+**66 479 spillerkamper og 824 hele kamper** har komplette input.
+[Siste ferdigstilte batch](followup_2026_10_08/player_season_goal_line_zeros/README.md)
+lukker **ett mållinjekrav** og gjør én spillerkamp komplett. 1 028 kontroller
+i 818 kamper har null avvik. Tre tester og 16 byteidentiske offline-filer
+består. Syv sesongvise kildesvar er innhentet; den separate lagprøven
+forkastes. Totalt **3 706 krav** lukket siden omprioriteringen. Ingen ny scoring.
 
 Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md),
-[gjeldende restliste](followup_2026_10_08/primary_match_block_bounds/results/remaining_fields.csv.xz)
-og [full ledger](followup_2026_10_08/primary_match_block_bounds/results/requirements.csv.xz).
-[Innhentingskøen](priority/ACQUISITION_CURRENT.json) har **1 918 data-/kildekrav**:
-1 684 manglende verdier og 234 beskyttede konflikter. De 9 270 assistkravene
+[gjeldende restliste](followup_2026_10_08/player_season_goal_line_zeros/results/remaining_fields.csv.xz)
+og [full ledger](followup_2026_10_08/player_season_goal_line_zeros/results/requirements.csv.xz).
+[Innhentingskøen](priority/ACQUISITION_CURRENT.json) har **1 917 data-/kildekrav**:
+1 683 manglende verdier og 234 beskyttede konflikter. De 9 270 assistkravene
 beholdes; manglende årsaksbevis skal innhentes før nye regelberegninger.
 
 | Feltgruppe | Åpne krav |
@@ -19,9 +20,9 @@ beholdes; manglende årsaksbevis skal innhentes før nye regelberegninger.
 | Assists etter målreglene | 9 270 |
 | Times tackled | 1 238 |
 | CBI | 545 |
-| Mållinjeklareringer | 17 |
+| Mållinjeklareringer | 16 |
 | Øvrige felt | 118 |
-| **Totalt** | **11 188** |
+| **Totalt** | **11 187** |
 
 [Keeper-CBI har ett ferdig dokumentert kildearbeid og fortsettelsespunkt](followup_2026_10_08/keeper_cbi_resolution/README.md).
 Alle 341 manglende keeperverdier forblir åpne; seks native vetoer er uendret,
