@@ -1,0 +1,17 @@
+{
+  "qualified": true,
+  "qualified_fields": [
+    "goal_line_clearances"
+  ],
+  "controls": 1975,
+  "control_fixtures": 398,
+  "errors": 0,
+  "positive_contradictions": 0,
+  "primary_controls": 471,
+  "primary_control_fixtures": 24,
+  "candidate_fields": 27,
+  "new_fields": 27,
+  "source": "Previously qualified primary match counters only; previous failed 2020 season ranking remains unchanged and is not used.",
+  "archive_sha256": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+  "limits": "Previously qualified primary component counters, exact roster exhaustion where needed, and deduplicated shared-source GL regression; not independent holdout or final collective QA. GK, missing/nonzero blocks and rejected minute/event cases outside this source are withheld."
+}

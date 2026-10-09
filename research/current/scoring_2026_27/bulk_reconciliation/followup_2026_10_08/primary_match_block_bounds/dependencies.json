@@ -1,0 +1,18 @@
+{
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/results/requirements.csv.xz": "3a8f2adc61d685343422fb820ddd325ab38fedb02ba8b737f10893914be8f9fa",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/qualified_components.csv.gz": "cfce4602fe7f778f574ef59f01e293a26ad1ebab2e34bceb672d9862f3d7faaa",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/players.json": "60caa778eacd80c3613a02b66488e47ab55bb4ff95e65eef7c4f991cdcc72329",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/roster.csv": "1ad92344928e356dcec315873f2a28a1f1483de96a0332e3b487e6b2de1ce2ba",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/conservation.csv": "2b5c2168d9b6ead53e9759934683e643b5a407a95903492c6c4786a5cd587b21",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/freeze.json": "0253e96df6af1f625ba4a4028a80d92294efa1696be4ff214e3df0a599e028ba",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/validation_summary.json": "28f4027f40b2b86536f9e896ee13bd0190d818464b746d2651a59c5ad6317649",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/explicit_component_controls.csv": "7aaadc98ba807a7edaef57774d0fbe51684687111d8c613c90b8df6305245e1c",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/predictions.csv.gz": "958b7b6df2cabffd47ca250ba8ff752c557658930b97ec62c3bf3b2eddbc6396",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/results/validation.json": "9a00b567401c085473fc98da761f70adb11abbcad261ef2600c93fee25ce4948",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/predict.py": "5a5d6d283af3a6be75d70675b528e7f1db912ca9e53097d540d36982224a00e6",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/conservation.py": "70f5b4befe4382924ee4740b848865d1d958ed0ff704d0764329c6b2223873ec",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/protocol.json": "9d8216a753d9e7a84f78707dcca30cbc11a626fe7e01f4e50dd09d0146138f10",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/sources.json": "01dbad7a3fd7072e0d0bb6b1eecc8c26af35bb84b6ad144e0aa9df437d47e8da",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_gap_recovery/fixture_plan.csv": "19666ba9e5f39337de5af1884fb4ab11c637919216831f451c684eeeace806b4",
+  "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/season_conservation/inputs/full_team_totals.csv": "004214fb008229bab37cebf00b51db4fe22bd0226c94c91633fc0719daf49cc2"
+}

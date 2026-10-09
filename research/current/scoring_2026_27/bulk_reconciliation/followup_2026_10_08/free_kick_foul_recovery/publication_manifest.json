@@ -1,0 +1,20 @@
+{
+  "README.md": "23b2998a7626ff05643af5b56056690458f2eb9362393df516444415404205e9",
+  "finalize.py": "2f262ece5b900c31dfdaa34bdc91a0e92356d7a2d38345a946c9c1eede765d69",
+  "inputs/manifest.json": "9624ff96869baae4a2145a4161e714ffc9ace70b29aae5f3641894dba035b0b4",
+  "inputs/parent_CURRENT.json": "4b3134d818bedc243d126cd8bb12be3770a93bef117d2c5d89af78bf07d766a0",
+  "plan.csv.gz": "1f48730571699edb3d321f87d1029aade57e3e79476f776b3090f3faa3e9cf5c",
+  "prediction_freeze.json": "e1a3d512f49a84a0ce243c1577573860df9544c1e2c12f3ac688c116d7db7bde",
+  "predictions.csv.gz": "bbb52d03b7a7b593152475cd61a9d814a06bb93a463d740c6335bef0a0025bc1",
+  "prepare.py": "bc876844ee86cfa8109803dd123a4db6ef9ca6be2ec5956164346ca0a6215418",
+  "protocol.json": "be0070a3d55093dc84f0a21b13c5bc5da23b2df99abc2a7c0aae81357d12dd44",
+  "replay_report.json": "597634fff8e390886fd102faa7e88c17ffd34742186aa899a984211183dbfffe",
+  "reproduce.py": "03b963ff5ed9a4902f538866b3daac563e9633e640626562255e4aac7c950948",
+  "results/findings.json": "69d07e40a5d6c424d79f0233574791aa6982eac5cfd78f2f2cda59f649bef3c5",
+  "results/goal_vector_controls.csv": "f28084067db159e01a2e56148ce334b16fa2ce5d69fd41a7092460badd29e92e",
+  "results/player_controls.csv.gz": "c4818d44ee4a1101abb500dbe6d7429ed04e5d445d09e4966d8dcb95ab3ce003",
+  "results/protected_conflicts.csv": "caa61d71927c4f6e91c05d197509b4b5cdc3dae111e8a29329c6feb9365586ba",
+  "results/validation.json": "9263300dc2ee910007d37da9483a08179549c1e6ac953351921732d9501bbac3",
+  "rule.py": "322a6c1de085a822794cee7ea140a16233aac6d7d69ab35b1b772ef8fab37c47",
+  "validate.py": "ca92fba7a54f4a328ced53ec4028c353ca210bf10bc64f2d30005315be85068d"
+}

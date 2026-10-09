@@ -1,0 +1,18 @@
+{
+  "version": "direct_free_kick_ordinary_foul_pair_v1",
+  "normative_sources": [
+    "https://www.premierleague.com/en/news/827842",
+    "https://www.premierleague.com/en/news/2174909"
+  ],
+  "rule_compatibility": "Official2019 and2026 guidance give an assist to the ordinary foul winner if another player directly scores the free-kick, and none if the winner scores it. Historical one-goal native FPL controls are compatible only for this unchanged non-handball direct set-piece subset.",
+  "rule": "Actual goal with explicit26 free-kick context, no penalty9/own-goal28/pass-assist29/154/55. Exactly one actual ordinary foul won+committed pair with13+152 direct-FK law, no handball10/penalty9/indirect241, mirrored coordinates, clock difference<=2s, explicit related233 references, unique roster winner/scorer. No intervening non-administrative event or coverage interruption/deletion, including passes/restarts/other fouls/shots. Consider only the same period and preceding600s; require one causal candidate after all continuity guards. Present280/281/282 markers must corroborate route, winner and team. Context26 alone never establishes a direct free kick.",
+  "control_selection": "Freeze protocol/rule/source projections/predictions first. Select every predicted2019/20\u20132025/26 goal on a complete one-goal scoring team with unique mapped native participants and full goal/scorer inventory. Compare whole native assist vectors only after freezing. No other-goal subtraction or FPL-derived decisions in selection.",
+  "gate": {
+    "minimum_control_goals": 20,
+    "minimum_control_goals_per_kind": 5,
+    "maximum_vector_errors": 0,
+    "maximum_protected_or_candidate_conflicts": 0
+  },
+  "application": "Qualify kinds separately behind the global zero-error gate. Apply only qualified previously unresolved pre2025 goals with complete identity/coverage. Reaggregate all evidence with unchanged contribution/aggregate functions. Fill only open empty assists_2026_27 cells, named rule_recalculation or missing_data. Preserve every approved goal/candidate exclusion/known total and all other ledger/native/source fields. No scoring/features.",
+  "limits": "Previously observed source FK examples and existing outcomes, same Opta lineage; rule-compatible temporal regression, not untouched holdout. Numeric qualifiers from pinned public parser, not a provider-certified dictionary. Hands, indirect kicks, short passes, ambiguous pairs and incomplete inventories abstain. Existing penalty rules/gates remain unchanged."
+}

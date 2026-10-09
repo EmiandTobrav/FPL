@@ -39,7 +39,15 @@ Felles tabeller dekker nå alle åtte sesonger: **187 111 spillerkamper og
 kontrakt. 14 365 rundepoeng er kvalifisert; tidsriktige features mangler fortsatt.
 Se [datatabeller og innlesing](research/current/training_dataset/canonical_extension/README.md).
 
-**Gjeldende datagapstatus:** **11 215 åpne krav**, **66 478 inputkomplette
+**Gjeldende datagapstatus:** **11 188 åpne krav**, **66 478 inputkomplette
+spillerkamper og 824 hele kamper**. [27 nye mållinjeverdier](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_match_block_bounds/README.md)
+er utfylt fra allerede kvalifiserte blokktellere per spillerkamp: åtte i
+2019/20 og nitten i 2020/21. 1 975 kontroller i 398 kamper har null avvik,
+inkludert 471 direkte primærkontroller i 24 kamper. 17 mållinjekrav gjenstår.
+Tre tester og 16 byteidentiske replayfiler består. Totalt **3 705 krav** er
+lukket siden omprioriteringen. Ny poengberegning og trening er fortsatt utsatt.
+
+**Tidligere datagapstatus:** **11 215 åpne krav**, **66 478 inputkomplette
 spillerkamper og 824 hele kamper**. [Fire mållinjeverdier](research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/README.md)
 er innarbeidet fra eksakt spiller-/lag-sesongavstemming i 2019/20. 1 513
 kontroller i 378 kamper har null avvik. 2020/21 sperres på en residual på én
@@ -78,8 +86,8 @@ Kilderuter får korte innledende tidsrammer, og små utfyllinger samles i
 batcher. Arbeid uten konkrete utfyllingskandidater skal bytte rute;
 faktiske feltlukkinger og tidsbruk rapporteres sammen.
 En egen [innhentingskø](research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-skiller **1 945 data-/kildekrav** fra **9 270 assistkrav merket
-regelomregning**. Alle 11 215 åpne krav beholdes. Innhent også manglende
+skiller **1 918 data-/kildekrav** fra **9 270 assistkrav merket
+regelomregning**. Alle 11 188 åpne krav beholdes. Innhent også manglende
 hendelsesbevis for assists nå; nye regelberegninger følger senere.
 
 - [Gjeldende restliste og reproduksjon](research/current/scoring_2026_27/bulk_reconciliation/README.md)

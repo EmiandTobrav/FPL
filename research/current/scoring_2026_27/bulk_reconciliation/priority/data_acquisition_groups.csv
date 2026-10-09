@@ -13,8 +13,8 @@ clearances_blocks_interceptions,missing_data,2024-25,47
 fouls_won,missing_data,2019-20,16
 fouls_won,missing_data,2020-21,8
 fouls_won,missing_data,2021-22,10
-goal_line_clearances,missing_data,2019-20,10
-goal_line_clearances,missing_data,2020-21,30
+goal_line_clearances,missing_data,2019-20,2
+goal_line_clearances,missing_data,2020-21,11
 goal_line_clearances,missing_data,2021-22,3
 goal_line_clearances,missing_data,2024-25,1
 legacy_net_tackles,external_conflict,2019-20,6

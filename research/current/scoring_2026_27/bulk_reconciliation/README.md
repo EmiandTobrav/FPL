@@ -1,5 +1,37 @@
 # Gjeldende datagaparbeid og restliste
 
+Oppdatert 9. oktober 2026: **11 188 åpne krav i 10 802 spillerkamper**.
+**66 478 spillerkamper og 824 hele kamper** har komplette input.
+[Siste ferdigstilte batch](followup_2026_10_08/primary_match_block_bounds/README.md)
+lukker **27 mållinjekrav**, med 1 975 kontroller i 398 kamper uten avvik.
+Tre tester og 16 byteidentiske offline-filer består. Totalt **3 705 krav**
+er lukket siden omprioriteringen. Ingen ny poengberegning eller trening.
+
+Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md),
+[gjeldende restliste](followup_2026_10_08/primary_match_block_bounds/results/remaining_fields.csv.xz)
+og [full ledger](followup_2026_10_08/primary_match_block_bounds/results/requirements.csv.xz).
+[Innhentingskøen](priority/ACQUISITION_CURRENT.json) har **1 918 data-/kildekrav**:
+1 684 manglende verdier og 234 beskyttede konflikter. De 9 270 assistkravene
+beholdes; manglende årsaksbevis skal innhentes før nye regelberegninger.
+
+| Feltgruppe | Åpne krav |
+|---|---:|
+| Assists etter målreglene | 9 270 |
+| Times tackled | 1 238 |
+| CBI | 545 |
+| Mållinjeklareringer | 17 |
+| Øvrige felt | 118 |
+| **Totalt** | **11 188** |
+
+[Keeper-CBI har ett ferdig dokumentert kildearbeid og fortsettelsespunkt](followup_2026_10_08/keeper_cbi_resolution/README.md).
+Alle 341 manglende keeperverdier forblir åpne; seks native vetoer er uendret,
+og et alternativ feiler 369 av 569 kontroller. 204 utespillerkonflikter
+bevares. Uendrede kilder gjenprøves ikke uten konkret nytt kompatibilitetsbevis.
+Dataene er fortsatt ikke treningsklare. Datagap først, deretter samlet kvalitet,
+ny poengversjon og fristsikre features.
+
+# Historikk: 54 straffemålkrav
+
 Oppdatert 9. oktober 2026: **11 260 åpne krav i 10 822 spillerkamper**.
 **66 458 spillerkamper og 824 hele kamper** er inputkomplette. Siste
 [kildebatch](followup_2026_10_08/espn_gap_acquisition/README.md) lukker **54

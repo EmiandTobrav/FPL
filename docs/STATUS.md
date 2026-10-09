@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 215**,
+**14 893 åpne feltkrav**, nå **11 188**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,8 +24,8 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 1 711 manglende dataverdier/inventarer og 234 kildekonflikter:
-**1 945 krav**. **9 270 assistkrav merket regelomregning**
+omfatter 1 684 manglende dataverdier/inventarer og 234 kildekonflikter:
+**1 918 krav**. **9 270 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
@@ -36,7 +36,26 @@ utfyllingskandidater. Påviste kompatible bulkinnhentinger kan fortsette;
 nødvendige kontroller beholdes. Samle små utfyllinger i felles batcher og
 rapporter tidsbruk sammen med faktiske lukkinger.
 
-## Nyeste datagapleveranse – fire mållinjeverdier
+## Nyeste datagapleveranse – 27 mållinjeverdier
+
+**11 188 åpne krav**, 66 478 inputkomplette spillerkamper og 824 hele kamper.
+[Nullblokker per spillerkamp](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_match_block_bounds/README.md)
+lukker 27 krav fra tidligere kvalifiserte primærdata, uten ny nettinnhenting.
+1 975 gamle verdier i 398 kamper stemmer uten avvik; 471 av disse kommer
+fra 24 direkte primærkamper. Ingen positiv arkivverdi motsier prediksjonene.
+Tre tester og 16 byteidentiske offline-filer består. 775 221 øvrige ledger-
+rader og alle opprinnelige kildekolonner er bevart. 17 mållinjekrav gjenstår.
+Totalt **3 705 krav** er lukket. Innhentingskøen har **1 918 krav**:
+1 684 manglende verdier og 234 beskyttede konflikter. Keeper-CBI beholder
+samme dokumenterte kildehindring. Ingen ny scoring eller treningsklarhet.
+
+Den tidligere [frisparkprøven](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/free_kick_foul_recovery/README.md) er ferdigstilt uten anvendelse.
+Ni kontrollmål gir null avvik, men er under den opprinnelige gaten på 20;
+ordinær-gruppen har fire av fem påkrevde kontroller. Ni filer gjenskapes
+byteidentisk offline. Ingen terskel senkes eller nytt assistkrav lukkes.
+Uendrede innganger prøves ikke på nytt; nye komplette årsaksinventarer trengs.
+
+## Tidligere datagapleveranse – fire mållinjeverdier
 
 **11 215 åpne krav**, 66 478 inputkomplette spillerkamper og 824 hele kamper.
 [Eksakte spiller-sesonggrenser](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/player_season_block_bounds/README.md)

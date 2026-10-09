@@ -1,0 +1,24 @@
+{
+  "investigation_status": "completed_unqualified_insufficient_controls",
+  "data_completion_status": "not_complete",
+  "fields_closed": 0,
+  "ledger_modified": false,
+  "scoring_modified": false,
+  "qualified_kinds": [],
+  "control_goals": 9,
+  "required_control_goals": 20,
+  "control_player_matches": 130,
+  "control_kinds": {
+    "self_won_free_kick": 5,
+    "ordinary_foul_free_kick": 4
+  },
+  "required_control_goals_per_kind": 5,
+  "goal_vector_errors": 0,
+  "player_errors": 0,
+  "unmet_gates": [
+    "minimum_control_goals",
+    "minimum_control_goals_per_kind:ordinary_foul_free_kick"
+  ],
+  "same_input_retry_allowed": false,
+  "reopening_condition": "New complete, rule-compatible source goal/foul inventories that add eligible frozen one-goal whole-team controls. Keep original zero-error/minimum gates. No goal decisions or labels are applied by this trial."
+}

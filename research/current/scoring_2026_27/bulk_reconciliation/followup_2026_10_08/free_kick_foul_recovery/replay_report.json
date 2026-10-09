@@ -1,0 +1,15 @@
+{
+  "byte_identical_files": 9,
+  "files": {
+    "plan.csv.gz": "1f48730571699edb3d321f87d1029aade57e3e79476f776b3090f3faa3e9cf5c",
+    "predictions.csv.gz": "bbb52d03b7a7b593152475cd61a9d814a06bb93a463d740c6335bef0a0025bc1",
+    "prediction_freeze.json": "e1a3d512f49a84a0ce243c1577573860df9544c1e2c12f3ac688c116d7db7bde",
+    "inputs/manifest.json": "9624ff96869baae4a2145a4161e714ffc9ace70b29aae5f3641894dba035b0b4",
+    "results/findings.json": "69d07e40a5d6c424d79f0233574791aa6982eac5cfd78f2f2cda59f649bef3c5",
+    "results/goal_vector_controls.csv": "f28084067db159e01a2e56148ce334b16fa2ce5d69fd41a7092460badd29e92e",
+    "results/player_controls.csv.gz": "c4818d44ee4a1101abb500dbe6d7429ed04e5d445d09e4966d8dcb95ab3ce003",
+    "results/protected_conflicts.csv": "caa61d71927c4f6e91c05d197509b4b5cdc3dae111e8a29329c6feb9365586ba",
+    "results/validation.json": "9263300dc2ee910007d37da9483a08179549c1e6ac953351921732d9501bbac3"
+  },
+  "network": false
+}

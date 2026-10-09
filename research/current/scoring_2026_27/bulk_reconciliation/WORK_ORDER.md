@@ -1,6 +1,6 @@
 # Arbeidsrekkefølge: datagap først, deretter kvalitet og harmonisering
 
-Oppdatert 9. oktober 2026 etter brukerens omprioritering og sesongblokkavstemmingen. [CURRENT.json](CURRENT.json) peker til gjeldende
+Oppdatert 9. oktober 2026 etter brukerens omprioritering og kampblokkavstemmingen. [CURRENT.json](CURRENT.json) peker til gjeldende
 ledger. Eldre avviks-, minutt- og restlister er historiske diagnoser.
 
 ## Gjeldende mål og faseorden
@@ -54,7 +54,7 @@ Eksisterende kvalifiserte poengversjoner bevares, men utvides ikke nå.
 
 ## Nåværende status
 
-**11 215 åpne feltkrav i 10 802 spillerkamper.** **66 478 spillerkamper og
+**11 188 åpne feltkrav i 10 802 spillerkamper.** **66 478 spillerkamper og
 824 hele kamper** har komplette input, av 77 280 og 2 660. Den tidligere
 [delmengdeutfylling](followup_2026_10_08/tackle_subset_bounds/README.md)
 lukker to taklingsfelt og gjør én spillerkamp komplett. Tre tester og 15
@@ -62,13 +62,19 @@ byteidentiske offline-replayfiler består. [Siste kampinventar](followup_2026_10
 avklarer ett assistkrav og gjør én spillerkamp komplett. 14 andre krav har
 komplette mål, men forblir åpne med ukjente årsaksbidrag. Ingen assistinventargap
 står igjen. Dette beviser ikke full dekning av foul/berøringer/returer/intensjon.
-Totalt **3 678 krav** er lukket siden omprioriteringen. Fem tester og 24
+Totalt **3 705 krav** er lukket siden omprioriteringen. Fem tester og 24
 byteidentiske replayfiler består. Alle gamle målavgjørelser, kjente assist-
 totaler og native rettelser bevares. Ingen ny assistregel, poengberegning eller trening.
 374 av 380 kamper i 2025/26 har tidligere kvalifiserte poengetiketter.
 Ny omregning og full før-frist-/treningsintegrasjon følger senere.
 
-Numerisk rest: 44 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
+[Direkte kampblokkgrenser](followup_2026_10_08/primary_match_block_bounds/README.md)
+lukker ytterligere 27 mållinjekrav fra allerede kvalifiserte primærtellere.
+1 975 kontroller i 398 kamper, inkludert 471 i 24 direkte primærkamper,
+har null avvik. Keepere og manglende/positive blokker utelates. Tre tester og
+16 byteidentiske offline-filer består. Alle øvrige verdier og filpekere bevares.
+
+Numerisk rest: 17 mållinjeklareringer, 1 238 times tackled, 545 CBI (341
 manglende keeperverdier og 204 beskyttede konflikter), 2 keeperlokasjoner og
 mindre grupper. Assists gjenstår i 9 270 rader. Alle 994 skuddkrav er allerede
 lukket. [Keeperlokasjon](followup_2026_10_08/fotmob_keeper_location/README.md)
@@ -99,7 +105,7 @@ i den fulle gamle populasjonen på 983 tilfeller. Originalpiloten forblir feilet
 
 **Innhenting styrer køen nedenfor.** De regelbaserte assistgruppenes betingede
 tak skal ikke prioriteres som om alle var rene kildegap. Start fra
-[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **1 945 krav**,
+[innhentingsvisningen](priority/ACQUISITION_CURRENT.json): **1 918 krav**,
 fordelt på manglende data/inventarer og kildekonflikter. Uttrekksunntaket er avklart.
 Velg en kilde som faktisk kan tilføre manglende felt eller komplette hendelser;
 bruk eksisterende kvalifiserte utfyllinger før utvikling av nye regler.
@@ -114,7 +120,7 @@ lukking eller innbyrdes rangering uten et konkret gjennomførbart kildeforsøk.
 
 | Arbeidsspor | Gjeldende omfang | Neste avgrensede handling |
 |---|---|---|
-| Manglende kildefelt og inventarer | 1 711 krav; blant annet 1 237 times tackled; ingen assistinventargap, 341 keeper-CBI og 44 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
+| Manglende kildefelt og inventarer | 1 684 krav; blant annet 1 237 times tackled; ingen assistinventargap, 341 keeper-CBI og 17 mållinjekrav | Gjenbruk allerede innhentede spillerstatistikker og koblinger. Søk faktiske manglende tellere og komplette hendelser, med et lite kildeforsøk før masseinnhenting. De 21 tidligere arkivkampene har allerede statistikk/identiteter; deres hendelsesinventarer er fortsatt mangelfulle. Gamle API-/SDP-forsøk for times tackled og de feilede CBI-rutene skal ikke gjentas uten nye fakta. |
 | Kildekonflikter og FPL-uttrekk | 234 konflikter; ingen åpne uttrekksunntak | Innhent manglende bevis eller en kompatibel kildeversjon som kan forklare avviket. Bevar FPL og godkjente verdier. Keeperlokasjonens to Sánchez-krav inngår blant manglende data, men er sperret av kilde-/minuttavvik; ikke fyll dem med proxyer. Ingen ny scoring for å omgå sperren. |
 | Hendelsesbevis til senere assistomregning | 9 270 krav merket regelomregning; ingen inventargap står igjen | Skaff faktisk mottak, foul/hands, berøringer, returer, intensjon og kontinuitet der dette mangler. Betingede lukkingstak nedenfor er hjelp til å velge kildeomfang, ikke forventet gevinst. Utsett nye assistregler og store kontrollstudier; bruk eksisterende kvalifiserte regler når nytt kildebevis gir rask utfylling. |
 | Andre modellstatistikker og historiske inventarer | Egen dekningskartlegging; ikke talt som lukkede poengkrav | Hent manglende relevante xG/xA/xGI/xGC, defensive tellinger og faktiske frist-/roster-/statistikkversjoner. Gjenbruk kvalifiserte kampstarter og eksisterende statistikk. Ikke bygg features eller nye poengetiketter nå. |
@@ -131,6 +137,12 @@ Velg den konkrete innhentingen som gir raskest dokumenterbar utfylling. Samlet k
 regelgater for scoring, helkampbonus og treningsintegrasjon følger faseordenen
 over. Ingen omprioritering reduserer datakrav eller senker kontrollgater.
 
+Den tidligere [frisparkprøven](followup_2026_10_08/free_kick_foul_recovery/README.md) er ferdigstilt uten anvendelse.
+Ni kontrollmål gir null avvik, men er under den opprinnelige gaten på 20;
+ordinær-gruppen har fire av fem påkrevde kontroller. Ni filer gjenskapes
+byteidentisk offline. Ingen terskel senkes eller nytt assistkrav lukkes.
+Uendrede innganger prøves ikke på nytt; nye komplette årsaksinventarer trengs.
+
 ## Oppdaterte assistavhengigheter
 
 Dette er **betingede tak hvis alle resterende målbidrag i gruppen avklares**, ikke
@@ -146,7 +158,7 @@ utenfor målgruppene. Gruppetak kan øke når andre blokkeringer fjernes.
 | assisted_goal_without_unique_pass_certificate | 391 | 1167 | 980 | 956 | 81 |
 | own_goal | 228 | 890 | 818 | 804 | 50 |
 | no_positive_goal_assist_certificate | 352 | 817 | 747 | 690 | 57 |
-| new_goal_inventory_facts_pending | 76 | 562 | 562 | 421 | 7 |
+| new_goal_inventory_facts_pending | 76 | 562 | 562 | 440 | 7 |
 | direct_free_kick | 23 | 308 | 285 | 272 | 4 |
 
 ## Kontroller og kildeprioritet

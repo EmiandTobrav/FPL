@@ -1,0 +1,8 @@
+{
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/free_kick_foul_recovery/inputs/manifest.json": "9624ff96869baae4a2145a4161e714ffc9ace70b29aae5f3641894dba035b0b4",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/free_kick_foul_recovery/predictions.csv.gz": "bbb52d03b7a7b593152475cd61a9d814a06bb93a463d740c6335bef0a0025bc1",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/free_kick_foul_recovery/plan.csv.gz": "1f48730571699edb3d321f87d1029aade57e3e79476f776b3090f3faa3e9cf5c"
+  },
+  "outcomes_read_by_selection": false
+}

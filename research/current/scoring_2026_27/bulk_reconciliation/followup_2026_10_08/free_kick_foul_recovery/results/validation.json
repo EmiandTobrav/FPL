@@ -1,0 +1,20 @@
+{
+  "control_goals": 9,
+  "control_player_matches": 130,
+  "control_kinds": {
+    "self_won_free_kick": 5,
+    "ordinary_foul_free_kick": 4
+  },
+  "control_seasons": {
+    "2021-22": 2,
+    "2023-24": 2,
+    "2024-25": 3,
+    "2025-26": 2
+  },
+  "goal_vector_errors": 0,
+  "player_errors": 0,
+  "protected_conflicts": 0,
+  "candidate_denial_conflicts": 0,
+  "qualified_kinds": [],
+  "limits": "Rule-compatible historical/native FPL whole-team regression, shared Opta lineage and previously seen outcomes. Not untouched holdout, not general historical assist-rule transfer."
+}

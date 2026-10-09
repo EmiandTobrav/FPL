@@ -1,0 +1,26 @@
+{
+  "target": "Only missing goal_line_clearances for native FPL DEF/MID/FWD with qualified primary match outfielder_block=0",
+  "proof": "Nonnegative whole-match goal-line clearances are a subset of whole-match outfield shot blocks. Primary zero is explicit or certified by original exact complete-roster team conservation. GK and nonzero/missing block rows excluded.",
+  "sources": {
+    "primary_gap_recovery/qualified_components.csv.gz": "cfce4602fe7f778f574ef59f01e293a26ad1ebab2e34bceb672d9862f3d7faaa",
+    "primary_gap_recovery/players.json": "60caa778eacd80c3613a02b66488e47ab55bb4ff95e65eef7c4f991cdcc72329",
+    "primary_gap_recovery/roster.csv": "1ad92344928e356dcec315873f2a28a1f1483de96a0332e3b487e6b2de1ce2ba",
+    "primary_gap_recovery/conservation.csv": "2b5c2168d9b6ead53e9759934683e643b5a407a95903492c6c4786a5cd587b21",
+    "primary_gap_recovery/freeze.json": "0253e96df6af1f625ba4a4028a80d92294efa1696be4ff214e3df0a599e028ba",
+    "primary_gap_recovery/validation_summary.json": "28f4027f40b2b86536f9e896ee13bd0190d818464b746d2651a59c5ad6317649",
+    "primary_gap_recovery/explicit_component_controls.csv": "7aaadc98ba807a7edaef57774d0fbe51684687111d8c613c90b8df6305245e1c",
+    "player_season_block_bounds/predictions.csv.gz": "958b7b6df2cabffd47ca250ba8ff752c557658930b97ec62c3bf3b2eddbc6396",
+    "player_season_block_bounds/results/validation.json": "9a00b567401c085473fc98da761f70adb11abbcad261ef2600c93fee25ce4948"
+  },
+  "gates": {
+    "min_controls": 1000,
+    "min_primary_controls": 100,
+    "min_primary_control_fixtures": 20,
+    "max_errors": 0,
+    "max_positive_contradictions": 0
+  },
+  "controls": "All already closed GL values among primary predictions, plus deduplicated previously qualified zero-season block regressions. Reused source qualification requires original zero-error explicit component checks. Shared-source regression, not independent holdout.",
+  "omitted_values_are_not_zero": true,
+  "scoring_allowed": false,
+  "features_allowed": false
+}

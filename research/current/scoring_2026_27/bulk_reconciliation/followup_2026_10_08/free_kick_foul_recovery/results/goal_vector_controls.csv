@@ -1,0 +1,10 @@
+season,fixture,match_id,event_id,kind,players,predicted_assists,native_assists,agrees
+2021-22,107,e2wmjoplx0ovq2wxnn14dy0wk,2353095719.0,self_won_free_kick,13,0,0,True
+2021-22,206,edhlfy1mrhiryyd6ihpxy91jo,2371154365.0,self_won_free_kick,14,0,0,True
+2023-24,127,czh27zkoqem0h8z1w8gl4t82c,2620511167.0,self_won_free_kick,16,0,0,True
+2023-24,270,dzh79eajhapk5raqk9l0t2rro,2653520333.0,self_won_free_kick,14,0,0,True
+2024-25,152,bm7z3a55zn39k1e8kkuo99n2s,2760100611.0,self_won_free_kick,15,0,0,True
+2024-25,276,d1bx99scogod2lz819u36qmfo,2786286895.0,ordinary_foul_free_kick,14,1,1,True
+2024-25,328,dmfumnyqotxe4tfv5dt39h1ck,2803957897.0,ordinary_foul_free_kick,15,1,1,True
+2025-26,25,19ty1jsiu05lygxc15uw4exp0,2842116241.0,ordinary_foul_free_kick,15,1,1,True
+2025-26,261,3wwu6c90x5cn2qaf3glpifml0,2902631683.0,ordinary_foul_free_kick,14,1,1,True
