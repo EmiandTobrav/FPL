@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_source_check/prepare.py": "9cdc2a8919f97c124da0a96a038dc3199042ff74c115cb46e2db4bcb35761c8b",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/results/control_comparisons.csv": "d0ef2c283671025c76907dd1d0477637506c2f4b1a6907dc5390ed98e43c18ae",
+    "scoring_2026_27/delta_input_audit/inputs/archive_projection.csv.gz": "9995a36d550f313fbde42d62fa778b63c1a9815d70841c202dca1447b295ac88",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/fotmob_keeper_cbi/results/keeper_predictions.csv": "afe4ae523a3f06bf7ea2b1b935c230abab7b45328dbaf5fb8115bc0b42cafa64",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/inputs/raw/204936_41.json.gz": "eb4f7da47bdee552223c144f68320e14b5305d020a1a49cea2fb99e040f69cef",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/inputs/raw/204936_346.json.gz": "119ab592403d9a872848500a24ad8ad22a4f5ec1bb523b4ec052942d3a9ccbbb",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/primary_keeper_location/inputs/source_manifest.csv": "fb1c946925025eb48ad03ac607e68a25cb7d1e734fc8b64d9522ee82ee2ed1ee"
+  },
+  "outputs": {
+    "archive_comparison.csv": "ad8c3247c1f73f384ee9bf6c00666417ceb9f48b47f9d078e7fb07035c5bd020",
+    "primary_comparison.csv": "ec42b50babb78d8d4f2d9e79942e0d50d9e64cdc6624fb3b64426c081d7a7e03",
+    "findings.json": "0dddf6cb69b2d10830d6eb7fcd180a85905615fa1c42a001616da9919329bb47"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "old_open_fields": 11949,
+  "new_fields": 635,
+  "open_fields": 11314,
+  "unique_affected_player_matches": 10822,
+  "complete_player_matches": 66458,
+  "complete_matches": 824,
+  "new_complete_player_matches": 622,
+  "new_complete_matches": 12,
+  "new_goal_decisions": 53,
+  "new_decisions_by_kind": {
+    "self_won_penalty": 53
+  },
+  "new_fields_by_season": {
+    "2019-20": 97,
+    "2020-21": 139,
+    "2021-22": 135,
+    "2022-23": 109,
+    "2023-24": 96,
+    "2024-25": 59
+  },
+  "zero_values": 604,
+  "positive_values": 31,
+  "remaining_assists": 9291,
+  "previously_complete_assist_totals_preserved": 67354,
+  "unchanged_ledger_rows": 774613,
+  "raw_fpl_preserved": true,
+  "old_scoring_labels_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "control_goals": 53,
+    "control_player_matches": 764,
+    "control_kinds": {
+      "ordinary_foul_penalty": 41,
+      "self_won_penalty": 12
+    },
+    "control_seasons": {
+      "2019-20": 9,
+      "2020-21": 12,
+      "2021-22": 11,
+      "2022-23": 5,
+      "2023-24": 6,
+      "2024-25": 4,
+      "2025-26": 6
+    },
+    "goal_vector_errors": 0,
+    "player_errors": 0,
+    "protected_conflicts": 0,
+    "candidate_denial_conflicts": 0,
+    "qualified_kinds": [
+      "ordinary_foul_penalty",
+      "self_won_penalty"
+    ],
+    "limits": "Rule-compatible historical/native FPL whole-team regression, shared Opta lineage and previously seen outcomes. Not untouched holdout, not general historical assist-rule transfer."
+  }
+}

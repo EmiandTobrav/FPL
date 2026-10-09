@@ -1,0 +1,34 @@
+{
+  "version": "ordinary_penalty_unchanged_rule_temporal_controls_v1",
+  "new_evidence": "Official22Aug2019 foul-play guidance and20Jul2026 scoring rules explicitly give no assist if the penalty taker won the foul. Ordinary non-handball penalty foul assists and self-won direct penalty no-assists are unchanged; the2025 assist changes affect deflections/intentions/handballs outside this strict subset.",
+  "normative_sources": [
+    {
+      "url": "https://www.premierleague.com/en/news/827842",
+      "published": "2019-08-22",
+      "observed": "2026-10-09",
+      "fact": "A player winning and converting the same penalty gets no assist; a different ordinary foul winner can get the converted penalty assist."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/2174909",
+      "published": "2026-07-20",
+      "observed": "2026-10-09",
+      "fact": "The foul winner gets an assist on a direct conversion; the taker gets no assist if the taker also won the foul."
+    },
+    {
+      "url": "https://www.premierleague.com/en/news/4362187",
+      "published": "2025-07-18",
+      "observed": "2026-10-09",
+      "fact": "Changed assist definitions concern destination/deflections and forced handball. This classifier excludes handball and all open-play/rebound goals."
+    }
+  ],
+  "predictor": "Reuse unchanged frozen penalty_foul_recovery/rule.py and physical predictions: actual direct penalty goal, unique ordinary won+committed foul pair, explicit348 scorer UUID link, penalty/body-foul markers9+13, no handball10, mirrored coordinates, clock<=2s, unique roster identities, no intervening play/gap/deletion. No new candidate rule, no FPL outcome input.",
+  "control_selection": "All actual predicted ordinary and self-won penalty goals from2019/20 through2025/26 where the scoring team has exactly one goal, complete goal inventory and unique complete native FPL participant identities. Compare the whole team vector to original native assists only AFTER freezing selection/predictions. Historical assists are used solely as truth for this unchanged subset; never as general target totals. No subtraction of other goal contributions and no FPL-derived joint predictions.",
+  "gate": {
+    "minimum_control_goals": 20,
+    "minimum_control_goals_per_kind": 5,
+    "maximum_vector_errors": 0,
+    "maximum_protected_or_candidate_conflicts": 0
+  },
+  "application": "Only qualified kinds on unresolved pre2025 goals with complete identity and goal coverage. Preserve every approved goal decision, denials and known player-match total. Reaggregate the current goal decisions with the unchanged aggregate implementation; fill only currently missing_data assists_2026_27 requirements. Preserve all other ledger/native/source fields and quality flags. No scoring/features.",
+  "limits": "Separate justified rule-compatible historical control design; the old2025-only pilots and their failed/inadequate gates remain immutable. Known/previously seen outcomes, same Opta source; regression and rule-transfer evidence, not untouched holdout or independent-provider testing. Require native mapping of winner/scorer and complete inventories."
+}

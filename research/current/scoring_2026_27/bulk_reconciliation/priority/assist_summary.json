@@ -1,6 +1,6 @@
 {
-  "open_assists": 9926,
-  "with_goal_dependencies": 9343,
+  "open_assists": 9291,
+  "with_goal_dependencies": 8708,
   "inventory_gaps": 583,
   "unclassified_dependencies": 0,
   "warning": "Conditional group ceilings, not forecasts or newly resolved values. Touched counts overlap; never sum them. Complete-match gains also require all other open fields closed."

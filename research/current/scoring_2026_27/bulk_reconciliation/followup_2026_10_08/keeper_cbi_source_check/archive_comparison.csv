@@ -1,0 +1,7 @@
+season,fixture,code,expected,actual,match_id,player_id,fotmob_explicit_clearances,totalClearance,effectiveClearance,outfielderBlock,interception,interceptionWon,clearance_alone_exceeds_native_cbi
+2025-26,41,204936,4,5,1gil6wudqtyaauvngcgucwbh0,4cetkl0w2uq40ccti5ka6a4t1,5,5.0,5.0,,,,True
+2025-26,289,184254,1,3,486hxmd9rt6ysjx8cez706gpg,h12c7ocq35slzrop3ltnrsnp,3,3.0,3.0,,,,True
+2025-26,307,172649,0,2,4fghd8ykrqusg7duvwfkhy6fo,5z8ycnd0smdkumi5fgtzf7c9h,2,2.0,2.0,,,,True
+2025-26,310,149065,3,4,4go4bjgjd216pca6xkuxtolxw,71rob1lsnmdviy1siakkzpqdx,4,4.0,4.0,,,,True
+2025-26,317,59735,3,2,4jkq3hfgw6nq6tesl83wpy80k,cnoomjxp6tna0mx2ycuptgixh,2,2.0,2.0,,,,False
+2025-26,346,204936,1,2,4vs4yw5xl6m0llsmolmoloob8,4cetkl0w2uq40ccti5ka6a4t1,2,2.0,2.0,,,,True

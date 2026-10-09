@@ -1,0 +1,9 @@
+{
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/build.py": "ac95706c0dafbefd93d0697c9c11a0112642b35a43f9f3fe441bbf53b1b783ea",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/application_protocol.json": "b0a85803a2c9709000cc43f56367633a0e69d04c352985f079cce26730044929",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/results/validation.json": "45d0cf67e051ca5f06e2649a96fa7ec76c88ca708c26319ca8eaf1735051a5c0",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/prediction_freeze.json": "5d5bc2a9274d09ff017e0e1c30a359c30decd16aea86b425ec5144f9f128ef4a",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/inputs/manifest.json": "524540f9569ca237c2f5fb4409ea8b0e7f8cd2dd8ea1d529c4a420d89edf1d16"
+  }
+}

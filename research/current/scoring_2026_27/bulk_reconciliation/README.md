@@ -1,5 +1,33 @@
 # Gjeldende datagaparbeid og restliste
 
+Oppdatert 9. oktober 2026: **11 314 åpne feltkrav i 10 822 spillerkamper**.
+**66 458 spillerkamper og 824 hele kamper** har komplette input. Siste batch
+lukker **635 assistkrav**, med **622 nye komplette spillerkamper og 12 nye hele
+kamper**. Syv tester består; 14 resultater og fryste prediksjoner/kontroller
+reproduseres byteidentisk uten nettverk.
+
+Start med [CURRENT.json](CURRENT.json), [arbeidsrekkefølgen](WORK_ORDER.md)
+og [straffebevisene](followup_2026_10_08/penalty_rule_compatible_controls/README.md).
+[Restliste](followup_2026_10_08/penalty_rule_compatible_controls/results/remaining_fields.csv.xz),
+[full ledger](followup_2026_10_08/penalty_rule_compatible_controls/results/requirements.csv.xz)
+og [assistavhengigheter](priority/assist_groups.csv) følger nyeste målregnskap.
+
+| Feltgruppe | Åpne krav |
+|---|---:|
+| Assists etter målreglene | 9 291 |
+| Times tackled | 1 238 |
+| CBI | 545 |
+| Mållinjeklareringer | 48 |
+| Øvrige felt | 192 |
+| **Totalt** | **11 314** |
+
+53 selvtatte mål er nå avklart med uendret fysisk regel og et separat,
+regelkompatibelt historisk kontrollopplegg. Ukjente andre målbidrag forblir NA.
+Gamle native2025-piloter, keeper-/BPS-gater og rå FPL bevares. Ny scoring,
+features og samlet kvalitet følger innhentingen; 374 gamle poengkamper beholdes.
+
+## Historikk: 527 krav fra feltspesifikk identitet
+
 Oppdatert 9. oktober 2026: **11 949 åpne feltkrav i 11 444 spillerkamper**.
 **65 836 spillerkamper og 812 hele kamper** har komplette input. Siste batch
 lukker **527 mållinjekrav**, med **390 nye komplette spillerkamper og 44 nye

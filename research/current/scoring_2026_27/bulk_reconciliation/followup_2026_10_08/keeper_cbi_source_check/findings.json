@@ -1,0 +1,9 @@
+{
+  "source_sha256": "2765b1771493c917ce7c544b01cf3a151e159a818abb889c7fcbd746353eaead",
+  "native_veto_cases": 6,
+  "clearance_lower_bound_conflicts": 5,
+  "existing_primary_witnesses": 2,
+  "all_primary_clearances_agree_with_archive": true,
+  "new_fields": 0,
+  "route": "Stop archive-only keeper CBI route; unchanged native counters and original failed gates remain protected."
+}

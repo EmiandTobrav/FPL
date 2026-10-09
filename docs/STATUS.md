@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 949**,
+**14 893 åpne feltkrav**, nå **11 314**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -21,7 +21,34 @@ kildekontroller beholdes før masseutfylling; manglende data er fortsatt manglen
 Eksisterende poengversjoner bevares. Ny scoring og featurebygging er utsatt.
 Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_reconciliation/WORK_ORDER.md).
 
-## Nyeste datagapleveranse – 527 nye mållinjekrav og 44 nye komplette kamper
+## Nyeste datagapleveranse – 635 assistkrav og 12 nye komplette kamper
+
+**11 314 åpne feltkrav i 10 822 spillerkamper.** **66 458 spillerkamper og
+824 hele kamper** har komplette input. [Straffebatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/README.md)
+lukker 635 krav med 622 nye komplette spillerkamper og 12 nye hele kamper.
+
+Offisiell veiledning fra 2019 og 2026 dokumenterer uendret regel for ordinære
+straffer og selvtatte straffer. Den fysiske prediktoren gjenbrukes uendret;
+et nytt, separat utvalg av 53 enmåls-kamper gir 764 spillerkontroller, inkludert
+12 selvtatte mål, uten avvik. Minimumskrav og gamle mislykkede piloter bevares.
+Kontrollene er regelkompatibel historisk regresjon, ikke uavhengig holdout.
+
+53 uløste selvtatte mål får dokumentert ingen assist. Hele målregnskapet gir
+604 nye nuller og 31 positive spillerkamptotaler fra andre kjente bidrag.
+67 354 tidligere komplette assisttotaler og alle andre ledger-/kildeverdier
+bevares. Syv tester består; 14 resultater, prediksjoner og kontroll-/anvendelses-
+frys gjenskapes byteidentisk offline. Kvalitetsflagg beholdes; ingen ny scoring.
+
+Assists gjenstår i 9 291 krav. Prioriteringskøen følger nå CURRENTs eksplisitte
+peker til de nyeste assisttotalene, slik at de 53 avklarte målene fjernes fra
+avhengighetene. 1 238 times tackled, 545 CBI og 48 mållinjekrav gjenstår.
+[Ny liten keeperkildekontroll](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/keeper_cbi_source_check/README.md)
+viser samme klareringstall i arkivet som i de seks FotMob-vetoene; fem
+klareringstall overstiger alene native CBI. To gamle primærresponser bekrefter
+arkivverdiene. Denne alternative ruten legges til side uten innhenting eller
+utfylling. Samlet datakvalitet og treningsklarhet gjenstår.
+
+## Tidligere datagapleveranse – 527 nye mållinjekrav og 44 nye komplette kamper
 
 **11 949 åpne krav i 11 444 spillerkamper.** **65 836 spillerkamper og 812 hele
 kamper** har komplette inputfelt. [Identitets- og inventarbatchen](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/README.md)

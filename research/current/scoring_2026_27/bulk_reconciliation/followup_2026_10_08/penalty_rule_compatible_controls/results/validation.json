@@ -1,0 +1,26 @@
+{
+  "control_goals": 53,
+  "control_player_matches": 764,
+  "control_kinds": {
+    "ordinary_foul_penalty": 41,
+    "self_won_penalty": 12
+  },
+  "control_seasons": {
+    "2019-20": 9,
+    "2020-21": 12,
+    "2021-22": 11,
+    "2022-23": 5,
+    "2023-24": 6,
+    "2024-25": 4,
+    "2025-26": 6
+  },
+  "goal_vector_errors": 0,
+  "player_errors": 0,
+  "protected_conflicts": 0,
+  "candidate_denial_conflicts": 0,
+  "qualified_kinds": [
+    "ordinary_foul_penalty",
+    "self_won_penalty"
+  ],
+  "limits": "Rule-compatible historical/native FPL whole-team regression, shared Opta lineage and previously seen outcomes. Not untouched holdout, not general historical assist-rule transfer."
+}

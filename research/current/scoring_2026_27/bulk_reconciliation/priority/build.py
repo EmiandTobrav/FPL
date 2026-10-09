@@ -7,7 +7,8 @@ def main():
  current=json.loads((S.parent/'CURRENT.json').read_text());r=pd.read_csv(S.parent/current['requirements'],low_memory=False);pending=r[r.is_open];pcounts=pending.groupby(K).size().to_dict();mcounts=pending.groupby(K[:2]).size().to_dict();q=r[r.needs_external_quality_review];save(q.groupby(['field','season']).agg(fields=('code','size'),player_matches=('code','size')).reset_index(),'quality_groups.csv')
  # One field/season row is a review group, not a queue of individual manual jobs.
  quality={'field_season_groups':len(q.groupby(['field','season'])),'external_quality_fields':len(q),'quality_player_matches':len(q[K].drop_duplicates()),'open_or_quality_player_matches':len(r[r.is_open|r.needs_external_quality_review][K].drop_duplicates())};(P/'quality_summary.json').write_text(json.dumps(quality,indent=2)+'\n')
- totals=pd.read_csv(S/'assist_touch_bounds/results/player_match_totals.csv.gz',dtype={'unresolved_goal_ids':'string'},low_memory=False);a=pending[pending.field.eq('assists_2026_27')][K].merge(totals,on=K,validate='one_to_one');groups=pd.read_csv(P/'goal_group_classification.csv.gz');mapping=groups.set_index(['match_id','event_id']).group.to_dict();rows=[];key_goals={}
+ totals_path=S.parent/current.get('assist_totals','followup_2026_10_08/assist_touch_bounds/results/player_match_totals.csv.gz')
+ totals=pd.read_csv(totals_path,dtype={'unresolved_goal_ids':'string'},low_memory=False);a=pending[pending.field.eq('assists_2026_27')][K].merge(totals,on=K,validate='one_to_one');groups=pd.read_csv(P/'goal_group_classification.csv.gz');mapping=groups.set_index(['match_id','event_id']).group.to_dict();rows=[];key_goals={}
  for x in a.itertuples():
   key=(x.season,x.fixture,x.code);ids=[] if pd.isna(x.unresolved_goal_ids) else [int(v) for v in str(x.unresolved_goal_ids).split('|') if v]
   key_goals[key]={(x.match_id,e) for e in ids}

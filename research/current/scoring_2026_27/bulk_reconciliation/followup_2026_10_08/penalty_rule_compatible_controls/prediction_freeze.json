@@ -1,0 +1,8 @@
+{
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/inputs/manifest.json": "524540f9569ca237c2f5fb4409ea8b0e7f8cd2dd8ea1d529c4a420d89edf1d16",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/predictions.csv.gz": "1d80f67f3faaed61b9be1177a0c2741f633dd3d64b590e727f3c994207b7ed3e",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/plan.csv.gz": "f2546aecbc3c82734881d6ba1378bdd289d94f1a12ed59c401f27bdf5a8b9341"
+  },
+  "outcomes_read_by_selection": false
+}

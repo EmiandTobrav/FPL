@@ -1,0 +1,27 @@
+{
+  "files": {
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/protocol.json": "c7e0b85fca74d850133d123631e1b638e408f564bf81da637bad6b1ded8cef34",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/prepare.py": "02862f06d978cc1be9225ee51945a97560be97b2b2a18efef68c5f039481cdb0",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_rule_compatible_controls/inputs/parent_CURRENT.json": "4e00541d26aaf9bc3b26b9d8a224edabdb5abab8ebf87b36f0db61ab57ad1c1d",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/freeze.json": "5ae0799ceaa9b9f389da78d2f7a32e492785acea019a8a242687c0ba8c9a3274",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/rule.py": "325368d0719eaef5fa767cdd55ffaf6f7c189e69c1bffaa3cde628a56e225e17",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/predictions.csv.gz": "1d80f67f3faaed61b9be1177a0c2741f633dd3d64b590e727f3c994207b7ed3e",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/participants.csv.gz": "b7ee8e73ea4fc44c7287a45d8703f406164c5982115272d6ecfc04ff322e5090",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/results/team_coverage.csv": "c2afcb1177dac5a370936d6a76f5e64920984e914eace64ecdb2ffa05be13713",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/baseline/fpl_baseline.csv.gz": "94c9a6196357dd3b26fa807db051d23aa24b64a70e7e3c6c6e7913e5e61c71b7",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/baseline/build.py": "71cda99719d61117ab406b09b401c267729c3b440e72e12b8bf647d61b82d15c",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/official_cases.json": "03906e1af7c8ce7c495afde67e44ec8c959194aa7fe060e316945a93205e6920",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/goal_decisions.csv.gz": "0b8f185fc5ef65d6c51ddc809852bcfdc2edca12d3af798e603c86f3ebdc071e",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/candidate_exclusions.csv.gz": "d2fe0f20337d69d5561cc0ba06a9964242a36781fbdf3559ac100516e214d801",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_touch_bounds/results/player_match_totals.csv.gz": "a72689da60f5fe84b1d0749e30fcc485913adbdc38be08dc433e506ed41b6e9d",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/predict.py": "537ff461105356a203489cfd07f3ae9976ae1cbee8c35af8d6105ec6987c9bb0",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/protocol.json": "ba9946a69b5a96b0e167ddf80f2a23c087c8bdb4bfe1221b4f4c6b5774f98d5c",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/penalty_foul_recovery/validation_plan.csv": "404bb7bf495a1259210b3ea0ea0e935e1a78693e109b931fc7559f10677b4672",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/goals.csv.gz": "5ec75ccc56da3827fc8f30271d997011578ae360a6d6b0b14e762046807f977e",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/assist_intentional_pass/inputs/goal_episodes.csv.gz": "67384c4c3f5fbb40b08ea76080e12cdfb6e7e255dd9a080d30a887dd9d9afb85",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/results/requirements.csv.xz": "891f20b14ea4900985758bff0e2ac7068f2202a7f2f56434f8386b47d6def43c",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/results/player_match_readiness.csv.xz": "9a4a560abbc7cb9a7047861a7469290c5eac2538bc793f0a3a863f4cb220db20",
+    "scoring_2026_27/bulk_reconciliation/followup_2026_10_08/goal_line_identity_v2/results/match_readiness.csv": "335ae1e2a64bfb6e913d7647e86199fe9f40d513e51ba36cb4a0159c4ce63283"
+  },
+  "native_assist_outcomes_read_by_selection": false
+}
