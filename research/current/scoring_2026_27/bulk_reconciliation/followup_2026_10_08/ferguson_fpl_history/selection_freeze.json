@@ -1,0 +1,7 @@
+{
+  "inputs/native_player_season.csv.gz": "b381a8e3d13981434eb2b0cdd9bf2fcfd8620db24d213bf217b6a97c8cfc2434",
+  "inputs/parent_CURRENT.json": "d7d6da5513f98df225732c995ad3f52167793c119bcd45687e6c25fa6852f5cd",
+  "protocol.json": "9488ff0afd5bfaf547f1793d28574a1df2ba35d686486f5a90639eb8f3333d1a",
+  "plan.json": "57cf2a96464289b493c1025d897995a1f0d58c69789ce11ef74d59b61d29baed",
+  "inputs/sources.json": "a9cd67d47397bf313be3ebc38c173345805d6386b384aff26be0810eb5b9c71b"
+}

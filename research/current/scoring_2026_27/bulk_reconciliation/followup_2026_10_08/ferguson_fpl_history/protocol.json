@@ -1,0 +1,19 @@
+{
+  "scope": "Only the previously documented Ferguson native FPL extract exception, 2024-25/239/487117. Same FPL source mirror; no independent holdout.",
+  "mutable_factual_fields": [
+    "minutes",
+    "goals_conceded",
+    "total_points",
+    "expected_assists",
+    "expected_goal_involvements",
+    "expected_goals_conceded"
+  ],
+  "gates": [
+    "Exact FPL code/element/name at pinned commit",
+    "Complete 38-row season with identical fixture keys and event identity",
+    "All non-exception factual fields agree across all rows; changes only at documented fixture",
+    "All 15 integer season totals agree exactly and all 4 expected metrics within source precision",
+    "Native BPS stays 4; no points rescoring or minute normalization for others"
+  ],
+  "historical_inventory_sha256": "cb39bc8aadd9cc7f3f255be267fa2cc015c1ecd9efcf4d8dd4b951d62605bdc5"
+}

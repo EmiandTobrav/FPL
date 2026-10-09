@@ -1,0 +1,10 @@
+{
+  "validate.py": "6281bc517c289760ef578b03319229896abcd77a7759f2d4df346f071a75e2c1",
+  "build.py": "70502794e179253e573c258f809718d03da59e4e920277a44fcb8ca8b983e1b9",
+  "results/overlay.csv.gz": "27d44e01fdbc3b10c090aeabdb0b1315810a849f59b922c8068f318851d8c7e5",
+  "results/validation.json": "9240b5c11f177c6567ac72538844dfe0d86781c90f8207cdeeea16a5de908e79",
+  "results/source_comparisons.csv.gz": "5ed7a027d756a4812747f3c3f4faac5bf524f9f07735fa283a7126a9143cb11e",
+  "results/native_fpl_corrections.csv.gz": "388fb3026482d0444b8ea4334c351a7270a396e7bb2f54891493aed7dd2bbbbd",
+  "results/native_player_season_corrected.csv.gz": "eb7c75635e325962ad8f1ba5e51dfd51aa2e5226be0d13322fb7cbeb628dab69",
+  "results/season_total_checks.csv.gz": "28c202021a412bfef3dc5bd744fe2031605aa16c7fa52bd4a8ce9d0224f884f7"
+}

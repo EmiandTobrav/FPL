@@ -13,7 +13,7 @@ Deretter følger fristsikre features og verifisert treningsinnlesing.
 Sluttmålet om et treningsklart datasett for alle åtte sesonger beholdes.
 
 Fremdrift i første fase måles i faktisk reduksjon fra omprioriteringens
-**14 893 åpne feltkrav**, nå **11 258**,
+**14 893 åpne feltkrav**, nå **11 257**,
 med nye inputkomplette spillerkamper og hele kamper som supplerende mål.
 Velg grupper etter dokumenterbar lukking per tidsbruk, gjenbruk eksisterende
 bevis og gå videre når en kilde ikke kan levere uten nye fakta. Nødvendige
@@ -24,13 +24,31 @@ Se [gjeldende arbeidsrekkefølge](../research/current/scoring_2026_27/bulk_recon
 Presisering: første fase retter seg mot manglende kildefelt og inventarer,
 ikke utvikling av nye assistregler. Den separate
 [innhentingskøen](../research/current/scoring_2026_27/bulk_reconciliation/priority/ACQUISITION_CURRENT.json)
-omfatter 2 315 manglende dataverdier/inventarer, 234 kildekonflikter og ett
-uttrekksunntak: **2 550 krav**. **8 708 assistkrav merket regelomregning**
+omfatter 2 315 manglende dataverdier/inventarer og 234 kildekonflikter:
+**2 549 krav**. **8 708 assistkrav merket regelomregning**
 beholdes separat; manglende årsaksbevis for disse skal fortsatt hentes i
 første fase. Klassifiseringen alene beviser ikke at kildedekningen er komplett.
 Dette planarbeidet lukker ingen krav og endrer ingen dataverdier.
 
-## Nyeste datagapleveranse – de to siste straffemålkravene lukket
+## Nyeste datagapleveranse – Ferguson avklart mot historisk FPL
+
+**11 257 åpne krav i 10 821 spillerkamper.** **66 459 spillerkamper og 824
+hele kamper** er inputkomplette. [FPL-spillerhistorikken](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/ferguson_fpl_history/README.md)
+har 17 minutter, 1 poeng og 2 baklengsmål i den tidligere unntakskampen 239,
+2024/25, mot nuller i GW24-uttrekket. Begge har BPS 4. Seks faktarettelser
+lagres separat, inkludert xA/xGI/xGC; raw FPL og gamle labels bevares.
+
+Alle 38 kampnøkler og 19 sesongsummer stemmer. 982 av 988 felt er identiske;
+seks kjente unntaksfelter avviker. Dette er FPL-kildeversjonsavstemming,
+ikke ekstern minuttavstemning eller uavhengig holdout. Ett krav avklares;
+én ekstra spillerkamp er inputkomplett, ingen nye hele kamper. CURRENT peker
+til rettelsesfilen for neste kanoniske/poengversjon. Ingen ny scoring eller trening.
+
+Innhentingskøen er 2 549 krav (2 315 manglende data, 234 konflikter); ingen
+uttrekksunntak står igjen. 8 708 regelomregningskrav beholdes. Totalt 3 636
+krav er lukket siden omprioriteringen. Full treningsklarhet gjenstår.
+
+## Tidligere datagapleveranse – de to siste straffemålkravene lukket
 
 **11 258 åpne krav i 10 822 spillerkamper.** 66 458 spillerkamper og 824 hele
 kamper er inputkomplette. [Offisiell identitetskobling](../research/current/scoring_2026_27/bulk_reconciliation/followup_2026_10_08/espn_primary_identity/README.md)

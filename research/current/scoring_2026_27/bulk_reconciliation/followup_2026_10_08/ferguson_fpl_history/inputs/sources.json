@@ -1,0 +1,27 @@
+[
+  {
+    "file": "inputs/commit.json",
+    "url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/commits?path=data/2024-25/players&per_page=1",
+    "sha256": "06fbd1d47c077ce633f4f0edfdd43980dc879f38ea61301aefb58144c6e9fd39"
+  },
+  {
+    "file": "inputs/directories.json",
+    "url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/contents/data/2024-25/players?ref=59c767596750f554ba464de94cf4fce8664a6cbe",
+    "sha256": "9f43e46c1ec1b55254b3b4e7e6e37e482288215fe4ff3eb2094307a77f12a808"
+  },
+  {
+    "file": "inputs/player_history.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/59c767596750f554ba464de94cf4fce8664a6cbe/data/2024-25/players/Evan_Ferguson_123/gw.csv",
+    "sha256": "de490b05e4b8d33ff05dad9d397ee87fcc054a5390d83aab3f03ec8521db5a44"
+  },
+  {
+    "file": "inputs/gw24.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/59c767596750f554ba464de94cf4fce8664a6cbe/data/2024-25/gws/gw24.csv",
+    "sha256": "b6aea8b7f5852000950884543002ad26c6142229d64263d722f74c02ad3d0728"
+  },
+  {
+    "file": "inputs/players_raw.csv",
+    "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/59c767596750f554ba464de94cf4fce8664a6cbe/data/2024-25/players_raw.csv",
+    "sha256": "75686051b265cbe7755ac71213ecaad21b26ee1cc46a8bafbba19c39ce894b05"
+  }
+]

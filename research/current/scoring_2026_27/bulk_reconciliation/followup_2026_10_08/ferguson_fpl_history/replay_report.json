@@ -1,0 +1,20 @@
+{
+  "byte_identical_files": 14,
+  "files": {
+    "application_freeze.json": "3e1628d0f9b82e18ce1e08d8ed44deaf971731cc853f31a4f0219ec97ef32a4b",
+    "results/field_summary.csv": "cd02a07ecdb24ea6f791b3cf3813a4df83359c22fe98d1865d8480cca2bbbf75",
+    "results/findings.json": "527b6cf96ae87f68bf215bb478d85ed807ec64a8d00328a788a86e793bf512cf",
+    "results/manifest.json": "d35939596976eec2c6b098bf543988c99ff3ebc62c110b5139fc2f810d48e0a4",
+    "results/match_readiness.csv": "d39c78be2c6dc2105f1746aa5169d9eef9347f34272fd1917ea899c8f739cd3c",
+    "results/native_fpl_corrections.csv.gz": "388fb3026482d0444b8ea4334c351a7270a396e7bb2f54891493aed7dd2bbbbd",
+    "results/native_player_season_corrected.csv.gz": "eb7c75635e325962ad8f1ba5e51dfd51aa2e5226be0d13322fb7cbeb628dab69",
+    "results/overlay.csv.gz": "27d44e01fdbc3b10c090aeabdb0b1315810a849f59b922c8068f318851d8c7e5",
+    "results/player_match_readiness.csv.xz": "25ce23ecb922ef0f6c4247350379008b6e84c7b96b3f6551c6e29c44ecd477cb",
+    "results/remaining_fields.csv.xz": "0bd47605cba91e80504958ea5439defa75fcb0fc0f320c56bbf2f5afdcf15370",
+    "results/requirements.csv.xz": "95c754c7df55da755a880e2c847b10a47241d51203e6c88d36bce6717784754c",
+    "results/season_total_checks.csv.gz": "28c202021a412bfef3dc5bd744fe2031605aa16c7fa52bd4a8ce9d0224f884f7",
+    "results/source_comparisons.csv.gz": "5ed7a027d756a4812747f3c3f4faac5bf524f9f07735fa283a7126a9143cb11e",
+    "results/validation.json": "9240b5c11f177c6567ac72538844dfe0d86781c90f8207cdeeea16a5de908e79"
+  },
+  "network": false
+}

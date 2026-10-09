@@ -1,0 +1,36 @@
+{
+  "old_open_fields": 11258,
+  "new_fields": 1,
+  "open_fields": 11257,
+  "unique_affected_player_matches": 10821,
+  "complete_player_matches": 66459,
+  "complete_matches": 824,
+  "new_complete_player_matches": 1,
+  "new_complete_matches": 0,
+  "zero_values": 0,
+  "positive_values": 1,
+  "new_fields_by_season": {
+    "2024-25": 1
+  },
+  "unchanged_ledger_rows": 775247,
+  "raw_fpl_preserved": true,
+  "scoring_qualified": false,
+  "validation": {
+    "qualified_fields": [
+      "historical_bps"
+    ],
+    "new_fields": 1,
+    "by_field": {
+      "historical_bps": 1
+    },
+    "factual_corrections": 6,
+    "season_rows": 38,
+    "unchanged_player_season_rows": 37,
+    "source_comparisons": 988,
+    "unchanged_factual_values": 982,
+    "exact_season_totals": 19,
+    "bps_value_unchanged": true,
+    "point_rescoring": false,
+    "limits": "Native FPL mirror source-version reconciliation and regression, not independent holdout or final collective quality. Original GW and native data remain intact."
+  }
+}

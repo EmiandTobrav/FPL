@@ -1,0 +1,18 @@
+{
+  "qualified_fields": [
+    "historical_bps"
+  ],
+  "new_fields": 1,
+  "by_field": {
+    "historical_bps": 1
+  },
+  "factual_corrections": 6,
+  "season_rows": 38,
+  "unchanged_player_season_rows": 37,
+  "source_comparisons": 988,
+  "unchanged_factual_values": 982,
+  "exact_season_totals": 19,
+  "bps_value_unchanged": true,
+  "point_rescoring": false,
+  "limits": "Native FPL mirror source-version reconciliation and regression, not independent holdout or final collective quality. Original GW and native data remain intact."
+}

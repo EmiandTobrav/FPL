@@ -1,0 +1,22 @@
+{
+  "repository": "vaastav/Fantasy-Premier-League",
+  "commit": "59c767596750f554ba464de94cf4fce8664a6cbe",
+  "candidates": [
+    {
+      "name": "Evan_Ferguson_123",
+      "path": "data/2024-25/players/Evan_Ferguson_123",
+      "sha": "16a51efd2a487e7df5c7d352627a786530929e18",
+      "size": 0,
+      "url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/contents/data/2024-25/players/Evan_Ferguson_123?ref=59c767596750f554ba464de94cf4fce8664a6cbe",
+      "html_url": "https://github.com/vaastav/Fantasy-Premier-League/tree/59c767596750f554ba464de94cf4fce8664a6cbe/data/2024-25/players/Evan_Ferguson_123",
+      "git_url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/git/trees/16a51efd2a487e7df5c7d352627a786530929e18",
+      "download_url": null,
+      "type": "dir",
+      "_links": {
+        "self": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/contents/data/2024-25/players/Evan_Ferguson_123?ref=59c767596750f554ba464de94cf4fce8664a6cbe",
+        "git": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/git/trees/16a51efd2a487e7df5c7d352627a786530929e18",
+        "html": "https://github.com/vaastav/Fantasy-Premier-League/tree/59c767596750f554ba464de94cf4fce8664a6cbe/data/2024-25/players/Evan_Ferguson_123"
+      }
+    }
+  ]
+}
