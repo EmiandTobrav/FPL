@@ -1,0 +1,82 @@
+{
+  "pool_policy": "immutable_preseason_roster_plus_current_observed_plus_held_v1",
+  "players": 616,
+  "buyable_proxy": 564,
+  "held": 0,
+  "missing_metadata_codes": [],
+  "dated_preseason_roster_verified": true,
+  "historical_roster_verified": false,
+  "actual_deadline_verified": false,
+  "preseason_evidence": {
+    "commit": "a5fe899bd3104fd0f197a2e5f9cef7121a792a21",
+    "author_time": "2023-08-10 08:10:56+00:00",
+    "committer_time": "2023-08-10 08:10:56+00:00",
+    "available_at": "2023-08-10 08:10:56+00:00",
+    "gw1_origin": "2023-08-11 17:30:00+00:00",
+    "strictly_before_gw1": true,
+    "latest_roster_path_commit_before_gw1_checked": true,
+    "age_days_at_gw1": 1.3882407407407407,
+    "players": 616,
+    "eligible_preseason_proxy": 564,
+    "position_counts": {
+      "MID": 261,
+      "DEF": 206,
+      "FWD": 77,
+      "GK": 72
+    },
+    "clubs": [
+      "Arsenal",
+      "Aston Villa",
+      "Bournemouth",
+      "Brentford",
+      "Brighton",
+      "Burnley",
+      "Chelsea",
+      "Crystal Palace",
+      "Everton",
+      "Fulham",
+      "Liverpool",
+      "Luton",
+      "Man City",
+      "Man Utd",
+      "Newcastle",
+      "Nott'm Forest",
+      "Sheffield Utd",
+      "Spurs",
+      "West Ham",
+      "Wolves"
+    ],
+    "eligibility_policy": "roster presence and status != u; conservative proxy, not verified transfer-market flag",
+    "earliest_archived_gw1_fixture": "2023-08-11 19:00:00+00:00",
+    "sources": {
+      "players_raw.csv": {
+        "path": "reports/fpl_simulator_2026_10_13/derived/preseason_sources/2023-24_players_raw.csv",
+        "sha256": "216aebddc426c77b390beba9f48028ec752b27a667bba8c88232f7628bfb5156",
+        "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a5fe899bd3104fd0f197a2e5f9cef7121a792a21/data/2023-24/players_raw.csv"
+      },
+      "teams.csv": {
+        "path": "reports/fpl_simulator_2026_10_13/derived/preseason_sources/2023-24_teams.csv",
+        "sha256": "9bd4edda58ddf9de4363ee918215bc29fdf7ce25f160be9264137cb04fca3646",
+        "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a5fe899bd3104fd0f197a2e5f9cef7121a792a21/data/2023-24/teams.csv"
+      },
+      "fixtures.csv": {
+        "path": "reports/fpl_simulator_2026_10_13/derived/preseason_sources/2023-24_fixtures.csv",
+        "sha256": "1e2a1ce0a6071601e7c46be8732d0a9e340dd43b78316d35a6e0c4188acf6d6a",
+        "url": "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/a5fe899bd3104fd0f197a2e5f9cef7121a792a21/data/2023-24/fixtures.csv"
+      },
+      "commit.json": {
+        "path": "reports/fpl_simulator_2026_10_13/derived/preseason_sources/2023-24_commit.json",
+        "sha256": "31b229a8253c2d93468cd1f2a6b37ad7e2c5c8473b7f4736d7db41e11323048f",
+        "url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/commits/a5fe899bd3104fd0f197a2e5f9cef7121a792a21"
+      },
+      "eligible_roster_commits.json": {
+        "path": "reports/fpl_simulator_2026_10_13/derived/preseason_sources/2023-24_eligible_roster_commits.json",
+        "sha256": "040101b0fc4e357f21fc48c3e9bf0275e84aa3b1d4df0e26aa1c11b10294e659",
+        "url": "https://api.github.com/repos/vaastav/Fantasy-Premier-League/commits?path=data/2023-24/players_raw.csv&until=2023-08-11T17:30:00+00:00&per_page=5"
+      }
+    }
+  },
+  "current_round_roster_used": false,
+  "feature_semantics": "unchanged prior-match builder; no-history defaults for roster-only players",
+  "preseason_players_never_observed_current_season": 616
+}

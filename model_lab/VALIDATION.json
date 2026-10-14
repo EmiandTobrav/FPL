@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-14",
+  "framework_tests_passed": 40,
+  "registry_tests_passed_previously": 6,
+  "forecast_smoke": {
+    "origins": 2,
+    "models": 2,
+    "cold_run_completed": true,
+    "completed_run_reused": true,
+    "cross_trial_folds_reused": 4
+  },
+  "simulation_smoke": {
+    "origins": 1,
+    "models": 2,
+    "legal_decisions": true,
+    "same_actions_and_net_points_as_existing_GW1_logs": true,
+    "completed_run_reused": true,
+    "full_season_run": false
+  },
+  "new_model_predictions_on_frozen_pool_verified": true,
+  "failures_preserved_locally": [
+    "adapter JSON integer price keys restored at rule boundary",
+    "two-round probe rejected an unknown selected player outcome rather than assigning zero"
+  ],
+  "scope": "Framework wiring and regression validation. No new model-selection or manager-learning result.",
+  "code_sha256": {
+    "simulation.py": "154d9169398b883794a4b0737463430ab77a46898a67218634a061c23d0069bd",
+    "forecast.py": "7562736a3b098135173f282050eef3be7a3d64e914fed034f6e550f4885144ae",
+    "__init__.py": "489f69e9885d4d600560a6966ca693c30844314a12f485e376d7ead6c48266f6",
+    "common.py": "40052ec16e028200eef5285d45745747f5c891147f19916d6ef6630b180528ee",
+    "__main__.py": "d15d31a0f200cd74d335274e0ed492a5bf83352f42ad57133d406130631c2363",
+    "report.py": "b81d7a3906375a73deacd638d7ae412aaa0a6f0b4b63e116fd4166fa41f53171",
+    "tests/test_existing_rules.py": "65cc6988fb876b25c53c1d47dfccc0b4c56ccea6f991f0c625430df641bb54f2",
+    "tests/test_framework.py": "0dc17d595d56c3f8b7c02c5714ee90901541b5a407d3e108c53bca6ac7335b8e",
+    "vendor/fpl_rules_v1/planner.py": "0b1e7ee711958f0d8e1865d7b2df3461bb228d06d540afe74112e11b5805b3e8",
+    "vendor/fpl_rules_v1/initial_optimizer.py": "bfe9cba33d0cba3e7a1cacba6141123d1dbbc6c2de3a6cf49419ad24762c39cd",
+    "vendor/fpl_rules_v1/policy.py": "df50227cdacccc1a78c86f4a7ae073d3287c331b357419fa5dd254929905a901",
+    "vendor/fpl_rules_v1/engine.py": "1ebd69de4bdc0b8535bbe8ecc14d67a3c09db1940e4d25f0e3384e6e810852ce",
+    "vendor/fpl_rules_v1/controlled_policy_v1.py": "a6b8430afc8aff8e135c81b23efdbb8de7f7348f7723809f93b0fe82b8b419a6"
+  }
+}

@@ -37,5 +37,7 @@ Start med [arbeidsflyten](WORKFLOW.md), [neste steg](NEXT.md) og [prosjektregist
 | wave4-diagnostic | [Deltakelsesbias og trajektoriediagnose](../reports/fpl_improvement_2026_10_14/waves/wave4_planning/outcome.json) | completed | Nullhistorikkbias og sesongforløp undersøkt; førte til separat historikkhypotese. |
 | wave6-h8 | [Full tilgjengelig planhorisont H8](../reports/fpl_improvement_2026_10_14/orchestration_state.json) | see_recorded_status | Ingen ferdig oppgradering konkludert; les status og registrerte neste handlinger. |
 | archive-qualification | [Historiske arkiv og tilgjengelighet](../reports/fpl_improvement_2026_10_14/orchestration_state.json) | see_recorded_status | Kildearbeid registrert separat fra modellforsøk; proxyer beholdes inntil kvalifisering er dokumentert. |
+| model-lab-v1 | [Felles rammeverk for modelltesting og simulering](../model_lab/README.md) | implemented_validation_only | Samme tidskontroller, prognosecache, regelmotor og resultatkort. 40 tester bestått; små funksjonsprøver er ikke nye modellvalgsresultater. |
+| manager-learning-idea | [Lære en faktisk FPL-manager og senere optimere vinnsannsynlighet](../overview/MANAGER_LEARNING.md) | proposed_not_registered_not_trained | Første foreslåtte prøve: lær fremtidsverdi eller beslutningsrangering med uendrede prognoser. Vinnermål krever separat usikkerhets- og konkurrentmodell. |
 
 Tall fra ulike kontrakter kan ikke summeres eller rangeres direkte. Se [metodeoversikten](METHODS.md) for sammenligningsgrunnlag. Negative resultater er del av utgangspunktet for neste hypotese.

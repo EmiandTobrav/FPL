@@ -14,6 +14,8 @@ Hver ny runde skal bygge på et kjent datagrunnlag, en tydelig hypotese og resul
 
 ## Kjør fra eksisterende utgangspunkt
 
+[Det felles testrammeverket](../model_lab/README.md) er standardinngangen for nye modelltester og simuleringer. Bruk én forsøksfil, gjenbruk prognosefolder der kontrakten er uendret, og lagre resultatkortet sammen med forsøks-ID-en. De små eksemplene kontrollerer koblingene; de er ikke nye modellvalgsresultater.
+
 Bruk eksisterende innleser og pipeline. Unngå en ny full datakopi per forsøk. Frys filhashene som skal gjenbrukes, og lagre bare nye prognoser, beslutninger, resultatfiler og nødvendige kontrollspor i forsøksområdet.
 
 Velg den minste kontrollen som kan avvise hypotesen tidlig. Først kontrolleres input, tidstilgjengelighet og en liten prognose-/policyprøve. Kjør full sesong først når prøven og den relevante protokollen tillater det. Behold negative poeng, manglende utfall og kvalitetsflagg i henhold til datakontrakten.

@@ -2,7 +2,7 @@
   "version": 1,
   "source_date": "2026-10-14",
   "base_main_commit": "6730554e88b5f4a0e7e2440e961fdf9b8f88571f",
-  "scope": "Portable dataset and fold pipeline plus selected immutable summaries and navigation. Full reconstruction replay and advanced campaign replay/resume require excluded local archives, caches, logs and engines.",
+  "scope": "Portable dataset and fold pipeline plus selected immutable summaries and navigation. Full reconstruction replay and advanced campaign replay/resume require excluded local archives, caches, logs and engines. Shared Model Lab with pinned pure-rule/policy copies and small bounded fixtures is now included; manager-learning remains a proposed research direction.",
   "entries": [
     {
       "source": "FPL_training_dataset/research/current/adaptive_events/README.md",
@@ -414,8 +414,8 @@
       "source": "overview/PROJECT.json",
       "repository_path": "overview/PROJECT.json",
       "source_sha256": "bfba2f637f22f10e35e16d9485ae01c658129a78d49886c38e6e0eea24c4b2c9",
-      "published_sha256": "95b05174a02f97e882cd651b814eaaba7584e6706ed433e5cf154a7fccb504b6",
-      "bytes": 4324
+      "published_sha256": "e08e9dd2fd5061f6a1ff08266246f3eb833ca8d141f55ee7bff59dd09dea903a",
+      "bytes": 4700
     },
     {
       "source": "overview/RESULT_TEMPLATE.json",
@@ -428,8 +428,8 @@
       "source": "overview/STATUS.md",
       "repository_path": "overview/STATUS.md",
       "source_sha256": "e16ef79f62fd7a7b683d75c9e03fd43b88fda8dc8400ab1b533b2548fc5dfafb",
-      "published_sha256": "d468334b08dd916ad151bcf4fa13395bcc2a9860554cd2a003037154048da9fe",
-      "bytes": 6357
+      "published_sha256": "0800998f66746531c2c321f7aed40c622fb949ca0e8e1d0799cc2ad369a32523",
+      "bytes": 6952
     },
     {
       "source": "overview/TIMELINE.md",
@@ -442,15 +442,15 @@
       "source": "overview/WORKFLOW.md",
       "repository_path": "overview/WORKFLOW.md",
       "source_sha256": "51e84e7bbe29d72070411229a63c236cc876eeaec025093289406c27014e1301",
-      "published_sha256": "51e84e7bbe29d72070411229a63c236cc876eeaec025093289406c27014e1301",
-      "bytes": 5503
+      "published_sha256": "c2eb70b1ccf362f5bf63472876cd367c6698851237cec220795a8a3cb3855094",
+      "bytes": 5822
     },
     {
       "source": "overview/research_catalog.json",
       "repository_path": "overview/research_catalog.json",
       "source_sha256": "76793881f41060081b513d2e19adce0595a28d5f3159405a2c117ffa4c8d6ee1",
-      "published_sha256": "c03f4fbf7f8ba8a6169c466171b10295e4116bc334edf6cbd8ccdd09c93cd11c",
-      "bytes": 11646
+      "published_sha256": "1d83be6b57e1e5a37e547f8fd681a9d418b699b4a73d33e6a6f6de3b7b3a2e71",
+      "bytes": 12771
     },
     {
       "source": "overview/runs.csv",
@@ -1659,26 +1659,26 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": "README.md",
-      "published_sha256": "d9a4a226bd40e2d5ba1c0e7e06405625838ef5e23e38519104424986e90030ad",
-      "bytes": 3488
+      "published_sha256": "8318a96834f9f3a2127b2051871d6924e698102f56f8b98e898fa2801af073a0",
+      "bytes": 3924
     },
     {
       "source": "generated_for_git_publication",
       "repository_path": "AGENTS.md",
-      "published_sha256": "705d4b44e4a091fa91afb446c58803db0a2150e7fc0f0abddd607c3b54279ea9",
-      "bytes": 1624
+      "published_sha256": "9d1372f2000f32390bbfa950da8d482286f50c51b4835e04c0b25ae753efad9b",
+      "bytes": 1878
     },
     {
       "source": "generated_for_git_publication",
       "repository_path": ".gitignore",
-      "published_sha256": "85236269996cc935ea31ae4b2d34490953fe71fff305907ed1ad5ff81a58e8ae",
-      "bytes": 1038
+      "published_sha256": "053125886618057c6c15fa2b89e5880e7fc30480f0ac160af862e07fcd7b06de",
+      "bytes": 1138
     },
     {
       "source": "generated_for_git_publication",
       "repository_path": "docs/GIT_LAYOUT.md",
-      "published_sha256": "16b7d4637e7cdf54a616c56ba5a6b587e933af8c612cf63401e84bc8d54ea64a",
-      "bytes": 2894
+      "published_sha256": "d0f5abcb83740b92df41384e2af05ad7223cb24b06f3a3ba4cc3efca4b1e8881",
+      "bytes": 3596
     },
     {
       "source": "generated_for_git_publication",
@@ -1689,20 +1689,200 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": ".github/workflows/workspace.yml",
-      "published_sha256": "91a894971febe1f296d39976ef10827434a1f6d8e11f4982ac80b7b6053e5185",
-      "bytes": 538
+      "published_sha256": "cfef238b2f4fea184258b54a8182fe5dbd22395390f44d292d0b8db23dfe416d",
+      "bytes": 821
     },
     {
       "source": "generated_for_git_publication",
       "repository_path": ".gitattributes",
-      "published_sha256": "84607f332e5319566cdb8e6b863503f79a01cd1b1e59812b09e8d0073b271d7b",
-      "bytes": 407
+      "published_sha256": "710a698a512b6828fdf496d64bcbc486044a796d450bd9931317181849bd1e2e",
+      "bytes": 519
     },
     {
       "source": "generated_for_git_publication",
       "repository_path": "overview/publication_verification.json",
       "published_sha256": "f295e2012f542f2efb62079e34e5383d8121b95aca76b67fd2d5be12f182a253",
       "bytes": 443
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/simulation.py",
+      "published_sha256": "154d9169398b883794a4b0737463430ab77a46898a67218634a061c23d0069bd",
+      "bytes": 15552
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/forecast.py",
+      "published_sha256": "7562736a3b098135173f282050eef3be7a3d64e914fed034f6e550f4885144ae",
+      "bytes": 12225
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/requirements.txt",
+      "published_sha256": "3764926c4c0364ef06100d9b83b36f5909a3bc9427f040abcc3da1cec01c66e6",
+      "bytes": 61
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/requirements-models.txt",
+      "published_sha256": "c50bfd40c9db802e375969fd863c375e15f9f477b550d3b2c660ad832a55070d",
+      "bytes": 53
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/__init__.py",
+      "published_sha256": "489f69e9885d4d600560a6966ca693c30844314a12f485e376d7ead6c48266f6",
+      "bytes": 80
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/README.md",
+      "published_sha256": "1abf021ca3d8c0fc8c54332c92fa5b56f0ad0d4187e63d186b74bd9ead039ed6",
+      "bytes": 8083
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/common.py",
+      "published_sha256": "40052ec16e028200eef5285d45745747f5c891147f19916d6ef6630b180528ee",
+      "bytes": 2821
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/VALIDATION.json",
+      "published_sha256": "18b614c8bb6598b61cde50ed53d990ef76bc7d432b400a12d095313d71cd8894",
+      "bytes": 2140
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/__main__.py",
+      "published_sha256": "d15d31a0f200cd74d335274e0ed492a5bf83352f42ad57133d406130631c2363",
+      "bytes": 4973
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/report.py",
+      "published_sha256": "b81d7a3906375a73deacd638d7ae412aaa0a6f0b4b63e116fd4166fa41f53171",
+      "bytes": 1455
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/tests/test_existing_rules.py",
+      "published_sha256": "65cc6988fb876b25c53c1d47dfccc0b4c56ccea6f991f0c625430df641bb54f2",
+      "bytes": 14219
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/tests/test_framework.py",
+      "published_sha256": "0dc17d595d56c3f8b7c02c5714ee90901541b5a407d3e108c53bca6ac7335b8e",
+      "bytes": 9745
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_smoke.json",
+      "published_sha256": "9a7726d57d75a0fd6f60d023eac7b8331f9afabd9d5327025173cef597484eff",
+      "bytes": 495
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/bundle_forecast.json",
+      "published_sha256": "c1d7f209f66c8bb196473ee02565de989442ce75ba395b113aa790c0d30369f9",
+      "bytes": 1117
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/smoke.json",
+      "published_sha256": "15a4aab80d5c5b311bec0a081bee103f2f83777bb3f85b0675359febc29c8f16",
+      "bytes": 1212
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/bundle.json",
+      "published_sha256": "9675b26e74acf6ca790ba3506907865c2816b21bed31268848cb88d1ecc26f79",
+      "bytes": 1571
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/gw01/fixture_full_h3_adaptive_tc_harmonized_causal_v1.csv.gz",
+      "published_sha256": "4100945484b93791a88d115fc53ea5170f604d0fee2f61e03d899c1459b88d51",
+      "bytes": 10137
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/gw01/outcomes.json",
+      "published_sha256": "ff051cff06a5eafd8a69181db1c2631179ce01c4e4d9d1b61dbbcfc834a1786f",
+      "bytes": 37774
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/gw01/fixture_direct_v1.csv.gz",
+      "published_sha256": "293b6391e6d5dcadc235312cfda4e534315dae0c8f0178c9afc0494eb248cb45",
+      "bytes": 10108
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/gw01/source_manifest.json",
+      "published_sha256": "a0f4a7d502f288069b08c1102db692cc4d8f1139619ec79075db900985cdffd5",
+      "bytes": 28564
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/gw01/snapshot_audit.json",
+      "published_sha256": "358383a8d4fd005fd15bfdf89c2778d976e10d0f4c7e132d324cd88dbdb5c33b",
+      "bytes": 3512
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/gw01/pool.csv.gz",
+      "published_sha256": "61e27d42a275f280f3eca96cf4f69eef5872f5176a46ccf8f00f1059a8d796c8",
+      "bytes": 8445
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/examples/simulation_bundle/gw01/features.csv.gz",
+      "published_sha256": "78821f9dcf676fa0c15202e1ff52ffb60cbb58b529a72d52e2cd7d07ace64767",
+      "bytes": 98608
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/vendor/fpl_rules_v1/planner.py",
+      "published_sha256": "0b1e7ee711958f0d8e1865d7b2df3461bb228d06d540afe74112e11b5805b3e8",
+      "bytes": 6799
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/vendor/fpl_rules_v1/PROVENANCE.json",
+      "published_sha256": "6173a641f2001106bb89cb45b44f9acd3768a784a7388bbfec36df89b8a4061b",
+      "bytes": 1095
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/vendor/fpl_rules_v1/initial_optimizer.py",
+      "published_sha256": "bfe9cba33d0cba3e7a1cacba6141123d1dbbc6c2de3a6cf49419ad24762c39cd",
+      "bytes": 4974
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/vendor/fpl_rules_v1/policy.py",
+      "published_sha256": "df50227cdacccc1a78c86f4a7ae073d3287c331b357419fa5dd254929905a901",
+      "bytes": 4858
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/vendor/fpl_rules_v1/engine.py",
+      "published_sha256": "1ebd69de4bdc0b8535bbe8ecc14d67a3c09db1940e4d25f0e3384e6e810852ce",
+      "bytes": 14391
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "model_lab/vendor/fpl_rules_v1/controlled_policy_v1.py",
+      "published_sha256": "a6b8430afc8aff8e135c81b23efdbb8de7f7348f7723809f93b0fe82b8b419a6",
+      "bytes": 10952
+    },
+    {
+      "source": "shared_framework_addition",
+      "repository_path": "overview/MANAGER_LEARNING.md",
+      "published_sha256": "cd06fb39723e7cfadc1bf3d835f025de7cced58ccaf9153193b8446e3cc23189",
+      "bytes": 5606
     }
   ]
 }

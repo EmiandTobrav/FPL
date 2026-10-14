@@ -40,3 +40,6 @@ reports/fpl_improvement_2026_10_14/cache/
 reports/fpl_improvement_2026_10_14/cache_versions/
 reports/fpl_improvement_2026_10_14/forecast_attempts/
 # Final data packages and explicitly selected summaries remain trackable.
+
+# Reusable lab artifacts remain local; portable specs and small fixtures are tracked.
+lab_results/

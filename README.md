@@ -11,6 +11,8 @@ Start i den samlede arbeidsoversikten. Den peker til det rekonstruerte datasette
 | Se metoder og positive eller negative resultater | [Metodeoversikt](overview/METHODS.md) |
 | Se hendelser, feil og endringer underveis | [Arbeidshistorikk](overview/TIMELINE.md) |
 | Finne gjeldende data og benchmark | [Prosjektregister](overview/PROJECT.json) |
+| Kjøre modelltester og simulering | [Felles Model Lab](model_lab/README.md) |
+| Utforske trening som en faktisk manager | [Forskningsidé og vinnermål](overview/MANAGER_LEARNING.md) |
 | Planlegge og registrere et nytt forsøk | [Arbeidsflyt](overview/WORKFLOW.md) |
 | Forstå Git-strukturen og hva som er publisert | [Git og publiseringsomfang](docs/GIT_LAYOUT.md) |
 
@@ -40,3 +42,5 @@ De gamle forskningsmappene og benchmarkdefinisjonene er bevart. [Tidligere start
 Git inneholder den portable data- og modellpipelinen, samlet navigasjon og utvalgte resultatkvitteringer. Den nyere kampanjestatusen er et datert kildeuttrekk og beviser ikke at en prosess fortsatt kjører. Full rekonstruksjonsreplay og videreføring av den avanserte simulator-/H8-kampanjen krever det lokale arbeidsarkivet, som har ekstra kode, forecast-cache, beslutningslogger og kildebevis. De delene inngår ikke i denne avgrensede publikasjonen.
 
 [Publiseringsmanifestet](overview/publication_manifest.json) oppgir de konkrete filene og kontrollsummene. Sammendrag og kontrollrapporter skal ikke forveksles med en full eksport av alle bevisfilene de refererer til.
+
+Model Lab kan kjøres direkte fra denne publikasjonen med sine små låste eksempler. De gamle, komplette simulator-/H8-kampanjene har fortsatt separat arkivavhengighet. Den foreslåtte trenbare managerpolicyen er dokumentert som videre forskning.

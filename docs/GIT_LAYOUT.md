@@ -28,3 +28,9 @@ Bruk én avgrenset gren og en pull request per dataversjon eller metodehypotese.
 Samme input og parametere skal gjenbrukes via dokumenterte filer, ikke enda en datasettkopi. Cache er lokalt arbeidsmateriale inntil en avgrenset utgivelse trenger den for gjentakelse; da publiseres den eksplisitt med manifest. Ikke bruk git add av hele arbeidsmappen uten å kontrollere filutvalget.
 
 Genererte inventarer er lokale navigasjonshjelpemidler. De oppdaterer ikke automatisk en fryst dataversjon, og diskstørrelsen i det lokale prosjektet gjelder ikke denne Git-klonen.
+
+## Felles testrammeverk
+
+model_lab er en portabel inngang for små prognoseprøver og lovlig FPL-simulering fra eksplisitt låste input. Den gjenbruker pipelinepakken og eksakte kopier av den eksisterende regel-/policykoden. To små eksempler kan kjøres direkte; større studier må bindes til registrerte kontrakter og tilstrekkelige inputbundles. Full replay eller gjenopptakelse av den tidligere H8-kampanjen inngår fortsatt ikke i denne publikasjonen.
+
+Rammeverket er kontrollert med 40 tester, prognosegjenbruk og en liten simulering som gjenskaper tidligere loggede handlinger. Se model_lab/VALIDATION.json. Managerlæring og vinnermål er en dokumentert forskningsidé, ikke en trent policy.

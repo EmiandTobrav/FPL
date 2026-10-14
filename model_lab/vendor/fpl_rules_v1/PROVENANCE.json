@@ -1,0 +1,25 @@
+{
+  "scope": "Exact copies of existing pure rules, policy and node-budget adapter. The wrapper binds OLD to this directory; frozen source files are unchanged.",
+  "files": {
+    "engine.py": {
+      "source": "reports/fpl_simulator_2026_10_13/engine.py",
+      "sha256": "1ebd69de4bdc0b8535bbe8ecc14d67a3c09db1940e4d25f0e3384e6e810852ce"
+    },
+    "planner.py": {
+      "source": "reports/fpl_simulator_2026_10_13/planner.py",
+      "sha256": "0b1e7ee711958f0d8e1865d7b2df3461bb228d06d540afe74112e11b5805b3e8"
+    },
+    "initial_optimizer.py": {
+      "source": "reports/fpl_simulator_2026_10_13/initial_optimizer.py",
+      "sha256": "bfe9cba33d0cba3e7a1cacba6141123d1dbbc6c2de3a6cf49419ad24762c39cd"
+    },
+    "policy.py": {
+      "source": "reports/fpl_simulator_2026_10_13/policy.py",
+      "sha256": "df50227cdacccc1a78c86f4a7ae073d3287c331b357419fa5dd254929905a901"
+    },
+    "controlled_policy_v1.py": {
+      "source": "reports/fpl_improvement_2026_10_14/engine/controlled_policy_v1.py",
+      "sha256": "a6b8430afc8aff8e135c81b23efdbb8de7f7348f7723809f93b0fe82b8b419a6"
+    }
+  }
+}

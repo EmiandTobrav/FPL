@@ -19,3 +19,5 @@
 - Do not launch a duplicate of a recorded ongoing campaign or exceed its frozen configuration cap. Registration does not authorize a launch.
 - Published advanced campaign summaries are scoped snapshots; full replay or resume requires the separate local archive described in docs/GIT_LAYOUT.md.
 - Keep archived references and locked results unchanged. Record new work separately.
+
+- Use model_lab as the shared entry point for bounded forecast trials and legal manager simulations. Framework validation is not a new model-selection result. The manager-learning idea in overview/MANAGER_LEARNING.md remains unregistered and untrained.

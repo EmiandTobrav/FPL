@@ -62,7 +62,8 @@
     "catalog": "overview/research_catalog.json",
     "timeline": "overview/TIMELINE.md",
     "experiment_template": "overview/EXPERIMENT_TEMPLATE.json",
-    "result_template": "overview/RESULT_TEMPLATE.json"
+    "result_template": "overview/RESULT_TEMPLATE.json",
+    "manager_learning": "overview/MANAGER_LEARNING.md"
   },
   "source_hashes_at_observation": {
     "datasets/ACTIVE.json": "334cd084926dbd7465f545a6f3512ac5a52d6a013dc3f82edbaf756fd87278d4",
@@ -75,5 +76,13 @@
     "reports/fpl_improvement_2026_10_14/orchestration_state.json": "90b833f3e7b5980baa97d24fc5471bf9bd5aee8fa2a4905e901f9187cb1bf05a"
   },
   "maintenance": "Update this overlay when a new dataset, benchmark or method contract is approved. Refresh inventory separately with scripts/project_inventory.py. Do not rewrite frozen prior manifests merely to modernize their historical status.",
-  "publication_scope": "Portable dataset and fold pipeline plus selected immutable summaries and navigation. Full reconstruction replay and advanced campaign replay/resume require excluded local archives, caches, logs and engines."
+  "publication_scope": "Portable dataset and fold pipeline plus selected immutable summaries and navigation. Full reconstruction replay and advanced campaign replay/resume require excluded local archives, caches, logs and engines.",
+  "testing_framework": {
+    "entrypoint": "python -m model_lab",
+    "documentation": "model_lab/README.md",
+    "forecast_example": "model_lab/examples/smoke.json",
+    "simulation_example": "model_lab/examples/simulation_smoke.json",
+    "output_root": "lab_results",
+    "scientific_promotion_automatic": false
+  }
 }

@@ -389,5 +389,41 @@
     ],
     "candidate_id": null,
     "tags": []
+  },
+  {
+    "id": "model-lab-v1",
+    "title": "Felles rammeverk for modelltesting og simulering",
+    "kind": "infrastructure",
+    "status": "implemented_validation_only",
+    "finding": "Samme tidskontroller, prognosecache, regelmotor og resultatkort. 40 tester bestått; små funksjonsprøver er ikke nye modellvalgsresultater.",
+    "evidence": [
+      "model_lab/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "testing",
+      "simulering",
+      "cache",
+      "framework"
+    ]
+  },
+  {
+    "id": "manager-learning-idea",
+    "title": "Lære en faktisk FPL-manager og senere optimere vinnsannsynlighet",
+    "kind": "research_idea",
+    "status": "proposed_not_registered_not_trained",
+    "finding": "Første foreslåtte prøve: lær fremtidsverdi eller beslutningsrangering med uendrede prognoser. Vinnermål krever separat usikkerhets- og konkurrentmodell.",
+    "evidence": [
+      "overview/MANAGER_LEARNING.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "manager",
+      "reinforcement learning",
+      "RL",
+      "decision focused",
+      "policy",
+      "vinnsannsynlighet"
+    ]
   }
 ]
