@@ -1,0 +1,85 @@
+--- experiment.py
++++ resume_v002.py
+@@ -142,24 +142,45 @@
+ def run():
+     protocol = read(HERE / 'protocol.json'); verify_files(ROOT, protocol['files'])
+     if runtime() != protocol['runtime']: raise ValueError('Runtime changed')
+-    atomic_json(HERE / 'started.json', {'protocol_sha256': sha(HERE / 'protocol.json'), 'automatic_retry': False})
++    verify_files(ROOT, read(HERE / 'mechanical_resume_v002.json')['new_files'])
++    atomic_json(HERE / 'started_resume_v002.json', {'protocol_sha256': sha(HERE / 'protocol.json'), 'automatic_retry': False})
+     helpers = settlement_helpers(); store = helpers.OutcomeStore(ROOT)
+     _, reference_adapter = backend(); rules = reference_adapter.engine
+     for season in SEASONS:
+         cutoff = read(CACHE / season / 'gw01/manifest.json')['forecast_at']
+         previous = [s for s in SEASONS if s < season]
+-        samples = build_training_samples(previous, cutoff, rules) if previous else []
+-        atomic_json(HERE / 'training' / f'{season}_samples.json', samples)
+-        t = time.process_time(); models = fit(samples, cutoff)
+-        fit_cpu = time.process_time() - t
+-        if fit_cpu > 5.: raise ValueError('Policy fit CPU budget exceeded')
+-        atomic_json(HERE / 'training' / f'{season}_models.json', {'cutoff': cutoff, 'fit_cpu_seconds': fit_cpu, 'models': models})
++        model_file = HERE / 'training' / f'{season}_models.json'
++        if model_file.exists():
++            saved = read(model_file); samples = read(HERE / 'training' / f'{season}_samples.json')
++            models = fit(samples, cutoff)
++            if saved['cutoff'] != cutoff or saved['models'] != models: raise ValueError('Saved fit changed')
++            fit_cpu = saved['fit_cpu_seconds']
++        else:
++            samples = build_training_samples(previous, cutoff, rules) if previous else []
++            atomic_json(HERE / 'training' / f'{season}_samples.json', samples)
++            t = time.process_time(); models = fit(samples, cutoff)
++            fit_cpu = time.process_time() - t
++            if fit_cpu > 5.: raise ValueError('Policy fit CPU budget exceeded')
++            atomic_json(model_file, {'cutoff': cutoff, 'fit_cpu_seconds': fit_cpu, 'models': models})
+         for candidate in [BENCHMARK, CANDIDATE]:
+             out = HERE / 'runs' / f'{season}__{candidate}'
+-            atomic_json(out / 'started.json', {'protocol_sha256': sha(HERE / 'protocol.json')})
+-            state = rules.initial_state(); logs = []; start = time.monotonic(); cpu = time.process_time()
++            if not (out / 'started.json').exists(): atomic_json(out / 'started.json', {'protocol_sha256': sha(HERE / 'protocol.json')})
++            elif read(out / 'started.json')['protocol_sha256'] != sha(HERE / 'protocol.json'): raise ValueError('Started contract changed')
++            state = rules.initial_state(); logs = []; wall_start = time.monotonic(); cpu = time.process_time(); replayed = 0
+             for gw in range(1, 39):
+                 p, xp, manifest = inputs(season, gw); before_xp = digest(xp.tolist())
++                if (out / f'gw{gw:02d}.json').exists():
++                    log = read(out / f'gw{gw:02d}.json'); lock = read(out / f'gw{gw:02d}.decision.json')
++                    if any(log[k] != v for k, v in lock.items() if k != 'outcomes_read'): raise ValueError('Locked prefix changed')
++                    if lock['outcomes_read'] is not False or not log['outcomes_read']: raise ValueError('Missing decision barrier')
++                    if state_json(log['state_before']) != state or log['forecast_array_sha256'] != before_xp: raise ValueError('Replay input/state mismatch')
++                    choice = copy.deepcopy(log['decision']); choice['prices'] = {int(k): v for k, v in choice['prices'].items()}
++                    after, _ = rules.apply_decision(state, choice, p.to_dict('records'), gw, log['chip'])
++                    if after != state_json(log['state_after']): raise ValueError('Replay transition changed')
++                    result = helpers.settle_rows({**choice, 'chip': log['chip']}, p, pd.DataFrame(log['outcomes']))
++                    if result['gross'] - 4 * choice['paid'] != log['net_points']: raise ValueError('Replay settlement changed')
++                    state = after; logs.append(log); replayed += 1
++                    continue
+                 m, adapter = backend(16, 40)
+                 trace = attach(adapter, models, p, xp, state, gw) if candidate == CANDIDATE else []
+                 if manifest.get('official_all_blank_forced_wait'):
+@@ -186,20 +207,24 @@
+                 print(json.dumps({'season': season, 'policy': candidate, 'round': gw, 'settled': True}), flush=True)
+             summary = {'season': season, 'policy': candidate, 'complete_season': len(logs) == 38,
+                 'net_points': float(sum(x['net_points'] for x in logs)), 'hit_cost': sum(x['hit_cost'] for x in logs),
+-                'seconds': time.monotonic() - start, 'decision_process_cpu_seconds': time.process_time() - cpu,
++                'seconds': None if replayed else time.monotonic() - wall_start,
++                'decision_process_cpu_seconds': None if replayed else time.process_time() - cpu,
++                'replayed_locked_rounds': replayed,
++                'original_solver_seconds_sum': sum(c['seconds'] for log in logs for c in log['solver_calls']),
+                 'policy_fit_cpu_seconds': fit_cpu if candidate == CANDIDATE else 0.,
+                 'solver_calls': sum(len(x['solver_calls']) for x in logs),
+                 'learned_decision_rounds': sum(any(t['learned'] for t in x['learned_reserves']) for x in logs)}
+             atomic_json(out / 'summary.json', summary)
+     verify_files(ROOT, protocol['files'])
++    verify_files(ROOT, read(HERE / 'mechanical_resume_v002.json')['new_files'])
+     atomic_json(HERE / 'complete.json', {'protocol_sha256': sha(HERE / 'protocol.json'), 'full_seasons': 6})
+ 
+ 
+ if __name__ == '__main__':
+-    parser = argparse.ArgumentParser(); parser.add_argument('command', choices=['freeze', 'run']); args = parser.parse_args()
++    parser = argparse.ArgumentParser(); parser.add_argument('command', choices=['run']); args = parser.parse_args()
+     try:
+         freeze() if args.command == 'freeze' else run()
+     except BaseException as exc:
+         if args.command == 'run':
+-            atomic_json(HERE / 'failure.json', {'type': type(exc).__name__, 'error': str(exc), 'traceback': traceback.format_exc(), 'automatic_retry': False})
++            atomic_json(HERE / 'failure_resume_v002.json', {'type': type(exc).__name__, 'error': str(exc), 'traceback': traceback.format_exc(), 'automatic_retry': False})
+         raise

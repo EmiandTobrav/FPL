@@ -14,11 +14,11 @@ Resultater og dokumentasjon finnes i [metodeoversikten](METHODS.md) og [arbeidss
 
 ## Første handling ved neste arbeidsøkt
 
-Les `reports/fpl_improvement_2026_10_14/orchestration_state.json` direkte eller bruk `python3 scripts/research.py status`. Ved kartleggingen var Wave6 med full H8-planhorisont registrert som pågående P1. Ikke start en ekstra kopi, restart eller ny variant basert på denne oversikten.
+Piloten `learned-manager-20261015-v1` er fullført og etterkontrollert: **+47.0 netto poeng per sesong** i de to lærte evalueringsårene. Les [resultatet](../reports/learned_manager_2026_10_15/RESULTATER.md), [etterkontrollen](../reports/learned_manager_2026_10_15/audit.json) og chipforløpene før neste hypotese. 2022/23 er kontroll uten læring, ikke et tredje lært evalueringsår. Dagens benchmark er beholdt. Ingen prosess trenger videreføring for dette forsøket.
 
-Hvis den fasen fortsatt pågår, fortsett fra dens faktisk registrerte fremdrift og eksisterende protokoll. Hvis den er avsluttet, les fullføringskvittering, uavhengig kontroll og numerisk gate før du trekker en konklusjon. Oppdater katalogen med det dokumenterte utfallet og friske opp oversikten.
+Ikke kjør kandidaten om igjen uendret eller bruk de samme resultatene til ubundet parameterjakt. Før en ny variant bør vi først vurdere det svært lille antallet uavhengige chiputfall, hvordan læringen verdsetter alternative lovlige viderehandlinger og hvilken ny tidsordnet evaluering som kan avtales på forhånd. Full RL og et eksplisitt vinnermål er ikke testet her.
 
-Wave6 er konfigurasjon 8 i den eksisterende kampanjen, med et tak på åtte konfigurasjoner. Et nytt forslag må derfor avklare en ny eller eksplisitt endret kampanjeramme; registreringsverktøyet gir ikke tillatelse til å utvide det eksisterende søket.
+Den eldre H8-kjøringen stoppet med feil 14. oktober kl. 15:01 UTC, dokumentert i [hendelsesloggen](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl). Dens gamle status viste fortsatt pågående arbeid. Managerpiloten er en separat, eksplisitt autorisert kampanje med én konfigurasjon; den utvider ikke taket på åtte i den gamle kampanjen.
 
 ## Når et nytt forsøk er berettiget
 

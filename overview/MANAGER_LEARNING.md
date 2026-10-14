@@ -1,6 +1,6 @@
 # Lære en modell å være FPL manager
 
-Forskningsidé fra brukeren 14. oktober 2026. Hypotesen er at modellen kan forbedres ved å lære verdien av managerhandlinger over tid, i tillegg til å predikere spillerpoeng. Ingen slik ny modell er trent eller valgt gjennom dette notatet.
+Forskningsidé fra brukeren 14. oktober 2026. Hypotesen er at modellen kan forbedres ved å lære verdien av managerhandlinger over tid, i tillegg til å predikere spillerpoeng. Selve notatet trente ingen modell. En første avgrenset TC/BB-verdikomponent er senere trent og kontrollert; se [resultatet 15. oktober](../reports/learned_manager_2026_10_15/RESULTATER.md). Dagens benchmark er beholdt. Full managerlæring og vinnermål er fortsatt videre forskning.
 
 ## Hva som endres
 
@@ -38,7 +38,7 @@ Før forsøket registreres må treningsmiljø, policyklasse, tillatte handlinger
 
 ## Hva simulatoren må gi oss
 
-Den eksisterende regelmotoren gir lovlige tilstandsoverganger og poengberegning. [Model Lab](../model_lab/README.md) gir en kontrollert inngang for prognoser, input og resultater. I denne versjonen er de innebygde managerpolicyene adaptive og faste; en trenbar managerpolicy er et videre adapterarbeid.
+Den eksisterende regelmotoren gir lovlige tilstandsoverganger og poengberegning. [Model Lab](../model_lab/README.md) gir en kontrollert inngang for prognoser, input og resultater. I denne versjonen er de innebygde managerpolicyene adaptive og faste; den første lærte TC/BB-komponenten er implementert som et lokalt forsøksadapter; andre policyklasser krever fortsatt eget adapterarbeid.
 
 For læring gjennom simulering trenger vi i tillegg et kvalifisert usikkerhetsmiljø med plausible spillerutfall, spilletid og samvariasjon. Mange simuleringer av de samme historiske sesongene er ikke mange uavhengige fotballsesonger. En agent kan ellers lære å utnytte simulatorens svakheter eller historisk fasit.
 

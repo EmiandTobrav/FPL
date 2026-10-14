@@ -1,0 +1,112 @@
+{
+  "auditor_sha256": "428c894e2107accf121343eeaa7581a51804bde4cd89b09a756772210fd17823",
+  "decision_changes": [
+    {
+      "different_round_decisions": 0,
+      "season": "2022-23"
+    },
+    {
+      "different_round_decisions": 37,
+      "season": "2023-24"
+    },
+    {
+      "different_round_decisions": 38,
+      "season": "2024-25"
+    }
+  ],
+  "forecasts_unchanged": true,
+  "fresh_reference_rounds_matching_prior": 114,
+  "protocol_sha256": "20d4c4ff43abfc19183618afeff9dae18aec6d725186729c1937b8269279a532",
+  "records": [
+    {
+      "complete_season": true,
+      "decision_process_cpu_seconds": null,
+      "hit_cost": 32,
+      "learned_decision_rounds": 0,
+      "net_points": 2429.0,
+      "original_solver_seconds_sum": 147.57486792688724,
+      "policy": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+      "policy_fit_cpu_seconds": 0.0,
+      "replayed_locked_rounds": 38,
+      "season": "2022-23",
+      "seconds": null,
+      "solver_calls": 355
+    },
+    {
+      "complete_season": true,
+      "decision_process_cpu_seconds": 154.32883999999999,
+      "hit_cost": 32,
+      "learned_decision_rounds": 0,
+      "net_points": 2429.0,
+      "original_solver_seconds_sum": 148.7972378336126,
+      "policy": "learned_chip_wait_v1",
+      "policy_fit_cpu_seconds": 4.8000000000048004e-05,
+      "replayed_locked_rounds": 0,
+      "season": "2022-23",
+      "seconds": 154.82604750001337,
+      "solver_calls": 355
+    },
+    {
+      "complete_season": true,
+      "decision_process_cpu_seconds": 163.536647,
+      "hit_cost": 36,
+      "learned_decision_rounds": 0,
+      "net_points": 2413.0,
+      "original_solver_seconds_sum": 157.81701896281447,
+      "policy": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+      "policy_fit_cpu_seconds": 0.0,
+      "replayed_locked_rounds": 0,
+      "season": "2023-24",
+      "seconds": 163.95536604197696,
+      "solver_calls": 446
+    },
+    {
+      "complete_season": true,
+      "decision_process_cpu_seconds": 122.16121700000002,
+      "hit_cost": 28,
+      "learned_decision_rounds": 21,
+      "net_points": 2466.0,
+      "original_solver_seconds_sum": 116.87120042252354,
+      "policy": "learned_chip_wait_v1",
+      "policy_fit_cpu_seconds": 0.0031180000000006203,
+      "replayed_locked_rounds": 0,
+      "season": "2023-24",
+      "seconds": 122.41957879206166,
+      "solver_calls": 405
+    },
+    {
+      "complete_season": true,
+      "decision_process_cpu_seconds": 237.92642100000006,
+      "hit_cost": 8,
+      "learned_decision_rounds": 0,
+      "net_points": 2344.0,
+      "original_solver_seconds_sum": 233.18164071347564,
+      "policy": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+      "policy_fit_cpu_seconds": 0.0,
+      "replayed_locked_rounds": 0,
+      "season": "2024-25",
+      "seconds": 238.76263591600582,
+      "solver_calls": 396
+    },
+    {
+      "complete_season": true,
+      "decision_process_cpu_seconds": 157.73669100000006,
+      "hit_cost": 32,
+      "learned_decision_rounds": 7,
+      "net_points": 2385.0,
+      "original_solver_seconds_sum": 153.216145245824,
+      "policy": "learned_chip_wait_v1",
+      "policy_fit_cpu_seconds": 0.0009580000000255495,
+      "replayed_locked_rounds": 0,
+      "season": "2024-25",
+      "seconds": 158.3011430419283,
+      "solver_calls": 358
+    }
+  ],
+  "rounds_recomputed": 228,
+  "same_solver_options_and_caps": true,
+  "selected_outcomes_rebuilt_from_frozen_targets_and_qualified_blanks": true,
+  "status": "pass",
+  "training_chronology_and_coefficients_verified": true,
+  "unknowns_not_zero": true
+}

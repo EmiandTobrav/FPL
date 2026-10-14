@@ -1,0 +1,4 @@
+season,trained_evaluation,reference_net_points,candidate_net_points,difference,reference_hit_cost,candidate_hit_cost,different_round_decisions,reference_solver_calls,candidate_solver_calls,reference_solver_seconds,candidate_solver_seconds,reference_decision_cpu_seconds,candidate_decision_cpu_seconds,candidate_fit_cpu_seconds
+2022-23,False,2429.0,2429.0,0.0,32,32,0,355,355,147.57486792688724,148.7972378336126,,154.32883999999999,4.8000000000048004e-05
+2023-24,True,2413.0,2466.0,53.0,36,28,37,446,405,157.81701896281447,116.87120042252354,163.536647,122.16121700000002,0.0031180000000006203
+2024-25,True,2344.0,2385.0,41.0,8,32,38,396,358,233.18164071347564,153.216145245824,237.92642100000006,157.73669100000006,0.0009580000000255495

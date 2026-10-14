@@ -1,0 +1,14 @@
+{
+  "complete_season": true,
+  "decision_process_cpu_seconds": 122.16121700000002,
+  "hit_cost": 28,
+  "learned_decision_rounds": 21,
+  "net_points": 2466.0,
+  "original_solver_seconds_sum": 116.87120042252354,
+  "policy": "learned_chip_wait_v1",
+  "policy_fit_cpu_seconds": 0.0031180000000006203,
+  "replayed_locked_rounds": 0,
+  "season": "2023-24",
+  "seconds": 122.41957879206166,
+  "solver_calls": 405
+}

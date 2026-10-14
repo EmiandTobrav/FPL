@@ -25,7 +25,8 @@ Metodene nedenfor beholder sine opprinnelige sammenligningsgrunnlag. Netto seson
 | Vektet tap for spilletidsmodell | −50,0; sesonggevinster −72, −167, +89. Stoppet. | [Utfall](../reports/fpl_improvement_2026_10_14/waves/wave3_selectable_loss/outcome.json) |
 | Historikk i deltakelsesmodell | +7,7; sesonggevinster +64, −63, +22. Stoppet. | [Utfall](../reports/fpl_improvement_2026_10_14/waves/wave4_participation_history/outcome.json) |
 | Fast prognoseblanding | −1,3; sesonggevinster −22, +5, +13. Stoppet. | [Utfall](../reports/fpl_improvement_2026_10_14/waves/wave5_fixed_blend/outcome.json) |
-| Full tilgjengelig horisont H8 | Registrert som pågående P1 i lagret status ved kartleggingen. Ingen ferdig sammenligningskonklusjon settes her. | [Endringskontrakt](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/amendment.json), [arbeidsstatus](../reports/fpl_improvement_2026_10_14/orchestration_state.json) |
+| Full tilgjengelig horisont H8 | P1 avsluttet med exit 1 den 14. oktober kl. 15:01 UTC. Ingen fullført sammenligning eller oppgradering; eldre status var utdatert. | [Endringskontrakt](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/amendment.json), [hendelseslogg](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl) |
+| Lært TC/BB-reserve med uendrede prognoser | +47.0 netto poeng i snitt i 2023/24–2024/25; gevinster +53, +41. 2022/23 er identisk kontroll uten læring. Pilotkrav bestått; benchmark beholdt. | [Rapport](../reports/learned_manager_2026_10_15/RESULTATER.md), [etterkontroll](../reports/learned_manager_2026_10_15/audit.json) |
 
 Kampanjer 14. oktober bruker allerede studerte utviklingssesonger. Positivt snitt alene dokumenterer ikke en robust oppgradering. S1, S2 og senere bølger har ulike sammenligningskontrakter; kontrollene følger hver kilde.
 
@@ -51,4 +52,4 @@ Disse forsøkene bruker eldre poengmål og egne chip- og startkontrakter. Result
 
 Hvert forsøk skal oppgi dataversjon og inputhash, feature-/tidskontrakt, prognosemodell, beslutningspolicy, benchmark, sesonger, ressurser, resultater og konklusjon. Skill mellom planlagt, pågående, fullført, kontrollert og godkjent. Behold også negative utfall og feil som forklarer hvorfor en metode ble stoppet.
 
-[runs.csv](runs.csv) gir én rad per lagret sesongkvittering fra de to nyere simulatorområdene. Gamle forløp finnes via familierapportene over. CSV-registeret er ikke en samlet resultatrangering eller dokumentasjon på at hver kvittering er uavhengig godkjent.
+[runs.csv](runs.csv) gir én rad per lagret sesongkvittering fra simulatorområdene og managerpiloten. Gamle forløp finnes via familierapportene over. CSV-registeret er ikke en samlet resultatrangering eller dokumentasjon på at hver kvittering er uavhengig godkjent.

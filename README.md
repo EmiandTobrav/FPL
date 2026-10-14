@@ -12,6 +12,7 @@ Start i den samlede arbeidsoversikten. Den peker til det rekonstruerte datasette
 | Se hendelser, feil og endringer underveis | [Arbeidshistorikk](overview/TIMELINE.md) |
 | Finne gjeldende data og benchmark | [Prosjektregister](overview/PROJECT.json) |
 | Kjøre modelltester og simulering | [Felles Model Lab](model_lab/README.md) |
+| Kontrollert forsøk med lært managerpolicy | [Resultater med uendrede prognoser](reports/learned_manager_2026_10_15/RESULTATER.md) |
 | Utforske trening som en faktisk manager | [Forskningsidé og vinnermål](overview/MANAGER_LEARNING.md) |
 | Planlegge og registrere et nytt forsøk | [Arbeidsflyt](overview/WORKFLOW.md) |
 | Forstå Git-strukturen og hva som er publisert | [Git og publiseringsomfang](docs/GIT_LAYOUT.md) |
@@ -43,4 +44,4 @@ Git inneholder den portable data- og modellpipelinen, samlet navigasjon og utval
 
 [Publiseringsmanifestet](overview/publication_manifest.json) oppgir de konkrete filene og kontrollsummene. Sammendrag og kontrollrapporter skal ikke forveksles med en full eksport av alle bevisfilene de refererer til.
 
-Model Lab kan kjøres direkte fra denne publikasjonen med sine små låste eksempler. De gamle, komplette simulator-/H8-kampanjene har fortsatt separat arkivavhengighet. Den foreslåtte trenbare managerpolicyen er dokumentert som videre forskning.
+Model Lab kan kjøres direkte fra denne publikasjonen med sine små låste eksempler. De gamle, komplette simulator-/H8-kampanjene har fortsatt separat arkivavhengighet. Første lærte chipreserve er nå testet med uendrede prognoser. Se [kontrollert managerpilot](reports/learned_manager_2026_10_15/RESULTATER.md). Full managerlæring og vinnermål er videre forskning.

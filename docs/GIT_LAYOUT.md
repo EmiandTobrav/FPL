@@ -17,7 +17,7 @@ Dette repoet har én felles startside og én katalog over datasett, metoder og f
 
 De tre datasettene og modellpipelinen er komplette filpakker med innlesere, tabeller og schema. Metoderegisteret viser historiske og nyere funn uten å kopiere alle arbeidsmapper. Nye foldbaserte modellforsøk kan bygges fra pipelinepakken med dens oppgitte avhengigheter.
 
-Den avanserte FPL-simulatoren og den pågående H8-kampanjen er indeksert gjennom status, protokoller og resultatuttrekk. Full kjøring, uavhengig replay av alle revisjoner eller gjenopptakelse krever det separate lokale arbeidsarkivet. Et sammendrag merket completed er ingen garanti for at alle refererte bevisfiler er inkludert i denne publikasjonen. Rekonstruksjonens CURRENT er lagret som et kildeuttrekk under overview/evidence og er ikke en operativ rekonstruksjonsinngang her.
+Den avanserte FPL-simulatoren og den avsluttede H8-kjøringen er indeksert gjennom status, protokoller og resultatuttrekk. Full kjøring, uavhengig replay av alle revisjoner eller gjenopptakelse krever det separate lokale arbeidsarkivet. Et sammendrag merket completed er ingen garanti for at alle refererte bevisfiler er inkludert i denne publikasjonen. Rekonstruksjonens CURRENT er lagret som et kildeuttrekk under overview/evidence og er ikke en operativ rekonstruksjonsinngang her.
 
 Store historiske snapshots, videoer, bilder fra kildearbeid, ZIP-eksporter og regenererbare arbeidsmapper inngår ikke i denne oppdateringen. Dette er en publikasjon med eksplisitt omfang, ikke en full sikkerhetskopi av lokal hovedmappe. Tidligere Git-historikk og grener er bevart.
 
@@ -33,4 +33,12 @@ Genererte inventarer er lokale navigasjonshjelpemidler. De oppdaterer ikke autom
 
 model_lab er en portabel inngang for små prognoseprøver og lovlig FPL-simulering fra eksplisitt låste input. Den gjenbruker pipelinepakken og eksakte kopier av den eksisterende regel-/policykoden. To små eksempler kan kjøres direkte; større studier må bindes til registrerte kontrakter og tilstrekkelige inputbundles. Full replay eller gjenopptakelse av den tidligere H8-kampanjen inngår fortsatt ikke i denne publikasjonen.
 
-Rammeverket er kontrollert med 40 tester, prognosegjenbruk og en liten simulering som gjenskaper tidligere loggede handlinger. Se model_lab/VALIDATION.json. Managerlæring og vinnermål er en dokumentert forskningsidé, ikke en trent policy.
+Rammeverket er kontrollert med 40 tester, prognosegjenbruk og en liten simulering som gjenskaper tidligere loggede handlinger. Se model_lab/VALIDATION.json. En avgrenset lært TC/BB-reserve er nå testet; full managerlæring og vinnermål er videre forskning.
+
+## Lært managerpilot, 15. oktober
+
+`reports/learned_manager_2026_10_15` publiserer policykode, fryst originalkjører, eksplisitt mekanisk retting, protokoll, treningsrader/koeffisienter, maskinell etterkontroll og sesongresultater. Alle låste rundebeslutninger og oppgjør er bevart i `round_evidence.tar.gz`; seks sammendrag ligger direkte under `runs/`. Arkivet unngår hundrevis av store rålogger i diffen. `result.json` binder hver enkelt originalfil med SHA-256.
+
+Protokoll og registrerte resultater er byteidentiske med lokalt arkiv; historiske stier under `FPL_training_dataset/` er derfor beholdt der. Full kjøring av `audit.py` eller `resume_v002.py` krever de fryste forecast-cachefilene, lærerloggene og de eldre oppgjørshjelperne fra lokalt arkiv, på de opprinnelige stiene. De store inputene er ikke kopiert inn i Git. Det er mulig å kontrollere det publiserte resultatmaterialets hasher og policytestene uten disse inputene. En bestått slik kontroll erstatter ikke full input-/regelreplay.
+
+Publiserte resultater er ikke en automatisk oppgradering av benchmark. `failure.json` dokumenterer den bevarte oppsummeringsfeilen; faktisk fullføring og audit ligger i egne filer.

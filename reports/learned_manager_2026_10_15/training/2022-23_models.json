@@ -1,0 +1,8 @@
+{
+  "cutoff": "2022-08-05 17:30:00+00:00",
+  "fit_cpu_seconds": 4.8000000000048004e-05,
+  "models": {
+    "bench_boost": null,
+    "triple_captain": null
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_date": "2026-10-14",
+  "observed_date": "2026-10-15",
   "role": "Navigation overlay; original immutable manifests remain authoritative for their individual releases.",
   "dataset": {
     "id": "fpl_2026_27_best_effort_v1",
@@ -45,10 +45,12 @@
     "previously_inspected_reporting_season": "2025-26",
     "forecast_evaluation": "reports/walk_forward_2026_10_13/RESULTATER.md",
     "completed_simulator_report": "reports/fpl_simulator_2026_10_13/final_report/RESULTATER.txt",
-    "latest_research_root": "reports/fpl_improvement_2026_10_14",
-    "status_source": "reports/fpl_improvement_2026_10_14/orchestration_state.json",
-    "observed_phase": "wave6_P1_six_paired_seasons_running",
-    "status_is_live_process_verification": false
+    "latest_research_root": "reports/learned_manager_2026_10_15",
+    "status_source": "reports/learned_manager_2026_10_15/orchestration_state.json",
+    "observed_phase": "paired_policy_comparison_complete_audited",
+    "status_is_live_process_verification": false,
+    "latest_result": "reports/learned_manager_2026_10_15/RESULTATER.md",
+    "latest_experiment_id": "learned-manager-20261015-v1"
   },
   "navigation": {
     "start": "README.md",

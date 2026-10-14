@@ -364,9 +364,10 @@
     "id": "wave6-h8",
     "title": "Full tilgjengelig planhorisont H8",
     "kind": "experiment",
-    "status": "see_recorded_status",
-    "finding": "Ingen ferdig oppgradering konkludert; les status og registrerte neste handlinger.",
+    "status": "execution_failed_no_upgrade",
+    "finding": "P1 stoppet med exit 1 den 14. oktober kl. 15:01 UTC; ingen fullført H8-sammenligning eller oppgradering. Eldre statusfil er utdatert; ingen automatisk ny kjøring.",
     "evidence": [
+      "reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl",
       "reports/fpl_improvement_2026_10_14/orchestration_state.json",
       "reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/amendment.json"
     ],
@@ -411,10 +412,11 @@
     "id": "manager-learning-idea",
     "title": "Lære en faktisk FPL-manager og senere optimere vinnsannsynlighet",
     "kind": "research_idea",
-    "status": "proposed_not_registered_not_trained",
-    "finding": "Første foreslåtte prøve: lær fremtidsverdi eller beslutningsrangering med uendrede prognoser. Vinnermål krever separat usikkerhets- og konkurrentmodell.",
+    "status": "first_bounded_component_evaluated_full_RL_still_proposed",
+    "finding": "Første lærte TC/BB-reserve er testet med uendrede prognoser: +47.0 netto poeng i snitt i to lærte år. Full managerlæring og vinnermål er fortsatt videre ideer.",
     "evidence": [
-      "overview/MANAGER_LEARNING.md"
+      "overview/MANAGER_LEARNING.md",
+      "reports/learned_manager_2026_10_15/RESULTATER.md"
     ],
     "candidate_id": null,
     "tags": [

@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "source_date": "2026-10-14",
+  "source_date": "2026-10-15",
   "base_main_commit": "6730554e88b5f4a0e7e2440e961fdf9b8f88571f",
-  "scope": "Portable dataset and fold pipeline plus selected immutable summaries and navigation. Full reconstruction replay and advanced campaign replay/resume require excluded local archives, caches, logs and engines. Shared Model Lab with pinned pure-rule/policy copies and small bounded fixtures is now included; manager-learning remains a proposed research direction.",
+  "scope": "Portable datasets, Model Lab, scoped history and completed learned TC/BB pilot. Exact round evidence is compressed; full frozen input replay requires the local archive.",
   "entries": [
     {
       "source": "FPL_training_dataset/research/current/adaptive_events/README.md",
@@ -400,22 +400,22 @@
       "source": "overview/METHODS.md",
       "repository_path": "overview/METHODS.md",
       "source_sha256": "f65a29eb92d1375e46bb6528cf4f3a58291f7218c4cc71000357ad6aeecb3b3d",
-      "published_sha256": "c80a155c8106454692a1dada5ad78b630433cfc76767969b26ab493a7148c1e0",
-      "bytes": 6739
+      "published_sha256": "d8e4de77c6318464ac40e12f2cb9d4c986591f87cbf189b3d838036a7d13fb2e",
+      "bytes": 7122
     },
     {
       "source": "overview/NEXT.md",
       "repository_path": "overview/NEXT.md",
       "source_sha256": "4118c434358f257e9c5ebeca357fd1d5d538ec20abc304329b0ffeec24f26cce",
-      "published_sha256": "4118c434358f257e9c5ebeca357fd1d5d538ec20abc304329b0ffeec24f26cce",
-      "bytes": 3114
+      "published_sha256": "bf34ca6151e08e8863aa089d67f9949de1714737880ef7020a4815849bcdb2ab",
+      "bytes": 3507
     },
     {
       "source": "overview/PROJECT.json",
       "repository_path": "overview/PROJECT.json",
       "source_sha256": "bfba2f637f22f10e35e16d9485ae01c658129a78d49886c38e6e0eea24c4b2c9",
-      "published_sha256": "e08e9dd2fd5061f6a1ff08266246f3eb833ca8d141f55ee7bff59dd09dea903a",
-      "bytes": 4700
+      "published_sha256": "b2373a2af42182029a6c7442c306bef1f01b810634f62195b0661658cebce484",
+      "bytes": 4838
     },
     {
       "source": "overview/RESULT_TEMPLATE.json",
@@ -428,8 +428,8 @@
       "source": "overview/STATUS.md",
       "repository_path": "overview/STATUS.md",
       "source_sha256": "e16ef79f62fd7a7b683d75c9e03fd43b88fda8dc8400ab1b533b2548fc5dfafb",
-      "published_sha256": "0800998f66746531c2c321f7aed40c622fb949ca0e8e1d0799cc2ad369a32523",
-      "bytes": 6952
+      "published_sha256": "cbea6dec63c8599186140e400ccdad6913a4fdb45a0f0ba6b1aa0c78d96a2fa1",
+      "bytes": 7530
     },
     {
       "source": "overview/TIMELINE.md",
@@ -449,15 +449,15 @@
       "source": "overview/research_catalog.json",
       "repository_path": "overview/research_catalog.json",
       "source_sha256": "76793881f41060081b513d2e19adce0595a28d5f3159405a2c117ffa4c8d6ee1",
-      "published_sha256": "1d83be6b57e1e5a37e547f8fd681a9d418b699b4a73d33e6a6f6de3b7b3a2e71",
-      "bytes": 12771
+      "published_sha256": "37448393d170ff6e117caa10509b2069879661d3ff53be474f214e50514044f0",
+      "bytes": 13047
     },
     {
       "source": "overview/runs.csv",
       "repository_path": "overview/runs.csv",
       "source_sha256": "adee9654896d37a9b0c81b07981a7325367bd4be908f5e0543a00763ec9d5b7b",
-      "published_sha256": "adee9654896d37a9b0c81b07981a7325367bd4be908f5e0543a00763ec9d5b7b",
-      "bytes": 39987
+      "published_sha256": "057eb37006a083f4482619a70c1ac2b6611cdd09c3171746a00fa440e1be580f",
+      "bytes": 42165
     },
     {
       "source": "reports/fpl_improvement_2026_10_14/campaign_lock.json",
@@ -1659,8 +1659,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": "README.md",
-      "published_sha256": "8318a96834f9f3a2127b2051871d6924e698102f56f8b98e898fa2801af073a0",
-      "bytes": 3924
+      "published_sha256": "421a80cb52869f61da9cd24403d366dfee0815f15fa1268df0ce75fdd8dbacf5",
+      "bytes": 4183
     },
     {
       "source": "generated_for_git_publication",
@@ -1677,8 +1677,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": "docs/GIT_LAYOUT.md",
-      "published_sha256": "d0f5abcb83740b92df41384e2af05ad7223cb24b06f3a3ba4cc3efca4b1e8881",
-      "bytes": 3596
+      "published_sha256": "1ef92ccabe07320898acf61462d11276ebc577de4a08801791774f9b49637017",
+      "bytes": 4812
     },
     {
       "source": "generated_for_git_publication",
@@ -1689,8 +1689,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": ".github/workflows/workspace.yml",
-      "published_sha256": "cfef238b2f4fea184258b54a8182fe5dbd22395390f44d292d0b8db23dfe416d",
-      "bytes": 821
+      "published_sha256": "5649cf8af08506662bbf8d23a6f1628b71661f621cf1ba8b1a18b92bf82dd311",
+      "bytes": 1062
     },
     {
       "source": "generated_for_git_publication",
@@ -1701,8 +1701,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": "overview/publication_verification.json",
-      "published_sha256": "f295e2012f542f2efb62079e34e5383d8121b95aca76b67fd2d5be12f182a253",
-      "bytes": 443
+      "published_sha256": "053791a579d84b0b668e2f841302066b61902a3adb866639fe7cce4682fc3e4d",
+      "bytes": 957
     },
     {
       "source": "shared_framework_addition",
@@ -1881,8 +1881,294 @@
     {
       "source": "shared_framework_addition",
       "repository_path": "overview/MANAGER_LEARNING.md",
-      "published_sha256": "cd06fb39723e7cfadc1bf3d835f025de7cced58ccaf9153193b8446e3cc23189",
-      "bytes": 5606
+      "published_sha256": "97181361ff129e6174f85a7d6d2c54fee028b475e77ee536ea753ffa12dac124",
+      "bytes": 5912
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/rounds.csv",
+      "repository_path": "reports/learned_manager_2026_10_15/rounds.csv",
+      "published_sha256": "174fb4fe18378f00dcdee64832ab7ce42e45a6548ed6c082ac7f2f33da858ac7",
+      "bytes": 3825,
+      "source_sha256": "174fb4fe18378f00dcdee64832ab7ce42e45a6548ed6c082ac7f2f33da858ac7"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/audit.json",
+      "repository_path": "reports/learned_manager_2026_10_15/audit.json",
+      "published_sha256": "fd98924f1480a909a32119801b35f18fa9df2339f4b2568f62c9a0193ddbabe4",
+      "bytes": 3573,
+      "source_sha256": "fd98924f1480a909a32119801b35f18fa9df2339f4b2568f62c9a0193ddbabe4"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/mechanical_resume_v002.json",
+      "repository_path": "reports/learned_manager_2026_10_15/mechanical_resume_v002.json",
+      "published_sha256": "79980ed49f1c6194a2baaab494bfd6b07bdcf4196f0b368a1d5a4925d87747b9",
+      "bytes": 12511,
+      "source_sha256": "79980ed49f1c6194a2baaab494bfd6b07bdcf4196f0b368a1d5a4925d87747b9"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/audit.py",
+      "repository_path": "reports/learned_manager_2026_10_15/audit.py",
+      "published_sha256": "428c894e2107accf121343eeaa7581a51804bde4cd89b09a756772210fd17823",
+      "bytes": 7173,
+      "source_sha256": "428c894e2107accf121343eeaa7581a51804bde4cd89b09a756772210fd17823"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/result.json",
+      "repository_path": "reports/learned_manager_2026_10_15/result.json",
+      "published_sha256": "8de7e8910e060d859541f01473a3f656ed4188d54e6955055a6ebe79776df8a6",
+      "bytes": 85577,
+      "source_sha256": "8de7e8910e060d859541f01473a3f656ed4188d54e6955055a6ebe79776df8a6"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/resume_v002.py",
+      "repository_path": "reports/learned_manager_2026_10_15/resume_v002.py",
+      "published_sha256": "d92c949ad8c09457dc1eb06798ee84abd64f4887a39a5bb2bee963e355525536",
+      "bytes": 15740,
+      "source_sha256": "d92c949ad8c09457dc1eb06798ee84abd64f4887a39a5bb2bee963e355525536"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/verify_saved.py",
+      "repository_path": "reports/learned_manager_2026_10_15/verify_saved.py",
+      "published_sha256": "f884a70b8cdb26391a15137261cad9b9cb27890d5b6a84ea11acbb0bfbaf9294",
+      "bytes": 1591,
+      "source_sha256": "f884a70b8cdb26391a15137261cad9b9cb27890d5b6a84ea11acbb0bfbaf9294"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/policy.py",
+      "repository_path": "reports/learned_manager_2026_10_15/policy.py",
+      "published_sha256": "6886b2904a786724a59922fda772016712893cfc8d47ad1d9bc57751d49d3a0c",
+      "bytes": 3508,
+      "source_sha256": "6886b2904a786724a59922fda772016712893cfc8d47ad1d9bc57751d49d3a0c"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/registration.json",
+      "repository_path": "reports/learned_manager_2026_10_15/registration.json",
+      "published_sha256": "145b5ec9103c8f741432c8ef0fec2f3f307d25e5a9b3a2a33e590262a01a1d89",
+      "bytes": 285,
+      "source_sha256": "145b5ec9103c8f741432c8ef0fec2f3f307d25e5a9b3a2a33e590262a01a1d89"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/README.md",
+      "repository_path": "reports/learned_manager_2026_10_15/README.md",
+      "published_sha256": "d485e844c38aba49e01da045671c7abd39cd496559129dff6b00798f1e18c357",
+      "bytes": 5437,
+      "source_sha256": "d485e844c38aba49e01da045671c7abd39cd496559129dff6b00798f1e18c357"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/experiment.py",
+      "repository_path": "reports/learned_manager_2026_10_15/experiment.py",
+      "published_sha256": "b2183fed62a8244edf47c4300ad377985f85b47524006dad39ad34df912da490",
+      "bytes": 13472,
+      "source_sha256": "b2183fed62a8244edf47c4300ad377985f85b47524006dad39ad34df912da490"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/chips.csv",
+      "repository_path": "reports/learned_manager_2026_10_15/chips.csv",
+      "published_sha256": "b3465e0c1bce3deb7ce5997fdeda5010fa4a2b8cad8aea78d5e91b539b64efdb",
+      "bytes": 3405,
+      "source_sha256": "b3465e0c1bce3deb7ce5997fdeda5010fa4a2b8cad8aea78d5e91b539b64efdb"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/started.json",
+      "repository_path": "reports/learned_manager_2026_10_15/started.json",
+      "published_sha256": "e6227176b8d87f96cfd405ccfbd358b2f9cbd7be147558121981222042c44a6d",
+      "bytes": 120,
+      "source_sha256": "e6227176b8d87f96cfd405ccfbd358b2f9cbd7be147558121981222042c44a6d"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/complete.json",
+      "repository_path": "reports/learned_manager_2026_10_15/complete.json",
+      "published_sha256": "718ee7645e0d88978062b5642cf4a62ba365e2799cab3a7c9abee21c1615a153",
+      "bytes": 113,
+      "source_sha256": "718ee7645e0d88978062b5642cf4a62ba365e2799cab3a7c9abee21c1615a153"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/RESULTATER.md",
+      "repository_path": "reports/learned_manager_2026_10_15/RESULTATER.md",
+      "published_sha256": "860e9d96a30c5addf5e0093d21dc6bb739d1ce86de2ef7b8095b324a5ca46e46",
+      "bytes": 5194,
+      "source_sha256": "860e9d96a30c5addf5e0093d21dc6bb739d1ce86de2ef7b8095b324a5ca46e46"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/started_resume_v002.json",
+      "repository_path": "reports/learned_manager_2026_10_15/started_resume_v002.json",
+      "published_sha256": "e6227176b8d87f96cfd405ccfbd358b2f9cbd7be147558121981222042c44a6d",
+      "bytes": 120,
+      "source_sha256": "e6227176b8d87f96cfd405ccfbd358b2f9cbd7be147558121981222042c44a6d"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/protocol.json",
+      "repository_path": "reports/learned_manager_2026_10_15/protocol.json",
+      "published_sha256": "20d4c4ff43abfc19183618afeff9dae18aec6d725186729c1937b8269279a532",
+      "bytes": 103771,
+      "source_sha256": "20d4c4ff43abfc19183618afeff9dae18aec6d725186729c1937b8269279a532"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/orchestration_state.json",
+      "repository_path": "reports/learned_manager_2026_10_15/orchestration_state.json",
+      "published_sha256": "cd946326186e706e842361f007d6e1902c1edc5f39691d6712ed5a0d03c0fe57",
+      "bytes": 770,
+      "source_sha256": "cd946326186e706e842361f007d6e1902c1edc5f39691d6712ed5a0d03c0fe57"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/failure.json",
+      "repository_path": "reports/learned_manager_2026_10_15/failure.json",
+      "published_sha256": "4fda442dbace41017148648191a9b054e38ceb35ff1742187e4e44a9a5ce6152",
+      "bytes": 802,
+      "source_sha256": "4fda442dbace41017148648191a9b054e38ceb35ff1742187e4e44a9a5ce6152"
+    },
+    {
+      "source": "compressed_exact_round_evidence",
+      "repository_path": "reports/learned_manager_2026_10_15/round_evidence.tar.gz",
+      "published_sha256": "8f62dd23e5983b4b9fbcaf6fc2cf3247607b33084f5daa5967e7cabdc978a906",
+      "bytes": 3036960
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/mechanical_resume_v002.diff",
+      "repository_path": "reports/learned_manager_2026_10_15/mechanical_resume_v002.diff",
+      "published_sha256": "27b661be3ae1f65fcb783a27814c77ecd88a38aaf23a39bd602bf974579b5611",
+      "bytes": 6703,
+      "source_sha256": "27b661be3ae1f65fcb783a27814c77ecd88a38aaf23a39bd602bf974579b5611"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/preflight.json",
+      "repository_path": "reports/learned_manager_2026_10_15/preflight.json",
+      "published_sha256": "660a1f71cbc27d821776b27c114074ebebb9119f478599a0970d80d66fc55afd",
+      "bytes": 189,
+      "source_sha256": "660a1f71cbc27d821776b27c114074ebebb9119f478599a0970d80d66fc55afd"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/results.csv",
+      "repository_path": "reports/learned_manager_2026_10_15/results.csv",
+      "published_sha256": "46621c66e568aafb1d6cf6cb400ef76dc4d12a7cbca541a3c8584057fe533610",
+      "bytes": 742,
+      "source_sha256": "46621c66e568aafb1d6cf6cb400ef76dc4d12a7cbca541a3c8584057fe533610"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/test_policy.py",
+      "repository_path": "reports/learned_manager_2026_10_15/test_policy.py",
+      "published_sha256": "6e204439815d87bbf6cbdbf3ff751dffbc7d6c332291b33a11974553f8541583",
+      "bytes": 2305,
+      "source_sha256": "6e204439815d87bbf6cbdbf3ff751dffbc7d6c332291b33a11974553f8541583"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/report.py",
+      "repository_path": "reports/learned_manager_2026_10_15/report.py",
+      "published_sha256": "88864a154dc2188da75bcdac25dec9729da8a03a7456245f6676e10e707de34b",
+      "bytes": 11390,
+      "source_sha256": "88864a154dc2188da75bcdac25dec9729da8a03a7456245f6676e10e707de34b"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/training_summary.csv",
+      "repository_path": "reports/learned_manager_2026_10_15/training_summary.csv",
+      "published_sha256": "9abffe628ea2c02e92c9844b109d1cbe84ef4113d38abef7ca13b98f341c1391",
+      "bytes": 301,
+      "source_sha256": "9abffe628ea2c02e92c9844b109d1cbe84ef4113d38abef7ca13b98f341c1391"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/training/2022-23_models.json",
+      "repository_path": "reports/learned_manager_2026_10_15/training/2022-23_models.json",
+      "published_sha256": "d5d544d8f6b8474ef6dbaf92b5f475e5b86170afb05dcabbeadda782bd6077cf",
+      "bytes": 160,
+      "source_sha256": "d5d544d8f6b8474ef6dbaf92b5f475e5b86170afb05dcabbeadda782bd6077cf"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/training/2024-25_models.json",
+      "repository_path": "reports/learned_manager_2026_10_15/training/2024-25_models.json",
+      "published_sha256": "e2ba8535b789687d6c88be9d29c6c95e78712453a5583ceb1d4f9713b9a1b26a",
+      "bytes": 2196,
+      "source_sha256": "e2ba8535b789687d6c88be9d29c6c95e78712453a5583ceb1d4f9713b9a1b26a"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/training/2023-24_samples.json",
+      "repository_path": "reports/learned_manager_2026_10_15/training/2023-24_samples.json",
+      "published_sha256": "4c33c0417f35b462ede4cadaabdd913f091e1a70b18b5bbc3219681b549a20ea",
+      "bytes": 12639,
+      "source_sha256": "4c33c0417f35b462ede4cadaabdd913f091e1a70b18b5bbc3219681b549a20ea"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/training/2024-25_samples.json",
+      "repository_path": "reports/learned_manager_2026_10_15/training/2024-25_samples.json",
+      "published_sha256": "930e8dc23499d0e25ad7a3ecf2e0b06e98ec37abea10b3809af781b086238376",
+      "bytes": 27554,
+      "source_sha256": "930e8dc23499d0e25ad7a3ecf2e0b06e98ec37abea10b3809af781b086238376"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/training/2023-24_models.json",
+      "repository_path": "reports/learned_manager_2026_10_15/training/2023-24_models.json",
+      "published_sha256": "56211f09d195fd5a12e38c4a702f1d66a94e3e2132544d7abfdfed3c5ccf53e7",
+      "bytes": 2151,
+      "source_sha256": "56211f09d195fd5a12e38c4a702f1d66a94e3e2132544d7abfdfed3c5ccf53e7"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/training/2022-23_samples.json",
+      "repository_path": "reports/learned_manager_2026_10_15/training/2022-23_samples.json",
+      "published_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "source_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/runs/2023-24__fixture_full_h3_adaptive_tc_harmonized_causal_v1/summary.json",
+      "repository_path": "reports/learned_manager_2026_10_15/runs/2023-24__fixture_full_h3_adaptive_tc_harmonized_causal_v1/summary.json",
+      "published_sha256": "51572bbf590c37bae44fb1e850cf754ea5c8df364ea13a57b92973fec4a2d422",
+      "bytes": 410,
+      "source_sha256": "51572bbf590c37bae44fb1e850cf754ea5c8df364ea13a57b92973fec4a2d422"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/runs/2022-23__fixture_full_h3_adaptive_tc_harmonized_causal_v1/summary.json",
+      "repository_path": "reports/learned_manager_2026_10_15/runs/2022-23__fixture_full_h3_adaptive_tc_harmonized_causal_v1/summary.json",
+      "published_sha256": "57cfb67f0dc099e5a536bcc1bd04e24bee4aef0ff84fb2c4886f493487a6a271",
+      "bytes": 391,
+      "source_sha256": "57cfb67f0dc099e5a536bcc1bd04e24bee4aef0ff84fb2c4886f493487a6a271"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/runs/2022-23__learned_chip_wait_v1/summary.json",
+      "repository_path": "reports/learned_manager_2026_10_15/runs/2022-23__learned_chip_wait_v1/summary.json",
+      "published_sha256": "16d0019ee4374d47eb203ee377fc243f1e0b4bbf24da81112de2e42d69dccab9",
+      "bytes": 408,
+      "source_sha256": "16d0019ee4374d47eb203ee377fc243f1e0b4bbf24da81112de2e42d69dccab9"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/runs/2023-24__learned_chip_wait_v1/summary.json",
+      "repository_path": "reports/learned_manager_2026_10_15/runs/2023-24__learned_chip_wait_v1/summary.json",
+      "published_sha256": "0228d151eec62a2be70062e0f5cf8a9cc0ed20d75dc9b62f2307579bcf772837",
+      "bytes": 409,
+      "source_sha256": "0228d151eec62a2be70062e0f5cf8a9cc0ed20d75dc9b62f2307579bcf772837"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/runs/2024-25__fixture_full_h3_adaptive_tc_harmonized_causal_v1/summary.json",
+      "repository_path": "reports/learned_manager_2026_10_15/runs/2024-25__fixture_full_h3_adaptive_tc_harmonized_causal_v1/summary.json",
+      "published_sha256": "d01502652afb9312dee25d7bc70cdb6904768c4585ab711d4cb6078268f6f363",
+      "bytes": 417,
+      "source_sha256": "d01502652afb9312dee25d7bc70cdb6904768c4585ab711d4cb6078268f6f363"
+    },
+    {
+      "source": "reports/learned_manager_2026_10_15/runs/2024-25__learned_chip_wait_v1/summary.json",
+      "repository_path": "reports/learned_manager_2026_10_15/runs/2024-25__learned_chip_wait_v1/summary.json",
+      "published_sha256": "26c83ab5c3edbc1b32297f3198ab3376d42f07dec8393405bb15881c1e4a3ca6",
+      "bytes": 405,
+      "source_sha256": "26c83ab5c3edbc1b32297f3198ab3376d42f07dec8393405bb15881c1e4a3ca6"
+    },
+    {
+      "source": "experiments/d0598595605d044005046cabac9b99759c358ac68565779618b4a443e9dc2f1d.result.json",
+      "repository_path": "experiments/d0598595605d044005046cabac9b99759c358ac68565779618b4a443e9dc2f1d.result.json",
+      "published_sha256": "22a35735a18dd518633ed6982c05fb484cf6f50145b3fad11817a826f6de8445",
+      "bytes": 85615,
+      "source_sha256": "22a35735a18dd518633ed6982c05fb484cf6f50145b3fad11817a826f6de8445"
+    },
+    {
+      "source": "experiments/d0598595605d044005046cabac9b99759c358ac68565779618b4a443e9dc2f1d.proposal.json",
+      "repository_path": "experiments/d0598595605d044005046cabac9b99759c358ac68565779618b4a443e9dc2f1d.proposal.json",
+      "published_sha256": "8f98065190a22a1bd806bf647ee22e5cd4553a0f66db3fa2e99f23dcbbada677",
+      "bytes": 104086,
+      "source_sha256": "8f98065190a22a1bd806bf647ee22e5cd4553a0f66db3fa2e99f23dcbbada677"
+    },
+    {
+      "source": "reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl",
+      "repository_path": "reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl",
+      "published_sha256": "a0764be84030f71f19bd2853a801b4126c15cfa70eb08554e6afcd39724de961",
+      "bytes": 4950,
+      "source_sha256": "a0764be84030f71f19bd2853a801b4126c15cfa70eb08554e6afcd39724de961"
     }
   ]
 }
