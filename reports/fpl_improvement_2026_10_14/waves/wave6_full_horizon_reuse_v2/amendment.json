@@ -1,0 +1,306 @@
+{
+  "version": "wave6_full_horizon_design_v1",
+  "state": "preregistered_before_new_policy_probes_or_outcomes",
+  "written_at_utc": "2026-10-14T14:25:30.833009+00:00",
+  "candidate_id": "fixture_full_h8_adaptive_v1",
+  "candidate_label": "H",
+  "forecast_candidate": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "control_candidate": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "configuration_number": 8,
+  "maximum_total_configurations": 8,
+  "root_design_approved": true,
+  "full_runs_require_separate_frozen_execution": true,
+  "hypothesis": "Using the full already available prospective horizon may improve repeated transfer and chip decisions by exposing continuation rewards beyond the current three-round planning boundary. Same-budget feasibility and performance are unknown.",
+  "adaptive_origin": "Chosen from source-grounded proposals written before G performance was accessed; triggered after independently audited G failure. All development seasons have been repeatedly inspected. This is the last configuration of the current finite campaign.",
+  "intervention": {
+    "actual_GW1": "Preserve the entire original actual-GW1 controller, including all nested future chip comparison calls. Merely preserving the initial optimizer is insufficient.",
+    "from_actual_GW2": "Change only owned-state select_plan scheduling width from min(3,xp.shape[1]) to min(8,xp.shape[1]); preserve existing schedule/end-of-season truncation. Nested chip and FreeHit continuation plans follow this same rule.",
+    "forecast": "Reuse genuine original BASE arrays and original standard parser without alteration.",
+    "scope": "Full planning-horizon policy intervention; the unchanged shortlist algorithm can select different players and prospective chip comparisons can change. Not an isolated transfer-only causal effect.",
+    "no_search": "No H4-H7 alternatives, discount/reserve/bench/terminal-value tuning, new forecast composition, estimator, model fit, or season-specific dispatch."
+  },
+  "unchanged": [
+    "Original common information, pool, prices, positions, clubs, eligibility, deadlines and causal/proxy assumptions.",
+    "Original rule engine, strict unknown-label settlement, own empty GW1 budget and independently carried subsequent state.",
+    "Original chip set, reserve functions, discount0.9, inner controller lookahead, outer multiplying-chip heuristic, FT/cash transitions and FreeHit restoration.",
+    "Original benchweight0.1, transferfriction0.5, tie rules, shortlist algorithm and sizes.",
+    "Original node profiles1/16/64, maximum40calls per decision, one thread/worker, runtime and incumbent/feasibility contract.",
+    "All original and previous-wave files and failed experiments remain immutable."
+  ],
+  "official_blank": {
+    "origin": [
+      "2022-23",
+      7
+    ],
+    "behavior": "Original predeadline forced wait, no chip/transfers/solver. Original placeholder future zeros are unused, never an ordinary future prediction."
+  },
+  "resource_envelope": {
+    "forecast_cost": "Retain original BASE attributed forecast cost and full original provenance; reuse is not free training. No new fits, forecasts or compositions.",
+    "forecast_cpu_cap": 180,
+    "solver_settings": "Exact original campaign settings and native runtime, no automatic retry or budget escalation.",
+    "accounting": "Record actual policy preparation, solver CPU/wall, calls/nodes/gaps/status and memory. Equal node caps do not imply equal incumbent quality for larger MIPs.",
+    "new_model_fits": 0,
+    "new_forecasts": 0,
+    "new_compositions": 0
+  },
+  "source_policy": "New versioned policy and manager files only; original cached forecast and common metadata bytes stay in their original location and retain original IDs. New H3 comparator runs have genuine new IDs/contracts and are never relabeled historical runs.",
+  "development_seasons": [
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "comparator": {
+    "primary": "Fresh original H3/BASE controls paired with fresh H8/BASE in each season/profile.",
+    "historical_anchor": "Genuine original S2 BASE trajectories retained with original contracts. New H3 reference must reproduce relevant original inputs, model/action/state/solver/results before gains can be interpreted; wall timings need not match.",
+    "reason": "objective.json explicitly requires a rerun comparator for a new policy. This amendment honors that requirement."
+  },
+  "stage_plan": [
+    {
+      "stage": "R0_original_cache_reuse",
+      "origins": 114,
+      "conditions": "Independent original-cache/schema/cost/provenance and new loader compatibility review; original BASE arrays must be unchanged for both arms. No estimator S0 or new C0 generation because no forecast is changed.",
+      "new_fits": 0,
+      "new_forecasts": 0,
+      "solver_calls": 0
+    },
+    {
+      "stage": "P0_outcome_free_feasibility",
+      "allowed_probes": [
+        {
+          "invocation": 1,
+          "season": "2022-23",
+          "gw": 1,
+          "purpose": "entire_original_GW1_controller_preservation",
+          "setting": "work_low",
+          "node_limit": 1,
+          "source_lock_sha256": "b0ec5b4f301eba77ed7673a2b6f0d650e797f3c1e9a02343d13c449d418533c5"
+        },
+        {
+          "invocation": 2,
+          "season": "2022-23",
+          "gw": 1,
+          "purpose": "entire_original_GW1_controller_preservation",
+          "setting": "work_reference",
+          "node_limit": 16,
+          "source_lock_sha256": "b0ec5b4f301eba77ed7673a2b6f0d650e797f3c1e9a02343d13c449d418533c5"
+        },
+        {
+          "invocation": 3,
+          "season": "2022-23",
+          "gw": 1,
+          "purpose": "entire_original_GW1_controller_preservation",
+          "setting": "work_high",
+          "node_limit": 64,
+          "source_lock_sha256": "b0ec5b4f301eba77ed7673a2b6f0d650e797f3c1e9a02343d13c449d418533c5"
+        },
+        {
+          "invocation": 4,
+          "season": "2024-25",
+          "gw": 2,
+          "purpose": "full_eight_round_owned_state",
+          "setting": "work_low",
+          "node_limit": 1,
+          "source_lock_sha256": "fa6ee931f14c6eb822f1c45c6949396419c2488f9147be2683f7880deec1eb09"
+        },
+        {
+          "invocation": 5,
+          "season": "2024-25",
+          "gw": 2,
+          "purpose": "full_eight_round_owned_state",
+          "setting": "work_reference",
+          "node_limit": 16,
+          "source_lock_sha256": "fa6ee931f14c6eb822f1c45c6949396419c2488f9147be2683f7880deec1eb09"
+        },
+        {
+          "invocation": 6,
+          "season": "2024-25",
+          "gw": 2,
+          "purpose": "full_eight_round_owned_state",
+          "setting": "work_high",
+          "node_limit": 64,
+          "source_lock_sha256": "fa6ee931f14c6eb822f1c45c6949396419c2488f9147be2683f7880deec1eb09"
+        },
+        {
+          "invocation": 7,
+          "season": "2022-23",
+          "gw": 7,
+          "purpose": "official_blank_forced_wait",
+          "setting": "work_low",
+          "node_limit": 1,
+          "source_lock_sha256": "5d7b14c7c894f6b2bb5d557e44e219b572aa55c0487544e74a227b34a63b0de4"
+        },
+        {
+          "invocation": 8,
+          "season": "2022-23",
+          "gw": 7,
+          "purpose": "official_blank_forced_wait",
+          "setting": "work_reference",
+          "node_limit": 16,
+          "source_lock_sha256": "5d7b14c7c894f6b2bb5d557e44e219b572aa55c0487544e74a227b34a63b0de4"
+        },
+        {
+          "invocation": 9,
+          "season": "2022-23",
+          "gw": 7,
+          "purpose": "official_blank_forced_wait",
+          "setting": "work_high",
+          "node_limit": 64,
+          "source_lock_sha256": "5d7b14c7c894f6b2bb5d557e44e219b572aa55c0487544e74a227b34a63b0de4"
+        },
+        {
+          "invocation": 10,
+          "season": "2024-25",
+          "gw": 37,
+          "purpose": "late_season_two_round_truncation",
+          "setting": "work_low",
+          "node_limit": 1,
+          "source_lock_sha256": "5dbde0f43ead9d48808c97371f536e02c0dfa02a916998efefe0cc599ba93ebd"
+        },
+        {
+          "invocation": 11,
+          "season": "2024-25",
+          "gw": 37,
+          "purpose": "late_season_two_round_truncation",
+          "setting": "work_reference",
+          "node_limit": 16,
+          "source_lock_sha256": "5dbde0f43ead9d48808c97371f536e02c0dfa02a916998efefe0cc599ba93ebd"
+        },
+        {
+          "invocation": 12,
+          "season": "2024-25",
+          "gw": 37,
+          "purpose": "late_season_two_round_truncation",
+          "setting": "work_high",
+          "node_limit": 64,
+          "source_lock_sha256": "5dbde0f43ead9d48808c97371f536e02c0dfa02a916998efefe0cc599ba93ebd"
+        }
+      ],
+      "canonical_fixtures": [
+        {
+          "season": "2022-23",
+          "gw": 1,
+          "purpose": "entire_original_GW1_controller_preservation",
+          "canonical_fixture_source": "genuine_original_BASE_work_reference_predecision",
+          "source_lock_path_workspace_relative": "reports/fpl_improvement_2026_10_14/engine/runs/manager__2022-23__fixture_full_h3_adaptive_tc_harmonized_causal_v1__work_reference__f8678965bc35/gw01.decision.json",
+          "source_lock_sha256": "b0ec5b4f301eba77ed7673a2b6f0d650e797f3c1e9a02343d13c449d418533c5",
+          "state_before_sha256": "3f7d5172285809b28ee7408e8e1ece407a99a18f574b7335b06874451368354c",
+          "available_cached_horizon": 8,
+          "fixture_not_candidate_trajectory": true
+        },
+        {
+          "season": "2024-25",
+          "gw": 2,
+          "purpose": "full_eight_round_owned_state",
+          "canonical_fixture_source": "genuine_original_BASE_work_reference_predecision",
+          "source_lock_path_workspace_relative": "reports/fpl_improvement_2026_10_14/engine/runs/manager__2024-25__fixture_full_h3_adaptive_tc_harmonized_causal_v1__work_reference__f8678965bc35/gw02.decision.json",
+          "source_lock_sha256": "fa6ee931f14c6eb822f1c45c6949396419c2488f9147be2683f7880deec1eb09",
+          "state_before_sha256": "b1caf287db572e3cf2d80fa048ba74ae1d3389764114e0827b3eb9bc225ac3af",
+          "available_cached_horizon": 8,
+          "fixture_not_candidate_trajectory": true
+        },
+        {
+          "season": "2022-23",
+          "gw": 7,
+          "purpose": "official_blank_forced_wait",
+          "canonical_fixture_source": "genuine_original_BASE_work_reference_predecision",
+          "source_lock_path_workspace_relative": "reports/fpl_improvement_2026_10_14/engine/runs/manager__2022-23__fixture_full_h3_adaptive_tc_harmonized_causal_v1__work_reference__f8678965bc35/gw07.decision.json",
+          "source_lock_sha256": "5d7b14c7c894f6b2bb5d557e44e219b572aa55c0487544e74a227b34a63b0de4",
+          "state_before_sha256": "756c454b359d34374e82a240edf09c0d5242708e0df37e9cbe2add1569ce6c10",
+          "available_cached_horizon": 8,
+          "fixture_not_candidate_trajectory": true
+        },
+        {
+          "season": "2024-25",
+          "gw": 37,
+          "purpose": "late_season_two_round_truncation",
+          "canonical_fixture_source": "genuine_original_BASE_work_reference_predecision",
+          "source_lock_path_workspace_relative": "reports/fpl_improvement_2026_10_14/engine/runs/manager__2024-25__fixture_full_h3_adaptive_tc_harmonized_causal_v1__work_reference__f8678965bc35/gw37.decision.json",
+          "source_lock_sha256": "5dbde0f43ead9d48808c97371f536e02c0dfa02a916998efefe0cc599ba93ebd",
+          "state_before_sha256": "6ec867bfb92b396f1f05a9edbe85636d8a400544fcb08e5f237817aafc2bf875",
+          "available_cached_horizon": 2,
+          "fixture_not_candidate_trajectory": true
+        }
+      ],
+      "maximum_controller_invocations": 12,
+      "maximum_native_calls_per_invocation": 40,
+      "maximum_native_calls_total": 360,
+      "workers": 1,
+      "fresh_process_per_invocation": true,
+      "conditions": "Exact fixed order and original reference predecision fixtures; GW1 whole-controller same-input same-profile preservation, full8 owned horizon, officialblank zero calls, GW37 horizon2. No outcome reads/scoring, objective comparisons across horizons, alternate origins or retries. All12 must pass and be independently audited before P1."
+    },
+    {
+      "stage": "P1_fresh_reference_pairs",
+      "new_runs": 6,
+      "order": "Chronological development season, fresh H3/BASE then H8/BASE, work_reference; fresh serial process per run.",
+      "gate": "Independent audit all6 and exact relevant fresh H3 versus original reference reproduction, then mean paired H8-H3 gain>=100 and each of3 strictlypositive. Failure stops H; research goal stays active."
+    },
+    {
+      "stage": "P2_fresh_other_profile_pairs",
+      "new_runs_if_P1_passes": 12,
+      "order": "work_low then work_high; development season, H3 then H8.",
+      "gate": "Fresh pairs plus P1 reference: mean>=100 in EACH profile and all9 gains strictlypositive; audit fresh H3 versus original same-profile anchors."
+    },
+    {
+      "stage": "P3_fresh_reference_reproduction",
+      "new_runs_if_P2_passes": 6,
+      "order": "Development season, H3 then H8, work_reference.",
+      "gate": "Exact relevant input/model/action/state/solver/result reproduction versus P1. No added independent seasons."
+    },
+    {
+      "stage": "P4_locked_report_stress",
+      "new_runs_if_P3_passes": 2,
+      "season": "2025-26",
+      "order": "H3 then H8",
+      "condition": "Separate reviewed execution/source/cache/runtime approval. Already inspected descriptive year, never selection or untouched validation."
+    }
+  ],
+  "maximum_new_development_manager_runs_before_reproduction": 18,
+  "upgrade_gate": {
+    "minimum_mean_net_gain_each_setting": 100,
+    "all_season_setting_gains_strictly_positive": true,
+    "settings": [
+      "work_low",
+      "work_reference",
+      "work_high"
+    ],
+    "independent_observed_seasons": 3,
+    "inference": "heuristic_retrospective_upgrade_not_statistical_or_winning_proof",
+    "no_roundwise_independent_p_value": true,
+    "root_approved_before_new_comparisons": true
+  },
+  "probe_failure_rule": "Preserve any invalid provenance, GW1 mismatch, unsupported/missing incumbent, illegal state, resource breach or execution failure; stop candidate progression. No automatic retries, relaxed caps, shortened horizon or alternate seeds. Any technical repair requires a new visible root-registered narrow decision before execution.",
+  "search_budget_scope": "Configuration8 consumes the final slot whether it fails feasibility or scores. Do not silently extend the cap or lower +100. If it fails, close this finite campaign without upgrade and define a separate substantive research plan; broader goal remains active.",
+  "claims_allowed": "Adaptive retrospective system comparison on three reused seasons under frozen information/rules/resource envelopes, with explicit source and reproduction evidence.",
+  "claims_not_allowed": [
+    "untouched local validation",
+    "statistical significance from three reused seasons",
+    "real-world causal superiority",
+    "winning probability",
+    "2026/27 victory"
+  ],
+  "limitations": [
+    "Wider MIPs may have poorer or missing feasible incumbents at the same budget.",
+    "Longer deterministic stale/proxy forecast tails may amplify errors.",
+    "The finite-horizon boundary moves to8; stochastic uncertainty, joint future chips and terminal opportunity values remain approximations.",
+    "No certified untouched local validation season exists. Prospective claims require decisions locked before actual future deadlines."
+  ],
+  "parent_evidence_sha256": {
+    "campaign_lock.json": "c4184836742e32076662f5179bf197a0236485688d1492fe1af718d610178e91",
+    "objective.json": "5438948c053f2f0e2a561a666e1ed1e69097ebc329181eba4d6a750a7f329210",
+    "execution_s2.json": "5537b1df28a5d848f49db79b56dd973917436988bbab6b93f657ad0796c572dc",
+    "evaluation/actual_s2_run_audit_v1.json": "c514630fcfe878ccf4f1717583b23ea652c0dff75748cd69304db34d265f13d9",
+    "data/actual_cache_independent_review_s2.json": "5c26dcef813c9aabafa342b5272b57b84d324e82a11906f1a0b6a5f3760cef7f",
+    "waves/wave5_fixed_blend/outcome.json": "ac8ab3c192f3ad5826f532da77e5b899e3949aacff1703e18d1c3032d14a0bc9"
+  },
+  "design_review_sha256": {
+    "waves/wave6_planning/engine/design_proposal_v1.json": "469c682ef600e28628d78984c23fa64dab371e4232c887cca722980a58bbdbb0",
+    "waves/wave6_planning/engine/feasibility_plan_addendum_v1.json": "63366d838885a2de61ff7b709c19fd48372dbab33633954d6e45df061c7f6dab",
+    "waves/wave6_planning/models/conditional_config8_assessment_v1.json": "87513bdb6ad3c71320c16d14f231351d981693c926ae62988b2121aeaae63116",
+    "waves/wave6_planning/data/timestamped_information_design_note_v1.json": "671b4e08e77f0f28ddf312a67cad27d8ca1025918674d1e76749dd91d58e49c3",
+    "waves/wave6_planning/evaluation/methodological_review_v1.json": "807f4a677f7a833c52e83250e65397353349a50f5381a193daf14ec878f73d34"
+  },
+  "code_lock": "This design authorizes source preparation only. Freeze reviewed source/runtime/evidence-bound executions separately before actual probes or manager runs.",
+  "S0_stage_amendment": "No estimator changes: replace estimator smoke/cache generation with original114cache reuse verification plus source/pure tests and the twelve registered outcome-free policy feasibility invocations.",
+  "S1_stage_amendment": "Bypass inherited-opening fixed-chip S1. Use six fresh complete manager trajectories and the unchanged necessary +100/allpositive gate.",
+  "on_failure": "Retain benchmark and all failed candidates; no upgrade claim or automatic scope/budget extension. Research goal remains active."
+}

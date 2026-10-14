@@ -1,0 +1,70 @@
+{
+  "experiment_id": "matched__2025-26__ridge_extended_expanding",
+  "season": "2025-26",
+  "candidate": "ridge_extended_expanding",
+  "mode": "matched",
+  "opening_points": 181.0,
+  "complete_season": true,
+  "net_season_points": 2045.0,
+  "known_round_net_subtotal": 2045.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 11,
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "60307": 55,
+      "67089": 40,
+      "97032": 59,
+      "141746": 95,
+      "154561": 61,
+      "204480": 73,
+      "209036": 51,
+      "220362": 45,
+      "221466": 52,
+      "222531": 75,
+      "223094": 142,
+      "437730": 81,
+      "494521": 46,
+      "502500": 72,
+      "647671": 45
+    },
+    "bank": 5,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ],
+      "2": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "60307": "Brighton",
+      "67089": "Burnley",
+      "97032": "Liverpool",
+      "141746": "Man Utd",
+      "154561": "Arsenal",
+      "204480": "Arsenal",
+      "209036": "Man City",
+      "220362": "West Ham",
+      "221466": "Bournemouth",
+      "222531": "Nott'm Forest",
+      "223094": "Man City",
+      "437730": "Man City",
+      "494521": "Bournemouth",
+      "502500": "Brentford",
+      "647671": "Wolves"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

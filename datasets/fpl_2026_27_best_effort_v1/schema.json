@@ -1,0 +1,51 @@
+{
+  "version": "fpl_2026_27_best_effort_v1",
+  "target": "target_total_points",
+  "horizon_definition": "Prediction round r: H1=r, H3=r..r+2, H6=r..r+5; missing future observations remain missing.",
+  "model_feature_columns": [
+    "f_history_count",
+    "f_history_missing",
+    "f_last3_minutes_mean",
+    "f_last3_goals_scored_mean",
+    "f_last3_assists_mean",
+    "f_last3_clean_sheets_mean",
+    "f_last3_total_points_mean",
+    "f_last3_starts_mean",
+    "f_last5_minutes_mean",
+    "f_last5_goals_scored_mean",
+    "f_last5_assists_mean",
+    "f_last5_clean_sheets_mean",
+    "f_last5_total_points_mean",
+    "f_last5_starts_mean",
+    "f_last10_minutes_mean",
+    "f_last10_goals_scored_mean",
+    "f_last10_assists_mean",
+    "f_last10_clean_sheets_mean",
+    "f_last10_total_points_mean",
+    "f_last10_starts_mean",
+    "f_days_since_last_available"
+  ],
+  "key_columns": [
+    "season",
+    "round",
+    "code"
+  ],
+  "quality_columns": [
+    "fixture_bonus_sensitive_within_5",
+    "fixture_historical_bps_control_case",
+    "fixture_accepted_estimate",
+    "fixture_source_conflict",
+    "quality_flagged_for_sensitivity"
+  ],
+  "split_column": "split",
+  "feature_policy": "Own past native performance only. Cutoff proxy: earliest actual match of target round minus 7 days. Source availability proxy: last match of source round plus 7 days. Cold-start features are 0 with explicit missing-history flag. Actual deadline/vintage proof remains unverified.",
+  "excluded_from_model_features": [
+    "all current-round statistics",
+    "all targets",
+    "quality and source flags",
+    "price",
+    "ownership",
+    "future fixture outcomes",
+    "current-round position/club/opponent metadata"
+  ]
+}

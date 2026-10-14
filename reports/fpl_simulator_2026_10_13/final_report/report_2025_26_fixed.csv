@@ -1,0 +1,11 @@
+experiment,mode,candidate,assignments,net_points,hits,qualified_blank_player_rounds,model_label,gain_vs_benchmark,selected_overall_from_development
+manager__2025-26__catboost_extended_expanding,manager,catboost_extended_expanding,{},2079.0,0,11,Direkte CatBoost,-121.0,False
+manager__2025-26__equal_two_part_ridge,manager,equal_two_part_ridge,{},2018.0,0,14,50/50 todelt CatBoost + Ridge,-182.0,False
+manager__2025-26__fixture_full_h3_adaptive_tc_harmonized_causal_v1,manager,fixture_full_h3_adaptive_tc_harmonized_causal_v1,{},2200.0,0,6,Tilpasset fixture_full_h3-prognose + felles policy,0.0,True
+manager__2025-26__ridge_extended_expanding,manager,ridge_extended_expanding,{},2152.0,4,11,Ridge,-48.0,False
+manager__2025-26__two_part_extended_expanding,manager,two_part_extended_expanding,{},2060.0,4,10,Todelt CatBoost,-140.0,False
+matched__2025-26__catboost_extended_expanding,matched,catboost_extended_expanding,{},2145.0,4,10,Direkte CatBoost,58.0,False
+matched__2025-26__equal_two_part_ridge,matched,equal_two_part_ridge,{},2155.0,8,10,50/50 todelt CatBoost + Ridge,68.0,False
+matched__2025-26__fixture_full_h3_adaptive_tc_harmonized_causal_v1,matched,fixture_full_h3_adaptive_tc_harmonized_causal_v1,{},2087.0,12,8,Tilpasset fixture_full_h3-prognose + felles policy,0.0,True
+matched__2025-26__ridge_extended_expanding,matched,ridge_extended_expanding,{},2045.0,0,11,Ridge,-42.0,False
+matched__2025-26__two_part_extended_expanding,matched,two_part_extended_expanding,{},2137.0,0,8,Todelt CatBoost,50.0,False

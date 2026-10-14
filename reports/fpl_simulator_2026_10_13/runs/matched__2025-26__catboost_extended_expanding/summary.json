@@ -1,0 +1,70 @@
+{
+  "experiment_id": "matched__2025-26__catboost_extended_expanding",
+  "season": "2025-26",
+  "candidate": "catboost_extended_expanding",
+  "mode": "matched",
+  "opening_points": 181.0,
+  "complete_season": true,
+  "net_season_points": 2145.0,
+  "known_round_net_subtotal": 2145.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 10,
+  "hits": 4,
+  "ending_state": {
+    "owned": {
+      "60307": 56,
+      "67089": 40,
+      "97032": 59,
+      "111234": 55,
+      "141746": 98,
+      "178186": 76,
+      "204480": 67,
+      "209036": 51,
+      "214225": 39,
+      "222694": 43,
+      "223094": 147,
+      "226597": 72,
+      "424876": 70,
+      "437730": 77,
+      "647671": 45
+    },
+    "bank": 2,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ],
+      "2": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "60307": "Brighton",
+      "67089": "Burnley",
+      "97032": "Liverpool",
+      "111234": "Everton",
+      "141746": "Man Utd",
+      "178186": "West Ham",
+      "204480": "Arsenal",
+      "209036": "Man City",
+      "214225": "Leeds",
+      "222694": "Leeds",
+      "223094": "Man City",
+      "226597": "Arsenal",
+      "424876": "Liverpool",
+      "437730": "Man City",
+      "647671": "Wolves"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

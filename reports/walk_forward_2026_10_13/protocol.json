@@ -1,0 +1,50 @@
+{
+  "version": "walk_forward_v1",
+  "seed": 20261013,
+  "created_before_results": true,
+  "development_seasons": [
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "report_season": "2025-26",
+  "report_season_is_untouched_test": false,
+  "training_start": "2020-21",
+  "clock": "operational_proxy_v1",
+  "retrain": "every round; fresh fit; no warm start",
+  "primary_selection": "pooled development RMSE; deterministic id tie break",
+  "stage_A": "H1, all 8 fixed model/feature pairs, expanding history",
+  "stage_B": "best development A variant, expanding vs 730 forecast-day window vs expanding with 365-day exponential half-life sample weights",
+  "stage_C": "H3/H6: mean baseline and best two distinct learned model families from development A; fixed chosen H1 history policy",
+  "clock_control": "H1 best development model+history, conservative_v1",
+  "report": "all preselected variants rerun in 2025-26; online retraining may use earlier eligible report-season outcomes",
+  "fixed_parameters": {
+    "ridge": {
+      "alpha": 10
+    },
+    "catboost": {
+      "iterations": 200,
+      "depth": 5,
+      "learning_rate": 0.05
+    },
+    "lightgbm": {
+      "n_estimators": 200,
+      "max_depth": 5,
+      "num_leaves": 24,
+      "learning_rate": 0.05
+    },
+    "two_part": "CatBoost classifier and conditional played regressor, 200/depth5/lr.05; nonplaying conditional mean including negative cards"
+  },
+  "mean_baseline": "per-player previous available rescored horizon labels, exponential 84-day half-life, shrinkage equivalent to 3 recent observations toward weighted training global mean",
+  "two_part_label": "positive sum of observed native minutes over the full horizon; no outcome field in X",
+  "weights": "365-day half-life based on original forecast time; rescaled to mean 1 in training",
+  "training_rule": "forecast_at and complete-horizon label available_at strictly before forecast origin; future labels never trained",
+  "selection_scope": "no final season data influences stage selection",
+  "prices": "last eligible match-row price snapshot; held until next eligible snapshot",
+  "universe": "observed rows, not verified complete buyable roster",
+  "ranking": "round Spearman; top10 sum and captain actual points across candidates with known horizon labels; exploratory, not a legal FPL squad simulation",
+  "missing_labels": "excluded from evaluation, never filled; prediction generated for every observed candidate",
+  "confidence": "paired round-block bootstrap 2000 repetitions; descriptive, overlapping horizons not independent",
+  "quality": "all accepted estimates included; H1 sensitivity excludes flagged rows only in reporting",
+  "source_root": "/Users/emil/.codex/.chatgpt-projects/g-p-6ac36cd84d88819194c8f3d5ce43b378/datasets/fpl_model_pipeline_v1"
+}

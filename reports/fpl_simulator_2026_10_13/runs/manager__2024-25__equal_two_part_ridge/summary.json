@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2024-25__equal_two_part_ridge",
+  "season": "2024-25",
+  "candidate": "equal_two_part_ridge",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2343.0,
+  "known_round_net_subtotal": 2343.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 13,
+  "hits": 4,
+  "ending_state": {
+    "owned": {
+      "61366": 96,
+      "84182": 42,
+      "97032": 64,
+      "116216": 67,
+      "118748": 128,
+      "172649": 46,
+      "216646": 68,
+      "218218": 38,
+      "219168": 92,
+      "224967": 43,
+      "232413": 69,
+      "247348": 53,
+      "446008": 70,
+      "477424": 64,
+      "486385": 48
+    },
+    "bank": 0,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "triple_captain",
+        "bench_boost",
+        "wildcard",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "61366": "Man City",
+      "84182": "West Ham",
+      "97032": "Liverpool",
+      "116216": "Arsenal",
+      "118748": "Liverpool",
+      "172649": "Crystal Palace",
+      "216646": "Brentford",
+      "218218": "Leicester",
+      "219168": "Newcastle",
+      "224967": "Everton",
+      "232413": "Crystal Palace",
+      "247348": "Crystal Palace",
+      "446008": "Brentford",
+      "477424": "Man City",
+      "486385": "Everton"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

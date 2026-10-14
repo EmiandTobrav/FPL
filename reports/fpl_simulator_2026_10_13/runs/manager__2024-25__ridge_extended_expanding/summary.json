@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2024-25__ridge_extended_expanding",
+  "season": "2024-25",
+  "candidate": "ridge_extended_expanding",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2357.0,
+  "known_round_net_subtotal": 2357.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 15,
+  "hits": 4,
+  "ending_state": {
+    "owned": {
+      "85633": 51,
+      "116216": 67,
+      "118748": 130,
+      "119471": 55,
+      "172649": 46,
+      "216646": 66,
+      "227444": 49,
+      "244850": 57,
+      "244851": 105,
+      "247348": 53,
+      "437499": 45,
+      "438234": 74,
+      "446008": 71,
+      "475168": 56,
+      "477424": 60
+    },
+    "bank": 23,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "triple_captain",
+        "bench_boost",
+        "wildcard",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "85633": "Nott'm Forest",
+      "116216": "Arsenal",
+      "118748": "Liverpool",
+      "119471": "Newcastle",
+      "172649": "Crystal Palace",
+      "216646": "Brentford",
+      "227444": "Nott'm Forest",
+      "244850": "Aston Villa",
+      "244851": "Chelsea",
+      "247348": "Crystal Palace",
+      "437499": "Crystal Palace",
+      "438234": "Man City",
+      "446008": "Brentford",
+      "475168": "Brighton",
+      "477424": "Man City"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

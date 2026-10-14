@@ -1,0 +1,50 @@
+{
+  "status": "candidate_stopped_at_P1",
+  "at_utc": "2026-10-14T12:35:39.209468+00:00",
+  "candidate_id": "minutes_hurdle_selectable_loss_v1",
+  "configuration_number": 5,
+  "amendment_sha256": "34235ef1c41457f92e46bac4ee9876dbacd326f940e002df8ba0a68295062155",
+  "execution_sha256": "7dd282af52716566f5a0f3fc2cb674ca47c087eacfc524783525ff86e5b403a1",
+  "completion_sha256": "c4e3bdf796a4ba7441efa2802969d7b45a5bf524b2a235f873ae27480aa96c89",
+  "actual_audit_sha256": "8abf4368c5e9dcccd93e838dadb1dc7fc3b3d9c46e3779f7cbfde6ef277e7233",
+  "numeric_gate_sha256": "fee3adae4d9743ccbfff4a94b1761fcac80c5ad540486c14d1cb1e9f4d8600e0",
+  "actual_audit_passed": true,
+  "passed_numeric_gate": false,
+  "pairs": [
+    {
+      "season": "2022-23",
+      "E_points": 2357.0,
+      "benchmark_points": 2429.0,
+      "B_points": 2470.0,
+      "gain": -72.0,
+      "gain_vs_B": -113.0
+    },
+    {
+      "season": "2023-24",
+      "E_points": 2246.0,
+      "benchmark_points": 2413.0,
+      "B_points": 2312.0,
+      "gain": -167.0,
+      "gain_vs_B": -66.0
+    },
+    {
+      "season": "2024-25",
+      "E_points": 2433.0,
+      "benchmark_points": 2344.0,
+      "B_points": 2483.0,
+      "gain": 89.0,
+      "gain_vs_B": -50.0
+    }
+  ],
+  "mean_gain": -50.0,
+  "mean_gain_vs_parent_B": -76.33333333333333,
+  "root_rehashed_evidence_count": 8200,
+  "root_recomputed_pairs_from_actual_audited_sources": true,
+  "P2_runs": 0,
+  "P3_runs": 0,
+  "P4_runs": 0,
+  "upgrade_established": false,
+  "research_goal_remains_active": true,
+  "next_action": "Preserve failed weighting intervention; choose next registered hypothesis from bounded diagnostics. No automatic retuning of E.",
+  "scope": "Retrospective reused development seasons and existing data proxies; no prospective winning or general causal claim."
+}

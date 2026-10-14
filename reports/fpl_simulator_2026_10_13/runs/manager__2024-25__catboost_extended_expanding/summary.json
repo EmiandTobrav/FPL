@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2024-25__catboost_extended_expanding",
+  "season": "2024-25",
+  "candidate": "catboost_extended_expanding",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2315.0,
+  "known_round_net_subtotal": 2315.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 13,
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "111234": 50,
+      "118748": 126,
+      "149065": 43,
+      "178186": 76,
+      "178301": 89,
+      "216646": 65,
+      "222531": 65,
+      "224967": 43,
+      "232413": 69,
+      "437499": 45,
+      "438234": 75,
+      "446008": 70,
+      "448514": 50,
+      "462424": 66,
+      "554605": 44
+    },
+    "bank": 21,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "triple_captain",
+        "wildcard",
+        "bench_boost",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "111234": "Everton",
+      "118748": "Liverpool",
+      "149065": "Wolves",
+      "178186": "West Ham",
+      "178301": "Aston Villa",
+      "216646": "Brentford",
+      "222531": "Nott'm Forest",
+      "224967": "Everton",
+      "232413": "Crystal Palace",
+      "437499": "Crystal Palace",
+      "438234": "Man City",
+      "446008": "Brentford",
+      "448514": "Wolves",
+      "462424": "Arsenal",
+      "554605": "Bournemouth"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

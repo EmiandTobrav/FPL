@@ -1,0 +1,54 @@
+{
+  "version": "fpl_model_preparation_v1",
+  "created": "2026-10-13",
+  "completed_steps": [
+    1,
+    2
+  ],
+  "models_trained": 0,
+  "fitted_preprocessing": false,
+  "source_files_unchanged": true,
+  "input_hashes": {
+    "training_rows.csv.xz": "11478ac34e4e00b6d17db6004a2fac73b3ce68d07130f1b7a3e1292ca0283908",
+    "player_rounds.csv.xz": "c7a459b786bd182e86bed0678b937f7388ea7dfafc0358711d5bcfae8c0886a7",
+    "player_matches.csv.xz": "268cf0bfacb5d9680f845497447bd2be86c27825ce483e89650ec5d4e57e8ec9",
+    "input_counters.csv.xz": "117fb573a36f69672837e8dd36436c6ce84b225e73c54672408d33b22532c885",
+    "schema.json": "2e8ad6fdd8931e00ef81619f165df22229c68684152c64055b052ae12d45f890"
+  },
+  "counts": {
+    "operational_proxy_v1": {
+      "rows": 159291,
+      "features": 97,
+      "price_known": 157520,
+      "cold_starts": 1567,
+      "temporal_order_passed": true,
+      "h3_available": 137362,
+      "h6_available": 108349
+    },
+    "conservative_v1": {
+      "rows": 159291,
+      "features": 97,
+      "price_known": 154926,
+      "cold_starts": 4294,
+      "temporal_order_passed": true,
+      "h3_available": 137362,
+      "h6_available": 108349
+    }
+  },
+  "builder_sha256": "507f33b08d707d594ca8ad16d778a67f9e9535a55ed20d13d01facfe66120e0e",
+  "output_hashes": {
+    "summary.json": "05cd9bdb0b172262e82a96b93e87ac6f49e05adc28e2af751082c1872c17df3c",
+    "conservative_v1_target_timing.csv.xz": "c04ada50d437708a3feaf3448f8f8b242d12257bd65ef77b85f1bcf1ffe902ee",
+    "operational_proxy_v1.csv.xz": "0c6f540761c9bf879054e5489154918907e678ee0610861124b07cc6352b70a6",
+    "operational_proxy_v1_target_timing.csv.xz": "d0ce420f2c3cfed84b778f044e569f1eccba9bf31490f28c2706fd55008f9633",
+    "operational_proxy_v1_feature_coverage.csv": "0e9bdde833c5b34d47d3036b243e1a148019af36214298358dd46968a6b5603d",
+    "conservative_v1.csv.xz": "26eab3ca17c890433d6f84ce2d3a0f656621d7070b4c1010df347974e24360b9",
+    "conservative_v1_feature_coverage.csv": "d633ed80312edeafaff0f4a93637fe076632d6cc66a158e13710c3239a76e56b",
+    "loader.py": "98c8860c6b884e0a767833ed984d75a6fc1578daee87abc8bc75828c4fe01aea",
+    "schema.json": "51070f6a0826f9f6a345ceb7161d214439e5608b36336e89e03a171c69809ba4",
+    "README.txt": "be089d7d7c8f4209a234a1b63a82f2287a932903c60d5ae3b727e1fd4b7cddf0",
+    "verification.json": "bb2c3df61632de6f109f14ab0903dee95eb9aa8df7454c1346e07a8fc9d5857a",
+    "conservative_v1_audit.csv.xz": "edb3024c28b6273425c7dfdaae253c9984689e8637a421cfcd38d934f8bb0ba5",
+    "operational_proxy_v1_audit.csv.xz": "352719584b1bf007b036fe179bd3d9f089016b54a45acde0209aed0bd66e1be0"
+  }
+}

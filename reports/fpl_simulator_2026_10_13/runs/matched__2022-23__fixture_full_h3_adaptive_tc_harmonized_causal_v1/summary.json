@@ -1,0 +1,70 @@
+{
+  "experiment_id": "matched__2022-23__fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "season": "2022-23",
+  "candidate": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "mode": "matched",
+  "opening_points": 230.0,
+  "complete_season": true,
+  "net_season_points": 2393.0,
+  "known_round_net_subtotal": 2393.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 12,
+  "hits": 64,
+  "ending_state": {
+    "owned": {
+      "51940": 50,
+      "83299": 47,
+      "141746": 94,
+      "144485": 77,
+      "149484": 43,
+      "154561": 47,
+      "171314": 60,
+      "176297": 73,
+      "178301": 73,
+      "180974": 60,
+      "184029": 68,
+      "220237": 45,
+      "223094": 123,
+      "226597": 52,
+      "451340": 56
+    },
+    "bank": 26,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ],
+      "2": [
+        "triple_captain",
+        "wildcard",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "51940": "Man Utd",
+      "83299": "Brighton",
+      "141746": "Man Utd",
+      "144485": "Brentford",
+      "149484": "Aston Villa",
+      "154561": "Brentford",
+      "171314": "Man City",
+      "176297": "Man Utd",
+      "178301": "Aston Villa",
+      "180974": "Newcastle",
+      "184029": "Arsenal",
+      "220237": "Newcastle",
+      "223094": "Man City",
+      "226597": "Arsenal",
+      "451340": "Brighton"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

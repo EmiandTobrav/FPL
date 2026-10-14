@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-10-14T08:09:39.453170+00:00",
+  "reference_root": "/Users/emil/.codex/.chatgpt-projects/g-p-6ac36cd84d88819194c8f3d5ce43b378/reports/fpl_simulator_2026_10_13",
+  "reference_bindings": {
+    "final_report/report_manifest.json": "99c1267b43706a43e50637c71f1ff9e655f452bd401588cfb752b5423147fdc5",
+    "independent_final_completion_receipt.json": "80520358a6ab553ec3938621a28cb506bcc3dbf4fe853aa56f44bb3d931ad521",
+    "audit_requirements.json": "c84f913b5e978bb6232013d1f74100508ad33105312ba7988ac8a1239b55f183",
+    "UAVHENGIG_SLUTTKONTROLL.txt": "23a43f9e794d9717c3f689fd35d5ff54a9fa409568cfa540e3b343685732b740",
+    "derived/REPRODUKSJON_OG_AVGRENSNING.txt": "c82da99bd34fb891dafc17780c3a14e843e4b6f7171ed24a1cd2bc60bc4a51bc"
+  },
+  "transitive_bound_evidence_files_verified": 5350,
+  "rule": "All prior artifacts read-only. New experiments must use new paths and manifest/version identity; old selected scores are historical reference, not a substitute for a rerun under any changed policy."
+}

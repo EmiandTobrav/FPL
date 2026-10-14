@@ -1,0 +1,12 @@
+{
+  "unit_tests_passed": 7,
+  "real_data_validation_fits": 26,
+  "finite_prediction_checks_passed": true,
+  "train_only_statistics_and_categories": true,
+  "prediction_does_not_refit_processing": true,
+  "zero_negative_extreme_targets_preserved": true,
+  "baseline_features": 21,
+  "extended_features": 97,
+  "source_feature_files_unchanged": true,
+  "complete_model_comparison": false
+}

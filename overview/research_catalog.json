@@ -1,0 +1,393 @@
+[
+  {
+    "id": "data-reconstruction",
+    "title": "Historiske inputfelt",
+    "kind": "data",
+    "status": "completed_best_effort",
+    "finding": "Aktiv rest 0; 847 estimater beholdt; streng kildekvalifisering fortsatt separat.",
+    "evidence": [
+      "overview/evidence/reconstruction_CURRENT_20261014.json"
+    ],
+    "candidate_id": null,
+    "tags": []
+  },
+  {
+    "id": "data-release-v1",
+    "title": "Rekonstruert treningsdatasett v1",
+    "kind": "data",
+    "status": "released",
+    "finding": "159291 modellrader med best-effort-mål og kvalitetsflagg.",
+    "evidence": [
+      "datasets/fpl_2026_27_best_effort_v1/README.txt",
+      "datasets/fpl_2026_27_best_effort_v1/manifest.json"
+    ],
+    "candidate_id": null,
+    "tags": []
+  },
+  {
+    "id": "features-v1",
+    "title": "Tidsregler og 21 eller 97 features",
+    "kind": "data",
+    "status": "completed",
+    "finding": "Operasjonell proxy og konservativ kontroll; samme spillerutvalg og targets.",
+    "evidence": [
+      "datasets/fpl_model_preparation_v1/README.txt"
+    ],
+    "candidate_id": null,
+    "tags": []
+  },
+  {
+    "id": "pipeline-v1",
+    "title": "Foldvis behandling og modellpipeline",
+    "kind": "method",
+    "status": "completed",
+    "finding": "Skalering og imputering læres fra tilgjengelig treningshistorikk.",
+    "evidence": [
+      "datasets/fpl_model_pipeline_v1/README.txt"
+    ],
+    "candidate_id": null,
+    "tags": []
+  },
+  {
+    "id": "walk-forward-v1",
+    "title": "Walk-forward prognosemodeller",
+    "kind": "experiment",
+    "status": "completed",
+    "finding": "Todelt/97/expanding valgt for prognosefeil; H1 RMSE 1.964 i 2025/26. Ingen automatisk managerpromotering.",
+    "evidence": [
+      "reports/walk_forward_2026_10_13/RESULTATER.md"
+    ],
+    "candidate_id": null,
+    "tags": []
+  },
+  {
+    "id": "simulator-v1",
+    "title": "Lovlig FPL-manager og spesialister",
+    "kind": "experiment",
+    "status": "completed",
+    "finding": "Omregnet benchmark vant utviklingssnitt i både matched og manager. Kontraktene holdes adskilt.",
+    "evidence": [
+      "reports/fpl_simulator_2026_10_13/final_report/RESULTATER.txt"
+    ],
+    "candidate_id": null,
+    "tags": []
+  },
+  {
+    "id": "legacy-upside",
+    "title": "Oppside",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "Ingen av fire nye kandidater forbedret gjennomsnittlig sluttscore.",
+    "evidence": [
+      "research/current/upside/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "upside",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-upside_feature",
+    "title": "Oppside som feature og kapteinssignal",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "Matchet kontroll; funn og begrensninger i egen rapport.",
+    "evidence": [
+      "research/current/upside_feature/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "upside_feature",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-horizon_upside",
+    "title": "H4 og dekomponert poengforventning",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "72 nye forløp med egne horisont- og modellkontroller.",
+    "evidence": [
+      "research/current/horizon_upside/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "horizon_upside",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-adaptive_events",
+    "title": "Løpende retrening og hendelsesmodell",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "108 nye forløp, ni kandidater; chipregimer sammenlignes separat.",
+    "evidence": [
+      "research/current/adaptive_events/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "adaptive_events",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-retrained_ensemble",
+    "title": "Retrening og faste blandinger",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "60 nye forløp; gevinst avhenger av chipregime.",
+    "evidence": [
+      "research/current/retrained_ensemble/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "retrained_ensemble",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-behavior_diagnostics",
+    "title": "Chip og scenariodiagnostikk",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "Små prognoseforbedringer garanterer ikke bedre manager; 144 ablasjoner.",
+    "evidence": [
+      "research/current/behavior_diagnostics/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "behavior_diagnostics",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-decision_specialist",
+    "title": "H3 og HGB-spesialist",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "Separate planleggings- og blandingsforsøk; referanser beholdt.",
+    "evidence": [
+      "research/current/decision_specialist/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "decision_specialist",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-global_horizon",
+    "title": "Global HGB og H3",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "+70 mot datidens referanse med chips; usikker tilleggseffekt mot global H1.",
+    "evidence": [
+      "research/current/global_horizon/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "global_horizon",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-calendar_counts",
+    "title": "Kalender og antall kamper",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "+35.5 med chips mot constant_h3, ujevn gevinst.",
+    "evidence": [
+      "research/current/calendar_counts/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "calendar_counts",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-calendar_audit",
+    "title": "Kalenderdekning og kilderevisjon",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "82 arkivversjoner for 136 beslutningstidspunkter; tidsproxy beholdt.",
+    "evidence": [
+      "research/current/calendar_audit/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "calendar_audit",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-position_specialist",
+    "title": "Posisjonsspesialisering",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "Ingen kandidat slo datidens primærbenchmark med chips.",
+    "evidence": [
+      "research/current/position_specialist/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "position_specialist",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "legacy-fixture_strategy",
+    "title": "Kampjustering og adaptiv TC",
+    "kind": "historical_method",
+    "status": "archived",
+    "finding": "Grunnlag for gammel benchmark; 2351.5 kan ikke overføres til nye targets.",
+    "evidence": [
+      "research/current/fixture_strategy/README.md"
+    ],
+    "candidate_id": null,
+    "tags": [
+      "fixture_strategy",
+      "historiske poeng",
+      "eldre kontrakt"
+    ]
+  },
+  {
+    "id": "campaign1-fixture_direct_v1",
+    "title": "Direkte kampmodell",
+    "kind": "experiment",
+    "status": "stopped",
+    "finding": "+55.3 poeng i snitt; ingen kvalifisert oppgradering. Komponentmodell målt i S1; øvrige i S2.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/campaign_v1_outcome.json"
+    ],
+    "candidate_id": "fixture_direct_v1",
+    "tags": []
+  },
+  {
+    "id": "campaign1-minutes_hurdle_fixture_v1",
+    "title": "Spilletidsmodell",
+    "kind": "experiment",
+    "status": "stopped",
+    "finding": "+26.3 poeng i snitt; ingen kvalifisert oppgradering. Komponentmodell målt i S1; øvrige i S2.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/campaign_v1_outcome.json"
+    ],
+    "candidate_id": "minutes_hurdle_fixture_v1",
+    "tags": []
+  },
+  {
+    "id": "campaign1-component_points_fixture_v1",
+    "title": "Komponentmodell",
+    "kind": "experiment",
+    "status": "stopped",
+    "finding": "-25.7 poeng i snitt; ingen kvalifisert oppgradering. Komponentmodell målt i S1; øvrige i S2.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/s1_screening_result.json"
+    ],
+    "candidate_id": "component_points_fixture_v1",
+    "tags": []
+  },
+  {
+    "id": "wave2_fixed_chips",
+    "title": "Direkte modell med faste chips",
+    "kind": "experiment",
+    "status": "candidate_stopped_at_P1_no_qualifying_upgrade",
+    "finding": "+14.3 poeng i utviklingssnitt; oppgraderingskravet ikke bestått.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/waves/wave2_fixed_chips/outcome.json"
+    ],
+    "candidate_id": "fixture_direct_fixed_chips_v2",
+    "tags": []
+  },
+  {
+    "id": "wave3_selectable_loss",
+    "title": "Vektet tap",
+    "kind": "experiment",
+    "status": "candidate_stopped_at_P1",
+    "finding": "-50.0 poeng i utviklingssnitt; oppgraderingskravet ikke bestått.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/waves/wave3_selectable_loss/outcome.json"
+    ],
+    "candidate_id": "minutes_hurdle_selectable_loss_v1",
+    "tags": []
+  },
+  {
+    "id": "wave4_participation_history",
+    "title": "Historikk i deltakelsesmodell",
+    "kind": "experiment",
+    "status": "candidate_stopped_at_P1",
+    "finding": "+7.7 poeng i utviklingssnitt; oppgraderingskravet ikke bestått.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/waves/wave4_participation_history/outcome.json"
+    ],
+    "candidate_id": "minutes_hurdle_history_v1",
+    "tags": []
+  },
+  {
+    "id": "wave5_fixed_blend",
+    "title": "Fast prognoseblanding",
+    "kind": "experiment",
+    "status": "candidate_stopped_at_P1",
+    "finding": "-1.3 poeng i utviklingssnitt; oppgraderingskravet ikke bestått.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/waves/wave5_fixed_blend/outcome.json"
+    ],
+    "candidate_id": "fixture_fixed_blend_v1",
+    "tags": []
+  },
+  {
+    "id": "wave4-diagnostic",
+    "title": "Deltakelsesbias og trajektoriediagnose",
+    "kind": "diagnostic",
+    "status": "completed",
+    "finding": "Nullhistorikkbias og sesongforløp undersøkt; førte til separat historikkhypotese.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/waves/wave4_planning/outcome.json"
+    ],
+    "candidate_id": null,
+    "tags": []
+  },
+  {
+    "id": "wave6-h8",
+    "title": "Full tilgjengelig planhorisont H8",
+    "kind": "experiment",
+    "status": "see_recorded_status",
+    "finding": "Ingen ferdig oppgradering konkludert; les status og registrerte neste handlinger.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/orchestration_state.json",
+      "reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/amendment.json"
+    ],
+    "candidate_id": "fixture_full_h8_adaptive_v1",
+    "tags": [
+      "H8",
+      "horisont",
+      "planning"
+    ]
+  },
+  {
+    "id": "archive-qualification",
+    "title": "Historiske arkiv og tilgjengelighet",
+    "kind": "data_qualification",
+    "status": "see_recorded_status",
+    "finding": "Kildearbeid registrert separat fra modellforsøk; proxyer beholdes inntil kvalifisering er dokumentert.",
+    "evidence": [
+      "reports/fpl_improvement_2026_10_14/orchestration_state.json",
+      "reports/fpl_improvement_2026_10_14/research_bootstrap_archive_2026_10_14/scope.json"
+    ],
+    "candidate_id": null,
+    "tags": []
+  }
+]

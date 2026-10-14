@@ -1,0 +1,23 @@
+{
+  "master_player_matches": 187111,
+  "master_label_ready_best_effort": 164610,
+  "computed_historical_player_matches": 66677,
+  "native_inactive_zero_observations": 96395,
+  "official_current_player_matches": 1538,
+  "training_player_rounds": 159291,
+  "training_rows_by_split": {
+    "current_native": 3216,
+    "test": 29338,
+    "train": 99818,
+    "validation": 26919
+  },
+  "complete_h3_targets": 137362,
+  "complete_h6_targets": 108349,
+  "historical_bps_control_cases": 14,
+  "bonus_sensitive_control_fixtures": 8,
+  "accepted_event_bps_estimates": 3,
+  "deadline_proxy_used": true,
+  "actual_deadlines_verified": false,
+  "source_qualification_gates_changed": false,
+  "models_trained": 0
+}

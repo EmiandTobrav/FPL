@@ -1,0 +1,20 @@
+{
+  "operational_proxy_v1": {
+    "rows": 159291,
+    "features": 97,
+    "price_known": 157520,
+    "cold_starts": 1567,
+    "temporal_order_passed": true,
+    "h3_available": 137362,
+    "h6_available": 108349
+  },
+  "conservative_v1": {
+    "rows": 159291,
+    "features": 97,
+    "price_known": 154926,
+    "cold_starts": 4294,
+    "temporal_order_passed": true,
+    "h3_available": 137362,
+    "h6_available": 108349
+  }
+}

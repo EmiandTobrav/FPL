@@ -1,0 +1,70 @@
+{
+  "experiment_id": "matched__2022-23__equal_two_part_ridge",
+  "season": "2022-23",
+  "candidate": "equal_two_part_ridge",
+  "mode": "matched",
+  "opening_points": 230.0,
+  "complete_season": true,
+  "net_season_points": 2148.0,
+  "known_round_net_subtotal": 2148.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 27,
+  "hits": 4,
+  "ending_state": {
+    "owned": {
+      "51940": 50,
+      "75115": 71,
+      "77794": 61,
+      "78916": 46,
+      "106468": 44,
+      "116535": 54,
+      "118748": 128,
+      "149484": 46,
+      "169528": 44,
+      "176297": 70,
+      "223094": 124,
+      "223340": 80,
+      "243016": 56,
+      "451340": 55,
+      "492859": 50
+    },
+    "bank": 0,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ],
+      "2": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "51940": "Man Utd",
+      "75115": "Newcastle",
+      "77794": "Newcastle",
+      "78916": "Newcastle",
+      "106468": "Aston Villa",
+      "116535": "Liverpool",
+      "118748": "Liverpool",
+      "149484": "Aston Villa",
+      "169528": "Fulham",
+      "176297": "Man Utd",
+      "223094": "Man City",
+      "223340": "Arsenal",
+      "243016": "Brighton",
+      "451340": "Brighton",
+      "492859": "Leeds"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

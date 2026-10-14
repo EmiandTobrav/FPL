@@ -1,0 +1,12 @@
+{
+  "registry_tests_passed": 6,
+  "navigation_links_validated": true,
+  "dataset_output_hashes_verified": 35,
+  "portable_release_test_rows": 29338,
+  "portable_release_features": 21,
+  "pipeline_rows_loaded": 159291,
+  "H3_training_rows_checked": 83996,
+  "benchmark_retrained": false,
+  "advanced_campaign_replay_performed": false,
+  "scope": "Publication and portable loader checks; existing frozen research results are not newly rerun."
+}

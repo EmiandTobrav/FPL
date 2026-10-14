@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "rows": 1869252,
+  "folds": 2567,
+  "selection": {
+    "H1_model": "two_part",
+    "H1_features": "extended",
+    "history_policy": "expanding",
+    "long_horizon_candidates": [
+      {
+        "model": "two_part",
+        "feature_set": "extended"
+      },
+      {
+        "model": "ridge",
+        "feature_set": "extended"
+      }
+    ],
+    "long_horizon_winners": {
+      "3": "two_part_extended_expanding_h3_operational_proxy_v1",
+      "6": "two_part_extended_expanding_h6_operational_proxy_v1"
+    },
+    "selection_used_only": [
+      "2022-23",
+      "2023-24",
+      "2024-25"
+    ],
+    "frozen_before_final_fits": true
+  }
+}

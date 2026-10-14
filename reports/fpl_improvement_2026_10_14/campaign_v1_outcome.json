@@ -1,0 +1,87 @@
+{
+  "status": "campaign_completed_without_qualifying_upgrade",
+  "written_at_utc": "2026-10-14T10:36:41.674511+00:00",
+  "research_goal_status": "active",
+  "registered_configurations_this_wave": 3,
+  "S1_completed_runs": 12,
+  "S2_completed_runs": 27,
+  "S2_independently_verified_rounds": 1026,
+  "source_bound_numeric_gate_recomputed_by_root": true,
+  "candidate_results": [
+    {
+      "candidate": "fixture_direct_v1",
+      "eligible_for_S3": false,
+      "means_by_setting": {
+        "work_low": 55.333333333333336,
+        "work_reference": 55.333333333333336,
+        "work_high": 55.333333333333336
+      },
+      "all9_season_setting_gains_positive": false,
+      "season_gains": {
+        "work_low": [
+          43.0,
+          -50.0,
+          173.0
+        ],
+        "work_reference": [
+          43.0,
+          -50.0,
+          173.0
+        ],
+        "work_high": [
+          43.0,
+          -50.0,
+          173.0
+        ]
+      }
+    },
+    {
+      "candidate": "minutes_hurdle_fixture_v1",
+      "eligible_for_S3": false,
+      "means_by_setting": {
+        "work_low": 26.333333333333332,
+        "work_reference": 26.333333333333332,
+        "work_high": 26.333333333333332
+      },
+      "all9_season_setting_gains_positive": false,
+      "season_gains": {
+        "work_low": [
+          41.0,
+          -101.0,
+          139.0
+        ],
+        "work_reference": [
+          41.0,
+          -101.0,
+          139.0
+        ],
+        "work_high": [
+          41.0,
+          -101.0,
+          139.0
+        ]
+      }
+    }
+  ],
+  "qualified_candidates": [],
+  "S3_runs": 0,
+  "S4_runs": 0,
+  "S3_S4_disposition": "Skipped as predeclared because neither candidate passed numeric S2 requirements. No reproduction or report-year claim.",
+  "marked_upgrade_established": false,
+  "next_action": "Diagnose forecast/initialization/chip interaction from already audited development runs, then preregister one next hypothesis under the existing total configuration cap. Do not weaken the +100-each-setting/all9-positive requirement.",
+  "independent_development_seasons": 3,
+  "statistical_or_prospective_superiority_established": false,
+  "winner_established": false,
+  "evidence_sha256": {
+    "campaign_lock.json": "c4184836742e32076662f5179bf197a0236485688d1492fe1af718d610178e91",
+    "finalist_lock.json": "2d56b3f0091e9dba4742639ca30c2b68f7d02d47c297bed7bb37c49af66926f3",
+    "execution_s2.json": "5537b1df28a5d848f49db79b56dd973917436988bbab6b93f657ad0796c572dc",
+    "s2_execution_completion.json": "f3f399df73aacc15fca0cee8407270a2a74028747740baeae825b8c86e5bd3da",
+    "evaluation/actual_s2_run_audit_v1.json": "c514630fcfe878ccf4f1717583b23ea652c0dff75748cd69304db34d265f13d9",
+    "evaluation/actual_s2_numeric_gate_v1.json": "1b26bcc3c06e7ea3386fee7d0f2aa05b39be3c9e70a1b635b92e7bcab02418bb",
+    "evaluation/actual_s2_verified_bundles_v1.json": "e2f591a6c0cb38a82de0985f017454d10ce4ac268106e022c81c048806452856",
+    "evaluation/actual_s2_audit_completion_v1.json": "f8a1e68b56d1fb2da9aef81514a109edc499d1a8545e5d33389247cb3c67aef5",
+    "final_selection_policy.json": "c06e60d50337d5012ab22cb811b9209c4b4740321de327dd0c418e8c376bf8dc",
+    "evaluation/final_selection_policy_independent_review_v1.json": "4c0ba84c192ab2c1ac0f0fc7a0e9f0abb53620bb39e9176c3a012becb1834cef"
+  }
+}

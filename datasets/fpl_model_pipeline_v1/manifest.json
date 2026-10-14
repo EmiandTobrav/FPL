@@ -1,0 +1,23 @@
+{
+  "version": "fpl_model_pipeline_v1",
+  "created": "2026-10-13",
+  "input_hashes": {
+    "operational_proxy_v1.csv.xz": "0c6f540761c9bf879054e5489154918907e678ee0610861124b07cc6352b70a6",
+    "conservative_v1.csv.xz": "26eab3ca17c890433d6f84ce2d3a0f656621d7070b4c1010df347974e24360b9",
+    "schema.json": "51070f6a0826f9f6a345ceb7161d214439e5608b36336e89e03a171c69809ba4",
+    "manifest.json": "36cbdeaf419d5c29a0489b63f2cffe5ab8c3fda7e6e7cd618e68172b8c874b91"
+  },
+  "output_hashes": {
+    "operational_proxy_v1.csv.xz": "0c6f540761c9bf879054e5489154918907e678ee0610861124b07cc6352b70a6",
+    "requirements.txt": "4931c8418d9349e2ae43a5732e5a586e8a4b2a1f35be2c3ea024ebd4cea9d4e1",
+    "pipeline_policy.json": "2992a034a59f2bedf1d3b7d638e12f08192bf7ef0de9ee271827ad5bd59da8e6",
+    "conservative_v1.csv.xz": "26eab3ca17c890433d6f84ce2d3a0f656621d7070b4c1010df347974e24360b9",
+    "validation_folds.json": "7b2aa647b3bdb5e5e08ca8fdb34dde359832f5696fc29aa7912faf3befa4ee01",
+    "loader.py": "98c8860c6b884e0a767833ed984d75a6fc1578daee87abc8bc75828c4fe01aea",
+    "pipeline.py": "436d43c4aa6ac7d134f137c39dc0d901e5de49bcc1c387b30fb9a4b03bf920d8",
+    "schema.json": "51070f6a0826f9f6a345ceb7161d214439e5608b36336e89e03a171c69809ba4",
+    "README.txt": "09ef4d389ca5a7538ce7a30c63ccdb4df3eb0746c10ccc4bf4a0cfa130907559",
+    "verification.json": "94594874cf597820e3b5167db25a0bf7ff358145463feeeb8376b5d97f0e390c",
+    "validation_processing_audits.json": "6178e4e940ca1a5a220f510a82ce399e5020ec376bcf7f7fa50375a436817e20"
+  }
+}

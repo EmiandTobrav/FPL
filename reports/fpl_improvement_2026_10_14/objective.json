@@ -1,0 +1,48 @@
+{
+  "created_at_utc": "2026-10-14T08:08:39.452883+00:00",
+  "status": "active_research_goal_protocol_and_first_candidates_in_progress",
+  "objective": "Find and independently verify a marked robust upgrade over the existing ExtraTrees/Ridge/HGB fixture benchmark. A completed campaign with no improvement does not complete this goal.",
+  "user_correction": "Previous simulator evaluation was a foundation; user intended continued testing until a marked improvement.",
+  "reference": {
+    "benchmark_id": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+    "completed_previous_phase": "reports/fpl_simulator_2026_10_13",
+    "previous_completion_receipt_sha256": "80520358a6ab553ec3938621a28cb506bcc3dbf4fe853aa56f44bb3d931ad521",
+    "previous_report_manifest_sha256": "99c1267b43706a43e50637c71f1ff9e655f452bd401588cfb752b5423147fdc5",
+    "old_results_are_frozen": true,
+    "new_policy_requires_rerun_comparator": true
+  },
+  "initial_upgrade_criterion_for_protocol_review": {
+    "minimum_mean_net_gain": 100,
+    "positive_development_seasons_required": 3,
+    "development_seasons": [
+      "2022-23",
+      "2023-24",
+      "2024-25"
+    ],
+    "repeatability_and_compute_gates_required": true,
+    "threshold_not_yet_final_locked": true,
+    "report_season": "2025-26",
+    "report_is_previously_inspected": true,
+    "future_generalization_or_winning_claim": false
+  },
+  "departments": {
+    "evaluation": "evaluation_design: prospective campaign budgets, comparisons, thresholds and independent validation",
+    "engine": "game_engine: controlled solver and matched repeatability probes",
+    "models": "swarm_design: current-origin fixture trajectories and participation/point model candidates",
+    "data": "data_readiness: timestamped feature availability and upcoming-fixture coverage"
+  },
+  "write_policy": "New derived work only in this directory; sources and previous phase are read-only. Preserve every attempted experiment and failure.",
+  "next_gates": [
+    "Freeze campaign protocol and finite candidate list before new comparative outcomes",
+    "Validate cheap solver repeatability and causal feature/forecast smoke probes",
+    "Run first bounded development campaign with a freshly matched benchmark",
+    "If no robust marked upgrade, diagnose and continue a new recorded hypothesis campaign; do not mark goal complete"
+  ],
+  "winning_score_context": {
+    "2023-24": {
+      "points": 2799,
+      "source": "https://www.premierleague.com/en/news/4022717"
+    },
+    "interpretation": "2600–2700 is not a universal winning threshold, and modern-rule counterfactual scores are not directly comparable to historical official winning totals."
+  }
+}

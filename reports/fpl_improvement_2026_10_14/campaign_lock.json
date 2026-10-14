@@ -1,0 +1,368 @@
+{
+  "version": "fpl_improvement_campaign_v1",
+  "campaign_id": "fpl_improvement_2026_10_14_c1",
+  "state": "locked_before_new_outcome_comparisons",
+  "written_at_utc": "2026-10-14T08:13:28.229583+00:00",
+  "primary_stage": "full_manager_gw1",
+  "development_seasons": [
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "report_season": "2025-26",
+  "report_season_is_untouched": false,
+  "baseline": {
+    "id": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+    "description": "Existing chronological HGB/Ridge/ExtraTrees forecast ensemble with declared fixture/venue adjustment; rerun under the same modern target/information/resources as candidates. Primary fullmanager uses common adaptive policy. Matched screening uses common inherited opening and fixed WC/FH/BB, adaptive TC. Historical benchmark scores are not reused.",
+    "forecast_spec_sha256": "543407872cdfb16abc1fade0e4cb8e98333e0f0615e8973ba1b91a4ce05acd01",
+    "old_adapted_forecaster_sha256": "10fe8925a6b246e535631879f189d41ac09c84664fe96fc0ed9f85b680b89fa4",
+    "implementation_sha256": "10fe8925a6b246e535631879f189d41ac09c84664fe96fc0ed9f85b680b89fa4",
+    "frozen_reference_artifact": "reports/fpl_simulator_2026_10_13/benchmark_forecaster.py"
+  },
+  "candidates": [
+    {
+      "id": "fixture_direct_v1",
+      "family": "fixture_conditional_direct",
+      "hypothesis": "Explicit known future-fixture evaluation from frozen current-origin player/team state improves neutral-reversion benchmark trajectories without changing its fitted coefficients/gate.",
+      "spec_sha256": "019d416cdd60629f22e7c4e3d254b129be45bc5d114efa435a617e9b3efe14a8",
+      "implementation_sha256": "a19a26870b6c1dba3d1077fa9b90f5b6a569226fb34c3c4e969ad27339679394"
+    },
+    {
+      "id": "minutes_hurdle_fixture_v1",
+      "family": "participation_minutes_hurdle",
+      "hypothesis": "Separate play and60minute probabilities and conditional short/long scoring improve expected availability and appearance-point coherence.",
+      "spec_sha256": "019d416cdd60629f22e7c4e3d254b129be45bc5d114efa435a617e9b3efe14a8",
+      "implementation_sha256": "a19a26870b6c1dba3d1077fa9b90f5b6a569226fb34c3c4e969ad27339679394"
+    },
+    {
+      "id": "component_points_fixture_v1",
+      "family": "scoring_components",
+      "hypothesis": "Coherent expected scoring components conditional on participation improve goal/assist/clean-sheet/bonus/defensive/keeper tradeoffs.",
+      "spec_sha256": "019d416cdd60629f22e7c4e3d254b129be45bc5d114efa435a617e9b3efe14a8",
+      "implementation_sha256": "a19a26870b6c1dba3d1077fa9b90f5b6a569226fb34c3c4e969ad27339679394"
+    }
+  ],
+  "candidate_specs_frozen": true,
+  "approved_by_root": true,
+  "solver_probe_no_outcomes": true,
+  "search_budget": {
+    "max_configurations": 8,
+    "registered_now": 3,
+    "max_finalists": 2,
+    "no_requirement_to_fill_cap": true,
+    "extra_configurations_require_amendment_before_outcomes": true,
+    "no_hidden_hyperparameter_sweep": true
+  },
+  "upgrade_gate": {
+    "minimum_mean_net_gain_each_setting": 100,
+    "all_season_setting_gains_strictly_positive": true,
+    "settings": [
+      "work_low",
+      "work_reference",
+      "work_high"
+    ],
+    "independent_observed_seasons": 3,
+    "inference": "heuristic_retrospective_upgrade_not_statistical_or_winning_proof",
+    "no_roundwise_independent_p_value": true,
+    "root_approved_before_new_comparisons": true
+  },
+  "solver_settings": {
+    "work_low": {
+      "max_nodes_per_call": 1,
+      "max_calls_per_round": 40,
+      "threads": 1,
+      "decision_workers": 1,
+      "parallel": false,
+      "random_seed": 20261014,
+      "relative_gap": 0.001,
+      "automatic_retry": false,
+      "time_limit_is_emergency_only": true,
+      "emergency_timeout_invalidates_profile": true,
+      "same_options_for_candidate_and_baseline": true,
+      "options_sha256": "7ae23cebea8f806ee3e3e6942ee45aaaf91184f5e33695abc619f0827500fcc9",
+      "actual_options": {
+        "node_limit": 1,
+        "mip_rel_gap": 0.001,
+        "threads": 1,
+        "parallel": "off",
+        "random_seed": 20261014,
+        "presolve": true
+      },
+      "observed_statuses": [
+        4,
+        4,
+        0,
+        0
+      ],
+      "observed_terminations": [
+        "node_limit_incumbent",
+        "node_limit_incumbent",
+        "optimal_within_gap",
+        "optimal_within_gap"
+      ],
+      "observed_nodes": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "probe_receipt_sha256": "18408def704d07d1fc36d7b5def8a75ea39ff831d27039c20a6dc4c6b65b0d22"
+    },
+    "work_reference": {
+      "max_nodes_per_call": 16,
+      "max_calls_per_round": 40,
+      "threads": 1,
+      "decision_workers": 1,
+      "parallel": false,
+      "random_seed": 20261014,
+      "relative_gap": 0.001,
+      "automatic_retry": false,
+      "time_limit_is_emergency_only": true,
+      "emergency_timeout_invalidates_profile": true,
+      "same_options_for_candidate_and_baseline": true,
+      "options_sha256": "ba25a74bfb309a29ea5636d3fe9b5e9db160eb53dfece2e09d9a46f0007e6a17",
+      "actual_options": {
+        "node_limit": 16,
+        "mip_rel_gap": 0.001,
+        "threads": 1,
+        "parallel": "off",
+        "random_seed": 20261014,
+        "presolve": true
+      },
+      "observed_statuses": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "observed_terminations": [
+        "optimal_within_gap",
+        "optimal_within_gap",
+        "optimal_within_gap",
+        "optimal_within_gap"
+      ],
+      "observed_nodes": [
+        1,
+        5,
+        1,
+        1
+      ],
+      "probe_receipt_sha256": "18408def704d07d1fc36d7b5def8a75ea39ff831d27039c20a6dc4c6b65b0d22"
+    },
+    "work_high": {
+      "max_nodes_per_call": 64,
+      "max_calls_per_round": 40,
+      "threads": 1,
+      "decision_workers": 1,
+      "parallel": false,
+      "random_seed": 20261014,
+      "relative_gap": 0.001,
+      "automatic_retry": false,
+      "time_limit_is_emergency_only": true,
+      "emergency_timeout_invalidates_profile": true,
+      "same_options_for_candidate_and_baseline": true,
+      "options_sha256": "1e45e14eff72c9aa8993eb7ae9abc781dcf33062e7304eb9ecc22d46ee2d926b",
+      "actual_options": {
+        "node_limit": 64,
+        "mip_rel_gap": 0.001,
+        "threads": 1,
+        "parallel": "off",
+        "random_seed": 20261014,
+        "presolve": true
+      },
+      "observed_statuses": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "observed_terminations": [
+        "optimal_within_gap",
+        "optimal_within_gap",
+        "optimal_within_gap",
+        "optimal_within_gap"
+      ],
+      "observed_nodes": [
+        1,
+        5,
+        1,
+        1
+      ],
+      "probe_receipt_sha256": "18408def704d07d1fc36d7b5def8a75ea39ff831d27039c20a6dc4c6b65b0d22"
+    }
+  },
+  "proposed_solver_settings_pending_probes": {
+    "work_low": {
+      "max_nodes_per_call": 1
+    },
+    "work_reference": {
+      "max_nodes_per_call": 16
+    },
+    "work_high": {
+      "max_nodes_per_call": 64
+    },
+    "common": {
+      "threads": 1,
+      "decision_workers": 1,
+      "parallel": false,
+      "random_seed": 20261014,
+      "relative_gap": 0.001,
+      "max_calls_per_round": 40,
+      "automatic_retry": false,
+      "time_limit_is_emergency_only": true,
+      "emergency_timeout_invalidates_profile": true
+    }
+  },
+  "deterministic_duplicate_runs_are_independent_evidence": false,
+  "stage_budgets": [
+    {
+      "stage": "S0_no_outcome_validation",
+      "cap": "Three registered configurations only; at most12 predeclared origins per configuration for schema/causality/resource tests. No candidate score rankings. Solver probes use frozen predecision inputs only. Stop and amend before broadening.",
+      "required": [
+        "future-outcome/membership perturbation invariance",
+        "strict training/calibration availability cutoff",
+        "preseason/pool and horizon schema",
+        "component sum/appearance probability coherence",
+        "baseline numerical parity where intended",
+        "cold/warm cache parity",
+        "same declared calendar-information access",
+        "candidate training CPU/memory/runtime recorded"
+      ]
+    },
+    {
+      "stage": "S1_matched_screening",
+      "max_full_season_runs": 12,
+      "configuration": "Three candidates plus rerun baseline \u00d7 three devseasons, work_reference only; same inherited/rescored opening and NEW common manager-origin player pool, including dated preseason membership. All four sharethisuniverse, which differs from thepriorcampaign matched pool; oldmatchedscores cannot be reused.",
+      "promotion": "Eligible if mean gain>=25, at least2positive seasons and no season gain<\u221250. Rank eligible bymean netgain, then minimum season gain, then candidate id; at most2. Prediction metrics never override scoregate. If none passes, research goal remains active and requires preregistered next amendment."
+    },
+    {
+      "stage": "S2_full_manager_sensitivity",
+      "max_full_season_runs": 27,
+      "configuration": "At most2finalists plusbaseline \u00d73devseasons\u00d73distinct workbudgets. Common emptyGW1 state/budget, same information and adaptivepolicy; independently carried state. No candidate-specific retry/budget increase.",
+      "promotion": "Each finalist must have mean gain>=100 in EVERY setting and strictlypositive gain in ALL9season-settingpairs."
+    },
+    {
+      "stage": "S3_reference_reproducibility",
+      "max_additional_full_season_runs": 9,
+      "configuration": "A fresh process replay/reoptimization of work_reference for baseline and at most2finalists \u00d73seasons. Exact input/model/action/state hashes checked; wall times need not match. Identical duplicates add ZERO independent statistical evidence.",
+      "failure": "Unexplained action drift blocks upgrade declaration; inspect without cherry-picking best repeat."
+    },
+    {
+      "stage": "S4_locked_report_stress",
+      "max_full_season_runs": 2,
+      "configuration": "Only after immutablefinalist/fullmanagergate/selection lock:baseline plusselectedupgrade,2025/26,work_reference. No new2025candidate scores beforelock; skip ifno candidate qualifies.",
+      "selection_effect": "none; report allresults including failure/regression; cannot change selectedcandidate or rescue faileddevelopmentgate."
+    }
+  ],
+  "common_conditions": [
+    "identical harmonized scoring labels and source version",
+    "identical legal roster/marketprice/registration proxy and forecast origins",
+    "strictlyprior outcomeavailability and predeclared refreshschedule",
+    "same eligible training/calibration targethistory; no targetfixture hindsight metadata",
+    "same archived-calendar access; unknown futurefixture context neutral for every model",
+    "same horizon8 output schema and current-origin trajectories",
+    "same initialbudget/chipsets/FT/rules and same policy within eachstage",
+    "same solveroptions/callcap/worknodecap/oneworker perpairedprofile",
+    "same maximum forecast training envelope; actualtraining anddecisionCPU/wall/memory separatelylogged"
+  ],
+  "forecast_training_budget": {
+    "max_registered_configurations": 3,
+    "refresh_schedule": "same four-GWrefresh and GW1priorseason frozen constituent schedule, as registered by candidateauthor",
+    "max_threads": 1,
+    "hyperparameter_search_jobs": 0,
+    "warm_cache_equivalence_required": true,
+    "maximum_cpu_seconds_per_origin": 180,
+    "lock_rule": "Set equal cap from outcome-free feasibility probes before S1, then no candidate-specific increase. Actual cost may differ and must be reported.",
+    "dependency_charge_rule": "conservative_shared_dependencies_v1",
+    "forecast_plan_sha256": "eaef236cf329a43adf4b14fcf60c8f760f87c21bac7759499e3b2fbbfd5801b9"
+  },
+  "report_policy": {
+    "may_change_selection": false,
+    "classification": "already_inspected_descriptive_stress_year",
+    "cannot_be_named_untouched_holdout": true,
+    "read_scores_only_after_finalist_and_selection_lock": true
+  },
+  "adaptive_search_controls": [
+    "Append-only trialregistry records every proposed/configured/executed/failed/promoted trial with source/config/code hashes and parent hypothesis before outcomeaccess.",
+    "Exactly3configs ininitialwave. No unregistered tuning, ensembleweight adjustment, cherry-pickedseed or selective omission.",
+    "All devseasons are repeatedly reused; no untouched validationclaim and no correction can manufacture one. Count all priorwaves in disclosure.",
+    "Any change to candidate/target/info/resources/threshold after scoreinspection is a new protocol amendment/newwave; retain oldfailures and never overwrite oldresults.",
+    "Predeclare tie/order and selection. Inspect2025only afterselectedcandidate immutable; future datedprospective evidence is a separate later phase."
+  ],
+  "attribution": [
+    "Matched screening holds managerpolicy andsolverprofile fixed; isolates forecast-system changes within declaredfeature/information differences.",
+    "Fullmanager andsensitivity runs test fullsystem trajectories. Alternative solverbudgets are paired forbaseline/candidate and reported separately, not extraindependentseasons.",
+    "Resourcecaps equalize permitted compute, not exact actual elapsedcost. Report observed costandfailed/abortedwork separately.",
+    "No claim that fullseason delta is isolated causal model effect; approximateoptimization and coupled futurestate can mediate it."
+  ],
+  "independent_finalist_gates": [
+    "all38rounds known; ownstate legal; audit sourceoutcome/time/trainingkeys/blankproofs independently",
+    "all candidate/baseline code/config/input/decision hashes consistent with preregistration",
+    "no infoexposure, budgetbreach, emergencytimeout, hiddenretry or unregisteredtrial",
+    "evidence files hashed and independently read, not merely producer passedflags",
+    "same sourceconditions/information/resource envelopes in eachpairedrun",
+    "complete screeningregistry and immutable finalistlock before fullmanager outcomes",
+    "source/current-or-future perturbation tests and freshprocessrepeatreceipt",
+    "public report includes all3season gains perworksetting plusfailedtrials/limitations"
+  ],
+  "on_failure": "continue_research_goal_under_new_preregistered_amendment",
+  "success_scope": "A marked robust retrospective upgrade is a research milestone toward userwinninggoal; it does not prove anFPLwinner, futuregeneralization or rank-oneprobability.",
+  "old_directories_read_only": [
+    "sources",
+    "reports/fpl_simulator_2026_10_13"
+  ],
+  "execution_gate": "Protocol locked before comparative outcomes. No decision job until complete independent actual-cache audit and immutable execution manifest cover all102 S1 origins and exact sources.",
+  "screening_gate": {
+    "minimum_mean_gain": 25,
+    "minimum_positive_seasons": 2,
+    "minimum_worst_season_gain": -50,
+    "tie_break": [
+      "mean_gain_desc",
+      "minimum_season_gain_desc",
+      "candidate_id_asc"
+    ],
+    "max_promoted": 2
+  },
+  "execution_manifest_contract": {
+    "campaign_locked": true,
+    "protocol_sha256": "canonicalJSON digest from protocol_checks.digest",
+    "stage": "S1/S2/S3",
+    "cache_manifest_hashes": "campaign-relative originmanifestpath\u2192sha256; S1exact102origins/S2S3exact114origins",
+    "cache_implementation": "exact workspace-relative producer/model sourcehash map",
+    "cache_independent_review_path": "new actualcoverage audit, not stub/smoke review",
+    "cache_independent_review_sha256": "sha256",
+    "review_required_fields": [
+      "status=pass",
+      "samecache_manifest_hashes",
+      "samecache_implementation",
+      "origins_checked exactseason/roundpairs"
+    ],
+    "candidate_origin_coverage": "All4currentmodels: S1=408,S2/S3=456 payloadentries; acceptedsourcebenchmark forecasts may bereused unchanged while managerdecisions arefreshlyrerun.",
+    "cache_writer": "cache_forecasts.py,implementationhash andindependentreview mustbe frozen beforeuse"
+  },
+  "root_stage_approval": "Root explicitly approved S1>=25mean,>=2positive,min>=\u221250 andS1\u2192S2\u2192S3\u2192S4caps beforecomparativescores; conservative+100gateunchanged.",
+  "locked_at_utc": "2026-10-14T08:38:51.178549+00:00",
+  "frozen_model_sources": {
+    "reports/fpl_improvement_2026_10_14/models/candidate_specs.json": "019d416cdd60629f22e7c4e3d254b129be45bc5d114efa435a617e9b3efe14a8",
+    "reports/fpl_improvement_2026_10_14/models/family.py": "a19a26870b6c1dba3d1077fa9b90f5b6a569226fb34c3c4e969ad27339679394",
+    "reports/fpl_improvement_2026_10_14/models/fixture_projection.py": "5311b8ae67451a3a6970f9eb1dbe40cb01eef076000f5d28a13148a5d1184da4",
+    "reports/fpl_improvement_2026_10_14/models/training_bank.py": "26af2648f23557aacb0c03e95223d7bd219b744a26b4121341c0d4932c637ffd"
+  },
+  "frozen_engine_sources": {
+    "engine/controlled_policy_v1.py": "a6b8430afc8aff8e135c81b23efdbb8de7f7348f7723809f93b0fe82b8b419a6",
+    "engine/run_campaign.py": "029fdc1158f5f2d461fdb680ebb94ff174bc5e3d5241df919bc2f96a8ed83878"
+  },
+  "precomparison_evidence_sha256": {
+    "forecast_plan.json": "eaef236cf329a43adf4b14fcf60c8f760f87c21bac7759499e3b2fbbfd5801b9",
+    "models/s0_resource_summary.json": "07daed06f8b9f769a56130803e63a76d9a85ff3642e335b5f536d35980e4e51f",
+    "data/family_independent_review.json": "97b5982015ef67567d41d031b60e4b78965b9a9312b8fd4bd2f0bb83eefff0a5",
+    "data/s0_resource_independent_review.json": "e8d9394436050777ce9fd231227feb0d23638d9cd1bab332e8c029882a26e908",
+    "data/cache_forecasts_source_review_v3.json": "dd4a48ef424cc1d7831523ab6c89ea8f257b3ddc081170bfff40ac9bf367b44d",
+    "engine/solver_probe_release_receipt.json": "18408def704d07d1fc36d7b5def8a75ea39ff831d27039c20a6dc4c6b65b0d22",
+    "engine/recommended_solver_settings.json": "49807cd9fa7bb20a0496d5023d38754de8ad3a8c61b82fed3e2c7801856497ba",
+    "engine/frozen_source_bindings.json": "0a31c3c450a5741c9bc82017593ea9663b51feb44f9af5d74ba7a0c49da56475",
+    "evaluation/engine_runner_independent_review_v1.json": "1af53329842a6199ce53a21fadf10fb470955c3558e8d340f85839c9817f154f",
+    "evaluation/engine_bytecode_guard_review_v1.json": "7f1c596de08cb68a69b542979db2dfc9d03cdf77675122e2fbf6c3b7d5955f9f",
+    "evaluation/protocol_preflight_v1.json": "9e901bb8f9b77b4facfebd51c7035a69a7ff53a740f6aa2e20b304f930457e79"
+  }
+}
