@@ -1,0 +1,11 @@
+{
+  "recorded_date": "2026-10-15",
+  "framework_tests_passed": 46,
+  "new_manager_tests": 6,
+  "experiment": "season-manager-20261015-v1",
+  "full_episode_audit_rounds": 304,
+  "fitted_models_reproduced": 6,
+  "all_available_chips_proposed": true,
+  "result": "reports/season_manager_2026_10_15/RESULTATER.md",
+  "scope": "Local historical-manager experiment and tests; no universal FPL win-probability or unrestricted-action qualification."
+}

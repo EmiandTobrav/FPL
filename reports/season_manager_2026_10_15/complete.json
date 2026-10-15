@@ -1,0 +1,40 @@
+{
+  "benchmark_promoted": false,
+  "decisions": 304,
+  "fits": [
+    {
+      "cpu_seconds": 0.002858999999999945,
+      "name": "2023-24__fit0",
+      "rows": 38
+    },
+    {
+      "cpu_seconds": 0.0008890000000008058,
+      "name": "2023-24__fit1",
+      "rows": 76
+    },
+    {
+      "cpu_seconds": 0.0008699999999919328,
+      "name": "2023-24__fit2",
+      "rows": 114
+    },
+    {
+      "cpu_seconds": 0.001006000000018048,
+      "name": "2024-25__fit0",
+      "rows": 190
+    },
+    {
+      "cpu_seconds": 0.001132999999981621,
+      "name": "2024-25__fit1",
+      "rows": 228
+    },
+    {
+      "cpu_seconds": 0.001266999999984364,
+      "name": "2024-25__fit2",
+      "rows": 266
+    }
+  ],
+  "full_seasons": 8,
+  "new_evaluation_seasons": 4,
+  "new_training_seasons": 4,
+  "protocol_sha256": "0d9fe29d2a13eee7992d13db5e1bdefa422982d6502f80c781a2c63aeb223cb1"
+}

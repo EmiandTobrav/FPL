@@ -14,11 +14,13 @@ Resultater og dokumentasjon finnes i [metodeoversikten](METHODS.md) og [arbeidss
 
 ## Første handling ved neste arbeidsøkt
 
-Piloten `learned-manager-20261015-v1` er fullført og etterkontrollert: **+47.0 netto poeng per sesong** i de to lærte evalueringsårene. Les [resultatet](../reports/learned_manager_2026_10_15/RESULTATER.md), [etterkontrollen](../reports/learned_manager_2026_10_15/audit.json) og chipforløpene før neste hypotese. 2022/23 er kontroll uten læring, ikke et tredje lært evalueringsår. Dagens benchmark er beholdt. Ingen prosess trenger videreføring for dette forsøket.
+Det sesonglange forsøket `season-manager-20261015-v1` er fullført: fire nye treningsforløp, fire evalueringsforløp og 304 etterkontrollerte runder. Modellen velger blant komplette lovlige handlinger for alle chips, bytter/roll, startellever, benk og kaptein. Les [resultatet](../reports/season_manager_2026_10_15/RESULTATER.md), sammenligningen med samme forslag uten læring og [etterkontrollen](../reports/season_manager_2026_10_15/audit.json).
 
-Ikke kjør kandidaten om igjen uendret eller bruk de samme resultatene til ubundet parameterjakt. Før en ny variant bør vi først vurdere det svært lille antallet uavhengige chiputfall, hvordan læringen verdsetter alternative lovlige viderehandlinger og hvilken ny tidsordnet evaluering som kan avtales på forhånd. Full RL og et eksplisitt vinnermål er ikke testet her.
+Episodisk manager ga -243.0 netto poeng mot benchmark, -290.0 mot chip-policyen og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkravet ikke bestått; dagens benchmark beholdes.
 
-Den eldre H8-kjøringen stoppet med feil 14. oktober kl. 15:01 UTC, dokumentert i [hendelsesloggen](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl). Dens gamle status viste fortsatt pågående arbeid. Managerpiloten er en separat, eksplisitt autorisert kampanje med én konfigurasjon; den utvider ikke taket på åtte i den gamle kampanjen.
+Dagens benchmark er beholdt. Det er ikke noen pågående prosess å videreføre. Ikke gjenta denne konfigurasjonen uendret eller gjør ubundet parameterjakt på de samme resultatene. En videre hypotese bør begrunnes i feilene i handlingsrangeringen, hvor få uavhengige sesonger som finnes og hvordan sesonglange belønninger kan anslås med mindre støy. Evalueringskontrakten må fryses før den nye prøven.
+
+Den første TC/BB-piloten ga +53 og +41 poeng, +47 i snitt mot benchmark. Den er en egen metode med eget resultat og skal fortsatt være synlig som sammenligningsgrunnlag. Den eldre H8-kjøringen stoppet med feil 14. oktober, dokumentert i sin hendelseslogg; ingen automatisk gjenstart er godkjent gjennom disse nye, separate forsøkene.
 
 ## Når et nytt forsøk er berettiget
 

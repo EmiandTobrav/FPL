@@ -1,0 +1,15 @@
+{
+  "id": "season-manager-20261015-v1",
+  "candidate": "episodic_manager_v1",
+  "evaluation_seasons": ["2023-24", "2024-25"],
+  "new_training_seasons": ["2022-23", "2023-24"],
+  "episodes_per_training_season": 2,
+  "epsilons": [0.3, 0.15],
+  "alpha": 50.0,
+  "seed": 20261015,
+  "node_limit": 16,
+  "max_calls_per_decision": 40,
+  "max_new_full_seasons": 8,
+  "max_new_decisions": 304,
+  "max_fit_cpu_seconds": 5.0
+}

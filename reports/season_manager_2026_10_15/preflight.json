@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "chips": [
+        "bench_boost",
+        "triple_captain"
+      ],
+      "outcomes_read": false,
+      "proposals": 12,
+      "round": 1,
+      "solver_calls": 3
+    },
+    {
+      "chips": [
+        "free_hit",
+        "triple_captain"
+      ],
+      "outcomes_read": false,
+      "proposals": 24,
+      "round": 10,
+      "solver_calls": 5
+    },
+    {
+      "chips": [
+        "bench_boost",
+        "triple_captain",
+        "wildcard"
+      ],
+      "outcomes_read": false,
+      "proposals": 28,
+      "round": 20,
+      "solver_calls": 5
+    }
+  ],
+  "scope": "Outcome-blind integration, no policy training or evaluation.",
+  "status": "pass"
+}

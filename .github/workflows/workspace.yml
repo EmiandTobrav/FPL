@@ -7,6 +7,7 @@ on:
       - 'overview/**'
       - 'model_lab/**'
       - 'reports/learned_manager_2026_10_15/**'
+      - 'reports/season_manager_2026_10_15/**'
       - 'experiments/**'
       - 'datasets/**'
       - '.github/workflows/workspace.yml'
@@ -28,3 +29,4 @@ jobs:
       - run: python -m model_lab run model_lab/examples/simulation_smoke.json
       - run: python -m unittest discover -s reports/learned_manager_2026_10_15 -p test_policy.py
       - run: python reports/learned_manager_2026_10_15/verify_saved.py
+      - run: python reports/season_manager_2026_10_15/verify_saved.py

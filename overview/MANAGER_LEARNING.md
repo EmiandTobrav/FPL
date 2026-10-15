@@ -1,6 +1,8 @@
 # Lære en modell å være FPL manager
 
-Forskningsidé fra brukeren 14. oktober 2026. Hypotesen er at modellen kan forbedres ved å lære verdien av managerhandlinger over tid, i tillegg til å predikere spillerpoeng. Selve notatet trente ingen modell. En første avgrenset TC/BB-verdikomponent er senere trent og kontrollert; se [resultatet 15. oktober](../reports/learned_manager_2026_10_15/RESULTATER.md). Dagens benchmark er beholdt. Full managerlæring og vinnermål er fortsatt videre forskning.
+Forskningsidé fra brukeren 14. oktober 2026. Hypotesen er at modellen kan forbedres ved å lære verdien av managerhandlinger over tid, i tillegg til å predikere spillerpoeng. Selve notatet trente ingen modell. En første avgrenset TC/BB-verdikomponent er senere trent og kontrollert; se [resultatet 15. oktober](../reports/learned_manager_2026_10_15/RESULTATER.md). Dagens benchmark er beholdt. Sesonglang læring av komplette handlinger er nå også prøvd i det separate forsøket nedenfor; et eksplisitt vinnermål er videre forskning.
+
+Et separat episodisk forsøk er nå fullført og etterkontrollert med alle fire chips og komplette managerhandlinger innen et avgrenset forslagssystem. Episodisk manager ga -243.0 netto poeng mot benchmark, -290.0 mot chip-policyen og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkravet ikke bestått; dagens benchmark beholdes. Se [sesongmanager-resultatet](../reports/season_manager_2026_10_15/RESULTATER.md). Læring med et fritt handlingsrom og et eksplisitt vinnermål gjenstår.
 
 ## Hva som endres
 

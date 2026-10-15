@@ -2,7 +2,7 @@
   "version": 1,
   "source_date": "2026-10-15",
   "base_main_commit": "6730554e88b5f4a0e7e2440e961fdf9b8f88571f",
-  "scope": "Portable datasets, Model Lab, scoped history and completed learned TC/BB pilot. Exact round evidence is compressed; full frozen input replay requires the local archive.",
+  "scope": "Portable data, Model Lab and two controlled manager-learning experiments. Exact episode evidence compressed; full historical input replay requires local archive.",
   "entries": [
     {
       "source": "FPL_training_dataset/research/current/adaptive_events/README.md",
@@ -399,23 +399,23 @@
     {
       "source": "overview/METHODS.md",
       "repository_path": "overview/METHODS.md",
-      "source_sha256": "f65a29eb92d1375e46bb6528cf4f3a58291f7218c4cc71000357ad6aeecb3b3d",
-      "published_sha256": "d8e4de77c6318464ac40e12f2cb9d4c986591f87cbf189b3d838036a7d13fb2e",
-      "bytes": 7122
+      "source_sha256": "f15a2ac4fcd94ce70bfe233532f818ac7bd20d31ba75b16bb4cbe53f8314c13e",
+      "published_sha256": "3444266c6109401fc8044f6038af471cfb9c29520c6572438a7b403576f78f25",
+      "bytes": 7465
     },
     {
       "source": "overview/NEXT.md",
       "repository_path": "overview/NEXT.md",
-      "source_sha256": "4118c434358f257e9c5ebeca357fd1d5d538ec20abc304329b0ffeec24f26cce",
-      "published_sha256": "bf34ca6151e08e8863aa089d67f9949de1714737880ef7020a4815849bcdb2ab",
-      "bytes": 3507
+      "source_sha256": "2608659863852952146a283967e890da53239afbbada82e11443a448d1fa79f0",
+      "published_sha256": "2608659863852952146a283967e890da53239afbbada82e11443a448d1fa79f0",
+      "bytes": 3662
     },
     {
       "source": "overview/PROJECT.json",
       "repository_path": "overview/PROJECT.json",
-      "source_sha256": "bfba2f637f22f10e35e16d9485ae01c658129a78d49886c38e6e0eea24c4b2c9",
-      "published_sha256": "b2373a2af42182029a6c7442c306bef1f01b810634f62195b0661658cebce484",
-      "bytes": 4838
+      "source_sha256": "86df29b1c853f39a071f0d1562c997fe0cc97622332882a429375e07c4f6a9e8",
+      "published_sha256": "c165f1a1a29e454279ce75ba6a4c7f78e1d778169d1ea291de4d372d203bec3f",
+      "bytes": 5366
     },
     {
       "source": "overview/RESULT_TEMPLATE.json",
@@ -427,9 +427,9 @@
     {
       "source": "overview/STATUS.md",
       "repository_path": "overview/STATUS.md",
-      "source_sha256": "e16ef79f62fd7a7b683d75c9e03fd43b88fda8dc8400ab1b533b2548fc5dfafb",
-      "published_sha256": "cbea6dec63c8599186140e400ccdad6913a4fdb45a0f0ba6b1aa0c78d96a2fa1",
-      "bytes": 7530
+      "source_sha256": "c40206d9019cc44e5404bfa9ec76ff1efe2eab7520442168995f9e5881d0f253",
+      "published_sha256": "69ac44b833dbcf232e471e8ed725df7ebfd5b5cfcca4e006b41bb4547ecd85ab",
+      "bytes": 8096
     },
     {
       "source": "overview/TIMELINE.md",
@@ -441,23 +441,23 @@
     {
       "source": "overview/WORKFLOW.md",
       "repository_path": "overview/WORKFLOW.md",
-      "source_sha256": "51e84e7bbe29d72070411229a63c236cc876eeaec025093289406c27014e1301",
+      "source_sha256": "c2eb70b1ccf362f5bf63472876cd367c6698851237cec220795a8a3cb3855094",
       "published_sha256": "c2eb70b1ccf362f5bf63472876cd367c6698851237cec220795a8a3cb3855094",
       "bytes": 5822
     },
     {
       "source": "overview/research_catalog.json",
       "repository_path": "overview/research_catalog.json",
-      "source_sha256": "76793881f41060081b513d2e19adce0595a28d5f3159405a2c117ffa4c8d6ee1",
-      "published_sha256": "37448393d170ff6e117caa10509b2069879661d3ff53be474f214e50514044f0",
-      "bytes": 13047
+      "source_sha256": "ddf4d2f07a3b0bbffc1b99bc59dbf8aa3c4bf11be657410c3285a3a6190acb7a",
+      "published_sha256": "22e85ea0e9d9db65683422cb7be5b297d30688179fc71f783a02d0f8dc562045",
+      "bytes": 13214
     },
     {
       "source": "overview/runs.csv",
       "repository_path": "overview/runs.csv",
-      "source_sha256": "adee9654896d37a9b0c81b07981a7325367bd4be908f5e0543a00763ec9d5b7b",
-      "published_sha256": "057eb37006a083f4482619a70c1ac2b6611cdd09c3171746a00fa440e1be580f",
-      "bytes": 42165
+      "source_sha256": "e7efeed3bd8a9c2e861741a14d455c19f443f90bdd0438aa455fa65b2d9c24af",
+      "published_sha256": "e7efeed3bd8a9c2e861741a14d455c19f443f90bdd0438aa455fa65b2d9c24af",
+      "bytes": 44793
     },
     {
       "source": "reports/fpl_improvement_2026_10_14/campaign_lock.json",
@@ -1659,8 +1659,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": "README.md",
-      "published_sha256": "421a80cb52869f61da9cd24403d366dfee0815f15fa1268df0ce75fdd8dbacf5",
-      "bytes": 4183
+      "published_sha256": "eb464b7128d4f0c07c72738c66722a3cbc4f57aca94b64bddc3c3bf4d9c064ee",
+      "bytes": 4303
     },
     {
       "source": "generated_for_git_publication",
@@ -1677,8 +1677,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": "docs/GIT_LAYOUT.md",
-      "published_sha256": "1ef92ccabe07320898acf61462d11276ebc577de4a08801791774f9b49637017",
-      "bytes": 4812
+      "published_sha256": "7fd7bee4f08d930922626c74fba7bb56833bfb4fd318f11c9f54296106bf837a",
+      "bytes": 5911
     },
     {
       "source": "generated_for_git_publication",
@@ -1689,8 +1689,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": ".github/workflows/workspace.yml",
-      "published_sha256": "5649cf8af08506662bbf8d23a6f1628b71661f621cf1ba8b1a18b92bf82dd311",
-      "bytes": 1062
+      "published_sha256": "c67b77c11d21cc2a63fb1f0ce73c9dd1ac954847179fe16e274d1dc8b17a0c08",
+      "bytes": 1179
     },
     {
       "source": "generated_for_git_publication",
@@ -1701,8 +1701,8 @@
     {
       "source": "generated_for_git_publication",
       "repository_path": "overview/publication_verification.json",
-      "published_sha256": "053791a579d84b0b668e2f841302066b61902a3adb866639fe7cce4682fc3e4d",
-      "bytes": 957
+      "published_sha256": "eaf2c75643d47797db7c99fa5a006e6d56b84aed859b3bc9c4e04ae5645d0624",
+      "bytes": 1338
     },
     {
       "source": "shared_framework_addition",
@@ -1737,8 +1737,8 @@
     {
       "source": "shared_framework_addition",
       "repository_path": "model_lab/README.md",
-      "published_sha256": "1abf021ca3d8c0fc8c54332c92fa5b56f0ad0d4187e63d186b74bd9ead039ed6",
-      "bytes": 8083
+      "published_sha256": "16420a3b6fa3bcd63a0e7b3b927ca3a0855526650b45c401c6bd0184fa15f9e5",
+      "bytes": 9334
     },
     {
       "source": "shared_framework_addition",
@@ -1881,8 +1881,8 @@
     {
       "source": "shared_framework_addition",
       "repository_path": "overview/MANAGER_LEARNING.md",
-      "published_sha256": "97181361ff129e6174f85a7d6d2c54fee028b475e77ee536ea753ffa12dac124",
-      "bytes": 5912
+      "published_sha256": "a38b41ae520e21d4f7a793986f8f4ba70ea6791255cf1b1e6e029cd1d6f52c42",
+      "bytes": 6491
     },
     {
       "source": "reports/learned_manager_2026_10_15/rounds.csv",
@@ -2169,6 +2169,263 @@
       "published_sha256": "a0764be84030f71f19bd2853a801b4126c15cfa70eb08554e6afcd39724de961",
       "bytes": 4950,
       "source_sha256": "a0764be84030f71f19bd2853a801b4126c15cfa70eb08554e6afcd39724de961"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/rounds.csv",
+      "repository_path": "reports/season_manager_2026_10_15/rounds.csv",
+      "published_sha256": "d768d09ab5bf0677cc0abe01c383d57e9abce0bda214af09026fcb56b3bd8086",
+      "bytes": 12790,
+      "source_sha256": "d768d09ab5bf0677cc0abe01c383d57e9abce0bda214af09026fcb56b3bd8086"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/audit.json",
+      "repository_path": "reports/season_manager_2026_10_15/audit.json",
+      "published_sha256": "0b712c2a73a443be863ce5742c79cf16b4be7a33fc4fb6ba80a990177661cc7d",
+      "bytes": 6789,
+      "source_sha256": "0b712c2a73a443be863ce5742c79cf16b4be7a33fc4fb6ba80a990177661cc7d"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/result.json",
+      "repository_path": "reports/season_manager_2026_10_15/result.json",
+      "published_sha256": "97ccb22ab1a12937ab1e8a324dc71d9977d41498e20b6081d3ecfc73735a46c7",
+      "bytes": 106025,
+      "source_sha256": "97ccb22ab1a12937ab1e8a324dc71d9977d41498e20b6081d3ecfc73735a46c7"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/config.json",
+      "repository_path": "reports/season_manager_2026_10_15/config.json",
+      "published_sha256": "9e8b6172edf4238a6a2291f24737e1cb308fec40237b1e54ad7341701809e9b6",
+      "bytes": 417,
+      "source_sha256": "9e8b6172edf4238a6a2291f24737e1cb308fec40237b1e54ad7341701809e9b6"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/verify_saved.py",
+      "repository_path": "reports/season_manager_2026_10_15/verify_saved.py",
+      "published_sha256": "ebcf77953f146b71be8f9fc1264a0f137055b8dd9011bbb6ffd7c60b32fbd3af",
+      "bytes": 1670,
+      "source_sha256": "ebcf77953f146b71be8f9fc1264a0f137055b8dd9011bbb6ffd7c60b32fbd3af"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/registration.json",
+      "repository_path": "reports/season_manager_2026_10_15/registration.json",
+      "published_sha256": "31c3b8313298b2162d4400fc0362960c00e6646812f882676e96c20b5a71244c",
+      "bytes": 285,
+      "source_sha256": "31c3b8313298b2162d4400fc0362960c00e6646812f882676e96c20b5a71244c"
+    },
+    {
+      "source": "compact_exact_episode_evidence",
+      "repository_path": "reports/season_manager_2026_10_15/episode_evidence.tar.gz",
+      "published_sha256": "7716871d2dd2f75451079190759adc96186811077265c6d0932de87e18cc9481",
+      "bytes": 11949244
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/VURDERING.md",
+      "repository_path": "reports/season_manager_2026_10_15/VURDERING.md",
+      "published_sha256": "76d39b6ca06ad437f338ec0da75f0833d06c12ad559fa293b4269ef1c6acc1e9",
+      "bytes": 3252,
+      "source_sha256": "76d39b6ca06ad437f338ec0da75f0833d06c12ad559fa293b4269ef1c6acc1e9"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/resources.csv",
+      "repository_path": "reports/season_manager_2026_10_15/resources.csv",
+      "published_sha256": "de85a55d10ed4fa4ea1df4f4a941751a5611ed0f8d6d93aeda6eb9b7262895f4",
+      "bytes": 997,
+      "source_sha256": "de85a55d10ed4fa4ea1df4f4a941751a5611ed0f8d6d93aeda6eb9b7262895f4"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/README.md",
+      "repository_path": "reports/season_manager_2026_10_15/README.md",
+      "published_sha256": "f7852f252426cb586237c73921cf3184d6e2a908aa422ea029576120a05221aa",
+      "bytes": 5212,
+      "source_sha256": "f7852f252426cb586237c73921cf3184d6e2a908aa422ea029576120a05221aa"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/chips.csv",
+      "repository_path": "reports/season_manager_2026_10_15/chips.csv",
+      "published_sha256": "7577292da8b9e66f9fc53b36d1eb19abfa2dcef30272202e228a87e4f9cc1f2f",
+      "bytes": 1761,
+      "source_sha256": "7577292da8b9e66f9fc53b36d1eb19abfa2dcef30272202e228a87e4f9cc1f2f"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/started.json",
+      "repository_path": "reports/season_manager_2026_10_15/started.json",
+      "published_sha256": "156d5fa429ef181b820428a680983019acd47d198c2b12bafe7cc19b0eb281bc",
+      "bytes": 120,
+      "source_sha256": "156d5fa429ef181b820428a680983019acd47d198c2b12bafe7cc19b0eb281bc"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/complete.json",
+      "repository_path": "reports/season_manager_2026_10_15/complete.json",
+      "published_sha256": "2a9419ff4aeeedcaca06b58e14207a6fd4915ccc09136eac2d643d3e5d7a5b69",
+      "bytes": 870,
+      "source_sha256": "2a9419ff4aeeedcaca06b58e14207a6fd4915ccc09136eac2d643d3e5d7a5b69"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/RESULTATER.md",
+      "repository_path": "reports/season_manager_2026_10_15/RESULTATER.md",
+      "published_sha256": "93ef7ebe4b5bc271d8de783aec7d2fb76a76d32e9a44c37fed6ca26234ac88d0",
+      "bytes": 5117,
+      "source_sha256": "93ef7ebe4b5bc271d8de783aec7d2fb76a76d32e9a44c37fed6ca26234ac88d0"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/protocol.json",
+      "repository_path": "reports/season_manager_2026_10_15/protocol.json",
+      "published_sha256": "0d9fe29d2a13eee7992d13db5e1bdefa422982d6502f80c781a2c63aeb223cb1",
+      "bytes": 205209,
+      "source_sha256": "0d9fe29d2a13eee7992d13db5e1bdefa422982d6502f80c781a2c63aeb223cb1"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/orchestration_state.json",
+      "repository_path": "reports/season_manager_2026_10_15/orchestration_state.json",
+      "published_sha256": "e81496b9e63f705ea326d7e36aa25e32d4c8e9f75a527a40f3c2f4362be0acc8",
+      "bytes": 782,
+      "source_sha256": "e81496b9e63f705ea326d7e36aa25e32d4c8e9f75a527a40f3c2f4362be0acc8"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/BEGRENSNINGER.md",
+      "repository_path": "reports/season_manager_2026_10_15/BEGRENSNINGER.md",
+      "published_sha256": "ff71432cfa288a49dd08ec7dd7efd6af8f5b39954f37e1781be589cc1ba8159e",
+      "bytes": 1491,
+      "source_sha256": "ff71432cfa288a49dd08ec7dd7efd6af8f5b39954f37e1781be589cc1ba8159e"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/preflight.json",
+      "repository_path": "reports/season_manager_2026_10_15/preflight.json",
+      "published_sha256": "99f028cf8d34e8915c49716b8b29da5ca5b0426d277658d9392f86a60a45ae4e",
+      "bytes": 681,
+      "source_sha256": "99f028cf8d34e8915c49716b8b29da5ca5b0426d277658d9392f86a60a45ae4e"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/results.csv",
+      "repository_path": "reports/season_manager_2026_10_15/results.csv",
+      "published_sha256": "08c46633d2b75860aa8ec2a79ed10db278e6bb3e735a0851eee09c61b397f8b1",
+      "bytes": 298,
+      "source_sha256": "08c46633d2b75860aa8ec2a79ed10db278e6bb3e735a0851eee09c61b397f8b1"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/decision_diagnostics.json",
+      "repository_path": "reports/season_manager_2026_10_15/decision_diagnostics.json",
+      "published_sha256": "93f22d4bd57db590e6529b1cd441a130fa8c7db079f514febf1455e09d80e05d",
+      "bytes": 1522,
+      "source_sha256": "93f22d4bd57db590e6529b1cd441a130fa8c7db079f514febf1455e09d80e05d"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/train__2023-24__episode2/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/train__2023-24__episode2/summary.json",
+      "published_sha256": "af88ae4854de8ab82521ef92ee79825e0b36b94d4bea1c0236a2dd6489d04dc7",
+      "bytes": 628,
+      "source_sha256": "af88ae4854de8ab82521ef92ee79825e0b36b94d4bea1c0236a2dd6489d04dc7"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/eval__2024-25__same_proposals_unlearned_v1/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/eval__2024-25__same_proposals_unlearned_v1/summary.json",
+      "published_sha256": "e07f35a3ee8372436b00936abe4bd693c86fb9c3acefb9d29366e02479bd256d",
+      "bytes": 633,
+      "source_sha256": "e07f35a3ee8372436b00936abe4bd693c86fb9c3acefb9d29366e02479bd256d"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/train__2022-23__episode2/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/train__2022-23__episode2/summary.json",
+      "published_sha256": "c963b800a469d5a0db22e4e382f19879f7792ef2bb17f7709b4d74ed5cf55aa6",
+      "bytes": 620,
+      "source_sha256": "c963b800a469d5a0db22e4e382f19879f7792ef2bb17f7709b4d74ed5cf55aa6"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/eval__2023-24__same_proposals_unlearned_v1/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/eval__2023-24__same_proposals_unlearned_v1/summary.json",
+      "published_sha256": "c2ec6afdb1591c9c4e65d5729b19df136c65e69a69f025ed5a4ad68bcea777b6",
+      "bytes": 636,
+      "source_sha256": "c2ec6afdb1591c9c4e65d5729b19df136c65e69a69f025ed5a4ad68bcea777b6"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/train__2023-24__episode1/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/train__2023-24__episode1/summary.json",
+      "published_sha256": "d14f75e634e4072f17e15bcc5a8eaddf3f2fe96b015645e422640d0111c139ee",
+      "bytes": 625,
+      "source_sha256": "d14f75e634e4072f17e15bcc5a8eaddf3f2fe96b015645e422640d0111c139ee"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/eval__2023-24__episodic_manager_v1/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/eval__2023-24__episodic_manager_v1/summary.json",
+      "published_sha256": "6350e3848d074ff8a6f3607aebab09bdc5e90b4cf80f31025880162f22f9348d",
+      "bytes": 608,
+      "source_sha256": "6350e3848d074ff8a6f3607aebab09bdc5e90b4cf80f31025880162f22f9348d"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/eval__2024-25__episodic_manager_v1/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/eval__2024-25__episodic_manager_v1/summary.json",
+      "published_sha256": "81542c5a3639a2943ca984d9c4783ff35f9dc726e47d7f3f670743d25b7b3afd",
+      "bytes": 638,
+      "source_sha256": "81542c5a3639a2943ca984d9c4783ff35f9dc726e47d7f3f670743d25b7b3afd"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/episodes/train__2022-23__episode1/summary.json",
+      "repository_path": "reports/season_manager_2026_10_15/episodes/train__2022-23__episode1/summary.json",
+      "published_sha256": "44343e55c8d2766044b5e35d01a3876d4ac5992cb4f59ad8a9067fdcc1cc68bf",
+      "bytes": 614,
+      "source_sha256": "44343e55c8d2766044b5e35d01a3876d4ac5992cb4f59ad8a9067fdcc1cc68bf"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/models/2024-25.json",
+      "repository_path": "reports/season_manager_2026_10_15/models/2024-25.json",
+      "published_sha256": "b994a211f6e9acdf11b8df0b21663fbcd74648c95effa97023d36b6080f3f602",
+      "bytes": 4185,
+      "source_sha256": "b994a211f6e9acdf11b8df0b21663fbcd74648c95effa97023d36b6080f3f602"
+    },
+    {
+      "source": "reports/season_manager_2026_10_15/models/2023-24.json",
+      "repository_path": "reports/season_manager_2026_10_15/models/2023-24.json",
+      "published_sha256": "39ac41b5cf6fa36e2e88f62782f6612c9b92873240e2e2089e3c9e92f34a42a9",
+      "bytes": 4056,
+      "source_sha256": "39ac41b5cf6fa36e2e88f62782f6612c9b92873240e2e2089e3c9e92f34a42a9"
+    },
+    {
+      "source": "model_lab/manager_policy.py",
+      "repository_path": "model_lab/manager_policy.py",
+      "published_sha256": "6fad8e5db4eab0a370ee70f5b7d54ed1da0ff68fd3e5a8bf87208774ceaf1413",
+      "bytes": 12382,
+      "source_sha256": "6fad8e5db4eab0a370ee70f5b7d54ed1da0ff68fd3e5a8bf87208774ceaf1413"
+    },
+    {
+      "source": "model_lab/manager_learning.py",
+      "repository_path": "model_lab/manager_learning.py",
+      "published_sha256": "d4815f705e1c8c3589c4f1e086f6d2c1b6dc52f73e3c97788702ce07dc44acf1",
+      "bytes": 32816,
+      "source_sha256": "d4815f705e1c8c3589c4f1e086f6d2c1b6dc52f73e3c97788702ce07dc44acf1"
+    },
+    {
+      "source": "model_lab/MANAGER_VALIDATION.json",
+      "repository_path": "model_lab/MANAGER_VALIDATION.json",
+      "published_sha256": "4c97784bf3adaf8ea631ea679c521cc6f966ba03c3d3324e2405d86040493cde",
+      "bytes": 444,
+      "source_sha256": "4c97784bf3adaf8ea631ea679c521cc6f966ba03c3d3324e2405d86040493cde"
+    },
+    {
+      "source": "model_lab/tests/test_manager_policy.py",
+      "repository_path": "model_lab/tests/test_manager_policy.py",
+      "published_sha256": "7a4d04ccbbaebd9348c4a7a2c2bb1e801a1b0ec318320e3697da0ff1dc9b9ab8",
+      "bytes": 4546,
+      "source_sha256": "7a4d04ccbbaebd9348c4a7a2c2bb1e801a1b0ec318320e3697da0ff1dc9b9ab8"
+    },
+    {
+      "source": "experiments/2f2f0dce668f3f5448feeff95759032cd9531d23080fc81c327e18e47fbe1ff8.proposal.json",
+      "repository_path": "experiments/2f2f0dce668f3f5448feeff95759032cd9531d23080fc81c327e18e47fbe1ff8.proposal.json",
+      "published_sha256": "316474f9a8a2f450104b23ff19176a3dca038fd25f4bbeebef540229f05674d9",
+      "bytes": 204891,
+      "source_sha256": "316474f9a8a2f450104b23ff19176a3dca038fd25f4bbeebef540229f05674d9"
+    },
+    {
+      "source": "experiments/2f2f0dce668f3f5448feeff95759032cd9531d23080fc81c327e18e47fbe1ff8.result.json",
+      "repository_path": "experiments/2f2f0dce668f3f5448feeff95759032cd9531d23080fc81c327e18e47fbe1ff8.result.json",
+      "published_sha256": "f13a438e7a86fbaecedf7bda00e2b9e47f27e4d6302227ed62be494c7ca8ea39",
+      "bytes": 106752,
+      "source_sha256": "f13a438e7a86fbaecedf7bda00e2b9e47f27e4d6302227ed62be494c7ca8ea39"
+    },
+    {
+      "source": "compressed_exact_training_checkpoints",
+      "repository_path": "reports/season_manager_2026_10_15/training_evidence.tar.gz",
+      "published_sha256": "68624f686a50d129fbf85a13788829eb12a390f187fc5b168dc3c1420375e44c",
+      "bytes": 207680
     }
   ]
 }
