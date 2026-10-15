@@ -29,6 +29,8 @@ Metodene nedenfor beholder sine opprinnelige sammenligningsgrunnlag. Netto seson
 | Lært TC/BB-reserve med uendrede prognoser | +47.0 netto poeng i snitt i 2023/24–2024/25; gevinster +53, +41. 2022/23 er identisk kontroll uten læring. Pilotkrav bestått; benchmark beholdt. | [Rapport](../reports/learned_manager_2026_10_15/RESULTATER.md), [etterkontroll](../reports/learned_manager_2026_10_15/audit.json) |
 | Sesonglang lært manager, alle chips og komplette handlinger | -243.0 mot benchmark, -290.0 mot TC/BB-policy og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkrav ikke bestått; benchmark beholdt. | [Rapport](../reports/season_manager_2026_10_15/RESULTATER.md), [etterkontroll](../reports/season_manager_2026_10_15/audit.json) |
 
+| Eksplisitte H2-planer uten reservekostnad | H2 uten reserve: -69.3 mot samme planlegger med reserve og -55.7 mot historisk benchmark i sesongsnitt. Pilotkrav ikke bestått; benchmark beholdes. | [Rapport](../reports/explicit_planning_2026_10_15/RESULTATER.md), [etterkontroll](../reports/explicit_planning_2026_10_15/audit.json) |
+
 Kampanjer 14. oktober bruker allerede studerte utviklingssesonger. Positivt snitt alene dokumenterer ikke en robust oppgradering. S1, S2 og senere bølger har ulike sammenligningskontrakter; kontrollene følger hver kilde.
 
 ## Eldre metodefamilier

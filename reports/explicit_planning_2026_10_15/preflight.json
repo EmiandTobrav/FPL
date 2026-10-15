@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "gw": 1,
+      "outcomes_read": false,
+      "plans": 13,
+      "selected_schedule": [
+        "bench_boost",
+        "triple_captain"
+      ],
+      "solver_calls": 16
+    },
+    {
+      "gw": 18,
+      "outcomes_read": false,
+      "plans": 3,
+      "selected_schedule": [
+        null,
+        "free_hit"
+      ],
+      "solver_calls": 5
+    },
+    {
+      "gw": 19,
+      "outcomes_read": false,
+      "plans": 9,
+      "selected_schedule": [
+        "free_hit",
+        "bench_boost"
+      ],
+      "solver_calls": 14
+    },
+    {
+      "gw": 20,
+      "outcomes_read": false,
+      "plans": 17,
+      "selected_schedule": [
+        "wildcard",
+        "bench_boost"
+      ],
+      "solver_calls": 21
+    },
+    {
+      "gw": 38,
+      "outcomes_read": false,
+      "plans": 1,
+      "selected_schedule": [
+        null
+      ],
+      "solver_calls": 1
+    }
+  ],
+  "status": "pass"
+}

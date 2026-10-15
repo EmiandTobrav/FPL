@@ -53,3 +53,7 @@ Decision-focused learning trener en prediktiv modell etter kvaliteten på beslut
 En annen mulig senere retning er offline læring fra sekvenser av tilstander, handlinger og belønninger. Decision Transformer betinger handlinger på blant annet ønsket fremtidig avkastning og tidligere hendelser. Arbeidet tester Atari, Gym og Key-to-Door; det dokumenterer ikke en bedre FPL-manager. [Decision Transformer](https://proceedings.neurips.cc/paper_files/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html).
 
 Prosjektets første prioritet bør være en liten, kontrollert lært beslutningskomponent med tydelig referanse. Mer kompleks arkitektur er først berettiget hvis den mindre prøven viser en konkret svakhet som den kan løse.
+
+## Eksplisitt planlegging uten reservekostnader
+
+H2 uten reserve: -69.3 mot samme planlegger med reserve og -55.7 mot historisk benchmark i sesongsnitt. Pilotkrav ikke bestått; benchmark beholdes. Se [H2-forsøket](../reports/explicit_planning_2026_10_15/RESULTATER.md). Dette tester planleggingsmekanismen separat fra læring. Sesonglang tilstandsverdi og lengre forløp gjenstår.

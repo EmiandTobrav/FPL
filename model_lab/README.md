@@ -108,3 +108,7 @@ python -m model_lab.manager_learning run reports/season_manager_2026_10_15/confi
 ```
 
 Kjøreren avviser duplikatstart. `audit` og `report` med samme konfigurasjonssti etterkontrollerer og sammenfatter et fullført forsøk. Før første start må `preflight`, `freeze` og sentral registrering være fullført. Evalueringsmodellen fryses før sesongen, treningsmål må være tilgjengelige før evalueringsfristen, og alle forslag/valg lagres før utfall leses. Full kjøring krever det lokale fryste inputarkivet. Gjentatte treningsforløp gir ikke nye uavhengige fotballsesonger.
+
+## Planlegging uten reservekostnader
+
+En separat H2-planlegger sammenligner eksplisitte lovlige chipsekvenser med netto forventede poeng som mål. Den endrer ingen tidligere policy. [Metode, begrensninger og kjøring](../reports/explicit_planning_2026_10_15/README.md), [sesongresultater](../reports/explicit_planning_2026_10_15/RESULTATER.md). Dette er en avgrenset planlegger, ikke en ferdig lært sesongagent.

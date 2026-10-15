@@ -50,3 +50,7 @@ Publiserte resultater er ikke en automatisk oppgradering av benchmark. `failure.
 Fryste modeller, treningsrader, åtte sammendrag, protokoll, kode og etterkontroll er publisert. Alle opprinnelige rundeavgjørelser, forslagssett og utfall er bevart byte for byte i `episode_evidence.tar.gz`. `verify_saved.py` kontrollerer hver resultatbundet fil direkte eller i arkivet. Full simulatorreplay trenger fortsatt den lokale prognosecachen, gamle lærerlogger og oppgjørshjelpere. Komprimert publisering kopierer ikke disse store inputene.
 
 De seks treningskvitteringene med gjentatte radprefikser er bevart samlet i `training_evidence.tar.gz`, og de to fryste evalueringsmodellene ligger direkte i `models/`. Dette holder gjennomgangen kort uten å endre de resultatbundne originalfilene. `verify_saved.py` kontrollerer begge arkivene.
+
+## Eksplisitt planlegging uten reservekostnader
+
+`reports/explicit_planning_2026_10_15` viser en separat planleggingsmetode og dens parede reservekontroll. Seks utviklingsforløp og 228 runder er etterkontrollert lokalt. Ingen ny prognosemodell eller manager læres. Alle opprinnelige planforslag, beslutninger og utfall ligger byteidentisk i `round_evidence.tar.gz`, med prosjektrot-relative arkivnavn. Seks sammendrag er også direkte tilgjengelige. `verify_saved.py` verifiserer alle resultatbundne originalfiler direkte eller i arkivet. Full regel-/utfallsreplay krever det lokale inputarkivet.
