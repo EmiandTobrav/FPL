@@ -1,0 +1,59 @@
+{
+  "snapshot_date": "2026-10-16",
+  "files": [
+    {
+      "file": "point_context.md",
+      "original_path": "reports/point_context_2026_10_16/RESULTATER.md",
+      "sha256": "94e675482c12d0c4582d02dc20591e30521abc5eef2ef413a6d71f3c55efa58b",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "temporal_2026_27.md",
+      "original_path": "reports/temporal_2026_27_2026_10_16/RESULTATER.md",
+      "sha256": "5b36677377b6b026965eddeb08e149aa71593cdb8b893c1aae29e84e063aaafc",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "strength_attenuation.md",
+      "original_path": "reports/strength_attenuation_2026_10_16/RESULTATER.md",
+      "sha256": "eb2bb2219989ef6f4f931d691931fd5fd6fcbf98052f56b4fbb5402132ef2848",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "opponent_strength_ablation.md",
+      "original_path": "reports/opponent_strength_ablation_2026_10_16/RESULTATER.md",
+      "sha256": "e36f13c80600470c22b5c6270e165db0f4c0cf17113bcb4d94d971b09d0dd0d9",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "forward_only_ablation.md",
+      "original_path": "reports/forward_only_ablation_2026_10_16/RESULTATER.md",
+      "sha256": "7280a7668dd9ce0a198f77c91d06fe28e57de3d943b8bea5152b00b8c6623602",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "role_model.md",
+      "original_path": "reports/role_model_2026_10_16_attempt2/RESULTATER.md",
+      "sha256": "eab5025ddf690735a62c1d5c855efa9fa39a984ca6281f992f4a5b32e4a7d1f8",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "terminal_value.md",
+      "original_path": "reports/terminal_value_2026_10_16/RESULTATER.md",
+      "sha256": "584445c4c034bb22d08943d2a9021259061a3681bd443bed8e7811208f2aa9a3",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "paired_terminal.md",
+      "original_path": "reports/paired_terminal_2026_10_16_attempt2/RESULTATER.md",
+      "sha256": "7b86513da1a3feff3bd03a09a93d56c1ac43b1b964c9b70daefe71f3a71b8a73",
+      "scope": "Report only; full replay inputs and code not included"
+    },
+    {
+      "file": "hold_tail.md",
+      "original_path": "reports/hold_tail_2026_10_16/RESULTATER.md",
+      "sha256": "b952a7889cb7d159b1db704703fa377592de559c6b09515e001a305f8d98c28f",
+      "scope": "Report only; full replay inputs and code not included"
+    }
+  ]
+}

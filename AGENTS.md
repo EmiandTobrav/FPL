@@ -20,4 +20,4 @@
 - Published advanced campaign summaries are scoped snapshots; full replay or resume requires the separate local archive described in docs/GIT_LAYOUT.md.
 - Keep archived references and locked results unchanged. Record new work separately.
 
-- Use model_lab as the shared entry point for bounded forecast trials and legal manager simulations. Framework validation is not a new model-selection result. The manager-learning idea in overview/MANAGER_LEARNING.md remains unregistered and untrained.
+- Use model_lab as the shared entry point for bounded forecast trials and legal manager simulations. Framework validation is not a new model-selection result. Manager-learning pilots are implemented and evaluated; consult their recorded results in docs/RESULTS_INDEX.md and overview/MANAGER_LEARNING.md before proposing new work. Failed candidates remain research history, not the default manager.
