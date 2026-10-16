@@ -96,3 +96,15 @@ python -m unittest discover -s model_lab/tests -v
 ```
 
 Tester dekker blant annet hele målhorisontens tilgjengelighet, ingen fremtidige utfall i prediksjonsinput, endrede utfall uten endret lagvalg, manglende utfall, fremtidig metadata, avbrutte kjøringer, korrupte cachefiler og de eksisterende håndregnede FPL-regeltestene.
+
+## Episodisk managerlæring
+
+`manager_policy.py` og `manager_learning.py` legger til en avgrenset policy som lærer fra komplette sesongforløp med uendrede prognoser. Den rangerer komplette lovlige handlinger for alle chips, bytter/roll, startellever, benk og kaptein. En kontroll med samme forslagssystem uten læring skiller læringens effekt fra effekten av flere forslag.
+
+Første registrerte konfigurasjon og metodikk ligger i [sesongmanager-forsøket](../reports/season_manager_2026_10_15/README.md). Denne versjonen kjører den fryste konfigurasjonen; andre varianter skal ha en ny hypotese og kontrakt. Ett allerede registrert forsøk startes med:
+
+```sh
+python -m model_lab.manager_learning run reports/season_manager_2026_10_15/config.json
+```
+
+Kjøreren avviser duplikatstart. `audit` og `report` med samme konfigurasjonssti etterkontrollerer og sammenfatter et fullført forsøk. Før første start må `preflight`, `freeze` og sentral registrering være fullført. Evalueringsmodellen fryses før sesongen, treningsmål må være tilgjengelige før evalueringsfristen, og alle forslag/valg lagres før utfall leses. Full kjøring krever det lokale fryste inputarkivet. Gjentatte treningsforløp gir ikke nye uavhengige fotballsesonger.

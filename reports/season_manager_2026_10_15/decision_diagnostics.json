@@ -1,0 +1,53 @@
+{
+  "scope": "Descriptive post-run diagnostics, not causal attribution or a tuned candidate.",
+  "records": [
+    {
+      "season": "2023-24",
+      "policy": "same_proposals_unlearned_v1",
+      "hit_cost": 32,
+      "transfers": 74,
+      "retained_squad_rounds_after_GW1": 3,
+      "unused_first_half_chips": [
+        "free_hit"
+      ],
+      "sum_short_horizon_score_sacrificed": 0.0,
+      "mean_immediate_xp_sacrificed": 4.462899363806147
+    },
+    {
+      "season": "2023-24",
+      "policy": "episodic_manager_v1",
+      "hit_cost": 24,
+      "transfers": 37,
+      "retained_squad_rounds_after_GW1": 31,
+      "unused_first_half_chips": [
+        "wildcard",
+        "free_hit",
+        "bench_boost"
+      ],
+      "sum_short_horizon_score_sacrificed": 1542.376294746777,
+      "mean_immediate_xp_sacrificed": 20.04416109833453
+    },
+    {
+      "season": "2024-25",
+      "policy": "same_proposals_unlearned_v1",
+      "hit_cost": 16,
+      "transfers": 69,
+      "retained_squad_rounds_after_GW1": 0,
+      "unused_first_half_chips": [
+        "free_hit"
+      ],
+      "sum_short_horizon_score_sacrificed": 0.0,
+      "mean_immediate_xp_sacrificed": 4.710156596460193
+    },
+    {
+      "season": "2024-25",
+      "policy": "episodic_manager_v1",
+      "hit_cost": 20,
+      "transfers": 76,
+      "retained_squad_rounds_after_GW1": 14,
+      "unused_first_half_chips": [],
+      "sum_short_horizon_score_sacrificed": 196.0617832341636,
+      "mean_immediate_xp_sacrificed": 9.685300955315714
+    }
+  ]
+}

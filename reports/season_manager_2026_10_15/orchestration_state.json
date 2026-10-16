@@ -1,0 +1,19 @@
+{
+  "phase": "episodic_manager_complete_audited",
+  "updated_at_utc": "2026-10-15T14:43:28.032807+00:00",
+  "experiment": "season-manager-20261015-v1",
+  "completed_rounds": 304,
+  "completed_episodes": 8,
+  "training_episodes": 4,
+  "evaluation_episodes": 4,
+  "audit_status": "pass",
+  "audit_sha256": "0b712c2a73a443be863ce5742c79cf16b4be7a33fc4fb6ba80a990177661cc7d",
+  "result_sha256": "97ccb22ab1a12937ab1e8a324dc71d9977d41498e20b6081d3ecfc73735a46c7",
+  "pilot_success": false,
+  "decision": "reject",
+  "benchmark_promoted": false,
+  "next_actions": [
+    "Read RESULTATER.md and all three matched comparisons before a new hypothesis.",
+    "Keep benchmark unchanged; do not rerun this configuration or tune on these results without a separate registered experiment."
+  ]
+}

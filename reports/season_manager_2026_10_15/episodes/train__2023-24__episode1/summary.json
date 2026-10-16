@@ -1,0 +1,36 @@
+{
+  "chip_usage": {
+    "bench_boost": [
+      9,
+      20
+    ],
+    "free_hit": [
+      4,
+      21
+    ],
+    "triple_captain": [
+      16,
+      24
+    ],
+    "wildcard": [
+      8,
+      27
+    ]
+  },
+  "complete_season": true,
+  "episode": "train__2023-24__episode1",
+  "exploratory_rounds": 10,
+  "hit_cost": 0,
+  "net_points": 2273.0,
+  "process_cpu_seconds": 59.099522000000036,
+  "proposed_chip_rounds": {
+    "bench_boost": 10,
+    "free_hit": 5,
+    "triple_captain": 21,
+    "wildcard": 15
+  },
+  "season": "2023-24",
+  "seconds": 59.16580170800444,
+  "solver_calls": 131,
+  "solver_seconds": 54.6354877545964
+}

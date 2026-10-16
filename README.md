@@ -12,6 +12,7 @@ Start i den samlede arbeidsoversikten. Den peker til det rekonstruerte datasette
 | Se hendelser, feil og endringer underveis | [Arbeidshistorikk](overview/TIMELINE.md) |
 | Finne gjeldende data og benchmark | [Prosjektregister](overview/PROJECT.json) |
 | Kjøre modelltester og simulering | [Felles Model Lab](model_lab/README.md) |
+| Sesonglang managerlæring med alle chips | [Forsøk og resultater](reports/season_manager_2026_10_15/RESULTATER.md) |
 | Kontrollert forsøk med lært managerpolicy | [Resultater med uendrede prognoser](reports/learned_manager_2026_10_15/RESULTATER.md) |
 | Utforske trening som en faktisk manager | [Forskningsidé og vinnermål](overview/MANAGER_LEARNING.md) |
 | Planlegge og registrere et nytt forsøk | [Arbeidsflyt](overview/WORKFLOW.md) |

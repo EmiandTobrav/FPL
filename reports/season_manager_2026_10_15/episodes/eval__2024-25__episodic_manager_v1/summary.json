@@ -1,0 +1,36 @@
+{
+  "chip_usage": {
+    "bench_boost": [
+      17,
+      34
+    ],
+    "free_hit": [
+      19,
+      33
+    ],
+    "triple_captain": [
+      12,
+      30
+    ],
+    "wildcard": [
+      9,
+      21
+    ]
+  },
+  "complete_season": true,
+  "episode": "eval__2024-25__episodic_manager_v1",
+  "exploratory_rounds": 0,
+  "hit_cost": 20,
+  "net_points": 2433.0,
+  "process_cpu_seconds": 95.12385299999994,
+  "proposed_chip_rounds": {
+    "bench_boost": 32,
+    "free_hit": 31,
+    "triple_captain": 23,
+    "wildcard": 10
+  },
+  "season": "2024-25",
+  "seconds": 95.21865737508051,
+  "solver_calls": 202,
+  "solver_seconds": 89.35880870104302
+}

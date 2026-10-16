@@ -2,8 +2,8 @@
 
 Dette er en lesende oversikt. Kildenes lagrede status beviser ikke at en prosess fortsatt kjører.
 
-**Siste registrerte fase:** `paired_policy_comparison_complete_audited`.
-**Status oppdatert i kildefilen:** 2026-10-14T22:34:23.977730+00:00.
+**Siste registrerte fase:** `episodic_manager_complete_audited`.
+**Status oppdatert i kildefilen:** 2026-10-15T14:43:28.032807+00:00.
 
 Start med [arbeidsflyten](WORKFLOW.md), [neste steg](NEXT.md) og [prosjektregisteret](PROJECT.json).
 
@@ -38,7 +38,8 @@ Start med [arbeidsflyten](WORKFLOW.md), [neste steg](NEXT.md) og [prosjektregist
 | wave6-h8 | [Full tilgjengelig planhorisont H8](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl) | execution_failed_no_upgrade | P1 stoppet med exit 1 den 14. oktober kl. 15:01 UTC; ingen fullført H8-sammenligning eller oppgradering. Eldre statusfil er utdatert; ingen automatisk ny kjøring. |
 | archive-qualification | [Historiske arkiv og tilgjengelighet](../reports/fpl_improvement_2026_10_14/orchestration_state.json) | see_recorded_status | Kildearbeid registrert separat fra modellforsøk; proxyer beholdes inntil kvalifisering er dokumentert. |
 | model-lab-v1 | [Felles rammeverk for modelltesting og simulering](../model_lab/README.md) | implemented_validation_only | Samme tidskontroller, prognosecache, regelmotor og resultatkort. 40 tester bestått; små funksjonsprøver er ikke nye modellvalgsresultater. |
-| manager-learning-idea | [Lære en faktisk FPL-manager og senere optimere vinnsannsynlighet](../overview/MANAGER_LEARNING.md) | first_bounded_component_evaluated_full_RL_still_proposed | Første lærte TC/BB-reserve er testet med uendrede prognoser: +47.0 netto poeng i snitt i to lærte år. Full managerlæring og vinnermål er fortsatt videre ideer. |
+| manager-learning-idea | [Lære en faktisk FPL-manager og senere optimere vinnsannsynlighet](../overview/MANAGER_LEARNING.md) | bounded_episodic_manager_evaluated | Episodisk manager ga -243.0 netto poeng mot benchmark, -290.0 mot chip-policyen og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkravet ikke bestått; dagens benchmark beholdes. Alle beslutningstyper inngår innen et avgrenset forslagssett. Vinnermål krever fortsatt konkurrentmodell. |
+| season-manager-20261015-v1 | [Sesonglange belønninger kan forbedre komplette managerbeslutninger utover både lært chipreserve og samme forslag uten læring.](../experiments/2f2f0dce668f3f5448feeff95759032cd9531d23080fc81c327e18e47fbe1ff8.proposal.json) | completed | Episodisk manager ga -243.0 netto poeng mot benchmark, -290.0 mot chip-policyen og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkravet ikke bestått; dagens benchmark beholdes. |
 | learned-manager-20261015-v1 | [A learned continuation value for TC/BB improves manager decisions with unchanged benchmark forecasts.](../experiments/d0598595605d044005046cabac9b99759c358ac68565779618b4a443e9dc2f1d.proposal.json) | completed | Lært TC/BB-reserve ga +47.0 netto poeng i snitt i de to lærte evalueringssesongene; begge sesonger positive. Pilotkravet bestått; behold benchmark inntil separat vurdering. |
 
 Tall fra ulike kontrakter kan ikke summeres eller rangeres direkte. Se [metodeoversikten](METHODS.md) for sammenligningsgrunnlag. Negative resultater er del av utgangspunktet for neste hypotese.

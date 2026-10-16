@@ -42,3 +42,11 @@ Rammeverket er kontrollert med 40 tester, prognosegjenbruk og en liten simulerin
 Protokoll og registrerte resultater er byteidentiske med lokalt arkiv; historiske stier under `FPL_training_dataset/` er derfor beholdt der. Full kjøring av `audit.py` eller `resume_v002.py` krever de fryste forecast-cachefilene, lærerloggene og de eldre oppgjørshjelperne fra lokalt arkiv, på de opprinnelige stiene. De store inputene er ikke kopiert inn i Git. Det er mulig å kontrollere det publiserte resultatmaterialets hasher og policytestene uten disse inputene. En bestått slik kontroll erstatter ikke full input-/regelreplay.
 
 Publiserte resultater er ikke en automatisk oppgradering av benchmark. `failure.json` dokumenterer den bevarte oppsummeringsfeilen; faktisk fullføring og audit ligger i egne filer.
+
+## Sesonglang managerlæring
+
+`reports/season_manager_2026_10_15` inneholder den separate episodiske managerhypotesen, alle fire chips og komplett handlingsrangering. Kontroll med samme forslagsregler uten læring skiller læringen fra endret handlingsutvalg. Trening og evaluering har egne kvitteringer. Ingen automatisk benchmarkoppgradering.
+
+Fryste modeller, treningsrader, åtte sammendrag, protokoll, kode og etterkontroll er publisert. Alle opprinnelige rundeavgjørelser, forslagssett og utfall er bevart byte for byte i `episode_evidence.tar.gz`. `verify_saved.py` kontrollerer hver resultatbundet fil direkte eller i arkivet. Full simulatorreplay trenger fortsatt den lokale prognosecachen, gamle lærerlogger og oppgjørshjelpere. Komprimert publisering kopierer ikke disse store inputene.
+
+De seks treningskvitteringene med gjentatte radprefikser er bevart samlet i `training_evidence.tar.gz`, og de to fryste evalueringsmodellene ligger direkte i `models/`. Dette holder gjennomgangen kort uten å endre de resultatbundne originalfilene. `verify_saved.py` kontrollerer begge arkivene.

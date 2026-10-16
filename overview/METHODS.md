@@ -27,6 +27,7 @@ Metodene nedenfor beholder sine opprinnelige sammenligningsgrunnlag. Netto seson
 | Fast prognoseblanding | −1,3; sesonggevinster −22, +5, +13. Stoppet. | [Utfall](../reports/fpl_improvement_2026_10_14/waves/wave5_fixed_blend/outcome.json) |
 | Full tilgjengelig horisont H8 | P1 avsluttet med exit 1 den 14. oktober kl. 15:01 UTC. Ingen fullført sammenligning eller oppgradering; eldre status var utdatert. | [Endringskontrakt](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/amendment.json), [hendelseslogg](../reports/fpl_improvement_2026_10_14/waves/wave6_full_horizon_reuse_v2/p1_run_events.jsonl) |
 | Lært TC/BB-reserve med uendrede prognoser | +47.0 netto poeng i snitt i 2023/24–2024/25; gevinster +53, +41. 2022/23 er identisk kontroll uten læring. Pilotkrav bestått; benchmark beholdt. | [Rapport](../reports/learned_manager_2026_10_15/RESULTATER.md), [etterkontroll](../reports/learned_manager_2026_10_15/audit.json) |
+| Sesonglang lært manager, alle chips og komplette handlinger | -243.0 mot benchmark, -290.0 mot TC/BB-policy og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkrav ikke bestått; benchmark beholdt. | [Rapport](../reports/season_manager_2026_10_15/RESULTATER.md), [etterkontroll](../reports/season_manager_2026_10_15/audit.json) |
 
 Kampanjer 14. oktober bruker allerede studerte utviklingssesonger. Positivt snitt alene dokumenterer ikke en robust oppgradering. S1, S2 og senere bølger har ulike sammenligningskontrakter; kontrollene følger hver kilde.
 

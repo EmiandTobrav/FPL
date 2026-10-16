@@ -22,5 +22,14 @@
     "mean_trained_gain": 47,
     "benchmark_promoted": false,
     "scope": "Full input/rule audit performed locally; publication checks saved evidence and policy tests. Raw frozen forecast/teacher inputs remain outside Git."
+  },
+  "episodic_manager": {
+    "full_local_audit_rounds": 304,
+    "new_training_episodes": 4,
+    "new_evaluation_episodes": 4,
+    "model_lab_tests": 46,
+    "saved_result_files": 641,
+    "benchmark_promoted": false,
+    "scope": "Full audit performed locally; Git checks saved bytes and policy unit tests. Correlated historical training replays are not independent seasons."
   }
 }
