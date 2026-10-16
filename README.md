@@ -1,70 +1,27 @@
-# FPL modellutvikling
+# FPL — data, prognoser og managerbeslutninger
 
-Dette repositoryet er felles utgangspunkt for kode, resultater og videre arbeid på tvers av enheter. Det samler mai-prosjektet og den nye start-/hovedmodelltesten. Ingen ZIP-utpakking er nødvendig.
-
-**Gjeldende arbeidsbenchmark:** full kampjustering med H3 og adaptiv Triple Captain (`fixture_full_h3_adaptive_tc`), valgt av brukeren 6. oktober 2026. Gjennomsnitt **2351,50 poeng** på 2022/23–2025/26. Øvrige chips følger faste datoer. Dette er historiske spillerpoeng, ikke full 2025/26-omregning. Se [benchmarkmanifestet](research/current/benchmark.json).
+Vi utvikler og tester en FPL-manager med historiske data, tidsriktige prognoser og lovlige lagvalg. Målet er flere **netto sesongpoeng etter overgangskostnader**. Prognoseforsøk måles separat før eventuell testing i manageren.
 
 ## Start her
 
-- [Historisk omregning til 2025/26: datakontroll og kildevurdering](research/current/rescoring_2025/README.md)
-
-- [Status og neste steg](docs/STATUS.md)
-- [Kampjustering, H3/H5/H8 og adaptive chips: 84 nye forløp](research/current/fixture_strategy/README.md)
-- [Første kalenderforsøk: +35,5 poeng med chips mot benchmark](research/current/calendar_counts/README.md) og [datakvalitet](research/current/calendar_audit/README.md)
-- [Posisjonsspesialisering: 32 nye forløp, benchmarken beholdes](research/current/position_specialist/README.md)
-- [Global HGB-vekt med H3: kombinasjonstest, 16 nye forløp](research/current/global_horizon/README.md)
-- [Aktive utfordrere](research/current/challengers.json) og [utført kombinasjonsforsøk](docs/NEXT_EXPERIMENT.md)
-- [Tre-rundersplanlegging og lært HGB-blanding: 88 nye forløp](research/current/decision_specialist/README.md)
-- [Chipmekanismer og modellstyrker per situasjon: diagnostikk og 144 ablasjoner](research/current/behavior_diagnostics/README.md)
-- [Retrening av Ridge/Extra Trees og faste blandinger: 60 nye forløp](research/current/retrained_ensemble/README.md)
-- [Løpende retrening og hendelsesmodell: 108 nye forløp](research/current/adaptive_events/README.md)
-- [Fire-runders planlegging og dekomponert oppsidemodell: 72 forløp](research/current/horizon_upside/README.md)
-- [Oppsidemodeller: 48 nye forløp og resultater](research/current/upside/README.md)
-- [Oppside som variabel og kapteinssignal: oppfølgingstest](research/current/upside_feature/README.md)
-- [Faglitteratur og prioriterte forsøk](docs/LITERATURE_REVIEW.md)
-- [Gjennomgang av det eldre repositoryet](docs/REPOSITORY_REVIEW.md)
-- [Aktuell forsøksprotokoll](research/current/protocol.json)
-- [Sesongresultater: 120 forløp](research/current/results/season_results.csv)
-- [Modellsammendrag](research/current/results/model_summary.csv)
-- [Tidsordnet modellvalg](research/current/results/chronological_selection.csv)
-- [Detaljert rapport](research/current/FPL_hovedmodell_test.html) (last ned og åpne i nettleser)
-
-## Kjør på en ny maskin
-
-```bash
-git clone https://github.com/EmiandTobrav/FPL.git
-cd FPL
-python -m venv .venv
-source .venv/bin/activate
-pip install -r research/current/requirements_versions.txt pytest requests pyarrow
-python scripts/prepare_data.py
-PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -q
-cd research/current
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python experiment.py
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python summarize.py
-```
-
-Bruk Python 3.12. På Windows aktiveres miljøet med `.venv\Scripts\activate`, og miljøvariablene settes med PowerShell-syntaks. Repositoryet er privat; Git må ha tilgang til kontoen.
-
-`prepare_data.py` gjenoppretter hver datafil fra en separat gzip-fil og kontrollerer SHA-256. Det krever verken ZIP-verktøy, Git LFS eller tilgang til denne samtalen. Pickle-inngangene er våre egne fryste data; bruk kun en betrodd checkout.
-
-Eksisterende beslutningsspor brukes som cache. For en full ny avspilling slettes `research/current/results/trace_*.json.gz` lokalt før `experiment.py`. Ikke gjenbruk spor etter endringer i modeller eller input. For nye prognoser slettes `results/games_*.pkl` og `project/results/features.pkl` før `build.py`. Bevar resultater fra hvert nytt eksperiment separat; referanseforsøket skal ikke overskrives med en annen protokoll.
-
-## Struktur og status
-
-| Område | Rolle |
+| Jeg vil … | Gå til |
 |---|---|
-| `research/current/` | Aktiv forskning: startmodell til GW4, hovedmodell til GW38, fryste innganger og beslutningsspor |
-| `src/`, `tests/`, `reports/` | Bevart eldre pipeline, tester og historiske rapporter; se metodeforbehold i gjennomgangen |
-| `docs/` | Beslutninger, funn og konkret fortsettelseskontekst |
-| `scripts/prepare_data.py` | Automatisk klargjøring og kontroll av innganger |
+| Forstå prosjektet og komme i gang | [Bidragsguide](CONTRIBUTING.md) |
+| Se hva som er gjort og hva vi lærte | [Resultatoversikt](docs/RESULTS_INDEX.md) |
+| Finne riktig gren og publisert materiale | [GitHub-kart](docs/REPOSITORY_MAP.md) |
+| Velge neste oppgave | [Prioriteringer](docs/ROADMAP.md) |
+| Se eldre forsøk i denne grenen | [Historisk prosjektinngang](docs/PROJECT_ENTRY_2026_10_07.md) |
 
-Den beskrivende kandidaten er 50/50 Ridge + Extra Trees: +37,17 poeng uten chips og +55,67 med fast chipkalender mot Ridge i gjennomsnitt over seks sesonger. Dette er retrospektive resultater, ikke en urørt sluttprøve. Fritt tidsordnet modellvalg ga bare +3,75/+2,25 poeng over fire evalueringssesonger. Ingen produksjonsmodell er byttet automatisk.
+## Hvor står vi?
 
-Retreningsrunden: retrent Extra Trees gir +37,2 poeng mot referansen med fast chipkalender, men −39,0 uten chips. Oppdatert treveisblanding gir +26,3/+10,3 med/uten chips. Tidsordnet modellvalg gir −4,25 på primærmålet; ingen automatisk produksjonsendring. Se forsøksrapporten for sesongvariasjon og begrensninger.
+**Statusbilde: 16. oktober 2026.** `main` inneholder den eldre forskningsbasen. Nyere datasett, Model Lab og managerforsøk ligger i åpne PR-er. Resultater fra 16. oktober er her publisert som rapportkopier med kildehash; komplette kjørbare pakker følger ikke med denne dokumentasjonsoppdateringen.
 
-Ny diagnostikk: WC/FH gir en viktig del av retreningsgevinsten gjennom troppsendringer; direkte TC/BB-bonuser forklarer lite av omslaget. Utvidet HGB rangerer fallende/ustabil spilletid bedre i alle seks sesonger, mens kort historikk fortsatt er uløst. 4536 matchede beslutninger, 144 chipablasjoner og 176 lokale tester er gjennomført. Se diagnoseoversikten over.
+- Ingen ny produksjonsmanager er godkjent. Positive enkelttall er ikke automatisk en oppgradering.
+- Den historiske benchmarken er `fixture_full_h3_adaptive_tc`. Nyere forsøk bruker den omregnede familien `fixture_full_h3_adaptive_tc_harmonized_causal_v1`; poeng fra de to grunnlagene skal ikke rangeres sammen.
+- Den fryste prognosepakken `forecast-package-20261016-v1` er et separat forskningsspor. GW1–6 er retrospektivt evaluert; GW7-prognosene er lagret for senere vurdering. Se [resultater og forbehold](docs/RESULTS_INDEX.md).
 
-Siste forsøk: oppdatert Ridge/Extra med tre-rundersplanlegging gir +51,0/+31,2 med/uten chips over seks sesonger. Lært global HGB-vekt gir +54,3/+40,5 over fire; situasjonsstyrt vekt +62,0/+12,0, men uten stabil tilleggsverdi over global vekt. Ulike evalueringsperioder må ikke blandes. 88 nye forløp og 179 lokale tester er ferdige; se rapporten over.
+## Slik holder vi orden
 
-Historiske poeng spilles av med moderne bytte-/chipregler. Pris, spillerstatus og kampkalender har dokumenterte proxybegrensninger. Resultatene er ikke faktiske historiske rangeringer eller en full omregning til årets poengregler.
+Én hypotese og én ansvarlig per oppgave. Lås kontroll, data, mål og suksesskrav før kjøring. Publiser også negative resultater, og lenk fra resultatoversikten til rapport og bevis. Bruk [bidragsguiden](CONTRIBUTING.md) og repoets issue-/PR-maler.
+
+Gamle rapporter beskriver tidspunktet de ble skrevet. Mappenavnet `research/current` betyr ikke at alt der fortsatt er aktivt. [GitHub-kartet](docs/REPOSITORY_MAP.md) skiller sammenslått kode, åpne forslag og rapporter uten full replaypakke.
