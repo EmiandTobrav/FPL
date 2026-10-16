@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "observed_date": "2026-10-15",
+  "role": "Navigation overlay; original immutable manifests remain authoritative for their individual releases.",
+  "dataset": {
+    "id": "fpl_2026_27_best_effort_v1",
+    "directory": "datasets/fpl_2026_27_best_effort_v1",
+    "training_table": "datasets/fpl_2026_27_best_effort_v1/training_rows.csv.xz",
+    "master_table": "datasets/fpl_2026_27_best_effort_v1/player_matches.csv.xz",
+    "active_pointer": "datasets/ACTIVE.json",
+    "target": "target_total_points",
+    "scoring_basis": "2026/27 best effort; explicit estimates and unresolved source qualification preserved"
+  },
+  "feature_preparation": {
+    "id": "fpl_model_preparation_v1",
+    "directory": "datasets/fpl_model_preparation_v1",
+    "role": "upstream feature preparation; not a competing scoring dataset"
+  },
+  "model_pipeline": {
+    "id": "fpl_model_pipeline_v1",
+    "directory": "datasets/fpl_model_pipeline_v1",
+    "default_clock": "operational_proxy_v1",
+    "sensitivity_clock": "conservative_v1",
+    "feature_sets": {
+      "baseline": 21,
+      "extended": 97
+    },
+    "production_model_selected": false
+  },
+  "benchmark": {
+    "id": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+    "primary_metric": "net full-season FPL points after transfer hits",
+    "campaign_contract": "reports/fpl_improvement_2026_10_14/campaign_lock.json",
+    "reference_freeze": "reports/fpl_improvement_2026_10_14/reference_freeze.json",
+    "comparison_rule": "Use identical targets, seasons, opening, information, decision policy and resource contract; rerun comparator for changed contracts.",
+    "historical_definition": "research/current/benchmark.json",
+    "historical_points_transferable": false
+  },
+  "evaluation": {
+    "development_seasons": [
+      "2022-23",
+      "2023-24",
+      "2024-25"
+    ],
+    "previously_inspected_reporting_season": "2025-26",
+    "forecast_evaluation": "reports/walk_forward_2026_10_13/RESULTATER.md",
+    "completed_simulator_report": "reports/fpl_simulator_2026_10_13/final_report/RESULTATER.txt",
+    "latest_research_root": "reports/explicit_planning_2026_10_15",
+    "status_source": "reports/explicit_planning_2026_10_15/orchestration_state.json",
+    "observed_phase": "explicit_planning_complete_audited",
+    "status_is_live_process_verification": false,
+    "latest_experiment_id": "explicit-planning-20261015-v1",
+    "previous_completed_result": "reports/season_manager_2026_10_15/RESULTATER.md",
+    "latest_result": "reports/explicit_planning_2026_10_15/RESULTATER.md"
+  },
+  "navigation": {
+    "start": "README.md",
+    "methods": "overview/METHODS.md",
+    "cleanup": "overview/CLEANUP.md",
+    "runs": "overview/runs.csv",
+    "inventory": "overview/inventory.json",
+    "status": "overview/STATUS.md",
+    "next_steps": "overview/NEXT.md",
+    "workflow": "overview/WORKFLOW.md",
+    "catalog": "overview/research_catalog.json",
+    "timeline": "overview/TIMELINE.md",
+    "experiment_template": "overview/EXPERIMENT_TEMPLATE.json",
+    "result_template": "overview/RESULT_TEMPLATE.json",
+    "manager_learning": "overview/MANAGER_LEARNING.md"
+  },
+  "source_hashes_at_observation": {
+    "datasets/ACTIVE.json": "334cd084926dbd7465f545a6f3512ac5a52d6a013dc3f82edbaf756fd87278d4",
+    "datasets/MODEL_PREPARATION_ACTIVE.json": "8f72f06d5decfb0e9b151b94a54bd388e7d8f047aa98ad88bd3ca5ad60070fdc",
+    "datasets/MODEL_PIPELINE_ACTIVE.json": "3118c7e2e4828133e5f2a62b6b8bbb39899a6c21823da1debc58d502cc35e6b6",
+    "datasets/fpl_2026_27_best_effort_v1/manifest.json": "3912ade5dcd9359eda1779af3f042f82bb82283a3076a5ad294a638e2f9561e2",
+    "datasets/fpl_model_pipeline_v1/manifest.json": "566e7df35129861d3cc3b464d01974e2a267943de20f9e7509690e64b5a99142",
+    "research/current/benchmark.json": "543407872cdfb16abc1fade0e4cb8e98333e0f0615e8973ba1b91a4ce05acd01",
+    "reports/fpl_improvement_2026_10_14/objective.json": "5438948c053f2f0e2a561a666e1ed1e69097ebc329181eba4d6a750a7f329210",
+    "reports/fpl_improvement_2026_10_14/orchestration_state.json": "90b833f3e7b5980baa97d24fc5471bf9bd5aee8fa2a4905e901f9187cb1bf05a"
+  },
+  "maintenance": "Update this overlay when a new dataset, benchmark or method contract is approved. Refresh inventory separately with scripts/project_inventory.py. Do not rewrite frozen prior manifests merely to modernize their historical status.",
+  "publication_scope": "Portable dataset and fold pipeline plus selected immutable summaries and navigation. Full reconstruction replay and advanced campaign replay/resume require excluded local archives, caches, logs and engines.",
+  "testing_framework": {
+    "entrypoint": "python -m model_lab",
+    "documentation": "model_lab/README.md",
+    "forecast_example": "model_lab/examples/smoke.json",
+    "simulation_example": "model_lab/examples/simulation_smoke.json",
+    "output_root": "lab_results",
+    "scientific_promotion_automatic": false,
+    "manager_entrypoint": "python -m model_lab.manager_learning",
+    "manager_documentation": "reports/season_manager_2026_10_15/README.md",
+    "planning_entrypoint": "python -m model_lab.planning_experiment",
+    "planning_documentation": "reports/explicit_planning_2026_10_15/README.md"
+  },
+  "git_publication": {
+    "repository": "https://github.com/EmiandTobrav/FPL",
+    "branch": "codex/explicit-chip-planning",
+    "base_branch": "codex/episodic-manager-policy",
+    "base_pull_request": "https://github.com/EmiandTobrav/FPL/pull/3",
+    "status": "prepared_separate_research_update",
+    "previous_publication": {
+      "repository": "https://github.com/EmiandTobrav/FPL",
+      "branch": "codex/episodic-manager-policy",
+      "status": "prepared_separate_research_update",
+      "new_research_branch": "codex/episodic-manager-policy",
+      "base_pull_request": "https://github.com/EmiandTobrav/FPL/pull/2"
+    }
+  }
+}

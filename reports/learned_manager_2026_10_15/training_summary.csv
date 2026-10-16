@@ -1,0 +1,7 @@
+evaluation_season,chip,training_rows,distinct_teacher_exercises,training_seasons
+2022-23,triple_captain,0,0,
+2022-23,bench_boost,0,0,
+2023-24,triple_captain,11,2,2022-23
+2023-24,bench_boost,12,2,2022-23
+2024-25,triple_captain,22,4,"2022-23, 2023-24"
+2024-25,bench_boost,28,4,"2022-23, 2023-24"

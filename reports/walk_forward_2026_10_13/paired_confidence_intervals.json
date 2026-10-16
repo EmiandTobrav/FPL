@@ -1,0 +1,214 @@
+{
+  "long_horizons": {
+    "3": {
+      "reference": "two_part_extended_expanding_h3_operational_proxy_v1",
+      "against": "mean_baseline_expanding_h3_operational_proxy_v1",
+      "intervals": {
+        "rmse_difference": {
+          "low": -0.39662941082756814,
+          "high": -0.2554222095455957
+        },
+        "mae_difference": {
+          "low": -0.5903100779548779,
+          "high": -0.4316069929153768
+        },
+        "top10_points_difference": {
+          "low": -2.472916666666667,
+          "high": 19.91736111111111
+        },
+        "captain_points_difference": {
+          "low": -2.138888888888889,
+          "high": 3.5555555555555554
+        }
+      }
+    },
+    "6": {
+      "reference": "two_part_extended_expanding_h6_operational_proxy_v1",
+      "against": "mean_baseline_expanding_h6_operational_proxy_v1",
+      "intervals": {
+        "rmse_difference": {
+          "low": -1.228470145932838,
+          "high": -0.5187954879021102
+        },
+        "mae_difference": {
+          "low": -1.4604143980559998,
+          "high": -0.9197421904214815
+        },
+        "top10_points_difference": {
+          "low": -6.636363636363637,
+          "high": 38.97121212121211
+        },
+        "captain_points_difference": {
+          "low": -0.06060606060606061,
+          "high": 5.0606060606060606
+        }
+      }
+    }
+  },
+  "reference": "two_part_extended_expanding_h1_operational_proxy_v1",
+  "resampling": "2000 paired six-forecast-origin contiguous blocks, within each season; 95% percentile intervals",
+  "report_season": {
+    "catboost_baseline_expanding_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.017480118601732708,
+        "high": -0.007376502235611551
+      },
+      "mae_difference": {
+        "low": -0.022889043996683074,
+        "high": -0.015352136847461196
+      },
+      "top10_points_difference": {
+        "low": -2.5796052631578945,
+        "high": 4.343421052631571
+      },
+      "captain_points_difference": {
+        "low": -0.07894736842105263,
+        "high": 1.7894736842105263
+      }
+    },
+    "catboost_extended_expanding_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.00443161663137433,
+        "high": 0.0010553930770556472
+      },
+      "mae_difference": {
+        "low": -0.015763258339736543,
+        "high": 0.00047360513739933306
+      },
+      "top10_points_difference": {
+        "low": -4.158552631578948,
+        "high": -0.21052631578947367
+      },
+      "captain_points_difference": {
+        "low": -0.7894736842105263,
+        "high": 0.5526315789473685
+      }
+    },
+    "lightgbm_baseline_expanding_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.019099796479493652,
+        "high": -0.0068985036466502996
+      },
+      "mae_difference": {
+        "low": -0.01799354492187814,
+        "high": -0.009899588855244062
+      },
+      "top10_points_difference": {
+        "low": -1.1848684210526315,
+        "high": 4.263815789473681
+      },
+      "captain_points_difference": {
+        "low": -0.631578947368421,
+        "high": 2.026315789473684
+      }
+    },
+    "lightgbm_extended_expanding_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.0039040966568831548,
+        "high": 0.0016595916249896678
+      },
+      "mae_difference": {
+        "low": -0.0006324992067990728,
+        "high": 0.006079489116865617
+      },
+      "top10_points_difference": {
+        "low": -2.263815789473684,
+        "high": 2.1578947368421053
+      },
+      "captain_points_difference": {
+        "low": -0.39473684210526316,
+        "high": 1.763157894736842
+      }
+    },
+    "mean_baseline_expanding_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.08949440344120553,
+        "high": -0.0661227519459569
+      },
+      "mae_difference": {
+        "low": -0.15723515780782935,
+        "high": -0.13160387960240835
+      },
+      "top10_points_difference": {
+        "low": -3.3947368421052633,
+        "high": 4.079605263157891
+      },
+      "captain_points_difference": {
+        "low": -0.6578947368421053,
+        "high": 1.763157894736842
+      }
+    },
+    "ridge_baseline_expanding_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.02272173862130685,
+        "high": -0.01115468367946439
+      },
+      "mae_difference": {
+        "low": -0.055443636261344534,
+        "high": -0.045027703905333095
+      },
+      "top10_points_difference": {
+        "low": -2.5532894736842104,
+        "high": 3.8684210526315788
+      },
+      "captain_points_difference": {
+        "low": -0.7368421052631579,
+        "high": 1.5269736842105228
+      }
+    },
+    "ridge_extended_expanding_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.00868279067899419,
+        "high": 0.000682030842633511
+      },
+      "mae_difference": {
+        "low": -0.023032457019258223,
+        "high": -0.012961952551548354
+      },
+      "top10_points_difference": {
+        "low": -1.3157894736842106,
+        "high": 2.3421052631578947
+      },
+      "captain_points_difference": {
+        "low": -0.8421052631578947,
+        "high": -0.10526315789473684
+      }
+    },
+    "two_part_extended_last24months_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.002807218670262046,
+        "high": 0.0036468945176728823
+      },
+      "mae_difference": {
+        "low": 0.0034771666175454066,
+        "high": 0.006629694329003709
+      },
+      "top10_points_difference": {
+        "low": -1.8421052631578947,
+        "high": 2.026315789473684
+      },
+      "captain_points_difference": {
+        "low": -0.3157894736842105,
+        "high": 1.4217105263157859
+      }
+    },
+    "two_part_extended_recency365_h1_operational_proxy_v1": {
+      "rmse_difference": {
+        "low": -0.0026955797894124777,
+        "high": 0.0028410235351546908
+      },
+      "mae_difference": {
+        "low": 0.006528233003896817,
+        "high": 0.009980588397165122
+      },
+      "top10_points_difference": {
+        "low": -2.1059210526315786,
+        "high": 0.4473684210526316
+      },
+      "captain_points_difference": {
+        "low": -0.42105263157894735,
+        "high": 0.42105263157894735
+      }
+    }
+  }
+}

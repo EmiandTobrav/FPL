@@ -1,0 +1,49 @@
+{
+  "version": "fpl_model_pipeline_v1",
+  "completed_preparation_steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "data_version": "fpl_model_preparation_v1",
+  "profiles": {
+    "ridge": "training-only median + StandardScaler + one-hot categories",
+    "catboost": "numeric NaN retained, missing categories converted to explicit strings",
+    "lightgbm": "numeric NaN retained, categorical dtypes frozen from training vocabulary, zero_as_missing=False"
+  },
+  "all_profiles": "missing indicator for every numeric feature; unknown categories explicit; signed labels, zeros and extreme observed targets kept; targets and quality flags excluded from features",
+  "fitting_rule": "Fresh pipeline fitted only on select_training_rows at each forecast time. Never fit preprocessing globally or on prediction rows.",
+  "model_parameters": "Initial factory defaults only, not tuned or recommended final hyperparameters",
+  "validation_model_fits": 26,
+  "comparative_model_study_completed": false,
+  "production_model_selected": false,
+  "input_hashes": {
+    "operational_proxy_v1.csv.xz": "0c6f540761c9bf879054e5489154918907e678ee0610861124b07cc6352b70a6",
+    "conservative_v1.csv.xz": "26eab3ca17c890433d6f84ce2d3a0f656621d7070b4c1010df347974e24360b9",
+    "schema.json": "51070f6a0826f9f6a345ceb7161d214439e5608b36336e89e03a171c69809ba4",
+    "manifest.json": "36cbdeaf419d5c29a0489b63f2cffe5ab8c3fda7e6e7cd618e68172b8c874b91"
+  },
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "cloudpickle": "3.1.2",
+    "graphviz": "0.21",
+    "plotly": "7.1.0",
+    "narwhals": "2.27.1",
+    "six": "1.17.0"
+  },
+  "sources": [
+    "https://scikit-learn.org/stable/common_pitfalls.html",
+    "https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html",
+    "https://lightgbm.readthedocs.io/en/latest/Advanced-Topics.html",
+    "https://catboost.ai/docs/en/concepts/algorithm-missing-values-processing"
+  ]
+}

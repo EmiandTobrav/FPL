@@ -1,0 +1,51 @@
+{
+  "comparisons": [
+    {
+      "candidate": "fixture_direct_v1",
+      "season_gains": [
+        93.0,
+        73.0,
+        41.0
+      ],
+      "mean_gain": 69.0,
+      "min_gain": 41.0,
+      "positive_seasons": 3,
+      "eligible": true
+    },
+    {
+      "candidate": "minutes_hurdle_fixture_v1",
+      "season_gains": [
+        118.0,
+        4.0,
+        51.0
+      ],
+      "mean_gain": 57.666666666666664,
+      "min_gain": 4.0,
+      "positive_seasons": 3,
+      "eligible": true
+    },
+    {
+      "candidate": "component_points_fixture_v1",
+      "season_gains": [
+        -31.0,
+        -5.0,
+        -41.0
+      ],
+      "mean_gain": -25.666666666666668,
+      "min_gain": -41.0,
+      "positive_seasons": 0,
+      "eligible": false
+    }
+  ],
+  "promote": [
+    "fixture_direct_v1",
+    "minutes_hurdle_fixture_v1"
+  ],
+  "report_used": false,
+  "upgrade_established": false,
+  "research_goal_remains_active": true,
+  "protocol_sha256": "8d2dbaf2325d68edb9b78b8ac5253dad548b5a4d33bb5f4abb49a3bbf77f7438",
+  "actual_run_audit_sha256": "e936ed85e05500637fcad528e4443b8b6f4d61ce7c2b77d6edd17f265d4317dc",
+  "all12_runs_included": true,
+  "created_at_utc": "2026-10-14T09:03:20.752613+00:00"
+}

@@ -1,0 +1,136 @@
+{
+  "experiment_id": "branch__2022-23__chips-ridge__48a37fbf462e",
+  "season": "2022-23",
+  "baseline": "two_part_extended_expanding",
+  "assignments": {
+    "lineup": "two_part_extended_expanding",
+    "captain": "two_part_extended_expanding",
+    "transfers": "two_part_extended_expanding",
+    "chips": "ridge_extended_expanding"
+  },
+  "changes_start_gw": 2,
+  "opening_source": {
+    "path": "reports/fpl_simulator_2026_10_13/runs/manager__2022-23__two_part_extended_expanding/gw01.decision.json",
+    "sha256": "01a541d333555176cfa03a619dc6f237070b81288f045c28a31dd2b34e8c9fab",
+    "protocol_sha256": "2410cf65cb848fc78a5cac6ed10d46bd577487c0d3c00fafad0ee82cdaf92c5c",
+    "implementation_compatibility": {
+      "id": "planner_binary_arc_decoding_v1",
+      "differences": {
+        "planner.py": {
+          "recorded": "425330a91d0ed2e9d4d67742109c983dc661d0e532adfd5cda29c85df16631ba",
+          "current": "0b1e7ee711958f0d8e1865d7b2df3461bb228d06d540afe74112e11b5805b3e8"
+        }
+      },
+      "attestation": "solver_guard_compatibility_attestation.json",
+      "attestation_sha256": "8b3db1b28f22cf234360e2368e66baef9654d55213151ea9823555d0788427f5",
+      "archived_old_source": "implementation_versions/pre_arc_fix_425330a91d0ed2e9/planner.py",
+      "scope": "Only the numerical validation guard for decoded binary FT transition arcs changes. MILP objective, constraints, solver budgets and actual decision extraction remain unchanged."
+    }
+  },
+  "complete_season": true,
+  "net_season_points": 2121.0,
+  "known_round_net_subtotal": 2121.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "hits": 8,
+  "ending_state": {
+    "owned": {
+      "51940": 50,
+      "59859": 73,
+      "78830": 115,
+      "78916": 45,
+      "80201": 45,
+      "106468": 44,
+      "118748": 127,
+      "149484": 46,
+      "154566": 57,
+      "169187": 77,
+      "176297": 73,
+      "178301": 75,
+      "184029": 66,
+      "194010": 45,
+      "243016": 55
+    },
+    "bank": 3,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "51940": "Man Utd",
+      "59859": "Man City",
+      "78830": "Spurs",
+      "78916": "Newcastle",
+      "80201": "Fulham",
+      "106468": "Aston Villa",
+      "118748": "Liverpool",
+      "149484": "Aston Villa",
+      "154566": "Bournemouth",
+      "169187": "Liverpool",
+      "176297": "Man Utd",
+      "178301": "Aston Villa",
+      "184029": "Arsenal",
+      "194010": "Brentford",
+      "243016": "Brighton"
+    }
+  },
+  "solver_calls": 470,
+  "solver_nonoptimal_calls": 79,
+  "decision_seconds": 329.789910999476,
+  "chip_rounds": [
+    {
+      "gw": 2,
+      "chip": "wildcard"
+    },
+    {
+      "gw": 8,
+      "chip": "triple_captain"
+    },
+    {
+      "gw": 9,
+      "chip": "bench_boost"
+    },
+    {
+      "gw": 19,
+      "chip": "free_hit"
+    },
+    {
+      "gw": 20,
+      "chip": "wildcard"
+    },
+    {
+      "gw": 23,
+      "chip": "triple_captain"
+    },
+    {
+      "gw": 26,
+      "chip": "bench_boost"
+    },
+    {
+      "gw": 38,
+      "chip": "free_hit"
+    }
+  ],
+  "comparison": {
+    "baseline_complete": true,
+    "paired_net_season_gain": -33.0,
+    "baseline_summary_sha256": "88a69be4f10dcf7a3ab29439335034cf3b1f141cc2b418c27e7d758e9c9d2be6",
+    "baseline_net_season_points": 2154.0
+  },
+  "selection_performed": false,
+  "scope": "Coherent full-manager branch with identical frozen baseline GW1 and own state from GW2; causal-proxy research replay, not historical rank."
+}

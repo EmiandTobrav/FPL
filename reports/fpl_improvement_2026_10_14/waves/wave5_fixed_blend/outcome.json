@@ -1,0 +1,51 @@
+{
+  "status": "candidate_stopped_at_P1",
+  "at_utc": "2026-10-14T14:24:21.748948+00:00",
+  "candidate_id": "fixture_fixed_blend_v1",
+  "configuration_number": 7,
+  "amendment_sha256": "67f33c1c09ece4a70fd8b637de4d1b06ad5477b4070ddb36f58393957b43f585",
+  "execution_sha256": "09297a84047907f86f0fd9879621b1994f8f1ce16fcc114adda81f5905d8707c",
+  "completion_sha256": "90a5a0f724ec76c40c3e67892565f811fe476e11ddbb278279c52e707e29302e",
+  "actual_audit_sha256": "48fd434dd38066170446c55570b84b10938e12ca8211e2985906c700b45e800f",
+  "numeric_gate_sha256": "e9e006e8be635ad7e8b1a4d98a331dbadcb166cd641674b677ed6b5d683fee48",
+  "actual_audit_passed": true,
+  "passed_numeric_gate": false,
+  "pairs": [
+    {
+      "season": "2022-23",
+      "G_points": 2407.0,
+      "benchmark_points": 2429.0,
+      "A_points": 2472.0,
+      "gain": -22.0,
+      "gain_vs_A": -65.0
+    },
+    {
+      "season": "2023-24",
+      "G_points": 2418.0,
+      "benchmark_points": 2413.0,
+      "A_points": 2363.0,
+      "gain": 5.0,
+      "gain_vs_A": 55.0
+    },
+    {
+      "season": "2024-25",
+      "G_points": 2357.0,
+      "benchmark_points": 2344.0,
+      "A_points": 2517.0,
+      "gain": 13.0,
+      "gain_vs_A": -160.0
+    }
+  ],
+  "mean_gain": -1.3333333333333333,
+  "mean_gain_vs_A": -56.666666666666664,
+  "root_rehashed_actual_audit_evidence_count": 8182,
+  "root_rehashed_numeric_gate_evidence_count": 8183,
+  "root_recomputed_pairs_from_actual_audited_sources": true,
+  "P2_runs": 0,
+  "P3_runs": 0,
+  "P4_runs": 0,
+  "upgrade_established": false,
+  "research_goal_remains_active": true,
+  "next_action": "Preserve failed fixed midpoint; register the source-grounded full available horizon policy with fresh H3 controls as configuration8, subject to bounded outcome-free feasibility.",
+  "scope": "Adaptive retrospective development on reused seasons; no untouched validation, statistical significance or prospective winning claim."
+}

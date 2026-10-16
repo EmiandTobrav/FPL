@@ -1,0 +1,45 @@
+{
+  "version": "fpl_model_pipeline_v1",
+  "root": "datasets/fpl_model_pipeline_v1",
+  "default_clock": "operational_proxy_v1",
+  "completed_preparation_steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "comparative_training_started": true,
+  "production_model_selected": false,
+  "comparative_training_completed": true,
+  "evaluation_root": "reports/walk_forward_2026_10_13",
+  "development_selected_candidate": {
+    "H1_model": "two_part",
+    "H1_features": "extended",
+    "history_policy": "expanding",
+    "long_horizon_candidates": [
+      {
+        "model": "two_part",
+        "feature_set": "extended"
+      },
+      {
+        "model": "ridge",
+        "feature_set": "extended"
+      }
+    ],
+    "long_horizon_winners": {
+      "3": "two_part_extended_expanding_h3_operational_proxy_v1",
+      "6": "two_part_extended_expanding_h6_operational_proxy_v1"
+    },
+    "selection_used_only": [
+      "2022-23",
+      "2023-24",
+      "2024-25"
+    ],
+    "frozen_before_final_fits": true
+  },
+  "primary_model_selection_objective": "net_full_season_fpl_points_after_transfer_hits",
+  "forecast_metrics_role": "diagnostic",
+  "game_evaluation_root": "reports/fpl_game_evaluation_2026_10_13",
+  "game_evaluation_status": "specified_not_run"
+}

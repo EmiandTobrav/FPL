@@ -1,0 +1,23 @@
+{
+  "id": null,
+  "hypothesis": null,
+  "change": null,
+  "related_work": [],
+  "dataset_id": "fpl_2026_27_best_effort_v1",
+  "input_hashes": {},
+  "clock": "operational_proxy_v1",
+  "features": "extended",
+  "candidate_id": null,
+  "model_parameters": {},
+  "decision_policy": {},
+  "benchmark_id": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "seasons": [
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "resources": {},
+  "success_criterion": null,
+  "stop_rule": null,
+  "maximum_runs": null
+}

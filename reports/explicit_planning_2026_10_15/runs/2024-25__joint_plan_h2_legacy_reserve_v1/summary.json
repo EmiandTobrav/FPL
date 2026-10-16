@@ -1,0 +1,27 @@
+{
+  "chip_usage": {
+    "bench_boost": [
+      7,
+      20
+    ],
+    "free_hit": [
+      29
+    ],
+    "triple_captain": [
+      13,
+      24
+    ],
+    "wildcard": [
+      6,
+      32
+    ]
+  },
+  "complete_season": true,
+  "cpu_seconds": 68.30222,
+  "net_points": 2480.0,
+  "policy": "joint_plan_h2_legacy_reserve_v1",
+  "season": "2024-25",
+  "solver_calls": 460,
+  "solver_seconds": 59.32490163866896,
+  "wall_seconds": 68.44903991697356
+}

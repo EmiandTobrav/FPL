@@ -21,7 +21,7 @@ python scripts/prepare_data.py
 PYTHONPATH=src OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest -q
 ```
 
-På Windows aktiveres miljøet med `.venv\Scripts\Activate.ps1`; sett miljøvariablene med PowerShell-syntaks. Nyere Model Lab har egen oppskrift på #2-grenen. Følg forsøkskontrakten ved replay og bevar de opprinnelige resultatfilene.
+På Windows aktiveres miljøet med `.venv\Scripts\Activate.ps1`; sett miljøvariablene med PowerShell-syntaks. Nyere Model Lab har egen oppskrift i [model_lab/README.md](model_lab/README.md). Følg forsøkskontrakten ved replay og bevar de opprinnelige resultatfilene.
 
 ## Ett forsøk skal gi ett svar
 

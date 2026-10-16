@@ -1,0 +1,8 @@
+season,split,rows,flagged,missing_history
+2020-21,train,22889,7402,741
+2021-22,train,23230,7662,563
+2022-23,train,24957,6208,699
+2023-24,train,28742,9358,687
+2024-25,validation,26919,6833,537
+2025-26,test,29338,408,667
+2026-27,current_native,3216,0,400

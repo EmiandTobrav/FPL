@@ -1,0 +1,61 @@
+{
+  "experiment_id": "matched__2023-24__two_part_extended_expanding",
+  "season": "2023-24",
+  "candidate": "two_part_extended_expanding",
+  "mode": "matched",
+  "opening_points": 214.0,
+  "complete_season": false,
+  "net_season_points": null,
+  "known_round_net_subtotal": 342.0,
+  "known_rounds": 6,
+  "attempted_rounds": 6,
+  "unknown_rounds": [],
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "60307": 63,
+      "77794": 65,
+      "84182": 41,
+      "101178": 60,
+      "116535": 55,
+      "118748": 125,
+      "122798": 65,
+      "178186": 71,
+      "221632": 47,
+      "223094": 141,
+      "435973": 50,
+      "446008": 65,
+      "461358": 66,
+      "480455": 40,
+      "482609": 42
+    },
+    "bank": 1,
+    "ft": 1,
+    "next_gw": 7,
+    "used_chips": {
+      "1": [
+        "wildcard"
+      ],
+      "2": []
+    },
+    "last_chip": "wildcard",
+    "ownership_clubs": {
+      "60307": "Brighton",
+      "77794": "Newcastle",
+      "84182": "West Ham",
+      "101178": "West Ham",
+      "116535": "Liverpool",
+      "118748": "Liverpool",
+      "122798": "Liverpool",
+      "178186": "West Ham",
+      "221632": "Spurs",
+      "223094": "Man City",
+      "435973": "Burnley",
+      "446008": "Brentford",
+      "461358": "Man City",
+      "480455": "Everton",
+      "482609": "Chelsea"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

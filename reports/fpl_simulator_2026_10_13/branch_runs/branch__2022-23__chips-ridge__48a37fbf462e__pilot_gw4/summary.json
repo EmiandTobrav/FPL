@@ -1,0 +1,85 @@
+{
+  "experiment_id": "branch__2022-23__chips-ridge__48a37fbf462e__pilot_gw4",
+  "season": "2022-23",
+  "baseline": "two_part_extended_expanding",
+  "assignments": {
+    "lineup": "two_part_extended_expanding",
+    "captain": "two_part_extended_expanding",
+    "transfers": "two_part_extended_expanding",
+    "chips": "ridge_extended_expanding"
+  },
+  "changes_start_gw": 2,
+  "opening_source": {
+    "path": "reports/fpl_simulator_2026_10_13/runs/manager__2022-23__two_part_extended_expanding/gw01.decision.json",
+    "sha256": "01a541d333555176cfa03a619dc6f237070b81288f045c28a31dd2b34e8c9fab",
+    "protocol_sha256": "2410cf65cb848fc78a5cac6ed10d46bd577487c0d3c00fafad0ee82cdaf92c5c"
+  },
+  "complete_season": false,
+  "net_season_points": null,
+  "known_round_net_subtotal": 247.0,
+  "known_rounds": 4,
+  "attempted_rounds": 4,
+  "unknown_rounds": [],
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "50175": 65,
+      "60307": 55,
+      "61366": 120,
+      "78830": 115,
+      "82403": 70,
+      "85971": 120,
+      "93264": 50,
+      "121160": 55,
+      "215059": 45,
+      "215136": 40,
+      "220566": 60,
+      "225796": 60,
+      "243571": 40,
+      "248937": 45,
+      "432830": 45
+    },
+    "bank": 14,
+    "ft": 1,
+    "next_gw": 5,
+    "used_chips": {
+      "1": [
+        "wildcard"
+      ],
+      "2": []
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "50175": "Brighton",
+      "60307": "Brighton",
+      "61366": "Man City",
+      "78830": "Spurs",
+      "82403": "Crystal Palace",
+      "85971": "Spurs",
+      "93264": "Spurs",
+      "121160": "Man City",
+      "215059": "Brighton",
+      "215136": "Nott'm Forest",
+      "220566": "Man City",
+      "225796": "Chelsea",
+      "243571": "Everton",
+      "248937": "Leeds",
+      "432830": "Wolves"
+    }
+  },
+  "solver_calls": 72,
+  "solver_nonoptimal_calls": 6,
+  "decision_seconds": 30.87501812609844,
+  "chip_rounds": [
+    {
+      "gw": 2,
+      "chip": "wildcard"
+    }
+  ],
+  "comparison": {
+    "baseline_complete": false,
+    "paired_net_season_gain": null
+  },
+  "selection_performed": false,
+  "scope": "Coherent full-manager branch with identical frozen baseline GW1 and own state from GW2; causal-proxy research replay, not historical rank."
+}

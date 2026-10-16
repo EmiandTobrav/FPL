@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2025-26__catboost_extended_expanding",
+  "season": "2025-26",
+  "candidate": "catboost_extended_expanding",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2079.0,
+  "known_round_net_subtotal": 2079.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 11,
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "60307": 55,
+      "141746": 101,
+      "154561": 60,
+      "178186": 80,
+      "221466": 52,
+      "223094": 146,
+      "226182": 44,
+      "226597": 71,
+      "424876": 70,
+      "466052": 65,
+      "469142": 45,
+      "489639": 45,
+      "494521": 47,
+      "502500": 71,
+      "503139": 51
+    },
+    "bank": 0,
+    "ft": 2,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "bench_boost",
+        "triple_captain",
+        "free_hit"
+      ],
+      "2": [
+        "bench_boost",
+        "triple_captain",
+        "wildcard",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "60307": "Brighton",
+      "141746": "Man Utd",
+      "154561": "Arsenal",
+      "178186": "West Ham",
+      "221466": "Bournemouth",
+      "223094": "Man City",
+      "226182": "Leeds",
+      "226597": "Arsenal",
+      "424876": "Liverpool",
+      "466052": "Man City",
+      "469142": "Brighton",
+      "489639": "Brighton",
+      "494521": "Bournemouth",
+      "502500": "Brentford",
+      "503139": "Bournemouth"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

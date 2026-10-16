@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "model_lab_tests": 52,
+  "registry_tests": 6,
+  "new_planning_tests": 6,
+  "outcome_blind_integration_origins": [
+    1,
+    18,
+    19,
+    20,
+    38
+  ],
+  "audited_rounds": 228,
+  "source": "Commands executed locally; full audit.json is authoritative for episode replay."
+}

@@ -1,0 +1,124 @@
+{
+  "experiment_id": "branch__2023-24__lineup-blend__cab1ed0154dc",
+  "season": "2023-24",
+  "baseline": "two_part_extended_expanding",
+  "assignments": {
+    "lineup": "equal_two_part_ridge",
+    "captain": "two_part_extended_expanding",
+    "transfers": "two_part_extended_expanding",
+    "chips": "two_part_extended_expanding"
+  },
+  "changes_start_gw": 2,
+  "opening_source": {
+    "path": "reports/fpl_simulator_2026_10_13/runs/manager__2023-24__two_part_extended_expanding/gw01.decision.json",
+    "sha256": "74b0642d2979a122276f6403d5e09fe0bdd117fc1cec303bcb6860e1fd786acf",
+    "protocol_sha256": "b953c7193581b17c9f90690b0a8ef852d06eaaf1f1fa7532254a53f4d09ca39c",
+    "implementation_compatibility": {}
+  },
+  "complete_season": true,
+  "net_season_points": 2381.0,
+  "known_round_net_subtotal": 2381.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "hits": 4,
+  "ending_state": {
+    "owned": {
+      "84182": 40,
+      "85971": 99,
+      "97032": 63,
+      "111234": 46,
+      "126184": 51,
+      "141746": 82,
+      "178301": 85,
+      "184029": 85,
+      "198869": 56,
+      "219168": 82,
+      "219847": 71,
+      "244731": 75,
+      "437730": 45,
+      "480455": 40,
+      "492777": 41
+    },
+    "bank": 39,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "bench_boost",
+        "triple_captain",
+        "wildcard",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "84182": "West Ham",
+      "85971": "Spurs",
+      "97032": "Liverpool",
+      "111234": "Everton",
+      "126184": "Man City",
+      "141746": "Man Utd",
+      "178301": "Aston Villa",
+      "184029": "Arsenal",
+      "198869": "Arsenal",
+      "219168": "Newcastle",
+      "219847": "Arsenal",
+      "244731": "Liverpool",
+      "437730": "Bournemouth",
+      "480455": "Everton",
+      "492777": "Liverpool"
+    }
+  },
+  "solver_calls": 593,
+  "solver_nonoptimal_calls": 42,
+  "decision_seconds": 260.06051391689107,
+  "chip_rounds": [
+    {
+      "gw": 2,
+      "chip": "wildcard"
+    },
+    {
+      "gw": 9,
+      "chip": "triple_captain"
+    },
+    {
+      "gw": 14,
+      "chip": "bench_boost"
+    },
+    {
+      "gw": 19,
+      "chip": "free_hit"
+    },
+    {
+      "gw": 27,
+      "chip": "bench_boost"
+    },
+    {
+      "gw": 28,
+      "chip": "triple_captain"
+    },
+    {
+      "gw": 29,
+      "chip": "wildcard"
+    },
+    {
+      "gw": 38,
+      "chip": "free_hit"
+    }
+  ],
+  "comparison": {
+    "baseline_complete": true,
+    "paired_net_season_gain": -18.0,
+    "baseline_summary_sha256": "ecd0b462e83254f8ed8c9b1f41da94c774e7b4b7cc1b3d0426dec7cd9bd8716f",
+    "baseline_net_season_points": 2399.0
+  },
+  "selection_performed": false,
+  "scope": "Coherent full-manager branch with identical frozen baseline GW1 and own state from GW2; causal-proxy research replay, not historical rank."
+}

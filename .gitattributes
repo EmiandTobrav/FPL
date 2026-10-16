@@ -6,3 +6,9 @@
 
 # Frozen research inputs are ordinary small gzip blobs, never LFS pointers.
 research/current/**/*.gz -filter -diff -merge
+
+# Preserve frozen CSV bytes while recognizing their existing CRLF line endings.
+*.csv whitespace=cr-at-eol
+
+# Exact vendor copies retain their original terminal blank lines.
+model_lab/vendor/** whitespace=-blank-at-eof

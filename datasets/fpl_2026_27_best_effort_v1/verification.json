@@ -1,0 +1,11 @@
+{
+  "focused_tests_passed": 7,
+  "byte_identical_data_replay_files": 9,
+  "full_training_feature_time_audit_rows": 159291,
+  "all_proxy_time_order_checks_passed": true,
+  "actual_historical_deadlines_verified": false,
+  "all_frozen_input_hashes_preserved": true,
+  "source_qualification_gates_changed": false,
+  "old_labels_models_and_benchmark_preserved": true,
+  "models_trained": 0
+}

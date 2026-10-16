@@ -1,0 +1,124 @@
+{
+  "experiment_id": "branch__2024-25__transfers-catboost__8ac5d078781e",
+  "season": "2024-25",
+  "baseline": "two_part_extended_expanding",
+  "assignments": {
+    "lineup": "two_part_extended_expanding",
+    "captain": "two_part_extended_expanding",
+    "transfers": "catboost_extended_expanding",
+    "chips": "two_part_extended_expanding"
+  },
+  "changes_start_gw": 2,
+  "opening_source": {
+    "path": "reports/fpl_simulator_2026_10_13/runs/manager__2024-25__two_part_extended_expanding/gw01.decision.json",
+    "sha256": "91063b5b5afffdaf3ac1d1848b0c5e22594cc1a57a090935a3bbb2d9b5ab282c",
+    "protocol_sha256": "33431e1ce3fe9fe15085f15d537847f712fbcf55bd2ce06a07d610a11fd70c2d",
+    "implementation_compatibility": {}
+  },
+  "complete_season": true,
+  "net_season_points": 2330.0,
+  "known_round_net_subtotal": 2330.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "hits": 4,
+  "ending_state": {
+    "owned": {
+      "17761": 48,
+      "97032": 64,
+      "116216": 67,
+      "118748": 127,
+      "154561": 55,
+      "172649": 46,
+      "178186": 77,
+      "201666": 60,
+      "209036": 47,
+      "216646": 66,
+      "247348": 53,
+      "438234": 75,
+      "446008": 70,
+      "462424": 62,
+      "475168": 56
+    },
+    "bank": 28,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "triple_captain",
+        "bench_boost",
+        "wildcard",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "17761": "Everton",
+      "97032": "Liverpool",
+      "116216": "Arsenal",
+      "118748": "Liverpool",
+      "154561": "Arsenal",
+      "172649": "Crystal Palace",
+      "178186": "West Ham",
+      "201666": "Newcastle",
+      "209036": "Crystal Palace",
+      "216646": "Brentford",
+      "247348": "Crystal Palace",
+      "438234": "Man City",
+      "446008": "Brentford",
+      "462424": "Arsenal",
+      "475168": "Brighton"
+    }
+  },
+  "solver_calls": 561,
+  "solver_nonoptimal_calls": 40,
+  "decision_seconds": 242.30973833217286,
+  "chip_rounds": [
+    {
+      "gw": 4,
+      "chip": "wildcard"
+    },
+    {
+      "gw": 5,
+      "chip": "triple_captain"
+    },
+    {
+      "gw": 9,
+      "chip": "bench_boost"
+    },
+    {
+      "gw": 19,
+      "chip": "free_hit"
+    },
+    {
+      "gw": 20,
+      "chip": "triple_captain"
+    },
+    {
+      "gw": 26,
+      "chip": "bench_boost"
+    },
+    {
+      "gw": 31,
+      "chip": "wildcard"
+    },
+    {
+      "gw": 38,
+      "chip": "free_hit"
+    }
+  ],
+  "comparison": {
+    "baseline_complete": true,
+    "paired_net_season_gain": 13.0,
+    "baseline_summary_sha256": "7e269a78935b47ca86547357e4b2631c67980decaffe46c170645317d9d72190",
+    "baseline_net_season_points": 2317.0
+  },
+  "selection_performed": false,
+  "scope": "Coherent full-manager branch with identical frozen baseline GW1 and own state from GW2; causal-proxy research replay, not historical rank."
+}

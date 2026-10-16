@@ -1,0 +1,11 @@
+{
+  "version": "fpl_2026_27_best_effort_v1",
+  "release_directory": "fpl_2026_27_best_effort_v1",
+  "manifest": "fpl_2026_27_best_effort_v1/manifest.json",
+  "training_table": "fpl_2026_27_best_effort_v1/training_rows.csv.xz",
+  "loader": "fpl_2026_27_best_effort_v1/loader.py",
+  "archive": null,
+  "training_ready_best_effort": true,
+  "strict_source_qualification_complete": false,
+  "archive_note": "ZIP export omitted from Git; use the complete release_directory directly."
+}

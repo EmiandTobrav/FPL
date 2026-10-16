@@ -1,0 +1,34 @@
+name: Research workspace checks
+on:
+  pull_request:
+    paths:
+      - 'scripts/research.py'
+      - 'scripts/test_research.py'
+      - 'overview/**'
+      - 'model_lab/**'
+      - 'reports/learned_manager_2026_10_15/**'
+      - 'reports/season_manager_2026_10_15/**'
+      - 'reports/explicit_planning_2026_10_15/**'
+      - 'experiments/**'
+      - 'datasets/**'
+      - '.github/workflows/workspace.yml'
+  push:
+    branches: [main]
+jobs:
+  registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s scripts -p test_research.py
+      - run: python scripts/research.py refresh
+      - run: pip install -r model_lab/requirements.txt
+      - run: python -m unittest discover -s model_lab/tests
+      - run: python -m model_lab run model_lab/examples/smoke.json
+      - run: python -m model_lab run model_lab/examples/simulation_smoke.json
+      - run: python -m unittest discover -s reports/learned_manager_2026_10_15 -p test_policy.py
+      - run: python reports/learned_manager_2026_10_15/verify_saved.py
+      - run: python reports/season_manager_2026_10_15/verify_saved.py
+      - run: python reports/explicit_planning_2026_10_15/verify_saved.py

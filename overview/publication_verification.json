@@ -1,0 +1,45 @@
+{
+  "registry_tests_passed": 6,
+  "navigation_links_validated": true,
+  "dataset_output_hashes_verified": 35,
+  "portable_release_test_rows": 29338,
+  "portable_release_features": 21,
+  "pipeline_rows_loaded": 159291,
+  "H3_training_rows_checked": 83996,
+  "benchmark_retrained": false,
+  "advanced_campaign_replay_performed": false,
+  "scope": "Publication and portable loader checks; existing frozen research results are not newly rerun.",
+  "learned_manager_pilot": {
+    "full_local_audit_rounds": 228,
+    "fresh_reference_rounds_reproduced": 114,
+    "policy_tests_passed": 4,
+    "result_bound_files_verified_in_publication": 483,
+    "cold_control_exact": true,
+    "trained_season_gains": [
+      53,
+      41
+    ],
+    "mean_trained_gain": 47,
+    "benchmark_promoted": false,
+    "scope": "Full input/rule audit performed locally; publication checks saved evidence and policy tests. Raw frozen forecast/teacher inputs remain outside Git."
+  },
+  "episodic_manager": {
+    "full_local_audit_rounds": 304,
+    "new_training_episodes": 4,
+    "new_evaluation_episodes": 4,
+    "model_lab_tests": 46,
+    "saved_result_files": 641,
+    "benchmark_promoted": false,
+    "scope": "Full audit performed locally; Git checks saved bytes and policy unit tests. Correlated historical training replays are not independent seasons."
+  },
+  "explicit_planning": {
+    "full_local_audit_rounds": 228,
+    "full_seasons": 6,
+    "model_lab_tests": 52,
+    "registry_tests": 6,
+    "forecast_fits": 0,
+    "manager_fits": 0,
+    "saved_result_files": 471,
+    "benchmark_promoted": false
+  }
+}

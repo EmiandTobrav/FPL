@@ -1,0 +1,6 @@
+Pakk ut med mappestrukturen bevart. Hovedrapport: reports/walk_forward_2026_10_13/RESULTATER.md.
+Kildeklokkene, dataskjema, treningspipeline og native minuttutfall følger pakken.
+Kjør run.py, deretter analyze.py, i et Python-miljø med versjonene i runtime_versions.json.
+På denne maskinen ble DYLD_LIBRARY_PATH satt til scikit-learn-miljøets sklearn/.dylibs for LightGBM/OpenMP.
+run.py bruker mellomlagrede komplette prognosefiler når de finnes; uten disse trenes hele studien på nytt.
+fold_audits.zip inneholder alle treningsrevisjoner. Ingen produksjonsmodell er valgt eller lagret.

@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2023-24__fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "season": "2023-24",
+  "candidate": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2448.0,
+  "known_round_net_subtotal": 2448.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 15,
+  "hits": 36,
+  "ending_state": {
+    "owned": {
+      "54738": 45,
+      "78916": 45,
+      "85971": 98,
+      "97032": 63,
+      "156700": 51,
+      "208706": 58,
+      "219847": 75,
+      "221632": 50,
+      "223094": 141,
+      "223340": 90,
+      "226597": 49,
+      "232787": 54,
+      "441164": 58,
+      "457569": 46,
+      "517052": 68
+    },
+    "bank": 10,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "54738": "Luton",
+      "78916": "Newcastle",
+      "85971": "Spurs",
+      "97032": "Liverpool",
+      "156700": "Luton",
+      "208706": "Newcastle",
+      "219847": "Arsenal",
+      "221632": "Spurs",
+      "223094": "Man City",
+      "223340": "Arsenal",
+      "226597": "Arsenal",
+      "232787": "Chelsea",
+      "441164": "Spurs",
+      "457569": "Chelsea",
+      "517052": "Chelsea"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

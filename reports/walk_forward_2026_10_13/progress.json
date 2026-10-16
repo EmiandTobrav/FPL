@@ -1,0 +1,12 @@
+{
+  "phase": "conservative_final",
+  "completed_folds": 38,
+  "total_folds": 38,
+  "elapsed_seconds": 351.5,
+  "last": [
+    "two_part_extended_expanding_h1_conservative_v1",
+    "2025-26",
+    38,
+    56.94
+  ]
+}

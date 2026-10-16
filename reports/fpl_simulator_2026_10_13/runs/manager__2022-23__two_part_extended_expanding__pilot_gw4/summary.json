@@ -1,0 +1,60 @@
+{
+  "experiment_id": "manager__2022-23__two_part_extended_expanding__pilot_gw4",
+  "season": "2022-23",
+  "candidate": "two_part_extended_expanding",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": false,
+  "net_season_points": null,
+  "known_round_net_subtotal": 243.0,
+  "known_rounds": 4,
+  "attempted_rounds": 4,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 0,
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "60307": 55,
+      "61366": 120,
+      "67089": 45,
+      "78830": 115,
+      "78916": 45,
+      "85971": 120,
+      "93264": 50,
+      "101178": 65,
+      "111478": 45,
+      "116535": 55,
+      "121145": 70,
+      "215136": 40,
+      "220566": 60,
+      "248937": 45,
+      "490146": 45
+    },
+    "bank": 24,
+    "ft": 1,
+    "next_gw": 5,
+    "used_chips": {
+      "1": [],
+      "2": []
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "60307": "Brighton",
+      "61366": "Man City",
+      "67089": "Newcastle",
+      "78830": "Spurs",
+      "78916": "Newcastle",
+      "85971": "Spurs",
+      "93264": "Spurs",
+      "101178": "Southampton",
+      "111478": "Brighton",
+      "116535": "Liverpool",
+      "121145": "Man City",
+      "215136": "Nott'm Forest",
+      "220566": "Man City",
+      "248937": "Leeds",
+      "490146": "Fulham"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

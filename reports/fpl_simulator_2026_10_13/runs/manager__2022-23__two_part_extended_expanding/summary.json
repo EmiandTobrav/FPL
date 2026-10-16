@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2022-23__two_part_extended_expanding",
+  "season": "2022-23",
+  "candidate": "two_part_extended_expanding",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2154.0,
+  "known_round_net_subtotal": 2154.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 29,
+  "hits": 8,
+  "ending_state": {
+    "owned": {
+      "51940": 50,
+      "75115": 71,
+      "109345": 52,
+      "121160": 55,
+      "141746": 98,
+      "149484": 43,
+      "169187": 73,
+      "176297": 71,
+      "178301": 76,
+      "184029": 69,
+      "199798": 44,
+      "204214": 48,
+      "220237": 44,
+      "223094": 124,
+      "243016": 55
+    },
+    "bank": 13,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "bench_boost",
+        "free_hit"
+      ],
+      "2": [
+        "wildcard",
+        "bench_boost",
+        "triple_captain",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "51940": "Man Utd",
+      "75115": "Newcastle",
+      "109345": "Brighton",
+      "121160": "Man City",
+      "141746": "Man Utd",
+      "149484": "Aston Villa",
+      "169187": "Liverpool",
+      "176297": "Man Utd",
+      "178301": "Aston Villa",
+      "184029": "Arsenal",
+      "199798": "Aston Villa",
+      "204214": "Brighton",
+      "220237": "Newcastle",
+      "223094": "Man City",
+      "243016": "Brighton"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

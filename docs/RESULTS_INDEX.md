@@ -15,7 +15,7 @@ Datert oversikt: 16. oktober 2026. Tabellen er et utvalg av sentrale funn. Hver 
 
 Flere historiske metoder og rapporter: [tidligere prosjektinngang](PROJECT_ENTRY_2026_10_07.md).
 
-## Nyere managerforsøk — publisert i åpne PR-er
+## Nyere managerforsøk — innlemmet i main
 
 | Forsøk | Resultat | Beslutning / kilde |
 |---|---|---|

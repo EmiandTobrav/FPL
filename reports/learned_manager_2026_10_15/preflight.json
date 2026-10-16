@@ -1,0 +1,7 @@
+{
+  "baseline_GW1_settles": true,
+  "net_points": 56.0,
+  "scope": "Integration check; no learned policy comparison or tuning.",
+  "solver_calls": 7,
+  "source_forecasts_unchanged": true
+}

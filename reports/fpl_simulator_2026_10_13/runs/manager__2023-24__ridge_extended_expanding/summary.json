@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2023-24__ridge_extended_expanding",
+  "season": "2023-24",
+  "candidate": "ridge_extended_expanding",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2204.0,
+  "known_round_net_subtotal": 2204.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 19,
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "54738": 45,
+      "97032": 63,
+      "111234": 47,
+      "141746": 82,
+      "154566": 72,
+      "165183": 39,
+      "184029": 84,
+      "198869": 61,
+      "209244": 79,
+      "219168": 79,
+      "223094": 144,
+      "244851": 59,
+      "433154": 54,
+      "462424": 57,
+      "469142": 40
+    },
+    "bank": 2,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "bench_boost",
+        "triple_captain",
+        "free_hit"
+      ],
+      "2": [
+        "bench_boost",
+        "wildcard",
+        "triple_captain",
+        "free_hit"
+      ]
+    },
+    "last_chip": "free_hit",
+    "ownership_clubs": {
+      "54738": "Luton",
+      "97032": "Liverpool",
+      "111234": "Everton",
+      "141746": "Man Utd",
+      "154566": "Bournemouth",
+      "165183": "Luton",
+      "184029": "Arsenal",
+      "198869": "Arsenal",
+      "209244": "Man City",
+      "219168": "Newcastle",
+      "223094": "Man City",
+      "244851": "Chelsea",
+      "433154": "Everton",
+      "462424": "Arsenal",
+      "469142": "Brighton"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

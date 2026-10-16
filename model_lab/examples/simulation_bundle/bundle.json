@@ -1,0 +1,31 @@
+{
+  "benchmark": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "files": {
+    "gw01/features.csv.gz": "78821f9dcf676fa0c15202e1ff52ffb60cbb58b529a72d52e2cd7d07ace64767",
+    "gw01/fixture_direct_v1.csv.gz": "293b6391e6d5dcadc235312cfda4e534315dae0c8f0178c9afc0494eb248cb45",
+    "gw01/fixture_full_h3_adaptive_tc_harmonized_causal_v1.csv.gz": "4100945484b93791a88d115fc53ea5170f604d0fee2f61e03d899c1459b88d51",
+    "gw01/outcomes.json": "ff051cff06a5eafd8a69181db1c2631179ce01c4e4d9d1b61dbbcfc834a1786f",
+    "gw01/pool.csv.gz": "61e27d42a275f280f3eca96cf4f69eef5872f5176a46ccf8f00f1059a8d796c8",
+    "gw01/snapshot_audit.json": "358383a8d4fd005fd15bfdf89c2778d976e10d0f4c7e132d324cd88dbdb5c33b",
+    "gw01/source_manifest.json": "a0f4a7d502f288069b08c1102db692cc4d8f1139619ec79075db900985cdffd5"
+  },
+  "origins": [
+    {
+      "features": "gw01/features.csv.gz",
+      "forecast_at": "2023-08-11 17:30:00+00:00",
+      "forecasts": {
+        "fixture_direct_v1": "gw01/fixture_direct_v1.csv.gz",
+        "fixture_full_h3_adaptive_tc_harmonized_causal_v1": "gw01/fixture_full_h3_adaptive_tc_harmonized_causal_v1.csv.gz"
+      },
+      "horizon": 8,
+      "official_blank": false,
+      "outcomes": "gw01/outcomes.json",
+      "pool": "gw01/pool.csv.gz",
+      "round": 1,
+      "season": "2023-24"
+    }
+  ],
+  "outcome_bank_sha256": "c7a459b786bd182e86bed0678b937f7388ea7dfafc0358711d5bcfae8c0886a7",
+  "scope": "Frozen existing research-proxy decision inputs; source manifests retain provenance. Not proof of verified historical buyability.",
+  "version": 1
+}
