@@ -2,8 +2,8 @@
 
 Dette er en lesende oversikt. Kildenes lagrede status beviser ikke at en prosess fortsatt kjører.
 
-**Siste registrerte fase:** `episodic_manager_complete_audited`.
-**Status oppdatert i kildefilen:** 2026-10-15T14:43:28.032807+00:00.
+**Siste registrerte fase:** `explicit_planning_complete_audited`.
+**Status oppdatert i kildefilen:** 2026-10-15T17:27:45.899659+00:00.
 
 Start med [arbeidsflyten](WORKFLOW.md), [neste steg](NEXT.md) og [prosjektregisteret](PROJECT.json).
 
@@ -40,6 +40,7 @@ Start med [arbeidsflyten](WORKFLOW.md), [neste steg](NEXT.md) og [prosjektregist
 | model-lab-v1 | [Felles rammeverk for modelltesting og simulering](../model_lab/README.md) | implemented_validation_only | Samme tidskontroller, prognosecache, regelmotor og resultatkort. 40 tester bestått; små funksjonsprøver er ikke nye modellvalgsresultater. |
 | manager-learning-idea | [Lære en faktisk FPL-manager og senere optimere vinnsannsynlighet](../overview/MANAGER_LEARNING.md) | bounded_episodic_manager_evaluated | Episodisk manager ga -243.0 netto poeng mot benchmark, -290.0 mot chip-policyen og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkravet ikke bestått; dagens benchmark beholdes. Alle beslutningstyper inngår innen et avgrenset forslagssett. Vinnermål krever fortsatt konkurrentmodell. |
 | season-manager-20261015-v1 | [Sesonglange belønninger kan forbedre komplette managerbeslutninger utover både lært chipreserve og samme forslag uten læring.](../experiments/2f2f0dce668f3f5448feeff95759032cd9531d23080fc81c327e18e47fbe1ff8.proposal.json) | completed | Episodisk manager ga -243.0 netto poeng mot benchmark, -290.0 mot chip-policyen og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkravet ikke bestått; dagens benchmark beholdes. |
+| explicit-planning-20261015-v1 | [Eksplisitte chipplaner uten reservekostnader gir bedre sesongpoeng.](../experiments/59be21c1061ff1c0c87e8bcbe55f862288a40aa3c7f7c8b6ea29a16e69823551.proposal.json) | completed | H2 uten reserve: -69.3 mot samme planlegger med reserve og -55.7 mot historisk benchmark i sesongsnitt. Pilotkrav ikke bestått; benchmark beholdes. |
 | learned-manager-20261015-v1 | [A learned continuation value for TC/BB improves manager decisions with unchanged benchmark forecasts.](../experiments/d0598595605d044005046cabac9b99759c358ac68565779618b4a443e9dc2f1d.proposal.json) | completed | Lært TC/BB-reserve ga +47.0 netto poeng i snitt i de to lærte evalueringssesongene; begge sesonger positive. Pilotkravet bestått; behold benchmark inntil separat vurdering. |
 
 Tall fra ulike kontrakter kan ikke summeres eller rangeres direkte. Se [metodeoversikten](METHODS.md) for sammenligningsgrunnlag. Negative resultater er del av utgangspunktet for neste hypotese.

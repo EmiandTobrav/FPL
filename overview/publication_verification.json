@@ -31,5 +31,15 @@
     "saved_result_files": 641,
     "benchmark_promoted": false,
     "scope": "Full audit performed locally; Git checks saved bytes and policy unit tests. Correlated historical training replays are not independent seasons."
+  },
+  "explicit_planning": {
+    "full_local_audit_rounds": 228,
+    "full_seasons": 6,
+    "model_lab_tests": 52,
+    "registry_tests": 6,
+    "forecast_fits": 0,
+    "manager_fits": 0,
+    "saved_result_files": 471,
+    "benchmark_promoted": false
   }
 }

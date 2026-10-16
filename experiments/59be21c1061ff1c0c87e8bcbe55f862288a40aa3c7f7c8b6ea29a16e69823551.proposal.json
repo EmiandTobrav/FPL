@@ -1,0 +1,43 @@
+{
+  "id": "explicit-planning-20261015-v1",
+  "dataset_id": "fpl_2026_27_best_effort_v1",
+  "input_hashes": {
+    "datasets/fpl_2026_27_best_effort_v1/manifest.json": "3912ade5dcd9359eda1779af3f042f82bb82283a3076a5ad294a638e2f9561e2",
+    "reports/explicit_planning_2026_10_15/protocol.json": "a0a0557d429d967b5ac1da0fd876834a288882af8c1bd1bbeca76410cb24aa36"
+  },
+  "clock": "operational_proxy_v1",
+  "features": "unchanged archived benchmark forecasts",
+  "candidate_id": "joint_plan_h2_no_reserve_v1",
+  "model_parameters": {
+    "forecast_fits": 0,
+    "manager_fits": 0
+  },
+  "decision_policy": {
+    "horizon": 2,
+    "objective": "Sum of expected counted player/captain points minus four per paid transfer, undiscounted. No reserve, bench bonus, transfer friction or learned correction.",
+    "control": "joint_plan_h2_legacy_reserve_v1"
+  },
+  "benchmark_id": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "seasons": [
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "resources": {
+    "node_limit": 16,
+    "max_calls_per_decision": 40,
+    "threads": 1,
+    "maximum_full_seasons": 6,
+    "maximum_decisions": 228
+  },
+  "hypothesis": "Eksplisitte chipplaner uten reservekostnader gir bedre sesongpoeng.",
+  "change": "Joint H2 point-only planning, explicit chip inventory and FH restoration; paired legacy reserve ablation.",
+  "related_work": [
+    "season-manager-20261015-v1",
+    "learned-manager-20261015-v1"
+  ],
+  "success_criterion": "Candidate strictly beats paired reserve control and both historical references in each season; otherwise no promotion. All legality, outcome, causality and resource checks pass.",
+  "stop_rule": "Stop on changed source/runtime, solver failure, unknown selected outcome, illegal action or budget breach. No retries or tuning.",
+  "maximum_runs": 6,
+  "fingerprint": "59be21c1061ff1c0c87e8bcbe55f862288a40aa3c7f7c8b6ea29a16e69823551"
+}

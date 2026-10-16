@@ -14,20 +14,12 @@ Resultater og dokumentasjon finnes i [metodeoversikten](METHODS.md) og [arbeidss
 
 ## Første handling ved neste arbeidsøkt
 
-Det sesonglange forsøket `season-manager-20261015-v1` er fullført: fire nye treningsforløp, fire evalueringsforløp og 304 etterkontrollerte runder. Modellen velger blant komplette lovlige handlinger for alle chips, bytter/roll, startellever, benk og kaptein. Les [resultatet](../reports/season_manager_2026_10_15/RESULTATER.md), sammenligningen med samme forslag uten læring og [etterkontrollen](../reports/season_manager_2026_10_15/audit.json).
+Forsøket med eksplisitt H2-planlegging uten reservekostnader er fullført og etterkontrollert. H2 uten reserve: -69.3 mot samme planlegger med reserve og -55.7 mot historisk benchmark i sesongsnitt. Pilotkrav ikke bestått; benchmark beholdes.
 
-Episodisk manager ga -243.0 netto poeng mot benchmark, -290.0 mot chip-policyen og -297.5 mot samme forslag uten læring i sesongsnitt. Pilotkravet ikke bestått; dagens benchmark beholdes.
+Les [resultatet](../reports/explicit_planning_2026_10_15/RESULTATER.md) og [metodebegrensningene](../reports/explicit_planning_2026_10_15/README.md). Dette er en planlegger, ikke en ny trent sesongagent. Neste hypotese bør gi lengre fremtidsforløp eller validert verdi av gjenværende tilstand, med netto sesongpoeng som mål. Ikke erstatt reservekostnader med nye håndjusterte konstanter. Ingen prosess kjører videre, og ingen uendret konfigurasjon skal gjentas.
 
-Dagens benchmark er beholdt. Det er ikke noen pågående prosess å videreføre. Ikke gjenta denne konfigurasjonen uendret eller gjør ubundet parameterjakt på de samme resultatene. En videre hypotese bør begrunnes i feilene i handlingsrangeringen, hvor få uavhengige sesonger som finnes og hvordan sesonglange belønninger kan anslås med mindre støy. Evalueringskontrakten må fryses før den nye prøven.
+Det forrige sesonglange læringsforsøket er bevart med sitt negative resultat. Første TC/BB-pilot er bevart med +53 og +41 mot benchmark. Alle tre metodene har egne kontrakter og resultater i [metodeoversikten](METHODS.md).
 
-Den første TC/BB-piloten ga +53 og +41 poeng, +47 i snitt mot benchmark. Den er en egen metode med eget resultat og skal fortsatt være synlig som sammenligningsgrunnlag. Den eldre H8-kjøringen stoppet med feil 14. oktober, dokumentert i sin hendelseslogg; ingen automatisk gjenstart er godkjent gjennom disse nye, separate forsøkene.
+## Nye forsøk
 
-## Når et nytt forsøk er berettiget
-
-Velg én mekanisme fra dokumenterte svakheter i eksisterende logger. Forklar hva som endres og hvilket tidligere negativt funn hypotesen tar hensyn til. Behold de øvrige forholdene så langt forsøksdesignet tillater det. Bruk [arbeidsflyten](WORKFLOW.md) og registrer kontrakten før kjøring.
-
-Undersøk ny informasjon eller en ny mekanisme fremfor å variere navn, vekter og terskler på allerede undersøkte resultater. En ny dataversjon eller policy trenger en tilpasset benchmarkkjøring, og allerede inspiserte sesonger skal fortsatt omtales som utviklings-/rapporteringsdata.
-
-## Fast avslutning av en arbeidsøkt
-
-Noter forsøks-ID, faktisk status, resultat eller årsak til at det står stille, filene som dokumenterer dette, og én konkret neste handling. Registrer også feil og avviste hypoteser. Oppdater statusoversikten; ikke kopier hele data- eller kodegrunnlaget til enda en arbeidsmappe.
+Velg én dokumentert mekanisme. Frys input, metode, kontroll, suksesskrav og ressursgrenser før kjøring. Bruk [arbeidsflyten](WORKFLOW.md) og registeret for å unngå dobbeltarbeid. Oppdater forsøksresultat og status også ved negative funn.

@@ -45,13 +45,13 @@
     "previously_inspected_reporting_season": "2025-26",
     "forecast_evaluation": "reports/walk_forward_2026_10_13/RESULTATER.md",
     "completed_simulator_report": "reports/fpl_simulator_2026_10_13/final_report/RESULTATER.txt",
-    "latest_research_root": "reports/season_manager_2026_10_15",
-    "status_source": "reports/season_manager_2026_10_15/orchestration_state.json",
-    "observed_phase": "episodic_manager_complete_audited",
+    "latest_research_root": "reports/explicit_planning_2026_10_15",
+    "status_source": "reports/explicit_planning_2026_10_15/orchestration_state.json",
+    "observed_phase": "explicit_planning_complete_audited",
     "status_is_live_process_verification": false,
-    "latest_experiment_id": "season-manager-20261015-v1",
-    "previous_completed_result": "reports/learned_manager_2026_10_15/RESULTATER.md",
-    "latest_result": "reports/season_manager_2026_10_15/RESULTATER.md"
+    "latest_experiment_id": "explicit-planning-20261015-v1",
+    "previous_completed_result": "reports/season_manager_2026_10_15/RESULTATER.md",
+    "latest_result": "reports/explicit_planning_2026_10_15/RESULTATER.md"
   },
   "navigation": {
     "start": "README.md",
@@ -88,13 +88,22 @@
     "output_root": "lab_results",
     "scientific_promotion_automatic": false,
     "manager_entrypoint": "python -m model_lab.manager_learning",
-    "manager_documentation": "reports/season_manager_2026_10_15/README.md"
+    "manager_documentation": "reports/season_manager_2026_10_15/README.md",
+    "planning_entrypoint": "python -m model_lab.planning_experiment",
+    "planning_documentation": "reports/explicit_planning_2026_10_15/README.md"
   },
   "git_publication": {
     "repository": "https://github.com/EmiandTobrav/FPL",
-    "branch": "codex/episodic-manager-policy",
+    "branch": "codex/explicit-chip-planning",
+    "base_branch": "codex/episodic-manager-policy",
+    "base_pull_request": "https://github.com/EmiandTobrav/FPL/pull/3",
     "status": "prepared_separate_research_update",
-    "new_research_branch": "codex/episodic-manager-policy",
-    "base_pull_request": "https://github.com/EmiandTobrav/FPL/pull/2"
+    "previous_publication": {
+      "repository": "https://github.com/EmiandTobrav/FPL",
+      "branch": "codex/episodic-manager-policy",
+      "status": "prepared_separate_research_update",
+      "new_research_branch": "codex/episodic-manager-policy",
+      "base_pull_request": "https://github.com/EmiandTobrav/FPL/pull/2"
+    }
   }
 }
