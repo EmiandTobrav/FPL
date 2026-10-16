@@ -1,0 +1,51 @@
+{
+  "status": "candidate_stopped_at_P1",
+  "at_utc": "2026-10-14T13:48:39.062135+00:00",
+  "candidate_id": "minutes_hurdle_history_v1",
+  "configuration_number": 6,
+  "amendment_sha256": "f20832a94eb8c114a39c18e870f4df5d406ff5203341038221cea09f57915513",
+  "execution_sha256": "f7d73f13b799dd026dacb5c89035dc2e1751044979f4a67b7f52d95502669a44",
+  "completion_sha256": "d947651a71cfb757a340843f1b1f4f8c6086bd9afa46d58c3d2fb34671b6200f",
+  "actual_audit_sha256": "2b1c12896231258520338986755883cacbd3cca2325512d51c3356e56dd65964",
+  "numeric_gate_sha256": "a179cfbd4622af71a03912579ba07b0b0c2bbe412ddfc5553a940c1246e8a1f9",
+  "actual_audit_passed": true,
+  "passed_numeric_gate": false,
+  "pairs": [
+    {
+      "season": "2022-23",
+      "F_points": 2493.0,
+      "benchmark_points": 2429.0,
+      "B_points": 2470.0,
+      "gain": 64.0,
+      "gain_vs_B": 23.0
+    },
+    {
+      "season": "2023-24",
+      "F_points": 2350.0,
+      "benchmark_points": 2413.0,
+      "B_points": 2312.0,
+      "gain": -63.0,
+      "gain_vs_B": 38.0
+    },
+    {
+      "season": "2024-25",
+      "F_points": 2366.0,
+      "benchmark_points": 2344.0,
+      "B_points": 2483.0,
+      "gain": 22.0,
+      "gain_vs_B": -117.0
+    }
+  ],
+  "mean_gain": 7.666666666666667,
+  "mean_gain_vs_parent_B": -18.666666666666668,
+  "root_rehashed_actual_audit_evidence_count": 8205,
+  "root_rehashed_numeric_gate_evidence_count": 8206,
+  "root_recomputed_pairs_from_actual_audited_sources": true,
+  "P2_runs": 0,
+  "P3_runs": 0,
+  "P4_runs": 0,
+  "upgrade_established": false,
+  "research_goal_remains_active": true,
+  "next_action": "Preserve failed classifier-history intervention; prepare one fixed BASE+A blend hypothesis without mixture search.",
+  "scope": "Retrospective reused development seasons and existing data proxies; no prospective winning or general causal claim."
+}

@@ -1,0 +1,18 @@
+{
+  "phase": "paired_policy_comparison_complete_audited",
+  "updated_at_utc": "2026-10-14T22:34:23.977730+00:00",
+  "experiment": "learned-manager-20261015-v1",
+  "completed_rounds": 228,
+  "completed_full_seasons": 6,
+  "forecast_parity_origins": 114,
+  "audit_status": "pass",
+  "audit_sha256": "fd98924f1480a909a32119801b35f18fa9df2339f4b2568f62c9a0193ddbabe4",
+  "result_sha256": "8de7e8910e060d859541f01473a3f656ed4188d54e6955055a6ebe79776df8a6",
+  "pilot_success": true,
+  "decision": "promote_to_review",
+  "benchmark_changed": false,
+  "next_actions": [
+    "Read RESULTATER.md and audit.json; do not rerun this unchanged candidate.",
+    "Keep current benchmark. Any further policy variant needs a separate registered hypothesis and evaluation contract."
+  ]
+}

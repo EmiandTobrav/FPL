@@ -1,0 +1,6 @@
+{
+  "automatic_retry": false,
+  "error": "unsupported operand type(s) for -: 'float' and 'list'",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/emil/.codex/.chatgpt-projects/g-p-6ac36cd84d88819194c8f3d5ce43b378/reports/learned_manager_2026_10_15/experiment.py\", line 201, in <module>\n    freeze() if args.command == 'freeze' else run()\n                                              ^^^^^\n  File \"/Users/emil/.codex/.chatgpt-projects/g-p-6ac36cd84d88819194c8f3d5ce43b378/reports/learned_manager_2026_10_15/experiment.py\", line 189, in run\n    'seconds': time.monotonic() - start, 'decision_process_cpu_seconds': time.process_time() - cpu,\n               ~~~~~~~~~~~~~~~~~^~~~~~~\nTypeError: unsupported operand type(s) for -: 'float' and 'list'\n",
+  "type": "TypeError"
+}

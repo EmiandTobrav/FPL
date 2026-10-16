@@ -1,0 +1,12 @@
+{
+  "version": "fpl_model_preparation_v1",
+  "root": "datasets/fpl_model_preparation_v1",
+  "default_clock": "operational_proxy_v1",
+  "baseline_feature_set": "baseline",
+  "extended_feature_set": "extended",
+  "completed_steps": [
+    1,
+    2
+  ],
+  "model_training_started": false
+}

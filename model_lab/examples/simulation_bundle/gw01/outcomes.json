@@ -1,0 +1,2634 @@
+{
+  "101148": {
+    "active": false,
+    "points": 0.0
+  },
+  "101184": {
+    "active": false,
+    "points": 0.0
+  },
+  "101188": {
+    "active": true,
+    "points": -1.0
+  },
+  "101582": {
+    "active": false,
+    "points": 0.0
+  },
+  "101982": {
+    "active": true,
+    "points": 6.0
+  },
+  "102057": {
+    "active": true,
+    "points": 1.0
+  },
+  "102549": {
+    "active": false,
+    "points": 0.0
+  },
+  "103025": {
+    "active": false,
+    "points": 0.0
+  },
+  "103192": {
+    "active": true,
+    "points": 4.0
+  },
+  "103914": {
+    "active": false,
+    "points": 0.0
+  },
+  "103955": {
+    "active": true,
+    "points": 2.0
+  },
+  "104047": {
+    "active": true,
+    "points": 2.0
+  },
+  "104542": {
+    "active": false,
+    "points": 0.0
+  },
+  "106468": {
+    "active": false,
+    "points": 0.0
+  },
+  "106611": {
+    "active": true,
+    "points": 2.0
+  },
+  "106618": {
+    "active": false,
+    "points": 0.0
+  },
+  "106760": {
+    "active": true,
+    "points": 7.0
+  },
+  "108411": {
+    "active": false,
+    "points": 0.0
+  },
+  "108413": {
+    "active": false,
+    "points": 0.0
+  },
+  "108416": {
+    "active": true,
+    "points": 4.0
+  },
+  "108796": {
+    "active": true,
+    "points": 2.0
+  },
+  "108823": {
+    "active": false,
+    "points": 0.0
+  },
+  "109345": {
+    "active": true,
+    "points": 11.0
+  },
+  "109434": {
+    "active": false,
+    "points": 0.0
+  },
+  "109528": {
+    "active": false,
+    "points": 0.0
+  },
+  "109533": {
+    "active": true,
+    "points": 1.0
+  },
+  "109646": {
+    "active": false,
+    "points": 0.0
+  },
+  "109745": {
+    "active": false,
+    "points": 0.0
+  },
+  "110504": {
+    "active": false,
+    "points": 0.0
+  },
+  "110735": {
+    "active": false,
+    "points": 0.0
+  },
+  "111234": {
+    "active": true,
+    "points": 2.0
+  },
+  "111317": {
+    "active": true,
+    "points": 2.0
+  },
+  "111478": {
+    "active": true,
+    "points": 1.0
+  },
+  "111773": {
+    "active": false,
+    "points": 0.0
+  },
+  "111782": {
+    "active": false,
+    "points": 0.0
+  },
+  "113534": {
+    "active": false,
+    "points": 0.0
+  },
+  "114128": {
+    "active": false,
+    "points": 0.0
+  },
+  "114241": {
+    "active": false,
+    "points": 0.0
+  },
+  "114243": {
+    "active": true,
+    "points": 4.0
+  },
+  "114283": {
+    "active": false,
+    "points": 0.0
+  },
+  "115382": {
+    "active": true,
+    "points": 2.0
+  },
+  "115556": {
+    "active": false,
+    "points": 0.0
+  },
+  "115918": {
+    "active": false,
+    "points": 0.0
+  },
+  "116216": {
+    "active": true,
+    "points": 1.0
+  },
+  "116404": {
+    "active": false,
+    "points": 0.0
+  },
+  "116535": {
+    "active": true,
+    "points": 3.0
+  },
+  "116643": {
+    "active": false,
+    "points": 0.0
+  },
+  "118335": {
+    "active": false,
+    "points": 0.0
+  },
+  "118342": {
+    "active": true,
+    "points": 2.0
+  },
+  "118748": {
+    "active": true,
+    "points": 5.0
+  },
+  "119471": {
+    "active": true,
+    "points": 2.0
+  },
+  "11948": {
+    "active": false,
+    "points": 0.0
+  },
+  "120202": {
+    "active": false,
+    "points": 0.0
+  },
+  "120250": {
+    "active": false,
+    "points": 0.0
+  },
+  "120721": {
+    "active": false,
+    "points": 0.0
+  },
+  "121145": {
+    "active": false,
+    "points": 0.0
+  },
+  "121160": {
+    "active": true,
+    "points": 6.0
+  },
+  "121599": {
+    "active": true,
+    "points": 2.0
+  },
+  "122074": {
+    "active": false,
+    "points": 0.0
+  },
+  "122775": {
+    "active": false,
+    "points": 0.0
+  },
+  "122798": {
+    "active": true,
+    "points": 4.0
+  },
+  "122806": {
+    "active": true,
+    "points": 2.0
+  },
+  "123354": {
+    "active": false,
+    "points": 0.0
+  },
+  "124183": {
+    "active": false,
+    "points": 0.0
+  },
+  "126184": {
+    "active": true,
+    "points": 7.0
+  },
+  "128295": {
+    "active": true,
+    "points": 4.0
+  },
+  "128309": {
+    "active": false,
+    "points": 0.0
+  },
+  "128340": {
+    "active": true,
+    "points": 1.0
+  },
+  "128389": {
+    "active": true,
+    "points": 1.0
+  },
+  "132015": {
+    "active": false,
+    "points": 0.0
+  },
+  "133085": {
+    "active": false,
+    "points": 0.0
+  },
+  "133845": {
+    "active": false,
+    "points": 0.0
+  },
+  "138001": {
+    "active": false,
+    "points": 0.0
+  },
+  "140200": {
+    "active": false,
+    "points": 0.0
+  },
+  "141746": {
+    "active": true,
+    "points": 5.0
+  },
+  "144485": {
+    "active": false,
+    "points": 0.0
+  },
+  "146941": {
+    "active": true,
+    "points": 1.0
+  },
+  "148225": {
+    "active": false,
+    "points": 0.0
+  },
+  "149065": {
+    "active": true,
+    "points": 2.0
+  },
+  "149484": {
+    "active": true,
+    "points": 0.0
+  },
+  "149519": {
+    "active": true,
+    "points": 1.0
+  },
+  "151086": {
+    "active": true,
+    "points": 3.0
+  },
+  "15157": {
+    "active": true,
+    "points": 3.0
+  },
+  "151589": {
+    "active": false,
+    "points": 0.0
+  },
+  "152551": {
+    "active": true,
+    "points": 3.0
+  },
+  "152590": {
+    "active": false,
+    "points": 0.0
+  },
+  "153127": {
+    "active": false,
+    "points": 0.0
+  },
+  "153133": {
+    "active": true,
+    "points": 2.0
+  },
+  "153256": {
+    "active": false,
+    "points": 0.0
+  },
+  "153366": {
+    "active": true,
+    "points": 3.0
+  },
+  "153682": {
+    "active": true,
+    "points": 3.0
+  },
+  "154296": {
+    "active": false,
+    "points": 0.0
+  },
+  "154561": {
+    "active": false,
+    "points": 0.0
+  },
+  "154566": {
+    "active": true,
+    "points": 8.0
+  },
+  "155197": {
+    "active": true,
+    "points": 4.0
+  },
+  "155405": {
+    "active": false,
+    "points": 0.0
+  },
+  "155408": {
+    "active": false,
+    "points": 0.0
+  },
+  "155529": {
+    "active": false,
+    "points": 0.0
+  },
+  "156074": {
+    "active": false,
+    "points": 0.0
+  },
+  "156658": {
+    "active": false,
+    "points": 0.0
+  },
+  "156685": {
+    "active": true,
+    "points": 4.0
+  },
+  "156687": {
+    "active": false,
+    "points": 0.0
+  },
+  "156689": {
+    "active": true,
+    "points": 4.0
+  },
+  "156700": {
+    "active": true,
+    "points": 6.0
+  },
+  "158499": {
+    "active": true,
+    "points": 4.0
+  },
+  "159506": {
+    "active": true,
+    "points": 0.0
+  },
+  "160987": {
+    "active": false,
+    "points": 0.0
+  },
+  "164484": {
+    "active": false,
+    "points": 0.0
+  },
+  "164555": {
+    "active": true,
+    "points": 2.0
+  },
+  "165152": {
+    "active": false,
+    "points": 0.0
+  },
+  "165183": {
+    "active": true,
+    "points": 2.0
+  },
+  "165659": {
+    "active": true,
+    "points": 0.0
+  },
+  "165809": {
+    "active": true,
+    "points": 3.0
+  },
+  "166324": {
+    "active": false,
+    "points": 0.0
+  },
+  "166989": {
+    "active": true,
+    "points": 1.0
+  },
+  "167074": {
+    "active": true,
+    "points": 5.0
+  },
+  "167199": {
+    "active": true,
+    "points": 4.0
+  },
+  "167878": {
+    "active": true,
+    "points": 2.0
+  },
+  "168035": {
+    "active": false,
+    "points": 0.0
+  },
+  "168090": {
+    "active": true,
+    "points": 3.0
+  },
+  "168281": {
+    "active": true,
+    "points": 1.0
+  },
+  "168547": {
+    "active": false,
+    "points": 0.0
+  },
+  "168991": {
+    "active": true,
+    "points": 5.0
+  },
+  "169187": {
+    "active": true,
+    "points": 1.0
+  },
+  "169359": {
+    "active": false,
+    "points": 0.0
+  },
+  "169432": {
+    "active": false,
+    "points": 0.0
+  },
+  "169528": {
+    "active": true,
+    "points": 7.0
+  },
+  "169593": {
+    "active": false,
+    "points": 0.0
+  },
+  "170137": {
+    "active": false,
+    "points": 0.0
+  },
+  "171287": {
+    "active": false,
+    "points": 0.0
+  },
+  "171314": {
+    "active": false,
+    "points": 0.0
+  },
+  "172567": {
+    "active": true,
+    "points": 2.0
+  },
+  "172632": {
+    "active": false,
+    "points": 0.0
+  },
+  "172649": {
+    "active": false,
+    "points": 0.0
+  },
+  "172780": {
+    "active": true,
+    "points": 9.0
+  },
+  "172782": {
+    "active": true,
+    "points": 1.0
+  },
+  "172841": {
+    "active": true,
+    "points": 2.0
+  },
+  "172850": {
+    "active": true,
+    "points": 8.0
+  },
+  "173399": {
+    "active": false,
+    "points": 0.0
+  },
+  "173904": {
+    "active": true,
+    "points": 0.0
+  },
+  "173954": {
+    "active": false,
+    "points": 0.0
+  },
+  "174310": {
+    "active": true,
+    "points": 2.0
+  },
+  "174595": {
+    "active": false,
+    "points": 0.0
+  },
+  "174874": {
+    "active": true,
+    "points": 10.0
+  },
+  "174932": {
+    "active": false,
+    "points": 0.0
+  },
+  "175941": {
+    "active": false,
+    "points": 0.0
+  },
+  "17601": {
+    "active": false,
+    "points": 0.0
+  },
+  "176297": {
+    "active": true,
+    "points": 3.0
+  },
+  "176413": {
+    "active": false,
+    "points": 0.0
+  },
+  "17761": {
+    "active": true,
+    "points": 2.0
+  },
+  "177815": {
+    "active": false,
+    "points": 0.0
+  },
+  "178186": {
+    "active": true,
+    "points": 9.0
+  },
+  "178301": {
+    "active": true,
+    "points": 5.0
+  },
+  "179018": {
+    "active": true,
+    "points": 2.0
+  },
+  "179268": {
+    "active": false,
+    "points": 0.0
+  },
+  "179458": {
+    "active": true,
+    "points": 1.0
+  },
+  "179519": {
+    "active": true,
+    "points": 1.0
+  },
+  "180135": {
+    "active": true,
+    "points": 1.0
+  },
+  "180151": {
+    "active": false,
+    "points": 0.0
+  },
+  "180184": {
+    "active": false,
+    "points": 0.0
+  },
+  "180736": {
+    "active": false,
+    "points": 0.0
+  },
+  "180974": {
+    "active": true,
+    "points": 2.0
+  },
+  "181284": {
+    "active": false,
+    "points": 0.0
+  },
+  "183656": {
+    "active": false,
+    "points": 0.0
+  },
+  "183751": {
+    "active": true,
+    "points": 1.0
+  },
+  "184029": {
+    "active": true,
+    "points": 2.0
+  },
+  "184254": {
+    "active": true,
+    "points": 1.0
+  },
+  "184341": {
+    "active": true,
+    "points": 3.0
+  },
+  "184349": {
+    "active": false,
+    "points": 0.0
+  },
+  "184667": {
+    "active": true,
+    "points": 1.0
+  },
+  "184704": {
+    "active": true,
+    "points": 2.0
+  },
+  "184754": {
+    "active": true,
+    "points": 1.0
+  },
+  "185253": {
+    "active": false,
+    "points": 0.0
+  },
+  "18892": {
+    "active": true,
+    "points": 2.0
+  },
+  "189776": {
+    "active": false,
+    "points": 0.0
+  },
+  "191866": {
+    "active": true,
+    "points": 1.0
+  },
+  "192290": {
+    "active": true,
+    "points": 1.0
+  },
+  "192895": {
+    "active": false,
+    "points": 0.0
+  },
+  "193195": {
+    "active": false,
+    "points": 0.0
+  },
+  "194010": {
+    "active": true,
+    "points": 4.0
+  },
+  "194164": {
+    "active": false,
+    "points": 0.0
+  },
+  "194634": {
+    "active": true,
+    "points": 1.0
+  },
+  "194799": {
+    "active": false,
+    "points": 0.0
+  },
+  "195473": {
+    "active": false,
+    "points": 0.0
+  },
+  "195546": {
+    "active": false,
+    "points": 0.0
+  },
+  "195735": {
+    "active": false,
+    "points": 0.0
+  },
+  "195851": {
+    "active": true,
+    "points": 1.0
+  },
+  "195899": {
+    "active": false,
+    "points": 0.0
+  },
+  "197365": {
+    "active": false,
+    "points": 0.0
+  },
+  "197464": {
+    "active": false,
+    "points": 0.0
+  },
+  "198826": {
+    "active": false,
+    "points": 0.0
+  },
+  "198869": {
+    "active": true,
+    "points": 1.0
+  },
+  "199056": {
+    "active": false,
+    "points": 0.0
+  },
+  "199170": {
+    "active": false,
+    "points": 0.0
+  },
+  "199249": {
+    "active": false,
+    "points": 0.0
+  },
+  "199584": {
+    "active": false,
+    "points": 0.0
+  },
+  "199598": {
+    "active": false,
+    "points": 0.0
+  },
+  "199670": {
+    "active": true,
+    "points": 9.0
+  },
+  "199796": {
+    "active": true,
+    "points": -1.0
+  },
+  "199798": {
+    "active": true,
+    "points": 0.0
+  },
+  "200089": {
+    "active": false,
+    "points": 0.0
+  },
+  "200402": {
+    "active": true,
+    "points": 4.0
+  },
+  "200600": {
+    "active": false,
+    "points": 0.0
+  },
+  "200641": {
+    "active": false,
+    "points": 0.0
+  },
+  "20066": {
+    "active": false,
+    "points": 0.0
+  },
+  "200720": {
+    "active": false,
+    "points": 0.0
+  },
+  "200826": {
+    "active": false,
+    "points": 0.0
+  },
+  "201057": {
+    "active": true,
+    "points": 1.0
+  },
+  "201410": {
+    "active": false,
+    "points": 0.0
+  },
+  "201440": {
+    "active": false,
+    "points": 0.0
+  },
+  "201658": {
+    "active": false,
+    "points": 0.0
+  },
+  "201666": {
+    "active": true,
+    "points": 11.0
+  },
+  "202641": {
+    "active": true,
+    "points": 9.0
+  },
+  "202993": {
+    "active": false,
+    "points": 0.0
+  },
+  "204214": {
+    "active": true,
+    "points": 6.0
+  },
+  "204480": {
+    "active": true,
+    "points": 2.0
+  },
+  "204580": {
+    "active": true,
+    "points": 2.0
+  },
+  "204676": {
+    "active": false,
+    "points": 0.0
+  },
+  "204716": {
+    "active": true,
+    "points": 4.0
+  },
+  "204727": {
+    "active": false,
+    "points": 0.0
+  },
+  "204822": {
+    "active": false,
+    "points": 0.0
+  },
+  "204968": {
+    "active": true,
+    "points": 2.0
+  },
+  "205533": {
+    "active": true,
+    "points": 8.0
+  },
+  "205651": {
+    "active": false,
+    "points": 0.0
+  },
+  "206325": {
+    "active": false,
+    "points": 0.0
+  },
+  "206915": {
+    "active": true,
+    "points": 1.0
+  },
+  "207189": {
+    "active": true,
+    "points": 2.0
+  },
+  "207283": {
+    "active": true,
+    "points": 4.0
+  },
+  "207722": {
+    "active": false,
+    "points": 0.0
+  },
+  "208706": {
+    "active": true,
+    "points": 1.0
+  },
+  "208904": {
+    "active": true,
+    "points": 0.0
+  },
+  "208912": {
+    "active": true,
+    "points": 1.0
+  },
+  "209035": {
+    "active": false,
+    "points": 0.0
+  },
+  "209036": {
+    "active": true,
+    "points": 6.0
+  },
+  "209042": {
+    "active": true,
+    "points": 1.0
+  },
+  "209046": {
+    "active": false,
+    "points": 0.0
+  },
+  "209243": {
+    "active": true,
+    "points": 1.0
+  },
+  "209244": {
+    "active": true,
+    "points": 3.0
+  },
+  "209288": {
+    "active": false,
+    "points": 0.0
+  },
+  "209289": {
+    "active": false,
+    "points": 0.0
+  },
+  "210156": {
+    "active": true,
+    "points": 5.0
+  },
+  "210494": {
+    "active": true,
+    "points": 2.0
+  },
+  "211975": {
+    "active": true,
+    "points": 6.0
+  },
+  "21205": {
+    "active": false,
+    "points": 0.0
+  },
+  "212314": {
+    "active": true,
+    "points": 3.0
+  },
+  "212319": {
+    "active": true,
+    "points": 2.0
+  },
+  "213198": {
+    "active": false,
+    "points": 0.0
+  },
+  "213345": {
+    "active": false,
+    "points": 0.0
+  },
+  "213687": {
+    "active": false,
+    "points": 0.0
+  },
+  "213999": {
+    "active": false,
+    "points": 0.0
+  },
+  "214048": {
+    "active": true,
+    "points": 4.0
+  },
+  "214225": {
+    "active": false,
+    "points": 0.0
+  },
+  "214285": {
+    "active": false,
+    "points": 0.0
+  },
+  "214572": {
+    "active": false,
+    "points": 0.0
+  },
+  "214590": {
+    "active": true,
+    "points": 12.0
+  },
+  "215059": {
+    "active": true,
+    "points": 2.0
+  },
+  "215136": {
+    "active": true,
+    "points": 1.0
+  },
+  "215379": {
+    "active": true,
+    "points": 1.0
+  },
+  "215439": {
+    "active": true,
+    "points": 7.0
+  },
+  "215531": {
+    "active": false,
+    "points": 0.0
+  },
+  "215711": {
+    "active": true,
+    "points": 1.0
+  },
+  "216051": {
+    "active": false,
+    "points": 0.0
+  },
+  "216208": {
+    "active": false,
+    "points": 0.0
+  },
+  "216616": {
+    "active": true,
+    "points": 1.0
+  },
+  "216646": {
+    "active": true,
+    "points": 9.0
+  },
+  "217331": {
+    "active": false,
+    "points": 0.0
+  },
+  "217593": {
+    "active": true,
+    "points": 2.0
+  },
+  "218997": {
+    "active": false,
+    "points": 0.0
+  },
+  "219168": {
+    "active": true,
+    "points": 13.0
+  },
+  "219847": {
+    "active": true,
+    "points": 2.0
+  },
+  "219924": {
+    "active": true,
+    "points": 10.0
+  },
+  "220037": {
+    "active": false,
+    "points": 0.0
+  },
+  "220237": {
+    "active": true,
+    "points": 4.0
+  },
+  "220307": {
+    "active": true,
+    "points": 1.0
+  },
+  "220362": {
+    "active": true,
+    "points": 10.0
+  },
+  "220394": {
+    "active": false,
+    "points": 0.0
+  },
+  "220566": {
+    "active": true,
+    "points": 15.0
+  },
+  "220585": {
+    "active": false,
+    "points": 0.0
+  },
+  "220598": {
+    "active": false,
+    "points": 0.0
+  },
+  "221239": {
+    "active": false,
+    "points": 0.0
+  },
+  "221403": {
+    "active": false,
+    "points": 0.0
+  },
+  "221466": {
+    "active": true,
+    "points": 1.0
+  },
+  "221632": {
+    "active": true,
+    "points": 7.0
+  },
+  "221820": {
+    "active": true,
+    "points": 0.0
+  },
+  "222017": {
+    "active": false,
+    "points": 0.0
+  },
+  "222018": {
+    "active": false,
+    "points": 0.0
+  },
+  "222531": {
+    "active": true,
+    "points": 2.0
+  },
+  "222627": {
+    "active": false,
+    "points": 0.0
+  },
+  "222677": {
+    "active": true,
+    "points": 2.0
+  },
+  "222683": {
+    "active": true,
+    "points": 1.0
+  },
+  "222690": {
+    "active": false,
+    "points": 0.0
+  },
+  "223094": {
+    "active": true,
+    "points": 13.0
+  },
+  "223333": {
+    "active": false,
+    "points": 0.0
+  },
+  "223340": {
+    "active": true,
+    "points": 10.0
+  },
+  "223434": {
+    "active": false,
+    "points": 0.0
+  },
+  "223723": {
+    "active": true,
+    "points": 1.0
+  },
+  "223911": {
+    "active": true,
+    "points": 0.0
+  },
+  "224024": {
+    "active": true,
+    "points": 3.0
+  },
+  "224068": {
+    "active": true,
+    "points": 2.0
+  },
+  "224967": {
+    "active": false,
+    "points": 0.0
+  },
+  "225321": {
+    "active": true,
+    "points": 2.0
+  },
+  "225796": {
+    "active": true,
+    "points": 2.0
+  },
+  "226182": {
+    "active": false,
+    "points": 0.0
+  },
+  "226473": {
+    "active": false,
+    "points": 0.0
+  },
+  "226597": {
+    "active": true,
+    "points": 1.0
+  },
+  "226944": {
+    "active": true,
+    "points": 2.0
+  },
+  "226956": {
+    "active": true,
+    "points": 1.0
+  },
+  "227127": {
+    "active": true,
+    "points": 4.0
+  },
+  "228044": {
+    "active": false,
+    "points": 0.0
+  },
+  "229164": {
+    "active": true,
+    "points": 1.0
+  },
+  "229600": {
+    "active": false,
+    "points": 0.0
+  },
+  "230046": {
+    "active": true,
+    "points": 1.0
+  },
+  "230251": {
+    "active": false,
+    "points": 0.0
+  },
+  "231065": {
+    "active": true,
+    "points": 3.0
+  },
+  "231372": {
+    "active": false,
+    "points": 0.0
+  },
+  "231747": {
+    "active": false,
+    "points": 0.0
+  },
+  "232223": {
+    "active": false,
+    "points": 0.0
+  },
+  "232351": {
+    "active": true,
+    "points": 0.0
+  },
+  "232413": {
+    "active": true,
+    "points": 3.0
+  },
+  "232477": {
+    "active": false,
+    "points": 0.0
+  },
+  "232653": {
+    "active": false,
+    "points": 0.0
+  },
+  "232787": {
+    "active": true,
+    "points": 4.0
+  },
+  "232792": {
+    "active": false,
+    "points": 0.0
+  },
+  "232826": {
+    "active": true,
+    "points": 4.0
+  },
+  "232859": {
+    "active": false,
+    "points": 0.0
+  },
+  "232892": {
+    "active": false,
+    "points": 0.0
+  },
+  "232917": {
+    "active": false,
+    "points": 0.0
+  },
+  "232928": {
+    "active": true,
+    "points": 2.0
+  },
+  "232937": {
+    "active": false,
+    "points": 0.0
+  },
+  "232977": {
+    "active": false,
+    "points": 0.0
+  },
+  "232980": {
+    "active": true,
+    "points": 2.0
+  },
+  "233425": {
+    "active": false,
+    "points": 0.0
+  },
+  "233821": {
+    "active": true,
+    "points": 3.0
+  },
+  "235382": {
+    "active": false,
+    "points": 0.0
+  },
+  "235448": {
+    "active": false,
+    "points": 0.0
+  },
+  "235530": {
+    "active": false,
+    "points": 0.0
+  },
+  "235674": {
+    "active": false,
+    "points": 0.0
+  },
+  "240299": {
+    "active": false,
+    "points": 0.0
+  },
+  "240514": {
+    "active": false,
+    "points": 0.0
+  },
+  "241157": {
+    "active": true,
+    "points": 8.0
+  },
+  "241231": {
+    "active": true,
+    "points": 3.0
+  },
+  "242453": {
+    "active": true,
+    "points": 4.0
+  },
+  "242500": {
+    "active": false,
+    "points": 0.0
+  },
+  "242880": {
+    "active": false,
+    "points": 0.0
+  },
+  "242885": {
+    "active": false,
+    "points": 0.0
+  },
+  "242898": {
+    "active": true,
+    "points": 2.0
+  },
+  "243016": {
+    "active": true,
+    "points": 3.0
+  },
+  "243298": {
+    "active": true,
+    "points": 2.0
+  },
+  "243345": {
+    "active": false,
+    "points": 0.0
+  },
+  "243505": {
+    "active": false,
+    "points": 0.0
+  },
+  "243532": {
+    "active": false,
+    "points": 0.0
+  },
+  "243557": {
+    "active": true,
+    "points": 8.0
+  },
+  "243568": {
+    "active": true,
+    "points": 1.0
+  },
+  "243571": {
+    "active": true,
+    "points": 2.0
+  },
+  "244042": {
+    "active": false,
+    "points": 0.0
+  },
+  "244085": {
+    "active": false,
+    "points": 0.0
+  },
+  "244262": {
+    "active": true,
+    "points": 0.0
+  },
+  "244723": {
+    "active": true,
+    "points": 7.0
+  },
+  "244731": {
+    "active": true,
+    "points": 9.0
+  },
+  "244851": {
+    "active": true,
+    "points": 1.0
+  },
+  "244856": {
+    "active": false,
+    "points": 0.0
+  },
+  "244930": {
+    "active": false,
+    "points": 0.0
+  },
+  "244954": {
+    "active": true,
+    "points": 0.0
+  },
+  "245824": {
+    "active": false,
+    "points": 0.0
+  },
+  "245830": {
+    "active": false,
+    "points": 0.0
+  },
+  "245923": {
+    "active": false,
+    "points": 0.0
+  },
+  "247632": {
+    "active": true,
+    "points": 1.0
+  },
+  "248164": {
+    "active": false,
+    "points": 0.0
+  },
+  "248857": {
+    "active": false,
+    "points": 0.0
+  },
+  "249231": {
+    "active": false,
+    "points": 0.0
+  },
+  "250735": {
+    "active": false,
+    "points": 0.0
+  },
+  "32259": {
+    "active": false,
+    "points": 0.0
+  },
+  "37096": {
+    "active": false,
+    "points": 0.0
+  },
+  "37915": {
+    "active": false,
+    "points": 0.0
+  },
+  "39155": {
+    "active": false,
+    "points": 0.0
+  },
+  "40145": {
+    "active": false,
+    "points": 0.0
+  },
+  "40383": {
+    "active": false,
+    "points": 0.0
+  },
+  "40386": {
+    "active": true,
+    "points": 2.0
+  },
+  "40669": {
+    "active": false,
+    "points": 0.0
+  },
+  "40836": {
+    "active": false,
+    "points": 0.0
+  },
+  "41328": {
+    "active": false,
+    "points": 0.0
+  },
+  "422303": {
+    "active": false,
+    "points": 0.0
+  },
+  "424001": {
+    "active": true,
+    "points": 1.0
+  },
+  "424044": {
+    "active": false,
+    "points": 0.0
+  },
+  "424876": {
+    "active": true,
+    "points": 2.0
+  },
+  "427623": {
+    "active": false,
+    "points": 0.0
+  },
+  "428580": {
+    "active": false,
+    "points": 0.0
+  },
+  "428610": {
+    "active": false,
+    "points": 0.0
+  },
+  "429414": {
+    "active": true,
+    "points": 1.0
+  },
+  "430871": {
+    "active": true,
+    "points": 2.0
+  },
+  "431960": {
+    "active": false,
+    "points": 0.0
+  },
+  "432160": {
+    "active": true,
+    "points": 1.0
+  },
+  "432422": {
+    "active": true,
+    "points": 6.0
+  },
+  "432711": {
+    "active": false,
+    "points": 0.0
+  },
+  "432714": {
+    "active": true,
+    "points": 1.0
+  },
+  "432720": {
+    "active": true,
+    "points": 2.0
+  },
+  "432830": {
+    "active": true,
+    "points": 3.0
+  },
+  "432931": {
+    "active": false,
+    "points": 0.0
+  },
+  "432990": {
+    "active": true,
+    "points": 1.0
+  },
+  "433154": {
+    "active": false,
+    "points": 0.0
+  },
+  "433979": {
+    "active": false,
+    "points": 0.0
+  },
+  "434662": {
+    "active": false,
+    "points": 0.0
+  },
+  "435973": {
+    "active": true,
+    "points": 2.0
+  },
+  "436234": {
+    "active": false,
+    "points": 0.0
+  },
+  "437468": {
+    "active": false,
+    "points": 0.0
+  },
+  "437476": {
+    "active": false,
+    "points": 0.0
+  },
+  "437626": {
+    "active": false,
+    "points": 0.0
+  },
+  "437730": {
+    "active": true,
+    "points": 4.0
+  },
+  "437742": {
+    "active": false,
+    "points": 0.0
+  },
+  "437753": {
+    "active": false,
+    "points": 0.0
+  },
+  "438098": {
+    "active": false,
+    "points": 0.0
+  },
+  "438464": {
+    "active": true,
+    "points": 3.0
+  },
+  "440089": {
+    "active": true,
+    "points": 1.0
+  },
+  "440323": {
+    "active": false,
+    "points": 0.0
+  },
+  "440854": {
+    "active": false,
+    "points": 0.0
+  },
+  "440993": {
+    "active": false,
+    "points": 0.0
+  },
+  "441024": {
+    "active": false,
+    "points": 0.0
+  },
+  "441164": {
+    "active": false,
+    "points": 0.0
+  },
+  "441191": {
+    "active": false,
+    "points": 0.0
+  },
+  "441192": {
+    "active": false,
+    "points": 0.0
+  },
+  "441271": {
+    "active": false,
+    "points": 0.0
+  },
+  "441302": {
+    "active": true,
+    "points": 1.0
+  },
+  "441428": {
+    "active": false,
+    "points": 0.0
+  },
+  "441455": {
+    "active": true,
+    "points": 1.0
+  },
+  "442229": {
+    "active": false,
+    "points": 0.0
+  },
+  "443211": {
+    "active": false,
+    "points": 0.0
+  },
+  "443661": {
+    "active": false,
+    "points": 0.0
+  },
+  "444145": {
+    "active": true,
+    "points": 6.0
+  },
+  "444180": {
+    "active": true,
+    "points": 1.0
+  },
+  "444183": {
+    "active": false,
+    "points": 0.0
+  },
+  "444463": {
+    "active": false,
+    "points": 0.0
+  },
+  "444765": {
+    "active": false,
+    "points": 0.0
+  },
+  "444884": {
+    "active": true,
+    "points": 1.0
+  },
+  "445044": {
+    "active": true,
+    "points": 2.0
+  },
+  "445122": {
+    "active": true,
+    "points": 0.0
+  },
+  "446008": {
+    "active": true,
+    "points": 7.0
+  },
+  "44683": {
+    "active": false,
+    "points": 0.0
+  },
+  "447203": {
+    "active": true,
+    "points": 1.0
+  },
+  "447879": {
+    "active": false,
+    "points": 0.0
+  },
+  "448047": {
+    "active": true,
+    "points": 1.0
+  },
+  "448089": {
+    "active": true,
+    "points": 4.0
+  },
+  "448514": {
+    "active": true,
+    "points": 1.0
+  },
+  "449434": {
+    "active": true,
+    "points": 4.0
+  },
+  "449871": {
+    "active": true,
+    "points": 2.0
+  },
+  "449988": {
+    "active": true,
+    "points": 1.0
+  },
+  "450197": {
+    "active": false,
+    "points": 0.0
+  },
+  "45034": {
+    "active": true,
+    "points": 1.0
+  },
+  "450434": {
+    "active": false,
+    "points": 0.0
+  },
+  "450535": {
+    "active": false,
+    "points": 0.0
+  },
+  "450541": {
+    "active": false,
+    "points": 0.0
+  },
+  "450542": {
+    "active": false,
+    "points": 0.0
+  },
+  "451340": {
+    "active": true,
+    "points": 5.0
+  },
+  "453537": {
+    "active": false,
+    "points": 0.0
+  },
+  "460028": {
+    "active": true,
+    "points": 2.0
+  },
+  "461102": {
+    "active": false,
+    "points": 0.0
+  },
+  "461358": {
+    "active": true,
+    "points": 5.0
+  },
+  "461382": {
+    "active": false,
+    "points": 0.0
+  },
+  "461416": {
+    "active": false,
+    "points": 0.0
+  },
+  "461421": {
+    "active": true,
+    "points": 1.0
+  },
+  "461446": {
+    "active": false,
+    "points": 0.0
+  },
+  "461567": {
+    "active": false,
+    "points": 0.0
+  },
+  "461682": {
+    "active": false,
+    "points": 0.0
+  },
+  "462424": {
+    "active": true,
+    "points": 5.0
+  },
+  "463210": {
+    "active": false,
+    "points": 0.0
+  },
+  "463748": {
+    "active": false,
+    "points": 0.0
+  },
+  "463981": {
+    "active": true,
+    "points": 1.0
+  },
+  "465351": {
+    "active": true,
+    "points": 4.0
+  },
+  "465527": {
+    "active": false,
+    "points": 0.0
+  },
+  "465920": {
+    "active": true,
+    "points": 1.0
+  },
+  "466117": {
+    "active": false,
+    "points": 0.0
+  },
+  "467169": {
+    "active": true,
+    "points": 3.0
+  },
+  "469142": {
+    "active": true,
+    "points": 4.0
+  },
+  "471798": {
+    "active": false,
+    "points": 0.0
+  },
+  "471848": {
+    "active": false,
+    "points": 0.0
+  },
+  "472464": {
+    "active": false,
+    "points": 0.0
+  },
+  "47247": {
+    "active": false,
+    "points": 0.0
+  },
+  "472713": {
+    "active": true,
+    "points": 0.0
+  },
+  "474120": {
+    "active": true,
+    "points": 1.0
+  },
+  "47431": {
+    "active": true,
+    "points": 0.0
+  },
+  "474772": {
+    "active": false,
+    "points": 0.0
+  },
+  "475168": {
+    "active": true,
+    "points": 6.0
+  },
+  "476344": {
+    "active": false,
+    "points": 0.0
+  },
+  "476369": {
+    "active": true,
+    "points": 1.0
+  },
+  "476502": {
+    "active": false,
+    "points": 0.0
+  },
+  "476938": {
+    "active": false,
+    "points": 0.0
+  },
+  "477064": {
+    "active": true,
+    "points": 6.0
+  },
+  "477424": {
+    "active": true,
+    "points": 1.0
+  },
+  "477555": {
+    "active": false,
+    "points": 0.0
+  },
+  "477580": {
+    "active": true,
+    "points": 2.0
+  },
+  "478912": {
+    "active": true,
+    "points": 1.0
+  },
+  "478969": {
+    "active": false,
+    "points": 0.0
+  },
+  "479683": {
+    "active": false,
+    "points": 0.0
+  },
+  "480455": {
+    "active": false,
+    "points": 0.0
+  },
+  "481405": {
+    "active": false,
+    "points": 0.0
+  },
+  "481624": {
+    "active": true,
+    "points": 1.0
+  },
+  "482158": {
+    "active": false,
+    "points": 0.0
+  },
+  "482442": {
+    "active": true,
+    "points": 1.0
+  },
+  "482609": {
+    "active": true,
+    "points": 1.0
+  },
+  "482769": {
+    "active": false,
+    "points": 0.0
+  },
+  "483391": {
+    "active": false,
+    "points": 0.0
+  },
+  "484658": {
+    "active": false,
+    "points": 0.0
+  },
+  "48615": {
+    "active": false,
+    "points": 0.0
+  },
+  "486672": {
+    "active": false,
+    "points": 0.0
+  },
+  "487053": {
+    "active": true,
+    "points": 1.0
+  },
+  "487117": {
+    "active": true,
+    "points": 5.0
+  },
+  "48760": {
+    "active": true,
+    "points": 1.0
+  },
+  "487702": {
+    "active": true,
+    "points": 2.0
+  },
+  "487818": {
+    "active": false,
+    "points": 0.0
+  },
+  "487828": {
+    "active": false,
+    "points": 0.0
+  },
+  "487836": {
+    "active": true,
+    "points": 1.0
+  },
+  "487837": {
+    "active": false,
+    "points": 0.0
+  },
+  "487838": {
+    "active": false,
+    "points": 0.0
+  },
+  "487968": {
+    "active": true,
+    "points": 1.0
+  },
+  "488404": {
+    "active": true,
+    "points": 1.0
+  },
+  "489639": {
+    "active": false,
+    "points": 0.0
+  },
+  "490094": {
+    "active": false,
+    "points": 0.0
+  },
+  "490145": {
+    "active": false,
+    "points": 0.0
+  },
+  "490146": {
+    "active": false,
+    "points": 0.0
+  },
+  "490180": {
+    "active": false,
+    "points": 0.0
+  },
+  "490721": {
+    "active": true,
+    "points": 1.0
+  },
+  "49083": {
+    "active": false,
+    "points": 0.0
+  },
+  "491012": {
+    "active": false,
+    "points": 0.0
+  },
+  "491279": {
+    "active": true,
+    "points": 1.0
+  },
+  "491501": {
+    "active": false,
+    "points": 0.0
+  },
+  "491970": {
+    "active": false,
+    "points": 0.0
+  },
+  "49262": {
+    "active": true,
+    "points": 2.0
+  },
+  "492831": {
+    "active": true,
+    "points": 2.0
+  },
+  "493105": {
+    "active": true,
+    "points": 3.0
+  },
+  "493250": {
+    "active": false,
+    "points": 0.0
+  },
+  "493347": {
+    "active": false,
+    "points": 0.0
+  },
+  "49413": {
+    "active": true,
+    "points": 1.0
+  },
+  "496208": {
+    "active": true,
+    "points": 1.0
+  },
+  "497894": {
+    "active": false,
+    "points": 0.0
+  },
+  "501284": {
+    "active": false,
+    "points": 0.0
+  },
+  "50175": {
+    "active": true,
+    "points": 2.0
+  },
+  "50232": {
+    "active": false,
+    "points": 0.0
+  },
+  "503139": {
+    "active": false,
+    "points": 0.0
+  },
+  "503300": {
+    "active": false,
+    "points": 0.0
+  },
+  "503714": {
+    "active": true,
+    "points": 1.0
+  },
+  "504198": {
+    "active": true,
+    "points": 0.0
+  },
+  "508395": {
+    "active": false,
+    "points": 0.0
+  },
+  "509416": {
+    "active": false,
+    "points": 0.0
+  },
+  "510362": {
+    "active": false,
+    "points": 0.0
+  },
+  "510363": {
+    "active": false,
+    "points": 0.0
+  },
+  "51090": {
+    "active": true,
+    "points": 2.0
+  },
+  "511783": {
+    "active": true,
+    "points": -2.0
+  },
+  "512462": {
+    "active": false,
+    "points": 0.0
+  },
+  "513046": {
+    "active": true,
+    "points": 2.0
+  },
+  "513418": {
+    "active": true,
+    "points": 1.0
+  },
+  "515023": {
+    "active": false,
+    "points": 0.0
+  },
+  "515501": {
+    "active": false,
+    "points": 0.0
+  },
+  "516895": {
+    "active": false,
+    "points": 0.0
+  },
+  "517052": {
+    "active": true,
+    "points": 1.0
+  },
+  "518620": {
+    "active": false,
+    "points": 0.0
+  },
+  "51927": {
+    "active": false,
+    "points": 0.0
+  },
+  "520295": {
+    "active": false,
+    "points": 0.0
+  },
+  "523700": {
+    "active": false,
+    "points": 0.0
+  },
+  "523957": {
+    "active": true,
+    "points": 2.0
+  },
+  "530873": {
+    "active": false,
+    "points": 0.0
+  },
+  "532377": {
+    "active": false,
+    "points": 0.0
+  },
+  "532529": {
+    "active": false,
+    "points": 0.0
+  },
+  "532605": {
+    "active": false,
+    "points": 0.0
+  },
+  "533463": {
+    "active": false,
+    "points": 0.0
+  },
+  "534392": {
+    "active": false,
+    "points": 0.0
+  },
+  "535818": {
+    "active": true,
+    "points": 6.0
+  },
+  "535928": {
+    "active": false,
+    "points": 0.0
+  },
+  "536694": {
+    "active": false,
+    "points": 0.0
+  },
+  "536908": {
+    "active": false,
+    "points": 0.0
+  },
+  "536916": {
+    "active": false,
+    "points": 0.0
+  },
+  "538206": {
+    "active": false,
+    "points": 0.0
+  },
+  "538207": {
+    "active": true,
+    "points": 1.0
+  },
+  "538210": {
+    "active": true,
+    "points": 1.0
+  },
+  "54469": {
+    "active": false,
+    "points": 0.0
+  },
+  "544877": {
+    "active": true,
+    "points": 2.0
+  },
+  "545477": {
+    "active": false,
+    "points": 0.0
+  },
+  "54694": {
+    "active": false,
+    "points": 0.0
+  },
+  "54738": {
+    "active": true,
+    "points": 2.0
+  },
+  "547659": {
+    "active": false,
+    "points": 0.0
+  },
+  "547686": {
+    "active": false,
+    "points": 0.0
+  },
+  "547719": {
+    "active": false,
+    "points": 0.0
+  },
+  "549068": {
+    "active": false,
+    "points": 0.0
+  },
+  "55037": {
+    "active": true,
+    "points": 1.0
+  },
+  "552030": {
+    "active": false,
+    "points": 0.0
+  },
+  "55459": {
+    "active": false,
+    "points": 0.0
+  },
+  "55494": {
+    "active": true,
+    "points": 6.0
+  },
+  "564510": {
+    "active": false,
+    "points": 0.0
+  },
+  "56917": {
+    "active": false,
+    "points": 0.0
+  },
+  "56979": {
+    "active": false,
+    "points": 0.0
+  },
+  "56983": {
+    "active": false,
+    "points": 0.0
+  },
+  "57328": {
+    "active": false,
+    "points": 0.0
+  },
+  "57531": {
+    "active": true,
+    "points": 1.0
+  },
+  "578614": {
+    "active": false,
+    "points": 0.0
+  },
+  "58621": {
+    "active": true,
+    "points": 6.0
+  },
+  "58822": {
+    "active": false,
+    "points": 0.0
+  },
+  "591357": {
+    "active": false,
+    "points": 0.0
+  },
+  "59735": {
+    "active": false,
+    "points": 0.0
+  },
+  "59949": {
+    "active": false,
+    "points": 0.0
+  },
+  "60232": {
+    "active": true,
+    "points": 4.0
+  },
+  "60307": {
+    "active": true,
+    "points": 2.0
+  },
+  "60586": {
+    "active": false,
+    "points": 0.0
+  },
+  "60689": {
+    "active": true,
+    "points": 1.0
+  },
+  "60706": {
+    "active": false,
+    "points": 0.0
+  },
+  "60914": {
+    "active": false,
+    "points": 0.0
+  },
+  "61256": {
+    "active": true,
+    "points": 5.0
+  },
+  "61366": {
+    "active": true,
+    "points": 1.0
+  },
+  "61558": {
+    "active": false,
+    "points": 0.0
+  },
+  "66749": {
+    "active": false,
+    "points": 0.0
+  },
+  "67089": {
+    "active": false,
+    "points": 0.0
+  },
+  "69752": {
+    "active": true,
+    "points": 2.0
+  },
+  "75115": {
+    "active": true,
+    "points": 5.0
+  },
+  "76357": {
+    "active": true,
+    "points": 1.0
+  },
+  "77794": {
+    "active": true,
+    "points": 2.0
+  },
+  "77818": {
+    "active": false,
+    "points": 0.0
+  },
+  "78830": {
+    "active": false,
+    "points": 0.0
+  },
+  "78916": {
+    "active": true,
+    "points": 2.0
+  },
+  "79602": {
+    "active": false,
+    "points": 0.0
+  },
+  "79934": {
+    "active": true,
+    "points": 2.0
+  },
+  "80146": {
+    "active": true,
+    "points": 6.0
+  },
+  "80201": {
+    "active": true,
+    "points": 12.0
+  },
+  "80226": {
+    "active": true,
+    "points": 1.0
+  },
+  "80607": {
+    "active": true,
+    "points": 1.0
+  },
+  "80801": {
+    "active": true,
+    "points": 4.0
+  },
+  "81012": {
+    "active": false,
+    "points": 0.0
+  },
+  "81441": {
+    "active": false,
+    "points": 0.0
+  },
+  "82143": {
+    "active": true,
+    "points": 4.0
+  },
+  "82514": {
+    "active": true,
+    "points": 7.0
+  },
+  "82691": {
+    "active": true,
+    "points": 2.0
+  },
+  "82738": {
+    "active": true,
+    "points": 1.0
+  },
+  "83283": {
+    "active": true,
+    "points": 1.0
+  },
+  "83299": {
+    "active": true,
+    "points": 2.0
+  },
+  "83314": {
+    "active": false,
+    "points": 0.0
+  },
+  "83427": {
+    "active": true,
+    "points": 2.0
+  },
+  "83543": {
+    "active": false,
+    "points": 0.0
+  },
+  "84182": {
+    "active": true,
+    "points": 3.0
+  },
+  "84450": {
+    "active": false,
+    "points": 0.0
+  },
+  "84583": {
+    "active": true,
+    "points": 1.0
+  },
+  "84939": {
+    "active": true,
+    "points": 1.0
+  },
+  "85955": {
+    "active": false,
+    "points": 0.0
+  },
+  "85971": {
+    "active": true,
+    "points": 2.0
+  },
+  "86417": {
+    "active": true,
+    "points": 3.0
+  },
+  "87835": {
+    "active": false,
+    "points": 0.0
+  },
+  "88248": {
+    "active": false,
+    "points": 0.0
+  },
+  "88484": {
+    "active": true,
+    "points": 3.0
+  },
+  "88894": {
+    "active": false,
+    "points": 0.0
+  },
+  "89076": {
+    "active": false,
+    "points": 0.0
+  },
+  "90105": {
+    "active": false,
+    "points": 0.0
+  },
+  "90152": {
+    "active": true,
+    "points": 14.0
+  },
+  "90585": {
+    "active": true,
+    "points": 1.0
+  },
+  "91046": {
+    "active": true,
+    "points": 1.0
+  },
+  "91651": {
+    "active": true,
+    "points": 3.0
+  },
+  "93264": {
+    "active": false,
+    "points": 0.0
+  },
+  "95658": {
+    "active": false,
+    "points": 0.0
+  },
+  "96784": {
+    "active": false,
+    "points": 0.0
+  },
+  "96994": {
+    "active": true,
+    "points": 6.0
+  },
+  "97032": {
+    "active": true,
+    "points": 4.0
+  },
+  "97299": {
+    "active": false,
+    "points": 0.0
+  },
+  "98747": {
+    "active": true,
+    "points": 3.0
+  },
+  "98980": {
+    "active": true,
+    "points": 1.0
+  }
+}

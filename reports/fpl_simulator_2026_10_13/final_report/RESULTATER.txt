@@ -1,0 +1,51 @@
+FPL-simulator: reviderte resultater under den erklærte best-effort-kontrakten.
+Historiske sesonger er kontrafaktisk omberegnet med poengmål etter 2026/27-reglene og den moderne regelkontrakten: maksimalt fem bankede gratisoverganger og to chipsett, der første sett utløper etter GW19. Historiske sesongers særregler og unntak gjenskapes ikke.
+Resultatene er observerte enkeltløp; modellvalget er gjort på utviklingssesongene. Rangeringene dokumenterer verken isolerte kausale modelleffekter eller statistisk overlegenhet.
+Netto poeng inkluderer lag, kaptein og chips, minus betalte overganger. Modellvalg er låst på 2022/23–2024/25. Rapportåret 2025/26 er allerede inspisert og vises separat. Ingen nye valg gjøres av rapportbyggeren.
+
+Felles arvet åpning GW1–4, deretter samme beslutningspolicy
+Modell | 2022/23 | 2023/24 | 2024/25 | snitt | mot benchmark
+Tilpasset fixture_full_h3-prognose + felles policy | 2393 | 2369 | 2505 | 2422.3 | +0.0
+Direkte CatBoost | 2152 | 2425 | 2411 | 2329.3 | -93.0
+Ridge | 2244 | 2359 | 2256 | 2286.3 | -136.0
+50/50 todelt CatBoost + Ridge | 2148 | 2303 | 2290 | 2247.0 | -175.3
+Todelt CatBoost | 2041 | 2222 | 2383 | 2215.3 | -207.0
+Låst samlet valg: Tilpasset fixture_full_h3-prognose + felles policy. Låst ny kandidat: Direkte CatBoost.
+
+Egen GW1-tropp, samme budsjett og felles adaptiv chippolicy
+Modell | 2022/23 | 2023/24 | 2024/25 | snitt | mot benchmark
+Tilpasset fixture_full_h3-prognose + felles policy | 2429 | 2448 | 2344 | 2407.0 | +0.0
+50/50 todelt CatBoost + Ridge | 2202 | 2337 | 2343 | 2294.0 | -113.0
+Todelt CatBoost | 2154 | 2399 | 2317 | 2290.0 | -117.0
+Ridge | 2308 | 2204 | 2357 | 2289.7 | -117.3
+Direkte CatBoost | 2150 | 2235 | 2315 | 2233.3 | -173.7
+Låst samlet valg: Tilpasset fixture_full_h3-prognose + felles policy. Låst ny kandidat: 50/50 todelt CatBoost + Ridge.
+
+Spesialister
+Låst variant: control; roller: lineup=Todelt CatBoost; captain=Todelt CatBoost; transfers=Todelt CatBoost; chips=Todelt CatBoost.
+Den låste spesialistvariantens utviklingsgevinst mot kontroll er +0.0 netto poeng per sesong i snitt.
+ε=0.67 poeng (2/3 poeng i den låste utvalgsregelen) er en heuristisk beslutningsmargin, ikke en grense for løserstøy, et konfidensintervall eller en signifikanstest.
+specialist_development.csv viser kontroll, opprinnelig manager, hele overgang/chip-griden, hybrid og alle forhåndsdefinerte fjern-en-varianter. isolated_specialists.csv viser lineup/kaptein som betinget gevinst per runde; disse kan ikke summeres som managerpoeng.
+
+Separat rapportår 2025/26
+Modus | modell | netto | mot benchmark
+manager | Direkte CatBoost | 2079 | -121
+manager | 50/50 todelt CatBoost + Ridge | 2018 | -182
+manager | Tilpasset fixture_full_h3-prognose + felles policy | 2200 | +0
+manager | Ridge | 2152 | -48
+manager | Todelt CatBoost | 2060 | -140
+matched | Direkte CatBoost | 2145 | +58
+matched | 50/50 todelt CatBoost + Ridge | 2155 | +68
+matched | Tilpasset fixture_full_h3-prognose + felles policy | 2087 | +0
+matched | Ridge | 2045 | -42
+matched | Todelt CatBoost | 2137 | +50
+Spesialist control | 2060 | mot kontroll +0
+
+Benchmark er den tilpassede fixture_full_h3-prognosen med den felles policyen; i manager-modus er alle chips adaptive. Dette er ikke en videreføring av gamle benchmarkpoeng eller identisk gammel manager.
+Begrensninger: fire kandidater bruker nåtids-H1 gjentatt over fremtidige runder, mens benchmark har kampavhengige prognosebaner. Priser, tropper og historiske frister har erklærte tilnærminger. 847 aksepterte estimater gjelder inputceller, ikke 847 poeng eller feil. Tre hendelses-BPS-estimater og kildekonflikter beholdes; åtte bonusfølsomme tilfeller er funnet i en ±5 BPS-stress blant 14 utvalgte tilfeller, ikke et konfidensintervall; kvalifiserte blankutfall bruker en eksplisitt klubbbrakettproxy. Tidsbegrenset optimalisering kan gi ulike gyldige beslutninger; lik tid per løserkall betyr ikke lik total regnetid. solver_statistics.csv viser faktiske kall og status.
+Lineup-hybridens observerte −87 poeng mot kontroll i 2022/23 isolerer ikke lagoppstillingsmodellens effekt. Ved GW10 og GW26 var lagret managertilstand og oppgitte controller-input identiske, mens tilnærmede løserresultater krysset chipterskelen ulikt. Fra GW26 avvek også overgangene. Loggene fastslår ikke den konkrete kjøretidsårsaken eller variasjonens fordeling. Se derived/lineup_blend_2022_path_diagnosis.json.
+Driftshistorikk: det parallelle rapportforsøket stoppet da benchmark i matched-modus, GW25, ikke fant en gyldig kandidat innen løserens to sekunder; dette beviser ikke at problemet var uløselig. Ingen beslutning ble låst i GW25, og managerarbeideren ble stoppet uten GW1-lås. Én uendret sekvensiell gjenopptakelse ble godkjent. Den brukte ekstra beregning på ulåst arbeid. solver_statistics.csv omfatter bare fullførte loggede beslutninger og utelater mislykket eller avbrutt arbeid; lik total ressursbruk påstås derfor ikke. Rapportbygging krever sluttkvittering som bekrefter vellykket gjenopptakelse og bevaring av tidligere filer og loggprefiks.
+Reproduserbarhet: låste beslutninger kan spilles av og poengberegnes eksakt fra de samme kildeversjonene. Ny optimalisering under veggklokkegrenser kan velge andre lovlige lag. En numerisk overgangskontroll ble rettet med bevart kildehistorikk; GW7-revisjonsrettelsen har en eksplisitt arkivert endring og uavhengig koblingskvittering.
+Poengene er ikke historisk overall-rank eller sannsynlighet for førsteplass. Neste fase må forbedre tidsstemplede produksjonsdata, usikkerhet og samvariasjon i spillerutfall, modellere konkurrentfeltet og låse fremtidige valg før faktiske frister. Tre utviklingssesonger og ett allerede inspisert rapportår dokumenterer ikke en FPL-vinner.
+Revisjonskvitteringer: selection_matched.json, selection_manager.json, specialist_campaign/final_selection.json, independent_log_audit_report_fixed.json og independent_log_audit_report_specialists.json. Rapporten gjengir låste valg og er ikke en ny modellutvelgelse.
+Kilder: datasets/fpl_2026_27_best_effort_v1; daterte preseason_sources; frosne prognosecache; beslutningslogger; uavhengige revisjonskvitteringer. report_manifest.json binder alle leste bevis og rapportfiler med SHA256. Se også derived/data_limitations_annex.txt, derived/rules_scope_final.json, derived/REPRODUKSJON_OG_AVGRENSNING.txt og independent_gw7_campaign_lock_linkage.json. Driftsbevisene er report_parallel/failure_30718.json, independent_report_failure_sequential_resume_review.json, report_parallel/independent_pre_sequential_retry_snapshot.json og overgangs-/sluttkvitteringene i report_sequential_resume. De 40 kildefilene i bevaringsmanifestet er kontrollert uendret; dette er ikke en påstand om alle prosjektfiler.

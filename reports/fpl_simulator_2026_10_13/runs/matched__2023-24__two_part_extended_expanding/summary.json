@@ -1,0 +1,70 @@
+{
+  "experiment_id": "matched__2023-24__two_part_extended_expanding",
+  "season": "2023-24",
+  "candidate": "two_part_extended_expanding",
+  "mode": "matched",
+  "opening_points": 214.0,
+  "complete_season": true,
+  "net_season_points": 2222.0,
+  "known_round_net_subtotal": 2222.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 20,
+  "hits": 4,
+  "ending_state": {
+    "owned": {
+      "17761": 46,
+      "97032": 63,
+      "98980": 52,
+      "121160": 55,
+      "154566": 72,
+      "178301": 88,
+      "184029": 84,
+      "198869": 56,
+      "219847": 74,
+      "220566": 56,
+      "244731": 75,
+      "244851": 63,
+      "441164": 59,
+      "487053": 48,
+      "517052": 69
+    },
+    "bank": 34,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ],
+      "2": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "17761": "Everton",
+      "97032": "Liverpool",
+      "98980": "Aston Villa",
+      "121160": "Man City",
+      "154566": "Bournemouth",
+      "178301": "Aston Villa",
+      "184029": "Arsenal",
+      "198869": "Arsenal",
+      "219847": "Arsenal",
+      "220566": "Man City",
+      "244731": "Liverpool",
+      "244851": "Chelsea",
+      "441164": "Spurs",
+      "487053": "Spurs",
+      "517052": "Chelsea"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

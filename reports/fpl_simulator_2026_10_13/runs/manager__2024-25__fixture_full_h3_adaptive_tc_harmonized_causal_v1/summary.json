@@ -1,0 +1,70 @@
+{
+  "experiment_id": "manager__2024-25__fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "season": "2024-25",
+  "candidate": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "mode": "manager",
+  "opening_points": 0,
+  "complete_season": true,
+  "net_season_points": 2344.0,
+  "known_round_net_subtotal": 2344.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 7,
+  "hits": 8,
+  "ending_state": {
+    "owned": {
+      "97032": 64,
+      "118748": 127,
+      "119471": 55,
+      "154561": 55,
+      "178186": 76,
+      "201666": 59,
+      "216646": 68,
+      "219168": 88,
+      "227444": 47,
+      "244731": 75,
+      "247348": 50,
+      "437499": 45,
+      "446008": 81,
+      "475168": 57,
+      "489639": 45
+    },
+    "bank": 0,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "bench_boost",
+        "triple_captain",
+        "free_hit"
+      ],
+      "2": [
+        "wildcard",
+        "bench_boost",
+        "triple_captain",
+        "free_hit"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "97032": "Liverpool",
+      "118748": "Liverpool",
+      "119471": "Newcastle",
+      "154561": "Arsenal",
+      "178186": "West Ham",
+      "201666": "Newcastle",
+      "216646": "Brentford",
+      "219168": "Newcastle",
+      "227444": "Nott'm Forest",
+      "244731": "Liverpool",
+      "247348": "Crystal Palace",
+      "437499": "Crystal Palace",
+      "446008": "Brentford",
+      "475168": "Brighton",
+      "489639": "Brighton"
+    }
+  },
+  "scope": "independent GW1 squad and adaptive chips from dated preseason roster under shared causal-proxy information; not historical rank or unobserved test"
+}

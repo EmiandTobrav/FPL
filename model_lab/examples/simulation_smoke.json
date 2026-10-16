@@ -1,0 +1,16 @@
+{
+  "bundle": "model_lab/examples/simulation_bundle/bundle.json",
+  "bundle_sha256": "9675b26e74acf6ca790ba3506907865c2816b21bed31268848cb88d1ecc26f79",
+  "kind": "simulation",
+  "max_calls_per_decision": 40,
+  "max_decisions": 2,
+  "models": [
+    "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+    "fixture_direct_v1"
+  ],
+  "node_limit": 16,
+  "policy": "adaptive",
+  "purpose": "framework_validation",
+  "reference": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "version": 1
+}

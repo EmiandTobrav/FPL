@@ -1,0 +1,170 @@
+{
+  "synthetic_tests_passed": 5,
+  "clocks": {
+    "operational_proxy_v1": {
+      "all_rows_temporally_valid": true,
+      "targets_unchanged": true,
+      "independent_feature_price_checks": 40,
+      "numeric_features": 95,
+      "categorical_features": 2
+    },
+    "conservative_v1": {
+      "all_rows_temporally_valid": true,
+      "targets_unchanged": true,
+      "independent_feature_price_checks": 40,
+      "numeric_features": 95,
+      "categorical_features": 2
+    }
+  },
+  "independent_real_row_checks": 80,
+  "sampled_training_windows": [
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 1,
+      "forecast_at": "2020-09-12 10:00:00+00:00",
+      "training_rows": 0
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 1,
+      "forecast_at": "2021-04-09 17:30:00+00:00",
+      "training_rows": 17674
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 1,
+      "forecast_at": "2022-11-12 11:00:00+00:00",
+      "training_rows": 50160
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 1,
+      "forecast_at": "2026-09-18 17:30:00+00:00",
+      "training_rows": 56256
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 3,
+      "forecast_at": "2020-09-12 10:00:00+00:00",
+      "training_rows": 0
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 3,
+      "forecast_at": "2021-04-09 17:30:00+00:00",
+      "training_rows": 14927
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 3,
+      "forecast_at": "2022-11-12 11:00:00+00:00",
+      "training_rows": 39096
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 3,
+      "forecast_at": "2026-09-18 17:30:00+00:00",
+      "training_rows": 50162
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 6,
+      "forecast_at": "2020-09-12 10:00:00+00:00",
+      "training_rows": 0
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 6,
+      "forecast_at": "2021-04-09 17:30:00+00:00",
+      "training_rows": 11553
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 6,
+      "forecast_at": "2022-11-12 11:00:00+00:00",
+      "training_rows": 25018
+    },
+    {
+      "clock": "operational_proxy_v1",
+      "horizon": 6,
+      "forecast_at": "2026-09-18 17:30:00+00:00",
+      "training_rows": 42386
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 1,
+      "forecast_at": "2020-09-05 11:30:00+00:00",
+      "training_rows": 0
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 1,
+      "forecast_at": "2021-04-02 19:00:00+00:00",
+      "training_rows": 16987
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 1,
+      "forecast_at": "2022-11-05 12:30:00+00:00",
+      "training_rows": 48904
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 1,
+      "forecast_at": "2026-09-11 19:00:00+00:00",
+      "training_rows": 54943
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 3,
+      "forecast_at": "2020-09-05 11:30:00+00:00",
+      "training_rows": 0
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 3,
+      "forecast_at": "2021-04-02 19:00:00+00:00",
+      "training_rows": 14650
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 3,
+      "forecast_at": "2022-11-05 12:30:00+00:00",
+      "training_rows": 37894
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 3,
+      "forecast_at": "2026-09-11 19:00:00+00:00",
+      "training_rows": 48926
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 6,
+      "forecast_at": "2020-09-05 11:30:00+00:00",
+      "training_rows": 0
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 6,
+      "forecast_at": "2021-04-02 19:00:00+00:00",
+      "training_rows": 11279
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 6,
+      "forecast_at": "2022-11-05 12:30:00+00:00",
+      "training_rows": 23888
+    },
+    {
+      "clock": "conservative_v1",
+      "horizon": 6,
+      "forecast_at": "2026-09-11 19:00:00+00:00",
+      "training_rows": 42386
+    }
+  ],
+  "source_files_unchanged": true,
+  "models_trained": 0,
+  "fitted_preprocessing": false,
+  "conservative_baseline_21_features_equal_v1": true
+}

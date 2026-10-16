@@ -30,3 +30,16 @@ research/current/project/tuning_v3/inputs_*.pkl
 research/current/results/games_*.pkl
 research/current/project/results/
 *.log
+
+# Workspace inventories and regenerable campaign work stay local.
+overview/inventory.json
+overview/duplicates.json
+overview/snapshots.csv
+overview/remaining_media.csv
+reports/fpl_improvement_2026_10_14/cache/
+reports/fpl_improvement_2026_10_14/cache_versions/
+reports/fpl_improvement_2026_10_14/forecast_attempts/
+# Final data packages and explicitly selected summaries remain trackable.
+
+# Reusable lab artifacts remain local; portable specs and small fixtures are tracked.
+lab_results/

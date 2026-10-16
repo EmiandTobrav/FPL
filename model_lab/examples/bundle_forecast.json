@@ -1,0 +1,33 @@
+{
+  "clock": "operational_proxy_v1",
+  "horizon": 1,
+  "id": "bundle_prediction_wiring",
+  "input_hashes": {
+    "datasets/fpl_2026_27_best_effort_v1/manifest.json": "3912ade5dcd9359eda1779af3f042f82bb82283a3076a5ad294a638e2f9561e2",
+    "datasets/fpl_model_pipeline_v1/manifest.json": "566e7df35129861d3cc3b464d01974e2a267943de20f9e7509690e64b5a99142",
+    "datasets/fpl_model_pipeline_v1/operational_proxy_v1.csv.xz": "0c6f540761c9bf879054e5489154918907e678ee0610861124b07cc6352b70a6",
+    "datasets/fpl_model_pipeline_v1/schema.json": "51070f6a0826f9f6a345ceb7161d214439e5608b36336e89e03a171c69809ba4"
+  },
+  "kind": "forecast",
+  "max_fits": 1,
+  "models": [
+    {
+      "backend": "ridge",
+      "feature_set": "extended",
+      "id": "ridge_trial",
+      "parameters": {},
+      "seed": 20261014
+    }
+  ],
+  "note": "Small wiring check of existing model families, not a new scientific result or manager benchmark comparison.",
+  "purpose": "framework_validation",
+  "reference": "ridge_trial",
+  "rounds": [
+    1
+  ],
+  "seasons": [
+    "2023-24"
+  ],
+  "version": 1,
+  "trajectory": "repeat_h1_diagnostic"
+}

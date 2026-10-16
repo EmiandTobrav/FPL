@@ -1,0 +1,2 @@
+experiment,mode,candidate,assignments,net_points,hits,qualified_blank_player_rounds,label,selected_from_development,gain_vs_control
+branch__2025-26__baseline__c92e95ca6e62,specialist,,"{""captain"": ""two_part_extended_expanding"", ""chips"": ""two_part_extended_expanding"", ""lineup"": ""two_part_extended_expanding"", ""transfers"": ""two_part_extended_expanding""}",2060.0,4,10,control,True,0.0

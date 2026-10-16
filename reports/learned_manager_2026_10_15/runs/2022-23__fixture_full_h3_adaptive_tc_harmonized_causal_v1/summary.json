@@ -1,0 +1,14 @@
+{
+  "complete_season": true,
+  "decision_process_cpu_seconds": null,
+  "hit_cost": 32,
+  "learned_decision_rounds": 0,
+  "net_points": 2429.0,
+  "original_solver_seconds_sum": 147.57486792688724,
+  "policy": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "policy_fit_cpu_seconds": 0.0,
+  "replayed_locked_rounds": 38,
+  "season": "2022-23",
+  "seconds": null,
+  "solver_calls": 355
+}

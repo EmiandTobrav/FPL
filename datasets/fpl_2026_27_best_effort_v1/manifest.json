@@ -1,0 +1,65 @@
+{
+  "version": "fpl_2026_27_best_effort_v1",
+  "points_standard": "2026-27",
+  "training_ready_best_effort": true,
+  "strict_source_qualification_complete": false,
+  "authorization": "User asked: ferdig s\u00e5 godt som det lar seg gj\u00f8re. Existing accepted estimates and selected calculated values are used with explicit quality flags.",
+  "input_sha256": {
+    "FPL_training_dataset/research/current/training_dataset/canonical_extension/results/manifest.json": "e2381eafa408e3ddb990d09ef07f1b1c25c1c1568d4aa384a8fc82c2cfd69617",
+    "reports/full_rescoring_2026_10_12/results/manifest.json": "a06bf3d01314993d5a8d16aa75748a85c7aba3db9406c084219e8b7289285080",
+    "FPL_training_dataset/research/current/benchmark.json": "543407872cdfb16abc1fade0e4cb8e98333e0f0615e8973ba1b91a4ce05acd01",
+    "FPL_training_dataset/research/current/training_dataset/canonical_extension/results/player_matches.csv.xz": "c1a306df24942d08e978560d28c9defaeb9830e481ce9d8c8e0784d92aec6adf",
+    "FPL_training_dataset/research/current/training_dataset/canonical_extension/results/player_rounds.csv.xz": "bcff4c32929d340fec7ccd8e66519ec3d76ad849f7d1d5075805a1b7ad9524b8",
+    "reports/full_rescoring_2026_10_12/results/player_match_rescored.csv.xz": "87d3402845c0f35ee918a45aab2d92f42c626fa95bfcf7979e4033365b9ee4b3",
+    "reports/delta_rescoring_2026_10_12/results/player_match_candidates.csv.xz": "f6107c4e8012459cfd7c0a00bb9206dea7c4bcaa843e492a092c2277634efbee",
+    "reports/full_rescoring_2026_10_12/results/fixture_status.csv": "d1bd9f9e1fc7583f7c151d8b45e70dc18eb594ef80fbeeb2fb80c2a55458abee",
+    "reports/bps_bonus_impact_2026_10_12/results/case_summary.csv": "95d64bc9d08746022abf0b1f469e725ad9bf97cb8baa38389cd54762f01f35f0",
+    "reports/delta_rescoring_2026_10_12/results/input_snapshot.csv.xz": "117fb573a36f69672837e8dd36436c6ce84b225e73c54672408d33b22532c885"
+  },
+  "code_sha256": "c7bdbfabe8ebf040408beb82436222925705ca39632f663f9a9fdacf9ef75b69",
+  "counts": {
+    "master_player_matches": 187111,
+    "master_label_ready_best_effort": 164610,
+    "computed_historical_player_matches": 66677,
+    "native_inactive_zero_observations": 96395,
+    "official_current_player_matches": 1538,
+    "training_player_rounds": 159291,
+    "training_rows_by_split": {
+      "current_native": 3216,
+      "test": 29338,
+      "train": 99818,
+      "validation": 26919
+    },
+    "complete_h3_targets": 137362,
+    "complete_h6_targets": 108349,
+    "historical_bps_control_cases": 14,
+    "bonus_sensitive_control_fixtures": 8,
+    "accepted_event_bps_estimates": 3,
+    "deadline_proxy_used": true,
+    "actual_deadlines_verified": false,
+    "source_qualification_gates_changed": false,
+    "models_trained": 0
+  },
+  "primary_future_model_comparator": "fixture_full_h3_adaptive_tc",
+  "benchmark_requires_rerun_on_new_target": true,
+  "output_sha256": {
+    "README.txt": "1f4e3a3d6e19867d1cf450255664bfc8709ea154d13da2260ea36a305f65e860",
+    "coverage.csv": "975e023368e3b8b1048c73c2795f95bb379fbdc33f237b0aa1f9e31d9b5cd021",
+    "feature_time_audit.csv.xz": "3f425a4023c6badb4b179f809e12d533aec51560d5f07edfc7f8a4612722265e",
+    "input_counters.csv.xz": "117fb573a36f69672837e8dd36436c6ce84b225e73c54672408d33b22532c885",
+    "loader.py": "f6b8a76b310b023b431d13b5d9ebeb5960997367f3688924f4102bcc48e639e9",
+    "player_matches.csv.xz": "268cf0bfacb5d9680f845497447bd2be86c27825ce483e89650ec5d4e57e8ec9",
+    "player_rounds.csv.xz": "c7a459b786bd182e86bed0678b937f7388ea7dfafc0358711d5bcfae8c0886a7",
+    "schema.json": "2e8ad6fdd8931e00ef81619f165df22229c68684152c64055b052ae12d45f890",
+    "summary.json": "3ff6689b2a349f0708632e44a70f59fbaa82dfdbd8ba37d8b66c9a9622e07cc4",
+    "training_rows.csv.xz": "11478ac34e4e00b6d17db6004a2fac73b3ce68d07130f1b7a3e1292ca0283908",
+    "verification.json": "4fb1037fdefcf5a24bb33058907d3a3719f73e10f55c0f7dfc064313a62bd6c9"
+  },
+  "loader": "loader.py",
+  "release_status": "complete_best_effort_research_training_dataset",
+  "support_code_sha256": {
+    "reports/final_training_dataset_2026_10_12/loader.py": "f6b8a76b310b023b431d13b5d9ebeb5960997367f3688924f4102bcc48e639e9",
+    "reports/final_training_dataset_2026_10_12/test_release.py": "338df73ce5e349b4b72d3e15e82547ef50c79778308c9fdc14fd3429a0349924",
+    "reports/final_training_dataset_2026_10_12/finalize.py": "d5005a846c5a96922aca8c7492dc65ff24488a9fb2289055f09aaa7bc499eb8b"
+  }
+}

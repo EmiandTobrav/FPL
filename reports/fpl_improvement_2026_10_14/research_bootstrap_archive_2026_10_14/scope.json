@@ -1,0 +1,22 @@
+{
+  "kind": "bounded_public_archive_source_qualification_scope",
+  "root_approved": true,
+  "created_at_utc": "2026-10-14T14:27:07.243040+00:00",
+  "purpose": "Assess whether timestamped predeadline availability and registration archives can support a separate substantive data campaign. This is source qualification, not configuration9 or a forecast/model experiment.",
+  "source": "https://github.com/Randdalf/fplcache",
+  "local_pilot": "FPL_training_dataset/research/current/bootstrap_availability_pilot/fplcache",
+  "scope": "Read existing pilot and public repository/collector metadata; establish snapshot calendar coverage and timestamp semantics. At most9 representative original development origins (GW1/GW20/GW38 for2022-23,2023-24,2024-25), selected before requests. Download at most one source snapshot per selected origin only if metadata supports a pre-origin candidate; no replacement search after examining fields.",
+  "boundaries": [
+    "Do not alter existing data, caches, sources, research receipts or current configuration8.",
+    "No training, forecasts, policy decisions, outcome joins, points/ranks, or model tuning.",
+    "Use explicit original manifest origins; do not backdate via news_added or final dataset fields.",
+    "Separate Git metadata publication proxies from independently proven actual public availability; report gaps.",
+    "All raw responses and hashes retained if retrieved; no historical feature view certified from sample alone.",
+    "Public source reads only; no messages, credentials, payments, access bypass, or large repository clone."
+  ],
+  "maximum_snapshot_payloads": 9,
+  "maximum_network_requests": 36,
+  "new_candidate_registered": false,
+  "new_model_fits": 0,
+  "new_solver_calls": 0
+}

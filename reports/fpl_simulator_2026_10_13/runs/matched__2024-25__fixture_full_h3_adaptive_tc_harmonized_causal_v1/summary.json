@@ -1,0 +1,70 @@
+{
+  "experiment_id": "matched__2024-25__fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "season": "2024-25",
+  "candidate": "fixture_full_h3_adaptive_tc_harmonized_causal_v1",
+  "mode": "matched",
+  "opening_points": 250.0,
+  "complete_season": true,
+  "net_season_points": 2505.0,
+  "known_round_net_subtotal": 2505.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 10,
+  "hits": 8,
+  "ending_state": {
+    "owned": {
+      "111234": 50,
+      "118748": 127,
+      "172649": 45,
+      "178186": 78,
+      "208706": 61,
+      "215136": 44,
+      "216646": 63,
+      "219168": 94,
+      "227444": 51,
+      "231747": 73,
+      "244850": 57,
+      "247348": 50,
+      "446008": 83,
+      "477424": 62,
+      "554605": 44
+    },
+    "bank": 8,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ],
+      "2": [
+        "triple_captain",
+        "wildcard",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "111234": "Everton",
+      "118748": "Liverpool",
+      "172649": "Crystal Palace",
+      "178186": "West Ham",
+      "208706": "Newcastle",
+      "215136": "Nott'm Forest",
+      "216646": "Brentford",
+      "219168": "Newcastle",
+      "227444": "Nott'm Forest",
+      "231747": "Crystal Palace",
+      "244850": "Aston Villa",
+      "247348": "Crystal Palace",
+      "446008": "Brentford",
+      "477424": "Man City",
+      "554605": "Bournemouth"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

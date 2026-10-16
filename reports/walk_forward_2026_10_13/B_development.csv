@@ -1,0 +1,4 @@
+variant,model,feature_set,history_policy,horizon,clock,n_predictions,n_evaluated,mae,rmse,bias
+two_part_extended_expanding_h1_operational_proxy_v1,two_part,extended,expanding,1,operational_proxy_v1,80618,80618,1.1181740663407809,2.095561460991352,0.018742985268302866
+two_part_extended_last24months_h1_operational_proxy_v1,two_part,extended,last24months,1,operational_proxy_v1,80618,80618,1.1164313723832977,2.0963703258087385,0.015366806185373023
+two_part_extended_recency365_h1_operational_proxy_v1,two_part,extended,recency365,1,operational_proxy_v1,80618,80618,1.1152113203427296,2.097141332546409,0.015854076046822277

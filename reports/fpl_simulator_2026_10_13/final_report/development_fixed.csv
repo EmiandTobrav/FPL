@@ -1,0 +1,11 @@
+mode,candidate,model_label,net_2022-23,net_2023-24,net_2024-25,mean_net,mean_gain_vs_benchmark,locked_rank,selected_overall,selected_new_candidate
+matched,fixture_full_h3_adaptive_tc_harmonized_causal_v1,Tilpasset fixture_full_h3-prognose + felles policy,2393.0,2369.0,2505.0,2422.3333333333335,0.0,1,True,False
+matched,catboost_extended_expanding,Direkte CatBoost,2152.0,2425.0,2411.0,2329.3333333333335,-93.0,2,False,True
+matched,ridge_extended_expanding,Ridge,2244.0,2359.0,2256.0,2286.3333333333335,-136.0,3,False,False
+matched,equal_two_part_ridge,50/50 todelt CatBoost + Ridge,2148.0,2303.0,2290.0,2247.0,-175.33333333333348,4,False,False
+matched,two_part_extended_expanding,Todelt CatBoost,2041.0,2222.0,2383.0,2215.3333333333335,-207.0,5,False,False
+manager,fixture_full_h3_adaptive_tc_harmonized_causal_v1,Tilpasset fixture_full_h3-prognose + felles policy,2429.0,2448.0,2344.0,2407.0,0.0,1,True,False
+manager,equal_two_part_ridge,50/50 todelt CatBoost + Ridge,2202.0,2337.0,2343.0,2294.0,-113.0,2,False,True
+manager,two_part_extended_expanding,Todelt CatBoost,2154.0,2399.0,2317.0,2290.0,-117.0,3,False,False
+manager,ridge_extended_expanding,Ridge,2308.0,2204.0,2357.0,2289.6666666666665,-117.33333333333348,4,False,False
+manager,catboost_extended_expanding,Direkte CatBoost,2150.0,2235.0,2315.0,2233.3333333333335,-173.66666666666652,5,False,False

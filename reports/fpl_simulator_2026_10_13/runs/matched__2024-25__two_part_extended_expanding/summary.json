@@ -1,0 +1,70 @@
+{
+  "experiment_id": "matched__2024-25__two_part_extended_expanding",
+  "season": "2024-25",
+  "candidate": "two_part_extended_expanding",
+  "mode": "matched",
+  "opening_points": 250.0,
+  "complete_season": true,
+  "net_season_points": 2383.0,
+  "known_round_net_subtotal": 2383.0,
+  "known_rounds": 38,
+  "attempted_rounds": 38,
+  "unknown_rounds": [],
+  "derived_blank_player_rounds": 16,
+  "hits": 0,
+  "ending_state": {
+    "owned": {
+      "17761": 48,
+      "80801": 48,
+      "97032": 66,
+      "116216": 68,
+      "118342": 44,
+      "118748": 127,
+      "172649": 45,
+      "178186": 78,
+      "178301": 89,
+      "224967": 43,
+      "231747": 74,
+      "247348": 48,
+      "438234": 75,
+      "446008": 71,
+      "448514": 50
+    },
+    "bank": 14,
+    "ft": 1,
+    "next_gw": 39,
+    "used_chips": {
+      "1": [
+        "wildcard",
+        "triple_captain",
+        "free_hit",
+        "bench_boost"
+      ],
+      "2": [
+        "triple_captain",
+        "wildcard",
+        "free_hit",
+        "bench_boost"
+      ]
+    },
+    "last_chip": null,
+    "ownership_clubs": {
+      "17761": "Everton",
+      "80801": "Everton",
+      "97032": "Liverpool",
+      "116216": "Arsenal",
+      "118342": "Brentford",
+      "118748": "Liverpool",
+      "172649": "Crystal Palace",
+      "178186": "West Ham",
+      "178301": "Aston Villa",
+      "224967": "Everton",
+      "231747": "Crystal Palace",
+      "247348": "Crystal Palace",
+      "438234": "Man City",
+      "446008": "Brentford",
+      "448514": "Wolves"
+    }
+  },
+  "scope": "rescored exogenous GW1-4 plus causal-proxy decision replay GW5-38; not historical rank or unobserved test"
+}

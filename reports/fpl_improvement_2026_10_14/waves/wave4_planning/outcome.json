@@ -1,0 +1,31 @@
+{
+  "kind": "wave4_bounded_diagnostic_outcome",
+  "status": "complete_independently_verified",
+  "at_utc": "2026-10-14T12:50:20.077777+00:00",
+  "plan_sha256": "a14caa1f266d3df1d1148bbde8f7eb9bcbbce05280222fb9ce46654f38b496e6",
+  "completion_sha256": "2ab63c8c04a3d02d610a829b79ca4d838ad6a26f3e1564de1f89c81a696ce12f",
+  "independent_reviews_sha256": {
+    "data/actual_participation_review_v1.json": "699a9794b0d167681d143d640ef5b6cdee62d52022a7cbde330680b27a5066af",
+    "evaluation/actual_trajectory_review_v1.json": "2da458136ad9a7e4928135194619c84052080ef8b7a5d1032cd8634432946b7a"
+  },
+  "root_rehashed_independent_evidence_files": {
+    "participation": 830,
+    "trajectory": 940
+  },
+  "findings": {
+    "fullpool_one_explicit_zero_suffix_bias_by_season": [
+      0.1205,
+      0.1095,
+      0.1157
+    ],
+    "B_2023_net_gain_first8": 36,
+    "B_2023_net_gain_rest": -137,
+    "captain_absence_cells_too_small_to_attribute_season_loss": true
+  },
+  "decision": "Preregister one classifier-history intervention on original unweighted B; keep adaptive manager policy and original point heads.",
+  "new_model_fits": 0,
+  "new_forecast_calls": 0,
+  "new_solver_calls": 0,
+  "upgrade_established": false,
+  "reused_development_data": true
+}
