@@ -2,6 +2,8 @@
 
 [Startside](README.md) · [Resultater](docs/RESULTS_INDEX.md) · [Prioriteringer](docs/ROADMAP.md)
 
+For en rask første kjøring: følg [den kontrollerte demooppskriften](docs/QUICKSTART.md). Se også [rollefordelingen ved KI-utvikling](docs/AI_WORKFLOW.md) og [publisert versus lokalt materiale](docs/PUBLICATION_SCOPE.md).
+
 ## Første økt
 
 1. Les startsiden og resultatoversikten. Velg data-, prognose- eller managersporet.
