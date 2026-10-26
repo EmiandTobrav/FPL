@@ -1,0 +1,60 @@
+{
+  "conclusion": "Removing only current-round residual calibration gains72 in2025/26 but loses229 in2023/24 and gains6 in2024/25. Reject as general replacement. This isolates a non-robust contribution of H1 calibration to the latest-season weakness; missing xG/xA and a mostly historical equal-weight teacher archive are concrete next hypotheses, not proven recoveries.",
+  "decision": "reject",
+  "evidence_hashes": {
+    "overview/COMPONENT_PERFORMANCE_REVIEW_2026_10_26_V2.json": "f9aa6a86ce33c33febb1dc069d08e28581bb42f769a443ee898cf0574e696c70",
+    "reports/component_h1_calibration_probe_2026_10_26/RESULTATER.txt": "7ffa28a7a28f06c75caa49904d8846d659ada5b1d94c223574f43bc75d7bfe11",
+    "reports/component_h1_calibration_probe_2026_10_26/attack_input_audit.json": "44ff19f6f468d85693179b9717babe25c4a991866db5708cf33be6977cfa25ad",
+    "reports/component_h1_calibration_probe_2026_10_26/comparison.csv": "59bcd66394b1e8034b0b2e1d6a454cf915aaf02c935b7af53949270f7cc8c190",
+    "reports/component_h1_calibration_probe_2026_10_26/current_teacher_fraction.csv": "f72aba5baeb7357278e355331a0a1970298dcf751f96461e7d412c08799d9766",
+    "reports/component_h1_calibration_probe_2026_10_26/forecast_lock.json": "4eebfdd485d9792262c9c2cfc844976e77877872d57ace1124fec9ebde8eb9ae",
+    "reports/component_h1_calibration_probe_2026_10_26/verification.json": "df726ecf86a0572c6fd260463243881570fc142cb5c11c3e84300d66c255ba08"
+  },
+  "results": {
+    "active_model_changed": false,
+    "comparison": [
+      {
+        "component": 2547.0,
+        "delta": -229.0,
+        "hits": 20,
+        "season": "2023-24",
+        "without_H1_residual_calibration": 2318.0
+      },
+      {
+        "component": 2495.0,
+        "delta": 6.0,
+        "hits": 8,
+        "season": "2024-25",
+        "without_H1_residual_calibration": 2501.0
+      },
+      {
+        "component": 2213.0,
+        "delta": 72.0,
+        "hits": 0,
+        "season": "2025-26",
+        "without_H1_residual_calibration": 2285.0
+      }
+    ],
+    "new_fitted_models": 0,
+    "verification": {
+      "ablated_latest_gap": -124.5,
+      "active_descriptor_unchanged": true,
+      "all_114_scores_exact": true,
+      "all_future_forecasts_unchanged": true,
+      "decisions_replayed": 114,
+      "files": {
+        "reports/component_h1_calibration_probe_2026_10_26/comparison.csv": "59bcd66394b1e8034b0b2e1d6a454cf915aaf02c935b7af53949270f7cc8c190",
+        "reports/component_h1_calibration_probe_2026_10_26/forecast_lock.json": "4eebfdd485d9792262c9c2cfc844976e77877872d57ace1124fec9ebde8eb9ae",
+        "reports/component_h1_calibration_probe_2026_10_26/forecasts.csv.gz": "dcc015e440593d7e765cbd31d8848c2f07351cce17d638ed09291db31dfbe8a1",
+        "scripts/verify_h1_calibration_probe.py": "30e17cf1f7b2aaeb81e37aff7fe231d437374aa80367d152d06ddc10428c435d"
+      },
+      "max_calls_per_decision": 40,
+      "no_source_or_clock_change": true,
+      "node_cap": 16,
+      "original_latest_gap": -308.0,
+      "passed": true,
+      "solver_calls": 1557
+    },
+    "winning_FPL_strength_established": false
+  }
+}

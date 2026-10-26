@@ -1,5 +1,7 @@
 # FPL — fra historiske data til begrunnede lagvalg
 
+**Oppdatert 26. oktober 2026:** [Utvidede datasett, korrigert kalender og valgt komponentmodell med fem runders planlegging](releases/2026-10-26/README.md). Historisk gevinst +104 / −13 / +37 mot samme-kalender-kontroll. Selve observasjons- og modelltabellene følger med; full live-/modellreplay krever fortsatt arbeidsarkivet. Eldre daterte statusavsnitt nedenfor gjelder sitt opprinnelige tidspunkt.
+
 Et forskningsprosjekt for **Fantasy Premier League**, der man velger fotballspillere innenfor et budsjett og får poeng fra prestasjonene deres. Prosjektet undersøker hvordan historiske data, maskinlæring og simulering kan støtte valg av spillere, kaptein og bytter. Målet er flere **netto sesongpoeng etter overgangskostnader** — og å kunne etterprøve om en foreslått forbedring faktisk virker.
 
 Dette er også en arbeidsprøve i problemformulering, styring av KI-agenter og evaluering. Jeg definerer mål og krav, koordinerer agentarbeidet, vurderer forslag og korrigerer retningen. KI-agenter implementerer Python-kode, tester og analyser. Jeg har ikke tradisjonell programmeringsbakgrunn; mitt bidrag er å styre utviklingen og vurdere løsningene mot dokumenterte krav. Se [arbeidsmetodikken og rollefordelingen](docs/AI_WORKFLOW.md).

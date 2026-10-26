@@ -1,0 +1,2089 @@
+{
+  "source_workspace": "local_fpl_research_archive",
+  "files": [
+    {
+      "source": "datasets/fpl_master_enriched_v5/coverage.csv",
+      "published": "datasets/fpl_master_enriched_v5/coverage.csv",
+      "sha256": "e9a4be83d1d6000461830829a9753d2a0c5964c133f9e8cb399d6103aee936ce",
+      "bytes": 449
+    },
+    {
+      "source": "datasets/fpl_master_enriched_v5/coverage_totals.json",
+      "published": "datasets/fpl_master_enriched_v5/coverage_totals.json",
+      "sha256": "f90117b68d50e6b142c2b7c86ece25ea1cdf7a38df06af46c632850216e34bd9",
+      "bytes": 202
+    },
+    {
+      "source": "datasets/fpl_master_enriched_v5/player_matches.csv.xz",
+      "published": "datasets/fpl_master_enriched_v5/player_matches.csv.xz",
+      "sha256": "04af0ac25e4e15dcee862cda0274be1f62db1ebac749271869421e294da6d43e",
+      "bytes": 33041112
+    },
+    {
+      "source": "datasets/fpl_master_enriched_v5/loader.py",
+      "published": "datasets/fpl_master_enriched_v5/loader.py",
+      "sha256": "8d5642833c7ff569cf84671649bb68eb65f4a736e246d774012077e0ba089478",
+      "bytes": 1730
+    },
+    {
+      "source": "datasets/fpl_master_enriched_v5/manifest.json",
+      "published": "datasets/fpl_master_enriched_v5/manifest.json",
+      "sha256": "588775071a53f2685a730235d7175e3a373b213abacf1914ddd06c519311555f",
+      "bytes": 4605
+    },
+    {
+      "source": "datasets/fpl_master_enriched_v5/README.txt",
+      "published": "datasets/fpl_master_enriched_v5/README.txt",
+      "sha256": "4313d05c0111687c82022369ed6b0fadf43f3d26fccd0fa0c9d9343e4d052316",
+      "bytes": 2446
+    },
+    {
+      "source": "datasets/fpl_master_enriched_v5/verification.json",
+      "published": "datasets/fpl_master_enriched_v5/verification.json",
+      "sha256": "aa7eda96f864aecbd83a927ce42a2db5253bf7192773d30f1e9b5695c19883c4",
+      "bytes": 1326
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/README.txt",
+      "published": "datasets/fpl_weather_all_seasons_v1/README.txt",
+      "sha256": "7e8588f7a54b30f327e0649e5d232279d3ba925f2c704a2aeb995d66d9af882f",
+      "bytes": 7547
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/RESULTATER.txt",
+      "published": "datasets/fpl_weather_all_seasons_v1/RESULTATER.txt",
+      "sha256": "973fb371f9219c3d1f13b8f27924b0b3469fd202269b78931ec8202191f42b7b",
+      "bytes": 1062
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/match_weather.csv",
+      "published": "datasets/fpl_weather_all_seasons_v1/match_weather.csv",
+      "sha256": "d078fa70202e4ed4aded8961884235683341b2929fa4e53277c46546e9e900be",
+      "bytes": 1099465
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/player_match_weather_links.csv.gz",
+      "published": "datasets/fpl_weather_all_seasons_v1/player_match_weather_links.csv.gz",
+      "sha256": "e7a5217883ee2b99010754bcf87d3204cd56e93e0b367dd56c562a4506c278f7",
+      "bytes": 3462073
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/manifest.json",
+      "published": "datasets/fpl_weather_all_seasons_v1/manifest.json",
+      "sha256": "abf07fac92e959ab0efc73adbe3f90beb4388e9f806866928a1737013928558e",
+      "bytes": 53359
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/verification.json",
+      "published": "datasets/fpl_weather_all_seasons_v1/verification.json",
+      "sha256": "10b8fa6657e88d6accd3abc1f52c12b69435102f1967376b5cd08166675a7cd4",
+      "bytes": 4387
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/matches.csv.gz",
+      "published": "datasets/fpl_external_live_2026_10_26/matches.csv.gz",
+      "sha256": "298c98f90a629ac0adc1871930f0001c68649ec6219c8265b9075c70e41b735b",
+      "bytes": 105579
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/player_minutes.csv.gz",
+      "published": "datasets/fpl_external_live_2026_10_26/player_minutes.csv.gz",
+      "sha256": "09338d596d72e4217f4092195a2edb3f579c504db61e96e88616f01dceee5e2c",
+      "bytes": 1164898
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/team_timeline_audit.csv.gz",
+      "published": "datasets/fpl_external_live_2026_10_26/team_timeline_audit.csv.gz",
+      "sha256": "a0fad688aa52c6f1858f37218724f1150348a21e2034bc13f94fb505c834f1b5",
+      "bytes": 46413
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/source_match_audit.csv.gz",
+      "published": "datasets/fpl_external_live_2026_10_26/source_match_audit.csv.gz",
+      "sha256": "698409229bf8400065d6a2b634acf7213a0363156f1d8ebc840f901b6a5dc113",
+      "bytes": 35335
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/coverage.csv",
+      "published": "datasets/fpl_external_live_2026_10_26/coverage.csv",
+      "sha256": "461bfd8466702767d48e9e444dfff4a01b2cbf6281c102208af244f1cca9a1d0",
+      "bytes": 209
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/unknown_minutes.csv.gz",
+      "published": "datasets/fpl_external_live_2026_10_26/unknown_minutes.csv.gz",
+      "sha256": "284f6beffa1c4a8db97ccd42b505702b1a7bd6346b6bcf15de0f3e37e3a42a12",
+      "bytes": 540
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/source_coverage.json",
+      "published": "datasets/fpl_external_live_2026_10_26/source_coverage.json",
+      "sha256": "3342c33a95b038e6833098f32b20d9bad45af8a8766d15f5347a99d6f659406a",
+      "bytes": 8135
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/capture.json",
+      "published": "datasets/fpl_external_live_2026_10_26/capture.json",
+      "sha256": "fa105d3469ee14a8e76676775ffc89349eee824b462c09d4fbf7f9d9f9c6e8c1",
+      "bytes": 230
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/verification.json",
+      "published": "datasets/fpl_external_live_2026_10_26/verification.json",
+      "sha256": "6f0d191045f29a4a619aecf4b3246e62c89a3b62db91ff031609e7cba947441e",
+      "bytes": 965
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/source_receipts.json",
+      "published": "datasets/fpl_external_live_2026_10_26/source_receipts.json",
+      "sha256": "d90266400f02fe7835282934b7d347e24369ac6eae1c6d9fa86bda2e41029a91",
+      "bytes": 167839
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/RESULTATER.txt",
+      "sha256": "caef1e4f1e704949b81b15f23c57c69283bdc72ac1653d856d0eb76885a51dbc",
+      "bytes": 9266
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/summary.csv",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/summary.csv",
+      "sha256": "f929867dcbbf76c4decb4a50ed5b421fba8177273e8ee0562ae3f85d8aba3cb7",
+      "bytes": 447
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/component_metrics.csv",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/component_metrics.csv",
+      "sha256": "7d5a52c42b00c5420c74101810461f13d6476efcf885125baf84e1bfe3eef396",
+      "bytes": 34333
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/scores.csv",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/scores.csv",
+      "sha256": "51caa180939885a36a729e71f09d2ff2d1527fc8a68296c28c50fb778e617e68",
+      "bytes": 469
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/comparison.csv",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/comparison.csv",
+      "sha256": "6d862ec0170d71c5de3dda15e18f0e6327ad9f21951c243a17e2311f11f77941",
+      "bytes": 117
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/deltas.csv",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/deltas.csv",
+      "sha256": "44dce1039a2d8c9e0f17b3b4102c623ec3248d73e4db7bf80e8b5494aab194ca",
+      "bytes": 99
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/forecast_metrics.csv",
+      "sha256": "67d091571a5244df1dcdeb444e6bfbb5c3e314c6a2342d65afb996bbec455df8",
+      "bytes": 16842
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/one_change_verification.json",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/one_change_verification.json",
+      "sha256": "ae557eaa01fda16de5a80458ee782cfee60213140555bf508444fe0f7f725abc",
+      "bytes": 388
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/result.json",
+      "sha256": "4fbe53c721b2b90e950efb7d1e96c6d8990f374c429076783b1ed1d88aead341",
+      "bytes": 3820
+    },
+    {
+      "source": "reports/base_cadence_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/base_cadence_2026_10_26/final_verification.json",
+      "sha256": "e755b9d350d3475e289857c4aa08c367bb59ed819aaae9bff2379c7cf7a1ff05",
+      "bytes": 38554
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/RESULTATER.txt",
+      "sha256": "a0fa38b5f570c61ac61232ac6f937894c9052a3511365f2481f7979dcad66dcc",
+      "bytes": 10775
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/summary.csv",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/summary.csv",
+      "sha256": "60958eaa0e886cf72d0e22852e6c4bfebe6e9b0bd931b43e6e21a8d70950dde0",
+      "bytes": 468
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/component_metrics.csv",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/component_metrics.csv",
+      "sha256": "3a7ae161fce5a2474d8c577cb580a8e808e93a9c912625747774475c1cedde22",
+      "bytes": 34553
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/scores.csv",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/scores.csv",
+      "sha256": "354dd2680b7af8afeddac4d680d6c22eb2c043d20e99c6e29572e428eb337665",
+      "bytes": 476
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/comparison.csv",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/comparison.csv",
+      "sha256": "c616fe836d1578a0780953e11cf05889dab40c6f76bb0fd5ae37ff7c7596dbba",
+      "bytes": 119
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/deltas.csv",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/deltas.csv",
+      "sha256": "97a362170a95d3b0e1bdee59d437da19e076bdb0382ebce83ea5a4805f7a9443",
+      "bytes": 107
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/forecast_metrics.csv",
+      "sha256": "02713a2124d4abe82421e1c4ba7a31f528639ca366db0ac7d7a3e448f3cbe13a",
+      "bytes": 16934
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/one_change_verification.json",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/one_change_verification.json",
+      "sha256": "796e833dec1b1702cad610bc1b9e447b2e8275168d9252ac472871b87ea5c077",
+      "bytes": 821
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/result.json",
+      "sha256": "ab4131db58246de3990b115a25ac495c63da5a9af5d3681ee0bd2d3595d72135",
+      "bytes": 4170
+    },
+    {
+      "source": "reports/base_recency_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/base_recency_2026_10_26/final_verification.json",
+      "sha256": "54e89bb044e272ef0d920b43276170c620e793487428552591d90f3b0403560c",
+      "bytes": 52335
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/RESULTATER.txt",
+      "sha256": "b10fe688c4cfa9c1caf436260f0f8c57e639930149c40980800dfdbedfee993e",
+      "bytes": 10945
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/summary.csv",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/summary.csv",
+      "sha256": "09ec4e402afab5194c3b71744f66b05841d4a730dbb99b570053c0f7899d23d0",
+      "bytes": 150
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/component_metrics.csv",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/component_metrics.csv",
+      "sha256": "e982acac67bed10dfffe0099c55314bbfd9eb06c593a9d3802d81ecffffcdb9b",
+      "bytes": 23162
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/scores.csv",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/scores.csv",
+      "sha256": "6027aa7e63fbb67acca973c3a3eb2517d1d68346f372e931cfa20a39fac3d2f2",
+      "bytes": 339
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/comparison.csv",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/comparison.csv",
+      "sha256": "d36dcfbd05e79f81170c812e9b9ddf83cec136fd5aae26e58b31198274c204f3",
+      "bytes": 111
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/forecast_metrics.csv",
+      "sha256": "05d3207f2edd90016d7b184a99bf6f397f8523ef17a6f986c06499c46c8b21ca",
+      "bytes": 11346
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/result.json",
+      "sha256": "29d3297b970e1c5e4246b92c26ff992dce8921745e82ebfb5bd0aa3e0a16537c",
+      "bytes": 22739
+    },
+    {
+      "source": "reports/calendar_requalification_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/calendar_requalification_2026_10_26/final_verification.json",
+      "sha256": "3802516c5e1b73b438bb94e95ad6a8ef6f922fa2b3516a003efc5836fac2d92e",
+      "bytes": 4817
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/RESULTATER.txt",
+      "sha256": "79d6b8a78812131a874ca0bdd8a32542f1654df9b4aa3478efd9bda0981abfb9",
+      "bytes": 8666
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/summary.csv",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/summary.csv",
+      "sha256": "465ceebd416503ca153fab5a78d221c3ab829f4bc0642ba179fefb67433830fc",
+      "bytes": 931
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/scores.csv",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/scores.csv",
+      "sha256": "3e65519e537f9a87c93c7899557066bf8911dc150996354d20f8d3d06f0a3a30",
+      "bytes": 1018
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/comparison.csv",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/comparison.csv",
+      "sha256": "8f0178b95d98d65e428a4689bbc87b0f76330b7639e675dd055814ff5e0d52a4",
+      "bytes": 230
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/deltas.csv",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/deltas.csv",
+      "sha256": "50250c2f29de391008741831b7db08289434792aa91f362ff444fe991a679cdf",
+      "bytes": 191
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/forecast_metrics.csv",
+      "sha256": "60f58e5f13dd2ec929c5b53f51e6c067ffe1b8c279d31b3e0cbaee83e44f3077",
+      "bytes": 39115
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/one_change_verification.json",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/one_change_verification.json",
+      "sha256": "05d2a3ed85d97f3ce6311b68d30ce09482ab7f5c20a016ff0e613b67db893473",
+      "bytes": 1599
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/result.json",
+      "sha256": "d1313e9e472bff105aedcf320ee5933489ed05428ffaf6283feb12358ff435d2",
+      "bytes": 7108
+    },
+    {
+      "source": "reports/calibration_response_sweep_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/calibration_response_sweep_2026_10_26/final_verification.json",
+      "sha256": "17849c68e74c2492febf4258ad494f325346b587711e38afca12b5c750766e77",
+      "bytes": 6528
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/RESULTATER.txt",
+      "sha256": "a5ae81166a1c2a8d864585cd378d847748ae21db981a7f1f90459cbf31c2fff8",
+      "bytes": 9295
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/summary.csv",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/summary.csv",
+      "sha256": "e0f7e79a96264cfe5be12203d036151c4b5f30a658944e844247a277579afe86",
+      "bytes": 718
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/scores.csv",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/scores.csv",
+      "sha256": "1dd0f08ce6e6d503cc4174b79c8d3be0a47b20dd627a7eb367de8a969c7b44b0",
+      "bytes": 804
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/comparison.csv",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/comparison.csv",
+      "sha256": "0ca3f38276ebe804ffc6a3e9d3a940ac760c1168fc7e630ef54a6da30127e303",
+      "bytes": 193
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/deltas.csv",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/deltas.csv",
+      "sha256": "cb734b5c90f37e4802742ad3128042d1f11130596d17bb33036d1cefc2f8ca08",
+      "bytes": 173
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/forecast_metrics.csv",
+      "sha256": "406cc97b39f2b0ef6c3d18449aa28002188c5cbff8326cb4cd9e6993ac3ec4fe",
+      "bytes": 36421
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/one_change_verification.json",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/one_change_verification.json",
+      "sha256": "4edb151ae06e38f4c3e74e46eba6aaa4ff148fd716c4d1cc9cacffc19844ebb9",
+      "bytes": 1315
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/result.json",
+      "sha256": "1125fd951c8a88d3c45261bdb198f128da67b2c0f0d58221b6bcd36a5140ffb6",
+      "bytes": 5916
+    },
+    {
+      "source": "reports/calibration_weight_sweep_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/calibration_weight_sweep_2026_10_26/final_verification.json",
+      "sha256": "504b718970cc7d715bdca8fca4265089d0a411de8966b47f12351def6137ff7b",
+      "bytes": 5232
+    },
+    {
+      "source": "reports/combined_xg_adaptation_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/combined_xg_adaptation_2026_10_26/RESULTATER.txt",
+      "sha256": "95353e7fbb18bd4b58d39c708dc057eafedf2914f4e6765207340755b0483297",
+      "bytes": 7420
+    },
+    {
+      "source": "reports/combined_xg_adaptation_2026_10_26/scores.csv",
+      "published": "releases/2026-10-26/evidence/combined_xg_adaptation_2026_10_26/scores.csv",
+      "sha256": "7630687eef3f57875156f698066363c12a8bf3409cb03ebf7be0d35925726243",
+      "bytes": 627
+    },
+    {
+      "source": "reports/combined_xg_adaptation_2026_10_26/comparison.csv",
+      "published": "releases/2026-10-26/evidence/combined_xg_adaptation_2026_10_26/comparison.csv",
+      "sha256": "f1e3486608ea08262127f4a328cfbe5804ad09b5e90c9342731559cab2651181",
+      "bytes": 290
+    },
+    {
+      "source": "reports/combined_xg_adaptation_2026_10_26/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/combined_xg_adaptation_2026_10_26/forecast_metrics.csv",
+      "sha256": "14b5724fa8386b1f34f0a5723728c86bf4a03db3e0c1fab494326787581940bd",
+      "bytes": 22584
+    },
+    {
+      "source": "reports/combined_xg_adaptation_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/combined_xg_adaptation_2026_10_26/result.json",
+      "sha256": "0b45980daf3d7a95c33dd0a208819ad524c45c90c17c3491b84e984b0123214c",
+      "bytes": 2584
+    },
+    {
+      "source": "reports/combined_xg_adaptation_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/combined_xg_adaptation_2026_10_26/final_verification.json",
+      "sha256": "afddd9d1ab10cda1bd39e640a0d926dae465532ef1dca2f2ca98b343cfd5bc30",
+      "bytes": 3114
+    },
+    {
+      "source": "reports/common_model_retest_2026_10_25_v3/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/common_model_retest_2026_10_25_v3/RESULTATER.md",
+      "sha256": "fedb26fbd85e186db6b68e51b3682828cdc038fcc8fb1c5dd48623b42510a78f",
+      "bytes": 13188
+    },
+    {
+      "source": "reports/common_model_retest_2026_10_25_v3/summary.csv",
+      "published": "releases/2026-10-26/evidence/common_model_retest_2026_10_25_v3/summary.csv",
+      "sha256": "7a7200e43e2fc99ddeaf186c5dddbfa7b13dcbea1d2b33bf22c7d49b21121701",
+      "bytes": 6462
+    },
+    {
+      "source": "reports/common_model_retest_2026_10_25_v3/result.json",
+      "published": "releases/2026-10-26/evidence/common_model_retest_2026_10_25_v3/result.json",
+      "sha256": "f1aa9218171897a9c9a0abdda7cc802436a49e7c0037de2a88fe5952e3f45386",
+      "bytes": 18709
+    },
+    {
+      "source": "reports/common_season_comparison_2026_10_25/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/common_season_comparison_2026_10_25/RESULTATER.md",
+      "sha256": "281bcaadcd9d514696bdcfccfe68a608dbadbd0d2de143484b05db743d384ade",
+      "bytes": 9005
+    },
+    {
+      "source": "reports/common_season_comparison_2026_10_25/scores.csv",
+      "published": "releases/2026-10-26/evidence/common_season_comparison_2026_10_25/scores.csv",
+      "sha256": "06e3337fc7ac06e14220b0728ebf51cea2241c7a064183624e9fb54554bec374",
+      "bytes": 3370
+    },
+    {
+      "source": "reports/common_season_comparison_2026_10_25/result.json",
+      "published": "releases/2026-10-26/evidence/common_season_comparison_2026_10_25/result.json",
+      "sha256": "e017ccaa1b1ca65a888c6a3ad93830b50bacd804191b55f79d68f98878eaa119",
+      "bytes": 13858
+    },
+    {
+      "source": "reports/component_2025_diagnosis_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/component_2025_diagnosis_2026_10_26/RESULTATER.txt",
+      "sha256": "a5abcfc5c9d2d54d3f9b6a7b5e8668212e2a913c488d21a116b3b93c32d49748",
+      "bytes": 7706
+    },
+    {
+      "source": "reports/component_2025_diagnosis_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/component_2025_diagnosis_2026_10_26/result.json",
+      "sha256": "398bd4e91ce5023b7a11612707a6226124c7c85dbe34b8465da2cc4157b0070e",
+      "bytes": 4223
+    },
+    {
+      "source": "reports/component_confirmation_2026_10_25_v2/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/component_confirmation_2026_10_25_v2/RESULTATER.md",
+      "sha256": "bab239916f0989bdf1676290c0df79bf4ee3262c0c4657441237432308a28356",
+      "bytes": 7781
+    },
+    {
+      "source": "reports/component_confirmation_2026_10_25_v2/scores.csv",
+      "published": "releases/2026-10-26/evidence/component_confirmation_2026_10_25_v2/scores.csv",
+      "sha256": "507b565068dbeff34fce5f1a798853fd60336752325e4019a3272a73490ca96d",
+      "bytes": 210
+    },
+    {
+      "source": "reports/component_confirmation_2026_10_25_v2/result.json",
+      "published": "releases/2026-10-26/evidence/component_confirmation_2026_10_25_v2/result.json",
+      "sha256": "cfdde3da781360bc18aabd1362a854f963b59b5f3020c264d78739472cb219ed",
+      "bytes": 3045
+    },
+    {
+      "source": "reports/component_h1_calibration_probe_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/component_h1_calibration_probe_2026_10_26/RESULTATER.txt",
+      "sha256": "7ffa28a7a28f06c75caa49904d8846d659ada5b1d94c223574f43bc75d7bfe11",
+      "bytes": 6822
+    },
+    {
+      "source": "reports/component_h1_calibration_probe_2026_10_26/comparison.csv",
+      "published": "releases/2026-10-26/evidence/component_h1_calibration_probe_2026_10_26/comparison.csv",
+      "sha256": "59bcd66394b1e8034b0b2e1d6a454cf915aaf02c935b7af53949270f7cc8c190",
+      "bytes": 149
+    },
+    {
+      "source": "reports/component_h1_calibration_probe_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/component_h1_calibration_probe_2026_10_26/result.json",
+      "sha256": "6c79511bfeecfbaaf8adba1b7a236cfc4ccfa325c3d12356e18fef861dad9c1f",
+      "bytes": 3074
+    },
+    {
+      "source": "reports/component_plan5_activation_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/component_plan5_activation_2026_10_26/RESULTATER.txt",
+      "sha256": "7530a81616a35eeca7ef2204f9038689adbe697f9e62747b984dd67bba4eba83",
+      "bytes": 5306
+    },
+    {
+      "source": "reports/component_plan5_activation_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/component_plan5_activation_2026_10_26/result.json",
+      "sha256": "949bfefeb08b9bb879a1b040507e4647fd871b5fb0d48eb02e9ea8568a3ef678",
+      "bytes": 2771
+    },
+    {
+      "source": "reports/component_plan5_activation_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/component_plan5_activation_2026_10_26/final_verification.json",
+      "sha256": "0a05ff2a4d1de62d1a66f1e158141790f21747f482fb99154e645699bee7c38d",
+      "bytes": 3990
+    },
+    {
+      "source": "reports/component_plan5_activation_2026_10_26/activation_review.json",
+      "published": "releases/2026-10-26/evidence/component_plan5_activation_2026_10_26/activation_review.json",
+      "sha256": "3a06178bbe2de1a3905ec2169ae097dd4f4bf69f3c2edc842a053cc9325ec848",
+      "bytes": 2696
+    },
+    {
+      "source": "reports/component_recent180_activation_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/component_recent180_activation_2026_10_26/RESULTATER.txt",
+      "sha256": "c5eeac0de8394ab0941ea0f971ee155bec722f8cfedc656575c6bf05669129c6",
+      "bytes": 3431
+    },
+    {
+      "source": "reports/component_recent180_activation_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/component_recent180_activation_2026_10_26/result.json",
+      "sha256": "4dfe7af88b668cb05f6779f1a337f410bd10ffce8ba38af703180bb4a558e97c",
+      "bytes": 2753
+    },
+    {
+      "source": "reports/component_recent180_activation_2026_10_26/activation_review.json",
+      "published": "releases/2026-10-26/evidence/component_recent180_activation_2026_10_26/activation_review.json",
+      "sha256": "1bac7ae977e8f982c72bae927fac49f87b6d4a69bea524d8c56090f82f4cdde5",
+      "bytes": 2397
+    },
+    {
+      "source": "reports/current_model_loss_diagnosis_2026_10_26_v3/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/current_model_loss_diagnosis_2026_10_26_v3/RESULTATER.txt",
+      "sha256": "a296e51c612e4e9be2df0563078fa08d571a95f4751fab5282d620856e029145",
+      "bytes": 10276
+    },
+    {
+      "source": "reports/current_model_loss_diagnosis_2026_10_26_v3/result.json",
+      "published": "releases/2026-10-26/evidence/current_model_loss_diagnosis_2026_10_26_v3/result.json",
+      "sha256": "0ed9c09e0250978522434acf8eaf232132c2268774e0600c92b56c2042b7ff5e",
+      "bytes": 4205
+    },
+    {
+      "source": "reports/fixed_season_promotion_2026_10_25/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/fixed_season_promotion_2026_10_25/RESULTATER.txt",
+      "sha256": "e080b2bac881907b1c32a93d6f8cb853df700a2954e9df6439740cf4a04260f8",
+      "bytes": 5133
+    },
+    {
+      "source": "reports/fixed_season_promotion_2026_10_25/scores.csv",
+      "published": "releases/2026-10-26/evidence/fixed_season_promotion_2026_10_25/scores.csv",
+      "sha256": "6e555790b6dff3fdc9bdf7408d935da23dd7ef530f280a3d835d115c712148e9",
+      "bytes": 1272
+    },
+    {
+      "source": "reports/fixed_season_promotion_2026_10_25/result.json",
+      "published": "releases/2026-10-26/evidence/fixed_season_promotion_2026_10_25/result.json",
+      "sha256": "26c1848f61ddf9e9468b71adaa4345fa2d4edeff342ed3572a280918203fb0b7",
+      "bytes": 111165
+    },
+    {
+      "source": "reports/loan_history_repair_2026_10_25_v3/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/loan_history_repair_2026_10_25_v3/RESULTATER.txt",
+      "sha256": "df96f76f470d229d0aa066c76a87d8f78b7d6e974756d8f1204403f1bb606611",
+      "bytes": 7407
+    },
+    {
+      "source": "reports/loan_history_repair_2026_10_25_v3/result.json",
+      "published": "releases/2026-10-26/evidence/loan_history_repair_2026_10_25_v3/result.json",
+      "sha256": "012439726512cf68bde69c1b9cfe64070bcb005f54a9c38b6a702486a1e33633",
+      "bytes": 2490
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/RESULTATER.txt",
+      "sha256": "c30e3e1fbe4fea2c0e7de89bc403802dcfec1ae4884426ee1af61b3315eeeb0d",
+      "bytes": 8771
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/summary.csv",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/summary.csv",
+      "sha256": "6eb1e7f5a8294627786c05f85b88742ed3d46eb19e9fe1d8168081ee91e85c47",
+      "bytes": 314
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/chip_dates.csv",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/chip_dates.csv",
+      "sha256": "ae286648bfd59689b6d89facf9c446d28c7f8d3cbc747bc9fcde7108b138e4fa",
+      "bytes": 2332
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/round_comparison_2025.csv",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/round_comparison_2025.csv",
+      "sha256": "ea3dab566de58b8a66c3b25d83b7d7c0e62571923016bf460d12ef75da5a78d5",
+      "bytes": 1062
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/scores.csv",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/scores.csv",
+      "sha256": "f8298ce16ef0015a61bc8e1b1754ad943e89459553fc33fadd5fee945686b964",
+      "bytes": 426
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/comparison.csv",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/comparison.csv",
+      "sha256": "1f5b4275566b8d734bd298e25a909dfaee686d13a0056f84a8583d86eeef1cd1",
+      "bytes": 97
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/deltas.csv",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/deltas.csv",
+      "sha256": "4d8275d4629d0cb90011090a4316143435de3265cc7353eb1d9ae12883e70289",
+      "bytes": 79
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/solver_summary.csv",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/solver_summary.csv",
+      "sha256": "4ededd6051364767d0aed1574ace1cad0a76c48fa76e430ae44a26f08f7cf15a",
+      "bytes": 625
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/one_change_verification.json",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/one_change_verification.json",
+      "sha256": "f7ba1f41b6718db15a85eda7af8ef7867fa9264778de3734eff6ad66e1c714c0",
+      "bytes": 1803
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/result.json",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/result.json",
+      "sha256": "83c30c56f56d0ce42f35d4a810989bfd8140c32c8ddfae83d57151af6500b596",
+      "bytes": 6955
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/technical_stops.json",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/technical_stops.json",
+      "sha256": "ed94f331f4533ff65a120067f9d02497ebb30fec963bd82617235cddccf360b7",
+      "bytes": 463
+    },
+    {
+      "source": "reports/manager_horizon_2026_10_26_v2/final_verification.json",
+      "published": "releases/2026-10-26/evidence/manager_horizon_2026_10_26_v2/final_verification.json",
+      "sha256": "c88ee6c1281ce500369af9b4f598b89de2a706e4a1ee8ebb6702466acc60a696",
+      "bytes": 3630
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_25_v5/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_25_v5/RESULTATER.md",
+      "sha256": "7ad8158c2e69d56eac192e873f0c666126eec3de22b60a3bfe9f54d7e416cb22",
+      "bytes": 2103
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_25_v5/scores.csv",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_25_v5/scores.csv",
+      "sha256": "7e4aba41c504e6ea764ea789e996c001ca7a2b43dd813c68b4581a2140077312",
+      "bytes": 278
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_25_v5/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_25_v5/forecast_metrics.csv",
+      "sha256": "5a99a4ac81233e3fda6441dbca93f3edf2a12f607e4351d85447769ea4156181",
+      "bytes": 2659
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_25_v5/result.json",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_25_v5/result.json",
+      "sha256": "69e196bc223350c91fd6afe6440e709de2d39425119aa1317ecf33862d76d658",
+      "bytes": 2896
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_26_v8/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_26_v8/RESULTATER.md",
+      "sha256": "009f5473165361b0f300ac444b28b70d8facde57860f93d24277792a20405bff",
+      "bytes": 2102
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_26_v8/scores.csv",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_26_v8/scores.csv",
+      "sha256": "acd318b047ec769a8a7a5d2eb461c854c40896071c01f21dcf967ae025c9af18",
+      "bytes": 280
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_26_v8/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_26_v8/forecast_metrics.csv",
+      "sha256": "f4813ee6fe47e4eaf126ffdba9c444539f1fc982b0cb2f37563fdd3c49ff2bba",
+      "bytes": 2657
+    },
+    {
+      "source": "reports/matched_season_retest_2026_10_26_v8/result.json",
+      "published": "releases/2026-10-26/evidence/matched_season_retest_2026_10_26_v8/result.json",
+      "sha256": "81eb772a5ad895484e8b479c2d7a05d65b4749e0705329b2c8e4fdd5c5648842",
+      "bytes": 2898
+    },
+    {
+      "source": "reports/player_decision_diagnosis_2026_10_26_v2/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/player_decision_diagnosis_2026_10_26_v2/RESULTATER.txt",
+      "sha256": "a9011fcde4e56c6a17be3b4bfbdd72eb1b44649e72ad6e9928874bb95fd90e86",
+      "bytes": 13590
+    },
+    {
+      "source": "reports/player_decision_diagnosis_2026_10_26_v2/result.json",
+      "published": "releases/2026-10-26/evidence/player_decision_diagnosis_2026_10_26_v2/result.json",
+      "sha256": "2826479e7327e2462ec4f739638185b13d268fabd1d5ec3833a52e5397f4abc8",
+      "bytes": 3479
+    },
+    {
+      "source": "reports/player_forecast_diagnosis_2026_10_25/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/player_forecast_diagnosis_2026_10_25/RESULTATER.txt",
+      "sha256": "875a7cf10b3c1eea1e1bbefabf3ba2c162ca4b51cd6365a3e88612e444f1199f",
+      "bytes": 4776
+    },
+    {
+      "source": "reports/player_forecast_diagnosis_2026_10_25/comparison.csv",
+      "published": "releases/2026-10-26/evidence/player_forecast_diagnosis_2026_10_25/comparison.csv",
+      "sha256": "37534e8a45fdc9692c005b55784d312ce378f1ac57b41c27bf6162e93dad3824",
+      "bytes": 2536
+    },
+    {
+      "source": "reports/role_h8_manager_2026_10_25/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/role_h8_manager_2026_10_25/RESULTATER.md",
+      "sha256": "8f1e5d0ea50d9d40120a6269ac22ab58b2f9e2d23347b1609f3ea30323375921",
+      "bytes": 6216
+    },
+    {
+      "source": "reports/role_h8_manager_2026_10_25/scores.csv",
+      "published": "releases/2026-10-26/evidence/role_h8_manager_2026_10_25/scores.csv",
+      "sha256": "5b3b8bc69be606c655aea47d4c79f1762cdcd53e89fb67bc348b92ad76bd2963",
+      "bytes": 148
+    },
+    {
+      "source": "reports/role_h8_manager_2026_10_25/result.json",
+      "published": "releases/2026-10-26/evidence/role_h8_manager_2026_10_25/result.json",
+      "sha256": "9ead6d955a5b0ea6c5e84d3b86446a3d8a277566f3fd0975cc4274a91b18d536",
+      "bytes": 52352
+    },
+    {
+      "source": "reports/role_strength_models_2026_10_25/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/role_strength_models_2026_10_25/RESULTATER.md",
+      "sha256": "300b9bfab0a16b962ec6008922892b40b94355a280b528804571bc1e65523894",
+      "bytes": 5819
+    },
+    {
+      "source": "reports/role_strength_models_2026_10_25/comparison.csv",
+      "published": "releases/2026-10-26/evidence/role_strength_models_2026_10_25/comparison.csv",
+      "sha256": "523cfe85585f3d5f4bca4340f9476dd4560ca5f7f6bfedbe21561d58d067356a",
+      "bytes": 1620
+    },
+    {
+      "source": "reports/role_strength_models_2026_10_25/result.json",
+      "published": "releases/2026-10-26/evidence/role_strength_models_2026_10_25/result.json",
+      "sha256": "5fc5b02381dddb98fce153e76adc25ae8cf86a76479ed16afecbd6fb70e2dede",
+      "bytes": 8103
+    },
+    {
+      "source": "reports/season_boundary_preflight_2026_10_25/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/season_boundary_preflight_2026_10_25/RESULTATER.txt",
+      "sha256": "d6def33725854606bf6176bf4da7d9b6a23e100d4a40da986fb16a57133b3582",
+      "bytes": 1211
+    },
+    {
+      "source": "reports/season_comparability_audit_2026_10_25/RESULTATER.md",
+      "published": "releases/2026-10-26/evidence/season_comparability_audit_2026_10_25/RESULTATER.md",
+      "sha256": "8fb29424ce754d92c28a46871a81279ddbfb973a0a754f24cfe17362d0ed1fb6",
+      "bytes": 15497
+    },
+    {
+      "source": "reports/season_role_robustness_2026_10_25_v2/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/season_role_robustness_2026_10_25_v2/RESULTATER.txt",
+      "sha256": "455db5ad15d22e9baf37f6beec4879785e62689149bb1fb8e0e25e19b76e6d22",
+      "bytes": 6726
+    },
+    {
+      "source": "reports/season_role_robustness_2026_10_25_v2/scores.csv",
+      "published": "releases/2026-10-26/evidence/season_role_robustness_2026_10_25_v2/scores.csv",
+      "sha256": "5ffff9b1325c12cd43d802d56e7b5faf6d3a6912c1c6f9124b720d49c0d80e67",
+      "bytes": 621
+    },
+    {
+      "source": "reports/season_role_robustness_2026_10_25_v2/result.json",
+      "published": "releases/2026-10-26/evidence/season_role_robustness_2026_10_25_v2/result.json",
+      "sha256": "3548e788534fea325afc532ee8d7d6cf5698b82fd1e1f2fb8099854ff53bfa05",
+      "bytes": 63655
+    },
+    {
+      "source": "reports/season_split_base_2026_10_25/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/season_split_base_2026_10_25/RESULTATER.txt",
+      "sha256": "57d7132a8955a2605a2aa0855b1d47d74edbe967c6795901e6e4d4d8cea22dca",
+      "bytes": 7521
+    },
+    {
+      "source": "reports/season_split_base_2026_10_25/scores.csv",
+      "published": "releases/2026-10-26/evidence/season_split_base_2026_10_25/scores.csv",
+      "sha256": "b37a084524ad5b0ea07d48269fd7c9030889de1f5ae56bae8249b06a1794be5e",
+      "bytes": 120
+    },
+    {
+      "source": "reports/season_split_base_2026_10_25/result.json",
+      "published": "releases/2026-10-26/evidence/season_split_base_2026_10_25/result.json",
+      "sha256": "a5085491a705b60c33cf8919d0b1de2d341968587ca254fd43ad52f34156e85e",
+      "bytes": 2534
+    },
+    {
+      "source": "reports/transfer_gap_diagnosis_2026_10_25/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/transfer_gap_diagnosis_2026_10_25/RESULTATER.txt",
+      "sha256": "a5d95a603890a50b07a3c45b15f9ed12e8a9b133627ed6ac7319c4bb04835451",
+      "bytes": 6218
+    },
+    {
+      "source": "reports/transfer_gap_diagnosis_2026_10_25/summary.csv",
+      "published": "releases/2026-10-26/evidence/transfer_gap_diagnosis_2026_10_25/summary.csv",
+      "sha256": "3a0276686227441cd37fae884ea56928e5c8de2c575db9106b8c6c35678faafe",
+      "bytes": 3194
+    },
+    {
+      "source": "reports/xg_adaptation_2026_10_26_v2/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/xg_adaptation_2026_10_26_v2/RESULTATER.txt",
+      "sha256": "df2e70c002d237b1172a0f56f050310dbb87db9cc848dde977250ae00276ff5c",
+      "bytes": 9222
+    },
+    {
+      "source": "reports/xg_adaptation_2026_10_26_v2/scores.csv",
+      "published": "releases/2026-10-26/evidence/xg_adaptation_2026_10_26_v2/scores.csv",
+      "sha256": "bc90bb2d436a71bc47aae74e90fd2c44ef5f4b0d7632310f1565da3f82460931",
+      "bytes": 485
+    },
+    {
+      "source": "reports/xg_adaptation_2026_10_26_v2/comparison.csv",
+      "published": "releases/2026-10-26/evidence/xg_adaptation_2026_10_26_v2/comparison.csv",
+      "sha256": "c92f3448dccc708708a4e6caa2226fb64491504f45797e581cbef50548f0c800",
+      "bytes": 176
+    },
+    {
+      "source": "reports/xg_adaptation_2026_10_26_v2/forecast_metrics.csv",
+      "published": "releases/2026-10-26/evidence/xg_adaptation_2026_10_26_v2/forecast_metrics.csv",
+      "sha256": "7a5ef9e68e9eee0579eaa1bca8675df351d75954fae3ce48ab00ebc0a7208ddd",
+      "bytes": 17061
+    },
+    {
+      "source": "reports/xg_adaptation_2026_10_26_v2/result.json",
+      "published": "releases/2026-10-26/evidence/xg_adaptation_2026_10_26_v2/result.json",
+      "sha256": "a73865352c00d8abc646f3e62d182578c159b72779b4d6603118c76a509a0df4",
+      "bytes": 2319
+    },
+    {
+      "source": "reports/xg_adaptation_2026_10_26_v2/final_verification.json",
+      "published": "releases/2026-10-26/evidence/xg_adaptation_2026_10_26_v2/final_verification.json",
+      "sha256": "e9b5dd3e8f2a3ba94261f37e2aa41cfc6f9d446e187024b762710d4e4dbcbbf3",
+      "bytes": 4372
+    },
+    {
+      "source": "model_lab/__init__.py",
+      "published": "releases/2026-10-26/implementation/model_lab/__init__.py",
+      "sha256": "489f69e9885d4d600560a6966ca693c30844314a12f485e376d7ead6c48266f6",
+      "bytes": 80
+    },
+    {
+      "source": "model_lab/__main__.py",
+      "published": "releases/2026-10-26/implementation/model_lab/__main__.py",
+      "sha256": "d15d31a0f200cd74d335274e0ed492a5bf83352f42ad57133d406130631c2363",
+      "bytes": 4973
+    },
+    {
+      "source": "model_lab/active.py",
+      "published": "releases/2026-10-26/implementation/model_lab/active.py",
+      "sha256": "46984c66a88065234fe5c64a5f62417439978fcbd535d30fb0270b27a5a3414d",
+      "bytes": 1866
+    },
+    {
+      "source": "model_lab/availability_ablation.py",
+      "published": "releases/2026-10-26/implementation/model_lab/availability_ablation.py",
+      "sha256": "9d1f33de19fa4ffb868c321cd390227baf1bae382096f2ae616f8f512a2c71c3",
+      "bytes": 12390
+    },
+    {
+      "source": "model_lab/availability_probabilities.py",
+      "published": "releases/2026-10-26/implementation/model_lab/availability_probabilities.py",
+      "sha256": "71769f635c037ae7c506e0a2ba32dd34601def08e22003c3cd9c58d2ea83cf00",
+      "bytes": 15522
+    },
+    {
+      "source": "model_lab/availability_temporal.py",
+      "published": "releases/2026-10-26/implementation/model_lab/availability_temporal.py",
+      "sha256": "b59ecb49a5261f410e7750e44cc393f0668aadd4a0d58b07869f831ce5704337",
+      "bytes": 13990
+    },
+    {
+      "source": "model_lab/availability_temporal_v2.py",
+      "published": "releases/2026-10-26/implementation/model_lab/availability_temporal_v2.py",
+      "sha256": "000150c325d045acdb07e32711f7f8155874f9cd5e8891066f887269691ae5f7",
+      "bytes": 14083
+    },
+    {
+      "source": "model_lab/calendar_probabilities.py",
+      "published": "releases/2026-10-26/implementation/model_lab/calendar_probabilities.py",
+      "sha256": "1dec1f74653045317de7ad8ad946692152aa78df9c1993c1ac7d708300347128",
+      "bytes": 13473
+    },
+    {
+      "source": "model_lab/calendar_threshold_calibration.py",
+      "published": "releases/2026-10-26/implementation/model_lab/calendar_threshold_calibration.py",
+      "sha256": "4e832144ed99b525a5ff1769b83209f75c0921d98b9519b9ba38a01176b4ee1e",
+      "bytes": 9942
+    },
+    {
+      "source": "model_lab/common.py",
+      "published": "releases/2026-10-26/implementation/model_lab/common.py",
+      "sha256": "40052ec16e028200eef5285d45745747f5c891147f19916d6ef6630b180528ee",
+      "bytes": 2821
+    },
+    {
+      "source": "model_lab/component_forecaster.py",
+      "published": "releases/2026-10-26/implementation/model_lab/component_forecaster.py",
+      "sha256": "ccf02b76f1c631764e7d9a92f50d5916899f4ee61acb22644f5453f65cdf64b4",
+      "bytes": 32228
+    },
+    {
+      "source": "model_lab/duration_to_points.py",
+      "published": "releases/2026-10-26/implementation/model_lab/duration_to_points.py",
+      "sha256": "985fec0d0ae5ce2ea1b1a01117b5f6667d03174a9f831b5d8136d0e5afa18d8a",
+      "bytes": 14884
+    },
+    {
+      "source": "model_lab/fixed_season_forecaster.py",
+      "published": "releases/2026-10-26/implementation/model_lab/fixed_season_forecaster.py",
+      "sha256": "eb22eb21279c73c46b5a776f589a099624aa1f173aea36fca7c213ce58c54684",
+      "bytes": 4677
+    },
+    {
+      "source": "model_lab/forecast.py",
+      "published": "releases/2026-10-26/implementation/model_lab/forecast.py",
+      "sha256": "7562736a3b098135173f282050eef3be7a3d64e914fed034f6e550f4885144ae",
+      "bytes": 12225
+    },
+    {
+      "source": "model_lab/fresh_planned_component_forecaster.py",
+      "published": "releases/2026-10-26/implementation/model_lab/fresh_planned_component_forecaster.py",
+      "sha256": "61ac3252926fd1ce885baaccfd9f745b8833bc49e326c8687979c41c12570688",
+      "bytes": 9093
+    },
+    {
+      "source": "model_lab/grouped_threshold_calibration.py",
+      "published": "releases/2026-10-26/implementation/model_lab/grouped_threshold_calibration.py",
+      "sha256": "30e587faacfc55d9a98bde71732d340ce092e5f5ffc3631ee58c0ea483abad84",
+      "bytes": 14138
+    },
+    {
+      "source": "model_lab/grouped_threshold_calibration_v2.py",
+      "published": "releases/2026-10-26/implementation/model_lab/grouped_threshold_calibration_v2.py",
+      "sha256": "c5b4557c8f72cc33fb36110f06287d1a2a04a9e094fc539d03ba62afa18e369d",
+      "bytes": 14562
+    },
+    {
+      "source": "model_lab/hold_tail_experiment.py",
+      "published": "releases/2026-10-26/implementation/model_lab/hold_tail_experiment.py",
+      "sha256": "a48440b6b6e0fbc58066edcbc54c7ed1e120c1c3d24bdcd8e2eccd1b92a0cc3b",
+      "bytes": 18122
+    },
+    {
+      "source": "model_lab/hold_tail_value.py",
+      "published": "releases/2026-10-26/implementation/model_lab/hold_tail_value.py",
+      "sha256": "17951e7b749fec92a43ce29bb4c81bbdcf32d2d767a09e5e29b68e85f7f9e901",
+      "bytes": 1743
+    },
+    {
+      "source": "model_lab/horizon_execution.py",
+      "published": "releases/2026-10-26/implementation/model_lab/horizon_execution.py",
+      "sha256": "1928a34440952d561f5715afd8bfbb269381ab4a79135440127d42e8127c4ec4",
+      "bytes": 8950
+    },
+    {
+      "source": "model_lab/horizon_execution_audit.py",
+      "published": "releases/2026-10-26/implementation/model_lab/horizon_execution_audit.py",
+      "sha256": "3056447a6ee9c0cc796274e2a0a46c7ff30dfa90ff6d648f8acf0cc8651de48b",
+      "bytes": 7169
+    },
+    {
+      "source": "model_lab/horizon_policy.py",
+      "published": "releases/2026-10-26/implementation/model_lab/horizon_policy.py",
+      "sha256": "d7a1f8f52fb2a682315e898fe89cf53db661f672483c85e144e4866cd680f5c2",
+      "bytes": 3835
+    },
+    {
+      "source": "model_lab/horizon_preflight.py",
+      "published": "releases/2026-10-26/implementation/model_lab/horizon_preflight.py",
+      "sha256": "64bafb8c1409bab39f9a55a57432b6b7464218feb4a95db6b7e57a90ce16112b",
+      "bytes": 8839
+    },
+    {
+      "source": "model_lab/joint_planning.py",
+      "published": "releases/2026-10-26/implementation/model_lab/joint_planning.py",
+      "sha256": "89c3094f0ea4152fa91e0d40cc6b4f801a12becc95d6ca9befe7b8f9d3f1e344",
+      "bytes": 6768
+    },
+    {
+      "source": "model_lab/manager_learning.py",
+      "published": "releases/2026-10-26/implementation/model_lab/manager_learning.py",
+      "sha256": "d4815f705e1c8c3589c4f1e086f6d2c1b6dc52f73e3c97788702ce07dc44acf1",
+      "bytes": 32816
+    },
+    {
+      "source": "model_lab/manager_policy.py",
+      "published": "releases/2026-10-26/implementation/model_lab/manager_policy.py",
+      "sha256": "6fad8e5db4eab0a370ee70f5b7d54ed1da0ff68fd3e5a8bf87208774ceaf1413",
+      "bytes": 12382
+    },
+    {
+      "source": "model_lab/minute_calendar.py",
+      "published": "releases/2026-10-26/implementation/model_lab/minute_calendar.py",
+      "sha256": "829c09e6d4da92f2bf54abe82e43817c2f70864151ff603d9492421c0f8fea57",
+      "bytes": 16033
+    },
+    {
+      "source": "model_lab/minute_calibration.py",
+      "published": "releases/2026-10-26/implementation/model_lab/minute_calibration.py",
+      "sha256": "963fdf2cc5ed6714b16c93d04f675f7140a39b0c944f0d7dfe61e049d2cf706c",
+      "bytes": 9570
+    },
+    {
+      "source": "model_lab/minute_expectation.py",
+      "published": "releases/2026-10-26/implementation/model_lab/minute_expectation.py",
+      "sha256": "a6d13aaae180c5d3da61eb0ca3f7187e83cb94df299c7402fa04820a34bcca97",
+      "bytes": 11075
+    },
+    {
+      "source": "model_lab/minute_joint_calibration.py",
+      "published": "releases/2026-10-26/implementation/model_lab/minute_joint_calibration.py",
+      "sha256": "ffccebdb67133cafd43e4f9c9e5b580990e4a9ecea81752b0602b125aedbadbd",
+      "bytes": 11276
+    },
+    {
+      "source": "model_lab/minutes_to_points.py",
+      "published": "releases/2026-10-26/implementation/model_lab/minutes_to_points.py",
+      "sha256": "0a0091119adb66dbceb91a65877371bafb5a43206fe39e99e7d1d969df6e8b6b",
+      "bytes": 10558
+    },
+    {
+      "source": "model_lab/minutes_to_points_v2.py",
+      "published": "releases/2026-10-26/implementation/model_lab/minutes_to_points_v2.py",
+      "sha256": "929fc77ac67e25afd76708449ab391b9c77b757f45307c9cfee61ec0b34a8078",
+      "bytes": 11193
+    },
+    {
+      "source": "model_lab/outlier_probability_methods.py",
+      "published": "releases/2026-10-26/implementation/model_lab/outlier_probability_methods.py",
+      "sha256": "602386942ab31c8ba4544ad859a83d22f7f6ed5e644cbad7e25b4c4d54c2df4b",
+      "bytes": 12656
+    },
+    {
+      "source": "model_lab/outlier_probability_methods_v2.py",
+      "published": "releases/2026-10-26/implementation/model_lab/outlier_probability_methods_v2.py",
+      "sha256": "81a60e8d1debc97a4566d39572c77701f84bd94195c667c5894ecd915cadbd0f",
+      "bytes": 12889
+    },
+    {
+      "source": "model_lab/paired_terminal.py",
+      "published": "releases/2026-10-26/implementation/model_lab/paired_terminal.py",
+      "sha256": "9426eddbc8cc5ec503833305a655f0c4e00c5840799b197c613bf03d95ae1504",
+      "bytes": 1366
+    },
+    {
+      "source": "model_lab/paired_terminal_experiment.py",
+      "published": "releases/2026-10-26/implementation/model_lab/paired_terminal_experiment.py",
+      "sha256": "38b708664e08587242869c82f36aee33fabc96e0c1f13d7f170bcb098df45c0b",
+      "bytes": 30295
+    },
+    {
+      "source": "model_lab/paired_terminal_experiment_v2.py",
+      "published": "releases/2026-10-26/implementation/model_lab/paired_terminal_experiment_v2.py",
+      "sha256": "1875fa3ac6d91d73da96d69086e74afb1f6b08e0668134641b5fbb97067c7bee",
+      "bytes": 31230
+    },
+    {
+      "source": "model_lab/planned_component_forecaster.py",
+      "published": "releases/2026-10-26/implementation/model_lab/planned_component_forecaster.py",
+      "sha256": "2badef4c88631db9e13867796b97b3fb881ded9201281c76a1188bd4b9fc239c",
+      "bytes": 4571
+    },
+    {
+      "source": "model_lab/planning_experiment.py",
+      "published": "releases/2026-10-26/implementation/model_lab/planning_experiment.py",
+      "sha256": "052dfad0c19b88d155671e1baa087820b2d8c31a20d32b8790d19ccfd36af2c1",
+      "bytes": 13813
+    },
+    {
+      "source": "model_lab/point_context.py",
+      "published": "releases/2026-10-26/implementation/model_lab/point_context.py",
+      "sha256": "5b5d4050d09ee3f646d0ea0e9b29e1f8125d9683ab9fc8c52b6c530f099ed38e",
+      "bytes": 11522
+    },
+    {
+      "source": "model_lab/point_planner.py",
+      "published": "releases/2026-10-26/implementation/model_lab/point_planner.py",
+      "sha256": "54efda1d2434c570d3c52f5f77adb3ea63576b7f6624c25b89772e53abffb87c",
+      "bytes": 7563
+    },
+    {
+      "source": "model_lab/probabilistic.py",
+      "published": "releases/2026-10-26/implementation/model_lab/probabilistic.py",
+      "sha256": "1ea86651c5a8d4d190e21696c94d80a2410becf87a4d393f796757fcdb6bdb5b",
+      "bytes": 2642
+    },
+    {
+      "source": "model_lab/probability_experiment.py",
+      "published": "releases/2026-10-26/implementation/model_lab/probability_experiment.py",
+      "sha256": "f2229f7675cdf7143e703fe90a35c2015ba0e543f3a7fec22c01e0df4a4b3533",
+      "bytes": 11460
+    },
+    {
+      "source": "model_lab/probability_refresh.py",
+      "published": "releases/2026-10-26/implementation/model_lab/probability_refresh.py",
+      "sha256": "d3557aa667d09d50e7c0b5a71320966dd4c806b1fb94bcd922785547b43380d7",
+      "bytes": 13070
+    },
+    {
+      "source": "model_lab/probability_selective_refresh.py",
+      "published": "releases/2026-10-26/implementation/model_lab/probability_selective_refresh.py",
+      "sha256": "c117f956a6fdecb3098c9072e0732101d3001c26108dd628f0ebf4e98b706c1b",
+      "bytes": 7775
+    },
+    {
+      "source": "model_lab/recency_threshold_calibration.py",
+      "published": "releases/2026-10-26/implementation/model_lab/recency_threshold_calibration.py",
+      "sha256": "4ada7026c0ae2fe8bfa640ff78da31f30b58f8cfec36c53590953ee7b9e0fae0",
+      "bytes": 13148
+    },
+    {
+      "source": "model_lab/recent_component_forecaster.py",
+      "published": "releases/2026-10-26/implementation/model_lab/recent_component_forecaster.py",
+      "sha256": "83a033eaff21e5884e580ce6f1f79064d3a48caba0db09a9254fdfc5ed856518",
+      "bytes": 6527
+    },
+    {
+      "source": "model_lab/report.py",
+      "published": "releases/2026-10-26/implementation/model_lab/report.py",
+      "sha256": "b81d7a3906375a73deacd638d7ae412aaa0a6f0b4b63e116fd4166fa41f53171",
+      "bytes": 1455
+    },
+    {
+      "source": "model_lab/rolling_threshold_calibration.py",
+      "published": "releases/2026-10-26/implementation/model_lab/rolling_threshold_calibration.py",
+      "sha256": "05aaed93edc762cbdf55bcd7f0fc9f344332c2ed6d1e3c50384c8aefd77685c3",
+      "bytes": 12853
+    },
+    {
+      "source": "model_lab/rollout_experiment.py",
+      "published": "releases/2026-10-26/implementation/model_lab/rollout_experiment.py",
+      "sha256": "2363e9dde752286801a991fb1fe23bfdf68a2c4a2c766bb8267a66717db6c32c",
+      "bytes": 19298
+    },
+    {
+      "source": "model_lab/rollout_policy.py",
+      "published": "releases/2026-10-26/implementation/model_lab/rollout_policy.py",
+      "sha256": "f270fb67844aa94dbf59ff957ca91403726d375ab0bdd65369d62e7787222819",
+      "bytes": 3739
+    },
+    {
+      "source": "model_lab/season_history.py",
+      "published": "releases/2026-10-26/implementation/model_lab/season_history.py",
+      "sha256": "3a61b10fc4500bfaa889e0e8f3d1d468bff02790c197393919e866493cb6b43f",
+      "bytes": 2858
+    },
+    {
+      "source": "model_lab/simulation.py",
+      "published": "releases/2026-10-26/implementation/model_lab/simulation.py",
+      "sha256": "154d9169398b883794a4b0737463430ab77a46898a67218634a061c23d0069bd",
+      "bytes": 15552
+    },
+    {
+      "source": "model_lab/takeover_audit.py",
+      "published": "releases/2026-10-26/implementation/model_lab/takeover_audit.py",
+      "sha256": "164d6ff08e1b8732740541dacacb1508bd71f169587a289837303e0671cad845",
+      "bytes": 7640
+    },
+    {
+      "source": "model_lab/takeover_campaign.py",
+      "published": "releases/2026-10-26/implementation/model_lab/takeover_campaign.py",
+      "sha256": "28f89e19afab8937c9df9b1423c3a3235074a9f3f032d5448ca37ff4dabc8d30",
+      "bytes": 15135
+    },
+    {
+      "source": "model_lab/takeover_diagnosis.py",
+      "published": "releases/2026-10-26/implementation/model_lab/takeover_diagnosis.py",
+      "sha256": "ef2dd7107bb6ed2c89149c849593809daeab874f42c9bc9dacd76dceda95a13f",
+      "bytes": 1981
+    },
+    {
+      "source": "model_lab/takeover_inputs.py",
+      "published": "releases/2026-10-26/implementation/model_lab/takeover_inputs.py",
+      "sha256": "4fd69d38e7709dca8b75f1937e0fdc83e148ba92e092ed1af7a786c461f27a7f",
+      "bytes": 4417
+    },
+    {
+      "source": "model_lab/takeover_report.py",
+      "published": "releases/2026-10-26/implementation/model_lab/takeover_report.py",
+      "sha256": "93d20d23b7dc52f75360a09510c01c166dcdc15c5ad69bdb10288c86c479e62c",
+      "bytes": 6388
+    },
+    {
+      "source": "model_lab/temporal_2026.py",
+      "published": "releases/2026-10-26/implementation/model_lab/temporal_2026.py",
+      "sha256": "20cddce15a15bb08727309b72b162ae8b8ec099bb823cd7d0b76fd0a57d81161",
+      "bytes": 3131
+    },
+    {
+      "source": "model_lab/terminal_experiment.py",
+      "published": "releases/2026-10-26/implementation/model_lab/terminal_experiment.py",
+      "sha256": "cfb21989e42f414ad5e4408a44fd0668abf5fc495019790b74c7da0c73276506",
+      "bytes": 21449
+    },
+    {
+      "source": "model_lab/terminal_value.py",
+      "published": "releases/2026-10-26/implementation/model_lab/terminal_value.py",
+      "sha256": "ccd1adb21d2231383b15c333d63e49643deb9fae2f4ee4ed880231b93a810442",
+      "bytes": 3611
+    },
+    {
+      "source": "model_lab/test_season_history.py",
+      "published": "releases/2026-10-26/implementation/model_lab/test_season_history.py",
+      "sha256": "7bb3d04fc8b73295f34d7bbfcac773164d1dd4958eb1af27c3e80e972c58e2cd",
+      "bytes": 2303
+    },
+    {
+      "source": "model_lab/threshold_diagnosis.py",
+      "published": "releases/2026-10-26/implementation/model_lab/threshold_diagnosis.py",
+      "sha256": "6db89d72bec48887162295ed3b3ed75d7f478bfedcbf282fad18b52c805d1160",
+      "bytes": 12667
+    },
+    {
+      "source": "scripts/activate_recent_component.py",
+      "published": "releases/2026-10-26/implementation/scripts/activate_recent_component.py",
+      "sha256": "600ac0e10571a10c913879d9c8d55689c08374a0aa6295534601e297d2b8c122",
+      "bytes": 11224
+    },
+    {
+      "source": "scripts/audit_rolling_reference.py",
+      "published": "releases/2026-10-26/implementation/scripts/audit_rolling_reference.py",
+      "sha256": "412450c47d8c57328ed8b23db31f11c29cf83b6c2a33f34fb6fc7b7cb0323c93",
+      "bytes": 8615
+    },
+    {
+      "source": "scripts/audit_rolling_reference_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/audit_rolling_reference_v2.py",
+      "sha256": "5e6fbc97898639ed1d625d7dfcdb5bbfd275aa8a5b21c5ccd8afb49aa4196852",
+      "bytes": 8839
+    },
+    {
+      "source": "scripts/audit_season_comparability.py",
+      "published": "releases/2026-10-26/implementation/scripts/audit_season_comparability.py",
+      "sha256": "3d92df6951e90b4dedeba809e4ddb7d904fab37020124a679de2d58a0e6f263c",
+      "bytes": 14251
+    },
+    {
+      "source": "scripts/base_cadence_study.py",
+      "published": "releases/2026-10-26/implementation/scripts/base_cadence_study.py",
+      "sha256": "61b881f35c141f21cb5b0157c0e45b6d4715a7bd9e2d0e368e30119154f721f2",
+      "bytes": 11358
+    },
+    {
+      "source": "scripts/base_recency_study.py",
+      "published": "releases/2026-10-26/implementation/scripts/base_recency_study.py",
+      "sha256": "6ea00b5ebd53fdae152644f1f2fbd9324b101aee79fe27fdcd6aabc95671c2b3",
+      "bytes": 16873
+    },
+    {
+      "source": "scripts/build_common_xg_v4.py",
+      "published": "releases/2026-10-26/implementation/scripts/build_common_xg_v4.py",
+      "sha256": "075af0cdbdda58a69ae1205b4125dd39801d3fca154d7c671436a4af55b77fc3",
+      "bytes": 10861
+    },
+    {
+      "source": "scripts/build_common_xg_v5.py",
+      "published": "releases/2026-10-26/implementation/scripts/build_common_xg_v5.py",
+      "sha256": "6c63e25d417465fbf121e34e02fa4da0472e7e840f7b9308e3e238a36e4f5a54",
+      "bytes": 11826
+    },
+    {
+      "source": "scripts/build_requalified_calendar.py",
+      "published": "releases/2026-10-26/implementation/scripts/build_requalified_calendar.py",
+      "sha256": "1bd98b8fd6794d4b518d341cac0a95c026036dee9ead2431bea8f74193730855",
+      "bytes": 9786
+    },
+    {
+      "source": "scripts/calibration_response_sweep.py",
+      "published": "releases/2026-10-26/implementation/scripts/calibration_response_sweep.py",
+      "sha256": "d3d9c3361e58c65c031398769e10b9474e6d77e6f6d4c11a7a515649a6a84b21",
+      "bytes": 18873
+    },
+    {
+      "source": "scripts/calibration_weight_sweep.py",
+      "published": "releases/2026-10-26/implementation/scripts/calibration_weight_sweep.py",
+      "sha256": "f1bad6b3c513da8ea532ef2daccbef87af672976f573267e92a9fa84eaabe1b2",
+      "bytes": 18541
+    },
+    {
+      "source": "scripts/combined_xg_adaptation.py",
+      "published": "releases/2026-10-26/implementation/scripts/combined_xg_adaptation.py",
+      "sha256": "b143dfdd147d2b6d074f68b9158fbaf7df0b82cde63b2789391361acdbf9a8eb",
+      "bytes": 11802
+    },
+    {
+      "source": "scripts/combined_xg_metrics.py",
+      "published": "releases/2026-10-26/implementation/scripts/combined_xg_metrics.py",
+      "sha256": "24d25b1a2cf4743ba955187f9461fdcf0c4992289e82e18a8bbf6a43cc5f1ff5",
+      "bytes": 3670
+    },
+    {
+      "source": "scripts/common_model_retest.py",
+      "published": "releases/2026-10-26/implementation/scripts/common_model_retest.py",
+      "sha256": "7c5fa9398598632f27e02b52dddbc7e88578703eb27e2152c27c3f170427f216",
+      "bytes": 35500
+    },
+    {
+      "source": "scripts/common_model_retest_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/common_model_retest_v2.py",
+      "sha256": "c210d5a4db11f6d6d51a3eb54a1e1191756162d58500d8b82549113b4b4916c8",
+      "bytes": 7589
+    },
+    {
+      "source": "scripts/common_model_retest_v3.py",
+      "published": "releases/2026-10-26/implementation/scripts/common_model_retest_v3.py",
+      "sha256": "fd0b8ece41f3b06080341ff4e6f76f9918c863fee87d6175571147567cd054c3",
+      "bytes": 7862
+    },
+    {
+      "source": "scripts/common_operational_anchor.py",
+      "published": "releases/2026-10-26/implementation/scripts/common_operational_anchor.py",
+      "sha256": "58800eb83aa7195533cb03fa5a07804171fbe4a00057985908057e391bf0ca96",
+      "bytes": 3105
+    },
+    {
+      "source": "scripts/common_season_comparison.py",
+      "published": "releases/2026-10-26/implementation/scripts/common_season_comparison.py",
+      "sha256": "d726727320acc337b4c8a96d6158dc2c79d1cd1caa521f317747d9e640133719",
+      "bytes": 27505
+    },
+    {
+      "source": "scripts/common_season_inputs.py",
+      "published": "releases/2026-10-26/implementation/scripts/common_season_inputs.py",
+      "sha256": "aeb0b83cd68e0b4b2a870c6df97227642df5b43f6170dba0dac7e13b65e3bf3a",
+      "bytes": 14612
+    },
+    {
+      "source": "scripts/common_weather_proxy.py",
+      "published": "releases/2026-10-26/implementation/scripts/common_weather_proxy.py",
+      "sha256": "b50c3df46dfd8126f1587f29606274e150ee7120ae0d3c097b9d2f74fe319d0a",
+      "bytes": 12564
+    },
+    {
+      "source": "scripts/component_confirmation.py",
+      "published": "releases/2026-10-26/implementation/scripts/component_confirmation.py",
+      "sha256": "78bd594e169031fa9cb1a41a6965c1cf725247be693308872831d2749a91fe9e",
+      "bytes": 15608
+    },
+    {
+      "source": "scripts/component_confirmation_inputs.py",
+      "published": "releases/2026-10-26/implementation/scripts/component_confirmation_inputs.py",
+      "sha256": "261edee82f31e33422cbc0efe3d7ae8331910558ae6aa49adcc807b7291f29c2",
+      "bytes": 14586
+    },
+    {
+      "source": "scripts/component_confirmation_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/component_confirmation_v2.py",
+      "sha256": "73074e3ead6bc5fde4764de7b56e21dca02b2fd85dda84270270086b8be8f68f",
+      "bytes": 16332
+    },
+    {
+      "source": "scripts/component_live_fetch.py",
+      "published": "releases/2026-10-26/implementation/scripts/component_live_fetch.py",
+      "sha256": "ca664a61ddaa0a7b68df4c978de9b67fd513981917ae291c58bae7055422ba81",
+      "bytes": 1456
+    },
+    {
+      "source": "scripts/diagnose_component_2025.py",
+      "published": "releases/2026-10-26/implementation/scripts/diagnose_component_2025.py",
+      "sha256": "1fb331a8bf3e652ee1c24495235e80e1a4e811176e68a0df4737af5bb64b69ba",
+      "bytes": 11893
+    },
+    {
+      "source": "scripts/diagnose_current_model_losses.py",
+      "published": "releases/2026-10-26/implementation/scripts/diagnose_current_model_losses.py",
+      "sha256": "9b1ec2679e1cbf714109f9cf63365abe8fc69b2d45eeb463862a9aed05c4ecd7",
+      "bytes": 12964
+    },
+    {
+      "source": "scripts/diagnose_current_model_losses_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/diagnose_current_model_losses_v2.py",
+      "sha256": "8668fdbd08905e7faec90d83ef0bfb33aae27a5cc84befee844257404f6e896a",
+      "bytes": 13220
+    },
+    {
+      "source": "scripts/diagnose_current_model_losses_v3.py",
+      "published": "releases/2026-10-26/implementation/scripts/diagnose_current_model_losses_v3.py",
+      "sha256": "60ecdfa75418bdc7c9ae5cfc63c1e489cd2a200a45e5b9c4fe1baf8f90f958d0",
+      "bytes": 13541
+    },
+    {
+      "source": "scripts/diagnose_h1_calibration.py",
+      "published": "releases/2026-10-26/implementation/scripts/diagnose_h1_calibration.py",
+      "sha256": "29c2839ba284ed5b2fe639810e47e7856e12920e5db70452b016f63cf9d6a579",
+      "bytes": 3351
+    },
+    {
+      "source": "scripts/diagnose_player_decisions.py",
+      "published": "releases/2026-10-26/implementation/scripts/diagnose_player_decisions.py",
+      "sha256": "edfa656e140055f30373addec5ed8d6e782dae01908e136359a94e8a874ab76e",
+      "bytes": 12352
+    },
+    {
+      "source": "scripts/diagnose_player_decisions_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/diagnose_player_decisions_v2.py",
+      "sha256": "147173fe3d070a2c10faae383fc5393426ea7341d956c31f95fe63cc73b1c6a8",
+      "bytes": 13756
+    },
+    {
+      "source": "scripts/finalize_common_overview.py",
+      "published": "releases/2026-10-26/implementation/scripts/finalize_common_overview.py",
+      "sha256": "1cad0f870faca14838229a9c87a147a57a12f1dfee119c66e6193370e84cbe08",
+      "bytes": 5279
+    },
+    {
+      "source": "scripts/finalize_matched_availability_v8.py",
+      "published": "releases/2026-10-26/implementation/scripts/finalize_matched_availability_v8.py",
+      "sha256": "70a9c3739f480a7bea004f56a5592655bbe773de6f04033d11619792a0a2f6a8",
+      "bytes": 16678
+    },
+    {
+      "source": "scripts/finalize_matched_season_retest_v5.py",
+      "published": "releases/2026-10-26/implementation/scripts/finalize_matched_season_retest_v5.py",
+      "sha256": "67780f6d97587f742d9f6c090dff8269b5932496c0cc814ea8eeea41d1f7a24a",
+      "bytes": 13864
+    },
+    {
+      "source": "scripts/finish_common_comparison.py",
+      "published": "releases/2026-10-26/implementation/scripts/finish_common_comparison.py",
+      "sha256": "684a86ab625961b4ce0e41c20e4685906ee2231baf823b4a810534acdb58b36a",
+      "bytes": 6264
+    },
+    {
+      "source": "scripts/finish_common_seasons.py",
+      "published": "releases/2026-10-26/implementation/scripts/finish_common_seasons.py",
+      "sha256": "1e2a129611a6519f2591b465fc1657a14c4ec929c4b4f8e87eb4bd7e4b2b0aa6",
+      "bytes": 1829
+    },
+    {
+      "source": "scripts/finish_common_seasons_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/finish_common_seasons_v2.py",
+      "sha256": "992b73b3e277f0f41b68e542545948abd5b95afd9439655a279f7705c2b945ed",
+      "bytes": 3167
+    },
+    {
+      "source": "scripts/matched_availability_retest_v7.py",
+      "published": "releases/2026-10-26/implementation/scripts/matched_availability_retest_v7.py",
+      "sha256": "c0843602475c6e5c7088caa2aefd2635eb9e0797c2be326afbc9576039c3820f",
+      "bytes": 14750
+    },
+    {
+      "source": "scripts/matched_availability_retest_v8.py",
+      "published": "releases/2026-10-26/implementation/scripts/matched_availability_retest_v8.py",
+      "sha256": "0310031cc788f644faffa3e3c04344603587eeb0761511675888e7403187482a",
+      "bytes": 15007
+    },
+    {
+      "source": "scripts/matched_eligibility_retest_v6.py",
+      "published": "releases/2026-10-26/implementation/scripts/matched_eligibility_retest_v6.py",
+      "sha256": "d8eb86265453c3b832a32e4bf2d217e75285afb90c4468d9dd8e7f45e108bd93",
+      "bytes": 9530
+    },
+    {
+      "source": "scripts/matched_season_retest.py",
+      "published": "releases/2026-10-26/implementation/scripts/matched_season_retest.py",
+      "sha256": "92d1e80eda31de20400937e9dc2123dc8f6d26aaf70c96463620d047ece1d817",
+      "bytes": 39553
+    },
+    {
+      "source": "scripts/matched_season_retest_v3.py",
+      "published": "releases/2026-10-26/implementation/scripts/matched_season_retest_v3.py",
+      "sha256": "8b7ae184fb867472471059380a9544403ad5195ee2c1e23b43dba1d929302add",
+      "bytes": 44560
+    },
+    {
+      "source": "scripts/matched_season_retest_v4.py",
+      "published": "releases/2026-10-26/implementation/scripts/matched_season_retest_v4.py",
+      "sha256": "0ad85b3404eecebe578bf3a8511bbd982f7a300143cd71bf16775730e960bc5a",
+      "bytes": 45281
+    },
+    {
+      "source": "scripts/matched_season_retest_v5.py",
+      "published": "releases/2026-10-26/implementation/scripts/matched_season_retest_v5.py",
+      "sha256": "fc821fc8710d1b761eb00aaf5d453822a4161d5730187d18f4fd6856313fc4d6",
+      "bytes": 45826
+    },
+    {
+      "source": "scripts/project_inventory.py",
+      "published": "releases/2026-10-26/implementation/scripts/project_inventory.py",
+      "sha256": "0c9a005a4010648f7cc3bde5dd8b5b10bdbec6401e2c32586954b9f038df7dd4",
+      "bytes": 5278
+    },
+    {
+      "source": "scripts/publish_common_comparison.py",
+      "published": "releases/2026-10-26/implementation/scripts/publish_common_comparison.py",
+      "sha256": "43404483012500137a666d2e5af5107dda21a23ede01217b428d00479a3c0637",
+      "bytes": 8235
+    },
+    {
+      "source": "scripts/refresh_component_release.py",
+      "published": "releases/2026-10-26/implementation/scripts/refresh_component_release.py",
+      "sha256": "f269f9d2b3dbf4b90b08ccaa4890b1d2e18642b1e5ec8d9dda86a814afb07234",
+      "bytes": 6816
+    },
+    {
+      "source": "scripts/refresh_public_fpl_sources.py",
+      "published": "releases/2026-10-26/implementation/scripts/refresh_public_fpl_sources.py",
+      "sha256": "6baddf679e7118d7b6fd63767af2b92df794314658886f57ead979c0f33679df",
+      "bytes": 4144
+    },
+    {
+      "source": "scripts/report_common_model_retest.py",
+      "published": "releases/2026-10-26/implementation/scripts/report_common_model_retest.py",
+      "sha256": "df2cd31311edb7f09accbdd93c54145a37766b6febce17fbf502f6039e6251b7",
+      "bytes": 16273
+    },
+    {
+      "source": "scripts/report_common_seasons.py",
+      "published": "releases/2026-10-26/implementation/scripts/report_common_seasons.py",
+      "sha256": "63992974584210f89ddbed95d324af9afda895e113ab58c341a059104d04624a",
+      "bytes": 18221
+    },
+    {
+      "source": "scripts/report_component_confirmation.py",
+      "published": "releases/2026-10-26/implementation/scripts/report_component_confirmation.py",
+      "sha256": "a82216307db408f3e0405bdbebe2a2d281871e8cee0a9d31c57793b9a64de88f",
+      "bytes": 11875
+    },
+    {
+      "source": "scripts/report_season_comparability.py",
+      "published": "releases/2026-10-26/implementation/scripts/report_season_comparability.py",
+      "sha256": "5d765c2cf7d3449d2302ff4d9801610b616fdf8a39a3925b246e619c3c1a5a25",
+      "bytes": 20117
+    },
+    {
+      "source": "scripts/report_xg_adaptation.py",
+      "published": "releases/2026-10-26/implementation/scripts/report_xg_adaptation.py",
+      "sha256": "064690392d1eba68ab2d377a5369e3ed7aa7d5c3a4aa980ace8ad0e0eea1f502",
+      "bytes": 8198
+    },
+    {
+      "source": "scripts/report_xg_adaptation_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/report_xg_adaptation_v2.py",
+      "sha256": "20d1e361a242955a6cd75c9d4492c0f204a9d57fd782047436ccb004ffb67156",
+      "bytes": 2672
+    },
+    {
+      "source": "scripts/research.py",
+      "published": "releases/2026-10-26/implementation/scripts/research.py",
+      "sha256": "e0254674d2ef328e5758cfd7e3c1db138f89e985f7df53253a18cbc7400035b1",
+      "bytes": 10123
+    },
+    {
+      "source": "scripts/review_matched_season_retest_v5.py",
+      "published": "releases/2026-10-26/implementation/scripts/review_matched_season_retest_v5.py",
+      "sha256": "d7ce58b8116ba708c87e02d963c143c134edc6bcfd222106d5b17e2b5b86ea2b",
+      "bytes": 12803
+    },
+    {
+      "source": "scripts/run_unstarted_common_seasons.py",
+      "published": "releases/2026-10-26/implementation/scripts/run_unstarted_common_seasons.py",
+      "sha256": "61f843d24195a6effa060488d8a05e6cb3268c39f95ae96690761fcf09466c70",
+      "bytes": 1843
+    },
+    {
+      "source": "scripts/test_manager_horizon.py",
+      "published": "releases/2026-10-26/implementation/scripts/test_manager_horizon.py",
+      "sha256": "b1832057200e7bdb186ace4838a8be6b4e9cb95ee7ee93a786acf979c8fc3a4e",
+      "bytes": 13614
+    },
+    {
+      "source": "scripts/test_manager_horizon_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/test_manager_horizon_v2.py",
+      "sha256": "87d2f2708a093a7b1e81729f83d7369f483db6cb4dff9f9373672690931be703",
+      "bytes": 13941
+    },
+    {
+      "source": "scripts/test_requalified_calendar.py",
+      "published": "releases/2026-10-26/implementation/scripts/test_requalified_calendar.py",
+      "sha256": "514a56fe65eccbc1d8c93044e21ee8ee590b5058d1331696da94f253a4760190",
+      "bytes": 8539
+    },
+    {
+      "source": "scripts/test_research.py",
+      "published": "releases/2026-10-26/implementation/scripts/test_research.py",
+      "sha256": "d0371e5f3c648a38914e54dfb32dcbbba96408813231534425a3eee5f276c2de",
+      "bytes": 3555
+    },
+    {
+      "source": "scripts/test_xg_adaptation.py",
+      "published": "releases/2026-10-26/implementation/scripts/test_xg_adaptation.py",
+      "sha256": "b9ae66d72b084e7008aab232884e715b653fb08a1bae90185c3eb002add1d562",
+      "bytes": 8452
+    },
+    {
+      "source": "scripts/test_xg_adaptation_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/test_xg_adaptation_v2.py",
+      "sha256": "b6f2d224362362841ce5fff7c4d784890c7a61199128ce0a5d11a798c77ad924",
+      "bytes": 4799
+    },
+    {
+      "source": "scripts/verify_audit_rolling_reference.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_audit_rolling_reference.py",
+      "sha256": "e867837e05274269b8529234f18d667fa302822ed9ac2ba9016a1f0440a0c23d",
+      "bytes": 4695
+    },
+    {
+      "source": "scripts/verify_audit_rolling_reference_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_audit_rolling_reference_v2.py",
+      "sha256": "80af1b5ea45a0911e77d31666aee5d818f7c0d8896baf4d19320c9ab253efabe",
+      "bytes": 4698
+    },
+    {
+      "source": "scripts/verify_base_cadence_study.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_base_cadence_study.py",
+      "sha256": "51664fa1c155c19fbc7e45e77f1e38e2f02e5955c172c74104b91cbbd81bfc9e",
+      "bytes": 4779
+    },
+    {
+      "source": "scripts/verify_base_recency_study.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_base_recency_study.py",
+      "sha256": "2d354733ae1a5d109b34b77d01625768c4411faec13db955176565cf5301a16a",
+      "bytes": 13717
+    },
+    {
+      "source": "scripts/verify_common_model_retest.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_common_model_retest.py",
+      "sha256": "bcff99ecb11e3cd2615eca76aec76fea7bec0374bc409e8ccb578c2b4e4e97c3",
+      "bytes": 8998
+    },
+    {
+      "source": "scripts/verify_common_seasons.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_common_seasons.py",
+      "sha256": "179618e9a2541de8e83efb9ed132abc3e00b8c2e9dcb8ddfc2c6107f10b349e3",
+      "bytes": 6805
+    },
+    {
+      "source": "scripts/verify_common_seasons_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_common_seasons_v2.py",
+      "sha256": "31ca3a173c99ed5df39452640906dff1c9167aa825312e67858eb065dd730463",
+      "bytes": 8000
+    },
+    {
+      "source": "scripts/verify_component_confirmation.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_component_confirmation.py",
+      "sha256": "799a309c005d632da8bd72f0f743789936b97bb53645c99baf916541f4e1543a",
+      "bytes": 8176
+    },
+    {
+      "source": "scripts/verify_component_confirmation_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_component_confirmation_v2.py",
+      "sha256": "30668d1d7048759e010139a474e534166e391e6a02e9cbaa5bbe5c5200083d32",
+      "bytes": 8303
+    },
+    {
+      "source": "scripts/verify_component_live.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_component_live.py",
+      "sha256": "f770c02d8715e6432595125ff83d2b0d286e8552fa83286c2ebf720e23c8bd5b",
+      "bytes": 6011
+    },
+    {
+      "source": "scripts/verify_h1_calibration_probe.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_h1_calibration_probe.py",
+      "sha256": "30e17cf1f7b2aaeb81e37aff7fe231d437374aa80367d152d06ddc10428c435d",
+      "bytes": 3142
+    },
+    {
+      "source": "scripts/verify_requalified_calendar.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_requalified_calendar.py",
+      "sha256": "134a62ca2a39c9e4858ce11dd6a0cc010910699c5fb6db64e0b1c338b3a7b1c6",
+      "bytes": 12314
+    },
+    {
+      "source": "scripts/verify_xg_adaptation.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_xg_adaptation.py",
+      "sha256": "5f2204c011f794ad5f8bcde2dd42d6d643c1b4d00a8025b67f8c7d7b26e72fd8",
+      "bytes": 9335
+    },
+    {
+      "source": "scripts/verify_xg_adaptation_v2.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_xg_adaptation_v2.py",
+      "sha256": "ffc3b13dd0930126ba5b2d93829d364768d99e289065aa47ac7a5c0578b790a4",
+      "bytes": 2590
+    },
+    {
+      "source": "scripts/verify_xg_intervals.py",
+      "published": "releases/2026-10-26/implementation/scripts/verify_xg_intervals.py",
+      "sha256": "454b9422a1230a79f3ff97dcb5560632376e072930706e989cecbd2fef8d5c2c",
+      "bytes": 2643
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/build_calendar.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/build_calendar.py",
+      "sha256": "861cfef75e663bfa809338420c13668375d17600e10fa7c244c0fb8fcabbe035",
+      "bytes": 9136
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/build_context.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/build_context.py",
+      "sha256": "97a5650181efe9641756c513ba16a7ce768ff6abe27f06c3a72158c72ad13997",
+      "bytes": 8188
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/build_minutes.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/build_minutes.py",
+      "sha256": "eeb8920baf9e9041b45ca186cb6e54423c553231e153af09216f09c77d55f70b",
+      "bytes": 12802
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/common.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/common.py",
+      "sha256": "a3235465e421af4fd860e063f04d4a3ea1cfc462ea57a12e3676d6cd5ccad81e",
+      "bytes": 3858
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/fetch.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/fetch.py",
+      "sha256": "3cc078fd53bee4af74b69fd962cf02430da730b8b42d6f9cb7ee1dc2ca51c61f",
+      "bytes": 4604
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/fetch_calendar_archive.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/fetch_calendar_archive.py",
+      "sha256": "595a9ff0373d94c3b3e91646f845362904ed32af54d00604a5be9d9f4e8f7494",
+      "bytes": 5170
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/loader.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/loader.py",
+      "sha256": "56392b9acfe6f818e756c64aea5c308122b091d855d01d535c030344e51c66fd",
+      "bytes": 853
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/minute_reconstruction.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/minute_reconstruction.py",
+      "sha256": "f03ea51fb32ce4ab17ae32089045a7e39848df979cbcf690002c55f2117a9141",
+      "bytes": 1845
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/release.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/release.py",
+      "sha256": "2ff18de85eea60718c14cf1fede9e9b9b18333b9968e17bf3e4ee5d0cdaa9599",
+      "bytes": 9047
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/verify.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/verify.py",
+      "sha256": "1e83c38d75da1abf90720d547034f70fddeca0eed36faff35a831d105641ccab",
+      "bytes": 12229
+    },
+    {
+      "source": "datasets/fpl_all_competitions_context_v1/workload_store.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_all_competitions_context_v1/workload_store.py",
+      "sha256": "fc11e255d1c31535d080864a13c5834e58bbc4260315cce9c25612b8f694f98c",
+      "bytes": 7504
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/build_calendar.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_external_live_2026_10_26/build_calendar.py",
+      "sha256": "861cfef75e663bfa809338420c13668375d17600e10fa7c244c0fb8fcabbe035",
+      "bytes": 9136
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/build_context.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_external_live_2026_10_26/build_context.py",
+      "sha256": "97a5650181efe9641756c513ba16a7ce768ff6abe27f06c3a72158c72ad13997",
+      "bytes": 8188
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/build_minutes.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_external_live_2026_10_26/build_minutes.py",
+      "sha256": "02f6846fbc51c8dd7e35b837167c897b0dac8bf912b59202de8dc00021195724",
+      "bytes": 12955
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/common.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_external_live_2026_10_26/common.py",
+      "sha256": "264962dc0c80195f147fab579fc92900480aa72f1f47633c6af71f6edc353aca",
+      "bytes": 4825
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/minute_reconstruction.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_external_live_2026_10_26/minute_reconstruction.py",
+      "sha256": "f03ea51fb32ce4ab17ae32089045a7e39848df979cbcf690002c55f2117a9141",
+      "bytes": 1845
+    },
+    {
+      "source": "datasets/fpl_external_live_2026_10_26/workload_store.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_external_live_2026_10_26/workload_store.py",
+      "sha256": "fc11e255d1c31535d080864a13c5834e58bbc4260315cce9c25612b8f694f98c",
+      "bytes": 7504
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/assemble.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_weather_all_seasons_v1/assemble.py",
+      "sha256": "fddd58bb4b9059e497e7655d0447afbdfd3eeeba7b486bc462c73f0954bf01ae",
+      "bytes": 7266
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/collect_sources.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_weather_all_seasons_v1/collect_sources.py",
+      "sha256": "e333fbfb78bc1f3c6409c0a141bad94615254a68391de0a4f95002bfe372fbf0",
+      "bytes": 3065
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/finish_when_ready.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_weather_all_seasons_v1/finish_when_ready.py",
+      "sha256": "05554121b1169397a304367ca12e2d54191a9d1452c0961e5872525ef7fe6e31",
+      "bytes": 1127
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/preparation.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_weather_all_seasons_v1/preparation.py",
+      "sha256": "b0966f0adade268fe6e2f118c2dffacbd0439f724a8192c403d36cf0acb4ab46",
+      "bytes": 7869
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/run_all.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_weather_all_seasons_v1/run_all.py",
+      "sha256": "7951a94e56e3bffe89c427b3d6b517b747e95a82ac753cc720468313f20a49ba",
+      "bytes": 684
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/verify_independently.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_weather_all_seasons_v1/verify_independently.py",
+      "sha256": "089fea5615a37904eb8d90dbea9024443b43a90db6b092d87d8050b91d79f778",
+      "bytes": 7134
+    },
+    {
+      "source": "datasets/fpl_weather_all_seasons_v1/weather.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_weather_all_seasons_v1/weather.py",
+      "sha256": "034b2f4e92abfe8c726e37379e45d2b0b85d3057f19bdd29fe156d25713049b4",
+      "bytes": 14709
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/build.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_availability_all_seasons_v1/build.py",
+      "sha256": "e1ddf094651028c9ee30a8a6dc283835b766745c755ba4f8aa93b20db12f8bbf",
+      "bytes": 9828
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/common.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_availability_all_seasons_v1/common.py",
+      "sha256": "4b54586b7158d14b9f06257f0aa00295535c477856f5842c886622951e2472a0",
+      "bytes": 2333
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/fetch.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_availability_all_seasons_v1/fetch.py",
+      "sha256": "cba4b79da939e6c858869732eed5415ad95cf7e310681e7379d37e10172700b2",
+      "bytes": 7557
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/loader.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_availability_all_seasons_v1/loader.py",
+      "sha256": "19c81782d85339f91097ff8326bab2d7b808d146eff528203fa4a6f295dca35e",
+      "bytes": 562
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/release.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_availability_all_seasons_v1/release.py",
+      "sha256": "a11970be631784ff0c775e79315c1f93846ab41095f47febad09cf2de33737a3",
+      "bytes": 6557
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/verify.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_availability_all_seasons_v1/verify.py",
+      "sha256": "ea1ffa4be5308d52cb9c2d089d4eb7bb6589c8e48515538d6013e0a9e9d85c79",
+      "bytes": 10970
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/verify_metadata.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_availability_all_seasons_v1/verify_metadata.py",
+      "sha256": "3f55c0523ca39aea56d7a3c967e812edacddd856b36aac4b904f60172fa52bbd",
+      "bytes": 1520
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/build.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_set_piece_roles_v1/build.py",
+      "sha256": "94cf72eb9ac23c5c9e817a4d7257c24ab674b3eed51e363b901091d47ce06474",
+      "bytes": 11590
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/common.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_set_piece_roles_v1/common.py",
+      "sha256": "e587bef7f6aebbbc8746b924fd6f701736cfd0b5aec118000588fb40c618c9f4",
+      "bytes": 1914
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/examples.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_set_piece_roles_v1/examples.py",
+      "sha256": "80989c3e2108442300e8d6cb925c167059ef6ddd13347dd662853d19963fcc3e",
+      "bytes": 1466
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/loader.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_set_piece_roles_v1/loader.py",
+      "sha256": "052bd3cb27193b0942d115764b0d33421dc3afb967055a62d88f2b8fd050162f",
+      "bytes": 579
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/release.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_set_piece_roles_v1/release.py",
+      "sha256": "df454a6d6dd4ed43011261075ddc30f078011f9025c741e59621aa27eca8b8bc",
+      "bytes": 5624
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/verify.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_set_piece_roles_v1/verify.py",
+      "sha256": "213cc5ab5ec196ebd68c892f7829de85fcf6d797f9783bde9cf77118ccf12e14",
+      "bytes": 11889
+    },
+    {
+      "source": "datasets/fpl_role_strength_v1/build.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_role_strength_v1/build.py",
+      "sha256": "6e34e26d059fa7d8e6d5d2c3d1a2f5db9099af6ca2bc85017eee257304d23f83",
+      "bytes": 12691
+    },
+    {
+      "source": "datasets/fpl_role_strength_v1/common.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_role_strength_v1/common.py",
+      "sha256": "68a86d4c0e587e56279ba1c5c2498633ec9a5137c9daccb50d9748573cea3a86",
+      "bytes": 1343
+    },
+    {
+      "source": "datasets/fpl_role_strength_v1/loader.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_role_strength_v1/loader.py",
+      "sha256": "b095fb8e0f45061d7ab0d1d7d0003bd4c610c11e010ce32f9feca71af4c5e917",
+      "bytes": 642
+    },
+    {
+      "source": "datasets/fpl_role_strength_v1/release.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_role_strength_v1/release.py",
+      "sha256": "f44cc3b52243bbcd8e61021f09dc06ff0f65c2f175963dbcae6ddca8595d15a1",
+      "bytes": 6110
+    },
+    {
+      "source": "datasets/fpl_role_strength_v1/verify.py",
+      "published": "releases/2026-10-26/implementation/datasets/fpl_role_strength_v1/verify.py",
+      "sha256": "38cca6ef15863478b91e1a2a5206da5640271e34547060107b16052cd4843296",
+      "bytes": 12988
+    },
+    {
+      "source": "datasets/fpl_common_training_v5/README.txt",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_common_training_v5/README.txt",
+      "sha256": "780723380adbe4455e0622e1d20e84038106bc52e67dfed18eb83dbe4000fe8c",
+      "bytes": 3123
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/README.txt",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_availability_all_seasons_v1/README.txt",
+      "sha256": "86c45ea359455fe2db6fc294cdec1408040000840629c9d985fb3c8f591e76e8",
+      "bytes": 6234
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/README.txt",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_set_piece_roles_v1/README.txt",
+      "sha256": "a9f30260336cc15801d7452a5c04616c8882918b9739f8b8f11ebc26da4348ef",
+      "bytes": 5758
+    },
+    {
+      "source": "datasets/fpl_role_strength_v1/README.txt",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_role_strength_v1/README.txt",
+      "sha256": "a3c6d28074689ddf10124a2cbe0c97fd2b6d6934f872d569128debd20e6eda2f",
+      "bytes": 7174
+    },
+    {
+      "source": "datasets/fpl_common_training_v5/release.json",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_common_training_v5/release.json",
+      "sha256": "fe2dadfdbc16abe15b6c3467d345343fef7e6aa155a62d8fac403029d2cb6777",
+      "bytes": 1112
+    },
+    {
+      "source": "datasets/fpl_availability_all_seasons_v1/verification.json",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_availability_all_seasons_v1/verification.json",
+      "sha256": "0f8f3b7d50ec6b1e1fa0b382f0d838846e4233ef2df83f38bafce65dece0c8c2",
+      "bytes": 831
+    },
+    {
+      "source": "datasets/fpl_set_piece_roles_v1/verification.json",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_set_piece_roles_v1/verification.json",
+      "sha256": "2b7e0962a43733290fd191765be7b9eb8d4e1af992c5124319de3add6093d0cc",
+      "bytes": 1092
+    },
+    {
+      "source": "datasets/fpl_role_strength_v1/verification.json",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_role_strength_v1/verification.json",
+      "sha256": "aa7eda96f864aecbd83a927ce42a2db5253bf7192773d30f1e9b5695c19883c4",
+      "bytes": 1326
+    },
+    {
+      "source": "datasets/fpl_common_training_v5/schema.json",
+      "published": "releases/2026-10-26/evidence/datasets/fpl_common_training_v5/schema.json",
+      "sha256": "f5fdf7f694a0b66ed608ace9a317c349dbd2b424b7cce7da7476942c51bfabd0",
+      "bytes": 28766
+    },
+    {
+      "source": "reports/component_freshness_2026_10_26/result.json",
+      "published": "releases/2026-10-26/evidence/component_freshness_2026_10_26/result.json",
+      "sha256": "8bce421c92ef2a9dc1475b85aa625b538f8108c744ebcc9bdec25e7eef5b3262",
+      "bytes": 2412
+    },
+    {
+      "source": "reports/component_freshness_2026_10_26/RESULTATER.txt",
+      "published": "releases/2026-10-26/evidence/component_freshness_2026_10_26/RESULTATER.txt",
+      "sha256": "549295f918c76d7b8db77ba7a9f4b7cd54634b19740b92c01f0d1d05cf5a6a08",
+      "bytes": 4719
+    },
+    {
+      "source": "reports/component_freshness_2026_10_26/final_verification.json",
+      "published": "releases/2026-10-26/evidence/component_freshness_2026_10_26/final_verification.json",
+      "sha256": "f5221fb6c19c80def23b3782bd6d4c6cd715fc9a01a4c7a6ba6993a63f58f95c",
+      "bytes": 1841
+    },
+    {
+      "source": "reports/component_freshness_2026_10_26/readiness.json",
+      "published": "releases/2026-10-26/evidence/component_freshness_2026_10_26/readiness.json",
+      "sha256": "10f64f4b152d763e43141bee08169bf3d4ecfed750f7fdc4807e0b59ae19d2bf",
+      "bytes": 568
+    },
+    {
+      "source": "reports/component_freshness_2026_10_26/verification.json",
+      "published": "releases/2026-10-26/evidence/component_freshness_2026_10_26/verification.json",
+      "sha256": "089d93102bb83f0005472b0eee0568beb7352dae8d8a838b63bbb087cef0d350",
+      "bytes": 1875
+    },
+    {
+      "source": "reports/component_freshness_2026_10_26/active_dispatcher_verification.json",
+      "published": "releases/2026-10-26/evidence/component_freshness_2026_10_26/active_dispatcher_verification.json",
+      "sha256": "76365118a3cf790676b4fd86c32e910724809456ead29354ea7dddc498154539",
+      "bytes": 284
+    }
+  ],
+  "full_raw_cache_included": false,
+  "full_model_replay_included": false
+}

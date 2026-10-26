@@ -1,0 +1,69 @@
+{
+  "conclusion": "Komponentmodell mot aktiv modell p\u00e52025/26, samme manager og separat no-chip-stress: forh\u00e5ndsl\u00e5st krav ikke dokumentert; behold aktiv modell og forskningsresultater.",
+  "confirmation_gate_passed": false,
+  "decision": "retain_for_research",
+  "evidence_hashes": {
+    "reports/component_confirmation_2026_10_25_v2/RESULTATER.md": "bab239916f0989bdf1676290c0df79bf4ee3262c0c4657441237432308a28356",
+    "reports/component_confirmation_2026_10_25_v2/attempts.json": "6916e3950fa2c78196e8efb027389b1cedd8c236ef8a9a7e2ebecf9e56f91cbf",
+    "reports/component_confirmation_2026_10_25_v2/calendar_diagnostics.csv": "ce5e0167c4c8d36ca5564d11dbaf3fc3e64c5be1327eb85af8ae441204e0c33e",
+    "reports/component_confirmation_2026_10_25_v2/chip_diagnostics.csv": "99029c6d0d79253a3816c7f04e8098f2d1daf790352cdf5c04ffd9c829e767d2",
+    "reports/component_confirmation_2026_10_25_v2/forecast_diagnostics.csv": "78c244afbaa523deb784b0e53f12ff6a8a5f532271b32482774dfd7a960d7dc3",
+    "reports/component_confirmation_2026_10_25_v2/forecast_verification.json": "7166042e0e717131abe6667b9c75fdf420ca581acdee7c74b500f03dd001cf62",
+    "reports/component_confirmation_2026_10_25_v2/manager_verification.json": "01ca285d85bb01f66ea30b3acaec7c4b557d835f43021c30e3db87d2d121c249",
+    "reports/component_confirmation_2026_10_25_v2/prediction_lock.json": "55be6627af253ae72c7806e2974d767bee5a39997122073df88456eed6cce437",
+    "reports/component_confirmation_2026_10_25_v2/preflight.json": "5d456b26a34254c569acdf870431c1703dba224c507d3c4f16fccfe83c745d74",
+    "reports/component_confirmation_2026_10_25_v2/projection_audit.csv": "0741cd712743647fc545aad75d5f4f454c3a8b35200269f87cfca01e6f4cf466",
+    "reports/component_confirmation_2026_10_25_v2/proposal.json": "145d189241d970700fc9dc908c08c1b3b232e5d5b20d6c08199a4657ccabd594",
+    "reports/component_confirmation_2026_10_25_v2/round_diagnostics.csv": "df83c68e16c431ca3380a68bbf98103e176895cc4d7a680ef8c6cc8c2610fb86",
+    "reports/component_confirmation_2026_10_25_v2/scores.csv": "507b565068dbeff34fce5f1a798853fd60336752325e4019a3272a73490ca96d"
+  },
+  "paired_results": [
+    {
+      "complete": true,
+      "delta": -3.0,
+      "passed": false,
+      "setting": "adaptive_chips"
+    },
+    {
+      "complete": true,
+      "delta": 101.0,
+      "passed": true,
+      "setting": "no_chips"
+    }
+  ],
+  "production_changed": false,
+  "results": [
+    {
+      "arm": "component",
+      "complete": true,
+      "hits": 4,
+      "net": 2147.0,
+      "rounds": 38,
+      "setting": "adaptive_chips"
+    },
+    {
+      "arm": "component",
+      "complete": true,
+      "hits": 4,
+      "net": 2125.0,
+      "rounds": 38,
+      "setting": "no_chips"
+    },
+    {
+      "arm": "operational_fixed",
+      "complete": true,
+      "hits": 12,
+      "net": 2150.0,
+      "rounds": 38,
+      "setting": "adaptive_chips"
+    },
+    {
+      "arm": "operational_fixed",
+      "complete": true,
+      "hits": 4,
+      "net": 2024.0,
+      "rounds": 38,
+      "setting": "no_chips"
+    }
+  ]
+}

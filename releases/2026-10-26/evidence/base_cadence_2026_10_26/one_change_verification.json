@@ -1,0 +1,11 @@
+{
+  "all_532_schedule_packages_have_exact_origin_deadline": true,
+  "all_new_fit_metadata_match_audits": true,
+  "all_preregistered_inputs_unchanged": true,
+  "calibration_half_life180_ridge001_and_stride4": true,
+  "only_base_cadence_setting_varied": true,
+  "passed": true,
+  "production_model_unchanged": true,
+  "same_manager_and_availability": true,
+  "uniform_base_weights": true
+}

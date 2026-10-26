@@ -1,0 +1,115 @@
+{
+  "conclusion": "Base-training time weighting, fixed recent180calibration: base365 -78/-100/-136; base180 +63/-173/-195.160weighted models and6fullseasons verified; active model unchanged.",
+  "decision": "retain_for_research",
+  "results": {
+    "net": [
+      {
+        "season": "2023-24",
+        "base180": 2528.0,
+        "base365": 2387.0,
+        "standard": 2465.0
+      },
+      {
+        "season": "2024-25",
+        "base180": 2431.0,
+        "base365": 2504.0,
+        "standard": 2604.0
+      },
+      {
+        "season": "2025-26",
+        "base180": 2140.0,
+        "base365": 2199.0,
+        "standard": 2335.0
+      }
+    ],
+    "deltas": [
+      {
+        "season": "2023-24",
+        "base180": 63.0,
+        "base365": -78.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2024-25",
+        "base180": -173.0,
+        "base365": -100.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2025-26",
+        "base180": -195.0,
+        "base365": -136.0,
+        "standard": 0.0
+      }
+    ],
+    "summary": [
+      {
+        "arm": "standard",
+        "base_half_life_days": NaN,
+        "mean_all3": 2468.0,
+        "mean_latest2": 2469.5,
+        "net_2025": 2335.0,
+        "delta_2025": 0.0,
+        "delta_mean_all3": 0.0,
+        "delta_mean_latest2": 0.0,
+        "variance": 12064.666666666666,
+        "range": 269.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "base365",
+        "base_half_life_days": 365.0,
+        "mean_all3": 2363.3333333333335,
+        "mean_latest2": 2351.5,
+        "net_2025": 2199.0,
+        "delta_2025": -136.0,
+        "delta_mean_all3": -104.66666666666669,
+        "delta_mean_latest2": -118.0,
+        "variance": 15784.22222222222,
+        "range": 305.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "base180",
+        "base_half_life_days": 180.0,
+        "mean_all3": 2366.3333333333335,
+        "mean_latest2": 2285.5,
+        "net_2025": 2140.0,
+        "delta_2025": -195.0,
+        "delta_mean_all3": -101.66666666666669,
+        "delta_mean_latest2": -184.0,
+        "variance": 27181.55555555556,
+        "range": 388.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      }
+    ],
+    "strict_all_year_candidates": [],
+    "newer_both_gain_candidates": [],
+    "common_H1_point_MSE_gate": {
+      "base365": false,
+      "base180": false
+    },
+    "common_H1_minute_MSE_gate": {
+      "base365": false,
+      "base180": false
+    },
+    "active_model_unchanged": true
+  },
+  "evidence_hashes": {
+    "reports/base_recency_2026_10_26/RESULTATER.txt": "a0fa38b5f570c61ac61232ac6f937894c9052a3511365f2481f7979dcad66dcc",
+    "reports/base_recency_2026_10_26/comparison.csv": "c616fe836d1578a0780953e11cf05889dab40c6f76bb0fd5ae37ff7c7596dbba",
+    "reports/base_recency_2026_10_26/deltas.csv": "97a362170a95d3b0e1bdee59d437da19e076bdb0382ebce83ea5a4805f7a9443",
+    "reports/base_recency_2026_10_26/summary.csv": "60958eaa0e886cf72d0e22852e6c4bfebe6e9b0bd931b43e6e21a8d70950dde0",
+    "reports/base_recency_2026_10_26/forecast_metrics.csv": "02713a2124d4abe82421e1c4ba7a31f528639ca366db0ac7d7a3e448f3cbe13a",
+    "reports/base_recency_2026_10_26/component_metrics.csv": "3a7ae161fce5a2474d8c577cb580a8e808e93a9c912625747774475c1cedde22",
+    "reports/base_recency_2026_10_26/ranking.csv": "df6ee582150a2586625f661db8fb6dd0f44c96d418d993cdd142c2951dfb77f9",
+    "reports/base_recency_2026_10_26/base_weight_diagnostics.csv": "4d7dc0860208902e297e3410ae9bf33b6bbb15de089cc3f2759df29c29f40d8e",
+    "reports/base_recency_2026_10_26/final_verification.json": "54e89bb044e272ef0d920b43276170c620e793487428552591d90f3b0403560c",
+    "reports/base_recency_2026_10_26/execution.json": "facabd3396174e42b3ca3c7cf85f150a969ba83296a8db047240b35e5eda40a3",
+    "reports/base_recency_2026_10_26/reference_ACTIVE_TEAM_BENCHMARK.json": "347b5e6bf5614740fd01f8e61ef838c266cb8baa000fcac4fdfb4be22ae3d4d4",
+    "reports/base_recency_2026_10_26/one_change_verification.json": "796e833dec1b1702cad610bc1b9e447b2e8275168d9252ac472871b87ea5c077"
+  }
+}

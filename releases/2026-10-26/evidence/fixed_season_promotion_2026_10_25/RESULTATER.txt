@@ -1,0 +1,36 @@
+FAST SESONGVEKTING — TEST AV OPPGRADERING, 25. oktober 2026
+
+Beslutning: Ikke oppgrader benchmark eller lagoppfølgingen. Poengfordelen holder ikke i alle de forhåndsbestemte beslutningsoppsettene. Dette er et tap på netto poeng, ikke en avvisning på grunn av MSE.
+
+Brukerens bestilling: Test fast sesongvekting fra identiske lagtilstander og under ulike beslutningsoppsett. Hvis poengfordelen holder, sett den som ny benchmark og bruk den i oppfølgingen. Dette ga uttrykkelig forhåndsgodkjenning til oppgradering ved bestått test; ingen ekstra godkjenning kreves da.
+
+Før resultatene ble lest, ble kravet låst til positiv forskjell i begge sesonger i hvert av fire oppsett, totalt åtte sammenligninger. Netto poeng etter overgangstrekk er det avgjørende systemmålet. MSE brukes ikke som veto. Modellen er den uendrede faste kalibreringen fra 24. oktober, ikke varianten med lært historikkvekt. Ingen ny modelltilpasning eller parameterjakt.
+
+RESULTATER
+2023-24 | Felles lag før GW9, dagens manager | dagens modell 1955 | fast sesongvekt 2025 | forskjell +70
+2023-24 | Felles lag før GW20, dagens manager | dagens modell 1221 | fast sesongvekt 1279 | forskjell +58
+2023-24 | Hele sesongen uten chips | dagens modell 2343 | fast sesongvekt 2377 | forskjell +34
+2023-24 | Felles lag før GW20, doblet nodegrense | dagens modell 1221 | fast sesongvekt 1279 | forskjell +58
+2024-25 | Felles lag før GW9, dagens manager | dagens modell 1903 | fast sesongvekt 1932 | forskjell +29
+2024-25 | Felles lag før GW20, dagens manager | dagens modell 1212 | fast sesongvekt 1252 | forskjell +40
+2024-25 | Hele sesongen uten chips | dagens modell 2493 | fast sesongvekt 2344 | forskjell -149
+2024-25 | Felles lag før GW20, doblet nodegrense | dagens modell 1212 | fast sesongvekt 1252 | forskjell +40
+
+Bestått 7 av 8 parvise poengkrav. Alle 326 nye beslutninger og poengoppgjør er etterkontrollert. Tolv nye forløp, null prognosefit.
+
+HVA SOM BLE HOLDT LIKT
+GW9-starten bruker den arkiverte referansemodellens tropp. GW20-starten bruker den arkiverte lærte sesongvariantens tropp, nøyaktig som i forrige overtakelsesforsøk. Det er dermed samme to sett starttilstander som tidligere. De to konkurrerende modellene får identisk tropp, bank, kjøpspriser, gratisbytter, brukte chips, informasjonstid og spillerutvalg. Poeng måles frem til GW38. Referansemodellens allerede kontrollerte forløp gjenbrukes bare når hele kontrakten er identisk.
+Uten chips får begge en tom starttropp, 100 millioner, én gratis overgang og alle chips markert utilgjengelige i begge halvår. Begge fullsesongforløp kjøres på nytt. Ingen chips kan brukes. Dette er en stresstest av om fordelen er avhengig av chipstrategien, ikke en anbefaling om å avstå fra chips i det virkelige laget.
+I beregningskapasitetstesten dobles løserens nodegrense fra 16 til 32 for begge modeller fra identisk lag før GW20. Grensen på 40 løserkall og øvrig manageroppskrift er uendret. Begge forløp kjøres på nytt. Ingen utfall brukes til å velge lag eller omgå løserfeil.
+
+TOLKNING
+De tidligere fullsesongresultatene med dagens manager står ved lag: fast sesongvekting 2452/2498 mot referansen 2413/2344, altså +39/+154. De fire overtakelsestestene med dagens manager gir +70/+58 i 2023/24 og +29/+40 i 2024/25. Det er positiv støtte for kandidaten i nettopp dette oppsettet.
+Uten chips endres forholdet: +34 i 2023/24, men -149 i 2024/25. Kandidaten har dermed ikke en stabil poengfordel på tvers av de testede oppsettene. Chipvalg påvirker hvilke spillere man kjøper, når man bytter, og hvilke lagtilstander man senere møter. Forskjellen kan ikke tilskrives bare direkte chipbonus. Testen dokumenterer følsomhet for beslutningsoppsettet; den beviser ikke hvilken enkeltmekanisme som skaper tapet.
+Et positivt fullsesongresultat eller flere positive overtakelser blir ikke slettet av dette. Men vi velger ikke å utelate den negative forhåndsbestemte testen etter å ha sett utfallet. Ingen delvariant eller endret chipstrategi er valgt i etterkant.
+Begge år er tidligere undersøkte utviklingssesonger. Flere overlappende forløp gir ikke flere uavhengige sesonger. Alle sammenligninger bruker prosjektets felles harmoniserte poeng- og chipregler og er ikke offisielle historiske rangeringer. Historiske resultater er ingen garanti for fremtidig uttelling.
+
+KONTROLL OG VIDERE BRUK
+Kildefiler og frosne prognoser er bundet med kontrollsummer. Alle starttilstander, overgangsregler, budsjetter, ellevere, benker, kapteiner, chips og utfall er kontrollert på nytt. Beslutninger ble lagret før poengutfall ble hentet. Ressursgrenser er kontrollert for alle løserkall. De opprinnelige historiske arkivene er uendret.
+Aktiv benchmark forblir fixture_full_h3_adaptive_tc_harmonized_causal_v1 med eksisterende adaptiv manager. Automatisk oppfølging fortsetter med den. Fast sesongvekting beholdes som forskningskandidat. Ingen endringer på FPL-kontoen.
+
+Forsøks-ID: fixed-season-promotion-20261025-v1. Etterprøvbarhet: proposal.json, scores.csv, paired.csv, complete.json, verification.json og rundevise beslutnings-/oppgjørsfiler.

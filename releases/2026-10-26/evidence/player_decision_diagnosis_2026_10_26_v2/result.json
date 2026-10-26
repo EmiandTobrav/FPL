@@ -1,0 +1,65 @@
+{
+  "conclusion": "Concrete player diagnosis: Salah17starts106.2expected/66actual, chiefly base attack and residual; Enzo30starts142.2/121, not minutes. NunesGW23minutes37.8/90; GW33fixture1/actual2 and83.1/180minutes. Calendar median age27.49days vs1.85/1.63,233of287buyable native double observations undercounted. Prioritize qualifying calendar before a captain-only model. Actual model unchanged.",
+  "decision": "retain_for_research",
+  "results": {
+    "calendar": [
+      {
+        "season": "2023-24",
+        "observed_buyable_rows": 19224,
+        "actual_double_rows": 637,
+        "underestimated_exposure_rows": 0
+      },
+      {
+        "season": "2024-25",
+        "observed_buyable_rows": 19408,
+        "actual_double_rows": 259,
+        "underestimated_exposure_rows": 2
+      },
+      {
+        "season": "2025-26",
+        "observed_buyable_rows": 20314,
+        "actual_double_rows": 287,
+        "underestimated_exposure_rows": 233
+      }
+    ],
+    "calendar_age": [
+      {
+        "season": "2023-24",
+        "median": 1.854392361111111,
+        "max": 11.16724537037037
+      },
+      {
+        "season": "2024-25",
+        "median": 1.6307118055555554,
+        "max": 12.039988425925928
+      },
+      {
+        "season": "2025-26",
+        "median": 27.485353009259256,
+        "max": 91.5543287037037
+      }
+    ],
+    "priority": [
+      "qualify archived predeadline calendar and exposure uncertainty",
+      "targeted role/minute and attack response tests",
+      "captain-only head after data qualification"
+    ],
+    "unavoidable_vs_avoidable_not_identified": true,
+    "captain_fallback_validated": true,
+    "active_model_unchanged": true
+  },
+  "evidence_hashes": {
+    "reports/player_decision_diagnosis_2026_10_26_v2/RESULTATER.txt": "a9011fcde4e56c6a17be3b4bfbdd72eb1b44649e72ad6e9928874bb95fd90e86",
+    "reports/player_decision_diagnosis_2026_10_26_v2/verification.json": "0c791a57c227e37060bc4f4f0ac8ea9e02970867dfd02a6d772b557d7289cadd",
+    "reports/player_decision_diagnosis_2026_10_26_v2/independent_verification.json": "f5bd986e871cd1645635dad0e5b04300db57cc7d1acadcdbe416479f4dcfc7d6",
+    "reports/player_decision_diagnosis_2026_10_26_v2/starter_player_errors.csv": "3125a2870106cc763d41bea97fb14f7d8ff2ca75df90fdcfd2aed1c464063d9c",
+    "reports/player_decision_diagnosis_2026_10_26_v2/player_round_details.csv": "78c36690761cbd88ba6b28b899e5feeffb1c18b15defd30d5ee7316c48a5bb15",
+    "reports/player_decision_diagnosis_2026_10_26_v2/legal_single_swaps.csv": "0c9c3e84f8c6c52f8174ab49bb5c7457256c47f80165d7e0c100040c9f62b9ad",
+    "reports/player_decision_diagnosis_2026_10_26_v2/captain_pairs_effective.csv": "dd1d4abae979cd6c50fe739b7609a2dd359da67d4f2613921de12351304d6f22",
+    "reports/player_decision_diagnosis_2026_10_26_v2/transfer_player_details.csv": "86f99cb7c42e92d12a5a019605c24ed282252669478ac6ea8afbc492be54a081",
+    "reports/player_decision_diagnosis_2026_10_26_v2/calendar_age.csv": "e87bb78e571a781688267146a84e16c066d82f0832f9c3c8a3bb6add87b5762e",
+    "reports/player_decision_diagnosis_2026_10_26_v2/exposure_summary.csv": "612f8bbb678f68ea41a89a59b27d01030e5a899a90e70d154603e769e7b8e5d5",
+    "reports/player_decision_diagnosis_2026_10_26_v2/exposure_rounds.csv": "a52ba1fc835e841a6fcb8c4b43f6743e79de2f1de2383f256bc3e97336c0d9c5",
+    "reports/player_decision_diagnosis_2026_10_26_v2/specific_calendar_fixture_evidence.csv": "d725a524c0d21c4f856a717fe332e96ab3892cd85f187108f48e4c5afcb46560"
+  }
+}

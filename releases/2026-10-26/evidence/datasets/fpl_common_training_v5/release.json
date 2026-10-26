@@ -1,0 +1,18 @@
+{
+  "id": "fpl_common_training_v5",
+  "manifest_sha256": "590637eef7e9c8af3b9fe1de38efe127213985c12014b164ee87e7d735e50e50",
+  "files": {
+    "manifest.json": "590637eef7e9c8af3b9fe1de38efe127213985c12014b164ee87e7d735e50e50",
+    "qualification.json": "4b0f091a8839b162741a038f0163dc7df218b95c02986d13adf42a0f46ae9407",
+    "README.txt": "780723380adbe4455e0622e1d20e84038106bc52e67dfed18eb83dbe4000fe8c",
+    "loader.py": "93ba99b6ae4b4bd2fbe11e0674c03da5debdf09b1654e8fe2adc9c039174da5a"
+  },
+  "verification": {
+    "reports/xg_adaptation_2026_10_26_v2/dataset_verification.json": "0fa35adfdfd049ae7b8b62989e05f563fa419fa8dd3685065dca85dc51dfdfdb",
+    "reports/xg_adaptation_2026_10_26_v2/population_verification.json": "0f6c3b45c40b9dff2dac5938e3a0819fcf6ab2686ab034a9ee0e3a2060079f67",
+    "reports/xg_adaptation_2026_10_26_v2/interval_verification.json": "f73979ce3b7d646fe44cf6a212ddea85ae34ae4f7301107f1b38eedf48441885"
+  },
+  "production_model_changed": false,
+  "retired_predecessor": "datasets/fpl_common_training_v4/RETIRED.json",
+  "report": "reports/xg_adaptation_2026_10_26_v2/RESULTATER.txt"
+}

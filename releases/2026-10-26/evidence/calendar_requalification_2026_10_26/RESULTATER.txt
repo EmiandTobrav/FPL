@@ -1,0 +1,93 @@
+FERSKERE FØRFRISTKALENDER – KVALIFISERING OG NY TEST
+26. oktober 2026
+
+RESULTAT
+Samme komponentmodelloppskrift er testet med korrigerte kalenderinnganger. Trenings- og kalibreringsrytme, treningsvekter, spillerutvalg, mål/fasit, manager, spilleregler og tilgjengelighetssperrer er uendret.
+Sesong       Dagens kontroll   Kvalifisert kalender    Endring
+2023-24              2465                   2465         +0
+2024-25              2604                   2604         +0
+2025-26              2335                   2322        -13
+Netto sesongpoeng etter byttekostnader. Alle tre kandidatkjøringer er fullført og114beslutninger etterspilt uavhengig. Tre allerede kontrollerte kontrollsesonger gjenbrukes; kontrollprognosene er kopiert byteidentisk.
+
+Endring2025/26: -13 poeng. Endring i snitt siste to sesonger: -6.5. Endring i snitt alle tre: -4.3.
+Dette måler effekten av den samlede kalenderrettingen i denne faste historiske testen. Kalenderen påvirker senere læring, bytter, kapteiner og chips. Vi kan ikke tilskrive hele endringen bare runde33/36 eller påstå at den forklarer hele forskjellen mellom sesongene. Alle år er tidligere undersøkte utviklingssesonger.
+Ingen produksjonsmodell, aktiv datagrunnlagspeker eller forseglede2026/27-prognoser er endret. Dette er ikke en oppfrisking av dagens livekilder.
+
+HVILKE KILDER BLE KVALIFISERT?
+Alle114 frister i2023/24,2024/25 og2025/26 er undersøkt i to Git-arkiver: vaastav/Fantasy-Premier-League og arshadfaizan360/fpl-data-mirror. Vi velger siste komplette gyldige versjon før offisiell frist, uavhengig av poeng eller senere fasit. Både author- og committer-tid må ligge før fristen.
+Hovedkilden har ingen2025/26-kalenderoppdatering mellom13.mars og en oppdatering etter sesongslutt. Det nye speilet har komplette offisielle FPL-API-kalendere med380 unike kamp-ID-er, riktig sesong/lag-ID-univers og eksplisitt event-binding.30nyere kildeversjoner er valgt ved30frister i2025/26.
+Alle30originalfiler er bevart med eksakt byteantall, Git blob SHA-1 og SHA-256. Bare kalenderfeltene brukes: kamp-ID, runde, hjemme-/bortelag og annonsert kickoff. Resultater, spillerstatistikk og andre payloadfelter fra opptakene brukes ikke som nye modellinnganger.
+I de to eldre sesongene fant vi ingen nyere kvalifisert kandidat enn eksisterende valgt kalender. Kilder, treningsrader og prognoser i disse sesongene beholdes derfor; vi lager ikke kunstige endringer for å få en endring i alle år.
+Git-tid er samme historiske tilgjengelighetsproxy som i kontrollen, ikke et uavhengig bevis for nøyaktig første offentlige publiseringstidspunkt. Kildeutvalget er gjort før nye modellresultater. Kalenderen videreføres når nyere kvalifiserte opptak mangler; ingen etterpåvalgt aldersgrense eller radsletting er innført.
+
+KALENDERENS ALDER FØR OG ETTER
+Medianalder per offisiell frist, dager.
+Sesong        Kontroll     Kvalifisert       Største alder etter
+2023-24          1.85             1.85                    11.17
+2024-25          1.63             1.63                    12.04
+2025-26         27.49             1.90                    14.36
+
+KAMPANTALLET SOM BLE RETTET
+Blant kjøpbare spiller/runde-observasjoner med faktisk native kampgrunnlag:
+Sesong       Faktiske doble rader   For lavt antall før   For lavt antall etter
+2023-24                    637                     0                       0
+2024-25                    259                     2                       2
+2025-26                    287                   233                       0
+233observasjoner i2025/26 er rettet; dette er ikke233unike spillere eller233vunne poeng. Kampantallene er hentet fra arkivert førfristinformasjon. Faktisk kampantall brukes bare til etterfølgende diagnose og kontroll.
+To uendrede avvik i2024/25 gjelder Marcus Rashford og Axel Disasi i runde25: kalenderen har Villas dobbeltkamp, men det frosne spilleruniverset knytter dem til henholdsvis Man Utd og Chelsea etter utlån. Den offisielle førfristmetadataen knytter begge til Villa. Dette er en separat klubbkoblingsfeil, ikke manglende kalenderoppdatering. Den er dokumentert i remaining_metadata_cases.json og holdt uendret i denne kalenderavgrensede sammenligningen; vi har ikke samtidig endret klubbbegrensninger, priser eller spillerunivers.
+
+KONKRET BEVIS FOR DE TO SENE DOBBELTRUNDENE
+Runde33: valgt kilde er en full offisiell API-kalender lagret17.april2026 kl15:03:54UTC, før fristen18.april kl10:00UTC. Kamp332 og334 ligger i runde33 med kickoff22.april, og er fortsatt merket uspilt i opptaket. Dette erstatter den36,4dager gamle kalenderkilden fra13.mars ved akkurat denne fristen.
+Premier Leagues kunngjøring5.april bekrefter hvilke seks klubber som dobler i33 og står over34: https://www.premierleague.com/en/news/4624106 . Den brukes som krysskontroll; det versjonerte Git-opptaket er selve modellkilden.
+Runde36: et førfristopptak etter bekreftelsen28.april binder Man City–Palace til36. Kunngjøringen bekrefter samtidig at Bournemouth–Man City og Chelsea–Spurs fortsatt hører til37: https://www.premierleague.com/en/news/4637009 . Sluttkalenderen er ikke ført bakover til frister før kunngjøringen/opptaket.
+
+PROGNOSER FOR TIDLIGERE PROBLEMCASE
+Spiller / runde                Minutter før   Minutter etter   Poeng før   Poeng etter
+Matheus Nunes / 33: 83.1  144.8  3.73  7.27
+Junior Kroupi / 33: 65.9  125.3  3.17  6.37
+Erling Haaland / 36: 85.0  146.5  5.85  10.33
+Disse forskjellene er nye førfristprognoser, ikke faktisk oppnådde poeng. Eksponering, motstander/hjemme og øvrig kalenderkontekst er oppdatert sammen; vi har ikke ganget en gammel prognose med2.
+
+PROGNOSEFEIL PÅ FASTE FELLES LAGKANDIDATER
+H1-MSE, lavere er bedre. Samme målutfall og evalueringsrader i begge varianter.
+Sesong / mål                 Kontroll      Ny kalender     Endring prosent
+2023-24 / points         16.46882         16.46882              +0.00%
+2023-24 / minutes       658.06991        658.06991              +0.00%
+2024-25 / points         14.63471         14.63471              +0.00%
+2024-25 / minutes       585.68758        585.68758              +0.00%
+2025-26 / points         13.33797         13.01061              -2.45%
+2025-26 / minutes       626.60806        548.07487             -12.53%
+Alle96poeng-/minuttceller og192rå komponentceller har like evalueringsnevnere. Kontrollens48tidligere prognosemål er gjenskapt. Prognosefeil og sesongpoeng er forskjellige mål og rapporteres hver for seg.
+
+STØRSTE RUNDESKIFTER I2025/26
+Hele banen påvirkes av nye prognoser og tidligere beslutninger. Deltasum er nøyaktig sesongforskjellen; dette er ikke isolerte chip- eller kapteinseffekter.
+Runde       Kontroll       Ny kalender       Endring
+   33             59               105           +46
+   35             55                32           -23
+   37             89                69           -20
+   36             82                72           -10
+   32             67                61            -6
+   38             61                57            -4
+   34             62                66            +4
+   26             92                92            +0
+
+CHIPDATOER OG DEN SENE LAGBANEN
+Bare de siste sju rundene endrer nettoresultat i2025/26. Den samme adaptive manageren bruker nå andre chipdatoer fordi den får den riktige framtidige kampinformasjonen. Ingen chipregel eller reserveverdi er endret.
+Andrehalvdelens Wildcard flyttes fra37 til32, og Free Hit fra38 til34. Runde33 gir+46 netto: +38i lagbase og+8i kapteinsbonus. Runde34 gir+4, men32 gir-6,35 gir-23,36 gir-10,37 gir-20 og38 gir-4. Sum-13.
+På hele sesongen faller lagbase18poeng, kapteinsbonus øker5, og byttekostnadene er uendret. Det er derfor ikke svakere poengprognose i gjennomsnitt eller ekstra hits som forklarer nettotapet i denne kjøringen.
+Dette peker mot å teste chip-/lagplanlegging over lengre tid på det korrigerte datagrunnlaget. Det beviser ikke at chipdatoene alene forårsaker hele nettotapet; spillerkjøp, oppstillinger og senere utfall følger også en endret bane. En separat test med låste chipdatoer eller endret planleggingshorisont trengs for å isolere mekanismen. Den testen er ikke startet.
+Korrekte førfristdata bør ikke forkastes fordi en historisk managerbane fikk13færre poeng. Videre sammenligninger av managerendringer bør bruke samme kvalifiserte kalender for begge armer.
+
+HVA SOM VAR UENDRET
+Samme325modellfelter, like grunntreningsvekter, CatBoost150/depth5/lr0,05/L2=5/seed20261025, fire mål og samme train-only medianer/mangelflagg. Ingen xG/xA, kandidatvekting eller ny rolle/minuttregel.
+Grunnmodell og etterkalibrering oppdateres fortsatt i runde1,5,9,...37. Etterkalibrering:180dager, Ridge0,01, upenalisert konstant og samme strenge kompletteH3-/utfall-før-fristfilter. Egne korrigerte førfristgrunnprognoser brukes som lærereksempler; modellene får ikke ettertidens kalender ved et tidligere opphav.
+10grunnmodeller er trent på nytt fordi korrigerte tidligere kalenderfelter endrer treningsmatrisen.70andre er gjenbrukt først etter kontroll av identiske treningsfelt, mål, nøkler, frist og parametere. Alle80pakker er lest og prediksjonene gjenskapt. En ny modell er dessuten trent uavhengig fra grunnen av med samme prediksjoner.
+240kalibreringshoder er kontrollert med normal-ligninger, train-only-transformasjoner, lærer-ID-er og konkret førfristkrav. Kildevalget, alle ikke-kalenderfelter og direkte kampantall er kontrollert uavhengig.
+Samme manager og pool,£100m start, chips, harmoniserte poengregler, harde spiller-sperrer,8prognose-/3planleggingsrunder,16faktiske søkenoder og høyst40kall. Tre nye komplette sesonger og114beslutninger er etterspilt for lovlighet, inputhasher og eksakt avregning. Høyst4modell-/solverprosesser samtidig, én tråd hver.
+
+BEGRENSNINGER OG VIDERE BRUK
+Kildene er bedre kvalifisert, men denne testen reparerer ikke alle gamle metadata-, markeds- eller statistikkvintagebegrensninger. Klubbkoblingene for utlånte spillere er et konkret separat funn. Kalenderrettingens gevinst eller tap kan ikke uten ny test overføres til en ny manager eller en annen modelloppskrift.
+Den kvalifiserte kalenderbanen og korrigerte historiske treningstabellen ligger separat i datasets/fpl_calendar_requalified_v1. Aktiv datagrunnlagspeker og live-release er uendret. En eventuell operativ oppdatering må fortsatt bruke ferske aktuelle kilder; denne historiske retesten er ikke en liveprognoseleveranse.
+
+FILER
+comparison.csv/scores.csv/summary.csv: samlet poengoversikt. round_deltas_2025.csv: rundevis endring. exposure_comparison.csv/corrected_examples.csv: kampantall. forecast_examples.csv/forecast_metrics.csv/component_metrics.csv: prognoser og feil. fit_plan.csv: nøyaktig gjenbruk/nytrening. independent_dataset_verification.json/final_verification.json/execution.json: kontroller. datasets/fpl_calendar_requalified_v1 inneholder kvalifiseringsgrunnlag, originalfiler og nye tabeller.

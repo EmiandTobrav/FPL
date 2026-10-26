@@ -1,0 +1,78 @@
+{
+  "conclusion": "Komponentmodellen best\u00e5r ikke kravet om \u00e5 sl\u00e5 referansen i hver av de tre sesongene.",
+  "decision": "retain_for_research",
+  "evidence_hashes": {
+    "datasets/fpl_common_training_v2/README.md": "62a30b15ae3af7511cad280ebe65536abbee5f404b3b053a644c1218d7a08a43",
+    "datasets/fpl_common_training_v2/active_pointer_at_publication.json": "ae8bd76ae38ed1819259a2f94b3a5e3390aa66fb827a0390b4e2c55f032660a8",
+    "datasets/fpl_common_training_v2/loader.py": "82c3cfd3cba979e1b5742dec0b2fb31c6bf25454666a4fdf2724f139a74d3f0d",
+    "datasets/fpl_common_training_v2/manifest.json": "955e2a1cb207521a43015a60305b5f134502630381396df54034a730250c1e0b",
+    "datasets/fpl_common_training_v2/verification.json": "8a8537a284610f99f1dac66202b584e367b6c045a05ec2fa477b13a81a872b39",
+    "overview/MATCHED_MODEL_RETEST_2026_10_25.md": "9e3f5542f69edb25e665fe57f0641651efbde5704a4b5106f930d5f8999e5ca9",
+    "reports/matched_season_retest_2026_10_25_v5/delivery.json": "3d310d3ff1f2072b23e7da56e2271526b1164759d86a351767f8cc6e63879438",
+    "reports/matched_season_retest_2026_10_25_v5/final_delivery.json": "a4262a25fad98ede0f59e9f0be6addb62ed973277a22ecd57579cf7c7bd6125d",
+    "reports/matched_season_retest_2026_10_25_v5/forecast_metrics.csv": "5a99a4ac81233e3fda6441dbca93f3edf2a12f607e4351d85447769ea4156181",
+    "reports/matched_season_retest_2026_10_25_v5/scores.csv": "7e4aba41c504e6ea764ea789e996c001ca7a2b43dd813c68b4581a2140077312",
+    "scripts/finalize_matched_season_retest_v5.py": "67780f6d97587f742d9f6c090dff8269b5932496c0cc814ea8eeea41d1f7a24a"
+  },
+  "results": {
+    "active_model_unchanged": true,
+    "all_complete": true,
+    "paired_deltas": {
+      "2023-24": 267.0,
+      "2024-25": -2.0,
+      "2025-26": 99.0
+    },
+    "research_gate_passed": false,
+    "research_training_release": "fpl_common_training_v2",
+    "seasons": [
+      {
+        "arm": "component",
+        "complete": true,
+        "hits": 20,
+        "net": 2482.0,
+        "rounds": 38,
+        "season": "2023-24"
+      },
+      {
+        "arm": "operational_matched",
+        "complete": true,
+        "hits": 28,
+        "net": 2215.0,
+        "rounds": 38,
+        "season": "2023-24"
+      },
+      {
+        "arm": "component",
+        "complete": true,
+        "hits": 8,
+        "net": 2487.0,
+        "rounds": 38,
+        "season": "2024-25"
+      },
+      {
+        "arm": "operational_matched",
+        "complete": true,
+        "hits": 4,
+        "net": 2489.0,
+        "rounds": 38,
+        "season": "2024-25"
+      },
+      {
+        "arm": "component",
+        "complete": true,
+        "hits": 0,
+        "net": 2213.0,
+        "rounds": 38,
+        "season": "2025-26"
+      },
+      {
+        "arm": "operational_matched",
+        "complete": true,
+        "hits": 8,
+        "net": 2114.0,
+        "rounds": 38,
+        "season": "2025-26"
+      }
+    ]
+  }
+}

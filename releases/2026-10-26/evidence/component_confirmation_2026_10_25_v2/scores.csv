@@ -1,0 +1,5 @@
+arm,setting,net,hits,rounds,complete
+component,adaptive_chips,2147.0,4,38,True
+component,no_chips,2125.0,4,38,True
+operational_fixed,adaptive_chips,2150.0,12,38,True
+operational_fixed,no_chips,2024.0,4,38,True

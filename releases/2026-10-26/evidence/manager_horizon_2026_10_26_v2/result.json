@@ -1,0 +1,172 @@
+{
+  "conclusion": "Five-round planning vs corrected-calendar three-round control: +104/-13/+37; all-three mean +42.7, latest-two +12.0. Eight-round 2024/25 stopped before GW6 on unchanged node cap; no score or aggregate for incomplete episode. Active manager unchanged.",
+  "decision": "promote_to_review",
+  "results": {
+    "scores": [
+      {
+        "season": "2023-24",
+        "h3": 2465.0,
+        "h5": 2569.0,
+        "h8": 2528.0
+      },
+      {
+        "season": "2024-25",
+        "h3": 2604.0,
+        "h5": 2591.0,
+        "h8": null
+      },
+      {
+        "season": "2025-26",
+        "h3": 2322.0,
+        "h5": 2359.0,
+        "h8": 2322.0
+      }
+    ],
+    "deltas": [
+      {
+        "season": "2023-24",
+        "h3": 0.0,
+        "h5": 104.0,
+        "h8": 63.0
+      },
+      {
+        "season": "2024-25",
+        "h3": 0.0,
+        "h5": -13.0,
+        "h8": null
+      },
+      {
+        "season": "2025-26",
+        "h3": 0.0,
+        "h5": 37.0,
+        "h8": 0.0
+      }
+    ],
+    "summary": [
+      {
+        "arm": "h3",
+        "horizon": 3,
+        "complete_episodes": 3,
+        "mean_all3": 2463.6666666666665,
+        "mean_latest2": 2463.0,
+        "net2025": 2322.0,
+        "delta2025": 0.0,
+        "mean_delta_latest2": 0.0,
+        "variance": 13254.888888888889,
+        "range": 282.0,
+        "all_year_nondecrease": true
+      },
+      {
+        "arm": "h5",
+        "horizon": 5,
+        "complete_episodes": 3,
+        "mean_all3": 2506.3333333333335,
+        "mean_latest2": 2475.0,
+        "net2025": 2359.0,
+        "delta2025": 37.0,
+        "mean_delta_latest2": 12.0,
+        "variance": 10934.222222222224,
+        "range": 232.0,
+        "all_year_nondecrease": false
+      },
+      {
+        "arm": "h8",
+        "horizon": 8,
+        "complete_episodes": 2,
+        "mean_all3": null,
+        "mean_latest2": null,
+        "net2025": 2322.0,
+        "delta2025": 0.0,
+        "mean_delta_latest2": null,
+        "variance": null,
+        "range": null,
+        "all_year_nondecrease": false
+      }
+    ],
+    "review_candidate": "h5",
+    "all_year_nondecrease_candidates": [],
+    "h8_qualified_all_three": false,
+    "technical_stop": {
+      "all_failures_disclosed": true,
+      "failures": [
+        {
+          "arm": "h8",
+          "completed_partial_rounds": 5,
+          "exact_exceeded_node_count_not_persisted": true,
+          "failed_before_round": 6,
+          "log": "reports/manager_horizon_2026_10_26_v2/logs/manager_2024-25_h8.log",
+          "no_retry_or_budget_relaxation": true,
+          "reason": "native solver exceeded fixed16node cap",
+          "season": "2024-25",
+          "valid_full_season_score": null
+        }
+      ]
+    },
+    "solver": [
+      {
+        "arm": "h3",
+        "saved_decisions": 114,
+        "calls_in_saved_decisions": 1503,
+        "calls_max_per_saved_decision": 24,
+        "nodes_max": 15,
+        "gap_mean": 0.0004536691208932531,
+        "gap_p95": 0.0009897923458859201,
+        "gap_max": 0.0142566677925121,
+        "node_stop_share": 0.0026613439787092482,
+        "summed_solver_seconds_saved_decisions": 693.0078119209502,
+        "includes_partial_diagnostic_rounds": false,
+        "failed_round_telemetry_not_persisted": false
+      },
+      {
+        "arm": "h5",
+        "saved_decisions": 114,
+        "calls_in_saved_decisions": 1427,
+        "calls_max_per_saved_decision": 24,
+        "nodes_max": 15,
+        "gap_mean": 0.0005934200365109108,
+        "gap_p95": 0.00099690747479984,
+        "gap_max": 0.0104023635091162,
+        "node_stop_share": 0.01051156271899089,
+        "summed_solver_seconds_saved_decisions": 2170.089248318691,
+        "includes_partial_diagnostic_rounds": false,
+        "failed_round_telemetry_not_persisted": false
+      },
+      {
+        "arm": "h8",
+        "saved_decisions": 81,
+        "calls_in_saved_decisions": 1070,
+        "calls_max_per_saved_decision": 24,
+        "nodes_max": 16,
+        "gap_mean": 0.0007843798942157896,
+        "gap_p95": 0.000999707478555885,
+        "gap_max": 0.0286949369577856,
+        "node_stop_share": 0.03644859813084112,
+        "summed_solver_seconds_saved_decisions": 3121.2402697985526,
+        "includes_partial_diagnostic_rounds": true,
+        "failed_round_telemetry_not_persisted": true
+      }
+    ],
+    "active_model_unchanged": true
+  },
+  "evidence_hashes": {
+    "reports/manager_horizon_2026_10_26_v2/RESULTATER.txt": "c30e3e1fbe4fea2c0e7de89bc403802dcfec1ae4884426ee1af61b3315eeeb0d",
+    "reports/manager_horizon_2026_10_26_v2/scores.csv": "f8298ce16ef0015a61bc8e1b1754ad943e89459553fc33fadd5fee945686b964",
+    "reports/manager_horizon_2026_10_26_v2/comparison.csv": "1f5b4275566b8d734bd298e25a909dfaee686d13a0056f84a8583d86eeef1cd1",
+    "reports/manager_horizon_2026_10_26_v2/deltas.csv": "4d8275d4629d0cb90011090a4316143435de3265cc7353eb1d9ae12883e70289",
+    "reports/manager_horizon_2026_10_26_v2/summary.csv": "6eb1e7f5a8294627786c05f85b88742ed3d46eb19e9fe1d8168081ee91e85c47",
+    "reports/manager_horizon_2026_10_26_v2/rounds.csv": "e98dae42e7b0e028c35ebbd426ba8458be8c4246fb3439c48eec2afd03a163f8",
+    "reports/manager_horizon_2026_10_26_v2/chip_dates.csv": "ae286648bfd59689b6d89facf9c446d28c7f8d3cbc747bc9fcde7108b138e4fa",
+    "reports/manager_horizon_2026_10_26_v2/round_comparison_2025.csv": "ea3dab566de58b8a66c3b25d83b7d7c0e62571923016bf460d12ef75da5a78d5",
+    "reports/manager_horizon_2026_10_26_v2/late2025_summary.csv": "aeab30c544c3c89a1115cb6595089f45a2bd66a149a3578f6152989ad43530d3",
+    "reports/manager_horizon_2026_10_26_v2/solver_summary.csv": "4ededd6051364767d0aed1574ace1cad0a76c48fa76e430ae44a26f08f7cf15a",
+    "reports/manager_horizon_2026_10_26_v2/solver_telemetry.csv": "97b7f5c9e8b523b63d03a9c18df154d4236c5c3fcdbc6836c99578294c7865ea",
+    "reports/manager_horizon_2026_10_26_v2/technical_stops.json": "ed94f331f4533ff65a120067f9d02497ebb30fec963bd82617235cddccf360b7",
+    "reports/manager_horizon_2026_10_26_v2/independent_configuration_verification.json": "852e908a36b79ee3bfd2f0bf60848f63f3df168878df1f510d3c4b63d3cfa6c1",
+    "reports/manager_horizon_2026_10_26_v2/independent_decision_verification.json": "5e7b734e6d8227a1a06e228f6c298d6373c66c50e9e612fb8eda05bda2663ed6",
+    "reports/manager_horizon_2026_10_26_v2/control_identity_verification.json": "c612b905bb9f7041727a628cfef04fbe59472d4fb2c8dbb8cec922e59e5568c1",
+    "reports/manager_horizon_2026_10_26_v2/one_change_verification.json": "f7ba1f41b6718db15a85eda7af8ef7867fa9264778de3734eff6ad66e1c714c0",
+    "reports/manager_horizon_2026_10_26_v2/final_verification.json": "c88ee6c1281ce500369af9b4f598b89de2a706e4a1ee8ebb6702466acc60a696",
+    "reports/manager_horizon_2026_10_26_v2/execution.json": "cbedc186d68d88e1e7f2756caf23a524abc5e418938901eac8982540554ffe37",
+    "reports/manager_horizon_2026_10_26_v2/logs/manager_2024-25_h8.log": "b8bd049e4cedb0c413848978029e0b9091b07ee59b0fa4fa68cfeaeb7bf50f10"
+  }
+}

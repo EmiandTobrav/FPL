@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "shared_update_teacher_keys_and_transforms_identical": 1320,
+  "identical_half_life_shared_update_coefficients_identical": 600,
+  "matched_metric_denominators": 336,
+  "minute_forecasts_unchanged": true,
+  "active_descriptor_and_runtime_unchanged": true,
+  "files": {
+    "reports/calibration_response_sweep_2026_10_26/head_audit_standard.csv": "d7f2bcd187b72db96366480115f350a0a983baeaf50569990707056f0980d94b",
+    "reports/calibration_response_sweep_2026_10_26/head_audit_half60.csv": "c7458088c4e9e87298b781251602e71ee8c69510c4349b440b2a461250392198",
+    "reports/calibration_response_sweep_2026_10_26/head_audit_half90.csv": "e998d14d9e9025c120d7e2bd2c8f63a28c316cf15c0966d8b71f3de206443279",
+    "reports/calibration_response_sweep_2026_10_26/head_audit_half365.csv": "7e6a41a7ca200bc7035f30db72fcf3ba1b92af5d11d6af91088b47f8adbf8e60",
+    "reports/calibration_response_sweep_2026_10_26/head_audit_every1.csv": "c4259a7e2f8aa0a34fdc4e0efe8da5a7e1f9ab28ae1a1ba23536ec5112a3e7ae",
+    "reports/calibration_response_sweep_2026_10_26/head_audit_every2.csv": "1118e30df824272ba33b24fa6cc1ba6c34a151a4de379d88f63d739c6d99fa52",
+    "reports/calibration_response_sweep_2026_10_26/head_audit_every8.csv": "da8f0f64e203c239d9a3e7c8e790249a5e0b88eb85b83ca5384b8ac3f05846ad",
+    "reports/calibration_response_sweep_2026_10_26/forecast_metrics.csv": "60f58e5f13dd2ec929c5b53f51e6c067ffe1b8c279d31b3e0cbaee83e44f3077",
+    "reports/calibration_response_sweep_2026_10_26/reference_ACTIVE_TEAM_BENCHMARK.json": "347b5e6bf5614740fd01f8e61ef838c266cb8baa000fcac4fdfb4be22ae3d4d4"
+  }
+}

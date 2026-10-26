@@ -1,0 +1,95 @@
+{
+  "conclusion": "Current2025/26 diagnostic: -269vs2024/25 = ordinaryXI -129, ordinarycaptain -112, BB -10, TC -22, lowerhits +4. Captain always own forecast argmax; captain hindsight204, lineup173, fixedpathBBTC43; ordinary local holds +41. Prioritize forecast ranking among captain candidates; no operational change.",
+  "decision": "retain_for_research",
+  "results": {
+    "summary": [
+      {
+        "season": "2023-24",
+        "net": 2465.0,
+        "normal_captain": 329.0,
+        "captain_gap_in_existing_XI": 174.0,
+        "captain_gap_existing_TC": 178.0,
+        "lineup_gap_existing_squad": 143.0,
+        "ordinary_hold_cases": 28,
+        "ordinary_hold_gain": 66.0,
+        "ordinary_hold_negative_rounds": 7,
+        "BB_TC_actual": 46.0,
+        "BB_TC_timing_bound": 31.0
+      },
+      {
+        "season": "2024-25",
+        "net": 2604.0,
+        "normal_captain": 372.0,
+        "captain_gap_in_existing_XI": 151.0,
+        "captain_gap_existing_TC": 151.0,
+        "lineup_gap_existing_squad": 229.0,
+        "ordinary_hold_cases": 23,
+        "ordinary_hold_gain": 20.0,
+        "ordinary_hold_negative_rounds": 8,
+        "BB_TC_actual": 57.0,
+        "BB_TC_timing_bound": 39.0
+      },
+      {
+        "season": "2025-26",
+        "net": 2335.0,
+        "normal_captain": 260.0,
+        "captain_gap_in_existing_XI": 193.0,
+        "captain_gap_existing_TC": 204.0,
+        "lineup_gap_existing_squad": 173.0,
+        "ordinary_hold_cases": 27,
+        "ordinary_hold_gain": 41.0,
+        "ordinary_hold_negative_rounds": 10,
+        "BB_TC_actual": 25.0,
+        "BB_TC_timing_bound": 43.0
+      }
+    ],
+    "score_bridge": [
+      {
+        "component": "normal_base",
+        "points_2024": 2179.0,
+        "points_2025": 2050.0,
+        "net_change": -129.0
+      },
+      {
+        "component": "normal_captain",
+        "points_2024": 372.0,
+        "points_2025": 260.0,
+        "net_change": -112.0
+      },
+      {
+        "component": "BB_increment",
+        "points_2024": 19.0,
+        "points_2025": 9.0,
+        "net_change": -10.0
+      },
+      {
+        "component": "TC_increment",
+        "points_2024": 38.0,
+        "points_2025": 16.0,
+        "net_change": -22.0
+      },
+      {
+        "component": "hits",
+        "points_2024": 4.0,
+        "points_2025": 0.0,
+        "net_change": 4.0
+      }
+    ],
+    "recommended_next_test": "Strictly pre-deadline captain-only scoring/ranking module, fixed squad/XI/transfers/chip path, all3seasons vs current.",
+    "overlapping_diagnostics_not_additive": true,
+    "active_model_unchanged": true
+  },
+  "evidence_hashes": {
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/RESULTATER.txt": "a296e51c612e4e9be2df0563078fa08d571a95f4751fab5282d620856e029145",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/diagnostic_summary.csv": "b7246b9d3743213cf4c584136721382172782d5c2795b236d3c37e2c658af6a5",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/score_drop_bridge.csv": "2fd97702151dd3ae4f5807c0b3274b45997726591a8925f49863478c89bae877",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/rounds.csv": "f6d4b3dfc0b58808139a521c0726c93984c6a34ad8e2955ab139e307ac7d73e4",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/captains.csv": "5933e125555cd6d991581a02261bd73f9c2ada95e7628040c2cac4467b2768c8",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/hold.csv": "afea94359b73a53f0622e5cbfbb5ea703b67e1895f21957e4cf6d40d02e48944",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/transfers.csv": "e24be7ea81f8400c9c7dcabdad02648f4dded39c5abfa18e8251f611a7a6c170",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/chips.csv": "fa935a00a3a09bfff5bf282bb878c0b5d5b5e88cd95b870c5c4dec999c311564",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/chip_timing_bounds.json": "f206bbc7702e3e83c8660b745c3418c83af476a7e7cece1fa3e19b143a8adf32",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/verification.json": "ed73aaab3ef9f0d583aa433b73f200a70cddfe47eb95aa4861dad0ee60f5c4b9",
+    "reports/current_model_loss_diagnosis_2026_10_26_v3/independent_verification.json": "523fd26a7c650bf6bb1f6be3d88c8272c7d842f7a967f9eb4c874fd1d653fc50"
+  }
+}

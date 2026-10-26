@@ -1,0 +1,92 @@
+Sesongskille i grunnmodellen — 25. oktober 2026
+
+RESULTAT
+Netto sesongpoeng mot korrigert grunnlag med blandede vinduer: +38 og -17. Kravet om flere poeng i begge år er ikke bestått. Prognosekravet for H1 og H3 i begge år er bestått.
+Ingen automatisk endring av aktiv benchmark eller FPL-konto. Sesongpoeng er hovedmålet; prognosefeil vurderes separat.
+
+HVA SOM ER ENDRET
+Grunnmodellen bruker nå årets egne vinduer på 3, 6, 12 og 38 kamper. Tidligere sesong ligger i separate felt med egne vinduer, observasjonstall, alder, sesongavstand og manglende-historikk-flagg. Årets vindu fylles ikke opp med eldre kamper. Modellen lærer hvordan disse separate feltene skal brukes gjennom sine vanlige koeffisienter og trær; det er ikke én manuelt valgt gammel-sesong-vekt.
+Samme native statistikk, motstander-/lagstyrke, markedspriser, kalenderregler, estimatortyper, hyperparametre, tilfeldighetsfrø og refitrytme. Den gamle blandingen av delmodellene er holdt fast. Det faste sesongkalibreringsleddet på toppen er retrent på de nye grunnprognosene.
+Begge historiske armer bruker den samme korrigerte utlånshistorikken og samme lovlige kjøpsutvalg. Ekte nullminuttrunder og faktiske FPL-nullpoeng er beholdt. Korrigerte kontrollprognoser og beslutninger gjenbrukes fra et verifisert, identisk oppsett. Kontrollens oppgjør er regnet på nytt.
+
+NETTO SESONGPOENG
+Sesong | Opprinnelig aktiv modell* | Korrigert, blandet historikk | Sesongskilt grunnmodell | Forskjell mot korrigert kontroll
+2023-24 | 2452 | 2429 | 2467 | +38
+2024-25 | 2498 | 2461 | 2444 | -17
+* Den opprinnelige aktive modellen har et annet historikkgrunnlag. Den vises som referanse; effekten av sesongskillet måles mot kontrollen på samme korrigerte data.
+Alle forløp starter med tomt lag og £100m, bruker samme adaptive manager, chips, H8-prognoser/H3-planlegging, 16 noder og maksimalt 40 løserkall per beslutning. Poengtrekk inngår.
+
+PROGNOSEFEIL — MSE, LAVERE ER BEDRE
+Sesong | Horisont | Korrigert kontroll | Sesongskilt | Relativ endring
+2023-24 | H1 | 5.25130 | 5.24193 | -0.18%
+2023-24 | H3 | 21.84561 | 21.75474 | -0.42%
+2024-25 | H1 | 5.01258 | 5.00836 | -0.08%
+2024-25 | H3 | 20.39169 | 20.35200 | -0.19%
+
+Beskrivende fasekontroll:
+2023-24, GW1-8, H1: -1.26% MSE.
+2023-24, GW1-8, H3: -2.86% MSE.
+2023-24, GW9-38, H1: +0.09% MSE.
+2023-24, GW9-38, H3: +0.28% MSE.
+2024-25, GW1-8, H1: -1.45% MSE.
+2024-25, GW1-8, H3: -1.93% MSE.
+2024-25, GW9-38, H1: +0.26% MSE.
+2024-25, GW9-38, H3: +0.31% MSE.
+Forbedringen er konsentrert i GW1–8. Etter GW8 er feilene litt høyere i begge år. Dette dokumenterer ikke en testet strategi for å bytte modell etter GW8.
+Blant den faste kandidatgruppen:
+2023-24, H1: -0.11% MSE.
+2023-24, H3: -0.50% MSE.
+2024-25, H1: +0.50% MSE.
+2024-25, H3: +0.96% MSE.
+Kandidatgruppen i 2024/25 blir svakere, selv om gjennomsnittsfeilen over alle kvalifiserte spillere er litt bedre.
+Poengtrekk i sesongforløpene:
+2023-24: kontroll 20, sesongskilt 20 poeng i trekk. Bruttoforskjell før trekk: +38.
+2024-25: kontroll 16, sesongskilt 28 poeng i trekk. Bruttoforskjell før trekk: -5.
+H3 gjelder summen av de neste tre rundenes poeng. H8, MAE, bias og fast kandidatgruppe finnes i metrics.csv. Tidlig/sen sesong er en beskrivende tilleggsanalyse i phase_metrics_descriptive.csv; den brukes ikke til å endre oppgraderingskravet.
+
+EKSTRA DATAMANGEL I TIDLIGERE LAGRÅD
+Det tidligere live-grunnlaget til grunnmodellen inneholdt bare 2 158 observasjoner med spilte minutter denne sesongen. Kalibreringsleddet hadde hele historikken. Før den nye live-sammenligningen ble 2 084 ekte nullminuttrunder lagt til i begge grunnmodellarmene. Begge har nå de samme 4 242 kvalifiserte observasjonene fra GW1–7. De 309 dokumenterte rundene utenfor PL er fortsatt utelatt. Historiske sesongtester påvirkes ikke av denne tekniske kompletteringen.
+Det er derfor viktig å skille effekten av et komplett live-datagrunnlag fra effekten av sesongskillet. Kontrollmodellens Kroupi-prognose for GW9 gikk fra 3,87 til 0,69 allerede ved kompletteringen. Dette er ikke en gevinst som tilskrives sesongmodellen.
+
+GW9 OG GW9–14: SAMME KOMPLETTE DATABILDE
+Spiller | GW9 kontroll | GW9 sesongskilt | Seks runder kontroll | Seks runder sesongskilt
+B.Fernandes | 5.11 | 5.24 | 32.66 | 32.98
+Guéhi | 3.45 | 3.57 | 20.89 | 21.38
+Gabriel | 4.17 | 4.40 | 24.68 | 25.55
+Rogers | 5.01 | 4.86 | 30.20 | 29.10
+Evanilson | 4.64 | 4.65 | 26.25 | 26.04
+Van Hecke | 3.56 | 4.00 | 19.30 | 21.70
+Verbruggen | 2.80 | 2.76 | 19.60 | 19.18
+N.Jackson | 4.03 | 4.11 | 22.97 | 22.78
+Kroupi.Jr | 0.69 | 0.43 | 5.99 | 4.87
+Vuskovic | 2.83 | 2.38 | 19.73 | 18.02
+Dette er forventninger, ikke sikre poeng. Spillerprognosene i tabellen er rene modellverdier. Skade-/tilgjengelighetsoverlegget nedenfor er separat og uendret: offisiell sjanse skalerer bare første horisont; i/s/u gir null i første horisont og sperrer nye kjøp. Senere horisonter beholdes.
+
+LAGFORSLAG PÅ DET FRYSTE GW9-DATABILDET
+Ingen nye overganger etter GW8 er antatt, i tråd med brukerens bekreftelse. Begge armer bruker identisk tropp, bank, fem gratisbytter og chiphistorikk. Dette er en kontrollert sammenligning på det tidligere datobildet; det er ikke en ny innhenting av skader og lagnyheter før neste frist.
+
+Korrigert kontroll med komplett historikk
+Ut: Shaw, Tzolis, Ndiaye, Cherki, João Pedro
+Inn: Dasilva, Tavernier, Dewsbury-Hall, Rogers, Evanilson
+Antall bytter: 5. Poengtrekk: 0. Bank etterpå: £1.0. Chip: spar.
+Elleve: Groß, B.Fernandes, Dasilva, Tavernier, Dewsbury-Hall, Haaland, Rogers, Evanilson, Kinsky, Hall, Vuskovic
+Benk i rekkefølge, keeper først: Verbruggen, Calafiori, Davis, Calvert-Lewin
+Kaptein: Haaland. Visekaptein: B.Fernandes.
+
+Sesongskilt grunnmodell med komplett historikk
+Ut: Shaw, Tzolis, Cherki, João Pedro, Vuskovic
+Inn: Tavernier, Gabriel, Evanilson, Van Hecke, E.Le Fée
+Antall bytter: 5. Poengtrekk: 0. Bank etterpå: £0.3. Chip: spar.
+Elleve: Groß, B.Fernandes, Tavernier, Haaland, Gabriel, Ndiaye, Evanilson, Van Hecke, E.Le Fée, Kinsky, Hall
+Benk i rekkefølge, keeper først: Verbruggen, Calafiori, Davis, Calvert-Lewin
+Kaptein: Haaland. Visekaptein: B.Fernandes.
+
+RETROSPEKTIV GW8-SAMMENLIGNING
+Dette er etterberegninger med informasjon tilgjengelig før GW8. Ingen GW8-utfall brukes.
+control: ut Tzolis, Ndiaye, Cherki, João Pedro; inn Rogers, Evanilson, Mbeumo, E.Le Fée. Trekk 0; bank £0.2; chip spar; kaptein Haaland; vice B.Fernandes.
+split: ut Tzolis, Ndiaye, Cherki, João Pedro; inn Rogers, Evanilson, Mbeumo, E.Le Fée. Trekk 0; bank £0.2; chip spar; kaptein Haaland; vice B.Fernandes.
+
+KONTROLLER OG BEGRENSNINGER
+Før trening: felles sesongberegning kontrollert mot referanseimplementasjonen på 1 336 opprinnelser; fremtidige observasjoner kan ikke påvirke tidligere features. Historisk kontroll og kandidat har identiske kalibreringsfeatures, etiketter og spillerutvalg; bare grunnprognosene skiftes ut før retrening av kalibrering.
+Etter trening: treningsklokker og uendrede kildefiler verifisert. 152 historiske beslutninger og oppgjør er etterkontrollert, inkludert 76 nye kandidatbeslutninger. Åtte matched live-beslutninger er kontrollert for pris, budsjett, laglovlighet, chipbruk og ressursgrenser.
+Dette er to tidligere undersøkte utviklingssesonger. Historiske FPL-nyhetsdatoer har de dokumenterte proxybegrensningene fra utlånsrettingen. Blandingsvektene mellom delmodellene er ikke lært på nytt i dette forsøket. Ingen hyperparametertuning eller resultatstyrt gjentakelse er utført.

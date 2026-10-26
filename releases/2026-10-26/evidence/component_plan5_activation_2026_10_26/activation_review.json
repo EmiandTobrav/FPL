@@ -1,0 +1,77 @@
+{
+  "all_three_nonloss": false,
+  "approved": true,
+  "current_data_refresh_required": true,
+  "current_refresh_reason": "Refresh and integrate external club/national feeds before recommending a team",
+  "deltas": [
+    104,
+    -13,
+    37
+  ],
+  "files": {
+    "model_lab/planned_component_forecaster.py": "2badef4c88631db9e13867796b97b3fb881ded9201281c76a1188bd4b9fc239c",
+    "reports/component_plan5_activation_2026_10_26/forecast_seal.json": "c97c5679032ada1501ce0efd86df3bbf2d3a2d38973475f194123ca50a38822a",
+    "reports/component_plan5_activation_2026_10_26/forecast_verification.json": "3c12ce6bbc9bef715e2992c7dd074459ed58c0ef5ecde45829e159ce892be8b7",
+    "reports/component_plan5_activation_2026_10_26/manager_verification.json": "244d4502041f1d8a840c252fe3812a6690de6deff4dff6ca3c0cd9d70c2d5ce9",
+    "reports/component_plan5_activation_2026_10_26/operational_seal.json": "251bdfbf47cbb4f2ea18ed3dcae11c3749d44b796f4cacaff5f1bd3b8c703144",
+    "reports/component_plan5_activation_2026_10_26/proposed_model_lab_active.py": "f05a858ca62613f83371ab5cf6d8509ede895556166d644210e310449024e474",
+    "reports/component_plan5_activation_2026_10_26/proposed_scripts_refresh_component_release.py": "c24669d57d51712a390216369c87f31867990dd856bbccc63130a7cca699b064",
+    "reports/component_plan5_activation_2026_10_26/runtime_config.json": "a9bbed4103ae2f6c99fb09761eb3a22d28727df68fbe02f4b584b9d4d09d8e4c"
+  },
+  "forecast_horizon": 8,
+  "historical_calendar": "datasets/fpl_calendar_requalified_v1",
+  "historical_points": {
+    "2023-24": 2569,
+    "2024-25": 2591,
+    "2025-26": 2359
+  },
+  "mean_delta": 42.666666666666664,
+  "mean_latest_two_delta": 12,
+  "no_actual_FPL_submission": true,
+  "old_artifacts_preserved": true,
+  "recipe_reconstruction_not_new_prospective_forecast": true,
+  "reviewed_at": "2026-10-26T21:41:08.847331+00:00",
+  "same_calendar_control": {
+    "2023-24": 2465,
+    "2024-25": 2604,
+    "2025-26": 2322
+  },
+  "selected_planning_horizon": 5,
+  "source_capture_at": "2026-10-25 23:41:30.884930+00:00",
+  "unchanged": {
+    "base_refits": [
+      1,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37
+    ],
+    "base_weights": "uniform",
+    "calibration_refits": [
+      1,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37
+    ],
+    "eligibility": true,
+    "features": 325,
+    "half_life_days": 180,
+    "ridge": 0.01,
+    "solver_calls": 40,
+    "solver_nodes": 16,
+    "xg": false
+  },
+  "user_accepts_tested_tradeoff": true,
+  "user_authority": "User: Go ahead with five-round planning, complete last checks and activate with corrected calendars, everything else unchanged."
+}

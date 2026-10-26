@@ -1,0 +1,21 @@
+VÆRDATA — ALLE OBSERVERTE SESONGER
+
+Kamper: 2,710. Koblede spillerrader: 187,111. Manglende værverdier: 0.
+Merkede tilfeller ved soloppgang/solnedgang: 21.
+
+Sesong       Kamper   Spillerrader   Solgrenseflagg
+2019-20        380         22501                2
+2020-21        380         24365                0
+2021-22        380         25447                0
+2022-23        380         26505                7
+2023-24        380         29725                0
+2024-25        380         27283               10
+2025-26        380         29747                2
+2026-27         50          1538                0
+
+2026/27 omfatter bare de 50 kampene som finnes i mastertabellen.
+2019/20 følger med som historisk referanse; poengmålenes status endres ikke.
+Brighton–Aston Villa 26.02.2022 bruker 15.30 UTC, med originalt 15.00-felt merket.
+Everton bruker Goodison Park til 2024/25, Hill Dickinson Stadium fra 2025/26.
+Alle pilotverdier er kontrollert uendret. Originaltabellens filhash er uendret.
+Se README.txt for metode, enheter, forbehold og gjenskaping.

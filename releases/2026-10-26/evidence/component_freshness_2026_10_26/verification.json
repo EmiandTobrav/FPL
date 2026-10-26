@@ -1,0 +1,50 @@
+{
+  "base": [
+    {
+      "cutoff": "2026-10-26 21:53:25.174011+00:00",
+      "horizon": 1,
+      "passed": true,
+      "rows": 115275
+    },
+    {
+      "cutoff": "2026-10-26 21:53:25.174011+00:00",
+      "horizon": 3,
+      "passed": true,
+      "rows": 98829
+    }
+  ],
+  "calibration_half_life_days": 180,
+  "current_roster_decision_passed": true,
+  "deadline": "2026-10-31T11:00:00Z",
+  "external_leagues": 39,
+  "external_summaries": 443,
+  "files": {
+    "datasets/fpl_external_live_2026_10_26/manifest.json": "99681cdc9b5fed4bc3c2f2d958a2344d7d81dd0f03317fe074fb46a8760e58ff",
+    "model_lab/fresh_planned_component_forecaster.py": "61ac3252926fd1ce885baaccfd9f745b8833bc49e326c8687979c41c12570688",
+    "reports/component_live_2026_10_26_fresh/forecast_seal.json": "0d4d40886c9d13fb31939ff4405f853ff7e20cdee43b006f5b2f77984e906d7a",
+    "reports/component_live_2026_10_26_fresh/forecasts.csv": "0117d4eeaf396c34bcf67f4bc5c0409d7ceb50940777a0bc208bf305ff186a3d",
+    "reports/component_live_2026_10_26_fresh/heads.json": "fdf41f2ef96617d806a3ebcc2fbaf1b121eb37a871072ecff039372232627749",
+    "reports/component_live_2026_10_26_fresh/operational_seal.json": "ac76911604e8bc54846e16df02db59d38cdc37a90af746c651f8f7496e2401ed"
+  },
+  "forecast_at": "2026-10-26 21:53:25.174011+00:00",
+  "fresh_forecast_runtime_passed": true,
+  "heads": 8,
+  "independent_workload_cells_checked": 5352,
+  "live_round": 9,
+  "manager_calls": [
+    7,
+    19
+  ],
+  "max_gradient": 8.21523025388432e-15,
+  "no_actual_FPL_submission": true,
+  "official_players": 669,
+  "official_responses": 671,
+  "owned_unavailable_adversarial_passed": true,
+  "passed": true,
+  "planning_horizon": 5,
+  "same_four_round_refits": true,
+  "source_receipts_verified": 482,
+  "unknown_minutes_preserved": 1,
+  "verified_actual_user_team_state": false,
+  "verified_at": "2026-10-26 21:57:02.211768+00:00"
+}

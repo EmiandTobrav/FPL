@@ -1,0 +1,56 @@
+{
+  "conclusion": "Combined qualified xG+recent180: net deltas vs control -69/+17/-24; vs xG -67/-57/-27; vs recent +13/-92/-146. Every-year net gate=False; beats both singles every year=False. No operational activation.",
+  "decision": "retain_for_research",
+  "results": {
+    "per_season": [
+      {
+        "season": "2023-24",
+        "combined": 2478.0,
+        "control": 2547.0,
+        "recent_only": 2465.0,
+        "xg_only": 2545.0,
+        "combined_vs_control": -69.0,
+        "combined_vs_xg": -67.0,
+        "combined_vs_recent": 13.0,
+        "interaction": 15.0
+      },
+      {
+        "season": "2024-25",
+        "combined": 2512.0,
+        "control": 2495.0,
+        "recent_only": 2604.0,
+        "xg_only": 2569.0,
+        "combined_vs_control": 17.0,
+        "combined_vs_xg": -57.0,
+        "combined_vs_recent": -92.0,
+        "interaction": -166.0
+      },
+      {
+        "season": "2025-26",
+        "combined": 2189.0,
+        "control": 2213.0,
+        "recent_only": 2335.0,
+        "xg_only": 2216.0,
+        "combined_vs_control": -24.0,
+        "combined_vs_xg": -27.0,
+        "combined_vs_recent": -146.0,
+        "interaction": -149.0
+      }
+    ],
+    "net_gate": false,
+    "beats_both_singles_each_year": false,
+    "common_candidate_H1_point_MSE_gate": false,
+    "active_model_changed": false
+  },
+  "evidence_hashes": {
+    "reports/combined_xg_adaptation_2026_10_26/RESULTATER.txt": "95353e7fbb18bd4b58d39c708dc057eafedf2914f4e6765207340755b0483297",
+    "reports/combined_xg_adaptation_2026_10_26/comparison.csv": "f1e3486608ea08262127f4a328cfbe5804ad09b5e90c9342731559cab2651181",
+    "reports/combined_xg_adaptation_2026_10_26/scores.csv": "7630687eef3f57875156f698066363c12a8bf3409cb03ebf7be0d35925726243",
+    "reports/combined_xg_adaptation_2026_10_26/forecast_metrics.csv": "14b5724fa8386b1f34f0a5723728c86bf4a03db3e0c1fab494326787581940bd",
+    "reports/combined_xg_adaptation_2026_10_26/ranking.csv": "44a207cd6df3f974d08a74cb60197a54fb036119aa5f30dc73a7e6f9d9ed8cce",
+    "reports/combined_xg_adaptation_2026_10_26/final_verification.json": "afddd9d1ab10cda1bd39e640a0d926dae465532ef1dca2f2ca98b343cfd5bc30",
+    "reports/combined_xg_adaptation_2026_10_26/metric_reporting_correction.json": "435d827f4f13bc363f280d7beb7d4490b6a8bc745635ee29d3773829a83eff83",
+    "reports/combined_xg_adaptation_2026_10_26/combination_isolation_verification.json": "28bf65b272afa0dfcd235fb187910d8582e0cad06bd0c0e13b797865000dda5e",
+    "scripts/combined_xg_metrics.py": "24d25b1a2cf4743ba955187f9461fdcf0c4992289e82e18a8bbf6a43cc5f1ff5"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "conclusion": "Separate ridge/candidate tests complete: ridge_weak -152/-16/-29; ridge_strong -49/-61/-28; candidates2 -84/-38/-53; candidates4 +62/-87/-100. Standard unchanged; no combined variant or automatic activation.",
+  "decision": "retain_for_research",
+  "results": {
+    "net": [
+      {
+        "season": "2023-24",
+        "candidates2": 2381.0,
+        "candidates4": 2527.0,
+        "ridge_strong": 2416.0,
+        "ridge_weak": 2313.0,
+        "standard": 2465.0
+      },
+      {
+        "season": "2024-25",
+        "candidates2": 2566.0,
+        "candidates4": 2517.0,
+        "ridge_strong": 2543.0,
+        "ridge_weak": 2588.0,
+        "standard": 2604.0
+      },
+      {
+        "season": "2025-26",
+        "candidates2": 2282.0,
+        "candidates4": 2235.0,
+        "ridge_strong": 2307.0,
+        "ridge_weak": 2306.0,
+        "standard": 2335.0
+      }
+    ],
+    "deltas": [
+      {
+        "season": "2023-24",
+        "candidates2": -84.0,
+        "candidates4": 62.0,
+        "ridge_strong": -49.0,
+        "ridge_weak": -152.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2024-25",
+        "candidates2": -38.0,
+        "candidates4": -87.0,
+        "ridge_strong": -61.0,
+        "ridge_weak": -16.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2025-26",
+        "candidates2": -53.0,
+        "candidates4": -100.0,
+        "ridge_strong": -28.0,
+        "ridge_weak": -29.0,
+        "standard": 0.0
+      }
+    ],
+    "summary": [
+      {
+        "arm": "standard",
+        "ridge": 0.01,
+        "candidate_multiplier": 1,
+        "mean_all3": 2468.0,
+        "mean_latest2": 2469.5,
+        "net_2025": 2335.0,
+        "delta_2025": 0.0,
+        "delta_mean_all3": 0.0,
+        "delta_mean_latest2": 0.0,
+        "season_variance": 12064.666666666666,
+        "season_range": 269.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "ridge_weak",
+        "ridge": 0.001,
+        "candidate_multiplier": 1,
+        "mean_all3": 2402.3333333333335,
+        "mean_latest2": 2447.0,
+        "net_2025": 2306.0,
+        "delta_2025": -29.0,
+        "delta_mean_all3": -65.66666666666667,
+        "delta_mean_latest2": -22.5,
+        "season_variance": 17244.222222222223,
+        "season_range": 282.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "ridge_strong",
+        "ridge": 0.1,
+        "candidate_multiplier": 1,
+        "mean_all3": 2422.0,
+        "mean_latest2": 2425.0,
+        "net_2025": 2307.0,
+        "delta_2025": -28.0,
+        "delta_mean_all3": -46.0,
+        "delta_mean_latest2": -44.5,
+        "season_variance": 9300.666666666666,
+        "season_range": 236.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "candidates2",
+        "ridge": 0.01,
+        "candidate_multiplier": 2,
+        "mean_all3": 2409.6666666666665,
+        "mean_latest2": 2424.0,
+        "net_2025": 2282.0,
+        "delta_2025": -53.0,
+        "delta_mean_all3": -58.333333333333336,
+        "delta_mean_latest2": -45.5,
+        "season_variance": 13853.555555555557,
+        "season_range": 284.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "candidates4",
+        "ridge": 0.01,
+        "candidate_multiplier": 4,
+        "mean_all3": 2426.3333333333335,
+        "mean_latest2": 2376.0,
+        "net_2025": 2235.0,
+        "delta_2025": -100.0,
+        "delta_mean_all3": -41.666666666666664,
+        "delta_mean_latest2": -93.5,
+        "season_variance": 18320.888888888887,
+        "season_range": 292.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      }
+    ],
+    "strict_all_year_candidates": [],
+    "newer_both_gain_candidates": [],
+    "common_candidate_H1_MSE_gate": {
+      "ridge_weak": false,
+      "ridge_strong": true,
+      "candidates2": true,
+      "candidates4": false
+    },
+    "base_candidate_H1_MSE_gate": {
+      "ridge_weak": false,
+      "ridge_strong": false,
+      "candidates2": true,
+      "candidates4": false
+    },
+    "active_model_unchanged": true
+  },
+  "evidence_hashes": {
+    "reports/calibration_weight_sweep_2026_10_26/RESULTATER.txt": "a5ae81166a1c2a8d864585cd378d847748ae21db981a7f1f90459cbf31c2fff8",
+    "reports/calibration_weight_sweep_2026_10_26/comparison.csv": "0ca3f38276ebe804ffc6a3e9d3a940ac760c1168fc7e630ef54a6da30127e303",
+    "reports/calibration_weight_sweep_2026_10_26/deltas.csv": "cb734b5c90f37e4802742ad3128042d1f11130596d17bb33036d1cefc2f8ca08",
+    "reports/calibration_weight_sweep_2026_10_26/summary.csv": "e0f7e79a96264cfe5be12203d036151c4b5f30a658944e844247a277579afe86",
+    "reports/calibration_weight_sweep_2026_10_26/forecast_metrics.csv": "406cc97b39f2b0ef6c3d18449aa28002188c5cbff8326cb4cd9e6993ac3ec4fe",
+    "reports/calibration_weight_sweep_2026_10_26/ranking.csv": "3893ed850aeaeb84fb45d5e1a2181d4ec2de4b48d901ec455b1a3b405679dc05",
+    "reports/calibration_weight_sweep_2026_10_26/weight_diagnostics.csv": "bb165a4e7eb8eb52432d1c14aea660d6dee3ec6636c4117978efe82bc9c548c9",
+    "reports/calibration_weight_sweep_2026_10_26/candidate_verification.json": "d40d47921168f2ac10a36625de1895d5a03bad3a1244fc30d7b18dc3fb5f8c42",
+    "reports/calibration_weight_sweep_2026_10_26/final_verification.json": "504b718970cc7d715bdca8fca4265089d0a411de8966b47f12351def6137ff7b",
+    "reports/calibration_weight_sweep_2026_10_26/execution.json": "4c2272a7c1b181401174f458b9b57b0a8f1c444ab55553e535190f6a48b8aac1",
+    "reports/calibration_weight_sweep_2026_10_26/reference_ACTIVE_TEAM_BENCHMARK.json": "347b5e6bf5614740fd01f8e61ef838c266cb8baa000fcac4fdfb4be22ae3d4d4",
+    "reports/calibration_weight_sweep_2026_10_26/one_change_verification.json": "4edb151ae06e38f4c3e74e46eba6aaa4ff148fd716c4d1cc9cacffc19844ebb9"
+  }
+}

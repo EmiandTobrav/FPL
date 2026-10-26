@@ -1,0 +1,30 @@
+SPILLERPROGNOSER OG UTLÅNSHISTORIKK — 25. oktober2026
+Brukerens spørsmål gjelder samme lagrede GW9-informasjonstid som siste råd. Ingen nye GW8-resultater eller nye priser er blandet inn. Ingen produksjonsendring.
+
+ORDINÆRE PROGNOSER, FØR SEPARAT SKADEJUSTERING
+Guéhi | £6.0m | GW9: 3.79, GW10: 4.16, GW11: 4.15, GW12: 3.38, GW13: 3.76, GW14: 3.40, GW15: 3.50, GW16: 3.71 | sumGW9–11 12.11 | sumGW9–14 22.65
+Evanilson | £6.2m | GW9: 4.76, GW10: 4.61, GW11: 4.68, GW12: 4.18, GW13: 4.04, GW14: 4.79, GW15: 3.91, GW16: 4.77 | sumGW9–11 14.05 | sumGW9–14 27.06
+N.Jackson | £6.7m | GW9: 3.78, GW10: 3.03, GW11: 3.81, GW12: 3.38, GW13: 3.54, GW14: 3.83, GW15: 3.16, GW16: 2.95 | sumGW9–11 10.61 | sumGW9–14 21.36
+Kroupi.Jr | £7.3m | GW9: 3.79, GW10: 3.77, GW11: 3.74, GW12: 3.42, GW13: 3.21, GW14: 3.73, GW15: 3.21, GW16: 3.83 | sumGW9–11 11.29 | sumGW9–14 21.66
+Vuskovic | £5.1m | GW9: 2.51, GW10: 3.10, GW11: 2.97, GW12: 3.30, GW13: 2.83, GW14: 2.89, GW15: 3.04, GW16: 3.10 | sumGW9–11 8.58 | sumGW9–14 17.60
+
+VUSKOVIC
+Modellgrunnlaget har38 nullregistreringer i2025/26, og7 kamper iinneværende sesong med617 minutter og51 poeng. Premier League-fravær under utlån skilles ikke fra faktisk manglende spilletid. Dette er en semantisk svakhet: han var på utlån iHamburg, der klubben oppgir30 kamper,6 mål og1 assist. Nullradene er ikke dokumentasjon på38 benkinger.
+Sesongkalibreringen gir gammel historikk10/(10+7)=58.82 prosent vekt. Dermed blir blandet minutt-historikk36.29, selv om årets faktiske snitt er88.14. Dette er en feature, ikke modellens direkte minuttprognose. Grunnmodellen bruker også sesongkryssende vinduer.
+Ingen permanente filer eller treningsparametre ble endret. Med frosne modeller og samme kampoppsett ble gamle nullrader fjernet kun fra historikken ved prediksjon. OrdinærtGW9:2.5116; bare gammel kalibreringshistorikk markert manglende:2.3487; bare2025/26-nullrader fjernet fra grunnmodellhistorikk:2.8302; begge:2.6674. Effekten er ikke en enkel lineær straff. Den siste varianten girGW10 3.3461 ogGW11 3.2161. Dette er ikke en ferdig validert korrigert modell.
+Guéhi ligger på12.11 overGW9–11 motVuskovic8.58, forskjell3.52. Guéhi koster£6.0m, Vuskovic kan selges for£5.0m i siste plan. Vuskovic møterManchester City borte iGW9. Både motstand, historikk og prioritering under budsjett inngår. Nullradene forklarer ikke hele differansen.
+
+EVANILSON, JACKSON OG KROUPI
+Evanilson har592 minutter og37 poeng gjennomGW7, snitt84.57 minutter. Jackson har466 minutter og21 poeng, snitt66.57; hans siste tre kamper er87,90 og90 minutter. Det lange snittet beskriver derfor ikke hele den nyeste rolleutviklingen.
+Evanilson har høyere ordinær prognose enn begge alternativer i hver avGW9–16 og er billigere:£6.2m motJackson£6.7m ogKroupi£7.3m. Det er ikke nødvendig med en budsjettforklaring alene for å forstå managerens valg: Evanilson rangeres foran også i forventede bruttopoeng.
+Kroupi har0 minutter gjennomGW7 i det brukte offisielle historikkbildet, fotproblem og75 prosent neste runde. OrdinærtGW9 3.7857 blir2.8393 under den separate enkle75-prosent-justeringen. Han ogEvanilson har identisk klubbprogram, så forskjellen mellom dem kommer ikke fra forskjellige motstandere.
+Jackson har samme type38 nullregistreringer for2025/26; Bayern bekrefter utlån den sesongen. Fjerner vi bare disse radene fra grunnmodellens prediksjonshistorikk, øker hansGW9 fra3.7775 til4.3196. Dette er en følsomhetstest med frosne modeller, ikke en ny kalibrert anbefaling. Ved å fjerne gammel kalibreringshistorikk forJackson må en korrekt fremtidig løsning også vurdere tilbakefall til hans gyldige2024/25-PL-historikk. Scenariet kaltboth iCSV-en setter tidligere kalibreringshistorikk tilmanglende og er derfor ikke en fullstendig utlånskorreksjon forJackson.
+
+PRAKTISK TOLKNING
+Evanilson er det tydeligste ordinære modellvalget blant spissene. Jackson skal likevel ikke avskrives på grunnlag av den lave gamle spillehistorikken; utlånsperioden er feiltolket som nullhistorikk. Vuskovic-salg er mindre sikkert enn en ren prognosetabell antyder. De tidligere beregnede fire byttene utenVuskovic→Guéhi er fortsatt et lovlig alternativ som bevarer et gratisbytte. Ingen modelljustering er tatt i bruk i denne diagnosen.
+
+KILDER
+https://www.hsv.de/en/news/hsv-thanks-six-loan-players
+https://fcbayern.com/en/news/2025/09/fc-bayern-sign-nicolas-jackson-on-loan-from-chelsea
+Lokalt låst FPL-databilde: output/team_6604765_gw8_gw9_2026_10_25/retrieval.json
+Filer: comparison.csv, counterfactuals.csv, base_features.csv, history.csv.gz ogverification.json. Basemodellen ble først gjenskapt mot lagret prognose før historikkinngrepet. Ingen nye modeller trent for å velge en gunstig korreksjon.

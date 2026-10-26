@@ -1,0 +1,45 @@
+HVORFOR ER SISTE SESONG SVAK? SAMLET VURDERING ETTER NY KONTROLL
+26. oktober2026
+
+HOVEDFUNN
+Det rettede resultatet for2025/26 er2213, mot2547 og2495 i de to eldre sesongene. Fallet308 poeng mot tidligere snitt2521 er fortsatt vesentlig. Vi har nå lokalisert svikten og isolert én konkret bidragsyter. Vi har ikke dokumentert at et nytt oppsett fjerner svikten eller gir konkurransestyrke til å vinne FPL.
+
+1. SVIKTEN ER KONSENTRERT I ANGREP OG MIDTBANE
+256 av324 tapte bruttopoeng ligger i mål-/assistdelen, med kapteinsmultiplikatorer. Oppmøtedelen faller54 og restdelen14;16 sparte hitpoeng gir nettofallet308. Midtbanebidraget faller fra tidligere snitt1376,5 til1015, omtrent26%. Samlede midtbanepoeng i ligaen faller6,5%. Andre posisjoner kompenserer delvis. Den samme kandidatgruppens rangeringssamsvar svekkes fra0,262 og0,200 til0,151; innen midtbanen alene0,186/0,251/0,124. Lavere absolutt MSE skjuler at utfallsvariansen også er lavere.
+
+2. KALIBRERINGEN HJELPER IKKE LIKE STABILT MELLOM SESONGENE
+Ny forhåndsregistrert kontroll endrer bare prognosen for inneværende runde: H1 får den fryste komponentmodellens grunnprognose i stedet for siste residualkalibrering. De sju fremtidige prognosene, alle lærte vekter, datatidspunkter, blank-/tilgjengelighetssperrer, manager, chips, start, priser og ressursgrenser beholdes. Tre nye komplette sesongforløp er kjørt, og alle114 lagvalg/oppgjør er kontrollert.
+
+Sesong      Aktiv oppskrift    Uten H1-påslag    Forskjell
+2023/24              2547               2318          -229
+2024/25              2495               2501            +6
+2025/26              2213               2285           +72
+
+Dette isolerer virkningen av å fjerne akkurat dette prognoselaget under den fryste manageren. Det er ikke en måling av hele H8-kalibreringen eller en ny generell angrepsmodell.2025/26 forbedres72, mens2023/24 blir vesentlig svakere. Varianten forkastes som en generell erstatning. Det er likevel påvist at laget som bidrar mye til det gode eldre resultatet, skader den seneste sesongen i denne kontrollerte kjøringen.
+
+Gapet mot tidligere snitt endres fra-308 til-124,5. Dette skyldes både+72 i2025/26 og at det eldre snittet faller111,5; gapreduksjonen183,5 er derfor IKKE183,5 gjenfunne poeng i siste sesong. Også uten påslaget ligger2025/26 hele216 bak2024/25.
+
+3. NY KALIBRERING HVER FJERDE RUNDE BETYR IKKE NØDVENDIGVIS RASK TILPASNING
+Oppdateringene er faktisk gjennomført, med nye nåsesong-observasjoner. Men arkivet er ekspanderende og gir lik radvekt til tidligere sesonger. Ved runde9 i2025/26 er bare3557 av60341 lærerobservasjoner fra sesongen selv,5,9%. Ved runde21 er andelen16,2%, ved runde37 er den25,8%. Dette er samme arkivregel som i de andre sesongene, ikke en ny oppdateringsfeil. Det er en konkret hypotese om hvorfor gammel sammenheng mellom pris, historikk og poeng kan dominere lenge når fordelingen skifter. Andelene alene beviser ikke hvilken effekt en annen vekting ville hatt: grunnmodellen kan også reagere på nye historikkfelt uten å endre koeffisientene.
+
+4. EN KONKRET BLINDFLEKK I DE325 MODELLFELTENE
+Det aktive featureutvalget bruker ikke xG eller xA. Råmasteren har begge feltene for alle spilte rader i de tre testsesongene:11384,11567 og11492. Disse feltene er merket native_fpl_definition_not_qualified. Numerisk full dekning må derfor ikke forveksles med uavhengig definisjons-/publiseringskvalifisering. Vi har ikke slått dem på i live-modellen.
+
+Salah-eksemplet viser hva modellen potensielt går glipp av: rådataenes xG per90 faller fra0,659 i2024/25 til0,281 gjennom de første sju rundene2025/26. xA per90 faller fra0,240 til0,143. Likevel er modellens runde8-prognose7,45 poeng, og han får triple captain med to faktiske spillerpoeng. Modellen har tidligere faktiske poeng/minutter og kontekst, men ser ikke disse underliggende angrepsfeltene direkte. Det dokumenterer en manglende signalkanal, ikke hvor mange poeng nye xG-/xA-features ville gitt.
+
+I de17 rundene modellen eier Salah, forventer den omtrent115 ordinære poeng og får59; han er kaptein ni ganger. Dette er individuell feilprising, samtidig som gjennomsnittsbias for hele kandidatgruppen er liten. Å nedskalere alle spillere eller lage en Salah-spesifikk regel er derfor ikke begrunnet.
+
+5. KAPTEIN, SESONGVARIASJON OG DATA FORKLARER IKKE ALT
+Perfekt etterpåklokt kapteinsvalg i de faktisk valgte elleverne ville fortsatt etterlate285 poengs gap mot tidligere gjennomsnitt. Den største utfordringen er ikke bare hvem som kapteines blant de samme elleve.
+En ren etterpåklok vanskelighetsindeks, med lovlig£100m-tropp som bygges gratis på nytt hver uke, faller3,2%, mens faktisk modellscore faller12,2%. Indeksen er ingen oppnåelig strategi og kan ikke brukes til å fordele prosentene kausalt. Den gjør likevel «færre poeng tilgjengelig» til en utilstrekkelig enkel forklaring.
+De tidligere regne-, kalender-, oppdaterings- og tilgjengelighetskontrollene er bevart. Det finnes fortsatt pris-/klubb-/rosterforskjeller mellom historiske markedsproxyer og valgte førfristkilder i alle tre år, samt kjente begrensninger i eldre poengomregning og statistikkvintager. Ingen ny entydig2025-datasvikt med målt308-poengseffekt er påvist. Samme oppskrift betyr heller ikke identiske naturlige poengfordelinger mellom sesongene.
+
+BETYDNING FOR Å VINNE FPL
+Driftsklar er ikke det samme som dokumentert konkurransedyktig. Komponentmodellen er94 poeng bedre enn vår egen referanse i siste sesong, men begge er svake under dette oppsettet. Det gamle snittet nær2600 skal ikke brukes som forventet nivå for denne sesongen. Vi har ingen direkte dokumentert rangering mot de beste managerne under de samme kontrafaktiske poeng-/chipreglene.
+
+Neste forbedringsforsøk bør kvalifisere de laggede xG-/xA-feltene og isolere en generell tilpasning av angreps-/minuttprognoser eller lærerhistorikk, med én låst endring per kontroll. Parametere må velges på tidligere utviklingsdata, og alle tre sesonger må vises med samme regler og manager.2025/26 er nå brukt gjentatte ganger til diagnose og skal ikke omtales som et nytt urørt holdout. De faktisk forseglede2026/27-prognosene må bevares for fremoverrettet evaluering.
+
+Aktiv modell, vekter, forseglede liveprognoser og FPL-laget er uendret av disse undersøkelsene. Den enkleste kalibreringsfjerningen er testet og forkastet som generell erstatning.
+
+DETALJER
+comparison.csv og verification.json i denne mappen dokumenterer den nye kontrollerte testen. attack_input_audit.json og current_teacher_fraction.csv dokumenterer signalkanal og lærerandeler. Den første fullstendige poeng-/rangering-/kapteinsdiagnosen ligger i ../component_2025_diagnosis_2026_10_26/RESULTATER.txt, med egne fryste data, reproduksjoner og114 sertifiserte etterpåkloke sammenligninger.

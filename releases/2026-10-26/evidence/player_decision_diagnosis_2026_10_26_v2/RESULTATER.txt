@@ -1,0 +1,87 @@
+SPILLERNE OG LAGVALGENE BAK SVAKHETENE I 2025/26
+26. oktober 2026
+
+KONKLUSJON OG ENDRET PRIORITERING
+Vi kan nå skille mellom flere ulike problemer: utdatert kalender med manglende dobbeltkamper, for optimistiske angreps-/øvrige poeng for enkelte etablerte spillere, og feil i reaksjonen på rolle-/minuttendringer. Noen kapteins- og benkbommer skyldes små forskjeller i forventede poeng og stor utfallsvariasjon. Ikke alle navnene med store enkeltbommer er samlet overvurdert.
+Dette presiserer og endrer prioriteringen fra forrige diagnose. Før en separat kapteinsmodul testes, bør den historiske førfristkalenderens dekning og ferskhet kvalifiseres. Samme utvalgsregel i alle år har ikke gitt like ferske kalenderdata. Bedre kapteinsrangering alene retter ikke manglende kampantall. Dagens modell og alle eksisterende resultater er uendret.
+
+1. NYTT HOVEDFUNN: KALENDEREN ER MYE ELDRE I 2025/26
+Sesong      Median kalenderalder   Maksimal alder   Kjøpbare doble spiller/runder med for lavt kampantall
+2023-24                  1.85d            11.17d          0 av 637
+2024-25                  1.63d            12.04d          2 av 259
+2025-26                 27.49d            91.55d        233 av 287
+Dette gjelder observerte spiller/runde-rader med faktisk native kampgrunnlag, og med kjøpbarhet etter dagens harde tilgjengelighetssperrer. Det er ikke233 forskjellige spillere,233 poeng eller en måling av unngåelig sesongtap. Ulike lag og spillere gir ulikt antall slike rader per sesong.
+I2025/26 ligger171 av disse radene i runde33 og62 i runde36. Kilderegelen har vært lik, men kalenderen som faktisk ble valgt er langt mindre oppdatert. Dermed er trenings- og evalueringsoppsettet metodisk likt uten at informasjonskvaliteten er lik.
+Runde33 brukte kalenderkilden fra13.mars2026,36,4 dager før fristen18.april. I den kilden står kamp332 og334 i runde34 med kickoff25./26.april. Fasit viser begge spilt22.april i runde33. Dette er to ulike faktiske kamper, ikke dubletter av spillerrader. Runde36 viderefører samme kilde,57,4 dager gammel.
+Matheus Nunes, runde33:1 forventet kamp,83,1 prognostiserte minutter; fasit2 kamper og180 minutter. Av de96,9 manglende minuttene er90 knyttet til forskjellen i kampantall i en algebraisk oppdeling med faktiske90minutter per kamp. De resterende6,9 er forskjellen per antatt kamp. Dette er en etterpåklok oppdeling, ikke bevis for hvor mange poeng en oppdatert kalender ville gitt.
+Junior Kroupi, samme runde:1 forventet kamp,65,9 prognostiserte minutter; fasit2 kamper og137 minutter. Her er det også stor forskjell i samlet eksponering, ikke bare lav vurdering av sannsynlig start.
+Både Nunes og Kroupi ble benket. Et lovlig enkeltbytte Nunes inn/Gabriel ut ville gitt12 flere ordinære lagpoeng. Kroupi inn/Palmer ut ville gitt8. Dette er alternative lokale bytter med fasit; effektene skal ikke summeres uten å validere den kombinerte elleveren og kaptein.
+Ikke alle doble spillere gjorde det bra: Palmer hadde2 faktiske kamper, men ga2 poeng. Det er derfor feil å gange alle prognoser med2 og kalle forskjellen vunne poeng.
+Denne analysen viser hva den valgte førfristkilden manglet. Den fastslår ikke når alle omberammingene ble publisert, eller at ferskere gyldige arkiver finnes. Historiske innganger kan bare repareres med dokumentert informasjon før fristen; den endelige kampkalenderen må ikke føres bakover.
+
+2. HVILKE SPILLERE BLE MEST OVERVURDERT I DE FAKTISKE STARTENE?
+Kun starter som manageren faktisk valgte, uten kapteinsmultiplikasjon. Prognoseavvik er ikke direkte tap mot et realistisk alternativ.
+Spiller                            Starter  Forventet  Faktisk  Overvurdering
+Mohamed Salah                           17      106.2       66          40.2
+Enzo Fernández                          30      142.2      121          21.2
+Cole Palmer                              6       30.4       20          10.4
+Richarlison de Andrade                   6       25.2       16           9.2
+Jan Paul van Hecke                       5       18.1       10           8.1
+Quilindschy Hartman                      7       22.5       15           7.5
+Bukayo Saka                              5       23.5       17           6.5
+Iliman Ndiaye                           14       62.2       56           6.2
+
+Salah er det tydeligste gjentatte tilfellet.17 starter ga66 poeng mot106,2 forventet, et avvik på40,2. Oppdelingen er eksakt:
+  Angrepspoeng:51,2 forventet mot29 faktisk, +22,2.
+  Oppmøtepoeng:32,2 mot28, +4,2.
+  Øvrige poeng:18,1 mot9, +9,1.
+  Etterkalibrering økte grunnprognosen med4,7.
+Omtrent35,5 av overvurderingen finnes altså allerede i grunnprognosen. Å bare endre etterkalibreringen treffer ikke hoveddelen av akkurat denne feilen. Dette er en beskrivelse av modellutgangene, ikke en kontrafaktisk test av å slå av kalibreringen.
+Det finnes konkrete signaler om svekket rolle i inngangene: før runde15 har Salah startet1 av de3 siste kampene og spilt45minutter i snitt, mens modellen anslår73,0minutter og5,49poeng. Fasit er0minutter/0poeng. Før runde16 er siste3-startandel0 og minuttgjennomsnitt15; modellen har falt til57,8minutter/4,26poeng, og fasit blir64minutter/8poeng. Vi ser en treg eller utjevnet reaksjon i det første tilfellet, men en hard sperre basert på få siste kamper kunne også fjernet et godt senere valg.
+Enzo er et annet problem.30 starter:142,2 forventet mot121 faktisk. Angrepsovervurdering10,0 og øvrige poeng12,5 forklarer det meste; oppmøtefeil-0,6 og kalibrering-0,7 motvirker litt. Modellen anslår samlet2431minutter mot2499 faktisk. Han blir altså ikke overvurdert fordi modellen generelt gir ham for mange minutter.
+Øvrige poeng er én samlet modellkomponent. Analysen kan ikke avgjøre om feilen i denne komponenten særskilt er bonus, clean sheet eller en annen poengtype uten en ytterligere oppdeling.
+
+3. KONKRETE BENKVALG OG HVA SOM SKILLER DEM
+Alle eksemplene nedenfor er kontrollert som lovlige enkeltbytter innen samme15 med samme tilgjengelighetssperrer. Poengeffekten gjelder vanlig lagbase etter autosubs, uten å endre kapteinsbonus. De er etterpåkloke diagnostiske alternativer.
+Runde  Inn fra benk / poeng           Ut av ellever / poeng           Mulig basegevinst   Modellens forventede forskjell
+   26 Virgil van Dijk / 17    Bruno Borges Fernandes / 2    +15    -0.87
+   33 Matheus Nunes / 12    Gabriel dos Santos Magalhães / 0    +12    -0.17
+   23 Matheus Nunes / 11    Erling Haaland / 1    +10    -4.05
+   18 Martin Dúbravka / 11    Robert Lynch Sánchez / 3    +8    -0.27
+   24 Junior Kroupi / 9    Morgan Rogers / 2    +7    -2.08
+   21 Junior Kroupi / 7    Enzo Fernández / 1    +6    -2.69
+Van Dijk mot Fernandes i runde26 er en stor fasitforskjell, men modellens forventninger var4,07 mot4,94. En17-poengskamp er ikke i seg selv bevis for at Van Dijk burde vært forventet å gi17.
+Nunes i runde23 er mer diagnostisk for minutter: etter72 og0minutter i de to foregående kampene, og54minutter i siste3-snitt, får han37,8minutter og2,07poeng i prognosen. Han spiller90minutter og gir11poeng, og blir benket bak blant annet Haaland som gir1poeng på17minutter. Dette er en motsatt respons til Salah-tilfellet: modellen kan reagere for sterkt på enkelte nylige fravær. Det beviser likevel ikke at90minutter var kjent eller sikkert før fristen.
+Kroupi viser både usikre minutter og episodiske angrepsreturer. Han får7poeng på63minutter i runde21,9 på67minutter i runde24 og5 på bare17minutter i runde31. Det er derfor utilstrekkelig å tolke alle benkreturene som for lave minuttprognoser; poeng per minutt varierer kraftig.
+
+4. ET BYTTE SOM FORSTERKET SAMME PROGNOSEFEIL
+Runde30: Rice selges og Salah kjøpes. Rice er forventet4,46poeng, Salah6,15. Rice gir3poeng; Salah gir1 på26minutter mot82,2 forventet. Salah velges samtidig som kaptein foran Fernandes, som forventes5,61 og gir10.
+Den tidligere kontrollerte lokale hold-sammenligningen gir64poeng mot faktisk53, altså11poeng bedre ved å beholde laget og velge oppstilling/kaptein fra samme prognoser.2 av forskjellen kan spores til Rice3 versus Salah1;9 til Fernandes10 versus Salah1 som kaptein. Dette viser hvordan samme spillerprognose kan påvirke både bytte og kaptein. Det er ikke to uavhengige tap som skal legges oppå en tredje prognosefeil. Fribytter og senere lagbane er ikke simulert i hold-alternativet.
+Runde33: Neco Williams kjøpes, Gudmundsson selges. De gir2 mot7poeng. I tillegg benkes Nunes12 og Kroupi10 samme runde. Her er både bytte og oppstilling svake i fasit, og kampantallet er et konkret datagrunnlag å kontrollere før modellen endres.
+
+5. KAPTEINSVALG: NOEN ER NESTEN LIKE PROGNOSER
+I runde8 velges Salah til Triple Captain med7,182prognose foran Haaland7,129. Forskjellen er bare0,054 forventede poeng. Fasit er2 mot13. Forskjellen i kapteinsbonus med TC er22poeng, men den kan ikke kalles22forutsigbare eller lett unngåelige poeng ut fra en så liten prognoseforskjell.
+I runde33 velges Fernandes5,74 foran Gibbs-White4,98; fasit er6 mot20. Det er14 i vanlig kapteinsbonus innen allerede valgt ellever. Begge har1 faktisk kamp: denne bommen forklares ikke av den dokumenterte dobbeltkampfeilen.
+Haaland er et viktig moteksempel til en navnebasert svarteliste: de30 faktiske startene hans ga204poeng mot188,1 forventet. Han er samlet UNDERVURDERT i disse startene, selv om flere av kapteinsrundene var svake relativt andre egne spillere.
+I runde38 spiller Haaland ikke. Det er likevel ingen13-poengs kapteinsbom: Fernandes som visekaptein overtar og gir13bonuspoeng. Derfor bruker sluttanalysen effektiv kaptein etter regelmotorens fallback, ikke bare poengene til det opprinnelig valgte navnet. Den rå captain_pairs.csv er bevart som mellomfil; captain_pairs_effective.csv er den kontrollerte referansen.
+
+6. HVA MODELLEN SER UT TIL Å SLITE MED
+A. Manglende/utdaterte kampbindinger: ett kampgrunnlag møter fasit fra to kamper. Dette er dokumentert inngangsproblem og ulik kildekvalitet på tvers av sesonger.
+B. Spillerspesifikk overføring av historisk angreps-/øvrig poengnivå: særlig Salah og Enzo. Et generelt minuttkutt kan ikke rette Enzo-feilen.
+C. Asymmetrisk og ustabil reaksjon på rolle/fravær: langsom nedjustering for Salah, kraftig nedjustering for Nunes etter et fravær. Dette er konkrete feiltilfeller som bør testes som grupper, ikke brukes til regler om enkeltspillernavn.
+D. Rangering med stor støy og små forventningsforskjeller: kapitainsvalg mellom nesten like prognoser kan gi store fasitforskjeller. Analyse av kalibrert usikkerhet og forventede minutter kan hjelpe, men disse eksemplene beviser ingen sikker gevinst.
+
+ANBEFALT REKKEFØLGE FØR NESTE MODELLTEST
+1. Kvalifiser kalenderens faktisk tilgjengelige førfristversjoner, ferskhet og uavklarte kampbindinger for alle tre sesonger. Undersøk arkiverte kunngjøringer/snapshots før de berørte fristene. Hvis ferskere versjoner ikke kan dokumenteres, må usikkerheten og begrensningen synliggjøres; bruk ikke ettertidens fasit som historisk prognoseinngang.
+2. Skill kalenderfeil fra minutter-per-kamp-feil i evalueringen. Test deretter målrettet, førfristbasert reaksjon på rolle- og fraværssignaler. Ikke øk treningshyppighet eller tidsvekting generelt igjen uten et nytt konkret grunnlag; de tidligere testene løste ikke dette.
+3. Først deretter vurder et separat kapteins-/angrepshode på et kvalifisert fellesgrunnlag. Behold dagens modell som kontroll og endre én ting om gangen på alle tre sesongene.
+Ingen av disse nye testene eller kildeendringene er startet her. Nåværende modell og historiske resultater er bevart. Det er ikke dokumentert hvor mange av269-poengsfallet en korrigert kalender eller ny modell vil hente tilbake.
+
+KONTROLLER OG BEGRENSNINGER
+1710spiller/rundevalg fra114allerede gjennomførte avgjørelser er koblet mot native utfall og modellkomponenter. Alle poengsummer og komponentidentiteter stemmer.35eksisterende kildeverifiserte blankutfall uten native kamprad er beholdt som0 med eksplisitt blankbevis og kildehash; andre ukjente utfall er ikke fylt med0.
+Alle presenterte benkbytter er lovlige enkeltbytter med korrekt formasjon, harde tilgjengelighetssperrer og autosubs. De endrer vanlig lagbase; kapteins-/chipmuligheter og overlappende alternative bytter skal ikke summeres.
+Det første tekniske analyseforsøket stoppet på at kjente blankrunder mangler native kamprader. V2 bruker allerede kvalifiserte blankutfall med kildehash. Den første rå kapteinspardifferansen er dessuten separat kontrollert mot effektiv kaptein/visekaptein og korrigert i egen fil. Ingen modell, kildeopptak eller lagavgjørelse er endret.
+Feildekomponeringen viser hvor i utgangene feilene ligger. Den er ikke en kausal forklaring på interne modellvekter. Sikker vurdering av en ny løsning krever en førfristtest; eksemplene alene viser ikke at et bestemt nytt trekk eller en bestemt terskel vil forbedre resultatene.
+
+FILER
+starter_player_errors.csv: summer per spiller i faktiske starter. player_round_details.csv: prognoser, native fasit, komponentfeil, form, rolle og kampantall per valgt spiller/runde. focus_player_histories.csv: utvalgte detaljerte historier. legal_single_swaps.csv/best_single_swap_per_round.csv: lovlige benkalternativer. captain_pairs_effective.csv: kapteinsalternativer etter vice-fallback. transfer_player_details.csv: prognoser for kjøpte/solgte. exposure_summary.csv/exposure_rounds.csv/calendar_age.csv/specific_calendar_fixture_evidence.csv: kalenderdiagnose og konkrete kildehendelser. verification.json/independent_verification.json: kontroller.

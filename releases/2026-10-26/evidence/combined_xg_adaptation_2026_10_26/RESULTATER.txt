@@ -1,0 +1,76 @@
+KOMBINERT xG/xA OG RASKERE KALIBRERING
+26. oktober 2026
+
+Kombinasjonen er testet som den fjerde varianten på det samme kvalifiserte datagrunnlaget som de to enkeltendringene. Ingen parametere, kildegrenser eller managerinnstillinger er justert etter at testen startet. Dagens aktive modell er uendret.
+
+NETTO SESONGPOENG ETTER BYTTEKOSTNADER
+Sesong       Dagens modell    Bare xG/xA    Bare raskere    Begge
+2023-24              2547          2545            2465       2478
+2024-25              2495          2569            2604       2512
+2025-26              2213          2216            2335       2189
+Snitt              2418.3        2443.3          2468.0     2393.0
+
+HVA KOMBINASJONEN TILFØRER
+Sesong       Mot dagens     Mot bare xG/xA    Mot bare raskere    Samspill
+2023-24               -69              -67                +13          +15
+2024-25               +17              -57                -92         -166
+2025-26               -24              -27               -146         -149
+Samspill = begge − bare xG/xA − bare raskere + kontroll. Dette beskriver samspillet i hele det simulerte systemet, inkludert forskjellige lag og senere beslutninger; det er ikke et selvstendig bevis på statistisk signifikans eller en mekanisme i enkeltspillere.
+
+VURDERING
+Kombinasjonen består ikke det forhåndsfastsatte kravet om flere netto poeng enn dagens modell i hver av de tre sesongene.
+Den slår ikke begge enkeltvariantene i hver av de tre sesongene.
+Et bedre sesongsnitt eller et bedre sisteår alene er ikke tilstrekkelig til å velge en generell erstatning. Resultatene er historiske utviklingstester på tre allerede undersøkte sesonger, ikke en urørt holdout eller dokumentasjon på faktisk FPL-rangering. Ingen ny vurdering av2026/27 er brukt.
+
+FALLET I2025/26
+Dagens modell: tidligere snitt 2521.0, sisteår 2213, avvik -308.0.
+Bare xG/xA: tidligere snitt 2557.0, sisteår 2216, avvik -341.0.
+Bare raskere: tidligere snitt 2534.5, sisteår 2335, avvik -199.5.
+Begge: tidligere snitt 2495.0, sisteår 2189, avvik -306.0.
+
+POENGKOMPONENTER I2025/26
+Variant             Grunnpoeng     Kapteinsbonus    Byttekostnad     Netto
+Dagens modell            1961             252               0       2213
+Bare xG/xA               1952             272               8       2216
+Bare raskere             2059             276               0       2335
+Begge                    1920             273               4       2189
+Forskjeller i prognoser endrer lag, kapteiner, chips og senere valg. Derfor kan lavere gjennomsnittlig prognosefeil sameksistere med færre sesongpoeng. Tabellen beskriver hvor poengforskjellen ender, uten å hevde at én enkelt beslutning forklarer hele forløpet.
+
+LIK METODIKK
+Kombinasjonen bruker de eksakt samme80 kvalifiserte xG-basispakkene som xG-varianten fra forrige test. Ingen ny basismodell er trent. De341 feltene, treningsradene, fasitene og tilgjengelighetsreglene er identiske.
+Bare kalibreringshistorikkens vekting endres relativt til xG-varianten: 2^(-alder_i_dager/180). Halveringstiden180dager er den samme som i enkeltvarianten. De samme lærerobservasjonene brukes, med samme uvektede treningsbaserte transformasjoner og Ridge-straff0,01. Bare fullførte utfall og lærerprognoser fra før hver oppdateringsfrist er tillatt.
+Oppdateringer i runde1,5,9,...37 i alle tre sesonger.240 nye kalibreringshoder dekker8 fremtidige runder. De faktiske minuttprognosene er identiske med xG-varianten; bare poengkalibreringen endres.
+Samme manager, innledende budsjett, chips, kalender- og poengstandard,8 prognoserunder,3 planleggingsrunder og ressursramme per beslutning:16 faktiske søkenoder og maksimalt40 kall. Ingen FPL-ordre er sendt.
+Alle114 nye beslutninger er etterspilt uavhengig, med kontroll av poeng, lovlighet, budsjetter og harde sperrer for utilgjengelige spillere. Adversarialkontroller inkluderer svært høye prognoser for utilgjengelige spillere og Kane. De9 referansesesongene er gjenbrukt fra forrige verifiserte utgivelse, der342 beslutninger ble etterspilt; kilde- og modellhasher er kontrollert på nytt.
+
+PROGNOSEFEIL PÅ FELLES KANDIDATER
+MSE: lavere er bedre. Kandidatutvalget er fast bestemt fra samme førfristreferanse for alle fire varianter. Poeng og minutter, H1 og H3, har identiske evalueringsnevnere per celle.
+Sesong / horisont / mål       Kontroll        xG/xA       Raskere        Begge
+2023-24 / 1 / minutes      658.0699     659.3215     658.0699     659.3215
+2023-24 / 1 / points        16.4405      16.4599      16.4688      16.5037
+2023-24 / 3 / minutes     4565.2938    4602.4383    4565.2938    4602.4383
+2023-24 / 3 / points        52.2546      52.0898      52.2809      52.2123
+2024-25 / 1 / minutes      585.6876     589.2082     585.6876     589.2082
+2024-25 / 1 / points        14.6351      14.5927      14.6347      14.5808
+2024-25 / 3 / minutes     3637.3251    3667.6865    3637.3251    3667.6865
+2024-25 / 3 / points        49.9778      49.7704      50.2529      49.9597
+2025-26 / 1 / minutes      626.6081     627.7144     626.6081     627.7144
+2025-26 / 1 / points        13.3941      13.3647      13.3380      13.3071
+2025-26 / 3 / minutes     3823.6000    3845.1802    3823.6000    3845.1802
+2025-26 / 3 / points        43.4596      43.2619      42.7965      42.6358
+
+MIDTBANERANGERING
+Gjennomsnittlig Spearman-korrelasjon per runde på samme midtbanekandidater; høyere er bedre.
+2023-24: kontroll 0.1857, xG/xA 0.1783, raskere 0.1814, begge 0.1769.
+2024-25: kontroll 0.2514, xG/xA 0.2541, raskere 0.2491, begge 0.2479.
+2025-26: kontroll 0.1236, xG/xA 0.1420, raskere 0.1187, begge 0.1444.
+Fullstendige poeng-/minuttfeil, bias og rangering for alle kjøpbare spillere, felles kandidater, midtbane og dyre spillere står i forecast_metrics.csv og ranking.csv. Bedre sesongpoeng alene innebærer ikke bedre forventningsprognoser.
+
+DATA OG BEGRENSNINGER
+Fellesgrunnlag V5:135441 treningsrader,111562 prognoserader og16 kvalifiserte xG/xA-felt utover de opprinnelige325. Arkiverte rapporterte verdier må være fra før faktisk frist. Uutfylte ligaomfattende felt og manglende rater er ukjente; ingen senere sluttverdier er tilbakefylt. V4 og den første ugyldige xG-kjøringen brukes ikke.
+Git-tid og statistikkenes publiseringsforsinkelse har fortsatt de samme dokumenterte proxy-begrensningene. Kalender, marked, harmonisert poenggrunnlag og øvrige datakilder følger forrige test uendret. Se datakortet og den forrige resultatrapporten for full kvalifisering.
+Minuttmålingen i den gjenbrukte rapportfunksjonen valgte først kontrollens minutter for et nytt fjerde variantnavn. Før sluttresultatene ble vurdert, ble alle24 kombinerte minuttceller beregnet på nytt fra de faktiske xG-basismodellene og native utfall. De er kontrollert like xG-variantens minutter. Dette var bare en rapporteringsrettelse; prognoser, modelltilpasninger, poengmålinger og managerbeslutninger ble ikke endret. Første måling er bevart med tydelig filnavn, og metric_reporting_correction.json dokumenterer rettelsen.
+
+FILER
+comparison.csv: fire varianter, alle årsdeltaer og samspill. scores.csv: netto, hits og poengkomponenter. forecast_metrics.csv: korrigerte prognosefeil. ranking.csv: rangering. proposal.json: forhåndslåst kontrakt. final_verification.json: gjennomførte kontroller.
+Tidligere test: reports/xg_adaptation_2026_10_26_v2/RESULTATER.txt. Datakort: datasets/fpl_common_training_v5/README.txt.

@@ -1,0 +1,489 @@
+{
+  "conclusion": "46 ferske sesongfors\u00f8k p\u00e5 samme spillerpool og manager: 43 komplette og 3 tekniske stopp er kontrollert. 3 av 18 nye varianter sl\u00e5r begge referanser i begge utviklingssesongene; v\u00e6rvariantene er separate optimistiske scenarioer. Ingen produksjonsendring.",
+  "decision": "retain_for_research",
+  "evidence_hashes": {
+    "reports/common_season_comparison_2026_10_25/RESULTATER.md": "281bcaadcd9d514696bdcfccfe68a608dbadbd0d2de143484b05db743d384ade",
+    "reports/common_season_comparison_2026_10_25/causal_forecast_verification.json": "20ef84c03897e7fdf1b01c82801df7a115e287953404e2a92b940e4749286d2e",
+    "reports/common_season_comparison_2026_10_25/causal_prediction_lock.json": "cdbc1ebe6ddbb42a7ac9116fa58bc8063948dc31b79a57e9fbffa5c48bca0ad6",
+    "reports/common_season_comparison_2026_10_25/chips.csv": "502489b943250bdc5e966f460a046786bb69b15a715ce0f6628a5100bb5fefd5",
+    "reports/common_season_comparison_2026_10_25/completion_addendum.json": "c8af04f76ddbf4b5fb82e266667abc6a8beb23397febdef753ea307c79edf0ea",
+    "reports/common_season_comparison_2026_10_25/manager_verification.json": "e0fcfd7a92c949b985eb1b3c99e6327b311f7b89d6936e2e8575e499557dee2b",
+    "reports/common_season_comparison_2026_10_25/outcome_source_verification.json": "1f768f42f3247de8b7ca9464a0a73d040478c69d1c43217f44ad3ccbd81a524c",
+    "reports/common_season_comparison_2026_10_25/proposal.json": "bddf5e3a9ba13a0a36dc306d01acd728814b4f1bc199530280833003db6cbbd7",
+    "reports/common_season_comparison_2026_10_25/reference_prediction_lock.json": "7ac9b8fe6eb32126b783260bbeadb77fff9ee0bef4dbc7e1fa961bbc05480b61",
+    "reports/common_season_comparison_2026_10_25/scores.csv": "06e3337fc7ac06e14220b0728ebf51cea2241c7a064183624e9fb54554bec374",
+    "reports/common_season_comparison_2026_10_25/season_comparison.png": "f8cb501adaaa750ea42e43359c74c2d6332f2aa9282d6040de950670be48e1c8",
+    "reports/common_season_comparison_2026_10_25/trajectory_metrics.csv": "160dcb5ccf768380cb60f9dc4e32a553fe133a535e43f22484947bee887a861b",
+    "reports/common_season_comparison_2026_10_25/weather_forecast_verification.json": "a9f2b92ac3d426ddea0cde1df614c6554409ca0e3f4905331292d78f2427f944",
+    "reports/common_season_comparison_2026_10_25/weather_prediction_lock.json": "85420920ca04443c15f7937ef07165c33f4aa57748d24c0129e01565bc11899f"
+  },
+  "highest_mean_candidate": "component",
+  "production_changed": false,
+  "results": [
+    {
+      "arm": "ridge",
+      "completed_rounds": 38,
+      "hits": 0.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2513.0,
+      "season": "2023-24",
+      "solver_calls": 570,
+      "status": "complete"
+    },
+    {
+      "arm": "extra_trees",
+      "completed_rounds": 38,
+      "hits": 16.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2473.0,
+      "season": "2023-24",
+      "solver_calls": 389,
+      "status": "complete"
+    },
+    {
+      "arm": "ridge_extra_50",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2457.0,
+      "season": "2023-24",
+      "solver_calls": 439,
+      "status": "complete"
+    },
+    {
+      "arm": "hgb",
+      "completed_rounds": 38,
+      "hits": 24.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2461.0,
+      "season": "2023-24",
+      "solver_calls": 414,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost",
+      "completed_rounds": 38,
+      "hits": 8.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2449.0,
+      "season": "2023-24",
+      "solver_calls": 409,
+      "status": "complete"
+    },
+    {
+      "arm": "lightgbm",
+      "completed_rounds": 38,
+      "hits": 0.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2535.0,
+      "season": "2023-24",
+      "solver_calls": 479,
+      "status": "complete"
+    },
+    {
+      "arm": "two_part",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2497.0,
+      "season": "2023-24",
+      "solver_calls": 501,
+      "status": "complete"
+    },
+    {
+      "arm": "role_conditional",
+      "completed_rounds": 38,
+      "hits": 16.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2319.0,
+      "season": "2023-24",
+      "solver_calls": 344,
+      "status": "complete"
+    },
+    {
+      "arm": "component",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2565.0,
+      "season": "2023-24",
+      "solver_calls": 459,
+      "status": "complete"
+    },
+    {
+      "arm": "point_distribution",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2365.0,
+      "season": "2023-24",
+      "solver_calls": 407,
+      "status": "complete"
+    },
+    {
+      "arm": "fixed_history",
+      "completed_rounds": 21,
+      "hits": null,
+      "information_tier": "predeadline_proxy",
+      "net": null,
+      "season": "2023-24",
+      "solver_calls": 373,
+      "status": "technical_stop_resource_cap"
+    },
+    {
+      "arm": "catboost_history",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2196.0,
+      "season": "2023-24",
+      "solver_calls": 440,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_availability",
+      "completed_rounds": 38,
+      "hits": 0.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2411.0,
+      "season": "2023-24",
+      "solver_calls": 449,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_set_piece",
+      "completed_rounds": 38,
+      "hits": 16.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2377.0,
+      "season": "2023-24",
+      "solver_calls": 415,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_workload",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2399.0,
+      "season": "2023-24",
+      "solver_calls": 434,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_role",
+      "completed_rounds": 38,
+      "hits": 36.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2315.0,
+      "season": "2023-24",
+      "solver_calls": 339,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_strength",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2338.0,
+      "season": "2023-24",
+      "solver_calls": 434,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_lagged_weather",
+      "completed_rounds": 38,
+      "hits": 20.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2463.0,
+      "season": "2023-24",
+      "solver_calls": 384,
+      "status": "complete"
+    },
+    {
+      "arm": "corrected_fixed",
+      "completed_rounds": 38,
+      "hits": 24.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2353.0,
+      "season": "2023-24",
+      "solver_calls": 436,
+      "status": "complete"
+    },
+    {
+      "arm": "operational_fixed",
+      "completed_rounds": 38,
+      "hits": 16.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2468.0,
+      "season": "2023-24",
+      "solver_calls": 486,
+      "status": "complete"
+    },
+    {
+      "arm": "weather_actual",
+      "completed_rounds": 38,
+      "hits": 24.0,
+      "information_tier": "hindsight_weather_proxy",
+      "net": 2430.0,
+      "season": "2023-24",
+      "solver_calls": 397,
+      "status": "complete"
+    },
+    {
+      "arm": "weather_noise_1",
+      "completed_rounds": 38,
+      "hits": 24.0,
+      "information_tier": "hindsight_weather_proxy",
+      "net": 2430.0,
+      "season": "2023-24",
+      "solver_calls": 397,
+      "status": "complete"
+    },
+    {
+      "arm": "weather_noise_2",
+      "completed_rounds": 38,
+      "hits": 24.0,
+      "information_tier": "hindsight_weather_proxy",
+      "net": 2430.0,
+      "season": "2023-24",
+      "solver_calls": 397,
+      "status": "complete"
+    },
+    {
+      "arm": "ridge",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2330.0,
+      "season": "2024-25",
+      "solver_calls": 411,
+      "status": "complete"
+    },
+    {
+      "arm": "extra_trees",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2440.0,
+      "season": "2024-25",
+      "solver_calls": 329,
+      "status": "complete"
+    },
+    {
+      "arm": "ridge_extra_50",
+      "completed_rounds": 12,
+      "hits": null,
+      "information_tier": "predeadline_proxy",
+      "net": null,
+      "season": "2024-25",
+      "solver_calls": 206,
+      "status": "technical_stop_resource_cap"
+    },
+    {
+      "arm": "hgb",
+      "completed_rounds": 38,
+      "hits": 24.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2557.0,
+      "season": "2024-25",
+      "solver_calls": 426,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost",
+      "completed_rounds": 38,
+      "hits": 8.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2403.0,
+      "season": "2024-25",
+      "solver_calls": 446,
+      "status": "complete"
+    },
+    {
+      "arm": "lightgbm",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2539.0,
+      "season": "2024-25",
+      "solver_calls": 434,
+      "status": "complete"
+    },
+    {
+      "arm": "two_part",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2636.0,
+      "season": "2024-25",
+      "solver_calls": 563,
+      "status": "complete"
+    },
+    {
+      "arm": "role_conditional",
+      "completed_rounds": 8,
+      "hits": null,
+      "information_tier": "predeadline_proxy",
+      "net": null,
+      "season": "2024-25",
+      "solver_calls": 165,
+      "status": "technical_stop_resource_cap"
+    },
+    {
+      "arm": "component",
+      "completed_rounds": 38,
+      "hits": 8.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2604.0,
+      "season": "2024-25",
+      "solver_calls": 505,
+      "status": "complete"
+    },
+    {
+      "arm": "point_distribution",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2582.0,
+      "season": "2024-25",
+      "solver_calls": 481,
+      "status": "complete"
+    },
+    {
+      "arm": "fixed_history",
+      "completed_rounds": 38,
+      "hits": 0.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2431.0,
+      "season": "2024-25",
+      "solver_calls": 529,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_history",
+      "completed_rounds": 38,
+      "hits": 0.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2502.0,
+      "season": "2024-25",
+      "solver_calls": 536,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_availability",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2526.0,
+      "season": "2024-25",
+      "solver_calls": 496,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_set_piece",
+      "completed_rounds": 38,
+      "hits": 0.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2522.0,
+      "season": "2024-25",
+      "solver_calls": 473,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_workload",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2591.0,
+      "season": "2024-25",
+      "solver_calls": 426,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_role",
+      "completed_rounds": 38,
+      "hits": 16.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2531.0,
+      "season": "2024-25",
+      "solver_calls": 489,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_strength",
+      "completed_rounds": 38,
+      "hits": 0.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2486.0,
+      "season": "2024-25",
+      "solver_calls": 518,
+      "status": "complete"
+    },
+    {
+      "arm": "catboost_without_lagged_weather",
+      "completed_rounds": 38,
+      "hits": 4.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2600.0,
+      "season": "2024-25",
+      "solver_calls": 503,
+      "status": "complete"
+    },
+    {
+      "arm": "corrected_fixed",
+      "completed_rounds": 38,
+      "hits": 16.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2394.0,
+      "season": "2024-25",
+      "solver_calls": 443,
+      "status": "complete"
+    },
+    {
+      "arm": "operational_fixed",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "predeadline_proxy",
+      "net": 2498.0,
+      "season": "2024-25",
+      "solver_calls": 476,
+      "status": "complete"
+    },
+    {
+      "arm": "weather_actual",
+      "completed_rounds": 38,
+      "hits": 12.0,
+      "information_tier": "hindsight_weather_proxy",
+      "net": 2587.0,
+      "season": "2024-25",
+      "solver_calls": 509,
+      "status": "complete"
+    },
+    {
+      "arm": "weather_noise_1",
+      "completed_rounds": 38,
+      "hits": 8.0,
+      "information_tier": "hindsight_weather_proxy",
+      "net": 2545.0,
+      "season": "2024-25",
+      "solver_calls": 401,
+      "status": "complete"
+    },
+    {
+      "arm": "weather_noise_2",
+      "completed_rounds": 38,
+      "hits": 8.0,
+      "information_tier": "hindsight_weather_proxy",
+      "net": 2563.0,
+      "season": "2024-25",
+      "solver_calls": 401,
+      "status": "complete"
+    }
+  ],
+  "utility_gate_winners": [
+    "lightgbm",
+    "two_part",
+    "component"
+  ]
+}

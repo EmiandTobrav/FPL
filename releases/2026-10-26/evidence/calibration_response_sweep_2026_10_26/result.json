@@ -1,0 +1,203 @@
+{
+  "conclusion": "Six separate calibration response candidates completed: half60 -78/+27/-65; half90 +3/-35/-47; half365 -81/-106/-49; every1 -54/+4/-74; every2 -54/+0/+0; every8 +7/-51/+1. Active180/4 unchanged; no combination/automatic promotion. Other adjustable weights mapped separately.",
+  "decision": "retain_for_research",
+  "results": {
+    "summary": [
+      {
+        "arm": "standard",
+        "half_life_days": 180,
+        "calibration_stride": 4,
+        "mean_all3": 2468.0,
+        "mean_latest2": 2469.5,
+        "net_2025": 2335.0,
+        "delta_2025": 0.0,
+        "delta_all3_mean": 0.0,
+        "delta_latest2_mean": 0.0,
+        "season_population_variance": 12064.666666666666,
+        "season_range": 269.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "half60",
+        "half_life_days": 60,
+        "calibration_stride": 4,
+        "mean_all3": 2429.3333333333335,
+        "mean_latest2": 2450.5,
+        "net_2025": 2270.0,
+        "delta_2025": -65.0,
+        "delta_all3_mean": -38.666666666666664,
+        "delta_latest2_mean": -19.0,
+        "season_population_variance": 22616.22222222222,
+        "season_range": 361.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "half90",
+        "half_life_days": 90,
+        "calibration_stride": 4,
+        "mean_all3": 2441.6666666666665,
+        "mean_latest2": 2428.5,
+        "net_2025": 2288.0,
+        "delta_2025": -47.0,
+        "delta_all3_mean": -26.333333333333332,
+        "delta_latest2_mean": -41.0,
+        "season_population_variance": 13506.888888888889,
+        "season_range": 281.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "half365",
+        "half_life_days": 365,
+        "calibration_stride": 4,
+        "mean_all3": 2389.3333333333335,
+        "mean_latest2": 2392.0,
+        "net_2025": 2286.0,
+        "delta_2025": -49.0,
+        "delta_all3_mean": -78.66666666666667,
+        "delta_latest2_mean": -77.5,
+        "season_population_variance": 7504.888888888888,
+        "season_range": 212.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "every1",
+        "half_life_days": 180,
+        "calibration_stride": 1,
+        "mean_all3": 2426.6666666666665,
+        "mean_latest2": 2434.5,
+        "net_2025": 2261.0,
+        "delta_2025": -74.0,
+        "delta_all3_mean": -41.333333333333336,
+        "delta_latest2_mean": -35.0,
+        "season_population_variance": 20190.888888888887,
+        "season_range": 347.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "every2",
+        "half_life_days": 180,
+        "calibration_stride": 2,
+        "mean_all3": 2450.0,
+        "mean_latest2": 2469.5,
+        "net_2025": 2335.0,
+        "delta_2025": 0.0,
+        "delta_all3_mean": -18.0,
+        "delta_latest2_mean": 0.0,
+        "season_population_variance": 12820.666666666666,
+        "season_range": 269.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "every8",
+        "half_life_days": 180,
+        "calibration_stride": 8,
+        "mean_all3": 2453.6666666666665,
+        "mean_latest2": 2444.5,
+        "net_2025": 2336.0,
+        "delta_2025": 1.0,
+        "delta_all3_mean": -14.333333333333334,
+        "delta_latest2_mean": -25.0,
+        "season_population_variance": 8016.222222222222,
+        "season_range": 217.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      }
+    ],
+    "net": [
+      {
+        "season": "2023-24",
+        "every1": 2411.0,
+        "every2": 2411.0,
+        "every8": 2472.0,
+        "half365": 2384.0,
+        "half60": 2387.0,
+        "half90": 2468.0,
+        "standard": 2465.0
+      },
+      {
+        "season": "2024-25",
+        "every1": 2608.0,
+        "every2": 2604.0,
+        "every8": 2553.0,
+        "half365": 2498.0,
+        "half60": 2631.0,
+        "half90": 2569.0,
+        "standard": 2604.0
+      },
+      {
+        "season": "2025-26",
+        "every1": 2261.0,
+        "every2": 2335.0,
+        "every8": 2336.0,
+        "half365": 2286.0,
+        "half60": 2270.0,
+        "half90": 2288.0,
+        "standard": 2335.0
+      }
+    ],
+    "deltas": [
+      {
+        "season": "2023-24",
+        "every1": -54.0,
+        "every2": -54.0,
+        "every8": 7.0,
+        "half365": -81.0,
+        "half60": -78.0,
+        "half90": 3.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2024-25",
+        "every1": 4.0,
+        "every2": 0.0,
+        "every8": -51.0,
+        "half365": -106.0,
+        "half60": 27.0,
+        "half90": -35.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2025-26",
+        "every1": -74.0,
+        "every2": 0.0,
+        "every8": 1.0,
+        "half365": -49.0,
+        "half60": -65.0,
+        "half90": -47.0,
+        "standard": 0.0
+      }
+    ],
+    "strict_all_year_candidates": [],
+    "newer_both_gain_candidates": [],
+    "point_MSE_gate": {
+      "half60": false,
+      "half90": false,
+      "half365": false,
+      "every1": true,
+      "every2": true,
+      "every8": false
+    },
+    "active_model_unchanged": true,
+    "other_weights_only_mapped": true
+  },
+  "evidence_hashes": {
+    "reports/calibration_response_sweep_2026_10_26/RESULTATER.txt": "79d6b8a78812131a874ca0bdd8a32542f1654df9b4aa3478efd9bda0981abfb9",
+    "reports/calibration_response_sweep_2026_10_26/ANDRE_VEKTER.txt": "58b6244639df4cd175b9cf269411798d8a1da9fbc3ce221eadf4856c038c277f",
+    "reports/calibration_response_sweep_2026_10_26/comparison.csv": "8f0178b95d98d65e428a4689bbc87b0f76330b7639e675dd055814ff5e0d52a4",
+    "reports/calibration_response_sweep_2026_10_26/deltas.csv": "50250c2f29de391008741831b7db08289434792aa91f362ff444fe991a679cdf",
+    "reports/calibration_response_sweep_2026_10_26/summary.csv": "465ceebd416503ca153fab5a78d221c3ab829f4bc0642ba179fefb67433830fc",
+    "reports/calibration_response_sweep_2026_10_26/forecast_metrics.csv": "60f58e5f13dd2ec929c5b53f51e6c067ffe1b8c279d31b3e0cbaee83e44f3077",
+    "reports/calibration_response_sweep_2026_10_26/ranking.csv": "3f6150914c4e79131cd69d66691ac546738ba609187e1f1a440132168932db48",
+    "reports/calibration_response_sweep_2026_10_26/final_verification.json": "17849c68e74c2492febf4258ad494f325346b587711e38afca12b5c750766e77",
+    "reports/calibration_response_sweep_2026_10_26/execution.json": "ab68dd626376d4b9f9bd44b925fc12765e3f751f4814b87b4fb938d46e8f0269",
+    "reports/calibration_response_sweep_2026_10_26/latest2025_teacher_weight_summary.csv": "6026984bb8918bda25fe37f8175d92ef0f012dd32fa716b091b3d32835896513",
+    "reports/calibration_response_sweep_2026_10_26/reference_ACTIVE_TEAM_BENCHMARK.json": "347b5e6bf5614740fd01f8e61ef838c266cb8baa000fcac4fdfb4be22ae3d4d4",
+    "reports/calibration_response_sweep_2026_10_26/one_change_verification.json": "05d2a3ed85d97f3ce6311b68d30ce09482ab7f5c20a016ff0e613b67db893473"
+  }
+}

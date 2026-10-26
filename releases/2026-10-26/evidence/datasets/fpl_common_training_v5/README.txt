@@ -1,0 +1,15 @@
+FELLES TRENINGSGRUNNLAG V5: KVALIFISERT FPL-RAPPORTERT xG/xA
+
+135441 treningsrader og111562 prognoserader; samme nøkler, mål, gamle325 felter, førfrister og valgbarhetsregler somV3.16 nye felt gir341 totalt. Treningen følger fortsatt den samme kvalifiserte historikken og de opprinnelige tilgjengelighetsgrensene.
+
+xG/xA kommer fra lagrede bootstrap-static-svar fra FPL, via fplcache, med kildehash og Git-blobidentitet. Førfristkilder må matche faktisk offisiell frist, ligge strengt før den og være høyst24timer gamle. Eksponeringen avstemmes mot allerede tilgjengelige native minutter. Første rundes rapporterte statistikk tilhører fjoråret. Tom inneværende sesong settes bare til kjent null når kilden faktisk har de forventede feltene og ingen kamper er tilgjengelige. Vi tilbakefyller ikke tidlige strukturelle rånuller eller senere sesongslutt-revisjoner fra kamphistorikken.
+
+Feltene beskriver rapportert inneværende og foregående sesongtotal, tilhørende rate per90minutter, samt rapporterte endringer over opptil3/10 tidligere fristintervaller og ratene til disse. Endringer inkluderer revisjoner som faktisk var rapportert ved den senere fristen; de kalles ikke eksakte summer av siste3/10 kamper. Negative rapporterte endringer beholdes. Nye spillere eller manglende intervalldekning girNaN. Per90 erNaN uten positive minutter. En ukjent statistikk blir aldri0.
+
+xA gjelder standard målgivende pasning, og er ikke en direkte forventning om FPLs bredere Fantasy-assists. xG/xA brukes som historiske prediktorer; de endrer ikke poengfasit, assistregler eller bonus. Definisjon: https://www.premierleague.com/en/news/3118332 . Innsamlingskode: https://github.com/Randdalf/fplcache/blob/4aaec38e6b5f5ade8b63162a3678ce67148adb67/cache.py .
+
+Kvalifiseringen gjelder de arkiverte FPL-rapporterte verdiene og deres lagrede tidsgrenser. Git-tid er fortsatt en arkivproxy, ikke et bevis på push/offentlig publisering eller hver tidligere statistikkvintage. Eksponeringsavstemmingen arver den dokumenterte native-historikkens+24timer-proxy. Ingen uavhengig Opta-modellversjon påstås. Gamle kalender-, markeds- og poengomregningsforbehold består.
+
+Manifestet fryser selve dataene. release.json binder også denne leserveiledningen, loaderen og den uavhengige datakontrollen. load_rows()/training_at() fra loader.py krever riktige filhasher og eksplisitt tidssone. Bruk skjemaets341 felter for xG-armen; kontrollen og rask tilpasning velger bare de opprinnelige325. Alle armer deler samme rader og mål. Ingen aktiv produksjonsmodell er endret av denne datautgivelsen.
+
+V5 erstatter den pensjonerte V4. En ekstra populasjonskontroll krever positiv rapportert xG og xA et sted i ligaen når rapporterte minutter er positive. Felt som finnes i skjemaet, men ennå er uutfylte i hele ligaen, er ukjente. Det samme gjelder avledede intervaller som krysser slike blokker. Dette gjelder blant annet2022/23 frem til og med runde16. Ekte nuller for individuelle spillere beholdes. V4 ble aldri tatt i bruk som aktivt fellesgrunnlag; den første xG-testen ble forkastet og de berørte modellene trent på nytt.

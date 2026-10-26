@@ -1,5 +1,7 @@
 # Hva finnes på GitHub, og hva er lokalt?
 
+**Oppdatert 26. oktober 2026:** [Utvidede datasett, korrigert kalender og valgt komponentmodell med fem runders planlegging](../releases/2026-10-26/README.md). Historisk gevinst +104 / −13 / +37 mot samme-kalender-kontroll. Selve observasjons- og modelltabellene følger med; full live-/modellreplay krever fortsatt arbeidsarkivet. Eldre daterte statusavsnitt nedenfor gjelder sitt opprinnelige tidspunkt.
+
 [Startside](../README.md) · [Demo](QUICKSTART.md) · [Detaljert Git-struktur](GIT_LAYOUT.md)
 
 Kontrollert 22. oktober 2026 mot offentlig `EmiandTobrav/FPL`, main-commit `db1a9e7dbeefb22aa310747cb3064e9c5e4ecf71`. Den lokale arbeidskopien som ble brukt til presentasjonen hadde samme Git-tre som main. Presentasjonsendringene må godkjennes før publisering.

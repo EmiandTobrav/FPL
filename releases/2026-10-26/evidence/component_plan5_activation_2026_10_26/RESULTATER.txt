@@ -1,0 +1,36 @@
+FEM RUNDERS PLANLEGGING – AKTIVERT OG KONTROLLERT
+26. oktober 2026
+
+Fem runders planlegging er nå standard i den operative komponentmodellen, med det korrigerte historiske kalendergrunnlaget. Aktiveringen følger brukerens uttrykkelige valg etter den sammenlignbare testen.
+
+SAMMENLIGNBAR HISTORISK TEST
+Netto poeng etter byttekostnader:
+Sesong          Kontroll,3runder    Valgt,5runder    Endring
+2023/24                     2465             2569       +104
+2024/25                     2604             2591        −13
+2025/26                     2322             2359        +37
+Snittgevinst alle tre:42,7poeng. Siste to:12,0poeng. Tapet i2024/25 er eksplisitt beholdt og akseptert i brukerens valg. Dette er tidligere undersøkte utviklingssesonger, ikke ny faktisk FPL-rangering. Åtte-rundersvarianten er ikke valgt.
+
+DET SOM NÅ FAKTISK BRUKES
+Den aktive inngangen model_lab.active peker nå på den nye operative løsningen. Den laster nøyaktig samme H5managerkode som i testen, med samme node-/kallgrenser og harde sperrer. Den detaljerte lag-/bytteplanen er5runder, over8prognoser. De eksplisitte framtidige chipdatoene som prøves, er fortsatt de to nærmeste rundene; øvrig chipopsjonsvurdering er uendret.
+Historisk modelltrening bruker datasets/fpl_calendar_requalified_v1 gjennom en kontrollert325-felters visning. Kalibreringen bruker den samme kalenderkorrigerte modellens eget lærerarkiv. Den eldre operative koden pekte på gammelt historisk grunnlag; denne koblingen er nå erstattet i den nye versjonen. Framtidig oppfriskning bruker også den nye koblingen.
+For dagens eksisterende kildeopptak er seks basepakker (H1/H3 vedGW1/5/9) og åtteGW9-kalibreringshoder bygget med korrekt historikk og sine opprinnelige tidsgrenser. Dette er en rekonstruksjon av samme opptak, ikke en ny prospektiv prognose eller fersk datainnhenting. Tidligere filer og innhentingsdatoer er bevart.
+
+UENDRET OPPSKRIFT
+325felt, uten xG/xA; samme komponentarkitektur og CatBoost-parametre; like radvekter i grunnmodellen. Grunnmodell og etterkalibrering oppdateres fortsatt hver fjerde runde (1,5,9,…37). Halveringstid180dager og Ridge0,01. Samme lærereksempler innen den valgte kalenderbanen, fullførte utfall før fristen og gjenbruk mellom planlagte oppdateringer.
+Samme regler, chipreserver, byttefriksjon, penger/fribytter og kortlistingsregel. Høyst16faktiske søkenoder og40kall per beslutning, én tråd og samme seed. Bekreftet utilgjengelige spillere kan ikke kjøpes, starte eller være kaptein/vice; BB krever15tilgjengelige. Avganger er sperret gjennom alle8prognoserunder. Gyldig historikk fra før avgang beholdes, kunstige etterfølgende observasjoner holdes ute.
+Forskningspekeren COMMON_TRAINING_ACTIVE er beholdt som forskningsgrunnlag; den aktiverer ikke xG-felter i denne operative modellen.
+
+SISTE KONTROLLER – BESTÅTT
+Alle seks basepakker er kontrollert mot riktige treningsnøkler, tidsgrenser, imputering, modellparametre og gjenskapte prognoser. Alle åtte kalibreringshoder er kontrollert numerisk mot180-dagersvektene, uendrede transformasjoner og Ridge0,01. Ingen framtidige utfall er brukt ved den aktuelle fristen.
+Den operative manageren gjenskaper testens valg og alle numeriske optimeringsproblemer nøyaktig iGW30/33/38 i2025/26. Dette omfatter vanlig planlegging, chipvalg og avkorting ved sesongslutt. Historisk H5test har allerede114etterspilte beslutninger.
+To nye motstandstester med kunstig høye prognoser for utilgjengelige spillere består: første lag kan ikke kjøpe dem, og en eid Kane fra den gamle kontrolltilstanden kan ikke starte eller være kaptein. Den første verifikasjonskjøreren valgte feil testtilstand fordi H5allerede hadde solgt Kane; tilstanden ble rettet til den opprinnelige kontrolltilstanden. Tre paritetskontroller og åpningskontrollen ble gjentatt; ingen modell, regel eller budsjett ble endret.
+Den faktiske aktive inngangen er kontrollert fra lasting gjennom forecast og decide på den kvalifiserte rekonstruerte opprinnelsen og dagens arkiverte spillerstall. Det lovlige testlaget er en testtilstand, ikke brukerens faktiske lag eller et nåværende lagforslag.
+
+FERSKHET OG BRUK
+Standardoppsettet er aktivt. Et nytt konkret lagforslag er fortsatt sperret til klubb-/landslagsdatasettet og offisielle FPL-kilder er oppfrisket og integrert. Dette er den eksisterende ferskhetssperren, og den er bevart.
+Den ekte forecast-kommandoen avviser nåværende bruk av det gamle opptaket. Den ekte oppfriskningskommandoen avviser utdaterte eksterne kilder før offisiell innhenting/publisering. Begge er kjørt etter aktivering og etterlater aktiv versjon uendret. Gamle tidsstempler er ikke flyttet fram.
+Ingen faktiske FPL-bytter, lagendringer eller chipaktiveringer er sendt. Aktivert standard betyr ikke at gammel kildefangst er et ferskt lagforslag.
+
+SPORBARHET
+ACTIVE_TEAM_BENCHMARK.json er operativ autoritet. runtime_config.json binder H5kode,325-felters skjema, korrigert historisk trening og eget lærerarkiv med filhasher. operational_seal.json og forecast_seal.json binder modellfiler og kilder. activation_review.json dokumenterer brukerens valg og avveining. final_verification.json og de fire *_verification.json dokumenterer kontrollene. previous_* bevarer forrige ruting, aktive beskrivelse og prosjektoversikt.

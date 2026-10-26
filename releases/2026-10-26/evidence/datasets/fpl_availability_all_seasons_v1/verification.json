@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "master_rows_preserved": 190124,
+  "season_rows": {
+    "2019-20": 22501,
+    "2020-21": 24365,
+    "2021-22": 25447,
+    "2022-23": 26505,
+    "2023-24": 29725,
+    "2024-25": 27283,
+    "2025-26": 29747,
+    "2026-27": 4551
+  },
+  "player_round_contexts": 182939,
+  "known_master_rows": 154506,
+  "unknown_master_rows": 35618,
+  "known_player_rounds": 148149,
+  "unknown_player_rounds": 34790,
+  "origin_sources_checked": 272,
+  "eligible_source_origins": 214,
+  "non_player_assets_excluded": 320,
+  "null_or_unbound_chances_preserved": 60218,
+  "independent_peer_count_checks": 2370384,
+  "independent_past_minute_checks": 2370384,
+  "independent_share_checks": 1777788,
+  "pilot_round_contexts_preserved": 28742,
+  "earlier_deadline_repairs": 2,
+  "strict_historical_qualified": false,
+  "model_fits": 0
+}

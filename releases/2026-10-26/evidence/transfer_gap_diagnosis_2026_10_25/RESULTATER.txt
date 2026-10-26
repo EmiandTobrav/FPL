@@ -1,0 +1,103 @@
+Diagnose av poengforskjeller og potensielle bytter — 25. oktober 2026
+
+KONKLUSJON
+Det finnes ikke et stabilt signal om at den aktive oppskriftens prognoser presser
+sammen forskjellene mellom sammenlignbare spillere for mye. På tre runder er
+kandidatforskjellene litt undervurdert i 2023/24, men overvurdert i 2024/25.
+Usikkerheten tillater begge retninger. Ingen generell oppskalering er begrunnet
+av denne diagnosen. Ingen modeller, managerinnstillinger eller kontolag er endret.
+
+HOVEDANALYSE — FAST SESONGVEKT, TRE RUNDER
+Sesong     Par    Prognostisert gevinst  Faktisk gevinst  Faktisk/prognose
+2023/24   7477             1,352               1,476             1,092
+2024/25   7319             1,195               0,941             0,788
+
+Dette er gjennomsnittlige forskjeller mellom to kandidater fra samme runde og
+posisjon, med høyst £1,0m i prisforskjell. Hver runde vektes likt, og parene
+innenfor runden vektes likt. Spilleren med høyest prognose er alltid alternativet
+inn. Utfallet brukes aldri til å velge eller orientere par. Begge spillere må
+være kjøpbare ved opprinnelsen og ha alle tre kjente utfall. 36 opprinnelser per
+sesong; GW37–38 mangler full H3. Kandidatgruppen er den arkiverte grunnmodellens
+H1-toppliste per runde: inntil 5 GK, 20 DEF, 20 MID, 10 FWD. Gruppen velges før
+utfall, og er felles for grunnmodell og fast sesongvekt.
+
+Et faktisk/prognose-forhold over 1 er forenlig med for små anslåtte gevinster;
+under 1 er forenlig med for store. De utforskende 95 %-blokkintervallene er
+0,700–1,438 og 0,320–1,195. Begge inkluderer 1. En regresjonsstigning gjennom
+origo, som gir større forskjeller mer innflytelse, er 1,063 og 0,998, med
+intervaller 0,716–1,316 og 0,509–1,364. Dette er diagnostiske sammendrag,
+ikke ferdig validerte korreksjonsfaktorer.
+
+HVOR STORE FORSKJELLER FINNES?
+Forutsagt H3-gevinst   2023/24: prognose / faktisk    2024/25: prognose / faktisk
+0–<1                             0,47 / 0,70                    0,47 / 0,16
+1–<3                             1,68 / 1,57                    1,68 / 1,05
+3–<5                             3,67 / 3,05                    3,61 / 3,84
+5–<8                             5,98 / 6,33                    5,64 / 5,73
+
+Tallene er likt vektede runde-gjennomsnitt innen hvert intervall. De fire
+intervallene har henholdsvis 36/36, 36/36, 34/36 og 27/24 representerte runder.
+Over 8 poeng finnes bare 6 og 7 par, spredt på fire runder per sesong. Den
+ytterste halen er derfor for tynt representert til å gi en robust konklusjon.
+Intervalltabellen har ikke egne usikkerhetsintervaller og er beskrivende.
+
+SENSITIVITET
+H1 kandidatpar: gjennomsnittlig prognose/faktisk forskjell er 0,478/0,307 og
+0,465/0,343. Heller ikke disse gjennomsnittene peker mot generell kompresjon,
+men intervallene er brede og stigningen for store forskjeller varierer.
+
+Når minst én av spillerne er kandidat og den andre kan være fra resten av den
+kjøpbare poolen, er H3-prognose/faktisk 6,851/6,489 og 6,617/6,854. Den bredere
+sammenligningen ligger nær riktig skala. Mange av disse parene inneholder svake
+eller lite brukte spillere og er mindre representative for en vanlig FPL-tropp.
+Grunnmodellens resultater ligger også i summary.csv; ingen ny variant velges.
+
+FORDELING OG SKALERING
+H1-prognosene med fast sesongvekt har positiv skjevhet på 1,38 og 1,23 over alle
+kjøpbare spillere, og 1,93 og 2,03 blant kandidater. En symmetrisk normalfordeling
+beskriver derfor ikke de samlede prognosene godt. Dette er en beskrivende
+fordelingskontroll, ikke en formell normalitetstest. Faktiske utfall har langt
+større spredning enn forventningene; dette er ikke alene et modellproblem.
+Sammenblandingen av runder og posisjoner begrenser tolkningen av totalfordelingen.
+
+IMPLIKASJONER FOR OPTIMALISERING
+En systematisk undervurdering av forventede gevinstforskjeller ville kunne gi
+for få bytter relativt til faste poengtrekk og verdien av å spare gratisbytter.
+Denne diagnosen dokumenterer ikke en slik generell undervurdering. Den viser
+også at små forskjeller mellom gode kandidater er usikre, og at modellen faktisk
+kan produsere forventede H3-gevinster over fire poeng.
+
+Analysen er før poengtrekk, diskontering, benk, kapteinsvalg og managerens
+ressursverdi. Den dokumenterer ikke lønnsomheten til et bestemt bytte. Et par
+med lik posisjon og liknende pris er ikke nødvendigvis et lovlig eller optimalt
+troppsbytte når bank, salgssum, klubbgrenser og alternative handlinger tas med.
+Færre gode bytter kan også følge av planhorisont og verdsetting av ressurser;
+disse mekanismene er ikke testet her.
+
+BEGRENSNINGER OG EVIDENS
+Retrospektiv diagnose på to allerede undersøkte utviklingssesonger. Det er
+ingen ny bekreftende modelltest. Originalt historisk prognosearkiv brukes med
+dokumenterte svakheter ved inaktiv-/utlånshistorikk; ingen prognoser er merket
+som korrigerte. Mulige datadefekter kan påvirke enkelte spillerpar. Ukjente
+utfall utelates og fylles ikke med null; dette kan påvirke representativiteten.
+
+Usikkerhet: 2000 sirkulære blokkuttrekk av opprinnelsesrunder innen hver sesong,
+blokklengde 6 og fast frø. Alle par i samme runde holdes sammen. Dette tar
+omtrentlig hensyn til felles spillere, kamper og overlappende H3-utfall. To
+sesonger og mange avhengige par gir begrenset evidens, ikke tusenvis av
+uavhengige forsøk. Intervallene er ikke korrigert for flere undersøkte visninger.
+
+Metode og inputhasher er lagret i protocol.json før beregning av parsammendrag.
+Den overordnede hypotesen var allerede motivert av tidligere inspiserte data.
+Prognosens kildehash og alle 76 poolfiler er verifisert. Alle 72 H3-opprinnelser
+i hovedanalysen er gjenskapt med en separat implementasjon som bruker eksplisitt
+paropptelling. Verifikasjonene består. Ingen nye prognosefit eller managerløp.
+
+FILER
+summary.csv: aggregater og usikkerhetsintervaller.
+bins.csv: beskrivende gevinstintervaller.
+origins.csv: aggregater per opprinnelsesrunde.
+distribution.csv: spredning og skjevhet i prognoser og utfall.
+protocol.json: avgrensning, metode og inputhasher.
+verification.json / independent_verification.json: kontroller.
+analyze.py / verify.py: reproduserbar beregning og uavhengig kontroll.

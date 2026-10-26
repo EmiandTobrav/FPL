@@ -1,0 +1,27 @@
+name: Published research data
+on:
+  push:
+    paths:
+      - 'datasets/fpl_component_common_20261026/**'
+      - 'datasets/fpl_master_enriched_v5/**'
+      - 'datasets/fpl_external_live_2026_10_26/**'
+      - 'datasets/fpl_live_observations_20261026/**'
+      - 'datasets/fpl_weather_all_seasons_v1/**'
+      - 'releases/2026-10-26/**'
+      - '.github/workflows/release-data.yml'
+  pull_request:
+    paths:
+      - 'datasets/**'
+      - 'releases/2026-10-26/**'
+      - '.github/workflows/release-data.yml'
+jobs:
+  verify-published-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python releases/2026-10-26/verify_publication.py

@@ -1,0 +1,49 @@
+{
+  "conclusion": "Recent180-only component selected as standard by explicit user instruction, accepting2023/24 -82 for2024/25 +109 and2025/26 +122. All240 historical heads and8 operational heads match; same325-feature bases, teachers, clocks, cadence and hard availability. Original all-three-season gate remains failed and is explicitly overridden, not reclassified. Cached external feeds expired; fresh team recommendations fail closed until data refresh.",
+  "decision": "promote_to_review",
+  "results": {
+    "active_model": "common_component_h8_recent180_adaptive_v1",
+    "selected_and_published": true,
+    "user_override_of_original_gate": true,
+    "historical_net_points": {
+      "2023-24": 2465,
+      "2024-25": 2604,
+      "2025-26": 2335
+    },
+    "previous_component_points": {
+      "2023-24": 2547,
+      "2024-25": 2495,
+      "2025-26": 2213
+    },
+    "descriptive_stats": {
+      "old_mean": 2418.3333333333335,
+      "recent_mean": 2468.0,
+      "mean_delta": 49.666666666666664,
+      "old_population_variance": 21531.55555555556,
+      "recent_population_variance": 12064.666666666666,
+      "variance_reduction_percent": 43.96751021756183,
+      "old_range": 334.0,
+      "recent_range": 269.0,
+      "old_latest_gap": 308.0,
+      "recent_latest_gap": 199.5
+    },
+    "live_heads": 8,
+    "historical_parity_heads": 240,
+    "new_base_fits": 0,
+    "new_season_replays": 0,
+    "xg_enabled": false,
+    "current_recommendation_refresh_required": true,
+    "no_actual_FPL_submission": true
+  },
+  "evidence_hashes": {
+    "reports/component_recent180_activation_2026_10_26/RESULTATER.txt": "c5eeac0de8394ab0941ea0f971ee155bec722f8cfedc656575c6bf05669129c6",
+    "reports/component_recent180_activation_2026_10_26/verification.json": "68184f06aff735cae042ccb3fe710fcf92a2aafd3c57600ceb7997fac2b7b91e",
+    "reports/component_recent180_activation_2026_10_26/activation_review.json": "1bac7ae977e8f982c72bae927fac49f87b6d4a69bea524d8c56090f82f4cdde5",
+    "reports/component_recent180_activation_2026_10_26/post_activation_check.json": "58e4360429924f6010f53a532a4ae6e5b5b9cc7fb68d41afa8a530933b22fa48",
+    "reports/component_recent180_activation_2026_10_26/forecast_seal.json": "76ff7216bf9f63669d4567b80d945b8868603d62bda61146a5c8e6ca5f1bdf2e",
+    "reports/component_recent180_activation_2026_10_26/selected_descriptor.json": "347b5e6bf5614740fd01f8e61ef838c266cb8baa000fcac4fdfb4be22ae3d4d4",
+    "model_lab/recent_component_forecaster.py": "83a033eaff21e5884e580ce6f1f79064d3a48caba0db09a9254fdfc5ed856518",
+    "model_lab/active.py": "b68493a25b184fe30cf61ddf6eec82982f1b3c237bbc2ecd90d70230382c48b0",
+    "scripts/refresh_component_release.py": "0923fbd8e790569fe2c1a2185df07f01410e798a023fc4b0910d54d0c82a5f10"
+  }
+}

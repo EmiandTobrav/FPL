@@ -1,0 +1,56 @@
+"""Fixed existing conditional CatBoost points; substitute only participation probabilities."""
+from pathlib import Path
+import sys,hashlib,importlib.util,time
+import numpy as np
+import pandas as pd
+from threadpoolctl import threadpool_limits
+from model_lab.common import read,sha,atomic_json,verify_files,runtime
+from model_lab.probability_refresh import load_data
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'reports/minutes_to_points_2026_10_16_attempt2';SOURCE=ROOT/'reports/availability_temporal_2026_10_16_attempt2';CACHE=ROOT/'reports/fpl_simulator_2026_10_13/cache_manager/2025-26';KEY=['season','round','code'];ID='minutes-to-points-20261016-v2'
+def adapter():
+ p=ROOT/'reports/fpl_simulator_2026_10_13/forecast_adapter.py';sp=importlib.util.spec_from_file_location('frozen_point_adapter',p);m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m);return m
+
+def prepare():
+ old=read(SOURCE/'proposal.json');files=dict(old['input_hashes']);paths=[Path(__file__),SOURCE/'predictions.csv.gz',SOURCE/'predictions_complete.json',SOURCE/'complete.json',SOURCE/'verification.json',ROOT/'reports/fpl_simulator_2026_10_13/forecast_adapter.py']
+ for gw in range(1,39):
+  folder=CACHE/f'gw{gw:02d}';man=read(folder/'manifest.json')
+  for n in ['two_part_extended_expanding.json','two_part_extended_expanding.csv.gz','features.csv.gz','pool.csv.gz']:
+   assert sha(folder/n)==man['files'][n];paths.append(folder/n)
+ for p in paths:files[str(p.relative_to(ROOT))]=sha(p)
+ spec={**old,'id':ID,'candidate_id':'fixed_two_part_points_availability_play_causal_v2','hypothesis':'Improved participation probabilities reduce expected-point MSE through the unchanged existing two-part point model.','change':'Preserve point architecture, features, parameters and per-origin cadence, but symmetrically exclude minute labels unavailable at fit cutoff. GW1 exact archived parity; later training differs solely by mandatory timestamp filtering. Compare identical conditional point means mixed with saved history-only versus availability play probabilities. No architectural change, scaling by minutes, or new features. Training change is only mandatory availability filtering.','related_work':['availability-temporal-20261016-v2','probability-refresh-20261015-v1','minutes-to-points-20261016-v1'],'input_hashes':files,'features':'Existing extended97 point-model features and unchanged categorical preprocessing; no availability features fed to point model.','model_parameters':{'point_model':'exact existing CatBoost regression RMSE, 200iterations depth5 learning_rate.05 seed20261013, thread_count1','absence':'existing training mean, including negative values','mix':'p_play*E(points|played)+(1-p_play)*E(points|absent)'},'resources':{'threads':1,'maximum_head_fits':39,'conditional_point_fits':38,'original_classifier_parity_fits':1,'no_tuning':True},'evaluation_contract':{'target':'harmonized round target_total_points, negative outcomes retained, H1','primary_control':'same conditional point head mixed with saved temporal control participation','candidate':'same conditional point head mixed with saved temporal availability participation','diagnostic_reference':'GW1 archive parity only; no metric comparison against older temporally invalid training','scope':'2025/26 previously inspected, temporal mechanism development test, not untouched holdout','timing':'Verify original point-training keys first, then apply strict minute label availability filter identically to both arms. Record original and filtered hashes and row counts; all feature origins and both labels strictly before cutoff. No new source retrieval. Saved temporal predictions preserve their original causal four-round cadence and fixed means.','limitation':'Existing point head consumes play probability only. Continuous conditional minutes and any60 cannot enter without changing point model. Existing point training includes historical2024GW15, preserved for exact parity; minute classifiers exclude it as before.','pool':'same38 origins and common can_buy, known points/minutes/fixture-minute labels mask as prior temporal experiment','metrics':'points MSE primary; RMSE, MAE,bias secondary; play and any60 Brier must not worsen; no point10 probability exists in unchanged point model','uncertainty':'2000 paired moving four-round block draws seed20261015; descriptive','cohorts':'all primary; position and no_season_history secondary'},'success_criterion':'Expected-points MSE strictly lower in2025/26, with play and any60 Brier no worse on identical rows. No tradeoffs, no production promotion.','stop_rule':'Stop on input/time/key/parity mismatch, nonfinite points or support failure. No outcome-guided retry.','maximum_runs':1}
+ atomic_json(OUT/'proposal.json',spec);print('PREPARED',len(files),flush=True)
+def run():
+ spec=read(OUT/'proposal.json');verify_files(ROOT,spec['input_hashes']);atomic_json(OUT/'started.json',dict(runtime=runtime(),proposal_sha256=sha(OUT/'proposal.json')));mod=adapter();a=mod.CausalCandidateForecaster(ROOT,thread_count=1)
+ from catboost import CatBoostClassifier
+ rows=a._training_rows();_,_,labels=load_data();availability=labels.set_index(KEY).available_after_proxy;minutes=pd.read_csv(SOURCE/'predictions.csv.gz');frames=[];maxdiff=0.
+ for gw in range(1,39):
+  folder=CACHE/f'gw{gw:02d}';old=read(folder/'two_part_extended_expanding.json');at=pd.Timestamp(old['forecast_at']);tr=a._loader.select_training_rows(rows,at,horizon=1);h=hashlib.sha256(pd.util.hash_pandas_object(tr[KEY],index=False).values.tobytes()).hexdigest();assert h==old['training_keys_sha256'] and len(tr)==old['training_rows'];assert (tr.forecast_at<at).all() and (tr.target_h1_available_at<at).all();original_n=len(tr);tr=tr.loc[(availability.loc[pd.MultiIndex.from_frame(tr[KEY])]<at).to_numpy()];assert (availability.loc[pd.MultiIndex.from_frame(tr[KEY])]<at).all();names=a.schema['extended_features'];X=tr[names];y=tr.target_total_points.to_numpy(float);played=tr.native_minutes.to_numpy(float)>0;assert np.isfinite(y).all() and tr.native_minutes.notna().all();start=time.monotonic()
+  pipe=a._pipeline.make_pipeline(a.schema,'catboost','extended',seed=mod.SEED,model_params={'thread_count':1});prep,reg=pipe.named_steps['prepare'],pipe.named_steps['model'];Z=prep.fit_transform(X);cats=tuple(n for n in names if n in a.schema['categorical_features']);classifier=CatBoostClassifier(iterations=200,depth=5,learning_rate=.05,loss_function='Logloss',random_seed=mod.SEED,thread_count=1,verbose=False,allow_writing_files=False,cat_features=cats)
+  with threadpool_limits(limits=1):
+   
+   if gw==1:classifier.fit(Z,played,sample_weight=np.ones(len(tr)))
+   reg.fit(Z.loc[played],y[played],sample_weight=np.ones(int(played.sum())))
+  absent=float(y[~played].mean());
+  if gw==1:assert absent==old['nonplaying_conditional_mean']
+  pool=pd.read_csv(folder/'pool.csv.gz');f=pd.read_csv(folder/'features.csv.gz').set_index('code').loc[pool.code];assert (pd.to_datetime(f.forecast_at,utc=True)==at).all();xx=prep.transform(f[names]);conditional=reg.predict(xx);d=None
+  if gw==1:
+   p=classifier.predict_proba(xx)[:,1];original=p*conditional+(1-p)*absent;arch=pd.read_csv(folder/'two_part_extended_expanding.csv.gz').set_index('code').loc[pool.code];d=float(np.max(np.abs(original-arch.xp_0)));maxdiff=max(maxdiff,d);assert np.allclose(original,arch.xp_0,rtol=1e-10,atol=1e-10)
+  q=minutes[minutes['round'].eq(gw)].set_index('code').loc[pool.code].reset_index();assert (pd.to_datetime(q.forecast_at,utc=True)==at).all();q['conditional_points']=conditional;q['absent_points']=absent;q['point_fit_cutoff']=str(at)
+  for arm in ['control','candidate']:q[arm+'_points']=(1-q[arm+'_p0'])*conditional+q[arm+'_p0']*absent;assert np.isfinite(q[arm+'_points']).all()
+  path=OUT/f'gw{gw:02d}.csv.gz';q.to_csv(path,index=False);atomic_json(OUT/f'gw{gw:02d}.lock.json',dict(prediction_sha256=sha(path),original_training_keys_sha256=h,original_training_rows=original_n,excluded_unavailable_rows=original_n-len(tr),training_keys_sha256=hashlib.sha256(pd.util.hash_pandas_object(tr[KEY],index=False).values.tobytes()).hexdigest(),training_rows=len(tr),latest_point_label=str(tr.target_h1_available_at.max()),latest_minute_label=str(availability.loc[pd.MultiIndex.from_frame(tr[KEY])].max()),fit_cutoff=str(at),parity_max_abs=d,current_outcomes_joined=False));frames.append(q);print('ORIGIN',gw,'parity',d,'seconds',round(time.monotonic()-start,1),flush=True)
+ pd.concat(frames,ignore_index=True).to_csv(OUT/'predictions.csv.gz',index=False);verify_files(ROOT,spec['input_hashes']);atomic_json(OUT/'predictions_complete.json',dict(prediction_sha256=sha(OUT/'predictions.csv.gz'),head_fits=39,archived_parity_max_abs=maxdiff));print('PREDICTIONS COMPLETE',flush=True)
+def score():
+ spec=read(OUT/'proposal.json');verify_files(ROOT,spec['input_hashes']);assert sha(OUT/'predictions.csv.gz')==read(OUT/'predictions_complete.json')['prediction_sha256'];_,_,labels=load_data();q=pd.read_csv(OUT/'predictions.csv.gz');z=q.merge(labels,on=KEY,how='left',validate='one_to_one');mask=z.can_buy&z.native_minutes.notna()&z.target_total_points.notna()&z.minute_known.eq(True);coverage=dict(requested=int(z.can_buy.sum()),known=int(mask.sum()),unknown=int((z.can_buy&~mask).sum()));z=z[mask].copy();assert len(z)==read(SOURCE/'complete.json')['coverage']['known'];stats=[]
+ for arm in ['control','candidate']:
+  z[arm+'_error']=z[arm+'_points']-z.target_total_points;z[arm+'_mse']=z[arm+'_error']**2
+ for arm in ['control','candidate']:
+  z[arm+'_play_brier']=(1-z[arm+'_p0']-z.native_minutes.gt(0).astype(float))**2;z[arm+'_any60_brier']=(z[arm+'_p2']-z.any60.astype(float))**2
+ cohorts={'all':z,'no_season_history':z[~z.seen_this_season]};cohorts.update({f'position_{p}':z[z.position.eq(p)] for p in sorted(z.position.unique())})
+ for cohort,g in cohorts.items():
+  for arm in ['control','candidate']:
+   e=g[arm+'_error'];stats.append(dict(cohort=cohort,arm=arm,n=len(g),mse=float((e**2).mean()),rmse=float(np.sqrt((e**2).mean())),mae=float(e.abs().mean()),bias=float(e.mean())))
+ m=pd.DataFrame(stats);m.to_csv(OUT/'metrics.csv',index=False);z.to_csv(OUT/'scores.csv.gz',index=False);primary=m[m.cohort.eq('all')].set_index('arm');gates={'points_mse':bool(primary.loc['candidate','mse']<primary.loc['control','mse'])};gates.update({k:bool(z['candidate_'+k].mean()<=z['control_'+k].mean()) for k in ['play_brier','any60_brier']});rng=np.random.default_rng(20261015);d=z.assign(delta=z.candidate_mse-z.control_mse).groupby('round').delta.agg(['sum','count']).reindex(range(1,39)).to_numpy();draw=[]
+ for _ in range(2000):
+  ix=np.concatenate([np.arange(i,i+4) for i in rng.integers(0,35,10)])[:38];draw.append(d[ix,0].sum()/d[ix,1].sum())
+ summary=dict(research_gate_passed=all(gates.values()),gates=gates,coverage=coverage,primary_results=primary.reset_index().to_dict('records'),mse_difference=float((z.candidate_mse-z.control_mse).mean()),mse_difference_interval=[float(np.quantile(draw,.025)),float(np.quantile(draw,.975))],point_architecture_unchanged=True,point_training_time_filter_changed=True,manager_promoted=False);atomic_json(OUT/'complete.json',summary);print(summary,flush=True)
+if __name__=='__main__':globals()[sys.argv[1]]()

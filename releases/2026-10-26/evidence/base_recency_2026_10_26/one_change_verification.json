@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "same_calibration_teacher_keys_clocks_and180day_weights": 480,
+  "same_calibration_penalty01": true,
+  "only_base_training_time_weights_changed": true,
+  "planned_latest2025_base_weight_shares_reproduced": true,
+  "active_model_unchanged": true,
+  "files": {
+    "reports/base_recency_2026_10_26/head_audit_standard.csv": "1878c4e003a5aa6af43663b2b200d6e5831dcbf41b1230ddbca7afbb6ba789d7",
+    "reports/base_recency_2026_10_26/head_audit_base365.csv": "80df0145594643b169fe5c89d68ef88aa7828132ff4afa9734f553d0e2e57e8e",
+    "reports/base_recency_2026_10_26/head_audit_base180.csv": "290e31b6441df2f44bea8f3cb846b055d0f07a66abc20bd9fee144ab5e6f9428",
+    "reports/base_recency_2026_10_26/expected_latest2025_base_weights.csv": "b0d28e4d66d83ed31a128fe787a6bb1415c18ba5ae3ecd9d81a8ad210c189f45"
+  }
+}
