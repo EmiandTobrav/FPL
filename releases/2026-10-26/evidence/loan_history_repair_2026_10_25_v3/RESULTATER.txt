@@ -1,0 +1,62 @@
+DATARETTING, MODELLTEST OG LAGUTSLAG — 25. OKTOBER 2026
+
+Dokumenterte nuller utenfor Premier League er korrigert i en separat, verifisert historikkversjon. Retrent variant taper39 og37 netto sesongpoeng mot rå fast-sesongmodell med samme kvalifiserte spillerutvalg. Datakorreksjonen beholdes; modellen oppgraderes ikke. Prognose-MSE har små, blandede utslag. Frosne blandingsvekter og historiske nyhetsdatoer som proxy begrenser tolkningen.
+
+MASTERDATA OG VERSJONER
+Vi har ett definert masterdatasett: fpl_2026_27_best_effort_v1, med original spiller–kamp-tabell og separat poengoppgjørstabell. Lagoppfølgingen bruker i tillegg daterte nyere FPL-uttrekk. Flere gamle skript og cachefiler peker direkte på fryste versjoner. Det finnes derfor ikke én innleser som automatisk håndhever en ny korreksjon overalt. Oversikt: overview/DATA_SOURCE_MAP.json.
+Ny verifisert historikkrelease: datasets/fpl_loan_history_repair_v3/release.json. Den har en kontrollert innleser som avviser konflikt med registrerte minutter, poeng, kort eller manglende native verdier. Originale kilder, utfall og prognoser er bevart. Gamle featuretabeller er ikke blitt ommerket som korrigerte.
+
+DATAGJENNOMGANG
+Alle187111 kanoniske spiller–kamp-rader ble kontrollert.29934 nullrader er ekskludert fra rollehistorikken;157177 originalrader er beholdt med identiske verdier. Dette gjelder1054 spiller–sesonger og798 spillere. Ingen rader med native minutter, poeng eller kort er fjernet. De faktiske FPL-nullpoengene beholdes i oppgjørene.
+Til lagrådene brukes4551 offisielle observasjoner fra ferdigspilteGW1–7 denne sesongen.309 dokumenterte utenfor-PL-nullrader skilles ut der. Samlet ekskluderes30243 nullregistreringer fra den kombinerte historikken; pågåendeGW8 brukes ikke.
+740 spiller–sesonger uten minutter og uten avreisedokumentasjon er beholdt som uavklarte. Innenlandske PL-overganger, tvetydige meldinger, sesongkonflikter og avreisemeldinger som kolliderer med senere kampdeltakelse blir ikke automatisk behandlet som utenlandsopphold.
+Viktig presisering av første gjennomgang: Vuskovics offisielle avreise ble kunngjort29.august2025, førGW3; FPL-meldingen kom først2.september. Riktig retting er36 utelatte nullrunder og2 beholdte før utlånet. Jacksons avreise kom etterGW3:35 utelates og3 beholdes.
+Vuskovic-kilde: https://www.tottenhamhotspur.com/news/983249/hamburg-loan-for-vuskovic
+Jackson-kilde: https://fcbayern.com/en/news/2025/09/fc-bayern-sign-nicolas-jackson-on-loan-from-chelsea
+De brede historiske datoene bygger på FPL-nyhetsfelt i sesongsluttfiler. Disse er dateringsproxyer, ikke fullstendige samtidige arkiver. En konservativ maskering kan derfor fortsatt la noen utenfor-PL-nullrader stå igjen. Alle avganger er ikke manuelt bekreftet mot klubbarkiver.
+
+TESTOPPSETT
+Samme fast-sesongmodell og adaptive manager med chips, H8-prognoser/H3-planlegging,16 noder og40 løserkall. Begge testarmene starter med samme tomme£100m-lag og samme korrigerte kjøpsbegrensninger. Basisvinduene og basis-/kalibreringsmodellene bygges på nytt. Den eksisterende blandingen av basisdelmodellene er holdt fast. Kvalifiserte treningsrader bruker bare tidligere tilgjengelige utfall; dokumenterte utenfor-PL-runder tas ut av rolletreningen. Evaluering og oppgjør bruker fortsatt alle faktiske FPL-utfall.
+2022/23 brukes til kalibrering; hele2023/24 og2024/25 evalueres. Dette er tidligere undersøkte utviklingssesonger. Den ekstra klubbdato-rettelsen gjelder bare2025/26. Samtlige historiske modellinnganger til og med2024/25 er kontrollert identiske, slik at de samme historiske prognosene og sesongtestene gjelder eksakt også forv3.
+
+NETTO SESONGPOENG
+Sesong | Opprinnelig aktiv benchmark | Samme modell, korrigert kjøpsutvalg | Retrent på korrigert historikk | Forskjell mot samme utvalg
+2023-24 | 2452 | 2468 | 2429 | -39
+2024-25 | 2498 | 2498 | 2461 | -37
+Forskjellen på2452 og2468 i2023/24 skyldes testen med korrigert kjøpsutvalg. Derfor er2468 den rettferdige kontrollen for historikkrettelsen. Begge retrente sesongforløp bruker4 flere poeng i overgangstrekk enn kontrollen; resten av tapet ligger i lag-/kaptein-/chiputfall.
+
+PROGNOSEFEIL (MSE; lavere er bedre)
+Sesong | Horisont | Kontroll | Korrigert | Endring
+2023-24 | H1 | 5.244746 | 5.251298 | +0.125%
+2023-24 | H3 | 21.856330 | 21.845608 | -0.049%
+2024-25 | H1 | 5.014462 | 5.012583 | -0.037%
+2024-25 | H3 | 20.384085 | 20.391691 | +0.037%
+Ingen påstand om entydig bedre prognoser eller sesongpoeng. Datakvalitet og modellens poenggevinst er separate konklusjoner.
+
+GW9–14: SISTE KORRIGERTE PROGNOSER
+Spiller | GW9 før | GW9 etter | Seks runder før | Seks runder etter
+Guéhi | 3.79 | 3.43 | 22.65 | 20.80
+Evanilson | 4.76 | 4.56 | 27.06 | 25.81
+Verbruggen | 2.68 | 2.73 | 18.63 | 19.23
+N.Jackson | 3.78 | 3.91 | 21.36 | 22.35
+Kroupi.Jr | 3.79 | 3.87 | 21.66 | 21.99
+Vuskovic | 2.51 | 2.47 | 17.60 | 17.86
+Tallene er punktforventninger, ikke sikre poeng. Gamle automatiske tall fra v2 er erstattet av den kildekorrigerte v3-sammenligningen ovenfor.
+Vuskovics gamle rollehistorikk går fra38 til2 reelle før-avreise-observasjoner; fast gammel sesongvekt går fra58,8% til22,2%. Likevel stiger ikkeGW9-prognosen. Hele modellen refittes, og sesonglaget er en residualkalibrering uten et krav om at mer historisk spilletid alltid må øke poengprognosen. Dette viser hvorfor en manuell «fjern nullene, legg til poeng»-justering ikke er en validert erstatning.
+
+UTSLAG PÅ LAGFORSLAG — SAMME DATABILDE SOM FORRIGE VURDERING
+Dette er et sammenligningsforslag fra kandidaten som ikke bestod sesongtesten. Modellen er ikke satt som ny benchmark. En senere fristanbefaling må bruke ferske offisielle tilgjengelighetsopplysninger.
+GW9 med uendret separat tilgjengelighetsvurdering:
+Ut: Shaw, B.Fernandes, Calvert-Lewin, Tzolis, Cherki
+Inn: Tavernier, Dewsbury-Hall, Gabriel, Rogers, Evanilson
+Fem gratisbytter, 0 poengtrekk, bank£1.3. Chip: spar.
+Elleve: Groß, Tavernier, Dewsbury-Hall, Haaland, Gabriel, Rogers, Evanilson, Calafiori, João Pedro, Kinsky, Hall
+Benk i rekkefølge (keeper først): Verbruggen, Ndiaye, Davis, Vuskovic
+Kaptein: Haaland. Visekaptein: Rogers.
+Dette sporet beholder Vuskovic og Verbruggen. Evanilson foretrekkes fortsatt fremfor Jackson og Kroupi.
+Uten tilgjengelighetsoverlegget vil modellen fortsatt selge Verbruggen og Vuskovic: ut B.Fernandes, Tzolis, Cherki, Verbruggen, Vuskovic; inn Raya, Tavernier, Dewsbury-Hall, Gabriel, Rogers. Skadeopplysningene er altså vesentlige; ren modell og tilgjengelighetsvurdering må ikke blandes sammen.
+RetrospektivtGW8-forslag: ut Tzolis, Ndiaye, Cherki, Vuskovic; inn Dasilva, Ampadu, Rogers, Mbeumo. Dette er en etterberegning med informasjon førGW8, ikke en prognose som faktisk ble levert før fristen.
+
+KONTROLLER OG BESLUTNING
+152 historiske beslutninger og oppgjør er kontrollert på nytt, samt4 endelige live-sammenligninger. Budsjett, lovlighet, chips, poengtrekk, treningsklokker og uendrede kildefiler er verifisert. Ingen kontoendringer er gjennomført.
+Behold den korrigerte historikkversjonen og avreiseregisteret. Behold den brukervalgte benchmarken som referanse; denne modellvarianten oppgraderes ikke. Neste modellforsøk må ha en konkret ny mekanisme, eksempelvis ny estimering av blandingsvekter på korrigerte data, og egen låst test. Ingen tilbakeføring av feilregistreringer for å få et penere historisk resultat.

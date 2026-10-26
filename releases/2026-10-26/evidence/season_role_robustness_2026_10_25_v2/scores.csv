@@ -1,0 +1,7 @@
+season,start,owner,arm,no_chips,net,hits,rounds,folder,seconds
+2023-24,9,benchmark,learned,False,2003.0,24,30,2023-24__09_benchmark__learned,111.61656004190445
+2023-24,20,learned,benchmark,False,1221.0,40,19,2023-24__20_learned__benchmark,22.554107749834657
+2023-24,1,empty,fixed,False,2452.0,20,38,2023-24__01_empty__fixed,157.77998145809397
+2024-25,9,benchmark,learned,False,1905.0,12,30,2024-25__09_benchmark__learned,91.49104875000194
+2024-25,20,learned,benchmark,False,1212.0,12,19,2024-25__20_learned__benchmark,67.89827362494543
+2024-25,1,empty,fixed,False,2498.0,12,38,2024-25__01_empty__fixed,203.22249316610396

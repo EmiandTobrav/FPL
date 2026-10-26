@@ -1,0 +1,4 @@
+arm,base_stride,mean_all3,mean_latest2,net_2025,delta_2025,delta_mean_all3,delta_mean_latest2,variance,range,strict_all_year_gain,newer_both_gain
+standard,4,2468.0,2469.5,2335.0,0.0,0.0,0.0,12064.666666666666,269.0,False,False
+every2,2,2446.6666666666665,2457.0,2298.0,-37.0,-21.333333333333332,-12.5,17067.55555555556,318.0,False,False
+every1,1,2466.6666666666665,2424.5,2254.0,-81.0,-1.3333333333333333,-45.0,22936.22222222222,341.0,False,False

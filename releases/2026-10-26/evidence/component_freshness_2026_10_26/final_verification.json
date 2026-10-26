@@ -1,0 +1,22 @@
+{
+  "files": {
+    "datasets/fpl_external_live_2026_10_26/manifest.json": "99681cdc9b5fed4bc3c2f2d958a2344d7d81dd0f03317fe074fb46a8760e58ff",
+    "model_lab/active.py": "46984c66a88065234fe5c64a5f62417439978fcbd535d30fb0270b27a5a3414d",
+    "model_lab/fresh_planned_component_forecaster.py": "61ac3252926fd1ce885baaccfd9f745b8833bc49e326c8687979c41c12570688",
+    "overview/ACTIVE_TEAM_BENCHMARK.json": "925b5fe9cb1cb386c2e57ed30bedc664d0ff2ec78833fac62fce409c1e393834",
+    "overview/COMPONENT_RELEASES.json": "4c6ed77d42982458b34e7b59eca72199f8db77c6445519ea0dfacdc98635a446",
+    "reports/component_freshness_2026_10_26/RESULTATER.txt": "549295f918c76d7b8db77ba7a9f4b7cd54634b19740b92c01f0d1d05cf5a6a08",
+    "reports/component_freshness_2026_10_26/active_dispatcher_verification.json": "76365118a3cf790676b4fd86c32e910724809456ead29354ea7dddc498154539",
+    "reports/component_freshness_2026_10_26/readiness.json": "10f64f4b152d763e43141bee08169bf3d4ecfed750f7fdc4807e0b59ae19d2bf",
+    "reports/component_freshness_2026_10_26/verification.json": "089d93102bb83f0005472b0eee0568beb7352dae8d8a838b63bbb087cef0d350",
+    "reports/component_live_2026_10_26_fresh/forecast_seal.json": "0d4d40886c9d13fb31939ff4405f853ff7e20cdee43b006f5b2f77984e906d7a",
+    "reports/component_live_2026_10_26_fresh/forecasts.csv": "0117d4eeaf396c34bcf67f4bc5c0409d7ceb50940777a0bc208bf305ff186a3d",
+    "reports/component_live_2026_10_26_fresh/operational_seal.json": "ac76911604e8bc54846e16df02db59d38cdc37a90af746c651f8f7496e2401ed",
+    "scripts/refresh_component_release.py": "f269f9d2b3dbf4b90b08ccaa4890b1d2e18642b1e5ec8d9dda86a814afb07234"
+  },
+  "fresh_source_integration_and_activation": true,
+  "no_actual_FPL_submission": true,
+  "passed": true,
+  "ready_for_fresh_forecast_given_verified_team_state": true,
+  "same_selected_model_recipe": true
+}

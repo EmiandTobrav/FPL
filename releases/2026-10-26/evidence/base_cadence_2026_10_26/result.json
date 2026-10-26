@@ -1,0 +1,106 @@
+{
+  "conclusion": "Base cadence only, fixed quarterly recent180 calibration: every2 -39/+12/-37; every1 +86/-9/-81. 222 new unique base models, 6 full seasons and 228 decisions verified; active model unchanged.",
+  "decision": "retain_for_research",
+  "results": {
+    "net": [
+      {
+        "season": "2023-24",
+        "every1": 2551.0,
+        "every2": 2426.0,
+        "standard": 2465.0
+      },
+      {
+        "season": "2024-25",
+        "every1": 2595.0,
+        "every2": 2616.0,
+        "standard": 2604.0
+      },
+      {
+        "season": "2025-26",
+        "every1": 2254.0,
+        "every2": 2298.0,
+        "standard": 2335.0
+      }
+    ],
+    "deltas": [
+      {
+        "season": "2023-24",
+        "every1": 86.0,
+        "every2": -39.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2024-25",
+        "every1": -9.0,
+        "every2": 12.0,
+        "standard": 0.0
+      },
+      {
+        "season": "2025-26",
+        "every1": -81.0,
+        "every2": -37.0,
+        "standard": 0.0
+      }
+    ],
+    "summary": [
+      {
+        "arm": "standard",
+        "base_stride": 4,
+        "mean_all3": 2468.0,
+        "mean_latest2": 2469.5,
+        "net_2025": 2335.0,
+        "delta_2025": 0.0,
+        "delta_mean_all3": 0.0,
+        "delta_mean_latest2": 0.0,
+        "variance": 12064.666666666666,
+        "range": 269.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "every2",
+        "base_stride": 2,
+        "mean_all3": 2446.6666666666665,
+        "mean_latest2": 2457.0,
+        "net_2025": 2298.0,
+        "delta_2025": -37.0,
+        "delta_mean_all3": -21.333333333333332,
+        "delta_mean_latest2": -12.5,
+        "variance": 17067.55555555556,
+        "range": 318.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      },
+      {
+        "arm": "every1",
+        "base_stride": 1,
+        "mean_all3": 2466.6666666666665,
+        "mean_latest2": 2424.5,
+        "net_2025": 2254.0,
+        "delta_2025": -81.0,
+        "delta_mean_all3": -1.3333333333333333,
+        "delta_mean_latest2": -45.0,
+        "variance": 22936.22222222222,
+        "range": 341.0,
+        "strict_all_year_gain": false,
+        "newer_both_gain": false
+      }
+    ],
+    "strict_all_year_candidates": [],
+    "newer_both_gain_candidates": [],
+    "active_model_unchanged": true
+  },
+  "evidence_hashes": {
+    "reports/base_cadence_2026_10_26/RESULTATER.txt": "caef1e4f1e704949b81b15f23c57c69283bdc72ac1653d856d0eb76885a51dbc",
+    "reports/base_cadence_2026_10_26/comparison.csv": "6d862ec0170d71c5de3dda15e18f0e6327ad9f21951c243a17e2311f11f77941",
+    "reports/base_cadence_2026_10_26/deltas.csv": "44dce1039a2d8c9e0f17b3b4102c623ec3248d73e4db7bf80e8b5494aab194ca",
+    "reports/base_cadence_2026_10_26/summary.csv": "f929867dcbbf76c4decb4a50ed5b421fba8177273e8ee0562ae3f85d8aba3cb7",
+    "reports/base_cadence_2026_10_26/forecast_metrics.csv": "67d091571a5244df1dcdeb444e6bfbb5c3e314c6a2342d65afb996bbec455df8",
+    "reports/base_cadence_2026_10_26/component_metrics.csv": "7d5a52c42b00c5420c74101810461f13d6476efcf885125baf84e1bfe3eef396",
+    "reports/base_cadence_2026_10_26/ranking.csv": "b230e80f629c1f1e83b5eeac0df2c93851d2a65ad78b0079251648cdcfbed7ab",
+    "reports/base_cadence_2026_10_26/final_verification.json": "e755b9d350d3475e289857c4aa08c367bb59ed819aaae9bff2379c7cf7a1ff05",
+    "reports/base_cadence_2026_10_26/execution.json": "834c70dbe5962655f8ad86079fcef882a5a376c592e0e8579b8f277b1bb28d8a",
+    "reports/base_cadence_2026_10_26/one_change_verification.json": "ae557eaa01fda16de5a80458ee782cfee60213140555bf508444fe0f7f725abc",
+    "reports/base_cadence_2026_10_26/reference_ACTIVE_TEAM_BENCHMARK.json": "347b5e6bf5614740fd01f8e61ef838c266cb8baa000fcac4fdfb4be22ae3d4d4"
+  }
+}

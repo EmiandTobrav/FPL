@@ -1,0 +1,2412 @@
+{
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861057_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861057",
+    "retrieved_at": "2026-10-26T21:50:39.165957+00:00",
+    "sha256": "171136d395f433e9a3b07fc944f48374bb5bc627ce213c755e26078b9947fc62"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861060_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861060",
+    "retrieved_at": "2026-10-26T21:50:39.362065+00:00",
+    "sha256": "3a7cb82ff9eec5595b9eab485911936e1d6d3b65709fb534dd8b5171b392da8f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/conmebol.america_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.320500+00:00",
+    "sha256": "4f92ed34648a998b0ecb1cb0af23b7f976bff85cefaa351a8cca747dcf6c8fbb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914283_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914283",
+    "retrieved_at": "2026-10-26T21:50:33.157253+00:00",
+    "sha256": "1e0a1b2e7b052c04e04810d538bb0a7a61e44a5e1c7979b633da45ee280a310a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920043_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920043",
+    "retrieved_at": "2026-10-26T21:50:44.081290+00:00",
+    "sha256": "07d9310fbcdf9ec0306df9cf51b01b4addcf05074a67affb26172bda2a4a73ea"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912804_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912804",
+    "retrieved_at": "2026-10-26T21:50:54.783131+00:00",
+    "sha256": "d236272a932c8c20d68bb77e6437052ad67c14bb26dcd5fac6d5a52724daae6f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914269_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914269",
+    "retrieved_at": "2026-10-26T21:50:33.241369+00:00",
+    "sha256": "34127d84a0ace4e8bddf18591f63236e3245fa52f2d73c28e8e4aad2f15a2a1e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900570_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900570",
+    "retrieved_at": "2026-10-26T21:50:49.287519+00:00",
+    "sha256": "024899a02fe6d4a4f810a62234ad8d2abe1748047a5c862411501785464c0540"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732419_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732419",
+    "retrieved_at": "2026-10-26T21:50:50.026381+00:00",
+    "sha256": "13bd768d1ebf9d4f054798ef48e917bb4181a046f20edc50ff1475afefe275ee"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732440_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732440",
+    "retrieved_at": "2026-10-26T21:50:52.134879+00:00",
+    "sha256": "8f956eaf08830d08a7ba150c295dd186a2bf976f6c2b9569f527296c595b9c59"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401927444_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401927444",
+    "retrieved_at": "2026-10-26T21:50:37.268933+00:00",
+    "sha256": "99b593dec9d97179e8730409fbf99d6c21fb055165ad47e9fac70c2e620ea187"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.olympics_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.olympics/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.195063+00:00",
+    "sha256": "316a525fbee4fdc7dee52e5b2e89ff4b4d7d338141321ea9f8afd1095ae68bc3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900611_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900611",
+    "retrieved_at": "2026-10-26T21:50:47.414349+00:00",
+    "sha256": "69724516e5e8ee66aad6cd983bb60b5ab020cc131173cecbaf36321af7600db6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900626_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900626",
+    "retrieved_at": "2026-10-26T21:50:47.137555+00:00",
+    "sha256": "ab8d2b768a900ab637edde3384686851037b3f18cb17cdc9cfdef19d55a3c3c5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919992_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919992",
+    "retrieved_at": "2026-10-26T21:50:45.592157+00:00",
+    "sha256": "5e012846b94208d828f9296046c975dfa6b20f613d642176a3347fbe72cd85e3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920047_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920047",
+    "retrieved_at": "2026-10-26T21:50:44.214259+00:00",
+    "sha256": "412ae1846f81201eb09fea637f8df3f5013b90a6e1771bbcdd46880f47560ebf"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401881899_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401881899",
+    "retrieved_at": "2026-10-26T21:50:35.639516+00:00",
+    "sha256": "751eca6a6c43b870a62d9ca94e2b8b9495e246e82e096c595bf3b5e87d94c404"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861064_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861064",
+    "retrieved_at": "2026-10-26T21:50:39.616063+00:00",
+    "sha256": "787ab5dde2a6cd2e87b38a39b72c28471f59a842f1cce01b3b60588f9435cf63"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920029_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920029",
+    "retrieved_at": "2026-10-26T21:50:45.180046+00:00",
+    "sha256": "a1907873fa54bea0028e1b529933494ebe8df41f4d0b358fef2d326c7d9b57b7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861053_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861053",
+    "retrieved_at": "2026-10-26T21:50:39.161648+00:00",
+    "sha256": "31cb4fbbba912fdd444d6a4917c662e1eb6ac043f99c978d6e0e032a184ab51d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.ofc_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.ofc/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.399162+00:00",
+    "sha256": "9de10180e5d0976e07b2ccef8935ce3ac920efebb229c06f6e228b7bfbfac9ff"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900574_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900574",
+    "retrieved_at": "2026-10-26T21:50:48.791555+00:00",
+    "sha256": "298f41418c40ecda81373603b127268f8828f3d016aaab7fd77813c57feec9d6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861138_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861138",
+    "retrieved_at": "2026-10-26T21:50:43.683627+00:00",
+    "sha256": "6b8fbc4b61d31b438e5bdb2126bd0a4e25fff9005ca0be7dd7759caa1dd3748f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912800_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912800",
+    "retrieved_at": "2026-10-26T21:50:54.889643+00:00",
+    "sha256": "efb425ea2f3736a3d00097a56910f197a5ee98b7eeedab3cfe127977705d1993"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401924630_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401924630",
+    "retrieved_at": "2026-10-26T21:50:35.820802+00:00",
+    "sha256": "54ae0208c43e303653aeefebdd06956ff715856fe9b52cb4fe4825104a3ca4a6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732444_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732444",
+    "retrieved_at": "2026-10-26T21:50:52.403665+00:00",
+    "sha256": "91777d35b4e1957297f4e467029f43fa4c8e1e4d4d1ec1ac5170bb934d3950f3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915583_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915583",
+    "retrieved_at": "2026-10-26T21:50:34.534466+00:00",
+    "sha256": "52c09dea5dcbfa5c0ed523e949c520cfc85b259dde7bb4d97e256110ff7eb250"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922037_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922037",
+    "retrieved_at": "2026-10-26T21:50:35.029121+00:00",
+    "sha256": "4252b82947303fc95dd1bd172a5a78c89ed713d764f9025580630f571f8a3b6e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919996_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919996",
+    "retrieved_at": "2026-10-26T21:50:45.960065+00:00",
+    "sha256": "30e9320b2a0fbf8b12d1cef3ff1b6e2c1c16074e11230f465ca7e06b87077204"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900622_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900622",
+    "retrieved_at": "2026-10-26T21:50:46.760077+00:00",
+    "sha256": "07d64f8f7199d5d97ff9e3c7c8eabc4fea4dd9556964f35212bb0d3da398bf19"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900615_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900615",
+    "retrieved_at": "2026-10-26T21:50:47.548187+00:00",
+    "sha256": "d044346e4bff3c8de1796887d164835a094e21df58785cfa63ca1fc2d597ed2a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915569_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915569",
+    "retrieved_at": "2026-10-26T21:50:34.359984+00:00",
+    "sha256": "47f98d1bacb1635c54c3a1860bddc45caf2d46b7b9b993bed9eedb72d84992ba"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861082_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861082",
+    "retrieved_at": "2026-10-26T21:50:40.237638+00:00",
+    "sha256": "937f83ffd297dede6baf677a892e253a5de58e44921022660b6a32dffbd46eba"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900578_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900578",
+    "retrieved_at": "2026-10-26T21:50:49.271636+00:00",
+    "sha256": "c1eafe4df9b7c66a46461df00d27a4689eae13859026d9fd6983cd972ed43429"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914261_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914261",
+    "retrieved_at": "2026-10-26T21:50:33.460157+00:00",
+    "sha256": "bec9e509c77e1ee394c44342775e44d76e6e31bb443254f88ae55238848eb0cc"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861134_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861134",
+    "retrieved_at": "2026-10-26T21:50:43.280645+00:00",
+    "sha256": "c3473f90ed39095fe6ddac3dd772ee3c38f9a405e74de6074e5c320ea866b0bd"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861103_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861103",
+    "retrieved_at": "2026-10-26T21:50:42.100715+00:00",
+    "sha256": "6be7bbb36c1bf9eaa27721b03aa8091518a30471e28ec148f2060a0f41162306"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914256_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914256",
+    "retrieved_at": "2026-10-26T21:50:33.015257+00:00",
+    "sha256": "9ec6d7246fdcded4c5d7fcabd60ccf838ae235d45059f8c5a2bcff325324f257"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900592_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900592",
+    "retrieved_at": "2026-10-26T21:50:48.426426+00:00",
+    "sha256": "88e09a4e5ad736395c451d0e9e5c6e4ba676a5f514ae8a1df5d839848ab607be"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861068_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861068",
+    "retrieved_at": "2026-10-26T21:50:39.977371+00:00",
+    "sha256": "26c51398cb8c74cb58b09e1fa287cee270704a47f1bae34a34083cad127ae57f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732356_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732356",
+    "retrieved_at": "2026-10-26T21:50:53.631725+00:00",
+    "sha256": "9e8cd1ee39440676b0f6aa3b08f0cb28000e233eda7a519f05dd8ad12c0bae22"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900619_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900619",
+    "retrieved_at": "2026-10-26T21:50:46.991496+00:00",
+    "sha256": "042249b0cce9d151ea7f121473fcf93a248d0225b642c90035fcbc046785d056"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900640_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900640",
+    "retrieved_at": "2026-10-26T21:50:46.042180+00:00",
+    "sha256": "cace17cfd39a9c0bfdcf43b15a0595a2eddd96f52a47257458adae47f3ac71aa"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915552_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915552",
+    "retrieved_at": "2026-10-26T21:50:34.649086+00:00",
+    "sha256": "5e46a431a9fc0e0c92bf7a90b1269e0a119f29ac71f40494b4ec6b9448b419dc"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401923178_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401923178",
+    "retrieved_at": "2026-10-26T21:50:37.198920+00:00",
+    "sha256": "5bda4e950c44d801a48cb1258062bafe1d2ca340499550281751b4a3508f8ad8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732448_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732448",
+    "retrieved_at": "2026-10-26T21:50:52.293822+00:00",
+    "sha256": "f302b15ec3759475ee96a765b63da7990dd75cbd6dd842741129dbe79d33087d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401917861_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401917861",
+    "retrieved_at": "2026-10-26T21:50:37.407168+00:00",
+    "sha256": "1b37b89d1627a450e04374757c404194b21e156b8ecc4c8ccdf0cbf20e32052c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732426_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732426",
+    "retrieved_at": "2026-10-26T21:50:51.166354+00:00",
+    "sha256": "1149d93dc67b3d7dc3c4afa3cee0bf590ac6d6e594defef774187e217dba3fd9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732411_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732411",
+    "retrieved_at": "2026-10-26T21:50:50.297816+00:00",
+    "sha256": "838e9d4a9f028650737ac633cd6bdea3f1228a242e11517f4b605dc2b04d6b24"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861107_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861107",
+    "retrieved_at": "2026-10-26T21:50:42.068214+00:00",
+    "sha256": "d54224cf16d5670e3e343768a79ab4fbac103a0f7f31e1198c2bb1e303a8dd1e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912808_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912808",
+    "retrieved_at": "2026-10-26T21:50:54.612476+00:00",
+    "sha256": "668a441cdd4716c1bf100ff90fb24797ba7599f909286f641ea5ed1d246dbb9e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401913269_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401913269",
+    "retrieved_at": "2026-10-26T21:50:36.536269+00:00",
+    "sha256": "400f43171e525a9123f9b398e686e21d8ecad0f413a5f8be2bc45624cf555237"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861130_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861130",
+    "retrieved_at": "2026-10-26T21:50:43.104558+00:00",
+    "sha256": "33a7190bfd4bf77dcfc49713f277428b2f57b448eaf93d087c66315394e5583c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.fa_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.fa/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:30.831145+00:00",
+    "sha256": "28a61a1eb9e6546ecd86cb2f44e2353ebbd90925d90097acd5afd7dc1d408968"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861086_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861086",
+    "retrieved_at": "2026-10-26T21:50:40.811190+00:00",
+    "sha256": "96e969310b05d436c233ee8a292091011acd7bf0abbb0a936f2f94b9348f0a3b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905203_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905203",
+    "retrieved_at": "2026-10-26T21:50:35.592986+00:00",
+    "sha256": "acddee340595292a63559ff52c6ac022dd26437a5af07c7be8645689d928af39"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922307_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922307",
+    "retrieved_at": "2026-10-26T21:50:36.707740+00:00",
+    "sha256": "d078d0f509d232d65aee4805f0b500972a5eaba150d3f2c3eb13911f2941ab40"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900596_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900596",
+    "retrieved_at": "2026-10-26T21:50:48.451714+00:00",
+    "sha256": "ba22e1afcc9f56cdd92116991009b62b924046cd38b355ff6ec602ba064222ca"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915423_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915423",
+    "retrieved_at": "2026-10-26T21:50:33.625408+00:00",
+    "sha256": "37edbd09e0af893c3f446d77f300febbcddd7e0b64d151399e090e9e9bc9e9df"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732352_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732352",
+    "retrieved_at": "2026-10-26T21:50:53.310861+00:00",
+    "sha256": "bbda86bb2e3a311ecaeea2c8c7cc72bb5061cf69b238606ad54b88de3c932178"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.world.u17_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world.u17/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.853875+00:00",
+    "sha256": "35933df93a83f0d083c2d9e646f0d275b10251ba7529ae6ace381469fcdf01a3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732415_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732415",
+    "retrieved_at": "2026-10-26T21:50:49.696905+00:00",
+    "sha256": "4d12f1b09e5973cde0113e61ee608ff0d0f51ec5016ade46d97b202d63e9bc32"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.gold_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.440702+00:00",
+    "sha256": "e1e41c1d6c3009f65bfe7ec00089bc87262351a04efbe8220876d3a514cd5a99"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732422_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732422",
+    "retrieved_at": "2026-10-26T21:50:50.675587+00:00",
+    "sha256": "113f9f9630cd9ad07a9a18dd6640313e80015fa67c6e3ec0d84fc05bf14151e5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa.conf_qual_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf_qual/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:30.873201+00:00",
+    "sha256": "b032665e76986ac96b52e75c012c992f2c2a46a9f68682497b4b1b6349e0eb91"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905188_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905188",
+    "retrieved_at": "2026-10-26T21:50:38.447107+00:00",
+    "sha256": "c613e26c8b34f442d1a5dc6106b998b3d47c87fef7a7e18ae89e8d73db42d879"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905196_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905196",
+    "retrieved_at": "2026-10-26T21:50:35.486566+00:00",
+    "sha256": "fb2413aba57d9d9d6d4f08fcea5ac6454162b3e10f0a2c8d48f89b9a779378ba"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732452_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732452",
+    "retrieved_at": "2026-10-26T21:50:53.902653+00:00",
+    "sha256": "eb6d6bcf04d10d47dd38ec4cf11c2075124705ae73c6a8676e22ecd1361e7d0a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.gold_qual_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold_qual/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.579053+00:00",
+    "sha256": "e5f01eaff1d8c64285b9c2faae1972420fd566b4b70b14e7a18c407ba81867b3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900634_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900634",
+    "retrieved_at": "2026-10-26T21:50:46.189291+00:00",
+    "sha256": "d8f9aff2eff635abff1cbf135b4b109835b59ede57575399fd641028c292cbeb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900603_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900603",
+    "retrieved_at": "2026-10-26T21:50:48.363952+00:00",
+    "sha256": "ad6ccf07af0f6c785ee436fc22a7a8346b5d561d0309c062f302b4bbcdbbb950"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920051_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920051",
+    "retrieved_at": "2026-10-26T21:50:43.981193+00:00",
+    "sha256": "d4a5ad0c515b19ddfae2af33014e4ba5c2cf1c4b51304fd070ce25d2f4a254fa"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900588_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900588",
+    "retrieved_at": "2026-10-26T21:50:48.861649+00:00",
+    "sha256": "fa3f88bfa0afaa572b8b3838be9cd24592823a356c35c24cf3f0ea85464948e9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861072_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861072",
+    "retrieved_at": "2026-10-26T21:50:40.006486+00:00",
+    "sha256": "edfe40c2977bbd01aacbb949c478cf551fcdc6de6424bba9c4cfb4b621da4969"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758358_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758358",
+    "retrieved_at": "2026-10-26T21:50:51.154183+00:00",
+    "sha256": "a0eb028033d9f60da709b34ecbfe34ff4d13f744b42a61c78cbfc3d8ac3cc323"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861045_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861045",
+    "retrieved_at": "2026-10-26T21:50:38.579808+00:00",
+    "sha256": "c77e938de3997c1d83255f8c83a317c4c48135ae2518b194a38ad7750440855a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861140_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861140",
+    "retrieved_at": "2026-10-26T21:50:43.378840+00:00",
+    "sha256": "a12c2299632aaf14b2a44c7a0fc0518308607126a2648316d4ea310b55ad81f8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861098_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861098",
+    "retrieved_at": "2026-10-26T21:50:41.259703+00:00",
+    "sha256": "94518778c58870ca1e61024af503f6bed8edeeeb69a727f450c87601a825f064"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861119_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861119",
+    "retrieved_at": "2026-10-26T21:50:42.555478+00:00",
+    "sha256": "7ec1858ef8d83746045ea37b7332bf3c7b8a8da6408f644084cf7fb076dbf05c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912816_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912816",
+    "retrieved_at": "2026-10-26T21:50:54.412349+00:00",
+    "sha256": "81d35055824f8148e5336a524e7bba79d6f0c891e932792b2094c2cc81cd10f9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732438_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732438",
+    "retrieved_at": "2026-10-26T21:50:52.214814+00:00",
+    "sha256": "cef3b6d1d69ea3818df6e9b61981fa4c5ec7edcd688ad5db33ee093d13eeb3ba"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732456_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732456",
+    "retrieved_at": "2026-10-26T21:50:53.355111+00:00",
+    "sha256": "7cfe28092c61c927683d680ee292f07cf0884fec7b2afaf0126020758c5b7b30"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915394_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915394",
+    "retrieved_at": "2026-10-26T21:50:34.287160+00:00",
+    "sha256": "189ef1f3c1f2007f65f6761ada1c35f79d58e6119dc9700dafb92b18e479fffc"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900607_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900607",
+    "retrieved_at": "2026-10-26T21:50:47.706122+00:00",
+    "sha256": "2d1052dbef9cde2000551d62174b45c2670f8b8f34aa260095b254dbe78c4be3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912799_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912799",
+    "retrieved_at": "2026-10-26T21:50:54.962223+00:00",
+    "sha256": "8b7742f2e2581b415d36ff5480cf66de236eae87ba08db2280b69af2e87e8e7c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900630_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900630",
+    "retrieved_at": "2026-10-26T21:50:46.720189+00:00",
+    "sha256": "2a613221d2daaabe031ab93ae1769c94f9558eccdd4ec9cb94bcf4c88ffc9f3f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_u21_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly_u21/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.780838+00:00",
+    "sha256": "e21f206bbaed0842c198b405db09e3dc212bdc8a44cd5bdea52257214bba24fb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861041_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861041",
+    "retrieved_at": "2026-10-26T21:50:38.770850+00:00",
+    "sha256": "5d323e2cfdd85e40f6785f204df1434b78d336d0f0a13a0e62895331319d8eae"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861076_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861076",
+    "retrieved_at": "2026-10-26T21:50:40.274873+00:00",
+    "sha256": "9b5085116799180413d2d311736b403548b49b9b852254eb09e4ea99eaf1b129"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920055_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920055",
+    "retrieved_at": "2026-10-26T21:50:43.742372+00:00",
+    "sha256": "86278329bd8b47f2bf0114945a4e097d949d023b355e017bda612aab4951221a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912812_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912812",
+    "retrieved_at": "2026-10-26T21:50:54.412303+00:00",
+    "sha256": "ff4e33b4312465c595b6caabe3f2d191cff6efae718fd36920d88f4e9177c138"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.615872+00:00",
+    "sha256": "a8294f33d2222b6a0ac32194904d603743275889ccf72045e93c13842348bb82"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861144_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861144",
+    "retrieved_at": "2026-10-26T21:50:43.608607+00:00",
+    "sha256": "5eb8c53f2c830f0f131270581ee7f004462c3b480c4c9aef1156025732fa076d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_u21_401922624_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly_u21/summary?event=401922624",
+    "retrieved_at": "2026-10-26T21:50:53.880338+00:00",
+    "sha256": "e7c2a21ec2d5aaa9e6256a91658916e5d29bbb93045b3fd5773b1d7d018eee3e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cupq_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cupq/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.000139+00:00",
+    "sha256": "02ca1c5fb02ca9b57c99ad21010cd752d70f3495ff436dbd4e5cc911f41c7ba9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912795_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912795",
+    "retrieved_at": "2026-10-26T21:50:55.051429+00:00",
+    "sha256": "59b3c2ae4bb90eb4dfa047a2e232dc511caa654735c88a09dc181bec2dd9369e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732434_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732434",
+    "retrieved_at": "2026-10-26T21:50:51.001103+00:00",
+    "sha256": "4a4f8a207807626e69e0dd1565e139840f45f3d170e1d3c8870af0658650ce01"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861111_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861111",
+    "retrieved_at": "2026-10-26T21:50:42.220115+00:00",
+    "sha256": "442c2cb971a1a9ad11ba28e7a01ef9ae00727952fa40c1ecc2efeb91154e499a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401921570_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401921570",
+    "retrieved_at": "2026-10-26T21:50:37.000625+00:00",
+    "sha256": "cfeb2236a43c454aa73543aff6afacc88c381fe950f9d64e004338d28fe0f49f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401919977_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401919977",
+    "retrieved_at": "2026-10-26T21:50:35.911601+00:00",
+    "sha256": "3fbc5110eaf47c47b24dd4810b5800e14033908298304ce74c5aaa5f1160dacd"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861126_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861126",
+    "retrieved_at": "2026-10-26T21:50:42.821018+00:00",
+    "sha256": "38e06be8f7b7aee16f7451da2bfbb28e564df141b746a3839fa9a095afb05772"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861090_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861090",
+    "retrieved_at": "2026-10-26T21:50:40.940527+00:00",
+    "sha256": "b53373d3077037281194320835ffb1093763c3dceef716722ce793a182137175"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920000_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920000",
+    "retrieved_at": "2026-10-26T21:50:45.651609+00:00",
+    "sha256": "196dab4faae093a0f6085f7a8882d5703890c050dc44fe17478e7df775e84297"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922311_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922311",
+    "retrieved_at": "2026-10-26T21:50:35.263063+00:00",
+    "sha256": "44afdca2fb07da38b4291a6e3a4f1fc6bf6efbb3f0987f3bcd42f75b2495d049"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920037_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920037",
+    "retrieved_at": "2026-10-26T21:50:44.425090+00:00",
+    "sha256": "c5be71bf31ed3caf3b53bf2583249dfb743297faf88d9109364b09536745338e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900580_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900580",
+    "retrieved_at": "2026-10-26T21:50:49.010350+00:00",
+    "sha256": "c7511d5530ebf7743474e739fbd56bac7d0a4241f57e777dcca87b2dd544664b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900638_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900638",
+    "retrieved_at": "2026-10-26T21:50:46.477180+00:00",
+    "sha256": "10087ec87360eee17e9bc7722ac8df07d4c7313e1239d0b19501fc826aeec908"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912791_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912791",
+    "retrieved_at": "2026-10-26T21:50:55.243420+00:00",
+    "sha256": "85ee1163ab523d8a77ff879a01e4c5c0e3c7c6459056cb117bb429661433a2e4"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401903308_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401903308",
+    "retrieved_at": "2026-10-26T21:50:35.683429+00:00",
+    "sha256": "c09b5fe65f430e08d4eaa3bf8ec4d2613333c2204cbfc80ab8fc960cee84d531"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euroq_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euroq/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.155658+00:00",
+    "sha256": "9b0d3ce99a1aa348bb7aa49789a15512909bb40839ba5038df4669de4c638533"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.082009+00:00",
+    "sha256": "b31857b2f98de6c6d7ff5d5e585d4770f106831b28e992887cf2a3bdda963658"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732430_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732430",
+    "retrieved_at": "2026-10-26T21:50:51.664336+00:00",
+    "sha256": "eb62ad51634a46a359af80558a5b04809fd61404ca03bebd3eb83c1e42b400ce"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861094_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861094",
+    "retrieved_at": "2026-10-26T21:50:41.477027+00:00",
+    "sha256": "d6132ed082638340a00c724ef8f5c9f2ede64bd585c201a0e22fab06bdddda61"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.saff.championship_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.saff.championship/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.374955+00:00",
+    "sha256": "7cbf8a8cea9445b959df5e1c888687e570c9446c734ecc35e28e9b0e9ce0df1e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861122_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861122",
+    "retrieved_at": "2026-10-26T21:50:42.724808+00:00",
+    "sha256": "f839e9bd3cdbff4aff302b18a60d8783a45a76e9024c2d1de11f979f2d0f529e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861115_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861115",
+    "retrieved_at": "2026-10-26T21:50:42.279983+00:00",
+    "sha256": "033ea7819c476f21bb5523f3f454970974d692bdc29c5096c83bb2bf48083b78"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401902634_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401902634",
+    "retrieved_at": "2026-10-26T21:50:36.953822+00:00",
+    "sha256": "b4da81735241ae59f41fee0bf434ced991a76796f744a885a03e4b929bfacb55"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401914098_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401914098",
+    "retrieved_at": "2026-10-26T21:50:35.900945+00:00",
+    "sha256": "28c0e6bd5500df5ee6004a23faa699cd0cfd8855f3ff809963ab79e098576c95"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401914140_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401914140",
+    "retrieved_at": "2026-10-26T21:50:38.294344+00:00",
+    "sha256": "266b1746260a2da0740d64976c6bd2e23507670a4010318abf1939d9f93c681f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900584_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900584",
+    "retrieved_at": "2026-10-26T21:50:48.585819+00:00",
+    "sha256": "e6461b6b195207b209da2d0cdefdacfe487a1d60e3843bfd2c7bcfb19e671b69"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401896386_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401896386",
+    "retrieved_at": "2026-10-26T21:50:37.820233+00:00",
+    "sha256": "1f9f5c75cefec56f32586860fecbc152941604fa580d79937b90789c87af2a67"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920033_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920033",
+    "retrieved_at": "2026-10-26T21:50:44.944936+00:00",
+    "sha256": "d7db323a925a5e862cf5696ef92513c54dbb02df74429ab750df8184a23c3c0e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758363_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758363",
+    "retrieved_at": "2026-10-26T21:50:52.731635+00:00",
+    "sha256": "09df915a3b586824961b5ad53375aaec43a633fab53fd46b161909a5e0cd937e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401917066_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401917066",
+    "retrieved_at": "2026-10-26T21:50:35.920482+00:00",
+    "sha256": "d568b16fcdd0d2d019b8076378829b23a8d39efbe38b5b4d6decc046c1fd8d73"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920004_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920004",
+    "retrieved_at": "2026-10-26T21:50:45.315327+00:00",
+    "sha256": "c9adaee92c698870e02ee5d36bab4314d58fa4f270417b3f5da5a2744b97cc55"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861049_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861049",
+    "retrieved_at": "2026-10-26T21:50:38.887814+00:00",
+    "sha256": "cf5157aa22be12fa529c87894f3684ace768670344f3f7637c488d73590d2292"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912813_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912813",
+    "retrieved_at": "2026-10-26T21:50:54.172542+00:00",
+    "sha256": "84b1e996d3e5c9504e530b45f2646f604f86356b82c833af6cc16efe19279be2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.uefa_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.uefa/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.122175+00:00",
+    "sha256": "64a9d2d36d874337d52ac9bdd6e400492a2e45a68e74e9b845600c0fab4c72b3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861077_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861077",
+    "retrieved_at": "2026-10-26T21:50:40.783672+00:00",
+    "sha256": "e0f61c3c38fd956c5bfd178e5eac844444cb75cbb4ddb27e9146d47d32ca5223"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401881965_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401881965",
+    "retrieved_at": "2026-10-26T21:50:36.820568+00:00",
+    "sha256": "4ed7a6e58793cb046c686d8f2b0f58a009ef7be833856f3f631efb90cb1d1a2a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920054_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920054",
+    "retrieved_at": "2026-10-26T21:50:43.937442+00:00",
+    "sha256": "962a9bae368100740c1622fddd170a47055165bbb0b79dfe2c7df04c501ba81b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915395_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915395",
+    "retrieved_at": "2026-10-26T21:50:34.261493+00:00",
+    "sha256": "a405aeb22e9b85a4582d4bad1d5f1f0c4ce631c10b48e0c7f7b66c0637f9d1a7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732349_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732349",
+    "retrieved_at": "2026-10-26T21:50:53.465016+00:00",
+    "sha256": "ed36b990f839585f53cb5cba0784891a505b9535d08ada078cb459155e2beff1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900606_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900606",
+    "retrieved_at": "2026-10-26T21:50:47.553320+00:00",
+    "sha256": "ffd68ce9c482709a53546864afe82c1f83a74a4f5a5ba935bce5eb54920b7368"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912798_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912798",
+    "retrieved_at": "2026-10-26T21:50:55.350607+00:00",
+    "sha256": "9123cadf11de15665cd42d6f21cd7c04b55b12b4cfd3f07a58f623bc76e98c9e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900631_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900631",
+    "retrieved_at": "2026-10-26T21:50:46.606077+00:00",
+    "sha256": "eeb67744bfa084d3dae1df00de4b214e6cb1a5b6bebda4bda0e3192f5bff2153"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401903233_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401903233",
+    "retrieved_at": "2026-10-26T21:50:37.250100+00:00",
+    "sha256": "3299d9b46365cd414433bbda904e769f8216b0661c8f4b1528d0244d950204ef"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732439_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732439",
+    "retrieved_at": "2026-10-26T21:50:51.692390+00:00",
+    "sha256": "f2b58c6cae5ef60c6363aac2e59f85099055ca5682d27d538e70c9699ef5919c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401917360_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401917360",
+    "retrieved_at": "2026-10-26T21:50:38.070713+00:00",
+    "sha256": "bd376ed4a130fbf2e08656863a348bab18b71f070049f15cfbe9bea3cfe6dd58"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861141_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861141",
+    "retrieved_at": "2026-10-26T21:50:43.493535+00:00",
+    "sha256": "7864a1397b00284610d81e2302680231e840aed30f5349eb64bc815c3d4d4e2a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861099_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861099",
+    "retrieved_at": "2026-10-26T21:50:41.408590+00:00",
+    "sha256": "9d7e2bd8e6cefd16036eee6d9d023fdd4c5c5f756f6acfbfb2f7ec49076ad9a7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922273_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922273",
+    "retrieved_at": "2026-10-26T21:50:37.678098+00:00",
+    "sha256": "26ee5ade66f758e9015484beb5f24dd9b145a6c0a27c4a20d5c1c94325e83045"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861118_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861118",
+    "retrieved_at": "2026-10-26T21:50:42.401054+00:00",
+    "sha256": "227a1ecaa1d4ce838da5724324319c6208b0cf0af29979830d32591544a09d2d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912817_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912817",
+    "retrieved_at": "2026-10-26T21:50:54.063778+00:00",
+    "sha256": "ca57c0bd009a8c96f621dc24e843d949d33d075719462ac894b6af1337671f8c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920050_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920050",
+    "retrieved_at": "2026-10-26T21:50:44.157509+00:00",
+    "sha256": "b505b05ab7dd2367b6b47e1a3a03f68c330544693ce021aae4c1681cf31c7486"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900589_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900589",
+    "retrieved_at": "2026-10-26T21:50:48.894936+00:00",
+    "sha256": "54fc80ddd08f3683bea0def4652ff3821dd47e7c39e85645dd67a31dcf394a51"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861073_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861073",
+    "retrieved_at": "2026-10-26T21:50:40.078523+00:00",
+    "sha256": "6534d9da5e2d58fb66245e3fbae8d7704e461da891d7f8d0baa4372bfef4d7fb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758359_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758359",
+    "retrieved_at": "2026-10-26T21:50:51.442893+00:00",
+    "sha256": "919afb4138216d2bfa55ff0e5f7c3b50dc559c2b27bb3735aeb4c5e5064275b5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861044_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861044",
+    "retrieved_at": "2026-10-26T21:50:38.887000+00:00",
+    "sha256": "b2319f7a52792584ffdee6faffec6c5fe7362575ed00ab24cb3336f04f8365dc"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900635_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900635",
+    "retrieved_at": "2026-10-26T21:50:46.300589+00:00",
+    "sha256": "004b0ba612711366398609282b5e81ac4bdc006627bf2d5276c8b36b63f05fcf"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401917261_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401917261",
+    "retrieved_at": "2026-10-26T21:50:38.302636+00:00",
+    "sha256": "cddc2adde35f26870d90e21901970b6ae417447117d614c4f7245298804576c6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900602_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900602",
+    "retrieved_at": "2026-10-26T21:50:48.451673+00:00",
+    "sha256": "5ac9700f1952d5c3daa5f623163fda9f81bdf9fe8af50376584544c13f3c3a8e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401900326_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401900326",
+    "retrieved_at": "2026-10-26T21:50:35.656925+00:00",
+    "sha256": "c3f35d3b7176241f05c6912392e86665c3f02ca4f6d92c91144621894a2c9c0d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732453_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732453",
+    "retrieved_at": "2026-10-26T21:50:53.614894+00:00",
+    "sha256": "b52f0a639f07a450c676e46c1ba276521d91ee14846cb5ee5b17a20efff4f448"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900585_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900585",
+    "retrieved_at": "2026-10-26T21:50:48.718345+00:00",
+    "sha256": "6c313d5e297c746d85f033d993ebdecf76c0a895cb567b6b85a1f11765e191ab"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401914141_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401914141",
+    "retrieved_at": "2026-10-26T21:50:36.982827+00:00",
+    "sha256": "a8279e30126d84b88560b85d4b50e50de32c128277ffa01d8a5632c1810bf5c9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401919572_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401919572",
+    "retrieved_at": "2026-10-26T21:50:36.129802+00:00",
+    "sha256": "582e9443004f19587b216b66209395b5964cac5cc5101d44164a84ea895ab0ae"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa.conf_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:30.752394+00:00",
+    "sha256": "f3a044d70944943076417d312828cb5e3c61f9593de45ca289789bb9c49e36a9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920032_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920032",
+    "retrieved_at": "2026-10-26T21:50:45.151238+00:00",
+    "sha256": "96ffe91e690426376fb134bec100c7dfc7872145b3247ac909cfe2337d16034e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758362_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758362",
+    "retrieved_at": "2026-10-26T21:50:52.723413+00:00",
+    "sha256": "42d72e7997141623ae9a4a9cac2f9500b69dd3e02251359ec0c737bf62534abb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922314_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922314",
+    "retrieved_at": "2026-10-26T21:50:35.229228+00:00",
+    "sha256": "701c64ae1412e455a0a056fd74cdb6ae1ce769210d5aefa9040f52e1b36c0b38"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.concacaf.olympicsq_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.concacaf.olympicsq/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.324900+00:00",
+    "sha256": "283fcc769e452c802fe71ef0de45fbe059ee66e407c19861fc247ee0ef5b668d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920005_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920005",
+    "retrieved_at": "2026-10-26T21:50:45.344457+00:00",
+    "sha256": "f71fc880e743c95f184634f7050abed15ccc25d3ccc3e0af1a45bb7edd72a296"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861048_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861048",
+    "retrieved_at": "2026-10-26T21:50:38.370862+00:00",
+    "sha256": "ba15c3fbfa6b19f5d8c5b116bced4fab8791e54f0e488b802287dfbd07c41c64"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758355_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758355",
+    "retrieved_at": "2026-10-26T21:50:50.492457+00:00",
+    "sha256": "f54b2c008893dd4ae82d9bae99f1fce252fc7013c54de1699da516064999981a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861095_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861095",
+    "retrieved_at": "2026-10-26T21:50:41.584829+00:00",
+    "sha256": "7ecb59f54dba93e039db5b942e49845bd4580708ea03d08fa5080b0928af68dc"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.conmebol.olympicsq_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.conmebol.olympicsq/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.497702+00:00",
+    "sha256": "643f412ec0a1fb792799758645b5db1944d520e05a0da4a1798c521ed6f5dc63"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861123_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861123",
+    "retrieved_at": "2026-10-26T21:50:42.737770+00:00",
+    "sha256": "964cc44876a15dcda78d5a90f212d30b8328b69e2085c33e8082790f1c24066b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861114_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861114",
+    "retrieved_at": "2026-10-26T21:50:42.492071+00:00",
+    "sha256": "fad3de4bcd4199e8df0350a695558cde443e9452582a400ba0bd9d7535d82f6e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732431_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732431",
+    "retrieved_at": "2026-10-26T21:50:51.679364+00:00",
+    "sha256": "cd2b850604428e9f5a20da57578c21ea8b3c211a4c734b9238d10cbd598366ca"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900639_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900639",
+    "retrieved_at": "2026-10-26T21:50:46.082434+00:00",
+    "sha256": "4b4f306342ec20344dee79b927fc305a7cc5de0eee300b61c56cac476b609e2c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732376_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732376",
+    "retrieved_at": "2026-10-26T21:50:52.636083+00:00",
+    "sha256": "e0098d1bb5c306f050024e2096678f33dfc669760c5b5f5d118abab29c22194a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912790_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912790",
+    "retrieved_at": "2026-10-26T21:50:55.612984+00:00",
+    "sha256": "83c50cd1e254dd13fe9d0bfdb4ceeb3753a5456dd4304d803b48705b5eb44f85"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915407_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915407",
+    "retrieved_at": "2026-10-26T21:50:34.342548+00:00",
+    "sha256": "f196caff5484c5889b28aa65a589ca537e4c931140b2167ea895dd852570454a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920001_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920001",
+    "retrieved_at": "2026-10-26T21:50:45.684478+00:00",
+    "sha256": "ec026d55e6438346c3c680e3f3e3e7a3c88a7cc11fd24a06e17f404e6abac1f6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922310_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922310",
+    "retrieved_at": "2026-10-26T21:50:35.776100+00:00",
+    "sha256": "ce5c966083f4eb390dcf50a4d08ba73a28f5cf25b52ec19fa25160b0e3dada7f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920036_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920036",
+    "retrieved_at": "2026-10-26T21:50:44.809211+00:00",
+    "sha256": "e5021dd500eccb20b69e3c880a2692f8723d4a6d07d5a2839522859d6aa24429"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900581_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900581",
+    "retrieved_at": "2026-10-26T21:50:49.615701+00:00",
+    "sha256": "8968d63b19c30c405c9a15960b9ba513bdfa2d5b1bba06fef1fd76d543dfeae2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861110_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861110",
+    "retrieved_at": "2026-10-26T21:50:41.996714+00:00",
+    "sha256": "1bec869ae3e0cdd457a755ff2b8cbc0ac65af2d6ce61fa256d9174520e6b5265"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401919976_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401919976",
+    "retrieved_at": "2026-10-26T21:50:38.164003+00:00",
+    "sha256": "8889b824c94674a3e6a0f07cf2ffdf5f0f3bf7976ece5517a94eed84c081e538"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861127_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861127",
+    "retrieved_at": "2026-10-26T21:50:43.008349+00:00",
+    "sha256": "2e878bb92851a6fec5643d64366a919cbf37f1aa29fb7bb5aabf006d4be90f19"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861091_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861091",
+    "retrieved_at": "2026-10-26T21:50:41.185331+00:00",
+    "sha256": "08712ca181b6390b7566eb99e10d74df85f19c1f73dc2362e2d84c2441bd54e0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732435_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732435",
+    "retrieved_at": "2026-10-26T21:50:50.975311+00:00",
+    "sha256": "71e1c430a512bca0835c6a02a48c5fa57aebcfe695dec8aa26a77c526ddae033"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401915925_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401915925",
+    "retrieved_at": "2026-10-26T21:50:36.429008+00:00",
+    "sha256": "d5a6893e91a76e7a8799b03816c16a340a62c15c8eda233b566983fbd2537b59"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912794_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912794",
+    "retrieved_at": "2026-10-26T21:50:55.434209+00:00",
+    "sha256": "4d7f58fb2dadcf9f786e48848a7dd5d223eaf54ed762aea683c1536c8a35bfac"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919997_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919997",
+    "retrieved_at": "2026-10-26T21:50:45.891672+00:00",
+    "sha256": "96adfbbd564ba6715eb5d16af1c68e731a7f49ce31dd16ef06a29f4d6e05a540"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900623_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900623",
+    "retrieved_at": "2026-10-26T21:50:47.099993+00:00",
+    "sha256": "36398fcbfc17f022443e1e1a5e717015947b3269c831707facf9e15f69971326"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900614_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900614",
+    "retrieved_at": "2026-10-26T21:50:47.427000+00:00",
+    "sha256": "b43e1d9810e4b3161df3930de0f206258454ddf409db4627b013b2cf36ba1bfa"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.world_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.227299+00:00",
+    "sha256": "8f2da2c8040874ad0dd4f75bad114abb858bf94634eb1d936961b8a43e564859"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732445_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732445",
+    "retrieved_at": "2026-10-26T21:50:52.479874+00:00",
+    "sha256": "769612ec52eaafcd3c09c8594965bcbd143ca9962bb9867ae0699a0f7641fb18"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900575_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900575",
+    "retrieved_at": "2026-10-26T21:50:49.030453+00:00",
+    "sha256": "23c78e1d0c305802ca6804dd6157747fe31d999bf7e95c1db9817fd4e8d9de76"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861139_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861139",
+    "retrieved_at": "2026-10-26T21:50:43.662443+00:00",
+    "sha256": "4d5dbf1ab4e673ebc291b1be5ee42b4571a3ac83526af3d53e780150e359ac6a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912801_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912801",
+    "retrieved_at": "2026-10-26T21:50:54.829589+00:00",
+    "sha256": "2380e3f0e62c620e022c116c564c5d6ed08a5fff7be9dbcda41f8c8f39c3e95b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920046_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920046",
+    "retrieved_at": "2026-10-26T21:50:44.384664+00:00",
+    "sha256": "363b87a1f09374a15233bf46cf22bf7246b4ccfda4ab8abf9a8a30af5e42a0cf"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861065_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861065",
+    "retrieved_at": "2026-10-26T21:50:39.485639+00:00",
+    "sha256": "3830dd4dc2366fe4779993ff76cf37e160a76712c8e1afeb6ed2254e02c317d4"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920028_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920028",
+    "retrieved_at": "2026-10-26T21:50:45.086795+00:00",
+    "sha256": "3f133be61234f0e56622b1fcda8b31cf5e36deaf46e4b61f1dcd346d93c885b2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861052_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861052",
+    "retrieved_at": "2026-10-26T21:50:38.883409+00:00",
+    "sha256": "dc9bf7f1fe08403a4448c9de6880905391b5dd7a0f282f809332643b591d0351"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900610_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900610",
+    "retrieved_at": "2026-10-26T21:50:47.886894+00:00",
+    "sha256": "e8e9a4689b1eadbbe9d5ab3eabaff8f7516bfb5d5256a9c5424060c91350dc64"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900627_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900627",
+    "retrieved_at": "2026-10-26T21:50:46.605709+00:00",
+    "sha256": "21873ea0de01fd440b9433e93df962851a22b60578516bbb5349a9aa6586e906"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919993_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919993",
+    "retrieved_at": "2026-10-26T21:50:45.801905+00:00",
+    "sha256": "c2635f809194e13a68a6b29a5ffdf10ad085baf5a7b2d5f17bb70155cbfe83db"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732418_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732418",
+    "retrieved_at": "2026-10-26T21:50:50.691144+00:00",
+    "sha256": "11c7a60be0b1cda5c3249cbf76af038c789d7ab1d9de52e27bc05b4b46ac8fb2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732441_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732441",
+    "retrieved_at": "2026-10-26T21:50:51.897772+00:00",
+    "sha256": "d642224e43da96fa2d7c7fa01af49412f869c8af281a5261727d55f035a96a9b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912805_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912805",
+    "retrieved_at": "2026-10-26T21:50:54.666045+00:00",
+    "sha256": "66b5481ddcb977f4d49d4c1336e30dc18645cfca3bd2e58096453f84206ddc6b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914268_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914268",
+    "retrieved_at": "2026-10-26T21:50:33.305901+00:00",
+    "sha256": "0d18f8de6c38daa77e33627c4e95650cb53e277e84cc65eac40fdd2beedc0a00"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900571_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900571",
+    "retrieved_at": "2026-10-26T21:50:49.344055+00:00",
+    "sha256": "ea6ec2569eeb9034b20d4d1fa9f6bbee964388ef7bbbafbf152824839576b856"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401898013_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401898013",
+    "retrieved_at": "2026-10-26T21:50:35.163112+00:00",
+    "sha256": "ec3591c719b3735008e4c37488bc0fdf95c0b6c39f8c2cd909bb38340b496e06"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861056_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861056",
+    "retrieved_at": "2026-10-26T21:50:39.205483+00:00",
+    "sha256": "e38d7ba8828d93a2215201a6848b20462005607fc0006fa01a9041738b60ad60"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861061_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861061",
+    "retrieved_at": "2026-10-26T21:50:39.275156+00:00",
+    "sha256": "65c591274f848a6ec9cb7367152e8f342cd38f48ae7419b23701a1578fb85930"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914282_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914282",
+    "retrieved_at": "2026-10-26T21:50:33.324863+00:00",
+    "sha256": "6aa0ee86a2423eb412c1fad932c5e7c77107ab60bdcebdb520cee4f0eb06c9d1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920042_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920042",
+    "retrieved_at": "2026-10-26T21:50:44.556051+00:00",
+    "sha256": "5517ce8294951fc95f24ab49d0a5248d7d32e771bb727da9e11a8e14a8be561b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732414_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732414",
+    "retrieved_at": "2026-10-26T21:50:50.205009+00:00",
+    "sha256": "7045f20eac67296f347ec91a7da1d1708360d6f4e620197845c47dd716b67231"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732423_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732423",
+    "retrieved_at": "2026-10-26T21:50:50.718814+00:00",
+    "sha256": "fc300afd038fde526d61860c65ab0112b3195dbb09b15fc3b725ca608ae0c956"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905189_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905189",
+    "retrieved_at": "2026-10-26T21:50:36.315709+00:00",
+    "sha256": "f26585e4aa2340c346276870b732d0c14094a59c25ec167958e4a8b8e8b4b642"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915415_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915415",
+    "retrieved_at": "2026-10-26T21:50:34.036594+00:00",
+    "sha256": "03106458b3f39f94607986862721475a795a58a2edb89ea5cebdc862acea660e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732353_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732353",
+    "retrieved_at": "2026-10-26T21:50:52.910986+00:00",
+    "sha256": "e5d0be94c023b9fcc2355b61cda299562b70355b5746a0f99da374b89f8ca9c1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905330_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905330",
+    "retrieved_at": "2026-10-26T21:50:35.373034+00:00",
+    "sha256": "caa71b0daa7ec463690290bf179d61e323446721d7df92b9236023c79b0510ec"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900597_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900597",
+    "retrieved_at": "2026-10-26T21:50:47.955509+00:00",
+    "sha256": "f352345e9f7595ab8fdbd8d4e98876197e201dd45b38dc04f71b05344972831f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.946383+00:00",
+    "sha256": "a86f9311b300118b1416f6beae060fd7976c537b8af941a5df9153092a8d4cb3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861106_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861106",
+    "retrieved_at": "2026-10-26T21:50:42.279810+00:00",
+    "sha256": "51bd61b84596c1ffaf1bc6f678392bc5ae2c9d56662f9337c5f1465072379513"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912809_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912809",
+    "retrieved_at": "2026-10-26T21:50:54.403474+00:00",
+    "sha256": "db093c32a144cb4efa73b4fc93092c44b3b23f3ccaf0a75823d127424c43d486"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861131_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861131",
+    "retrieved_at": "2026-10-26T21:50:43.115601+00:00",
+    "sha256": "2f0eff5d6885c43354c00dd1a059052984fec7631d174e115f938e4d4aca68a7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861087_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861087",
+    "retrieved_at": "2026-10-26T21:50:41.075743+00:00",
+    "sha256": "3c08a605ced3c8bdbfa2db84c9e5cc5043378352c65f669a7c0cd15aaa3e7d92"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905202_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905202",
+    "retrieved_at": "2026-10-26T21:50:37.421223+00:00",
+    "sha256": "ea79ef813b403088fc478aaf0edd7d58f434d66aa9a528f3057b8adab5755c39"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732449_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732449",
+    "retrieved_at": "2026-10-26T21:50:52.607066+00:00",
+    "sha256": "2f8407aa160329a9a7b65ba0925b2fc3637ef483dfbd74ca83b8df312030ef59"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922621_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922621",
+    "retrieved_at": "2026-10-26T21:50:36.755450+00:00",
+    "sha256": "5a494e78923295b02b8a343a4b95ddd6a0462868815376ffbbe0b4fa4d2a72ac"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732427_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732427",
+    "retrieved_at": "2026-10-26T21:50:50.678763+00:00",
+    "sha256": "3890b5e2b929eae1f7568ad05c876968bd6c94422f455e0e756ae4848fb78b81"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732410_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732410",
+    "retrieved_at": "2026-10-26T21:50:49.594700+00:00",
+    "sha256": "62b1ca6747abe2e8a3cf25ba3b08ad70e693affa8a7188c506331834b369a580"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401911182_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401911182",
+    "retrieved_at": "2026-10-26T21:50:36.398584+00:00",
+    "sha256": "34442fd383c18e20511f9a702a55344fdf6875310f5e4d95bc7b87a872180ffa"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900618_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900618",
+    "retrieved_at": "2026-10-26T21:50:47.147516+00:00",
+    "sha256": "dc86a3b30900745d5039e09a59dc7eb7395b53611b8290deb791a48aec0a4377"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900641_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900641",
+    "retrieved_at": "2026-10-26T21:50:46.047077+00:00",
+    "sha256": "3ec39ae1d29ff5d362aed748943239949e510a306b10dd6914ab48a232d52cad"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915426_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915426",
+    "retrieved_at": "2026-10-26T21:50:33.883638+00:00",
+    "sha256": "9de5fe6174fc8784039b186ea75b77725e4a85fa829c732597436e34d651a659"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915553_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915553",
+    "retrieved_at": "2026-10-26T21:50:35.091081+00:00",
+    "sha256": "65ea592b41634f77b6d4b9dc412f1ee183f7a77835dc22ea2b84b318a84762df"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900593_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900593",
+    "retrieved_at": "2026-10-26T21:50:48.153522+00:00",
+    "sha256": "195c0f2a53368a1975164d9b78c406f5e04808af22d400021e622ef3e9c22e81"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861069_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861069",
+    "retrieved_at": "2026-10-26T21:50:39.891745+00:00",
+    "sha256": "6a3335776903828560aef29ce2c687d8fd567cd16915607f4d34cf19e144978a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401921408_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401921408",
+    "retrieved_at": "2026-10-26T21:50:38.065079+00:00",
+    "sha256": "196450f1aba6b2cea940fbdfce8c292ba8f2538b5b39ff1332a9ef5e472090f7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.704858+00:00",
+    "sha256": "66e409c503a1463421ae5aa209cfb28a567d37b282225135563f973ccf2d5524"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa.conf_401915853_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915853",
+    "retrieved_at": "2026-10-26T21:50:35.107722+00:00",
+    "sha256": "ec51c6dad9578cf40bdddfbf4363dc99b2c55b550d38b6ba39f4e02ff57271b5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861083_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861083",
+    "retrieved_at": "2026-10-26T21:50:40.896325+00:00",
+    "sha256": "18068dcb1f38a245c44b650d3a02608ca4de461beb8baef251806444760fa26b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900579_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900579",
+    "retrieved_at": "2026-10-26T21:50:49.061051+00:00",
+    "sha256": "93bede29c8671355a1c267c998831bf12960f7afb3c3a04609d99f0787985259"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914260_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914260",
+    "retrieved_at": "2026-10-26T21:50:33.530434+00:00",
+    "sha256": "ae5114e3f8e1c5c481168db0c5f52639a5473478e2ddd4064371f109fe955de9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861135_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861135",
+    "retrieved_at": "2026-10-26T21:50:43.316577+00:00",
+    "sha256": "b838c300d12667c1e8ac4517acc85113bb4c5b1b0cc3a02410e4670e020154c2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861102_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861102",
+    "retrieved_at": "2026-10-26T21:50:41.996670+00:00",
+    "sha256": "cc99f9bb29eb098ffb616eee018e95dd579c85f907a2b849c0e6022922d1bc86"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914257_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914257",
+    "retrieved_at": "2026-10-26T21:50:33.170318+00:00",
+    "sha256": "1f409205366acedcd97f433640a42a093d6ee1d30826e3409f0adca70dbf1249"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732437_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732437",
+    "retrieved_at": "2026-10-26T21:50:51.145493+00:00",
+    "sha256": "9726802cdfc9089fa6d5f413f434e57160d898c2ae1b7d5ef9b3f999e780876a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915401_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915401",
+    "retrieved_at": "2026-10-26T21:50:34.311157+00:00",
+    "sha256": "96820176b52ff1315c2001c0d5cf5409538f2fe8ace71b7a261191f5b293d19a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732347_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732347",
+    "retrieved_at": "2026-10-26T21:50:53.676388+00:00",
+    "sha256": "871e8604eb0c27f369213c1fd91bbe8afd25f2c2e3ade9e8a6a5bb061442280a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900608_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900608",
+    "retrieved_at": "2026-10-26T21:50:47.803483+00:00",
+    "sha256": "cb4ece20c3703ebebb2a6eb408bd520888f207494d5533f4224d722403f2b9e9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912796_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912796",
+    "retrieved_at": "2026-10-26T21:50:54.980554+00:00",
+    "sha256": "956e7457288966ddb5dec9d5c8acb843162fe686b327278eaadb6d968108ff28"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920003_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920003",
+    "retrieved_at": "2026-10-26T21:50:45.781753+00:00",
+    "sha256": "dcc404ac2213a00529bb028f126550d69651386e5561b4a0cfdf31febdc92785"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922312_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922312",
+    "retrieved_at": "2026-10-26T21:50:34.895956+00:00",
+    "sha256": "2bdd73126722964460b38cf5388aa5e7aec3f45750160128acb46bebd14877d9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861079_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861079",
+    "retrieved_at": "2026-10-26T21:50:40.506788+00:00",
+    "sha256": "c0f9e9897fc74d1b7c5290a3ea54b961f25e5b90e15814b7af47ef28e1f89638"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920034_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920034",
+    "retrieved_at": "2026-10-26T21:50:44.846331+00:00",
+    "sha256": "72db5f4a3c28c17f10fd6c7cfda1bfdf294bcabe8ac804c05167537add25abc0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900583_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900583",
+    "retrieved_at": "2026-10-26T21:50:48.749150+00:00",
+    "sha256": "052d5a71a33b67c026c775dbb391f8e705900f21674ff62503648ba165b225c4"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861112_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861112",
+    "retrieved_at": "2026-10-26T21:50:42.436712+00:00",
+    "sha256": "13029d49d25bdebe32a10eb2717c96b32d6fbc43a53b41a429736bd2ac2f9227"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900569_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900569",
+    "retrieved_at": "2026-10-26T21:50:49.415383+00:00",
+    "sha256": "9cc5080a56a7db5af7b4fd620120da5fb6c6f450cd1750d7bd1760efe64dba74"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401921544_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401921544",
+    "retrieved_at": "2026-10-26T21:50:37.380830+00:00",
+    "sha256": "38ec341851ca00b3c4d1101ca727f4f8603251db2ecd3914b6835d4a169f4539"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861125_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861125",
+    "retrieved_at": "2026-10-26T21:50:42.948426+00:00",
+    "sha256": "46c2def33d907711f7a9baaba4ad66a0564c6cc748326573aa6af6df88b71052"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_u21_401925163_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly_u21/summary?event=401925163",
+    "retrieved_at": "2026-10-26T21:50:54.067739+00:00",
+    "sha256": "9f27292ee5b5a05603b38b7a33a00c5662227eeff5e0061e525c3e0e721b2c98"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861093_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861093",
+    "retrieved_at": "2026-10-26T21:50:41.252069+00:00",
+    "sha256": "3a9f11efdbaf8fd99a6922b0727ec7fd961102a7629402463c111101e2158897"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401915914_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401915914",
+    "retrieved_at": "2026-10-26T21:50:35.519880+00:00",
+    "sha256": "4f9c44d3d570276457bee0fc460a1c21b8be3725e486e536b14532a964b0c3a9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732433_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732433",
+    "retrieved_at": "2026-10-26T21:50:51.221747+00:00",
+    "sha256": "f6d8b59b6e8a760a41222e6dc4da168d6c810150557fa16cc537a06e92d8fffb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401914222_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401914222",
+    "retrieved_at": "2026-10-26T21:50:35.570683+00:00",
+    "sha256": "7ceab3bfe9c3fbcd31d769891f802660a1f203315574b306236dc3e17db94cf5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912792_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912792",
+    "retrieved_at": "2026-10-26T21:50:55.201100+00:00",
+    "sha256": "b61fb08369edd13594390ba137645c26d7b76e75dcc04a2b62d834f6f88db783"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_u21_401922623_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly_u21/summary?event=401922623",
+    "retrieved_at": "2026-10-26T21:50:54.117570+00:00",
+    "sha256": "7e6051c159a4a328fd156144f0355ea223dc9f46a390b46f9ac25182251af52b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900587_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900587",
+    "retrieved_at": "2026-10-26T21:50:48.743186+00:00",
+    "sha256": "ef6d0622c9765069a664cf2a3cab81b6f92bc78ca007bfc54e5c2ba4a7dba545"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920030_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920030",
+    "retrieved_at": "2026-10-26T21:50:45.290969+00:00",
+    "sha256": "e810828191dcc54bfd2129a075a648d5a6140f452d636e8d6d8da686db15c07b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758360_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758360",
+    "retrieved_at": "2026-10-26T21:50:51.736466+00:00",
+    "sha256": "de72268caa366f6895fd1571ca3b9c2e886ba50d69b3f71da8c900bfcfa90581"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401917065_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401917065",
+    "retrieved_at": "2026-10-26T21:50:36.647984+00:00",
+    "sha256": "90e0b8a3d325014a22d0fb8f1f36c2a7a6afe1cc9f6b5efa61efcca5a3ad6a9e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758357_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758357",
+    "retrieved_at": "2026-10-26T21:50:50.645073+00:00",
+    "sha256": "84808cc19012d2d0f52f29707ce98d33f7a65038cf60a7de26a3d010ae3f46da"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861097_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861097",
+    "retrieved_at": "2026-10-26T21:50:41.252015+00:00",
+    "sha256": "852277b8611ae0a8ab7c3f2513a7758b992e6634e3cdbcd9c96bfc98a1eda8c3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861121_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861121",
+    "retrieved_at": "2026-10-26T21:50:42.948384+00:00",
+    "sha256": "4c66ce0889658f06ebfb4043eb1104a01a0bfcb6cf1fd325526ce29ea35fbc7b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861116_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861116",
+    "retrieved_at": "2026-10-26T21:50:42.328554+00:00",
+    "sha256": "86083de5a3159c16a26bfb313321f624e8a7842a46e933a93038322aac72f064"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912819_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912819",
+    "retrieved_at": "2026-10-26T21:50:53.900414+00:00",
+    "sha256": "4287658dbac9cdc8c077ee3541ab3a1fad5401b1aba17de1ba42300215cf7817"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401924629_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401924629",
+    "retrieved_at": "2026-10-26T21:50:36.789183+00:00",
+    "sha256": "b29d2a845553fc623a83ec06f6f300111c4309c370b6ce5893c0e1607082c303"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401928087_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401928087",
+    "retrieved_at": "2026-10-26T21:50:38.058645+00:00",
+    "sha256": "aa71c386e355df21838650f53a9d6749e3729e79931a7c768269ff9d184d9219"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900637_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900637",
+    "retrieved_at": "2026-10-26T21:50:46.234357+00:00",
+    "sha256": "37b4d3c7f053efe92b1ff2bcd7bc9ea2754f56cad10def7a7969b90febaace6d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900600_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900600",
+    "retrieved_at": "2026-10-26T21:50:47.939206+00:00",
+    "sha256": "a89603f86b3eeaab8550087aaac10432f19be1ce6958e655eb3bb8ecd08f1b3a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915409_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915409",
+    "retrieved_at": "2026-10-26T21:50:34.040162+00:00",
+    "sha256": "7868b0f040319d9d5f558bcc89154195a5a6eca852768e76fd926efa5dd7bcbf"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.615635+00:00",
+    "sha256": "c7014026affb36f1326386f98adcf2acc12cd5943647e4dde1e859d26b6c3931"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732451_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732451",
+    "retrieved_at": "2026-10-26T21:50:53.129010+00:00",
+    "sha256": "816bca02173c8004d79b68d94b4f380e0d559006c789d530a8b13c2d5389eda9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905195_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905195",
+    "retrieved_at": "2026-10-26T21:50:36.532808+00:00",
+    "sha256": "2501ccc427569c9e6aa17b2aabef927c7bec9ffa9fa2ff172bb30cb929bd3489"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861143_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861143",
+    "retrieved_at": "2026-10-26T21:50:43.525124+00:00",
+    "sha256": "479c25534a76b439c71783517107f6f0aa4e02e27fb383f4b80838f625660d87"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401919420_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401919420",
+    "retrieved_at": "2026-10-26T21:50:37.052279+00:00",
+    "sha256": "27a8cd1bc44f9eed9fd469a17867dc5cc0ac21ab2606d863fa6c3ec1c4d5a791"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401921339_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401921339",
+    "retrieved_at": "2026-10-26T21:50:37.601267+00:00",
+    "sha256": "852ce0614e2ae4204aa68ee25dc79675d19a504cc0a94cefbb1549784b212467"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912815_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912815",
+    "retrieved_at": "2026-10-26T21:50:54.272994+00:00",
+    "sha256": "1224d6d33c13bdc5323225f15c4600fc5d754f32dae09e4adc3a4df86fb093b0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920052_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920052",
+    "retrieved_at": "2026-10-26T21:50:44.335092+00:00",
+    "sha256": "e842840d107760c3ad89a7c775b1b4d40c77b47079fc3f2b872eedb3f86dcb1b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861071_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861071",
+    "retrieved_at": "2026-10-26T21:50:39.636308+00:00",
+    "sha256": "1380fa295963c931a8c5554033d260032b998744cb12ecdc3e43d9e9a809ae69"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861046_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861046",
+    "retrieved_at": "2026-10-26T21:50:38.598212+00:00",
+    "sha256": "842c8cb26fac6d18f6f18ded1649cc94b93ec90e75ecad051690e90e633bda70"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915397_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915397",
+    "retrieved_at": "2026-10-26T21:50:33.982620+00:00",
+    "sha256": "b4878ad56ce271495577bbf19465eab140bb484dd8574cd063f5768ad2b94b41"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.081527+00:00",
+    "sha256": "dd6ab81f7143d05d2098f01d9e9de34a407a768de2dbe9c0e5961fc6ea9b2cc7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900604_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900604",
+    "retrieved_at": "2026-10-26T21:50:48.553964+00:00",
+    "sha256": "f94407a60da9f15d80d88fb00377319b37b0430a7bf6079a30af4e6dc7cf221f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro.u19_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro.u19/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.945976+00:00",
+    "sha256": "6da22c9a878aa6268726d6dc18dfebcfe030463057717a2fbbc557d0ff1261e1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900633_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900633",
+    "retrieved_at": "2026-10-26T21:50:46.926943+00:00",
+    "sha256": "f48985960c56116edf37d061f373c6b9c1062cfaf5b95400fd8ef1d6be1b3fc9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915592_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915592",
+    "retrieved_at": "2026-10-26T21:50:34.674849+00:00",
+    "sha256": "cfd47acd12051d2f6dc7cd1187623c0549d0c4fabca15c9aea8a42944ef2ef90"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732455_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732455",
+    "retrieved_at": "2026-10-26T21:50:53.531025+00:00",
+    "sha256": "88084ac8e19418fb7aadb88dbaddad09b5799f132f0919cb2ad6df450fb48670"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912811_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912811",
+    "retrieved_at": "2026-10-26T21:50:54.700321+00:00",
+    "sha256": "f800b3e65dd0b7a7b04f61a721e4dad339a880b3619853eb33cfaaca42e388b9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861129_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861129",
+    "retrieved_at": "2026-10-26T21:50:43.238532+00:00",
+    "sha256": "ac5aa590cb11c09fbb868f934a56714e189a4bb8cd00d639b9282ada040092f5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861042_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861042",
+    "retrieved_at": "2026-10-26T21:50:38.760372+00:00",
+    "sha256": "b34cc6469b75c0ff1a72d3b8c9d2286d7971451746d662f45fa94f9a01870c37"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401918509_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401918509",
+    "retrieved_at": "2026-10-26T21:50:37.088481+00:00",
+    "sha256": "7560544031b79bd883d390c6a488e44672d5de343b250ba019531e1350241e59"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861075_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861075",
+    "retrieved_at": "2026-10-26T21:50:40.274910+00:00",
+    "sha256": "3d79e26bcbee02d39d7ef2b6f81b7ace00a2eb9a4df55eea4416a6468e74a291"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920038_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920038",
+    "retrieved_at": "2026-10-26T21:50:44.580184+00:00",
+    "sha256": "c90367518f0bc80fa56953c89b38186c0e18d26d0f41662c59becbe046a05eb2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920056_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920056",
+    "retrieved_at": "2026-10-26T21:50:43.795033+00:00",
+    "sha256": "9a73afcbe7073c01b4cec3d5c3f8608ac705b5c5bb7229eac83949f506fc4da3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920048_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920048",
+    "retrieved_at": "2026-10-26T21:50:43.971928+00:00",
+    "sha256": "c71fa44ab44d702136fc77fdfc4d31de5125eaa33bbd2772d6daa7b166afbb3c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900591_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900591",
+    "retrieved_at": "2026-10-26T21:50:48.229040+00:00",
+    "sha256": "a6a743b2529d89b424f50b6df5659e49c28a98f3036979c93f927a3e587fde23"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905204_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905204",
+    "retrieved_at": "2026-10-26T21:50:36.005691+00:00",
+    "sha256": "421a1fa2b1ab1f13204b00b937c795fe4db5b33441b8907f8b3e8e6c36b7ad35"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.caf_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.caf/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.149874+00:00",
+    "sha256": "25e060ad8c64f16b3aec26be30f23b4895f93a6871c8a16b644f8c05ccaf26db"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861081_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861081",
+    "retrieved_at": "2026-10-26T21:50:40.619033+00:00",
+    "sha256": "f2f348a4be1d7e7ff784d97c9baf7ebf281e6d38c44bb66d6556cdfe53c0c87b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_u21_401922378_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly_u21/summary?event=401922378",
+    "retrieved_at": "2026-10-26T21:50:53.813632+00:00",
+    "sha256": "3dc22e78cd5b941c0775702cdece2855b86fec2f37d8250666707c6365d5736e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861137_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861137",
+    "retrieved_at": "2026-10-26T21:50:43.452853+00:00",
+    "sha256": "be5ee7476b64f6e1465040ff6da44715abf91e78e4dbdace5a16d83c0ddb967e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.cosafa_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.cosafa/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.945902+00:00",
+    "sha256": "319f7a076e78fdf7d33c06bcd69695b533e26bd3483a66616e0a91736f75e5ab"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861100_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861100",
+    "retrieved_at": "2026-10-26T21:50:41.930720+00:00",
+    "sha256": "96740809f17c57fc4424a1b0b0e1e2a2ff8f47605cf8eba6e3ea96fe0cba5cbb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914255_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914255",
+    "retrieved_at": "2026-10-26T21:50:33.325104+00:00",
+    "sha256": "40b2b46745e1e1a01c0d5e4f530118980c0be96fdb4cc26ff82b2100be7ac5cf"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401917862_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401917862",
+    "retrieved_at": "2026-10-26T21:50:37.636977+00:00",
+    "sha256": "b526b5776e2f83ae74ff38b44642f46f950af30c0edbc59a18a66b3dd3ca186e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732425_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732425",
+    "retrieved_at": "2026-10-26T21:50:51.354093+00:00",
+    "sha256": "43cc89817a579e09a8fc1a87bc5d0d38625be50d2333aa6e6c00d92a2c88a640"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922038_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922038",
+    "retrieved_at": "2026-10-26T21:50:37.568918+00:00",
+    "sha256": "7e61e62d99ba3dc72ba5c259906fc552090a360f3daf00fde5091321be99d63a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732412_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732412",
+    "retrieved_at": "2026-10-26T21:50:50.358860+00:00",
+    "sha256": "ed42a97ed834a1c893b127f2cc104e12e90076a5666614318ad2927313f6e7a1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919999_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919999",
+    "retrieved_at": "2026-10-26T21:50:45.470251+00:00",
+    "sha256": "49ddcc6e10f7117ebff4832bf5f4345d406a2888486a7d254967e76170c486c6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732355_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732355",
+    "retrieved_at": "2026-10-26T21:50:53.032887+00:00",
+    "sha256": "989ecea01c727fca6dd5283c14c8adef3e0049bd2e9611d001ded7be9f9a4270"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915566_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915566",
+    "retrieved_at": "2026-10-26T21:50:34.580893+00:00",
+    "sha256": "62d45588e3f8c9490b5ace3c662bf1a7ef37680ee1ce51dcc1bba75b637b4247"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861058_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861058",
+    "retrieved_at": "2026-10-26T21:50:39.297561+00:00",
+    "sha256": "0f0e875ef9b9f0ff192ff88a9593d27b0de0d81329bac36a1693dcc405a084a1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922333_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922333",
+    "retrieved_at": "2026-10-26T21:50:34.998768+00:00",
+    "sha256": "e89c66fec89e5b9794e76738fbf47dc119521930c5083cd9d2b948ad77615ff9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401905332_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401905332",
+    "retrieved_at": "2026-10-26T21:50:38.294731+00:00",
+    "sha256": "af5f51f8b7297a84252b3a038b6443057ee1784270c2e5d20d70de037ca28dee"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900595_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900595",
+    "retrieved_at": "2026-10-26T21:50:48.095208+00:00",
+    "sha256": "b7ade9ab1016f351f47677166ddc141dc59d69cca7d14c5529d7a8779cce21f0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861104_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861104",
+    "retrieved_at": "2026-10-26T21:50:41.903245+00:00",
+    "sha256": "d90ad385b56493860e7ab74e4644c43d45e6014c6fe60e60757e7a76aa271dab"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861133_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861133",
+    "retrieved_at": "2026-10-26T21:50:43.223779+00:00",
+    "sha256": "85c9055f40e423b15a38f44f18e6d5cdce72e340795a4c32572db0899956479c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:30.893808+00:00",
+    "sha256": "43b87828f6e939da51e1ecea81af572ca8c1e66a76d7d00a6655b8077164527b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861085_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861085",
+    "retrieved_at": "2026-10-26T21:50:41.355396+00:00",
+    "sha256": "1f9a5baa90ef8920917392fd636c1349a11475dbf1b2a4499ffd06d023905c35"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732416_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732416",
+    "retrieved_at": "2026-10-26T21:50:50.159044+00:00",
+    "sha256": "ed905f8792d6ab1ddd214fb1fd33c3769944d16bc7b3fcac576f2ff03f5eb2a0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732421_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732421",
+    "retrieved_at": "2026-10-26T21:50:50.480165+00:00",
+    "sha256": "ddd7f7e5096b7b2d61bf10e6f373b5e72fbafed7808f02ca24cf5122b1adbdf9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401903298_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401903298",
+    "retrieved_at": "2026-10-26T21:50:38.457074+00:00",
+    "sha256": "ac8ba23de6dacfa4db94d09c9e8f174529937f2944e6f2986d8d83db1d8bf836"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915417_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915417",
+    "retrieved_at": "2026-10-26T21:50:34.241902+00:00",
+    "sha256": "6100c4eb21e1587d7323b789342aadbec3935aa96fa15f61363beeade4d2e803"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732351_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732351",
+    "retrieved_at": "2026-10-26T21:50:52.815495+00:00",
+    "sha256": "7580e8baf6a85bd23f9cc44062974b9f2c82362d6239bb149e428f6c8d121111"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_qual_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions_qual/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:30.846786+00:00",
+    "sha256": "b40e988621e175a7620d0cb7843530bc45c3343f1a4eea825ca7752fb1f3d74c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401918083_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401918083",
+    "retrieved_at": "2026-10-26T21:50:35.252493+00:00",
+    "sha256": "572f06987a2d6a4d1dbc651abdd49da645565b55ecf514d258a3ba7eceab4087"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900629_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900629",
+    "retrieved_at": "2026-10-26T21:50:46.687698+00:00",
+    "sha256": "199b9a48f965facb61ce7e0268d5b5cfed908b5a905e9795fa04204bb5c893c9"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861108_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861108",
+    "retrieved_at": "2026-10-26T21:50:42.100741+00:00",
+    "sha256": "a6fb0ed803786034bc5917179d46c33de1be13e7bcd22270b4601cf305bb855f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912807_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912807",
+    "retrieved_at": "2026-10-26T21:50:54.489599+00:00",
+    "sha256": "01ef37ae92bdeffd79f56ecaa4d87c56d73c24f215ce39c68791e81b2ba2bde3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900573_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900573",
+    "retrieved_at": "2026-10-26T21:50:49.010425+00:00",
+    "sha256": "eb70f0af3c1a10b9913e3fd9435ee09f6be3c1075b3d9a77f48215836d8bdbff"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861089_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861089",
+    "retrieved_at": "2026-10-26T21:50:40.532823+00:00",
+    "sha256": "fad2d43f85512f9ee665ac98f56c0daf44b39db122b34248d128d9425b7ff0d2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922308_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922308",
+    "retrieved_at": "2026-10-26T21:50:36.383614+00:00",
+    "sha256": "8e3a2ba142930a681c2ddb71251136a5748ec36d9d49b298b101449be1739234"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861054_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861054",
+    "retrieved_at": "2026-10-26T21:50:39.009817+00:00",
+    "sha256": "dbcd524bce56118cb615c240629109f049b4027b8ed467900a077d850f33a2a0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861063_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861063",
+    "retrieved_at": "2026-10-26T21:50:39.607368+00:00",
+    "sha256": "57ddfb19d40c8f6c3749c157b1a8c128b4406d1fd1825c709d0b8fac766fee31"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900599_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900599",
+    "retrieved_at": "2026-10-26T21:50:47.986410+00:00",
+    "sha256": "e242ea30641c0d53b23d085e4b060188c87fd6ee5cc978fe410ca3ff0a8847af"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920040_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920040",
+    "retrieved_at": "2026-10-26T21:50:44.542048+00:00",
+    "sha256": "edc88d0262f981b9e9893722853c902467cf85348fe52e0a05f30022c2fc0baa"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401914357_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401914357",
+    "retrieved_at": "2026-10-26T21:50:38.052204+00:00",
+    "sha256": "040b6dcb9f4060ee76974d19eeab27dc5443b41b232ccf8a4e33ee87f71a620f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900612_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900612",
+    "retrieved_at": "2026-10-26T21:50:47.749902+00:00",
+    "sha256": "de7edb00b449ebe48dffa0869fdabfaa0809da131a668f0219bbef376aa074c2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900625_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900625",
+    "retrieved_at": "2026-10-26T21:50:46.920871+00:00",
+    "sha256": "7a9f7027b045f6037281d3a947a154a6b815f785b194086c8ef91c026821c9de"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915442_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915442",
+    "retrieved_at": "2026-10-26T21:50:33.625436+00:00",
+    "sha256": "1f9fa1a1f7cb2b73128625bc3a03dc365a423ebae7a8e19a2df8b808ead538c8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919991_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919991",
+    "retrieved_at": "2026-10-26T21:50:45.983827+00:00",
+    "sha256": "086c5fc6476c9ebf9264516d2ec4ecbccf9ea4f2b5793898a71558849f0e9d01"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732443_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732443",
+    "retrieved_at": "2026-10-26T21:50:52.259629+00:00",
+    "sha256": "5357113a6bbada1770ef9ab3e4bca3f2241411bd2768bd68bee4458ff1afae56"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.concacaf_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.concacaf/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.207289+00:00",
+    "sha256": "5a21d873594a43bdb190bdc634abbfdf192f7b41e97aeedb0fef0fa03c034dc2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.afc_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.afc/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.203646+00:00",
+    "sha256": "eedab839e8391bd098e8cb1f8ca71fcbdd0aa7eeafbde9d22444d689ac9c49e0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900577_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900577",
+    "retrieved_at": "2026-10-26T21:50:48.987656+00:00",
+    "sha256": "95a89e98922b021bf43f8bec0e6c352428e43982273d0b429aa6d3d53c9d25f3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912803_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912803",
+    "retrieved_at": "2026-10-26T21:50:54.680996+00:00",
+    "sha256": "fc3b95523dfa72fb201a6915135b22a820132557e7eadfd02f47a8168c212eeb"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914259_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914259",
+    "retrieved_at": "2026-10-26T21:50:33.246586+00:00",
+    "sha256": "bd3ff91376d8214b2d2ac575048912180ab3eed7770188ec878df47b578b7e13"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920044_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920044",
+    "retrieved_at": "2026-10-26T21:50:44.685982+00:00",
+    "sha256": "2e0c45d0e2aaa4016a189e8affcf34854ea752fe31c8f31f8cd09c5eb467ed1c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861067_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861067",
+    "retrieved_at": "2026-10-26T21:50:39.935270+00:00",
+    "sha256": "564f0cd424fccdb733c1f28c3fa84a844a3f63cd5cfc1e8a9d69571c966c89be"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861050_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861050",
+    "retrieved_at": "2026-10-26T21:50:38.744844+00:00",
+    "sha256": "5225b6262859327405c69564bf6bc3f969c7df4232809cd4bf229702ad65ca30"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912788_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912788",
+    "retrieved_at": "2026-10-26T21:50:55.179815+00:00",
+    "sha256": "745d22a7c5ecac47026d7f33c01e2445cc1705fa985fd94a1e453d2ad77e80b8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915446_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915446",
+    "retrieved_at": "2026-10-26T21:50:33.625213+00:00",
+    "sha256": "815544d9242c5066b9cd088b1e905d58a379e2f6b726408496dbc8839381f85c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919995_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919995",
+    "retrieved_at": "2026-10-26T21:50:45.688724+00:00",
+    "sha256": "e05521ca643fa262675cb58e3760f6f6c9cdea5625bd2a56d50ebca6cd4b458b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900621_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900621",
+    "retrieved_at": "2026-10-26T21:50:46.963858+00:00",
+    "sha256": "5c5381fe773f8ae7123e138ee0d6a53d36c74e3907eea1b76bb9b87e3f011e73"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900616_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900616",
+    "retrieved_at": "2026-10-26T21:50:47.249525+00:00",
+    "sha256": "db3ebc72237b4417129e718bebb4ac5d1e956b30393439d789553ef9e5937f99"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.578141+00:00",
+    "sha256": "ce6f145539c44cfd6e5ed57c1f29cead1ea7e9bf446060e730853d7982d9c9d1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732447_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732447",
+    "retrieved_at": "2026-10-26T21:50:52.420110+00:00",
+    "sha256": "efcc8ccf45aa5219ed1196a5e62b1312b0c4a913fe87d04758d32b74d8e145d6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732429_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732429",
+    "retrieved_at": "2026-10-26T21:50:50.868154+00:00",
+    "sha256": "e246ac8847abc7ca88f079409a56f2b276dc5b5449db2fbdb5587014c2b8d975"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401899825_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401899825",
+    "retrieved_at": "2026-10-26T21:50:36.755651+00:00",
+    "sha256": "c8e05b498454890c41ee7d793bd3b77a672211d23c7492eb3ab4a124667ee285"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401920058_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401920058",
+    "retrieved_at": "2026-10-26T21:50:35.375599+00:00",
+    "sha256": "006d5557362e91eef5b511c616a075250482aff2548da1fe33edcfdfada8d404"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732350_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732350",
+    "retrieved_at": "2026-10-26T21:50:53.557788+00:00",
+    "sha256": "fa20ab92b70f768bba535f0e1dbad04d72363273da21d6a065f013994860d0a7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900628_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900628",
+    "retrieved_at": "2026-10-26T21:50:46.300549+00:00",
+    "sha256": "7ed20b727356842b70d6edb7c861855bde8f3010cf1d3592f53a7b6114d5afb8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_qual_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa_qual/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:30.838689+00:00",
+    "sha256": "2abf83027e97bf5acab222e335e04e3411f9f33cdf7d178be28965690baecf84"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732420_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732420",
+    "retrieved_at": "2026-10-26T21:50:50.401799+00:00",
+    "sha256": "4745903fe01f746951a9299dce745f6ec489fee0f2e1ec66c0d2f72fcfc3e354"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861105_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861105",
+    "retrieved_at": "2026-10-26T21:50:42.040718+00:00",
+    "sha256": "b8bcb3f6a1f96eff7754b1faac163d95065c18fc0fb1eb56fa09c33446f53def"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.764746+00:00",
+    "sha256": "fdff8129e2f2d22a6a9a2292537f97ab9b29d5e60b16dcbcfc87c36a74c62767"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861132_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861132",
+    "retrieved_at": "2026-10-26T21:50:43.041877+00:00",
+    "sha256": "c129a0e0f54cb0cd21bc3613664134dddb019b539559d2294c1fbffdfebab81a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914267_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914267",
+    "retrieved_at": "2026-10-26T21:50:32.913602+00:00",
+    "sha256": "0c6a00f38be8747cea3f3cdfcf97693180ccd84eb8f1f0fd762f043551aaaf85"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861084_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861084",
+    "retrieved_at": "2026-10-26T21:50:41.031248+00:00",
+    "sha256": "7273302fd26dcf66217d9356a99376d71678052602da60ed988ac44bc8981b96"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.world.u20_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world.u20/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.829392+00:00",
+    "sha256": "c3c671cde79f29d30ac78abf676297163a07158cd8b09fa19f5b792843b69afa"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861059_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861059",
+    "retrieved_at": "2026-10-26T21:50:39.558590+00:00",
+    "sha256": "07491ed34b3da62c79cd6fa3bfba3f6adbd7f94038560a6d21af827b656435f3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.wcq.ply_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.wcq.ply/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.341593+00:00",
+    "sha256": "f1c161cd2d783ec17d91d317c43d755cba3faddfc9aa995337561ef6350c153c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922332_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922332",
+    "retrieved_at": "2026-10-26T21:50:35.393025+00:00",
+    "sha256": "21ee7f189f6748ed98940e5bdc71d812de2786ffa9358342b83b817b972adf31"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900594_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900594",
+    "retrieved_at": "2026-10-26T21:50:48.342764+00:00",
+    "sha256": "047c553e52fd553e591e15c0e6a61d834f9bcc7880429aedaae99d4d5b1f20cc"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401916425_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401916425",
+    "retrieved_at": "2026-10-26T21:50:37.555282+00:00",
+    "sha256": "903ed0d145bd82a89b792eff4a664e0d808ab177b240f7d3038f7e0f40121245"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919998_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919998",
+    "retrieved_at": "2026-10-26T21:50:45.940506+00:00",
+    "sha256": "dacf0411ed4c3f2c5709fc70511233fd650dc3090809651cac942ea939eff9ee"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732354_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732354",
+    "retrieved_at": "2026-10-26T21:50:52.728495+00:00",
+    "sha256": "196736b68d5cd31d8d579d4c14fbaa1da2fa482fc26fa4e166e925fead5984e1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915425_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915425",
+    "retrieved_at": "2026-10-26T21:50:33.730930+00:00",
+    "sha256": "588a566830566354804668aa5a4ab5b1c2249ec25bbfcc24a4d0b8304d610265"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732497_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732497",
+    "retrieved_at": "2026-10-26T21:50:53.243499+00:00",
+    "sha256": "c7cfef76cab2b28c0e9cf0ee8a224b8d7ac8421541791c4ad62532caae42200f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915412_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915412",
+    "retrieved_at": "2026-10-26T21:50:33.751711+00:00",
+    "sha256": "14b1e9726bee95acf53309859909457e003140293d9e7d447f89ce593a71342b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732424_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732424",
+    "retrieved_at": "2026-10-26T21:50:50.925313+00:00",
+    "sha256": "2fb8bc7abb3b8fcded0f294f6de28a442ed39fd8fb9abd2256201279028d7a1d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732413_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732413",
+    "retrieved_at": "2026-10-26T21:50:50.351088+00:00",
+    "sha256": "a63f6c77e51978b65fe8cf54c7baf1c5e7bd66ff00bcb59b8a6d1b87745a95bf"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861080_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861080",
+    "retrieved_at": "2026-10-26T21:50:40.421327+00:00",
+    "sha256": "7f8c7339c9b85b31c903fe66c6a72de0f8fe94837719e5a4ccb17cded182fd6f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861136_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861136",
+    "retrieved_at": "2026-10-26T21:50:43.850566+00:00",
+    "sha256": "67c1c667cc5d7091fbb424983164115737e6bbfe6bb9bf6491c3384e66af2ab7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861101_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861101",
+    "retrieved_at": "2026-10-26T21:50:41.662292+00:00",
+    "sha256": "7da5c2a93d81d44c4b04b880473a99a7a410b5e5acd48d554a0bdffefa9f6686"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920049_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920049",
+    "retrieved_at": "2026-10-26T21:50:44.384610+00:00",
+    "sha256": "6514fa0448bf7e70cb7cd8557320bb75b954321c3fce343c9447906288508afd"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900590_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900590",
+    "retrieved_at": "2026-10-26T21:50:48.631585+00:00",
+    "sha256": "75349bf648bd6c531036b354f8f9d044c16c365c7346e24ba1f0ae6c6a170cc5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920027_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920027",
+    "retrieved_at": "2026-10-26T21:50:45.630168+00:00",
+    "sha256": "a2b4290bea956369e3004c10950ccecf28ca39208e622212d6de15c1c0944995"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732446_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732446",
+    "retrieved_at": "2026-10-26T21:50:52.538977+00:00",
+    "sha256": "fc9efa235489c132856dcf80ec7f979232383fb3a99b36d27e69c77cace9a4c3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732428_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732428",
+    "retrieved_at": "2026-10-26T21:50:50.970603+00:00",
+    "sha256": "ed69f71d5316aa06efff73ae4e18dad81735d6bf667c26e15eb8a49f4c9f13ce"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:32.337161+00:00",
+    "sha256": "26f31fde00dd3a6f778d5fd5c235fbf076f2e6b2cdc240a58c83fb7c4ec61fb1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912789_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912789",
+    "retrieved_at": "2026-10-26T21:50:55.322457+00:00",
+    "sha256": "25425b90b916e228c1cd604dc1639e7dadfc4f89e3b27351ce418bb6e5a369a4"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919994_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919994",
+    "retrieved_at": "2026-10-26T21:50:45.810820+00:00",
+    "sha256": "3a2d74542213ff80db2fde55d298af94ce0de50785a9039b2d2675ea186d728c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900620_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900620",
+    "retrieved_at": "2026-10-26T21:50:47.217459+00:00",
+    "sha256": "54b4a40497031e10245dffd9d49b98c85525ddd11312cffb8722052d22a15828"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732358_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732358",
+    "retrieved_at": "2026-10-26T21:50:50.267129+00:00",
+    "sha256": "86c53e3a89be9846e2613ca79074ea5c0fbf2ce3e0d20c0826cad9b498f64cad"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900617_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900617",
+    "retrieved_at": "2026-10-26T21:50:47.264871+00:00",
+    "sha256": "38781581db43f0f97be1f8236e268cb94df1c58f8e765a680cddde467f72ad48"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920045_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920045",
+    "retrieved_at": "2026-10-26T21:50:44.521107+00:00",
+    "sha256": "0948291982c1693a018f1733127939f67228ae0689b56c9666fbbb8a38dac7f7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914285_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914285",
+    "retrieved_at": "2026-10-26T21:50:33.327985+00:00",
+    "sha256": "d7821029c9c00da01ebcf30a638d9ef145ed45f3c43510707e16dd44f1a87b51"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861066_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861066",
+    "retrieved_at": "2026-10-26T21:50:39.576664+00:00",
+    "sha256": "3b1088f872829f09a9afe7c7a0a7980a8edd3e48791d1847e25b7e32247a9d68"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861051_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861051",
+    "retrieved_at": "2026-10-26T21:50:39.169905+00:00",
+    "sha256": "508fc94f8bd0cb04ef8c219283d72dfd9343da200c4630b1257de295f5246990"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401902642_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401902642",
+    "retrieved_at": "2026-10-26T21:50:36.097951+00:00",
+    "sha256": "43d087d319e79b463649957959d0c3043b215c997a23d2fe07c334cc8eae43dd"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900576_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900576",
+    "retrieved_at": "2026-10-26T21:50:49.203590+00:00",
+    "sha256": "22d9998e311b9dfb0f0eb08246d6e790701bf1bfed26f207c5979e45fee38c11"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912802_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912802",
+    "retrieved_at": "2026-10-26T21:50:54.711808+00:00",
+    "sha256": "04bedf67ec1d133a9a5f7b04faf503077e01652a75a6dc67e69779c4101a76ce"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_401914258_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.league_cup/summary?event=401914258",
+    "retrieved_at": "2026-10-26T21:50:33.455362+00:00",
+    "sha256": "1c91b662ee91b2923d60e8fb3af8f73119eb8516415802ef2196747c3253f3c3"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732442_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732442",
+    "retrieved_at": "2026-10-26T21:50:52.505738+00:00",
+    "sha256": "ad8c4c210c47d97b5853b46847e65fcfaa32761a90131873a97a4ab7488e9fbd"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900613_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900613",
+    "retrieved_at": "2026-10-26T21:50:47.623960+00:00",
+    "sha256": "342ed1364b6eadf45957cf3ac61188f7c42bcb39cec1e7daa28f2ea94abd8f96"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900624_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900624",
+    "retrieved_at": "2026-10-26T21:50:46.999940+00:00",
+    "sha256": "a4c6b66ee8946306eb6bbdf9355900e8aa278e78a283e2f733e6ff7e4b1aea01"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401919990_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401919990",
+    "retrieved_at": "2026-10-26T21:50:46.353646+00:00",
+    "sha256": "6934cfb6ca8c199901413d4c8aee2aab00444c361b7e8e7fea83c179b4c2710d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922309_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922309",
+    "retrieved_at": "2026-10-26T21:50:36.096758+00:00",
+    "sha256": "aefd32b29ad4374eb41bc352165dd0a7ff47ca2f677b68a5d1972432f5cd8aea"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861055_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861055",
+    "retrieved_at": "2026-10-26T21:50:39.155670+00:00",
+    "sha256": "46c2a6b3f36f425dc9a2a52a4666681d1a80502211267dea14d83ff5dfae8e1f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861062_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861062",
+    "retrieved_at": "2026-10-26T21:50:39.771470+00:00",
+    "sha256": "1374e97f5c148241ac1d67fb126ff2ad1c2e4b38452cc112810ea66eac1513ef"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.conmebol_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.conmebol/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.172247+00:00",
+    "sha256": "1a3c0e5460877a4a175324beb05292d80c8a747a9d85f559fdd732eea0114ea6"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900598_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900598",
+    "retrieved_at": "2026-10-26T21:50:48.239089+00:00",
+    "sha256": "3d60a77cc0b5185899df1bd55d0dc31fd660e98d6b4ec3f53116c2e48fcc7fc8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920041_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920041",
+    "retrieved_at": "2026-10-26T21:50:44.147061+00:00",
+    "sha256": "2f6b2802d0ab47503c5fc2ff8d8466c5180bfecebd9c275052556c1105e8797a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861109_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861109",
+    "retrieved_at": "2026-10-26T21:50:41.729501+00:00",
+    "sha256": "b98b6899543f1cccace9bcf97ce1d04825d9b9bbcb2b6e8d44406841b684f60d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401913267_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401913267",
+    "retrieved_at": "2026-10-26T21:50:37.124248+00:00",
+    "sha256": "39d0105d6c56941e75a5697103169d43f65a385529e0824d9a679e0ba37882ae"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912806_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912806",
+    "retrieved_at": "2026-10-26T21:50:54.808840+00:00",
+    "sha256": "2e242196f2b4c196ca944f38cf14361b6d6d925faaec5f2f920101a2ce497eea"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.047614+00:00",
+    "sha256": "7c8a60601ef54e479f03e3412270ea244c90c5ec7544939821f749774ad00a05"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900572_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900572",
+    "retrieved_at": "2026-10-26T21:50:49.681555+00:00",
+    "sha256": "eae098106f107c32d1ca990309c1119693cd1a60290e2b028fe8e842c5f8d2b8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861088_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861088",
+    "retrieved_at": "2026-10-26T21:50:40.931424+00:00",
+    "sha256": "d21d46f62bd171f24012ecba4c45d03b050e776a4c48a354148fa00bf17107c8"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401912454_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401912454",
+    "retrieved_at": "2026-10-26T21:50:37.795765+00:00",
+    "sha256": "72377758481e78faba3cfda9a223bc897064b9dd814706ada48b0d361b0100e1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861096_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861096",
+    "retrieved_at": "2026-10-26T21:50:41.603947+00:00",
+    "sha256": "68b88ec0400801b17ebbb4b81635e3645a10899b0aec0d893c9238abef27ceb4"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861120_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861120",
+    "retrieved_at": "2026-10-26T21:50:42.716254+00:00",
+    "sha256": "c808bacc592d77cd324ee51c92b68b1263933a2d91156a6a21c732fb57454d59"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861117_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861117",
+    "retrieved_at": "2026-10-26T21:50:42.607489+00:00",
+    "sha256": "dfa4d2cde88d360383dc00930fec47d8b0ff302a86b129d266bb0f83d567f94a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912818_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912818",
+    "retrieved_at": "2026-10-26T21:50:53.907388+00:00",
+    "sha256": "b1addcc1cce4a6c5d0ba5d598688955476eedfb0842523a955055c095cb74ed0"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900586_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900586",
+    "retrieved_at": "2026-10-26T21:50:48.987681+00:00",
+    "sha256": "3a8cfcfc6c3867ff1a05b1fc40c7ca908e117bdeef30e6520caa97fade03df15"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401914142_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401914142",
+    "retrieved_at": "2026-10-26T21:50:35.981370+00:00",
+    "sha256": "9f28661aa15eabc34c913273160be0d55cd84c6d1e8ea51753be6f4be42db127"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920031_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920031",
+    "retrieved_at": "2026-10-26T21:50:44.959159+00:00",
+    "sha256": "25537c158126704734f68d55bf089ba1cda61a9f27edd5852e9e1ba592646432"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758361_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758361",
+    "retrieved_at": "2026-10-26T21:50:52.636125+00:00",
+    "sha256": "ba5964db2b943eed93ce3a350267d2b3e870078240a23e3d45690fe2f7525bc7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920006_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920006",
+    "retrieved_at": "2026-10-26T21:50:45.257809+00:00",
+    "sha256": "fc5eaeac52e44ceede0b143270f1eaca87cf33bd0fd078cc58fc9a450724265f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_401758356_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=401758356",
+    "retrieved_at": "2026-10-26T21:50:50.863133+00:00",
+    "sha256": "ba0a7d5120348777f0eae83668542b9921ca843944be6fd9c5a3a92c59a2e7ba"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912793_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912793",
+    "retrieved_at": "2026-10-26T21:50:55.368892+00:00",
+    "sha256": "bd7d08d4fa91b0c7ee0bfe0124046d01819660e640a8d55182c8da3466eed262"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915571_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915571",
+    "retrieved_at": "2026-10-26T21:50:34.696935+00:00",
+    "sha256": "02f38ff9bc1400c0575372f1862ac99a8a28351e70e7e9377d2fb8c1e2af9a8b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915546_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915546",
+    "retrieved_at": "2026-10-26T21:50:34.633817+00:00",
+    "sha256": "5a1b230807f8bd32a524d4c0ec0b42fb180859127a48bf62cf34344d58dc8a91"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732432_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732432",
+    "retrieved_at": "2026-10-26T21:50:51.736602+00:00",
+    "sha256": "8ef411bee42555396e0d82c99bb42213262bc137931c1e326fcba9940c06e92a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861113_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861113",
+    "retrieved_at": "2026-10-26T21:50:42.395136+00:00",
+    "sha256": "065a1ef5164257a3fa70613552da49ab9731eb0d58126216c08b49ff2c87f177"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900568_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900568",
+    "retrieved_at": "2026-10-26T21:50:49.401809+00:00",
+    "sha256": "aa985edc7a3eaed3f7ec72a8077948d3998cca7f3c1a0af46b264f4aa325ba6a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401921545_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401921545",
+    "retrieved_at": "2026-10-26T21:50:36.926310+00:00",
+    "sha256": "57930872c5d3621dadfd34ae187f5bdeee219a04f12900207597e46a1bf0a3a2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861124_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861124",
+    "retrieved_at": "2026-10-26T21:50:42.826284+00:00",
+    "sha256": "83606ee429d4a37759fc83ea20d3fb0d5eb5a3da8012a509853a271b8c071724"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861092_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861092",
+    "retrieved_at": "2026-10-26T21:50:40.962645+00:00",
+    "sha256": "2270a142016af9b67666cf5dd7856f2c6e0b5a71db53225da5d05f477991b682"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa.conf_401915842_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/summary?event=401915842",
+    "retrieved_at": "2026-10-26T21:50:34.984064+00:00",
+    "sha256": "4a23c02176058876f7b069792e4b97de75561b0f015e0de968af12ad86bcb74f"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920002_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920002",
+    "retrieved_at": "2026-10-26T21:50:45.454450+00:00",
+    "sha256": "81a59f42b44ef2e9b6909317ab2f999a796961d72d5f305b853a844cd37fe52b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401922313_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401922313",
+    "retrieved_at": "2026-10-26T21:50:34.903537+00:00",
+    "sha256": "31f5f1acd7a090f4c55436eb6c3cf6e7a4a0534474612c2d396c53b92d4cb3df"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861078_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861078",
+    "retrieved_at": "2026-10-26T21:50:40.413852+00:00",
+    "sha256": "fd07ead1d8b8d67fb80b18404eb7e1929ce7304097e8c23bd8b98b183e3a7d90"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920035_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920035",
+    "retrieved_at": "2026-10-26T21:50:44.803846+00:00",
+    "sha256": "abcd3523f56486277d94a9fb6315920aa16f37dc60e34a94bef2b778cd3399e5"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900582_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900582",
+    "retrieved_at": "2026-10-26T21:50:49.706259+00:00",
+    "sha256": "60a011c92caa31dde939e58f73f8ae8e60f82dec3ffeb6e5aa17168444f83882"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_401915575_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/summary?event=401915575",
+    "retrieved_at": "2026-10-26T21:50:34.674963+00:00",
+    "sha256": "4d754b08db1f482df42277a3d3221a33de787332a302730890c60551cf35f567"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900609_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900609",
+    "retrieved_at": "2026-10-26T21:50:47.658086+00:00",
+    "sha256": "565938fce50d948b6e248e801d6ebd93802be156e55b819d9b020df852da5f50"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912797_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912797",
+    "retrieved_at": "2026-10-26T21:50:55.005093+00:00",
+    "sha256": "6bf163de05cda0123a4c77cb3f2ccea22dda523486b4949fd205838b067f572a"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732436_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732436",
+    "retrieved_at": "2026-10-26T21:50:51.767137+00:00",
+    "sha256": "94b6c72ff19859521d45f724cf9d874b4ce3e70dca7dc49539d16f5f0b0d4fc1"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861043_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861043",
+    "retrieved_at": "2026-10-26T21:50:38.942216+00:00",
+    "sha256": "82d515f283b75df9b1f7c679257aaaf295605c35ffe8bb4b6df8f5afe2e27a1e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401918508_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401918508",
+    "retrieved_at": "2026-10-26T21:50:37.780715+00:00",
+    "sha256": "6ae5a4448d08c0db7f987a6fde35d86091cf9055e4189f66dc8eab9e5ebe8dad"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861074_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861074",
+    "retrieved_at": "2026-10-26T21:50:40.037622+00:00",
+    "sha256": "f1fd247aad33f31157dcf72c4112971148d0fbf2d51def3ce3c562284e787867"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920039_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920039",
+    "retrieved_at": "2026-10-26T21:50:44.670532+00:00",
+    "sha256": "e511858323af496a58464ec129e0da81362362edb68f3f28467f1217773efa55"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920057_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920057",
+    "retrieved_at": "2026-10-26T21:50:43.748139+00:00",
+    "sha256": "c6dda8f0cf5eec7c5b6111249b8524abf0f44f36644401132c8c752f12032fd4"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912810_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912810",
+    "retrieved_at": "2026-10-26T21:50:54.364879+00:00",
+    "sha256": "128765f77550918da6544325b0fcefb299d878717b085b881a682dbc68a5f68b"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861128_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861128",
+    "retrieved_at": "2026-10-26T21:50:43.276051+00:00",
+    "sha256": "63a4deb7328ece812249613dd567440af7b02172ddfb834b695e4d5669fb1743"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_401915312_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/summary?event=401915312",
+    "retrieved_at": "2026-10-26T21:50:34.476653+00:00",
+    "sha256": "7e82b80dc37c734a14eadfcf4728150bb5706ce4f5ecb022d83a53d28c4a4068"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732454_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732454",
+    "retrieved_at": "2026-10-26T21:50:53.705667+00:00",
+    "sha256": "54117e3d9bb0cc977bc6f082e2afdc7ea8af018462b2b53f571b733d84c42cd2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900605_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900605",
+    "retrieved_at": "2026-10-26T21:50:47.938984+00:00",
+    "sha256": "daafdd4a1e9d844c049828210c857d52e1ccf5e9062fc1a5de49d22753ec7574"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900632_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900632",
+    "retrieved_at": "2026-10-26T21:50:46.536067+00:00",
+    "sha256": "7850b3b2c5b444efc303a6c9f888a41f248da9aff482d48a26ec658f71dd1b02"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_401920053_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations_qual/summary?event=401920053",
+    "retrieved_at": "2026-10-26T21:50:43.834273+00:00",
+    "sha256": "d8c46e819546e523a9e3f3ecb7e1ae2a527998afc3a9045f9cd4410db0d6641e"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861070_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861070",
+    "retrieved_at": "2026-10-26T21:50:39.941409+00:00",
+    "sha256": "d5379d76ecd3c05707d02dd0f6f76fff13ca742ccaa0150bd9dd2ce5c2a83221"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861047_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861047",
+    "retrieved_at": "2026-10-26T21:50:38.472852+00:00",
+    "sha256": "93c55e06e2cc83fb204e3f10c20043e436cff1eace9812f77c70bf313558488c"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_live.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/scoreboard?dates=2026&limit=1000",
+    "retrieved_at": "2026-10-26T21:50:31.695988+00:00",
+    "sha256": "c6de21d5a5b621ab8360121c0d44120482fbeedc1123dfcb31763f56841459e7"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_401861142_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/summary?event=401861142",
+    "retrieved_at": "2026-10-26T21:50:43.515169+00:00",
+    "sha256": "f12b35a2eb840f88001cae17daba32f45bb3cd5ae8d566f11997b71aa498a662"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/afc.cup_401912814_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/afc.cup/summary?event=401912814",
+    "retrieved_at": "2026-10-26T21:50:54.182622+00:00",
+    "sha256": "4744ac58dd16d39e79ac98df002ddbf3db35a125ae506d4a2d14faf55e7c7382"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732450_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732450",
+    "retrieved_at": "2026-10-26T21:50:53.236539+00:00",
+    "sha256": "d2afbade9e924a29961a594b4b6f0f0cfc77029363ab8271d96dbb488f6cda7d"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401900325_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401900325",
+    "retrieved_at": "2026-10-26T21:50:37.294571+00:00",
+    "sha256": "734fa9255a2b751766a43416bc1d2b1abe047a141b12389e25e94f028bca6478"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401902245_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401902245",
+    "retrieved_at": "2026-10-26T21:50:37.957651+00:00",
+    "sha256": "31e4272e4452e16fe74cb2a079c112a917f8a40613f6e63dd6b18a30b0f536e2"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_732409_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro_u21_qual/summary?event=732409",
+    "retrieved_at": "2026-10-26T21:50:49.576729+00:00",
+    "sha256": "84dca19b082eb19be885b2785d2327051928f52d81e30aba1867298c52cb2948"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_401903234_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.friendly/summary?event=401903234",
+    "retrieved_at": "2026-10-26T21:50:36.513872+00:00",
+    "sha256": "c82fa13b331ec8434ed482797203a845be472983ecb18b8f7502058dce1299ae"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900636_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900636",
+    "retrieved_at": "2026-10-26T21:50:46.219280+00:00",
+    "sha256": "724ab7d982c0f015951fa3ddf516d367e3240a1c27fd22871fd65f1569abb3fd"
+  },
+  "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_401900601_summary.json.source.json": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/summary?event=401900601",
+    "retrieved_at": "2026-10-26T21:50:48.132946+00:00",
+    "sha256": "38b6decc4f74714b100ffcb860c59c52ebb1017678ccabc0655dd10288ced4aa"
+  }
+}

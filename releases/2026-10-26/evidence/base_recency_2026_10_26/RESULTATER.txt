@@ -1,0 +1,100 @@
+TIDSVEKTING I GRUNNMODELLTRENINGEN – SAMLET RESULTAT
+26. oktober 2026
+
+To nye grunnmodellvarianter er testet på samme datagrunnlag som dagens standard. I standarden har treningsradene lik nominell vekt i CatBoost. I de nye variantene avtar vekten med365eller180dagers halveringstid. Dagens etterkalibreringsoppskrift med180dagers halveringstid, Ridge0,01 og oppdatering hver fjerde runde er beholdt i alle varianter.
+Ingen produksjonsmodell, kildekvittering eller tidligere resultatfil er endret.
+En gammel treningsrad lærer modellen sammenhengen mellom datidens form/minutter/kontekst og neste utfall. Lik vekt på gamle treningsrader betyr derfor ikke at dagens spillerprognose er et likt gjennomsnitt av gamle og nye sesongpoeng. Modellen bruker fortsatt ferske form-, rolle- og minuttvariabler ved hvert prognoseopphav. Denne testen undersøker om selve den lærte sammenhengen blir bedre når nyere eksempler veier mer.
+
+NETTO SESONGPOENG ETTER BYTTEKOSTNADER
+Variant                           2023/24      2024/25      2025/26     Snitt alle3    Snitt siste2
+Dagens: lik grunntreningsvekt             2465         2604         2335         2468.0          2469.5
+Grunnmodell365dager                       2387         2504         2199         2363.3          2351.5
+Grunnmodell180dager                       2528         2431         2140         2366.3          2285.5
+
+ENDRING MOT DAGENS STANDARD
+Variant                           2023/24      2024/25      2025/26     Varians       Spenn
+Dagens: lik grunntreningsvekt               +0           +0           +0      12064.7         269
+Grunnmodell365dager                        -78         -100         -136      15784.2         305
+Grunnmodell180dager                        +63         -173         -195      27181.6         388
+
+VURDERING
+Flere netto poeng enn standard i alle tre sesonger: ingen ny variant.
+Flere netto poeng i begge de to siste sesongene: ingen ny variant.
+Høyest2025/26: Dagens: lik grunntreningsvekt (2335).
+Høyest snitt siste to sesonger: Dagens: lik grunntreningsvekt (2469.5).
+Alle tre år er allerede undersøkt i tidligere arbeid. Dette er en utviklingstest, ikke urørt holdout, statistisk signifikans eller dokumentert faktisk FPL-rangering. Nyere sesonger vises særskilt i tråd med brukerens prioritering; det er ikke valgt nye rapporteringsvekter etter resultatene. Lavere varians kan også skyldes lavere poeng i de beste årene. Ingen automatisk modellpromotering er gjort.
+
+ÉN ENDRING I GRUNNTRENINGEN
+Vekt=2^(-alder_i_dager/halveringstid), der alder er kalibrerings-/treningsfrist minus treningsradens opprinnelige prognosetidspunkt. Vektene normaliseres til gjennomsnitt1 før de overleveres til CatBoost. Dette bevarer samlet vektskala og det deklarerte L2-nivået, samtidig som relative gamle/nye observasjoner får ulike vekter. Faktiske interne Pool-vekter er lest tilbake, kontrollert og lagret.
+Alle opprinnelige kvalifiserte rader beholdes med positive vekter. Samme325felter, uvektede treningsmedianer, mangelflagg og mål. De fire målene er angrepspoeng, oppmøtepoeng, øvrige poeng og minutter/90. Ingen ekstra komponent-, kandidat- eller sesongvekt er lagt til. Ingen xG/xA.
+Samme CatBoost150/depth5/lr0,05/L2=5/seed20261025/MultiRMSE og én tråd. Grunnmodeller og kalibrering oppdateres i runde1,5,9,...37. De faktiske grunnmodellene er trent på nytt, i motsetning til de tidligere testene som bare endret etterkalibreringen.
+
+LIK ETTERKALIBRERINGSOPPSKRIFT – EGNE FØRFRISTGRUNNPROGNOSER
+Hver variant har fått egne historiske H1/H3-grunnprognoser også i læreråret2022/23. Dermed trenes kalibreringen på samme variants tidligere prognosefeil; vi blander ikke nye grunnmodeller med gamle lærerprognoser.
+Etterkalibreringsformelen er uendret:180dagers halveringstid, samme uvektede transformasjonsmetode, Ridge0,01, upenalisert konstant og åtte separate fremtidshoder. Koeffisientene og datatransformasjonenes verdier trenes på nytt fordi grunnprognosene er endret; de er ikke kopiert fra kontrollmodellen.
+Samme førfristfilter: prognoseopphav, konkret målutfall og hele H3-lærereksemplets utfall må være kjent før hver oppdatering. Ingen senere utfall eller ny værfasit er lagt inn i tidligere frister.
+
+HVORDAN VEKTFORDELINGEN ENDRES
+Siste H1-grunnmodelloppdatering i hver rapporteringssesong. Årets prosent gjelder grunntreningens rader, ikke etterkalibreringens lærerarkiv.
+Sesong / variant                 Årets antall   Alle rader   Årets vektandel   Vektet effektivt antall
+2023-24 / lik vekt                     21394        64948             32.9%                    64948
+2023-24 / base365                   21394        64948             57.1%                    48730
+2023-24 / base180                   21394        64948             76.2%                    31558
+2024-25 / lik vekt                     20338        86588             23.5%                    86588
+2024-25 / base365                   20338        86588             51.2%                    55643
+2024-25 / base180                   20338        86588             73.7%                    32094
+2025-26 / lik vekt                     21998       109818             20.0%                   109818
+2025-26 / base365                   21998       109818             51.2%                    60979
+2025-26 / base180                   21998       109818             74.6%                    34043
+Effektivt vektet antall=(sumw)^2/sum(w^2); dette er konsentrasjon i vektene, ikke antall statistisk uavhengige observasjoner. Alle foldvekter og row-ID-hasher er bevart.
+
+PROGNOSEFEIL BLANT FASTE FELLES LAGKANDIDATER
+MSE; lavere er bedre. Poeng er ferdige H1/H3-prognoser etter kalibrering; minutter kommer fra grunnmodellen. Samme førfristbestemte evalueringsutvalg i alle varianter.
+Sesong / horisont / mål          Dagens       Grunn365       Grunn180
+2023-24 / 1 / minutes      658.06991     671.75043     692.57848
+2023-24 / 1 / points        16.46882      16.52227      16.57859
+2023-24 / 3 / minutes     4565.29380    4649.12456    4778.09801
+2023-24 / 3 / points        52.28086      52.16306      52.30006
+2024-25 / 1 / minutes      585.68758     600.07472     621.45723
+2024-25 / 1 / points        14.63471      14.74315      14.78171
+2024-25 / 3 / minutes     3637.32511    3711.76145    3791.25504
+2024-25 / 3 / points        50.25292      50.86447      51.07995
+2025-26 / 1 / minutes      626.60806     629.40800     645.67893
+2025-26 / 1 / points        13.33797      13.38810      13.45990
+2025-26 / 3 / minutes     3823.59997    3837.50910    3895.88266
+2025-26 / 3 / points        42.79651      42.83908      43.14025
+
+ANGREPSPOENG OG MINUTTER BLANT MIDTBANEKANDIDATENE
+H1-MSE for de faktiske grunnmodellkomponentene og minutter. Dette undersøker området som tidligere ble lokalisert som særlig svakt i2025/26.
+Sesong / mål                    Dagens       Grunn365       Grunn180
+2023-24 / attack            10.94261      10.80212      10.77460
+2023-24 / appearance         0.22679       0.23336       0.24647
+2023-24 / residual           2.51910       2.53471       2.54598
+2023-24 / minutes          551.59305     564.93958     588.01222
+2024-25 / attack             9.70442       9.70898       9.72682
+2024-25 / appearance         0.24968       0.25340       0.26154
+2024-25 / residual           2.04829       2.03550       2.04482
+2024-25 / minutes          625.52392     635.79721     652.78393
+2025-26 / attack             7.16703       7.17896       7.20759
+2025-26 / appearance         0.25445       0.25862       0.26414
+2025-26 / residual           1.90171       1.92686       1.94816
+2025-26 / minutes          590.36216     600.00824     613.31670
+
+MIDTBANERANGERING ETTER KALIBRERING
+Gjennomsnittlig Spearman-korrelasjon per runde i samme faste midtbanekandidater; høyere er bedre.
+2023-24: Dagens: lik grunntreningsvekt 0.18141; Grunnmodell365dager 0.18436; Grunnmodell180dager 0.19036
+2024-25: Dagens: lik grunntreningsvekt 0.24912; Grunnmodell365dager 0.24058; Grunnmodell180dager 0.23687
+2025-26: Dagens: lik grunntreningsvekt 0.11873; Grunnmodell365dager 0.11507; Grunnmodell180dager 0.08960
+Alle144 H1/H3-poeng-/minuttceller og288 rå komponentceller har like evalueringsnevnere på tvers av variantene. Kontrollens48 eksisterende prognosemål er gjenskapt. Prognosefeil og netto lagpoeng er forskjellige mål; bedre feil alene dokumenterer ikke bedre lagbeslutninger.
+
+KONTROLLER OG GJENNOMFØRING
+To separate uniform-vektede kontrollmodeller er trent på nytt og gjenskaper alle fire opprinnelige modellutganger numerisk. Alle80 opprinnelige kontrollpakker er lest og prognosene gjenskapt. Kontrollens240 kalibreringshoder og hele H8-banen er reprodusert; tre allerede kontrollerte managersesonger er gjenbrukt.
+160nye tidsvektede grunnmodellpakker: identiske rader/nøkler, førfristgrenser, parametere og uvektede medianer er kontrollert. Alle prediksjoner og komponenter er gjenskapt. Faktiske Pool-vekter er kontrollert mot den registrerte formelen og lagret. Én faktisk modell per arm er dessuten trent helt på nytt uavhengig, med identiske prediksjoner.
+480nye kalibreringshoder er kontrollert med normal-ligninger, prognosereproduksjon, samme lærer-ID-er og konkrete førfristkrav. Standardens240 hoder er også kontrollert.
+Alle6nye sesonger og228beslutninger er etterspilt uavhengig. Samme manager, budsjett, chips, harmoniserte poengregler og harde tilgjengelighetssperrer.16faktiske søkenoder, maksimalt40kall,8prognoserunder og3planleggingsrunder. Alle4 adversarialkontroller av utilgjengelige spillere er bestått, inkludert eid Kane.
+Høyst4modell-/solverprosesser samtidig og én tråd per prosess. Totalt160kandidattilpasninger,2uniforme kontrollreplikasjoner og2uavhengige vektede replikasjoner. Ingen svake varianter er avbrutt, og ingen halveringstider eller andre parametere er endret etter delresultater.
+Utfallene for rå angrep/oppmøte/øvrige poeng er kontrollert mot de kvalifiserte treningsfasitene. Evalueringsutfall for2024/25runde15 beholdes også når et opprinnelig treningsopphav er utelatt; de hentes fra samme native kampgrunnlag. Ukjente utfall gjøres ikke til0.
+FellesgrunnlagV5 med standardens325felter. Samme tidligere dokumenterte statistikk-, kalender- og markedsproxyer består. Ingen2026/27-utfall, nye offisielle kildeopptak eller faktiske FPL-ordre er brukt.
+
+FILER
+comparison.csv/deltas.csv/summary.csv: samlet sesongoversikt. forecast_metrics.csv: ferdige poeng og grunnminutter. component_metrics.csv: rå angrep/oppmøte/øvrige poeng/grunnpoeng. ranking.csv: rangering. base_weight_diagnostics.csv: tidsvekter gjennom alle foldene. models/ og weights/: grunnmodeller og faktiske treningsvekter. final_verification.json og execution.json: kontroller og hasher.

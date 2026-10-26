@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tables": [
+    {
+      "table": "training",
+      "rows": 135441,
+      "columns_checked": 361,
+      "feature_target_key_and_eligibility_values_exact": true
+    },
+    {
+      "table": "pool_features",
+      "rows": 111562,
+      "columns_checked": 369,
+      "feature_target_key_and_eligibility_values_exact": true
+    }
+  ],
+  "active_features": 325,
+  "research_features": 341,
+  "missing_and_true_false_values_preserved": true
+}

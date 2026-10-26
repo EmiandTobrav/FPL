@@ -1,0 +1,13 @@
+season,label,start,owner,arm,nodes,no_chips,net,hits,rounds,folder,seconds
+2023-24,shared9,9,benchmark,fixed,16,False,2025.0,24,30,2023-24__shared9__fixed,113.56693437485956
+2023-24,shared20,20,learned,fixed,16,False,1279.0,16,19,2023-24__shared20__fixed,32.050150957889855
+2023-24,no_chips,1,empty,benchmark,16,True,2343.0,20,38,2023-24__no_chips__benchmark,23.00616304203868
+2023-24,no_chips,1,empty,fixed,16,True,2377.0,32,38,2023-24__no_chips__fixed,19.35554658388719
+2023-24,nodes32,20,learned,benchmark,32,False,1221.0,40,19,2023-24__nodes32__benchmark,23.5169137918856
+2023-24,nodes32,20,learned,fixed,32,False,1279.0,16,19,2023-24__nodes32__fixed,32.243883499875665
+2024-25,shared9,9,benchmark,fixed,16,False,1932.0,8,30,2024-25__shared9__fixed,62.285310790874064
+2024-25,shared20,20,learned,fixed,16,False,1252.0,16,19,2024-25__shared20__fixed,42.754710959037766
+2024-25,no_chips,1,empty,benchmark,16,True,2493.0,8,38,2024-25__no_chips__benchmark,25.605280958116055
+2024-25,no_chips,1,empty,fixed,16,True,2344.0,20,38,2024-25__no_chips__fixed,34.45627258392051
+2024-25,nodes32,20,learned,benchmark,32,False,1212.0,12,19,2024-25__nodes32__benchmark,70.51282954216003
+2024-25,nodes32,20,learned,fixed,32,False,1252.0,16,19,2024-25__nodes32__fixed,42.40298991720192

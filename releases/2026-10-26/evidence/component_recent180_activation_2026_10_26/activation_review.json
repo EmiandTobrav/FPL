@@ -1,0 +1,47 @@
+{
+  "approved": true,
+  "scope": "Standard model recipe selection; expired cached data cannot produce current recommendations",
+  "reviewed_at": "2026-10-26T16:24:26.910372+00:00",
+  "user_authority": "2026-10-26: user explicitly asks to make faster calibration the standard despite2023/24 loss, prioritizing2024/25 and2025/26 gains. Combined xG variant not selected.",
+  "original_all_three_season_gate_passed": false,
+  "original_gate_waived_by_explicit_user_choice": true,
+  "operational_parity_and_guards_passed": true,
+  "verification": "reports/component_recent180_activation_2026_10_26/verification.json",
+  "selected_variant": "recent_only;325features; no xG",
+  "historical_points": {
+    "2023-24": 2465,
+    "2024-25": 2604,
+    "2025-26": 2335
+  },
+  "previous_component_points": {
+    "2023-24": 2547,
+    "2024-25": 2495,
+    "2025-26": 2213
+  },
+  "descriptive_stats": {
+    "old_mean": 2418.3333333333335,
+    "recent_mean": 2468.0,
+    "mean_delta": 49.666666666666664,
+    "old_population_variance": 21531.55555555556,
+    "recent_population_variance": 12064.666666666666,
+    "variance_reduction_percent": 43.96751021756183,
+    "old_range": 334.0,
+    "recent_range": 269.0,
+    "old_latest_gap": 308.0,
+    "recent_latest_gap": 199.5
+  },
+  "competitive_strength_for_winning_FPL_established": false,
+  "current_recommendation_refresh_required": true,
+  "current_refresh_reason": "Refresh and integrate external club/national feeds before recommending a team",
+  "source_capture_at": "2026-10-25 23:41:30.884930+00:00",
+  "source_times_not_relabelled": true,
+  "old_runtime_and_sealed_forecasts_preserved": true,
+  "no_actual_FPL_submission": true,
+  "files": {
+    "reports/component_recent180_activation_2026_10_26/verification.json": "68184f06aff735cae042ccb3fe710fcf92a2aafd3c57600ceb7997fac2b7b91e",
+    "reports/component_recent180_activation_2026_10_26/forecast_seal.json": "76ff7216bf9f63669d4567b80d945b8868603d62bda61146a5c8e6ca5f1bdf2e",
+    "model_lab/recent_component_forecaster.py": "83a033eaff21e5884e580ce6f1f79064d3a48caba0db09a9254fdfc5ed856518",
+    "reports/component_recent180_activation_2026_10_26/proposed_active.py": "b68493a25b184fe30cf61ddf6eec82982f1b3c237bbc2ecd90d70230382c48b0",
+    "reports/component_recent180_activation_2026_10_26/proposed_refresh_component_release.py": "0923fbd8e790569fe2c1a2185df07f01410e798a023fc4b0910d54d0c82a5f10"
+  }
+}

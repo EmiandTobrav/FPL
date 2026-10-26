@@ -1,0 +1,68 @@
+LENGRE PLANLEGGING FOR BYTTER OG CHIPS
+26. oktober 2026
+
+RESULTAT OG ANBEFALING
+Fem runders planlegging er den relevante kandidaten for vurdering: +104 / −13 / +37 netto sesongpoeng mot dagens manager. Snittet øker med 42,7 poeng over alle tre sesonger og 12,0 poeng over de siste to. Gevinsten er ikke lik i alle sesonger. Dagens operative manager er ikke endret.
+Åtte runder er ikke kvalifisert i alle tre sesonger: 2024/25 stoppet før GW6 fordi løseren overskred den faste nodegrensen. Ingen sesongscore eller snitt beregnes for det ufullførte forløpet.
+
+NETTO SESONGPOENG ETTER BYTTEKOSTNADER
+Variant                         2023/24    2024/25    2025/26    Snitt alle tre    Snitt siste to
+Dagens manager, 3 runder             2465       2604       2322           2463.7            2463.0
+Planlegging, 5 runder                2569       2591       2359           2506.3            2475.0
+Planlegging, 8 runder                2528          —       2322                —                 —
+
+Endring mot kontroll:
+Planlegging, 5 runder: +104 / -13 / +37
+Planlegging, 8 runder: +63 / ikke fullført / +0
+
+Kontrollen er 2465 / 2604 / 2322 på det korrigerte kalendergrunnlaget. Det eldre resultatet på 2335 i 2025/26 bruker en annen kalender og er ikke kontroll her. Alle sesongene er tidligere undersøkte utviklingsdata. Dette er ikke en urørt framtidstest eller dokumentasjon på faktisk FPL-rangering.
+Fem runder har høyest sammenlignbart snitt over alle tre og de siste to sesongene. Tapet på 13 poeng i 2024/25 skal veies mot gevinstene; kravet om ingen svakere sesong er ikke bestått. Rapportens vurdering er kandidat til gjennomgang, uten automatisk aktivering.
+
+HVA SOM BLE ENDRET
+Kun bredden på den detaljerte lag- og bytteplanen er endret fra 3 til 5 eller 8 runder. Den private managerkoden er ellers byteidentisk med kontrollen. Det framtidige lagbidraget av hvert chipalternativ vurderes dermed over det lengre planvinduet. Bare første beslutning utføres, før manageren planlegger på nytt ved neste frist. Vinduet avkortes ved sesongslutt og tilgjengelige prognoser.
+De eksplisitte framtidige chipdatoene som prøves, er fortsatt de samme to nærmeste rundene. Eksisterende grov opsjonsvurdering for BB/TC utenfor dette datovinduet er beholdt. Testen er derfor ikke et uttømmende søk over alle chipsekvenser gjennom åtte runder.
+Hele spilleruniverset og kortlistingsregelen er uendret. Regelen bruker blant annet gjennomsnittsprognose over planvinduet, så de faktiske spillerne på kortlisten kan endres når horisonten blir lengre. Dette er en følge av horisontendringen.
+
+DET SOM BLE HOLDT FAST
+Samme korrigerte kalender, åtte prognosekolonner ved hver frist, komponentmodell, kalibrering og treningshyppighet. Prognosefilene for kontroll og begge kandidater er byteidentiske. Ingen nye modelltilpasninger eller kalibreringer er gjort. Spillerprognosenes feil og rangering er dermed identiske; testen måler managerens beslutninger.
+Samme historiske førfristgrunnlag: 30 nyere kvalifiserte kalenderopptak i 2025/26, median alder 1,90 dager og 233 tidligere undervurderte dobbeltkampobservasjoner rettet. De to eldre sesongene bruker sine ferskeste kvalifiserte opptak. Ingen informasjon fra etter fristen brukes i den aktuelle beslutningen.
+Samme regler, budsjetter, initial lagvalg, fribytter, faktiske byttekostnader, byttefriksjon på 0,5 forventet poeng, chipreserver og håndtering av like alternativer. Samme sperrer for bekreftet utilgjengelige spillere og avganger. Eksisterende metadata-/prisproxyer, også de to dokumenterte klubbkoblingene for Rashford og Disasi i 2024/25, er holdt faste.
+
+HVOR FORBEDRINGEN I 2025/26 KOMMER TIL SYNE
+Fem runder gir samlet +37 i GW32–38, lik hele sesonggevinsten. GW1–31 er netto uendret i sum. Den nye banen bruker andre Wildcard i GW29 og Free Hit i GW33, mot GW32 og GW34 i kontrollen. Lagvalg og bytter før og etter disse datoene endres også; dette isolerer ikke årsakseffekten av en enkelt chipdato.
+Variant                         Netto GW32–38   Lagbase   Kapteinstillegg   Hits   Bytter
+Dagens manager, 3 runder                462          401           61            0           25
+Planlegging, 5 runder                   499          438           61            0           19
+Planlegging, 8 runder                   490          429           61            0           17
+
+Chipdatoer i 2025/26:
+Dagens manager, 3 runder: wildcard GW3; triple_captain GW8; bench_boost GW11; free_hit GW19; bench_boost GW25; triple_captain GW26; wildcard GW32; free_hit GW34
+Planlegging, 5 runder: wildcard GW3; triple_captain GW8; bench_boost GW11; free_hit GW19; triple_captain GW26; bench_boost GW27; wildcard GW29; free_hit GW33
+Planlegging, 8 runder: wildcard GW3; triple_captain GW8; bench_boost GW15; free_hit GW19; triple_captain GW26; bench_boost GW27; wildcard GW31; free_hit GW33
+
+Runde       Kontroll 3       Plan 5       Plan 8       Endring 5       Endring 8
+   32               61           61           54              +0              -7
+   33              105          126          126             +21             +21
+   34               66           66           58              +0              -8
+   35               32           39           51              +7             +19
+   36               72           72           68              +0              -4
+   37               69           70           81              +1             +12
+   38               57           65           52              +8              -5
+
+RESSURSSTOPP OG SØKEKVALITET
+Samme budsjett i alle varianter: høyst 16 faktiske søkenoder per optimeringskall, request 15 for den kjente native overskridelsen på én, høyst 40 kall per beslutning, én tråd og samme seed og gapkrav. Ingen veggklokkegrense. Lengre planer kan gi andre løsningsgap ved samme nodegrense.
+Åtte-rundersvarianten for 2024/25 lagret fem lovlige runder og stoppet før beslutningen i GW6 med «Solver exceeded declared node limit». Det eksakte overskytende nodetallet ble ikke lagret. En foreløpig gjennomførbar løsning var funnet, men ble avvist av budsjettkontrollen. Ingen retry eller budsjettøkning ble brukt. De fem rundene er bare diagnostikk og teller ikke som sesongresultat. De to andre åtte-runderssesongene er fullført, men gir ikke grunnlag for et treårssnitt eller snitt siste to.
+Søketallene under omfatter lagrede beslutninger, inkludert de fem diagnostiske rundene. De omfatter ikke den avbrutte GW6-beregningen og er ikke total kostnad for alle forsøk. Gapene gjelder forventningsbaserte optimeringsproblemer, ikke usikkerhet om faktisk FPL-score.
+Variant                         Lagrede valg   Kall   Maks kall/valg   Maks noder   Snitt gap %   95-pers. gap %
+Dagens manager, 3 runder                114   1503              24           15         0.045            0.099
+Planlegging, 5 runder                   114   1427              24           15         0.059            0.100
+Planlegging, 8 runder                    81   1070              24           16         0.078            0.100
+
+ETTERKONTROLLER
+Fem nye fullførte sesonger: 190 beslutninger, samt fem diagnostiske beslutninger fra det avbrutte forløpet, er uavhengig etterspilt og kontrollert mot native utfall, lovlige bytter/lagvalg, auto-innbyttere, kapteinsfallback, byttekostnader og poengsummer. Kontrollens 114 beslutninger er også etterspilt. Alle godtatte optimeringsløsninger holder gjennomførbarhets- og ressurskravene.
+Framtidige planoverganger og chipkandidaters verdi/valg er kontrollert separat mot det frosne førfristgrunnlaget. Begge kandidater besto forhåndskontroller for første lag, kjent utilgjengelig eid spiller og runden før den store dobbeltkampen. Kontrollens Wildcard GW32 og Free Hit GW34 i 2025/26 ble gjenskapt med identiske numeriske problemer.
+En tidligere teknisk forhåndskjøring stoppet før nye sesongvalg fordi serialiserte prisnøkler måtte normaliseres i testkoblingen. V2 bruker samme normalisering som eksisterende sesongkjører. Dette er separat fra den reelle ressursstoppen ved åtte runder. Ingen resultatstyrt regelendring er gjort.
+Aktiv modell, aktiv datagrunnlagspeker og forseglede liveprognoser er uendret. Ingen faktiske FPL-ordre er sendt.
+
+FILER
+comparison.csv, deltas.csv, summary.csv og scores.csv: fullførte sesongresultater; manglende resultat er tomt, aldri null. rounds.csv og chip_dates.csv markerer ufullførte forløp eksplisitt. round_comparison_2025.csv og late2025_summary.csv viser siste sesong. solver_summary.csv og solver_telemetry.csv viser kun lagrede beslutninger. technical_stops.json og logs/manager_2024-25_h8.log dokumenterer stoppet. final_verification.json og independent_*_verification.json dokumenterer etterkontrollene.

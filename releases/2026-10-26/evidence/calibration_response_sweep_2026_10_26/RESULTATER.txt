@@ -1,0 +1,81 @@
+HALVERINGSTID, KALIBRERINGSHYPPIGHET OG ANDRE VEKTER
+26. oktober 2026
+
+Seks nye varianter er testet mot dagens standard med180dagers halveringstid og etterkalibrering hver fjerde runde. Halveringstid og hyppighet er endret hver for seg. Grunnmodellens trening er fortsatt hver fjerde runde. Ingen ny kombinasjon av de beste verdiene fra hver deltest er testet.
+Dagens operative modell er uendret. Originale2026/27-prognoser og alle tidligere resultatfiler er bevart.
+
+NETTO SESONGPOENG ETTER BYTTEKOSTNADER
+
+Halveringstid – samme oppdatering hver fjerde runde
+Variant                  2023/24      2024/25      2025/26     Snitt alle3    Snitt siste2
+Dagens180d/hver4.                2465         2604         2335         2468.0          2469.5
+60d/hver4.                       2387         2631         2270         2429.3          2450.5
+90d/hver4.                       2468         2569         2288         2441.7          2428.5
+365d/hver4.                      2384         2498         2286         2389.3          2392.0
+
+Hyppighet – samme180dagers halveringstid
+Variant                  2023/24      2024/25      2025/26     Snitt alle3    Snitt siste2
+Dagens180d/hver4.                2465         2604         2335         2468.0          2469.5
+180d/hverrunde                   2411         2608         2261         2426.7          2434.5
+180d/hver2.                      2411         2604         2335         2450.0          2469.5
+180d/hver8.                      2472         2553         2336         2453.7          2444.5
+
+ENDRING MOT DAGENS STANDARD
+Variant                  2023/24      2024/25      2025/26     Varians       Spenn
+Dagens180d/hver4.                  +0           +0           +0      12064.7         269
+60d/hver4.                        -78          +27          -65      22616.2         361
+90d/hver4.                         +3          -35          -47      13506.9         281
+365d/hver4.                       -81         -106          -49       7504.9         212
+180d/hverrunde                    -54           +4          -74      20190.9         347
+180d/hver2.                       -54           +0           +0      12820.7         269
+180d/hver8.                        +7          -51           +1       8016.2         217
+
+VURDERING
+Strengt bedre netto poeng i alle tre sesonger: ingen ny variant.
+Bedre i begge de to siste sesongene: ingen ny variant.
+Høyest2025/26 i denne undersøkelsen: 180d/hver8. (2336).
+Høyest snitt siste to sesonger: Dagens180d/hver4. (2469.5).
+Høyest snitt alle tre: Dagens180d/hver4. (2468.0).
+Nyere sesonger vises særskilt i tråd med brukerens prioritering. Vi har ikke etterpå valgt en vekting mellom rapporteringssesongene for å få én variant til å vinne. En eventuell avveining mot2023/24 må vurderes eksplisitt, som ved tidligere modellvalg.
+Lavere observert varians mellom tre sesonger kan også oppstå ved lavere poeng i de beste sesongene. Den er ikke alene et kvalitetskrav eller et bevis på fremtidig stabilitet. Alle tre år er allerede undersøkt; resultatene er utviklingsfunn, ikke urørt holdout, statistisk signifikans eller dokumentert FPL-rangering. Et best resultat i et begrenset rutenett dokumenterer ikke et globalt optimum.
+
+HVORDAN SESONGVEKTEN ENDRES
+Siste faktisk brukte H1-kalibrering i2025/26; variantene med ulik hyppighet kan ha ulik siste oppdateringsrunde.
+Variant                  Siste runde   Årets vekt    Fjorårets vekt   Vektet effektivt antall
+Dagens180d/hver4.                 37         74.4%            19.8%                    31054
+60d/hver4.                        37         98.1%             1.9%                    12784
+90d/hver4.                        37         93.0%             6.6%                    17912
+365d/hver4.                       37         52.9%            27.6%                    51389
+180d/hverrunde                    38         75.4%            19.1%                    31186
+180d/hver2.                       37         74.4%            19.8%                    31054
+180d/hver8.                       33         71.6%            22.0%                    30575
+Det vektede effektive antallet er(sumw)^2/sum(w^2). Det beskriver vektenes konsentrasjon, ikke antall statistisk uavhengige spillere eller kamper. De tre halveringstidsvariantene og standarden bruker samme rader ved hver oppdatering. Hyppigere oppdatering kan i tillegg få med flere ferdige lærerutfall.
+Årets andel er ikke en fast70/30-innstilling. Den følger fra eksempelalder, antall tilgjengelige eksempler og prognosehorisont. Sommerpausen inngår i alder målt i dager. Ingen senere kjent fasit er fylt inn før fristen.
+
+PROGNOSEFEIL PÅ SAMME KANDIDATUTVALG
+H1 poeng-MSE; lavere er bedre. Kandidatene er bestemt av samme førfristreferanse for alle varianter.
+Variant                  2023/24       2024/25       2025/26
+Dagens180d/hver4.             16.46882      14.63471      13.33797
+60d/hver4.                    16.54820      14.70554      13.36467
+90d/hver4.                    16.50981      14.65827      13.34471
+365d/hver4.                   16.45184      14.63429      13.35646
+180d/hverrunde                16.45722      14.62421      13.33146
+180d/hver2.                   16.46478      14.62718      13.33763
+180d/hver8.                   16.47295      14.62899      13.33910
+Minuttprognosene er identiske i alle varianter, siden grunnmodellene er frosne. H1/H3-poeng og minutter, bias og rangering for alle kjøpbare spillere, faste kandidater, midtbane og dyre spillere finnes i forecast_metrics.csv og ranking.csv. Alle336 resultatceller har samme evalueringsnevnere på tvers av variantene. Standardens48 celler er kontrollert like forrige verifiserte måling.
+
+KONTROLLER OG METODE
+Standardens240 kalibreringer og hele H8-prognosebanen er gjenskapt numerisk mot den valgte recent180-varianten før nye sesongsimuleringer. Dens tre kontrollerte sesongforløp er deretter gjenbrukt.
+2208 nye kalibreringshoder har bestått uavhengige normal-lignings-, tids-, eksempel-ID-, transformasjons- og prognosekontroller. Datatransformasjonene beregnes kun på førfristtrening og er uvektede, akkurat som standarden. Bare tapets aldersvekter eller oppdateringsplanen endres.
+Oppdatering skjer i1+k*intervall, med siste runde senest38. Mellom oppdateringer beholdes samme kalibreringshode. Det betyr ikke at hele spillerprognosen er frosset: nye førfristgrunnprognoser og inngangsdata brukes fortsatt ved hvert opphav. Hver fremtidig runde har sitt eget hode; det kopieres ikke bare en H1-prognose fremover. Grunnprognosene er de samme fire-runders oppdaterte CatBoost-pakkene i alle varianter.
+Samme lærerfilter: lærerprognosens tidspunkt, det konkrete offsetutfallet og hele lærerens H3-utfall må være kjent strengt før kalibreringen. En ukjent fasit blir aldri0. Verifiserte tilgjengelighetssperrer brukes både på prognoser og som harde managerbegrensninger.
+Alle18 nye komplette sesonger og684 beslutninger er etterspilt uavhengig med kontroll av poeng, lovlighet, tilgjengelighet og samme ressursbudsjett. Alle12 adversarialkontroller av utilgjengelige spillere er bestått, inkludert eid Kane. Samme16 faktiske søkenoder, maksimalt40 kall,8 prognoserunder og3 planleggingsrunder. Høyst4 prosesser samtidig og1 tråd per modell/solver. Ingen resultatstyrte omkjøringer, ekstra parametere eller avbrutte svake varianter.
+Samme kvalifiserte fellesgrunnlagV5, med bare standardmodellens325 opprinnelige felter. Ingen xG/xA er lagt til. Samme historiske kalender-, markeds- og statistikkproxyer og harmoniserte poengregler som før.Ingen2026/27-utfall, friske lagordre eller produksjonsparametere er endret.
+
+ANDRE VEKTER
+Detaljert kartlegging: ANDRE_VEKTER.txt.
+De mest konkrete videre kandidatene er en egen faktor for inneværende sesong, styrken på kalibreringens brems, og tidsvekting også i selve grunnmodellens trening. Vi kan dessuten undersøke den innledende H1/H3-blandingen og managerens benk-/bytte-/chipverdier. Disse virker på ulike lag og er ikke testet i denne undersøkelsen.
+Koeffisienter for vær, dødballer og form er lærte sammenhenger, ikke én enkel manuell vekt. Faktiske FPL-poengregler og harde tilgjengelighetssperrer er ikke parametere vi tilpasser for å løfte historiske poeng.
+
+FILER
+comparison.csv og deltas.csv: alle årsresultater. summary.csv: nye og samlede snitt, varians og forbedringsflagg. weight_diagnostics.csv: hele kalibreringshistorikken. latest2025_teacher_weight_summary.csv: siste H1-vektfordeling. forecast_metrics.csv og ranking.csv: prognoser. final_verification.json: kontroller og hasher. execution.json og logs/: full gjennomføring.

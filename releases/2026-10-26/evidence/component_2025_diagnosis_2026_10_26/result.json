@@ -1,0 +1,52 @@
+{
+  "conclusion": "2025 decline remains a material competitive-readiness warning. It is localized to attacking returns and midfield prioritization:256 of324 fewer gross points are attack contributions, and common-candidate ranking weakens despite lower absolute MSE. Pure captain identification and known repaired data issues do not explain the whole drop. Exact recovery under a different adaptation recipe remains untested; winning-FPL capability is not established.",
+  "decision": "retain_for_research",
+  "evidence_hashes": {
+    "overview/COMPONENT_PERFORMANCE_REVIEW_2026_10_26.json": "880c4a14ce0a44c566c87cfb4823f4b34c8e2b286b190a72baf1723b454b72ad",
+    "reports/component_2025_diagnosis_2026_10_26/RESULTATER.txt": "a5abcfc5c9d2d54d3f9b6a7b5e8668212e2a913c488d21a116b3b93c32d49748",
+    "reports/component_2025_diagnosis_2026_10_26/audit.json": "cd3a6ffb9c36ab9a3e21401e696c4791043ad472f141eedeec806a4c34f5f292",
+    "reports/component_2025_diagnosis_2026_10_26/captain_counterfactual.csv": "a8132483d6b9182251edb05e38fc237adeabfc7d1dd3706bf7162d62c2deacfa",
+    "reports/component_2025_diagnosis_2026_10_26/component_point_accounting.csv": "fa09b75df41c71f632022561c03af9e219a02e15d6e98df9c9dad793deed5104",
+    "reports/component_2025_diagnosis_2026_10_26/contributions.csv": "2546d3ab0a3dc9faa53d03988ebce5e63c9ea1ba65d01f9c52396dddf4eb9ae4",
+    "reports/component_2025_diagnosis_2026_10_26/decomposition.csv": "9dc709dfd4903ec668bc1691073bf34e0fed8f4d3900e451f06e77ea251219b2",
+    "reports/component_2025_diagnosis_2026_10_26/head_diagnostics.csv": "980d560b1856e19236d562eea6d78f4b0a13b5c7614e886871944795c5cfdd19",
+    "reports/component_2025_diagnosis_2026_10_26/head_replay.json": "1907062013479c06a14a942d9c71f9b9cf03d70f3a98a82bb6aff35e2121a572",
+    "reports/component_2025_diagnosis_2026_10_26/independent_verification.json": "f667eaf9094d2cd1a6e1c53f1dfb83063665a76b559676add7ff16e9440d45ac",
+    "reports/component_2025_diagnosis_2026_10_26/league.csv": "9b4939421f727dca1517b28ff31c52b1e72a98071a6a87a629cf06c159362672",
+    "reports/component_2025_diagnosis_2026_10_26/market_comparison.csv": "a22403f4d64fbc1ed2d7bc5765ecb2f64d8e5f0ef0baeee45c3e2340f7446dbb",
+    "reports/component_2025_diagnosis_2026_10_26/metrics.csv": "d8bdf08ba15f07929b6b35b348a759fa676be781732de081a19a201326db1f23",
+    "reports/component_2025_diagnosis_2026_10_26/oracle_rounds.csv": "01875d58dc7467d9bc51b4aeb694d8be749b40a4769444a5ff6bc3c0c890605e",
+    "reports/component_2025_diagnosis_2026_10_26/periods.csv": "04b0fdfcabcd2f68dbe1c04559a69b0436fb9230e04a445b5e528fd48347940d",
+    "reports/component_2025_diagnosis_2026_10_26/ranking_uncertainty.json": "6d730c77ae180ea4a7a0d7a76223d8cd5cdb16be9fedf04a883e08181302fd08",
+    "reports/component_2025_diagnosis_2026_10_26/rounds.csv": "4ff287ebbad4db1bbcb0b63a4d3601932bf4226ca1cd0aad1cc59e18f08a9077",
+    "reports/component_2025_diagnosis_2026_10_26/selected.csv": "cbc9ab76dfc2a16a2d1992b84561afb42eee8dcbe75b82008453bda876dbb517",
+    "reports/component_2025_diagnosis_2026_10_26/target_quality.csv": "ce5252dc1dec600f5ed8755dd933f8d19a6cd844bb0a7198449800512b2acaaa",
+    "reports/component_2025_diagnosis_2026_10_26/within_position_rank.csv": "ee168026cc73ace5290b6997590b94b014c20be14861cbbbe8d361d508aeecc2"
+  },
+  "results": {
+    "active_model_changed": false,
+    "all_frozen_decisions_replayed": 228,
+    "captain_only_oracle_latest_net": 2438,
+    "captain_only_oracle_prior_mean_net": 2723,
+    "certified_hindsight_difficulty_indices": 114,
+    "competitive_strength_established": false,
+    "decomposition": {
+      "appearance_including_captain": -54.0,
+      "attack_including_captain": -256.0,
+      "captain_bonus": -102.0,
+      "counted_team_without_extra_cap": -222.0,
+      "expected_team_and_cap_change": -181.503750112719,
+      "hit_saving": 16.0,
+      "net_decline": -308.0,
+      "realized_minus_forecast_change": -142.49624988728152,
+      "residual_including_captain": -14.0
+    },
+    "existing_H1_bundles_replayed": 30,
+    "latest_component_net": 2213,
+    "net_decline": 308,
+    "new_model_fits": 0,
+    "new_policy_trajectories": 0,
+    "prior_two_mean_net": 2521,
+    "remaining_gap_with_perfect_same_XI_captain": 285
+  }
+}

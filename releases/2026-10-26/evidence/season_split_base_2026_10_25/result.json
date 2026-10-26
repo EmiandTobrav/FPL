@@ -1,0 +1,45 @@
+{
+  "conclusion": "Sesongskille i grunnmodellen gir +38/-17 netto sesongpoeng mot samme korrigerte datagrunnlag og manager med chips. Utilitykrav ikke best\u00e5tt, prognosekrav best\u00e5tt. Ingen automatisk produksjonsendring.",
+  "decision": "retain_for_research",
+  "evidence_hashes": {
+    "reports/season_split_base_2026_10_25/RESULTATER.txt": "57d7132a8955a2605a2aa0855b1d47d74edbe967c6795901e6e4d4d8cea22dca",
+    "reports/season_split_base_2026_10_25/complete_live_data_audit.json": "55ef7e282fd1ee63a4bc92008c27f2cef81dffeda5ea4be02506f3bfa53d48f5",
+    "reports/season_split_base_2026_10_25/diagnostics.py": "c5c8b5d1e4cf9fbd7a97aedb48fa7a054c761359c38bc44a17c2917c673ce476",
+    "reports/season_split_base_2026_10_25/gw9_player_comparison.csv": "0cf7a3e7b9bb1ef2b0d43fe9310c6b02c5a9c34307fd4aac157f77255e43e610",
+    "reports/season_split_base_2026_10_25/live_extension_verification.json": "b85819a0c5727a9c728c5e8781f60243ecb9ff0427875529d1a4116cfbc18f33",
+    "reports/season_split_base_2026_10_25/metrics.csv": "f40beaebd22ebedaa59e769c0c363224e4b73869890ecb21eb0ab154b97ab523",
+    "reports/season_split_base_2026_10_25/phase_metrics_descriptive.csv": "72ac39ee0e378304ac3cf21d4d0fa8fb06022cc00d9888932f03e18acf528017",
+    "reports/season_split_base_2026_10_25/proposal.json": "66f6a51c4cba332487c6a0b8945a63ab5235fbaebaa03f7b4aab556bc62c7ed8",
+    "reports/season_split_base_2026_10_25/report.py": "c9f136f28cd11673af3a42f082be8e5e939f802063a1d9c2b70fe38571e34fbe",
+    "reports/season_split_base_2026_10_25/round_deltas.csv": "53ea156ac4d3f104e2c59201ba8f1333ff56f422476693951627b7a636cd3e3c",
+    "reports/season_split_base_2026_10_25/scores.csv": "b37a084524ad5b0ea07d48269fd7c9030889de1f5ae56bae8249b06a1794be5e",
+    "reports/season_split_base_2026_10_25/verification.json": "6664e7352f7d4cc8d45863e982a33a513619ecf0b63a3ac4a871d58aeec9f08d"
+  },
+  "results": {
+    "beats_original_active_both": false,
+    "forecast_pass": true,
+    "matched_live_complete_rows": 4242,
+    "production_changed": false,
+    "seasons": [
+      {
+        "control_hits": 20.0,
+        "corrected_mixed": 2429.0,
+        "delta": 38.0,
+        "original_active": 2452,
+        "season": "2023-24",
+        "season_split": 2467.0,
+        "split_hits": 20.0
+      },
+      {
+        "control_hits": 16.0,
+        "corrected_mixed": 2461.0,
+        "delta": -17.0,
+        "original_active": 2498,
+        "season": "2024-25",
+        "season_split": 2444.0,
+        "split_hits": 28.0
+      }
+    ],
+    "utility_pass": false
+  }
+}

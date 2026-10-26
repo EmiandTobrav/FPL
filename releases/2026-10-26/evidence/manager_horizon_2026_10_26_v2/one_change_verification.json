@@ -1,0 +1,26 @@
+{
+  "all_other_backend_files_byte_identical": true,
+  "backends": [
+    {
+      "arm": "h3",
+      "horizon": 3,
+      "only_policy_plan_width_changed": false,
+      "source_diff": ""
+    },
+    {
+      "arm": "h5",
+      "horizon": 5,
+      "only_policy_plan_width_changed": true,
+      "source_diff": "--- control/policy.py\n+++ h5/policy.py\n@@ -35,7 +35,7 @@\n         values=dict(zip(q.pid,q.xp));c['plan']=[]\n         c['objective']=sum(values[i] for i in c['starters'])+(2 if chip=='triple_captain' else 1)*values[c['captain']]+(1 if chip=='bench_boost' else .1)*sum(values[i] for i in c['bench'])\n         return c,c['objective'],[c]\n-    chips=schedule(gw,min(3,xp.shape[1]),fixed)\n+    chips=schedule(gw,min(5,xp.shape[1]),fixed)\n     if chip is not None:chips[0]=chip\n     if chips[0]=='free_hit':\n         first=choose(p,xp[:,:1],state['owned'],state['bank'],state['ft'],['free_hit'])\n"
+    },
+    {
+      "arm": "h8",
+      "horizon": 8,
+      "only_policy_plan_width_changed": true,
+      "source_diff": "--- control/policy.py\n+++ h8/policy.py\n@@ -35,7 +35,7 @@\n         values=dict(zip(q.pid,q.xp));c['plan']=[]\n         c['objective']=sum(values[i] for i in c['starters'])+(2 if chip=='triple_captain' else 1)*values[c['captain']]+(1 if chip=='bench_boost' else .1)*sum(values[i] for i in c['bench'])\n         return c,c['objective'],[c]\n-    chips=schedule(gw,min(3,xp.shape[1]),fixed)\n+    chips=schedule(gw,min(8,xp.shape[1]),fixed)\n     if chip is not None:chips[0]=chip\n     if chips[0]=='free_hit':\n         first=choose(p,xp[:,:1],state['owned'],state['bank'],state['ft'],['free_hit'])\n"
+    }
+  ],
+  "identical_forecast_sha256": "8a542d7a389139dcb46f2ee131f8a33a2df74512f304655b6a94348e7aa39c65",
+  "only_detailed_plan_width_changed": true,
+  "passed": true
+}

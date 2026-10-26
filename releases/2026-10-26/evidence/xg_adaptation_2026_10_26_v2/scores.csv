@@ -1,0 +1,10 @@
+season,arm,net,hits,base,captain_bonus,complete,rounds
+2023-24,control,2547.0,20,2233.0,334.0,True,38
+2024-25,control,2495.0,12,2133.0,374.0,True,38
+2025-26,control,2213.0,0,1961.0,252.0,True,38
+2023-24,xg_only,2545.0,16,2260.0,301.0,True,38
+2024-25,xg_only,2569.0,4,2182.0,391.0,True,38
+2025-26,xg_only,2216.0,8,1952.0,272.0,True,38
+2023-24,recent_only,2465.0,20,2132.0,353.0,True,38
+2024-25,recent_only,2604.0,4,2198.0,410.0,True,38
+2025-26,recent_only,2335.0,0,2059.0,276.0,True,38

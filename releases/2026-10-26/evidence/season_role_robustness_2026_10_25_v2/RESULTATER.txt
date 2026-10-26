@@ -1,0 +1,43 @@
+SESONGVARIANT: FORKLARING OG ROBUSTHET — 25. oktober 2026
+
+Netto sesongpoeng er hovedmålet for systemet. En svakere MSE-verdi er ikke i seg selv nok til å forkaste en bedre beslutningsmodell. Den tidligere prognosetesten forblir ikke bestått, men vurderes separat fra spørsmålet om modellen gir flere poeng. Ingen historisk protokoll eller modell er skrevet om.
+
+Beslutning: Ikke robust nok til å erstatte dagens modell. Beholdes som forskningskandidat, fordi den opprinnelige gevinsten fortsatt er reell i de to simulerte forløpene.
+Full sesong 2023/24: dagens modell 2413; lært sesongvekt 2452; fast sesongvekt 2452 netto poeng. Full sesong 2024/25: dagens modell 2344; lært sesongvekt 2457; fast sesongvekt 2498. Den enklere kontrollen gir like mye eller mer. Dette styrker interessen for kalibreringspakken, men dokumenterer ikke at læring av vekten er årsaken til merverdien. Fast kontroll har ikke fått de samme overtakelsestestene og bør ikke automatisk kåres til produksjonsvinner etter disse tallene.
+
+HVORFOR FLERE POENG MED NESTEN UENDRET ELLER SVAKERE PROGNOSER?
+MSE teller prognosefeilen for hver spillerobservasjon. Manageren velger bare én tropp, elleve startere og en kaptein, under budsjett, bytter og chips. Poeng er derfor følsomme for rangeringen mellom aktuelle alternativer og for små endringer som utløser et annet kjøp eller kapteinsvalg. Lavere MSE og høyere realiserte sesongpoeng er ikke matematisk samme mål. En tilfeldig gunstig serie utfall kan også gi høyere poeng. Diagnosen nedenfor dokumenterer hvilke utslag vi faktisk så; den beviser ikke en sikker fremtidig gevinst.
+
+Eksakt additiv oppdeling av opprinnelig poengforskjell, lært variant minus benchmark:
+2023-24: opprinnelig ellever +38; automatiske innbyttere +10; vanlig kapteinsbonus -15; direkte BB/TC-poeng -6; sparte overgangstrekk +12; sum +39.
+2024-25: opprinnelig ellever +128; automatiske innbyttere +12; vanlig kapteinsbonus +21; direkte BB/TC-poeng -40; sparte overgangstrekk -8; sum +113.
+
+Oppdelingen er regnskapsmessig og uten dobbelttelling. Wildcard og Free Hit påvirker spillervalg og senere forløp og kan ikke isoleres som direkte chippoeng. Den viser ikke hva som ville skjedd dersom vi endret bare én beslutning.
+Haaland hadde størst positiv forskjell i summerte spillerbidrag i begge sesonger: +76 og +128 poeng, inklusive kapteinsmultiplikatorer. Modellen hevet hans neste-rundeprognose i snitt med 0,382 og 0,371 poeng. Antall startere/kapteinsvalg økte fra 12/3 til 16/8 i 2023/24 og fra 6/4 til 10/10 i 2024/25. Dette er bidragsregnskap; det trekker ikke fra den enkelte erstatterens poeng og er ikke en isolert kausal Haaland-gevinst.
+
+HVOR KONSENTRERT VAR GEVINSTEN?
+2023-24: vant 19 runder, tapte 18. Uten beste forskjellsrunde: +13. Uten de tre beste: -29. Beskrivende 95 %-intervall ved omtrekking av fire-rundersblokker: -107 til 193 poeng.
+2024-25: vant 22 runder, tapte 15. Uten beste forskjellsrunde: +83. Uten de tre beste: +26. Beskrivende 95 %-intervall ved omtrekking av fire-rundersblokker: -45 til 263 poeng.
+Begge intervaller krysser null. Omtrekkingen bruker de allerede realiserte forløpene og kjører ikke manageren på nytt. Den er en usikkerhetsdiagnose, ikke nye uavhengige sesonger eller en sannsynlighet for fremtidig overlegenhet. Å fjerne gode runder er en følsomhetstest, ikke en ny fasit.
+
+LÅST ROBUSTHETSTEST
+Alle prognoser, modellparametre og oppdateringsregler er uendret. GW9: begge modeller overtar referansemodellens lag rett før GW9, med samme bank, kjøpspriser, gratisbytter og brukte chips. GW20: begge overtar sesongvariantens lag rett før GW20. Valget av to forskjellige eiere hindrer at testen bare bruker referansemodellens foretrukne lagtilstander. Den eksisterende eierens eksakte videreføring gjenbrukes fra det verifiserte arkivet; den andre modellen simuleres fra samme tilstand. Testene evaluerer gjenværende sesong til GW38.
+I tillegg simuleres begge hele sesongene med den tidligere lagrede kontrollen som har fast historikkvekting. Dette skiller systemgevinsten fra nytten av å lære selve vekten. Samme adaptive manager, horisonter, chipregler, budsjett og løsergrenser brukes.
+Krav før kjøring: lært variant skal vinne alle fire felles-start-sammenligninger og begge sammenligninger med fast vekting. Bare ved bestått første trinn skulle fire ytterligere hele sesonger uten chips kjøres. Dermed er stoppregelen fastsatt før nye poengresultater.
+
+2023-24, GW9–38, startlag benchmark, kontroll benchmark: lært 2003, kontroll 1955, forskjell +48.
+2023-24, GW20–38, startlag learned, kontroll benchmark: lært 1281, kontroll 1221, forskjell +60.
+2023-24, GW1–38, startlag empty, kontroll fixed: lært 2452, kontroll 2452, forskjell +0.
+2024-25, GW9–38, startlag benchmark, kontroll benchmark: lært 1905, kontroll 1903, forskjell +2.
+2024-25, GW20–38, startlag learned, kontroll benchmark: lært 1263, kontroll 1212, forskjell +51.
+2024-25, GW1–38, startlag empty, kontroll fixed: lært 2457, kontroll 2498, forskjell -41.
+Den betingede testen uten chips er ikke kjørt, fordi første trinn ikke bestod. Dette er den forhåndsregistrerte stoppregelen, ikke et resultatstyrt valg av gunstige forsøk.
+
+KONTROLLER OG TOLKNING
+Alle 174 nye beslutninger er kontrollert på nytt for starttilstand, budsjetter, bytter, chips, ellever, benk, kaptein og poengoppgjør mot kildedata. Samtlige kildefiler og frosne prognoser har uendrede kontrollsummer. Beslutninger ble lagret før utfall ble lest. Ingen ny modelltilpasning eller resultatstyrt tuning.
+Første tekniske versjon stoppet før noen beslutning: spiller-ID-ene i lagrede JSON-tilstander var tekst, mens planleggeren krever heltall. V2 bruker prosjektets eksisterende state_json-innleser. Den opprinnelige feilen er bevart og avsluttet separat; solvergrenser og faglig oppskrift er uendret.
+De samme to tidligere undersøkte utviklingssesongene brukes igjen. Overlappende overtakelser er ikke flere uavhengige år. Det harmoniserte chip- og poengregelverket gir en intern sammenligning, ikke offisielle historiske rangeringer. Ingen kontoendringer eller endringer i aktiv benchmark er gjennomført.
+
+Neste vurdering må skille praktisk nytte fra generell prognosepresisjon. En eventuell videre kandidat bør fryses og sammenlignes på nye, faktisk fremtidige beslutninger med de samme starttilstandene. Ikke velg én gunstig sesong, spillergruppe eller startdato i etterkant som ny produksjonsregel.
+
+Filer: proposal.json, primary.json, scores.csv, component_deltas.csv, diagnostics.json, player_contributions.csv, haaland_forecasts.csv, selected_forecast_errors.csv, verification.json og result.json. Forsøks-ID season-role-robustness-20261025-v2.

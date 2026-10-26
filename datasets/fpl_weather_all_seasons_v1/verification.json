@@ -1,0 +1,137 @@
+{
+  "status": "complete",
+  "seasons": [
+    {
+      "season": "2019-20",
+      "full_season": true,
+      "fixtures": 380,
+      "linked_player_rows": 22501,
+      "hourly_rows": 166704,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 2,
+      "dark_with_unadjusted_sunshine": 0,
+      "native_timestamp_conflicts": 0,
+      "max_grid_distance_km": 7.018,
+      "independently_recomputed_fields": 4180
+    },
+    {
+      "season": "2020-21",
+      "full_season": true,
+      "fixtures": 380,
+      "linked_player_rows": 24365,
+      "hourly_rows": 119112,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 0,
+      "dark_with_unadjusted_sunshine": 0,
+      "native_timestamp_conflicts": 0,
+      "max_grid_distance_km": 7.018,
+      "independently_recomputed_fields": 4180
+    },
+    {
+      "season": "2021-22",
+      "full_season": true,
+      "fixtures": 380,
+      "linked_player_rows": 25447,
+      "hourly_rows": 132768,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 0,
+      "dark_with_unadjusted_sunshine": 0,
+      "native_timestamp_conflicts": 1,
+      "max_grid_distance_km": 6.044,
+      "independently_recomputed_fields": 4180
+    },
+    {
+      "season": "2022-23",
+      "full_season": true,
+      "fixtures": 380,
+      "linked_player_rows": 26505,
+      "hourly_rows": 139488,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 7,
+      "dark_with_unadjusted_sunshine": 2,
+      "native_timestamp_conflicts": 0,
+      "max_grid_distance_km": 6.044,
+      "independently_recomputed_fields": 4180
+    },
+    {
+      "season": "2023-24",
+      "full_season": true,
+      "fixtures": 380,
+      "linked_player_rows": 29725,
+      "hourly_rows": 132480,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 0,
+      "dark_with_unadjusted_sunshine": 0,
+      "native_timestamp_conflicts": 0,
+      "max_grid_distance_km": 7.018,
+      "independently_recomputed_fields": 4180
+    },
+    {
+      "season": "2024-25",
+      "full_season": true,
+      "fixtures": 380,
+      "linked_player_rows": 27283,
+      "hourly_rows": 132840,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 10,
+      "dark_with_unadjusted_sunshine": 6,
+      "native_timestamp_conflicts": 0,
+      "max_grid_distance_km": 6.044,
+      "independently_recomputed_fields": 4180
+    },
+    {
+      "season": "2025-26",
+      "full_season": true,
+      "fixtures": 380,
+      "linked_player_rows": 29747,
+      "hourly_rows": 132840,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 2,
+      "dark_with_unadjusted_sunshine": 0,
+      "native_timestamp_conflicts": 0,
+      "max_grid_distance_km": 6.619,
+      "independently_recomputed_fields": 4180
+    },
+    {
+      "season": "2026-27",
+      "full_season": false,
+      "fixtures": 50,
+      "linked_player_rows": 1538,
+      "hourly_rows": 10920,
+      "missing_weather_values": 0,
+      "sunrise_sunset_flags": 0,
+      "dark_with_unadjusted_sunshine": 0,
+      "native_timestamp_conflicts": 0,
+      "max_grid_distance_km": 6.619,
+      "independently_recomputed_fields": 550
+    }
+  ],
+  "total_fixtures": 2710,
+  "linked_player_rows": 187111,
+  "unmatched_rows": 0,
+  "missing_weather_values": 0,
+  "total_sunrise_sunset_flags": 21,
+  "total_dark_with_unadjusted_sunshine": 8,
+  "total_hourly_rows": 967152,
+  "independently_recomputed_fields": 29810,
+  "pilot_regression_fields_compared": 15580,
+  "pilot_values_unchanged": true,
+  "input_master_sha256": "268cf0bfacb5d9680f845497447bd2be86c27825ce483e89650ec5d4e57e8ec9",
+  "all_master_player_match_keys_covered": true,
+  "unique_season_fixture_weather_keys": true,
+  "native_timestamp_conflicts": [
+    {
+      "season": "2021-22",
+      "fixture": "263",
+      "native_kickoff_times": [
+        "2022-02-26T15:00:00Z"
+      ],
+      "selected_kickoff": "2022-02-26T15:30:00Z",
+      "affected_player_rows": 78,
+      "resolution": "Canonical fixture time; 30-minute traffic delay. Original player rows retained.",
+      "evidence": "https://www.brightonandhovenews.org/2022/02/26/traffic-delays-kick-off-as-brighton-and-hove-albion-prepare-to-host-aston-villa/"
+    }
+  ],
+  "max_grid_distance_km": 7.018,
+  "scope": "2019-20 through 2025-26 complete; 2026-27 only 50 matches already in master through 20 September. Historical weather, no model training or pre-deadline qualification."
+}

@@ -12,3 +12,6 @@ research/current/**/*.gz -filter -diff -merge
 
 # Exact vendor copies retain their original terminal blank lines.
 model_lab/vendor/** whitespace=-blank-at-eof
+
+# Byte-preserved research source snapshots retain original whitespace.
+releases/2026-10-26/implementation/** whitespace=-blank-at-eof,-blank-at-eol

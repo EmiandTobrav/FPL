@@ -1,0 +1,48 @@
+{
+  "activated": true,
+  "automatic_FPL_submission": false,
+  "corrected_calendar_bound_to_real_training_and_teachers": true,
+  "current_data_refresh_required": true,
+  "files": {
+    "model_lab/active.py": "f05a858ca62613f83371ab5cf6d8509ede895556166d644210e310449024e474",
+    "model_lab/planned_component_forecaster.py": "2badef4c88631db9e13867796b97b3fb881ded9201281c76a1188bd4b9fc239c",
+    "overview/ACTIVE_TEAM_BENCHMARK.json": "0007f397ed77d9461ac4668e5eda2a17a67ed2b3325559e208b57a0884655a8b",
+    "overview/COMPONENT_RELEASES.json": "154a7f5c5d0d06077ba67bc10a5b6e4a805d63bbb5ed15b2470eceeefda3648d",
+    "reports/component_plan5_activation_2026_10_26/activation_review.json": "3a06178bbe2de1a3905ec2169ae097dd4f4bf69f3c2edc842a053cc9325ec848",
+    "reports/component_plan5_activation_2026_10_26/build_release.py": "39c9234abbdbd4b6e5ffdc9a5f4ac2bf2e09c7ddacd09229ab58e71849501ee5",
+    "reports/component_plan5_activation_2026_10_26/dispatcher_verification.json": "8c7313ed5ba64c64a8bf5a93f4152a5af2e0bb5cadbeeb27e851f18f5aecdf64",
+    "reports/component_plan5_activation_2026_10_26/forecast_seal.json": "c97c5679032ada1501ce0efd86df3bbf2d3a2d38973475f194123ca50a38822a",
+    "reports/component_plan5_activation_2026_10_26/forecast_verification.json": "3c12ce6bbc9bef715e2992c7dd074459ed58c0ef5ecde45829e159ce892be8b7",
+    "reports/component_plan5_activation_2026_10_26/freshness_verification.json": "31af5bcb0a0e0c5ee453ac9ebaf524700c42ae18fe2f040c07de422dfdd66f9e",
+    "reports/component_plan5_activation_2026_10_26/manager_verification.json": "244d4502041f1d8a840c252fe3812a6690de6deff4dff6ca3c0cd9d70c2d5ce9",
+    "reports/component_plan5_activation_2026_10_26/operational_seal.json": "251bdfbf47cbb4f2ea18ed3dcae11c3749d44b796f4cacaff5f1bd3b8c703144",
+    "reports/component_plan5_activation_2026_10_26/previous_model_lab_active.py": "b68493a25b184fe30cf61ddf6eec82982f1b3c237bbc2ecd90d70230382c48b0",
+    "reports/component_plan5_activation_2026_10_26/previous_scripts_refresh_component_release.py": "0923fbd8e790569fe2c1a2185df07f01410e798a023fc4b0910d54d0c82a5f10",
+    "reports/component_plan5_activation_2026_10_26/proposed_model_lab_active.py": "f05a858ca62613f83371ab5cf6d8509ede895556166d644210e310449024e474",
+    "reports/component_plan5_activation_2026_10_26/proposed_scripts_refresh_component_release.py": "c24669d57d51712a390216369c87f31867990dd856bbccc63130a7cca699b064",
+    "reports/component_plan5_activation_2026_10_26/publish_activation.py": "13b15c91dc5c12d1967e6a5319457eee867fd13b9cc44ae0f114352ec4dcf75a",
+    "reports/component_plan5_activation_2026_10_26/runtime_config.json": "a9bbed4103ae2f6c99fb09761eb3a22d28727df68fbe02f4b584b9d4d09d8e4c",
+    "reports/component_plan5_activation_2026_10_26/selected_active_descriptor.json": "759932c86f5008c3bc15bbd4e4b6c90222aaec27faf6da9e3d4295a3f89a02f5",
+    "reports/component_plan5_activation_2026_10_26/verification_harness_note.json": "023589905d7dbcdaa81c0e9bdd30914d2afc2fdb47fc1bfe032d0d18d41eb28e",
+    "reports/component_plan5_activation_2026_10_26/verify_active_dispatcher.py": "2332a6a955359142a45e546f93303ddae7f32b1213e33061d17ec1b43de03a08",
+    "reports/component_plan5_activation_2026_10_26/verify_forecast.py": "72808c20d8dab195795db717d967ef6893dd49b0a6a3673d834d6d2770026356",
+    "reports/component_plan5_activation_2026_10_26/verify_manager.py": "08de2be1c31d7d46943289e01e396a00ac3ea61f9f7465f63a2b27638a92c190",
+    "scripts/refresh_component_release.py": "c24669d57d51712a390216369c87f31867990dd856bbccc63130a7cca699b064"
+  },
+  "historical_h5_points": [
+    2569,
+    2591,
+    2359
+  ],
+  "old_forecast_seals_verified": true,
+  "only_intentional_routing_and_registry_changes": [
+    "overview/ACTIVE_TEAM_BENCHMARK.json",
+    "overview/COMPONENT_RELEASES.json",
+    "model_lab/active.py",
+    "scripts/refresh_component_release.py"
+  ],
+  "operational_dispatcher_and_decide_checked": true,
+  "passed": true,
+  "selected_planning_horizon": 5,
+  "source_clocks_preserved": true
+}

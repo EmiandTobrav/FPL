@@ -1,0 +1,16 @@
+{
+  "all_failures_disclosed": true,
+  "failures": [
+    {
+      "arm": "h8",
+      "completed_partial_rounds": 5,
+      "exact_exceeded_node_count_not_persisted": true,
+      "failed_before_round": 6,
+      "log": "reports/manager_horizon_2026_10_26_v2/logs/manager_2024-25_h8.log",
+      "no_retry_or_budget_relaxation": true,
+      "reason": "native solver exceeded fixed16node cap",
+      "season": "2024-25",
+      "valid_full_season_score": null
+    }
+  ]
+}

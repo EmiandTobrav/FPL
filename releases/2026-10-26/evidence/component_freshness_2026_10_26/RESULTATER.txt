@@ -1,0 +1,30 @@
+FERSKE DATA OG FEM RUNDERS PLANLEGGING – KLAR FOR BEREGNING
+26. oktober 2026
+
+STATUS
+Den aktive komponentmodellen er oppdatert med nye offisielle FPL-kilder og nye klubb-/landslagsobservasjoner. Den faktiske operative inngangen laster den nye versjonen og gir669ferske spillerprognoser over8prognoserunder, med5runders detaljert planlegging. Alle kontroller nedenfor er bestått. Ingen faktiske FPL-lagendringer er sendt.
+
+KILDER OG OMFGANG
+671offisielle svar: bootstrap,380kampers kalender og spillerhistorikk for669spillere. Neste frist er GW9,31.oktober2026 kl11:00UTC. Fullførte tilgjengelige PL-historier går gjennomGW8;4866kvalifiserte spiller-/kampobservasjoner inngår i liveutvidelsen.354historikkrader er avvist av den eksisterende daterte avgangs-/utlånskontrollen. Gyldige nullminutter innenfor ligaen beholdes.
+39konkurransekilder er hentet på nytt, med443fullførte kampsammendrag i siste56dager. Utvalget med PL-klubber eller bekreftede nåværende FPL-identiteter inneholder39klubbkamper og166landskamper.1736spillerregistreringer:1735med kvalifiserte minutter,1ukjent. Den ukjente verdien er ikke fylt med null. Klubbtreningskamper og andre tidligere ekskluderte konkurranser er fortsatt utenfor omfanget; all_competitions_complete er False.
+Den kombinerte eksterne tabellen bevarer46862eldre spillerregistreringer, erstatter1554med1736ferske og får48598rader.5296kamp-/sesongrader følger med. De store råkildene og alle tidligere manifester er bevart separat. Et første datointervallkall ble avvist av leverandøren; den eksisterende støttede årsspørringen ble brukt og filtrert til samme56dagersvindu. Ingen tidligere svar er ommerket som ferske.
+
+UENDRET MODELL OG METODE
+Samme korrigerte historiske kalender, eget korrigert lærerarkiv og325valgte felt. Ingen xG/xA-aktivering. Samme komponentarkitektur, CatBoost-parametre, like radvekter og trening/kalibrering hver fjerde runde. Oppfriskningen er iGW9, en ordinær oppdateringsrunde:2basepakker og8kalibreringshoder er bygget. Halveringstid180dager, Ridge0,01. Ingen ny modellvariant eller historisk sesongtest er kjørt.
+Samme hashkontrollerte H5manager, chipdato-søk, chipreserver, byttefriksjon og ressursgrenser:16noder/40kall/én tråd. Samme harde sperrer for utilgjengelige spillere og avganger. Bare førfristopplysninger brukes. Den nye versjonen kobler de oppfriskede eksterne observasjonene inn i den faktiske featurebyggingen, prognosekontrollen og neste oppfriskningsløp; den gamle kildesamlingen er ikke endret.
+
+KONTROLLER – BESTÅTT
+Alle671offisielle kvitteringer og482eksterne kildekvitteringer er hash- og tidskontrollert. Alle kilder er yngre enn24timer, tilgjengelige før modellens prognoseopprinnelse og før fristen. Ingen framtidige utfall er brukt. Fullførte utfall kvalifiseres med samme avspark+24timer-proxy som tidligere; dette er fortsatt en dokumentert kildebegrensning.
+Begge basepakker har riktige treningsnøkler, parametre og tidsgrenser; prognosene er gjenskapt fra modellfilene. Alle8kalibreringshoder er kontrollert numerisk mot180-dagersvekting ogRidge0,01.5352belastningssummer (klubb/landslag,3/7/14/28dager,669spillere) er kontrollert direkte mot spillertabellen, uten den ordinære aggregeringsklassen.
+Runtime.forecast og Runtime.decide består på den ferske spillerstallen. Et eid lag med en bekreftet utilgjengelig spiller og kunstig høy prognose kan ikke starte eller kapteine spilleren. Alle godtatte lagvalg er lovlige under uendret søkebudsjett. Den faktiske aktive rutingen er kontrollert etter publisering.
+
+BRUK OG GYLDIGHET
+Modellen er teknisk klar til å beregne et ferskt forslag nå. Et personlig bytte-/lagforslag krever i tillegg bekreftet nåværende tropp, bank, fribytter, tilgjengelige chips og eventuelle allerede gjennomførte bytter. Denne kontrollen har ikke bekreftet brukerens private lagstatus og har ikke sendt noen FPL-ordre.
+Kildekontrollen gjelder tidspunktet ireadiness.json. Før nye forslag etter ferskhetsgrensen må kildene oppfriskes igjen; dette er ikke en garanti om ferskhet fram tilGW9-fristen.
+
+GITHUB
+Det nye observasjonsgrunnlaget med vær, utvidede turneringer og de korrigerte modelltabellene klargjøres for publisering sammen med rapportkopier, kode og negative funn. Den historiske masteren har190124PL-rader og stopper fortsatt vedGW7i2026/27; den nyeGW8livehistorikken er en separat oppdatert utvidelse. Faktiske CSV/XZ-tabeller publiseres, mens full råbuffer og alle modell-/lærerarkiver forblir lokale. GitHub-status og lenke registreres separat etter opplasting.
+
+Kontrollert:2026-10-26 21:58:52.104316+00:00
+Prognoseopprinnelse:2026-10-26 21:53:25.174011+00:00
+Kildene må oppfriskes senest:2026-10-27 21:47:03.199335+00:00

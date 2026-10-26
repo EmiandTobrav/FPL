@@ -1,0 +1,670 @@
+{
+  "conclusion": "18 modell-/featurevarianter er sammenlignet p\u00e5 \u00e9n felles, tidskontrollert spiller\u2013runde-tabell. Resultater gjelder prognoser, ikke sesongpoeng eller operativ promotering.",
+  "decision": "retain_for_research",
+  "evidence_hashes": {
+    "datasets/fpl_common_training_v1/manifest.json": "740f77b76c5fb9af581b168063033b96a30212bf3ea49e42872f44be6c5f709f",
+    "datasets/fpl_common_training_v1/verification.json": "c4ba1ec042b2381888b2f857e6a2550242fd5803e7e43279ca2148a875712b83",
+    "reports/common_model_retest_2026_10_25_v3/RESULTATER.md": "fedb26fbd85e186db6b68e51b3682828cdc038fcc8fb1c5dd48623b42510a78f",
+    "reports/common_model_retest_2026_10_25_v3/cohorts.csv": "3fc547795927edb92edf8e8bd5661ad4c7ac7510bae6b38da2ac0620ac041865",
+    "reports/common_model_retest_2026_10_25_v3/fit_audit.csv": "61dffa524a07af05dd7e79b7a47fd68455ce616439a5bbc8314a3aee419142ba",
+    "reports/common_model_retest_2026_10_25_v3/intervals.csv": "77ee3cbab12f1715583f0411395d3b77bac2844963cc878bfb9f97fa05827832",
+    "reports/common_model_retest_2026_10_25_v3/metrics.csv": "976132ae95a62ed502c27f5c7fab704a6bff237778709fcb77074233e9a5ac0f",
+    "reports/common_model_retest_2026_10_25_v3/operational_anchor_metrics.csv": "82023ba79f2d6e9724d907283fb5d4bf69e6faca74a66c054c52af9fc714394b",
+    "reports/common_model_retest_2026_10_25_v3/operational_anchor_verification.json": "b60ae23b1e80425cb94c971b8abadf428bc9a2cd58f68ef4d959e009c877ea91",
+    "reports/common_model_retest_2026_10_25_v3/prediction_lock.json": "f330649fa029cc131babf0efa84ed0135a47db6e06426bdb6b5938d3e53124f5",
+    "reports/common_model_retest_2026_10_25_v3/summary.csv": "7a7200e43e2fc99ddeaf186c5dddbfa7b13dcbea1d2b33bf22c7d49b21121701",
+    "reports/common_model_retest_2026_10_25_v3/verification.json": "8e230d20e4d20810d7987e5b227640ad326a7d63b3d8713e450024c25190d246"
+  },
+  "manager_run": false,
+  "production_changed": false,
+  "results": [
+    {
+      "arm": "catboost",
+      "horizon": 1,
+      "minute_mse": 604.1637953649852,
+      "period": "development",
+      "point_mae": 1.2785766443031217,
+      "point_mse": 4.9647322879105955,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_history",
+      "horizon": 1,
+      "minute_mse": 791.5819368457825,
+      "period": "development",
+      "point_mae": 1.381630343333197,
+      "point_mse": 5.390266502910898,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_availability",
+      "horizon": 1,
+      "minute_mse": 682.6534384505131,
+      "period": "development",
+      "point_mae": 1.325841974335208,
+      "point_mse": 5.1437295078295335,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_lagged_weather",
+      "horizon": 1,
+      "minute_mse": 604.7146758850537,
+      "period": "development",
+      "point_mae": 1.2797766600005938,
+      "point_mse": 4.965225387733737,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_role",
+      "horizon": 1,
+      "minute_mse": 613.8322346430695,
+      "period": "development",
+      "point_mae": 1.2833673013001488,
+      "point_mse": 4.982876607918365,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_set_piece",
+      "horizon": 1,
+      "minute_mse": 602.991602792491,
+      "period": "development",
+      "point_mae": 1.2793289707495143,
+      "point_mse": 4.970683421719035,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_strength",
+      "horizon": 1,
+      "minute_mse": 603.1240068482056,
+      "period": "development",
+      "point_mae": 1.2834911453417834,
+      "point_mse": 4.990059603644583,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_workload",
+      "horizon": 1,
+      "minute_mse": 604.2358538861278,
+      "period": "development",
+      "point_mae": 1.2801223836215,
+      "point_mse": 4.960331877150349,
+      "seasons": 3
+    },
+    {
+      "arm": "component",
+      "horizon": 1,
+      "minute_mse": 608.6152459981273,
+      "period": "development",
+      "point_mae": 1.2846604534537294,
+      "point_mse": 4.986019510455619,
+      "seasons": 3
+    },
+    {
+      "arm": "extra_trees",
+      "horizon": 1,
+      "minute_mse": 584.9980891455784,
+      "period": "development",
+      "point_mae": 1.2691555771905163,
+      "point_mse": 4.955477300283086,
+      "seasons": 3
+    },
+    {
+      "arm": "fixed_history",
+      "horizon": 1,
+      "minute_mse": 1010.298463267102,
+      "period": "development",
+      "point_mae": 1.4711430496417055,
+      "point_mse": 5.949785564593422,
+      "seasons": 3
+    },
+    {
+      "arm": "hgb",
+      "horizon": 1,
+      "minute_mse": 576.1145478612171,
+      "period": "development",
+      "point_mae": 1.267226666508926,
+      "point_mse": 4.949240995550693,
+      "seasons": 3
+    },
+    {
+      "arm": "lightgbm",
+      "horizon": 1,
+      "minute_mse": 572.4752409740628,
+      "period": "development",
+      "point_mae": 1.2657482921542131,
+      "point_mse": 4.939704195107666,
+      "seasons": 3
+    },
+    {
+      "arm": "point_distribution",
+      "horizon": 1,
+      "minute_mse": 750.9070487433127,
+      "period": "development",
+      "point_mae": 1.298755086798525,
+      "point_mse": 5.015482033993547,
+      "seasons": 3
+    },
+    {
+      "arm": "ridge",
+      "horizon": 1,
+      "minute_mse": 637.675012925822,
+      "period": "development",
+      "point_mae": 1.3876337637669722,
+      "point_mse": 5.1416871858817395,
+      "seasons": 3
+    },
+    {
+      "arm": "ridge_extra_50",
+      "horizon": 1,
+      "minute_mse": 590.7839934819219,
+      "period": "development",
+      "point_mae": 1.313889133260598,
+      "point_mse": 4.979269945828669,
+      "seasons": 3
+    },
+    {
+      "arm": "role_conditional",
+      "horizon": 1,
+      "minute_mse": 583.6014397996777,
+      "period": "development",
+      "point_mae": 1.2656091134759635,
+      "point_mse": 4.938577388246586,
+      "seasons": 3
+    },
+    {
+      "arm": "two_part",
+      "horizon": 1,
+      "minute_mse": 585.9109191282931,
+      "period": "development",
+      "point_mae": 1.2627937646649627,
+      "point_mse": 4.9293645813377855,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost",
+      "horizon": 3,
+      "minute_mse": 4223.464752469704,
+      "period": "development",
+      "point_mae": 2.9463939951905886,
+      "point_mse": 20.26271671623284,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_history",
+      "horizon": 3,
+      "minute_mse": 5068.42884523861,
+      "period": "development",
+      "point_mae": 3.1548334408455254,
+      "point_mse": 22.20525174052568,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_availability",
+      "horizon": 3,
+      "minute_mse": 4628.088362230962,
+      "period": "development",
+      "point_mae": 3.047489790717958,
+      "point_mse": 21.17973286752392,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_lagged_weather",
+      "horizon": 3,
+      "minute_mse": 4227.802620701281,
+      "period": "development",
+      "point_mae": 2.9449329805405777,
+      "point_mse": 20.272917520283947,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_role",
+      "horizon": 3,
+      "minute_mse": 4295.795018102314,
+      "period": "development",
+      "point_mae": 2.952160823528425,
+      "point_mse": 20.362681154840384,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_set_piece",
+      "horizon": 3,
+      "minute_mse": 4216.318284408849,
+      "period": "development",
+      "point_mae": 2.9438368616950137,
+      "point_mse": 20.257792394818505,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_strength",
+      "horizon": 3,
+      "minute_mse": 4223.630832264768,
+      "period": "development",
+      "point_mae": 2.949701832441834,
+      "point_mse": 20.31450808845575,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost_without_workload",
+      "horizon": 3,
+      "minute_mse": 4236.6434149101115,
+      "period": "development",
+      "point_mae": 2.950574841491111,
+      "point_mse": 20.25768303905628,
+      "seasons": 3
+    },
+    {
+      "arm": "component",
+      "horizon": 3,
+      "minute_mse": 4247.380551066805,
+      "period": "development",
+      "point_mae": 2.956777779527501,
+      "point_mse": 20.35029860898123,
+      "seasons": 3
+    },
+    {
+      "arm": "extra_trees",
+      "horizon": 3,
+      "minute_mse": 4153.136271446008,
+      "period": "development",
+      "point_mae": 2.956228044203103,
+      "point_mse": 20.411066255177584,
+      "seasons": 3
+    },
+    {
+      "arm": "fixed_history",
+      "horizon": 3,
+      "minute_mse": 7580.357739043774,
+      "period": "development",
+      "point_mae": 4.381372847743051,
+      "point_mse": 36.300563111817674,
+      "seasons": 3
+    },
+    {
+      "arm": "hgb",
+      "horizon": 3,
+      "minute_mse": 4070.410449477023,
+      "period": "development",
+      "point_mae": 2.924490916447736,
+      "point_mse": 20.200284371392076,
+      "seasons": 3
+    },
+    {
+      "arm": "lightgbm",
+      "horizon": 3,
+      "minute_mse": 4052.552077525174,
+      "period": "development",
+      "point_mae": 2.9173837280542787,
+      "point_mse": 20.17732364074318,
+      "seasons": 3
+    },
+    {
+      "arm": "point_distribution",
+      "horizon": 3,
+      "minute_mse": 4822.822906480399,
+      "period": "development",
+      "point_mae": 3.007069231310642,
+      "point_mse": 20.869089880988863,
+      "seasons": 3
+    },
+    {
+      "arm": "ridge",
+      "horizon": 3,
+      "minute_mse": 4342.247522079481,
+      "period": "development",
+      "point_mae": 3.128792048544191,
+      "point_mse": 21.21651639860735,
+      "seasons": 3
+    },
+    {
+      "arm": "ridge_extra_50",
+      "horizon": 3,
+      "minute_mse": 4134.970469043872,
+      "period": "development",
+      "point_mae": 2.9929036118701693,
+      "point_mse": 20.413799148991764,
+      "seasons": 3
+    },
+    {
+      "arm": "role_conditional",
+      "horizon": 3,
+      "minute_mse": 4155.097245195553,
+      "period": "development",
+      "point_mae": 2.93078064083233,
+      "point_mse": 20.209924908484492,
+      "seasons": 3
+    },
+    {
+      "arm": "two_part",
+      "horizon": 3,
+      "minute_mse": 4165.14411218667,
+      "period": "development",
+      "point_mae": 2.9262550576264235,
+      "point_mse": 20.186169152972393,
+      "seasons": 3
+    },
+    {
+      "arm": "catboost",
+      "horizon": 1,
+      "minute_mse": 548.443286334207,
+      "period": "later_2025_26",
+      "point_mae": 1.2153473174305156,
+      "point_mse": 4.545747126736022,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_history",
+      "horizon": 1,
+      "minute_mse": 694.1770674324425,
+      "period": "later_2025_26",
+      "point_mae": 1.3029985372589128,
+      "point_mse": 4.872892744427404,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_availability",
+      "horizon": 1,
+      "minute_mse": 622.1841397437653,
+      "period": "later_2025_26",
+      "point_mae": 1.2608872316225317,
+      "point_mse": 4.711100849335678,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_lagged_weather",
+      "horizon": 1,
+      "minute_mse": 548.9564012047769,
+      "period": "later_2025_26",
+      "point_mae": 1.2168618144409515,
+      "point_mse": 4.5497031681470474,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_role",
+      "horizon": 1,
+      "minute_mse": 559.4049497515336,
+      "period": "later_2025_26",
+      "point_mae": 1.221029128097589,
+      "point_mse": 4.567877851413185,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_set_piece",
+      "horizon": 1,
+      "minute_mse": 548.0431585459777,
+      "period": "later_2025_26",
+      "point_mae": 1.2197592016930732,
+      "point_mse": 4.553078037925063,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_strength",
+      "horizon": 1,
+      "minute_mse": 542.9414266837186,
+      "period": "later_2025_26",
+      "point_mae": 1.2108676631585376,
+      "point_mse": 4.541371069541062,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_workload",
+      "horizon": 1,
+      "minute_mse": 553.7926369489467,
+      "period": "later_2025_26",
+      "point_mae": 1.2157766352722963,
+      "point_mse": 4.55974581172797,
+      "seasons": 1
+    },
+    {
+      "arm": "component",
+      "horizon": 1,
+      "minute_mse": 551.3080919536341,
+      "period": "later_2025_26",
+      "point_mae": 1.2201509520049525,
+      "point_mse": 4.558119974011506,
+      "seasons": 1
+    },
+    {
+      "arm": "extra_trees",
+      "horizon": 1,
+      "minute_mse": 528.8571733627685,
+      "period": "later_2025_26",
+      "point_mae": 1.1950163110661385,
+      "point_mse": 4.533284958404704,
+      "seasons": 1
+    },
+    {
+      "arm": "fixed_history",
+      "horizon": 1,
+      "minute_mse": 915.1394800031104,
+      "period": "later_2025_26",
+      "point_mae": 1.3847146132299828,
+      "point_mse": 5.488783691798808,
+      "seasons": 1
+    },
+    {
+      "arm": "hgb",
+      "horizon": 1,
+      "minute_mse": 516.7368507016039,
+      "period": "later_2025_26",
+      "point_mae": 1.2033904939552802,
+      "point_mse": 4.523158633943578,
+      "seasons": 1
+    },
+    {
+      "arm": "lightgbm",
+      "horizon": 1,
+      "minute_mse": 514.2526869821884,
+      "period": "later_2025_26",
+      "point_mae": 1.202713767949204,
+      "point_mse": 4.535545593331801,
+      "seasons": 1
+    },
+    {
+      "arm": "point_distribution",
+      "horizon": 1,
+      "minute_mse": 675.3825211910562,
+      "period": "later_2025_26",
+      "point_mae": 1.2279039326123211,
+      "point_mse": 4.564444979140193,
+      "seasons": 1
+    },
+    {
+      "arm": "ridge",
+      "horizon": 1,
+      "minute_mse": 574.3545041744371,
+      "period": "later_2025_26",
+      "point_mae": 1.298355839820622,
+      "point_mse": 4.659009732040734,
+      "seasons": 1
+    },
+    {
+      "arm": "ridge_extra_50",
+      "horizon": 1,
+      "minute_mse": 534.9118706477121,
+      "period": "later_2025_26",
+      "point_mae": 1.2352994823842958,
+      "point_mse": 4.543799827771835,
+      "seasons": 1
+    },
+    {
+      "arm": "role_conditional",
+      "horizon": 1,
+      "minute_mse": 533.1203925990499,
+      "period": "later_2025_26",
+      "point_mae": 1.2001961050200736,
+      "point_mse": 4.52292322995151,
+      "seasons": 1
+    },
+    {
+      "arm": "two_part",
+      "horizon": 1,
+      "minute_mse": 539.7249295766513,
+      "period": "later_2025_26",
+      "point_mae": 1.2002843060461783,
+      "point_mse": 4.535425771289025,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost",
+      "horizon": 3,
+      "minute_mse": 3906.589633645752,
+      "period": "later_2025_26",
+      "point_mae": 2.7835212676619245,
+      "point_mse": 18.09962050157113,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_history",
+      "horizon": 3,
+      "minute_mse": 4663.764926598291,
+      "period": "later_2025_26",
+      "point_mae": 2.9766455894085495,
+      "point_mse": 19.782077442272925,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_availability",
+      "horizon": 3,
+      "minute_mse": 4298.434670721541,
+      "period": "later_2025_26",
+      "point_mae": 2.8822490482514476,
+      "point_mse": 19.0020152219698,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_lagged_weather",
+      "horizon": 3,
+      "minute_mse": 3910.8433743742494,
+      "period": "later_2025_26",
+      "point_mae": 2.782926952962613,
+      "point_mse": 18.110043281447197,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_role",
+      "horizon": 3,
+      "minute_mse": 3988.6977422717546,
+      "period": "later_2025_26",
+      "point_mae": 2.7910430811664293,
+      "point_mse": 18.21293447138892,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_set_piece",
+      "horizon": 3,
+      "minute_mse": 3892.062251133051,
+      "period": "later_2025_26",
+      "point_mae": 2.779691429619167,
+      "point_mse": 18.104574900903405,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_strength",
+      "horizon": 3,
+      "minute_mse": 3895.299515663939,
+      "period": "later_2025_26",
+      "point_mae": 2.776505154790575,
+      "point_mse": 18.09366141136314,
+      "seasons": 1
+    },
+    {
+      "arm": "catboost_without_workload",
+      "horizon": 3,
+      "minute_mse": 3904.2581625700545,
+      "period": "later_2025_26",
+      "point_mae": 2.7847908248296545,
+      "point_mse": 18.08899153089527,
+      "seasons": 1
+    },
+    {
+      "arm": "component",
+      "horizon": 3,
+      "minute_mse": 3909.816281876326,
+      "period": "later_2025_26",
+      "point_mae": 2.7946625181148845,
+      "point_mse": 18.192164002559284,
+      "seasons": 1
+    },
+    {
+      "arm": "extra_trees",
+      "horizon": 3,
+      "minute_mse": 3821.766048106813,
+      "period": "later_2025_26",
+      "point_mae": 2.7691004681560254,
+      "point_mse": 18.151283035011716,
+      "seasons": 1
+    },
+    {
+      "arm": "fixed_history",
+      "horizon": 3,
+      "minute_mse": 6924.305240976491,
+      "period": "later_2025_26",
+      "point_mae": 3.6696596292714982,
+      "point_mse": 28.029661232772703,
+      "seasons": 1
+    },
+    {
+      "arm": "hgb",
+      "horizon": 3,
+      "minute_mse": 3743.4055487715864,
+      "period": "later_2025_26",
+      "point_mae": 2.7794752910016984,
+      "point_mse": 18.13752990044844,
+      "seasons": 1
+    },
+    {
+      "arm": "lightgbm",
+      "horizon": 3,
+      "minute_mse": 3727.68562508408,
+      "period": "later_2025_26",
+      "point_mae": 2.765797501170614,
+      "point_mse": 18.09835475220065,
+      "seasons": 1
+    },
+    {
+      "arm": "point_distribution",
+      "horizon": 3,
+      "minute_mse": 4419.945491500882,
+      "period": "later_2025_26",
+      "point_mae": 2.8202014755182003,
+      "point_mse": 18.18161918185699,
+      "seasons": 1
+    },
+    {
+      "arm": "ridge",
+      "horizon": 3,
+      "minute_mse": 4014.355359490215,
+      "period": "later_2025_26",
+      "point_mae": 2.919387632769245,
+      "point_mse": 18.616220528663487,
+      "seasons": 1
+    },
+    {
+      "arm": "ridge_extra_50",
+      "horizon": 3,
+      "minute_mse": 3812.1351526228696,
+      "period": "later_2025_26",
+      "point_mae": 2.805163506788371,
+      "point_mse": 18.065223613660443,
+      "seasons": 1
+    },
+    {
+      "arm": "role_conditional",
+      "horizon": 3,
+      "minute_mse": 3846.2218938070105,
+      "period": "later_2025_26",
+      "point_mae": 2.7697693551423184,
+      "point_mse": 17.997405668532416,
+      "seasons": 1
+    },
+    {
+      "arm": "two_part",
+      "horizon": 3,
+      "minute_mse": 3850.9022816696993,
+      "period": "later_2025_26",
+      "point_mae": 2.761190247382801,
+      "point_mse": 17.987795011941554,
+      "seasons": 1
+    }
+  ]
+}

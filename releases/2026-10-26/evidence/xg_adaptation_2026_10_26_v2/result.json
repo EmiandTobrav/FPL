@@ -1,0 +1,53 @@
+{
+  "conclusion": "Separate qualified xG and recent180 calibration tests complete on identical three-season grounds. Per-year results and gates are preserved; active production unchanged. xg_only: net gate False, common-candidate H1 point-MSE gate False; recent_only: net gate False, common-candidate H1 point-MSE gate False",
+  "decision": "retain_for_research",
+  "results": {
+    "per_season": [
+      {
+        "season": "2023-24",
+        "control": 2547.0,
+        "recent_only": 2465.0,
+        "xg_only": 2545.0,
+        "xg_delta": -2.0,
+        "recent_delta": -82.0
+      },
+      {
+        "season": "2024-25",
+        "control": 2495.0,
+        "recent_only": 2604.0,
+        "xg_only": 2569.0,
+        "xg_delta": 74.0,
+        "recent_delta": 109.0
+      },
+      {
+        "season": "2025-26",
+        "control": 2213.0,
+        "recent_only": 2335.0,
+        "xg_only": 2216.0,
+        "xg_delta": 3.0,
+        "recent_delta": 122.0
+      }
+    ],
+    "net_gate": {
+      "recent_only": false,
+      "xg_only": false
+    },
+    "common_candidate_H1_point_MSE_gate": {
+      "xg_only": false,
+      "recent_only": false
+    },
+    "active_model_changed": false,
+    "data_release": "fpl_common_training_v5",
+    "invalidated_prior_xg_run_excluded": true
+  },
+  "evidence_hashes": {
+    "reports/xg_adaptation_2026_10_26_v2/RESULTATER.txt": "df2e70c002d237b1172a0f56f050310dbb87db9cc848dde977250ae00276ff5c",
+    "reports/xg_adaptation_2026_10_26_v2/comparison.csv": "c92f3448dccc708708a4e6caa2226fb64491504f45797e581cbef50548f0c800",
+    "reports/xg_adaptation_2026_10_26_v2/scores.csv": "bc90bb2d436a71bc47aae74e90fd2c44ef5f4b0d7632310f1565da3f82460931",
+    "reports/xg_adaptation_2026_10_26_v2/forecast_metrics.csv": "7a5ef9e68e9eee0579eaa1bca8675df351d75954fae3ce48ab00ebc0a7208ddd",
+    "reports/xg_adaptation_2026_10_26_v2/ranking.csv": "16be7155d944163d0596da676d2bcf7dcfe765e5ff34d102a03412fca389fa9d",
+    "reports/xg_adaptation_2026_10_26_v2/feature_coverage.csv": "5e7f46893b9c8b8e2cd794c7ab204c031378c7857119f58d773f32691811e833",
+    "reports/xg_adaptation_2026_10_26_v2/final_verification.json": "e9b5dd3e8f2a3ba94261f37e2aa41cfc6f9d446e187024b762710d4e4dbcbbf3",
+    "datasets/fpl_common_training_v5/release.json": "fe2dadfdbc16abe15b6c3467d345343fef7e6aa155a62d8fac403029d2cb6777"
+  }
+}

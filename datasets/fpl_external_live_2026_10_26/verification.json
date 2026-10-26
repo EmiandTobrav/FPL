@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "all39scoreboards_refetched": true,
+  "fresh_summaries": 443,
+  "current_club_fixtures": 39,
+  "current_international_fixtures_with_FPL_players": 166,
+  "current_squad_rows": 1736,
+  "known_minutes": 1735,
+  "unknown_minutes": 1,
+  "historical_rows_retained": true,
+  "missing_not_zero": true,
+  "identities_qualified_by_existing_bridge_or_club_name_birthdate": true,
+  "merge": {
+    "matches.csv.gz": {
+      "retained": 5091,
+      "replaced": 196,
+      "fresh": 205,
+      "combined": 5296
+    },
+    "player_minutes.csv.gz": {
+      "retained": 46862,
+      "replaced": 1554,
+      "fresh": 1736,
+      "combined": 48598
+    },
+    "team_timeline_audit.csv.gz": {
+      "retained": 6699,
+      "replaced": 266,
+      "fresh": 275,
+      "combined": 6974
+    },
+    "source_match_audit.csv.gz": {
+      "retained": 9808,
+      "replaced": 434,
+      "fresh": 443,
+      "combined": 10251
+    }
+  },
+  "all_competitions_complete": false
+}

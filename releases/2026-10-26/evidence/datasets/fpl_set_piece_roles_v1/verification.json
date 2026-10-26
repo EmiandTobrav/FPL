@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "master_rows_preserved": 190124,
+  "season_rows": {
+    "2019-20": 22501,
+    "2020-21": 24365,
+    "2021-22": 25447,
+    "2022-23": 26505,
+    "2023-24": 29725,
+    "2024-25": 27283,
+    "2025-26": 29747,
+    "2026-27": 4551
+  },
+  "player_round_contexts": 182939,
+  "source_origins_checked": 272,
+  "origins_with_usable_role_schema": 206,
+  "known_role_source_master_rows": 149707,
+  "unknown_role_source_master_rows": 40417,
+  "known_role_source_player_rounds": 143350,
+  "unknown_role_source_player_rounds": 39589,
+  "own_role_checks": 430050,
+  "independent_group_count_checks": 2427716,
+  "independent_scenario_checks": 198190,
+  "listed_player_rounds": {
+    "corners_indirect_freekicks": 15592,
+    "direct_freekicks": 12914,
+    "penalties": 11132
+  },
+  "potential_promotion_player_rounds": {
+    "corners_indirect_freekicks": 294,
+    "direct_freekicks": 244,
+    "penalties": 352
+  },
+  "player_role_rows_with_ties": 13656,
+  "player_role_rows_with_gaps": 100802,
+  "actual_taker_confirmed": false,
+  "strict_historical_qualified": false,
+  "model_fits": 0
+}

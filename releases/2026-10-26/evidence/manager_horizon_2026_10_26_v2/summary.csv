@@ -1,0 +1,4 @@
+arm,horizon,complete_episodes,mean_all3,mean_latest2,net2025,delta2025,mean_delta_latest2,variance,range,all_year_nondecrease
+h3,3,3,2463.6666666666665,2463.0,2322.0,0.0,0.0,13254.888888888889,282.0,True
+h5,5,3,2506.3333333333335,2475.0,2359.0,37.0,12.0,10934.222222222224,232.0,False
+h8,8,2,,,2322.0,0.0,,,,False

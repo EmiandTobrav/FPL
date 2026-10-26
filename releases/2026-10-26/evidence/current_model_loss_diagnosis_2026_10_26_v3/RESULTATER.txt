@@ -1,0 +1,67 @@
+HVOR DAGENS KOMPONENTMODELL TAPER POENG I 2025/26
+26. oktober 2026
+
+KONKLUSJON
+Det tydeligste neste forsøket er bedre førfristrangering av kapteinskandidatene. Diagnosen peker på prognosenes rangering blant gode spillere, særlig midtbanespillere, fremfor en kapteinsregel som avviker fra modellens forventede poeng. Denne svakheten kan påvirke både spillervalg og kaptein. Byttekostnader forklarer ikke fallet; chips har svak uttelling, men begrenset isolert timingpotensial på den samme spillerbanen.
+Dagens modell beholdes. Ingen modell er trent eller aktivert, og ingen faktisk FPL-beslutning er sendt. Dette er en diagnose av frosne historiske utviklingsresultater, ikke en ny urørt test.
+
+1. HVOR KOMMER DE 269 FÆRRE POENGENE FRA?
+Eksakt regnskap fra 2604 i 2024/25 til 2335 i 2025/26. BB/TC er trukket ut av de ordinære poengene slik at ingenting telles dobbelt.
+Komponent                         2024/25       2025/26       Endring i netto
+Ordinære lagpoeng, inkl. autosubs        2179          2050               -129
+Ordinær kapteinsbonus                     372           260               -112
+Ekstra fra Bench Boost                     19             9                -10
+Ekstra fra Triple Captain                  38            16                -22
+Byttekostnader                              4             0                 +4
+Sum nettoendring: -269.
+Kapteinsbonus inkludert TC faller 134 poeng, fra410 til276. Lagpoeng inkludert BB faller139, fra2198 til2059. Fire færre poeng i byttekostnader kompenserer litt. Regnskapet er eksakt; det beviser ikke at de samme poengene kunne vært unngått med bedre modell. Sesongenes faktiske poengmuligheter varierer.
+
+2. KAPTEIN: STØRSTE TYDELIGE AVGRENSBARE FORBEDRINGSSPOR
+Kapteinen hadde høyest H1-poengprognose blant egen startellever i alle114 runder, inkludert alle38 i2025/26. Det er derfor ingen påvist feil der manageren overser sin egen beste forventede kaptein. Problemet ligger i hvilke spillere prognosene rangerer øverst, eller i utfallsvariasjon, ikke en vilkårlig kapteinsvelger.
+Med perfekt etterpåklokskap, samme startellever og samme TC-runder ville kapteinsbonus økt204 poeng i2025/26. Tilsvarende potensial var178 i2023/24 og151 i2024/25. Dette er en øvre, urealistisk diagnosemulighet; den kan ikke omtales som forventet gevinst fra et nytt system.
+Uten ekstra TC-multiplikasjon er kapteinsgapet193 i2025/26 mot151 i2024/25. Den ordinære kapteinsbonusen faller112 poeng: beste faktiske kaptein i de allerede valgte elleverne gir70 færre mulige poeng, mens større feilvalg innen disse elleverne forklarer de resterende42. De70 er ikke en ren ligavanskeeffekt; de kan også skyldes hvilke spillere laget eide og startet.
+Noen store bommer innen den allerede valgte elleveren:
+Runde  Valgt kaptein / faktisk poeng    Beste faktiske alternativ / poeng   Tapt vanlig kapteinsbonus
+   33  Bruno Borges Fernandes / 6    Morgan Gibbs-White / 20    14
+   12  Erling Haaland / 2    Daniel Muñoz Mejía / 14    12
+    8  Mohamed Salah / 2    Erling Haaland / 13    11
+   23  Erling Haaland / 1    Jarrod Bowen / 12    11
+   31  Cole Palmer / 2    Bruno Borges Fernandes / 13    11
+    7  Erling Haaland / 8    Antoine Semenyo / 18    10
+Dette er observerte bommer, ikke regler som bør læres direkte fra navnene eller rundene. Haaland ble valgt24 ganger:168 ordinære kapteinspoeng mot152,6 prognostisert. Salah ble valgt6 ganger:30 mot39,3 prognostisert. Det er derfor ikke et enkelt generelt problem med for høye kapteinsprognoser; relativ rangering og variasjon mellom rundene er viktigere.
+
+3. SPILLERPROGNOSER: SVAKERE RANGERING BLANT GODE KANDIDATER
+Gjennomsnittlig rangkorrelasjon per runde, samme felles kandidatdefinisjon. Høyere er bedre.
+Utvalg                            2023/24     2024/25     2025/26
+Felles lagkandidater                   0.259       0.200       0.153
+Midtbanekandidater                     0.181       0.249       0.119
+Spillere til minst9m                   0.255       0.406       0.278
+Den absolutte poengfeilen er lavere i2025/26, men utfallene har også lavere varians. Det betyr ikke at modellen skiller bedre mellom spillerne. Særlig midtbanekandidatene går fra rangkorrelasjon0,249 til0,119. Hele det kjøpbare feltet ser fortsatt sterkt ut, men inkluderer mange enkle null-/lavpoengstilfeller og skjuler svakere skille mellom de interessante spillerne.
+For de faktiske startelleverne er samlet poengsum124,3 høyere enn summen av H1-prognosene i2025/26. En generell oppjustering av alle prognoser retter ikke rangeringen eller kapteinsvalgene.
+Benk/startellever: Beste etterpåkloke lovlige startellever og benkerekkefølge blant de samme15 kunne gitt173 flere ordinære lagpoeng i2025/26, mot229 i2024/25. Benkvalgene ble altså ikke den tydeligste nye forverringen. Dette potensialet overlapper kaptein og andre diagnoser og skal ikke summeres med dem. Antall starter uten deltakelse steg fra10 til23, men autosubs ga35 poeng i2025/26; utilgjengelighet/risikable minutter er et sekundært område å følge.
+
+4. BYTTER: ENKELTBOMMER, MEN INGEN BYTTESTRAFF OG IKKE DET KLARE HOVEDSPOR
+2025/26 har0 poeng i hits, mot4 og20 i de to eldre sesongene. Byttekostnader er derfor ingen forklaring på svakere siste sesong.
+I27 ordinære runder med bytter ble faktisk netto sammenlignet med et lovlig, H1-prognosebasert alternativ som beholdt de15 spillerne fra samme førtilstand. Faktisk lag var samlet41 poeng bedre i disse isolerte rundene.10 runder var svakere, med samlet-42, og de positive rundene summerte til+83.
+Dette er en lokal referanse, ikke en sesongsimulering av aldri å bytte. Hold-alternativet velger startellever fra H1-prognoser og er ikke en ny kjøring av managerens tre-runders planlegger. Framtidig verdi av spillerbytter, bank og sparte fribytter er ikke målt. Resultatet gir ikke en kausal +41 sesonggevinst, men heller ingen klar indikasjon på at overdreven bytting er hovedproblemet.
+Rå poeng for kjøpte minus solgte spillere i runder uten WC/FH: +97 samme runde, uten ukjente2025/26-utfall. Over tre runder er summen+178 i de26 tilfellene med komplett fasit; fire tilfeller er ukjente og ekskludert. Dette teller også benkspillere, overlappende eierperioder og endret rolle og er derfor støtteinformasjon, ikke lagets kausale netto byttegevinst.
+De tre svakeste ordinære hold-sammenligningene var runde30(-11),33(-10) og31(-9). De er nyttige til gjennomgang av kjøpte/solgte spillerprognoser, men skal ikke gjøres til tilpassede sperreregler.
+
+5. CHIPS: SVAK UTTELLING, MEN MINDRE ISOLERT POTENSIAL
+BB og TC ga til sammen25 ekstra poeng utover samme lag uten de chipene, mot57 i2024/25. BB ga4 og5 poeng i runde11 og25. TC ga2 på Salah i runde8 og14 på Rice i runde26.
+Med perfekt kunnskap om utfall, samme faktiske spiller-, startellever-, kapteins- og byttebane og uendrede WC/FH-runder kunne bedre BB/TC-tidspunkt gitt43 ekstra poeng. Dette er kontrollert ved full lovlig avregning av hele den faste banen, med én BB og én TC per halvdel og ingen chipkollisjon. Tilsvarende timingpotensial var31 og39 i de to eldre sesongene.
+Dette43-poengspotensialet er ikke ekstra stort relativt de eldre sesongene. Det overlapper blant annet TC/kapteinsdiagnosen og kan ikke legges oppå204 eller173 som en samlet mulig gevinst.
+Free Hit er svakere lokalt: runde19 ga17 færre poeng enn å beholde daværende lag med prognosebasert oppstilling; runde38 ga4 flere. Sum-13 gjelder to isolerte beslutninger, ikke en alternativ sesongbane. Wildcard ga+24 og+6 i samme-runde-hold-sammenligning, men hele verdien av en WC varer mange runder og er ikke målt av dette. Den samlede optimale chipstrategien er derfor ikke avklart av BB/TC-grensen.
+
+6. ANBEFALT NESTE TEST
+En separat førfristmodell for rangering/forventede poeng blant kapteinskandidatene, brukt bare til kaptein og visekaptein. Dagens spillerstall, startellever, benk, bytter og chipdatoer fryses. Da kan vi måle kapteinsbidraget direkte uten at et bytte eller en annen chipbane skjuler årsaken.
+Test på alle tre sesongene med dagens kapteinsvalg som kontroll. Modulen må trenes på tidligere tilgjengelige eksempler og være låst før hver frist; ingen fasit fra den aktuelle runden brukes til valget. Ordinær kapteinsbonus og ekstra TC-bonus rapporteres hver for seg, sammen med netto sesongpoeng. Alle sesongene er allerede utviklingsdata; ny virkelig førfristoppfølging trengs fortsatt før vi kan kalle en gevinst robust framover.
+Hovedprioritet er2025/26 og de to siste sesongene, samtidig som2023/24 og variasjon mellom sesonger vises. Ingen ny test er startet i denne diagnosen.
+
+KONTROLLER OG BEGRENSNINGER
+Dagens produksjonsmodell og tidligere resultater er uendret.114 eksisterende avgjørelser og avregninger er kontrollert; inngående prognosehasher stemmer. Alle additive poengidentiteter er eksakte. Alle tre BB/TC-baner er etterspilt lovlig med de samme førfrist-sperrene. Ingen nye modelltilpasninger eller optimeringskall. Ukjente utfall i byttevinduer er ikke erstattet av null.
+Kaptein, lagvalg, bytter og chips er ikke fire uavhengige tapsposter. Spillerprognosene brukes av alle. Regnskapet forklarer en faktisk poengforskjell; etterpåkloke grenser viser muligheter med fasit og beviser ikke at en ny modell kan hente dem. Felles datagrunnlag og tidligere dokumenterte kalender-, markeds- og tidsproxyer gjelder fortsatt.
+To tekniske diagnoseforsøk stoppet før komplette resultater: første manglet et eksplisitt felt til tilgjengelighetskontrollen; andre forsøkte et hold-BB med en bekreftet utilgjengelig spiller. V3 leverer feltet og ekskluderer det ulovlige hold-alternativet; alle faktiske modellavgjørelser og den analytiske oppskriften er uendret. Ingen resultater eller parametere er valgt etter disse tekniske stoppene.
+
+FILER
+diagnostic_summary.csv: samlet kategorisammenligning. score_drop_bridge.csv: eksakt269-poengsbro. rounds.csv/periods.csv: runder og perioder. captains.csv: kaptein og valgt-XI-benchmark. hold.csv: lovlige lokale hold-alternativer og eksplisitte eksklusjoner. transfers.csv: rå H1/H3-kjøp/salg, med ukjentmarkør. chips.csv/chip_timing_bounds.json: chipbidrag og faste-bane-grenser. verification.json og independent_verification.json: kilde-, avregnings- og identitetskontroller.

@@ -1,0 +1,29 @@
+RASKERE KALIBRERING ER VALGT SOM STANDARD
+26. oktober 2026
+
+Standardmodell: common_component_h8_recent180_adaptive_v1. Bruker har uttrykkelig valgt recent_only-varianten med325felter og180dagers halveringstid, uten xG/xA. Beslutningen prioriterer de to nyeste sesongene og aksepterer poengtapet i2023/24. Det tidligere kravet om forbedring i alle tre år er ikke bestått; det er fraveket ved dette eksplisitte modellvalget. Originale forskningsresultater og konklusjoner er uendret.
+
+VERIFISERTE HISTORISKE RESULTATER
+Sesong       Tidligere standard   Ny standard   Endring
+2023-24                 2547          2465        -82
+2024-25                 2495          2604       +109
+2025-26                 2213          2335       +122
+
+Snitt: 2418.3 → 2468.0 (+49.7).
+Varians mellom de tre sesongene (populasjonsvarians): 21531.6 → 12064.7, 44.0% lavere. Spenn: 334 → 269poeng.
+2025/26-avvik fra snittet av de to første sesongene: −308.0 → −199.5poeng. De tidligere sesongenes gjennomsnitt stiger litt, så reduksjonen skyldes ikke bare at2023/24 ble svakere.
+Tre allerede undersøkte sesonger er et lite utviklingsgrunnlag. Lavere observert spredning dokumenterer ikke i seg selv fremtidig stabilitet eller evne til å vinne FPL.2025/26 er fortsatt tydelig svakere enn de to andre.
+
+ENDRING OG KONTROLLER
+Bare tapfunksjonens vekting av etterkalibreringshistorikken er endret:2**(-alder_i_dager/180), med alder målt fra lærerprognosens tidspunkt til oppdateringsfristen. Samme uvektede treningsbaserte datatransformasjon, Ridge-straff0,01, lærerobservasjoner og fullførte H3-fasitfilter.
+De samme325feltene, CatBoost-basismodellene, radene og tilgjengelighetsreglene er bevart. Ingen xG/xA eller kombinasjonsvariant er tatt i bruk. Oppdateringer fortsatt i runde1,5,9,...37; samme modeller brukes mellom oppdateringene.
+Alle240 historiske kalibreringer er gjenskapt numerisk med den operative implementasjonen. De8 nye operative hodene har bestått uavhengig gradient-, prediksjons-, førfrist- og lærer-ID-kontroll. Samme grunnmodeller og øvrige spillerfelt er kontrollert identiske.
+Harde sperrer består, også med svært høye prognoser for utilgjengelige spillere og for en utilgjengelig spiller som allerede eies. Samme managerbudsjett og chips. Ingen faktiske endringer er sendt til FPL.
+
+AKTUELL DATATILSTAND
+Byttet bruker den opprinnelige datakopien med faktisk kildeopptak 2026-10-25 23:41:30.884930+00:00. Nye kalibreringer er forseglet på dagens faktiske tidspunkt; gamle kildekvitteringer er ikke omdatert.
+De eksterne klubb-/landslagskildene har passert24timersgrensen ved aktivering. Standardoppskriften er aktiv, men den gamle kopien er sperret for nye laganbefalinger. Eksterne observasjonskilder og deretter offisielle FPL-kilder må oppdateres gjennom den vanlige, verifiserte oppdateringsflyten før neste konkrete lagforslag. Ingen ferskhetssperre er svekket.
+
+FILER
+overview/ACTIVE_TEAM_BENCHMARK.json: gjeldende standard og datastatus. model_lab/active.py: operativ inngang. model_lab/recent_component_forecaster.py: implementasjon. scripts/refresh_component_release.py: oppdaterer den valgte varianten videre.
+activation_review.json: eksplisitt brukerbeslutning og avveininger. verification.json:240historiske/8operative kontroller. forecast_seal.json: kildegrense og modellfiler. Tidligere standard, inngang, register og oppdateringsskript er arkivert i denne mappen for reversering.

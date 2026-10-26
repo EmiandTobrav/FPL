@@ -1,0 +1,9 @@
+{
+  "active_forecast_rows": 669,
+  "active_runtime": "model_lab/fresh_planned_component_forecaster.py",
+  "fresh_external_source_in_actual_dispatcher": true,
+  "no_FPL_submission": true,
+  "passed": true,
+  "planning_horizon": 5,
+  "verified_at": "2026-10-26 21:58:06.384038+00:00"
+}

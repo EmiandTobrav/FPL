@@ -1,0 +1,40 @@
+{
+  "decision": "retain_for_research",
+  "conclusion": "Dokumenterte nuller utenfor Premier League er korrigert i en separat, verifisert historikkversjon. Retrent variant taper39 og37 netto sesongpoeng mot rå fast-sesongmodell med samme kvalifiserte spillerutvalg. Datakorreksjonen beholdes; modellen oppgraderes ikke. Prognose-MSE har små, blandede utslag. Frosne blandingsvekter og historiske nyhetsdatoer som proxy begrenser tolkningen. V3 retter Vuskovics avreisedato mot klubbkilde; historisk test uendret, fire lagbeslutninger kjørt på nytt.",
+  "results": {
+    "seasons": [
+      {
+        "season": "2023-24",
+        "original_active": 2452,
+        "raw_same_qualified_pool": 2468.0,
+        "repaired": 2429.0,
+        "delta": -39.0
+      },
+      {
+        "season": "2024-25",
+        "original_active": 2498,
+        "raw_same_qualified_pool": 2498.0,
+        "repaired": 2461.0,
+        "delta": -37.0
+      }
+    ],
+    "data_release": "fpl_loan_history_repair_v3",
+    "canonical_excluded": 29934,
+    "current_completed_excluded": 309,
+    "uncertain_zero_minute_seasons_retained": 740,
+    "live_decisions_verified": 4,
+    "production_model_promoted": false,
+    "master_ingestion_not_yet_globally_enforced": true
+  },
+  "evidence_hashes": {
+    "reports/loan_history_repair_2026_10_25_v3/proposal.json": "1e5792b36e0772d711e1ead6492e50139ba5fd2624593d65039b2884dff3ac2d",
+    "reports/loan_history_repair_2026_10_25_v3/verification.json": "726dd45fb3c8c07a1def641cb191f9aa22ba225258a1c2f661368cfc640805a1",
+    "reports/loan_history_repair_2026_10_25_v3/historical_equivalence.json": "4d417f2100cc09a49e1c21bf6abb3226614b4407eb66362a4a43d3b280ced72d",
+    "reports/loan_history_repair_2026_10_25_v3/primary_sources.json": "6af71f6bb3231e68189a5b152d39518750a2365c5928564d16a57c8689fe0eab",
+    "reports/loan_history_repair_2026_10_25_v3/selected_player_comparison.csv": "bfdbc8a6111edda4e3401fe973414e5900eb4dfd0b94ca2c5730847fe6fec044",
+    "reports/loan_history_repair_2026_10_25_v3/RESULTATER.txt": "df96f76f470d229d0aa066c76a87d8f78b7d6e974756d8f1204403f1bb606611",
+    "datasets/fpl_loan_history_repair_v3/release.json": "4bdfd2c78a1c655b322d696cd99e29b71725ca7d386f2a0b70b7a0f881aee088",
+    "reports/loan_history_repair_2026_10_25_v2/result.json": "56dbe2f09629cb9270d7858dc232cceb7be196a794fbba9164c2c8871ddbbb01",
+    "reports/loan_history_repair_2026_10_25_v2/verification.json": "68447c94fb392206c8a4ab03432afb3a6e80c1bcea2aa06197fcfc9caab20084"
+  }
+}

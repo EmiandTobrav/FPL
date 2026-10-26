@@ -1,0 +1,260 @@
+{
+  "conclusion": "Rollehistorikk forbedrer H1-poeng-MSE 1,54/1,30 % mot felles korrigert kontroll i 2023/24 og 2024/25. Begge tillegg gir 1,15/1,11 %; styrke alene forverrer 0,46/0,24 %. Rolle/begge best\u00e5r ogs\u00e5 separat diagnostisk minuttkrav.640 fit og 446 592 verdier etterkontrollert. Behold rolle som forskningskandidat; ingen manager/produksjonsendring.",
+  "decision": "retain_for_research",
+  "evidence_hashes": {
+    "reports/role_strength_models_2026_10_25/RESULTATER.md": "300b9bfab0a16b962ec6008922892b40b94355a280b528804571bc1e65523894",
+    "reports/role_strength_models_2026_10_25/comparison.csv": "523cfe85585f3d5f4bca4340f9476dd4560ca5f7f6bfedbe21561d58d067356a",
+    "reports/role_strength_models_2026_10_25/coverage.csv": "0f9014d4d46b39ce96cdc1470f4370c3302a16251e8070be3160c8b22ef72e90",
+    "reports/role_strength_models_2026_10_25/data_lock.json": "0ec100985205046cbd11b333d9b9abd0fe0c07234334b3a5abce402797cd7f7c",
+    "reports/role_strength_models_2026_10_25/intervals.csv": "5fad93fcac5b7a554d4f38da90c90693e0b38a8cc61a1bf19086da9406f93ccf",
+    "reports/role_strength_models_2026_10_25/metrics.csv": "e40fd4f05a5916ef7bd782106c62a79ad78cec85e0c3e4fcc0fd6f03e89b2273",
+    "reports/role_strength_models_2026_10_25/prediction_lock.json": "e7193e7c6f762e9f2a8f4a49631f2b81bf64b3438d9d871a1b4a8b7937d699f8",
+    "reports/role_strength_models_2026_10_25/predictions.csv.gz": "3e5d8de3ff57aa2090139e004e76651dfa2a87d0cbfd4b202c0bfd08ee5e0e26",
+    "reports/role_strength_models_2026_10_25/preflight_v2.json": "aa66e7acd95623b31447031c83beaa97d35b6b8ff9f366dbc2b4a27267db2678",
+    "reports/role_strength_models_2026_10_25/proposal.json": "8edef9585c1d817e25da31bc9d7d79640dcca24a52c4a737836c95ff8a7020bd",
+    "reports/role_strength_models_2026_10_25/score.json": "cc78705fedab02c55d92142cd5b5dbd5229c8a71e91f5ccb52c4a653b8690047",
+    "reports/role_strength_models_2026_10_25/verification.json": "b6076cbdc03724b113a619f9cc244d95bced1f42eaf34e9a18395e55dd48ee3b"
+  },
+  "results": {
+    "coverage": [
+      {
+        "known": 22636,
+        "missing": 731,
+        "requested": 23367,
+        "season": "2023-24",
+        "target": "point"
+      },
+      {
+        "known": 21502,
+        "missing": 229,
+        "requested": 21731,
+        "season": "2024-25",
+        "target": "point"
+      },
+      {
+        "known": 22636,
+        "missing": 731,
+        "requested": 23367,
+        "season": "2023-24",
+        "target": "minute"
+      },
+      {
+        "known": 21502,
+        "missing": 229,
+        "requested": 21731,
+        "season": "2024-25",
+        "target": "minute"
+      }
+    ],
+    "gates": {
+      "minute": {
+        "both": true,
+        "roles": true,
+        "strength": false
+      },
+      "point": {
+        "both": true,
+        "roles": true,
+        "strength": false
+      }
+    },
+    "manager_test_run": false,
+    "minute_control_is_diagnostic": true,
+    "primary": [
+      {
+        "arm": "control",
+        "mae": 1.318420187680863,
+        "mse": 5.2512975424246315,
+        "mse_reduction_percent": 0.0,
+        "n": 22636,
+        "rmse": 2.2915709769554664,
+        "season": "2023-24",
+        "target": "point"
+      },
+      {
+        "arm": "roles",
+        "mae": 1.3036991033489658,
+        "mse": 5.170270372763684,
+        "mse_reduction_percent": 1.542993307965089,
+        "n": 22636,
+        "rmse": 2.273822854305868,
+        "season": "2023-24",
+        "target": "point"
+      },
+      {
+        "arm": "strength",
+        "mae": 1.3435713820700248,
+        "mse": 5.2754786814762,
+        "mse_reduction_percent": -0.46047931689666016,
+        "n": 22636,
+        "rmse": 2.296841022246903,
+        "season": "2023-24",
+        "target": "point"
+      },
+      {
+        "arm": "both",
+        "mae": 1.3292878891863402,
+        "mse": 5.190829916432577,
+        "mse_reduction_percent": 1.1514797153188077,
+        "n": 22636,
+        "rmse": 2.278339289138599,
+        "season": "2023-24",
+        "target": "point"
+      },
+      {
+        "arm": "control",
+        "mae": 1.321788641435805,
+        "mse": 5.02799770184978,
+        "mse_reduction_percent": 0.0,
+        "n": 21502,
+        "rmse": 2.242319714458618,
+        "season": "2024-25",
+        "target": "point"
+      },
+      {
+        "arm": "roles",
+        "mae": 1.3091253355661097,
+        "mse": 4.962831828398614,
+        "mse_reduction_percent": 1.2960601280146113,
+        "n": 21502,
+        "rmse": 2.2277414186567106,
+        "season": "2024-25",
+        "target": "point"
+      },
+      {
+        "arm": "strength",
+        "mae": 1.3235347567563562,
+        "mse": 5.040011874223508,
+        "mse_reduction_percent": -0.2389454627098878,
+        "n": 21502,
+        "rmse": 2.244997076662575,
+        "season": "2024-25",
+        "target": "point"
+      },
+      {
+        "arm": "both",
+        "mae": 1.314863517152304,
+        "mse": 4.972371026378705,
+        "mse_reduction_percent": 1.1063385222035798,
+        "n": 21502,
+        "rmse": 2.2298813928948564,
+        "season": "2024-25",
+        "target": "point"
+      },
+      {
+        "arm": "control",
+        "mae": 20.79846053341146,
+        "mse": 842.3285995971387,
+        "mse_reduction_percent": 0.0,
+        "n": 22636,
+        "rmse": 29.022897849751992,
+        "season": "2023-24",
+        "target": "minute"
+      },
+      {
+        "arm": "roles",
+        "mae": 17.053219574045578,
+        "mse": 705.8877403947159,
+        "mse_reduction_percent": 16.198056111080458,
+        "n": 22636,
+        "rmse": 26.568547954201712,
+        "season": "2023-24",
+        "target": "minute"
+      },
+      {
+        "arm": "strength",
+        "mae": 20.967512199146,
+        "mse": 841.0086937765965,
+        "mse_reduction_percent": 0.15669725819276184,
+        "n": 22636,
+        "rmse": 29.000149892312564,
+        "season": "2023-24",
+        "target": "minute"
+      },
+      {
+        "arm": "both",
+        "mae": 17.105727936666224,
+        "mse": 692.5407569161717,
+        "mse_reduction_percent": 17.782590161678723,
+        "n": 22636,
+        "rmse": 26.316169115510935,
+        "season": "2023-24",
+        "target": "minute"
+      },
+      {
+        "arm": "control",
+        "mae": 20.336572218138187,
+        "mse": 793.1054465415493,
+        "mse_reduction_percent": 0.0,
+        "n": 21502,
+        "rmse": 28.162127876663533,
+        "season": "2024-25",
+        "target": "minute"
+      },
+      {
+        "arm": "roles",
+        "mae": 17.07737833501163,
+        "mse": 677.367232290635,
+        "mse_reduction_percent": 14.59304242022388,
+        "n": 21502,
+        "rmse": 26.026279647514645,
+        "season": "2024-25",
+        "target": "minute"
+      },
+      {
+        "arm": "strength",
+        "mae": 20.32856886495319,
+        "mse": 793.6675958930742,
+        "mse_reduction_percent": -0.0708795222597754,
+        "n": 21502,
+        "rmse": 28.172106699589833,
+        "season": "2024-25",
+        "target": "minute"
+      },
+      {
+        "arm": "both",
+        "mae": 16.98919882976419,
+        "mse": 670.3643229135961,
+        "mse_reduction_percent": 15.476015725674765,
+        "n": 21502,
+        "rmse": 25.891394765705385,
+        "season": "2024-25",
+        "target": "minute"
+      }
+    ],
+    "production_changed": false,
+    "verification": {
+      "control_recipe_reproduction": [
+        "GK",
+        "DEF",
+        "MID",
+        "FWD"
+      ],
+      "evaluation_rounds": {
+        "2023-24": 38,
+        "2024-25": 37
+      },
+      "fit_checks": 640,
+      "gates": {
+        "minute": {
+          "both": true,
+          "roles": true,
+          "strength": false
+        },
+        "point": {
+          "both": true,
+          "roles": true,
+          "strength": false
+        }
+      },
+      "immutable_inputs_unchanged": true,
+      "metric_checks": 198,
+      "model_promoted": false,
+      "normal_equations_verified": true,
+      "passed": true,
+      "replayed_predictions": 446592,
+      "strict_asof_feature_and_label_checks": true,
+      "training_only_imputation_and_scaling": true
+    }
+  }
+}

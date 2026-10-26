@@ -1,5 +1,7 @@
 # FPL arbeidsstatus
 
+**Oppdatert 26. oktober 2026:** [Utvidede datasett, korrigert kalender og valgt komponentmodell med fem runders planlegging](../releases/2026-10-26/README.md). Historisk gevinst +104 / −13 / +37 mot samme-kalender-kontroll. Selve observasjons- og modelltabellene følger med; full live-/modellreplay krever fortsatt arbeidsarkivet. Eldre daterte statusavsnitt nedenfor gjelder sitt opprinnelige tidspunkt.
+
 Dette er en lesende oversikt. Kildenes lagrede status beviser ikke at en prosess fortsatt kjører.
 
 **Siste registrerte fase:** `explicit_planning_complete_audited`.

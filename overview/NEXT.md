@@ -1,5 +1,7 @@
 # Utgangspunkt og neste steg for FPL modellen
 
+**Oppdatert 26. oktober 2026:** [Utvidede datasett, korrigert kalender og valgt komponentmodell med fem runders planlegging](../releases/2026-10-26/README.md). Historisk gevinst +104 / −13 / +37 mot samme-kalender-kontroll. Selve observasjons- og modelltabellene følger med; full live-/modellreplay krever fortsatt arbeidsarkivet. Eldre daterte statusavsnitt nedenfor gjelder sitt opprinnelige tidspunkt.
+
 Bruk `fpl_2026_27_best_effort_v1` som poeng- og datagrunnlag og `fpl_model_pipeline_v1` som modellinngang. Den aktive sammenligningsfamilien er `fixture_full_h3_adaptive_tc_harmonized_causal_v1`. Ingen ny produksjonsmodell er valgt. Se [prosjektregisteret](PROJECT.json) for konkrete filer og kontrakter.
 
 ## Hva vi allerede vet

@@ -1,0 +1,54 @@
+KOMPONENTMODELLEN: HVORFOR ER 2025/26 FORTSATT SVAK?
+26. oktober2026. Diagnose av siste rettede tre-sesongstest, ikke de eldre2147-poengskjøringene.
+
+VURDERING
+Fallet er et vesentlig faresignal. Komponentmodellen har2547,2495 og2213 netto poeng. Det siste året ligger308 poeng,12,2%, under snittet2521 fra de to første. Referansens2119 i samme siste år gjør komponentmodellen94 poeng bedre enn egen referanse; det etablerer ingen vinnerstyrke mot de beste FPL-managerne. Aktiveringen bekreftet operative kontroller. Konkurransestyrken er et eget, fortsatt utilstrekkelig dokumentert spørsmål.
+
+HVA FALLET BESTÅR AV
+Snitt2023/24–2024/25 ->2025/26, med uendrede lagrede valg:
+Tellende lag uten ekstra kaptein:2183 ->1961, endring-222.
+Ekstra kaptein:354 ->252, endring-102.
+Byttekostnad:16 ->0, besparelse+16.
+Sum netto:2521 ->2213, endring-308.
+
+En annen, overlappende oppdeling av de samme bruttopoengene følger komponentmodellens mål:
+Mål/assistdel, med kapteinsmultiplikatorer:1053 ->797, endring-256.
+Oppmøtedel:959 ->905, endring-54.
+Restdel, blant annet bonus og defensive poeng:525 ->511, endring-14.
+Brutto:2537 ->2213, endring-324. Sparte16 hitpoeng gir nettofallet308.
+Disse to oppdelingene skal ikke legges sammen.256/324=79,0% av bruttofallet ligger i mål-/assistdelen. Restdelen er ikke hovedforklaringen.
+
+MIDTBANEN ER HOVEDSPOR
+Faktisk tellende midtbanebidrag, med kaptein, faller fra1302 og1451 til1015. Det er-361,5 mot tidligere snitt, eller-26,3%. Keeperbidrag øker32, forsvar11,5 og spissbidrag faller6; sammen gir dette bruttofallet324. Hele ligaens midtbanepoeng faller samtidig6,5%. Dette er forskjellige eksponeringer, så differansen er ingen kausal måling av modellfeil, men lagets fall kan ikke forklares med at alle midtbanepoeng ble26% sjeldnere.
+
+De samme55 toppkandidatene per runde velges med den fryste referansen og faste antall per posisjon. Komponentmodellens gjennomsnittlige rangeringssamsvar med faktisk poengfangst faller0,262 ->0,200 ->0,151. Innen midtbanen alene er tallene0,186 ->0,251 ->0,124. Spisser og forsvar viser ikke samme svekkelse. Fire-runders blokkresampling av hele runder gir et95%-intervall[-0,130;-0,029] for siste års forskjell mot tidligere gjennomsnitt. Dette beskriver disse gjenbrukte sesongene; det er ikke et urørt modellvalg eller et kausalt bevis.
+
+LAVERE PROGNOSEFEIL GIR HER ET MISVISENDE TRYGGHETSSIGNAL
+MSE blant de samme toppkandidatene faller16,44 ->14,64 ->13,39. Variansen i utfallene faller samtidig17,97 ->15,90 ->13,66. MSE delt på utfallsvarians øker dermed0,915 ->0,921 ->0,981. Det er mindre gjenværende skilleevne selv med lavere absolutt feil. Den sesongvise gjennomsnittsfasiten som ligger bak variansen er kun en beskrivende referanse, ikke en tillatt liveprognose.
+
+30 fryste H1-modellpakker er dessuten kjørt på nytt uten trening. Summen av de tre poenghodene gjenskaper alle kontrollerte grunnprognoser. Midtbanens angrepshode er allerede svakt før den ekstra H8-kalibreringen: rangeringssamsvar0,156/0,233/0,141. Minutthodets feil relativt til minuttenes varians øker også. Hovedsvikten kan derfor ikke uten videre tilskrives bare det siste kalibreringslaget, eller bare fravær av rekalibrering. Gjennomsnittsbias for hele kandidatgruppen er liten; en generell nedskalering av alle prognoser er ikke begrunnet av dette.
+
+SALAH SOM KONKRET EKSEMPEL
+Modellen eier ham i17 runder, med omtrent115 ordinære forventede poeng mot59 faktiske i disse rundene. Den kapteiner ham ni ganger. Han gir97 tellende poeng inkludert multiplikatorer, mot642 i2024/25. Haaland og flere andre erstatter deler av bortfallet. Salahs bidragsfall skal derfor ikke kalles en isolert poenggevinst fra et hypotetisk salg.
+
+Eksemplet viser at dyre enkeltspillere kan være vesentlig overvurdert selv når gjennomsnittsbias for hele feltet er nær null. Det begrunner en generell test av tilpasning til endret offensiv produksjon og spilletid; det begrunner ingen regel skrevet spesielt for én spiller eller én sesong.
+
+BARE KAPTEINSVALGET LØSER IKKE PROBLEMET
+Alle228 oppgjør er gjenspilt med uendret regelmotor. Deretter endres kun kapteinen til den best scorende spilleren i den faktisk valgte elleveren, med full etterpåklokskap og samme chips. Komponentmodellen får da2777,2669 og2438 netto poeng.2025/26 ligger fortsatt285 under det tidligere snittet2723. Den ekstra kapteinsfeilen relativt til tidligere sesonger forklarer dermed23 av308 poeng i denne avgrensede etterpåkloke sammenligningen. Bedre spillere i troppen/elleveren er et viktigere spor enn bare å bytte kaptein blant de samme elleve.
+
+SESONGEN VAR ANNERLEDES, MEN DET ER INGEN FULL FORKLARING
+Ligapoengene er ikke lavere samlet. Topp-ti-spillernes poeng faller omtrent9,4%, og ligamålene11,7% mot tidligere snitt. En separat vanskelighetsindeks får perfekt kjennskap til hver rundes utfall, setter sammen lovlig15-mannstropp/ellever/kaptein til£100m og bygger gratis på nytt hver uke, uten chips. Alle114 løsninger har sertifiserte grenser. Summene6154,5927,5848 gir et3,2% lavere sisteårsnivå mot tidligere snitt. Indeksen er en uoppnåelig etterpåklok sammenligning, ikke en sesongstrategi, rangering eller mål på hva modellen kunne hentet. Den tillater ikke å trekke3,2% fra12,2% og kalle resten modellfeil: forutsigbarheten kan også ha endret seg.
+
+Den faktiske valgte troppens summerte prognose faller omtrent181,5 poeng. Forskjellen mellom faktisk bruttopoeng og disse prognosene endres samtidig med-142,5, fra+78,1 til-64,4. Med16 sparte hitpoeng blir dette igjen-308. Sistnevnte forskjell er ikke dokumenterte142,5 poeng med uflaks: utvelgelse, usikkerhet, kalibrering og autosubs inngår.
+
+TIDSPUNKT OG GJENVÆRENDE DATAFORBEHOLD
+Nettofallet per blokk er-9 i runde1–4,-96 i5–12,-116 i13–24 og-87 i25–38. Problemet fortsetter etter flere rekalibreringer, så svak sesongstart alene holder ikke som forklaring.
+De siste kalender-/trenings-/tilgjengelighetsrettingene er brukt, og de228 summene samsvarer nøyaktig. Historiske markedsproxyer er fortsatt ikke identiske med de valgte førfristøyeblikksbildene:1942/2008/2134 prisavvik i de tre årene, maksimalt£0,3, samt24/22/33 klubbavvik og forskjeller i rosterdekning. Flere førfristkilder kan ha ulike tidspunkter. Dette er gjenværende kildeusikkerhet i alle år, ikke en isolert påvist2025-feil med målt300-poengseffekt. Eldre poengomregning/BPS og historiske statistikkversjoner har fortsatt de dokumenterte tilnærmingene. De blir ikke eksakte primærkilder av at regningen stemmer.
+
+KONKLUSJON OG NESTE KONTROLL
+Vi har lokalisert svikten til offensiv poengfangst og spillerprioritering, særlig på midtbanen. Vi har ikke isolert hvor mye en annen generell tilpasningsregel faktisk ville hentet tilbake. Et kausalt svar krever en forhåndslåst kontroll der bare tilpasningen av angreps-/minuttprognosene endres, med samme kilder, frister, kvartalsvise oppdateringer, manager og ressursgrenser i alle tre sesongene. En ny modell skal vurderes på rangering og undergrupper i tillegg til sesongpoeng; lavere samlet MSE alene er utilstrekkelig.2025/26 er nå brukt til diagnose og skal ikke presenteres som en ny urørt test. De faktisk forseglede2026/27-prognosene må bevares for fremoverrettet kontroll.
+
+Ingen vekter, aktiv modell, lag eller liveprognoser er endret i denne diagnosen.
+
+UNDERLAG
+Alle tabeller, førregistrering, uavhengig gjenspilling,30-hoders reproduksjon og etterpåkloke løsninger ligger i samme mappe som denne rapporten. Begynn med decomposition.csv, component_point_accounting.csv, metrics.csv, within_position_rank.csv, captain_counterfactual.csv, oracle_rounds.csv, head_diagnostics.csv og independent_verification.json.

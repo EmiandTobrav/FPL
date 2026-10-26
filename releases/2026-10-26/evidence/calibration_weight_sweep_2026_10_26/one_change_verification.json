@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "teacher_and_transform_matches": 960,
+  "ridge_arms_same_sample_weights": 480,
+  "candidate_arms_same_ridge_and_expected_weight_concentration": 480,
+  "matched_metric_cells": 300,
+  "minute_forecasts_unchanged": true,
+  "active_model_unchanged": true,
+  "files": {
+    "reports/calibration_weight_sweep_2026_10_26/head_audit_standard.csv": "0130f8262809c5a693d1f76d1d8386f531d27b04c4195729c927d2cccfffb7de",
+    "reports/calibration_weight_sweep_2026_10_26/head_audit_ridge_weak.csv": "05d69daf3b338ff3487a3d99b85110d7ec227e3da0b088926a61b423e8cfef75",
+    "reports/calibration_weight_sweep_2026_10_26/head_audit_ridge_strong.csv": "168168c72d4fd5eecdb843fa4dd7b314c3527833655593412b1ebc22ffcdc653",
+    "reports/calibration_weight_sweep_2026_10_26/head_audit_candidates2.csv": "9133591885972f0d2a262d607b3d681462004d864d8eec03484dfa78b9f4d95c",
+    "reports/calibration_weight_sweep_2026_10_26/head_audit_candidates4.csv": "347d21305679aaec3f5b2fa8c6b481f74221275664017e53a2a5ac6b5bb09dc2",
+    "reports/calibration_weight_sweep_2026_10_26/forecast_metrics.csv": "406cc97b39f2b0ef6c3d18449aa28002188c5cbff8326cb4cd9e6993ac3ec4fe",
+    "reports/calibration_weight_sweep_2026_10_26/reference_ACTIVE_TEAM_BENCHMARK.json": "347b5e6bf5614740fd01f8e61ef838c266cb8baa000fcac4fdfb4be22ae3d4d4"
+  }
+}

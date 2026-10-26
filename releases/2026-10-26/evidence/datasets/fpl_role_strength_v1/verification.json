@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "master_rows_preserved": 190124,
+  "season_rows": {
+    "2019-20": 22501,
+    "2020-21": 24365,
+    "2021-22": 25447,
+    "2022-23": 26505,
+    "2023-24": 29725,
+    "2024-25": 27283,
+    "2025-26": 29747,
+    "2026-27": 4551
+  },
+  "player_round_contexts": 182939,
+  "physical_fixtures": 2730,
+  "team_start_conservation_checks": 5460,
+  "independent_prematch_denominator_checks": 10920,
+  "independent_feature_checks": 17681532,
+  "semantic_tests": [
+    "exact availability excluded",
+    "one second after availability included",
+    "manual adjusted attack 7/6",
+    "manual concession 5/6",
+    "simultaneous kickoff cannot use released first result",
+    "future and unreleased outcomes cannot alter any origin",
+    "new season neutral reset",
+    "short start remains start",
+    "long substitute remains substitute",
+    "zero is not a bench label",
+    "unqualified zero remains unknown",
+    "invalid binary start excluded",
+    "conditional duration and correct known denominator",
+    "no padding limited history",
+    "transfer history identified",
+    "return only describes observed zero"
+  ],
+  "semantic_tests_passed": 16,
+  "future_mutation_invariance": true,
+  "all_original_fields_preserved": true,
+  "strict_historical_qualified": false,
+  "xg_used": false,
+  "models_fitted": 0
+}

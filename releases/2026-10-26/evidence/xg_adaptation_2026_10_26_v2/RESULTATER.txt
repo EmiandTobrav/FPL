@@ -1,0 +1,77 @@
+xG/xA OG RASKERE KALIBRERING – FELLES TRESESONGSTEST
+26. oktober 2026
+
+To separate endringer er testet mot den aktive komponentmodellens frosne historiske kontroll. Ingen kombinasjon eller parameterleting er testet. Alle tall nedenfor kommer fra den korrigerte V2-kjøringen; den første xG-kjøringen er ugyldig og utelatt.
+
+NETTO SESONGPOENG ETTER BYTTEKOSTNADER
+Sesong       Dagens modell   Bare xG/xA (endring)   Bare raskere kalibrering (endring)
+2023-24            2547           2545 (-2)                 2465 (-82)
+2024-25            2495           2569 (+74)                 2604 (+109)
+2025-26            2213           2216 (+3)                 2335 (+122)
+Snitt            2418.3         2443.3 (+25.0)               2468.0 (+49.7)
+
+VURDERING
+xG/xA: består ikke kravet om flere netto poeng i alle tre sesonger. Ingen generell oppgradering er dokumentert.
+Raskere kalibrering: består ikke kravet om flere netto poeng i alle tre sesonger. Ingen generell oppgradering er dokumentert.
+Den aktive modellen er uendret. Det nye datagrunnlaget V5 er tilgjengelig for videre forskning. Et bedre snitt eller bedre sisteår alene er ikke tilstrekkelig for å bytte modell. Dette er etterprøvbare historiske utviklingstester på sesonger som allerede er undersøkt, ikke en urørt holdout eller dokumentasjon på faktisk FPL-plassering.
+
+HVA SOM ER ENDRET
+Kontroll: 325 eksisterende felter, løpende basismodell og kalibrering i runde 1,5,9,...37.
+Bare xG/xA: 16 kvalifiserte felter lagt til, totalt 341. Samme læringsmetode, oppdateringer og lik vekting av kalibreringshistorikken som kontrollen.
+Bare raskere kalibrering: de samme 325 feltene og frosne basismodellene som kontrollen. Bare vekten på eldre eksempler i etterkalibreringen endres: halveringstid 180 dager, fastlagt før resultatene. Oppdateringshyppigheten er fortsatt den samme. Minuttprognosene er identiske med kontrollen. Ved siste oppdatering i2025/26 øker inneværende sesongs andel av kalibreringsvekten fra25,8% til74,4%, uten å legge til lærerobservasjoner.
+Ingen kombinasjon av endringene, sesongspesifikke regler, nye spillerlister eller ny søking etter halveringstid.
+
+PROGNOSEFEIL PÅ SAMME KANDIDATUTVALG
+MSE: lavere er bedre. Kandidatene er fast valgt fra en felles referanse før fristen (5 målvakter,20 forsvarere,20 midtbanespillere,10 spisser per runde). Dette unngår å bytte evalueringsutvalg med modell. Resultatene gjelder samme kjente fasit og valgbarhet.
+Sesong / horisont / mål       Kontroll      xG/xA       Raskere
+2023-24 / 1 / minutes      658.0699     659.3215     658.0699
+2023-24 / 1 / points        16.4405      16.4599      16.4688
+2023-24 / 3 / minutes     4565.2938    4602.4383    4565.2938
+2023-24 / 3 / points        52.2546      52.0898      52.2809
+2024-25 / 1 / minutes      585.6876     589.2082     585.6876
+2024-25 / 1 / points        14.6351      14.5927      14.6347
+2024-25 / 3 / minutes     3637.3251    3667.6865    3637.3251
+2024-25 / 3 / points        49.9778      49.7704      50.2529
+2025-26 / 1 / minutes      626.6081     627.7144     626.6081
+2025-26 / 1 / points        13.3941      13.3647      13.3380
+2025-26 / 3 / minutes     3823.6000    3845.1802    3823.6000
+2025-26 / 3 / points        43.4596      43.2619      42.7965
+
+MIDTBANERANGERING OG DYRE SPILLERE
+Gjennomsnittlig rundekorrelasjon for felles midtbanekandidater (Spearman; høyere er bedre):
+2023-24: kontroll 0.1857; xG/xA 0.1783; raskere 0.1814.
+2024-25: kontroll 0.2514; xG/xA 0.2541; raskere 0.2491.
+2025-26: kontroll 0.1236; xG/xA 0.1420; raskere 0.1187.
+H1 poengbias for spillere som koster minst9,0 (prognose minus faktisk; positiv betyr overprediksjon):
+2023-24: kontroll -0.5403; xG/xA -0.4374; raskere -0.4097.
+2024-25: kontroll +0.3775; xG/xA +0.4584; raskere +0.4204.
+2025-26: kontroll +0.3886; xG/xA +0.3625; raskere +0.0760.
+Alle års-, mål- og utvalgsresultater står i forecast_metrics.csv og ranking.csv. Prognosefeil og sesongpoeng er ulike mål. Bedre sesongpoeng beviser ikke alene bedre forventningsprognoser.
+
+DATAGRUNNLAGET
+135441 treningsrader og111562 prognoserader. V5 bevarer nøkler, frister, mål, tilgjengelighetsregler og de gamle325 feltene nøyaktig fra V3. Rådatasettet og poengberegningen er ikke byttet. Data fra andre konkurranser, rollehistorikk og værfelter følger samme eksisterende kvalifikasjon som kontrollen; denne testen endrer bare de to angitte mekanismene.
+De16 nye feltene beskriver rapportert xG/xA inneværende/foregående sesong, rater per90 minutter, og rapporterte endringer over opptil3/10 tidligere fristintervaller. Slike endringer kan inneholde rapporterte revisjoner; de er ikke eksakte summer av siste3/10 kamper. Rater uten positive minutter og manglende kilder er ukjente.
+xG måler scoringssannsynlighet ved avslutninger; xA gjelder forventede ordinære målgivende pasninger. xA er ikke identisk med FPLs bredere assistregler. Tallene brukes som prediktorer, ikke som ny poengfasit.
+Offisiell definisjon: https://www.premierleague.com/en/news/3118332 . Arkiverte FPL-svar og innsamlerens API-bruk er kontrollert mot kilde og filidentitet; collector_lineage_verification.json dokumenterer dette.
+Kilder må ligge strengt før faktisk frist og være høyst24timer gamle. Første rundes statistikk bindes til foregående sesong. Sluttverdier er aldri tilbakefylt i tidligere frister. Ukjente verdier blir ikke0. Individuelle ekte nuller beholdes.
+Den ekstra populasjonskontrollen oppdaget at forventningsfeltene var til stede, men uutfylte i hele ligaen til og med2022/23 runde16, også når268007minutter og370mål var rapportert. V4 og første xG-test ble derfor pensjonert; berørte totaler og intervaller er ukjente iV5. Reparasjonen ble registrert før nye modelltilpasninger. De gamle xG-sesongpoengene tolkes ikke.
+Kvalifiseringen gjelder arkiverte FPL-rapporterte verdier. Git-tid er en dokumentert arkivproxy, ikke en kvittering for offentlig publisering. Eksponeringskontrollen arver kampstatistikkens+24timer-proxy. Ingen full revisjonshistorikk eller uavhengig Opta-modellversjon påstås. Gamle kalender-, markeds-, vær- og harmoniseringsforbehold består.
+
+FELLES METODIKK OG KONTROLLER
+Alle tre sesonger starter med samme budsjett og bytteregler. Samme manager, kalenderpolicy, poengstandard, hard tilgjengelighet,8 prognoserunder,3 planleggingsrunder og samme budsjett per beslutning (16 faktiske søkenoder, maksimalt40 kall). Statistikk og fullførte lærerfasiter må være tilgjengelige før hver treningsfrist. Bekreftet utilgjengelige spillere kan ikke kjøpes eller startes; gyldig historikk før avgang beholdes.
+6 gyldige kandidatsesonger og3 kontrollsesonger; alle342 beslutninger er etterspilt uavhengig med kontroll av lovlighet, poeng og tilgjengelighet. Adversarialtester kontrollerer også at svært høye prognoser ikke omgår sperrene, inkludert Kane.
+80 korrigerte xG-basispakker er kontrollert: 71 nye tilpasninger og 9 gjenbruk bare der hele faktisk treningsmatrise, fasit, nøkler og tidspunkter er nøyaktig identiske.240 nye etterkalibreringshoder. Raskere kalibrerings325-feltsgrunnlag var upåvirket av xG-feilen;240 gyldige hoder og3 sesonger gjenbrukes etter identitetskontroll og nytt uavhengig etterspill.
+Første forsøks ressursavvik er bevart i resource_execution_note.json: basistrening og simulering overlappet, slik at samlet prosessantall nådde7 mot oppgitt4. Modelltråder og beslutningsbudsjetter var uendret; ingen veggklokkegrense styrte valg. Den korrigerte kjøringen bruker høyst4 modelltreninger samtidig, og simuleringene starter etter treningen. Dette gir ikke grunnlag for å hevde lik total kjøretid.
+En tidlig minuttmåling utelot fasit for2024/25 runde15 fordi opprinnelig treningsopphav var utelatt. Rapporteringen er rettet symmetrisk for alle armer til samme native utfall, med uendret fasitkvalifisering. Ingen læringsrad, prognose eller poengfasit ble endret. Se evaluation_metric_correction.json.
+
+FILER
+comparison.csv: samlet sesongoversikt. scores.csv: brutto, kaptein og byttekostnader. forecast_metrics.csv: H1/H3-poeng og minutter, alle utvalg. ranking.csv: rangering. final_verification.json: sluttkontroll og hasher. datasets/fpl_common_training_v5/README.txt: datakort. proposal.json: forhåndsregistrert test.
+
+DEKNING AV NYE FELTER
+Rapportert inneværende total er kjent for99,89% /99,87% /100% av prognoseradene i2023/24,2024/25,2025/26. Per90-rater er bare kjent ved positive minutter; manglende eksponering erstattes ikke med0. Foregående sesong og intervaller har lavere dekning ved nye spillere og manglende sammenligningspunkter. Full nevner, antall kjente og dekning for hvert felt og sesong i både trening og prognoseutvalg står i feature_coverage.csv. Reglene er like; vi later ikke som faktisk eksponering og historikk er identiske mellom sesonger.
+
+FALLET I2025/26 ETTER HVER SEPARATE ENDRING
+Kontroll: tidligere snitt 2521.0, sisteår 2213, forskjell -308.0.
+Bare xG/xA: tidligere snitt 2557.0, sisteår 2216, forskjell -341.0.
+Bare raskere kalibrering: tidligere snitt 2534.5, sisteår 2335, forskjell -199.5.
+Dette er virkningen av disse konkrete oppsettene. Testen beviser ikke at alle mulige måter å bruke xG/xA eller tilpasning på er uttømt.

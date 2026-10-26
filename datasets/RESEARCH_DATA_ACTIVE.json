@@ -1,0 +1,14 @@
+{
+  "version": "fpl_component_common_20261026",
+  "training_table": "fpl_component_common_20261026/training.csv.xz",
+  "pool_table": "fpl_component_common_20261026/pool_features.csv.xz",
+  "research_schema": "fpl_component_common_20261026/schema.json",
+  "selected_schema": "fpl_component_common_20261026/active325_schema.json",
+  "selected_features": 325,
+  "research_features": 341,
+  "master": "fpl_master_enriched_v5/player_matches.csv.xz",
+  "external": "fpl_external_live_2026_10_26/player_minutes.csv.gz",
+  "official_live": "fpl_live_observations_20261026/player_observations.csv.xz",
+  "legacy_ACTIVE_unchanged": true,
+  "full_replay_requires_local_archive": true
+}

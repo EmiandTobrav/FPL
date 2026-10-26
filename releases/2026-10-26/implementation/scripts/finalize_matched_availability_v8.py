@@ -1,0 +1,83 @@
+"""Publish a reusable common research release and index the verified result."""
+import os,sys,json,hashlib,subprocess
+from pathlib import Path
+import pandas as pd
+R=Path(__file__).resolve().parents[1];sys.path.insert(0,str(R))
+from scripts import matched_availability_retest_v8 as protocol
+m=protocol.m
+from scripts.review_matched_season_retest_v5 import table
+P=protocol.P
+
+def finish():
+    m.check_inputs();delivery=m.common.read(P/'delivery.json');m.verify_files(R,delivery['files']);assert m.common.read(P/'independent_forecast_verification.json')['passed'];score=pd.read_csv(P/'scores.csv');complete=bool(score.complete.all());gate=bool(delivery['research_gate_passed']);release=R/'datasets/fpl_common_training_v3';release.mkdir(exist_ok=False)
+    # Hard links share the immutable data bytes and avoid another full copy.
+    names=['training.pkl','pool_features.pkl','origins.pkl','calendars.pkl','metadata.pkl','feature_coverage.csv','comparability.csv','calendar.csv','origins.csv','observed_calendar_reconciliations.csv','availability.csv.gz','policy_backend_hashes.json']
+    for name in names:os.link(P/name if (P/name).exists() else protocol.OLD/name,release/name)
+    schema=m.common.read(m.D/'schema.json');m.atomic_json(release/'schema.json',schema)
+    loader='''"""Frozen common research rows. Explicit cutoff required for training."""
+from pathlib import Path
+import json,hashlib
+import pandas as pd
+P=Path(__file__).resolve().parent
+def load_rows():
+    manifest=json.loads((P/'manifest.json').read_text())
+    for name in ['training.pkl','schema.json']:
+        assert hashlib.sha256((P/name).read_bytes()).hexdigest()==manifest['files'][name],name
+    return pd.read_pickle(P/'training.pkl'),json.loads((P/'schema.json').read_text())
+def training_at(cutoff,horizon):
+    at=pd.Timestamp(cutoff)
+    if at.tzinfo is None:raise ValueError('Cutoff must have timezone')
+    if horizon not in [1,3]:raise ValueError('Horizon must be1or3')
+    d,schema=load_rows();targets=[f'target_{name}_{horizon}' for name in ['points','minutes','starts','attack','appearance','residual']]
+    q=d[d.train_eligible & d.forecast_at.lt(at) & d[f'label_at_{horizon}'].lt(at) & d[targets].notna().all(axis=1)].copy()
+    assert q.empty or (q.forecast_at.max()<at and q[f'label_at_{horizon}'].max()<at)
+    return q,schema
+'''
+    loader+='''
+def availability_for(season,round):
+    a=pd.read_csv(P/'availability.csv.gz')
+    q=a[a.season.eq(season)&a['round'].eq(round)].copy()
+    if q.empty:raise ValueError('No dated availability context for this origin')
+    return q
+def apply_availability_to_pool(pool,season,round):
+    q=availability_for(season,round).set_index('code').reindex(pool.code)
+    if q.model_can_buy.isna().any():raise ValueError('Missing dated player status')
+    out=pool.copy();out['can_buy']=out.can_buy.to_numpy(bool)&q.model_can_buy.to_numpy(bool);out['eligibility_origin_round']=round
+    for j in range(8):out[f'can_start_{j}']=q[f'can_start_{j}'].to_numpy(bool)
+    return out
+'''
+    (release/'loader.py').write_text(loader);d=pd.read_pickle(release/'training.pkl');v=pd.read_pickle(release/'pool_features.pkl');cov=pd.read_csv(release/'comparability.csv');overview=R/'overview/MATCHED_MODEL_RETEST_2026_10_26.md'
+    manifest=dict(id='fpl_common_training_v3',purpose='Frozen matched-calendar research inputs; no production model activation',parent='fpl_common_training_v2',rows=len(d),forecast_pool_rows=len(v),features=len(schema['features']),evaluation_seasons=m.EVAL,teacher_season='2022-23',clock='verified official predeadline bootstrap; historical observation availability kickoff+24h proxy',calendar='latest Git author+committer before deadline, completed fixtures reconciled strictly before deadline, announced lower bounds retained, knownzero only bound club calendar',availability='Qualified FPL snapshots before actual deadline, age<=24h and bound chance field. Known departures blocked across8rounds; confirmed current0 chance blocked current only. New purchase, XI, captain, vice prohibited. BB requires15 currently eligible. Existing unavailable holdings can remain benched until legal transfers.',required_policy_adapter='scripts/matched_availability_retest_v8.py:solver; both MILP builders enforce can_start bounds and engine callback checks every actual choice',metadata='same cached historical market proxies used by both packages; same dated buyability evidence',raw_history='same history_eligible records and harmonized historical point definition',model_update_schedule=m.REFITS,training_contract='call loader.training_at with timezone-aware cutoff and horizon1or3; training-only preprocessing; same calibration teachers per offset',source_experiment=rawid(),supersedes='v5 comparison omitted current availability enforcement and is not adoption evidence; v6 input-only, v7 technical legality-preflight stop, v8 same repair with optional-chip callback fixed',source_input_manifest_sha256=m.sha(P/'inputs.json'),source_verifications={n:m.sha(P/n) for n in ['forecast_verification.json','independent_forecast_verification.json','verification.json']},storage='hard links to immutable experiment data, no second data copy',files={p.name:m.sha(p) for p in release.iterdir() if p.is_file()},limitations=['historical statistics +24h proxy, not proof of every original statistical vintage','2025 calendar source versions older','historical market reconstruction proxy','2020 training only at verified official origins;2021GW18/2024GW15 late supervised origins excluded;2024GW15 prediction pool rebuilt at actual deadline'])
+    m.atomic_json(release/'manifest.json',manifest)
+    code=m.common.module('_new_common_training_loader',release/'loader.py');checks=[]
+    for s in m.EVAL:
+        for h in [1,3]:
+            at=m.load('origins.pkl')[(s,1)];q,_=code.training_at(at,h);a=pd.read_csv(protocol.OLD/f'component_audit_{s}.csv');a=a[a['round'].eq(1)&a.horizon.eq(h)].iloc[0];assert len(q)==a.rows and m.common.keys_hash(q)==a.keys_sha256;checks.append(dict(season=s,horizon=h,rows=len(q),keys_match_locked_fit=True))
+    try:code.training_at('2025-08-15',1)
+    except ValueError:pass
+    else:raise AssertionError('Naive timestamps must be rejected')
+    m.atomic_json(release/'verification.json',dict(passed=True,training_cutoff_checks=checks,naive_clock_rejected=True,experiment_verifications=manifest['source_verifications']))
+    (release/'README.md').write_text('# Felles treningstabell v2\n\nFryst forskningsgrunnlag med '+str(len(d))+' spiller–runde-rader og325 innganger. Én felles kalenderregel, poengdefinisjon og kvalifisert historikk brukes i alle tre testsesonger. Begge modeller rekalibreres hver fjerde runde på samme kvalifiserte kalibreringsrader.\n\n[Samlet metode og resultat]('+str(overview)+').\n\nBruk loader.training_at(cutoff, horizon) med tidssone og horisont1 eller3. Den filtrerer både prognoseopphav og hele målvinduets tilgjengelighet strengt før grensen. Å lese hele training.pkl er ikke en tidsfiltrert treningsoperasjon.325 kolonner og grupper står i schema.json.\n\n2022/23 er lærersesong;2023/24,2024/25 og2025/26 evalueres.2019/20 kan bidra med tidligere observerte kampfakta, men mangler harmoniserte poengmål.2026/27 er utelatt fra denne treningsutgaven. Kilder og begrensninger står i manifest.json.\n')
+    wide=score.pivot(index='season',columns='arm',values='net');wide['Forskjell']=wide.component-wide.operational_matched;wide=wide.rename(columns={'component':'Komponentmodell','operational_matched':'Dagens modelloppskrift'})
+    if complete:wide.loc['Snitt']=wide.mean(axis=0)
+    updates=pd.read_csv(P/'rolling_update_summary.csv')[['season','updates','last_current_rows']];updates.columns=['Sesong','Oppdateringsrunder per modell','Egne sesongrader ved siste H1-oppdatering'];c=cov[cov.season.isin(m.EVAL)][['season','strict_calendar_snapshots','calendar_h1_known','calendar_h3_known']].copy();c.columns=['Sesong','Kilder før frist','Kalender neste runde','Kalender neste tre runder']
+    for name in ['Kalender neste runde','Kalender neste tre runder']:c[name]=c[name].map(lambda x:f'{100*x:.1f} %')
+    verdict='Komponentmodellen slår referansen i alle tre sesongene og består den avtalte forskningsporten.' if gate else 'Komponentmodellen består ikke kravet om å slå referansen i hver av de tre sesongene.'
+    if not complete:verdict='Et eller flere forsøk stoppet teknisk. Den samlede sammenligningen kan ikke godkjennes.'
+    lines=['# Komponentmodell mot dagens oppskrift på felles grunnlag','',verdict,'','## Netto sesongpoeng','',table(wide,index=True),'','Poengene er etter trekk for betalte bytter. Referansen bruker dagens modelloppskrift på de rettede dataene og med samme oppdateringsmuligheter som komponentmodellen. Den aktive modellen er bevart.','', '## Kort om datasettet','',f'Den nye, fryste [felles treningstabellen]({release}/README.md) har {len(d):,} spiller–runde-rader og 325 innganger. Dataene beskriver prestasjoner, minutter, start og innhopp, tilgjengelighet, dødballroller, belastning fra tidligere klubb- og landskamper, kalender, motstanderstyrke og tidligere observert vær. En separat tabell har {len(v):,} prognoserader for lærersesongen og testsesongene.','', '2022/23 brukes til innledende kalibrering. Sesongene 2023/24, 2024/25 og 2025/26 evalueres. 2026/27 inngår ikke i trening eller evaluering. Manglende målverdier blir ikke gjort om til nullpoeng.','', '## Det som er gjort sammenlignbart','', '- Bekreftet utilgjengelighet før fristen er en hard sperre for nye kjøp, startellever, kaptein og visekaptein. Dato-/runde-kvalifisert FPL-sjanse på null sperrer inneværende runde; bekreftet avgang sperrer fremtidig PL-eksponering inntil ny informasjon. Tvilsomme og ukjente statuser uten eksplisitt null blir ikke automatisk sperret. Bench boost krever 15 valgbare spillere. Allerede eide utilgjengelige spillere håndteres gjennom vanlige lovlige bytter.', '- Samme kvalifiserte råhistorikk og harmoniserte historiske poengdefinisjon. Reelle nullminutter beholdes. Dokumenterte opphold utenfor Premier League blir ikke kunstige nullkamper.','- Samme kalenderregel: siste fysisk arkiverte Git-versjon fra før den dokumenterte fristen. Både forfatter- og lagringstid kontrolleres. Bekreftede kamper beholdes selv om en annen kamp mangler runde. Kampantallet er da en nedre grense. Null tolkes som en sikker blankrunde i kilden bare når klubbens kalender er komplett.','- Spilte kamper avstemmes først etter den felles tilgjengelighetsregelen kampstart pluss 24 timer. Gamle kalendere får dermed ikke vise ferdigspilte kamper som kommende.','- Nye grunnmodeller og kalibrering i runde 1, 5, 9, …, 37 i alle tre sesongene. Kalibreringene bruker identiske kvalifiserte spiller–runde-nøkler per målvindu. Både prognoseopphav og hele målvinduet må ligge før oppdateringsfristen.','- Samme spillerutvalg, priser, startbudsjett på £100 millioner, manager, åtte prognoserunder og tre planleggingsrunder. Felles spilleregler har fem bankede gratisbytter og to sett chips; dette er ett felles regelsett for alle historiske sesonger.','',table(c),'','Tabellen omfatter bekreftede kamper og kildens sikre blankrunder. Uavklarte mulige ekstrakamper kan fortsatt finnes.','',table(updates),'','Treningskontrollen fant 0 kvalifiserte spiller–runde-rader etter dokumentert avgang og 0 slike native kamprader i prestasjonshistorikken. Gyldig historie før avgang beholdes. Ekte skade-/suspensjonsuker for PL-registrerte spillere er gyldige nullutfall; slike spillere slettes ikke fra all historisk trening.', 'Grunnmodellene har forskjellige oppskrifter og historikkvinduer. De får samme kvalifiserte råhistorikk; kalibreringslagene bruker identiske spiller–runde-rader.','', '## Kontroller og tolkning','',f'Alle {int(m.common.read(P/"verification.json")["decisions_replayed"])} lagrede lagbeslutninger er kontrollert mot lagreglene og poengberegnet på nytt. Grunnprognoser, kalibrering, treningsnormalisering, informasjonsgrenser og felles kampeksponering er kontrollert. Begge modeller får nye observasjoner fra inneværende sesong i alle tre sesongene.','', 'Kalenderkildene i 2025/26 er fortsatt eldre. En manglende historisk kunngjøring er ikke fylt inn fra en nettside hentet senere. Historiske kampdata følger regelen kampstart pluss 24 timer; full dokumentasjon av alle tidligere statistikkversjoner finnes ikke. Spillerutvalget og prisene bygger på de samme bevarte historiske markedsproxyene som før.','', 'Sluttkontrollen av den foreløpige kjøringen fant at referansen beholdt Kane i 37 runder etter kjent avgang, fordi den rensede historikken manglet en egen valgbarhetssperre. Den kjøringen er bevart som diagnose. Tabellen over bruker seks helt nye sesongkjøringer med den samme håndhevede sperren for begge modeller. Ingen modellvekter er tilpasset etter at poengene ble sett.', 'Dette er en retrospektiv utviklingstest på kjente sesonger. Resultatet må vurderes per sesong. Testen dokumenterer hele det nye oppsettet; den isolerer ikke bidraget fra hver enkelt datakorreksjon. Ingen modell er aktivert automatisk.','', '## Detaljer','',f'- [Stresstest av hard valgbarhet]({P}/preflight.json)',f'- [Datert valgbarhet per spiller og runde]({P}/availability.csv.gz)',f'- [Prognosefeil på samme rader]({P}/forecast_metrics.csv)',f'- [Dekning per variabel og sesong]({P}/feature_coverage.csv)',f'- [Kalenderkilder og alder]({P}/calendar.csv)',f'- [Alle kalibreringsoppdateringer]({P}/head_audit.csv)',f'- [Uavhengig kontroll av prognosene]({P}/independent_forecast_verification.json)',f'- [Kontroll av lag og poeng]({P}/verification.json)']
+    overview.write_text('\n'.join(lines)+'\n')
+    oldpointer=R/'datasets/COMMON_TRAINING_ACTIVE.json'
+    if oldpointer.exists():(release/'previous_active_pointer.json').write_bytes(oldpointer.read_bytes())
+    oldpointer.write_text(json.dumps(dict(id='fpl_common_training_v3',directory=str(release.relative_to(R)),manifest_sha256=m.sha(release/'manifest.json'),overview=str(overview.relative_to(R)),scope='common historical research, no production model change',source_experiment=rawid()),ensure_ascii=False,indent=2)+'\n')
+    (release/'active_pointer_at_publication.json').write_bytes(oldpointer.read_bytes())
+    project=R/'overview/PROJECT.json';(release/'previous_project_navigation.json').write_bytes(project.read_bytes());navigation=json.loads(project.read_text());navigation['dataset']['common_research_training_view']=dict(id='fpl_common_training_v3',pointer='datasets/COMMON_TRAINING_ACTIVE.json',overview=str(overview.relative_to(R)),production_changed=False);project.write_text(json.dumps(navigation,ensure_ascii=False,indent=2)+'\n')
+    (P/'active_model_descriptor_at_test.json').write_bytes((R/'overview/ACTIVE_TEAM_BENCHMARK.json').read_bytes())
+    for path,entry in [(R/'README.md',f'**Ny felles tre-sesongstest:** [Komponentmodell mot dagens oppskrift]({overview.relative_to(R)}). Kalender og løpende kalibrering er gjort sammenlignbare. Aktiv modell er bevart.\n\n'),(R/'overview/NEXT.md',f'# Ny felles tre-sesongstest\n\n[Resultat og metode]({overview.name}). Bruk [felles treningstabell v2](../datasets/fpl_common_training_v3/README.md) for nye sammenligninger. Aktiv modell er bevart.\n\n')]:
+        original=path.read_text();path.write_text(entry+original)
+    artifacts=[overview,release/'manifest.json',release/'verification.json',release/'loader.py',release/'README.md',release/'active_pointer_at_publication.json',Path(__file__),P/'delivery.json',P/'scores.csv',P/'forecast_metrics.csv'];evidence={str(p.relative_to(R)):m.sha(p) for p in artifacts};m.atomic_json(P/'final_delivery.json',dict(research_gate_passed=gate,full_seasons=int(score.complete.sum()),overview=str(overview.relative_to(R)),dataset='fpl_common_training_v3',active_model_unchanged=True,files=evidence))
+    result=dict(conclusion=verdict,decision='promote_to_review' if gate else 'retain_for_research',results=dict(seasons=score.astype(object).where(pd.notna(score),None).to_dict('records'),paired_deltas={s:None if pd.isna(wide.loc[s,'Forskjell']) else float(wide.loc[s,'Forskjell']) for s in m.EVAL},all_complete=complete,research_gate_passed=gate,active_model_unchanged=True,research_training_release='fpl_common_training_v3'),evidence_hashes={**evidence,str((P/'final_delivery.json').relative_to(R)):m.sha(P/'final_delivery.json')});m.atomic_json(P/'result.json',result)
+    subprocess.run([sys.executable,str(R/'scripts/research.py'),'complete',rawid(),str(P/'result.json')],cwd=R,check=True);print(wide.to_string());print('FINAL',overview)
+
+def rawid():return 'matched-season-retest-20261026-v8'
+
+if __name__=='__main__':finish()

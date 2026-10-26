@@ -1,0 +1,275 @@
+[
+  {
+    "league": "eng.fa",
+    "source_events": 103,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/eng.fa_live.json"
+  },
+  {
+    "league": "eng.league_cup",
+    "source_events": 89,
+    "selected_completed_events": 13,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/eng.league_cup_live.json"
+  },
+  {
+    "league": "uefa.champions",
+    "source_events": 189,
+    "selected_completed_events": 15,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_live.json"
+  },
+  {
+    "league": "uefa.europa",
+    "source_events": 189,
+    "selected_completed_events": 9,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_live.json"
+  },
+  {
+    "league": "uefa.europa.conf",
+    "source_events": 153,
+    "selected_completed_events": 2,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.europa.conf_live.json"
+  },
+  {
+    "league": "uefa.champions_qual",
+    "source_events": 90,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.champions_qual_live.json"
+  },
+  {
+    "league": "uefa.europa_qual",
+    "source_events": 80,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.europa_qual_live.json"
+  },
+  {
+    "league": "uefa.europa.conf_qual",
+    "source_events": 258,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.europa.conf_qual_live.json"
+  },
+  {
+    "league": "fifa.worldq.uefa",
+    "source_events": 12,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.uefa_live.json"
+  },
+  {
+    "league": "fifa.worldq.conmebol",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.conmebol_live.json"
+  },
+  {
+    "league": "fifa.worldq.concacaf",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.concacaf_live.json"
+  },
+  {
+    "league": "fifa.worldq.afc",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.afc_live.json"
+  },
+  {
+    "league": "fifa.worldq.caf",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.caf_live.json"
+  },
+  {
+    "league": "fifa.worldq.ofc",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.worldq.ofc_live.json"
+  },
+  {
+    "league": "fifa.wcq.ply",
+    "source_events": 4,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.wcq.ply_live.json"
+  },
+  {
+    "league": "fifa.friendly",
+    "source_events": 394,
+    "selected_completed_events": 74,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_live.json"
+  },
+  {
+    "league": "uefa.nations",
+    "source_events": 160,
+    "selected_completed_events": 104,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.nations_live.json"
+  },
+  {
+    "league": "caf.nations",
+    "source_events": 16,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/caf.nations_live.json"
+  },
+  {
+    "league": "caf.nations_qual",
+    "source_events": 60,
+    "selected_completed_events": 48,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/caf.nations_qual_live.json"
+  },
+  {
+    "league": "concacaf.gold",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/concacaf.gold_live.json"
+  },
+  {
+    "league": "concacaf.nations.league",
+    "source_events": 106,
+    "selected_completed_events": 74,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/concacaf.nations.league_live.json"
+  },
+  {
+    "league": "uefa.euro_u21",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_live.json"
+  },
+  {
+    "league": "uefa.euro_u21_qual",
+    "source_events": 121,
+    "selected_completed_events": 68,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_u21_qual_live.json"
+  },
+  {
+    "league": "fifa.friendly_u21",
+    "source_events": 16,
+    "selected_completed_events": 4,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.friendly_u21_live.json"
+  },
+  {
+    "league": "fifa.world.u20",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.world.u20_live.json"
+  },
+  {
+    "league": "fifa.world.u17",
+    "source_events": 72,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.world.u17_live.json"
+  },
+  {
+    "league": "uefa.euro.u19",
+    "source_events": 16,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.euro.u19_live.json"
+  },
+  {
+    "league": "afc.cupq",
+    "source_events": 13,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/afc.cupq_live.json"
+  },
+  {
+    "league": "caf.cosafa",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/caf.cosafa_live.json"
+  },
+  {
+    "league": "fifa.world",
+    "source_events": 104,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.world_live.json"
+  },
+  {
+    "league": "uefa.euro",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.euro_live.json"
+  },
+  {
+    "league": "uefa.euroq",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/uefa.euroq_live.json"
+  },
+  {
+    "league": "conmebol.america",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/conmebol.america_live.json"
+  },
+  {
+    "league": "afc.cup",
+    "source_events": 125,
+    "selected_completed_events": 32,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/afc.cup_live.json"
+  },
+  {
+    "league": "fifa.olympics",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.olympics_live.json"
+  },
+  {
+    "league": "concacaf.gold_qual",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/concacaf.gold_qual_live.json"
+  },
+  {
+    "league": "fifa.conmebol.olympicsq",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.conmebol.olympicsq_live.json"
+  },
+  {
+    "league": "fifa.concacaf.olympicsq",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/fifa.concacaf.olympicsq_live.json"
+  },
+  {
+    "league": "afc.saff.championship",
+    "source_events": 0,
+    "selected_completed_events": 0,
+    "status": "ok",
+    "raw_file": "datasets/fpl_external_live_2026_10_26/raw/afc.saff.championship_live.json"
+  }
+]

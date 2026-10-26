@@ -1,0 +1,84 @@
+HYPPIGERE TRENING AV GRUNNMODELLEN – SAMLET RESULTAT
+26. oktober 2026
+
+To faste varianter, hver runde og annenhver runde, er testet mot dagens grunnmodelltrening hver fjerde runde. Etterkalibreringens oppdatering hver fjerde runde, 180 dagers halveringstid og Ridge 0,01 er uendret. Samme data, 325 egenskaper, like treningsvekter, treningsoppskrift, tilgjengelighetssperrer og manager. Ingen modell er aktivert på bakgrunn av denne testen.
+
+NETTO SESONGPOENG ETTER BYTTEKOSTNADER
+Variant                              2023/24      2024/25      2025/26    Snitt alle 3  Snitt siste 2
+Dagens: hver fjerde runde                   2465         2604         2335        2468.0         2469.5
+Grunnmodell annenhver runde                 2426         2616         2298        2446.7         2457.0
+Grunnmodell hver runde                      2551         2595         2254        2466.7         2424.5
+
+ENDRING MOT DAGENS STANDARD
+Variant                              2023/24      2024/25      2025/26       Varians        Spenn
+Dagens: hver fjerde runde                     +0           +0           +0       12064.7          269
+Grunnmodell annenhver runde                  -39          +12          -37       17067.6          318
+Grunnmodell hver runde                       +86           -9          -81       22936.2          341
+
+VURDERING
+Flere netto poeng i alle tre sesonger: ingen ny variant.
+Flere netto poeng i begge de to siste sesongene: ingen ny variant.
+Høyest 2025/26: Dagens: hver fjerde runde (2335).
+Høyest snitt siste to sesonger: Dagens: hver fjerde runde (2469.5).
+Alle tre sesonger er allerede brukt i modellutviklingen. Dette er en sammenlignbar utviklingstest, ikke en urørt holdout eller dokumentert faktisk FPL-rangering. Sesongpoengene er simulert netto etter byttekostnader. Resultater i de to siste årene og 2025/26 vises særskilt i tråd med brukerens prioritering. Ingen ny sesongvekting er valgt etter delresultatene. Lavere varians kan også skyldes lavere poeng i de beste årene.
+
+ENESTE ENDREDE INNSTILLING
+Grunnmodellen trenes fra grunnen av i runde 1+k*intervall, der intervall er 4 (kontroll), 2 eller 1. Ingen videre trening på tidligere modell og ingen endring i antall trær, tap, seed eller treningsvekter. Nye treningsdatoer gir naturlig flere da kjente eksempler og nye treningsmedianer etter samme regel; senere utfall inngår aldri.
+Samme CatBoost: 150 trær, dybde 5, læringsrate 0,05, L2=5, seed 20261025, MultiRMSE og én tråd. Samme fire mål: angrepspoeng, oppmøtepoeng, øvrige poeng og minutter/90. Like nominelle grunntreningsvekter. Samme uvektede treningsmedianer og mangelflagg. Ingen xG/xA, kandidatvekting, tidsvekting i grunnmodellen eller ny datakilde.
+Etterkalibrering trenes fortsatt i runde 1,5,9,...37 med 180 dagers halveringstid, Ridge 0,01 og upenalisert konstant. Hver variant har egne historiske førfristgrunnprognoser, også fra læreråret 2022/23. Koeffisientene beregnes på nytt etter samme oppskrift fordi grunnprognosene er endret; de kopieres ikke fra kontrollen.
+Bare eksempler der prognosetidspunkt, det konkrete utfallet og hele H3-utfallet er kjent før treningsfristen brukes. Modellen som velges til en prognose må være trent senest ved denne prognosens frist.
+
+SAMME SESONGGRUNNLAG OG BEHANDLING AV MANGLENDE OPPHAV
+Alle tre evalueringssesongene har 38 kvalifiserte prognoseopphav. Læreråret 2022/23 mangler runde 7 i det frosne fellesgrunnlaget. Ingen rad, frist eller kilde er konstruert for den runden. Hvis en planlagt oppdatering mangler et kvalifisert opphav, beholdes siste modell frem til neste eksisterende planlagte oppdatering. I annenhver-runde-varianten brukes derfor runde-5-modellen også i lærerårets runde 8, og neste trening skjer i runde 9. Denne regelen og mangelen ble registrert før kjøring; ingen evalueringssesong har dette avviket.
+Fellesgrunnlag V5, standardens opprinnelige 325 egenskaper. De tidligere dokumenterte statistikk-, kalender- og markedsproxyene består i alle varianter. Samme spillerutvalg, fasit, poengregler og kalender. Ingen nye 2026/27-utfall eller kildeopptak brukes.
+
+PROGNOSEFEIL BLANT FASTE FELLES LAGKANDIDATER
+MSE, lavere er bedre. Poeng er ferdige prognoser etter kalibrering, minutter er grunnmodellprognoser. Samme førfristbestemte evalueringsutvalg i alle varianter.
+Sesong / horisont / mål             Dagens      Annenhver      Hver runde
+2023-24 / 1 / minutes      658.06991     662.87193     662.28806
+2023-24 / 1 / points        16.46882      16.45532      16.47460
+2023-24 / 3 / minutes     4565.29380    4553.98271    4569.43714
+2023-24 / 3 / points        52.28086      52.19245      52.19577
+2024-25 / 1 / minutes      585.68758     586.48273     584.90614
+2024-25 / 1 / points        14.63471      14.60049      14.56371
+2024-25 / 3 / minutes     3637.32511    3620.47815    3625.88714
+2024-25 / 3 / points        50.25292      50.03188      49.96786
+2025-26 / 1 / minutes      626.60806     623.71871     625.23128
+2025-26 / 1 / points        13.33797      13.35004      13.33559
+2025-26 / 3 / minutes     3823.59997    3844.31875    3833.42167
+2025-26 / 3 / points        42.79651      42.83898      42.68994
+
+MIDTBANEKANDIDATER: RÅ KOMPONENTER OG MINUTTER
+H1-MSE, lavere er bedre.
+Sesong / mål                       Dagens      Annenhver      Hver runde
+2023-24 / attack            10.94261      10.91008      10.91381
+2023-24 / appearance         0.22679       0.22705       0.22757
+2023-24 / residual           2.51910       2.52084       2.51987
+2023-24 / minutes          551.59305     552.25088     552.45327
+2024-25 / attack             9.70442       9.69673       9.64357
+2024-25 / appearance         0.24968       0.24928       0.24847
+2024-25 / residual           2.04829       2.05152       2.04866
+2024-25 / minutes          625.52392     625.22551     622.68375
+2025-26 / attack             7.16703       7.17482       7.16359
+2025-26 / appearance         0.25445       0.25378       0.25402
+2025-26 / residual           1.90171       1.90814       1.91115
+2025-26 / minutes          590.36216     588.50685     589.84482
+
+MIDTBANERANGERING ETTER KALIBRERING
+Gjennomsnittlig Spearman per runde i samme faste kandidater, høyere er bedre.
+2023-24: Dagens: hver fjerde runde 0.18141; Grunnmodell annenhver runde 0.18149; Grunnmodell hver runde 0.17440
+2024-25: Dagens: hver fjerde runde 0.24912; Grunnmodell annenhver runde 0.25214; Grunnmodell hver runde 0.24603
+2025-26: Dagens: hver fjerde runde 0.11873; Grunnmodell annenhver runde 0.12160; Grunnmodell hver runde 0.12663
+Alle 144 prognoseceller og 288 rå komponentceller har like evalueringsnevnere på tvers av variantene. Kontrollens 48 tidligere prognosemål er gjenskapt. Bedre prognosefeil alene dokumenterer ikke bedre lagbeslutninger.
+
+KONTROLLER OG RESSURSER
+222 nye unike grunnmodellpakker, i tillegg til 80 identiske opprinnelige kvartalsvise pakker som gjenbrukes. Modellen ved en bestemt frist avhenger bare av data, parametere og seed, ikke av tidligere treningsdatoer; de 70 nye pakkene som begge kandidatene trenger, gjenbrukes derfor mellom dem. Hver-runde-varianten refererer til 302 pakker og annenhver-runde til 150 pakker over læreråret og de tre evalueringsårene.
+Alle modeller, førfristgrenser, treningsnøkler, parametere, medianer, prognoser og valg av sist tillatte modell er kontrollert. To nye modeller er dessuten trent helt uavhengig fra grunnen av med identiske prediksjoner: 2025/26 runde 2 H1 og runde 15 H3. Kontrollens 80 grunnpakker, 240 kalibreringshoder og hele H8-banen er reprodusert.
+480 nye kalibreringshoder er kontrollert mot samme lærer-ID-er, normal-ligninger, train-only-transformasjoner og prognoser. Seks komplette managersesonger og 228 beslutninger er etterspilt uavhengig. Tre tidligere kontrollerte kontrollsesonger er gjenbrukt etter identisk prognosereproduksjon.
+Samme manager, startbudsjett, chips, poengregler og tilgjengelighetssperrer: 16 faktiske søkenoder, høyst 40 kall, 8 prognoserunder og 3 planleggingsrunder. Alle fire forhåndskontroller av utilgjengelige spillere er bestått, inkludert eid Kane. Bekreftet utilgjengelige kan ikke kjøpes, starte eller velges som kaptein/visekaptein i aktuell runde; bekreftede avganger sperres gjennom horisonten.
+Høyst fire modell-/solverprosesser samtidig, én tråd hver. Begge forhåndsvalgte frekvenser er fullført, uten avbrudd basert på delresultater. Ingen terskel, intervall eller annen innstilling er endret etter resultatene.
+Rå poengkomponenter er sammenholdt med kvalifiserte treningsfasiter. Utfall for 2024/25 runde 15 beholdes i evalueringen selv der treningsopphavet er utelatt; de kommer fra samme native kampgrunnlag. Ukjent fasit blir ikke satt til null.
+Produksjonsmodell, aktive modellfiler, fellesdatapeker og forseglede 2026/27-prognoser er uendret. Denne historiske testen frisker ikke opp kilder for faktiske kommende lagbeslutninger.
+
+FILER
+comparison.csv, deltas.csv, summary.csv: samlet resultat. forecast_metrics.csv og component_metrics.csv: prognosefeil. ranking.csv: rangering. every1/ og every2/: grunnprognoser, treningsrevisjon og modellkart. models/: nye modeller. proposal.json: forhåndsregistrert oppsett. final_verification.json og execution.json: kontroller og hasher.

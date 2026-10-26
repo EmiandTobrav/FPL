@@ -105,5 +105,26 @@
       "new_research_branch": "codex/episodic-manager-policy",
       "base_pull_request": "https://github.com/EmiandTobrav/FPL/pull/2"
     }
+  },
+  "latest_published_update": {
+    "date": "2026-10-26",
+    "report": "releases/2026-10-26/README.md",
+    "data_pointer": "datasets/RESEARCH_DATA_ACTIVE.json",
+    "selected_local_model": "common_component_h8_recent180_plan5_calendar_v1",
+    "planning_horizon": 5,
+    "selected_features": 325,
+    "historical_h5": [
+      2569,
+      2591,
+      2359
+    ],
+    "same_calendar_h3": [
+      2465,
+      2604,
+      2322
+    ],
+    "fresh_model_checked": true,
+    "full_live_replay_included": false,
+    "scope": "Actual data tables/report evidence/source snapshot; legacy demo and archived contracts retained"
   }
 }

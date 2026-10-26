@@ -1,0 +1,9 @@
+Sesonggrenser i spillerhistorikk — 25. oktober 2026
+
+Grunnmodellens vinduer på 3, 6, 12 og 38 kamper krysser fortsatt sesonggrenser. Det eksisterende faste sesongleddet kalibrerer bare den ferdige basisprognosen; det fjerner ikke denne blandingen.
+
+Et nytt felles historikklag er implementert i model_lab/season_history.py. Det kan brukes ved både historiske treningsopprinnelser og nye prognoser. Årets og siste tilgjengelige tidligere sesongs vinduer beregnes hver for seg. Antall observasjoner, manglende historikk, sesongavstand og alder er eksplisitte. En ekte nullkamp teller; en manglende kamp blir ikke null. Ingen eldre kamper fyller opp årets vindu.
+
+Fire grense-/tidstester og alle spilleropprinnelser i de lagrede GW8/GW9-bildene er kontrollert. Eksemplene bruker den korrigerte utlånshistorikken og ingen GW8-utfall. Dette er et verifisert datagrunnlag, ikke en trent ny modell eller et dokumentert poengløft. Produksjonsmodellen er uendret.
+
+Neste modelltest må bruke samme korrigerte datagrunnlag i begge armer, slik at sesongskillet isoleres fra utlånsrettingen. Eldre historikk bør kunne lære spillerens langsiktige nivå, men skal ikke fremstå som observert rolle denne sesongen.

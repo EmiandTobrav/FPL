@@ -1,0 +1,84 @@
+KALIBRERINGSBREMS OG KANDIDATVEKTER – SAMLET TRESESONGSTEST
+26. oktober 2026
+
+Fire nye varianter er testet hver for seg mot dagens komponentmodell. Standard:180dagers halveringstid, oppdatering hver fjerde runde, Ridge0,01 og ingen ekstra kandidatvekting. Alle varianter bruker de samme frosne grunnprognosene,325feltene, tilgjengelighetsreglene, kalenderen, poengstandarden og manageren. Ingen produksjonsmodell er endret.
+
+NETTO SESONGPOENG ETTER BYTTEKOSTNADER
+Variant                         2023/24      2024/25      2025/26     Snitt alle3    Snitt siste2
+Dagens standard                         2465         2604         2335         2468.0          2469.5
+Svakere brems0,001                      2313         2588         2306         2402.3          2447.0
+Sterkere brems0,1                       2416         2543         2307         2422.0          2425.0
+Kandidatvekt2                           2381         2566         2282         2409.7          2424.0
+Kandidatvekt4                           2527         2517         2235         2426.3          2376.0
+
+ENDRING MOT DAGENS STANDARD
+Variant                         2023/24      2024/25      2025/26     Varians       Spenn
+Dagens standard                           +0           +0           +0      12064.7         269
+Svakere brems0,001                      -152          -16          -29      17244.2         282
+Sterkere brems0,1                        -49          -61          -28       9300.7         236
+Kandidatvekt2                            -84          -38          -53      13853.6         284
+Kandidatvekt4                            +62          -87         -100      18320.9         292
+
+VURDERING
+Flere netto poeng enn standard i alle tre sesonger: ingen ny variant.
+Flere netto poeng i begge de to siste sesongene: ingen ny variant.
+Høyest2025/26: Dagens standard (2335).
+Høyest snitt siste to sesonger: Dagens standard (2469.5).
+Høyest snitt alle tre: Dagens standard (2468.0).
+Alle årsresultater vises; ingen rapporteringsvekter er tilpasset etter resultatene. Nyere sesonger vises særskilt i tråd med brukerens prioritering. Lavere varians alene er ikke et forbedringskrav dersom det også følger av lavere poeng.
+Dette er nye utviklingstester på tre sesonger som allerede er undersøkt. De er ikke en urørt holdout, dokumentasjon på statistisk signifikans eller faktisk FPL-rangering. Det begrensede settet verdier dokumenterer ikke et globalt optimum. Ingen beste-brems+beste-kandidat-kombinasjon er testet eller kan utledes som målt gevinst.
+
+HVA KALIBRERINGSBREMSEN BETYR
+Bare Ridge-straffen endres fra0,01 til0,001 eller0,1. Dette er henholdsvis ti ganger svakere og ti ganger sterkere demping av koeffisientene. Den konstante korreksjonen er fortsatt unntatt straffen; det er derfor ikke en mekanisk tidobling/tideling av hele poengprognosen. Samme treningsrader, tidsvekter, førfristfiltre og uvektede transformasjoner brukes. Kandidatfaktoren er1 i begge bremsetester.
+
+HVA KANDIDATVEKTENE BETYR
+Ved hvert historisk førfristopp­hav velges inntil5målvakter,20forsvarere,20midtbanespillere og10spisser blant dem som faktisk kan kjøpes etter de daterte tilgjengelighetsreglene. Rangeringen bruker den allerede frosne H1-grunnprognosen; like prognoser brytes med spillerkode. Det brukes ikke faktiske senere poeng eller den nye kalibreringens resultat.
+Samme definisjon brukes også i læreråret2022/23. Dermed brukes ikke en senere ferdig kalibrert modell eller et evalueringsreferansesett som mangler i læreråret. Utvalget er frosset og identisk mellom alle varianter. Det er en kandidatgruppe, ikke et ferdig lovlig FPL-lag.
+Kandidatenes aldersvekt multipliseres med2 eller4 i læringen. Andre observasjoner beholdes med vanlig aldersvekt, og tapet normaliseres med samlet vekt. Ingen spillerpoeng multipliseres ved prognosetid. I disse testene er Ridge fortsatt0,01, halveringstiden180dager og oppdateringen hver fjerde runde.
+Det tidligere faste evalueringsutvalget av lagkandidater er bevart for sammenlignbarhet. Det nye grunnprognosebaserte kandidatsettet måles også separat, med identisk utvalg for alle fem modellvarianter. Vi velger ikke evalueringsspillere etter hvilken modell som gjør det best.
+
+VEKTFORDELING VED SISTE H1-OPPDATERING I2025/26
+Variant                         Kandidatvektandel  Årets vektandel  Vektet effektivt antall
+Dagens standard                              8.9%             74.4%                   31054
+Svakere brems0,001                           8.9%             74.4%                   31054
+Sterkere brems0,1                            8.9%             74.4%                   31054
+Kandidatvekt2                               16.4%             74.4%                   29104
+Kandidatvekt4                               28.1%             74.4%                   21423
+Vektet effektivt antall=(sumw)^2/sum(w^2). Dette måler konsentrasjonen i vektene, ikke antall statistisk uavhengige kamper eller spillere. Kandidatvekting kan også flytte den samlede sesongandelen dersom kandidatene er ulikt fordelt i den tilgjengelige historikken.
+
+PROGNOSEFEIL – FASTE FELLES LAGKANDIDATER
+H1-poeng-MSE; lavere er bedre. Det samme tidligere evalueringsutvalget brukes for alle varianter.
+Variant                         2023/24       2024/25       2025/26
+Dagens standard                      16.46882      14.63471      13.33797
+Svakere brems0,001                   16.47823      14.63541      13.34633
+Sterkere brems0,1                    16.46837      14.62815      13.33258
+Kandidatvekt2                        16.46816      14.62270      13.32695
+Kandidatvekt4                        16.48405      14.62350      13.32798
+
+PROGNOSEFEIL – GRUNNPROGNOSENS FASTE KANDIDATER
+Dette er gruppen som får ekstra treningsvekt i kandidatvariantene, målt på senere utfall som aldri inngår i utvelgelsen. H1-poeng-MSE:
+Dagens standard                      16.47579      14.42238      13.28299
+Svakere brems0,001                   16.48647      14.42029      13.29667
+Sterkere brems0,1                    16.47598      14.41358      13.27451
+Kandidatvekt2                        16.47306      14.41237      13.27116
+Kandidatvekt4                        16.48456      14.41238      13.26734
+Minuttprognosene er identiske i alle varianter, siden grunnmodellene er uendret. Alle300 H1/H3-poeng-/minuttceller har identiske evalueringsnevnere innen hvert utvalg på tvers av variantene. Standardens48 gamle resultatceller er gjenskapt mot forrige rapport. Flere grupper, bias og rangering står i forecast_metrics.csv og ranking.csv. Bedre prognosefeil og flere lagpoeng er ulike krav.
+
+MIDTBANERANGERING
+Gjennomsnittlig Spearman-korrelasjon per runde blant de faste felles midtbanekandidatene; høyere er bedre.
+Dagens standard                       0.18141       0.24912       0.11873
+Svakere brems0,001                    0.18078       0.25271       0.11873
+Sterkere brems0,1                     0.18119       0.24417       0.12152
+Kandidatvekt2                         0.18678       0.25102       0.12044
+Kandidatvekt4                         0.18879       0.25421       0.12473
+
+KONTROLLER OG FELLES METODE
+Standardens240 kalibreringshoder og hele H8-prognosebanen er gjenskapt mot den allerede valgte180-dagersvarianten før de nye sesongtestene. Dens tre tidligere kontrollerte sesongforløp er gjenbrukt.
+960nye kalibreringshoder er kontrollert uavhengig: samme eksempel-ID-er og transformasjoner som standarden, førfristgrenser, deklarerte tapsvekter/straffer, normal-ligninger og reproduserte prognoseverdier. Kandidatutvalget er kontrollert separat direkte mot grunnprognoser og daterte kjøpsregler.
+Samme lærerfilter som tidligere: lærerprognose, konkret offsetutfall og hele H3-utfallet må være tilgjengelig strengt før kalibreringsfristen. Samme180dagers aldersvekting, runde1,5,9,...37, åtte uavhengige fremtidshoder og bevaring mellom oppdateringer. Grunnmodellens oppdateringer er uendret. Ingen ekstra sesongfaktor, nye inndata eller xG/xA.
+Alle12nye sesonger og456beslutninger er etterspilt uavhengig med kontroll av lovlighet, poeng, hard tilgjengelighet og samme søkebudsjett. Alle8 adversarialkontroller er bestått, inkludert bekreftet utilgjengelige spillere og eid Kane med svært høye tilbudte prognoser.
+Samme manager:16 faktiske søkenoder, maksimalt40 kall,8 prognoserunder,3 planleggingsrunder, samme åpningsbudsjett, chips og harmoniserte poengregler. Høyst4 modell-/solverprosesser samtidig og én tråd per prosess. Ingen svake varianter ble avbrutt og ingen parametere ble valgt på nytt etter delresultatene.
+FellesgrunnlagV5 med bare de opprinnelige325feltene. De samme dokumenterte statistikk-, kalender- og markedsproxyene består. Ingen2026/27-utfall eller faktiske FPL-ordre er brukt. Standardmodell og eksisterende forseglede prognoser er uendret.
+
+FILER
+comparison.csv og deltas.csv: alle årsresultater. summary.csv: samlede og nyere snitt, varians og forbedringsflagg. candidate_flags.csv.gz: frosset førfristutvalg. candidate_verification.json: uavhengig utvalgskontroll. weight_diagnostics.csv: hele vektfordelingen. forecast_metrics.csv/ranking.csv: prognosemål. final_verification.json: kontroller og hasher. proposal.json: forhåndslåst test. execution.json og logs/: full gjennomføring.
